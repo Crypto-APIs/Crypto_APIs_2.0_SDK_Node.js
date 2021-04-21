@@ -1,0 +1,17 @@
+# CryptoApis.AddressTokensTransactionUnconfirmedToken
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**name** | **String** | Specifies the name of the token. | 
+**symbol** | **String** | Specifies an identifier of the token, where up to five alphanumeric characters can be used for it. | 
+**decimals** | **String** | Defines how many decimals can be used to break the token. | [optional] 
+**amount** | **String** | Defines the amount of tokens sent with the transaction that is pending confirmation. | 
+**contractAddress** | **String** | Specifies the address of the contract. | 
+**tokenId** | **String** | Specifies the unique ID of the token. | 
+**propertyId** | **String** | Defines the ID of the property for Omni Layer. | 
+**transactionType** | **String** | Defines the type of the transaction made. | 
+**createdByTransactionId** | **String** | The transaction ID used to create the token. | 
+
+

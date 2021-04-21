@@ -1,0 +1,381 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _ApiClient = _interopRequireDefault(require("../ApiClient"));
+
+var _AddTokensToExistingFromAddressRequestBody = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressRequestBody"));
+
+var _AddTokensToExistingFromAddressResponse = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressResponse"));
+
+var _CreateAutomaticTokensForwardingRequestBody = _interopRequireDefault(require("../model/CreateAutomaticTokensForwardingRequestBody"));
+
+var _CreateAutomaticTokensForwardingResponse = _interopRequireDefault(require("../model/CreateAutomaticTokensForwardingResponse"));
+
+var _DeleteAutomaticTokensForwardingResponse = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwardingResponse"));
+
+var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
+
+var _GetFeeAddressDetailsResponse = _interopRequireDefault(require("../model/GetFeeAddressDetailsResponse"));
+
+var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+
+var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+
+var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+
+var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+
+var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+
+var _ListTokensForwardingAutomationsResponse = _interopRequireDefault(require("../model/ListTokensForwardingAutomationsResponse"));
+
+var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
+
+var _ResourceNotFound = _interopRequireDefault(require("../model/ResourceNotFound"));
+
+var _TokensForwardingAutomationsLimitReached = _interopRequireDefault(require("../model/TokensForwardingAutomationsLimitReached"));
+
+var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
+
+var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+/**
+* AutomaticTokensForwarding service.
+* @module api/AutomaticTokensForwardingApi
+* @version 2.0.0
+*/
+var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
+  /**
+  * Constructs a new AutomaticTokensForwardingApi. 
+  * @alias module:api/AutomaticTokensForwardingApi
+  * @class
+  * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
+  * default to {@link module:ApiClient#instance} if unspecified.
+  */
+  function AutomaticTokensForwardingApi(apiClient) {
+    _classCallCheck(this, AutomaticTokensForwardingApi);
+
+    this.apiClient = apiClient || _ApiClient["default"].instance;
+  }
+  /**
+   * Add Tokens To Existing fromAddress
+   * Through this endpoint customers can add **Automatic Tokens forwardings** to an already existing `fromAddress`. Unlike the \"Create Automatic Tokens Forwarding\" endpoint, where the `fromAddress` is generated each time, with this endpoint customers can add an automation from another token to one and the same `fromAddress`.    The `fromAddress` can be used as a deposit address. Any funds received by this address will be automatically forwarded to `toAddress` based on what the customer has set for the automation. The  `toAddress` is essentially the main address and destination for the automatic tokens forwarding.    There is also a `minimumTransferAmount` which only when reached will then trigger the forwarding. Through this the customer can save from fees.    Moreover, `feePriority` can be also set,  which defines how quickly to move the tokens once they are received. The higher priority, the larger the fee will be. It can be \"SLOW\", \"STANDARD\" or \"FAST\".    For this automatic forwarding the customer can set a callback subscription.    {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+   * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+   * @param {module:model/String} network Network
+   * @param {Object} opts Optional parameters
+   * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+   * @param {module:model/AddTokensToExistingFromAddressRequestBody} opts.addTokensToExistingFromAddressRequestBody 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AddTokensToExistingFromAddressResponse} and HTTP response
+   */
+
+
+  _createClass(AutomaticTokensForwardingApi, [{
+    key: "addTokensToExistingFromAddressWithHttpInfo",
+    value: function addTokensToExistingFromAddressWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['addTokensToExistingFromAddressRequestBody']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling addTokensToExistingFromAddress");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling addTokensToExistingFromAddress");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _AddTokensToExistingFromAddressResponse["default"];
+      return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/automations/add-token', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Add Tokens To Existing fromAddress
+     * Through this endpoint customers can add **Automatic Tokens forwardings** to an already existing `fromAddress`. Unlike the \"Create Automatic Tokens Forwarding\" endpoint, where the `fromAddress` is generated each time, with this endpoint customers can add an automation from another token to one and the same `fromAddress`.    The `fromAddress` can be used as a deposit address. Any funds received by this address will be automatically forwarded to `toAddress` based on what the customer has set for the automation. The  `toAddress` is essentially the main address and destination for the automatic tokens forwarding.    There is also a `minimumTransferAmount` which only when reached will then trigger the forwarding. Through this the customer can save from fees.    Moreover, `feePriority` can be also set,  which defines how quickly to move the tokens once they are received. The higher priority, the larger the fee will be. It can be \"SLOW\", \"STANDARD\" or \"FAST\".    For this automatic forwarding the customer can set a callback subscription.    {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Network
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/AddTokensToExistingFromAddressRequestBody} opts.addTokensToExistingFromAddressRequestBody 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AddTokensToExistingFromAddressResponse}
+     */
+
+  }, {
+    key: "addTokensToExistingFromAddress",
+    value: function addTokensToExistingFromAddress(blockchain, network, opts) {
+      return this.addTokensToExistingFromAddressWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Create Automatic Tokens Forwarding
+     * Through this endpoint customers can set up an automatic forwarding function specifically for tokens (**not** coins). They can have a `toAddress` which is essentially the main address and the destination for the automatic tokens forwarding.     There is also a `minimumTransferAmount` which only when reached will then trigger the forwarding. Through this the customer can save from fees.    Moreover, `feePriority` can be also set,  which defines how quickly to move the tokens once they are received. The higher priority, the larger the fee will be. It can be \"SLOW\", \"STANDARD\" or \"FAST\".    The response of this endpoint contains an attribute `fromAddress` which can be used as a deposit address. Any funds received by this address will be automatically forwarded to `toAddress` based on what the customer has set for the automation.    For this automatic forwarding the customer can set a callback subscription.    {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}    {note}This endpoint generates a new `fromAddress` each time.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateAutomaticTokensForwardingRequestBody} opts.createAutomaticTokensForwardingRequestBody 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateAutomaticTokensForwardingResponse} and HTTP response
+     */
+
+  }, {
+    key: "createAutomaticTokensForwardingWithHttpInfo",
+    value: function createAutomaticTokensForwardingWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['createAutomaticTokensForwardingRequestBody']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling createAutomaticTokensForwarding");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling createAutomaticTokensForwarding");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _CreateAutomaticTokensForwardingResponse["default"];
+      return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/automations', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Create Automatic Tokens Forwarding
+     * Through this endpoint customers can set up an automatic forwarding function specifically for tokens (**not** coins). They can have a `toAddress` which is essentially the main address and the destination for the automatic tokens forwarding.     There is also a `minimumTransferAmount` which only when reached will then trigger the forwarding. Through this the customer can save from fees.    Moreover, `feePriority` can be also set,  which defines how quickly to move the tokens once they are received. The higher priority, the larger the fee will be. It can be \"SLOW\", \"STANDARD\" or \"FAST\".    The response of this endpoint contains an attribute `fromAddress` which can be used as a deposit address. Any funds received by this address will be automatically forwarded to `toAddress` based on what the customer has set for the automation.    For this automatic forwarding the customer can set a callback subscription.    {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}    {note}This endpoint generates a new `fromAddress` each time.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateAutomaticTokensForwardingRequestBody} opts.createAutomaticTokensForwardingRequestBody 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateAutomaticTokensForwardingResponse}
+     */
+
+  }, {
+    key: "createAutomaticTokensForwarding",
+    value: function createAutomaticTokensForwarding(blockchain, network, opts) {
+      return this.createAutomaticTokensForwardingWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Delete Automatic Tokens Forwarding
+     * Through this endpoint customers can delete a forwarding function they have set for **tokens** (**not** coins).    By setting a `fromAddress` and a `toAddress`, and specifying the amount, tokens can be transferred between addresses.     A `feePriority` will be returned which represents the fee priority of the automation whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".    {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteAutomaticTokensForwardingResponse} and HTTP response
+     */
+
+  }, {
+    key: "deleteAutomaticTokensForwardingWithHttpInfo",
+    value: function deleteAutomaticTokensForwardingWithHttpInfo(blockchain, network, referenceId, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling deleteAutomaticTokensForwarding");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling deleteAutomaticTokensForwarding");
+      } // verify the required parameter 'referenceId' is set
+
+
+      if (referenceId === undefined || referenceId === null) {
+        throw new Error("Missing the required parameter 'referenceId' when calling deleteAutomaticTokensForwarding");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'referenceId': referenceId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _DeleteAutomaticTokensForwardingResponse["default"];
+      return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/automations/{referenceId}', 'DELETE', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Delete Automatic Tokens Forwarding
+     * Through this endpoint customers can delete a forwarding function they have set for **tokens** (**not** coins).    By setting a `fromAddress` and a `toAddress`, and specifying the amount, tokens can be transferred between addresses.     A `feePriority` will be returned which represents the fee priority of the automation whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".    {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DeleteAutomaticTokensForwardingResponse}
+     */
+
+  }, {
+    key: "deleteAutomaticTokensForwarding",
+    value: function deleteAutomaticTokensForwarding(blockchain, network, referenceId, opts) {
+      return this.deleteAutomaticTokensForwardingWithHttpInfo(blockchain, network, referenceId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Get Fee Address Details
+     * Through this endpoint customers can obtain details about a fee address. Only one fee address per currency per network for a user's account can be set no matter how many tokens or subscriptions they have or want to automatically forward.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetFeeAddressDetailsResponse} and HTTP response
+     */
+
+  }, {
+    key: "getFeeAddressDetailsWithHttpInfo",
+    value: function getFeeAddressDetailsWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getFeeAddressDetails");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getFeeAddressDetails");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _GetFeeAddressDetailsResponse["default"];
+      return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/fee-addresses', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Get Fee Address Details
+     * Through this endpoint customers can obtain details about a fee address. Only one fee address per currency per network for a user's account can be set no matter how many tokens or subscriptions they have or want to automatically forward.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetFeeAddressDetailsResponse}
+     */
+
+  }, {
+    key: "getFeeAddressDetails",
+    value: function getFeeAddressDetails(blockchain, network, opts) {
+      return this.getFeeAddressDetailsWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List Tokens Forwarding Automations
+     * Through this endpoint customers can list all of their **tokens** forwarding automations (**not** coins).    Customers can set up automatic forwarding functions for tokens by setting a `fromAddress` and a `toAddress`, and specifying the amount that can be transferred between addresses.     A `feePriority` will be returned which represents the fee priority of the automation whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".     {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensForwardingAutomationsResponse} and HTTP response
+     */
+
+  }, {
+    key: "listTokensForwardingAutomationsWithHttpInfo",
+    value: function listTokensForwardingAutomationsWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listTokensForwardingAutomations");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listTokensForwardingAutomations");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListTokensForwardingAutomationsResponse["default"];
+      return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/automations', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List Tokens Forwarding Automations
+     * Through this endpoint customers can list all of their **tokens** forwarding automations (**not** coins).    Customers can set up automatic forwarding functions for tokens by setting a `fromAddress` and a `toAddress`, and specifying the amount that can be transferred between addresses.     A `feePriority` will be returned which represents the fee priority of the automation whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".     {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensForwardingAutomationsResponse}
+     */
+
+  }, {
+    key: "listTokensForwardingAutomations",
+    value: function listTokensForwardingAutomations(blockchain, network, opts) {
+      return this.listTokensForwardingAutomationsWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+  }]);
+
+  return AutomaticTokensForwardingApi;
+}();
+
+exports["default"] = AutomaticTokensForwardingApi;

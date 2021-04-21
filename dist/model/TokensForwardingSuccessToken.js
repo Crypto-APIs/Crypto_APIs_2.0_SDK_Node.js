@@ -1,0 +1,281 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _ApiClient = _interopRequireDefault(require("../ApiClient"));
+
+var _TokensForwardingSuccessEthereumerc20token = _interopRequireDefault(require("./TokensForwardingSuccessEthereumerc20token"));
+
+var _TokensForwardingSuccessEthereumerc721token = _interopRequireDefault(require("./TokensForwardingSuccessEthereumerc721token"));
+
+var _TokensForwardingSuccessOmnilayertoken = _interopRequireDefault(require("./TokensForwardingSuccessOmnilayertoken"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+/**
+ * The TokensForwardingSuccessToken model module.
+ * @module model/TokensForwardingSuccessToken
+ * @version 2.0.0
+ */
+var TokensForwardingSuccessToken = /*#__PURE__*/function () {
+  /**
+   * Constructs a new <code>TokensForwardingSuccessToken</code>.
+   * @alias module:model/TokensForwardingSuccessToken
+   * @implements module:model/TokensForwardingSuccessEthereumerc20token
+   * @implements module:model/TokensForwardingSuccessEthereumerc721token
+   * @implements module:model/TokensForwardingSuccessOmnilayertoken
+   * @param name {String} Specifies the name of the token.
+   * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+   * @param amount {String} Defines the amount of tokens sent with the confirmed transaction.
+   * @param contractAddress {String} Specifies the address of the contract.
+   * @param tokenId {String} Specifies the ID of the token.
+   * @param propertyId {String} Defines the ID of the property for Omni Layer.
+   * @param transactionType {String} Defines the type of the transaction.
+   * @param createdByTransactionId {String} The transaction ID used to create the token.
+   */
+  function TokensForwardingSuccessToken(name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) {
+    _classCallCheck(this, TokensForwardingSuccessToken);
+
+    _TokensForwardingSuccessEthereumerc20token["default"].initialize(this, name, symbol, amount, contractAddress);
+
+    _TokensForwardingSuccessEthereumerc721token["default"].initialize(this, name, symbol, tokenId, contractAddress);
+
+    _TokensForwardingSuccessOmnilayertoken["default"].initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
+
+    TokensForwardingSuccessToken.initialize(this, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId);
+  }
+  /**
+   * Initializes the fields of this object.
+   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+   * Only for internal use.
+   */
+
+
+  _createClass(TokensForwardingSuccessToken, null, [{
+    key: "initialize",
+    value: function initialize(obj, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) {
+      obj['name'] = name;
+      obj['symbol'] = symbol;
+      obj['amount'] = amount;
+      obj['contractAddress'] = contractAddress;
+      obj['tokenId'] = tokenId;
+      obj['propertyId'] = propertyId;
+      obj['transactionType'] = transactionType;
+      obj['createdByTransactionId'] = createdByTransactionId;
+    }
+    /**
+     * Constructs a <code>TokensForwardingSuccessToken</code> from a plain JavaScript object, optionally creating a new instance.
+     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @param {module:model/TokensForwardingSuccessToken} obj Optional instance to populate.
+     * @return {module:model/TokensForwardingSuccessToken} The populated <code>TokensForwardingSuccessToken</code> instance.
+     */
+
+  }, {
+    key: "constructFromObject",
+    value: function constructFromObject(data, obj) {
+      if (data) {
+        obj = obj || new TokensForwardingSuccessToken();
+
+        _TokensForwardingSuccessEthereumerc20token["default"].constructFromObject(data, obj);
+
+        _TokensForwardingSuccessEthereumerc721token["default"].constructFromObject(data, obj);
+
+        _TokensForwardingSuccessOmnilayertoken["default"].constructFromObject(data, obj);
+
+        if (data.hasOwnProperty('name')) {
+          obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
+        }
+
+        if (data.hasOwnProperty('symbol')) {
+          obj['symbol'] = _ApiClient["default"].convertToType(data['symbol'], 'String');
+        }
+
+        if (data.hasOwnProperty('decimals')) {
+          obj['decimals'] = _ApiClient["default"].convertToType(data['decimals'], 'String');
+        }
+
+        if (data.hasOwnProperty('amount')) {
+          obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
+        }
+
+        if (data.hasOwnProperty('contractAddress')) {
+          obj['contractAddress'] = _ApiClient["default"].convertToType(data['contractAddress'], 'String');
+        }
+
+        if (data.hasOwnProperty('tokenId')) {
+          obj['tokenId'] = _ApiClient["default"].convertToType(data['tokenId'], 'String');
+        }
+
+        if (data.hasOwnProperty('propertyId')) {
+          obj['propertyId'] = _ApiClient["default"].convertToType(data['propertyId'], 'String');
+        }
+
+        if (data.hasOwnProperty('transactionType')) {
+          obj['transactionType'] = _ApiClient["default"].convertToType(data['transactionType'], 'String');
+        }
+
+        if (data.hasOwnProperty('createdByTransactionId')) {
+          obj['createdByTransactionId'] = _ApiClient["default"].convertToType(data['createdByTransactionId'], 'String');
+        }
+      }
+
+      return obj;
+    }
+  }]);
+
+  return TokensForwardingSuccessToken;
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+
+
+TokensForwardingSuccessToken.prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+
+TokensForwardingSuccessToken.prototype['symbol'] = undefined;
+/**
+ * Defines how many decimals can be used to break the token.
+ * @member {String} decimals
+ */
+
+TokensForwardingSuccessToken.prototype['decimals'] = undefined;
+/**
+ * Defines the amount of tokens sent with the confirmed transaction.
+ * @member {String} amount
+ */
+
+TokensForwardingSuccessToken.prototype['amount'] = undefined;
+/**
+ * Specifies the address of the contract.
+ * @member {String} contractAddress
+ */
+
+TokensForwardingSuccessToken.prototype['contractAddress'] = undefined;
+/**
+ * Specifies the ID of the token.
+ * @member {String} tokenId
+ */
+
+TokensForwardingSuccessToken.prototype['tokenId'] = undefined;
+/**
+ * Defines the ID of the property for Omni Layer.
+ * @member {String} propertyId
+ */
+
+TokensForwardingSuccessToken.prototype['propertyId'] = undefined;
+/**
+ * Defines the type of the transaction.
+ * @member {String} transactionType
+ */
+
+TokensForwardingSuccessToken.prototype['transactionType'] = undefined;
+/**
+ * The transaction ID used to create the token.
+ * @member {String} createdByTransactionId
+ */
+
+TokensForwardingSuccessToken.prototype['createdByTransactionId'] = undefined; // Implement TokensForwardingSuccessEthereumerc20token interface:
+
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+
+_TokensForwardingSuccessEthereumerc20token["default"].prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+
+_TokensForwardingSuccessEthereumerc20token["default"].prototype['symbol'] = undefined;
+/**
+ * Defines how many decimals can be used to break the token.
+ * @member {String} decimals
+ */
+
+_TokensForwardingSuccessEthereumerc20token["default"].prototype['decimals'] = undefined;
+/**
+ * Defines the amount of tokens sent with the confirmed transaction.
+ * @member {String} amount
+ */
+
+_TokensForwardingSuccessEthereumerc20token["default"].prototype['amount'] = undefined;
+/**
+ * Defines the address of the contract.
+ * @member {String} contractAddress
+ */
+
+_TokensForwardingSuccessEthereumerc20token["default"].prototype['contractAddress'] = undefined; // Implement TokensForwardingSuccessEthereumerc721token interface:
+
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+
+_TokensForwardingSuccessEthereumerc721token["default"].prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+
+_TokensForwardingSuccessEthereumerc721token["default"].prototype['symbol'] = undefined;
+/**
+ * Specifies the ID of the token.
+ * @member {String} tokenId
+ */
+
+_TokensForwardingSuccessEthereumerc721token["default"].prototype['tokenId'] = undefined;
+/**
+ * Specifies the address of the contract.
+ * @member {String} contractAddress
+ */
+
+_TokensForwardingSuccessEthereumerc721token["default"].prototype['contractAddress'] = undefined; // Implement TokensForwardingSuccessOmnilayertoken interface:
+
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+
+_TokensForwardingSuccessOmnilayertoken["default"].prototype['name'] = undefined;
+/**
+ * Defines the ID of the property for Omni Layer.
+ * @member {String} propertyId
+ */
+
+_TokensForwardingSuccessOmnilayertoken["default"].prototype['propertyId'] = undefined;
+/**
+ * Defines the type of the transaction.
+ * @member {String} transactionType
+ */
+
+_TokensForwardingSuccessOmnilayertoken["default"].prototype['transactionType'] = undefined;
+/**
+ * The transaction ID used to create the token.
+ * @member {String} createdByTransactionId
+ */
+
+_TokensForwardingSuccessOmnilayertoken["default"].prototype['createdByTransactionId'] = undefined;
+/**
+ * Defines the amount of tokens sent with the confirmed transaction.
+ * @member {String} amount
+ */
+
+_TokensForwardingSuccessOmnilayertoken["default"].prototype['amount'] = undefined;
+var _default = TokensForwardingSuccessToken;
+exports["default"] = _default;
