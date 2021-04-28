@@ -1,6 +1,6 @@
 {
   "name": "cryptoapis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Crypto APIs 2.0 JavaScript client",
   "license": "MIT",
   "main": "dist/index.js",
