@@ -21,7 +21,7 @@ Through this endpoint customers can obtain token data by providing an attribute 
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -83,7 +83,7 @@ Through this endpoint customers can obtain a list with token transfers by the &#
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -145,7 +145,7 @@ Through this endpoint customers can obtain a list with token transfers by the &#
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];

@@ -27,7 +27,7 @@ Through this endpoint the customer can receive basic information about a given a
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -85,7 +85,7 @@ Through this endpoint customers can obtain basic information about a given mined
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -143,7 +143,7 @@ Through this endpoint customers can obtain basic information about a given mined
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -201,7 +201,7 @@ Through this endpoint customers can obtain fee recommendations. Our fees recomme
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -257,7 +257,7 @@ Through this endpoint customers can fetch the last mined block in a specific blo
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -313,7 +313,7 @@ Through this endpoint customers can obtain details about a transaction by the tr
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -371,7 +371,7 @@ This endpoint will list transactions by an attribute &#x60;address&#x60;. The tr
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -433,7 +433,7 @@ This endpoint will list transactions by an attribute &#x60;transactionHash&#x60;
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -495,7 +495,7 @@ This endpoint will list transactions by an attribute &#x60;blockHeight&#x60;. Th
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];

@@ -26,7 +26,7 @@ Through this endpoint customers can obtain details about an Omni transaction by 
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -84,7 +84,7 @@ Through this endpoint customers can obtain information on unconfirmed Omni trans
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -142,7 +142,7 @@ Through this endpoint the customer can receive basic information about a given O
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -200,7 +200,7 @@ This endpoint will list Omni transactions by an attribute &#x60;address&#x60;. T
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -262,7 +262,7 @@ This endpoint will list Omni transactions by an attribute &#x60;transactionHash&
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -324,7 +324,7 @@ This endpoint will list Omni transactions by an attribute &#x60;blockHeight&#x60
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -386,7 +386,7 @@ This endpoint will list unconfirmed Omni transactions by an attribute &#x60;addr
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -448,7 +448,7 @@ This endpoint will list unconfirmed Omni transactions by an attribute &#x60;prop
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];

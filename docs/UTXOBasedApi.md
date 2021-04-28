@@ -21,7 +21,7 @@ HD wallet details is useful endpoint to get the most important data about HD wal
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -81,7 +81,7 @@ This endpoint will list HD Wallet transactions.
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -145,7 +145,7 @@ HD wallets usually have a lot of addresses and transactions, getting the data on
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];

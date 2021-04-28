@@ -21,7 +21,7 @@ Through this endpoint customers can set up an automatic forwarding function spec
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -79,7 +79,7 @@ Through this endpoint customers can delete a forwarding function they have set f
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
@@ -137,7 +137,7 @@ Through this endpoint customers can list all of their **coins** forwarding autom
 ### Example
 
 ```javascript
-import CryptoApis from 'crypto_apis';
+import CryptoApis from 'cryptoapis';
 let defaultClient = CryptoApis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
