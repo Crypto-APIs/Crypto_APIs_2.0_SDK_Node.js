@@ -1,9 +1,13 @@
 {
   "name": "crypto_apis",
-  "version": "2.0.0",
-  "description": "Crypto_APIs_2_0_is_a_complex_and_innovative_infrastructure_layer_that_radically_simplifies_the_development_of_any_Blockchain_and_Crypto_related_applications__Organized_around_REST_Crypto_APIs_2_0_can_assist_both_novice_Bitcoin_Ethereum_enthusiasts_and_crypto_experts_with_the_development_of_their_blockchain_applications__Crypto_APIs_2_0_provides_unified_endpoints_and_data_raw_data_automatic_tokens_and_coins_forwardings_callback_functionalities_and_much_more_",
+  "version": "1.0.0",
+  "description": "Crypto APIs 2.0 JavaScript client",
   "license": "Crypto APIs",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Crypto-APIs/Crypto_APIs_2.0_SDK_Node.js"
+  },
   "scripts": {
     "build": "babel src -d dist",
     "prepare": "npm run build",
