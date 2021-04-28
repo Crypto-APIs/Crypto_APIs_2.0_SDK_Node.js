@@ -1,9 +1,10 @@
 {
-  "name": "crypto_apis",
+  "name": "cryptoapis",
   "version": "1.0.0",
   "description": "Crypto APIs 2.0 JavaScript client",
-  "license": "Crypto APIs",
+  "license": "MIT",
   "main": "dist/index.js",
+  "homepage": "https://github.com/Crypto-APIs/Crypto_APIs_2.0_SDK_Node.js#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/Crypto-APIs/Crypto_APIs_2.0_SDK_Node.js"
@@ -12,6 +13,9 @@
     "build": "babel src -d dist",
     "prepare": "npm run build",
     "test": "mocha --require @babel/register --recursive"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   },
   "browser": {
     "fs": false
