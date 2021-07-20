@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The InvalidDataError model module.
  * @module model/InvalidDataError
- * @version 2.0.0
+ * @version 1.1.0
  */
 class InvalidDataError {
     /**

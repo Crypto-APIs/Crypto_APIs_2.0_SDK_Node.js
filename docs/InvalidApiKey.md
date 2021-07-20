@@ -1,4 +1,4 @@
-# CryptoApis.InvalidApiKey
+# Cryptoapis.InvalidApiKey
 
 ## Properties
 

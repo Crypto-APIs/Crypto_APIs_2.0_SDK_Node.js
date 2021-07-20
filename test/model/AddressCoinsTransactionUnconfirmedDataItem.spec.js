@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+    instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('AddressCoinsTransactionUnconfirmedDataItem', function() {
     it('should create an instance of AddressCoinsTransactionUnconfirmedDataItem', function() {
       // uncomment below and update the code to test AddressCoinsTransactionUnconfirmedDataItem
-      //var instane = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
-      //expect(instance).to.be.a(CryptoApis.AddressCoinsTransactionUnconfirmedDataItem);
+      //var instane = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
+      //expect(instance).to.be.a(Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem);
     });
 
     it('should have the property blockchain (base name: "blockchain")', function() {
       // uncomment below and update the code to test the property blockchain
-      //var instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+      //var instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property network (base name: "network")', function() {
       // uncomment below and update the code to test the property network
-      //var instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+      //var instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property address (base name: "address")', function() {
       // uncomment below and update the code to test the property address
-      //var instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+      //var instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property transactionId (base name: "transactionId")', function() {
       // uncomment below and update the code to test the property transactionId
-      //var instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+      //var instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+      //var instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property unit (base name: "unit")', function() {
       // uncomment below and update the code to test the property unit
-      //var instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+      //var instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property direction (base name: "direction")', function() {
       // uncomment below and update the code to test the property direction
-      //var instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+      //var instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property firstSeenInMempoolTimestamp (base name: "firstSeenInMempoolTimestamp")', function() {
       // uncomment below and update the code to test the property firstSeenInMempoolTimestamp
-      //var instance = new CryptoApis.AddressCoinsTransactionUnconfirmedDataItem();
+      //var instance = new Cryptoapis.AddressCoinsTransactionUnconfirmedDataItem();
       //expect(instance).to.be();
     });
 

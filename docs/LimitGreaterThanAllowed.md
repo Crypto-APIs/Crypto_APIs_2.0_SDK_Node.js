@@ -1,4 +1,4 @@
-# CryptoApis.LimitGreaterThanAllowed
+# Cryptoapis.LimitGreaterThanAllowed
 
 ## Properties
 

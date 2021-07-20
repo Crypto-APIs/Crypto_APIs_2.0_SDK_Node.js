@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.CreateSubscriptionsForApi();
+    instance = new Cryptoapis.CreateSubscriptionsForApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -82,6 +82,26 @@
       it('should call newConfirmedCoinsTransactionsAndEachConfirmation successfully', function(done) {
         //uncomment below and update the code to test newConfirmedCoinsTransactionsAndEachConfirmation
         //instance.newConfirmedCoinsTransactionsAndEachConfirmation(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('newConfirmedInternalTransactions', function() {
+      it('should call newConfirmedInternalTransactions successfully', function(done) {
+        //uncomment below and update the code to test newConfirmedInternalTransactions
+        //instance.newConfirmedInternalTransactions(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('newConfirmedInternalTransactionsAndEachConfirmation', function() {
+      it('should call newConfirmedInternalTransactionsAndEachConfirmation successfully', function(done) {
+        //uncomment below and update the code to test newConfirmedInternalTransactionsAndEachConfirmation
+        //instance.newConfirmedInternalTransactionsAndEachConfirmation(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

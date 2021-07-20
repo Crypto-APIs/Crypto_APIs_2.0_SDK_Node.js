@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.InvalidXpub();
+    instance = new Cryptoapis.InvalidXpub();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InvalidXpub', function() {
     it('should create an instance of InvalidXpub', function() {
       // uncomment below and update the code to test InvalidXpub
-      //var instane = new CryptoApis.InvalidXpub();
-      //expect(instance).to.be.a(CryptoApis.InvalidXpub);
+      //var instane = new Cryptoapis.InvalidXpub();
+      //expect(instance).to.be.a(Cryptoapis.InvalidXpub);
     });
 
     it('should have the property apiVersion (base name: "apiVersion")', function() {
       // uncomment below and update the code to test the property apiVersion
-      //var instance = new CryptoApis.InvalidXpub();
+      //var instance = new Cryptoapis.InvalidXpub();
       //expect(instance).to.be();
     });
 
     it('should have the property requestId (base name: "requestId")', function() {
       // uncomment below and update the code to test the property requestId
-      //var instance = new CryptoApis.InvalidXpub();
+      //var instance = new Cryptoapis.InvalidXpub();
       //expect(instance).to.be();
     });
 
     it('should have the property context (base name: "context")', function() {
       // uncomment below and update the code to test the property context
-      //var instance = new CryptoApis.InvalidXpub();
+      //var instance = new Cryptoapis.InvalidXpub();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new CryptoApis.InvalidXpub();
+      //var instance = new Cryptoapis.InvalidXpub();
       //expect(instance).to.be();
     });
 

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token
- * @version 2.0.0
+ * @version 1.1.0
  */
 var AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token = /*#__PURE__*/function () {
   /**

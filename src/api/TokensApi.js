@@ -14,14 +14,15 @@
 
 import ApiClient from "../ApiClient";
 import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
+import GetContractDetailsByAddressR from '../model/GetContractDetailsByAddressR';
 import InsufficientCredits from '../model/InsufficientCredits';
 import InvalidApiKey from '../model/InvalidApiKey';
 import InvalidData from '../model/InvalidData';
 import InvalidPagination from '../model/InvalidPagination';
 import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
-import ListTokensByAddressResponse from '../model/ListTokensByAddressResponse';
-import ListTokensTransfersByAddressResponse from '../model/ListTokensTransfersByAddressResponse';
-import ListTokensTransfersByTransactionHashResponse from '../model/ListTokensTransfersByTransactionHashResponse';
+import ListTokensByAddressR from '../model/ListTokensByAddressR';
+import ListTokensTransfersByAddressR from '../model/ListTokensTransfersByAddressR';
+import ListTokensTransfersByTransactionHashR from '../model/ListTokensTransfersByTransactionHashR';
 import RequestLimitReached from '../model/RequestLimitReached';
 import UnexpectedServerError from '../model/UnexpectedServerError';
 import UnsupportedMediaType from '../model/UnsupportedMediaType';
@@ -29,7 +30,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 2.0.0
+* @version 1.1.0
 */
 export default class TokensApi {
 
@@ -47,8 +48,76 @@ export default class TokensApi {
 
 
     /**
+     * Get Contract Details by Address
+     * Though this endpoint customers can obtain information about a smart contract and its details. This can be done by the `address` parameter, i.e. the address of the smart contract.    {note}This address is **not** the same as the smart contract creator address.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} contractAddress Defines the specific address of the contract.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetContractDetailsByAddressR} and HTTP response
+     */
+    getContractDetailsByAddressWithHttpInfo(blockchain, network, contractAddress, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getContractDetailsByAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getContractDetailsByAddress");
+      }
+      // verify the required parameter 'contractAddress' is set
+      if (contractAddress === undefined || contractAddress === null) {
+        throw new Error("Missing the required parameter 'contractAddress' when calling getContractDetailsByAddress");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'contractAddress': contractAddress
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetContractDetailsByAddressR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/addresses/{contractAddress}/contract', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get Contract Details by Address
+     * Though this endpoint customers can obtain information about a smart contract and its details. This can be done by the `address` parameter, i.e. the address of the smart contract.    {note}This address is **not** the same as the smart contract creator address.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} contractAddress Defines the specific address of the contract.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetContractDetailsByAddressR}
+     */
+    getContractDetailsByAddress(blockchain, network, contractAddress, opts) {
+      return this.getContractDetailsByAddressWithHttpInfo(blockchain, network, contractAddress, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
      * List Tokens By Address
-     * Through this endpoint customers can obtain token data by providing an attribute - `address`.  The information that can be returned can include the contract address, the token symbol, type and balance.
+     * Through this endpoint customers can obtain token data by providing an attribute - `address`.  The information that can be returned can include the contract address, the token symbol, type and balance.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -56,7 +125,7 @@ export default class TokensApi {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensByAddressResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensByAddressR} and HTTP response
      */
     listTokensByAddressWithHttpInfo(blockchain, network, address, opts) {
       opts = opts || {};
@@ -92,7 +161,7 @@ export default class TokensApi {
       let authNames = ['ApiKey'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ListTokensByAddressResponse;
+      let returnType = ListTokensByAddressR;
       return this.apiClient.callApi(
         '/blockchain-data/{blockchain}/{network}/addresses/{address}/tokens', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -102,7 +171,7 @@ export default class TokensApi {
 
     /**
      * List Tokens By Address
-     * Through this endpoint customers can obtain token data by providing an attribute - `address`.  The information that can be returned can include the contract address, the token symbol, type and balance.
+     * Through this endpoint customers can obtain token data by providing an attribute - `address`.  The information that can be returned can include the contract address, the token symbol, type and balance.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -110,7 +179,7 @@ export default class TokensApi {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensByAddressResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensByAddressR}
      */
     listTokensByAddress(blockchain, network, address, opts) {
       return this.listTokensByAddressWithHttpInfo(blockchain, network, address, opts)
@@ -122,7 +191,7 @@ export default class TokensApi {
 
     /**
      * List Tokens Transfers By Address
-     * Through this endpoint customers can obtain a list with token transfers by the `address` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **tokens** not coins.{/note}
+     * Through this endpoint customers can obtain a list with token transfers by the `address` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **tokens** not coins.{/note}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -130,7 +199,7 @@ export default class TokensApi {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensTransfersByAddressResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensTransfersByAddressR} and HTTP response
      */
     listTokensTransfersByAddressWithHttpInfo(blockchain, network, address, opts) {
       opts = opts || {};
@@ -166,7 +235,7 @@ export default class TokensApi {
       let authNames = ['ApiKey'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ListTokensTransfersByAddressResponse;
+      let returnType = ListTokensTransfersByAddressR;
       return this.apiClient.callApi(
         '/blockchain-data/{blockchain}/{network}/addresses/{address}/tokens-transfers', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -176,7 +245,7 @@ export default class TokensApi {
 
     /**
      * List Tokens Transfers By Address
-     * Through this endpoint customers can obtain a list with token transfers by the `address` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **tokens** not coins.{/note}
+     * Through this endpoint customers can obtain a list with token transfers by the `address` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **tokens** not coins.{/note}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -184,7 +253,7 @@ export default class TokensApi {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensTransfersByAddressResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensTransfersByAddressR}
      */
     listTokensTransfersByAddress(blockchain, network, address, opts) {
       return this.listTokensTransfersByAddressWithHttpInfo(blockchain, network, address, opts)
@@ -196,7 +265,7 @@ export default class TokensApi {
 
     /**
      * List Tokens Transfers By Transaction Hash
-     * Through this endpoint customers can obtain a list with token transfers by the `transactionHash` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **tokens** not coins.{/note}
+     * Through this endpoint customers can obtain a list with token transfers by the `transactionHash` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **tokens** not coins.{/note}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} transactionHash Represents the hash of the transaction, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -204,7 +273,7 @@ export default class TokensApi {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensTransfersByTransactionHashResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensTransfersByTransactionHashR} and HTTP response
      */
     listTokensTransfersByTransactionHashWithHttpInfo(blockchain, network, transactionHash, opts) {
       opts = opts || {};
@@ -240,7 +309,7 @@ export default class TokensApi {
       let authNames = ['ApiKey'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ListTokensTransfersByTransactionHashResponse;
+      let returnType = ListTokensTransfersByTransactionHashR;
       return this.apiClient.callApi(
         '/blockchain-data/{blockchain}/{network}/transactions/{transactionHash}/tokens-transfers', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -250,7 +319,7 @@ export default class TokensApi {
 
     /**
      * List Tokens Transfers By Transaction Hash
-     * Through this endpoint customers can obtain a list with token transfers by the `transactionHash` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **tokens** not coins.{/note}
+     * Through this endpoint customers can obtain a list with token transfers by the `transactionHash` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **tokens** not coins.{/note}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} transactionHash Represents the hash of the transaction, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -258,7 +327,7 @@ export default class TokensApi {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensTransfersByTransactionHashResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensTransfersByTransactionHashR}
      */
     listTokensTransfersByTransactionHash(blockchain, network, transactionHash, opts) {
       return this.listTokensTransfersByTransactionHashWithHttpInfo(blockchain, network, transactionHash, opts)

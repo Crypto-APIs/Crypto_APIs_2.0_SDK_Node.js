@@ -1,4 +1,4 @@
-# CryptoApis.TokensForwardingSuccessEthereumerc20token
+# Cryptoapis.TokensForwardingSuccessEthereumerc20token
 
 ## Properties
 

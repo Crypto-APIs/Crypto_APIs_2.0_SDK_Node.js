@@ -1,4 +1,4 @@
-# CryptoApis.InvalidNetwork
+# Cryptoapis.InvalidNetwork
 
 ## Properties
 

@@ -17,7 +17,7 @@ import TokensForwardingAutomationsLimitReachedError from './TokensForwardingAuto
 /**
  * The TokensForwardingAutomationsLimitReached model module.
  * @module model/TokensForwardingAutomationsLimitReached
- * @version 2.0.0
+ * @version 1.1.0
  */
 class TokensForwardingAutomationsLimitReached {
     /**

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.BlockchainDataTransactionNotFound();
+    instance = new Cryptoapis.BlockchainDataTransactionNotFound();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('BlockchainDataTransactionNotFound', function() {
     it('should create an instance of BlockchainDataTransactionNotFound', function() {
       // uncomment below and update the code to test BlockchainDataTransactionNotFound
-      //var instane = new CryptoApis.BlockchainDataTransactionNotFound();
-      //expect(instance).to.be.a(CryptoApis.BlockchainDataTransactionNotFound);
+      //var instane = new Cryptoapis.BlockchainDataTransactionNotFound();
+      //expect(instance).to.be.a(Cryptoapis.BlockchainDataTransactionNotFound);
     });
 
     it('should have the property apiVersion (base name: "apiVersion")', function() {
       // uncomment below and update the code to test the property apiVersion
-      //var instance = new CryptoApis.BlockchainDataTransactionNotFound();
+      //var instance = new Cryptoapis.BlockchainDataTransactionNotFound();
       //expect(instance).to.be();
     });
 
     it('should have the property requestId (base name: "requestId")', function() {
       // uncomment below and update the code to test the property requestId
-      //var instance = new CryptoApis.BlockchainDataTransactionNotFound();
+      //var instance = new Cryptoapis.BlockchainDataTransactionNotFound();
       //expect(instance).to.be();
     });
 
     it('should have the property context (base name: "context")', function() {
       // uncomment below and update the code to test the property context
-      //var instance = new CryptoApis.BlockchainDataTransactionNotFound();
+      //var instance = new Cryptoapis.BlockchainDataTransactionNotFound();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new CryptoApis.BlockchainDataTransactionNotFound();
+      //var instance = new Cryptoapis.BlockchainDataTransactionNotFound();
       //expect(instance).to.be();
     });
 

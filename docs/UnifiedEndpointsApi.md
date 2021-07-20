@@ -1,4 +1,4 @@
-# CryptoApis.UnifiedEndpointsApi
+# Cryptoapis.UnifiedEndpointsApi
 
 All URIs are relative to *https://rest.cryptoapis.io/v2*
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 ## getAddressDetails
 
-> GetAddressDetailsResponse getAddressDetails(blockchain, network, address, opts)
+> GetAddressDetailsR getAddressDetails(blockchain, network, address, opts)
 
 Get Address Details
 
@@ -27,15 +27,15 @@ Through this endpoint the customer can receive basic information about a given a
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let address = mzYijhgmzZrmuB7wBDazRKirnChKyow4M3; // String | Represents the public address, which is a compressed and shortened form of a public key.
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetAddressDetailsResponse**](GetAddressDetailsResponse.md)
+[**GetAddressDetailsR**](GetAddressDetailsR.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 
 ## getBlockDetailsByBlockHash
 
-> GetBlockDetailsByBlockHashResponse getBlockDetailsByBlockHash(blockchain, network, blockHash, opts)
+> GetBlockDetailsByBlockHashR getBlockDetailsByBlockHash(blockchain, network, blockHash, opts)
 
 Get Block Details By Block Hash
 
@@ -85,15 +85,15 @@ Through this endpoint customers can obtain basic information about a given mined
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let blockHash = 0000000006b3f483bec16b8a85c632bdd30a14a202c83a9148002c9ee441dd0c; // String | Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetBlockDetailsByBlockHashResponse**](GetBlockDetailsByBlockHashResponse.md)
+[**GetBlockDetailsByBlockHashR**](GetBlockDetailsByBlockHashR.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 
 ## getBlockDetailsByBlockHeight
 
-> GetBlockDetailsByBlockHeightResponse getBlockDetailsByBlockHeight(blockchain, network, height, opts)
+> GetBlockDetailsByBlockHeightR getBlockDetailsByBlockHeight(blockchain, network, height, opts)
 
 Get Block Details By Block Height
 
@@ -143,15 +143,15 @@ Through this endpoint customers can obtain basic information about a given mined
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let height = 673852; // Number | Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
@@ -178,7 +178,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetBlockDetailsByBlockHeightResponse**](GetBlockDetailsByBlockHeightResponse.md)
+[**GetBlockDetailsByBlockHeightR**](GetBlockDetailsByBlockHeightR.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ## getFeeRecommendations
 
-> GetFeeRecommendationsResponse getFeeRecommendations(blockchain, network, opts)
+> GetFeeRecommendationsR getFeeRecommendations(blockchain, network, opts)
 
 Get Fee Recommendations
 
@@ -201,15 +201,15 @@ Through this endpoint customers can obtain fee recommendations. Our fees recomme
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
@@ -234,7 +234,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetFeeRecommendationsResponse**](GetFeeRecommendationsResponse.md)
+[**GetFeeRecommendationsR**](GetFeeRecommendationsR.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ Name | Type | Description  | Notes
 
 ## getLatestMinedBlock
 
-> GetLatestMinedBlockResponse getLatestMinedBlock(blockchain, network, opts)
+> GetLatestMinedBlockR getLatestMinedBlock(blockchain, network, opts)
 
 Get Latest Mined Block
 
@@ -257,15 +257,15 @@ Through this endpoint customers can fetch the last mined block in a specific blo
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
@@ -290,7 +290,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetLatestMinedBlockResponse**](GetLatestMinedBlockResponse.md)
+[**GetLatestMinedBlockR**](GetLatestMinedBlockR.md)
 
 ### Authorization
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 
 ## getTransactionDetailsByTransactionID
 
-> GetTransactionDetailsByTransactionIDResponse getTransactionDetailsByTransactionID(blockchain, network, transactionId, opts)
+> GetTransactionDetailsByTransactionIDR getTransactionDetailsByTransactionID(blockchain, network, transactionId, opts)
 
 Get Transaction Details By Transaction ID
 
@@ -313,15 +313,15 @@ Through this endpoint customers can obtain details about a transaction by the tr
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let transactionId = 4b66461bf88b61e1e4326356534c135129defb504c7acb2fd6c92697d79eb250; // String | Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
@@ -348,7 +348,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetTransactionDetailsByTransactionIDResponse**](GetTransactionDetailsByTransactionIDResponse.md)
+[**GetTransactionDetailsByTransactionIDR**](GetTransactionDetailsByTransactionIDR.md)
 
 ### Authorization
 
@@ -362,24 +362,24 @@ Name | Type | Description  | Notes
 
 ## listTransactionsByAddress
 
-> ListTransactionsByAddressResponse listTransactionsByAddress(blockchain, network, address, opts)
+> ListTransactionsByAddressR listTransactionsByAddress(blockchain, network, address, opts)
 
 List Transactions By Address
 
-This endpoint will list transactions by an attribute &#x60;address&#x60;. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.
+This endpoint will list transactions by an attribute &#x60;address&#x60;. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let address = mho4jHBcrNCncKt38trJahXakuaBnS7LK5; // String | Represents the public address, which is a compressed and shortened form of a public key.
@@ -410,7 +410,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListTransactionsByAddressResponse**](ListTransactionsByAddressResponse.md)
+[**ListTransactionsByAddressR**](ListTransactionsByAddressR.md)
 
 ### Authorization
 
@@ -424,24 +424,24 @@ Name | Type | Description  | Notes
 
 ## listTransactionsByBlockHash
 
-> ListTransactionsByBlockHashResponse listTransactionsByBlockHash(blockchain, network, blockHash, opts)
+> ListTransactionsByBlockHashR listTransactionsByBlockHash(blockchain, network, blockHash, opts)
 
 List Transactions by Block Hash
 
-This endpoint will list transactions by an attribute &#x60;transactionHash&#x60;. The transactions listed will detail additional information such as addresses, height, time of creation in Unix timestamp, etc.
+This endpoint will list transactions by an attribute &#x60;transactionHash&#x60;. The transactions listed will detail additional information such as addresses, height, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let blockHash = 00000000000000127080d8bcf84f4ad830a71ea0aadce3632579b6b2f26cd94b; // String | Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -472,7 +472,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListTransactionsByBlockHashResponse**](ListTransactionsByBlockHashResponse.md)
+[**ListTransactionsByBlockHashR**](ListTransactionsByBlockHashR.md)
 
 ### Authorization
 
@@ -486,24 +486,24 @@ Name | Type | Description  | Notes
 
 ## listTransactionsByBlockHeight
 
-> ListTransactionsByBlockHeightResponse listTransactionsByBlockHeight(blockchain, network, height, opts)
+> ListTransactionsByBlockHeightR listTransactionsByBlockHeight(blockchain, network, height, opts)
 
 List Transactions by Block Height
 
-This endpoint will list transactions by an attribute &#x60;blockHeight&#x60;. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.
+This endpoint will list transactions by an attribute &#x60;blockHeight&#x60;. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UnifiedEndpointsApi();
+let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let height = 673852; // Number | Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
@@ -534,7 +534,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListTransactionsByBlockHeightResponse**](ListTransactionsByBlockHeightResponse.md)
+[**ListTransactionsByBlockHeightR**](ListTransactionsByBlockHeightR.md)
 
 ### Authorization
 

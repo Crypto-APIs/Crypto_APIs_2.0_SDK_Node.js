@@ -1,4 +1,4 @@
-# CryptoApis.MissingApiKey
+# Cryptoapis.MissingApiKey
 
 ## Properties
 

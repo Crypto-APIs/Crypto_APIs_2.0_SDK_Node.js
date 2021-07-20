@@ -1,4 +1,4 @@
-# CryptoApis.ManageSubscriptionsApi
+# Cryptoapis.ManageSubscriptionsApi
 
 All URIs are relative to *https://rest.cryptoapis.io/v2*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## deleteBlockchainEventSubscription
 
-> DeleteBlockchainEventSubscriptionResponse deleteBlockchainEventSubscription(blockchain, network, referenceId, opts)
+> DeleteBlockchainEventSubscriptionR deleteBlockchainEventSubscription(blockchain, network, referenceId, opts)
 
 Delete Blockchain Event Subscription
 
@@ -20,15 +20,15 @@ Through this endpoint the customer can delete blockchain event subscriptions the
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.ManageSubscriptionsApi();
+let apiInstance = new Cryptoapis.ManageSubscriptionsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let referenceId = d3fd6a0e-f2b6-4bb5-9fd3-7944bcec9e9f; // String | Represents a unique ID used to reference the specific callback subscription.
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DeleteBlockchainEventSubscriptionResponse**](DeleteBlockchainEventSubscriptionResponse.md)
+[**DeleteBlockchainEventSubscriptionR**](DeleteBlockchainEventSubscriptionR.md)
 
 ### Authorization
 
@@ -69,24 +69,24 @@ Name | Type | Description  | Notes
 
 ## listBlockchainEventsSubscriptions
 
-> ListBlockchainEventsSubscriptionsResponse listBlockchainEventsSubscriptions(blockchain, network, opts)
+> ListBlockchainEventsSubscriptionsR listBlockchainEventsSubscriptions(blockchain, network, opts)
 
 List Blockchain Events Subscriptions
 
-Through this endpoint the customer can obtain a list of their callback subscriptions for the available Blockchain events.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+Through this endpoint the customer can obtain a list of their callback subscriptions for the available Blockchain events.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.ManageSubscriptionsApi();
+let apiInstance = new Cryptoapis.ManageSubscriptionsApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
@@ -115,7 +115,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListBlockchainEventsSubscriptionsResponse**](ListBlockchainEventsSubscriptionsResponse.md)
+[**ListBlockchainEventsSubscriptionsR**](ListBlockchainEventsSubscriptionsR.md)
 
 ### Authorization
 

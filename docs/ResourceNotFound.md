@@ -1,4 +1,4 @@
-# CryptoApis.ResourceNotFound
+# Cryptoapis.ResourceNotFound
 
 ## Properties
 

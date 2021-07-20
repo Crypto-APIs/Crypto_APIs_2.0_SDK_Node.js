@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidBlockchain model module.
  * @module model/InvalidBlockchain
- * @version 2.0.0
+ * @version 1.1.0
  */
 var InvalidBlockchain = /*#__PURE__*/function () {
   /**

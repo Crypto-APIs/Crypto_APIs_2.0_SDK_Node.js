@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.TransactionMinedDataItem();
+    instance = new Cryptoapis.TransactionMinedDataItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('TransactionMinedDataItem', function() {
     it('should create an instance of TransactionMinedDataItem', function() {
       // uncomment below and update the code to test TransactionMinedDataItem
-      //var instane = new CryptoApis.TransactionMinedDataItem();
-      //expect(instance).to.be.a(CryptoApis.TransactionMinedDataItem);
+      //var instane = new Cryptoapis.TransactionMinedDataItem();
+      //expect(instance).to.be.a(Cryptoapis.TransactionMinedDataItem);
     });
 
     it('should have the property blockchain (base name: "blockchain")', function() {
       // uncomment below and update the code to test the property blockchain
-      //var instance = new CryptoApis.TransactionMinedDataItem();
+      //var instance = new Cryptoapis.TransactionMinedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property network (base name: "network")', function() {
       // uncomment below and update the code to test the property network
-      //var instance = new CryptoApis.TransactionMinedDataItem();
+      //var instance = new Cryptoapis.TransactionMinedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property transactionId (base name: "transactionId")', function() {
       // uncomment below and update the code to test the property transactionId
-      //var instance = new CryptoApis.TransactionMinedDataItem();
+      //var instance = new Cryptoapis.TransactionMinedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property minedInBlock (base name: "minedInBlock")', function() {
       // uncomment below and update the code to test the property minedInBlock
-      //var instance = new CryptoApis.TransactionMinedDataItem();
+      //var instance = new Cryptoapis.TransactionMinedDataItem();
       //expect(instance).to.be();
     });
 

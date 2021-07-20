@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.CoinsForwardingSuccess();
+    instance = new Cryptoapis.CoinsForwardingSuccess();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('CoinsForwardingSuccess', function() {
     it('should create an instance of CoinsForwardingSuccess', function() {
       // uncomment below and update the code to test CoinsForwardingSuccess
-      //var instane = new CryptoApis.CoinsForwardingSuccess();
-      //expect(instance).to.be.a(CryptoApis.CoinsForwardingSuccess);
+      //var instane = new Cryptoapis.CoinsForwardingSuccess();
+      //expect(instance).to.be.a(Cryptoapis.CoinsForwardingSuccess);
     });
 
     it('should have the property apiVersion (base name: "apiVersion")', function() {
       // uncomment below and update the code to test the property apiVersion
-      //var instance = new CryptoApis.CoinsForwardingSuccess();
+      //var instance = new Cryptoapis.CoinsForwardingSuccess();
       //expect(instance).to.be();
     });
 
     it('should have the property referenceId (base name: "referenceId")', function() {
       // uncomment below and update the code to test the property referenceId
-      //var instance = new CryptoApis.CoinsForwardingSuccess();
+      //var instance = new Cryptoapis.CoinsForwardingSuccess();
       //expect(instance).to.be();
     });
 
     it('should have the property idempotencyKey (base name: "idempotencyKey")', function() {
       // uncomment below and update the code to test the property idempotencyKey
-      //var instance = new CryptoApis.CoinsForwardingSuccess();
+      //var instance = new Cryptoapis.CoinsForwardingSuccess();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new CryptoApis.CoinsForwardingSuccess();
+      //var instance = new Cryptoapis.CoinsForwardingSuccess();
       //expect(instance).to.be();
     });
 

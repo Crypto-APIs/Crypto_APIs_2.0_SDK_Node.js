@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.TransactionMinedDataItemMinedInBlock();
+    instance = new Cryptoapis.TransactionMinedDataItemMinedInBlock();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('TransactionMinedDataItemMinedInBlock', function() {
     it('should create an instance of TransactionMinedDataItemMinedInBlock', function() {
       // uncomment below and update the code to test TransactionMinedDataItemMinedInBlock
-      //var instane = new CryptoApis.TransactionMinedDataItemMinedInBlock();
-      //expect(instance).to.be.a(CryptoApis.TransactionMinedDataItemMinedInBlock);
+      //var instane = new Cryptoapis.TransactionMinedDataItemMinedInBlock();
+      //expect(instance).to.be.a(Cryptoapis.TransactionMinedDataItemMinedInBlock);
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new CryptoApis.TransactionMinedDataItemMinedInBlock();
+      //var instance = new Cryptoapis.TransactionMinedDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 
     it('should have the property hash (base name: "hash")', function() {
       // uncomment below and update the code to test the property hash
-      //var instance = new CryptoApis.TransactionMinedDataItemMinedInBlock();
+      //var instance = new Cryptoapis.TransactionMinedDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 
     it('should have the property timestamp (base name: "timestamp")', function() {
       // uncomment below and update the code to test the property timestamp
-      //var instance = new CryptoApis.TransactionMinedDataItemMinedInBlock();
+      //var instance = new Cryptoapis.TransactionMinedDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 

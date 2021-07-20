@@ -1,4 +1,4 @@
-# CryptoApis.RequestLimitReachedError
+# Cryptoapis.RequestLimitReachedError
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressTokensTransactionUnconfirmedEthereumerc721token();
+    instance = new Cryptoapis.AddressTokensTransactionUnconfirmedEthereumerc721token();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('AddressTokensTransactionUnconfirmedEthereumerc721token', function() {
     it('should create an instance of AddressTokensTransactionUnconfirmedEthereumerc721token', function() {
       // uncomment below and update the code to test AddressTokensTransactionUnconfirmedEthereumerc721token
-      //var instane = new CryptoApis.AddressTokensTransactionUnconfirmedEthereumerc721token();
-      //expect(instance).to.be.a(CryptoApis.AddressTokensTransactionUnconfirmedEthereumerc721token);
+      //var instane = new Cryptoapis.AddressTokensTransactionUnconfirmedEthereumerc721token();
+      //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionUnconfirmedEthereumerc721token);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new CryptoApis.AddressTokensTransactionUnconfirmedEthereumerc721token();
+      //var instance = new Cryptoapis.AddressTokensTransactionUnconfirmedEthereumerc721token();
       //expect(instance).to.be();
     });
 
     it('should have the property symbol (base name: "symbol")', function() {
       // uncomment below and update the code to test the property symbol
-      //var instance = new CryptoApis.AddressTokensTransactionUnconfirmedEthereumerc721token();
+      //var instance = new Cryptoapis.AddressTokensTransactionUnconfirmedEthereumerc721token();
       //expect(instance).to.be();
     });
 
     it('should have the property tokenId (base name: "tokenId")', function() {
       // uncomment below and update the code to test the property tokenId
-      //var instance = new CryptoApis.AddressTokensTransactionUnconfirmedEthereumerc721token();
+      //var instance = new Cryptoapis.AddressTokensTransactionUnconfirmedEthereumerc721token();
       //expect(instance).to.be();
     });
 
     it('should have the property contractAddress (base name: "contractAddress")', function() {
       // uncomment below and update the code to test the property contractAddress
-      //var instance = new CryptoApis.AddressTokensTransactionUnconfirmedEthereumerc721token();
+      //var instance = new Cryptoapis.AddressTokensTransactionUnconfirmedEthereumerc721token();
       //expect(instance).to.be();
     });
 

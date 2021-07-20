@@ -1,4 +1,4 @@
-# CryptoApis.AddressTokensTransactionConfirmedDataItemMinedInBlock
+# Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock
 
 ## Properties
 

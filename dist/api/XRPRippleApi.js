@@ -9,15 +9,15 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
 
-var _GetLatestMinedXRPRippleBlockResponse = _interopRequireDefault(require("../model/GetLatestMinedXRPRippleBlockResponse"));
+var _GetLatestMinedXRPRippleBlockR = _interopRequireDefault(require("../model/GetLatestMinedXRPRippleBlockR"));
 
-var _GetXRPRippleAddressDetailsResponse = _interopRequireDefault(require("../model/GetXRPRippleAddressDetailsResponse"));
+var _GetXRPRippleAddressDetailsR = _interopRequireDefault(require("../model/GetXRPRippleAddressDetailsR"));
 
-var _GetXRPRippleBlockDetailsByBlockHashResponse = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHashResponse"));
+var _GetXRPRippleBlockDetailsByBlockHashR = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHashR"));
 
-var _GetXRPRippleBlockDetailsByBlockHeightResponse = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHeightResponse"));
+var _GetXRPRippleBlockDetailsByBlockHeightR = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHeightR"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponse = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionIDResponse"));
+var _GetXRPRippleTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionIDR"));
 
 var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
 
@@ -29,9 +29,11 @@ var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPaginat
 
 var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
 
-var _ListXRPRippleTransactionsByAddressResponse = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressResponse"));
+var _ListXRPRippleTransactionsByAddressR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressR"));
 
-var _ListXRPRippleTransactionsByBlockHashResponse = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHashResponse"));
+var _ListXRPRippleTransactionsByBlockHashR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHashR"));
+
+var _ListXRPRippleTransactionsByBlockHeightR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHeightR"));
 
 var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
@@ -52,7 +54,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 2.0.0
+* @version 1.1.0
 */
 var XRPRippleApi = /*#__PURE__*/function () {
   /**
@@ -73,7 +75,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
    * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetLatestMinedXRPRippleBlockResponse} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetLatestMinedXRPRippleBlockR} and HTTP response
    */
 
 
@@ -98,8 +100,8 @@ var XRPRippleApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetLatestMinedXRPRippleBlockResponse["default"];
-      return this.apiClient.callApi('/blockchain-data/xrp/{network}/blocks/last', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      var returnType = _GetLatestMinedXRPRippleBlockR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/blocks/last', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * Get Latest Mined XRP (Ripple) Block
@@ -107,7 +109,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetLatestMinedXRPRippleBlockResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetLatestMinedXRPRippleBlockR}
      */
 
   }, {
@@ -124,7 +126,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetXRPRippleAddressDetailsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetXRPRippleAddressDetailsR} and HTTP response
      */
 
   }, {
@@ -154,8 +156,8 @@ var XRPRippleApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetXRPRippleAddressDetailsResponse["default"];
-      return this.apiClient.callApi('/blockchain-data/xrp/{network}/addresses/{address}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      var returnType = _GetXRPRippleAddressDetailsR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/addresses/{address}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * Get XRP (Ripple) Address Details
@@ -164,7 +166,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetXRPRippleAddressDetailsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetXRPRippleAddressDetailsR}
      */
 
   }, {
@@ -181,7 +183,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetXRPRippleBlockDetailsByBlockHashResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetXRPRippleBlockDetailsByBlockHashR} and HTTP response
      */
 
   }, {
@@ -211,8 +213,8 @@ var XRPRippleApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetXRPRippleBlockDetailsByBlockHashResponse["default"];
-      return this.apiClient.callApi('/blockchain-data/xrp/{network}/blocks/hash/{blockHash}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      var returnType = _GetXRPRippleBlockDetailsByBlockHashR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/blocks/hash/{blockHash}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * Get XRP (Ripple) Block Details By Block Hash
@@ -221,7 +223,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetXRPRippleBlockDetailsByBlockHashResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetXRPRippleBlockDetailsByBlockHashR}
      */
 
   }, {
@@ -235,30 +237,30 @@ var XRPRippleApi = /*#__PURE__*/function () {
      * Get XRP (Ripple) Block Details By Block Height
      * Through this endpoint customers can obtain basic information about a given XRP block (a block on the XRP blockchain), specifically by using the `height` parameter. These block details could include the hash of the specific, the previous and the next block, its transactions count, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\",  are test networks.
-     * @param {String} height Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
+     * @param {String} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetXRPRippleBlockDetailsByBlockHeightResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetXRPRippleBlockDetailsByBlockHeightR} and HTTP response
      */
 
   }, {
     key: "getXRPRippleBlockDetailsByBlockHeightWithHttpInfo",
-    value: function getXRPRippleBlockDetailsByBlockHeightWithHttpInfo(network, height, opts) {
+    value: function getXRPRippleBlockDetailsByBlockHeightWithHttpInfo(network, blockHeight, opts) {
       opts = opts || {};
       var postBody = null; // verify the required parameter 'network' is set
 
       if (network === undefined || network === null) {
         throw new Error("Missing the required parameter 'network' when calling getXRPRippleBlockDetailsByBlockHeight");
-      } // verify the required parameter 'height' is set
+      } // verify the required parameter 'blockHeight' is set
 
 
-      if (height === undefined || height === null) {
-        throw new Error("Missing the required parameter 'height' when calling getXRPRippleBlockDetailsByBlockHeight");
+      if (blockHeight === undefined || blockHeight === null) {
+        throw new Error("Missing the required parameter 'blockHeight' when calling getXRPRippleBlockDetailsByBlockHeight");
       }
 
       var pathParams = {
         'network': network,
-        'height': height
+        'blockHeight': blockHeight
       };
       var queryParams = {
         'context': opts['context']
@@ -268,23 +270,23 @@ var XRPRippleApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetXRPRippleBlockDetailsByBlockHeightResponse["default"];
-      return this.apiClient.callApi('/blockchain-data/xrp/{network}/blocks/height/{height}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      var returnType = _GetXRPRippleBlockDetailsByBlockHeightR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/blocks/height/{blockHeight}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * Get XRP (Ripple) Block Details By Block Height
      * Through this endpoint customers can obtain basic information about a given XRP block (a block on the XRP blockchain), specifically by using the `height` parameter. These block details could include the hash of the specific, the previous and the next block, its transactions count, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\",  are test networks.
-     * @param {String} height Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
+     * @param {String} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetXRPRippleBlockDetailsByBlockHeightResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetXRPRippleBlockDetailsByBlockHeightR}
      */
 
   }, {
     key: "getXRPRippleBlockDetailsByBlockHeight",
-    value: function getXRPRippleBlockDetailsByBlockHeight(network, height, opts) {
-      return this.getXRPRippleBlockDetailsByBlockHeightWithHttpInfo(network, height, opts).then(function (response_and_data) {
+    value: function getXRPRippleBlockDetailsByBlockHeight(network, blockHeight, opts) {
+      return this.getXRPRippleBlockDetailsByBlockHeightWithHttpInfo(network, blockHeight, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }
@@ -295,7 +297,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
      * @param {String} transactionHash Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetXRPRippleTransactionDetailsByTransactionIDResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetXRPRippleTransactionDetailsByTransactionIDR} and HTTP response
      */
 
   }, {
@@ -325,8 +327,8 @@ var XRPRippleApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetXRPRippleTransactionDetailsByTransactionIDResponse["default"];
-      return this.apiClient.callApi('/blockchain-data/xrp/{network}/transactions/{transactionHash}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      var returnType = _GetXRPRippleTransactionDetailsByTransactionIDR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/transactions/{transactionHash}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * Get XRP (Ripple) Transaction Details By Transaction ID
@@ -335,7 +337,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
      * @param {String} transactionHash Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetXRPRippleTransactionDetailsByTransactionIDResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetXRPRippleTransactionDetailsByTransactionIDR}
      */
 
   }, {
@@ -347,14 +349,14 @@ var XRPRippleApi = /*#__PURE__*/function () {
     }
     /**
      * List XRP (Ripple) Transactions by Address
-     * This endpoint will list XRP transactions by a attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
+     * This endpoint will list XRP transactions by a attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\",  are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListXRPRippleTransactionsByAddressResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListXRPRippleTransactionsByAddressR} and HTTP response
      */
 
   }, {
@@ -386,19 +388,19 @@ var XRPRippleApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListXRPRippleTransactionsByAddressResponse["default"];
-      return this.apiClient.callApi('/blockchain-data/xrp/{network}/addresses/{address}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      var returnType = _ListXRPRippleTransactionsByAddressR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/addresses/{address}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List XRP (Ripple) Transactions by Address
-     * This endpoint will list XRP transactions by a attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
+     * This endpoint will list XRP transactions by a attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\",  are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListXRPRippleTransactionsByAddressResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListXRPRippleTransactionsByAddressR}
      */
 
   }, {
@@ -410,14 +412,14 @@ var XRPRippleApi = /*#__PURE__*/function () {
     }
     /**
      * List XRP (Ripple) Transactions By Block Hash
-     * This endpoint will list transactions by an attribute `blockHash`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
+     * This endpoint will list transactions by an attribute `blockHash`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListXRPRippleTransactionsByBlockHashResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListXRPRippleTransactionsByBlockHashR} and HTTP response
      */
 
   }, {
@@ -449,25 +451,88 @@ var XRPRippleApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListXRPRippleTransactionsByBlockHashResponse["default"];
-      return this.apiClient.callApi('/blockchain-data/xrp/{network}/blocks/hash/{blockHash}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      var returnType = _ListXRPRippleTransactionsByBlockHashR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/blocks/hash/{blockHash}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List XRP (Ripple) Transactions By Block Hash
-     * This endpoint will list transactions by an attribute `blockHash`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
+     * This endpoint will list transactions by an attribute `blockHash`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListXRPRippleTransactionsByBlockHashResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListXRPRippleTransactionsByBlockHashR}
      */
 
   }, {
     key: "listXRPRippleTransactionsByBlockHash",
     value: function listXRPRippleTransactionsByBlockHash(network, blockHash, opts) {
       return this.listXRPRippleTransactionsByBlockHashWithHttpInfo(network, blockHash, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List XRP (Ripple) Transactions By Block Height
+     * This endpoint will list transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Number} blockHeight 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListXRPRippleTransactionsByBlockHeightR} and HTTP response
+     */
+
+  }, {
+    key: "listXRPRippleTransactionsByBlockHeightWithHttpInfo",
+    value: function listXRPRippleTransactionsByBlockHeightWithHttpInfo(network, blockHeight, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'network' is set
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listXRPRippleTransactionsByBlockHeight");
+      } // verify the required parameter 'blockHeight' is set
+
+
+      if (blockHeight === undefined || blockHeight === null) {
+        throw new Error("Missing the required parameter 'blockHeight' when calling listXRPRippleTransactionsByBlockHeight");
+      }
+
+      var pathParams = {
+        'network': network,
+        'blockHeight': blockHeight
+      };
+      var queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListXRPRippleTransactionsByBlockHeightR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/blocks/height/{blockHeight}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List XRP (Ripple) Transactions By Block Height
+     * This endpoint will list transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Number} blockHeight 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListXRPRippleTransactionsByBlockHeightR}
+     */
+
+  }, {
+    key: "listXRPRippleTransactionsByBlockHeight",
+    value: function listXRPRippleTransactionsByBlockHeight(network, blockHeight, opts) {
+      return this.listXRPRippleTransactionsByBlockHeightWithHttpInfo(network, blockHeight, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

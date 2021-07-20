@@ -1,4 +1,4 @@
-# CryptoApis.InvalidBlockchainError
+# Cryptoapis.InvalidBlockchainError
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.CoinsForwardingFailDataItem();
+    instance = new Cryptoapis.CoinsForwardingFailDataItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('CoinsForwardingFailDataItem', function() {
     it('should create an instance of CoinsForwardingFailDataItem', function() {
       // uncomment below and update the code to test CoinsForwardingFailDataItem
-      //var instane = new CryptoApis.CoinsForwardingFailDataItem();
-      //expect(instance).to.be.a(CryptoApis.CoinsForwardingFailDataItem);
+      //var instane = new Cryptoapis.CoinsForwardingFailDataItem();
+      //expect(instance).to.be.a(Cryptoapis.CoinsForwardingFailDataItem);
     });
 
     it('should have the property blockchain (base name: "blockchain")', function() {
       // uncomment below and update the code to test the property blockchain
-      //var instance = new CryptoApis.CoinsForwardingFailDataItem();
+      //var instance = new Cryptoapis.CoinsForwardingFailDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property network (base name: "network")', function() {
       // uncomment below and update the code to test the property network
-      //var instance = new CryptoApis.CoinsForwardingFailDataItem();
+      //var instance = new Cryptoapis.CoinsForwardingFailDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property fromAddress (base name: "fromAddress")', function() {
       // uncomment below and update the code to test the property fromAddress
-      //var instance = new CryptoApis.CoinsForwardingFailDataItem();
+      //var instance = new Cryptoapis.CoinsForwardingFailDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property toAddress (base name: "toAddress")', function() {
       // uncomment below and update the code to test the property toAddress
-      //var instance = new CryptoApis.CoinsForwardingFailDataItem();
+      //var instance = new Cryptoapis.CoinsForwardingFailDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property triggerTransactionId (base name: "triggerTransactionId")', function() {
       // uncomment below and update the code to test the property triggerTransactionId
-      //var instance = new CryptoApis.CoinsForwardingFailDataItem();
+      //var instance = new Cryptoapis.CoinsForwardingFailDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property errorCode (base name: "errorCode")', function() {
       // uncomment below and update the code to test the property errorCode
-      //var instance = new CryptoApis.CoinsForwardingFailDataItem();
+      //var instance = new Cryptoapis.CoinsForwardingFailDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property errorMessage (base name: "errorMessage")', function() {
       // uncomment below and update the code to test the property errorMessage
-      //var instance = new CryptoApis.CoinsForwardingFailDataItem();
+      //var instance = new Cryptoapis.CoinsForwardingFailDataItem();
       //expect(instance).to.be();
     });
 

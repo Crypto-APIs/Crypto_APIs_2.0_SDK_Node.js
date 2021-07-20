@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressTokensTransactionUnconfirmedData();
+    instance = new Cryptoapis.AddressTokensTransactionUnconfirmedData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('AddressTokensTransactionUnconfirmedData', function() {
     it('should create an instance of AddressTokensTransactionUnconfirmedData', function() {
       // uncomment below and update the code to test AddressTokensTransactionUnconfirmedData
-      //var instane = new CryptoApis.AddressTokensTransactionUnconfirmedData();
-      //expect(instance).to.be.a(CryptoApis.AddressTokensTransactionUnconfirmedData);
+      //var instane = new Cryptoapis.AddressTokensTransactionUnconfirmedData();
+      //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionUnconfirmedData);
     });
 
     it('should have the property product (base name: "product")', function() {
       // uncomment below and update the code to test the property product
-      //var instance = new CryptoApis.AddressTokensTransactionUnconfirmedData();
+      //var instance = new Cryptoapis.AddressTokensTransactionUnconfirmedData();
       //expect(instance).to.be();
     });
 
     it('should have the property event (base name: "event")', function() {
       // uncomment below and update the code to test the property event
-      //var instance = new CryptoApis.AddressTokensTransactionUnconfirmedData();
+      //var instance = new Cryptoapis.AddressTokensTransactionUnconfirmedData();
       //expect(instance).to.be();
     });
 
     it('should have the property item (base name: "item")', function() {
       // uncomment below and update the code to test the property item
-      //var instance = new CryptoApis.AddressTokensTransactionUnconfirmedData();
+      //var instance = new Cryptoapis.AddressTokensTransactionUnconfirmedData();
       //expect(instance).to.be();
     });
 

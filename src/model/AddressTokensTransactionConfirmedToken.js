@@ -19,7 +19,7 @@ import AddressTokensTransactionConfirmedOmnilayertoken from './AddressTokensTran
 /**
  * The AddressTokensTransactionConfirmedToken model module.
  * @module model/AddressTokensTransactionConfirmedToken
- * @version 2.0.0
+ * @version 1.1.0
  */
 class AddressTokensTransactionConfirmedToken {
     /**

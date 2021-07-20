@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.TokensForwardingSuccessOmnilayertoken();
+    instance = new Cryptoapis.TokensForwardingSuccessOmnilayertoken();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('TokensForwardingSuccessOmnilayertoken', function() {
     it('should create an instance of TokensForwardingSuccessOmnilayertoken', function() {
       // uncomment below and update the code to test TokensForwardingSuccessOmnilayertoken
-      //var instane = new CryptoApis.TokensForwardingSuccessOmnilayertoken();
-      //expect(instance).to.be.a(CryptoApis.TokensForwardingSuccessOmnilayertoken);
+      //var instane = new Cryptoapis.TokensForwardingSuccessOmnilayertoken();
+      //expect(instance).to.be.a(Cryptoapis.TokensForwardingSuccessOmnilayertoken);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new CryptoApis.TokensForwardingSuccessOmnilayertoken();
+      //var instance = new Cryptoapis.TokensForwardingSuccessOmnilayertoken();
       //expect(instance).to.be();
     });
 
     it('should have the property propertyId (base name: "propertyId")', function() {
       // uncomment below and update the code to test the property propertyId
-      //var instance = new CryptoApis.TokensForwardingSuccessOmnilayertoken();
+      //var instance = new Cryptoapis.TokensForwardingSuccessOmnilayertoken();
       //expect(instance).to.be();
     });
 
     it('should have the property transactionType (base name: "transactionType")', function() {
       // uncomment below and update the code to test the property transactionType
-      //var instance = new CryptoApis.TokensForwardingSuccessOmnilayertoken();
+      //var instance = new Cryptoapis.TokensForwardingSuccessOmnilayertoken();
       //expect(instance).to.be();
     });
 
     it('should have the property createdByTransactionId (base name: "createdByTransactionId")', function() {
       // uncomment below and update the code to test the property createdByTransactionId
-      //var instance = new CryptoApis.TokensForwardingSuccessOmnilayertoken();
+      //var instance = new Cryptoapis.TokensForwardingSuccessOmnilayertoken();
       //expect(instance).to.be();
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instance = new CryptoApis.TokensForwardingSuccessOmnilayertoken();
+      //var instance = new Cryptoapis.TokensForwardingSuccessOmnilayertoken();
       //expect(instance).to.be();
     });
 

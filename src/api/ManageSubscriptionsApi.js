@@ -13,14 +13,14 @@
 
 
 import ApiClient from "../ApiClient";
-import DeleteBlockchainEventSubscriptionResponse from '../model/DeleteBlockchainEventSubscriptionResponse';
+import DeleteBlockchainEventSubscriptionR from '../model/DeleteBlockchainEventSubscriptionR';
 import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import InsufficientCredits from '../model/InsufficientCredits';
 import InvalidApiKey from '../model/InvalidApiKey';
 import InvalidData from '../model/InvalidData';
 import InvalidPagination from '../model/InvalidPagination';
 import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
-import ListBlockchainEventsSubscriptionsResponse from '../model/ListBlockchainEventsSubscriptionsResponse';
+import ListBlockchainEventsSubscriptionsR from '../model/ListBlockchainEventsSubscriptionsR';
 import RequestLimitReached from '../model/RequestLimitReached';
 import ResourceNotFound from '../model/ResourceNotFound';
 import UnexpectedServerError from '../model/UnexpectedServerError';
@@ -29,7 +29,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * ManageSubscriptions service.
 * @module api/ManageSubscriptionsApi
-* @version 2.0.0
+* @version 1.1.0
 */
 export default class ManageSubscriptionsApi {
 
@@ -54,7 +54,7 @@ export default class ManageSubscriptionsApi {
      * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteBlockchainEventSubscriptionResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteBlockchainEventSubscriptionR} and HTTP response
      */
     deleteBlockchainEventSubscriptionWithHttpInfo(blockchain, network, referenceId, opts) {
       opts = opts || {};
@@ -88,7 +88,7 @@ export default class ManageSubscriptionsApi {
       let authNames = ['ApiKey'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = DeleteBlockchainEventSubscriptionResponse;
+      let returnType = DeleteBlockchainEventSubscriptionR;
       return this.apiClient.callApi(
         '/blockchain-events/{blockchain}/{network}/subscriptions/{referenceId}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -104,7 +104,7 @@ export default class ManageSubscriptionsApi {
      * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DeleteBlockchainEventSubscriptionResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DeleteBlockchainEventSubscriptionR}
      */
     deleteBlockchainEventSubscription(blockchain, network, referenceId, opts) {
       return this.deleteBlockchainEventSubscriptionWithHttpInfo(blockchain, network, referenceId, opts)
@@ -116,14 +116,14 @@ export default class ManageSubscriptionsApi {
 
     /**
      * List Blockchain Events Subscriptions
-     * Through this endpoint the customer can obtain a list of their callback subscriptions for the available Blockchain events.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * Through this endpoint the customer can obtain a list of their callback subscriptions for the available Blockchain events.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListBlockchainEventsSubscriptionsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListBlockchainEventsSubscriptionsR} and HTTP response
      */
     listBlockchainEventsSubscriptionsWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
@@ -154,7 +154,7 @@ export default class ManageSubscriptionsApi {
       let authNames = ['ApiKey'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ListBlockchainEventsSubscriptionsResponse;
+      let returnType = ListBlockchainEventsSubscriptionsR;
       return this.apiClient.callApi(
         '/blockchain-events/{blockchain}/{network}/subscriptions', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -164,14 +164,14 @@ export default class ManageSubscriptionsApi {
 
     /**
      * List Blockchain Events Subscriptions
-     * Through this endpoint the customer can obtain a list of their callback subscriptions for the available Blockchain events.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * Through this endpoint the customer can obtain a list of their callback subscriptions for the available Blockchain events.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListBlockchainEventsSubscriptionsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListBlockchainEventsSubscriptionsR}
      */
     listBlockchainEventsSubscriptions(blockchain, network, opts) {
       return this.listBlockchainEventsSubscriptionsWithHttpInfo(blockchain, network, opts)

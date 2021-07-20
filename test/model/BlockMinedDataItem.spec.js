@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.BlockMinedDataItem();
+    instance = new Cryptoapis.BlockMinedDataItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('BlockMinedDataItem', function() {
     it('should create an instance of BlockMinedDataItem', function() {
       // uncomment below and update the code to test BlockMinedDataItem
-      //var instane = new CryptoApis.BlockMinedDataItem();
-      //expect(instance).to.be.a(CryptoApis.BlockMinedDataItem);
+      //var instane = new Cryptoapis.BlockMinedDataItem();
+      //expect(instance).to.be.a(Cryptoapis.BlockMinedDataItem);
     });
 
     it('should have the property blockchain (base name: "blockchain")', function() {
       // uncomment below and update the code to test the property blockchain
-      //var instance = new CryptoApis.BlockMinedDataItem();
+      //var instance = new Cryptoapis.BlockMinedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property network (base name: "network")', function() {
       // uncomment below and update the code to test the property network
-      //var instance = new CryptoApis.BlockMinedDataItem();
+      //var instance = new Cryptoapis.BlockMinedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new CryptoApis.BlockMinedDataItem();
+      //var instance = new Cryptoapis.BlockMinedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property hash (base name: "hash")', function() {
       // uncomment below and update the code to test the property hash
-      //var instance = new CryptoApis.BlockMinedDataItem();
+      //var instance = new Cryptoapis.BlockMinedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property timestamp (base name: "timestamp")', function() {
       // uncomment below and update the code to test the property timestamp
-      //var instance = new CryptoApis.BlockMinedDataItem();
+      //var instance = new Cryptoapis.BlockMinedDataItem();
       //expect(instance).to.be();
     });
 

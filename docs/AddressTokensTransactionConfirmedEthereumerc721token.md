@@ -1,4 +1,4 @@
-# CryptoApis.AddressTokensTransactionConfirmedEthereumerc721token
+# Cryptoapis.AddressTokensTransactionConfirmedEthereumerc721token
 
 ## Properties
 

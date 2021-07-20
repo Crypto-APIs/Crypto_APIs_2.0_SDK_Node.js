@@ -1,4 +1,4 @@
-# CryptoApis.TransactionMinedDataItemMinedInBlock
+# Cryptoapis.TransactionMinedDataItemMinedInBlock
 
 ## Properties
 

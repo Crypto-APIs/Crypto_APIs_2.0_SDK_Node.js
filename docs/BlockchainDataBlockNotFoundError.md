@@ -1,4 +1,4 @@
-# CryptoApis.BlockchainDataBlockNotFoundError
+# Cryptoapis.BlockchainDataBlockNotFoundError
 
 ## Properties
 

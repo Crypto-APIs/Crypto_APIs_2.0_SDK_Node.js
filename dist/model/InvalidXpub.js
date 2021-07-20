@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidXpub model module.
  * @module model/InvalidXpub
- * @version 2.0.0
+ * @version 1.1.0
  */
 var InvalidXpub = /*#__PURE__*/function () {
   /**

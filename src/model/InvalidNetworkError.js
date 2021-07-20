@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The InvalidNetworkError model module.
  * @module model/InvalidNetworkError
- * @version 2.0.0
+ * @version 1.1.0
  */
 class InvalidNetworkError {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The LimitGreaterThanAllowed model module.
  * @module model/LimitGreaterThanAllowed
- * @version 2.0.0
+ * @version 1.1.0
  */
 var LimitGreaterThanAllowed = /*#__PURE__*/function () {
   /**

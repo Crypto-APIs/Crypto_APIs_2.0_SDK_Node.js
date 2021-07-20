@@ -19,7 +19,7 @@ import InvalidApiKey from '../model/InvalidApiKey';
 import InvalidData from '../model/InvalidData';
 import InvalidPagination from '../model/InvalidPagination';
 import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
-import ListSupportedAssetsResponse from '../model/ListSupportedAssetsResponse';
+import ListSupportedAssetsR from '../model/ListSupportedAssetsR';
 import RequestLimitReached from '../model/RequestLimitReached';
 import UnexpectedServerError from '../model/UnexpectedServerError';
 import UnsupportedMediaType from '../model/UnsupportedMediaType';
@@ -27,7 +27,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 2.0.0
+* @version 1.1.0
 */
 export default class MetadataApi {
 
@@ -46,13 +46,13 @@ export default class MetadataApi {
 
     /**
      * List Supported Assets
-     * This endpoint will return a list of supported assets. The asset could be a cryptocurrency or FIAT assets that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".
+     * This endpoint will return a list of supported assets. The asset could be a cryptocurrency or FIAT assets that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/String} opts.assetType Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListSupportedAssetsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListSupportedAssetsR} and HTTP response
      */
     listSupportedAssetsWithHttpInfo(opts) {
       opts = opts || {};
@@ -74,7 +74,7 @@ export default class MetadataApi {
       let authNames = ['ApiKey'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ListSupportedAssetsResponse;
+      let returnType = ListSupportedAssetsR;
       return this.apiClient.callApi(
         '/market-data/assets/supported', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -84,13 +84,13 @@ export default class MetadataApi {
 
     /**
      * List Supported Assets
-     * This endpoint will return a list of supported assets. The asset could be a cryptocurrency or FIAT assets that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".
+     * This endpoint will return a list of supported assets. The asset could be a cryptocurrency or FIAT assets that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/String} opts.assetType Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListSupportedAssetsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListSupportedAssetsR}
      */
     listSupportedAssets(opts) {
       return this.listSupportedAssetsWithHttpInfo(opts)

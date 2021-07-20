@@ -1,4 +1,4 @@
-# CryptoApis.InvalidXpubError
+# Cryptoapis.InvalidXpubError
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# CryptoApis.TokensForwardingSuccessEthereumerc721token
+# Cryptoapis.TokensForwardingSuccessEthereumerc721token
 
 ## Properties
 

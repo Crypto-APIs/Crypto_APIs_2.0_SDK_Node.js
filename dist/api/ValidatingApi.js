@@ -25,9 +25,9 @@ var _UnexpectedServerError = _interopRequireDefault(require("../model/Unexpected
 
 var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
 
-var _ValidateAddressRequestBody = _interopRequireDefault(require("../model/ValidateAddressRequestBody"));
+var _ValidateAddressR = _interopRequireDefault(require("../model/ValidateAddressR"));
 
-var _ValidateAddressResponse = _interopRequireDefault(require("../model/ValidateAddressResponse"));
+var _ValidateAddressRB = _interopRequireDefault(require("../model/ValidateAddressRB"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -40,7 +40,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Validating service.
 * @module api/ValidatingApi
-* @version 2.0.0
+* @version 1.1.0
 */
 var ValidatingApi = /*#__PURE__*/function () {
   /**
@@ -62,8 +62,8 @@ var ValidatingApi = /*#__PURE__*/function () {
    * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-   * @param {module:model/ValidateAddressRequestBody} opts.validateAddressRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ValidateAddressResponse} and HTTP response
+   * @param {module:model/ValidateAddressRB} opts.validateAddressRB 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ValidateAddressR} and HTTP response
    */
 
 
@@ -71,7 +71,7 @@ var ValidatingApi = /*#__PURE__*/function () {
     key: "validateAddressWithHttpInfo",
     value: function validateAddressWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['validateAddressRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['validateAddressRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling validateAddress");
@@ -94,7 +94,7 @@ var ValidatingApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _ValidateAddressResponse["default"];
+      var returnType = _ValidateAddressR["default"];
       return this.apiClient.callApi('/blockchain-tools/{blockchain}/{network}/addresses/validate', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -104,8 +104,8 @@ var ValidatingApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/ValidateAddressRequestBody} opts.validateAddressRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ValidateAddressResponse}
+     * @param {module:model/ValidateAddressRB} opts.validateAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ValidateAddressR}
      */
 
   }, {

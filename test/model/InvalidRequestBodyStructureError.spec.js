@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.InvalidRequestBodyStructureError();
+    instance = new Cryptoapis.InvalidRequestBodyStructureError();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InvalidRequestBodyStructureError', function() {
     it('should create an instance of InvalidRequestBodyStructureError', function() {
       // uncomment below and update the code to test InvalidRequestBodyStructureError
-      //var instane = new CryptoApis.InvalidRequestBodyStructureError();
-      //expect(instance).to.be.a(CryptoApis.InvalidRequestBodyStructureError);
+      //var instane = new Cryptoapis.InvalidRequestBodyStructureError();
+      //expect(instance).to.be.a(Cryptoapis.InvalidRequestBodyStructureError);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new CryptoApis.InvalidRequestBodyStructureError();
+      //var instance = new Cryptoapis.InvalidRequestBodyStructureError();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new CryptoApis.InvalidRequestBodyStructureError();
+      //var instance = new Cryptoapis.InvalidRequestBodyStructureError();
       //expect(instance).to.be();
     });
 
     it('should have the property details (base name: "details")', function() {
       // uncomment below and update the code to test the property details
-      //var instance = new CryptoApis.InvalidRequestBodyStructureError();
+      //var instance = new Cryptoapis.InvalidRequestBodyStructureError();
       //expect(instance).to.be();
     });
 

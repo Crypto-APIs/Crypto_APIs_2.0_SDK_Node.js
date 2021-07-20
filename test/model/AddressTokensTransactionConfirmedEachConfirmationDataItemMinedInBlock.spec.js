@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
+    instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock', function() {
     it('should create an instance of AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock', function() {
       // uncomment below and update the code to test AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock
-      //var instane = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
-      //expect(instance).to.be.a(CryptoApis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock);
+      //var instane = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
+      //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock);
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 
     it('should have the property hash (base name: "hash")', function() {
       // uncomment below and update the code to test the property hash
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 
     it('should have the property timestamp (base name: "timestamp")', function() {
       // uncomment below and update the code to test the property timestamp
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 

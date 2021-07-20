@@ -1,4 +1,4 @@
-# CryptoApis.BlockchainEventsCallbacksLimitReached
+# Cryptoapis.BlockchainEventsCallbacksLimitReached
 
 ## Properties
 

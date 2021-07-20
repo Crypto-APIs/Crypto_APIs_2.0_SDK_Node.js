@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.CoinsForwardingSuccessData();
+    instance = new Cryptoapis.CoinsForwardingSuccessData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('CoinsForwardingSuccessData', function() {
     it('should create an instance of CoinsForwardingSuccessData', function() {
       // uncomment below and update the code to test CoinsForwardingSuccessData
-      //var instane = new CryptoApis.CoinsForwardingSuccessData();
-      //expect(instance).to.be.a(CryptoApis.CoinsForwardingSuccessData);
+      //var instane = new Cryptoapis.CoinsForwardingSuccessData();
+      //expect(instance).to.be.a(Cryptoapis.CoinsForwardingSuccessData);
     });
 
     it('should have the property product (base name: "product")', function() {
       // uncomment below and update the code to test the property product
-      //var instance = new CryptoApis.CoinsForwardingSuccessData();
+      //var instance = new Cryptoapis.CoinsForwardingSuccessData();
       //expect(instance).to.be();
     });
 
     it('should have the property event (base name: "event")', function() {
       // uncomment below and update the code to test the property event
-      //var instance = new CryptoApis.CoinsForwardingSuccessData();
+      //var instance = new Cryptoapis.CoinsForwardingSuccessData();
       //expect(instance).to.be();
     });
 
     it('should have the property item (base name: "item")', function() {
       // uncomment below and update the code to test the property item
-      //var instance = new CryptoApis.CoinsForwardingSuccessData();
+      //var instance = new Cryptoapis.CoinsForwardingSuccessData();
       //expect(instance).to.be();
     });
 

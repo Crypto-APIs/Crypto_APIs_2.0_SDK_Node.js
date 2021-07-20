@@ -1,4 +1,4 @@
-# CryptoApis.InvalidDataError
+# Cryptoapis.InvalidDataError
 
 ## Properties
 

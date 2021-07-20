@@ -1,4 +1,4 @@
-# CryptoApis.AddressCoinsTransactionConfirmedData
+# Cryptoapis.AddressCoinsTransactionConfirmedData
 
 ## Properties
 

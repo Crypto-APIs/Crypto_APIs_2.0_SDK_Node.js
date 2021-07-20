@@ -1,4 +1,4 @@
-# CryptoApis.CreateSubscriptionsForApi
+# Cryptoapis.CreateSubscriptionsForApi
 
 All URIs are relative to *https://rest.cryptoapis.io/v2*
 
@@ -8,6 +8,8 @@ Method | HTTP request | Description
 [**newBlock**](CreateSubscriptionsForApi.md#newBlock) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/block-mined | New Block
 [**newConfirmedCoinsTransactions**](CreateSubscriptionsForApi.md#newConfirmedCoinsTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-confirmed | New confirmed coins transactions
 [**newConfirmedCoinsTransactionsAndEachConfirmation**](CreateSubscriptionsForApi.md#newConfirmedCoinsTransactionsAndEachConfirmation) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-confirmed-each-confirmation | New confirmed coins transactions and each confirmation
+[**newConfirmedInternalTransactions**](CreateSubscriptionsForApi.md#newConfirmedInternalTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-internal-transactions-confirmed | New confirmed internal transactions
+[**newConfirmedInternalTransactionsAndEachConfirmation**](CreateSubscriptionsForApi.md#newConfirmedInternalTransactionsAndEachConfirmation) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-internal-transactions-confirmed-each-confirmation | New confirmed internal transactions and each confirmation
 [**newConfirmedTokensTransactions**](CreateSubscriptionsForApi.md#newConfirmedTokensTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-confirmed | New confirmed tokens transactions
 [**newConfirmedTokensTransactionsAndEachConfirmation**](CreateSubscriptionsForApi.md#newConfirmedTokensTransactionsAndEachConfirmation) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-confirmed-each-confirmation | New confirmed tokens transactions and each confirmation
 [**newUnconfirmedCoinsTransactions**](CreateSubscriptionsForApi.md#newUnconfirmedCoinsTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-unconfirmed | New unconfirmed coins transactions
@@ -17,7 +19,7 @@ Method | HTTP request | Description
 
 ## minedTransaction
 
-> MinedTransactionResponse minedTransaction(blockchain, network, opts)
+> MinedTransactionR minedTransaction(blockchain, network, opts)
 
 Mined transaction
 
@@ -26,20 +28,20 @@ Through this endpoint customers can create callback subscriptions for a specific
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.CreateSubscriptionsForApi();
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'minedTransactionRequestBody': new CryptoApis.MinedTransactionRequestBody() // MinedTransactionRequestBody | 
+  'minedTransactionRB': new Cryptoapis.MinedTransactionRB() // MinedTransactionRB | 
 };
 apiInstance.minedTransaction(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -57,11 +59,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **minedTransactionRequestBody** | [**MinedTransactionRequestBody**](MinedTransactionRequestBody.md)|  | [optional] 
+ **minedTransactionRB** | [**MinedTransactionRB**](MinedTransactionRB.md)|  | [optional] 
 
 ### Return type
 
-[**MinedTransactionResponse**](MinedTransactionResponse.md)
+[**MinedTransactionR**](MinedTransactionR.md)
 
 ### Authorization
 
@@ -75,7 +77,7 @@ Name | Type | Description  | Notes
 
 ## newBlock
 
-> NewBlockResponse newBlock(blockchain, network, opts)
+> NewBlockR newBlock(blockchain, network, opts)
 
 New Block
 
@@ -84,20 +86,20 @@ Through this endpoint customers can create callback subscriptions for a specific
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.CreateSubscriptionsForApi();
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'newBlockRequestBody': new CryptoApis.NewBlockRequestBody() // NewBlockRequestBody | 
+  'newBlockRB': new Cryptoapis.NewBlockRB() // NewBlockRB | 
 };
 apiInstance.newBlock(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -115,11 +117,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **newBlockRequestBody** | [**NewBlockRequestBody**](NewBlockRequestBody.md)|  | [optional] 
+ **newBlockRB** | [**NewBlockRB**](NewBlockRB.md)|  | [optional] 
 
 ### Return type
 
-[**NewBlockResponse**](NewBlockResponse.md)
+[**NewBlockR**](NewBlockR.md)
 
 ### Authorization
 
@@ -133,7 +135,7 @@ Name | Type | Description  | Notes
 
 ## newConfirmedCoinsTransactions
 
-> NewConfirmedCoinsTransactionsResponse newConfirmedCoinsTransactions(blockchain, network, opts)
+> NewConfirmedCoinsTransactionsR newConfirmedCoinsTransactions(blockchain, network, opts)
 
 New confirmed coins transactions
 
@@ -142,20 +144,20 @@ Through this endpoint customers can create callback subscriptions for a specific
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.CreateSubscriptionsForApi();
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'newConfirmedCoinsTransactionsRequestBody': new CryptoApis.NewConfirmedCoinsTransactionsRequestBody() // NewConfirmedCoinsTransactionsRequestBody | 
+  'newConfirmedCoinsTransactionsRB': new Cryptoapis.NewConfirmedCoinsTransactionsRB() // NewConfirmedCoinsTransactionsRB | 
 };
 apiInstance.newConfirmedCoinsTransactions(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -173,11 +175,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **newConfirmedCoinsTransactionsRequestBody** | [**NewConfirmedCoinsTransactionsRequestBody**](NewConfirmedCoinsTransactionsRequestBody.md)|  | [optional] 
+ **newConfirmedCoinsTransactionsRB** | [**NewConfirmedCoinsTransactionsRB**](NewConfirmedCoinsTransactionsRB.md)|  | [optional] 
 
 ### Return type
 
-[**NewConfirmedCoinsTransactionsResponse**](NewConfirmedCoinsTransactionsResponse.md)
+[**NewConfirmedCoinsTransactionsR**](NewConfirmedCoinsTransactionsR.md)
 
 ### Authorization
 
@@ -191,7 +193,7 @@ Name | Type | Description  | Notes
 
 ## newConfirmedCoinsTransactionsAndEachConfirmation
 
-> NewConfirmedCoinsTransactionsAndEachConfirmationResponse newConfirmedCoinsTransactionsAndEachConfirmation(blockchain, network, opts)
+> NewConfirmedCoinsTransactionsAndEachConfirmationR newConfirmedCoinsTransactionsAndEachConfirmation(blockchain, network, opts)
 
 New confirmed coins transactions and each confirmation
 
@@ -200,20 +202,20 @@ Through this endpoint customers can create callback subscriptions for a specific
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.CreateSubscriptionsForApi();
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'newConfirmedCoinsTransactionsAndEachConfirmationRequestBody': new CryptoApis.NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody() // NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody | 
+  'newConfirmedCoinsTransactionsAndEachConfirmationRB': new Cryptoapis.NewConfirmedCoinsTransactionsAndEachConfirmationRB() // NewConfirmedCoinsTransactionsAndEachConfirmationRB | 
 };
 apiInstance.newConfirmedCoinsTransactionsAndEachConfirmation(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -231,11 +233,127 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **newConfirmedCoinsTransactionsAndEachConfirmationRequestBody** | [**NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody**](NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody.md)|  | [optional] 
+ **newConfirmedCoinsTransactionsAndEachConfirmationRB** | [**NewConfirmedCoinsTransactionsAndEachConfirmationRB**](NewConfirmedCoinsTransactionsAndEachConfirmationRB.md)|  | [optional] 
 
 ### Return type
 
-[**NewConfirmedCoinsTransactionsAndEachConfirmationResponse**](NewConfirmedCoinsTransactionsAndEachConfirmationResponse.md)
+[**NewConfirmedCoinsTransactionsAndEachConfirmationR**](NewConfirmedCoinsTransactionsAndEachConfirmationR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## newConfirmedInternalTransactions
+
+> NewConfirmedInternalTransactionsR newConfirmedInternalTransactions(blockchain, network, opts)
+
+New confirmed internal transactions
+
+Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new confirmed internal transactions. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs.    Being confirmed means that the transactions are verified by miners and added to the next block.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
+let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+let opts = {
+  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'newConfirmedInternalTransactionsRB': new Cryptoapis.NewConfirmedInternalTransactionsRB() // NewConfirmedInternalTransactionsRB | 
+};
+apiInstance.newConfirmedInternalTransactions(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **newConfirmedInternalTransactionsRB** | [**NewConfirmedInternalTransactionsRB**](NewConfirmedInternalTransactionsRB.md)|  | [optional] 
+
+### Return type
+
+[**NewConfirmedInternalTransactionsR**](NewConfirmedInternalTransactionsR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## newConfirmedInternalTransactionsAndEachConfirmation
+
+> NewConfirmedInternalTransactionsAndEachConfirmationR newConfirmedInternalTransactionsAndEachConfirmation(blockchain, network, opts)
+
+New confirmed internal transactions and each confirmation
+
+Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new confirmed internal transactions. Includes also a response at each confirmation the transaction receives until the specified confirmations limit is reached. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs.     Being confirmed means that the transactions are verified by miners and added to the next block.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
+let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+let opts = {
+  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'newConfirmedInternalTransactionsAndEachConfirmationRB': new Cryptoapis.NewConfirmedInternalTransactionsAndEachConfirmationRB() // NewConfirmedInternalTransactionsAndEachConfirmationRB | 
+};
+apiInstance.newConfirmedInternalTransactionsAndEachConfirmation(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **newConfirmedInternalTransactionsAndEachConfirmationRB** | [**NewConfirmedInternalTransactionsAndEachConfirmationRB**](NewConfirmedInternalTransactionsAndEachConfirmationRB.md)|  | [optional] 
+
+### Return type
+
+[**NewConfirmedInternalTransactionsAndEachConfirmationR**](NewConfirmedInternalTransactionsAndEachConfirmationR.md)
 
 ### Authorization
 
@@ -249,7 +367,7 @@ Name | Type | Description  | Notes
 
 ## newConfirmedTokensTransactions
 
-> NewConfirmedTokensTransactionsResponse newConfirmedTokensTransactions(blockchain, network, opts)
+> NewConfirmedTokensTransactionsR newConfirmedTokensTransactions(blockchain, network, opts)
 
 New confirmed tokens transactions
 
@@ -258,20 +376,20 @@ Through this endpoint customers can create callback subscriptions for a specific
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.CreateSubscriptionsForApi();
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'newConfirmedTokensTransactionsRequestBody': new CryptoApis.NewConfirmedTokensTransactionsRequestBody() // NewConfirmedTokensTransactionsRequestBody | 
+  'newConfirmedTokensTransactionsRB': new Cryptoapis.NewConfirmedTokensTransactionsRB() // NewConfirmedTokensTransactionsRB | 
 };
 apiInstance.newConfirmedTokensTransactions(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -289,11 +407,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **newConfirmedTokensTransactionsRequestBody** | [**NewConfirmedTokensTransactionsRequestBody**](NewConfirmedTokensTransactionsRequestBody.md)|  | [optional] 
+ **newConfirmedTokensTransactionsRB** | [**NewConfirmedTokensTransactionsRB**](NewConfirmedTokensTransactionsRB.md)|  | [optional] 
 
 ### Return type
 
-[**NewConfirmedTokensTransactionsResponse**](NewConfirmedTokensTransactionsResponse.md)
+[**NewConfirmedTokensTransactionsR**](NewConfirmedTokensTransactionsR.md)
 
 ### Authorization
 
@@ -307,7 +425,7 @@ Name | Type | Description  | Notes
 
 ## newConfirmedTokensTransactionsAndEachConfirmation
 
-> NewConfirmedTokensTransactionsAndEachConfirmationResponse newConfirmedTokensTransactionsAndEachConfirmation(blockchain, network, opts)
+> NewConfirmedTokensTransactionsAndEachConfirmationR newConfirmedTokensTransactionsAndEachConfirmation(blockchain, network, opts)
 
 New confirmed tokens transactions and each confirmation
 
@@ -316,20 +434,20 @@ Through this endpoint customers can create callback subscriptions for a specific
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.CreateSubscriptionsForApi();
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'newConfirmedTokensTransactionsAndEachConfirmationRequestBody': new CryptoApis.NewConfirmedTokensTransactionsAndEachConfirmationRequestBody() // NewConfirmedTokensTransactionsAndEachConfirmationRequestBody | 
+  'newConfirmedTokensTransactionsAndEachConfirmationRB': new Cryptoapis.NewConfirmedTokensTransactionsAndEachConfirmationRB() // NewConfirmedTokensTransactionsAndEachConfirmationRB | 
 };
 apiInstance.newConfirmedTokensTransactionsAndEachConfirmation(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -347,11 +465,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **newConfirmedTokensTransactionsAndEachConfirmationRequestBody** | [**NewConfirmedTokensTransactionsAndEachConfirmationRequestBody**](NewConfirmedTokensTransactionsAndEachConfirmationRequestBody.md)|  | [optional] 
+ **newConfirmedTokensTransactionsAndEachConfirmationRB** | [**NewConfirmedTokensTransactionsAndEachConfirmationRB**](NewConfirmedTokensTransactionsAndEachConfirmationRB.md)|  | [optional] 
 
 ### Return type
 
-[**NewConfirmedTokensTransactionsAndEachConfirmationResponse**](NewConfirmedTokensTransactionsAndEachConfirmationResponse.md)
+[**NewConfirmedTokensTransactionsAndEachConfirmationR**](NewConfirmedTokensTransactionsAndEachConfirmationR.md)
 
 ### Authorization
 
@@ -365,29 +483,29 @@ Name | Type | Description  | Notes
 
 ## newUnconfirmedCoinsTransactions
 
-> NewUnconfirmedCoinsTransactionsResponse newUnconfirmedCoinsTransactions(blockchain, network, opts)
+> NewUnconfirmedCoinsTransactionsR newUnconfirmedCoinsTransactions(blockchain, network, opts)
 
 New unconfirmed coins transactions
 
-Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed coins transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed coins transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn&#39;t necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed coins transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed coins transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {warning}We cannot guarantee at 100% that webhooks for unconfirmed transactions will always be received. Some may **not get received** due to the possibility of some nodes not being updated with that information. This can occur in networks with low activity and/or not many nodes, e.g. Testnet networks and rarely Mainnets.{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn&#39;t necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.CreateSubscriptionsForApi();
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'newUnconfirmedCoinsTransactionsRequestBody': new CryptoApis.NewUnconfirmedCoinsTransactionsRequestBody() // NewUnconfirmedCoinsTransactionsRequestBody | 
+  'newUnconfirmedCoinsTransactionsRB': new Cryptoapis.NewUnconfirmedCoinsTransactionsRB() // NewUnconfirmedCoinsTransactionsRB | 
 };
 apiInstance.newUnconfirmedCoinsTransactions(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -405,11 +523,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **newUnconfirmedCoinsTransactionsRequestBody** | [**NewUnconfirmedCoinsTransactionsRequestBody**](NewUnconfirmedCoinsTransactionsRequestBody.md)|  | [optional] 
+ **newUnconfirmedCoinsTransactionsRB** | [**NewUnconfirmedCoinsTransactionsRB**](NewUnconfirmedCoinsTransactionsRB.md)|  | [optional] 
 
 ### Return type
 
-[**NewUnconfirmedCoinsTransactionsResponse**](NewUnconfirmedCoinsTransactionsResponse.md)
+[**NewUnconfirmedCoinsTransactionsR**](NewUnconfirmedCoinsTransactionsR.md)
 
 ### Authorization
 
@@ -423,29 +541,29 @@ Name | Type | Description  | Notes
 
 ## newUnconfirmedTokensTransactions
 
-> NewUnconfirmedTokensTransactionsResponse newUnconfirmedTokensTransactions(blockchain, network, opts)
+> NewUnconfirmedTokensTransactionsR newUnconfirmedTokensTransactions(blockchain, network, opts)
 
 New unconfirmed tokens transactions
 
-Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed tokens transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed tokens transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn&#39;t necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed tokens transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed tokens transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {warning}We cannot guarantee at 100% that webhooks for unconfirmed transactions will always be received. Some may **not get received** due to the possibility of some nodes not being updated with that information. This can occur in networks with low activity and/or not many nodes, e.g. Testnet networks and rarely Mainnets.{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn&#39;t necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.CreateSubscriptionsForApi();
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'newUnconfirmedTokensTransactionsRequestBody': new CryptoApis.NewUnconfirmedTokensTransactionsRequestBody() // NewUnconfirmedTokensTransactionsRequestBody | 
+  'newUnconfirmedTokensTransactionsRB': new Cryptoapis.NewUnconfirmedTokensTransactionsRB() // NewUnconfirmedTokensTransactionsRB | 
 };
 apiInstance.newUnconfirmedTokensTransactions(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -463,11 +581,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **newUnconfirmedTokensTransactionsRequestBody** | [**NewUnconfirmedTokensTransactionsRequestBody**](NewUnconfirmedTokensTransactionsRequestBody.md)|  | [optional] 
+ **newUnconfirmedTokensTransactionsRB** | [**NewUnconfirmedTokensTransactionsRB**](NewUnconfirmedTokensTransactionsRB.md)|  | [optional] 
 
 ### Return type
 
-[**NewUnconfirmedTokensTransactionsResponse**](NewUnconfirmedTokensTransactionsResponse.md)
+[**NewUnconfirmedTokensTransactionsR**](NewUnconfirmedTokensTransactionsR.md)
 
 ### Authorization
 

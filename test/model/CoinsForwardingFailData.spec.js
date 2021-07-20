@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.CoinsForwardingFailData();
+    instance = new Cryptoapis.CoinsForwardingFailData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('CoinsForwardingFailData', function() {
     it('should create an instance of CoinsForwardingFailData', function() {
       // uncomment below and update the code to test CoinsForwardingFailData
-      //var instane = new CryptoApis.CoinsForwardingFailData();
-      //expect(instance).to.be.a(CryptoApis.CoinsForwardingFailData);
+      //var instane = new Cryptoapis.CoinsForwardingFailData();
+      //expect(instance).to.be.a(Cryptoapis.CoinsForwardingFailData);
     });
 
     it('should have the property product (base name: "product")', function() {
       // uncomment below and update the code to test the property product
-      //var instance = new CryptoApis.CoinsForwardingFailData();
+      //var instance = new Cryptoapis.CoinsForwardingFailData();
       //expect(instance).to.be();
     });
 
     it('should have the property event (base name: "event")', function() {
       // uncomment below and update the code to test the property event
-      //var instance = new CryptoApis.CoinsForwardingFailData();
+      //var instance = new Cryptoapis.CoinsForwardingFailData();
       //expect(instance).to.be();
     });
 
     it('should have the property item (base name: "item")', function() {
       // uncomment below and update the code to test the property item
-      //var instance = new CryptoApis.CoinsForwardingFailData();
+      //var instance = new Cryptoapis.CoinsForwardingFailData();
       //expect(instance).to.be();
     });
 

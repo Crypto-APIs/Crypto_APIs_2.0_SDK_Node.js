@@ -1,4 +1,4 @@
-# CryptoApis.UnsupportedMediaType
+# Cryptoapis.UnsupportedMediaType
 
 ## Properties
 

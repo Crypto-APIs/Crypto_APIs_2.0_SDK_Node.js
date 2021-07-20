@@ -1,4 +1,4 @@
-# CryptoApis.BlockchainDataTransactionNotFoundError
+# Cryptoapis.BlockchainDataTransactionNotFoundError
 
 ## Properties
 

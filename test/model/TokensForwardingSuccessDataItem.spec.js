@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.TokensForwardingSuccessDataItem();
+    instance = new Cryptoapis.TokensForwardingSuccessDataItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,67 +50,67 @@
   describe('TokensForwardingSuccessDataItem', function() {
     it('should create an instance of TokensForwardingSuccessDataItem', function() {
       // uncomment below and update the code to test TokensForwardingSuccessDataItem
-      //var instane = new CryptoApis.TokensForwardingSuccessDataItem();
-      //expect(instance).to.be.a(CryptoApis.TokensForwardingSuccessDataItem);
+      //var instane = new Cryptoapis.TokensForwardingSuccessDataItem();
+      //expect(instance).to.be.a(Cryptoapis.TokensForwardingSuccessDataItem);
     });
 
     it('should have the property blockchain (base name: "blockchain")', function() {
       // uncomment below and update the code to test the property blockchain
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property network (base name: "network")', function() {
       // uncomment below and update the code to test the property network
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property fromAddress (base name: "fromAddress")', function() {
       // uncomment below and update the code to test the property fromAddress
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property toAddress (base name: "toAddress")', function() {
       // uncomment below and update the code to test the property toAddress
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property spentFeesAmount (base name: "spentFeesAmount")', function() {
       // uncomment below and update the code to test the property spentFeesAmount
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property spentFeesUnit (base name: "spentFeesUnit")', function() {
       // uncomment below and update the code to test the property spentFeesUnit
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property triggerTransactionId (base name: "triggerTransactionId")', function() {
       // uncomment below and update the code to test the property triggerTransactionId
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property forwardingTransactionId (base name: "forwardingTransactionId")', function() {
       // uncomment below and update the code to test the property forwardingTransactionId
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property tokenType (base name: "tokenType")', function() {
       // uncomment below and update the code to test the property tokenType
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new CryptoApis.TokensForwardingSuccessDataItem();
+      //var instance = new Cryptoapis.TokensForwardingSuccessDataItem();
       //expect(instance).to.be();
     });
 

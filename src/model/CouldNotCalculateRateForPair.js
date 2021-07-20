@@ -17,7 +17,7 @@ import CouldNotCalculateRateForPairError from './CouldNotCalculateRateForPairErr
 /**
  * The CouldNotCalculateRateForPair model module.
  * @module model/CouldNotCalculateRateForPair
- * @version 2.0.0
+ * @version 1.1.0
  */
 class CouldNotCalculateRateForPair {
     /**

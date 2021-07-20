@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The BlockchainEventsCallbacksLimitReachedError model module.
  * @module model/BlockchainEventsCallbacksLimitReachedError
- * @version 2.0.0
+ * @version 1.1.0
  */
 class BlockchainEventsCallbacksLimitReachedError {
     /**

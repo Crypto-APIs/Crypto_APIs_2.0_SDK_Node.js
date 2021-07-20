@@ -1,4 +1,4 @@
-# CryptoApis.UriNotFoundError
+# Cryptoapis.UriNotFoundError
 
 ## Properties
 

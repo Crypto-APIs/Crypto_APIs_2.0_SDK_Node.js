@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.InvalidPagination();
+    instance = new Cryptoapis.InvalidPagination();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InvalidPagination', function() {
     it('should create an instance of InvalidPagination', function() {
       // uncomment below and update the code to test InvalidPagination
-      //var instane = new CryptoApis.InvalidPagination();
-      //expect(instance).to.be.a(CryptoApis.InvalidPagination);
+      //var instane = new Cryptoapis.InvalidPagination();
+      //expect(instance).to.be.a(Cryptoapis.InvalidPagination);
     });
 
     it('should have the property apiVersion (base name: "apiVersion")', function() {
       // uncomment below and update the code to test the property apiVersion
-      //var instance = new CryptoApis.InvalidPagination();
+      //var instance = new Cryptoapis.InvalidPagination();
       //expect(instance).to.be();
     });
 
     it('should have the property requestId (base name: "requestId")', function() {
       // uncomment below and update the code to test the property requestId
-      //var instance = new CryptoApis.InvalidPagination();
+      //var instance = new Cryptoapis.InvalidPagination();
       //expect(instance).to.be();
     });
 
     it('should have the property context (base name: "context")', function() {
       // uncomment below and update the code to test the property context
-      //var instance = new CryptoApis.InvalidPagination();
+      //var instance = new Cryptoapis.InvalidPagination();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new CryptoApis.InvalidPagination();
+      //var instance = new Cryptoapis.InvalidPagination();
       //expect(instance).to.be();
     });
 

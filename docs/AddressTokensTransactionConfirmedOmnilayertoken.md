@@ -1,4 +1,4 @@
-# CryptoApis.AddressTokensTransactionConfirmedOmnilayertoken
+# Cryptoapis.AddressTokensTransactionConfirmedOmnilayertoken
 
 ## Properties
 

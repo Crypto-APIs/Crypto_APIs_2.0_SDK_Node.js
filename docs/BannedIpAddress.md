@@ -1,4 +1,4 @@
-# CryptoApis.BannedIpAddress
+# Cryptoapis.BannedIpAddress
 
 ## Properties
 

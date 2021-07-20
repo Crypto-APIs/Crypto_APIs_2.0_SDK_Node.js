@@ -11,9 +11,9 @@ var _BlockchainDataTransactionNotFound = _interopRequireDefault(require("../mode
 
 var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
 
-var _GetOmniTransactionDetailsByTransactionIDTxidResponse = _interopRequireDefault(require("../model/GetOmniTransactionDetailsByTransactionIDTxidResponse"));
+var _GetOmniTransactionDetailsByTransactionIDTxidR = _interopRequireDefault(require("../model/GetOmniTransactionDetailsByTransactionIDTxidR"));
 
-var _GetUnconfirmedOmniTransactionByTransactionIDTxidResponse = _interopRequireDefault(require("../model/GetUnconfirmedOmniTransactionByTransactionIDTxidResponse"));
+var _GetUnconfirmedOmniTransactionByTransactionIDTxidR = _interopRequireDefault(require("../model/GetUnconfirmedOmniTransactionByTransactionIDTxidR"));
 
 var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
 
@@ -25,17 +25,17 @@ var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPaginat
 
 var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
 
-var _ListOmniTokensByAddressResponse = _interopRequireDefault(require("../model/ListOmniTokensByAddressResponse"));
+var _ListOmniTokensByAddressR = _interopRequireDefault(require("../model/ListOmniTokensByAddressR"));
 
-var _ListOmniTransactionsByAddressResponse = _interopRequireDefault(require("../model/ListOmniTransactionsByAddressResponse"));
+var _ListOmniTransactionsByAddressR = _interopRequireDefault(require("../model/ListOmniTransactionsByAddressR"));
 
-var _ListOmniTransactionsByBlockHashResponse = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHashResponse"));
+var _ListOmniTransactionsByBlockHashR = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHashR"));
 
-var _ListOmniTransactionsByBlockHeightResponse = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHeightResponse"));
+var _ListOmniTransactionsByBlockHeightR = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHeightR"));
 
-var _ListUnconfirmedOmniTransactionsByAddressResponse = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByAddressResponse"));
+var _ListUnconfirmedOmniTransactionsByAddressR = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByAddressR"));
 
-var _ListUnconfirmedOmniTransactionsByPropertyIDResponse = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByPropertyIDResponse"));
+var _ListUnconfirmedOmniTransactionsByPropertyIDR = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByPropertyIDR"));
 
 var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
@@ -54,7 +54,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * OmniLayer service.
 * @module api/OmniLayerApi
-* @version 2.0.0
+* @version 1.1.0
 */
 var OmniLayerApi = /*#__PURE__*/function () {
   /**
@@ -77,7 +77,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
    * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetOmniTransactionDetailsByTransactionIDTxidResponse} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetOmniTransactionDetailsByTransactionIDTxidR} and HTTP response
    */
 
 
@@ -114,7 +114,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetOmniTransactionDetailsByTransactionIDTxidResponse["default"];
+      var returnType = _GetOmniTransactionDetailsByTransactionIDTxidR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/omni/transactions/{transactionId}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -125,7 +125,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetOmniTransactionDetailsByTransactionIDTxidResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetOmniTransactionDetailsByTransactionIDTxidR}
      */
 
   }, {
@@ -143,7 +143,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidR} and HTTP response
      */
 
   }, {
@@ -179,7 +179,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetUnconfirmedOmniTransactionByTransactionIDTxidResponse["default"];
+      var returnType = _GetUnconfirmedOmniTransactionByTransactionIDTxidR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/omni/transactions-unconfirmed/{transactionId}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -190,7 +190,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidR}
      */
 
   }, {
@@ -202,13 +202,13 @@ var OmniLayerApi = /*#__PURE__*/function () {
     }
     /**
      * List Omni Tokens By Address
-     * Through this endpoint the customer can receive basic information about a given Omni address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.
+     * Through this endpoint the customer can receive basic information about a given Omni address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListOmniTokensByAddressResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListOmniTokensByAddressR} and HTTP response
      */
 
   }, {
@@ -244,18 +244,18 @@ var OmniLayerApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListOmniTokensByAddressResponse["default"];
+      var returnType = _ListOmniTokensByAddressR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/omni/addresses/{address}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List Omni Tokens By Address
-     * Through this endpoint the customer can receive basic information about a given Omni address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.
+     * Through this endpoint the customer can receive basic information about a given Omni address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListOmniTokensByAddressResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListOmniTokensByAddressR}
      */
 
   }, {
@@ -267,7 +267,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
     }
     /**
      * List Omni Transactions By Address
-     * This endpoint will list Omni transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.
+     * This endpoint will list Omni transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -275,7 +275,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListOmniTransactionsByAddressResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListOmniTransactionsByAddressR} and HTTP response
      */
 
   }, {
@@ -313,12 +313,12 @@ var OmniLayerApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListOmniTransactionsByAddressResponse["default"];
+      var returnType = _ListOmniTransactionsByAddressR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/omni/addresses/{address}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List Omni Transactions By Address
-     * This endpoint will list Omni transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.
+     * This endpoint will list Omni transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -326,7 +326,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListOmniTransactionsByAddressResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListOmniTransactionsByAddressR}
      */
 
   }, {
@@ -338,7 +338,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
     }
     /**
      * List Omni Transactions By Block Hash
-     * This endpoint will list Omni transactions by an attribute `transactionHash`. The transactions listed will detail additional information such as addresses, height, time of creation in Unix timestamp, etc.
+     * This endpoint will list Omni transactions by an attribute `transactionHash`. The transactions listed will detail additional information such as addresses, height, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -346,7 +346,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListOmniTransactionsByBlockHashResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListOmniTransactionsByBlockHashR} and HTTP response
      */
 
   }, {
@@ -384,12 +384,12 @@ var OmniLayerApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListOmniTransactionsByBlockHashResponse["default"];
+      var returnType = _ListOmniTransactionsByBlockHashR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/omni/blocks/hash/{blockHash}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List Omni Transactions By Block Hash
-     * This endpoint will list Omni transactions by an attribute `transactionHash`. The transactions listed will detail additional information such as addresses, height, time of creation in Unix timestamp, etc.
+     * This endpoint will list Omni transactions by an attribute `transactionHash`. The transactions listed will detail additional information such as addresses, height, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -397,7 +397,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListOmniTransactionsByBlockHashResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListOmniTransactionsByBlockHashR}
      */
 
   }, {
@@ -409,7 +409,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
     }
     /**
      * List Omni Transactions By Block Height
-     * This endpoint will list Omni transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.
+     * This endpoint will list Omni transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
@@ -417,7 +417,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListOmniTransactionsByBlockHeightResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListOmniTransactionsByBlockHeightR} and HTTP response
      */
 
   }, {
@@ -455,12 +455,12 @@ var OmniLayerApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListOmniTransactionsByBlockHeightResponse["default"];
+      var returnType = _ListOmniTransactionsByBlockHeightR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/omni/blocks/height/{blockHeight}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List Omni Transactions By Block Height
-     * This endpoint will list Omni transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.
+     * This endpoint will list Omni transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
@@ -468,7 +468,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListOmniTransactionsByBlockHeightResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListOmniTransactionsByBlockHeightR}
      */
 
   }, {
@@ -480,7 +480,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
     }
     /**
      * List Unconfirmed Omni Transactions By Address
-     * This endpoint will list unconfirmed Omni transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Unconfirmed transactions are usually put in the Mempool and await verification so that they can be added to a block.
+     * This endpoint will list unconfirmed Omni transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Unconfirmed transactions are usually put in the Mempool and await verification so that they can be added to a block.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -488,7 +488,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnconfirmedOmniTransactionsByAddressResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnconfirmedOmniTransactionsByAddressR} and HTTP response
      */
 
   }, {
@@ -526,12 +526,12 @@ var OmniLayerApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListUnconfirmedOmniTransactionsByAddressResponse["default"];
+      var returnType = _ListUnconfirmedOmniTransactionsByAddressR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/omni/address-transactions-unconfirmed/{address}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List Unconfirmed Omni Transactions By Address
-     * This endpoint will list unconfirmed Omni transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Unconfirmed transactions are usually put in the Mempool and await verification so that they can be added to a block.
+     * This endpoint will list unconfirmed Omni transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Unconfirmed transactions are usually put in the Mempool and await verification so that they can be added to a block.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -539,7 +539,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnconfirmedOmniTransactionsByAddressResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnconfirmedOmniTransactionsByAddressR}
      */
 
   }, {
@@ -551,7 +551,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
     }
     /**
      * List Unconfirmed Omni Transactions By Property ID
-     * This endpoint will list unconfirmed Omni transactions by an attribute `propertyId`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Unconfirmed transactions are usually put in the Mempool and await verification so that they can be added to a block.
+     * This endpoint will list unconfirmed Omni transactions by an attribute `propertyId`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Unconfirmed transactions are usually put in the Mempool and await verification so that they can be added to a block.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} propertyId Represents the identifier of the tokens to send.
@@ -559,7 +559,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnconfirmedOmniTransactionsByPropertyIDResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnconfirmedOmniTransactionsByPropertyIDR} and HTTP response
      */
 
   }, {
@@ -597,12 +597,12 @@ var OmniLayerApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListUnconfirmedOmniTransactionsByPropertyIDResponse["default"];
+      var returnType = _ListUnconfirmedOmniTransactionsByPropertyIDR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/omni/properties/{propertyId}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List Unconfirmed Omni Transactions By Property ID
-     * This endpoint will list unconfirmed Omni transactions by an attribute `propertyId`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Unconfirmed transactions are usually put in the Mempool and await verification so that they can be added to a block.
+     * This endpoint will list unconfirmed Omni transactions by an attribute `propertyId`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Unconfirmed transactions are usually put in the Mempool and await verification so that they can be added to a block.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {String} propertyId Represents the identifier of the tokens to send.
@@ -610,7 +610,7 @@ var OmniLayerApi = /*#__PURE__*/function () {
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnconfirmedOmniTransactionsByPropertyIDResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnconfirmedOmniTransactionsByPropertyIDR}
      */
 
   }, {

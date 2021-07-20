@@ -17,7 +17,7 @@ import TokensForwardingFailData from './TokensForwardingFailData';
 /**
  * The TokensForwardingFail model module.
  * @module model/TokensForwardingFail
- * @version 2.0.0
+ * @version 1.1.0
  */
 class TokensForwardingFail {
     /**

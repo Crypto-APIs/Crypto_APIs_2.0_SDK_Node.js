@@ -1,4 +1,4 @@
-# CryptoApis.AutomaticCoinsForwardingApi
+# Cryptoapis.AutomaticCoinsForwardingApi
 
 All URIs are relative to *https://rest.cryptoapis.io/v2*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## createAutomaticCoinsForwarding
 
-> CreateAutomaticCoinsForwardingResponse createAutomaticCoinsForwarding(blockchain, network, opts)
+> CreateAutomaticCoinsForwardingR createAutomaticCoinsForwarding(blockchain, network, opts)
 
 Create Automatic Coins Forwarding
 
@@ -21,20 +21,20 @@ Through this endpoint customers can set up an automatic forwarding function spec
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.AutomaticCoinsForwardingApi();
+let apiInstance = new Cryptoapis.AutomaticCoinsForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'createAutomaticCoinsForwardingRequestBody': new CryptoApis.CreateAutomaticCoinsForwardingRequestBody() // CreateAutomaticCoinsForwardingRequestBody | 
+  'createAutomaticCoinsForwardingRB': new Cryptoapis.CreateAutomaticCoinsForwardingRB() // CreateAutomaticCoinsForwardingRB | 
 };
 apiInstance.createAutomaticCoinsForwarding(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -52,11 +52,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **createAutomaticCoinsForwardingRequestBody** | [**CreateAutomaticCoinsForwardingRequestBody**](CreateAutomaticCoinsForwardingRequestBody.md)|  | [optional] 
+ **createAutomaticCoinsForwardingRB** | [**CreateAutomaticCoinsForwardingRB**](CreateAutomaticCoinsForwardingRB.md)|  | [optional] 
 
 ### Return type
 
-[**CreateAutomaticCoinsForwardingResponse**](CreateAutomaticCoinsForwardingResponse.md)
+[**CreateAutomaticCoinsForwardingR**](CreateAutomaticCoinsForwardingR.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ Name | Type | Description  | Notes
 
 ## deleteAutomaticCoinsForwarding
 
-> DeleteAutomaticCoinsForwardingResponse deleteAutomaticCoinsForwarding(blockchain, network, referenceId, opts)
+> DeleteAutomaticCoinsForwardingR deleteAutomaticCoinsForwarding(blockchain, network, referenceId, opts)
 
 Delete Automatic Coins Forwarding
 
@@ -79,15 +79,15 @@ Through this endpoint customers can delete a forwarding function they have set f
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.AutomaticCoinsForwardingApi();
+let apiInstance = new Cryptoapis.AutomaticCoinsForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let referenceId = 600955ea5e75d660e71d3c7d; // String | Represents a unique ID used to reference the specific callback subscription.
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**DeleteAutomaticCoinsForwardingResponse**](DeleteAutomaticCoinsForwardingResponse.md)
+[**DeleteAutomaticCoinsForwardingR**](DeleteAutomaticCoinsForwardingR.md)
 
 ### Authorization
 
@@ -128,24 +128,24 @@ Name | Type | Description  | Notes
 
 ## listCoinsForwardingAutomations
 
-> ListCoinsForwardingAutomationsResponse listCoinsForwardingAutomations(blockchain, network, opts)
+> ListCoinsForwardingAutomationsR listCoinsForwardingAutomations(blockchain, network, opts)
 
 List Coins Forwarding Automations
 
-Through this endpoint customers can list all of their **coins** forwarding automations (**not** tokens).    Customers can set up automatic forwarding functions for coins by setting a &#x60;fromAddress&#x60; and a &#x60;toAddress&#x60;, and specifying the amount that can be transferred between addresses.     A &#x60;feePriority&#x60; will be returned which represents the fee priority of the automation whether it is \&quot;SLOW\&quot;, \&quot;STANDARD\&quot; OR \&quot;FAST\&quot;.    {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+Through this endpoint customers can list all of their **coins** forwarding automations (**not** tokens).    Customers can set up automatic forwarding functions for coins by setting a &#x60;fromAddress&#x60; and a &#x60;toAddress&#x60;, and specifying the amount that can be transferred between addresses.     A &#x60;feePriority&#x60; will be returned which represents the fee priority of the automation whether it is \&quot;SLOW\&quot;, \&quot;STANDARD\&quot; OR \&quot;FAST\&quot;.    {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.AutomaticCoinsForwardingApi();
+let apiInstance = new Cryptoapis.AutomaticCoinsForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListCoinsForwardingAutomationsResponse**](ListCoinsForwardingAutomationsResponse.md)
+[**ListCoinsForwardingAutomationsR**](ListCoinsForwardingAutomationsR.md)
 
 ### Authorization
 

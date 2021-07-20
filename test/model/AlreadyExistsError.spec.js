@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AlreadyExistsError();
+    instance = new Cryptoapis.AlreadyExistsError();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('AlreadyExistsError', function() {
     it('should create an instance of AlreadyExistsError', function() {
       // uncomment below and update the code to test AlreadyExistsError
-      //var instane = new CryptoApis.AlreadyExistsError();
-      //expect(instance).to.be.a(CryptoApis.AlreadyExistsError);
+      //var instane = new Cryptoapis.AlreadyExistsError();
+      //expect(instance).to.be.a(Cryptoapis.AlreadyExistsError);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new CryptoApis.AlreadyExistsError();
+      //var instance = new Cryptoapis.AlreadyExistsError();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new CryptoApis.AlreadyExistsError();
+      //var instance = new Cryptoapis.AlreadyExistsError();
       //expect(instance).to.be();
     });
 
     it('should have the property details (base name: "details")', function() {
       // uncomment below and update the code to test the property details
-      //var instance = new CryptoApis.AlreadyExistsError();
+      //var instance = new Cryptoapis.AlreadyExistsError();
       //expect(instance).to.be();
     });
 

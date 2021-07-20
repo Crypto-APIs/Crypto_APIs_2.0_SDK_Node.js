@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+    instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,61 +50,61 @@
   describe('AddressTokensTransactionConfirmedEachConfirmationToken', function() {
     it('should create an instance of AddressTokensTransactionConfirmedEachConfirmationToken', function() {
       // uncomment below and update the code to test AddressTokensTransactionConfirmedEachConfirmationToken
-      //var instane = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
-      //expect(instance).to.be.a(CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken);
+      //var instane = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 
     it('should have the property symbol (base name: "symbol")', function() {
       // uncomment below and update the code to test the property symbol
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 
     it('should have the property decimals (base name: "decimals")', function() {
       // uncomment below and update the code to test the property decimals
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 
     it('should have the property contractAddress (base name: "contractAddress")', function() {
       // uncomment below and update the code to test the property contractAddress
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 
     it('should have the property tokenId (base name: "tokenId")', function() {
       // uncomment below and update the code to test the property tokenId
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 
     it('should have the property propertyId (base name: "propertyId")', function() {
       // uncomment below and update the code to test the property propertyId
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 
     it('should have the property transactionType (base name: "transactionType")', function() {
       // uncomment below and update the code to test the property transactionType
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 
     it('should have the property createdByTransactionId (base name: "createdByTransactionId")', function() {
       // uncomment below and update the code to test the property createdByTransactionId
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken();
       //expect(instance).to.be();
     });
 

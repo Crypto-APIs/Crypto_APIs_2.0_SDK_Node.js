@@ -1,4 +1,4 @@
-# CryptoApis.UTXOBasedApi
+# Cryptoapis.UTXOBasedApi
 
 All URIs are relative to *https://rest.cryptoapis.io/v2*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## getHDWalletXPubYPubZPubDetails
 
-> GetHDWalletxPubYPubZPubDetailsResponse getHDWalletXPubYPubZPubDetails(blockchain, extendedPublicKey, network, opts)
+> GetHDWalletXPubYPubZPubDetailsR getHDWalletXPubYPubZPubDetails(blockchain, extendedPublicKey, network, opts)
 
 Get HD Wallet (xPub, yPub, zPub) Details
 
@@ -21,15 +21,15 @@ HD wallet details is useful endpoint to get the most important data about HD wal
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UTXOBasedApi();
+let apiInstance = new Cryptoapis.UTXOBasedApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let extendedPublicKey = upub5Ei6bRNneqozk6smK7dvtXHC5PjUyEL4ynCfMKvjznLcXi9DQaikETzQjHvJC43XexMvQs64jxB1njMjCHpRZ4xQWAmv3ge9cVtjfsHmbvQ; // String | Defines the account extended publicly known key which is used to derive all child public keys.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**GetHDWalletxPubYPubZPubDetailsResponse**](GetHDWalletxPubYPubZPubDetailsResponse.md)
+[**GetHDWalletXPubYPubZPubDetailsR**](GetHDWalletXPubYPubZPubDetailsR.md)
 
 ### Authorization
 
@@ -72,24 +72,24 @@ Name | Type | Description  | Notes
 
 ## listHDWalletXPubYPubZPubTransactions
 
-> ListHDWalletxPubYPubZPubTransactionsResponse listHDWalletXPubYPubZPubTransactions(blockchain, extendedPublicKey, network, opts)
+> ListHDWalletXPubYPubZPubTransactionsR listHDWalletXPubYPubZPubTransactions(blockchain, extendedPublicKey, network, opts)
 
 List HD Wallet (xPub, yPub, zPub) Transactions
 
-This endpoint will list HD Wallet transactions.
+This endpoint will list HD Wallet transactions.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UTXOBasedApi();
+let apiInstance = new Cryptoapis.UTXOBasedApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain.
 let extendedPublicKey = tpubD9GMECjiZHCaF9NHSMAeMbQMXnM7CviEJZsYBuztVwsUjPHWjxewWAUXWV2UExaAtoEvQGXDBmVWo6ZHGtj6TsH6Pop7D9DskQwGHA1gu1w; // String | Defines the master public key (xPub) of the account.
 let network = testnet; // String | Represents the specific network.
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListHDWalletxPubYPubZPubTransactionsResponse**](ListHDWalletxPubYPubZPubTransactionsResponse.md)
+[**ListHDWalletXPubYPubZPubTransactionsR**](ListHDWalletXPubYPubZPubTransactionsR.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ## syncHDWalletXPubYPubZPub
 
-> SyncHDWalletxPubYPubZPubResponse syncHDWalletXPubYPubZPub(blockchain, network, opts)
+> SyncHDWalletXPubYPubZPubR syncHDWalletXPubYPubZPub(blockchain, network, opts)
 
 Sync HD Wallet (xPub, yPub, zPub)
 
@@ -145,20 +145,20 @@ HD wallets usually have a lot of addresses and transactions, getting the data on
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.UTXOBasedApi();
+let apiInstance = new Cryptoapis.UTXOBasedApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'syncHDWalletxPubYPubZPubRequestBody': new CryptoApis.SyncHDWalletxPubYPubZPubRequestBody() // SyncHDWalletxPubYPubZPubRequestBody | 
+  'syncHDWalletXPubYPubZPubRB': new Cryptoapis.SyncHDWalletXPubYPubZPubRB() // SyncHDWalletXPubYPubZPubRB | 
 };
 apiInstance.syncHDWalletXPubYPubZPub(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -176,11 +176,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **syncHDWalletxPubYPubZPubRequestBody** | [**SyncHDWalletxPubYPubZPubRequestBody**](SyncHDWalletxPubYPubZPubRequestBody.md)|  | [optional] 
+ **syncHDWalletXPubYPubZPubRB** | [**SyncHDWalletXPubYPubZPubRB**](SyncHDWalletXPubYPubZPubRB.md)|  | [optional] 
 
 ### Return type
 
-[**SyncHDWalletxPubYPubZPubResponse**](SyncHDWalletxPubYPubZPubResponse.md)
+[**SyncHDWalletXPubYPubZPubR**](SyncHDWalletXPubYPubZPubR.md)
 
 ### Authorization
 

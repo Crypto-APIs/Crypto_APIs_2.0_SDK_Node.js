@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.UriNotFound();
+    instance = new Cryptoapis.UriNotFound();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('UriNotFound', function() {
     it('should create an instance of UriNotFound', function() {
       // uncomment below and update the code to test UriNotFound
-      //var instane = new CryptoApis.UriNotFound();
-      //expect(instance).to.be.a(CryptoApis.UriNotFound);
+      //var instane = new Cryptoapis.UriNotFound();
+      //expect(instance).to.be.a(Cryptoapis.UriNotFound);
     });
 
     it('should have the property apiVersion (base name: "apiVersion")', function() {
       // uncomment below and update the code to test the property apiVersion
-      //var instance = new CryptoApis.UriNotFound();
+      //var instance = new Cryptoapis.UriNotFound();
       //expect(instance).to.be();
     });
 
     it('should have the property requestId (base name: "requestId")', function() {
       // uncomment below and update the code to test the property requestId
-      //var instance = new CryptoApis.UriNotFound();
+      //var instance = new Cryptoapis.UriNotFound();
       //expect(instance).to.be();
     });
 
     it('should have the property context (base name: "context")', function() {
       // uncomment below and update the code to test the property context
-      //var instance = new CryptoApis.UriNotFound();
+      //var instance = new Cryptoapis.UriNotFound();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new CryptoApis.UriNotFound();
+      //var instance = new Cryptoapis.UriNotFound();
       //expect(instance).to.be();
     });
 

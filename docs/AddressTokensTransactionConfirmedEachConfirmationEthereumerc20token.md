@@ -1,4 +1,4 @@
-# CryptoApis.AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token
+# Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token
 
 ## Properties
 

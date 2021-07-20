@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.CoinsForwardingAutomationsLimitReachedError();
+    instance = new Cryptoapis.CoinsForwardingAutomationsLimitReachedError();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('CoinsForwardingAutomationsLimitReachedError', function() {
     it('should create an instance of CoinsForwardingAutomationsLimitReachedError', function() {
       // uncomment below and update the code to test CoinsForwardingAutomationsLimitReachedError
-      //var instane = new CryptoApis.CoinsForwardingAutomationsLimitReachedError();
-      //expect(instance).to.be.a(CryptoApis.CoinsForwardingAutomationsLimitReachedError);
+      //var instane = new Cryptoapis.CoinsForwardingAutomationsLimitReachedError();
+      //expect(instance).to.be.a(Cryptoapis.CoinsForwardingAutomationsLimitReachedError);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new CryptoApis.CoinsForwardingAutomationsLimitReachedError();
+      //var instance = new Cryptoapis.CoinsForwardingAutomationsLimitReachedError();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new CryptoApis.CoinsForwardingAutomationsLimitReachedError();
+      //var instance = new Cryptoapis.CoinsForwardingAutomationsLimitReachedError();
       //expect(instance).to.be();
     });
 
     it('should have the property details (base name: "details")', function() {
       // uncomment below and update the code to test the property details
-      //var instance = new CryptoApis.CoinsForwardingAutomationsLimitReachedError();
+      //var instance = new Cryptoapis.CoinsForwardingAutomationsLimitReachedError();
       //expect(instance).to.be();
     });
 

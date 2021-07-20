@@ -1,4 +1,4 @@
-# CryptoApis.AddressTokensTransactionConfirmedEachConfirmationToken
+# Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationToken
 
 ## Properties
 

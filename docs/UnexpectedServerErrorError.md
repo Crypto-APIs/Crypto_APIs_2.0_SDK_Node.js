@@ -1,4 +1,4 @@
-# CryptoApis.UnexpectedServerErrorError
+# Cryptoapis.UnexpectedServerErrorError
 
 ## Properties
 

@@ -9,76 +9,76 @@ Object.defineProperty(exports, "ApiClient", {
     return _ApiClient["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressRequestBody", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressR", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressRequestBody["default"];
+    return _AddTokensToExistingFromAddressR["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressRequestBodyData", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRB", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressRequestBodyData["default"];
+    return _AddTokensToExistingFromAddressRB["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressRequestBodyDataItem", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRBData", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressRequestBodyDataItem["default"];
+    return _AddTokensToExistingFromAddressRBData["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressRequestBodyTokenData", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressRequestBodyTokenData["default"];
+    return _AddTokensToExistingFromAddressRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressRequestBodyTokenDataBitcoinOmniToken", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRBTokenData", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressRequestBodyTokenDataBitcoinOmniToken["default"];
+    return _AddTokensToExistingFromAddressRBTokenData["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressRequestBodyTokenDataEthereumErc20Token", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressRequestBodyTokenDataEthereumErc20Token["default"];
+    return _AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressResponse", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressResponse["default"];
+    return _AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressResponseData", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRData", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressResponseData["default"];
+    return _AddTokensToExistingFromAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressResponseItem", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRI", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressResponseItem["default"];
+    return _AddTokensToExistingFromAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressResponseItemTokenData", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRITS", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressResponseItemTokenData["default"];
+    return _AddTokensToExistingFromAddressRITS["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressResponseItemTokenDataBitcoinOmniToken", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRITSBOT", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressResponseItemTokenDataBitcoinOmniToken["default"];
+    return _AddTokensToExistingFromAddressRITSBOT["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressResponseItemTokenDataEthereumErc20Token", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRITSEET", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressResponseItemTokenDataEthereumErc20Token["default"];
+    return _AddTokensToExistingFromAddressRITSEET["default"];
   }
 });
 Object.defineProperty(exports, "AddressCoinsTransactionConfirmed", {
@@ -345,6 +345,18 @@ Object.defineProperty(exports, "BlockchainDataBlockNotFoundError", {
     return _BlockchainDataBlockNotFoundError["default"];
   }
 });
+Object.defineProperty(exports, "BlockchainDataInternalTransactionNotFound", {
+  enumerable: true,
+  get: function get() {
+    return _BlockchainDataInternalTransactionNotFound["default"];
+  }
+});
+Object.defineProperty(exports, "BlockchainDataInternalTransactionNotFoundError", {
+  enumerable: true,
+  get: function get() {
+    return _BlockchainDataInternalTransactionNotFoundError["default"];
+  }
+});
 Object.defineProperty(exports, "BlockchainDataTransactionNotFound", {
   enumerable: true,
   get: function get() {
@@ -429,184 +441,346 @@ Object.defineProperty(exports, "CouldNotCalculateRateForPairError", {
     return _CouldNotCalculateRateForPairError["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticCoinsForwardingRequestBody", {
+Object.defineProperty(exports, "CreateAutomaticCoinsForwardingR", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticCoinsForwardingRequestBody["default"];
+    return _CreateAutomaticCoinsForwardingR["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticCoinsForwardingRequestBodyData", {
+Object.defineProperty(exports, "CreateAutomaticCoinsForwardingRB", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticCoinsForwardingRequestBodyData["default"];
+    return _CreateAutomaticCoinsForwardingRB["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticCoinsForwardingRequestBodyDataItem", {
+Object.defineProperty(exports, "CreateAutomaticCoinsForwardingRBData", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticCoinsForwardingRequestBodyDataItem["default"];
+    return _CreateAutomaticCoinsForwardingRBData["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticCoinsForwardingResponse", {
+Object.defineProperty(exports, "CreateAutomaticCoinsForwardingRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticCoinsForwardingResponse["default"];
+    return _CreateAutomaticCoinsForwardingRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticCoinsForwardingResponseData", {
+Object.defineProperty(exports, "CreateAutomaticCoinsForwardingRData", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticCoinsForwardingResponseData["default"];
+    return _CreateAutomaticCoinsForwardingRData["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticCoinsForwardingResponseItem", {
+Object.defineProperty(exports, "CreateAutomaticCoinsForwardingRI", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticCoinsForwardingResponseItem["default"];
+    return _CreateAutomaticCoinsForwardingRI["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingRequestBody", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingR", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingRequestBody["default"];
+    return _CreateAutomaticTokensForwardingR["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingRequestBodyData", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRB", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingRequestBodyData["default"];
+    return _CreateAutomaticTokensForwardingRB["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingRequestBodyDataItem", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRBData", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingRequestBodyDataItem["default"];
+    return _CreateAutomaticTokensForwardingRBData["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingRequestBodyTokenData", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingRequestBodyTokenData["default"];
+    return _CreateAutomaticTokensForwardingRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingRequestBodyTokenDataBitcoinOmniToken", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRBTokenData", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingRequestBodyTokenDataBitcoinOmniToken["default"];
+    return _CreateAutomaticTokensForwardingRBTokenData["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingRequestBodyTokenDataEthereumToken", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingRequestBodyTokenDataEthereumToken["default"];
+    return _CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingResponse", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRBTokenDataEthereumToken", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingResponse["default"];
+    return _CreateAutomaticTokensForwardingRBTokenDataEthereumToken["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingResponseData", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRData", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingResponseData["default"];
+    return _CreateAutomaticTokensForwardingRData["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingResponseItem", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRI", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingResponseItem["default"];
+    return _CreateAutomaticTokensForwardingRI["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingResponseItemTokenData", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRITS", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingResponseItemTokenData["default"];
+    return _CreateAutomaticTokensForwardingRITS["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingResponseItemTokenDataBitcoinOmniToken", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRITSBOT", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingResponseItemTokenDataBitcoinOmniToken["default"];
+    return _CreateAutomaticTokensForwardingRITSBOT["default"];
   }
 });
-Object.defineProperty(exports, "CreateAutomaticTokensForwardingResponseItemTokenDataEthereumToken", {
+Object.defineProperty(exports, "CreateAutomaticTokensForwardingRITSET", {
   enumerable: true,
   get: function get() {
-    return _CreateAutomaticTokensForwardingResponseItemTokenDataEthereumToken["default"];
+    return _CreateAutomaticTokensForwardingRITSET["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticCoinsForwardingResponse", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressR", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticCoinsForwardingResponse["default"];
+    return _CreateCoinsTransactionRequestFromAddressR["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticCoinsForwardingResponseData", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressRB", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticCoinsForwardingResponseData["default"];
+    return _CreateCoinsTransactionRequestFromAddressRB["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticCoinsForwardingResponseItem", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressRBData", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticCoinsForwardingResponseItem["default"];
+    return _CreateCoinsTransactionRequestFromAddressRBData["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticTokensForwardingResponse", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticTokensForwardingResponse["default"];
+    return _CreateCoinsTransactionRequestFromAddressRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticTokensForwardingResponseData", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressRData", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticTokensForwardingResponseData["default"];
+    return _CreateCoinsTransactionRequestFromAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticTokensForwardingResponseItem", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressRI", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticTokensForwardingResponseItem["default"];
+    return _CreateCoinsTransactionRequestFromAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticTokensForwardingResponseItemTokenData", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressRIRecipients", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticTokensForwardingResponseItemTokenData["default"];
+    return _CreateCoinsTransactionRequestFromAddressRIRecipients["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticTokensForwardingResponseItemTokenDataBitcoinOmniToken", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressRISenders", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticTokensForwardingResponseItemTokenDataBitcoinOmniToken["default"];
+    return _CreateCoinsTransactionRequestFromAddressRISenders["default"];
   }
 });
-Object.defineProperty(exports, "DeleteAutomaticTokensForwardingResponseItemTokenDataEthereumToken", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletR", {
   enumerable: true,
   get: function get() {
-    return _DeleteAutomaticTokensForwardingResponseItemTokenDataEthereumToken["default"];
+    return _CreateCoinsTransactionRequestFromWalletR["default"];
   }
 });
-Object.defineProperty(exports, "DeleteBlockchainEventSubscriptionResponse", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRB", {
   enumerable: true,
   get: function get() {
-    return _DeleteBlockchainEventSubscriptionResponse["default"];
+    return _CreateCoinsTransactionRequestFromWalletRB["default"];
   }
 });
-Object.defineProperty(exports, "DeleteBlockchainEventSubscriptionResponseData", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRBData", {
   enumerable: true,
   get: function get() {
-    return _DeleteBlockchainEventSubscriptionResponseData["default"];
+    return _CreateCoinsTransactionRequestFromWalletRBData["default"];
   }
 });
-Object.defineProperty(exports, "DeleteBlockchainEventSubscriptionResponseItem", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _DeleteBlockchainEventSubscriptionResponseItem["default"];
+    return _CreateCoinsTransactionRequestFromWalletRBDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRBDataItemDestinations", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionRequestFromWalletRBDataItemDestinations["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRData", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionRequestFromWalletRData["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRI", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionRequestFromWalletRI["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionRequestFromWalletRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRB", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRB["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRBData", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRBData["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRBDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRBDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticCoinsForwardingR", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticCoinsForwardingR["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticCoinsForwardingRData", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticCoinsForwardingRData["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticCoinsForwardingRI", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticCoinsForwardingRI["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticTokensForwardingR", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticTokensForwardingR["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticTokensForwardingRData", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticTokensForwardingRData["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticTokensForwardingRI", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticTokensForwardingRI["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticTokensForwardingRITS", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticTokensForwardingRITS["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticTokensForwardingRITSBOT", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticTokensForwardingRITSBOT["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteAutomaticTokensForwardingRITSET", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteAutomaticTokensForwardingRITSET["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteBlockchainEventSubscriptionR", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteBlockchainEventSubscriptionR["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteBlockchainEventSubscriptionRData", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteBlockchainEventSubscriptionRData["default"];
+  }
+});
+Object.defineProperty(exports, "DeleteBlockchainEventSubscriptionRI", {
+  enumerable: true,
+  get: function get() {
+    return _DeleteBlockchainEventSubscriptionRI["default"];
   }
 });
 Object.defineProperty(exports, "EndpointNotAllowedForApiKey", {
@@ -645,778 +819,982 @@ Object.defineProperty(exports, "FeatureMainnetsNotAllowedForPlanError", {
     return _FeatureMainnetsNotAllowedForPlanError["default"];
   }
 });
-Object.defineProperty(exports, "GetAddressDetailsResponse", {
+Object.defineProperty(exports, "GenerateReceivingAddressR", {
   enumerable: true,
   get: function get() {
-    return _GetAddressDetailsResponse["default"];
+    return _GenerateReceivingAddressR["default"];
   }
 });
-Object.defineProperty(exports, "GetAddressDetailsResponseData", {
+Object.defineProperty(exports, "GenerateReceivingAddressRB", {
   enumerable: true,
   get: function get() {
-    return _GetAddressDetailsResponseData["default"];
+    return _GenerateReceivingAddressRB["default"];
   }
 });
-Object.defineProperty(exports, "GetAddressDetailsResponseItem", {
+Object.defineProperty(exports, "GenerateReceivingAddressRBData", {
   enumerable: true,
   get: function get() {
-    return _GetAddressDetailsResponseItem["default"];
+    return _GenerateReceivingAddressRBData["default"];
   }
 });
-Object.defineProperty(exports, "GetAddressDetailsResponseItemConfirmedBalance", {
+Object.defineProperty(exports, "GenerateReceivingAddressRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _GetAddressDetailsResponseItemConfirmedBalance["default"];
+    return _GenerateReceivingAddressRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "GetAddressDetailsResponseItemTotalReceived", {
+Object.defineProperty(exports, "GenerateReceivingAddressRData", {
   enumerable: true,
   get: function get() {
-    return _GetAddressDetailsResponseItemTotalReceived["default"];
+    return _GenerateReceivingAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "GetAddressDetailsResponseItemTotalSpent", {
+Object.defineProperty(exports, "GenerateReceivingAddressRI", {
   enumerable: true,
   get: function get() {
-    return _GetAddressDetailsResponseItemTotalSpent["default"];
+    return _GenerateReceivingAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponse", {
+Object.defineProperty(exports, "GetAddressDetailsR", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponse["default"];
+    return _GetAddressDetailsR["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseData", {
+Object.defineProperty(exports, "GetAddressDetailsRData", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseData["default"];
+    return _GetAddressDetailsRData["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItem", {
+Object.defineProperty(exports, "GetAddressDetailsRI", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItem["default"];
+    return _GetAddressDetailsRI["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItemBlockchainSpecific", {
+Object.defineProperty(exports, "GetAddressDetailsRIConfirmedBalance", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItemBlockchainSpecific["default"];
+    return _GetAddressDetailsRIConfirmedBalance["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItemBlockchainSpecificBitcoin", {
+Object.defineProperty(exports, "GetAddressDetailsRITotalReceived", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificBitcoin["default"];
+    return _GetAddressDetailsRITotalReceived["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItemBlockchainSpecificBitcoinCash", {
+Object.defineProperty(exports, "GetAddressDetailsRITotalSpent", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificBitcoinCash["default"];
+    return _GetAddressDetailsRITotalSpent["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItemBlockchainSpecificDash", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashR", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificDash["default"];
+    return _GetBlockDetailsByBlockHashR["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItemBlockchainSpecificDogecoin", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRData", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificDogecoin["default"];
+    return _GetBlockDetailsByBlockHashRData["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItemBlockchainSpecificEthereum", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRI", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificEthereum["default"];
+    return _GetBlockDetailsByBlockHashRI["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItemBlockchainSpecificEthereumClassic", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBS", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificEthereumClassic["default"];
+    return _GetBlockDetailsByBlockHashRIBS["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHashResponseItemBlockchainSpecificLitecoin", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSB", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificLitecoin["default"];
+    return _GetBlockDetailsByBlockHashRIBSB["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponse", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSBC", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponse["default"];
+    return _GetBlockDetailsByBlockHashRIBSBC["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseData", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSD", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseData["default"];
+    return _GetBlockDetailsByBlockHashRIBSD["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItem", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSD2", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItem["default"];
+    return _GetBlockDetailsByBlockHashRIBSD2["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItemBlockchainSpecific", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSE", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecific["default"];
+    return _GetBlockDetailsByBlockHashRIBSE["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificBitcoin", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSEC", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificBitcoin["default"];
+    return _GetBlockDetailsByBlockHashRIBSEC["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificBitcoinCash", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSL", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificBitcoinCash["default"];
+    return _GetBlockDetailsByBlockHashRIBSL["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificDash", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightR", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificDash["default"];
+    return _GetBlockDetailsByBlockHeightR["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificDogecoin", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRData", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificDogecoin["default"];
+    return _GetBlockDetailsByBlockHeightRData["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificEthereum", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRI", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificEthereum["default"];
+    return _GetBlockDetailsByBlockHeightRI["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificEthereumClassic", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBS", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificEthereumClassic["default"];
+    return _GetBlockDetailsByBlockHeightRIBS["default"];
   }
 });
-Object.defineProperty(exports, "GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificLitecoin", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSB", {
   enumerable: true,
   get: function get() {
-    return _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificLitecoin["default"];
+    return _GetBlockDetailsByBlockHeightRIBSB["default"];
   }
 });
-Object.defineProperty(exports, "GetContractDetailsByAddressResponse", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSBC", {
   enumerable: true,
   get: function get() {
-    return _GetContractDetailsByAddressResponse["default"];
+    return _GetBlockDetailsByBlockHeightRIBSBC["default"];
   }
 });
-Object.defineProperty(exports, "GetContractDetailsByAddressResponseData", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSD", {
   enumerable: true,
   get: function get() {
-    return _GetContractDetailsByAddressResponseData["default"];
+    return _GetBlockDetailsByBlockHeightRIBSD["default"];
   }
 });
-Object.defineProperty(exports, "GetContractDetailsByAddressResponseItem", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSD2", {
   enumerable: true,
   get: function get() {
-    return _GetContractDetailsByAddressResponseItem["default"];
+    return _GetBlockDetailsByBlockHeightRIBSD2["default"];
   }
 });
-Object.defineProperty(exports, "GetExchangeRateByAssetSymbolsResponse", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSE", {
   enumerable: true,
   get: function get() {
-    return _GetExchangeRateByAssetSymbolsResponse["default"];
+    return _GetBlockDetailsByBlockHeightRIBSE["default"];
   }
 });
-Object.defineProperty(exports, "GetExchangeRateByAssetSymbolsResponseData", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSEC", {
   enumerable: true,
   get: function get() {
-    return _GetExchangeRateByAssetSymbolsResponseData["default"];
+    return _GetBlockDetailsByBlockHeightRIBSEC["default"];
   }
 });
-Object.defineProperty(exports, "GetExchangeRateByAssetSymbolsResponseItem", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSL", {
   enumerable: true,
   get: function get() {
-    return _GetExchangeRateByAssetSymbolsResponseItem["default"];
+    return _GetBlockDetailsByBlockHeightRIBSL["default"];
   }
 });
-Object.defineProperty(exports, "GetExchangeRateByAssetsIDsResponse", {
+Object.defineProperty(exports, "GetContractDetailsByAddressR", {
   enumerable: true,
   get: function get() {
-    return _GetExchangeRateByAssetsIDsResponse["default"];
+    return _GetContractDetailsByAddressR["default"];
   }
 });
-Object.defineProperty(exports, "GetExchangeRateByAssetsIDsResponseData", {
+Object.defineProperty(exports, "GetContractDetailsByAddressRData", {
   enumerable: true,
   get: function get() {
-    return _GetExchangeRateByAssetsIDsResponseData["default"];
+    return _GetContractDetailsByAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "GetExchangeRateByAssetsIDsResponseItem", {
+Object.defineProperty(exports, "GetContractDetailsByAddressRI", {
   enumerable: true,
   get: function get() {
-    return _GetExchangeRateByAssetsIDsResponseItem["default"];
+    return _GetContractDetailsByAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "GetFeeAddressDetailsResponse", {
+Object.defineProperty(exports, "GetExchangeRateByAssetSymbolsR", {
   enumerable: true,
   get: function get() {
-    return _GetFeeAddressDetailsResponse["default"];
+    return _GetExchangeRateByAssetSymbolsR["default"];
   }
 });
-Object.defineProperty(exports, "GetFeeAddressDetailsResponseData", {
+Object.defineProperty(exports, "GetExchangeRateByAssetSymbolsRData", {
   enumerable: true,
   get: function get() {
-    return _GetFeeAddressDetailsResponseData["default"];
+    return _GetExchangeRateByAssetSymbolsRData["default"];
   }
 });
-Object.defineProperty(exports, "GetFeeAddressDetailsResponseItem", {
+Object.defineProperty(exports, "GetExchangeRateByAssetSymbolsRI", {
   enumerable: true,
   get: function get() {
-    return _GetFeeAddressDetailsResponseItem["default"];
+    return _GetExchangeRateByAssetSymbolsRI["default"];
   }
 });
-Object.defineProperty(exports, "GetFeeAddressDetailsResponseItemBalance", {
+Object.defineProperty(exports, "GetExchangeRateByAssetsIDsR", {
   enumerable: true,
   get: function get() {
-    return _GetFeeAddressDetailsResponseItemBalance["default"];
+    return _GetExchangeRateByAssetsIDsR["default"];
   }
 });
-Object.defineProperty(exports, "GetFeeRecommendationsResponse", {
+Object.defineProperty(exports, "GetExchangeRateByAssetsIDsRData", {
   enumerable: true,
   get: function get() {
-    return _GetFeeRecommendationsResponse["default"];
+    return _GetExchangeRateByAssetsIDsRData["default"];
   }
 });
-Object.defineProperty(exports, "GetFeeRecommendationsResponseData", {
+Object.defineProperty(exports, "GetExchangeRateByAssetsIDsRI", {
   enumerable: true,
   get: function get() {
-    return _GetFeeRecommendationsResponseData["default"];
+    return _GetExchangeRateByAssetsIDsRI["default"];
   }
 });
-Object.defineProperty(exports, "GetFeeRecommendationsResponseItem", {
+Object.defineProperty(exports, "GetFeeAddressDetailsR", {
   enumerable: true,
   get: function get() {
-    return _GetFeeRecommendationsResponseItem["default"];
+    return _GetFeeAddressDetailsR["default"];
   }
 });
-Object.defineProperty(exports, "GetHDWalletxPubYPubZPubDetailsResponse", {
+Object.defineProperty(exports, "GetFeeAddressDetailsRData", {
   enumerable: true,
   get: function get() {
-    return _GetHDWalletxPubYPubZPubDetailsResponse["default"];
+    return _GetFeeAddressDetailsRData["default"];
   }
 });
-Object.defineProperty(exports, "GetHDWalletxPubYPubZPubDetailsResponseData", {
+Object.defineProperty(exports, "GetFeeAddressDetailsRI", {
   enumerable: true,
   get: function get() {
-    return _GetHDWalletxPubYPubZPubDetailsResponseData["default"];
+    return _GetFeeAddressDetailsRI["default"];
   }
 });
-Object.defineProperty(exports, "GetHDWalletxPubYPubZPubDetailsResponseItem", {
+Object.defineProperty(exports, "GetFeeAddressDetailsRIBalance", {
   enumerable: true,
   get: function get() {
-    return _GetHDWalletxPubYPubZPubDetailsResponseItem["default"];
+    return _GetFeeAddressDetailsRIBalance["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponse", {
+Object.defineProperty(exports, "GetFeeRecommendationsR", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponse["default"];
+    return _GetFeeRecommendationsR["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseData", {
+Object.defineProperty(exports, "GetFeeRecommendationsRData", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseData["default"];
+    return _GetFeeRecommendationsRData["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItem", {
+Object.defineProperty(exports, "GetFeeRecommendationsRI", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItem["default"];
+    return _GetFeeRecommendationsRI["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItemBlockchainSpecific", {
+Object.defineProperty(exports, "GetHDWalletXPubYPubZPubDetailsR", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItemBlockchainSpecific["default"];
+    return _GetHDWalletXPubYPubZPubDetailsR["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItemBlockchainSpecificBitcoin", {
+Object.defineProperty(exports, "GetHDWalletXPubYPubZPubDetailsRData", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItemBlockchainSpecificBitcoin["default"];
+    return _GetHDWalletXPubYPubZPubDetailsRData["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItemBlockchainSpecificBitcoinCash", {
+Object.defineProperty(exports, "GetHDWalletXPubYPubZPubDetailsRI", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItemBlockchainSpecificBitcoinCash["default"];
+    return _GetHDWalletXPubYPubZPubDetailsRI["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItemBlockchainSpecificDash", {
+Object.defineProperty(exports, "GetInternalTransactionByTransactionHashAndOperationIdR", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItemBlockchainSpecificDash["default"];
+    return _GetInternalTransactionByTransactionHashAndOperationIdR["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItemBlockchainSpecificDogecoin", {
+Object.defineProperty(exports, "GetInternalTransactionByTransactionHashAndOperationIdRData", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItemBlockchainSpecificDogecoin["default"];
+    return _GetInternalTransactionByTransactionHashAndOperationIdRData["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItemBlockchainSpecificEthereum", {
+Object.defineProperty(exports, "GetInternalTransactionByTransactionHashAndOperationIdRI", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItemBlockchainSpecificEthereum["default"];
+    return _GetInternalTransactionByTransactionHashAndOperationIdRI["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItemBlockchainSpecificEthereumClassic", {
+Object.defineProperty(exports, "GetLatestMinedBlockR", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItemBlockchainSpecificEthereumClassic["default"];
+    return _GetLatestMinedBlockR["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockResponseItemBlockchainSpecificLitecoin", {
+Object.defineProperty(exports, "GetLatestMinedBlockRData", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockResponseItemBlockchainSpecificLitecoin["default"];
+    return _GetLatestMinedBlockRData["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockResponse", {
+Object.defineProperty(exports, "GetLatestMinedBlockRI", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedXRPRippleBlockResponse["default"];
+    return _GetLatestMinedBlockRI["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockResponseData", {
+Object.defineProperty(exports, "GetLatestMinedBlockRIBS", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedXRPRippleBlockResponseData["default"];
+    return _GetLatestMinedBlockRIBS["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockResponseItem", {
+Object.defineProperty(exports, "GetLatestMinedBlockRIBSB", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedXRPRippleBlockResponseItem["default"];
+    return _GetLatestMinedBlockRIBSB["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockResponseItemTotalCoins", {
+Object.defineProperty(exports, "GetLatestMinedBlockRIBSBC", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedXRPRippleBlockResponseItemTotalCoins["default"];
+    return _GetLatestMinedBlockRIBSBC["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockResponseItemTotalFees", {
+Object.defineProperty(exports, "GetLatestMinedBlockRIBSD", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedXRPRippleBlockResponseItemTotalFees["default"];
+    return _GetLatestMinedBlockRIBSD["default"];
   }
 });
-Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidResponse", {
+Object.defineProperty(exports, "GetLatestMinedBlockRIBSD2", {
   enumerable: true,
   get: function get() {
-    return _GetOmniTransactionDetailsByTransactionIDTxidResponse["default"];
+    return _GetLatestMinedBlockRIBSD2["default"];
   }
 });
-Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidResponseData", {
+Object.defineProperty(exports, "GetLatestMinedBlockRIBSE", {
   enumerable: true,
   get: function get() {
-    return _GetOmniTransactionDetailsByTransactionIDTxidResponseData["default"];
+    return _GetLatestMinedBlockRIBSE["default"];
   }
 });
-Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidResponseItem", {
+Object.defineProperty(exports, "GetLatestMinedBlockRIBSEC", {
   enumerable: true,
   get: function get() {
-    return _GetOmniTransactionDetailsByTransactionIDTxidResponseItem["default"];
+    return _GetLatestMinedBlockRIBSEC["default"];
   }
 });
-Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidResponseItemSenders", {
+Object.defineProperty(exports, "GetLatestMinedBlockRIBSL", {
   enumerable: true,
   get: function get() {
-    return _GetOmniTransactionDetailsByTransactionIDTxidResponseItemSenders["default"];
+    return _GetLatestMinedBlockRIBSL["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponse", {
+Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockR", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponse["default"];
+    return _GetLatestMinedXRPRippleBlockR["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseData", {
+Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockRData", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseData["default"];
+    return _GetLatestMinedXRPRippleBlockRData["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItem", {
+Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockRI", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItem["default"];
+    return _GetLatestMinedXRPRippleBlockRI["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecific", {
+Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockRITotalCoins", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecific["default"];
+    return _GetLatestMinedXRPRippleBlockRITotalCoins["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoin", {
+Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockRITotalFees", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoin["default"];
+    return _GetLatestMinedXRPRippleBlockRITotalFees["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCash", {
+Object.defineProperty(exports, "GetLatestMinedZilliqaBlockR", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCash["default"];
+    return _GetLatestMinedZilliqaBlockR["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashScriptPubKey", {
+Object.defineProperty(exports, "GetLatestMinedZilliqaBlockRData", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashScriptPubKey["default"];
+    return _GetLatestMinedZilliqaBlockRData["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashVin", {
+Object.defineProperty(exports, "GetLatestMinedZilliqaBlockRI", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashVin["default"];
+    return _GetLatestMinedZilliqaBlockRI["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashVout", {
+Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidR", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashVout["default"];
+    return _GetOmniTransactionDetailsByTransactionIDTxidR["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinScriptPubKey", {
+Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidRData", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinScriptPubKey["default"];
+    return _GetOmniTransactionDetailsByTransactionIDTxidRData["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinScriptSig", {
+Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidRI", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinScriptSig["default"];
+    return _GetOmniTransactionDetailsByTransactionIDTxidRI["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinVin", {
+Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidRISenders", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinVin["default"];
+    return _GetOmniTransactionDetailsByTransactionIDTxidRISenders["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinVout", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDR", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinVout["default"];
+    return _GetTransactionDetailsByTransactionIDR["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDash", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRData", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDash["default"];
+    return _GetTransactionDetailsByTransactionIDRData["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashScriptPubKey", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRI", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashScriptPubKey["default"];
+    return _GetTransactionDetailsByTransactionIDRI["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashScriptSig", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBS", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashScriptSig["default"];
+    return _GetTransactionDetailsByTransactionIDRIBS["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashVin", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSB", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashVin["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSB["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashVout", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBC", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashVout["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSBC["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoin", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoin["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinScriptPubKey", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBCVin", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinScriptPubKey["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSBCVin["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinScriptSig", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBCVout", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinScriptSig["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSBCVout["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinVin", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinVin["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSBScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinVout", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBScriptSig", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinVout["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSBScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereum", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBVin", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereum["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSBVin["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumClassic", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBVout", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumClassic["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSBVout["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumClassicGasPrice", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSD", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumClassicGasPrice["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSD["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumGasPrice", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSD2", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumGasPrice["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSD2["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoin", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSD2ScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoin["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSD2ScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinScriptPubKey", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSD2ScriptSig", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinScriptPubKey["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSD2ScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinScriptSig", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSD2Vin", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinScriptSig["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSD2Vin["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinVin", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSD2Vout", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinVin["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSD2Vout["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinVout", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSDScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinVout["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSDScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemFee", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSDScriptSig", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemFee["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSDScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemRecipients", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSDVin", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemRecipients["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSDVin["default"];
   }
 });
-Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDResponseItemSenders", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSDVout", {
   enumerable: true,
   get: function get() {
-    return _GetTransactionDetailsByTransactionIDResponseItemSenders["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSDVout["default"];
   }
 });
-Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidResponse", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSE", {
   enumerable: true,
   get: function get() {
-    return _GetUnconfirmedOmniTransactionByTransactionIDTxidResponse["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSE["default"];
   }
 });
-Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidResponseData", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSEC", {
   enumerable: true,
   get: function get() {
-    return _GetUnconfirmedOmniTransactionByTransactionIDTxidResponseData["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSEC["default"];
   }
 });
-Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItem", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSECGasPrice", {
   enumerable: true,
   get: function get() {
-    return _GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItem["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSECGasPrice["default"];
   }
 });
-Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItemRecipients", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSEGasPrice", {
   enumerable: true,
   get: function get() {
-    return _GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItemRecipients["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSEGasPrice["default"];
   }
 });
-Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItemSenders", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSL", {
   enumerable: true,
   get: function get() {
-    return _GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItemSenders["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSL["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleAddressDetailsResponse", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSLScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleAddressDetailsResponse["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSLScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleAddressDetailsResponseData", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSLScriptSig", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleAddressDetailsResponseData["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSLScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleAddressDetailsResponseItem", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSLVin", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleAddressDetailsResponseItem["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSLVin["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleAddressDetailsResponseItemBalance", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSLVout", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleAddressDetailsResponseItemBalance["default"];
+    return _GetTransactionDetailsByTransactionIDRIBSLVout["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHashResponse", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIFee", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHashResponse["default"];
+    return _GetTransactionDetailsByTransactionIDRIFee["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHashResponseData", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIRecipients", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHashResponseData["default"];
+    return _GetTransactionDetailsByTransactionIDRIRecipients["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHashResponseItem", {
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRISenders", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHashResponseItem["default"];
+    return _GetTransactionDetailsByTransactionIDRISenders["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHashResponseItemTotalCoins", {
+Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidR", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHashResponseItemTotalCoins["default"];
+    return _GetUnconfirmedOmniTransactionByTransactionIDTxidR["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightResponse", {
+Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidRData", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHeightResponse["default"];
+    return _GetUnconfirmedOmniTransactionByTransactionIDTxidRData["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightResponseData", {
+Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidRI", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHeightResponseData["default"];
+    return _GetUnconfirmedOmniTransactionByTransactionIDTxidRI["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightResponseItem", {
+Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHeightResponseItem["default"];
+    return _GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightResponseItemTotalCoins", {
+Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHeightResponseItemTotalCoins["default"];
+    return _GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightResponseItemTotalFees", {
+Object.defineProperty(exports, "GetWalletAssetDetailsR", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleBlockDetailsByBlockHeightResponseItemTotalFees["default"];
+    return _GetWalletAssetDetailsR["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponse", {
+Object.defineProperty(exports, "GetWalletAssetDetailsRData", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponse["default"];
+    return _GetWalletAssetDetailsRData["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponseData", {
+Object.defineProperty(exports, "GetWalletAssetDetailsRI", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponseData["default"];
+    return _GetWalletAssetDetailsRI["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponseItem", {
+Object.defineProperty(exports, "GetWalletAssetDetailsRIConfirmedBalance", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponseItem["default"];
+    return _GetWalletAssetDetailsRIConfirmedBalance["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponseItemFee", {
+Object.defineProperty(exports, "GetWalletAssetDetailsRIRecievedConfirmedAmount", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponseItemFee["default"];
+    return _GetWalletAssetDetailsRIRecievedConfirmedAmount["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponseItemOffer", {
+Object.defineProperty(exports, "GetWalletAssetDetailsRISentConfirmedAmount", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponseItemOffer["default"];
+    return _GetWalletAssetDetailsRISentConfirmedAmount["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponseItemReceive", {
+Object.defineProperty(exports, "GetXRPRippleAddressDetailsR", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponseItemReceive["default"];
+    return _GetXRPRippleAddressDetailsR["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponseItemRecipients", {
+Object.defineProperty(exports, "GetXRPRippleAddressDetailsRData", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponseItemRecipients["default"];
+    return _GetXRPRippleAddressDetailsRData["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponseItemSenders", {
+Object.defineProperty(exports, "GetXRPRippleAddressDetailsRI", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponseItemSenders["default"];
+    return _GetXRPRippleAddressDetailsRI["default"];
   }
 });
-Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDResponseItemValue", {
+Object.defineProperty(exports, "GetXRPRippleAddressDetailsRIBalance", {
   enumerable: true,
   get: function get() {
-    return _GetXRPRippleTransactionDetailsByTransactionIDResponseItemValue["default"];
+    return _GetXRPRippleAddressDetailsRIBalance["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHashR", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHashR["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHashRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHashRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHashRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHashRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHashRITotalCoins", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHashRITotalCoins["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightR", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHeightR["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHeightRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHeightRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightRITotalCoins", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHeightRITotalCoins["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleBlockDetailsByBlockHeightRITotalFees", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleBlockDetailsByBlockHeightRITotalFees["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDR", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDR["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDRIFee", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDRIFee["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDRIOffer", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDRIOffer["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDRIReceive", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDRIReceive["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "GetXRPRippleTransactionDetailsByTransactionIDRIValue", {
+  enumerable: true,
+  get: function get() {
+    return _GetXRPRippleTransactionDetailsByTransactionIDRIValue["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaAddressDetailsR", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaAddressDetailsR["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaAddressDetailsRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaAddressDetailsRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaAddressDetailsRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaAddressDetailsRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaAddressDetailsRIBalance", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaAddressDetailsRIBalance["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaBlockDetailsByBlockHashR", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaBlockDetailsByBlockHashR["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaBlockDetailsByBlockHashRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaBlockDetailsByBlockHashRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaBlockDetailsByBlockHashRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaBlockDetailsByBlockHashRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaBlockDetailsByBlockHeightR", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaBlockDetailsByBlockHeightR["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaBlockDetailsByBlockHeightRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaBlockDetailsByBlockHeightRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaBlockDetailsByBlockHeightRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaBlockDetailsByBlockHeightRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaTransactionDetailsByTransactionIDR", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaTransactionDetailsByTransactionIDR["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaTransactionDetailsByTransactionIDRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaTransactionDetailsByTransactionIDRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaTransactionDetailsByTransactionIDRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaTransactionDetailsByTransactionIDRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaTransactionDetailsByTransactionIDRIFee", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaTransactionDetailsByTransactionIDRIFee["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaTransactionDetailsByTransactionIDRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaTransactionDetailsByTransactionIDRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "GetZilliqaTransactionDetailsByTransactionIDRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _GetZilliqaTransactionDetailsByTransactionIDRISenders["default"];
   }
 });
 Object.defineProperty(exports, "InsufficientCredits", {
@@ -1527,988 +1905,1162 @@ Object.defineProperty(exports, "LimitGreaterThanAllowedError", {
     return _LimitGreaterThanAllowedError["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsResponse", {
+Object.defineProperty(exports, "ListAssetsDetailsR", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsResponse["default"];
+    return _ListAssetsDetailsR["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsResponseData", {
+Object.defineProperty(exports, "ListAssetsDetailsRData", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsResponseData["default"];
+    return _ListAssetsDetailsRData["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsResponseItem", {
+Object.defineProperty(exports, "ListAssetsDetailsRI", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsResponseItem["default"];
+    return _ListAssetsDetailsRI["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsResponseItemAssetLogo", {
+Object.defineProperty(exports, "ListAssetsDetailsRIAssetLogo", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsResponseItemAssetLogo["default"];
+    return _ListAssetsDetailsRIAssetLogo["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsResponseItemLatestRate", {
+Object.defineProperty(exports, "ListAssetsDetailsRILatestRate", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsResponseItemLatestRate["default"];
+    return _ListAssetsDetailsRILatestRate["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsResponseItemSpecificData", {
+Object.defineProperty(exports, "ListAssetsDetailsRISpecificData", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsResponseItemSpecificData["default"];
+    return _ListAssetsDetailsRISpecificData["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsResponseItemSpecificDataCryptoTypeData", {
+Object.defineProperty(exports, "ListAssetsDetailsRISpecificDataCryptoTypeData", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsResponseItemSpecificDataCryptoTypeData["default"];
+    return _ListAssetsDetailsRISpecificDataCryptoTypeData["default"];
   }
 });
-Object.defineProperty(exports, "ListBlockchainEventsSubscriptionsResponse", {
+Object.defineProperty(exports, "ListBlockchainEventsSubscriptionsR", {
   enumerable: true,
   get: function get() {
-    return _ListBlockchainEventsSubscriptionsResponse["default"];
+    return _ListBlockchainEventsSubscriptionsR["default"];
   }
 });
-Object.defineProperty(exports, "ListBlockchainEventsSubscriptionsResponseData", {
+Object.defineProperty(exports, "ListBlockchainEventsSubscriptionsRData", {
   enumerable: true,
   get: function get() {
-    return _ListBlockchainEventsSubscriptionsResponseData["default"];
+    return _ListBlockchainEventsSubscriptionsRData["default"];
   }
 });
-Object.defineProperty(exports, "ListBlockchainEventsSubscriptionsResponseItem", {
+Object.defineProperty(exports, "ListBlockchainEventsSubscriptionsRI", {
   enumerable: true,
   get: function get() {
-    return _ListBlockchainEventsSubscriptionsResponseItem["default"];
+    return _ListBlockchainEventsSubscriptionsRI["default"];
   }
 });
-Object.defineProperty(exports, "ListCoinsForwardingAutomationsResponse", {
+Object.defineProperty(exports, "ListCoinsForwardingAutomationsR", {
   enumerable: true,
   get: function get() {
-    return _ListCoinsForwardingAutomationsResponse["default"];
+    return _ListCoinsForwardingAutomationsR["default"];
   }
 });
-Object.defineProperty(exports, "ListCoinsForwardingAutomationsResponseData", {
+Object.defineProperty(exports, "ListCoinsForwardingAutomationsRData", {
   enumerable: true,
   get: function get() {
-    return _ListCoinsForwardingAutomationsResponseData["default"];
+    return _ListCoinsForwardingAutomationsRData["default"];
   }
 });
-Object.defineProperty(exports, "ListCoinsForwardingAutomationsResponseItem", {
+Object.defineProperty(exports, "ListCoinsForwardingAutomationsRI", {
   enumerable: true,
   get: function get() {
-    return _ListCoinsForwardingAutomationsResponseItem["default"];
+    return _ListCoinsForwardingAutomationsRI["default"];
   }
 });
-Object.defineProperty(exports, "ListHDWalletxPubYPubZPubTransactionsResponse", {
+Object.defineProperty(exports, "ListHDWalletXPubYPubZPubTransactionsR", {
   enumerable: true,
   get: function get() {
-    return _ListHDWalletxPubYPubZPubTransactionsResponse["default"];
+    return _ListHDWalletXPubYPubZPubTransactionsR["default"];
   }
 });
-Object.defineProperty(exports, "ListHDWalletxPubYPubZPubTransactionsResponseData", {
+Object.defineProperty(exports, "ListHDWalletXPubYPubZPubTransactionsRData", {
   enumerable: true,
   get: function get() {
-    return _ListHDWalletxPubYPubZPubTransactionsResponseData["default"];
+    return _ListHDWalletXPubYPubZPubTransactionsRData["default"];
   }
 });
-Object.defineProperty(exports, "ListHDWalletxPubYPubZPubTransactionsResponseItem", {
+Object.defineProperty(exports, "ListHDWalletXPubYPubZPubTransactionsRI", {
   enumerable: true,
   get: function get() {
-    return _ListHDWalletxPubYPubZPubTransactionsResponseItem["default"];
+    return _ListHDWalletXPubYPubZPubTransactionsRI["default"];
   }
 });
-Object.defineProperty(exports, "ListHDWalletxPubYPubZPubTransactionsResponseItemFee", {
+Object.defineProperty(exports, "ListHDWalletXPubYPubZPubTransactionsRIFee", {
   enumerable: true,
   get: function get() {
-    return _ListHDWalletxPubYPubZPubTransactionsResponseItemFee["default"];
+    return _ListHDWalletXPubYPubZPubTransactionsRIFee["default"];
   }
 });
-Object.defineProperty(exports, "ListHDWalletxPubYPubZPubTransactionsResponseItemRecipients", {
+Object.defineProperty(exports, "ListHDWalletXPubYPubZPubTransactionsRIRecipients", {
   enumerable: true,
   get: function get() {
-    return _ListHDWalletxPubYPubZPubTransactionsResponseItemRecipients["default"];
+    return _ListHDWalletXPubYPubZPubTransactionsRIRecipients["default"];
   }
 });
-Object.defineProperty(exports, "ListHDWalletxPubYPubZPubTransactionsResponseItemSenders", {
+Object.defineProperty(exports, "ListHDWalletXPubYPubZPubTransactionsRISenders", {
   enumerable: true,
   get: function get() {
-    return _ListHDWalletxPubYPubZPubTransactionsResponseItemSenders["default"];
+    return _ListHDWalletXPubYPubZPubTransactionsRISenders["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTokensByAddressResponse", {
+Object.defineProperty(exports, "ListInternalTransactionDetailsByTransactionHashR", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTokensByAddressResponse["default"];
+    return _ListInternalTransactionDetailsByTransactionHashR["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTokensByAddressResponseData", {
+Object.defineProperty(exports, "ListInternalTransactionDetailsByTransactionHashRData", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTokensByAddressResponseData["default"];
+    return _ListInternalTransactionDetailsByTransactionHashRData["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTokensByAddressResponseItem", {
+Object.defineProperty(exports, "ListInternalTransactionDetailsByTransactionHashRI", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTokensByAddressResponseItem["default"];
+    return _ListInternalTransactionDetailsByTransactionHashRI["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByAddressResponse", {
+Object.defineProperty(exports, "ListOmniTokensByAddressR", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByAddressResponse["default"];
+    return _ListOmniTokensByAddressR["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByAddressResponseData", {
+Object.defineProperty(exports, "ListOmniTokensByAddressRData", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByAddressResponseData["default"];
+    return _ListOmniTokensByAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByAddressResponseItem", {
+Object.defineProperty(exports, "ListOmniTokensByAddressRI", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByAddressResponseItem["default"];
+    return _ListOmniTokensByAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByAddressResponseItemFee", {
+Object.defineProperty(exports, "ListOmniTransactionsByAddressR", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByAddressResponseItemFee["default"];
+    return _ListOmniTransactionsByAddressR["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByAddressResponseItemRecipients", {
+Object.defineProperty(exports, "ListOmniTransactionsByAddressRData", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByAddressResponseItemRecipients["default"];
+    return _ListOmniTransactionsByAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByAddressResponseItemSenders", {
+Object.defineProperty(exports, "ListOmniTransactionsByAddressRI", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByAddressResponseItemSenders["default"];
+    return _ListOmniTransactionsByAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHashResponse", {
+Object.defineProperty(exports, "ListOmniTransactionsByAddressRIFee", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHashResponse["default"];
+    return _ListOmniTransactionsByAddressRIFee["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHashResponseData", {
+Object.defineProperty(exports, "ListOmniTransactionsByAddressRIRecipients", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHashResponseData["default"];
+    return _ListOmniTransactionsByAddressRIRecipients["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHashResponseItem", {
+Object.defineProperty(exports, "ListOmniTransactionsByAddressRISenders", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHashResponseItem["default"];
+    return _ListOmniTransactionsByAddressRISenders["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHashResponseItemFee", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHashR", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHashResponseItemFee["default"];
+    return _ListOmniTransactionsByBlockHashR["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightResponse", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHashRData", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHeightResponse["default"];
+    return _ListOmniTransactionsByBlockHashRData["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightResponseData", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHashRI", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHeightResponseData["default"];
+    return _ListOmniTransactionsByBlockHashRI["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightResponseItem", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHashRIFee", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHeightResponseItem["default"];
+    return _ListOmniTransactionsByBlockHashRIFee["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightResponseItemFee", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightR", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHeightResponseItemFee["default"];
+    return _ListOmniTransactionsByBlockHeightR["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightResponseItemRecipients", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightRData", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHeightResponseItemRecipients["default"];
+    return _ListOmniTransactionsByBlockHeightRData["default"];
   }
 });
-Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightResponseItemSenders", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightRI", {
   enumerable: true,
   get: function get() {
-    return _ListOmniTransactionsByBlockHeightResponseItemSenders["default"];
+    return _ListOmniTransactionsByBlockHeightRI["default"];
   }
 });
-Object.defineProperty(exports, "ListSupportedAssetsResponse", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightRIFee", {
   enumerable: true,
   get: function get() {
-    return _ListSupportedAssetsResponse["default"];
+    return _ListOmniTransactionsByBlockHeightRIFee["default"];
   }
 });
-Object.defineProperty(exports, "ListSupportedAssetsResponseData", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightRIRecipients", {
   enumerable: true,
   get: function get() {
-    return _ListSupportedAssetsResponseData["default"];
+    return _ListOmniTransactionsByBlockHeightRIRecipients["default"];
   }
 });
-Object.defineProperty(exports, "ListSupportedAssetsResponseItem", {
+Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightRISenders", {
   enumerable: true,
   get: function get() {
-    return _ListSupportedAssetsResponseItem["default"];
+    return _ListOmniTransactionsByBlockHeightRISenders["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensByAddressResponse", {
+Object.defineProperty(exports, "ListReceivingAddressesR", {
   enumerable: true,
   get: function get() {
-    return _ListTokensByAddressResponse["default"];
+    return _ListReceivingAddressesR["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensByAddressResponseData", {
+Object.defineProperty(exports, "ListReceivingAddressesRData", {
   enumerable: true,
   get: function get() {
-    return _ListTokensByAddressResponseData["default"];
+    return _ListReceivingAddressesRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensByAddressResponseItem", {
+Object.defineProperty(exports, "ListReceivingAddressesRI", {
   enumerable: true,
   get: function get() {
-    return _ListTokensByAddressResponseItem["default"];
+    return _ListReceivingAddressesRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensForwardingAutomationsResponse", {
+Object.defineProperty(exports, "ListSupportedAssetsR", {
   enumerable: true,
   get: function get() {
-    return _ListTokensForwardingAutomationsResponse["default"];
+    return _ListSupportedAssetsR["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensForwardingAutomationsResponseData", {
+Object.defineProperty(exports, "ListSupportedAssetsRData", {
   enumerable: true,
   get: function get() {
-    return _ListTokensForwardingAutomationsResponseData["default"];
+    return _ListSupportedAssetsRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensForwardingAutomationsResponseItem", {
+Object.defineProperty(exports, "ListSupportedAssetsRI", {
   enumerable: true,
   get: function get() {
-    return _ListTokensForwardingAutomationsResponseItem["default"];
+    return _ListSupportedAssetsRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensForwardingAutomationsResponseItemTokenData", {
+Object.defineProperty(exports, "ListSupportedTokensR", {
   enumerable: true,
   get: function get() {
-    return _ListTokensForwardingAutomationsResponseItemTokenData["default"];
+    return _ListSupportedTokensR["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensForwardingAutomationsResponseItemTokenDataBitcoinOmniToken", {
+Object.defineProperty(exports, "ListSupportedTokensRData", {
   enumerable: true,
   get: function get() {
-    return _ListTokensForwardingAutomationsResponseItemTokenDataBitcoinOmniToken["default"];
+    return _ListSupportedTokensRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensForwardingAutomationsResponseItemTokenDataEthereumToken", {
+Object.defineProperty(exports, "ListSupportedTokensRI", {
   enumerable: true,
   get: function get() {
-    return _ListTokensForwardingAutomationsResponseItemTokenDataEthereumToken["default"];
+    return _ListSupportedTokensRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensTransfersByAddressResponse", {
+Object.defineProperty(exports, "ListTokensByAddressR", {
   enumerable: true,
   get: function get() {
-    return _ListTokensTransfersByAddressResponse["default"];
+    return _ListTokensByAddressR["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensTransfersByAddressResponseData", {
+Object.defineProperty(exports, "ListTokensByAddressRData", {
   enumerable: true,
   get: function get() {
-    return _ListTokensTransfersByAddressResponseData["default"];
+    return _ListTokensByAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensTransfersByAddressResponseItem", {
+Object.defineProperty(exports, "ListTokensByAddressRI", {
   enumerable: true,
   get: function get() {
-    return _ListTokensTransfersByAddressResponseItem["default"];
+    return _ListTokensByAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensTransfersByTransactionHashResponse", {
+Object.defineProperty(exports, "ListTokensForwardingAutomationsR", {
   enumerable: true,
   get: function get() {
-    return _ListTokensTransfersByTransactionHashResponse["default"];
+    return _ListTokensForwardingAutomationsR["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensTransfersByTransactionHashResponseData", {
+Object.defineProperty(exports, "ListTokensForwardingAutomationsRData", {
   enumerable: true,
   get: function get() {
-    return _ListTokensTransfersByTransactionHashResponseData["default"];
+    return _ListTokensForwardingAutomationsRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensTransfersByTransactionHashResponseItem", {
+Object.defineProperty(exports, "ListTokensForwardingAutomationsRI", {
   enumerable: true,
   get: function get() {
-    return _ListTokensTransfersByTransactionHashResponseItem["default"];
+    return _ListTokensForwardingAutomationsRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponse", {
+Object.defineProperty(exports, "ListTokensForwardingAutomationsRITS", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponse["default"];
+    return _ListTokensForwardingAutomationsRITS["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseData", {
+Object.defineProperty(exports, "ListTokensForwardingAutomationsRITSBOT", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseData["default"];
+    return _ListTokensForwardingAutomationsRITSBOT["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItem", {
+Object.defineProperty(exports, "ListTokensForwardingAutomationsRITSET", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItem["default"];
+    return _ListTokensForwardingAutomationsRITSET["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecific", {
+Object.defineProperty(exports, "ListTokensTransfersByAddressR", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecific["default"];
+    return _ListTokensTransfersByAddressR["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificBitcoin", {
+Object.defineProperty(exports, "ListTokensTransfersByAddressRData", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoin["default"];
+    return _ListTokensTransfersByAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinCash", {
+Object.defineProperty(exports, "ListTokensTransfersByAddressRI", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinCash["default"];
+    return _ListTokensTransfersByAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinCashVin", {
+Object.defineProperty(exports, "ListTokensTransfersByTransactionHashR", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinCashVin["default"];
+    return _ListTokensTransfersByTransactionHashR["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinScriptPubKey", {
+Object.defineProperty(exports, "ListTokensTransfersByTransactionHashRData", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinScriptPubKey["default"];
+    return _ListTokensTransfersByTransactionHashRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinVin", {
+Object.defineProperty(exports, "ListTokensTransfersByTransactionHashRI", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinVin["default"];
+    return _ListTokensTransfersByTransactionHashRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinVout", {
+Object.defineProperty(exports, "ListTransactionsByAddressR", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinVout["default"];
+    return _ListTransactionsByAddressR["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificDash", {
+Object.defineProperty(exports, "ListTransactionsByAddressRData", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificDash["default"];
+    return _ListTransactionsByAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificDashScriptPubKey", {
+Object.defineProperty(exports, "ListTransactionsByAddressRI", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificDashScriptPubKey["default"];
+    return _ListTransactionsByAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificDashScriptSig", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBS", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificDashScriptSig["default"];
+    return _ListTransactionsByAddressRIBS["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificDashVin", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSB", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificDashVin["default"];
+    return _ListTransactionsByAddressRIBSB["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificDashVout", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSBC", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificDashVout["default"];
+    return _ListTransactionsByAddressRIBSBC["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificDogecoin", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSBCVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificDogecoin["default"];
+    return _ListTransactionsByAddressRIBSBCVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificDogecoinScriptSig", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSBScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificDogecoinScriptSig["default"];
+    return _ListTransactionsByAddressRIBSBScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificDogecoinVin", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSBVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificDogecoinVin["default"];
+    return _ListTransactionsByAddressRIBSBVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificEthereum", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSBVout", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificEthereum["default"];
+    return _ListTransactionsByAddressRIBSBVout["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificEthereumClassic", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSD", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificEthereumClassic["default"];
+    return _ListTransactionsByAddressRIBSD["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificEthereumClassicGasPrice", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificEthereumClassicGasPrice["default"];
+    return _ListTransactionsByAddressRIBSD2["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificEthereumGasPrice", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2ScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificEthereumGasPrice["default"];
+    return _ListTransactionsByAddressRIBSD2ScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificLitecoin", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2ScriptSig", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificLitecoin["default"];
+    return _ListTransactionsByAddressRIBSD2ScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificLitecoinScriptSig", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2Vin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificLitecoinScriptSig["default"];
+    return _ListTransactionsByAddressRIBSD2Vin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByAddressResponseItemBlockchainSpecificLitecoinVin", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2Vout", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByAddressResponseItemBlockchainSpecificLitecoinVin["default"];
+    return _ListTransactionsByAddressRIBSD2Vout["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponse", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSDScriptSig", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponse["default"];
+    return _ListTransactionsByAddressRIBSDScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseData", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSDVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseData["default"];
+    return _ListTransactionsByAddressRIBSDVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItem", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSE", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItem["default"];
+    return _ListTransactionsByAddressRIBSE["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecific", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSEC", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecific["default"];
+    return _ListTransactionsByAddressRIBSEC["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoin", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSECGasPrice", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoin["default"];
+    return _ListTransactionsByAddressRIBSECGasPrice["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCash", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSEGasPrice", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCash["default"];
+    return _ListTransactionsByAddressRIBSEGasPrice["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashScriptPubKey", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSL", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashScriptPubKey["default"];
+    return _ListTransactionsByAddressRIBSL["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashVin", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSLScriptSig", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashVin["default"];
+    return _ListTransactionsByAddressRIBSLScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashVout", {
+Object.defineProperty(exports, "ListTransactionsByAddressRIBSLVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashVout["default"];
+    return _ListTransactionsByAddressRIBSLVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinVin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashR", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinVin["default"];
+    return _ListTransactionsByBlockHashR["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDash", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRData", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDash["default"];
+    return _ListTransactionsByBlockHashRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDashScriptPubKey", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRI", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDashScriptPubKey["default"];
+    return _ListTransactionsByBlockHashRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDashScriptSig", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBS", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDashScriptSig["default"];
+    return _ListTransactionsByBlockHashRIBS["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDashVin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSB", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDashVin["default"];
+    return _ListTransactionsByBlockHashRIBSB["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDashVout", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBC", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDashVout["default"];
+    return _ListTransactionsByBlockHashRIBSBC["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBCScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoin["default"];
+    return _ListTransactionsByBlockHashRIBSBCScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinScriptPubKey", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBCVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinScriptPubKey["default"];
+    return _ListTransactionsByBlockHashRIBSBCVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinVin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBCVout", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinVin["default"];
+    return _ListTransactionsByBlockHashRIBSBCVout["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinVout", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinVout["default"];
+    return _ListTransactionsByBlockHashRIBSBVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereum", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSD", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereum["default"];
+    return _ListTransactionsByBlockHashRIBSD["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereumClassic", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSD2", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereumClassic["default"];
+    return _ListTransactionsByBlockHashRIBSD2["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereumGasPrice", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSD2ScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereumGasPrice["default"];
+    return _ListTransactionsByBlockHashRIBSD2ScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSD2ScriptSig", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoin["default"];
+    return _ListTransactionsByBlockHashRIBSD2ScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinScriptPubKey", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSD2Vin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinScriptPubKey["default"];
+    return _ListTransactionsByBlockHashRIBSD2Vin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinVin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSD2Vout", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinVin["default"];
+    return _ListTransactionsByBlockHashRIBSD2Vout["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinVout", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSDScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinVout["default"];
+    return _ListTransactionsByBlockHashRIBSDScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemFee", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSDVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemFee["default"];
+    return _ListTransactionsByBlockHashRIBSDVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemRecipients", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSDVout", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemRecipients["default"];
+    return _ListTransactionsByBlockHashRIBSDVout["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHashResponseItemSenders", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSE", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHashResponseItemSenders["default"];
+    return _ListTransactionsByBlockHashRIBSE["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponse", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSEC", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponse["default"];
+    return _ListTransactionsByBlockHashRIBSEC["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseData", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSEGasPrice", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseData["default"];
+    return _ListTransactionsByBlockHashRIBSEGasPrice["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItem", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSL", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItem["default"];
+    return _ListTransactionsByBlockHashRIBSL["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecific", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSLScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecific["default"];
+    return _ListTransactionsByBlockHashRIBSLScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSLVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoin["default"];
+    return _ListTransactionsByBlockHashRIBSLVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinCash", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSLVout", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinCash["default"];
+    return _ListTransactionsByBlockHashRIBSLVout["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinScriptPubKey", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIFee", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinScriptPubKey["default"];
+    return _ListTransactionsByBlockHashRIFee["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinVout", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIRecipients", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinVout["default"];
+    return _ListTransactionsByBlockHashRIRecipients["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificDash", {
+Object.defineProperty(exports, "ListTransactionsByBlockHashRISenders", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDash["default"];
+    return _ListTransactionsByBlockHashRISenders["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashScriptPubKey", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightR", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashScriptPubKey["default"];
+    return _ListTransactionsByBlockHeightR["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashScriptSig", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRData", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashScriptSig["default"];
+    return _ListTransactionsByBlockHeightRData["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashVin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRI", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashVin["default"];
+    return _ListTransactionsByBlockHeightRI["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashVout", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBS", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashVout["default"];
+    return _ListTransactionsByBlockHeightRIBS["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificDogecoin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSB", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDogecoin["default"];
+    return _ListTransactionsByBlockHeightRIBSB["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificDogecoinVin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSBC", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDogecoinVin["default"];
+    return _ListTransactionsByBlockHeightRIBSBC["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereum", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSBScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereum["default"];
+    return _ListTransactionsByBlockHeightRIBSBScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereumClassic", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSBVout", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereumClassic["default"];
+    return _ListTransactionsByBlockHeightRIBSBVout["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereumClassicGasPrice", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSD", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereumClassicGasPrice["default"];
+    return _ListTransactionsByBlockHeightRIBSD["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSD2", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoin["default"];
+    return _ListTransactionsByBlockHeightRIBSD2["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinScriptPubKey", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSD2Vin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinScriptPubKey["default"];
+    return _ListTransactionsByBlockHeightRIBSD2Vin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinScriptSig", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSDScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinScriptSig["default"];
+    return _ListTransactionsByBlockHeightRIBSDScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinVin", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSDScriptSig", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinVin["default"];
+    return _ListTransactionsByBlockHeightRIBSDScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinVout", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSDVin", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinVout["default"];
+    return _ListTransactionsByBlockHeightRIBSDVin["default"];
   }
 });
-Object.defineProperty(exports, "ListTransactionsByBlockHeightResponseItemFee", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSDVout", {
   enumerable: true,
   get: function get() {
-    return _ListTransactionsByBlockHeightResponseItemFee["default"];
+    return _ListTransactionsByBlockHeightRIBSDVout["default"];
   }
 });
-Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressResponse", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSE", {
   enumerable: true,
   get: function get() {
-    return _ListUnconfirmedOmniTransactionsByAddressResponse["default"];
+    return _ListTransactionsByBlockHeightRIBSE["default"];
   }
 });
-Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressResponseData", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSEC", {
   enumerable: true,
   get: function get() {
-    return _ListUnconfirmedOmniTransactionsByAddressResponseData["default"];
+    return _ListTransactionsByBlockHeightRIBSEC["default"];
   }
 });
-Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressResponseItem", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSECGasPrice", {
   enumerable: true,
   get: function get() {
-    return _ListUnconfirmedOmniTransactionsByAddressResponseItem["default"];
+    return _ListTransactionsByBlockHeightRIBSECGasPrice["default"];
   }
 });
-Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressResponseItemFee", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSL", {
   enumerable: true,
   get: function get() {
-    return _ListUnconfirmedOmniTransactionsByAddressResponseItemFee["default"];
+    return _ListTransactionsByBlockHeightRIBSL["default"];
   }
 });
-Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressResponseItemSenders", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSLScriptPubKey", {
   enumerable: true,
   get: function get() {
-    return _ListUnconfirmedOmniTransactionsByAddressResponseItemSenders["default"];
+    return _ListTransactionsByBlockHeightRIBSLScriptPubKey["default"];
   }
 });
-Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByPropertyIDResponse", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSLScriptSig", {
   enumerable: true,
   get: function get() {
-    return _ListUnconfirmedOmniTransactionsByPropertyIDResponse["default"];
+    return _ListTransactionsByBlockHeightRIBSLScriptSig["default"];
   }
 });
-Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByPropertyIDResponseData", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSLVin", {
   enumerable: true,
   get: function get() {
-    return _ListUnconfirmedOmniTransactionsByPropertyIDResponseData["default"];
+    return _ListTransactionsByBlockHeightRIBSLVin["default"];
   }
 });
-Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByPropertyIDResponseItem", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSLVout", {
   enumerable: true,
   get: function get() {
-    return _ListUnconfirmedOmniTransactionsByPropertyIDResponseItem["default"];
+    return _ListTransactionsByBlockHeightRIBSLVout["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressResponse", {
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIFee", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByAddressResponse["default"];
+    return _ListTransactionsByBlockHeightRIFee["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressResponseData", {
+Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressR", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByAddressResponseData["default"];
+    return _ListUnconfirmedOmniTransactionsByAddressR["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressResponseItem", {
+Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressRData", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByAddressResponseItem["default"];
+    return _ListUnconfirmedOmniTransactionsByAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressResponseItemFee", {
+Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressRI", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByAddressResponseItemFee["default"];
+    return _ListUnconfirmedOmniTransactionsByAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressResponseItemOffer", {
+Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressRIFee", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByAddressResponseItemOffer["default"];
+    return _ListUnconfirmedOmniTransactionsByAddressRIFee["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressResponseItemReceive", {
+Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByAddressRISenders", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByAddressResponseItemReceive["default"];
+    return _ListUnconfirmedOmniTransactionsByAddressRISenders["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressResponseItemValue", {
+Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByPropertyIDR", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByAddressResponseItemValue["default"];
+    return _ListUnconfirmedOmniTransactionsByPropertyIDR["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponse", {
+Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByPropertyIDRData", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponse["default"];
+    return _ListUnconfirmedOmniTransactionsByPropertyIDRData["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponseData", {
+Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByPropertyIDRI", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponseData["default"];
+    return _ListUnconfirmedOmniTransactionsByPropertyIDRI["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponseItem", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressR", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponseItem["default"];
+    return _ListXRPRippleTransactionsByAddressR["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponseItemFee", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressRData", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponseItemFee["default"];
+    return _ListXRPRippleTransactionsByAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponseItemOffer", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressRI", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponseItemOffer["default"];
+    return _ListXRPRippleTransactionsByAddressRI["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponseItemReceive", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressRIFee", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponseItemReceive["default"];
+    return _ListXRPRippleTransactionsByAddressRIFee["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponseItemRecipients", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressRIOffer", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponseItemRecipients["default"];
+    return _ListXRPRippleTransactionsByAddressRIOffer["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponseItemSenders", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressRIReceive", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponseItemSenders["default"];
+    return _ListXRPRippleTransactionsByAddressRIReceive["default"];
   }
 });
-Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashResponseItemValue", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressRIValue", {
   enumerable: true,
   get: function get() {
-    return _ListXRPRippleTransactionsByBlockHashResponseItemValue["default"];
+    return _ListXRPRippleTransactionsByAddressRIValue["default"];
   }
 });
-Object.defineProperty(exports, "MinedTransactionRequestBody", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashR", {
   enumerable: true,
   get: function get() {
-    return _MinedTransactionRequestBody["default"];
+    return _ListXRPRippleTransactionsByBlockHashR["default"];
   }
 });
-Object.defineProperty(exports, "MinedTransactionRequestBodyData", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashRData", {
   enumerable: true,
   get: function get() {
-    return _MinedTransactionRequestBodyData["default"];
+    return _ListXRPRippleTransactionsByBlockHashRData["default"];
   }
 });
-Object.defineProperty(exports, "MinedTransactionRequestBodyDataItem", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashRI", {
   enumerable: true,
   get: function get() {
-    return _MinedTransactionRequestBodyDataItem["default"];
+    return _ListXRPRippleTransactionsByBlockHashRI["default"];
   }
 });
-Object.defineProperty(exports, "MinedTransactionResponse", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashRIFee", {
   enumerable: true,
   get: function get() {
-    return _MinedTransactionResponse["default"];
+    return _ListXRPRippleTransactionsByBlockHashRIFee["default"];
   }
 });
-Object.defineProperty(exports, "MinedTransactionResponseData", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashRIOffer", {
   enumerable: true,
   get: function get() {
-    return _MinedTransactionResponseData["default"];
+    return _ListXRPRippleTransactionsByBlockHashRIOffer["default"];
   }
 });
-Object.defineProperty(exports, "MinedTransactionResponseItem", {
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashRIReceive", {
   enumerable: true,
   get: function get() {
-    return _MinedTransactionResponseItem["default"];
+    return _ListXRPRippleTransactionsByBlockHashRIReceive["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHashRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHashRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHashRIValue", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHashRIValue["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightR", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightR["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightRIFee", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightRIFee["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightRIOffer", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightRIOffer["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightRIReceive", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightRIReceive["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "ListXRPRippleTransactionsByBlockHeightRIValue", {
+  enumerable: true,
+  get: function get() {
+    return _ListXRPRippleTransactionsByBlockHeightRIValue["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByAddressRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByAddressRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByAddressRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByAddressRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByBlockHashR", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByBlockHashR["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByBlockHashRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByBlockHashRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByBlockHashRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByBlockHashRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByBlockHeightR", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByBlockHeightR["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByBlockHeightRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByBlockHeightRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListZilliqaTransactionsByBlockHeightRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListZilliqaTransactionsByBlockHeightRI["default"];
+  }
+});
+Object.defineProperty(exports, "MinedTransactionR", {
+  enumerable: true,
+  get: function get() {
+    return _MinedTransactionR["default"];
+  }
+});
+Object.defineProperty(exports, "MinedTransactionRB", {
+  enumerable: true,
+  get: function get() {
+    return _MinedTransactionRB["default"];
+  }
+});
+Object.defineProperty(exports, "MinedTransactionRBData", {
+  enumerable: true,
+  get: function get() {
+    return _MinedTransactionRBData["default"];
+  }
+});
+Object.defineProperty(exports, "MinedTransactionRBDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _MinedTransactionRBDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "MinedTransactionRData", {
+  enumerable: true,
+  get: function get() {
+    return _MinedTransactionRData["default"];
+  }
+});
+Object.defineProperty(exports, "MinedTransactionRI", {
+  enumerable: true,
+  get: function get() {
+    return _MinedTransactionRI["default"];
   }
 });
 Object.defineProperty(exports, "MissingApiKey", {
@@ -2523,244 +3075,316 @@ Object.defineProperty(exports, "MissingApiKeyError", {
     return _MissingApiKeyError["default"];
   }
 });
-Object.defineProperty(exports, "NewBlockRequestBody", {
+Object.defineProperty(exports, "NewBlockR", {
   enumerable: true,
   get: function get() {
-    return _NewBlockRequestBody["default"];
+    return _NewBlockR["default"];
   }
 });
-Object.defineProperty(exports, "NewBlockRequestBodyData", {
+Object.defineProperty(exports, "NewBlockRB", {
   enumerable: true,
   get: function get() {
-    return _NewBlockRequestBodyData["default"];
+    return _NewBlockRB["default"];
   }
 });
-Object.defineProperty(exports, "NewBlockRequestBodyDataItem", {
+Object.defineProperty(exports, "NewBlockRBData", {
   enumerable: true,
   get: function get() {
-    return _NewBlockRequestBodyDataItem["default"];
+    return _NewBlockRBData["default"];
   }
 });
-Object.defineProperty(exports, "NewBlockResponse", {
+Object.defineProperty(exports, "NewBlockRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _NewBlockResponse["default"];
+    return _NewBlockRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "NewBlockResponseData", {
+Object.defineProperty(exports, "NewBlockRData", {
   enumerable: true,
   get: function get() {
-    return _NewBlockResponseData["default"];
+    return _NewBlockRData["default"];
   }
 });
-Object.defineProperty(exports, "NewBlockResponseItem", {
+Object.defineProperty(exports, "NewBlockRI", {
   enumerable: true,
   get: function get() {
-    return _NewBlockResponseItem["default"];
+    return _NewBlockRI["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationR", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody["default"];
+    return _NewConfirmedCoinsTransactionsAndEachConfirmationR["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationRequestBodyData", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationRB", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsAndEachConfirmationRequestBodyData["default"];
+    return _NewConfirmedCoinsTransactionsAndEachConfirmationRB["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationRequestBodyDataItem", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationRBData", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsAndEachConfirmationRequestBodyDataItem["default"];
+    return _NewConfirmedCoinsTransactionsAndEachConfirmationRBData["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationResponse", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsAndEachConfirmationResponse["default"];
+    return _NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationResponseData", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationRData", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsAndEachConfirmationResponseData["default"];
+    return _NewConfirmedCoinsTransactionsAndEachConfirmationRData["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationResponseItem", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsAndEachConfirmationRI", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsAndEachConfirmationResponseItem["default"];
+    return _NewConfirmedCoinsTransactionsAndEachConfirmationRI["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsRequestBody", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsR", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsRequestBody["default"];
+    return _NewConfirmedCoinsTransactionsR["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsRequestBodyData", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsRB", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsRequestBodyData["default"];
+    return _NewConfirmedCoinsTransactionsRB["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsRequestBodyDataItem", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsRBData", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsRequestBodyDataItem["default"];
+    return _NewConfirmedCoinsTransactionsRBData["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsResponse", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsResponse["default"];
+    return _NewConfirmedCoinsTransactionsRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsResponseData", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsRData", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsResponseData["default"];
+    return _NewConfirmedCoinsTransactionsRData["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedCoinsTransactionsResponseItem", {
+Object.defineProperty(exports, "NewConfirmedCoinsTransactionsRI", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedCoinsTransactionsResponseItem["default"];
+    return _NewConfirmedCoinsTransactionsRI["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationRequestBody", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsAndEachConfirmationR", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsAndEachConfirmationRequestBody["default"];
+    return _NewConfirmedInternalTransactionsAndEachConfirmationR["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationRequestBodyData", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsAndEachConfirmationRB", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsAndEachConfirmationRequestBodyData["default"];
+    return _NewConfirmedInternalTransactionsAndEachConfirmationRB["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationRequestBodyDataItem", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsAndEachConfirmationRBData", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsAndEachConfirmationRequestBodyDataItem["default"];
+    return _NewConfirmedInternalTransactionsAndEachConfirmationRBData["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationResponse", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsAndEachConfirmationResponse["default"];
+    return _NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationResponseData", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsAndEachConfirmationRData", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsAndEachConfirmationResponseData["default"];
+    return _NewConfirmedInternalTransactionsAndEachConfirmationRData["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationResponseItem", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsAndEachConfirmationRI", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsAndEachConfirmationResponseItem["default"];
+    return _NewConfirmedInternalTransactionsAndEachConfirmationRI["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsRequestBody", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsR", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsRequestBody["default"];
+    return _NewConfirmedInternalTransactionsR["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsResponse", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsRB", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsResponse["default"];
+    return _NewConfirmedInternalTransactionsRB["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsResponseData", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsRBData", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsResponseData["default"];
+    return _NewConfirmedInternalTransactionsRBData["default"];
   }
 });
-Object.defineProperty(exports, "NewConfirmedTokensTransactionsResponseItem", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _NewConfirmedTokensTransactionsResponseItem["default"];
+    return _NewConfirmedInternalTransactionsRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsRequestBody", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsRData", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedCoinsTransactionsRequestBody["default"];
+    return _NewConfirmedInternalTransactionsRData["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsRequestBodyData", {
+Object.defineProperty(exports, "NewConfirmedInternalTransactionsRI", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedCoinsTransactionsRequestBodyData["default"];
+    return _NewConfirmedInternalTransactionsRI["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsRequestBodyDataItem", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationR", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedCoinsTransactionsRequestBodyDataItem["default"];
+    return _NewConfirmedTokensTransactionsAndEachConfirmationR["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsResponse", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationRB", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedCoinsTransactionsResponse["default"];
+    return _NewConfirmedTokensTransactionsAndEachConfirmationRB["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsResponseData", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationRBData", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedCoinsTransactionsResponseData["default"];
+    return _NewConfirmedTokensTransactionsAndEachConfirmationRBData["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsResponseItem", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedCoinsTransactionsResponseItem["default"];
+    return _NewConfirmedTokensTransactionsAndEachConfirmationRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRequestBody", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationRData", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedTokensTransactionsRequestBody["default"];
+    return _NewConfirmedTokensTransactionsAndEachConfirmationRData["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRequestBodyData", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsAndEachConfirmationRI", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedTokensTransactionsRequestBodyData["default"];
+    return _NewConfirmedTokensTransactionsAndEachConfirmationRI["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRequestBodyDataItem", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsR", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedTokensTransactionsRequestBodyDataItem["default"];
+    return _NewConfirmedTokensTransactionsR["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsResponse", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsRB", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedTokensTransactionsResponse["default"];
+    return _NewConfirmedTokensTransactionsRB["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsResponseData", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsRData", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedTokensTransactionsResponseData["default"];
+    return _NewConfirmedTokensTransactionsRData["default"];
   }
 });
-Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsResponseItem", {
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsRI", {
   enumerable: true,
   get: function get() {
-    return _NewUnconfirmedTokensTransactionsResponseItem["default"];
+    return _NewConfirmedTokensTransactionsRI["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsR", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedCoinsTransactionsR["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsRB", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedCoinsTransactionsRB["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsRBData", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedCoinsTransactionsRBData["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsRBDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedCoinsTransactionsRBDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsRData", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedCoinsTransactionsRData["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedCoinsTransactionsRI", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedCoinsTransactionsRI["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsR", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedTokensTransactionsR["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRB", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedTokensTransactionsRB["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRBData", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedTokensTransactionsRBData["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRBDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedTokensTransactionsRBDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRData", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedTokensTransactionsRData["default"];
+  }
+});
+Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRI", {
+  enumerable: true,
+  get: function get() {
+    return _NewUnconfirmedTokensTransactionsRI["default"];
   }
 });
 Object.defineProperty(exports, "RequestLimitReached", {
@@ -2787,40 +3411,40 @@ Object.defineProperty(exports, "ResourceNotFoundError", {
     return _ResourceNotFoundError["default"];
   }
 });
-Object.defineProperty(exports, "SyncHDWalletxPubYPubZPubRequestBody", {
+Object.defineProperty(exports, "SyncHDWalletXPubYPubZPubR", {
   enumerable: true,
   get: function get() {
-    return _SyncHDWalletxPubYPubZPubRequestBody["default"];
+    return _SyncHDWalletXPubYPubZPubR["default"];
   }
 });
-Object.defineProperty(exports, "SyncHDWalletxPubYPubZPubRequestBodyData", {
+Object.defineProperty(exports, "SyncHDWalletXPubYPubZPubRB", {
   enumerable: true,
   get: function get() {
-    return _SyncHDWalletxPubYPubZPubRequestBodyData["default"];
+    return _SyncHDWalletXPubYPubZPubRB["default"];
   }
 });
-Object.defineProperty(exports, "SyncHDWalletxPubYPubZPubRequestBodyDataItem", {
+Object.defineProperty(exports, "SyncHDWalletXPubYPubZPubRBData", {
   enumerable: true,
   get: function get() {
-    return _SyncHDWalletxPubYPubZPubRequestBodyDataItem["default"];
+    return _SyncHDWalletXPubYPubZPubRBData["default"];
   }
 });
-Object.defineProperty(exports, "SyncHDWalletxPubYPubZPubResponse", {
+Object.defineProperty(exports, "SyncHDWalletXPubYPubZPubRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _SyncHDWalletxPubYPubZPubResponse["default"];
+    return _SyncHDWalletXPubYPubZPubRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "SyncHDWalletxPubYPubZPubResponseData", {
+Object.defineProperty(exports, "SyncHDWalletXPubYPubZPubRData", {
   enumerable: true,
   get: function get() {
-    return _SyncHDWalletxPubYPubZPubResponseData["default"];
+    return _SyncHDWalletXPubYPubZPubRData["default"];
   }
 });
-Object.defineProperty(exports, "SyncHDWalletxPubYPubZPubResponseItem", {
+Object.defineProperty(exports, "SyncHDWalletXPubYPubZPubRI", {
   enumerable: true,
   get: function get() {
-    return _SyncHDWalletxPubYPubZPubResponseItem["default"];
+    return _SyncHDWalletXPubYPubZPubRI["default"];
   }
 });
 Object.defineProperty(exports, "TokensForwardingAutomationsLimitReached", {
@@ -2919,6 +3543,72 @@ Object.defineProperty(exports, "TransactionMinedDataItemMinedInBlock", {
     return _TransactionMinedDataItemMinedInBlock["default"];
   }
 });
+Object.defineProperty(exports, "TransactionRequestApprove", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestApprove["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestApproveData", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestApproveData["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestApproveDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestApproveDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestBroadcasted", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestBroadcasted["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestBroadcastedData", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestBroadcastedData["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestBroadcastedDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestBroadcastedDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestMined", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestMined["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestMinedData", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestMinedData["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestReject", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestReject["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestRejectData", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestRejectData["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestRejectDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestRejectDataItem["default"];
+  }
+});
 Object.defineProperty(exports, "UnexpectedServerError", {
   enumerable: true,
   get: function get() {
@@ -2955,40 +3645,88 @@ Object.defineProperty(exports, "UriNotFoundError", {
     return _UriNotFoundError["default"];
   }
 });
-Object.defineProperty(exports, "ValidateAddressRequestBody", {
+Object.defineProperty(exports, "ValidateAddressR", {
   enumerable: true,
   get: function get() {
-    return _ValidateAddressRequestBody["default"];
+    return _ValidateAddressR["default"];
   }
 });
-Object.defineProperty(exports, "ValidateAddressRequestBodyData", {
+Object.defineProperty(exports, "ValidateAddressRB", {
   enumerable: true,
   get: function get() {
-    return _ValidateAddressRequestBodyData["default"];
+    return _ValidateAddressRB["default"];
   }
 });
-Object.defineProperty(exports, "ValidateAddressRequestBodyDataItem", {
+Object.defineProperty(exports, "ValidateAddressRBData", {
   enumerable: true,
   get: function get() {
-    return _ValidateAddressRequestBodyDataItem["default"];
+    return _ValidateAddressRBData["default"];
   }
 });
-Object.defineProperty(exports, "ValidateAddressResponse", {
+Object.defineProperty(exports, "ValidateAddressRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _ValidateAddressResponse["default"];
+    return _ValidateAddressRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "ValidateAddressResponseData", {
+Object.defineProperty(exports, "ValidateAddressRData", {
   enumerable: true,
   get: function get() {
-    return _ValidateAddressResponseData["default"];
+    return _ValidateAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "ValidateAddressResponseItem", {
+Object.defineProperty(exports, "ValidateAddressRI", {
   enumerable: true,
   get: function get() {
-    return _ValidateAddressResponseItem["default"];
+    return _ValidateAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceDepositAddressesLimitReached", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceDepositAddressesLimitReached["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceDepositAddressesLimitReachedError", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceDepositAddressesLimitReachedError["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceNoDepositAddressesFound", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceNoDepositAddressesFound["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceNoDepositAddressesFoundError", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceNoDepositAddressesFoundError["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceTokenNotSupported", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceTokenNotSupported["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceTokenNotSupportedError", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceTokenNotSupportedError["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceWalletBalanceNotEnough", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceWalletBalanceNotEnough["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceWalletBalanceNotEnoughError", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceWalletBalanceNotEnoughError["default"];
   }
 });
 Object.defineProperty(exports, "XpubNotSynced", {
@@ -3039,16 +3777,28 @@ Object.defineProperty(exports, "CreateSubscriptionsForApi", {
     return _CreateSubscriptionsForApi["default"];
   }
 });
-Object.defineProperty(exports, "DefaultApi", {
-  enumerable: true,
-  get: function get() {
-    return _DefaultApi["default"];
-  }
-});
 Object.defineProperty(exports, "ExchangeRatesApi", {
   enumerable: true,
   get: function get() {
     return _ExchangeRatesApi["default"];
+  }
+});
+Object.defineProperty(exports, "GeneratingApi", {
+  enumerable: true,
+  get: function get() {
+    return _GeneratingApi["default"];
+  }
+});
+Object.defineProperty(exports, "InformativeApi", {
+  enumerable: true,
+  get: function get() {
+    return _InformativeApi["default"];
+  }
+});
+Object.defineProperty(exports, "InternalApi", {
+  enumerable: true,
+  get: function get() {
+    return _InternalApi["default"];
   }
 });
 Object.defineProperty(exports, "ManageSubscriptionsApi", {
@@ -3075,6 +3825,12 @@ Object.defineProperty(exports, "TokensApi", {
     return _TokensApi["default"];
   }
 });
+Object.defineProperty(exports, "TransactionsApi", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionsApi["default"];
+  }
+});
 Object.defineProperty(exports, "UTXOBasedApi", {
   enumerable: true,
   get: function get() {
@@ -3099,32 +3855,38 @@ Object.defineProperty(exports, "XRPRippleApi", {
     return _XRPRippleApi["default"];
   }
 });
+Object.defineProperty(exports, "ZilliqaApi", {
+  enumerable: true,
+  get: function get() {
+    return _ZilliqaApi["default"];
+  }
+});
 
 var _ApiClient = _interopRequireDefault(require("./ApiClient"));
 
-var _AddTokensToExistingFromAddressRequestBody = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRequestBody"));
+var _AddTokensToExistingFromAddressR = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressR"));
 
-var _AddTokensToExistingFromAddressRequestBodyData = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRequestBodyData"));
+var _AddTokensToExistingFromAddressRB = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRB"));
 
-var _AddTokensToExistingFromAddressRequestBodyDataItem = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRequestBodyDataItem"));
+var _AddTokensToExistingFromAddressRBData = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRBData"));
 
-var _AddTokensToExistingFromAddressRequestBodyTokenData = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRequestBodyTokenData"));
+var _AddTokensToExistingFromAddressRBDataItem = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRBDataItem"));
 
-var _AddTokensToExistingFromAddressRequestBodyTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRequestBodyTokenDataBitcoinOmniToken"));
+var _AddTokensToExistingFromAddressRBTokenData = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRBTokenData"));
 
-var _AddTokensToExistingFromAddressRequestBodyTokenDataEthereumErc20Token = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRequestBodyTokenDataEthereumErc20Token"));
+var _AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken"));
 
-var _AddTokensToExistingFromAddressResponse = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressResponse"));
+var _AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token"));
 
-var _AddTokensToExistingFromAddressResponseData = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressResponseData"));
+var _AddTokensToExistingFromAddressRData = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRData"));
 
-var _AddTokensToExistingFromAddressResponseItem = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressResponseItem"));
+var _AddTokensToExistingFromAddressRI = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRI"));
 
-var _AddTokensToExistingFromAddressResponseItemTokenData = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressResponseItemTokenData"));
+var _AddTokensToExistingFromAddressRITS = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRITS"));
 
-var _AddTokensToExistingFromAddressResponseItemTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressResponseItemTokenDataBitcoinOmniToken"));
+var _AddTokensToExistingFromAddressRITSBOT = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRITSBOT"));
 
-var _AddTokensToExistingFromAddressResponseItemTokenDataEthereumErc20Token = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressResponseItemTokenDataEthereumErc20Token"));
+var _AddTokensToExistingFromAddressRITSEET = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRITSEET"));
 
 var _AddressCoinsTransactionConfirmed = _interopRequireDefault(require("./model/AddressCoinsTransactionConfirmed"));
 
@@ -3214,6 +3976,10 @@ var _BlockchainDataBlockNotFound = _interopRequireDefault(require("./model/Block
 
 var _BlockchainDataBlockNotFoundError = _interopRequireDefault(require("./model/BlockchainDataBlockNotFoundError"));
 
+var _BlockchainDataInternalTransactionNotFound = _interopRequireDefault(require("./model/BlockchainDataInternalTransactionNotFound"));
+
+var _BlockchainDataInternalTransactionNotFoundError = _interopRequireDefault(require("./model/BlockchainDataInternalTransactionNotFoundError"));
+
 var _BlockchainDataTransactionNotFound = _interopRequireDefault(require("./model/BlockchainDataTransactionNotFound"));
 
 var _BlockchainDataTransactionNotFoundError = _interopRequireDefault(require("./model/BlockchainDataTransactionNotFoundError"));
@@ -3242,65 +4008,119 @@ var _CouldNotCalculateRateForPair = _interopRequireDefault(require("./model/Coul
 
 var _CouldNotCalculateRateForPairError = _interopRequireDefault(require("./model/CouldNotCalculateRateForPairError"));
 
-var _CreateAutomaticCoinsForwardingRequestBody = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingRequestBody"));
+var _CreateAutomaticCoinsForwardingR = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingR"));
 
-var _CreateAutomaticCoinsForwardingRequestBodyData = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingRequestBodyData"));
+var _CreateAutomaticCoinsForwardingRB = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingRB"));
 
-var _CreateAutomaticCoinsForwardingRequestBodyDataItem = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingRequestBodyDataItem"));
+var _CreateAutomaticCoinsForwardingRBData = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingRBData"));
 
-var _CreateAutomaticCoinsForwardingResponse = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingResponse"));
+var _CreateAutomaticCoinsForwardingRBDataItem = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingRBDataItem"));
 
-var _CreateAutomaticCoinsForwardingResponseData = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingResponseData"));
+var _CreateAutomaticCoinsForwardingRData = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingRData"));
 
-var _CreateAutomaticCoinsForwardingResponseItem = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingResponseItem"));
+var _CreateAutomaticCoinsForwardingRI = _interopRequireDefault(require("./model/CreateAutomaticCoinsForwardingRI"));
 
-var _CreateAutomaticTokensForwardingRequestBody = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRequestBody"));
+var _CreateAutomaticTokensForwardingR = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingR"));
 
-var _CreateAutomaticTokensForwardingRequestBodyData = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRequestBodyData"));
+var _CreateAutomaticTokensForwardingRB = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRB"));
 
-var _CreateAutomaticTokensForwardingRequestBodyDataItem = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRequestBodyDataItem"));
+var _CreateAutomaticTokensForwardingRBData = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRBData"));
 
-var _CreateAutomaticTokensForwardingRequestBodyTokenData = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRequestBodyTokenData"));
+var _CreateAutomaticTokensForwardingRBDataItem = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRBDataItem"));
 
-var _CreateAutomaticTokensForwardingRequestBodyTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRequestBodyTokenDataBitcoinOmniToken"));
+var _CreateAutomaticTokensForwardingRBTokenData = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRBTokenData"));
 
-var _CreateAutomaticTokensForwardingRequestBodyTokenDataEthereumToken = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRequestBodyTokenDataEthereumToken"));
+var _CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken"));
 
-var _CreateAutomaticTokensForwardingResponse = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingResponse"));
+var _CreateAutomaticTokensForwardingRBTokenDataEthereumToken = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRBTokenDataEthereumToken"));
 
-var _CreateAutomaticTokensForwardingResponseData = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingResponseData"));
+var _CreateAutomaticTokensForwardingRData = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRData"));
 
-var _CreateAutomaticTokensForwardingResponseItem = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingResponseItem"));
+var _CreateAutomaticTokensForwardingRI = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRI"));
 
-var _CreateAutomaticTokensForwardingResponseItemTokenData = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingResponseItemTokenData"));
+var _CreateAutomaticTokensForwardingRITS = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRITS"));
 
-var _CreateAutomaticTokensForwardingResponseItemTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingResponseItemTokenDataBitcoinOmniToken"));
+var _CreateAutomaticTokensForwardingRITSBOT = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRITSBOT"));
 
-var _CreateAutomaticTokensForwardingResponseItemTokenDataEthereumToken = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingResponseItemTokenDataEthereumToken"));
+var _CreateAutomaticTokensForwardingRITSET = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRITSET"));
 
-var _DeleteAutomaticCoinsForwardingResponse = _interopRequireDefault(require("./model/DeleteAutomaticCoinsForwardingResponse"));
+var _CreateCoinsTransactionRequestFromAddressR = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressR"));
 
-var _DeleteAutomaticCoinsForwardingResponseData = _interopRequireDefault(require("./model/DeleteAutomaticCoinsForwardingResponseData"));
+var _CreateCoinsTransactionRequestFromAddressRB = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressRB"));
 
-var _DeleteAutomaticCoinsForwardingResponseItem = _interopRequireDefault(require("./model/DeleteAutomaticCoinsForwardingResponseItem"));
+var _CreateCoinsTransactionRequestFromAddressRBData = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressRBData"));
 
-var _DeleteAutomaticTokensForwardingResponse = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingResponse"));
+var _CreateCoinsTransactionRequestFromAddressRBDataItem = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressRBDataItem"));
 
-var _DeleteAutomaticTokensForwardingResponseData = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingResponseData"));
+var _CreateCoinsTransactionRequestFromAddressRData = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressRData"));
 
-var _DeleteAutomaticTokensForwardingResponseItem = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingResponseItem"));
+var _CreateCoinsTransactionRequestFromAddressRI = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressRI"));
 
-var _DeleteAutomaticTokensForwardingResponseItemTokenData = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingResponseItemTokenData"));
+var _CreateCoinsTransactionRequestFromAddressRIRecipients = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressRIRecipients"));
 
-var _DeleteAutomaticTokensForwardingResponseItemTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingResponseItemTokenDataBitcoinOmniToken"));
+var _CreateCoinsTransactionRequestFromAddressRISenders = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressRISenders"));
 
-var _DeleteAutomaticTokensForwardingResponseItemTokenDataEthereumToken = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingResponseItemTokenDataEthereumToken"));
+var _CreateCoinsTransactionRequestFromWalletR = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletR"));
 
-var _DeleteBlockchainEventSubscriptionResponse = _interopRequireDefault(require("./model/DeleteBlockchainEventSubscriptionResponse"));
+var _CreateCoinsTransactionRequestFromWalletRB = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRB"));
 
-var _DeleteBlockchainEventSubscriptionResponseData = _interopRequireDefault(require("./model/DeleteBlockchainEventSubscriptionResponseData"));
+var _CreateCoinsTransactionRequestFromWalletRBData = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRBData"));
 
-var _DeleteBlockchainEventSubscriptionResponseItem = _interopRequireDefault(require("./model/DeleteBlockchainEventSubscriptionResponseItem"));
+var _CreateCoinsTransactionRequestFromWalletRBDataItem = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRBDataItem"));
+
+var _CreateCoinsTransactionRequestFromWalletRBDataItemDestinations = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRBDataItemDestinations"));
+
+var _CreateCoinsTransactionRequestFromWalletRData = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRData"));
+
+var _CreateCoinsTransactionRequestFromWalletRI = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRI"));
+
+var _CreateCoinsTransactionRequestFromWalletRIRecipients = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRIRecipients"));
+
+var _CreateTokensTransactionRequestFromAddressR = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressR"));
+
+var _CreateTokensTransactionRequestFromAddressRB = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRB"));
+
+var _CreateTokensTransactionRequestFromAddressRBData = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRBData"));
+
+var _CreateTokensTransactionRequestFromAddressRBDataItem = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRBDataItem"));
+
+var _CreateTokensTransactionRequestFromAddressRData = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRData"));
+
+var _CreateTokensTransactionRequestFromAddressRI = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRI"));
+
+var _CreateTokensTransactionRequestFromAddressRIRecipients = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRIRecipients"));
+
+var _CreateTokensTransactionRequestFromAddressRISenders = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRISenders"));
+
+var _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData"));
+
+var _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken"));
+
+var _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token"));
+
+var _DeleteAutomaticCoinsForwardingR = _interopRequireDefault(require("./model/DeleteAutomaticCoinsForwardingR"));
+
+var _DeleteAutomaticCoinsForwardingRData = _interopRequireDefault(require("./model/DeleteAutomaticCoinsForwardingRData"));
+
+var _DeleteAutomaticCoinsForwardingRI = _interopRequireDefault(require("./model/DeleteAutomaticCoinsForwardingRI"));
+
+var _DeleteAutomaticTokensForwardingR = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingR"));
+
+var _DeleteAutomaticTokensForwardingRData = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingRData"));
+
+var _DeleteAutomaticTokensForwardingRI = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingRI"));
+
+var _DeleteAutomaticTokensForwardingRITS = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingRITS"));
+
+var _DeleteAutomaticTokensForwardingRITSBOT = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingRITSBOT"));
+
+var _DeleteAutomaticTokensForwardingRITSET = _interopRequireDefault(require("./model/DeleteAutomaticTokensForwardingRITSET"));
+
+var _DeleteBlockchainEventSubscriptionR = _interopRequireDefault(require("./model/DeleteBlockchainEventSubscriptionR"));
+
+var _DeleteBlockchainEventSubscriptionRData = _interopRequireDefault(require("./model/DeleteBlockchainEventSubscriptionRData"));
+
+var _DeleteBlockchainEventSubscriptionRI = _interopRequireDefault(require("./model/DeleteBlockchainEventSubscriptionRI"));
 
 var _EndpointNotAllowedForApiKey = _interopRequireDefault(require("./model/EndpointNotAllowedForApiKey"));
 
@@ -3314,263 +4134,331 @@ var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("./model/
 
 var _FeatureMainnetsNotAllowedForPlanError = _interopRequireDefault(require("./model/FeatureMainnetsNotAllowedForPlanError"));
 
-var _GetAddressDetailsResponse = _interopRequireDefault(require("./model/GetAddressDetailsResponse"));
+var _GenerateReceivingAddressR = _interopRequireDefault(require("./model/GenerateReceivingAddressR"));
 
-var _GetAddressDetailsResponseData = _interopRequireDefault(require("./model/GetAddressDetailsResponseData"));
+var _GenerateReceivingAddressRB = _interopRequireDefault(require("./model/GenerateReceivingAddressRB"));
 
-var _GetAddressDetailsResponseItem = _interopRequireDefault(require("./model/GetAddressDetailsResponseItem"));
+var _GenerateReceivingAddressRBData = _interopRequireDefault(require("./model/GenerateReceivingAddressRBData"));
 
-var _GetAddressDetailsResponseItemConfirmedBalance = _interopRequireDefault(require("./model/GetAddressDetailsResponseItemConfirmedBalance"));
+var _GenerateReceivingAddressRBDataItem = _interopRequireDefault(require("./model/GenerateReceivingAddressRBDataItem"));
 
-var _GetAddressDetailsResponseItemTotalReceived = _interopRequireDefault(require("./model/GetAddressDetailsResponseItemTotalReceived"));
+var _GenerateReceivingAddressRData = _interopRequireDefault(require("./model/GenerateReceivingAddressRData"));
 
-var _GetAddressDetailsResponseItemTotalSpent = _interopRequireDefault(require("./model/GetAddressDetailsResponseItemTotalSpent"));
+var _GenerateReceivingAddressRI = _interopRequireDefault(require("./model/GenerateReceivingAddressRI"));
 
-var _GetBlockDetailsByBlockHashResponse = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponse"));
+var _GetAddressDetailsR = _interopRequireDefault(require("./model/GetAddressDetailsR"));
 
-var _GetBlockDetailsByBlockHashResponseData = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseData"));
+var _GetAddressDetailsRData = _interopRequireDefault(require("./model/GetAddressDetailsRData"));
 
-var _GetBlockDetailsByBlockHashResponseItem = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItem"));
+var _GetAddressDetailsRI = _interopRequireDefault(require("./model/GetAddressDetailsRI"));
 
-var _GetBlockDetailsByBlockHashResponseItemBlockchainSpecific = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItemBlockchainSpecific"));
+var _GetAddressDetailsRIConfirmedBalance = _interopRequireDefault(require("./model/GetAddressDetailsRIConfirmedBalance"));
 
-var _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificBitcoin = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItemBlockchainSpecificBitcoin"));
+var _GetAddressDetailsRITotalReceived = _interopRequireDefault(require("./model/GetAddressDetailsRITotalReceived"));
 
-var _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificBitcoinCash = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItemBlockchainSpecificBitcoinCash"));
+var _GetAddressDetailsRITotalSpent = _interopRequireDefault(require("./model/GetAddressDetailsRITotalSpent"));
 
-var _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificDash = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItemBlockchainSpecificDash"));
+var _GetBlockDetailsByBlockHashR = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashR"));
 
-var _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificDogecoin = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItemBlockchainSpecificDogecoin"));
+var _GetBlockDetailsByBlockHashRData = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRData"));
 
-var _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificEthereum = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItemBlockchainSpecificEthereum"));
+var _GetBlockDetailsByBlockHashRI = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRI"));
 
-var _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificEthereumClassic = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItemBlockchainSpecificEthereumClassic"));
+var _GetBlockDetailsByBlockHashRIBS = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBS"));
 
-var _GetBlockDetailsByBlockHashResponseItemBlockchainSpecificLitecoin = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashResponseItemBlockchainSpecificLitecoin"));
+var _GetBlockDetailsByBlockHashRIBSB = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSB"));
 
-var _GetBlockDetailsByBlockHeightResponse = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponse"));
+var _GetBlockDetailsByBlockHashRIBSBC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSBC"));
 
-var _GetBlockDetailsByBlockHeightResponseData = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseData"));
+var _GetBlockDetailsByBlockHashRIBSD = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSD"));
 
-var _GetBlockDetailsByBlockHeightResponseItem = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItem"));
+var _GetBlockDetailsByBlockHashRIBSD2 = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSD2"));
 
-var _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecific = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItemBlockchainSpecific"));
+var _GetBlockDetailsByBlockHashRIBSE = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSE"));
 
-var _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificBitcoin = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificBitcoin"));
+var _GetBlockDetailsByBlockHashRIBSEC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSEC"));
 
-var _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificBitcoinCash = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificBitcoinCash"));
+var _GetBlockDetailsByBlockHashRIBSL = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSL"));
 
-var _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificDash = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificDash"));
+var _GetBlockDetailsByBlockHeightR = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightR"));
 
-var _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificDogecoin = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificDogecoin"));
+var _GetBlockDetailsByBlockHeightRData = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRData"));
 
-var _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificEthereum = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificEthereum"));
+var _GetBlockDetailsByBlockHeightRI = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRI"));
 
-var _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificEthereumClassic = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificEthereumClassic"));
+var _GetBlockDetailsByBlockHeightRIBS = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBS"));
 
-var _GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificLitecoin = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightResponseItemBlockchainSpecificLitecoin"));
+var _GetBlockDetailsByBlockHeightRIBSB = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSB"));
 
-var _GetContractDetailsByAddressResponse = _interopRequireDefault(require("./model/GetContractDetailsByAddressResponse"));
+var _GetBlockDetailsByBlockHeightRIBSBC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSBC"));
 
-var _GetContractDetailsByAddressResponseData = _interopRequireDefault(require("./model/GetContractDetailsByAddressResponseData"));
+var _GetBlockDetailsByBlockHeightRIBSD = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSD"));
 
-var _GetContractDetailsByAddressResponseItem = _interopRequireDefault(require("./model/GetContractDetailsByAddressResponseItem"));
+var _GetBlockDetailsByBlockHeightRIBSD2 = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSD2"));
 
-var _GetExchangeRateByAssetSymbolsResponse = _interopRequireDefault(require("./model/GetExchangeRateByAssetSymbolsResponse"));
+var _GetBlockDetailsByBlockHeightRIBSE = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSE"));
 
-var _GetExchangeRateByAssetSymbolsResponseData = _interopRequireDefault(require("./model/GetExchangeRateByAssetSymbolsResponseData"));
+var _GetBlockDetailsByBlockHeightRIBSEC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSEC"));
 
-var _GetExchangeRateByAssetSymbolsResponseItem = _interopRequireDefault(require("./model/GetExchangeRateByAssetSymbolsResponseItem"));
+var _GetBlockDetailsByBlockHeightRIBSL = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSL"));
 
-var _GetExchangeRateByAssetsIDsResponse = _interopRequireDefault(require("./model/GetExchangeRateByAssetsIDsResponse"));
+var _GetContractDetailsByAddressR = _interopRequireDefault(require("./model/GetContractDetailsByAddressR"));
 
-var _GetExchangeRateByAssetsIDsResponseData = _interopRequireDefault(require("./model/GetExchangeRateByAssetsIDsResponseData"));
+var _GetContractDetailsByAddressRData = _interopRequireDefault(require("./model/GetContractDetailsByAddressRData"));
 
-var _GetExchangeRateByAssetsIDsResponseItem = _interopRequireDefault(require("./model/GetExchangeRateByAssetsIDsResponseItem"));
+var _GetContractDetailsByAddressRI = _interopRequireDefault(require("./model/GetContractDetailsByAddressRI"));
 
-var _GetFeeAddressDetailsResponse = _interopRequireDefault(require("./model/GetFeeAddressDetailsResponse"));
+var _GetExchangeRateByAssetSymbolsR = _interopRequireDefault(require("./model/GetExchangeRateByAssetSymbolsR"));
 
-var _GetFeeAddressDetailsResponseData = _interopRequireDefault(require("./model/GetFeeAddressDetailsResponseData"));
+var _GetExchangeRateByAssetSymbolsRData = _interopRequireDefault(require("./model/GetExchangeRateByAssetSymbolsRData"));
 
-var _GetFeeAddressDetailsResponseItem = _interopRequireDefault(require("./model/GetFeeAddressDetailsResponseItem"));
+var _GetExchangeRateByAssetSymbolsRI = _interopRequireDefault(require("./model/GetExchangeRateByAssetSymbolsRI"));
 
-var _GetFeeAddressDetailsResponseItemBalance = _interopRequireDefault(require("./model/GetFeeAddressDetailsResponseItemBalance"));
+var _GetExchangeRateByAssetsIDsR = _interopRequireDefault(require("./model/GetExchangeRateByAssetsIDsR"));
 
-var _GetFeeRecommendationsResponse = _interopRequireDefault(require("./model/GetFeeRecommendationsResponse"));
+var _GetExchangeRateByAssetsIDsRData = _interopRequireDefault(require("./model/GetExchangeRateByAssetsIDsRData"));
 
-var _GetFeeRecommendationsResponseData = _interopRequireDefault(require("./model/GetFeeRecommendationsResponseData"));
+var _GetExchangeRateByAssetsIDsRI = _interopRequireDefault(require("./model/GetExchangeRateByAssetsIDsRI"));
 
-var _GetFeeRecommendationsResponseItem = _interopRequireDefault(require("./model/GetFeeRecommendationsResponseItem"));
+var _GetFeeAddressDetailsR = _interopRequireDefault(require("./model/GetFeeAddressDetailsR"));
 
-var _GetHDWalletxPubYPubZPubDetailsResponse = _interopRequireDefault(require("./model/GetHDWalletxPubYPubZPubDetailsResponse"));
+var _GetFeeAddressDetailsRData = _interopRequireDefault(require("./model/GetFeeAddressDetailsRData"));
 
-var _GetHDWalletxPubYPubZPubDetailsResponseData = _interopRequireDefault(require("./model/GetHDWalletxPubYPubZPubDetailsResponseData"));
+var _GetFeeAddressDetailsRI = _interopRequireDefault(require("./model/GetFeeAddressDetailsRI"));
 
-var _GetHDWalletxPubYPubZPubDetailsResponseItem = _interopRequireDefault(require("./model/GetHDWalletxPubYPubZPubDetailsResponseItem"));
+var _GetFeeAddressDetailsRIBalance = _interopRequireDefault(require("./model/GetFeeAddressDetailsRIBalance"));
 
-var _GetLatestMinedBlockResponse = _interopRequireDefault(require("./model/GetLatestMinedBlockResponse"));
+var _GetFeeRecommendationsR = _interopRequireDefault(require("./model/GetFeeRecommendationsR"));
 
-var _GetLatestMinedBlockResponseData = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseData"));
+var _GetFeeRecommendationsRData = _interopRequireDefault(require("./model/GetFeeRecommendationsRData"));
 
-var _GetLatestMinedBlockResponseItem = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItem"));
+var _GetFeeRecommendationsRI = _interopRequireDefault(require("./model/GetFeeRecommendationsRI"));
 
-var _GetLatestMinedBlockResponseItemBlockchainSpecific = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItemBlockchainSpecific"));
+var _GetHDWalletXPubYPubZPubDetailsR = _interopRequireDefault(require("./model/GetHDWalletXPubYPubZPubDetailsR"));
 
-var _GetLatestMinedBlockResponseItemBlockchainSpecificBitcoin = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItemBlockchainSpecificBitcoin"));
+var _GetHDWalletXPubYPubZPubDetailsRData = _interopRequireDefault(require("./model/GetHDWalletXPubYPubZPubDetailsRData"));
 
-var _GetLatestMinedBlockResponseItemBlockchainSpecificBitcoinCash = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItemBlockchainSpecificBitcoinCash"));
+var _GetHDWalletXPubYPubZPubDetailsRI = _interopRequireDefault(require("./model/GetHDWalletXPubYPubZPubDetailsRI"));
 
-var _GetLatestMinedBlockResponseItemBlockchainSpecificDash = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItemBlockchainSpecificDash"));
+var _GetInternalTransactionByTransactionHashAndOperationIdR = _interopRequireDefault(require("./model/GetInternalTransactionByTransactionHashAndOperationIdR"));
 
-var _GetLatestMinedBlockResponseItemBlockchainSpecificDogecoin = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItemBlockchainSpecificDogecoin"));
+var _GetInternalTransactionByTransactionHashAndOperationIdRData = _interopRequireDefault(require("./model/GetInternalTransactionByTransactionHashAndOperationIdRData"));
 
-var _GetLatestMinedBlockResponseItemBlockchainSpecificEthereum = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItemBlockchainSpecificEthereum"));
+var _GetInternalTransactionByTransactionHashAndOperationIdRI = _interopRequireDefault(require("./model/GetInternalTransactionByTransactionHashAndOperationIdRI"));
 
-var _GetLatestMinedBlockResponseItemBlockchainSpecificEthereumClassic = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItemBlockchainSpecificEthereumClassic"));
+var _GetLatestMinedBlockR = _interopRequireDefault(require("./model/GetLatestMinedBlockR"));
 
-var _GetLatestMinedBlockResponseItemBlockchainSpecificLitecoin = _interopRequireDefault(require("./model/GetLatestMinedBlockResponseItemBlockchainSpecificLitecoin"));
+var _GetLatestMinedBlockRData = _interopRequireDefault(require("./model/GetLatestMinedBlockRData"));
 
-var _GetLatestMinedXRPRippleBlockResponse = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockResponse"));
+var _GetLatestMinedBlockRI = _interopRequireDefault(require("./model/GetLatestMinedBlockRI"));
 
-var _GetLatestMinedXRPRippleBlockResponseData = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockResponseData"));
+var _GetLatestMinedBlockRIBS = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBS"));
 
-var _GetLatestMinedXRPRippleBlockResponseItem = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockResponseItem"));
+var _GetLatestMinedBlockRIBSB = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSB"));
 
-var _GetLatestMinedXRPRippleBlockResponseItemTotalCoins = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockResponseItemTotalCoins"));
+var _GetLatestMinedBlockRIBSBC = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSBC"));
 
-var _GetLatestMinedXRPRippleBlockResponseItemTotalFees = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockResponseItemTotalFees"));
+var _GetLatestMinedBlockRIBSD = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSD"));
 
-var _GetOmniTransactionDetailsByTransactionIDTxidResponse = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidResponse"));
+var _GetLatestMinedBlockRIBSD2 = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSD2"));
 
-var _GetOmniTransactionDetailsByTransactionIDTxidResponseData = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidResponseData"));
+var _GetLatestMinedBlockRIBSE = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSE"));
 
-var _GetOmniTransactionDetailsByTransactionIDTxidResponseItem = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidResponseItem"));
+var _GetLatestMinedBlockRIBSEC = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSEC"));
 
-var _GetOmniTransactionDetailsByTransactionIDTxidResponseItemSenders = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidResponseItemSenders"));
+var _GetLatestMinedBlockRIBSL = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSL"));
 
-var _GetTransactionDetailsByTransactionIDResponse = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponse"));
+var _GetLatestMinedXRPRippleBlockR = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockR"));
 
-var _GetTransactionDetailsByTransactionIDResponseData = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseData"));
+var _GetLatestMinedXRPRippleBlockRData = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockRData"));
 
-var _GetTransactionDetailsByTransactionIDResponseItem = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItem"));
+var _GetLatestMinedXRPRippleBlockRI = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockRI"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecific = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecific"));
+var _GetLatestMinedXRPRippleBlockRITotalCoins = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockRITotalCoins"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoin"));
+var _GetLatestMinedXRPRippleBlockRITotalFees = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockRITotalFees"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCash = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCash"));
+var _GetLatestMinedZilliqaBlockR = _interopRequireDefault(require("./model/GetLatestMinedZilliqaBlockR"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashScriptPubKey"));
+var _GetLatestMinedZilliqaBlockRData = _interopRequireDefault(require("./model/GetLatestMinedZilliqaBlockRData"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashVin"));
+var _GetLatestMinedZilliqaBlockRI = _interopRequireDefault(require("./model/GetLatestMinedZilliqaBlockRI"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinCashVout"));
+var _GetOmniTransactionDetailsByTransactionIDTxidR = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidR"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinScriptPubKey"));
+var _GetOmniTransactionDetailsByTransactionIDTxidRData = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidRData"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinScriptSig = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinScriptSig"));
+var _GetOmniTransactionDetailsByTransactionIDTxidRI = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidRI"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinVin"));
+var _GetOmniTransactionDetailsByTransactionIDTxidRISenders = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidRISenders"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificBitcoinVout"));
+var _GetTransactionDetailsByTransactionIDR = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDR"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDash = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDash"));
+var _GetTransactionDetailsByTransactionIDRData = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRData"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashScriptPubKey"));
+var _GetTransactionDetailsByTransactionIDRI = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRI"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashScriptSig = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashScriptSig"));
+var _GetTransactionDetailsByTransactionIDRIBS = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBS"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashVin"));
+var _GetTransactionDetailsByTransactionIDRIBSB = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSB"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDashVout"));
+var _GetTransactionDetailsByTransactionIDRIBSBC = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBC"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoin"));
+var _GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinScriptPubKey"));
+var _GetTransactionDetailsByTransactionIDRIBSBCVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBCVin"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinScriptSig = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinScriptSig"));
+var _GetTransactionDetailsByTransactionIDRIBSBCVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBCVout"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinVin"));
+var _GetTransactionDetailsByTransactionIDRIBSBScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBScriptPubKey"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificDogecoinVout"));
+var _GetTransactionDetailsByTransactionIDRIBSBScriptSig = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBScriptSig"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereum = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereum"));
+var _GetTransactionDetailsByTransactionIDRIBSBVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBVin"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumClassic = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumClassic"));
+var _GetTransactionDetailsByTransactionIDRIBSBVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBVout"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumClassicGasPrice = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumClassicGasPrice"));
+var _GetTransactionDetailsByTransactionIDRIBSD = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSD"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumGasPrice = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificEthereumGasPrice"));
+var _GetTransactionDetailsByTransactionIDRIBSD2 = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSD2"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoin"));
+var _GetTransactionDetailsByTransactionIDRIBSD2ScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSD2ScriptPubKey"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinScriptPubKey"));
+var _GetTransactionDetailsByTransactionIDRIBSD2ScriptSig = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSD2ScriptSig"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinScriptSig = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinScriptSig"));
+var _GetTransactionDetailsByTransactionIDRIBSD2Vin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSD2Vin"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinVin"));
+var _GetTransactionDetailsByTransactionIDRIBSD2Vout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSD2Vout"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemBlockchainSpecificLitecoinVout"));
+var _GetTransactionDetailsByTransactionIDRIBSDScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSDScriptPubKey"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemFee = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemFee"));
+var _GetTransactionDetailsByTransactionIDRIBSDScriptSig = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSDScriptSig"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemRecipients = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemRecipients"));
+var _GetTransactionDetailsByTransactionIDRIBSDVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSDVin"));
 
-var _GetTransactionDetailsByTransactionIDResponseItemSenders = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDResponseItemSenders"));
+var _GetTransactionDetailsByTransactionIDRIBSDVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSDVout"));
 
-var _GetUnconfirmedOmniTransactionByTransactionIDTxidResponse = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidResponse"));
+var _GetTransactionDetailsByTransactionIDRIBSE = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSE"));
 
-var _GetUnconfirmedOmniTransactionByTransactionIDTxidResponseData = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidResponseData"));
+var _GetTransactionDetailsByTransactionIDRIBSEC = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSEC"));
 
-var _GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItem = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItem"));
+var _GetTransactionDetailsByTransactionIDRIBSECGasPrice = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSECGasPrice"));
 
-var _GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItemRecipients = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItemRecipients"));
+var _GetTransactionDetailsByTransactionIDRIBSEGasPrice = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSEGasPrice"));
 
-var _GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItemSenders = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidResponseItemSenders"));
+var _GetTransactionDetailsByTransactionIDRIBSL = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSL"));
 
-var _GetXRPRippleAddressDetailsResponse = _interopRequireDefault(require("./model/GetXRPRippleAddressDetailsResponse"));
+var _GetTransactionDetailsByTransactionIDRIBSLScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSLScriptPubKey"));
 
-var _GetXRPRippleAddressDetailsResponseData = _interopRequireDefault(require("./model/GetXRPRippleAddressDetailsResponseData"));
+var _GetTransactionDetailsByTransactionIDRIBSLScriptSig = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSLScriptSig"));
 
-var _GetXRPRippleAddressDetailsResponseItem = _interopRequireDefault(require("./model/GetXRPRippleAddressDetailsResponseItem"));
+var _GetTransactionDetailsByTransactionIDRIBSLVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSLVin"));
 
-var _GetXRPRippleAddressDetailsResponseItemBalance = _interopRequireDefault(require("./model/GetXRPRippleAddressDetailsResponseItemBalance"));
+var _GetTransactionDetailsByTransactionIDRIBSLVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSLVout"));
 
-var _GetXRPRippleBlockDetailsByBlockHashResponse = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHashResponse"));
+var _GetTransactionDetailsByTransactionIDRIFee = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIFee"));
 
-var _GetXRPRippleBlockDetailsByBlockHashResponseData = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHashResponseData"));
+var _GetTransactionDetailsByTransactionIDRIRecipients = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIRecipients"));
 
-var _GetXRPRippleBlockDetailsByBlockHashResponseItem = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHashResponseItem"));
+var _GetTransactionDetailsByTransactionIDRISenders = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRISenders"));
 
-var _GetXRPRippleBlockDetailsByBlockHashResponseItemTotalCoins = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHashResponseItemTotalCoins"));
+var _GetUnconfirmedOmniTransactionByTransactionIDTxidR = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidR"));
 
-var _GetXRPRippleBlockDetailsByBlockHeightResponse = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightResponse"));
+var _GetUnconfirmedOmniTransactionByTransactionIDTxidRData = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidRData"));
 
-var _GetXRPRippleBlockDetailsByBlockHeightResponseData = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightResponseData"));
+var _GetUnconfirmedOmniTransactionByTransactionIDTxidRI = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidRI"));
 
-var _GetXRPRippleBlockDetailsByBlockHeightResponseItem = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightResponseItem"));
+var _GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients"));
 
-var _GetXRPRippleBlockDetailsByBlockHeightResponseItemTotalCoins = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightResponseItemTotalCoins"));
+var _GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders"));
 
-var _GetXRPRippleBlockDetailsByBlockHeightResponseItemTotalFees = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightResponseItemTotalFees"));
+var _GetWalletAssetDetailsR = _interopRequireDefault(require("./model/GetWalletAssetDetailsR"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponse = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponse"));
+var _GetWalletAssetDetailsRData = _interopRequireDefault(require("./model/GetWalletAssetDetailsRData"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponseData = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponseData"));
+var _GetWalletAssetDetailsRI = _interopRequireDefault(require("./model/GetWalletAssetDetailsRI"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponseItem = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponseItem"));
+var _GetWalletAssetDetailsRIConfirmedBalance = _interopRequireDefault(require("./model/GetWalletAssetDetailsRIConfirmedBalance"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponseItemFee = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponseItemFee"));
+var _GetWalletAssetDetailsRIRecievedConfirmedAmount = _interopRequireDefault(require("./model/GetWalletAssetDetailsRIRecievedConfirmedAmount"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponseItemOffer = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponseItemOffer"));
+var _GetWalletAssetDetailsRISentConfirmedAmount = _interopRequireDefault(require("./model/GetWalletAssetDetailsRISentConfirmedAmount"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponseItemReceive = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponseItemReceive"));
+var _GetXRPRippleAddressDetailsR = _interopRequireDefault(require("./model/GetXRPRippleAddressDetailsR"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponseItemRecipients = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponseItemRecipients"));
+var _GetXRPRippleAddressDetailsRData = _interopRequireDefault(require("./model/GetXRPRippleAddressDetailsRData"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponseItemSenders = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponseItemSenders"));
+var _GetXRPRippleAddressDetailsRI = _interopRequireDefault(require("./model/GetXRPRippleAddressDetailsRI"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDResponseItemValue = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDResponseItemValue"));
+var _GetXRPRippleAddressDetailsRIBalance = _interopRequireDefault(require("./model/GetXRPRippleAddressDetailsRIBalance"));
+
+var _GetXRPRippleBlockDetailsByBlockHashR = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHashR"));
+
+var _GetXRPRippleBlockDetailsByBlockHashRData = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHashRData"));
+
+var _GetXRPRippleBlockDetailsByBlockHashRI = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHashRI"));
+
+var _GetXRPRippleBlockDetailsByBlockHashRITotalCoins = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins"));
+
+var _GetXRPRippleBlockDetailsByBlockHeightR = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightR"));
+
+var _GetXRPRippleBlockDetailsByBlockHeightRData = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightRData"));
+
+var _GetXRPRippleBlockDetailsByBlockHeightRI = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightRI"));
+
+var _GetXRPRippleBlockDetailsByBlockHeightRITotalCoins = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightRITotalCoins"));
+
+var _GetXRPRippleBlockDetailsByBlockHeightRITotalFees = _interopRequireDefault(require("./model/GetXRPRippleBlockDetailsByBlockHeightRITotalFees"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDR = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDR"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDRData = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDRData"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDRI = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDRI"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDRIFee = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDRIFee"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDRIOffer = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDRIOffer"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDRIReceive = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDRIReceive"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDRIRecipients = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDRISenders = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDRISenders"));
+
+var _GetXRPRippleTransactionDetailsByTransactionIDRIValue = _interopRequireDefault(require("./model/GetXRPRippleTransactionDetailsByTransactionIDRIValue"));
+
+var _GetZilliqaAddressDetailsR = _interopRequireDefault(require("./model/GetZilliqaAddressDetailsR"));
+
+var _GetZilliqaAddressDetailsRData = _interopRequireDefault(require("./model/GetZilliqaAddressDetailsRData"));
+
+var _GetZilliqaAddressDetailsRI = _interopRequireDefault(require("./model/GetZilliqaAddressDetailsRI"));
+
+var _GetZilliqaAddressDetailsRIBalance = _interopRequireDefault(require("./model/GetZilliqaAddressDetailsRIBalance"));
+
+var _GetZilliqaBlockDetailsByBlockHashR = _interopRequireDefault(require("./model/GetZilliqaBlockDetailsByBlockHashR"));
+
+var _GetZilliqaBlockDetailsByBlockHashRData = _interopRequireDefault(require("./model/GetZilliqaBlockDetailsByBlockHashRData"));
+
+var _GetZilliqaBlockDetailsByBlockHashRI = _interopRequireDefault(require("./model/GetZilliqaBlockDetailsByBlockHashRI"));
+
+var _GetZilliqaBlockDetailsByBlockHeightR = _interopRequireDefault(require("./model/GetZilliqaBlockDetailsByBlockHeightR"));
+
+var _GetZilliqaBlockDetailsByBlockHeightRData = _interopRequireDefault(require("./model/GetZilliqaBlockDetailsByBlockHeightRData"));
+
+var _GetZilliqaBlockDetailsByBlockHeightRI = _interopRequireDefault(require("./model/GetZilliqaBlockDetailsByBlockHeightRI"));
+
+var _GetZilliqaTransactionDetailsByTransactionIDR = _interopRequireDefault(require("./model/GetZilliqaTransactionDetailsByTransactionIDR"));
+
+var _GetZilliqaTransactionDetailsByTransactionIDRData = _interopRequireDefault(require("./model/GetZilliqaTransactionDetailsByTransactionIDRData"));
+
+var _GetZilliqaTransactionDetailsByTransactionIDRI = _interopRequireDefault(require("./model/GetZilliqaTransactionDetailsByTransactionIDRI"));
+
+var _GetZilliqaTransactionDetailsByTransactionIDRIFee = _interopRequireDefault(require("./model/GetZilliqaTransactionDetailsByTransactionIDRIFee"));
+
+var _GetZilliqaTransactionDetailsByTransactionIDRIRecipients = _interopRequireDefault(require("./model/GetZilliqaTransactionDetailsByTransactionIDRIRecipients"));
+
+var _GetZilliqaTransactionDetailsByTransactionIDRISenders = _interopRequireDefault(require("./model/GetZilliqaTransactionDetailsByTransactionIDRISenders"));
 
 var _InsufficientCredits = _interopRequireDefault(require("./model/InsufficientCredits"));
 
@@ -3608,417 +4496,499 @@ var _LimitGreaterThanAllowed = _interopRequireDefault(require("./model/LimitGrea
 
 var _LimitGreaterThanAllowedError = _interopRequireDefault(require("./model/LimitGreaterThanAllowedError"));
 
-var _ListAssetsDetailsResponse = _interopRequireDefault(require("./model/ListAssetsDetailsResponse"));
+var _ListAssetsDetailsR = _interopRequireDefault(require("./model/ListAssetsDetailsR"));
 
-var _ListAssetsDetailsResponseData = _interopRequireDefault(require("./model/ListAssetsDetailsResponseData"));
+var _ListAssetsDetailsRData = _interopRequireDefault(require("./model/ListAssetsDetailsRData"));
 
-var _ListAssetsDetailsResponseItem = _interopRequireDefault(require("./model/ListAssetsDetailsResponseItem"));
+var _ListAssetsDetailsRI = _interopRequireDefault(require("./model/ListAssetsDetailsRI"));
 
-var _ListAssetsDetailsResponseItemAssetLogo = _interopRequireDefault(require("./model/ListAssetsDetailsResponseItemAssetLogo"));
+var _ListAssetsDetailsRIAssetLogo = _interopRequireDefault(require("./model/ListAssetsDetailsRIAssetLogo"));
 
-var _ListAssetsDetailsResponseItemLatestRate = _interopRequireDefault(require("./model/ListAssetsDetailsResponseItemLatestRate"));
+var _ListAssetsDetailsRILatestRate = _interopRequireDefault(require("./model/ListAssetsDetailsRILatestRate"));
 
-var _ListAssetsDetailsResponseItemSpecificData = _interopRequireDefault(require("./model/ListAssetsDetailsResponseItemSpecificData"));
+var _ListAssetsDetailsRISpecificData = _interopRequireDefault(require("./model/ListAssetsDetailsRISpecificData"));
 
-var _ListAssetsDetailsResponseItemSpecificDataCryptoTypeData = _interopRequireDefault(require("./model/ListAssetsDetailsResponseItemSpecificDataCryptoTypeData"));
+var _ListAssetsDetailsRISpecificDataCryptoTypeData = _interopRequireDefault(require("./model/ListAssetsDetailsRISpecificDataCryptoTypeData"));
 
-var _ListBlockchainEventsSubscriptionsResponse = _interopRequireDefault(require("./model/ListBlockchainEventsSubscriptionsResponse"));
+var _ListBlockchainEventsSubscriptionsR = _interopRequireDefault(require("./model/ListBlockchainEventsSubscriptionsR"));
 
-var _ListBlockchainEventsSubscriptionsResponseData = _interopRequireDefault(require("./model/ListBlockchainEventsSubscriptionsResponseData"));
+var _ListBlockchainEventsSubscriptionsRData = _interopRequireDefault(require("./model/ListBlockchainEventsSubscriptionsRData"));
 
-var _ListBlockchainEventsSubscriptionsResponseItem = _interopRequireDefault(require("./model/ListBlockchainEventsSubscriptionsResponseItem"));
+var _ListBlockchainEventsSubscriptionsRI = _interopRequireDefault(require("./model/ListBlockchainEventsSubscriptionsRI"));
 
-var _ListCoinsForwardingAutomationsResponse = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsResponse"));
+var _ListCoinsForwardingAutomationsR = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsR"));
 
-var _ListCoinsForwardingAutomationsResponseData = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsResponseData"));
+var _ListCoinsForwardingAutomationsRData = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsRData"));
 
-var _ListCoinsForwardingAutomationsResponseItem = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsResponseItem"));
+var _ListCoinsForwardingAutomationsRI = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsRI"));
 
-var _ListHDWalletxPubYPubZPubTransactionsResponse = _interopRequireDefault(require("./model/ListHDWalletxPubYPubZPubTransactionsResponse"));
+var _ListHDWalletXPubYPubZPubTransactionsR = _interopRequireDefault(require("./model/ListHDWalletXPubYPubZPubTransactionsR"));
 
-var _ListHDWalletxPubYPubZPubTransactionsResponseData = _interopRequireDefault(require("./model/ListHDWalletxPubYPubZPubTransactionsResponseData"));
+var _ListHDWalletXPubYPubZPubTransactionsRData = _interopRequireDefault(require("./model/ListHDWalletXPubYPubZPubTransactionsRData"));
 
-var _ListHDWalletxPubYPubZPubTransactionsResponseItem = _interopRequireDefault(require("./model/ListHDWalletxPubYPubZPubTransactionsResponseItem"));
+var _ListHDWalletXPubYPubZPubTransactionsRI = _interopRequireDefault(require("./model/ListHDWalletXPubYPubZPubTransactionsRI"));
 
-var _ListHDWalletxPubYPubZPubTransactionsResponseItemFee = _interopRequireDefault(require("./model/ListHDWalletxPubYPubZPubTransactionsResponseItemFee"));
+var _ListHDWalletXPubYPubZPubTransactionsRIFee = _interopRequireDefault(require("./model/ListHDWalletXPubYPubZPubTransactionsRIFee"));
 
-var _ListHDWalletxPubYPubZPubTransactionsResponseItemRecipients = _interopRequireDefault(require("./model/ListHDWalletxPubYPubZPubTransactionsResponseItemRecipients"));
+var _ListHDWalletXPubYPubZPubTransactionsRIRecipients = _interopRequireDefault(require("./model/ListHDWalletXPubYPubZPubTransactionsRIRecipients"));
 
-var _ListHDWalletxPubYPubZPubTransactionsResponseItemSenders = _interopRequireDefault(require("./model/ListHDWalletxPubYPubZPubTransactionsResponseItemSenders"));
+var _ListHDWalletXPubYPubZPubTransactionsRISenders = _interopRequireDefault(require("./model/ListHDWalletXPubYPubZPubTransactionsRISenders"));
 
-var _ListOmniTokensByAddressResponse = _interopRequireDefault(require("./model/ListOmniTokensByAddressResponse"));
+var _ListInternalTransactionDetailsByTransactionHashR = _interopRequireDefault(require("./model/ListInternalTransactionDetailsByTransactionHashR"));
 
-var _ListOmniTokensByAddressResponseData = _interopRequireDefault(require("./model/ListOmniTokensByAddressResponseData"));
+var _ListInternalTransactionDetailsByTransactionHashRData = _interopRequireDefault(require("./model/ListInternalTransactionDetailsByTransactionHashRData"));
 
-var _ListOmniTokensByAddressResponseItem = _interopRequireDefault(require("./model/ListOmniTokensByAddressResponseItem"));
+var _ListInternalTransactionDetailsByTransactionHashRI = _interopRequireDefault(require("./model/ListInternalTransactionDetailsByTransactionHashRI"));
 
-var _ListOmniTransactionsByAddressResponse = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressResponse"));
+var _ListOmniTokensByAddressR = _interopRequireDefault(require("./model/ListOmniTokensByAddressR"));
 
-var _ListOmniTransactionsByAddressResponseData = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressResponseData"));
+var _ListOmniTokensByAddressRData = _interopRequireDefault(require("./model/ListOmniTokensByAddressRData"));
 
-var _ListOmniTransactionsByAddressResponseItem = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressResponseItem"));
+var _ListOmniTokensByAddressRI = _interopRequireDefault(require("./model/ListOmniTokensByAddressRI"));
 
-var _ListOmniTransactionsByAddressResponseItemFee = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressResponseItemFee"));
+var _ListOmniTransactionsByAddressR = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressR"));
 
-var _ListOmniTransactionsByAddressResponseItemRecipients = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressResponseItemRecipients"));
+var _ListOmniTransactionsByAddressRData = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressRData"));
 
-var _ListOmniTransactionsByAddressResponseItemSenders = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressResponseItemSenders"));
+var _ListOmniTransactionsByAddressRI = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressRI"));
 
-var _ListOmniTransactionsByBlockHashResponse = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHashResponse"));
+var _ListOmniTransactionsByAddressRIFee = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressRIFee"));
 
-var _ListOmniTransactionsByBlockHashResponseData = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHashResponseData"));
+var _ListOmniTransactionsByAddressRIRecipients = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressRIRecipients"));
 
-var _ListOmniTransactionsByBlockHashResponseItem = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHashResponseItem"));
+var _ListOmniTransactionsByAddressRISenders = _interopRequireDefault(require("./model/ListOmniTransactionsByAddressRISenders"));
 
-var _ListOmniTransactionsByBlockHashResponseItemFee = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHashResponseItemFee"));
+var _ListOmniTransactionsByBlockHashR = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHashR"));
 
-var _ListOmniTransactionsByBlockHeightResponse = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightResponse"));
+var _ListOmniTransactionsByBlockHashRData = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHashRData"));
 
-var _ListOmniTransactionsByBlockHeightResponseData = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightResponseData"));
+var _ListOmniTransactionsByBlockHashRI = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHashRI"));
 
-var _ListOmniTransactionsByBlockHeightResponseItem = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightResponseItem"));
+var _ListOmniTransactionsByBlockHashRIFee = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHashRIFee"));
 
-var _ListOmniTransactionsByBlockHeightResponseItemFee = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightResponseItemFee"));
+var _ListOmniTransactionsByBlockHeightR = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightR"));
 
-var _ListOmniTransactionsByBlockHeightResponseItemRecipients = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightResponseItemRecipients"));
+var _ListOmniTransactionsByBlockHeightRData = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightRData"));
 
-var _ListOmniTransactionsByBlockHeightResponseItemSenders = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightResponseItemSenders"));
+var _ListOmniTransactionsByBlockHeightRI = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightRI"));
 
-var _ListSupportedAssetsResponse = _interopRequireDefault(require("./model/ListSupportedAssetsResponse"));
+var _ListOmniTransactionsByBlockHeightRIFee = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightRIFee"));
 
-var _ListSupportedAssetsResponseData = _interopRequireDefault(require("./model/ListSupportedAssetsResponseData"));
+var _ListOmniTransactionsByBlockHeightRIRecipients = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightRIRecipients"));
 
-var _ListSupportedAssetsResponseItem = _interopRequireDefault(require("./model/ListSupportedAssetsResponseItem"));
+var _ListOmniTransactionsByBlockHeightRISenders = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightRISenders"));
 
-var _ListTokensByAddressResponse = _interopRequireDefault(require("./model/ListTokensByAddressResponse"));
+var _ListReceivingAddressesR = _interopRequireDefault(require("./model/ListReceivingAddressesR"));
 
-var _ListTokensByAddressResponseData = _interopRequireDefault(require("./model/ListTokensByAddressResponseData"));
+var _ListReceivingAddressesRData = _interopRequireDefault(require("./model/ListReceivingAddressesRData"));
 
-var _ListTokensByAddressResponseItem = _interopRequireDefault(require("./model/ListTokensByAddressResponseItem"));
+var _ListReceivingAddressesRI = _interopRequireDefault(require("./model/ListReceivingAddressesRI"));
 
-var _ListTokensForwardingAutomationsResponse = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsResponse"));
+var _ListSupportedAssetsR = _interopRequireDefault(require("./model/ListSupportedAssetsR"));
 
-var _ListTokensForwardingAutomationsResponseData = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsResponseData"));
+var _ListSupportedAssetsRData = _interopRequireDefault(require("./model/ListSupportedAssetsRData"));
 
-var _ListTokensForwardingAutomationsResponseItem = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsResponseItem"));
+var _ListSupportedAssetsRI = _interopRequireDefault(require("./model/ListSupportedAssetsRI"));
 
-var _ListTokensForwardingAutomationsResponseItemTokenData = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsResponseItemTokenData"));
+var _ListSupportedTokensR = _interopRequireDefault(require("./model/ListSupportedTokensR"));
 
-var _ListTokensForwardingAutomationsResponseItemTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsResponseItemTokenDataBitcoinOmniToken"));
+var _ListSupportedTokensRData = _interopRequireDefault(require("./model/ListSupportedTokensRData"));
 
-var _ListTokensForwardingAutomationsResponseItemTokenDataEthereumToken = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsResponseItemTokenDataEthereumToken"));
+var _ListSupportedTokensRI = _interopRequireDefault(require("./model/ListSupportedTokensRI"));
 
-var _ListTokensTransfersByAddressResponse = _interopRequireDefault(require("./model/ListTokensTransfersByAddressResponse"));
+var _ListTokensByAddressR = _interopRequireDefault(require("./model/ListTokensByAddressR"));
 
-var _ListTokensTransfersByAddressResponseData = _interopRequireDefault(require("./model/ListTokensTransfersByAddressResponseData"));
+var _ListTokensByAddressRData = _interopRequireDefault(require("./model/ListTokensByAddressRData"));
 
-var _ListTokensTransfersByAddressResponseItem = _interopRequireDefault(require("./model/ListTokensTransfersByAddressResponseItem"));
+var _ListTokensByAddressRI = _interopRequireDefault(require("./model/ListTokensByAddressRI"));
 
-var _ListTokensTransfersByTransactionHashResponse = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashResponse"));
+var _ListTokensForwardingAutomationsR = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsR"));
 
-var _ListTokensTransfersByTransactionHashResponseData = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashResponseData"));
+var _ListTokensForwardingAutomationsRData = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsRData"));
 
-var _ListTokensTransfersByTransactionHashResponseItem = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashResponseItem"));
+var _ListTokensForwardingAutomationsRI = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsRI"));
 
-var _ListTransactionsByAddressResponse = _interopRequireDefault(require("./model/ListTransactionsByAddressResponse"));
+var _ListTokensForwardingAutomationsRITS = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsRITS"));
 
-var _ListTransactionsByAddressResponseData = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseData"));
+var _ListTokensForwardingAutomationsRITSBOT = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsRITSBOT"));
 
-var _ListTransactionsByAddressResponseItem = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItem"));
+var _ListTokensForwardingAutomationsRITSET = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsRITSET"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecific = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecific"));
+var _ListTokensTransfersByAddressR = _interopRequireDefault(require("./model/ListTokensTransfersByAddressR"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoin = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificBitcoin"));
+var _ListTokensTransfersByAddressRData = _interopRequireDefault(require("./model/ListTokensTransfersByAddressRData"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinCash = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinCash"));
+var _ListTokensTransfersByAddressRI = _interopRequireDefault(require("./model/ListTokensTransfersByAddressRI"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinCashVin = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinCashVin"));
+var _ListTokensTransfersByTransactionHashR = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashR"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinScriptPubKey"));
+var _ListTokensTransfersByTransactionHashRData = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashRData"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinVin = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinVin"));
+var _ListTokensTransfersByTransactionHashRI = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashRI"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinVout = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificBitcoinVout"));
+var _ListTransactionsByAddressR = _interopRequireDefault(require("./model/ListTransactionsByAddressR"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificDash = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificDash"));
+var _ListTransactionsByAddressRData = _interopRequireDefault(require("./model/ListTransactionsByAddressRData"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificDashScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificDashScriptPubKey"));
+var _ListTransactionsByAddressRI = _interopRequireDefault(require("./model/ListTransactionsByAddressRI"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificDashScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificDashScriptSig"));
+var _ListTransactionsByAddressRIBS = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBS"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificDashVin = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificDashVin"));
+var _ListTransactionsByAddressRIBSB = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSB"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificDashVout = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificDashVout"));
+var _ListTransactionsByAddressRIBSBC = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBC"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificDogecoin = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificDogecoin"));
+var _ListTransactionsByAddressRIBSBCVin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBCVin"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificDogecoinScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificDogecoinScriptSig"));
+var _ListTransactionsByAddressRIBSBScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBScriptPubKey"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificDogecoinVin = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificDogecoinVin"));
+var _ListTransactionsByAddressRIBSBVin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBVin"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificEthereum = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificEthereum"));
+var _ListTransactionsByAddressRIBSBVout = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBVout"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificEthereumClassic = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificEthereumClassic"));
+var _ListTransactionsByAddressRIBSD = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificEthereumClassicGasPrice = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificEthereumClassicGasPrice"));
+var _ListTransactionsByAddressRIBSD2 = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificEthereumGasPrice = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificEthereumGasPrice"));
+var _ListTransactionsByAddressRIBSD2ScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2ScriptPubKey"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificLitecoin = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificLitecoin"));
+var _ListTransactionsByAddressRIBSD2ScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2ScriptSig"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificLitecoinScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificLitecoinScriptSig"));
+var _ListTransactionsByAddressRIBSD2Vin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2Vin"));
 
-var _ListTransactionsByAddressResponseItemBlockchainSpecificLitecoinVin = _interopRequireDefault(require("./model/ListTransactionsByAddressResponseItemBlockchainSpecificLitecoinVin"));
+var _ListTransactionsByAddressRIBSD2Vout = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2Vout"));
 
-var _ListTransactionsByBlockHashResponse = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponse"));
+var _ListTransactionsByAddressRIBSDScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSDScriptSig"));
 
-var _ListTransactionsByBlockHashResponseData = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseData"));
+var _ListTransactionsByAddressRIBSDVin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSDVin"));
 
-var _ListTransactionsByBlockHashResponseItem = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItem"));
+var _ListTransactionsByAddressRIBSE = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSE"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecific = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecific"));
+var _ListTransactionsByAddressRIBSEC = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSEC"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoin"));
+var _ListTransactionsByAddressRIBSECGasPrice = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSECGasPrice"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCash = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCash"));
+var _ListTransactionsByAddressRIBSEGasPrice = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSEGasPrice"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashScriptPubKey"));
+var _ListTransactionsByAddressRIBSL = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSL"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashVin"));
+var _ListTransactionsByAddressRIBSLScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSLScriptSig"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinCashVout"));
+var _ListTransactionsByAddressRIBSLVin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSLVin"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificBitcoinVin"));
+var _ListTransactionsByBlockHashR = _interopRequireDefault(require("./model/ListTransactionsByBlockHashR"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDash = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDash"));
+var _ListTransactionsByBlockHashRData = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRData"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDashScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDashScriptPubKey"));
+var _ListTransactionsByBlockHashRI = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRI"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDashScriptSig = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDashScriptSig"));
+var _ListTransactionsByBlockHashRIBS = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBS"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDashVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDashVin"));
+var _ListTransactionsByBlockHashRIBSB = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSB"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDashVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDashVout"));
+var _ListTransactionsByBlockHashRIBSBC = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBC"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoin"));
+var _ListTransactionsByBlockHashRIBSBCScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBCScriptPubKey"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinScriptPubKey"));
+var _ListTransactionsByBlockHashRIBSBCVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBCVin"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinVin"));
+var _ListTransactionsByBlockHashRIBSBCVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBCVout"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificDogecoinVout"));
+var _ListTransactionsByBlockHashRIBSBVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBVin"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereum = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereum"));
+var _ListTransactionsByBlockHashRIBSD = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSD"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereumClassic = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereumClassic"));
+var _ListTransactionsByBlockHashRIBSD2 = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSD2"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereumGasPrice = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificEthereumGasPrice"));
+var _ListTransactionsByBlockHashRIBSD2ScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSD2ScriptPubKey"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoin"));
+var _ListTransactionsByBlockHashRIBSD2ScriptSig = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSD2ScriptSig"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinScriptPubKey"));
+var _ListTransactionsByBlockHashRIBSD2Vin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSD2Vin"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinVin"));
+var _ListTransactionsByBlockHashRIBSD2Vout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSD2Vout"));
 
-var _ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemBlockchainSpecificLitecoinVout"));
+var _ListTransactionsByBlockHashRIBSDScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSDScriptPubKey"));
 
-var _ListTransactionsByBlockHashResponseItemFee = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemFee"));
+var _ListTransactionsByBlockHashRIBSDVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSDVin"));
 
-var _ListTransactionsByBlockHashResponseItemRecipients = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemRecipients"));
+var _ListTransactionsByBlockHashRIBSDVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSDVout"));
 
-var _ListTransactionsByBlockHashResponseItemSenders = _interopRequireDefault(require("./model/ListTransactionsByBlockHashResponseItemSenders"));
+var _ListTransactionsByBlockHashRIBSE = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSE"));
 
-var _ListTransactionsByBlockHeightResponse = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponse"));
+var _ListTransactionsByBlockHashRIBSEC = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSEC"));
 
-var _ListTransactionsByBlockHeightResponseData = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseData"));
+var _ListTransactionsByBlockHashRIBSEGasPrice = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSEGasPrice"));
 
-var _ListTransactionsByBlockHeightResponseItem = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItem"));
+var _ListTransactionsByBlockHashRIBSL = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSL"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecific = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecific"));
+var _ListTransactionsByBlockHashRIBSLScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSLScriptPubKey"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoin"));
+var _ListTransactionsByBlockHashRIBSLVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSLVin"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinCash = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinCash"));
+var _ListTransactionsByBlockHashRIBSLVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSLVout"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinScriptPubKey"));
+var _ListTransactionsByBlockHashRIFee = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIFee"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificBitcoinVout"));
+var _ListTransactionsByBlockHashRIRecipients = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIRecipients"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDash = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificDash"));
+var _ListTransactionsByBlockHashRISenders = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRISenders"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashScriptPubKey"));
+var _ListTransactionsByBlockHeightR = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightR"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashScriptSig = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashScriptSig"));
+var _ListTransactionsByBlockHeightRData = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRData"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashVin"));
+var _ListTransactionsByBlockHeightRI = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRI"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificDashVout"));
+var _ListTransactionsByBlockHeightRIBS = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBS"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDogecoin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificDogecoin"));
+var _ListTransactionsByBlockHeightRIBSB = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSB"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificDogecoinVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificDogecoinVin"));
+var _ListTransactionsByBlockHeightRIBSBC = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSBC"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereum = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereum"));
+var _ListTransactionsByBlockHeightRIBSBScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSBScriptPubKey"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereumClassic = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereumClassic"));
+var _ListTransactionsByBlockHeightRIBSBVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSBVout"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereumClassicGasPrice = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificEthereumClassicGasPrice"));
+var _ListTransactionsByBlockHeightRIBSD = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSD"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoin"));
+var _ListTransactionsByBlockHeightRIBSD2 = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSD2"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinScriptPubKey"));
+var _ListTransactionsByBlockHeightRIBSD2Vin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSD2Vin"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinScriptSig = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinScriptSig"));
+var _ListTransactionsByBlockHeightRIBSDScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSDScriptPubKey"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinVin"));
+var _ListTransactionsByBlockHeightRIBSDScriptSig = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSDScriptSig"));
 
-var _ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemBlockchainSpecificLitecoinVout"));
+var _ListTransactionsByBlockHeightRIBSDVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSDVin"));
 
-var _ListTransactionsByBlockHeightResponseItemFee = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightResponseItemFee"));
+var _ListTransactionsByBlockHeightRIBSDVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSDVout"));
 
-var _ListUnconfirmedOmniTransactionsByAddressResponse = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressResponse"));
+var _ListTransactionsByBlockHeightRIBSE = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSE"));
 
-var _ListUnconfirmedOmniTransactionsByAddressResponseData = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressResponseData"));
+var _ListTransactionsByBlockHeightRIBSEC = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSEC"));
 
-var _ListUnconfirmedOmniTransactionsByAddressResponseItem = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressResponseItem"));
+var _ListTransactionsByBlockHeightRIBSECGasPrice = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSECGasPrice"));
 
-var _ListUnconfirmedOmniTransactionsByAddressResponseItemFee = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressResponseItemFee"));
+var _ListTransactionsByBlockHeightRIBSL = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSL"));
 
-var _ListUnconfirmedOmniTransactionsByAddressResponseItemSenders = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressResponseItemSenders"));
+var _ListTransactionsByBlockHeightRIBSLScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSLScriptPubKey"));
 
-var _ListUnconfirmedOmniTransactionsByPropertyIDResponse = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByPropertyIDResponse"));
+var _ListTransactionsByBlockHeightRIBSLScriptSig = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSLScriptSig"));
 
-var _ListUnconfirmedOmniTransactionsByPropertyIDResponseData = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByPropertyIDResponseData"));
+var _ListTransactionsByBlockHeightRIBSLVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSLVin"));
 
-var _ListUnconfirmedOmniTransactionsByPropertyIDResponseItem = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByPropertyIDResponseItem"));
+var _ListTransactionsByBlockHeightRIBSLVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSLVout"));
 
-var _ListXRPRippleTransactionsByAddressResponse = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressResponse"));
+var _ListTransactionsByBlockHeightRIFee = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIFee"));
 
-var _ListXRPRippleTransactionsByAddressResponseData = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressResponseData"));
+var _ListUnconfirmedOmniTransactionsByAddressR = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressR"));
 
-var _ListXRPRippleTransactionsByAddressResponseItem = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressResponseItem"));
+var _ListUnconfirmedOmniTransactionsByAddressRData = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressRData"));
 
-var _ListXRPRippleTransactionsByAddressResponseItemFee = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressResponseItemFee"));
+var _ListUnconfirmedOmniTransactionsByAddressRI = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressRI"));
 
-var _ListXRPRippleTransactionsByAddressResponseItemOffer = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressResponseItemOffer"));
+var _ListUnconfirmedOmniTransactionsByAddressRIFee = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressRIFee"));
 
-var _ListXRPRippleTransactionsByAddressResponseItemReceive = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressResponseItemReceive"));
+var _ListUnconfirmedOmniTransactionsByAddressRISenders = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressRISenders"));
 
-var _ListXRPRippleTransactionsByAddressResponseItemValue = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressResponseItemValue"));
+var _ListUnconfirmedOmniTransactionsByPropertyIDR = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByPropertyIDR"));
 
-var _ListXRPRippleTransactionsByBlockHashResponse = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponse"));
+var _ListUnconfirmedOmniTransactionsByPropertyIDRData = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByPropertyIDRData"));
 
-var _ListXRPRippleTransactionsByBlockHashResponseData = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponseData"));
+var _ListUnconfirmedOmniTransactionsByPropertyIDRI = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByPropertyIDRI"));
 
-var _ListXRPRippleTransactionsByBlockHashResponseItem = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponseItem"));
+var _ListXRPRippleTransactionsByAddressR = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressR"));
 
-var _ListXRPRippleTransactionsByBlockHashResponseItemFee = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponseItemFee"));
+var _ListXRPRippleTransactionsByAddressRData = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressRData"));
 
-var _ListXRPRippleTransactionsByBlockHashResponseItemOffer = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponseItemOffer"));
+var _ListXRPRippleTransactionsByAddressRI = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressRI"));
 
-var _ListXRPRippleTransactionsByBlockHashResponseItemReceive = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponseItemReceive"));
+var _ListXRPRippleTransactionsByAddressRIFee = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressRIFee"));
 
-var _ListXRPRippleTransactionsByBlockHashResponseItemRecipients = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponseItemRecipients"));
+var _ListXRPRippleTransactionsByAddressRIOffer = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressRIOffer"));
 
-var _ListXRPRippleTransactionsByBlockHashResponseItemSenders = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponseItemSenders"));
+var _ListXRPRippleTransactionsByAddressRIReceive = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressRIReceive"));
 
-var _ListXRPRippleTransactionsByBlockHashResponseItemValue = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashResponseItemValue"));
+var _ListXRPRippleTransactionsByAddressRIValue = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressRIValue"));
 
-var _MinedTransactionRequestBody = _interopRequireDefault(require("./model/MinedTransactionRequestBody"));
+var _ListXRPRippleTransactionsByBlockHashR = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashR"));
 
-var _MinedTransactionRequestBodyData = _interopRequireDefault(require("./model/MinedTransactionRequestBodyData"));
+var _ListXRPRippleTransactionsByBlockHashRData = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashRData"));
 
-var _MinedTransactionRequestBodyDataItem = _interopRequireDefault(require("./model/MinedTransactionRequestBodyDataItem"));
+var _ListXRPRippleTransactionsByBlockHashRI = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashRI"));
 
-var _MinedTransactionResponse = _interopRequireDefault(require("./model/MinedTransactionResponse"));
+var _ListXRPRippleTransactionsByBlockHashRIFee = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashRIFee"));
 
-var _MinedTransactionResponseData = _interopRequireDefault(require("./model/MinedTransactionResponseData"));
+var _ListXRPRippleTransactionsByBlockHashRIOffer = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashRIOffer"));
 
-var _MinedTransactionResponseItem = _interopRequireDefault(require("./model/MinedTransactionResponseItem"));
+var _ListXRPRippleTransactionsByBlockHashRIReceive = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashRIReceive"));
+
+var _ListXRPRippleTransactionsByBlockHashRIRecipients = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashRIRecipients"));
+
+var _ListXRPRippleTransactionsByBlockHashRISenders = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashRISenders"));
+
+var _ListXRPRippleTransactionsByBlockHashRIValue = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHashRIValue"));
+
+var _ListXRPRippleTransactionsByBlockHeightR = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightR"));
+
+var _ListXRPRippleTransactionsByBlockHeightRData = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightRData"));
+
+var _ListXRPRippleTransactionsByBlockHeightRI = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightRI"));
+
+var _ListXRPRippleTransactionsByBlockHeightRIFee = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightRIFee"));
+
+var _ListXRPRippleTransactionsByBlockHeightRIOffer = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightRIOffer"));
+
+var _ListXRPRippleTransactionsByBlockHeightRIReceive = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightRIReceive"));
+
+var _ListXRPRippleTransactionsByBlockHeightRIRecipients = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightRIRecipients"));
+
+var _ListXRPRippleTransactionsByBlockHeightRISenders = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightRISenders"));
+
+var _ListXRPRippleTransactionsByBlockHeightRIValue = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByBlockHeightRIValue"));
+
+var _ListZilliqaTransactionsByAddressR = _interopRequireDefault(require("./model/ListZilliqaTransactionsByAddressR"));
+
+var _ListZilliqaTransactionsByAddressRData = _interopRequireDefault(require("./model/ListZilliqaTransactionsByAddressRData"));
+
+var _ListZilliqaTransactionsByAddressRI = _interopRequireDefault(require("./model/ListZilliqaTransactionsByAddressRI"));
+
+var _ListZilliqaTransactionsByAddressRIRecipients = _interopRequireDefault(require("./model/ListZilliqaTransactionsByAddressRIRecipients"));
+
+var _ListZilliqaTransactionsByAddressRISenders = _interopRequireDefault(require("./model/ListZilliqaTransactionsByAddressRISenders"));
+
+var _ListZilliqaTransactionsByBlockHashR = _interopRequireDefault(require("./model/ListZilliqaTransactionsByBlockHashR"));
+
+var _ListZilliqaTransactionsByBlockHashRData = _interopRequireDefault(require("./model/ListZilliqaTransactionsByBlockHashRData"));
+
+var _ListZilliqaTransactionsByBlockHashRI = _interopRequireDefault(require("./model/ListZilliqaTransactionsByBlockHashRI"));
+
+var _ListZilliqaTransactionsByBlockHeightR = _interopRequireDefault(require("./model/ListZilliqaTransactionsByBlockHeightR"));
+
+var _ListZilliqaTransactionsByBlockHeightRData = _interopRequireDefault(require("./model/ListZilliqaTransactionsByBlockHeightRData"));
+
+var _ListZilliqaTransactionsByBlockHeightRI = _interopRequireDefault(require("./model/ListZilliqaTransactionsByBlockHeightRI"));
+
+var _MinedTransactionR = _interopRequireDefault(require("./model/MinedTransactionR"));
+
+var _MinedTransactionRB = _interopRequireDefault(require("./model/MinedTransactionRB"));
+
+var _MinedTransactionRBData = _interopRequireDefault(require("./model/MinedTransactionRBData"));
+
+var _MinedTransactionRBDataItem = _interopRequireDefault(require("./model/MinedTransactionRBDataItem"));
+
+var _MinedTransactionRData = _interopRequireDefault(require("./model/MinedTransactionRData"));
+
+var _MinedTransactionRI = _interopRequireDefault(require("./model/MinedTransactionRI"));
 
 var _MissingApiKey = _interopRequireDefault(require("./model/MissingApiKey"));
 
 var _MissingApiKeyError = _interopRequireDefault(require("./model/MissingApiKeyError"));
 
-var _NewBlockRequestBody = _interopRequireDefault(require("./model/NewBlockRequestBody"));
+var _NewBlockR = _interopRequireDefault(require("./model/NewBlockR"));
 
-var _NewBlockRequestBodyData = _interopRequireDefault(require("./model/NewBlockRequestBodyData"));
+var _NewBlockRB = _interopRequireDefault(require("./model/NewBlockRB"));
 
-var _NewBlockRequestBodyDataItem = _interopRequireDefault(require("./model/NewBlockRequestBodyDataItem"));
+var _NewBlockRBData = _interopRequireDefault(require("./model/NewBlockRBData"));
 
-var _NewBlockResponse = _interopRequireDefault(require("./model/NewBlockResponse"));
+var _NewBlockRBDataItem = _interopRequireDefault(require("./model/NewBlockRBDataItem"));
 
-var _NewBlockResponseData = _interopRequireDefault(require("./model/NewBlockResponseData"));
+var _NewBlockRData = _interopRequireDefault(require("./model/NewBlockRData"));
 
-var _NewBlockResponseItem = _interopRequireDefault(require("./model/NewBlockResponseItem"));
+var _NewBlockRI = _interopRequireDefault(require("./model/NewBlockRI"));
 
-var _NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody"));
+var _NewConfirmedCoinsTransactionsAndEachConfirmationR = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationR"));
 
-var _NewConfirmedCoinsTransactionsAndEachConfirmationRequestBodyData = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationRequestBodyData"));
+var _NewConfirmedCoinsTransactionsAndEachConfirmationRB = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationRB"));
 
-var _NewConfirmedCoinsTransactionsAndEachConfirmationRequestBodyDataItem = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationRequestBodyDataItem"));
+var _NewConfirmedCoinsTransactionsAndEachConfirmationRBData = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationRBData"));
 
-var _NewConfirmedCoinsTransactionsAndEachConfirmationResponse = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationResponse"));
+var _NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem"));
 
-var _NewConfirmedCoinsTransactionsAndEachConfirmationResponseData = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationResponseData"));
+var _NewConfirmedCoinsTransactionsAndEachConfirmationRData = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationRData"));
 
-var _NewConfirmedCoinsTransactionsAndEachConfirmationResponseItem = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationResponseItem"));
+var _NewConfirmedCoinsTransactionsAndEachConfirmationRI = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsAndEachConfirmationRI"));
 
-var _NewConfirmedCoinsTransactionsRequestBody = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsRequestBody"));
+var _NewConfirmedCoinsTransactionsR = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsR"));
 
-var _NewConfirmedCoinsTransactionsRequestBodyData = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsRequestBodyData"));
+var _NewConfirmedCoinsTransactionsRB = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsRB"));
 
-var _NewConfirmedCoinsTransactionsRequestBodyDataItem = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsRequestBodyDataItem"));
+var _NewConfirmedCoinsTransactionsRBData = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsRBData"));
 
-var _NewConfirmedCoinsTransactionsResponse = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsResponse"));
+var _NewConfirmedCoinsTransactionsRBDataItem = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsRBDataItem"));
 
-var _NewConfirmedCoinsTransactionsResponseData = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsResponseData"));
+var _NewConfirmedCoinsTransactionsRData = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsRData"));
 
-var _NewConfirmedCoinsTransactionsResponseItem = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsResponseItem"));
+var _NewConfirmedCoinsTransactionsRI = _interopRequireDefault(require("./model/NewConfirmedCoinsTransactionsRI"));
 
-var _NewConfirmedTokensTransactionsAndEachConfirmationRequestBody = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationRequestBody"));
+var _NewConfirmedInternalTransactionsAndEachConfirmationR = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsAndEachConfirmationR"));
 
-var _NewConfirmedTokensTransactionsAndEachConfirmationRequestBodyData = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationRequestBodyData"));
+var _NewConfirmedInternalTransactionsAndEachConfirmationRB = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsAndEachConfirmationRB"));
 
-var _NewConfirmedTokensTransactionsAndEachConfirmationRequestBodyDataItem = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationRequestBodyDataItem"));
+var _NewConfirmedInternalTransactionsAndEachConfirmationRBData = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsAndEachConfirmationRBData"));
 
-var _NewConfirmedTokensTransactionsAndEachConfirmationResponse = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationResponse"));
+var _NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem"));
 
-var _NewConfirmedTokensTransactionsAndEachConfirmationResponseData = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationResponseData"));
+var _NewConfirmedInternalTransactionsAndEachConfirmationRData = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsAndEachConfirmationRData"));
 
-var _NewConfirmedTokensTransactionsAndEachConfirmationResponseItem = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationResponseItem"));
+var _NewConfirmedInternalTransactionsAndEachConfirmationRI = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsAndEachConfirmationRI"));
 
-var _NewConfirmedTokensTransactionsRequestBody = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRequestBody"));
+var _NewConfirmedInternalTransactionsR = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsR"));
 
-var _NewConfirmedTokensTransactionsResponse = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsResponse"));
+var _NewConfirmedInternalTransactionsRB = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsRB"));
 
-var _NewConfirmedTokensTransactionsResponseData = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsResponseData"));
+var _NewConfirmedInternalTransactionsRBData = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsRBData"));
 
-var _NewConfirmedTokensTransactionsResponseItem = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsResponseItem"));
+var _NewConfirmedInternalTransactionsRBDataItem = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsRBDataItem"));
 
-var _NewUnconfirmedCoinsTransactionsRequestBody = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsRequestBody"));
+var _NewConfirmedInternalTransactionsRData = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsRData"));
 
-var _NewUnconfirmedCoinsTransactionsRequestBodyData = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsRequestBodyData"));
+var _NewConfirmedInternalTransactionsRI = _interopRequireDefault(require("./model/NewConfirmedInternalTransactionsRI"));
 
-var _NewUnconfirmedCoinsTransactionsRequestBodyDataItem = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsRequestBodyDataItem"));
+var _NewConfirmedTokensTransactionsAndEachConfirmationR = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationR"));
 
-var _NewUnconfirmedCoinsTransactionsResponse = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsResponse"));
+var _NewConfirmedTokensTransactionsAndEachConfirmationRB = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationRB"));
 
-var _NewUnconfirmedCoinsTransactionsResponseData = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsResponseData"));
+var _NewConfirmedTokensTransactionsAndEachConfirmationRBData = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationRBData"));
 
-var _NewUnconfirmedCoinsTransactionsResponseItem = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsResponseItem"));
+var _NewConfirmedTokensTransactionsAndEachConfirmationRBDataItem = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationRBDataItem"));
 
-var _NewUnconfirmedTokensTransactionsRequestBody = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsRequestBody"));
+var _NewConfirmedTokensTransactionsAndEachConfirmationRData = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationRData"));
 
-var _NewUnconfirmedTokensTransactionsRequestBodyData = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsRequestBodyData"));
+var _NewConfirmedTokensTransactionsAndEachConfirmationRI = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsAndEachConfirmationRI"));
 
-var _NewUnconfirmedTokensTransactionsRequestBodyDataItem = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsRequestBodyDataItem"));
+var _NewConfirmedTokensTransactionsR = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsR"));
 
-var _NewUnconfirmedTokensTransactionsResponse = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsResponse"));
+var _NewConfirmedTokensTransactionsRB = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRB"));
 
-var _NewUnconfirmedTokensTransactionsResponseData = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsResponseData"));
+var _NewConfirmedTokensTransactionsRData = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRData"));
 
-var _NewUnconfirmedTokensTransactionsResponseItem = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsResponseItem"));
+var _NewConfirmedTokensTransactionsRI = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRI"));
+
+var _NewUnconfirmedCoinsTransactionsR = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsR"));
+
+var _NewUnconfirmedCoinsTransactionsRB = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsRB"));
+
+var _NewUnconfirmedCoinsTransactionsRBData = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsRBData"));
+
+var _NewUnconfirmedCoinsTransactionsRBDataItem = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsRBDataItem"));
+
+var _NewUnconfirmedCoinsTransactionsRData = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsRData"));
+
+var _NewUnconfirmedCoinsTransactionsRI = _interopRequireDefault(require("./model/NewUnconfirmedCoinsTransactionsRI"));
+
+var _NewUnconfirmedTokensTransactionsR = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsR"));
+
+var _NewUnconfirmedTokensTransactionsRB = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsRB"));
+
+var _NewUnconfirmedTokensTransactionsRBData = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsRBData"));
+
+var _NewUnconfirmedTokensTransactionsRBDataItem = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsRBDataItem"));
+
+var _NewUnconfirmedTokensTransactionsRData = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsRData"));
+
+var _NewUnconfirmedTokensTransactionsRI = _interopRequireDefault(require("./model/NewUnconfirmedTokensTransactionsRI"));
 
 var _RequestLimitReached = _interopRequireDefault(require("./model/RequestLimitReached"));
 
@@ -4028,17 +4998,17 @@ var _ResourceNotFound = _interopRequireDefault(require("./model/ResourceNotFound
 
 var _ResourceNotFoundError = _interopRequireDefault(require("./model/ResourceNotFoundError"));
 
-var _SyncHDWalletxPubYPubZPubRequestBody = _interopRequireDefault(require("./model/SyncHDWalletxPubYPubZPubRequestBody"));
+var _SyncHDWalletXPubYPubZPubR = _interopRequireDefault(require("./model/SyncHDWalletXPubYPubZPubR"));
 
-var _SyncHDWalletxPubYPubZPubRequestBodyData = _interopRequireDefault(require("./model/SyncHDWalletxPubYPubZPubRequestBodyData"));
+var _SyncHDWalletXPubYPubZPubRB = _interopRequireDefault(require("./model/SyncHDWalletXPubYPubZPubRB"));
 
-var _SyncHDWalletxPubYPubZPubRequestBodyDataItem = _interopRequireDefault(require("./model/SyncHDWalletxPubYPubZPubRequestBodyDataItem"));
+var _SyncHDWalletXPubYPubZPubRBData = _interopRequireDefault(require("./model/SyncHDWalletXPubYPubZPubRBData"));
 
-var _SyncHDWalletxPubYPubZPubResponse = _interopRequireDefault(require("./model/SyncHDWalletxPubYPubZPubResponse"));
+var _SyncHDWalletXPubYPubZPubRBDataItem = _interopRequireDefault(require("./model/SyncHDWalletXPubYPubZPubRBDataItem"));
 
-var _SyncHDWalletxPubYPubZPubResponseData = _interopRequireDefault(require("./model/SyncHDWalletxPubYPubZPubResponseData"));
+var _SyncHDWalletXPubYPubZPubRData = _interopRequireDefault(require("./model/SyncHDWalletXPubYPubZPubRData"));
 
-var _SyncHDWalletxPubYPubZPubResponseItem = _interopRequireDefault(require("./model/SyncHDWalletxPubYPubZPubResponseItem"));
+var _SyncHDWalletXPubYPubZPubRI = _interopRequireDefault(require("./model/SyncHDWalletXPubYPubZPubRI"));
 
 var _TokensForwardingAutomationsLimitReached = _interopRequireDefault(require("./model/TokensForwardingAutomationsLimitReached"));
 
@@ -4072,6 +5042,28 @@ var _TransactionMinedDataItem = _interopRequireDefault(require("./model/Transact
 
 var _TransactionMinedDataItemMinedInBlock = _interopRequireDefault(require("./model/TransactionMinedDataItemMinedInBlock"));
 
+var _TransactionRequestApprove = _interopRequireDefault(require("./model/TransactionRequestApprove"));
+
+var _TransactionRequestApproveData = _interopRequireDefault(require("./model/TransactionRequestApproveData"));
+
+var _TransactionRequestApproveDataItem = _interopRequireDefault(require("./model/TransactionRequestApproveDataItem"));
+
+var _TransactionRequestBroadcasted = _interopRequireDefault(require("./model/TransactionRequestBroadcasted"));
+
+var _TransactionRequestBroadcastedData = _interopRequireDefault(require("./model/TransactionRequestBroadcastedData"));
+
+var _TransactionRequestBroadcastedDataItem = _interopRequireDefault(require("./model/TransactionRequestBroadcastedDataItem"));
+
+var _TransactionRequestMined = _interopRequireDefault(require("./model/TransactionRequestMined"));
+
+var _TransactionRequestMinedData = _interopRequireDefault(require("./model/TransactionRequestMinedData"));
+
+var _TransactionRequestReject = _interopRequireDefault(require("./model/TransactionRequestReject"));
+
+var _TransactionRequestRejectData = _interopRequireDefault(require("./model/TransactionRequestRejectData"));
+
+var _TransactionRequestRejectDataItem = _interopRequireDefault(require("./model/TransactionRequestRejectDataItem"));
+
 var _UnexpectedServerError = _interopRequireDefault(require("./model/UnexpectedServerError"));
 
 var _UnexpectedServerErrorError = _interopRequireDefault(require("./model/UnexpectedServerErrorError"));
@@ -4084,17 +5076,33 @@ var _UriNotFound = _interopRequireDefault(require("./model/UriNotFound"));
 
 var _UriNotFoundError = _interopRequireDefault(require("./model/UriNotFoundError"));
 
-var _ValidateAddressRequestBody = _interopRequireDefault(require("./model/ValidateAddressRequestBody"));
+var _ValidateAddressR = _interopRequireDefault(require("./model/ValidateAddressR"));
 
-var _ValidateAddressRequestBodyData = _interopRequireDefault(require("./model/ValidateAddressRequestBodyData"));
+var _ValidateAddressRB = _interopRequireDefault(require("./model/ValidateAddressRB"));
 
-var _ValidateAddressRequestBodyDataItem = _interopRequireDefault(require("./model/ValidateAddressRequestBodyDataItem"));
+var _ValidateAddressRBData = _interopRequireDefault(require("./model/ValidateAddressRBData"));
 
-var _ValidateAddressResponse = _interopRequireDefault(require("./model/ValidateAddressResponse"));
+var _ValidateAddressRBDataItem = _interopRequireDefault(require("./model/ValidateAddressRBDataItem"));
 
-var _ValidateAddressResponseData = _interopRequireDefault(require("./model/ValidateAddressResponseData"));
+var _ValidateAddressRData = _interopRequireDefault(require("./model/ValidateAddressRData"));
 
-var _ValidateAddressResponseItem = _interopRequireDefault(require("./model/ValidateAddressResponseItem"));
+var _ValidateAddressRI = _interopRequireDefault(require("./model/ValidateAddressRI"));
+
+var _WalletAsAServiceDepositAddressesLimitReached = _interopRequireDefault(require("./model/WalletAsAServiceDepositAddressesLimitReached"));
+
+var _WalletAsAServiceDepositAddressesLimitReachedError = _interopRequireDefault(require("./model/WalletAsAServiceDepositAddressesLimitReachedError"));
+
+var _WalletAsAServiceNoDepositAddressesFound = _interopRequireDefault(require("./model/WalletAsAServiceNoDepositAddressesFound"));
+
+var _WalletAsAServiceNoDepositAddressesFoundError = _interopRequireDefault(require("./model/WalletAsAServiceNoDepositAddressesFoundError"));
+
+var _WalletAsAServiceTokenNotSupported = _interopRequireDefault(require("./model/WalletAsAServiceTokenNotSupported"));
+
+var _WalletAsAServiceTokenNotSupportedError = _interopRequireDefault(require("./model/WalletAsAServiceTokenNotSupportedError"));
+
+var _WalletAsAServiceWalletBalanceNotEnough = _interopRequireDefault(require("./model/WalletAsAServiceWalletBalanceNotEnough"));
+
+var _WalletAsAServiceWalletBalanceNotEnoughError = _interopRequireDefault(require("./model/WalletAsAServiceWalletBalanceNotEnoughError"));
 
 var _XpubNotSynced = _interopRequireDefault(require("./model/XpubNotSynced"));
 
@@ -4112,9 +5120,13 @@ var _AutomaticTokensForwardingApi = _interopRequireDefault(require("./api/Automa
 
 var _CreateSubscriptionsForApi = _interopRequireDefault(require("./api/CreateSubscriptionsForApi"));
 
-var _DefaultApi = _interopRequireDefault(require("./api/DefaultApi"));
-
 var _ExchangeRatesApi = _interopRequireDefault(require("./api/ExchangeRatesApi"));
+
+var _GeneratingApi = _interopRequireDefault(require("./api/GeneratingApi"));
+
+var _InformativeApi = _interopRequireDefault(require("./api/InformativeApi"));
+
+var _InternalApi = _interopRequireDefault(require("./api/InternalApi"));
 
 var _ManageSubscriptionsApi = _interopRequireDefault(require("./api/ManageSubscriptionsApi"));
 
@@ -4124,6 +5136,8 @@ var _OmniLayerApi = _interopRequireDefault(require("./api/OmniLayerApi"));
 
 var _TokensApi = _interopRequireDefault(require("./api/TokensApi"));
 
+var _TransactionsApi = _interopRequireDefault(require("./api/TransactionsApi"));
+
 var _UTXOBasedApi = _interopRequireDefault(require("./api/UTXOBasedApi"));
 
 var _UnifiedEndpointsApi = _interopRequireDefault(require("./api/UnifiedEndpointsApi"));
@@ -4131,5 +5145,7 @@ var _UnifiedEndpointsApi = _interopRequireDefault(require("./api/UnifiedEndpoint
 var _ValidatingApi = _interopRequireDefault(require("./api/ValidatingApi"));
 
 var _XRPRippleApi = _interopRequireDefault(require("./api/XRPRippleApi"));
+
+var _ZilliqaApi = _interopRequireDefault(require("./api/ZilliqaApi"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

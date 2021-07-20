@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.XRPRippleApi();
+    instance = new Cryptoapis.XRPRippleApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -112,6 +112,16 @@
       it('should call listXRPRippleTransactionsByBlockHash successfully', function(done) {
         //uncomment below and update the code to test listXRPRippleTransactionsByBlockHash
         //instance.listXRPRippleTransactionsByBlockHash(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listXRPRippleTransactionsByBlockHeight', function() {
+      it('should call listXRPRippleTransactionsByBlockHeight successfully', function(done) {
+        //uncomment below and update the code to test listXRPRippleTransactionsByBlockHeight
+        //instance.listXRPRippleTransactionsByBlockHeight(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

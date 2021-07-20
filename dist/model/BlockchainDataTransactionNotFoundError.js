@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockchainDataTransactionNotFoundError model module.
  * @module model/BlockchainDataTransactionNotFoundError
- * @version 2.0.0
+ * @version 1.1.0
  */
 var BlockchainDataTransactionNotFoundError = /*#__PURE__*/function () {
   /**

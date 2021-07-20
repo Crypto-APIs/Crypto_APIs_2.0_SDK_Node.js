@@ -1,4 +1,4 @@
-# CryptoApis.XpubSyncInProgressError
+# Cryptoapis.XpubSyncInProgressError
 
 ## Properties
 

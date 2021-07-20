@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.ResourceNotFoundError();
+    instance = new Cryptoapis.ResourceNotFoundError();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ResourceNotFoundError', function() {
     it('should create an instance of ResourceNotFoundError', function() {
       // uncomment below and update the code to test ResourceNotFoundError
-      //var instane = new CryptoApis.ResourceNotFoundError();
-      //expect(instance).to.be.a(CryptoApis.ResourceNotFoundError);
+      //var instane = new Cryptoapis.ResourceNotFoundError();
+      //expect(instance).to.be.a(Cryptoapis.ResourceNotFoundError);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new CryptoApis.ResourceNotFoundError();
+      //var instance = new Cryptoapis.ResourceNotFoundError();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new CryptoApis.ResourceNotFoundError();
+      //var instance = new Cryptoapis.ResourceNotFoundError();
       //expect(instance).to.be();
     });
 
     it('should have the property details (base name: "details")', function() {
       // uncomment below and update the code to test the property details
-      //var instance = new CryptoApis.ResourceNotFoundError();
+      //var instance = new Cryptoapis.ResourceNotFoundError();
       //expect(instance).to.be();
     });
 

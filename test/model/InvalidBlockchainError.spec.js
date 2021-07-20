@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.InvalidBlockchainError();
+    instance = new Cryptoapis.InvalidBlockchainError();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InvalidBlockchainError', function() {
     it('should create an instance of InvalidBlockchainError', function() {
       // uncomment below and update the code to test InvalidBlockchainError
-      //var instane = new CryptoApis.InvalidBlockchainError();
-      //expect(instance).to.be.a(CryptoApis.InvalidBlockchainError);
+      //var instane = new Cryptoapis.InvalidBlockchainError();
+      //expect(instance).to.be.a(Cryptoapis.InvalidBlockchainError);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new CryptoApis.InvalidBlockchainError();
+      //var instance = new Cryptoapis.InvalidBlockchainError();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new CryptoApis.InvalidBlockchainError();
+      //var instance = new Cryptoapis.InvalidBlockchainError();
       //expect(instance).to.be();
     });
 
     it('should have the property details (base name: "details")', function() {
       // uncomment below and update the code to test the property details
-      //var instance = new CryptoApis.InvalidBlockchainError();
+      //var instance = new Cryptoapis.InvalidBlockchainError();
       //expect(instance).to.be();
     });
 

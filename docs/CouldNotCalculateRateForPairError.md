@@ -1,4 +1,4 @@
-# CryptoApis.CouldNotCalculateRateForPairError
+# Cryptoapis.CouldNotCalculateRateForPairError
 
 ## Properties
 

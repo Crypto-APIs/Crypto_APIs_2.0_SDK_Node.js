@@ -1,4 +1,4 @@
-# CryptoApis.InsufficientCreditsError
+# Cryptoapis.InsufficientCreditsError
 
 ## Properties
 

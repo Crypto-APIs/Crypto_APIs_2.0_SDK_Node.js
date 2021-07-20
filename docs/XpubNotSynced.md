@@ -1,4 +1,4 @@
-# CryptoApis.XpubNotSynced
+# Cryptoapis.XpubNotSynced
 
 ## Properties
 

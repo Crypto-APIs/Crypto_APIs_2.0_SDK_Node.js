@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationData();
+    instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('AddressTokensTransactionConfirmedEachConfirmationData', function() {
     it('should create an instance of AddressTokensTransactionConfirmedEachConfirmationData', function() {
       // uncomment below and update the code to test AddressTokensTransactionConfirmedEachConfirmationData
-      //var instane = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationData();
-      //expect(instance).to.be.a(CryptoApis.AddressTokensTransactionConfirmedEachConfirmationData);
+      //var instane = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationData();
+      //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationData);
     });
 
     it('should have the property product (base name: "product")', function() {
       // uncomment below and update the code to test the property product
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationData();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationData();
       //expect(instance).to.be();
     });
 
     it('should have the property event (base name: "event")', function() {
       // uncomment below and update the code to test the property event
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationData();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationData();
       //expect(instance).to.be();
     });
 
     it('should have the property item (base name: "item")', function() {
       // uncomment below and update the code to test the property item
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedEachConfirmationData();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedEachConfirmationData();
       //expect(instance).to.be();
     });
 

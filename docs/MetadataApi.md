@@ -1,4 +1,4 @@
-# CryptoApis.MetadataApi
+# Cryptoapis.MetadataApi
 
 All URIs are relative to *https://rest.cryptoapis.io/v2*
 
@@ -10,24 +10,24 @@ Method | HTTP request | Description
 
 ## listSupportedAssets
 
-> ListSupportedAssetsResponse listSupportedAssets(opts)
+> ListSupportedAssetsR listSupportedAssets(opts)
 
 List Supported Assets
 
-This endpoint will return a list of supported assets. The asset could be a cryptocurrency or FIAT assets that we support. Each asset has a unique identifier - &#x60;assetId&#x60; and a unique symbol in the form of a string, e.g. \&quot;BTC\&quot;.
+This endpoint will return a list of supported assets. The asset could be a cryptocurrency or FIAT assets that we support. Each asset has a unique identifier - &#x60;assetId&#x60; and a unique symbol in the form of a string, e.g. \&quot;BTC\&quot;.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
 
 ### Example
 
 ```javascript
-import CryptoApis from 'cryptoapis';
-let defaultClient = CryptoApis.ApiClient.instance;
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
 // Configure API key authorization: ApiKey
 let ApiKey = defaultClient.authentications['ApiKey'];
 ApiKey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //ApiKey.apiKeyPrefix = 'Token';
 
-let apiInstance = new CryptoApis.MetadataApi();
+let apiInstance = new Cryptoapis.MetadataApi();
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'assetType': crypto, // String | Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
@@ -54,7 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListSupportedAssetsResponse**](ListSupportedAssetsResponse.md)
+[**ListSupportedAssetsR**](ListSupportedAssetsR.md)
 
 ### Authorization
 

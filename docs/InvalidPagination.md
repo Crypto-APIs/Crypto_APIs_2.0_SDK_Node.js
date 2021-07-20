@@ -1,4 +1,4 @@
-# CryptoApis.InvalidPagination
+# Cryptoapis.InvalidPagination
 
 ## Properties
 

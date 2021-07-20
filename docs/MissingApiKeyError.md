@@ -1,4 +1,4 @@
-# CryptoApis.MissingApiKeyError
+# Cryptoapis.MissingApiKeyError
 
 ## Properties
 

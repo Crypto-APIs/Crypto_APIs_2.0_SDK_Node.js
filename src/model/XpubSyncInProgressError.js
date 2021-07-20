@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The XpubSyncInProgressError model module.
  * @module model/XpubSyncInProgressError
- * @version 2.0.0
+ * @version 1.1.0
  */
 class XpubSyncInProgressError {
     /**

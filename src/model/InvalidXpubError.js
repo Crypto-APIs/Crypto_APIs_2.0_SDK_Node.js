@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The InvalidXpubError model module.
  * @module model/InvalidXpubError
- * @version 2.0.0
+ * @version 1.1.0
  */
 class InvalidXpubError {
     /**

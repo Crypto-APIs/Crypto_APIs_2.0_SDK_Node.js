@@ -1,4 +1,4 @@
-# CryptoApis.FeatureMainnetsNotAllowedForPlan
+# Cryptoapis.FeatureMainnetsNotAllowedForPlan
 
 ## Properties
 

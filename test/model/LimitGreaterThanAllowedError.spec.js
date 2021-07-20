@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.LimitGreaterThanAllowedError();
+    instance = new Cryptoapis.LimitGreaterThanAllowedError();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('LimitGreaterThanAllowedError', function() {
     it('should create an instance of LimitGreaterThanAllowedError', function() {
       // uncomment below and update the code to test LimitGreaterThanAllowedError
-      //var instane = new CryptoApis.LimitGreaterThanAllowedError();
-      //expect(instance).to.be.a(CryptoApis.LimitGreaterThanAllowedError);
+      //var instane = new Cryptoapis.LimitGreaterThanAllowedError();
+      //expect(instance).to.be.a(Cryptoapis.LimitGreaterThanAllowedError);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new CryptoApis.LimitGreaterThanAllowedError();
+      //var instance = new Cryptoapis.LimitGreaterThanAllowedError();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new CryptoApis.LimitGreaterThanAllowedError();
+      //var instance = new Cryptoapis.LimitGreaterThanAllowedError();
       //expect(instance).to.be();
     });
 
     it('should have the property details (base name: "details")', function() {
       // uncomment below and update the code to test the property details
-      //var instance = new CryptoApis.LimitGreaterThanAllowedError();
+      //var instance = new Cryptoapis.LimitGreaterThanAllowedError();
       //expect(instance).to.be();
     });
 

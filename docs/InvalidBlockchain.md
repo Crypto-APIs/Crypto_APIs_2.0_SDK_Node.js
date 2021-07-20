@@ -1,4 +1,4 @@
-# CryptoApis.InvalidBlockchain
+# Cryptoapis.InvalidBlockchain
 
 ## Properties
 

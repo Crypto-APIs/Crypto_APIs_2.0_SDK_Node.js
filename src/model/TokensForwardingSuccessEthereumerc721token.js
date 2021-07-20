@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TokensForwardingSuccessEthereumerc721token model module.
  * @module model/TokensForwardingSuccessEthereumerc721token
- * @version 2.0.0
+ * @version 1.1.0
  */
 class TokensForwardingSuccessEthereumerc721token {
     /**

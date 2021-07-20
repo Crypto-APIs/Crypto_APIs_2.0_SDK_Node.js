@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.TokensForwardingSuccessEthereumerc721token();
+    instance = new Cryptoapis.TokensForwardingSuccessEthereumerc721token();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('TokensForwardingSuccessEthereumerc721token', function() {
     it('should create an instance of TokensForwardingSuccessEthereumerc721token', function() {
       // uncomment below and update the code to test TokensForwardingSuccessEthereumerc721token
-      //var instane = new CryptoApis.TokensForwardingSuccessEthereumerc721token();
-      //expect(instance).to.be.a(CryptoApis.TokensForwardingSuccessEthereumerc721token);
+      //var instane = new Cryptoapis.TokensForwardingSuccessEthereumerc721token();
+      //expect(instance).to.be.a(Cryptoapis.TokensForwardingSuccessEthereumerc721token);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instance = new CryptoApis.TokensForwardingSuccessEthereumerc721token();
+      //var instance = new Cryptoapis.TokensForwardingSuccessEthereumerc721token();
       //expect(instance).to.be();
     });
 
     it('should have the property symbol (base name: "symbol")', function() {
       // uncomment below and update the code to test the property symbol
-      //var instance = new CryptoApis.TokensForwardingSuccessEthereumerc721token();
+      //var instance = new Cryptoapis.TokensForwardingSuccessEthereumerc721token();
       //expect(instance).to.be();
     });
 
     it('should have the property tokenId (base name: "tokenId")', function() {
       // uncomment below and update the code to test the property tokenId
-      //var instance = new CryptoApis.TokensForwardingSuccessEthereumerc721token();
+      //var instance = new Cryptoapis.TokensForwardingSuccessEthereumerc721token();
       //expect(instance).to.be();
     });
 
     it('should have the property contractAddress (base name: "contractAddress")', function() {
       // uncomment below and update the code to test the property contractAddress
-      //var instance = new CryptoApis.TokensForwardingSuccessEthereumerc721token();
+      //var instance = new Cryptoapis.TokensForwardingSuccessEthereumerc721token();
       //expect(instance).to.be();
     });
 

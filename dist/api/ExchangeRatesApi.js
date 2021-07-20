@@ -11,9 +11,9 @@ var _CouldNotCalculateRateForPair = _interopRequireDefault(require("../model/Cou
 
 var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
 
-var _GetExchangeRateByAssetSymbolsResponse = _interopRequireDefault(require("../model/GetExchangeRateByAssetSymbolsResponse"));
+var _GetExchangeRateByAssetSymbolsR = _interopRequireDefault(require("../model/GetExchangeRateByAssetSymbolsR"));
 
-var _GetExchangeRateByAssetsIDsResponse = _interopRequireDefault(require("../model/GetExchangeRateByAssetsIDsResponse"));
+var _GetExchangeRateByAssetsIDsR = _interopRequireDefault(require("../model/GetExchangeRateByAssetsIDsR"));
 
 var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
 
@@ -40,7 +40,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 2.0.0
+* @version 1.1.0
 */
 var ExchangeRatesApi = /*#__PURE__*/function () {
   /**
@@ -62,7 +62,8 @@ var ExchangeRatesApi = /*#__PURE__*/function () {
    * @param {String} toAssetSymbol Defines the relation asset symbol in which the base asset rate will be displayed.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetExchangeRateByAssetSymbolsResponse} and HTTP response
+   * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetExchangeRateByAssetSymbolsR} and HTTP response
    */
 
 
@@ -86,14 +87,15 @@ var ExchangeRatesApi = /*#__PURE__*/function () {
         'toAssetSymbol': toAssetSymbol
       };
       var queryParams = {
-        'context': opts['context']
+        'context': opts['context'],
+        'calculationTimestamp': opts['calculationTimestamp']
       };
       var headerParams = {};
       var formParams = {};
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetExchangeRateByAssetSymbolsResponse["default"];
+      var returnType = _GetExchangeRateByAssetSymbolsR["default"];
       return this.apiClient.callApi('/market-data/exchange-rates/by-symbols/{fromAssetSymbol}/{toAssetSymbol}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -103,7 +105,8 @@ var ExchangeRatesApi = /*#__PURE__*/function () {
      * @param {String} toAssetSymbol Defines the relation asset symbol in which the base asset rate will be displayed.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetExchangeRateByAssetSymbolsResponse}
+     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetExchangeRateByAssetSymbolsR}
      */
 
   }, {
@@ -120,7 +123,8 @@ var ExchangeRatesApi = /*#__PURE__*/function () {
      * @param {String} toAssetId Defines the relation asset Reference ID in which the base asset rate will be displayed.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetExchangeRateByAssetsIDsResponse} and HTTP response
+     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetExchangeRateByAssetsIDsR} and HTTP response
      */
 
   }, {
@@ -143,14 +147,15 @@ var ExchangeRatesApi = /*#__PURE__*/function () {
         'toAssetId': toAssetId
       };
       var queryParams = {
-        'context': opts['context']
+        'context': opts['context'],
+        'calculationTimestamp': opts['calculationTimestamp']
       };
       var headerParams = {};
       var formParams = {};
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetExchangeRateByAssetsIDsResponse["default"];
+      var returnType = _GetExchangeRateByAssetsIDsR["default"];
       return this.apiClient.callApi('/market-data/exchange-rates/by-asset-ids/{fromAssetId}/{toAssetId}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -160,7 +165,8 @@ var ExchangeRatesApi = /*#__PURE__*/function () {
      * @param {String} toAssetId Defines the relation asset Reference ID in which the base asset rate will be displayed.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetExchangeRateByAssetsIDsResponse}
+     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetExchangeRateByAssetsIDsR}
      */
 
   }, {

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.InvalidXpubError();
+    instance = new Cryptoapis.InvalidXpubError();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('InvalidXpubError', function() {
     it('should create an instance of InvalidXpubError', function() {
       // uncomment below and update the code to test InvalidXpubError
-      //var instane = new CryptoApis.InvalidXpubError();
-      //expect(instance).to.be.a(CryptoApis.InvalidXpubError);
+      //var instane = new Cryptoapis.InvalidXpubError();
+      //expect(instance).to.be.a(Cryptoapis.InvalidXpubError);
     });
 
     it('should have the property code (base name: "code")', function() {
       // uncomment below and update the code to test the property code
-      //var instance = new CryptoApis.InvalidXpubError();
+      //var instance = new Cryptoapis.InvalidXpubError();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instance = new CryptoApis.InvalidXpubError();
+      //var instance = new Cryptoapis.InvalidXpubError();
       //expect(instance).to.be();
     });
 
     it('should have the property details (base name: "details")', function() {
       // uncomment below and update the code to test the property details
-      //var instance = new CryptoApis.InvalidXpubError();
+      //var instance = new Cryptoapis.InvalidXpubError();
       //expect(instance).to.be();
     });
 

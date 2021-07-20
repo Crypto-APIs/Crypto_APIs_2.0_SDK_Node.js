@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressCoinsTransactionConfirmed();
+    instance = new Cryptoapis.AddressCoinsTransactionConfirmed();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('AddressCoinsTransactionConfirmed', function() {
     it('should create an instance of AddressCoinsTransactionConfirmed', function() {
       // uncomment below and update the code to test AddressCoinsTransactionConfirmed
-      //var instane = new CryptoApis.AddressCoinsTransactionConfirmed();
-      //expect(instance).to.be.a(CryptoApis.AddressCoinsTransactionConfirmed);
+      //var instane = new Cryptoapis.AddressCoinsTransactionConfirmed();
+      //expect(instance).to.be.a(Cryptoapis.AddressCoinsTransactionConfirmed);
     });
 
     it('should have the property apiVersion (base name: "apiVersion")', function() {
       // uncomment below and update the code to test the property apiVersion
-      //var instance = new CryptoApis.AddressCoinsTransactionConfirmed();
+      //var instance = new Cryptoapis.AddressCoinsTransactionConfirmed();
       //expect(instance).to.be();
     });
 
     it('should have the property referenceId (base name: "referenceId")', function() {
       // uncomment below and update the code to test the property referenceId
-      //var instance = new CryptoApis.AddressCoinsTransactionConfirmed();
+      //var instance = new Cryptoapis.AddressCoinsTransactionConfirmed();
       //expect(instance).to.be();
     });
 
     it('should have the property idempotencyKey (base name: "idempotencyKey")', function() {
       // uncomment below and update the code to test the property idempotencyKey
-      //var instance = new CryptoApis.AddressCoinsTransactionConfirmed();
+      //var instance = new Cryptoapis.AddressCoinsTransactionConfirmed();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "data")', function() {
       // uncomment below and update the code to test the property data
-      //var instance = new CryptoApis.AddressCoinsTransactionConfirmed();
+      //var instance = new Cryptoapis.AddressCoinsTransactionConfirmed();
       //expect(instance).to.be();
     });
 

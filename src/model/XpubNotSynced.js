@@ -17,7 +17,7 @@ import XpubNotSyncedError from './XpubNotSyncedError';
 /**
  * The XpubNotSynced model module.
  * @module model/XpubNotSynced
- * @version 2.0.0
+ * @version 1.1.0
  */
 class XpubNotSynced {
     /**

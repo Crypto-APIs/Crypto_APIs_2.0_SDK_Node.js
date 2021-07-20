@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+    instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('AddressTokensTransactionConfirmedDataItem', function() {
     it('should create an instance of AddressTokensTransactionConfirmedDataItem', function() {
       // uncomment below and update the code to test AddressTokensTransactionConfirmedDataItem
-      //var instane = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
-      //expect(instance).to.be.a(CryptoApis.AddressTokensTransactionConfirmedDataItem);
+      //var instane = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
+      //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionConfirmedDataItem);
     });
 
     it('should have the property blockchain (base name: "blockchain")', function() {
       // uncomment below and update the code to test the property blockchain
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property network (base name: "network")', function() {
       // uncomment below and update the code to test the property network
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property address (base name: "address")', function() {
       // uncomment below and update the code to test the property address
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property minedInBlock (base name: "minedInBlock")', function() {
       // uncomment below and update the code to test the property minedInBlock
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property transactionId (base name: "transactionId")', function() {
       // uncomment below and update the code to test the property transactionId
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property tokenType (base name: "tokenType")', function() {
       // uncomment below and update the code to test the property tokenType
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property token (base name: "token")', function() {
       // uncomment below and update the code to test the property token
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property direction (base name: "direction")', function() {
       // uncomment below and update the code to test the property direction
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItem();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItem();
       //expect(instance).to.be();
     });
 

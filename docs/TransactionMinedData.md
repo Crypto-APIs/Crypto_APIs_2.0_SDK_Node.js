@@ -1,4 +1,4 @@
-# CryptoApis.TransactionMinedData
+# Cryptoapis.TransactionMinedData
 
 ## Properties
 

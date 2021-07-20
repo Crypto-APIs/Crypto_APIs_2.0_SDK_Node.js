@@ -1,0 +1,69 @@
+# Cryptoapis.GeneratingApi
+
+All URIs are relative to *https://rest.cryptoapis.io/v2*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**generateReceivingAddress**](GeneratingApi.md#generateReceivingAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses | Generate Receiving Address
+
+
+
+## generateReceivingAddress
+
+> GenerateReceivingAddressR generateReceivingAddress(blockchain, network, walletId, opts)
+
+Generate Receiving Address
+
+Through this endpoint customers can generate a new Receiving/Deposit Addresses into their Wallet.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.GeneratingApi();
+let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+let walletId = 60c9d9921c38030006675ff6; // String | Represents the unique ID of the specific Wallet.
+let opts = {
+  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'generateReceivingAddressRB': new Cryptoapis.GenerateReceivingAddressRB() // GenerateReceivingAddressRB | 
+};
+apiInstance.generateReceivingAddress(blockchain, network, walletId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
+ **walletId** | **String**| Represents the unique ID of the specific Wallet. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **generateReceivingAddressRB** | [**GenerateReceivingAddressRB**](GenerateReceivingAddressRB.md)|  | [optional] 
+
+### Return type
+
+[**GenerateReceivingAddressR**](GenerateReceivingAddressR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+

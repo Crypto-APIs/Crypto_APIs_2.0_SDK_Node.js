@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TokensForwardingSuccessOmnilayertoken model module.
  * @module model/TokensForwardingSuccessOmnilayertoken
- * @version 2.0.0
+ * @version 1.1.0
  */
 class TokensForwardingSuccessOmnilayertoken {
     /**

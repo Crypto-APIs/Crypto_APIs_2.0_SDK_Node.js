@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.EndpointNotAllowedForPlan();
+    instance = new Cryptoapis.EndpointNotAllowedForPlan();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('EndpointNotAllowedForPlan', function() {
     it('should create an instance of EndpointNotAllowedForPlan', function() {
       // uncomment below and update the code to test EndpointNotAllowedForPlan
-      //var instane = new CryptoApis.EndpointNotAllowedForPlan();
-      //expect(instance).to.be.a(CryptoApis.EndpointNotAllowedForPlan);
+      //var instane = new Cryptoapis.EndpointNotAllowedForPlan();
+      //expect(instance).to.be.a(Cryptoapis.EndpointNotAllowedForPlan);
     });
 
     it('should have the property apiVersion (base name: "apiVersion")', function() {
       // uncomment below and update the code to test the property apiVersion
-      //var instance = new CryptoApis.EndpointNotAllowedForPlan();
+      //var instance = new Cryptoapis.EndpointNotAllowedForPlan();
       //expect(instance).to.be();
     });
 
     it('should have the property requestId (base name: "requestId")', function() {
       // uncomment below and update the code to test the property requestId
-      //var instance = new CryptoApis.EndpointNotAllowedForPlan();
+      //var instance = new Cryptoapis.EndpointNotAllowedForPlan();
       //expect(instance).to.be();
     });
 
     it('should have the property context (base name: "context")', function() {
       // uncomment below and update the code to test the property context
-      //var instance = new CryptoApis.EndpointNotAllowedForPlan();
+      //var instance = new Cryptoapis.EndpointNotAllowedForPlan();
       //expect(instance).to.be();
     });
 
     it('should have the property error (base name: "error")', function() {
       // uncomment below and update the code to test the property error
-      //var instance = new CryptoApis.EndpointNotAllowedForPlan();
+      //var instance = new Cryptoapis.EndpointNotAllowedForPlan();
       //expect(instance).to.be();
     });
 

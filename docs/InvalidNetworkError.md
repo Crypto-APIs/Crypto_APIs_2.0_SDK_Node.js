@@ -1,4 +1,4 @@
-# CryptoApis.InvalidNetworkError
+# Cryptoapis.InvalidNetworkError
 
 ## Properties
 

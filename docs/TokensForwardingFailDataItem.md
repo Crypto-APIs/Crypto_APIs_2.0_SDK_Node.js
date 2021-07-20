@@ -1,4 +1,4 @@
-# CryptoApis.TokensForwardingFailDataItem
+# Cryptoapis.TokensForwardingFailDataItem
 
 ## Properties
 

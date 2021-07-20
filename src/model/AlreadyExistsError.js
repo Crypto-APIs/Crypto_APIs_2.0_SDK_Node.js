@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The AlreadyExistsError model module.
  * @module model/AlreadyExistsError
- * @version 2.0.0
+ * @version 1.1.0
  */
 class AlreadyExistsError {
     /**

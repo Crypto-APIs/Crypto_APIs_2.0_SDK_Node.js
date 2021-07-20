@@ -19,7 +19,7 @@ var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPaginat
 
 var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
 
-var _ListAssetsDetailsResponse = _interopRequireDefault(require("../model/ListAssetsDetailsResponse"));
+var _ListAssetsDetailsR = _interopRequireDefault(require("../model/ListAssetsDetailsR"));
 
 var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
@@ -38,7 +38,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 2.0.0
+* @version 1.1.0
 */
 var AssetsApi = /*#__PURE__*/function () {
   /**
@@ -55,13 +55,15 @@ var AssetsApi = /*#__PURE__*/function () {
   }
   /**
    * List Assets Details
-   * This endpoint will return details on a requested asset. The asset could be a cryptocurrency or FIAT asset that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.
+   * This endpoint will return details on a requested asset. The asset could be a cryptocurrency or FIAT asset that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
    * @param {module:model/String} opts.assetType Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
+   * @param {module:model/String} opts.cryptoType Subtype of the crypto assets. Could be COIN or TOKEN
    * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
    * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAssetsDetailsResponse} and HTTP response
+   * @param {Boolean} opts.waasEnabled Show only if WaaS is/not enabled
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAssetsDetailsR} and HTTP response
    */
 
 
@@ -74,26 +76,30 @@ var AssetsApi = /*#__PURE__*/function () {
       var queryParams = {
         'context': opts['context'],
         'assetType': opts['assetType'],
+        'cryptoType': opts['cryptoType'],
         'limit': opts['limit'],
-        'offset': opts['offset']
+        'offset': opts['offset'],
+        'waasEnabled': opts['waasEnabled']
       };
       var headerParams = {};
       var formParams = {};
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListAssetsDetailsResponse["default"];
+      var returnType = _ListAssetsDetailsR["default"];
       return this.apiClient.callApi('/market-data/assets/details', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List Assets Details
-     * This endpoint will return details on a requested asset. The asset could be a cryptocurrency or FIAT asset that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.
+     * This endpoint will return details on a requested asset. The asset could be a cryptocurrency or FIAT asset that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/String} opts.assetType Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
+     * @param {module:model/String} opts.cryptoType Subtype of the crypto assets. Could be COIN or TOKEN
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListAssetsDetailsResponse}
+     * @param {Boolean} opts.waasEnabled Show only if WaaS is/not enabled
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListAssetsDetailsR}
      */
 
   }, {

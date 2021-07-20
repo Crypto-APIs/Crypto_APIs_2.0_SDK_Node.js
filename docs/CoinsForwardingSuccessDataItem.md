@@ -1,4 +1,4 @@
-# CryptoApis.CoinsForwardingSuccessDataItem
+# Cryptoapis.CoinsForwardingSuccessDataItem
 
 ## Properties
 

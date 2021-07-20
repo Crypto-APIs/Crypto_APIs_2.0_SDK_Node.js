@@ -17,7 +17,7 @@ import FeatureMainnetsNotAllowedForPlanError from './FeatureMainnetsNotAllowedFo
 /**
  * The FeatureMainnetsNotAllowedForPlan model module.
  * @module model/FeatureMainnetsNotAllowedForPlan
- * @version 2.0.0
+ * @version 1.1.0
  */
 class FeatureMainnetsNotAllowedForPlan {
     /**

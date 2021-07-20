@@ -7,19 +7,19 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AddTokensToExistingFromAddressRequestBody = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressRequestBody"));
+var _AddTokensToExistingFromAddressR = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressR"));
 
-var _AddTokensToExistingFromAddressResponse = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressResponse"));
+var _AddTokensToExistingFromAddressRB = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressRB"));
 
-var _CreateAutomaticTokensForwardingRequestBody = _interopRequireDefault(require("../model/CreateAutomaticTokensForwardingRequestBody"));
+var _CreateAutomaticTokensForwardingR = _interopRequireDefault(require("../model/CreateAutomaticTokensForwardingR"));
 
-var _CreateAutomaticTokensForwardingResponse = _interopRequireDefault(require("../model/CreateAutomaticTokensForwardingResponse"));
+var _CreateAutomaticTokensForwardingRB = _interopRequireDefault(require("../model/CreateAutomaticTokensForwardingRB"));
 
-var _DeleteAutomaticTokensForwardingResponse = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwardingResponse"));
+var _DeleteAutomaticTokensForwardingR = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwardingR"));
 
 var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
 
-var _GetFeeAddressDetailsResponse = _interopRequireDefault(require("../model/GetFeeAddressDetailsResponse"));
+var _GetFeeAddressDetailsR = _interopRequireDefault(require("../model/GetFeeAddressDetailsR"));
 
 var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
 
@@ -31,7 +31,7 @@ var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPaginat
 
 var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
 
-var _ListTokensForwardingAutomationsResponse = _interopRequireDefault(require("../model/ListTokensForwardingAutomationsResponse"));
+var _ListTokensForwardingAutomationsR = _interopRequireDefault(require("../model/ListTokensForwardingAutomationsR"));
 
 var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
@@ -54,7 +54,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * AutomaticTokensForwarding service.
 * @module api/AutomaticTokensForwardingApi
-* @version 2.0.0
+* @version 1.1.0
 */
 var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
   /**
@@ -76,8 +76,8 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
    * @param {module:model/String} network Network
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-   * @param {module:model/AddTokensToExistingFromAddressRequestBody} opts.addTokensToExistingFromAddressRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AddTokensToExistingFromAddressResponse} and HTTP response
+   * @param {module:model/AddTokensToExistingFromAddressRB} opts.addTokensToExistingFromAddressRB 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/AddTokensToExistingFromAddressR} and HTTP response
    */
 
 
@@ -85,7 +85,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
     key: "addTokensToExistingFromAddressWithHttpInfo",
     value: function addTokensToExistingFromAddressWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['addTokensToExistingFromAddressRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['addTokensToExistingFromAddressRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling addTokensToExistingFromAddress");
@@ -108,7 +108,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _AddTokensToExistingFromAddressResponse["default"];
+      var returnType = _AddTokensToExistingFromAddressR["default"];
       return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/automations/add-token', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -118,8 +118,8 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Network
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/AddTokensToExistingFromAddressRequestBody} opts.addTokensToExistingFromAddressRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AddTokensToExistingFromAddressResponse}
+     * @param {module:model/AddTokensToExistingFromAddressRB} opts.addTokensToExistingFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/AddTokensToExistingFromAddressR}
      */
 
   }, {
@@ -136,15 +136,15 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/CreateAutomaticTokensForwardingRequestBody} opts.createAutomaticTokensForwardingRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateAutomaticTokensForwardingResponse} and HTTP response
+     * @param {module:model/CreateAutomaticTokensForwardingRB} opts.createAutomaticTokensForwardingRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateAutomaticTokensForwardingR} and HTTP response
      */
 
   }, {
     key: "createAutomaticTokensForwardingWithHttpInfo",
     value: function createAutomaticTokensForwardingWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['createAutomaticTokensForwardingRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['createAutomaticTokensForwardingRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling createAutomaticTokensForwarding");
@@ -167,7 +167,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _CreateAutomaticTokensForwardingResponse["default"];
+      var returnType = _CreateAutomaticTokensForwardingR["default"];
       return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/automations', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -177,8 +177,8 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/CreateAutomaticTokensForwardingRequestBody} opts.createAutomaticTokensForwardingRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateAutomaticTokensForwardingResponse}
+     * @param {module:model/CreateAutomaticTokensForwardingRB} opts.createAutomaticTokensForwardingRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateAutomaticTokensForwardingR}
      */
 
   }, {
@@ -196,7 +196,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
      * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteAutomaticTokensForwardingResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/DeleteAutomaticTokensForwardingR} and HTTP response
      */
 
   }, {
@@ -232,7 +232,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _DeleteAutomaticTokensForwardingResponse["default"];
+      var returnType = _DeleteAutomaticTokensForwardingR["default"];
       return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/automations/{referenceId}', 'DELETE', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -243,7 +243,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
      * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DeleteAutomaticTokensForwardingResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/DeleteAutomaticTokensForwardingR}
      */
 
   }, {
@@ -260,7 +260,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetFeeAddressDetailsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetFeeAddressDetailsR} and HTTP response
      */
 
   }, {
@@ -290,7 +290,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetFeeAddressDetailsResponse["default"];
+      var returnType = _GetFeeAddressDetailsR["default"];
       return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/fee-addresses', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -300,7 +300,7 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetFeeAddressDetailsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetFeeAddressDetailsR}
      */
 
   }, {
@@ -312,14 +312,14 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
     }
     /**
      * List Tokens Forwarding Automations
-     * Through this endpoint customers can list all of their **tokens** forwarding automations (**not** coins).    Customers can set up automatic forwarding functions for tokens by setting a `fromAddress` and a `toAddress`, and specifying the amount that can be transferred between addresses.     A `feePriority` will be returned which represents the fee priority of the automation whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".     {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+     * Through this endpoint customers can list all of their **tokens** forwarding automations (**not** coins).    Customers can set up automatic forwarding functions for tokens by setting a `fromAddress` and a `toAddress`, and specifying the amount that can be transferred between addresses.     A `feePriority` will be returned which represents the fee priority of the automation whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".     {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensForwardingAutomationsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTokensForwardingAutomationsR} and HTTP response
      */
 
   }, {
@@ -351,19 +351,19 @@ var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListTokensForwardingAutomationsResponse["default"];
+      var returnType = _ListTokensForwardingAutomationsR["default"];
       return this.apiClient.callApi('/blockchain-automations/{blockchain}/{network}/tokens-forwarding/automations', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List Tokens Forwarding Automations
-     * Through this endpoint customers can list all of their **tokens** forwarding automations (**not** coins).    Customers can set up automatic forwarding functions for tokens by setting a `fromAddress` and a `toAddress`, and specifying the amount that can be transferred between addresses.     A `feePriority` will be returned which represents the fee priority of the automation whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".     {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}
+     * Through this endpoint customers can list all of their **tokens** forwarding automations (**not** coins).    Customers can set up automatic forwarding functions for tokens by setting a `fromAddress` and a `toAddress`, and specifying the amount that can be transferred between addresses.     A `feePriority` will be returned which represents the fee priority of the automation whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".     {warning}The subscription will work for all incoming transactions until it is deleted. There is no need to do that for every transaction.{/warning}    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensForwardingAutomationsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTokensForwardingAutomationsR}
      */
 
   }, {

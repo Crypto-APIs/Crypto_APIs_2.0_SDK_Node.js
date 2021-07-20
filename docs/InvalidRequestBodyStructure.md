@@ -1,4 +1,4 @@
-# CryptoApis.InvalidRequestBodyStructure
+# Cryptoapis.InvalidRequestBodyStructure
 
 ## Properties
 

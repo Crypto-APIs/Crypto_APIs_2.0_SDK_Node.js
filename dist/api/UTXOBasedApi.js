@@ -11,7 +11,7 @@ var _AlreadyExists = _interopRequireDefault(require("../model/AlreadyExists"));
 
 var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
 
-var _GetHDWalletxPubYPubZPubDetailsResponse = _interopRequireDefault(require("../model/GetHDWalletxPubYPubZPubDetailsResponse"));
+var _GetHDWalletXPubYPubZPubDetailsR = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubDetailsR"));
 
 var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
 
@@ -21,13 +21,13 @@ var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
 
 var _InvalidXpub = _interopRequireDefault(require("../model/InvalidXpub"));
 
-var _ListHDWalletxPubYPubZPubTransactionsResponse = _interopRequireDefault(require("../model/ListHDWalletxPubYPubZPubTransactionsResponse"));
+var _ListHDWalletXPubYPubZPubTransactionsR = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubTransactionsR"));
 
 var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
-var _SyncHDWalletxPubYPubZPubRequestBody = _interopRequireDefault(require("../model/SyncHDWalletxPubYPubZPubRequestBody"));
+var _SyncHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPubR"));
 
-var _SyncHDWalletxPubYPubZPubResponse = _interopRequireDefault(require("../model/SyncHDWalletxPubYPubZPubResponse"));
+var _SyncHDWalletXPubYPubZPubRB = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPubRB"));
 
 var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
 
@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * UTXOBased service.
 * @module api/UTXOBasedApi
-* @version 2.0.0
+* @version 1.1.0
 */
 var UTXOBasedApi = /*#__PURE__*/function () {
   /**
@@ -72,7 +72,7 @@ var UTXOBasedApi = /*#__PURE__*/function () {
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
    * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetHDWalletxPubYPubZPubDetailsResponse} and HTTP response
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetHDWalletXPubYPubZPubDetailsR} and HTTP response
    */
 
 
@@ -110,7 +110,7 @@ var UTXOBasedApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetHDWalletxPubYPubZPubDetailsResponse["default"];
+      var returnType = _GetHDWalletXPubYPubZPubDetailsR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/details', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -122,7 +122,7 @@ var UTXOBasedApi = /*#__PURE__*/function () {
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetHDWalletxPubYPubZPubDetailsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetHDWalletXPubYPubZPubDetailsR}
      */
 
   }, {
@@ -134,7 +134,7 @@ var UTXOBasedApi = /*#__PURE__*/function () {
     }
     /**
      * List HD Wallet (xPub, yPub, zPub) Transactions
-     * This endpoint will list HD Wallet transactions.
+     * This endpoint will list HD Wallet transactions.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain.
      * @param {String} extendedPublicKey Defines the master public key (xPub) of the account.
      * @param {module:model/String} network Represents the specific network.
@@ -143,7 +143,7 @@ var UTXOBasedApi = /*#__PURE__*/function () {
      * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListHDWalletxPubYPubZPubTransactionsResponse} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListHDWalletXPubYPubZPubTransactionsR} and HTTP response
      */
 
   }, {
@@ -182,12 +182,12 @@ var UTXOBasedApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListHDWalletxPubYPubZPubTransactionsResponse["default"];
+      var returnType = _ListHDWalletXPubYPubZPubTransactionsR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * List HD Wallet (xPub, yPub, zPub) Transactions
-     * This endpoint will list HD Wallet transactions.
+     * This endpoint will list HD Wallet transactions.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain.
      * @param {String} extendedPublicKey Defines the master public key (xPub) of the account.
      * @param {module:model/String} network Represents the specific network.
@@ -196,7 +196,7 @@ var UTXOBasedApi = /*#__PURE__*/function () {
      * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListHDWalletxPubYPubZPubTransactionsResponse}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListHDWalletXPubYPubZPubTransactionsR}
      */
 
   }, {
@@ -213,15 +213,15 @@ var UTXOBasedApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/SyncHDWalletxPubYPubZPubRequestBody} opts.syncHDWalletxPubYPubZPubRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SyncHDWalletxPubYPubZPubResponse} and HTTP response
+     * @param {module:model/SyncHDWalletXPubYPubZPubRB} opts.syncHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SyncHDWalletXPubYPubZPubR} and HTTP response
      */
 
   }, {
     key: "syncHDWalletXPubYPubZPubWithHttpInfo",
     value: function syncHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['syncHDWalletxPubYPubZPubRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['syncHDWalletXPubYPubZPubRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling syncHDWalletXPubYPubZPub");
@@ -244,7 +244,7 @@ var UTXOBasedApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _SyncHDWalletxPubYPubZPubResponse["default"];
+      var returnType = _SyncHDWalletXPubYPubZPubR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/hd/sync', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -254,8 +254,8 @@ var UTXOBasedApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/SyncHDWalletxPubYPubZPubRequestBody} opts.syncHDWalletxPubYPubZPubRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SyncHDWalletxPubYPubZPubResponse}
+     * @param {module:model/SyncHDWalletXPubYPubZPubRB} opts.syncHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SyncHDWalletXPubYPubZPubR}
      */
 
   }, {

@@ -1,4 +1,4 @@
-# CryptoApis.EndpointNotAllowedForApiKeyError
+# Cryptoapis.EndpointNotAllowedForApiKeyError
 
 ## Properties
 

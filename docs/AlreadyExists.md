@@ -1,4 +1,4 @@
-# CryptoApis.AlreadyExists
+# Cryptoapis.AlreadyExists
 
 ## Properties
 

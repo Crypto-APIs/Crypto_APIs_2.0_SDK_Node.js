@@ -1,4 +1,4 @@
-# CryptoApis.TokensForwardingAutomationsLimitReachedError
+# Cryptoapis.TokensForwardingAutomationsLimitReachedError
 
 ## Properties
 

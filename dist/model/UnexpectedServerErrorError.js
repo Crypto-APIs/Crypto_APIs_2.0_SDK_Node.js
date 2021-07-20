@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The UnexpectedServerErrorError model module.
  * @module model/UnexpectedServerErrorError
- * @version 2.0.0
+ * @version 1.1.0
  */
 var UnexpectedServerErrorError = /*#__PURE__*/function () {
   /**

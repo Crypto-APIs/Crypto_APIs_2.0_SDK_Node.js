@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CryptoApis);
+    factory(root.expect, root.Cryptoapis);
   }
-}(this, function(expect, CryptoApis) {
+}(this, function(expect, Cryptoapis) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CryptoApis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
+    instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('AddressTokensTransactionConfirmedDataItemMinedInBlock', function() {
     it('should create an instance of AddressTokensTransactionConfirmedDataItemMinedInBlock', function() {
       // uncomment below and update the code to test AddressTokensTransactionConfirmedDataItemMinedInBlock
-      //var instane = new CryptoApis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
-      //expect(instance).to.be.a(CryptoApis.AddressTokensTransactionConfirmedDataItemMinedInBlock);
+      //var instane = new Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
+      //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock);
     });
 
     it('should have the property height (base name: "height")', function() {
       // uncomment below and update the code to test the property height
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 
     it('should have the property hash (base name: "hash")', function() {
       // uncomment below and update the code to test the property hash
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 
     it('should have the property timestamp (base name: "timestamp")', function() {
       // uncomment below and update the code to test the property timestamp
-      //var instance = new CryptoApis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
       //expect(instance).to.be();
     });
 

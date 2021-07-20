@@ -19,37 +19,45 @@ var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPaginat
 
 var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
 
-var _MinedTransactionRequestBody = _interopRequireDefault(require("../model/MinedTransactionRequestBody"));
+var _MinedTransactionR = _interopRequireDefault(require("../model/MinedTransactionR"));
 
-var _MinedTransactionResponse = _interopRequireDefault(require("../model/MinedTransactionResponse"));
+var _MinedTransactionRB = _interopRequireDefault(require("../model/MinedTransactionRB"));
 
-var _NewBlockRequestBody = _interopRequireDefault(require("../model/NewBlockRequestBody"));
+var _NewBlockR = _interopRequireDefault(require("../model/NewBlockR"));
 
-var _NewBlockResponse = _interopRequireDefault(require("../model/NewBlockResponse"));
+var _NewBlockRB = _interopRequireDefault(require("../model/NewBlockRB"));
 
-var _NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody"));
+var _NewConfirmedCoinsTransactionsAndEachConfirmationR = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmationR"));
 
-var _NewConfirmedCoinsTransactionsAndEachConfirmationResponse = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmationResponse"));
+var _NewConfirmedCoinsTransactionsAndEachConfirmationRB = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmationRB"));
 
-var _NewConfirmedCoinsTransactionsRequestBody = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsRequestBody"));
+var _NewConfirmedCoinsTransactionsR = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsR"));
 
-var _NewConfirmedCoinsTransactionsResponse = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsResponse"));
+var _NewConfirmedCoinsTransactionsRB = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsRB"));
 
-var _NewConfirmedTokensTransactionsAndEachConfirmationRequestBody = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmationRequestBody"));
+var _NewConfirmedInternalTransactionsAndEachConfirmationR = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsAndEachConfirmationR"));
 
-var _NewConfirmedTokensTransactionsAndEachConfirmationResponse = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmationResponse"));
+var _NewConfirmedInternalTransactionsAndEachConfirmationRB = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsAndEachConfirmationRB"));
 
-var _NewConfirmedTokensTransactionsRequestBody = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsRequestBody"));
+var _NewConfirmedInternalTransactionsR = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsR"));
 
-var _NewConfirmedTokensTransactionsResponse = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsResponse"));
+var _NewConfirmedInternalTransactionsRB = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsRB"));
 
-var _NewUnconfirmedCoinsTransactionsRequestBody = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactionsRequestBody"));
+var _NewConfirmedTokensTransactionsAndEachConfirmationR = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmationR"));
 
-var _NewUnconfirmedCoinsTransactionsResponse = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactionsResponse"));
+var _NewConfirmedTokensTransactionsAndEachConfirmationRB = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmationRB"));
 
-var _NewUnconfirmedTokensTransactionsRequestBody = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactionsRequestBody"));
+var _NewConfirmedTokensTransactionsR = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsR"));
 
-var _NewUnconfirmedTokensTransactionsResponse = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactionsResponse"));
+var _NewConfirmedTokensTransactionsRB = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsRB"));
+
+var _NewUnconfirmedCoinsTransactionsR = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactionsR"));
+
+var _NewUnconfirmedCoinsTransactionsRB = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactionsRB"));
+
+var _NewUnconfirmedTokensTransactionsR = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactionsR"));
+
+var _NewUnconfirmedTokensTransactionsRB = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactionsRB"));
 
 var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
@@ -68,7 +76,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 2.0.0
+* @version 1.1.0
 */
 var CreateSubscriptionsForApi = /*#__PURE__*/function () {
   /**
@@ -90,8 +98,8 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
    * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-   * @param {module:model/MinedTransactionRequestBody} opts.minedTransactionRequestBody 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MinedTransactionResponse} and HTTP response
+   * @param {module:model/MinedTransactionRB} opts.minedTransactionRB 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/MinedTransactionR} and HTTP response
    */
 
 
@@ -99,7 +107,7 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
     key: "minedTransactionWithHttpInfo",
     value: function minedTransactionWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['minedTransactionRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['minedTransactionRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling minedTransaction");
@@ -122,7 +130,7 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _MinedTransactionResponse["default"];
+      var returnType = _MinedTransactionR["default"];
       return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/transaction-mined', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -132,8 +140,8 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/MinedTransactionRequestBody} opts.minedTransactionRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MinedTransactionResponse}
+     * @param {module:model/MinedTransactionRB} opts.minedTransactionRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/MinedTransactionR}
      */
 
   }, {
@@ -150,15 +158,15 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewBlockRequestBody} opts.newBlockRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewBlockResponse} and HTTP response
+     * @param {module:model/NewBlockRB} opts.newBlockRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewBlockR} and HTTP response
      */
 
   }, {
     key: "newBlockWithHttpInfo",
     value: function newBlockWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['newBlockRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['newBlockRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling newBlock");
@@ -181,7 +189,7 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _NewBlockResponse["default"];
+      var returnType = _NewBlockR["default"];
       return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/block-mined', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -191,8 +199,8 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewBlockRequestBody} opts.newBlockRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewBlockResponse}
+     * @param {module:model/NewBlockRB} opts.newBlockRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewBlockR}
      */
 
   }, {
@@ -209,15 +217,15 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewConfirmedCoinsTransactionsRequestBody} opts.newConfirmedCoinsTransactionsRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedCoinsTransactionsResponse} and HTTP response
+     * @param {module:model/NewConfirmedCoinsTransactionsRB} opts.newConfirmedCoinsTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedCoinsTransactionsR} and HTTP response
      */
 
   }, {
     key: "newConfirmedCoinsTransactionsWithHttpInfo",
     value: function newConfirmedCoinsTransactionsWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['newConfirmedCoinsTransactionsRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['newConfirmedCoinsTransactionsRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedCoinsTransactions");
@@ -240,7 +248,7 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _NewConfirmedCoinsTransactionsResponse["default"];
+      var returnType = _NewConfirmedCoinsTransactionsR["default"];
       return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-confirmed', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -250,8 +258,8 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewConfirmedCoinsTransactionsRequestBody} opts.newConfirmedCoinsTransactionsRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedCoinsTransactionsResponse}
+     * @param {module:model/NewConfirmedCoinsTransactionsRB} opts.newConfirmedCoinsTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedCoinsTransactionsR}
      */
 
   }, {
@@ -268,15 +276,15 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody} opts.newConfirmedCoinsTransactionsAndEachConfirmationRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedCoinsTransactionsAndEachConfirmationResponse} and HTTP response
+     * @param {module:model/NewConfirmedCoinsTransactionsAndEachConfirmationRB} opts.newConfirmedCoinsTransactionsAndEachConfirmationRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedCoinsTransactionsAndEachConfirmationR} and HTTP response
      */
 
   }, {
     key: "newConfirmedCoinsTransactionsAndEachConfirmationWithHttpInfo",
     value: function newConfirmedCoinsTransactionsAndEachConfirmationWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['newConfirmedCoinsTransactionsAndEachConfirmationRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['newConfirmedCoinsTransactionsAndEachConfirmationRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedCoinsTransactionsAndEachConfirmation");
@@ -299,7 +307,7 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _NewConfirmedCoinsTransactionsAndEachConfirmationResponse["default"];
+      var returnType = _NewConfirmedCoinsTransactionsAndEachConfirmationR["default"];
       return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-confirmed-each-confirmation', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -309,8 +317,8 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewConfirmedCoinsTransactionsAndEachConfirmationRequestBody} opts.newConfirmedCoinsTransactionsAndEachConfirmationRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedCoinsTransactionsAndEachConfirmationResponse}
+     * @param {module:model/NewConfirmedCoinsTransactionsAndEachConfirmationRB} opts.newConfirmedCoinsTransactionsAndEachConfirmationRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedCoinsTransactionsAndEachConfirmationR}
      */
 
   }, {
@@ -321,21 +329,139 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       });
     }
     /**
+     * New confirmed internal transactions
+     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new confirmed internal transactions. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs.    Being confirmed means that the transactions are verified by miners and added to the next block.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedInternalTransactionsRB} opts.newConfirmedInternalTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedInternalTransactionsR} and HTTP response
+     */
+
+  }, {
+    key: "newConfirmedInternalTransactionsWithHttpInfo",
+    value: function newConfirmedInternalTransactionsWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['newConfirmedInternalTransactionsRB']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedInternalTransactions");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling newConfirmedInternalTransactions");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _NewConfirmedInternalTransactionsR["default"];
+      return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/address-internal-transactions-confirmed', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * New confirmed internal transactions
+     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new confirmed internal transactions. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs.    Being confirmed means that the transactions are verified by miners and added to the next block.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedInternalTransactionsRB} opts.newConfirmedInternalTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedInternalTransactionsR}
+     */
+
+  }, {
+    key: "newConfirmedInternalTransactions",
+    value: function newConfirmedInternalTransactions(blockchain, network, opts) {
+      return this.newConfirmedInternalTransactionsWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * New confirmed internal transactions and each confirmation
+     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new confirmed internal transactions. Includes also a response at each confirmation the transaction receives until the specified confirmations limit is reached. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs.     Being confirmed means that the transactions are verified by miners and added to the next block.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedInternalTransactionsAndEachConfirmationRB} opts.newConfirmedInternalTransactionsAndEachConfirmationRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedInternalTransactionsAndEachConfirmationR} and HTTP response
+     */
+
+  }, {
+    key: "newConfirmedInternalTransactionsAndEachConfirmationWithHttpInfo",
+    value: function newConfirmedInternalTransactionsAndEachConfirmationWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['newConfirmedInternalTransactionsAndEachConfirmationRB']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedInternalTransactionsAndEachConfirmation");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling newConfirmedInternalTransactionsAndEachConfirmation");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _NewConfirmedInternalTransactionsAndEachConfirmationR["default"];
+      return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/address-internal-transactions-confirmed-each-confirmation', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * New confirmed internal transactions and each confirmation
+     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new confirmed internal transactions. Includes also a response at each confirmation the transaction receives until the specified confirmations limit is reached. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs.     Being confirmed means that the transactions are verified by miners and added to the next block.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedInternalTransactionsAndEachConfirmationRB} opts.newConfirmedInternalTransactionsAndEachConfirmationRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedInternalTransactionsAndEachConfirmationR}
+     */
+
+  }, {
+    key: "newConfirmedInternalTransactionsAndEachConfirmation",
+    value: function newConfirmedInternalTransactionsAndEachConfirmation(blockchain, network, opts) {
+      return this.newConfirmedInternalTransactionsAndEachConfirmationWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
      * New confirmed tokens transactions
      * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new incoming or outgoing confirmed transactions for tokens from/to the customer's address. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.     Being confirmed means that the transactions are verified by miners and added to the next block. This endpoint refers to **tokens transactions only, not coins**.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewConfirmedTokensTransactionsRequestBody} opts.newConfirmedTokensTransactionsRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedTokensTransactionsResponse} and HTTP response
+     * @param {module:model/NewConfirmedTokensTransactionsRB} opts.newConfirmedTokensTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedTokensTransactionsR} and HTTP response
      */
 
   }, {
     key: "newConfirmedTokensTransactionsWithHttpInfo",
     value: function newConfirmedTokensTransactionsWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['newConfirmedTokensTransactionsRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['newConfirmedTokensTransactionsRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedTokensTransactions");
@@ -358,7 +484,7 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _NewConfirmedTokensTransactionsResponse["default"];
+      var returnType = _NewConfirmedTokensTransactionsR["default"];
       return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-confirmed', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -368,8 +494,8 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewConfirmedTokensTransactionsRequestBody} opts.newConfirmedTokensTransactionsRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedTokensTransactionsResponse}
+     * @param {module:model/NewConfirmedTokensTransactionsRB} opts.newConfirmedTokensTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedTokensTransactionsR}
      */
 
   }, {
@@ -386,15 +512,15 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewConfirmedTokensTransactionsAndEachConfirmationRequestBody} opts.newConfirmedTokensTransactionsAndEachConfirmationRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedTokensTransactionsAndEachConfirmationResponse} and HTTP response
+     * @param {module:model/NewConfirmedTokensTransactionsAndEachConfirmationRB} opts.newConfirmedTokensTransactionsAndEachConfirmationRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedTokensTransactionsAndEachConfirmationR} and HTTP response
      */
 
   }, {
     key: "newConfirmedTokensTransactionsAndEachConfirmationWithHttpInfo",
     value: function newConfirmedTokensTransactionsAndEachConfirmationWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['newConfirmedTokensTransactionsAndEachConfirmationRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['newConfirmedTokensTransactionsAndEachConfirmationRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedTokensTransactionsAndEachConfirmation");
@@ -417,7 +543,7 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _NewConfirmedTokensTransactionsAndEachConfirmationResponse["default"];
+      var returnType = _NewConfirmedTokensTransactionsAndEachConfirmationR["default"];
       return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-confirmed-each-confirmation', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
@@ -427,8 +553,8 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewConfirmedTokensTransactionsAndEachConfirmationRequestBody} opts.newConfirmedTokensTransactionsAndEachConfirmationRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedTokensTransactionsAndEachConfirmationResponse}
+     * @param {module:model/NewConfirmedTokensTransactionsAndEachConfirmationRB} opts.newConfirmedTokensTransactionsAndEachConfirmationRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedTokensTransactionsAndEachConfirmationR}
      */
 
   }, {
@@ -440,20 +566,20 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
     }
     /**
      * New unconfirmed coins transactions
-     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed coins transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed coins transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn't necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed coins transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed coins transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {warning}We cannot guarantee at 100% that webhooks for unconfirmed transactions will always be received. Some may **not get received** due to the possibility of some nodes not being updated with that information. This can occur in networks with low activity and/or not many nodes, e.g. Testnet networks and rarely Mainnets.{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn't necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewUnconfirmedCoinsTransactionsRequestBody} opts.newUnconfirmedCoinsTransactionsRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewUnconfirmedCoinsTransactionsResponse} and HTTP response
+     * @param {module:model/NewUnconfirmedCoinsTransactionsRB} opts.newUnconfirmedCoinsTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewUnconfirmedCoinsTransactionsR} and HTTP response
      */
 
   }, {
     key: "newUnconfirmedCoinsTransactionsWithHttpInfo",
     value: function newUnconfirmedCoinsTransactionsWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['newUnconfirmedCoinsTransactionsRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['newUnconfirmedCoinsTransactionsRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling newUnconfirmedCoinsTransactions");
@@ -476,18 +602,18 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _NewUnconfirmedCoinsTransactionsResponse["default"];
+      var returnType = _NewUnconfirmedCoinsTransactionsR["default"];
       return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-unconfirmed', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * New unconfirmed coins transactions
-     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed coins transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed coins transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn't necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed coins transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed coins transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {warning}We cannot guarantee at 100% that webhooks for unconfirmed transactions will always be received. Some may **not get received** due to the possibility of some nodes not being updated with that information. This can occur in networks with low activity and/or not many nodes, e.g. Testnet networks and rarely Mainnets.{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn't necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewUnconfirmedCoinsTransactionsRequestBody} opts.newUnconfirmedCoinsTransactionsRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewUnconfirmedCoinsTransactionsResponse}
+     * @param {module:model/NewUnconfirmedCoinsTransactionsRB} opts.newUnconfirmedCoinsTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewUnconfirmedCoinsTransactionsR}
      */
 
   }, {
@@ -499,20 +625,20 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
     }
     /**
      * New unconfirmed tokens transactions
-     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed tokens transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed tokens transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn't necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed tokens transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed tokens transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {warning}We cannot guarantee at 100% that webhooks for unconfirmed transactions will always be received. Some may **not get received** due to the possibility of some nodes not being updated with that information. This can occur in networks with low activity and/or not many nodes, e.g. Testnet networks and rarely Mainnets.{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn't necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewUnconfirmedTokensTransactionsRequestBody} opts.newUnconfirmedTokensTransactionsRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewUnconfirmedTokensTransactionsResponse} and HTTP response
+     * @param {module:model/NewUnconfirmedTokensTransactionsRB} opts.newUnconfirmedTokensTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewUnconfirmedTokensTransactionsR} and HTTP response
      */
 
   }, {
     key: "newUnconfirmedTokensTransactionsWithHttpInfo",
     value: function newUnconfirmedTokensTransactionsWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['newUnconfirmedTokensTransactionsRequestBody']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['newUnconfirmedTokensTransactionsRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling newUnconfirmedTokensTransactions");
@@ -535,18 +661,18 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _NewUnconfirmedTokensTransactionsResponse["default"];
+      var returnType = _NewUnconfirmedTokensTransactionsR["default"];
       return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-unconfirmed', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * New unconfirmed tokens transactions
-     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed tokens transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed tokens transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn't necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new unconfirmed tokens transactions for the user. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs. The information is returned per specified address.    Unconfirmed tokens transactions remain in the mempool (memory pool) until they are confirmed by miners and added to the next block. Sometimes spikes in transaction activity can cause delays in confirmations.    {warning}We cannot guarantee at 100% that webhooks for unconfirmed transactions will always be received. Some may **not get received** due to the possibility of some nodes not being updated with that information. This can occur in networks with low activity and/or not many nodes, e.g. Testnet networks and rarely Mainnets.{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {note}It is also **important to note** that just because pending unconfirmed transactions are in the mempool, **doesn't necessarily** mean they will get confirmed.{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/NewUnconfirmedTokensTransactionsRequestBody} opts.newUnconfirmedTokensTransactionsRequestBody 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewUnconfirmedTokensTransactionsResponse}
+     * @param {module:model/NewUnconfirmedTokensTransactionsRB} opts.newUnconfirmedTokensTransactionsRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewUnconfirmedTokensTransactionsR}
      */
 
   }, {

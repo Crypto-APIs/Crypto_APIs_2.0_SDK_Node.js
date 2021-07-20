@@ -1,4 +1,4 @@
-# CryptoApis.EndpointNotAllowedForPlanError
+# Cryptoapis.EndpointNotAllowedForPlanError
 
 ## Properties
 
