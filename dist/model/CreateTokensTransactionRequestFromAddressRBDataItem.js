@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateTokensTransactionRequestFromAddressRBDataItem model module.
  * @module model/CreateTokensTransactionRequestFromAddressRBDataItem
- * @version 1.1.0
+ * @version 1.2.0
  */
 var CreateTokensTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function () {
   /**
@@ -26,13 +26,13 @@ var CreateTokensTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function 
    * @alias module:model/CreateTokensTransactionRequestFromAddressRBDataItem
    * @param amount {String} Represents the specific amount of the transaction.
    * @param feePriority {module:model/CreateTokensTransactionRequestFromAddressRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-   * @param toAddress {String} Defines the specific recipient address for the transaction.
+   * @param recipientAddress {String} Defines the specific recipient address for the transaction.
    * @param tokenIdentifier {String} Defines the specific token identifier. For Bitcoin-based transactions it should be the `propertyId` and for Ethereum-based transactions - the `contract`.
    */
-  function CreateTokensTransactionRequestFromAddressRBDataItem(amount, feePriority, toAddress, tokenIdentifier) {
+  function CreateTokensTransactionRequestFromAddressRBDataItem(amount, feePriority, recipientAddress, tokenIdentifier) {
     _classCallCheck(this, CreateTokensTransactionRequestFromAddressRBDataItem);
 
-    CreateTokensTransactionRequestFromAddressRBDataItem.initialize(this, amount, feePriority, toAddress, tokenIdentifier);
+    CreateTokensTransactionRequestFromAddressRBDataItem.initialize(this, amount, feePriority, recipientAddress, tokenIdentifier);
   }
   /**
    * Initializes the fields of this object.
@@ -43,10 +43,10 @@ var CreateTokensTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function 
 
   _createClass(CreateTokensTransactionRequestFromAddressRBDataItem, null, [{
     key: "initialize",
-    value: function initialize(obj, amount, feePriority, toAddress, tokenIdentifier) {
+    value: function initialize(obj, amount, feePriority, recipientAddress, tokenIdentifier) {
       obj['amount'] = amount;
       obj['feePriority'] = feePriority;
-      obj['toAddress'] = toAddress;
+      obj['recipientAddress'] = recipientAddress;
       obj['tokenIdentifier'] = tokenIdentifier;
     }
     /**
@@ -67,6 +67,10 @@ var CreateTokensTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function 
           obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
         }
 
+        if (data.hasOwnProperty('callbackSecretKey')) {
+          obj['callbackSecretKey'] = _ApiClient["default"].convertToType(data['callbackSecretKey'], 'String');
+        }
+
         if (data.hasOwnProperty('callbackUrl')) {
           obj['callbackUrl'] = _ApiClient["default"].convertToType(data['callbackUrl'], 'String');
         }
@@ -75,8 +79,8 @@ var CreateTokensTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function 
           obj['feePriority'] = _ApiClient["default"].convertToType(data['feePriority'], 'String');
         }
 
-        if (data.hasOwnProperty('toAddress')) {
-          obj['toAddress'] = _ApiClient["default"].convertToType(data['toAddress'], 'String');
+        if (data.hasOwnProperty('recipientAddress')) {
+          obj['recipientAddress'] = _ApiClient["default"].convertToType(data['recipientAddress'], 'String');
         }
 
         if (data.hasOwnProperty('tokenIdentifier')) {
@@ -98,7 +102,13 @@ var CreateTokensTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function 
 
 CreateTokensTransactionRequestFromAddressRBDataItem.prototype['amount'] = undefined;
 /**
- * Represents the URL that is set by the customer where the callback will be received at.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * @member {String} callbackSecretKey
+ */
+
+CreateTokensTransactionRequestFromAddressRBDataItem.prototype['callbackSecretKey'] = undefined;
+/**
+ * Verified URL for sending callbacks
  * @member {String} callbackUrl
  */
 
@@ -111,10 +121,10 @@ CreateTokensTransactionRequestFromAddressRBDataItem.prototype['callbackUrl'] = u
 CreateTokensTransactionRequestFromAddressRBDataItem.prototype['feePriority'] = undefined;
 /**
  * Defines the specific recipient address for the transaction.
- * @member {String} toAddress
+ * @member {String} recipientAddress
  */
 
-CreateTokensTransactionRequestFromAddressRBDataItem.prototype['toAddress'] = undefined;
+CreateTokensTransactionRequestFromAddressRBDataItem.prototype['recipientAddress'] = undefined;
 /**
  * Defines the specific token identifier. For Bitcoin-based transactions it should be the `propertyId` and for Ethereum-based transactions - the `contract`.
  * @member {String} tokenIdentifier

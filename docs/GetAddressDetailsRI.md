@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **confirmedBalance** | [**GetAddressDetailsRIConfirmedBalance**](GetAddressDetailsRIConfirmedBalance.md) |  | 
 **totalReceived** | [**GetAddressDetailsRITotalReceived**](GetAddressDetailsRITotalReceived.md) |  | 
 **totalSpent** | [**GetAddressDetailsRITotalSpent**](GetAddressDetailsRITotalSpent.md) |  | 
-**incomingTransactionsCount** | **Number** | Defines the count of all confirmed incoming transactions from the address for coins. This applies to **coins** only, **not** to tokens transfers e.g. for Ethereum. | 
-**outgoingTransactionsCount** | **Number** | Defines the count of all confirmed outgoing transactions from the address for coins. This applies to **coins** only, **not** to tokens transfers e.g. for Ethereum. | 
+**incomingTransactionsCount** | **Number** | Numeric representation of the received transaction count of the address | 
+**outgoingTransactionsCount** | **Number** | Numeric representation of the sent transaction count of the address | 
 
 

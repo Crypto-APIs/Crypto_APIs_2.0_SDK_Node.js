@@ -299,7 +299,7 @@ Name | Type | Description  | Notes
 
 List XRP (Ripple) Transactions by Address
 
-This endpoint will list XRP transactions by a attribute &#x60;address&#x60;. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn&#39;t unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+This endpoint will list XRP transactions by a attribute &#x60;address&#x60;. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn&#39;t unified.
 
 ### Example
 
@@ -318,7 +318,8 @@ let address = rA9bXGJcXvZKaWofrRphdJsBWzhyCfH3z; // String | Represents the publ
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 10, // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'transactionType': payment // String | 
 };
 apiInstance.listXRPRippleTransactionsByAddress(network, address, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -338,6 +339,7 @@ Name | Type | Description  | Notes
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
  **limit** | **Number**| Defines how many items should be returned in the response per page basis. | [optional] [default to 50]
  **offset** | **Number**| The starting index of the response items, i.e. where the response should start listing the returned items. | [optional] [default to 0]
+ **transactionType** | **String**|  | [optional] 
 
 ### Return type
 
@@ -359,7 +361,7 @@ Name | Type | Description  | Notes
 
 List XRP (Ripple) Transactions By Block Hash
 
-This endpoint will list transactions by an attribute &#x60;blockHash&#x60;. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn&#39;t unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+This endpoint will list transactions by an attribute &#x60;blockHash&#x60;. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn&#39;t unified.
 
 ### Example
 
@@ -419,7 +421,7 @@ Name | Type | Description  | Notes
 
 List XRP (Ripple) Transactions By Block Height
 
-This endpoint will list transactions by an attribute &#x60;blockHeight&#x60;. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn&#39;t unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+This endpoint will list transactions by an attribute &#x60;blockHeight&#x60;. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn&#39;t unified.
 
 ### Example
 

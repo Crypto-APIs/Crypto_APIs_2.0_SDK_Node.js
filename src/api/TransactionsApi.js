@@ -34,7 +34,7 @@ import WalletAsAServiceWalletBalanceNotEnough from '../model/WalletAsAServiceWal
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.1.0
+* @version 1.2.0
 */
 export default class TransactionsApi {
 
@@ -200,23 +200,19 @@ export default class TransactionsApi {
 
     /**
      * Create Tokens Transaction Request from Address
-     * Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}
-     * @param {String} address Defines the specific source address for the transaction.
+     * Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} senderAddress Defines the specific source address for the transaction.
      * @param {String} walletId Defines the unique ID of the Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/CreateTokensTransactionRequestFromAddressRB} opts.createTokensTransactionRequestFromAddressRB 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateTokensTransactionRequestFromAddressR} and HTTP response
      */
-    createTokensTransactionRequestFromAddressWithHttpInfo(address, blockchain, network, walletId, opts) {
+    createTokensTransactionRequestFromAddressWithHttpInfo(blockchain, network, senderAddress, walletId, opts) {
       opts = opts || {};
       let postBody = opts['createTokensTransactionRequestFromAddressRB'];
-      // verify the required parameter 'address' is set
-      if (address === undefined || address === null) {
-        throw new Error("Missing the required parameter 'address' when calling createTokensTransactionRequestFromAddress");
-      }
       // verify the required parameter 'blockchain' is set
       if (blockchain === undefined || blockchain === null) {
         throw new Error("Missing the required parameter 'blockchain' when calling createTokensTransactionRequestFromAddress");
@@ -225,15 +221,19 @@ export default class TransactionsApi {
       if (network === undefined || network === null) {
         throw new Error("Missing the required parameter 'network' when calling createTokensTransactionRequestFromAddress");
       }
+      // verify the required parameter 'senderAddress' is set
+      if (senderAddress === undefined || senderAddress === null) {
+        throw new Error("Missing the required parameter 'senderAddress' when calling createTokensTransactionRequestFromAddress");
+      }
       // verify the required parameter 'walletId' is set
       if (walletId === undefined || walletId === null) {
         throw new Error("Missing the required parameter 'walletId' when calling createTokensTransactionRequestFromAddress");
       }
 
       let pathParams = {
-        'address': address,
         'blockchain': blockchain,
         'network': network,
+        'senderAddress': senderAddress,
         'walletId': walletId
       };
       let queryParams = {
@@ -249,7 +249,7 @@ export default class TransactionsApi {
       let accepts = ['application/json'];
       let returnType = CreateTokensTransactionRequestFromAddressR;
       return this.apiClient.callApi(
-        '/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/token-transaction-requests', 'POST',
+        '/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/token-transaction-requests', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -257,18 +257,18 @@ export default class TransactionsApi {
 
     /**
      * Create Tokens Transaction Request from Address
-     * Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}
-     * @param {String} address Defines the specific source address for the transaction.
+     * Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} senderAddress Defines the specific source address for the transaction.
      * @param {String} walletId Defines the unique ID of the Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/CreateTokensTransactionRequestFromAddressRB} opts.createTokensTransactionRequestFromAddressRB 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateTokensTransactionRequestFromAddressR}
      */
-    createTokensTransactionRequestFromAddress(address, blockchain, network, walletId, opts) {
-      return this.createTokensTransactionRequestFromAddressWithHttpInfo(address, blockchain, network, walletId, opts)
+    createTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts) {
+      return this.createTokensTransactionRequestFromAddressWithHttpInfo(blockchain, network, senderAddress, walletId, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

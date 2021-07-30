@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListOmniTokensByAddressRData model module.
  * @module model/ListOmniTokensByAddressRData
- * @version 1.1.0
+ * @version 1.2.0
  */
 var ListOmniTokensByAddressRData = /*#__PURE__*/function () {
   /**

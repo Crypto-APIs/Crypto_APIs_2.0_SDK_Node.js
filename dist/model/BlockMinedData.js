@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockMinedData model module.
  * @module model/BlockMinedData
- * @version 1.1.0
+ * @version 1.2.0
  */
 var BlockMinedData = /*#__PURE__*/function () {
   /**

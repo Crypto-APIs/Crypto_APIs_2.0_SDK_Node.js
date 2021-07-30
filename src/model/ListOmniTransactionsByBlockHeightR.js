@@ -17,7 +17,7 @@ import ListOmniTransactionsByBlockHeightRData from './ListOmniTransactionsByBloc
 /**
  * The ListOmniTransactionsByBlockHeightR model module.
  * @module model/ListOmniTransactionsByBlockHeightR
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListOmniTransactionsByBlockHeightR {
     /**

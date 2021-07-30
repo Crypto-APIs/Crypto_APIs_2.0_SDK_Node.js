@@ -58,10 +58,10 @@
         done();
       });
     });
-    describe('listReceivingAddresses', function() {
-      it('should call listReceivingAddresses successfully', function(done) {
-        //uncomment below and update the code to test listReceivingAddresses
-        //instance.listReceivingAddresses(function(error) {
+    describe('listDepositAddresses', function() {
+      it('should call listDepositAddresses successfully', function(done) {
+        //uncomment below and update the code to test listDepositAddresses
+        //instance.listDepositAddresses(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

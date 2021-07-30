@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddressRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRBDataItem
- * @version 1.1.0
+ * @version 1.2.0
  */
 var CreateCoinsTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function () {
   /**
@@ -26,12 +26,12 @@ var CreateCoinsTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function (
    * @alias module:model/CreateCoinsTransactionRequestFromAddressRBDataItem
    * @param amount {String} Represents the specific amount of the transaction.
    * @param feePriority {module:model/CreateCoinsTransactionRequestFromAddressRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-   * @param toAddress {String} Defines the specific recipient address for the transaction.
+   * @param recipientAddress {String} Defines the specific recipient address for the transaction.
    */
-  function CreateCoinsTransactionRequestFromAddressRBDataItem(amount, feePriority, toAddress) {
+  function CreateCoinsTransactionRequestFromAddressRBDataItem(amount, feePriority, recipientAddress) {
     _classCallCheck(this, CreateCoinsTransactionRequestFromAddressRBDataItem);
 
-    CreateCoinsTransactionRequestFromAddressRBDataItem.initialize(this, amount, feePriority, toAddress);
+    CreateCoinsTransactionRequestFromAddressRBDataItem.initialize(this, amount, feePriority, recipientAddress);
   }
   /**
    * Initializes the fields of this object.
@@ -42,10 +42,10 @@ var CreateCoinsTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function (
 
   _createClass(CreateCoinsTransactionRequestFromAddressRBDataItem, null, [{
     key: "initialize",
-    value: function initialize(obj, amount, feePriority, toAddress) {
+    value: function initialize(obj, amount, feePriority, recipientAddress) {
       obj['amount'] = amount;
       obj['feePriority'] = feePriority;
-      obj['toAddress'] = toAddress;
+      obj['recipientAddress'] = recipientAddress;
     }
     /**
      * Constructs a <code>CreateCoinsTransactionRequestFromAddressRBDataItem</code> from a plain JavaScript object, optionally creating a new instance.
@@ -65,12 +65,20 @@ var CreateCoinsTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function (
           obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
         }
 
+        if (data.hasOwnProperty('callbackSecretKey')) {
+          obj['callbackSecretKey'] = _ApiClient["default"].convertToType(data['callbackSecretKey'], 'String');
+        }
+
+        if (data.hasOwnProperty('callbackUrl')) {
+          obj['callbackUrl'] = _ApiClient["default"].convertToType(data['callbackUrl'], 'String');
+        }
+
         if (data.hasOwnProperty('feePriority')) {
           obj['feePriority'] = _ApiClient["default"].convertToType(data['feePriority'], 'String');
         }
 
-        if (data.hasOwnProperty('toAddress')) {
-          obj['toAddress'] = _ApiClient["default"].convertToType(data['toAddress'], 'String');
+        if (data.hasOwnProperty('recipientAddress')) {
+          obj['recipientAddress'] = _ApiClient["default"].convertToType(data['recipientAddress'], 'String');
         }
       }
 
@@ -88,6 +96,18 @@ var CreateCoinsTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function (
 
 CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['amount'] = undefined;
 /**
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * @member {String} callbackSecretKey
+ */
+
+CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['callbackSecretKey'] = undefined;
+/**
+ * Verified URL for sending callbacks
+ * @member {String} callbackUrl
+ */
+
+CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['callbackUrl'] = undefined;
+/**
  * Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
  * @member {module:model/CreateCoinsTransactionRequestFromAddressRBDataItem.FeePriorityEnum} feePriority
  */
@@ -95,10 +115,10 @@ CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['amount'] = undefin
 CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['feePriority'] = undefined;
 /**
  * Defines the specific recipient address for the transaction.
- * @member {String} toAddress
+ * @member {String} recipientAddress
  */
 
-CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['toAddress'] = undefined;
+CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['recipientAddress'] = undefined;
 /**
  * Allowed values for the <code>feePriority</code> property.
  * @enum {String}

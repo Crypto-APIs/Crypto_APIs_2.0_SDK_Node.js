@@ -17,7 +17,7 @@ import BlockchainDataTransactionNotFoundError from './BlockchainDataTransactionN
 /**
  * The BlockchainDataTransactionNotFound model module.
  * @module model/BlockchainDataTransactionNotFound
- * @version 1.1.0
+ * @version 1.2.0
  */
 class BlockchainDataTransactionNotFound {
     /**

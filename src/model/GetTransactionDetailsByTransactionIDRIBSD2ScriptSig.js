@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDRIBSD2ScriptSig model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSD2ScriptSig
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetTransactionDetailsByTransactionIDRIBSD2ScriptSig {
     /**

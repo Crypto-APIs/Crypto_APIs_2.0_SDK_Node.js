@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHeightRIFee model module.
  * @module model/ListTransactionsByBlockHeightRIFee
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByBlockHeightRIFee {
     /**

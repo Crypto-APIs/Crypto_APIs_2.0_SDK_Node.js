@@ -17,7 +17,7 @@ import GetUnconfirmedOmniTransactionByTransactionIDTxidRData from './GetUnconfir
 /**
  * The GetUnconfirmedOmniTransactionByTransactionIDTxidR model module.
  * @module model/GetUnconfirmedOmniTransactionByTransactionIDTxidR
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetUnconfirmedOmniTransactionByTransactionIDTxidR {
     /**

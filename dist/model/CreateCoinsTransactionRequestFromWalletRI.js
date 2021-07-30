@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletRI model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
   /**
@@ -65,6 +65,14 @@ var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new CreateCoinsTransactionRequestFromWalletRI();
 
+        if (data.hasOwnProperty('callbackSecretKey')) {
+          obj['callbackSecretKey'] = _ApiClient["default"].convertToType(data['callbackSecretKey'], 'String');
+        }
+
+        if (data.hasOwnProperty('callbackUrl')) {
+          obj['callbackUrl'] = _ApiClient["default"].convertToType(data['callbackUrl'], 'String');
+        }
+
         if (data.hasOwnProperty('feePriority')) {
           obj['feePriority'] = _ApiClient["default"].convertToType(data['feePriority'], 'String');
         }
@@ -89,10 +97,22 @@ var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
   return CreateCoinsTransactionRequestFromWalletRI;
 }();
 /**
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * @member {String} callbackSecretKey
+ */
+
+
+CreateCoinsTransactionRequestFromWalletRI.prototype['callbackSecretKey'] = undefined;
+/**
+ * Verified URL for sending callbacks
+ * @member {String} callbackUrl
+ */
+
+CreateCoinsTransactionRequestFromWalletRI.prototype['callbackUrl'] = undefined;
+/**
  * Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
  * @member {module:model/CreateCoinsTransactionRequestFromWalletRI.FeePriorityEnum} feePriority
  */
-
 
 CreateCoinsTransactionRequestFromWalletRI.prototype['feePriority'] = undefined;
 /**

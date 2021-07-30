@@ -12,23 +12,23 @@
  */
 
 import ApiClient from '../ApiClient';
-import CreateCoinsTransactionRequestFromWalletRBDataItemDestinations from './CreateCoinsTransactionRequestFromWalletRBDataItemDestinations';
+import CreateCoinsTransactionRequestFromWalletRBDataItemRecipients from './CreateCoinsTransactionRequestFromWalletRBDataItemRecipients';
 
 /**
  * The CreateCoinsTransactionRequestFromWalletRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRBDataItem
- * @version 1.1.0
+ * @version 1.2.0
  */
 class CreateCoinsTransactionRequestFromWalletRBDataItem {
     /**
      * Constructs a new <code>CreateCoinsTransactionRequestFromWalletRBDataItem</code>.
      * @alias module:model/CreateCoinsTransactionRequestFromWalletRBDataItem
-     * @param destinations {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemDestinations>} Defines the destination of the transaction, whether it is incoming or outgoing.
      * @param feePriority {module:model/CreateCoinsTransactionRequestFromWalletRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
+     * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients>} Defines the destination of the transaction, whether it is incoming or outgoing.
      */
-    constructor(destinations, feePriority) { 
+    constructor(feePriority, recipients) { 
         
-        CreateCoinsTransactionRequestFromWalletRBDataItem.initialize(this, destinations, feePriority);
+        CreateCoinsTransactionRequestFromWalletRBDataItem.initialize(this, feePriority, recipients);
     }
 
     /**
@@ -36,9 +36,9 @@ class CreateCoinsTransactionRequestFromWalletRBDataItem {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, destinations, feePriority) { 
-        obj['destinations'] = destinations;
+    static initialize(obj, feePriority, recipients) { 
         obj['feePriority'] = feePriority;
+        obj['recipients'] = recipients;
     }
 
     /**
@@ -52,11 +52,17 @@ class CreateCoinsTransactionRequestFromWalletRBDataItem {
         if (data) {
             obj = obj || new CreateCoinsTransactionRequestFromWalletRBDataItem();
 
-            if (data.hasOwnProperty('destinations')) {
-                obj['destinations'] = ApiClient.convertToType(data['destinations'], [CreateCoinsTransactionRequestFromWalletRBDataItemDestinations]);
+            if (data.hasOwnProperty('callbackSecretKey')) {
+                obj['callbackSecretKey'] = ApiClient.convertToType(data['callbackSecretKey'], 'String');
+            }
+            if (data.hasOwnProperty('callbackUrl')) {
+                obj['callbackUrl'] = ApiClient.convertToType(data['callbackUrl'], 'String');
             }
             if (data.hasOwnProperty('feePriority')) {
                 obj['feePriority'] = ApiClient.convertToType(data['feePriority'], 'String');
+            }
+            if (data.hasOwnProperty('recipients')) {
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateCoinsTransactionRequestFromWalletRBDataItemRecipients]);
             }
         }
         return obj;
@@ -66,16 +72,28 @@ class CreateCoinsTransactionRequestFromWalletRBDataItem {
 }
 
 /**
- * Defines the destination of the transaction, whether it is incoming or outgoing.
- * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemDestinations>} destinations
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * @member {String} callbackSecretKey
  */
-CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['destinations'] = undefined;
+CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['callbackSecretKey'] = undefined;
+
+/**
+ * Verified URL for sending callbacks
+ * @member {String} callbackUrl
+ */
+CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['callbackUrl'] = undefined;
 
 /**
  * Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
  * @member {module:model/CreateCoinsTransactionRequestFromWalletRBDataItem.FeePriorityEnum} feePriority
  */
 CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['feePriority'] = undefined;
+
+/**
+ * Defines the destination of the transaction, whether it is incoming or outgoing.
+ * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients>} recipients
+ */
+CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['recipients'] = undefined;
 
 
 

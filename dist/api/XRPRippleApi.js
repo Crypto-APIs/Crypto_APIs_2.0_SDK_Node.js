@@ -54,7 +54,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.1.0
+* @version 1.2.0
 */
 var XRPRippleApi = /*#__PURE__*/function () {
   /**
@@ -349,13 +349,14 @@ var XRPRippleApi = /*#__PURE__*/function () {
     }
     /**
      * List XRP (Ripple) Transactions by Address
-     * This endpoint will list XRP transactions by a attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * This endpoint will list XRP transactions by a attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\",  are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @param {module:model/String} opts.transactionType 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListXRPRippleTransactionsByAddressR} and HTTP response
      */
 
@@ -381,7 +382,8 @@ var XRPRippleApi = /*#__PURE__*/function () {
       var queryParams = {
         'context': opts['context'],
         'limit': opts['limit'],
-        'offset': opts['offset']
+        'offset': opts['offset'],
+        'transactionType': opts['transactionType']
       };
       var headerParams = {};
       var formParams = {};
@@ -393,13 +395,14 @@ var XRPRippleApi = /*#__PURE__*/function () {
     }
     /**
      * List XRP (Ripple) Transactions by Address
-     * This endpoint will list XRP transactions by a attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * This endpoint will list XRP transactions by a attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\",  are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @param {module:model/String} opts.transactionType 
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListXRPRippleTransactionsByAddressR}
      */
 
@@ -412,7 +415,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
     }
     /**
      * List XRP (Ripple) Transactions By Block Hash
-     * This endpoint will list transactions by an attribute `blockHash`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * This endpoint will list transactions by an attribute `blockHash`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
@@ -456,7 +459,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
     }
     /**
      * List XRP (Ripple) Transactions By Block Hash
-     * This endpoint will list transactions by an attribute `blockHash`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * This endpoint will list transactions by an attribute `blockHash`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
@@ -475,7 +478,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
     }
     /**
      * List XRP (Ripple) Transactions By Block Height
-     * This endpoint will list transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * This endpoint will list transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Number} blockHeight 
      * @param {Object} opts Optional parameters
@@ -519,7 +522,7 @@ var XRPRippleApi = /*#__PURE__*/function () {
     }
     /**
      * List XRP (Ripple) Transactions By Block Height
-     * This endpoint will list transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * This endpoint will list transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.    Since XRP is a different blockchain than Bitcoin and Ethereum, it isn't unified.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Number} blockHeight 
      * @param {Object} opts Optional parameters

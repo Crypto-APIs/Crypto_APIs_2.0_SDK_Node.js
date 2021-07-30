@@ -17,7 +17,7 @@ import TransactionMinedDataItem from './TransactionMinedDataItem';
 /**
  * The TransactionMinedData model module.
  * @module model/TransactionMinedData
- * @version 1.1.0
+ * @version 1.2.0
  */
 class TransactionMinedData {
     /**

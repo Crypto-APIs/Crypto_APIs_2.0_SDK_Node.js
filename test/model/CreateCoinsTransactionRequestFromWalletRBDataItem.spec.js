@@ -54,14 +54,26 @@
       //expect(instance).to.be.a(Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem);
     });
 
-    it('should have the property destinations (base name: "destinations")', function() {
-      // uncomment below and update the code to test the property destinations
+    it('should have the property callbackSecretKey (base name: "callbackSecretKey")', function() {
+      // uncomment below and update the code to test the property callbackSecretKey
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property callbackUrl (base name: "callbackUrl")', function() {
+      // uncomment below and update the code to test the property callbackUrl
       //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
       //expect(instance).to.be();
     });
 
     it('should have the property feePriority (base name: "feePriority")', function() {
       // uncomment below and update the code to test the property feePriority
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property recipients (base name: "recipients")', function() {
+      // uncomment below and update the code to test the property recipients
       //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
       //expect(instance).to.be();
     });

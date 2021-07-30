@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListOmniTransactionsByBlockHashRI model module.
  * @module model/ListOmniTransactionsByBlockHashRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 var ListOmniTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**

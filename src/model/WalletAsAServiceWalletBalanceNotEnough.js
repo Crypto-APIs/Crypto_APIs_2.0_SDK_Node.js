@@ -17,7 +17,7 @@ import WalletAsAServiceWalletBalanceNotEnoughError from './WalletAsAServiceWalle
 /**
  * The WalletAsAServiceWalletBalanceNotEnough model module.
  * @module model/WalletAsAServiceWalletBalanceNotEnough
- * @version 1.1.0
+ * @version 1.2.0
  */
 class WalletAsAServiceWalletBalanceNotEnough {
     /**

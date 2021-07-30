@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The FeatureMainnetsNotAllowedForPlanError model module.
  * @module model/FeatureMainnetsNotAllowedForPlanError
- * @version 1.1.0
+ * @version 1.2.0
  */
 class FeatureMainnetsNotAllowedForPlanError {
     /**

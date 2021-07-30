@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The FeatureMainnetsNotAllowedForPlan model module.
  * @module model/FeatureMainnetsNotAllowedForPlan
- * @version 1.1.0
+ * @version 1.2.0
  */
 var FeatureMainnetsNotAllowedForPlan = /*#__PURE__*/function () {
   /**

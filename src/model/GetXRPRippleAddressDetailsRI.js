@@ -17,7 +17,7 @@ import GetXRPRippleAddressDetailsRIBalance from './GetXRPRippleAddressDetailsRIB
 /**
  * The GetXRPRippleAddressDetailsRI model module.
  * @module model/GetXRPRippleAddressDetailsRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetXRPRippleAddressDetailsRI {
     /**

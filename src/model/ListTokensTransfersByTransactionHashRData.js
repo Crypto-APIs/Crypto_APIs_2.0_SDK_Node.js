@@ -17,7 +17,7 @@ import ListTokensTransfersByTransactionHashRI from './ListTokensTransfersByTrans
 /**
  * The ListTokensTransfersByTransactionHashRData model module.
  * @module model/ListTokensTransfersByTransactionHashRData
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTokensTransfersByTransactionHashRData {
     /**

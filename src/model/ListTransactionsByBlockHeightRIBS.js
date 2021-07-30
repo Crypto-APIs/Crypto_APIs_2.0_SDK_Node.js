@@ -26,7 +26,7 @@ import ListTransactionsByBlockHeightRIBSL from './ListTransactionsByBlockHeightR
 /**
  * The ListTransactionsByBlockHeightRIBS model module.
  * @module model/ListTransactionsByBlockHeightRIBS
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByBlockHeightRIBS {
     /**

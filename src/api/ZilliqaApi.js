@@ -36,7 +36,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.1.0
+* @version 1.2.0
 */
 export default class ZilliqaApi {
 
@@ -353,7 +353,7 @@ export default class ZilliqaApi {
 
     /**
      * List Zilliqa Transactions by Address
-     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the address parameter.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the address parameter.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} address Defines the specific address of the sender.
      * @param {Object} opts Optional parameters
@@ -401,7 +401,7 @@ export default class ZilliqaApi {
 
     /**
      * List Zilliqa Transactions by Address
-     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the address parameter.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the address parameter.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} address Defines the specific address of the sender.
      * @param {Object} opts Optional parameters
@@ -420,7 +420,7 @@ export default class ZilliqaApi {
 
     /**
      * List Zilliqa Transactions By Block Hash
-     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the block hash parameter.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the block hash parameter.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
@@ -468,7 +468,7 @@ export default class ZilliqaApi {
 
     /**
      * List Zilliqa Transactions By Block Hash
-     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the block hash parameter.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the block hash parameter.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
@@ -487,7 +487,7 @@ export default class ZilliqaApi {
 
     /**
      * List Zilliqa Transactions By Block Height
-     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the block height parameter.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the block height parameter.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Number} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
@@ -535,7 +535,7 @@ export default class ZilliqaApi {
 
     /**
      * List Zilliqa Transactions By Block Height
-     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the block height parameter.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * Through this endpoint customers can list transactions on the Zilliqa blockchain by the block height parameter.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Number} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters

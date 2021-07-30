@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByAddressRIBSLScriptSig model module.
  * @module model/ListTransactionsByAddressRIBSLScriptSig
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByAddressRIBSLScriptSig {
     /**

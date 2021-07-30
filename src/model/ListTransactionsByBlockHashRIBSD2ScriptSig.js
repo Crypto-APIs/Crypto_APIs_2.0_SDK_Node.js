@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSD2ScriptSig model module.
  * @module model/ListTransactionsByBlockHashRIBSD2ScriptSig
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByBlockHashRIBSD2ScriptSig {
     /**

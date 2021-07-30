@@ -22,13 +22,12 @@ import ListXRPRippleTransactionsByAddressRIValue from './ListXRPRippleTransactio
 /**
  * The ListXRPRippleTransactionsByAddressRI model module.
  * @module model/ListXRPRippleTransactionsByAddressRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListXRPRippleTransactionsByAddressRI {
     /**
      * Constructs a new <code>ListXRPRippleTransactionsByAddressRI</code>.
      * @alias module:model/ListXRPRippleTransactionsByAddressRI
-     * @param additionalData {String} Represents any additional data that may be needed.
      * @param index {Number} Represents the index position of the transaction in the block.
      * @param minedInBlockHash {String} Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
@@ -44,9 +43,9 @@ class ListXRPRippleTransactionsByAddressRI {
      * @param receive {module:model/ListXRPRippleTransactionsByAddressRIReceive} 
      * @param value {module:model/ListXRPRippleTransactionsByAddressRIValue} 
      */
-    constructor(additionalData, index, minedInBlockHash, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value) { 
+    constructor(index, minedInBlockHash, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value) { 
         
-        ListXRPRippleTransactionsByAddressRI.initialize(this, additionalData, index, minedInBlockHash, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value);
+        ListXRPRippleTransactionsByAddressRI.initialize(this, index, minedInBlockHash, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value);
     }
 
     /**
@@ -54,8 +53,7 @@ class ListXRPRippleTransactionsByAddressRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, additionalData, index, minedInBlockHash, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value) { 
-        obj['additionalData'] = additionalData;
+    static initialize(obj, index, minedInBlockHash, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value) { 
         obj['index'] = index;
         obj['minedInBlockHash'] = minedInBlockHash;
         obj['minedInBlockHeight'] = minedInBlockHeight;
@@ -83,9 +81,6 @@ class ListXRPRippleTransactionsByAddressRI {
         if (data) {
             obj = obj || new ListXRPRippleTransactionsByAddressRI();
 
-            if (data.hasOwnProperty('additionalData')) {
-                obj['additionalData'] = ApiClient.convertToType(data['additionalData'], 'String');
-            }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
@@ -134,12 +129,6 @@ class ListXRPRippleTransactionsByAddressRI {
 
 
 }
-
-/**
- * Represents any additional data that may be needed.
- * @member {String} additionalData
- */
-ListXRPRippleTransactionsByAddressRI.prototype['additionalData'] = undefined;
 
 /**
  * Represents the index position of the transaction in the block.

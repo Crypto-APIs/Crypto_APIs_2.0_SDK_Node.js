@@ -18,7 +18,7 @@ import ListTransactionsByBlockHeightRIBSD2Vin from './ListTransactionsByBlockHei
 /**
  * The ListTransactionsByBlockHeightRIBSD2 model module.
  * @module model/ListTransactionsByBlockHeightRIBSD2
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByBlockHeightRIBSD2 {
     /**

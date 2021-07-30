@@ -381,6 +381,78 @@ Object.defineProperty(exports, "BlockchainEventsCallbacksLimitReachedError", {
     return _BlockchainEventsCallbacksLimitReachedError["default"];
   }
 });
+Object.defineProperty(exports, "BroadcastLocallySignedTransactionR", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastLocallySignedTransactionR["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastLocallySignedTransactionRB", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastLocallySignedTransactionRB["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastLocallySignedTransactionRBData", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastLocallySignedTransactionRBData["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastLocallySignedTransactionRBDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastLocallySignedTransactionRBDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastLocallySignedTransactionRData", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastLocallySignedTransactionRData["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastLocallySignedTransactionRI", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastLocallySignedTransactionRI["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastTransactionFail", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastTransactionFail["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastTransactionFailData", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastTransactionFailData["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastTransactionFailDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastTransactionFailDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastTransactionSuccess", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastTransactionSuccess["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastTransactionSuccessData", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastTransactionSuccessData["default"];
+  }
+});
+Object.defineProperty(exports, "BroadcastTransactionSuccessDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _BroadcastTransactionSuccessDataItem["default"];
+  }
+});
 Object.defineProperty(exports, "CoinsForwardingAutomationsLimitReached", {
   enumerable: true,
   get: function get() {
@@ -621,10 +693,10 @@ Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRBDataIte
     return _CreateCoinsTransactionRequestFromWalletRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRBDataItemDestinations", {
+Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRBDataItemRecipients", {
   enumerable: true,
   get: function get() {
-    return _CreateCoinsTransactionRequestFromWalletRBDataItemDestinations["default"];
+    return _CreateCoinsTransactionRequestFromWalletRBDataItemRecipients["default"];
   }
 });
 Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRData", {
@@ -687,28 +759,28 @@ Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRIRecip
     return _CreateTokensTransactionRequestFromAddressRIRecipients["default"];
   }
 });
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRIS", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRIS["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRISB", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRISB["default"];
+  }
+});
+Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRISE", {
+  enumerable: true,
+  get: function get() {
+    return _CreateTokensTransactionRequestFromAddressRISE["default"];
+  }
+});
 Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRISenders", {
   enumerable: true,
   get: function get() {
     return _CreateTokensTransactionRequestFromAddressRISenders["default"];
-  }
-});
-Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData", {
-  enumerable: true,
-  get: function get() {
-    return _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData["default"];
-  }
-});
-Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken", {
-  enumerable: true,
-  get: function get() {
-    return _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken["default"];
-  }
-});
-Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token", {
-  enumerable: true,
-  get: function get() {
-    return _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token["default"];
   }
 });
 Object.defineProperty(exports, "DeleteAutomaticCoinsForwardingR", {
@@ -819,40 +891,40 @@ Object.defineProperty(exports, "FeatureMainnetsNotAllowedForPlanError", {
     return _FeatureMainnetsNotAllowedForPlanError["default"];
   }
 });
-Object.defineProperty(exports, "GenerateReceivingAddressR", {
+Object.defineProperty(exports, "GenerateDepositAddressR", {
   enumerable: true,
   get: function get() {
-    return _GenerateReceivingAddressR["default"];
+    return _GenerateDepositAddressR["default"];
   }
 });
-Object.defineProperty(exports, "GenerateReceivingAddressRB", {
+Object.defineProperty(exports, "GenerateDepositAddressRB", {
   enumerable: true,
   get: function get() {
-    return _GenerateReceivingAddressRB["default"];
+    return _GenerateDepositAddressRB["default"];
   }
 });
-Object.defineProperty(exports, "GenerateReceivingAddressRBData", {
+Object.defineProperty(exports, "GenerateDepositAddressRBData", {
   enumerable: true,
   get: function get() {
-    return _GenerateReceivingAddressRBData["default"];
+    return _GenerateDepositAddressRBData["default"];
   }
 });
-Object.defineProperty(exports, "GenerateReceivingAddressRBDataItem", {
+Object.defineProperty(exports, "GenerateDepositAddressRBDataItem", {
   enumerable: true,
   get: function get() {
-    return _GenerateReceivingAddressRBDataItem["default"];
+    return _GenerateDepositAddressRBDataItem["default"];
   }
 });
-Object.defineProperty(exports, "GenerateReceivingAddressRData", {
+Object.defineProperty(exports, "GenerateDepositAddressRData", {
   enumerable: true,
   get: function get() {
-    return _GenerateReceivingAddressRData["default"];
+    return _GenerateDepositAddressRData["default"];
   }
 });
-Object.defineProperty(exports, "GenerateReceivingAddressRI", {
+Object.defineProperty(exports, "GenerateDepositAddressRI", {
   enumerable: true,
   get: function get() {
-    return _GenerateReceivingAddressRI["default"];
+    return _GenerateDepositAddressRI["default"];
   }
 });
 Object.defineProperty(exports, "GetAddressDetailsR", {
@@ -1935,16 +2007,16 @@ Object.defineProperty(exports, "ListAssetsDetailsRILatestRate", {
     return _ListAssetsDetailsRILatestRate["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsRISpecificData", {
+Object.defineProperty(exports, "ListAssetsDetailsRIS", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsRISpecificData["default"];
+    return _ListAssetsDetailsRIS["default"];
   }
 });
-Object.defineProperty(exports, "ListAssetsDetailsRISpecificDataCryptoTypeData", {
+Object.defineProperty(exports, "ListAssetsDetailsRISC", {
   enumerable: true,
   get: function get() {
-    return _ListAssetsDetailsRISpecificDataCryptoTypeData["default"];
+    return _ListAssetsDetailsRISC["default"];
   }
 });
 Object.defineProperty(exports, "ListBlockchainEventsSubscriptionsR", {
@@ -1981,6 +2053,24 @@ Object.defineProperty(exports, "ListCoinsForwardingAutomationsRI", {
   enumerable: true,
   get: function get() {
     return _ListCoinsForwardingAutomationsRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListDepositAddressesR", {
+  enumerable: true,
+  get: function get() {
+    return _ListDepositAddressesR["default"];
+  }
+});
+Object.defineProperty(exports, "ListDepositAddressesRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListDepositAddressesRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListDepositAddressesRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListDepositAddressesRI["default"];
   }
 });
 Object.defineProperty(exports, "ListHDWalletXPubYPubZPubTransactionsR", {
@@ -2149,24 +2239,6 @@ Object.defineProperty(exports, "ListOmniTransactionsByBlockHeightRISenders", {
   enumerable: true,
   get: function get() {
     return _ListOmniTransactionsByBlockHeightRISenders["default"];
-  }
-});
-Object.defineProperty(exports, "ListReceivingAddressesR", {
-  enumerable: true,
-  get: function get() {
-    return _ListReceivingAddressesR["default"];
-  }
-});
-Object.defineProperty(exports, "ListReceivingAddressesRData", {
-  enumerable: true,
-  get: function get() {
-    return _ListReceivingAddressesRData["default"];
-  }
-});
-Object.defineProperty(exports, "ListReceivingAddressesRI", {
-  enumerable: true,
-  get: function get() {
-    return _ListReceivingAddressesRI["default"];
   }
 });
 Object.defineProperty(exports, "ListSupportedAssetsR", {
@@ -3543,22 +3615,22 @@ Object.defineProperty(exports, "TransactionMinedDataItemMinedInBlock", {
     return _TransactionMinedDataItemMinedInBlock["default"];
   }
 });
-Object.defineProperty(exports, "TransactionRequestApprove", {
+Object.defineProperty(exports, "TransactionRequestApproval", {
   enumerable: true,
   get: function get() {
-    return _TransactionRequestApprove["default"];
+    return _TransactionRequestApproval["default"];
   }
 });
-Object.defineProperty(exports, "TransactionRequestApproveData", {
+Object.defineProperty(exports, "TransactionRequestApprovalData", {
   enumerable: true,
   get: function get() {
-    return _TransactionRequestApproveData["default"];
+    return _TransactionRequestApprovalData["default"];
   }
 });
-Object.defineProperty(exports, "TransactionRequestApproveDataItem", {
+Object.defineProperty(exports, "TransactionRequestApprovalDataItem", {
   enumerable: true,
   get: function get() {
-    return _TransactionRequestApproveDataItem["default"];
+    return _TransactionRequestApprovalDataItem["default"];
   }
 });
 Object.defineProperty(exports, "TransactionRequestBroadcasted", {
@@ -3579,6 +3651,24 @@ Object.defineProperty(exports, "TransactionRequestBroadcastedDataItem", {
     return _TransactionRequestBroadcastedDataItem["default"];
   }
 });
+Object.defineProperty(exports, "TransactionRequestFail", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestFail["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestFailData", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestFailData["default"];
+  }
+});
+Object.defineProperty(exports, "TransactionRequestFailDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionRequestFailDataItem["default"];
+  }
+});
 Object.defineProperty(exports, "TransactionRequestMined", {
   enumerable: true,
   get: function get() {
@@ -3591,22 +3681,22 @@ Object.defineProperty(exports, "TransactionRequestMinedData", {
     return _TransactionRequestMinedData["default"];
   }
 });
-Object.defineProperty(exports, "TransactionRequestReject", {
+Object.defineProperty(exports, "TransactionRequestRejection", {
   enumerable: true,
   get: function get() {
-    return _TransactionRequestReject["default"];
+    return _TransactionRequestRejection["default"];
   }
 });
-Object.defineProperty(exports, "TransactionRequestRejectData", {
+Object.defineProperty(exports, "TransactionRequestRejectionData", {
   enumerable: true,
   get: function get() {
-    return _TransactionRequestRejectData["default"];
+    return _TransactionRequestRejectionData["default"];
   }
 });
-Object.defineProperty(exports, "TransactionRequestRejectDataItem", {
+Object.defineProperty(exports, "TransactionRequestRejectionDataItem", {
   enumerable: true,
   get: function get() {
-    return _TransactionRequestRejectDataItem["default"];
+    return _TransactionRequestRejectionDataItem["default"];
   }
 });
 Object.defineProperty(exports, "UnexpectedServerError", {
@@ -3783,6 +3873,12 @@ Object.defineProperty(exports, "ExchangeRatesApi", {
     return _ExchangeRatesApi["default"];
   }
 });
+Object.defineProperty(exports, "FeaturesApi", {
+  enumerable: true,
+  get: function get() {
+    return _FeaturesApi["default"];
+  }
+});
 Object.defineProperty(exports, "GeneratingApi", {
   enumerable: true,
   get: function get() {
@@ -3841,12 +3937,6 @@ Object.defineProperty(exports, "UnifiedEndpointsApi", {
   enumerable: true,
   get: function get() {
     return _UnifiedEndpointsApi["default"];
-  }
-});
-Object.defineProperty(exports, "ValidatingApi", {
-  enumerable: true,
-  get: function get() {
-    return _ValidatingApi["default"];
   }
 });
 Object.defineProperty(exports, "XRPRippleApi", {
@@ -3988,6 +4078,30 @@ var _BlockchainEventsCallbacksLimitReached = _interopRequireDefault(require("./m
 
 var _BlockchainEventsCallbacksLimitReachedError = _interopRequireDefault(require("./model/BlockchainEventsCallbacksLimitReachedError"));
 
+var _BroadcastLocallySignedTransactionR = _interopRequireDefault(require("./model/BroadcastLocallySignedTransactionR"));
+
+var _BroadcastLocallySignedTransactionRB = _interopRequireDefault(require("./model/BroadcastLocallySignedTransactionRB"));
+
+var _BroadcastLocallySignedTransactionRBData = _interopRequireDefault(require("./model/BroadcastLocallySignedTransactionRBData"));
+
+var _BroadcastLocallySignedTransactionRBDataItem = _interopRequireDefault(require("./model/BroadcastLocallySignedTransactionRBDataItem"));
+
+var _BroadcastLocallySignedTransactionRData = _interopRequireDefault(require("./model/BroadcastLocallySignedTransactionRData"));
+
+var _BroadcastLocallySignedTransactionRI = _interopRequireDefault(require("./model/BroadcastLocallySignedTransactionRI"));
+
+var _BroadcastTransactionFail = _interopRequireDefault(require("./model/BroadcastTransactionFail"));
+
+var _BroadcastTransactionFailData = _interopRequireDefault(require("./model/BroadcastTransactionFailData"));
+
+var _BroadcastTransactionFailDataItem = _interopRequireDefault(require("./model/BroadcastTransactionFailDataItem"));
+
+var _BroadcastTransactionSuccess = _interopRequireDefault(require("./model/BroadcastTransactionSuccess"));
+
+var _BroadcastTransactionSuccessData = _interopRequireDefault(require("./model/BroadcastTransactionSuccessData"));
+
+var _BroadcastTransactionSuccessDataItem = _interopRequireDefault(require("./model/BroadcastTransactionSuccessDataItem"));
+
 var _CoinsForwardingAutomationsLimitReached = _interopRequireDefault(require("./model/CoinsForwardingAutomationsLimitReached"));
 
 var _CoinsForwardingAutomationsLimitReachedError = _interopRequireDefault(require("./model/CoinsForwardingAutomationsLimitReachedError"));
@@ -4068,7 +4182,7 @@ var _CreateCoinsTransactionRequestFromWalletRBData = _interopRequireDefault(requ
 
 var _CreateCoinsTransactionRequestFromWalletRBDataItem = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRBDataItem"));
 
-var _CreateCoinsTransactionRequestFromWalletRBDataItemDestinations = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRBDataItemDestinations"));
+var _CreateCoinsTransactionRequestFromWalletRBDataItemRecipients = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients"));
 
 var _CreateCoinsTransactionRequestFromWalletRData = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromWalletRData"));
 
@@ -4090,13 +4204,13 @@ var _CreateTokensTransactionRequestFromAddressRI = _interopRequireDefault(requir
 
 var _CreateTokensTransactionRequestFromAddressRIRecipients = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRIRecipients"));
 
+var _CreateTokensTransactionRequestFromAddressRIS = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRIS"));
+
+var _CreateTokensTransactionRequestFromAddressRISB = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRISB"));
+
+var _CreateTokensTransactionRequestFromAddressRISE = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRISE"));
+
 var _CreateTokensTransactionRequestFromAddressRISenders = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRISenders"));
-
-var _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData"));
-
-var _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken"));
-
-var _CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token"));
 
 var _DeleteAutomaticCoinsForwardingR = _interopRequireDefault(require("./model/DeleteAutomaticCoinsForwardingR"));
 
@@ -4134,17 +4248,17 @@ var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("./model/
 
 var _FeatureMainnetsNotAllowedForPlanError = _interopRequireDefault(require("./model/FeatureMainnetsNotAllowedForPlanError"));
 
-var _GenerateReceivingAddressR = _interopRequireDefault(require("./model/GenerateReceivingAddressR"));
+var _GenerateDepositAddressR = _interopRequireDefault(require("./model/GenerateDepositAddressR"));
 
-var _GenerateReceivingAddressRB = _interopRequireDefault(require("./model/GenerateReceivingAddressRB"));
+var _GenerateDepositAddressRB = _interopRequireDefault(require("./model/GenerateDepositAddressRB"));
 
-var _GenerateReceivingAddressRBData = _interopRequireDefault(require("./model/GenerateReceivingAddressRBData"));
+var _GenerateDepositAddressRBData = _interopRequireDefault(require("./model/GenerateDepositAddressRBData"));
 
-var _GenerateReceivingAddressRBDataItem = _interopRequireDefault(require("./model/GenerateReceivingAddressRBDataItem"));
+var _GenerateDepositAddressRBDataItem = _interopRequireDefault(require("./model/GenerateDepositAddressRBDataItem"));
 
-var _GenerateReceivingAddressRData = _interopRequireDefault(require("./model/GenerateReceivingAddressRData"));
+var _GenerateDepositAddressRData = _interopRequireDefault(require("./model/GenerateDepositAddressRData"));
 
-var _GenerateReceivingAddressRI = _interopRequireDefault(require("./model/GenerateReceivingAddressRI"));
+var _GenerateDepositAddressRI = _interopRequireDefault(require("./model/GenerateDepositAddressRI"));
 
 var _GetAddressDetailsR = _interopRequireDefault(require("./model/GetAddressDetailsR"));
 
@@ -4506,9 +4620,9 @@ var _ListAssetsDetailsRIAssetLogo = _interopRequireDefault(require("./model/List
 
 var _ListAssetsDetailsRILatestRate = _interopRequireDefault(require("./model/ListAssetsDetailsRILatestRate"));
 
-var _ListAssetsDetailsRISpecificData = _interopRequireDefault(require("./model/ListAssetsDetailsRISpecificData"));
+var _ListAssetsDetailsRIS = _interopRequireDefault(require("./model/ListAssetsDetailsRIS"));
 
-var _ListAssetsDetailsRISpecificDataCryptoTypeData = _interopRequireDefault(require("./model/ListAssetsDetailsRISpecificDataCryptoTypeData"));
+var _ListAssetsDetailsRISC = _interopRequireDefault(require("./model/ListAssetsDetailsRISC"));
 
 var _ListBlockchainEventsSubscriptionsR = _interopRequireDefault(require("./model/ListBlockchainEventsSubscriptionsR"));
 
@@ -4521,6 +4635,12 @@ var _ListCoinsForwardingAutomationsR = _interopRequireDefault(require("./model/L
 var _ListCoinsForwardingAutomationsRData = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsRData"));
 
 var _ListCoinsForwardingAutomationsRI = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsRI"));
+
+var _ListDepositAddressesR = _interopRequireDefault(require("./model/ListDepositAddressesR"));
+
+var _ListDepositAddressesRData = _interopRequireDefault(require("./model/ListDepositAddressesRData"));
+
+var _ListDepositAddressesRI = _interopRequireDefault(require("./model/ListDepositAddressesRI"));
 
 var _ListHDWalletXPubYPubZPubTransactionsR = _interopRequireDefault(require("./model/ListHDWalletXPubYPubZPubTransactionsR"));
 
@@ -4577,12 +4697,6 @@ var _ListOmniTransactionsByBlockHeightRIFee = _interopRequireDefault(require("./
 var _ListOmniTransactionsByBlockHeightRIRecipients = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightRIRecipients"));
 
 var _ListOmniTransactionsByBlockHeightRISenders = _interopRequireDefault(require("./model/ListOmniTransactionsByBlockHeightRISenders"));
-
-var _ListReceivingAddressesR = _interopRequireDefault(require("./model/ListReceivingAddressesR"));
-
-var _ListReceivingAddressesRData = _interopRequireDefault(require("./model/ListReceivingAddressesRData"));
-
-var _ListReceivingAddressesRI = _interopRequireDefault(require("./model/ListReceivingAddressesRI"));
 
 var _ListSupportedAssetsR = _interopRequireDefault(require("./model/ListSupportedAssetsR"));
 
@@ -5042,11 +5156,11 @@ var _TransactionMinedDataItem = _interopRequireDefault(require("./model/Transact
 
 var _TransactionMinedDataItemMinedInBlock = _interopRequireDefault(require("./model/TransactionMinedDataItemMinedInBlock"));
 
-var _TransactionRequestApprove = _interopRequireDefault(require("./model/TransactionRequestApprove"));
+var _TransactionRequestApproval = _interopRequireDefault(require("./model/TransactionRequestApproval"));
 
-var _TransactionRequestApproveData = _interopRequireDefault(require("./model/TransactionRequestApproveData"));
+var _TransactionRequestApprovalData = _interopRequireDefault(require("./model/TransactionRequestApprovalData"));
 
-var _TransactionRequestApproveDataItem = _interopRequireDefault(require("./model/TransactionRequestApproveDataItem"));
+var _TransactionRequestApprovalDataItem = _interopRequireDefault(require("./model/TransactionRequestApprovalDataItem"));
 
 var _TransactionRequestBroadcasted = _interopRequireDefault(require("./model/TransactionRequestBroadcasted"));
 
@@ -5054,15 +5168,21 @@ var _TransactionRequestBroadcastedData = _interopRequireDefault(require("./model
 
 var _TransactionRequestBroadcastedDataItem = _interopRequireDefault(require("./model/TransactionRequestBroadcastedDataItem"));
 
+var _TransactionRequestFail = _interopRequireDefault(require("./model/TransactionRequestFail"));
+
+var _TransactionRequestFailData = _interopRequireDefault(require("./model/TransactionRequestFailData"));
+
+var _TransactionRequestFailDataItem = _interopRequireDefault(require("./model/TransactionRequestFailDataItem"));
+
 var _TransactionRequestMined = _interopRequireDefault(require("./model/TransactionRequestMined"));
 
 var _TransactionRequestMinedData = _interopRequireDefault(require("./model/TransactionRequestMinedData"));
 
-var _TransactionRequestReject = _interopRequireDefault(require("./model/TransactionRequestReject"));
+var _TransactionRequestRejection = _interopRequireDefault(require("./model/TransactionRequestRejection"));
 
-var _TransactionRequestRejectData = _interopRequireDefault(require("./model/TransactionRequestRejectData"));
+var _TransactionRequestRejectionData = _interopRequireDefault(require("./model/TransactionRequestRejectionData"));
 
-var _TransactionRequestRejectDataItem = _interopRequireDefault(require("./model/TransactionRequestRejectDataItem"));
+var _TransactionRequestRejectionDataItem = _interopRequireDefault(require("./model/TransactionRequestRejectionDataItem"));
 
 var _UnexpectedServerError = _interopRequireDefault(require("./model/UnexpectedServerError"));
 
@@ -5122,6 +5242,8 @@ var _CreateSubscriptionsForApi = _interopRequireDefault(require("./api/CreateSub
 
 var _ExchangeRatesApi = _interopRequireDefault(require("./api/ExchangeRatesApi"));
 
+var _FeaturesApi = _interopRequireDefault(require("./api/FeaturesApi"));
+
 var _GeneratingApi = _interopRequireDefault(require("./api/GeneratingApi"));
 
 var _InformativeApi = _interopRequireDefault(require("./api/InformativeApi"));
@@ -5141,8 +5263,6 @@ var _TransactionsApi = _interopRequireDefault(require("./api/TransactionsApi"));
 var _UTXOBasedApi = _interopRequireDefault(require("./api/UTXOBasedApi"));
 
 var _UnifiedEndpointsApi = _interopRequireDefault(require("./api/UnifiedEndpointsApi"));
-
-var _ValidatingApi = _interopRequireDefault(require("./api/ValidatingApi"));
 
 var _XRPRippleApi = _interopRequireDefault(require("./api/XRPRippleApi"));
 

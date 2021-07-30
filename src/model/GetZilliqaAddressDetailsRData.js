@@ -17,7 +17,7 @@ import GetZilliqaAddressDetailsRI from './GetZilliqaAddressDetailsRI';
 /**
  * The GetZilliqaAddressDetailsRData model module.
  * @module model/GetZilliqaAddressDetailsRData
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetZilliqaAddressDetailsRData {
     /**

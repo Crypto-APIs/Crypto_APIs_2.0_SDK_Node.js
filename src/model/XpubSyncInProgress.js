@@ -17,7 +17,7 @@ import XpubSyncInProgressError from './XpubSyncInProgressError';
 /**
  * The XpubSyncInProgress model module.
  * @module model/XpubSyncInProgress
- * @version 1.1.0
+ * @version 1.2.0
  */
 class XpubSyncInProgress {
     /**

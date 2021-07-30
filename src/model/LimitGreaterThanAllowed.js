@@ -17,7 +17,7 @@ import LimitGreaterThanAllowedError from './LimitGreaterThanAllowedError';
 /**
  * The LimitGreaterThanAllowed model module.
  * @module model/LimitGreaterThanAllowed
- * @version 1.1.0
+ * @version 1.2.0
  */
 class LimitGreaterThanAllowed {
     /**

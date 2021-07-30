@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddressRI model module.
  * @module model/ListTokensByAddressRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 var ListTokensByAddressRI = /*#__PURE__*/function () {
   /**

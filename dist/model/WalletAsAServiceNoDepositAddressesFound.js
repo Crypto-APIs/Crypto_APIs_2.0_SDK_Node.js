@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The WalletAsAServiceNoDepositAddressesFound model module.
  * @module model/WalletAsAServiceNoDepositAddressesFound
- * @version 1.1.0
+ * @version 1.2.0
  */
 var WalletAsAServiceNoDepositAddressesFound = /*#__PURE__*/function () {
   /**

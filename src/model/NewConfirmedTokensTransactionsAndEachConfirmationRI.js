@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationRI model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 class NewConfirmedTokensTransactionsAndEachConfirmationRI {
     /**

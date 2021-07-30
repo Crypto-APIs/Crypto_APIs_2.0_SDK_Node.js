@@ -54,12 +54,6 @@
       //expect(instance).to.be.a(Cryptoapis.ListXRPRippleTransactionsByAddressRI);
     });
 
-    it('should have the property additionalData (base name: "additionalData")', function() {
-      // uncomment below and update the code to test the property additionalData
-      //var instance = new Cryptoapis.ListXRPRippleTransactionsByAddressRI();
-      //expect(instance).to.be();
-    });
-
     it('should have the property index (base name: "index")', function() {
       // uncomment below and update the code to test the property index
       //var instance = new Cryptoapis.ListXRPRippleTransactionsByAddressRI();

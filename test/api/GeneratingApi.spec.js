@@ -48,10 +48,10 @@
   }
 
   describe('GeneratingApi', function() {
-    describe('generateReceivingAddress', function() {
-      it('should call generateReceivingAddress successfully', function(done) {
-        //uncomment below and update the code to test generateReceivingAddress
-        //instance.generateReceivingAddress(function(error) {
+    describe('generateDepositAddress', function() {
+      it('should call generateDepositAddress successfully', function(done) {
+        //uncomment below and update the code to test generateDepositAddress
+        //instance.generateDepositAddress(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

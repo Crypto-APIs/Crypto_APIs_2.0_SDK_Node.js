@@ -17,7 +17,7 @@ import EndpointNotAllowedForPlanError from './EndpointNotAllowedForPlanError';
 /**
  * The EndpointNotAllowedForPlan model module.
  * @module model/EndpointNotAllowedForPlan
- * @version 1.1.0
+ * @version 1.2.0
  */
 class EndpointNotAllowedForPlan {
     /**

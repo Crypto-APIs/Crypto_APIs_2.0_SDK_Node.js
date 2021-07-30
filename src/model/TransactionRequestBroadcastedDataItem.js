@@ -16,23 +16,24 @@ import ApiClient from '../ApiClient';
 /**
  * The TransactionRequestBroadcastedDataItem model module.
  * @module model/TransactionRequestBroadcastedDataItem
- * @version 1.1.0
+ * @version 1.2.0
  */
 class TransactionRequestBroadcastedDataItem {
     /**
      * Constructs a new <code>TransactionRequestBroadcastedDataItem</code>.
+     * Defines an &#x60;item&#x60; as one result.
      * @alias module:model/TransactionRequestBroadcastedDataItem
-     * @param blockchain {String} 
-     * @param network {String} 
-     * @param requiredApproves {Number} 
-     * @param requiredRejects {Number} 
-     * @param currentApproves {Number} 
-     * @param currentRejects {Number} 
-     * @param transactionId {String} 
+     * @param blockchain {String} Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param network {String} Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param requiredApprovals {Number} The required number of approvals needed to approve the transaction.
+     * @param requiredRejections {Number} The required number of rejections needed to reject the transaction.
+     * @param currentApprovals {Number} The current number of approvals given for the transaction.
+     * @param currentRejections {Number} The current number of rejections given for the transaction.
+     * @param transactionId {String} Defines the unique ID of the specific transaction, i.e. its identification number.
      */
-    constructor(blockchain, network, requiredApproves, requiredRejects, currentApproves, currentRejects, transactionId) { 
+    constructor(blockchain, network, requiredApprovals, requiredRejections, currentApprovals, currentRejections, transactionId) { 
         
-        TransactionRequestBroadcastedDataItem.initialize(this, blockchain, network, requiredApproves, requiredRejects, currentApproves, currentRejects, transactionId);
+        TransactionRequestBroadcastedDataItem.initialize(this, blockchain, network, requiredApprovals, requiredRejections, currentApprovals, currentRejections, transactionId);
     }
 
     /**
@@ -40,13 +41,13 @@ class TransactionRequestBroadcastedDataItem {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, blockchain, network, requiredApproves, requiredRejects, currentApproves, currentRejects, transactionId) { 
+    static initialize(obj, blockchain, network, requiredApprovals, requiredRejections, currentApprovals, currentRejections, transactionId) { 
         obj['blockchain'] = blockchain;
         obj['network'] = network;
-        obj['requiredApproves'] = requiredApproves;
-        obj['requiredRejects'] = requiredRejects;
-        obj['currentApproves'] = currentApproves;
-        obj['currentRejects'] = currentRejects;
+        obj['requiredApprovals'] = requiredApprovals;
+        obj['requiredRejections'] = requiredRejections;
+        obj['currentApprovals'] = currentApprovals;
+        obj['currentRejections'] = currentRejections;
         obj['transactionId'] = transactionId;
     }
 
@@ -67,17 +68,17 @@ class TransactionRequestBroadcastedDataItem {
             if (data.hasOwnProperty('network')) {
                 obj['network'] = ApiClient.convertToType(data['network'], 'String');
             }
-            if (data.hasOwnProperty('requiredApproves')) {
-                obj['requiredApproves'] = ApiClient.convertToType(data['requiredApproves'], 'Number');
+            if (data.hasOwnProperty('requiredApprovals')) {
+                obj['requiredApprovals'] = ApiClient.convertToType(data['requiredApprovals'], 'Number');
             }
-            if (data.hasOwnProperty('requiredRejects')) {
-                obj['requiredRejects'] = ApiClient.convertToType(data['requiredRejects'], 'Number');
+            if (data.hasOwnProperty('requiredRejections')) {
+                obj['requiredRejections'] = ApiClient.convertToType(data['requiredRejections'], 'Number');
             }
-            if (data.hasOwnProperty('currentApproves')) {
-                obj['currentApproves'] = ApiClient.convertToType(data['currentApproves'], 'Number');
+            if (data.hasOwnProperty('currentApprovals')) {
+                obj['currentApprovals'] = ApiClient.convertToType(data['currentApprovals'], 'Number');
             }
-            if (data.hasOwnProperty('currentRejects')) {
-                obj['currentRejects'] = ApiClient.convertToType(data['currentRejects'], 'Number');
+            if (data.hasOwnProperty('currentRejections')) {
+                obj['currentRejections'] = ApiClient.convertToType(data['currentRejections'], 'Number');
             }
             if (data.hasOwnProperty('transactionId')) {
                 obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
@@ -90,36 +91,43 @@ class TransactionRequestBroadcastedDataItem {
 }
 
 /**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
  * @member {String} blockchain
  */
 TransactionRequestBroadcastedDataItem.prototype['blockchain'] = undefined;
 
 /**
+ * Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
  * @member {String} network
  */
 TransactionRequestBroadcastedDataItem.prototype['network'] = undefined;
 
 /**
- * @member {Number} requiredApproves
+ * The required number of approvals needed to approve the transaction.
+ * @member {Number} requiredApprovals
  */
-TransactionRequestBroadcastedDataItem.prototype['requiredApproves'] = undefined;
+TransactionRequestBroadcastedDataItem.prototype['requiredApprovals'] = undefined;
 
 /**
- * @member {Number} requiredRejects
+ * The required number of rejections needed to reject the transaction.
+ * @member {Number} requiredRejections
  */
-TransactionRequestBroadcastedDataItem.prototype['requiredRejects'] = undefined;
+TransactionRequestBroadcastedDataItem.prototype['requiredRejections'] = undefined;
 
 /**
- * @member {Number} currentApproves
+ * The current number of approvals given for the transaction.
+ * @member {Number} currentApprovals
  */
-TransactionRequestBroadcastedDataItem.prototype['currentApproves'] = undefined;
+TransactionRequestBroadcastedDataItem.prototype['currentApprovals'] = undefined;
 
 /**
- * @member {Number} currentRejects
+ * The current number of rejections given for the transaction.
+ * @member {Number} currentRejections
  */
-TransactionRequestBroadcastedDataItem.prototype['currentRejects'] = undefined;
+TransactionRequestBroadcastedDataItem.prototype['currentRejections'] = undefined;
 
 /**
+ * Defines the unique ID of the specific transaction, i.e. its identification number.
  * @member {String} transactionId
  */
 TransactionRequestBroadcastedDataItem.prototype['transactionId'] = undefined;

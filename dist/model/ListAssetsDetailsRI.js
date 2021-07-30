@@ -11,7 +11,7 @@ var _ListAssetsDetailsRIAssetLogo = _interopRequireDefault(require("./ListAssets
 
 var _ListAssetsDetailsRILatestRate = _interopRequireDefault(require("./ListAssetsDetailsRILatestRate"));
 
-var _ListAssetsDetailsRISpecificData = _interopRequireDefault(require("./ListAssetsDetailsRISpecificData"));
+var _ListAssetsDetailsRIS = _interopRequireDefault(require("./ListAssetsDetailsRIS"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAssetsDetailsRI model module.
  * @module model/ListAssetsDetailsRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 var ListAssetsDetailsRI = /*#__PURE__*/function () {
   /**
@@ -37,7 +37,7 @@ var ListAssetsDetailsRI = /*#__PURE__*/function () {
    * @param assetSymbol {String} Specifies the asset's unique symbol in the Crypto APIs listings.
    * @param assetType {module:model/ListAssetsDetailsRI.AssetTypeEnum} Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
    * @param latestRate {module:model/ListAssetsDetailsRILatestRate} 
-   * @param specificData {module:model/ListAssetsDetailsRISpecificData} 
+   * @param specificData {module:model/ListAssetsDetailsRIS} 
    */
   function ListAssetsDetailsRI(assetId, assetLogo, assetName, assetOriginalSymbol, assetSymbol, assetType, latestRate, specificData) {
     _classCallCheck(this, ListAssetsDetailsRI);
@@ -110,7 +110,7 @@ var ListAssetsDetailsRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('specificData')) {
-          obj['specificData'] = _ListAssetsDetailsRISpecificData["default"].constructFromObject(data['specificData']);
+          obj['specificData'] = _ListAssetsDetailsRIS["default"].constructFromObject(data['specificData']);
         }
       }
 
@@ -168,7 +168,7 @@ ListAssetsDetailsRI.prototype['latestRate'] = undefined;
 
 ListAssetsDetailsRI.prototype['slug'] = undefined;
 /**
- * @member {module:model/ListAssetsDetailsRISpecificData} specificData
+ * @member {module:model/ListAssetsDetailsRIS} specificData
  */
 
 ListAssetsDetailsRI.prototype['specificData'] = undefined;

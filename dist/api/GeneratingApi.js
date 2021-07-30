@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GenerateReceivingAddressR = _interopRequireDefault(require("../model/GenerateReceivingAddressR"));
+var _GenerateDepositAddressR = _interopRequireDefault(require("../model/GenerateDepositAddressR"));
 
-var _GenerateReceivingAddressRB = _interopRequireDefault(require("../model/GenerateReceivingAddressRB"));
+var _GenerateDepositAddressRB = _interopRequireDefault(require("../model/GenerateDepositAddressRB"));
 
 var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
 
@@ -42,7 +42,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.1.0
+* @version 1.2.0
 */
 var GeneratingApi = /*#__PURE__*/function () {
   /**
@@ -58,36 +58,36 @@ var GeneratingApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
-   * Generate Receiving Address
+   * Generate Deposit Address
    * Through this endpoint customers can generate a new Receiving/Deposit Addresses into their Wallet.
    * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
    * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
    * @param {String} walletId Represents the unique ID of the specific Wallet.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-   * @param {module:model/GenerateReceivingAddressRB} opts.generateReceivingAddressRB 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GenerateReceivingAddressR} and HTTP response
+   * @param {module:model/GenerateDepositAddressRB} opts.generateDepositAddressRB 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GenerateDepositAddressR} and HTTP response
    */
 
 
   _createClass(GeneratingApi, [{
-    key: "generateReceivingAddressWithHttpInfo",
-    value: function generateReceivingAddressWithHttpInfo(blockchain, network, walletId, opts) {
+    key: "generateDepositAddressWithHttpInfo",
+    value: function generateDepositAddressWithHttpInfo(blockchain, network, walletId, opts) {
       opts = opts || {};
-      var postBody = opts['generateReceivingAddressRB']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['generateDepositAddressRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling generateReceivingAddress");
+        throw new Error("Missing the required parameter 'blockchain' when calling generateDepositAddress");
       } // verify the required parameter 'network' is set
 
 
       if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling generateReceivingAddress");
+        throw new Error("Missing the required parameter 'network' when calling generateDepositAddress");
       } // verify the required parameter 'walletId' is set
 
 
       if (walletId === undefined || walletId === null) {
-        throw new Error("Missing the required parameter 'walletId' when calling generateReceivingAddress");
+        throw new Error("Missing the required parameter 'walletId' when calling generateDepositAddress");
       }
 
       var pathParams = {
@@ -103,25 +103,25 @@ var GeneratingApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _GenerateReceivingAddressR["default"];
+      var returnType = _GenerateDepositAddressR["default"];
       return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Generate Receiving Address
+     * Generate Deposit Address
      * Through this endpoint customers can generate a new Receiving/Deposit Addresses into their Wallet.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} walletId Represents the unique ID of the specific Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/GenerateReceivingAddressRB} opts.generateReceivingAddressRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GenerateReceivingAddressR}
+     * @param {module:model/GenerateDepositAddressRB} opts.generateDepositAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GenerateDepositAddressR}
      */
 
   }, {
-    key: "generateReceivingAddress",
-    value: function generateReceivingAddress(blockchain, network, walletId, opts) {
-      return this.generateReceivingAddressWithHttpInfo(blockchain, network, walletId, opts).then(function (response_and_data) {
+    key: "generateDepositAddress",
+    value: function generateDepositAddress(blockchain, network, walletId, opts) {
+      return this.generateDepositAddressWithHttpInfo(blockchain, network, walletId, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

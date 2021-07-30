@@ -17,7 +17,7 @@ import CreateTokensTransactionRequestFromAddressRData from './CreateTokensTransa
 /**
  * The CreateTokensTransactionRequestFromAddressR model module.
  * @module model/CreateTokensTransactionRequestFromAddressR
- * @version 1.1.0
+ * @version 1.2.0
  */
 class CreateTokensTransactionRequestFromAddressR {
     /**

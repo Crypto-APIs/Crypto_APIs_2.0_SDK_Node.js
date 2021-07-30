@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokensRData model module.
  * @module model/ListSupportedTokensRData
- * @version 1.1.0
+ * @version 1.2.0
  */
 var ListSupportedTokensRData = /*#__PURE__*/function () {
   /**

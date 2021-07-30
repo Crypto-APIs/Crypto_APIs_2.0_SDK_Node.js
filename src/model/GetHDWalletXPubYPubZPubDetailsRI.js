@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetHDWalletXPubYPubZPubDetailsRI model module.
  * @module model/GetHDWalletXPubYPubZPubDetailsRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetHDWalletXPubYPubZPubDetailsRI {
     /**

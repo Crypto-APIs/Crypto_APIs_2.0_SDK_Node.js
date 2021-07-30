@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   /**
@@ -67,6 +67,14 @@ var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new CreateCoinsTransactionRequestFromAddressRI();
 
+        if (data.hasOwnProperty('callbackSecretKey')) {
+          obj['callbackSecretKey'] = _ApiClient["default"].convertToType(data['callbackSecretKey'], 'String');
+        }
+
+        if (data.hasOwnProperty('callbackUrl')) {
+          obj['callbackUrl'] = _ApiClient["default"].convertToType(data['callbackUrl'], 'String');
+        }
+
         if (data.hasOwnProperty('feePriority')) {
           obj['feePriority'] = _ApiClient["default"].convertToType(data['feePriority'], 'String');
         }
@@ -91,10 +99,22 @@ var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   return CreateCoinsTransactionRequestFromAddressRI;
 }();
 /**
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * @member {String} callbackSecretKey
+ */
+
+
+CreateCoinsTransactionRequestFromAddressRI.prototype['callbackSecretKey'] = undefined;
+/**
+ * Verified URL for sending callbacks
+ * @member {String} callbackUrl
+ */
+
+CreateCoinsTransactionRequestFromAddressRI.prototype['callbackUrl'] = undefined;
+/**
  * Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
  * @member {module:model/CreateCoinsTransactionRequestFromAddressRI.FeePriorityEnum} feePriority
  */
-
 
 CreateCoinsTransactionRequestFromAddressRI.prototype['feePriority'] = undefined;
 /**

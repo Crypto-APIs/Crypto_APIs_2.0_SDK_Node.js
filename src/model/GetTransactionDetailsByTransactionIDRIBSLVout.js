@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSLScriptPubKey from './GetTransact
 /**
  * The GetTransactionDetailsByTransactionIDRIBSLVout model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSLVout
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetTransactionDetailsByTransactionIDRIBSLVout {
     /**

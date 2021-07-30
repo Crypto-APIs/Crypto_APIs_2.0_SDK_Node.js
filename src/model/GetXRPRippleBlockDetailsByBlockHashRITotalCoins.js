@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRITotalCoins model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetXRPRippleBlockDetailsByBlockHashRITotalCoins {
     /**

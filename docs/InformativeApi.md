@@ -5,7 +5,7 @@ All URIs are relative to *https://rest.cryptoapis.io/v2*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getWalletAssetDetails**](InformativeApi.md#getWalletAssetDetails) | **GET** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network} | Get Wallet Asset Details
-[**listReceivingAddresses**](InformativeApi.md#listReceivingAddresses) | **GET** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses | List Receiving Addresses
+[**listDepositAddresses**](InformativeApi.md#listDepositAddresses) | **GET** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses | List Deposit Addresses
 [**listSupportedTokens**](InformativeApi.md#listSupportedTokens) | **GET** /wallet-as-a-service/info/{blockchain}/{network}/supported-tokens | List Supported Tokens
 
 
@@ -68,13 +68,13 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## listReceivingAddresses
+## listDepositAddresses
 
-> ListReceivingAddressesR listReceivingAddresses(blockchain, network, walletId, opts)
+> ListDepositAddressesR listDepositAddresses(blockchain, network, walletId, opts)
 
-List Receiving Addresses
+List Deposit Addresses
 
-Through this endpoint customers can pull a list of Deposit Addresses they have already generated. Deposit addresses are listed with their specific details such as unique ID.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+Through this endpoint customers can pull a list of Deposit/Receiving Addresses they have already generated.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
 
 ### Example
 
@@ -94,7 +94,7 @@ let walletId = 60c9d9921c38030006675ff6; // String | Represents the unique ID of
 let opts = {
   'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
-apiInstance.listReceivingAddresses(blockchain, network, walletId, opts).then((data) => {
+apiInstance.listDepositAddresses(blockchain, network, walletId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -114,7 +114,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListReceivingAddressesR**](ListReceivingAddressesR.md)
+[**ListDepositAddressesR**](ListDepositAddressesR.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 
 List Supported Tokens
 
-Through this endpoint customers can obtain information on multiple tokens at once.     {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+Through this endpoint customers can obtain information on multiple tokens at once.
 
 ### Example
 

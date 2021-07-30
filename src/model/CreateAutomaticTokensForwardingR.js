@@ -17,7 +17,7 @@ import CreateAutomaticTokensForwardingRData from './CreateAutomaticTokensForward
 /**
  * The CreateAutomaticTokensForwardingR model module.
  * @module model/CreateAutomaticTokensForwardingR
- * @version 1.1.0
+ * @version 1.2.0
  */
 class CreateAutomaticTokensForwardingR {
     /**

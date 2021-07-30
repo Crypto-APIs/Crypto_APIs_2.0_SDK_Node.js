@@ -23,7 +23,7 @@ import GetLatestMinedBlockRIBSL from './GetLatestMinedBlockRIBSL';
 /**
  * The GetLatestMinedBlockRIBS model module.
  * @module model/GetLatestMinedBlockRIBS
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetLatestMinedBlockRIBS {
     /**

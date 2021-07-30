@@ -14,12 +14,12 @@
 import ApiClient from '../ApiClient';
 import ListAssetsDetailsRIAssetLogo from './ListAssetsDetailsRIAssetLogo';
 import ListAssetsDetailsRILatestRate from './ListAssetsDetailsRILatestRate';
-import ListAssetsDetailsRISpecificData from './ListAssetsDetailsRISpecificData';
+import ListAssetsDetailsRIS from './ListAssetsDetailsRIS';
 
 /**
  * The ListAssetsDetailsRI model module.
  * @module model/ListAssetsDetailsRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListAssetsDetailsRI {
     /**
@@ -32,7 +32,7 @@ class ListAssetsDetailsRI {
      * @param assetSymbol {String} Specifies the asset's unique symbol in the Crypto APIs listings.
      * @param assetType {module:model/ListAssetsDetailsRI.AssetTypeEnum} Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
      * @param latestRate {module:model/ListAssetsDetailsRILatestRate} 
-     * @param specificData {module:model/ListAssetsDetailsRISpecificData} 
+     * @param specificData {module:model/ListAssetsDetailsRIS} 
      */
     constructor(assetId, assetLogo, assetName, assetOriginalSymbol, assetSymbol, assetType, latestRate, specificData) { 
         
@@ -91,7 +91,7 @@ class ListAssetsDetailsRI {
                 obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
             }
             if (data.hasOwnProperty('specificData')) {
-                obj['specificData'] = ListAssetsDetailsRISpecificData.constructFromObject(data['specificData']);
+                obj['specificData'] = ListAssetsDetailsRIS.constructFromObject(data['specificData']);
             }
         }
         return obj;
@@ -147,7 +147,7 @@ ListAssetsDetailsRI.prototype['latestRate'] = undefined;
 ListAssetsDetailsRI.prototype['slug'] = undefined;
 
 /**
- * @member {module:model/ListAssetsDetailsRISpecificData} specificData
+ * @member {module:model/ListAssetsDetailsRIS} specificData
  */
 ListAssetsDetailsRI.prototype['specificData'] = undefined;
 

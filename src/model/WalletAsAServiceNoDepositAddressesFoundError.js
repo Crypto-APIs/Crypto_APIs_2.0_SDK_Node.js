@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The WalletAsAServiceNoDepositAddressesFoundError model module.
  * @module model/WalletAsAServiceNoDepositAddressesFoundError
- * @version 1.1.0
+ * @version 1.2.0
  */
 class WalletAsAServiceNoDepositAddressesFoundError {
     /**

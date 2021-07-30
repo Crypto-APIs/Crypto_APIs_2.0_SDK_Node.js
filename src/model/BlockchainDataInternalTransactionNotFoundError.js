@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The BlockchainDataInternalTransactionNotFoundError model module.
  * @module model/BlockchainDataInternalTransactionNotFoundError
- * @version 1.1.0
+ * @version 1.2.0
  */
 class BlockchainDataInternalTransactionNotFoundError {
     /**

@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsAndEachConfirmationRBData from './NewConf
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationRB model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationRB
- * @version 1.1.0
+ * @version 1.2.0
  */
 class NewConfirmedInternalTransactionsAndEachConfirmationRB {
     /**

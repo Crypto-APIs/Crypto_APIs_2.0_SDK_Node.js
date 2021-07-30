@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByBlockHashRData from './ListZilliqaTransactionsBy
 /**
  * The ListZilliqaTransactionsByBlockHashR model module.
  * @module model/ListZilliqaTransactionsByBlockHashR
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListZilliqaTransactionsByBlockHashR {
     /**

@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The UnsupportedMediaTypeError model module.
  * @module model/UnsupportedMediaTypeError
- * @version 1.1.0
+ * @version 1.2.0
  */
 class UnsupportedMediaTypeError {
     /**

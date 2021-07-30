@@ -17,7 +17,7 @@ import GetZilliqaBlockDetailsByBlockHeightRI from './GetZilliqaBlockDetailsByBlo
 /**
  * The GetZilliqaBlockDetailsByBlockHeightRData model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeightRData
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetZilliqaBlockDetailsByBlockHeightRData {
     /**

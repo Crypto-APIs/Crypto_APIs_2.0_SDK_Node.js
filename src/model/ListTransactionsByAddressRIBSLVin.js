@@ -17,7 +17,7 @@ import ListTransactionsByAddressRIBSLScriptSig from './ListTransactionsByAddress
 /**
  * The ListTransactionsByAddressRIBSLVin model module.
  * @module model/ListTransactionsByAddressRIBSLVin
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByAddressRIBSLVin {
     /**

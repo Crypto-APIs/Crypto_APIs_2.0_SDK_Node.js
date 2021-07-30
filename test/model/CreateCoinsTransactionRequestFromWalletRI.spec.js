@@ -54,6 +54,18 @@
       //expect(instance).to.be.a(Cryptoapis.CreateCoinsTransactionRequestFromWalletRI);
     });
 
+    it('should have the property callbackSecretKey (base name: "callbackSecretKey")', function() {
+      // uncomment below and update the code to test the property callbackSecretKey
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property callbackUrl (base name: "callbackUrl")', function() {
+      // uncomment below and update the code to test the property callbackUrl
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property feePriority (base name: "feePriority")', function() {
       // uncomment below and update the code to test the property feePriority
       //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();

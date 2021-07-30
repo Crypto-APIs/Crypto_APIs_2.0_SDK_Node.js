@@ -17,7 +17,7 @@ import BlockchainEventsCallbacksLimitReachedError from './BlockchainEventsCallba
 /**
  * The BlockchainEventsCallbacksLimitReached model module.
  * @module model/BlockchainEventsCallbacksLimitReached
- * @version 1.1.0
+ * @version 1.2.0
  */
 class BlockchainEventsCallbacksLimitReached {
     /**

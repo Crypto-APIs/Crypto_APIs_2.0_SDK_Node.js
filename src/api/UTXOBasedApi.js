@@ -32,7 +32,7 @@ import XpubSyncInProgress from '../model/XpubSyncInProgress';
 /**
 * UTXOBased service.
 * @module api/UTXOBasedApi
-* @version 1.1.0
+* @version 1.2.0
 */
 export default class UTXOBasedApi {
 
@@ -122,7 +122,7 @@ export default class UTXOBasedApi {
 
     /**
      * List HD Wallet (xPub, yPub, zPub) Transactions
-     * This endpoint will list HD Wallet transactions.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * This endpoint will list HD Wallet transactions.
      * @param {module:model/String} blockchain Represents the specific blockchain.
      * @param {String} extendedPublicKey Defines the master public key (xPub) of the account.
      * @param {module:model/String} network Represents the specific network.
@@ -178,7 +178,7 @@ export default class UTXOBasedApi {
 
     /**
      * List HD Wallet (xPub, yPub, zPub) Transactions
-     * This endpoint will list HD Wallet transactions.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * This endpoint will list HD Wallet transactions.
      * @param {module:model/String} blockchain Represents the specific blockchain.
      * @param {String} extendedPublicKey Defines the master public key (xPub) of the account.
      * @param {module:model/String} network Represents the specific network.

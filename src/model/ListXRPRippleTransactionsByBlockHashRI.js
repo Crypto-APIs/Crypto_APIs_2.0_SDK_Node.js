@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByBlockHashRIValue from './ListXRPRippleTransact
 /**
  * The ListXRPRippleTransactionsByBlockHashRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListXRPRippleTransactionsByBlockHashRI {
     /**

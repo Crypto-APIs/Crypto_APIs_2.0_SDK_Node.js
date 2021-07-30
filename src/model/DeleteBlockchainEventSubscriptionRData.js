@@ -17,7 +17,7 @@ import DeleteBlockchainEventSubscriptionRI from './DeleteBlockchainEventSubscrip
 /**
  * The DeleteBlockchainEventSubscriptionRData model module.
  * @module model/DeleteBlockchainEventSubscriptionRData
- * @version 1.1.0
+ * @version 1.2.0
  */
 class DeleteBlockchainEventSubscriptionRData {
     /**

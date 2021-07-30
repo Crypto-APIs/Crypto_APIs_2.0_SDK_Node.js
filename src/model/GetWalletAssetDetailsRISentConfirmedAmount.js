@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletAssetDetailsRISentConfirmedAmount model module.
  * @module model/GetWalletAssetDetailsRISentConfirmedAmount
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetWalletAssetDetailsRISentConfirmedAmount {
     /**

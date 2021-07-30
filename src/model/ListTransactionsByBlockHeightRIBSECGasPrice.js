@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHeightRIBSECGasPrice model module.
  * @module model/ListTransactionsByBlockHeightRIBSECGasPrice
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByBlockHeightRIBSECGasPrice {
     /**

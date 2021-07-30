@@ -17,7 +17,7 @@ import UriNotFoundError from './UriNotFoundError';
 /**
  * The UriNotFound model module.
  * @module model/UriNotFound
- * @version 1.1.0
+ * @version 1.2.0
  */
 class UriNotFound {
     /**

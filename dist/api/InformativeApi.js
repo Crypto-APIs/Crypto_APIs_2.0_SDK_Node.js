@@ -21,7 +21,7 @@ var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPaginat
 
 var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
 
-var _ListReceivingAddressesR = _interopRequireDefault(require("../model/ListReceivingAddressesR"));
+var _ListDepositAddressesR = _interopRequireDefault(require("../model/ListDepositAddressesR"));
 
 var _ListSupportedTokensR = _interopRequireDefault(require("../model/ListSupportedTokensR"));
 
@@ -44,7 +44,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.1.0
+* @version 1.2.0
 */
 var InformativeApi = /*#__PURE__*/function () {
   /**
@@ -126,34 +126,34 @@ var InformativeApi = /*#__PURE__*/function () {
       });
     }
     /**
-     * List Receiving Addresses
-     * Through this endpoint customers can pull a list of Deposit Addresses they have already generated. Deposit addresses are listed with their specific details such as unique ID.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * List Deposit Addresses
+     * Through this endpoint customers can pull a list of Deposit/Receiving Addresses they have already generated.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} walletId Represents the unique ID of the specific Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListReceivingAddressesR} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListDepositAddressesR} and HTTP response
      */
 
   }, {
-    key: "listReceivingAddressesWithHttpInfo",
-    value: function listReceivingAddressesWithHttpInfo(blockchain, network, walletId, opts) {
+    key: "listDepositAddressesWithHttpInfo",
+    value: function listDepositAddressesWithHttpInfo(blockchain, network, walletId, opts) {
       opts = opts || {};
       var postBody = null; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling listReceivingAddresses");
+        throw new Error("Missing the required parameter 'blockchain' when calling listDepositAddresses");
       } // verify the required parameter 'network' is set
 
 
       if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling listReceivingAddresses");
+        throw new Error("Missing the required parameter 'network' when calling listDepositAddresses");
       } // verify the required parameter 'walletId' is set
 
 
       if (walletId === undefined || walletId === null) {
-        throw new Error("Missing the required parameter 'walletId' when calling listReceivingAddresses");
+        throw new Error("Missing the required parameter 'walletId' when calling listDepositAddresses");
       }
 
       var pathParams = {
@@ -169,30 +169,30 @@ var InformativeApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListReceivingAddressesR["default"];
+      var returnType = _ListDepositAddressesR["default"];
       return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * List Receiving Addresses
-     * Through this endpoint customers can pull a list of Deposit Addresses they have already generated. Deposit addresses are listed with their specific details such as unique ID.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * List Deposit Addresses
+     * Through this endpoint customers can pull a list of Deposit/Receiving Addresses they have already generated.    {note}Please note that listing data from the same type will apply pagination on the results.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {String} walletId Represents the unique ID of the specific Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListReceivingAddressesR}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListDepositAddressesR}
      */
 
   }, {
-    key: "listReceivingAddresses",
-    value: function listReceivingAddresses(blockchain, network, walletId, opts) {
-      return this.listReceivingAddressesWithHttpInfo(blockchain, network, walletId, opts).then(function (response_and_data) {
+    key: "listDepositAddresses",
+    value: function listDepositAddresses(blockchain, network, walletId, opts) {
+      return this.listDepositAddressesWithHttpInfo(blockchain, network, walletId, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }
     /**
      * List Supported Tokens
-     * Through this endpoint customers can obtain information on multiple tokens at once.     {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * Through this endpoint customers can obtain information on multiple tokens at once.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters
@@ -236,7 +236,7 @@ var InformativeApi = /*#__PURE__*/function () {
     }
     /**
      * List Supported Tokens
-     * Through this endpoint customers can obtain information on multiple tokens at once.     {note}Please note that listing data from the same type will apply pagination on the results.{/note}
+     * Through this endpoint customers can obtain information on multiple tokens at once.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
      * @param {Object} opts Optional parameters

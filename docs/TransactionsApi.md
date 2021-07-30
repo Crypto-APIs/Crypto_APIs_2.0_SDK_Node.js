@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createCoinsTransactionRequestFromAddress**](TransactionsApi.md#createCoinsTransactionRequestFromAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/transaction-requests | Create Coins Transaction Request from Address
 [**createCoinsTransactionRequestFromWallet**](TransactionsApi.md#createCoinsTransactionRequestFromWallet) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/transaction-requests | Create Coins Transaction Request from Wallet
-[**createTokensTransactionRequestFromAddress**](TransactionsApi.md#createTokensTransactionRequestFromAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/token-transaction-requests | Create Tokens Transaction Request from Address
+[**createTokensTransactionRequestFromAddress**](TransactionsApi.md#createTokensTransactionRequestFromAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/token-transaction-requests | Create Tokens Transaction Request from Address
 
 
 
@@ -134,11 +134,11 @@ Name | Type | Description  | Notes
 
 ## createTokensTransactionRequestFromAddress
 
-> CreateTokensTransactionRequestFromAddressR createTokensTransactionRequestFromAddress(address, blockchain, network, walletId, opts)
+> CreateTokensTransactionRequestFromAddressR createTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts)
 
 Create Tokens Transaction Request from Address
 
-Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}
+Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
 
 ### Example
 
@@ -152,15 +152,15 @@ ApiKey.apiKey = 'YOUR API KEY';
 //ApiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new Cryptoapis.TransactionsApi();
-let address = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defines the specific source address for the transaction.
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = "'mainnet'"; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+let senderAddress = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defines the specific source address for the transaction.
 let walletId = 609e221675d04500068718dc; // String | Defines the unique ID of the Wallet.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createTokensTransactionRequestFromAddressRB': new Cryptoapis.CreateTokensTransactionRequestFromAddressRB() // CreateTokensTransactionRequestFromAddressRB | 
 };
-apiInstance.createTokensTransactionRequestFromAddress(address, blockchain, network, walletId, opts).then((data) => {
+apiInstance.createTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -173,9 +173,9 @@ apiInstance.createTokensTransactionRequestFromAddress(address, blockchain, netwo
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **address** | **String**| Defines the specific source address for the transaction. | 
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | [default to &#39;ethereum&#39;]
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | [default to &#39;mainnet&#39;]
+ **senderAddress** | **String**| Defines the specific source address for the transaction. | 
  **walletId** | **String**| Defines the unique ID of the Wallet. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
  **createTokensTransactionRequestFromAddressRB** | [**CreateTokensTransactionRequestFromAddressRB**](CreateTokensTransactionRequestFromAddressRB.md)|  | [optional] 

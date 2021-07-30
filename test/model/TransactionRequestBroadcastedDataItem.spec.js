@@ -66,26 +66,26 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property requiredApproves (base name: "requiredApproves")', function() {
-      // uncomment below and update the code to test the property requiredApproves
+    it('should have the property requiredApprovals (base name: "requiredApprovals")', function() {
+      // uncomment below and update the code to test the property requiredApprovals
       //var instance = new Cryptoapis.TransactionRequestBroadcastedDataItem();
       //expect(instance).to.be();
     });
 
-    it('should have the property requiredRejects (base name: "requiredRejects")', function() {
-      // uncomment below and update the code to test the property requiredRejects
+    it('should have the property requiredRejections (base name: "requiredRejections")', function() {
+      // uncomment below and update the code to test the property requiredRejections
       //var instance = new Cryptoapis.TransactionRequestBroadcastedDataItem();
       //expect(instance).to.be();
     });
 
-    it('should have the property currentApproves (base name: "currentApproves")', function() {
-      // uncomment below and update the code to test the property currentApproves
+    it('should have the property currentApprovals (base name: "currentApprovals")', function() {
+      // uncomment below and update the code to test the property currentApprovals
       //var instance = new Cryptoapis.TransactionRequestBroadcastedDataItem();
       //expect(instance).to.be();
     });
 
-    it('should have the property currentRejects (base name: "currentRejects")', function() {
-      // uncomment below and update the code to test the property currentRejects
+    it('should have the property currentRejections (base name: "currentRejections")', function() {
+      // uncomment below and update the code to test the property currentRejections
       //var instance = new Cryptoapis.TransactionRequestBroadcastedDataItem();
       //expect(instance).to.be();
     });

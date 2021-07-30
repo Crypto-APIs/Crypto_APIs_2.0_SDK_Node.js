@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHeightRIBSDScriptSig model module.
  * @module model/ListTransactionsByBlockHeightRIBSDScriptSig
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByBlockHeightRIBSDScriptSig {
     /**

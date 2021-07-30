@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsRI model module.
  * @module model/NewConfirmedCoinsTransactionsRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 var NewConfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import ListUnconfirmedOmniTransactionsByPropertyIDRI from './ListUnconfirmedOmni
 /**
  * The ListUnconfirmedOmniTransactionsByPropertyIDRData model module.
  * @module model/ListUnconfirmedOmniTransactionsByPropertyIDRData
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListUnconfirmedOmniTransactionsByPropertyIDRData {
     /**

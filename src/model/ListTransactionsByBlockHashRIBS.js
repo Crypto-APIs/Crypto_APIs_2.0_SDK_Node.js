@@ -26,7 +26,7 @@ import ListTransactionsByBlockHashRIBSL from './ListTransactionsByBlockHashRIBSL
 /**
  * The ListTransactionsByBlockHashRIBS model module.
  * @module model/ListTransactionsByBlockHashRIBS
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByBlockHashRIBS {
     /**

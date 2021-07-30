@@ -17,7 +17,7 @@ import GetExchangeRateByAssetsIDsRData from './GetExchangeRateByAssetsIDsRData';
 /**
  * The GetExchangeRateByAssetsIDsR model module.
  * @module model/GetExchangeRateByAssetsIDsR
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetExchangeRateByAssetsIDsR {
     /**

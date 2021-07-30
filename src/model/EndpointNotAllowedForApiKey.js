@@ -17,7 +17,7 @@ import EndpointNotAllowedForApiKeyError from './EndpointNotAllowedForApiKeyError
 /**
  * The EndpointNotAllowedForApiKey model module.
  * @module model/EndpointNotAllowedForApiKey
- * @version 1.1.0
+ * @version 1.2.0
  */
 class EndpointNotAllowedForApiKey {
     /**

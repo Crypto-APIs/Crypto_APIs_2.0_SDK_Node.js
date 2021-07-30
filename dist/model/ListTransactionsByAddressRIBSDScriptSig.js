@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByAddressRIBSDScriptSig model module.
  * @module model/ListTransactionsByAddressRIBSDScriptSig
- * @version 1.1.0
+ * @version 1.2.0
  */
 var ListTransactionsByAddressRIBSDScriptSig = /*#__PURE__*/function () {
   /**

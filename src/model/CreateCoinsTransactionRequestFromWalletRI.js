@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromWalletRIRecipients from './CreateCoinsTr
 /**
  * The CreateCoinsTransactionRequestFromWalletRI model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 class CreateCoinsTransactionRequestFromWalletRI {
     /**
@@ -56,6 +56,12 @@ class CreateCoinsTransactionRequestFromWalletRI {
         if (data) {
             obj = obj || new CreateCoinsTransactionRequestFromWalletRI();
 
+            if (data.hasOwnProperty('callbackSecretKey')) {
+                obj['callbackSecretKey'] = ApiClient.convertToType(data['callbackSecretKey'], 'String');
+            }
+            if (data.hasOwnProperty('callbackUrl')) {
+                obj['callbackUrl'] = ApiClient.convertToType(data['callbackUrl'], 'String');
+            }
             if (data.hasOwnProperty('feePriority')) {
                 obj['feePriority'] = ApiClient.convertToType(data['feePriority'], 'String');
             }
@@ -74,6 +80,18 @@ class CreateCoinsTransactionRequestFromWalletRI {
 
 
 }
+
+/**
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * @member {String} callbackSecretKey
+ */
+CreateCoinsTransactionRequestFromWalletRI.prototype['callbackSecretKey'] = undefined;
+
+/**
+ * Verified URL for sending callbacks
+ * @member {String} callbackUrl
+ */
+CreateCoinsTransactionRequestFromWalletRI.prototype['callbackUrl'] = undefined;
 
 /**
  * Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".

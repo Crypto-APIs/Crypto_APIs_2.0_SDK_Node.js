@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSEGasPrice model module.
  * @module model/ListTransactionsByBlockHashRIBSEGasPrice
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTransactionsByBlockHashRIBSEGasPrice {
     /**

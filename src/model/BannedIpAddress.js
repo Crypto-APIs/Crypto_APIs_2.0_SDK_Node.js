@@ -17,7 +17,7 @@ import BannedIpAddressError from './BannedIpAddressError';
 /**
  * The BannedIpAddress model module.
  * @module model/BannedIpAddress
- * @version 1.1.0
+ * @version 1.2.0
  */
 class BannedIpAddress {
     /**

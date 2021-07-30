@@ -75,6 +75,18 @@ import BlockchainDataTransactionNotFound from './model/BlockchainDataTransaction
 import BlockchainDataTransactionNotFoundError from './model/BlockchainDataTransactionNotFoundError';
 import BlockchainEventsCallbacksLimitReached from './model/BlockchainEventsCallbacksLimitReached';
 import BlockchainEventsCallbacksLimitReachedError from './model/BlockchainEventsCallbacksLimitReachedError';
+import BroadcastLocallySignedTransactionR from './model/BroadcastLocallySignedTransactionR';
+import BroadcastLocallySignedTransactionRB from './model/BroadcastLocallySignedTransactionRB';
+import BroadcastLocallySignedTransactionRBData from './model/BroadcastLocallySignedTransactionRBData';
+import BroadcastLocallySignedTransactionRBDataItem from './model/BroadcastLocallySignedTransactionRBDataItem';
+import BroadcastLocallySignedTransactionRData from './model/BroadcastLocallySignedTransactionRData';
+import BroadcastLocallySignedTransactionRI from './model/BroadcastLocallySignedTransactionRI';
+import BroadcastTransactionFail from './model/BroadcastTransactionFail';
+import BroadcastTransactionFailData from './model/BroadcastTransactionFailData';
+import BroadcastTransactionFailDataItem from './model/BroadcastTransactionFailDataItem';
+import BroadcastTransactionSuccess from './model/BroadcastTransactionSuccess';
+import BroadcastTransactionSuccessData from './model/BroadcastTransactionSuccessData';
+import BroadcastTransactionSuccessDataItem from './model/BroadcastTransactionSuccessDataItem';
 import CoinsForwardingAutomationsLimitReached from './model/CoinsForwardingAutomationsLimitReached';
 import CoinsForwardingAutomationsLimitReachedError from './model/CoinsForwardingAutomationsLimitReachedError';
 import CoinsForwardingFail from './model/CoinsForwardingFail';
@@ -115,7 +127,7 @@ import CreateCoinsTransactionRequestFromWalletR from './model/CreateCoinsTransac
 import CreateCoinsTransactionRequestFromWalletRB from './model/CreateCoinsTransactionRequestFromWalletRB';
 import CreateCoinsTransactionRequestFromWalletRBData from './model/CreateCoinsTransactionRequestFromWalletRBData';
 import CreateCoinsTransactionRequestFromWalletRBDataItem from './model/CreateCoinsTransactionRequestFromWalletRBDataItem';
-import CreateCoinsTransactionRequestFromWalletRBDataItemDestinations from './model/CreateCoinsTransactionRequestFromWalletRBDataItemDestinations';
+import CreateCoinsTransactionRequestFromWalletRBDataItemRecipients from './model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients';
 import CreateCoinsTransactionRequestFromWalletRData from './model/CreateCoinsTransactionRequestFromWalletRData';
 import CreateCoinsTransactionRequestFromWalletRI from './model/CreateCoinsTransactionRequestFromWalletRI';
 import CreateCoinsTransactionRequestFromWalletRIRecipients from './model/CreateCoinsTransactionRequestFromWalletRIRecipients';
@@ -126,10 +138,10 @@ import CreateTokensTransactionRequestFromAddressRBDataItem from './model/CreateT
 import CreateTokensTransactionRequestFromAddressRData from './model/CreateTokensTransactionRequestFromAddressRData';
 import CreateTokensTransactionRequestFromAddressRI from './model/CreateTokensTransactionRequestFromAddressRI';
 import CreateTokensTransactionRequestFromAddressRIRecipients from './model/CreateTokensTransactionRequestFromAddressRIRecipients';
+import CreateTokensTransactionRequestFromAddressRIS from './model/CreateTokensTransactionRequestFromAddressRIS';
+import CreateTokensTransactionRequestFromAddressRISB from './model/CreateTokensTransactionRequestFromAddressRISB';
+import CreateTokensTransactionRequestFromAddressRISE from './model/CreateTokensTransactionRequestFromAddressRISE';
 import CreateTokensTransactionRequestFromAddressRISenders from './model/CreateTokensTransactionRequestFromAddressRISenders';
-import CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData from './model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData';
-import CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken from './model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken';
-import CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token from './model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token';
 import DeleteAutomaticCoinsForwardingR from './model/DeleteAutomaticCoinsForwardingR';
 import DeleteAutomaticCoinsForwardingRData from './model/DeleteAutomaticCoinsForwardingRData';
 import DeleteAutomaticCoinsForwardingRI from './model/DeleteAutomaticCoinsForwardingRI';
@@ -148,12 +160,12 @@ import EndpointNotAllowedForPlan from './model/EndpointNotAllowedForPlan';
 import EndpointNotAllowedForPlanError from './model/EndpointNotAllowedForPlanError';
 import FeatureMainnetsNotAllowedForPlan from './model/FeatureMainnetsNotAllowedForPlan';
 import FeatureMainnetsNotAllowedForPlanError from './model/FeatureMainnetsNotAllowedForPlanError';
-import GenerateReceivingAddressR from './model/GenerateReceivingAddressR';
-import GenerateReceivingAddressRB from './model/GenerateReceivingAddressRB';
-import GenerateReceivingAddressRBData from './model/GenerateReceivingAddressRBData';
-import GenerateReceivingAddressRBDataItem from './model/GenerateReceivingAddressRBDataItem';
-import GenerateReceivingAddressRData from './model/GenerateReceivingAddressRData';
-import GenerateReceivingAddressRI from './model/GenerateReceivingAddressRI';
+import GenerateDepositAddressR from './model/GenerateDepositAddressR';
+import GenerateDepositAddressRB from './model/GenerateDepositAddressRB';
+import GenerateDepositAddressRBData from './model/GenerateDepositAddressRBData';
+import GenerateDepositAddressRBDataItem from './model/GenerateDepositAddressRBDataItem';
+import GenerateDepositAddressRData from './model/GenerateDepositAddressRData';
+import GenerateDepositAddressRI from './model/GenerateDepositAddressRI';
 import GetAddressDetailsR from './model/GetAddressDetailsR';
 import GetAddressDetailsRData from './model/GetAddressDetailsRData';
 import GetAddressDetailsRI from './model/GetAddressDetailsRI';
@@ -334,14 +346,17 @@ import ListAssetsDetailsRData from './model/ListAssetsDetailsRData';
 import ListAssetsDetailsRI from './model/ListAssetsDetailsRI';
 import ListAssetsDetailsRIAssetLogo from './model/ListAssetsDetailsRIAssetLogo';
 import ListAssetsDetailsRILatestRate from './model/ListAssetsDetailsRILatestRate';
-import ListAssetsDetailsRISpecificData from './model/ListAssetsDetailsRISpecificData';
-import ListAssetsDetailsRISpecificDataCryptoTypeData from './model/ListAssetsDetailsRISpecificDataCryptoTypeData';
+import ListAssetsDetailsRIS from './model/ListAssetsDetailsRIS';
+import ListAssetsDetailsRISC from './model/ListAssetsDetailsRISC';
 import ListBlockchainEventsSubscriptionsR from './model/ListBlockchainEventsSubscriptionsR';
 import ListBlockchainEventsSubscriptionsRData from './model/ListBlockchainEventsSubscriptionsRData';
 import ListBlockchainEventsSubscriptionsRI from './model/ListBlockchainEventsSubscriptionsRI';
 import ListCoinsForwardingAutomationsR from './model/ListCoinsForwardingAutomationsR';
 import ListCoinsForwardingAutomationsRData from './model/ListCoinsForwardingAutomationsRData';
 import ListCoinsForwardingAutomationsRI from './model/ListCoinsForwardingAutomationsRI';
+import ListDepositAddressesR from './model/ListDepositAddressesR';
+import ListDepositAddressesRData from './model/ListDepositAddressesRData';
+import ListDepositAddressesRI from './model/ListDepositAddressesRI';
 import ListHDWalletXPubYPubZPubTransactionsR from './model/ListHDWalletXPubYPubZPubTransactionsR';
 import ListHDWalletXPubYPubZPubTransactionsRData from './model/ListHDWalletXPubYPubZPubTransactionsRData';
 import ListHDWalletXPubYPubZPubTransactionsRI from './model/ListHDWalletXPubYPubZPubTransactionsRI';
@@ -370,9 +385,6 @@ import ListOmniTransactionsByBlockHeightRI from './model/ListOmniTransactionsByB
 import ListOmniTransactionsByBlockHeightRIFee from './model/ListOmniTransactionsByBlockHeightRIFee';
 import ListOmniTransactionsByBlockHeightRIRecipients from './model/ListOmniTransactionsByBlockHeightRIRecipients';
 import ListOmniTransactionsByBlockHeightRISenders from './model/ListOmniTransactionsByBlockHeightRISenders';
-import ListReceivingAddressesR from './model/ListReceivingAddressesR';
-import ListReceivingAddressesRData from './model/ListReceivingAddressesRData';
-import ListReceivingAddressesRI from './model/ListReceivingAddressesRI';
 import ListSupportedAssetsR from './model/ListSupportedAssetsR';
 import ListSupportedAssetsRData from './model/ListSupportedAssetsRData';
 import ListSupportedAssetsRI from './model/ListSupportedAssetsRI';
@@ -602,17 +614,20 @@ import TransactionMined from './model/TransactionMined';
 import TransactionMinedData from './model/TransactionMinedData';
 import TransactionMinedDataItem from './model/TransactionMinedDataItem';
 import TransactionMinedDataItemMinedInBlock from './model/TransactionMinedDataItemMinedInBlock';
-import TransactionRequestApprove from './model/TransactionRequestApprove';
-import TransactionRequestApproveData from './model/TransactionRequestApproveData';
-import TransactionRequestApproveDataItem from './model/TransactionRequestApproveDataItem';
+import TransactionRequestApproval from './model/TransactionRequestApproval';
+import TransactionRequestApprovalData from './model/TransactionRequestApprovalData';
+import TransactionRequestApprovalDataItem from './model/TransactionRequestApprovalDataItem';
 import TransactionRequestBroadcasted from './model/TransactionRequestBroadcasted';
 import TransactionRequestBroadcastedData from './model/TransactionRequestBroadcastedData';
 import TransactionRequestBroadcastedDataItem from './model/TransactionRequestBroadcastedDataItem';
+import TransactionRequestFail from './model/TransactionRequestFail';
+import TransactionRequestFailData from './model/TransactionRequestFailData';
+import TransactionRequestFailDataItem from './model/TransactionRequestFailDataItem';
 import TransactionRequestMined from './model/TransactionRequestMined';
 import TransactionRequestMinedData from './model/TransactionRequestMinedData';
-import TransactionRequestReject from './model/TransactionRequestReject';
-import TransactionRequestRejectData from './model/TransactionRequestRejectData';
-import TransactionRequestRejectDataItem from './model/TransactionRequestRejectDataItem';
+import TransactionRequestRejection from './model/TransactionRequestRejection';
+import TransactionRequestRejectionData from './model/TransactionRequestRejectionData';
+import TransactionRequestRejectionDataItem from './model/TransactionRequestRejectionDataItem';
 import UnexpectedServerError from './model/UnexpectedServerError';
 import UnexpectedServerErrorError from './model/UnexpectedServerErrorError';
 import UnsupportedMediaType from './model/UnsupportedMediaType';
@@ -642,6 +657,7 @@ import AutomaticCoinsForwardingApi from './api/AutomaticCoinsForwardingApi';
 import AutomaticTokensForwardingApi from './api/AutomaticTokensForwardingApi';
 import CreateSubscriptionsForApi from './api/CreateSubscriptionsForApi';
 import ExchangeRatesApi from './api/ExchangeRatesApi';
+import FeaturesApi from './api/FeaturesApi';
 import GeneratingApi from './api/GeneratingApi';
 import InformativeApi from './api/InformativeApi';
 import InternalApi from './api/InternalApi';
@@ -652,7 +668,6 @@ import TokensApi from './api/TokensApi';
 import TransactionsApi from './api/TransactionsApi';
 import UTXOBasedApi from './api/UTXOBasedApi';
 import UnifiedEndpointsApi from './api/UnifiedEndpointsApi';
-import ValidatingApi from './api/ValidatingApi';
 import XRPRippleApi from './api/XRPRippleApi';
 import ZilliqaApi from './api/ZilliqaApi';
 
@@ -686,7 +701,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.1.0
+* @version 1.2.0
 */
 export {
     /**
@@ -1068,6 +1083,78 @@ export {
     BlockchainEventsCallbacksLimitReachedError,
 
     /**
+     * The BroadcastLocallySignedTransactionR model constructor.
+     * @property {module:model/BroadcastLocallySignedTransactionR}
+     */
+    BroadcastLocallySignedTransactionR,
+
+    /**
+     * The BroadcastLocallySignedTransactionRB model constructor.
+     * @property {module:model/BroadcastLocallySignedTransactionRB}
+     */
+    BroadcastLocallySignedTransactionRB,
+
+    /**
+     * The BroadcastLocallySignedTransactionRBData model constructor.
+     * @property {module:model/BroadcastLocallySignedTransactionRBData}
+     */
+    BroadcastLocallySignedTransactionRBData,
+
+    /**
+     * The BroadcastLocallySignedTransactionRBDataItem model constructor.
+     * @property {module:model/BroadcastLocallySignedTransactionRBDataItem}
+     */
+    BroadcastLocallySignedTransactionRBDataItem,
+
+    /**
+     * The BroadcastLocallySignedTransactionRData model constructor.
+     * @property {module:model/BroadcastLocallySignedTransactionRData}
+     */
+    BroadcastLocallySignedTransactionRData,
+
+    /**
+     * The BroadcastLocallySignedTransactionRI model constructor.
+     * @property {module:model/BroadcastLocallySignedTransactionRI}
+     */
+    BroadcastLocallySignedTransactionRI,
+
+    /**
+     * The BroadcastTransactionFail model constructor.
+     * @property {module:model/BroadcastTransactionFail}
+     */
+    BroadcastTransactionFail,
+
+    /**
+     * The BroadcastTransactionFailData model constructor.
+     * @property {module:model/BroadcastTransactionFailData}
+     */
+    BroadcastTransactionFailData,
+
+    /**
+     * The BroadcastTransactionFailDataItem model constructor.
+     * @property {module:model/BroadcastTransactionFailDataItem}
+     */
+    BroadcastTransactionFailDataItem,
+
+    /**
+     * The BroadcastTransactionSuccess model constructor.
+     * @property {module:model/BroadcastTransactionSuccess}
+     */
+    BroadcastTransactionSuccess,
+
+    /**
+     * The BroadcastTransactionSuccessData model constructor.
+     * @property {module:model/BroadcastTransactionSuccessData}
+     */
+    BroadcastTransactionSuccessData,
+
+    /**
+     * The BroadcastTransactionSuccessDataItem model constructor.
+     * @property {module:model/BroadcastTransactionSuccessDataItem}
+     */
+    BroadcastTransactionSuccessDataItem,
+
+    /**
      * The CoinsForwardingAutomationsLimitReached model constructor.
      * @property {module:model/CoinsForwardingAutomationsLimitReached}
      */
@@ -1308,10 +1395,10 @@ export {
     CreateCoinsTransactionRequestFromWalletRBDataItem,
 
     /**
-     * The CreateCoinsTransactionRequestFromWalletRBDataItemDestinations model constructor.
-     * @property {module:model/CreateCoinsTransactionRequestFromWalletRBDataItemDestinations}
+     * The CreateCoinsTransactionRequestFromWalletRBDataItemRecipients model constructor.
+     * @property {module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients}
      */
-    CreateCoinsTransactionRequestFromWalletRBDataItemDestinations,
+    CreateCoinsTransactionRequestFromWalletRBDataItemRecipients,
 
     /**
      * The CreateCoinsTransactionRequestFromWalletRData model constructor.
@@ -1374,28 +1461,28 @@ export {
     CreateTokensTransactionRequestFromAddressRIRecipients,
 
     /**
+     * The CreateTokensTransactionRequestFromAddressRIS model constructor.
+     * @property {module:model/CreateTokensTransactionRequestFromAddressRIS}
+     */
+    CreateTokensTransactionRequestFromAddressRIS,
+
+    /**
+     * The CreateTokensTransactionRequestFromAddressRISB model constructor.
+     * @property {module:model/CreateTokensTransactionRequestFromAddressRISB}
+     */
+    CreateTokensTransactionRequestFromAddressRISB,
+
+    /**
+     * The CreateTokensTransactionRequestFromAddressRISE model constructor.
+     * @property {module:model/CreateTokensTransactionRequestFromAddressRISE}
+     */
+    CreateTokensTransactionRequestFromAddressRISE,
+
+    /**
      * The CreateTokensTransactionRequestFromAddressRISenders model constructor.
      * @property {module:model/CreateTokensTransactionRequestFromAddressRISenders}
      */
     CreateTokensTransactionRequestFromAddressRISenders,
-
-    /**
-     * The CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData model constructor.
-     * @property {module:model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData}
-     */
-    CreateTokensTransactionRequestFromAddressRITokenTypeSpecificData,
-
-    /**
-     * The CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken model constructor.
-     * @property {module:model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken}
-     */
-    CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataBitcoinOmniToken,
-
-    /**
-     * The CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token model constructor.
-     * @property {module:model/CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token}
-     */
-    CreateTokensTransactionRequestFromAddressRITokenTypeSpecificDataEthereumErc20Token,
 
     /**
      * The DeleteAutomaticCoinsForwardingR model constructor.
@@ -1506,40 +1593,40 @@ export {
     FeatureMainnetsNotAllowedForPlanError,
 
     /**
-     * The GenerateReceivingAddressR model constructor.
-     * @property {module:model/GenerateReceivingAddressR}
+     * The GenerateDepositAddressR model constructor.
+     * @property {module:model/GenerateDepositAddressR}
      */
-    GenerateReceivingAddressR,
+    GenerateDepositAddressR,
 
     /**
-     * The GenerateReceivingAddressRB model constructor.
-     * @property {module:model/GenerateReceivingAddressRB}
+     * The GenerateDepositAddressRB model constructor.
+     * @property {module:model/GenerateDepositAddressRB}
      */
-    GenerateReceivingAddressRB,
+    GenerateDepositAddressRB,
 
     /**
-     * The GenerateReceivingAddressRBData model constructor.
-     * @property {module:model/GenerateReceivingAddressRBData}
+     * The GenerateDepositAddressRBData model constructor.
+     * @property {module:model/GenerateDepositAddressRBData}
      */
-    GenerateReceivingAddressRBData,
+    GenerateDepositAddressRBData,
 
     /**
-     * The GenerateReceivingAddressRBDataItem model constructor.
-     * @property {module:model/GenerateReceivingAddressRBDataItem}
+     * The GenerateDepositAddressRBDataItem model constructor.
+     * @property {module:model/GenerateDepositAddressRBDataItem}
      */
-    GenerateReceivingAddressRBDataItem,
+    GenerateDepositAddressRBDataItem,
 
     /**
-     * The GenerateReceivingAddressRData model constructor.
-     * @property {module:model/GenerateReceivingAddressRData}
+     * The GenerateDepositAddressRData model constructor.
+     * @property {module:model/GenerateDepositAddressRData}
      */
-    GenerateReceivingAddressRData,
+    GenerateDepositAddressRData,
 
     /**
-     * The GenerateReceivingAddressRI model constructor.
-     * @property {module:model/GenerateReceivingAddressRI}
+     * The GenerateDepositAddressRI model constructor.
+     * @property {module:model/GenerateDepositAddressRI}
      */
-    GenerateReceivingAddressRI,
+    GenerateDepositAddressRI,
 
     /**
      * The GetAddressDetailsR model constructor.
@@ -2622,16 +2709,16 @@ export {
     ListAssetsDetailsRILatestRate,
 
     /**
-     * The ListAssetsDetailsRISpecificData model constructor.
-     * @property {module:model/ListAssetsDetailsRISpecificData}
+     * The ListAssetsDetailsRIS model constructor.
+     * @property {module:model/ListAssetsDetailsRIS}
      */
-    ListAssetsDetailsRISpecificData,
+    ListAssetsDetailsRIS,
 
     /**
-     * The ListAssetsDetailsRISpecificDataCryptoTypeData model constructor.
-     * @property {module:model/ListAssetsDetailsRISpecificDataCryptoTypeData}
+     * The ListAssetsDetailsRISC model constructor.
+     * @property {module:model/ListAssetsDetailsRISC}
      */
-    ListAssetsDetailsRISpecificDataCryptoTypeData,
+    ListAssetsDetailsRISC,
 
     /**
      * The ListBlockchainEventsSubscriptionsR model constructor.
@@ -2668,6 +2755,24 @@ export {
      * @property {module:model/ListCoinsForwardingAutomationsRI}
      */
     ListCoinsForwardingAutomationsRI,
+
+    /**
+     * The ListDepositAddressesR model constructor.
+     * @property {module:model/ListDepositAddressesR}
+     */
+    ListDepositAddressesR,
+
+    /**
+     * The ListDepositAddressesRData model constructor.
+     * @property {module:model/ListDepositAddressesRData}
+     */
+    ListDepositAddressesRData,
+
+    /**
+     * The ListDepositAddressesRI model constructor.
+     * @property {module:model/ListDepositAddressesRI}
+     */
+    ListDepositAddressesRI,
 
     /**
      * The ListHDWalletXPubYPubZPubTransactionsR model constructor.
@@ -2836,24 +2941,6 @@ export {
      * @property {module:model/ListOmniTransactionsByBlockHeightRISenders}
      */
     ListOmniTransactionsByBlockHeightRISenders,
-
-    /**
-     * The ListReceivingAddressesR model constructor.
-     * @property {module:model/ListReceivingAddressesR}
-     */
-    ListReceivingAddressesR,
-
-    /**
-     * The ListReceivingAddressesRData model constructor.
-     * @property {module:model/ListReceivingAddressesRData}
-     */
-    ListReceivingAddressesRData,
-
-    /**
-     * The ListReceivingAddressesRI model constructor.
-     * @property {module:model/ListReceivingAddressesRI}
-     */
-    ListReceivingAddressesRI,
 
     /**
      * The ListSupportedAssetsR model constructor.
@@ -4230,22 +4317,22 @@ export {
     TransactionMinedDataItemMinedInBlock,
 
     /**
-     * The TransactionRequestApprove model constructor.
-     * @property {module:model/TransactionRequestApprove}
+     * The TransactionRequestApproval model constructor.
+     * @property {module:model/TransactionRequestApproval}
      */
-    TransactionRequestApprove,
+    TransactionRequestApproval,
 
     /**
-     * The TransactionRequestApproveData model constructor.
-     * @property {module:model/TransactionRequestApproveData}
+     * The TransactionRequestApprovalData model constructor.
+     * @property {module:model/TransactionRequestApprovalData}
      */
-    TransactionRequestApproveData,
+    TransactionRequestApprovalData,
 
     /**
-     * The TransactionRequestApproveDataItem model constructor.
-     * @property {module:model/TransactionRequestApproveDataItem}
+     * The TransactionRequestApprovalDataItem model constructor.
+     * @property {module:model/TransactionRequestApprovalDataItem}
      */
-    TransactionRequestApproveDataItem,
+    TransactionRequestApprovalDataItem,
 
     /**
      * The TransactionRequestBroadcasted model constructor.
@@ -4266,6 +4353,24 @@ export {
     TransactionRequestBroadcastedDataItem,
 
     /**
+     * The TransactionRequestFail model constructor.
+     * @property {module:model/TransactionRequestFail}
+     */
+    TransactionRequestFail,
+
+    /**
+     * The TransactionRequestFailData model constructor.
+     * @property {module:model/TransactionRequestFailData}
+     */
+    TransactionRequestFailData,
+
+    /**
+     * The TransactionRequestFailDataItem model constructor.
+     * @property {module:model/TransactionRequestFailDataItem}
+     */
+    TransactionRequestFailDataItem,
+
+    /**
      * The TransactionRequestMined model constructor.
      * @property {module:model/TransactionRequestMined}
      */
@@ -4278,22 +4383,22 @@ export {
     TransactionRequestMinedData,
 
     /**
-     * The TransactionRequestReject model constructor.
-     * @property {module:model/TransactionRequestReject}
+     * The TransactionRequestRejection model constructor.
+     * @property {module:model/TransactionRequestRejection}
      */
-    TransactionRequestReject,
+    TransactionRequestRejection,
 
     /**
-     * The TransactionRequestRejectData model constructor.
-     * @property {module:model/TransactionRequestRejectData}
+     * The TransactionRequestRejectionData model constructor.
+     * @property {module:model/TransactionRequestRejectionData}
      */
-    TransactionRequestRejectData,
+    TransactionRequestRejectionData,
 
     /**
-     * The TransactionRequestRejectDataItem model constructor.
-     * @property {module:model/TransactionRequestRejectDataItem}
+     * The TransactionRequestRejectionDataItem model constructor.
+     * @property {module:model/TransactionRequestRejectionDataItem}
      */
-    TransactionRequestRejectDataItem,
+    TransactionRequestRejectionDataItem,
 
     /**
      * The UnexpectedServerError model constructor.
@@ -4470,6 +4575,12 @@ export {
     ExchangeRatesApi,
 
     /**
+    * The FeaturesApi service constructor.
+    * @property {module:api/FeaturesApi}
+    */
+    FeaturesApi,
+
+    /**
     * The GeneratingApi service constructor.
     * @property {module:api/GeneratingApi}
     */
@@ -4528,12 +4639,6 @@ export {
     * @property {module:api/UnifiedEndpointsApi}
     */
     UnifiedEndpointsApi,
-
-    /**
-    * The ValidatingApi service constructor.
-    * @property {module:api/ValidatingApi}
-    */
-    ValidatingApi,
 
     /**
     * The XRPRippleApi service constructor.

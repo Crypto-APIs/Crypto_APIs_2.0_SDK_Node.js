@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateCoinsTransactionRequestFromAddressRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRBDataItem
- * @version 1.1.0
+ * @version 1.2.0
  */
 class CreateCoinsTransactionRequestFromAddressRBDataItem {
     /**
@@ -24,11 +24,11 @@ class CreateCoinsTransactionRequestFromAddressRBDataItem {
      * @alias module:model/CreateCoinsTransactionRequestFromAddressRBDataItem
      * @param amount {String} Represents the specific amount of the transaction.
      * @param feePriority {module:model/CreateCoinsTransactionRequestFromAddressRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-     * @param toAddress {String} Defines the specific recipient address for the transaction.
+     * @param recipientAddress {String} Defines the specific recipient address for the transaction.
      */
-    constructor(amount, feePriority, toAddress) { 
+    constructor(amount, feePriority, recipientAddress) { 
         
-        CreateCoinsTransactionRequestFromAddressRBDataItem.initialize(this, amount, feePriority, toAddress);
+        CreateCoinsTransactionRequestFromAddressRBDataItem.initialize(this, amount, feePriority, recipientAddress);
     }
 
     /**
@@ -36,10 +36,10 @@ class CreateCoinsTransactionRequestFromAddressRBDataItem {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, amount, feePriority, toAddress) { 
+    static initialize(obj, amount, feePriority, recipientAddress) { 
         obj['amount'] = amount;
         obj['feePriority'] = feePriority;
-        obj['toAddress'] = toAddress;
+        obj['recipientAddress'] = recipientAddress;
     }
 
     /**
@@ -56,11 +56,17 @@ class CreateCoinsTransactionRequestFromAddressRBDataItem {
             if (data.hasOwnProperty('amount')) {
                 obj['amount'] = ApiClient.convertToType(data['amount'], 'String');
             }
+            if (data.hasOwnProperty('callbackSecretKey')) {
+                obj['callbackSecretKey'] = ApiClient.convertToType(data['callbackSecretKey'], 'String');
+            }
+            if (data.hasOwnProperty('callbackUrl')) {
+                obj['callbackUrl'] = ApiClient.convertToType(data['callbackUrl'], 'String');
+            }
             if (data.hasOwnProperty('feePriority')) {
                 obj['feePriority'] = ApiClient.convertToType(data['feePriority'], 'String');
             }
-            if (data.hasOwnProperty('toAddress')) {
-                obj['toAddress'] = ApiClient.convertToType(data['toAddress'], 'String');
+            if (data.hasOwnProperty('recipientAddress')) {
+                obj['recipientAddress'] = ApiClient.convertToType(data['recipientAddress'], 'String');
             }
         }
         return obj;
@@ -76,6 +82,18 @@ class CreateCoinsTransactionRequestFromAddressRBDataItem {
 CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['amount'] = undefined;
 
 /**
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * @member {String} callbackSecretKey
+ */
+CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['callbackSecretKey'] = undefined;
+
+/**
+ * Verified URL for sending callbacks
+ * @member {String} callbackUrl
+ */
+CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['callbackUrl'] = undefined;
+
+/**
  * Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
  * @member {module:model/CreateCoinsTransactionRequestFromAddressRBDataItem.FeePriorityEnum} feePriority
  */
@@ -83,9 +101,9 @@ CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['feePriority'] = un
 
 /**
  * Defines the specific recipient address for the transaction.
- * @member {String} toAddress
+ * @member {String} recipientAddress
  */
-CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['toAddress'] = undefined;
+CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['recipientAddress'] = undefined;
 
 
 

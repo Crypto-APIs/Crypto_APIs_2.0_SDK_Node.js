@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewBlockRBDataItem model module.
  * @module model/NewBlockRBDataItem
- * @version 1.1.0
+ * @version 1.2.0
  */
 class NewBlockRBDataItem {
     /**

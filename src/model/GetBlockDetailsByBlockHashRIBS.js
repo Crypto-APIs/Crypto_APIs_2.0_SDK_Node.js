@@ -23,7 +23,7 @@ import GetBlockDetailsByBlockHashRIBSL from './GetBlockDetailsByBlockHashRIBSL';
 /**
  * The GetBlockDetailsByBlockHashRIBS model module.
  * @module model/GetBlockDetailsByBlockHashRIBS
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetBlockDetailsByBlockHashRIBS {
     /**

@@ -17,7 +17,7 @@ import MinedTransactionRBDataItem from './MinedTransactionRBDataItem';
 /**
  * The MinedTransactionRBData model module.
  * @module model/MinedTransactionRBData
- * @version 1.1.0
+ * @version 1.2.0
  */
 class MinedTransactionRBData {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTokensTransfersByTransactionHashRI model module.
  * @module model/ListTokensTransfersByTransactionHashRI
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListTokensTransfersByTransactionHashRI {
     /**

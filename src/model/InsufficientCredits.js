@@ -17,7 +17,7 @@ import InsufficientCreditsError from './InsufficientCreditsError';
 /**
  * The InsufficientCredits model module.
  * @module model/InsufficientCredits
- * @version 1.1.0
+ * @version 1.2.0
  */
 class InsufficientCredits {
     /**

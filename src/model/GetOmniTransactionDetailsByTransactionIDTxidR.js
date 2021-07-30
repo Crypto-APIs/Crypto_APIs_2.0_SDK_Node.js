@@ -17,7 +17,7 @@ import GetOmniTransactionDetailsByTransactionIDTxidRData from './GetOmniTransact
 /**
  * The GetOmniTransactionDetailsByTransactionIDTxidR model module.
  * @module model/GetOmniTransactionDetailsByTransactionIDTxidR
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetOmniTransactionDetailsByTransactionIDTxidR {
     /**

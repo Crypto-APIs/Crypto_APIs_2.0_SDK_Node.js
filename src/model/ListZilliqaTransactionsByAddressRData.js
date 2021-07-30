@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByAddressRI from './ListZilliqaTransactionsByAddre
 /**
  * The ListZilliqaTransactionsByAddressRData model module.
  * @module model/ListZilliqaTransactionsByAddressRData
- * @version 1.1.0
+ * @version 1.2.0
  */
 class ListZilliqaTransactionsByAddressRData {
     /**

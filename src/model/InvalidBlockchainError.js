@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The InvalidBlockchainError model module.
  * @module model/InvalidBlockchainError
- * @version 1.1.0
+ * @version 1.2.0
  */
 class InvalidBlockchainError {
     /**

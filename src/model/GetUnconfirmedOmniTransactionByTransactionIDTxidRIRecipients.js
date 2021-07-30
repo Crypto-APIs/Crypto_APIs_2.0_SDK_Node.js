@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients model module.
  * @module model/GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients
- * @version 1.1.0
+ * @version 1.2.0
  */
 class GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients {
     /**

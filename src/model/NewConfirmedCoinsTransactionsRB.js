@@ -17,7 +17,7 @@ import NewConfirmedCoinsTransactionsRBData from './NewConfirmedCoinsTransactions
 /**
  * The NewConfirmedCoinsTransactionsRB model module.
  * @module model/NewConfirmedCoinsTransactionsRB
- * @version 1.1.0
+ * @version 1.2.0
  */
 class NewConfirmedCoinsTransactionsRB {
     /**
