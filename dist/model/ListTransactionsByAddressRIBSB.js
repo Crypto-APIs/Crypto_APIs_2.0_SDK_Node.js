@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByAddressRIBSB model module.
  * @module model/ListTransactionsByAddressRIBSB
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListTransactionsByAddressRIBSB = /*#__PURE__*/function () {
   /**

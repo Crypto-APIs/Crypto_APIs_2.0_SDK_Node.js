@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The CoinsForwardingAutomationsLimitReachedError model module.
  * @module model/CoinsForwardingAutomationsLimitReachedError
- * @version 1.2.0
+ * @version 1.2.1
  */
 class CoinsForwardingAutomationsLimitReachedError {
     /**

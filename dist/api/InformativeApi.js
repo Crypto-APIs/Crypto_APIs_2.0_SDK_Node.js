@@ -44,7 +44,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.2.0
+* @version 1.2.1
 */
 var InformativeApi = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedOmnilayertoken model module.
  * @module model/AddressTokensTransactionConfirmedOmnilayertoken
- * @version 1.2.0
+ * @version 1.2.1
  */
 var AddressTokensTransactionConfirmedOmnilayertoken = /*#__PURE__*/function () {
   /**

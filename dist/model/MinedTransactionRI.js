@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransactionRI model module.
  * @module model/MinedTransactionRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 var MinedTransactionRI = /*#__PURE__*/function () {
   /**

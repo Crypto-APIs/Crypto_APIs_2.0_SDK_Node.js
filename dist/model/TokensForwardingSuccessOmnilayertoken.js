@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessOmnilayertoken model module.
  * @module model/TokensForwardingSuccessOmnilayertoken
- * @version 1.2.0
+ * @version 1.2.1
  */
 var TokensForwardingSuccessOmnilayertoken = /*#__PURE__*/function () {
   /**

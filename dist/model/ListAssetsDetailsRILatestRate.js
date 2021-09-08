@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAssetsDetailsRILatestRate model module.
  * @module model/ListAssetsDetailsRILatestRate
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListAssetsDetailsRILatestRate = /*#__PURE__*/function () {
   /**

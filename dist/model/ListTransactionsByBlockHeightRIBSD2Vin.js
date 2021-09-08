@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSD2Vin model module.
  * @module model/ListTransactionsByBlockHeightRIBSD2Vin
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListTransactionsByBlockHeightRIBSD2Vin = /*#__PURE__*/function () {
   /**

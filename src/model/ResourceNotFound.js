@@ -17,7 +17,7 @@ import ResourceNotFoundError from './ResourceNotFoundError';
 /**
  * The ResourceNotFound model module.
  * @module model/ResourceNotFound
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ResourceNotFound {
     /**

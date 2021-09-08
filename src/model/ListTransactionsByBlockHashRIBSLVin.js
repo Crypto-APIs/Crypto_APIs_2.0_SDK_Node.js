@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSLScriptSig from './GetTransaction
 /**
  * The ListTransactionsByBlockHashRIBSLVin model module.
  * @module model/ListTransactionsByBlockHashRIBSLVin
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByBlockHashRIBSLVin {
     /**

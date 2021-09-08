@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidRequestBodyStructure model module.
  * @module model/InvalidRequestBodyStructure
- * @version 1.2.0
+ * @version 1.2.1
  */
 var InvalidRequestBodyStructure = /*#__PURE__*/function () {
   /**

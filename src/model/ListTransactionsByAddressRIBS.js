@@ -26,7 +26,7 @@ import ListTransactionsByAddressRIBSL from './ListTransactionsByAddressRIBSL';
 /**
  * The ListTransactionsByAddressRIBS model module.
  * @module model/ListTransactionsByAddressRIBS
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByAddressRIBS {
     /**

@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByAddressRI model module.
  * @module model/ListTransactionsByAddressRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListTransactionsByAddressRI = /*#__PURE__*/function () {
   /**

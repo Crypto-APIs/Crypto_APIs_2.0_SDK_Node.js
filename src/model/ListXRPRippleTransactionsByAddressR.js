@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByAddressRData from './ListXRPRippleTransactions
 /**
  * The ListXRPRippleTransactionsByAddressR model module.
  * @module model/ListXRPRippleTransactionsByAddressR
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListXRPRippleTransactionsByAddressR {
     /**

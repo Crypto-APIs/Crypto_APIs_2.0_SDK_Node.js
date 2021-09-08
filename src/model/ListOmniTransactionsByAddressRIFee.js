@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListOmniTransactionsByAddressRIFee model module.
  * @module model/ListOmniTransactionsByAddressRIFee
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListOmniTransactionsByAddressRIFee {
     /**

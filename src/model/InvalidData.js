@@ -17,7 +17,7 @@ import InvalidDataError from './InvalidDataError';
 /**
  * The InvalidData model module.
  * @module model/InvalidData
- * @version 1.2.0
+ * @version 1.2.1
  */
 class InvalidData {
     /**

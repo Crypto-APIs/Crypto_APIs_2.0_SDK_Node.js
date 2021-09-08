@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromWalletRBDataItemRecipients from './Creat
 /**
  * The CreateCoinsTransactionRequestFromWalletRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRBDataItem
- * @version 1.2.0
+ * @version 1.2.1
  */
 class CreateCoinsTransactionRequestFromWalletRBDataItem {
     /**

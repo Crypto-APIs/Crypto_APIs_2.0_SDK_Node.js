@@ -38,7 +38,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.2.0
+* @version 1.2.1
 */
 export default class UnifiedEndpointsApi {
 

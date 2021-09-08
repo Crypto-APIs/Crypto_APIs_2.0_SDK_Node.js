@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetOmniTransactionDetailsByTransactionIDTxidRI model module.
  * @module model/GetOmniTransactionDetailsByTransactionIDTxidRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 var GetOmniTransactionDetailsByTransactionIDTxidRI = /*#__PURE__*/function () {
   /**

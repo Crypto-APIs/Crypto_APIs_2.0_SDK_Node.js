@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSDScriptSig model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSDScriptSig
- * @version 1.2.0
+ * @version 1.2.1
  */
 var GetTransactionDetailsByTransactionIDRIBSDScriptSig = /*#__PURE__*/function () {
   /**

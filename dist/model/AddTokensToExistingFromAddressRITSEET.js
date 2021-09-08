@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRITSEET model module.
  * @module model/AddTokensToExistingFromAddressRITSEET
- * @version 1.2.0
+ * @version 1.2.1
  */
 var AddTokensToExistingFromAddressRITSEET = /*#__PURE__*/function () {
   /**

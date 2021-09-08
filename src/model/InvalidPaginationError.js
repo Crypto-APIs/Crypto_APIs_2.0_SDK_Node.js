@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The InvalidPaginationError model module.
  * @module model/InvalidPaginationError
- * @version 1.2.0
+ * @version 1.2.1
  */
 class InvalidPaginationError {
     /**

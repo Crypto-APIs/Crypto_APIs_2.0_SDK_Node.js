@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationR model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationR
- * @version 1.2.0
+ * @version 1.2.1
  */
 var NewConfirmedTokensTransactionsAndEachConfirmationR = /*#__PURE__*/function () {
   /**

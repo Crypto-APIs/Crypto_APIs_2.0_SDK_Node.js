@@ -18,7 +18,7 @@ import GetTransactionDetailsByTransactionIDRIBSD2Vout from './GetTransactionDeta
 /**
  * The GetTransactionDetailsByTransactionIDRIBSD2 model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSD2
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetTransactionDetailsByTransactionIDRIBSD2 {
     /**

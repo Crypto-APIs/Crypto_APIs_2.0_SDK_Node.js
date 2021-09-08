@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwardingRBDataItem model module.
  * @module model/CreateAutomaticTokensForwardingRBDataItem
- * @version 1.2.0
+ * @version 1.2.1
  */
 var CreateAutomaticTokensForwardingRBDataItem = /*#__PURE__*/function () {
   /**

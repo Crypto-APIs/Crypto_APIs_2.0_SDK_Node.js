@@ -19,7 +19,7 @@ import ListOmniTransactionsByBlockHeightRISenders from './ListOmniTransactionsBy
 /**
  * The ListOmniTransactionsByBlockHeightRI model module.
  * @module model/ListOmniTransactionsByBlockHeightRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListOmniTransactionsByBlockHeightRI {
     /**

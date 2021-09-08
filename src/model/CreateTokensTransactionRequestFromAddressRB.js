@@ -17,7 +17,7 @@ import CreateTokensTransactionRequestFromAddressRBData from './CreateTokensTrans
 /**
  * The CreateTokensTransactionRequestFromAddressRB model module.
  * @module model/CreateTokensTransactionRequestFromAddressRB
- * @version 1.2.0
+ * @version 1.2.1
  */
 class CreateTokensTransactionRequestFromAddressRB {
     /**

@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRI model module.
  * @module model/GetWalletAssetDetailsRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
   /**

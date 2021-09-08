@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token
- * @version 1.2.0
+ * @version 1.2.1
  */
 class AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token {
     /**

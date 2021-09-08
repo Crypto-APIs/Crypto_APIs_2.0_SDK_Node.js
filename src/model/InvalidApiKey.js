@@ -17,7 +17,7 @@ import InvalidApiKeyError from './InvalidApiKeyError';
 /**
  * The InvalidApiKey model module.
  * @module model/InvalidApiKey
- * @version 1.2.0
+ * @version 1.2.1
  */
 class InvalidApiKey {
     /**

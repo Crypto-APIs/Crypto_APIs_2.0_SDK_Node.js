@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The ResourceNotFoundError model module.
  * @module model/ResourceNotFoundError
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ResourceNotFoundError {
     /**

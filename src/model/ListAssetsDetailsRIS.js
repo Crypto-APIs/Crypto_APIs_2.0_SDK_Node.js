@@ -17,7 +17,7 @@ import ListAssetsDetailsRISC from './ListAssetsDetailsRISC';
 /**
  * The ListAssetsDetailsRIS model module.
  * @module model/ListAssetsDetailsRIS
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListAssetsDetailsRIS {
     /**

@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The RequestLimitReachedError model module.
  * @module model/RequestLimitReachedError
- * @version 1.2.0
+ * @version 1.2.1
  */
 class RequestLimitReachedError {
     /**

@@ -19,7 +19,7 @@ import GetZilliqaTransactionDetailsByTransactionIDRISenders from './GetZilliqaTr
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDRI model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetZilliqaTransactionDetailsByTransactionIDRI {
     /**

@@ -19,7 +19,7 @@ import ListZilliqaTransactionsByAddressRISenders from './ListZilliqaTransactions
 /**
  * The ListZilliqaTransactionsByBlockHeightRI model module.
  * @module model/ListZilliqaTransactionsByBlockHeightRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListZilliqaTransactionsByBlockHeightRI {
     /**

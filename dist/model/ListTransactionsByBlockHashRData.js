@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRData model module.
  * @module model/ListTransactionsByBlockHashRData
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListTransactionsByBlockHashRData = /*#__PURE__*/function () {
   /**

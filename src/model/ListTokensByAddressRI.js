@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTokensByAddressRI model module.
  * @module model/ListTokensByAddressRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTokensByAddressRI {
     /**

@@ -54,7 +54,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.2.0
+* @version 1.2.1
 */
 var XRPRippleApi = /*#__PURE__*/function () {
   /**

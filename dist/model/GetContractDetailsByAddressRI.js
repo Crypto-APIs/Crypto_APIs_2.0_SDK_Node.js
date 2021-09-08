@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetContractDetailsByAddressRI model module.
  * @module model/GetContractDetailsByAddressRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 var GetContractDetailsByAddressRI = /*#__PURE__*/function () {
   /**

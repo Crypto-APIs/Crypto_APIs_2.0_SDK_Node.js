@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListOmniTransactionsByBlockHashRIFee model module.
  * @module model/ListOmniTransactionsByBlockHashRIFee
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListOmniTransactionsByBlockHashRIFee {
     /**

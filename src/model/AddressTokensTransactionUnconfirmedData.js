@@ -17,7 +17,7 @@ import AddressTokensTransactionUnconfirmedDataItem from './AddressTokensTransact
 /**
  * The AddressTokensTransactionUnconfirmedData model module.
  * @module model/AddressTokensTransactionUnconfirmedData
- * @version 1.2.0
+ * @version 1.2.1
  */
 class AddressTokensTransactionUnconfirmedData {
     /**

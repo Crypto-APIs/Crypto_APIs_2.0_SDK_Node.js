@@ -17,7 +17,7 @@ import ListOmniTokensByAddressRData from './ListOmniTokensByAddressRData';
 /**
  * The ListOmniTokensByAddressR model module.
  * @module model/ListOmniTokensByAddressR
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListOmniTokensByAddressR {
     /**

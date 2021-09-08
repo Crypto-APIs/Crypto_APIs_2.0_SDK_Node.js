@@ -29,7 +29,7 @@ import WalletAsAServiceDepositAddressesLimitReached from '../model/WalletAsAServ
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.2.0
+* @version 1.2.1
 */
 export default class GeneratingApi {
 

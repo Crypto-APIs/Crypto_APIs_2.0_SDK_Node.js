@@ -17,7 +17,7 @@ import AddTokensToExistingFromAddressRITS from './AddTokensToExistingFromAddress
 /**
  * The AddTokensToExistingFromAddressRI model module.
  * @module model/AddTokensToExistingFromAddressRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class AddTokensToExistingFromAddressRI {
     /**

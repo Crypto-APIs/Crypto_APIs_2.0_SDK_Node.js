@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.2.0
+* @version 1.2.1
 */
 var FeaturesApi = /*#__PURE__*/function () {
   /**

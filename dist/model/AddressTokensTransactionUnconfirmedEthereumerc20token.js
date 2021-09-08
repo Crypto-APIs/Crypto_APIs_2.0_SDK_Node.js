@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionUnconfirmedEthereumerc20token model module.
  * @module model/AddressTokensTransactionUnconfirmedEthereumerc20token
- * @version 1.2.0
+ * @version 1.2.1
  */
 var AddressTokensTransactionUnconfirmedEthereumerc20token = /*#__PURE__*/function () {
   /**

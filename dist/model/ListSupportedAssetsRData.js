@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssetsRData model module.
  * @module model/ListSupportedAssetsRData
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListSupportedAssetsRData = /*#__PURE__*/function () {
   /**

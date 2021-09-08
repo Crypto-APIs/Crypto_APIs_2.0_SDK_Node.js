@@ -17,7 +17,7 @@ import GetZilliqaTransactionDetailsByTransactionIDRData from './GetZilliqaTransa
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDR model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDR
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetZilliqaTransactionDetailsByTransactionIDR {
     /**

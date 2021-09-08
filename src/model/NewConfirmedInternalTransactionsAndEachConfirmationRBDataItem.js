@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem
- * @version 1.2.0
+ * @version 1.2.1
  */
 class NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem {
     /**

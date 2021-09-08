@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken
- * @version 1.2.0
+ * @version 1.2.1
  */
 class AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken {
     /**

@@ -32,7 +32,7 @@ import ValidateAddressRB from '../model/ValidateAddressRB';
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.2.0
+* @version 1.2.1
 */
 export default class FeaturesApi {
 

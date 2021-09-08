@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListDepositAddressesRI model module.
  * @module model/ListDepositAddressesRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListDepositAddressesRI {
     /**

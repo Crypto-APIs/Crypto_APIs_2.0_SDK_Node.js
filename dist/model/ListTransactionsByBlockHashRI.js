@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRI model module.
  * @module model/ListTransactionsByBlockHashRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**

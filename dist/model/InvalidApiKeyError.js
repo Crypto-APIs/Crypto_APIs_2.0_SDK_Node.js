@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidApiKeyError model module.
  * @module model/InvalidApiKeyError
- * @version 1.2.0
+ * @version 1.2.1
  */
 var InvalidApiKeyError = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateTokensTransactionRequestFromAddressRISB model module.
  * @module model/CreateTokensTransactionRequestFromAddressRISB
- * @version 1.2.0
+ * @version 1.2.1
  */
 class CreateTokensTransactionRequestFromAddressRISB {
     /**

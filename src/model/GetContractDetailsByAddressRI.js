@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetContractDetailsByAddressRI model module.
  * @module model/GetContractDetailsByAddressRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetContractDetailsByAddressRI {
     /**

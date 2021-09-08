@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetXRPRippleBlockDetailsByBlockHeightRITotalFees model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeightRITotalFees
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetXRPRippleBlockDetailsByBlockHeightRITotalFees {
     /**

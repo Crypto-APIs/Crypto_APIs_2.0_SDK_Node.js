@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedXRPRippleBlockRITotalFees model module.
  * @module model/GetLatestMinedXRPRippleBlockRITotalFees
- * @version 1.2.0
+ * @version 1.2.1
  */
 var GetLatestMinedXRPRippleBlockRITotalFees = /*#__PURE__*/function () {
   /**

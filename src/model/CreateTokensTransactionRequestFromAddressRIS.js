@@ -18,7 +18,7 @@ import CreateTokensTransactionRequestFromAddressRISE from './CreateTokensTransac
 /**
  * The CreateTokensTransactionRequestFromAddressRIS model module.
  * @module model/CreateTokensTransactionRequestFromAddressRIS
- * @version 1.2.0
+ * @version 1.2.1
  */
 class CreateTokensTransactionRequestFromAddressRIS {
     /**

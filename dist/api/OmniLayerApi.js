@@ -54,7 +54,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * OmniLayer service.
 * @module api/OmniLayerApi
-* @version 1.2.0
+* @version 1.2.1
 */
 var OmniLayerApi = /*#__PURE__*/function () {
   /**

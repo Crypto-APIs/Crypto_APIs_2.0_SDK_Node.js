@@ -17,7 +17,7 @@ import ListTransactionsByBlockHashRIBSEGasPrice from './ListTransactionsByBlockH
 /**
  * The ListTransactionsByBlockHashRIBSEC model module.
  * @module model/ListTransactionsByBlockHashRIBSEC
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByBlockHashRIBSEC {
     /**

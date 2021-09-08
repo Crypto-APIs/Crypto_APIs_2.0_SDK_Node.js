@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAssetsDetailsRI model module.
  * @module model/ListAssetsDetailsRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListAssetsDetailsRI = /*#__PURE__*/function () {
   /**

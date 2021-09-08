@@ -56,7 +56,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.2.0
+* @version 1.2.1
 */
 var ZilliqaApi = /*#__PURE__*/function () {
   /**

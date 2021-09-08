@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The InsufficientCreditsError model module.
  * @module model/InsufficientCreditsError
- * @version 1.2.0
+ * @version 1.2.1
  */
 class InsufficientCreditsError {
     /**

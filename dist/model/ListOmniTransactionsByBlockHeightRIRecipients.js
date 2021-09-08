@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListOmniTransactionsByBlockHeightRIRecipients model module.
  * @module model/ListOmniTransactionsByBlockHeightRIRecipients
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListOmniTransactionsByBlockHeightRIRecipients = /*#__PURE__*/function () {
   /**

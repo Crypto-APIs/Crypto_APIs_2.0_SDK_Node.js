@@ -17,7 +17,7 @@ import ListTransactionsByAddressRIBSD2ScriptPubKey from './ListTransactionsByAdd
 /**
  * The ListTransactionsByAddressRIBSD2Vout model module.
  * @module model/ListTransactionsByAddressRIBSD2Vout
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByAddressRIBSD2Vout {
     /**

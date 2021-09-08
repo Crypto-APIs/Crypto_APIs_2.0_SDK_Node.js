@@ -20,7 +20,7 @@ import ListTransactionsByAddressRIBS from './ListTransactionsByAddressRIBS';
 /**
  * The ListTransactionsByAddressRI model module.
  * @module model/ListTransactionsByAddressRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByAddressRI {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionDetailsByTransactionHashRData model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashRData
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListInternalTransactionDetailsByTransactionHashRData = /*#__PURE__*/function () {
   /**

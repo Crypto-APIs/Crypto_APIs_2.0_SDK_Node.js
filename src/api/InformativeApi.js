@@ -30,7 +30,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.2.0
+* @version 1.2.1
 */
 export default class InformativeApi {
 

@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * UTXOBased service.
 * @module api/UTXOBasedApi
-* @version 1.2.0
+* @version 1.2.1
 */
 var UTXOBasedApi = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlockRI model module.
  * @module model/GetLatestMinedZilliqaBlockRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 var GetLatestMinedZilliqaBlockRI = /*#__PURE__*/function () {
   /**

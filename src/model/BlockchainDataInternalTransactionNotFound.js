@@ -17,7 +17,7 @@ import BlockchainDataInternalTransactionNotFoundError from './BlockchainDataInte
 /**
  * The BlockchainDataInternalTransactionNotFound model module.
  * @module model/BlockchainDataInternalTransactionNotFound
- * @version 1.2.0
+ * @version 1.2.1
  */
 class BlockchainDataInternalTransactionNotFound {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSLVout model module.
  * @module model/ListTransactionsByBlockHashRIBSLVout
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListTransactionsByBlockHashRIBSLVout = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import ListTransactionsByBlockHashRIBSDScriptPubKey from './ListTransactionsByBl
 /**
  * The ListTransactionsByBlockHashRIBSDVout model module.
  * @module model/ListTransactionsByBlockHashRIBSDVout
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByBlockHashRIBSDVout {
     /**

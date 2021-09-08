@@ -27,7 +27,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 1.2.0
+* @version 1.2.1
 */
 export default class AssetsApi {
 

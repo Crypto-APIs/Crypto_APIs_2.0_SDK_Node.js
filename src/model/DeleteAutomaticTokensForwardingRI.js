@@ -17,7 +17,7 @@ import DeleteAutomaticTokensForwardingRITS from './DeleteAutomaticTokensForwardi
 /**
  * The DeleteAutomaticTokensForwardingRI model module.
  * @module model/DeleteAutomaticTokensForwardingRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class DeleteAutomaticTokensForwardingRI {
     /**

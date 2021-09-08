@@ -19,7 +19,7 @@ import ListAssetsDetailsRIS from './ListAssetsDetailsRIS';
 /**
  * The ListAssetsDetailsRI model module.
  * @module model/ListAssetsDetailsRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListAssetsDetailsRI {
     /**

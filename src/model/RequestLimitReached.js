@@ -17,7 +17,7 @@ import RequestLimitReachedError from './RequestLimitReachedError';
 /**
  * The RequestLimitReached model module.
  * @module model/RequestLimitReached
- * @version 1.2.0
+ * @version 1.2.1
  */
 class RequestLimitReached {
     /**

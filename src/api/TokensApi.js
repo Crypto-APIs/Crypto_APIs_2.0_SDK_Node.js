@@ -30,7 +30,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.2.0
+* @version 1.2.1
 */
 export default class TokensApi {
 

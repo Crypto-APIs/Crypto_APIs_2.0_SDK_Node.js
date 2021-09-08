@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetExchangeRateByAssetSymbolsRI model module.
  * @module model/GetExchangeRateByAssetSymbolsRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetExchangeRateByAssetSymbolsRI {
     /**

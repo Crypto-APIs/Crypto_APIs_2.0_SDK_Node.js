@@ -17,7 +17,7 @@ import UnexpectedServerErrorError from './UnexpectedServerErrorError';
 /**
  * The UnexpectedServerError model module.
  * @module model/UnexpectedServerError
- * @version 1.2.0
+ * @version 1.2.1
  */
 class UnexpectedServerError {
     /**

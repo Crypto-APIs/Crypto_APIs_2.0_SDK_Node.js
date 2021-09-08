@@ -36,7 +36,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.2.0
+* @version 1.2.1
 */
 export default class ZilliqaApi {
 

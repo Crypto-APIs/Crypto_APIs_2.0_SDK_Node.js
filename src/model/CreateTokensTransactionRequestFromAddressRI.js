@@ -19,7 +19,7 @@ import CreateTokensTransactionRequestFromAddressRISenders from './CreateTokensTr
 /**
  * The CreateTokensTransactionRequestFromAddressRI model module.
  * @module model/CreateTokensTransactionRequestFromAddressRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class CreateTokensTransactionRequestFromAddressRI {
     /**

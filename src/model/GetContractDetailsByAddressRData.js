@@ -17,7 +17,7 @@ import GetContractDetailsByAddressRI from './GetContractDetailsByAddressRI';
 /**
  * The GetContractDetailsByAddressRData model module.
  * @module model/GetContractDetailsByAddressRData
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetContractDetailsByAddressRData {
     /**

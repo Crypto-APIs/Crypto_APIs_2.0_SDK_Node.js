@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastTransactionSuccess model module.
  * @module model/BroadcastTransactionSuccess
- * @version 1.2.0
+ * @version 1.2.1
  */
 var BroadcastTransactionSuccess = /*#__PURE__*/function () {
   /**

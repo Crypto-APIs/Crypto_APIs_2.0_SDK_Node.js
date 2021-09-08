@@ -19,7 +19,7 @@ import ListOmniTransactionsByBlockHashRIFee from './ListOmniTransactionsByBlockH
 /**
  * The ListOmniTransactionsByBlockHashRI model module.
  * @module model/ListOmniTransactionsByBlockHashRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListOmniTransactionsByBlockHashRI {
     /**

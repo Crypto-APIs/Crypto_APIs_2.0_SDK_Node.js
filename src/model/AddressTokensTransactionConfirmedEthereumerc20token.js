@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedEthereumerc20token model module.
  * @module model/AddressTokensTransactionConfirmedEthereumerc20token
- * @version 1.2.0
+ * @version 1.2.1
  */
 class AddressTokensTransactionConfirmedEthereumerc20token {
     /**

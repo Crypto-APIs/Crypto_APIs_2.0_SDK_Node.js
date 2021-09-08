@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CoinsForwardingSuccessData model module.
  * @module model/CoinsForwardingSuccessData
- * @version 1.2.0
+ * @version 1.2.1
  */
 var CoinsForwardingSuccessData = /*#__PURE__*/function () {
   /**

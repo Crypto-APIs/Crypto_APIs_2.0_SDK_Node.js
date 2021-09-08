@@ -76,7 +76,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.2.0
+* @version 1.2.1
 */
 var CreateSubscriptionsForApi = /*#__PURE__*/function () {
   /**

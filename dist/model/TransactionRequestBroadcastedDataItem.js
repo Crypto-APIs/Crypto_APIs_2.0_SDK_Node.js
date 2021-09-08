@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestBroadcastedDataItem model module.
  * @module model/TransactionRequestBroadcastedDataItem
- * @version 1.2.0
+ * @version 1.2.1
  */
 var TransactionRequestBroadcastedDataItem = /*#__PURE__*/function () {
   /**

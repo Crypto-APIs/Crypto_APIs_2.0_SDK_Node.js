@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromWalletRIRecipients from './CreateCoinsTr
 /**
  * The CreateCoinsTransactionRequestFromWalletRI model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class CreateCoinsTransactionRequestFromWalletRI {
     /**

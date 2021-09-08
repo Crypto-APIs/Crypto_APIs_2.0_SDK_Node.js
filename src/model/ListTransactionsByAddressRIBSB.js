@@ -18,7 +18,7 @@ import ListTransactionsByAddressRIBSBVout from './ListTransactionsByAddressRIBSB
 /**
  * The ListTransactionsByAddressRIBSB model module.
  * @module model/ListTransactionsByAddressRIBSB
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByAddressRIBSB {
     /**

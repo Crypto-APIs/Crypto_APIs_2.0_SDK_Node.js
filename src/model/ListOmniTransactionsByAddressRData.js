@@ -17,7 +17,7 @@ import ListOmniTransactionsByAddressRI from './ListOmniTransactionsByAddressRI';
 /**
  * The ListOmniTransactionsByAddressRData model module.
  * @module model/ListOmniTransactionsByAddressRData
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListOmniTransactionsByAddressRData {
     /**

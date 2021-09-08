@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressCoinsTransactionConfirmedDataItemMinedInBlock model module.
  * @module model/AddressCoinsTransactionConfirmedDataItemMinedInBlock
- * @version 1.2.0
+ * @version 1.2.1
  */
 var AddressCoinsTransactionConfirmedDataItemMinedInBlock = /*#__PURE__*/function () {
   /**

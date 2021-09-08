@@ -17,7 +17,7 @@ import WalletAsAServiceDepositAddressesLimitReachedError from './WalletAsAServic
 /**
  * The WalletAsAServiceDepositAddressesLimitReached model module.
  * @module model/WalletAsAServiceDepositAddressesLimitReached
- * @version 1.2.0
+ * @version 1.2.1
  */
 class WalletAsAServiceDepositAddressesLimitReached {
     /**

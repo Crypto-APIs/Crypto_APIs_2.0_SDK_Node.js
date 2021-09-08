@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The WalletAsAServiceTokenNotSupportedError model module.
  * @module model/WalletAsAServiceTokenNotSupportedError
- * @version 1.2.0
+ * @version 1.2.1
  */
 class WalletAsAServiceTokenNotSupportedError {
     /**

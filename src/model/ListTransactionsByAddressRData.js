@@ -17,7 +17,7 @@ import ListTransactionsByAddressRI from './ListTransactionsByAddressRI';
 /**
  * The ListTransactionsByAddressRData model module.
  * @module model/ListTransactionsByAddressRData
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByAddressRData {
     /**

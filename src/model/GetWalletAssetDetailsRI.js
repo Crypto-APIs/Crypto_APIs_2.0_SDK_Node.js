@@ -19,7 +19,7 @@ import GetWalletAssetDetailsRISentConfirmedAmount from './GetWalletAssetDetailsR
 /**
  * The GetWalletAssetDetailsRI model module.
  * @module model/GetWalletAssetDetailsRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetWalletAssetDetailsRI {
     /**

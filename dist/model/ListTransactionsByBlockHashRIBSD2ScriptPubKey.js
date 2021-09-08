@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSD2ScriptPubKey model module.
  * @module model/ListTransactionsByBlockHashRIBSD2ScriptPubKey
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListTransactionsByBlockHashRIBSD2ScriptPubKey = /*#__PURE__*/function () {
   /**

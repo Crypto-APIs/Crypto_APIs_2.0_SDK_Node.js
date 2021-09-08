@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.2.0
+ * @version 1.2.1
  */
 class GetFeeRecommendationsRI {
     /**

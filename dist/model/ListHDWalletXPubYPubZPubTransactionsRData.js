@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRData model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRData
- * @version 1.2.0
+ * @version 1.2.1
  */
 var ListHDWalletXPubYPubZPubTransactionsRData = /*#__PURE__*/function () {
   /**

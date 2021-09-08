@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken
- * @version 1.2.0
+ * @version 1.2.1
  */
 class CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken {
     /**

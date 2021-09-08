@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListAssetsDetailsRIAssetLogo model module.
  * @module model/ListAssetsDetailsRIAssetLogo
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListAssetsDetailsRIAssetLogo {
     /**

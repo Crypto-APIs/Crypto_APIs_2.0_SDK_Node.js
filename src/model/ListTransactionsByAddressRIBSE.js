@@ -17,7 +17,7 @@ import ListTransactionsByAddressRIBSEGasPrice from './ListTransactionsByAddressR
 /**
  * The ListTransactionsByAddressRIBSE model module.
  * @module model/ListTransactionsByAddressRIBSE
- * @version 1.2.0
+ * @version 1.2.1
  */
 class ListTransactionsByAddressRIBSE {
     /**
