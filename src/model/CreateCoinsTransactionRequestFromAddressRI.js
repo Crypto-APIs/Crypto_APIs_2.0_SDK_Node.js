@@ -18,7 +18,7 @@ import CreateCoinsTransactionRequestFromAddressRISenders from './CreateCoinsTran
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class CreateCoinsTransactionRequestFromAddressRI {
     /**
@@ -27,11 +27,12 @@ class CreateCoinsTransactionRequestFromAddressRI {
      * @param feePriority {module:model/CreateCoinsTransactionRequestFromAddressRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
      * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromAddressRIRecipients>} Defines the destination for the transaction, i.e. the recipient(s).
      * @param senders {module:model/CreateCoinsTransactionRequestFromAddressRISenders} 
+     * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
      * @param transactionRequestStatus {module:model/CreateCoinsTransactionRequestFromAddressRI.TransactionRequestStatusEnum} Defines the status of the transaction request, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
      */
-    constructor(feePriority, recipients, senders, transactionRequestStatus) { 
+    constructor(feePriority, recipients, senders, transactionRequestId, transactionRequestStatus) { 
         
-        CreateCoinsTransactionRequestFromAddressRI.initialize(this, feePriority, recipients, senders, transactionRequestStatus);
+        CreateCoinsTransactionRequestFromAddressRI.initialize(this, feePriority, recipients, senders, transactionRequestId, transactionRequestStatus);
     }
 
     /**
@@ -39,10 +40,11 @@ class CreateCoinsTransactionRequestFromAddressRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, feePriority, recipients, senders, transactionRequestStatus) { 
+    static initialize(obj, feePriority, recipients, senders, transactionRequestId, transactionRequestStatus) { 
         obj['feePriority'] = feePriority;
         obj['recipients'] = recipients;
         obj['senders'] = senders;
+        obj['transactionRequestId'] = transactionRequestId;
         obj['transactionRequestStatus'] = transactionRequestStatus;
     }
 
@@ -66,11 +68,17 @@ class CreateCoinsTransactionRequestFromAddressRI {
             if (data.hasOwnProperty('feePriority')) {
                 obj['feePriority'] = ApiClient.convertToType(data['feePriority'], 'String');
             }
+            if (data.hasOwnProperty('note')) {
+                obj['note'] = ApiClient.convertToType(data['note'], 'String');
+            }
             if (data.hasOwnProperty('recipients')) {
                 obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateCoinsTransactionRequestFromAddressRIRecipients]);
             }
             if (data.hasOwnProperty('senders')) {
                 obj['senders'] = CreateCoinsTransactionRequestFromAddressRISenders.constructFromObject(data['senders']);
+            }
+            if (data.hasOwnProperty('transactionRequestId')) {
+                obj['transactionRequestId'] = ApiClient.convertToType(data['transactionRequestId'], 'String');
             }
             if (data.hasOwnProperty('transactionRequestStatus')) {
                 obj['transactionRequestStatus'] = ApiClient.convertToType(data['transactionRequestStatus'], 'String');
@@ -83,13 +91,13 @@ class CreateCoinsTransactionRequestFromAddressRI {
 }
 
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 CreateCoinsTransactionRequestFromAddressRI.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Verified URL for sending callbacks
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
  * @member {String} callbackUrl
  */
 CreateCoinsTransactionRequestFromAddressRI.prototype['callbackUrl'] = undefined;
@@ -101,6 +109,12 @@ CreateCoinsTransactionRequestFromAddressRI.prototype['callbackUrl'] = undefined;
 CreateCoinsTransactionRequestFromAddressRI.prototype['feePriority'] = undefined;
 
 /**
+ * Represents an optional note to add a free text in, explaining or providing additional detail on the transaction request.
+ * @member {String} note
+ */
+CreateCoinsTransactionRequestFromAddressRI.prototype['note'] = undefined;
+
+/**
  * Defines the destination for the transaction, i.e. the recipient(s).
  * @member {Array.<module:model/CreateCoinsTransactionRequestFromAddressRIRecipients>} recipients
  */
@@ -110,6 +124,12 @@ CreateCoinsTransactionRequestFromAddressRI.prototype['recipients'] = undefined;
  * @member {module:model/CreateCoinsTransactionRequestFromAddressRISenders} senders
  */
 CreateCoinsTransactionRequestFromAddressRI.prototype['senders'] = undefined;
+
+/**
+ * Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
+ * @member {String} transactionRequestId
+ */
+CreateCoinsTransactionRequestFromAddressRI.prototype['transactionRequestId'] = undefined;
 
 /**
  * Defines the status of the transaction request, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".

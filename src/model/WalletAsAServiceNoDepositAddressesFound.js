@@ -17,7 +17,7 @@ import WalletAsAServiceNoDepositAddressesFoundError from './WalletAsAServiceNoDe
 /**
  * The WalletAsAServiceNoDepositAddressesFound model module.
  * @module model/WalletAsAServiceNoDepositAddressesFound
- * @version 1.2.1
+ * @version 1.3.0
  */
 class WalletAsAServiceNoDepositAddressesFound {
     /**

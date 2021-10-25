@@ -50,7 +50,7 @@
   describe('RequestLimitReachedError', function() {
     it('should create an instance of RequestLimitReachedError', function() {
       // uncomment below and update the code to test RequestLimitReachedError
-      //var instane = new Cryptoapis.RequestLimitReachedError();
+      //var instance = new Cryptoapis.RequestLimitReachedError();
       //expect(instance).to.be.a(Cryptoapis.RequestLimitReachedError);
     });
 

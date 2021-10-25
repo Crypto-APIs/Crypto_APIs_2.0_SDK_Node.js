@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GenerateDepositAddressRBDataItem model module.
  * @module model/GenerateDepositAddressRBDataItem
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GenerateDepositAddressRBDataItem {
     /**

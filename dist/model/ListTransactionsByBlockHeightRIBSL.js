@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSL model module.
  * @module model/ListTransactionsByBlockHeightRIBSL
- * @version 1.2.1
+ * @version 1.3.0
  */
 var ListTransactionsByBlockHeightRIBSL = /*#__PURE__*/function () {
   /**
@@ -31,15 +31,15 @@ var ListTransactionsByBlockHeightRIBSL = /*#__PURE__*/function () {
    * @alias module:model/ListTransactionsByBlockHeightRIBSL
    * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
    * @param size {Number} Represents the total size of this transaction.
+   * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Represents transaction version number.
    * @param vin {Array.<module:model/ListTransactionsByBlockHeightRIBSLVin>} Represents the transaction inputs.
    * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSLVout>} Represents the transaction outputs.
-   * @param vsize {Number} Represents the virtual size of this transaction.
    */
-  function ListTransactionsByBlockHeightRIBSL(locktime, size, version, vin, vout, vsize) {
+  function ListTransactionsByBlockHeightRIBSL(locktime, size, vSize, version, vin, vout) {
     _classCallCheck(this, ListTransactionsByBlockHeightRIBSL);
 
-    ListTransactionsByBlockHeightRIBSL.initialize(this, locktime, size, version, vin, vout, vsize);
+    ListTransactionsByBlockHeightRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);
   }
   /**
    * Initializes the fields of this object.
@@ -50,13 +50,13 @@ var ListTransactionsByBlockHeightRIBSL = /*#__PURE__*/function () {
 
   _createClass(ListTransactionsByBlockHeightRIBSL, null, [{
     key: "initialize",
-    value: function initialize(obj, locktime, size, version, vin, vout, vsize) {
+    value: function initialize(obj, locktime, size, vSize, version, vin, vout) {
       obj['locktime'] = locktime;
       obj['size'] = size;
+      obj['vSize'] = vSize;
       obj['version'] = version;
       obj['vin'] = vin;
       obj['vout'] = vout;
-      obj['vsize'] = vsize;
     }
     /**
      * Constructs a <code>ListTransactionsByBlockHeightRIBSL</code> from a plain JavaScript object, optionally creating a new instance.
@@ -80,6 +80,10 @@ var ListTransactionsByBlockHeightRIBSL = /*#__PURE__*/function () {
           obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
         }
 
+        if (data.hasOwnProperty('vSize')) {
+          obj['vSize'] = _ApiClient["default"].convertToType(data['vSize'], 'Number');
+        }
+
         if (data.hasOwnProperty('version')) {
           obj['version'] = _ApiClient["default"].convertToType(data['version'], 'Number');
         }
@@ -90,10 +94,6 @@ var ListTransactionsByBlockHeightRIBSL = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('vout')) {
           obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListTransactionsByBlockHeightRIBSLVout["default"]]);
-        }
-
-        if (data.hasOwnProperty('vsize')) {
-          obj['vsize'] = _ApiClient["default"].convertToType(data['vsize'], 'Number');
         }
       }
 
@@ -117,6 +117,12 @@ ListTransactionsByBlockHeightRIBSL.prototype['locktime'] = undefined;
 
 ListTransactionsByBlockHeightRIBSL.prototype['size'] = undefined;
 /**
+ * Represents the virtual size of this transaction.
+ * @member {Number} vSize
+ */
+
+ListTransactionsByBlockHeightRIBSL.prototype['vSize'] = undefined;
+/**
  * Represents transaction version number.
  * @member {Number} version
  */
@@ -134,11 +140,5 @@ ListTransactionsByBlockHeightRIBSL.prototype['vin'] = undefined;
  */
 
 ListTransactionsByBlockHeightRIBSL.prototype['vout'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
- */
-
-ListTransactionsByBlockHeightRIBSL.prototype['vsize'] = undefined;
 var _default = ListTransactionsByBlockHeightRIBSL;
 exports["default"] = _default;

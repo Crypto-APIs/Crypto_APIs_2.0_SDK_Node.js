@@ -21,7 +21,7 @@ var _GetBlockDetailsByBlockHeightR = _interopRequireDefault(require("../model/Ge
 
 var _GetFeeRecommendationsR = _interopRequireDefault(require("../model/GetFeeRecommendationsR"));
 
-var _GetLatestMinedBlockR = _interopRequireDefault(require("../model/GetLatestMinedBlockR"));
+var _GetLastMinedBlockR = _interopRequireDefault(require("../model/GetLastMinedBlockR"));
 
 var _GetTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDR"));
 
@@ -35,11 +35,17 @@ var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPaginat
 
 var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
 
-var _ListTransactionsByAddressR = _interopRequireDefault(require("../model/ListTransactionsByAddressR"));
+var _ListAllUnconfirmedTransactionsR = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactionsR"));
+
+var _ListConfirmedTransactionsByAddressR = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddressR"));
+
+var _ListLatestMinedBlocksR = _interopRequireDefault(require("../model/ListLatestMinedBlocksR"));
 
 var _ListTransactionsByBlockHashR = _interopRequireDefault(require("../model/ListTransactionsByBlockHashR"));
 
 var _ListTransactionsByBlockHeightR = _interopRequireDefault(require("../model/ListTransactionsByBlockHeightR"));
+
+var _ListUnconfirmedTransactionsByAddressR = _interopRequireDefault(require("../model/ListUnconfirmedTransactionsByAddressR"));
 
 var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
@@ -60,7 +66,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.2.1
+* @version 1.3.0
 */
 var UnifiedEndpointsApi = /*#__PURE__*/function () {
   /**
@@ -79,7 +85,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
    * Get Address Details
    * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.
    * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-   * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+   * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
    * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -127,7 +133,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Address Details
      * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -145,7 +151,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Block Details By Block Hash
      * Through this endpoint customers can obtain basic information about a given mined block, specifically by using the `hash` parameter. These block details could include the hash of the specific, the previous and the next block, its transactions count, its height, etc.     Blockchain specific data is information such as version, nonce, size, bits, merkleroot, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -192,7 +198,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Block Details By Block Hash
      * Through this endpoint customers can obtain basic information about a given mined block, specifically by using the `hash` parameter. These block details could include the hash of the specific, the previous and the next block, its transactions count, its height, etc.     Blockchain specific data is information such as version, nonce, size, bits, merkleroot, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -210,7 +216,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Block Details By Block Height
      * Through this endpoint customers can obtain basic information about a given mined block, specifically by using the `height` parameter. These block details could include the hash of the specific, the previous and the next block, its transactions count, its height, etc.     Blockchain specific data is information such as version, nonce, size, bits, merkleroot, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Number} height Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -257,7 +263,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Block Details By Block Height
      * Through this endpoint customers can obtain basic information about a given mined block, specifically by using the `height` parameter. These block details could include the hash of the specific, the previous and the next block, its transactions count, its height, etc.     Blockchain specific data is information such as version, nonce, size, bits, merkleroot, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Number} height Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -275,7 +281,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Fee Recommendations
      * Through this endpoint customers can obtain fee recommendations. Our fees recommendations are based on Mempool data which makes them much more accurate than fees based on already mined blocks. Calculations are done in real time live. Using this endpoint customers can get gas price for Ethereum, fee per byte for Bitcoin, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetFeeRecommendationsR} and HTTP response
@@ -315,7 +321,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Fee Recommendations
      * Through this endpoint customers can obtain fee recommendations. Our fees recommendations are based on Mempool data which makes them much more accurate than fees based on already mined blocks. Calculations are done in real time live. Using this endpoint customers can get gas price for Ethereum, fee per byte for Bitcoin, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetFeeRecommendationsR}
@@ -329,28 +335,28 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
       });
     }
     /**
-     * Get Latest Mined Block
+     * Get Last Mined Block
      * Through this endpoint customers can fetch the last mined block in a specific blockchain network, along with its details. These could include the hash of the specific, the previous and the next block, its transactions count, its height, etc.     Blockchain specific data is information such as version, nonce, size, bits, merkleroot, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetLatestMinedBlockR} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetLastMinedBlockR} and HTTP response
      */
 
   }, {
-    key: "getLatestMinedBlockWithHttpInfo",
-    value: function getLatestMinedBlockWithHttpInfo(blockchain, network, opts) {
+    key: "getLastMinedBlockWithHttpInfo",
+    value: function getLastMinedBlockWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
       var postBody = null; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling getLatestMinedBlock");
+        throw new Error("Missing the required parameter 'blockchain' when calling getLastMinedBlock");
       } // verify the required parameter 'network' is set
 
 
       if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling getLatestMinedBlock");
+        throw new Error("Missing the required parameter 'network' when calling getLastMinedBlock");
       }
 
       var pathParams = {
@@ -365,23 +371,23 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _GetLatestMinedBlockR["default"];
+      var returnType = _GetLastMinedBlockR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/blocks/last', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Get Latest Mined Block
+     * Get Last Mined Block
      * Through this endpoint customers can fetch the last mined block in a specific blockchain network, along with its details. These could include the hash of the specific, the previous and the next block, its transactions count, its height, etc.     Blockchain specific data is information such as version, nonce, size, bits, merkleroot, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetLatestMinedBlockR}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetLastMinedBlockR}
      */
 
   }, {
-    key: "getLatestMinedBlock",
-    value: function getLatestMinedBlock(blockchain, network, opts) {
-      return this.getLatestMinedBlockWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+    key: "getLastMinedBlock",
+    value: function getLastMinedBlock(blockchain, network, opts) {
+      return this.getLastMinedBlockWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }
@@ -389,7 +395,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Transaction Details By Transaction ID
      * Through this endpoint customers can obtain details about a transaction by the transaction's unique identifier. In UTXO-based protocols like BTC there are attributes such as `transactionId` and transaction `hash`. They still could be different. In protocols like Ethereum there is only one unique value and it's `hash`.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -436,7 +442,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * Get Transaction Details By Transaction ID
      * Through this endpoint customers can obtain details about a transaction by the transaction's unique identifier. In UTXO-based protocols like BTC there are attributes such as `transactionId` and transaction `hash`. They still could be different. In protocols like Ethereum there is only one unique value and it's `hash`.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -451,36 +457,99 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
       });
     }
     /**
-     * List Transactions By Address
+     * List All Unconfirmed Transactions
+     * Through this endpoint customers can list all **unconfirmed**  transactions for a specified blockchain and network.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAllUnconfirmedTransactionsR} and HTTP response
+     */
+
+  }, {
+    key: "listAllUnconfirmedTransactionsWithHttpInfo",
+    value: function listAllUnconfirmedTransactionsWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listAllUnconfirmedTransactions");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listAllUnconfirmedTransactions");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListAllUnconfirmedTransactionsR["default"];
+      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/address-transactions-unconfirmed', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List All Unconfirmed Transactions
+     * Through this endpoint customers can list all **unconfirmed**  transactions for a specified blockchain and network.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListAllUnconfirmedTransactionsR}
+     */
+
+  }, {
+    key: "listAllUnconfirmedTransactions",
+    value: function listAllUnconfirmedTransactions(blockchain, network, opts) {
+      return this.listAllUnconfirmedTransactionsWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List Confirmed Transactions By Address
      * This endpoint will list transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListTransactionsByAddressR} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListConfirmedTransactionsByAddressR} and HTTP response
      */
 
   }, {
-    key: "listTransactionsByAddressWithHttpInfo",
-    value: function listTransactionsByAddressWithHttpInfo(blockchain, network, address, opts) {
+    key: "listConfirmedTransactionsByAddressWithHttpInfo",
+    value: function listConfirmedTransactionsByAddressWithHttpInfo(blockchain, network, address, opts) {
       opts = opts || {};
       var postBody = null; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling listTransactionsByAddress");
+        throw new Error("Missing the required parameter 'blockchain' when calling listConfirmedTransactionsByAddress");
       } // verify the required parameter 'network' is set
 
 
       if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling listTransactionsByAddress");
+        throw new Error("Missing the required parameter 'network' when calling listConfirmedTransactionsByAddress");
       } // verify the required parameter 'address' is set
 
 
       if (address === undefined || address === null) {
-        throw new Error("Missing the required parameter 'address' when calling listTransactionsByAddress");
+        throw new Error("Missing the required parameter 'address' when calling listConfirmedTransactionsByAddress");
       }
 
       var pathParams = {
@@ -498,26 +567,91 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = [];
       var accepts = ['application/json'];
-      var returnType = _ListTransactionsByAddressR["default"];
+      var returnType = _ListConfirmedTransactionsByAddressR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/addresses/{address}/transactions', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * List Transactions By Address
+     * List Confirmed Transactions By Address
      * This endpoint will list transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListTransactionsByAddressR}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListConfirmedTransactionsByAddressR}
      */
 
   }, {
-    key: "listTransactionsByAddress",
-    value: function listTransactionsByAddress(blockchain, network, address, opts) {
-      return this.listTransactionsByAddressWithHttpInfo(blockchain, network, address, opts).then(function (response_and_data) {
+    key: "listConfirmedTransactionsByAddress",
+    value: function listConfirmedTransactionsByAddress(blockchain, network, address, opts) {
+      return this.listConfirmedTransactionsByAddressWithHttpInfo(blockchain, network, address, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List Latest Mined Blocks
+     * Through this endpoint customers can list the latest 50 blocks that were mined.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {Number} count Specifies how many records were requested.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListLatestMinedBlocksR} and HTTP response
+     */
+
+  }, {
+    key: "listLatestMinedBlocksWithHttpInfo",
+    value: function listLatestMinedBlocksWithHttpInfo(network, blockchain, count, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'network' is set
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listLatestMinedBlocks");
+      } // verify the required parameter 'blockchain' is set
+
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listLatestMinedBlocks");
+      } // verify the required parameter 'count' is set
+
+
+      if (count === undefined || count === null) {
+        throw new Error("Missing the required parameter 'count' when calling listLatestMinedBlocks");
+      }
+
+      var pathParams = {
+        'network': network,
+        'blockchain': blockchain,
+        'count': count
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListLatestMinedBlocksR["default"];
+      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/blocks/last/{count}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List Latest Mined Blocks
+     * Through this endpoint customers can list the latest 50 blocks that were mined.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {Number} count Specifies how many records were requested.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListLatestMinedBlocksR}
+     */
+
+  }, {
+    key: "listLatestMinedBlocks",
+    value: function listLatestMinedBlocks(network, blockchain, count, opts) {
+      return this.listLatestMinedBlocksWithHttpInfo(network, blockchain, count, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }
@@ -525,7 +659,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * List Transactions by Block Hash
      * This endpoint will list transactions by an attribute `transactionHash`. The transactions listed will detail additional information such as addresses, height, time of creation in Unix timestamp, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -576,7 +710,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * List Transactions by Block Hash
      * This endpoint will list transactions by an attribute `transactionHash`. The transactions listed will detail additional information such as addresses, height, time of creation in Unix timestamp, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} blockHash Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -596,7 +730,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * List Transactions by Block Height
      * This endpoint will list transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Number} height Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -647,7 +781,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
      * List Transactions by Block Height
      * This endpoint will list transactions by an attribute `blockHeight`. The transactions listed will detail additional information such as hash, addresses, time of creation in Unix timestamp, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Number} height Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -660,6 +794,77 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
     key: "listTransactionsByBlockHeight",
     value: function listTransactionsByBlockHeight(blockchain, network, height, opts) {
       return this.listTransactionsByBlockHeightWithHttpInfo(blockchain, network, height, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List Unconfirmed Transactions by Address
+     * Through this endpoint customers can list transactions by `address` that are **unconfirmed**.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnconfirmedTransactionsByAddressR} and HTTP response
+     */
+
+  }, {
+    key: "listUnconfirmedTransactionsByAddressWithHttpInfo",
+    value: function listUnconfirmedTransactionsByAddressWithHttpInfo(blockchain, network, address, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listUnconfirmedTransactionsByAddress");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listUnconfirmedTransactionsByAddress");
+      } // verify the required parameter 'address' is set
+
+
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listUnconfirmedTransactionsByAddress");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      var queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListUnconfirmedTransactionsByAddressR["default"];
+      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/address-transactions-unconfirmed/{address}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List Unconfirmed Transactions by Address
+     * Through this endpoint customers can list transactions by `address` that are **unconfirmed**.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnconfirmedTransactionsByAddressR}
+     */
+
+  }, {
+    key: "listUnconfirmedTransactionsByAddress",
+    value: function listUnconfirmedTransactionsByAddress(blockchain, network, address, opts) {
+      return this.listUnconfirmedTransactionsByAddressWithHttpInfo(blockchain, network, address, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

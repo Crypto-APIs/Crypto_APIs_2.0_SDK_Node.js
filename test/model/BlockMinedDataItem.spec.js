@@ -50,7 +50,7 @@
   describe('BlockMinedDataItem', function() {
     it('should create an instance of BlockMinedDataItem', function() {
       // uncomment below and update the code to test BlockMinedDataItem
-      //var instane = new Cryptoapis.BlockMinedDataItem();
+      //var instance = new Cryptoapis.BlockMinedDataItem();
       //expect(instance).to.be.a(Cryptoapis.BlockMinedDataItem);
     });
 

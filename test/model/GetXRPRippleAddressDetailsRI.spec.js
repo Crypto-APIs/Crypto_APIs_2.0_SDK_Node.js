@@ -50,7 +50,7 @@
   describe('GetXRPRippleAddressDetailsRI', function() {
     it('should create an instance of GetXRPRippleAddressDetailsRI', function() {
       // uncomment below and update the code to test GetXRPRippleAddressDetailsRI
-      //var instane = new Cryptoapis.GetXRPRippleAddressDetailsRI();
+      //var instance = new Cryptoapis.GetXRPRippleAddressDetailsRI();
       //expect(instance).to.be.a(Cryptoapis.GetXRPRippleAddressDetailsRI);
     });
 

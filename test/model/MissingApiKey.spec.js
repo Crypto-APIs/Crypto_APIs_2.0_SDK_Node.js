@@ -50,7 +50,7 @@
   describe('MissingApiKey', function() {
     it('should create an instance of MissingApiKey', function() {
       // uncomment below and update the code to test MissingApiKey
-      //var instane = new Cryptoapis.MissingApiKey();
+      //var instance = new Cryptoapis.MissingApiKey();
       //expect(instance).to.be.a(Cryptoapis.MissingApiKey);
     });
 

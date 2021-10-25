@@ -18,14 +18,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsRITotalReceived model module.
  * @module model/GetAddressDetailsRITotalReceived
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetAddressDetailsRITotalReceived = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsRITotalReceived</code>.
    * @alias module:model/GetAddressDetailsRITotalReceived
    * @param amount {String} Defines the total amount of all coins received to the address, based on confirmed transactions.
-   * @param unit {String} 
+   * @param unit {String} Represents the unit of the total received amount.
    */
   function GetAddressDetailsRITotalReceived(amount, unit) {
     _classCallCheck(this, GetAddressDetailsRITotalReceived);
@@ -82,6 +82,7 @@ var GetAddressDetailsRITotalReceived = /*#__PURE__*/function () {
 
 GetAddressDetailsRITotalReceived.prototype['amount'] = undefined;
 /**
+ * Represents the unit of the total received amount.
  * @member {String} unit
  */
 

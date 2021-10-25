@@ -50,7 +50,7 @@
   describe('ListTransactionsByBlockHeightRIBSLVin', function() {
     it('should create an instance of ListTransactionsByBlockHeightRIBSLVin', function() {
       // uncomment below and update the code to test ListTransactionsByBlockHeightRIBSLVin
-      //var instane = new Cryptoapis.ListTransactionsByBlockHeightRIBSLVin();
+      //var instance = new Cryptoapis.ListTransactionsByBlockHeightRIBSLVin();
       //expect(instance).to.be.a(Cryptoapis.ListTransactionsByBlockHeightRIBSLVin);
     });
 

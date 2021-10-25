@@ -7,11 +7,11 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _TokensForwardingSuccessEthereumerc20token = _interopRequireDefault(require("./TokensForwardingSuccessEthereumerc20token"));
+var _TokensForwardingSuccessErc = _interopRequireDefault(require("./TokensForwardingSuccessErc20"));
 
-var _TokensForwardingSuccessEthereumerc721token = _interopRequireDefault(require("./TokensForwardingSuccessEthereumerc721token"));
+var _TokensForwardingSuccessErc2 = _interopRequireDefault(require("./TokensForwardingSuccessErc721"));
 
-var _TokensForwardingSuccessOmnilayertoken = _interopRequireDefault(require("./TokensForwardingSuccessOmnilayertoken"));
+var _TokensForwardingSuccessOmni = _interopRequireDefault(require("./TokensForwardingSuccessOmni"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,15 +24,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessToken model module.
  * @module model/TokensForwardingSuccessToken
- * @version 1.2.1
+ * @version 1.3.0
  */
 var TokensForwardingSuccessToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingSuccessToken</code>.
    * @alias module:model/TokensForwardingSuccessToken
-   * @implements module:model/TokensForwardingSuccessEthereumerc20token
-   * @implements module:model/TokensForwardingSuccessEthereumerc721token
-   * @implements module:model/TokensForwardingSuccessOmnilayertoken
+   * @implements module:model/TokensForwardingSuccessErc20
+   * @implements module:model/TokensForwardingSuccessErc721
+   * @implements module:model/TokensForwardingSuccessOmni
    * @param name {String} Specifies the name of the token.
    * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
    * @param amount {String} Defines the amount of tokens sent with the confirmed transaction.
@@ -45,11 +45,11 @@ var TokensForwardingSuccessToken = /*#__PURE__*/function () {
   function TokensForwardingSuccessToken(name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) {
     _classCallCheck(this, TokensForwardingSuccessToken);
 
-    _TokensForwardingSuccessEthereumerc20token["default"].initialize(this, name, symbol, amount, contractAddress);
+    _TokensForwardingSuccessErc["default"].initialize(this, name, symbol, amount, contractAddress);
 
-    _TokensForwardingSuccessEthereumerc721token["default"].initialize(this, name, symbol, tokenId, contractAddress);
+    _TokensForwardingSuccessErc2["default"].initialize(this, name, symbol, tokenId, contractAddress);
 
-    _TokensForwardingSuccessOmnilayertoken["default"].initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
+    _TokensForwardingSuccessOmni["default"].initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
 
     TokensForwardingSuccessToken.initialize(this, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId);
   }
@@ -86,11 +86,11 @@ var TokensForwardingSuccessToken = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new TokensForwardingSuccessToken();
 
-        _TokensForwardingSuccessEthereumerc20token["default"].constructFromObject(data, obj);
+        _TokensForwardingSuccessErc["default"].constructFromObject(data, obj);
 
-        _TokensForwardingSuccessEthereumerc721token["default"].constructFromObject(data, obj);
+        _TokensForwardingSuccessErc2["default"].constructFromObject(data, obj);
 
-        _TokensForwardingSuccessOmnilayertoken["default"].constructFromObject(data, obj);
+        _TokensForwardingSuccessOmni["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('name')) {
           obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
@@ -189,93 +189,93 @@ TokensForwardingSuccessToken.prototype['transactionType'] = undefined;
  * @member {String} createdByTransactionId
  */
 
-TokensForwardingSuccessToken.prototype['createdByTransactionId'] = undefined; // Implement TokensForwardingSuccessEthereumerc20token interface:
+TokensForwardingSuccessToken.prototype['createdByTransactionId'] = undefined; // Implement TokensForwardingSuccessErc20 interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_TokensForwardingSuccessEthereumerc20token["default"].prototype['name'] = undefined;
+_TokensForwardingSuccessErc["default"].prototype['name'] = undefined;
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
 
-_TokensForwardingSuccessEthereumerc20token["default"].prototype['symbol'] = undefined;
+_TokensForwardingSuccessErc["default"].prototype['symbol'] = undefined;
 /**
  * Defines how many decimals can be used to break the token.
  * @member {String} decimals
  */
 
-_TokensForwardingSuccessEthereumerc20token["default"].prototype['decimals'] = undefined;
+_TokensForwardingSuccessErc["default"].prototype['decimals'] = undefined;
 /**
  * Defines the amount of tokens sent with the confirmed transaction.
  * @member {String} amount
  */
 
-_TokensForwardingSuccessEthereumerc20token["default"].prototype['amount'] = undefined;
+_TokensForwardingSuccessErc["default"].prototype['amount'] = undefined;
 /**
  * Defines the address of the contract.
  * @member {String} contractAddress
  */
 
-_TokensForwardingSuccessEthereumerc20token["default"].prototype['contractAddress'] = undefined; // Implement TokensForwardingSuccessEthereumerc721token interface:
+_TokensForwardingSuccessErc["default"].prototype['contractAddress'] = undefined; // Implement TokensForwardingSuccessErc721 interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_TokensForwardingSuccessEthereumerc721token["default"].prototype['name'] = undefined;
+_TokensForwardingSuccessErc2["default"].prototype['name'] = undefined;
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
 
-_TokensForwardingSuccessEthereumerc721token["default"].prototype['symbol'] = undefined;
+_TokensForwardingSuccessErc2["default"].prototype['symbol'] = undefined;
 /**
  * Specifies the ID of the token.
  * @member {String} tokenId
  */
 
-_TokensForwardingSuccessEthereumerc721token["default"].prototype['tokenId'] = undefined;
+_TokensForwardingSuccessErc2["default"].prototype['tokenId'] = undefined;
 /**
  * Specifies the address of the contract.
  * @member {String} contractAddress
  */
 
-_TokensForwardingSuccessEthereumerc721token["default"].prototype['contractAddress'] = undefined; // Implement TokensForwardingSuccessOmnilayertoken interface:
+_TokensForwardingSuccessErc2["default"].prototype['contractAddress'] = undefined; // Implement TokensForwardingSuccessOmni interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_TokensForwardingSuccessOmnilayertoken["default"].prototype['name'] = undefined;
+_TokensForwardingSuccessOmni["default"].prototype['name'] = undefined;
 /**
  * Defines the ID of the property for Omni Layer.
  * @member {String} propertyId
  */
 
-_TokensForwardingSuccessOmnilayertoken["default"].prototype['propertyId'] = undefined;
+_TokensForwardingSuccessOmni["default"].prototype['propertyId'] = undefined;
 /**
  * Defines the type of the transaction.
  * @member {String} transactionType
  */
 
-_TokensForwardingSuccessOmnilayertoken["default"].prototype['transactionType'] = undefined;
+_TokensForwardingSuccessOmni["default"].prototype['transactionType'] = undefined;
 /**
  * The transaction ID used to create the token.
  * @member {String} createdByTransactionId
  */
 
-_TokensForwardingSuccessOmnilayertoken["default"].prototype['createdByTransactionId'] = undefined;
+_TokensForwardingSuccessOmni["default"].prototype['createdByTransactionId'] = undefined;
 /**
  * Defines the amount of tokens sent with the confirmed transaction.
  * @member {String} amount
  */
 
-_TokensForwardingSuccessOmnilayertoken["default"].prototype['amount'] = undefined;
+_TokensForwardingSuccessOmni["default"].prototype['amount'] = undefined;
 var _default = TokensForwardingSuccessToken;
 exports["default"] = _default;

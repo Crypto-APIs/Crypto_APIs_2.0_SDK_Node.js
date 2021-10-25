@@ -50,7 +50,7 @@
   describe('ListTransactionsByBlockHashRIBSD', function() {
     it('should create an instance of ListTransactionsByBlockHashRIBSD', function() {
       // uncomment below and update the code to test ListTransactionsByBlockHashRIBSD
-      //var instane = new Cryptoapis.ListTransactionsByBlockHashRIBSD();
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBSD();
       //expect(instance).to.be.a(Cryptoapis.ListTransactionsByBlockHashRIBSD);
     });
 

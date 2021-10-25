@@ -9,7 +9,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _AddTokensToExistingFromAddressRITSBOT = _interopRequireDefault(require("./AddTokensToExistingFromAddressRITSBOT"));
 
-var _AddTokensToExistingFromAddressRITSEET = _interopRequireDefault(require("./AddTokensToExistingFromAddressRITSEET"));
+var _AddTokensToExistingFromAddressRITSET = _interopRequireDefault(require("./AddTokensToExistingFromAddressRITSET"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,14 +22,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRITS model module.
  * @module model/AddTokensToExistingFromAddressRITS
- * @version 1.2.1
+ * @version 1.3.0
  */
 var AddTokensToExistingFromAddressRITS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressRITS</code>.
    * @alias module:model/AddTokensToExistingFromAddressRITS
    * @implements module:model/AddTokensToExistingFromAddressRITSBOT
-   * @implements module:model/AddTokensToExistingFromAddressRITSEET
+   * @implements module:model/AddTokensToExistingFromAddressRITSET
    * @param propertyId {Number} Defines the `propertyId` of the Omni Layer token.
    * @param contractAddress {String} Token contract address to be transferred
    */
@@ -38,7 +38,7 @@ var AddTokensToExistingFromAddressRITS = /*#__PURE__*/function () {
 
     _AddTokensToExistingFromAddressRITSBOT["default"].initialize(this, propertyId);
 
-    _AddTokensToExistingFromAddressRITSEET["default"].initialize(this, contractAddress);
+    _AddTokensToExistingFromAddressRITSET["default"].initialize(this, contractAddress);
 
     AddTokensToExistingFromAddressRITS.initialize(this, propertyId, contractAddress);
   }
@@ -71,7 +71,7 @@ var AddTokensToExistingFromAddressRITS = /*#__PURE__*/function () {
 
         _AddTokensToExistingFromAddressRITSBOT["default"].constructFromObject(data, obj);
 
-        _AddTokensToExistingFromAddressRITSEET["default"].constructFromObject(data, obj);
+        _AddTokensToExistingFromAddressRITSET["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('propertyId')) {
           obj['propertyId'] = _ApiClient["default"].convertToType(data['propertyId'], 'Number');
@@ -107,13 +107,13 @@ AddTokensToExistingFromAddressRITS.prototype['contractAddress'] = undefined; // 
  * @member {Number} propertyId
  */
 
-_AddTokensToExistingFromAddressRITSBOT["default"].prototype['propertyId'] = undefined; // Implement AddTokensToExistingFromAddressRITSEET interface:
+_AddTokensToExistingFromAddressRITSBOT["default"].prototype['propertyId'] = undefined; // Implement AddTokensToExistingFromAddressRITSET interface:
 
 /**
  * Token contract address to be transferred
  * @member {String} contractAddress
  */
 
-_AddTokensToExistingFromAddressRITSEET["default"].prototype['contractAddress'] = undefined;
+_AddTokensToExistingFromAddressRITSET["default"].prototype['contractAddress'] = undefined;
 var _default = AddTokensToExistingFromAddressRITS;
 exports["default"] = _default;

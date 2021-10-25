@@ -50,7 +50,7 @@
   describe('BlockchainDataTransactionNotFoundError', function() {
     it('should create an instance of BlockchainDataTransactionNotFoundError', function() {
       // uncomment below and update the code to test BlockchainDataTransactionNotFoundError
-      //var instane = new Cryptoapis.BlockchainDataTransactionNotFoundError();
+      //var instance = new Cryptoapis.BlockchainDataTransactionNotFoundError();
       //expect(instance).to.be.a(Cryptoapis.BlockchainDataTransactionNotFoundError);
     });
 

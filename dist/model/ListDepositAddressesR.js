@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesR model module.
  * @module model/ListDepositAddressesR
- * @version 1.2.1
+ * @version 1.3.0
  */
 var ListDepositAddressesR = /*#__PURE__*/function () {
   /**

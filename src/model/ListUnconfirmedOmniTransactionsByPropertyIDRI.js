@@ -19,7 +19,7 @@ import ListUnconfirmedOmniTransactionsByAddressRIFee from './ListUnconfirmedOmni
 /**
  * The ListUnconfirmedOmniTransactionsByPropertyIDRI model module.
  * @module model/ListUnconfirmedOmniTransactionsByPropertyIDRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListUnconfirmedOmniTransactionsByPropertyIDRI {
     /**

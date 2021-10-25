@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListAssetsDetailsRISC model module.
  * @module model/ListAssetsDetailsRISC
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListAssetsDetailsRISC {
     /**

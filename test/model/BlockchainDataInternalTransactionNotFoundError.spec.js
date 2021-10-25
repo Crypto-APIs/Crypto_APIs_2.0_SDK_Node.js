@@ -50,7 +50,7 @@
   describe('BlockchainDataInternalTransactionNotFoundError', function() {
     it('should create an instance of BlockchainDataInternalTransactionNotFoundError', function() {
       // uncomment below and update the code to test BlockchainDataInternalTransactionNotFoundError
-      //var instane = new Cryptoapis.BlockchainDataInternalTransactionNotFoundError();
+      //var instance = new Cryptoapis.BlockchainDataInternalTransactionNotFoundError();
       //expect(instance).to.be.a(Cryptoapis.BlockchainDataInternalTransactionNotFoundError);
     });
 

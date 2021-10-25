@@ -50,7 +50,7 @@
   describe('ListTokensTransfersByTransactionHashRData', function() {
     it('should create an instance of ListTokensTransfersByTransactionHashRData', function() {
       // uncomment below and update the code to test ListTokensTransfersByTransactionHashRData
-      //var instane = new Cryptoapis.ListTokensTransfersByTransactionHashRData();
+      //var instance = new Cryptoapis.ListTokensTransfersByTransactionHashRData();
       //expect(instance).to.be.a(Cryptoapis.ListTokensTransfersByTransactionHashRData);
     });
 

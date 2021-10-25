@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The XpubSyncInProgressError model module.
  * @module model/XpubSyncInProgressError
- * @version 1.2.1
+ * @version 1.3.0
  */
 var XpubSyncInProgressError = /*#__PURE__*/function () {
   /**

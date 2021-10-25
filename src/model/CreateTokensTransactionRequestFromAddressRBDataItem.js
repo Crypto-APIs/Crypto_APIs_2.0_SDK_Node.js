@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateTokensTransactionRequestFromAddressRBDataItem model module.
  * @module model/CreateTokensTransactionRequestFromAddressRBDataItem
- * @version 1.2.1
+ * @version 1.3.0
  */
 class CreateTokensTransactionRequestFromAddressRBDataItem {
     /**
@@ -67,6 +67,9 @@ class CreateTokensTransactionRequestFromAddressRBDataItem {
             if (data.hasOwnProperty('feePriority')) {
                 obj['feePriority'] = ApiClient.convertToType(data['feePriority'], 'String');
             }
+            if (data.hasOwnProperty('note')) {
+                obj['note'] = ApiClient.convertToType(data['note'], 'String');
+            }
             if (data.hasOwnProperty('recipientAddress')) {
                 obj['recipientAddress'] = ApiClient.convertToType(data['recipientAddress'], 'String');
             }
@@ -87,13 +90,13 @@ class CreateTokensTransactionRequestFromAddressRBDataItem {
 CreateTokensTransactionRequestFromAddressRBDataItem.prototype['amount'] = undefined;
 
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 CreateTokensTransactionRequestFromAddressRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Verified URL for sending callbacks
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
  * @member {String} callbackUrl
  */
 CreateTokensTransactionRequestFromAddressRBDataItem.prototype['callbackUrl'] = undefined;
@@ -103,6 +106,12 @@ CreateTokensTransactionRequestFromAddressRBDataItem.prototype['callbackUrl'] = u
  * @member {module:model/CreateTokensTransactionRequestFromAddressRBDataItem.FeePriorityEnum} feePriority
  */
 CreateTokensTransactionRequestFromAddressRBDataItem.prototype['feePriority'] = undefined;
+
+/**
+ * Represents an optional note to add a free text in, explaining or providing additional detail on the transaction request.
+ * @member {String} note
+ */
+CreateTokensTransactionRequestFromAddressRBDataItem.prototype['note'] = undefined;
 
 /**
  * Defines the specific recipient address for the transaction.

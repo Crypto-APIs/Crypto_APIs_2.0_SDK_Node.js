@@ -50,7 +50,7 @@
   describe('CreateCoinsTransactionRequestFromAddressRISenders', function() {
     it('should create an instance of CreateCoinsTransactionRequestFromAddressRISenders', function() {
       // uncomment below and update the code to test CreateCoinsTransactionRequestFromAddressRISenders
-      //var instane = new Cryptoapis.CreateCoinsTransactionRequestFromAddressRISenders();
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromAddressRISenders();
       //expect(instance).to.be.a(Cryptoapis.CreateCoinsTransactionRequestFromAddressRISenders);
     });
 

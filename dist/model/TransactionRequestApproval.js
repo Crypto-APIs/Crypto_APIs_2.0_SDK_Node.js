@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestApproval model module.
  * @module model/TransactionRequestApproval
- * @version 1.2.1
+ * @version 1.3.0
  */
 var TransactionRequestApproval = /*#__PURE__*/function () {
   /**

@@ -50,7 +50,7 @@
   describe('ListOmniTransactionsByBlockHeightRIRecipients', function() {
     it('should create an instance of ListOmniTransactionsByBlockHeightRIRecipients', function() {
       // uncomment below and update the code to test ListOmniTransactionsByBlockHeightRIRecipients
-      //var instane = new Cryptoapis.ListOmniTransactionsByBlockHeightRIRecipients();
+      //var instance = new Cryptoapis.ListOmniTransactionsByBlockHeightRIRecipients();
       //expect(instance).to.be.a(Cryptoapis.ListOmniTransactionsByBlockHeightRIRecipients);
     });
 

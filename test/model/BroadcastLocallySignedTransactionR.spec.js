@@ -50,7 +50,7 @@
   describe('BroadcastLocallySignedTransactionR', function() {
     it('should create an instance of BroadcastLocallySignedTransactionR', function() {
       // uncomment below and update the code to test BroadcastLocallySignedTransactionR
-      //var instane = new Cryptoapis.BroadcastLocallySignedTransactionR();
+      //var instance = new Cryptoapis.BroadcastLocallySignedTransactionR();
       //expect(instance).to.be.a(Cryptoapis.BroadcastLocallySignedTransactionR);
     });
 

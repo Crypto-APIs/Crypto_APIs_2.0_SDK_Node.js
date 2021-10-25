@@ -18,11 +18,11 @@ Name | Type | Description | Notes
 ## Enum: TokenTypeEnum
 
 
-* `ethereumERC20Token` (value: `"ethereumERC20Token"`)
+* `ERC-20` (value: `"ERC-20"`)
 
-* `ethereumERC721Token` (value: `"ethereumERC721Token"`)
+* `ERC-721` (value: `"ERC-721"`)
 
-* `omniLayerToken` (value: `"omniLayerToken"`)
+* `OMNI` (value: `"OMNI"`)
 
 
 

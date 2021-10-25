@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **blockchain** | **String** | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
-**network** | **String** | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot;, \&quot;rinkeby\&quot; are test networks. | 
+**network** | **String** | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
 **fromAddress** | **String** | Represents the hash of the address that provides the tokens. | 
 **toAddress** | **String** | Represents the hash of the address to forward the tokens to. | 
 **spentFeesAmount** | **String** | Represents the amount of the fee spent for the tokens to be forwarded. | 
@@ -20,11 +20,11 @@ Name | Type | Description | Notes
 ## Enum: TokenTypeEnum
 
 
-* `ethereumERC20Token` (value: `"ethereumERC20Token"`)
+* `ERC-20` (value: `"ERC-20"`)
 
-* `ethereumERC721Token` (value: `"ethereumERC721Token"`)
+* `ERC-721` (value: `"ERC-721"`)
 
-* `omniLayerToken` (value: `"omniLayerToken"`)
+* `OMNI` (value: `"OMNI"`)
 
 
 

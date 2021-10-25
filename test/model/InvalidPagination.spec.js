@@ -50,7 +50,7 @@
   describe('InvalidPagination', function() {
     it('should create an instance of InvalidPagination', function() {
       // uncomment below and update the code to test InvalidPagination
-      //var instane = new Cryptoapis.InvalidPagination();
+      //var instance = new Cryptoapis.InvalidPagination();
       //expect(instance).to.be.a(Cryptoapis.InvalidPagination);
     });
 

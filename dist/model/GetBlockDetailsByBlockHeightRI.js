@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightRI model module.
  * @module model/GetBlockDetailsByBlockHeightRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetBlockDetailsByBlockHeightRI = /*#__PURE__*/function () {
   /**
@@ -30,7 +30,7 @@ var GetBlockDetailsByBlockHeightRI = /*#__PURE__*/function () {
    * @param height {Number} Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
    * @param nextBlockHash {String} Represents the hash of the next block. When this is the last block of the blockchain this value will be an empty string.
    * @param previousBlockHash {String} Represents the hash of the previous block, also known as the parent block.
-   * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
+   * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix
    * @param transactionsCount {Number} Represents the total number of all transactions as part of this block.
    * @param blockchainSpecific {module:model/GetBlockDetailsByBlockHeightRIBS} 
    */
@@ -132,7 +132,7 @@ GetBlockDetailsByBlockHeightRI.prototype['nextBlockHash'] = undefined;
 
 GetBlockDetailsByBlockHeightRI.prototype['previousBlockHash'] = undefined;
 /**
- * Defines the exact date/time when this block was mined in Unix Timestamp.
+ * Defines the exact date/time when this block was mined in Unix
  * @member {Number} timestamp
  */
 

@@ -3,12 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "ApiClient", {
-  enumerable: true,
-  get: function get() {
-    return _ApiClient["default"];
-  }
-});
 Object.defineProperty(exports, "AddTokensToExistingFromAddressR", {
   enumerable: true,
   get: function get() {
@@ -45,10 +39,10 @@ Object.defineProperty(exports, "AddTokensToExistingFromAddressRBTokenDataBitcoin
     return _AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRBTokenDataEthereumToken", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token["default"];
+    return _AddTokensToExistingFromAddressRBTokenDataEthereumToken["default"];
   }
 });
 Object.defineProperty(exports, "AddTokensToExistingFromAddressRData", {
@@ -75,10 +69,10 @@ Object.defineProperty(exports, "AddTokensToExistingFromAddressRITSBOT", {
     return _AddTokensToExistingFromAddressRITSBOT["default"];
   }
 });
-Object.defineProperty(exports, "AddTokensToExistingFromAddressRITSEET", {
+Object.defineProperty(exports, "AddTokensToExistingFromAddressRITSET", {
   enumerable: true,
   get: function get() {
-    return _AddTokensToExistingFromAddressRITSEET["default"];
+    return _AddTokensToExistingFromAddressRITSET["default"];
   }
 });
 Object.defineProperty(exports, "AddressCoinsTransactionConfirmed", {
@@ -153,6 +147,12 @@ Object.defineProperty(exports, "AddressTokensTransactionConfirmed", {
     return _AddressTokensTransactionConfirmed["default"];
   }
 });
+Object.defineProperty(exports, "AddressTokensTransactionConfirmedBep20", {
+  enumerable: true,
+  get: function get() {
+    return _AddressTokensTransactionConfirmedBep["default"];
+  }
+});
 Object.defineProperty(exports, "AddressTokensTransactionConfirmedData", {
   enumerable: true,
   get: function get() {
@@ -177,6 +177,12 @@ Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmatio
     return _AddressTokensTransactionConfirmedEachConfirmation["default"];
   }
 });
+Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationBep20", {
+  enumerable: true,
+  get: function get() {
+    return _AddressTokensTransactionConfirmedEachConfirmationBep["default"];
+  }
+});
 Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationData", {
   enumerable: true,
   get: function get() {
@@ -189,28 +195,22 @@ Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmatio
     return _AddressTokensTransactionConfirmedEachConfirmationDataItem["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock", {
+Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationErc20", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock["default"];
+    return _AddressTokensTransactionConfirmedEachConfirmationErc["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token", {
+Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationErc721", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token["default"];
+    return _AddressTokensTransactionConfirmedEachConfirmationErc2["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token", {
+Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationOmni", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token["default"];
-  }
-});
-Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken", {
-  enumerable: true,
-  get: function get() {
-    return _AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken["default"];
+    return _AddressTokensTransactionConfirmedEachConfirmationOmni["default"];
   }
 });
 Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmationToken", {
@@ -219,22 +219,22 @@ Object.defineProperty(exports, "AddressTokensTransactionConfirmedEachConfirmatio
     return _AddressTokensTransactionConfirmedEachConfirmationToken["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionConfirmedEthereumerc20token", {
+Object.defineProperty(exports, "AddressTokensTransactionConfirmedErc20", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionConfirmedEthereumerc20token["default"];
+    return _AddressTokensTransactionConfirmedErc["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionConfirmedEthereumerc721token", {
+Object.defineProperty(exports, "AddressTokensTransactionConfirmedErc721", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionConfirmedEthereumerc721token["default"];
+    return _AddressTokensTransactionConfirmedErc2["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionConfirmedOmnilayertoken", {
+Object.defineProperty(exports, "AddressTokensTransactionConfirmedOmni", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionConfirmedOmnilayertoken["default"];
+    return _AddressTokensTransactionConfirmedOmni["default"];
   }
 });
 Object.defineProperty(exports, "AddressTokensTransactionConfirmedToken", {
@@ -261,22 +261,22 @@ Object.defineProperty(exports, "AddressTokensTransactionUnconfirmedDataItem", {
     return _AddressTokensTransactionUnconfirmedDataItem["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionUnconfirmedEthereumerc20token", {
+Object.defineProperty(exports, "AddressTokensTransactionUnconfirmedErc20", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionUnconfirmedEthereumerc20token["default"];
+    return _AddressTokensTransactionUnconfirmedErc["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionUnconfirmedEthereumerc721token", {
+Object.defineProperty(exports, "AddressTokensTransactionUnconfirmedErc721", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionUnconfirmedEthereumerc721token["default"];
+    return _AddressTokensTransactionUnconfirmedErc2["default"];
   }
 });
-Object.defineProperty(exports, "AddressTokensTransactionUnconfirmedOmnilayertoken", {
+Object.defineProperty(exports, "AddressTokensTransactionUnconfirmedOmni", {
   enumerable: true,
   get: function get() {
-    return _AddressTokensTransactionUnconfirmedOmnilayertoken["default"];
+    return _AddressTokensTransactionUnconfirmedOmni["default"];
   }
 });
 Object.defineProperty(exports, "AddressTokensTransactionUnconfirmedToken", {
@@ -295,6 +295,30 @@ Object.defineProperty(exports, "AlreadyExistsError", {
   enumerable: true,
   get: function get() {
     return _AlreadyExistsError["default"];
+  }
+});
+Object.defineProperty(exports, "ApiClient", {
+  enumerable: true,
+  get: function get() {
+    return _ApiClient["default"];
+  }
+});
+Object.defineProperty(exports, "AssetsApi", {
+  enumerable: true,
+  get: function get() {
+    return _AssetsApi["default"];
+  }
+});
+Object.defineProperty(exports, "AutomaticCoinsForwardingApi", {
+  enumerable: true,
+  get: function get() {
+    return _AutomaticCoinsForwardingApi["default"];
+  }
+});
+Object.defineProperty(exports, "AutomaticTokensForwardingApi", {
+  enumerable: true,
+  get: function get() {
+    return _AutomaticTokensForwardingApi["default"];
   }
 });
 Object.defineProperty(exports, "BannedIpAddress", {
@@ -621,6 +645,54 @@ Object.defineProperty(exports, "CreateAutomaticTokensForwardingRITSET", {
     return _CreateAutomaticTokensForwardingRITSET["default"];
   }
 });
+Object.defineProperty(exports, "CreateCoinsTransactionFromAddressForWholeAmountR", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionFromAddressForWholeAmountR["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionFromAddressForWholeAmountRB", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionFromAddressForWholeAmountRB["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionFromAddressForWholeAmountRBData", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionFromAddressForWholeAmountRBData["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionFromAddressForWholeAmountRBDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionFromAddressForWholeAmountRBDataItem["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionFromAddressForWholeAmountRData", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionFromAddressForWholeAmountRData["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionFromAddressForWholeAmountRI", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionFromAddressForWholeAmountRI["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionFromAddressForWholeAmountRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionFromAddressForWholeAmountRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "CreateCoinsTransactionFromAddressForWholeAmountRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _CreateCoinsTransactionFromAddressForWholeAmountRISenders["default"];
+  }
+});
 Object.defineProperty(exports, "CreateCoinsTransactionRequestFromAddressR", {
   enumerable: true,
   get: function get() {
@@ -717,6 +789,12 @@ Object.defineProperty(exports, "CreateCoinsTransactionRequestFromWalletRIRecipie
     return _CreateCoinsTransactionRequestFromWalletRIRecipients["default"];
   }
 });
+Object.defineProperty(exports, "CreateSubscriptionsForApi", {
+  enumerable: true,
+  get: function get() {
+    return _CreateSubscriptionsForApi["default"];
+  }
+});
 Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressR", {
   enumerable: true,
   get: function get() {
@@ -763,12 +841,6 @@ Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRIS", {
   enumerable: true,
   get: function get() {
     return _CreateTokensTransactionRequestFromAddressRIS["default"];
-  }
-});
-Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRISB", {
-  enumerable: true,
-  get: function get() {
-    return _CreateTokensTransactionRequestFromAddressRISB["default"];
   }
 });
 Object.defineProperty(exports, "CreateTokensTransactionRequestFromAddressRISE", {
@@ -879,6 +951,12 @@ Object.defineProperty(exports, "EndpointNotAllowedForPlanError", {
     return _EndpointNotAllowedForPlanError["default"];
   }
 });
+Object.defineProperty(exports, "ExchangeRatesApi", {
+  enumerable: true,
+  get: function get() {
+    return _ExchangeRatesApi["default"];
+  }
+});
 Object.defineProperty(exports, "FeatureMainnetsNotAllowedForPlan", {
   enumerable: true,
   get: function get() {
@@ -889,6 +967,48 @@ Object.defineProperty(exports, "FeatureMainnetsNotAllowedForPlanError", {
   enumerable: true,
   get: function get() {
     return _FeatureMainnetsNotAllowedForPlanError["default"];
+  }
+});
+Object.defineProperty(exports, "FeaturesApi", {
+  enumerable: true,
+  get: function get() {
+    return _FeaturesApi["default"];
+  }
+});
+Object.defineProperty(exports, "GenerateAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _GenerateAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "GenerateAddressRB", {
+  enumerable: true,
+  get: function get() {
+    return _GenerateAddressRB["default"];
+  }
+});
+Object.defineProperty(exports, "GenerateAddressRBData", {
+  enumerable: true,
+  get: function get() {
+    return _GenerateAddressRBData["default"];
+  }
+});
+Object.defineProperty(exports, "GenerateAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _GenerateAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "GenerateAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _GenerateAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "GenerateAddressRIAddresses", {
+  enumerable: true,
+  get: function get() {
+    return _GenerateAddressRIAddresses["default"];
   }
 });
 Object.defineProperty(exports, "GenerateDepositAddressR", {
@@ -925,6 +1045,12 @@ Object.defineProperty(exports, "GenerateDepositAddressRI", {
   enumerable: true,
   get: function get() {
     return _GenerateDepositAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "GeneratingApi", {
+  enumerable: true,
+  get: function get() {
+    return _GeneratingApi["default"];
   }
 });
 Object.defineProperty(exports, "GetAddressDetailsR", {
@@ -999,6 +1125,12 @@ Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSBC", {
     return _GetBlockDetailsByBlockHashRIBSBC["default"];
   }
 });
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _GetBlockDetailsByBlockHashRIBSBSC["default"];
+  }
+});
 Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSD", {
   enumerable: true,
   get: function get() {
@@ -1027,6 +1159,12 @@ Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSL", {
   enumerable: true,
   get: function get() {
     return _GetBlockDetailsByBlockHashRIBSL["default"];
+  }
+});
+Object.defineProperty(exports, "GetBlockDetailsByBlockHashRIBSZ", {
+  enumerable: true,
+  get: function get() {
+    return _GetBlockDetailsByBlockHashRIBSZ["default"];
   }
 });
 Object.defineProperty(exports, "GetBlockDetailsByBlockHeightR", {
@@ -1065,6 +1203,12 @@ Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSBC", {
     return _GetBlockDetailsByBlockHeightRIBSBC["default"];
   }
 });
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _GetBlockDetailsByBlockHeightRIBSBSC["default"];
+  }
+});
 Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSD", {
   enumerable: true,
   get: function get() {
@@ -1095,22 +1239,46 @@ Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSL", {
     return _GetBlockDetailsByBlockHeightRIBSL["default"];
   }
 });
-Object.defineProperty(exports, "GetContractDetailsByAddressR", {
+Object.defineProperty(exports, "GetBlockDetailsByBlockHeightRIBSZ", {
   enumerable: true,
   get: function get() {
-    return _GetContractDetailsByAddressR["default"];
+    return _GetBlockDetailsByBlockHeightRIBSZ["default"];
   }
 });
-Object.defineProperty(exports, "GetContractDetailsByAddressRData", {
+Object.defineProperty(exports, "GetEIP1559FeeRecommendationsR", {
   enumerable: true,
   get: function get() {
-    return _GetContractDetailsByAddressRData["default"];
+    return _GetEIP1559FeeRecommendationsR["default"];
   }
 });
-Object.defineProperty(exports, "GetContractDetailsByAddressRI", {
+Object.defineProperty(exports, "GetEIP1559FeeRecommendationsRData", {
   enumerable: true,
   get: function get() {
-    return _GetContractDetailsByAddressRI["default"];
+    return _GetEIP1559FeeRecommendationsRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetEIP1559FeeRecommendationsRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetEIP1559FeeRecommendationsRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetEIP1559FeeRecommendationsRIBaseFeePerGas", {
+  enumerable: true,
+  get: function get() {
+    return _GetEIP1559FeeRecommendationsRIBaseFeePerGas["default"];
+  }
+});
+Object.defineProperty(exports, "GetEIP1559FeeRecommendationsRIMaxFeePerGas", {
+  enumerable: true,
+  get: function get() {
+    return _GetEIP1559FeeRecommendationsRIMaxFeePerGas["default"];
+  }
+});
+Object.defineProperty(exports, "GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas", {
+  enumerable: true,
+  get: function get() {
+    return _GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas["default"];
   }
 });
 Object.defineProperty(exports, "GetExchangeRateByAssetSymbolsR", {
@@ -1227,70 +1395,82 @@ Object.defineProperty(exports, "GetInternalTransactionByTransactionHashAndOperat
     return _GetInternalTransactionByTransactionHashAndOperationIdRI["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockR", {
+Object.defineProperty(exports, "GetLastMinedBlockR", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockR["default"];
+    return _GetLastMinedBlockR["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRData", {
+Object.defineProperty(exports, "GetLastMinedBlockRData", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRData["default"];
+    return _GetLastMinedBlockRData["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRI", {
+Object.defineProperty(exports, "GetLastMinedBlockRI", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRI["default"];
+    return _GetLastMinedBlockRI["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRIBS", {
+Object.defineProperty(exports, "GetLastMinedBlockRIBS", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRIBS["default"];
+    return _GetLastMinedBlockRIBS["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRIBSB", {
+Object.defineProperty(exports, "GetLastMinedBlockRIBSB", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRIBSB["default"];
+    return _GetLastMinedBlockRIBSB["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRIBSBC", {
+Object.defineProperty(exports, "GetLastMinedBlockRIBSBC", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRIBSBC["default"];
+    return _GetLastMinedBlockRIBSBC["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRIBSD", {
+Object.defineProperty(exports, "GetLastMinedBlockRIBSBSC", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRIBSD["default"];
+    return _GetLastMinedBlockRIBSBSC["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRIBSD2", {
+Object.defineProperty(exports, "GetLastMinedBlockRIBSD", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRIBSD2["default"];
+    return _GetLastMinedBlockRIBSD["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRIBSE", {
+Object.defineProperty(exports, "GetLastMinedBlockRIBSD2", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRIBSE["default"];
+    return _GetLastMinedBlockRIBSD2["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRIBSEC", {
+Object.defineProperty(exports, "GetLastMinedBlockRIBSE", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRIBSEC["default"];
+    return _GetLastMinedBlockRIBSE["default"];
   }
 });
-Object.defineProperty(exports, "GetLatestMinedBlockRIBSL", {
+Object.defineProperty(exports, "GetLastMinedBlockRIBSEC", {
   enumerable: true,
   get: function get() {
-    return _GetLatestMinedBlockRIBSL["default"];
+    return _GetLastMinedBlockRIBSEC["default"];
+  }
+});
+Object.defineProperty(exports, "GetLastMinedBlockRIBSL", {
+  enumerable: true,
+  get: function get() {
+    return _GetLastMinedBlockRIBSL["default"];
+  }
+});
+Object.defineProperty(exports, "GetLastMinedBlockRIBSZ", {
+  enumerable: true,
+  get: function get() {
+    return _GetLastMinedBlockRIBSZ["default"];
   }
 });
 Object.defineProperty(exports, "GetLatestMinedXRPRippleBlockR", {
@@ -1365,6 +1545,24 @@ Object.defineProperty(exports, "GetOmniTransactionDetailsByTransactionIDTxidRISe
     return _GetOmniTransactionDetailsByTransactionIDTxidRISenders["default"];
   }
 });
+Object.defineProperty(exports, "GetTokenDetailsByContractAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _GetTokenDetailsByContractAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "GetTokenDetailsByContractAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetTokenDetailsByContractAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetTokenDetailsByContractAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetTokenDetailsByContractAddressRI["default"];
+  }
+});
 Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDR", {
   enumerable: true,
   get: function get() {
@@ -1417,6 +1615,18 @@ Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBCVout",
   enumerable: true,
   get: function get() {
     return _GetTransactionDetailsByTransactionIDRIBSBCVout["default"];
+  }
+});
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _GetTransactionDetailsByTransactionIDRIBSBSC["default"];
+  }
+});
+Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBSCGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _GetTransactionDetailsByTransactionIDRIBSBSCGasPrice["default"];
   }
 });
 Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRIBSBScriptPubKey", {
@@ -1573,6 +1783,30 @@ Object.defineProperty(exports, "GetTransactionDetailsByTransactionIDRISenders", 
   enumerable: true,
   get: function get() {
     return _GetTransactionDetailsByTransactionIDRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "GetTransactionRequestDetailsR", {
+  enumerable: true,
+  get: function get() {
+    return _GetTransactionRequestDetailsR["default"];
+  }
+});
+Object.defineProperty(exports, "GetTransactionRequestDetailsRData", {
+  enumerable: true,
+  get: function get() {
+    return _GetTransactionRequestDetailsRData["default"];
+  }
+});
+Object.defineProperty(exports, "GetTransactionRequestDetailsRI", {
+  enumerable: true,
+  get: function get() {
+    return _GetTransactionRequestDetailsRI["default"];
+  }
+});
+Object.defineProperty(exports, "GetTransactionRequestDetailsRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _GetTransactionRequestDetailsRIRecipients["default"];
   }
 });
 Object.defineProperty(exports, "GetUnconfirmedOmniTransactionByTransactionIDTxidR", {
@@ -1869,6 +2103,18 @@ Object.defineProperty(exports, "GetZilliqaTransactionDetailsByTransactionIDRISen
     return _GetZilliqaTransactionDetailsByTransactionIDRISenders["default"];
   }
 });
+Object.defineProperty(exports, "HDWalletsApi", {
+  enumerable: true,
+  get: function get() {
+    return _HDWalletsApi["default"];
+  }
+});
+Object.defineProperty(exports, "InformativeApi", {
+  enumerable: true,
+  get: function get() {
+    return _InformativeApi["default"];
+  }
+});
 Object.defineProperty(exports, "InsufficientCredits", {
   enumerable: true,
   get: function get() {
@@ -1879,6 +2125,12 @@ Object.defineProperty(exports, "InsufficientCreditsError", {
   enumerable: true,
   get: function get() {
     return _InsufficientCreditsError["default"];
+  }
+});
+Object.defineProperty(exports, "InternalApi", {
+  enumerable: true,
+  get: function get() {
+    return _InternalApi["default"];
   }
 });
 Object.defineProperty(exports, "InvalidApiKey", {
@@ -1977,6 +2229,162 @@ Object.defineProperty(exports, "LimitGreaterThanAllowedError", {
     return _LimitGreaterThanAllowedError["default"];
   }
 });
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsR", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsR["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBS", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBS["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSB", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSB["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSBC", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSBC["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSBCVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSBCVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSBCVout", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSBCVout["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSBSC["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSBScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSBScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSBVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSBVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSD", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSD["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSD2", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSD2["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSD2Vin", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSD2Vin["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSDVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSDVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSE", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSE["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSEC", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSEC["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSECFee", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSECFee["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSECGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSECGasPrice["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSEFee", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSEFee["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSEGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSEGasPrice["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSL", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSL["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSLScriptPubKey", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSLScriptPubKey["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSLVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSLVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSLVout", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSLVout["default"];
+  }
+});
+Object.defineProperty(exports, "ListAllUnconfirmedTransactionsRIBSZ", {
+  enumerable: true,
+  get: function get() {
+    return _ListAllUnconfirmedTransactionsRIBSZ["default"];
+  }
+});
 Object.defineProperty(exports, "ListAssetsDetailsR", {
   enumerable: true,
   get: function get() {
@@ -2055,6 +2463,240 @@ Object.defineProperty(exports, "ListCoinsForwardingAutomationsRI", {
     return _ListCoinsForwardingAutomationsRI["default"];
   }
 });
+Object.defineProperty(exports, "ListConfirmedTokensTransfersByAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTokensTransfersByAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTokensTransfersByAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTokensTransfersByAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTokensTransfersByAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTokensTransfersByAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBS", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBS["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSB", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSB["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSBC", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSBC["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSBCVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSBCVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSBSC["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSBSCGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSBSCGasPrice["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSBScriptPubKey", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSBScriptPubKey["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSBVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSBVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSBVout", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSBVout["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSD", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSD["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSD2", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSD2["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSD2ScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSD2ScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSD2Vin", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSD2Vin["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSD2Vout", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSD2Vout["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSDScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSDScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSDVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSDVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSE", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSE["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSEC", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSEC["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSECGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSECGasPrice["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSEGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSEGasPrice["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSL", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSL["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSLScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSLScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSLVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSLVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSZ", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSZ["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSZScriptPubKey", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSZScriptPubKey["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSZScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSZScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSZVJoinSplit", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSZVJoinSplit["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSZVShieldedOutput", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSZVShieldedOutput["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSZVShieldedSpend", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSZVShieldedSpend["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSZVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSZVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIBSZVout", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIBSZVout["default"];
+  }
+});
+Object.defineProperty(exports, "ListConfirmedTransactionsByAddressRIFee", {
+  enumerable: true,
+  get: function get() {
+    return _ListConfirmedTransactionsByAddressRIFee["default"];
+  }
+});
 Object.defineProperty(exports, "ListDepositAddressesR", {
   enumerable: true,
   get: function get() {
@@ -2125,6 +2767,108 @@ Object.defineProperty(exports, "ListInternalTransactionDetailsByTransactionHashR
   enumerable: true,
   get: function get() {
     return _ListInternalTransactionDetailsByTransactionHashRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListInternalTransactionsByAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _ListInternalTransactionsByAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "ListInternalTransactionsByAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListInternalTransactionsByAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListInternalTransactionsByAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListInternalTransactionsByAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksR", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksR["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBS", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBS["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSB", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSB["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSBC", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSBC["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSBSC["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSD", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSD["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSD2", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSD2["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSE", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSE["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSEC", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSEC["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSL", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSL["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSZ", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSZ["default"];
+  }
+});
+Object.defineProperty(exports, "ListLatestMinedBlocksRIBSZ2", {
+  enumerable: true,
+  get: function get() {
+    return _ListLatestMinedBlocksRIBSZ2["default"];
   }
 });
 Object.defineProperty(exports, "ListOmniTokensByAddressR", {
@@ -2331,24 +3075,6 @@ Object.defineProperty(exports, "ListTokensForwardingAutomationsRITSET", {
     return _ListTokensForwardingAutomationsRITSET["default"];
   }
 });
-Object.defineProperty(exports, "ListTokensTransfersByAddressR", {
-  enumerable: true,
-  get: function get() {
-    return _ListTokensTransfersByAddressR["default"];
-  }
-});
-Object.defineProperty(exports, "ListTokensTransfersByAddressRData", {
-  enumerable: true,
-  get: function get() {
-    return _ListTokensTransfersByAddressRData["default"];
-  }
-});
-Object.defineProperty(exports, "ListTokensTransfersByAddressRI", {
-  enumerable: true,
-  get: function get() {
-    return _ListTokensTransfersByAddressRI["default"];
-  }
-});
 Object.defineProperty(exports, "ListTokensTransfersByTransactionHashR", {
   enumerable: true,
   get: function get() {
@@ -2365,156 +3091,6 @@ Object.defineProperty(exports, "ListTokensTransfersByTransactionHashRI", {
   enumerable: true,
   get: function get() {
     return _ListTokensTransfersByTransactionHashRI["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressR", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressR["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRData", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRData["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRI", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRI["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBS", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBS["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSB", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSB["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSBC", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSBC["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSBCVin", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSBCVin["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSBScriptPubKey", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSBScriptPubKey["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSBVin", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSBVin["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSBVout", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSBVout["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSD", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSD["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSD2["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2ScriptPubKey", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSD2ScriptPubKey["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2ScriptSig", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSD2ScriptSig["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2Vin", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSD2Vin["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSD2Vout", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSD2Vout["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSDScriptSig", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSDScriptSig["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSDVin", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSDVin["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSE", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSE["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSEC", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSEC["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSECGasPrice", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSECGasPrice["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSEGasPrice", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSEGasPrice["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSL", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSL["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSLScriptSig", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSLScriptSig["default"];
-  }
-});
-Object.defineProperty(exports, "ListTransactionsByAddressRIBSLVin", {
-  enumerable: true,
-  get: function get() {
-    return _ListTransactionsByAddressRIBSLVin["default"];
   }
 });
 Object.defineProperty(exports, "ListTransactionsByBlockHashR", {
@@ -2569,6 +3145,18 @@ Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBCVout", {
   enumerable: true,
   get: function get() {
     return _ListTransactionsByBlockHashRIBSBCVout["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHashRIBSBSC["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBSCGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHashRIBSBSCGasPrice["default"];
   }
 });
 Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSBVin", {
@@ -2673,6 +3261,30 @@ Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSLVout", {
     return _ListTransactionsByBlockHashRIBSLVout["default"];
   }
 });
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSZ", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHashRIBSZ["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSZScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHashRIBSZScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSZVJoinSplit", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHashRIBSZVJoinSplit["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHashRIBSZVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHashRIBSZVin["default"];
+  }
+});
 Object.defineProperty(exports, "ListTransactionsByBlockHashRIFee", {
   enumerable: true,
   get: function get() {
@@ -2725,6 +3337,18 @@ Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSBC", {
   enumerable: true,
   get: function get() {
     return _ListTransactionsByBlockHeightRIBSBC["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSBSC["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSBSCGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSBSCGasPrice["default"];
   }
 });
 Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSBScriptPubKey", {
@@ -2829,6 +3453,48 @@ Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSLVout", {
     return _ListTransactionsByBlockHeightRIBSLVout["default"];
   }
 });
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSZ", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSZ["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSZScriptPubKey", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSZScriptPubKey["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSZScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSZScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSZVJoinSplit", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSZVJoinSplit["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSZVShieldedOutput", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSZVShieldedOutput["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSZVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSZVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListTransactionsByBlockHeightRIBSZVout", {
+  enumerable: true,
+  get: function get() {
+    return _ListTransactionsByBlockHeightRIBSZVout["default"];
+  }
+});
 Object.defineProperty(exports, "ListTransactionsByBlockHeightRIFee", {
   enumerable: true,
   get: function get() {
@@ -2881,6 +3547,294 @@ Object.defineProperty(exports, "ListUnconfirmedOmniTransactionsByPropertyIDRI", 
   enumerable: true,
   get: function get() {
     return _ListUnconfirmedOmniTransactionsByPropertyIDRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBS", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBS["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSB", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSB["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBC", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBC["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBCVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBCVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBCVout", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBCVout["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBSC", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBSC["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSBVout", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSBVout["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSD", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSD["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSD2", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSD2["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSD2Vin", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSD2Vin["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSD2Vout", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSD2Vout["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSDVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSDVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSE", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSE["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSEC", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSEC["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSECFee", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSECFee["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSECGasPrice", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSECGasPrice["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSEFee", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSEFee["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSL", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSL["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSLScriptSig", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSLScriptSig["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSLVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSLVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSLVout", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSLVout["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSZ", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSZ["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIBSZVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIBSZVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnconfirmedTransactionsByAddressRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnconfirmedTransactionsByAddressRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressR", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressR["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressRIBlockchainSpecific", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressRIBlockchainSpecific["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressRIFee", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressRIFee["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "ListUnspentTransactionOutputsByAddressRIVin", {
+  enumerable: true,
+  get: function get() {
+    return _ListUnspentTransactionOutputsByAddressRIVin["default"];
+  }
+});
+Object.defineProperty(exports, "ListWalletTransactionsR", {
+  enumerable: true,
+  get: function get() {
+    return _ListWalletTransactionsR["default"];
+  }
+});
+Object.defineProperty(exports, "ListWalletTransactionsRData", {
+  enumerable: true,
+  get: function get() {
+    return _ListWalletTransactionsRData["default"];
+  }
+});
+Object.defineProperty(exports, "ListWalletTransactionsRI", {
+  enumerable: true,
+  get: function get() {
+    return _ListWalletTransactionsRI["default"];
+  }
+});
+Object.defineProperty(exports, "ListWalletTransactionsRIFee", {
+  enumerable: true,
+  get: function get() {
+    return _ListWalletTransactionsRIFee["default"];
+  }
+});
+Object.defineProperty(exports, "ListWalletTransactionsRIRecipients", {
+  enumerable: true,
+  get: function get() {
+    return _ListWalletTransactionsRIRecipients["default"];
+  }
+});
+Object.defineProperty(exports, "ListWalletTransactionsRISenders", {
+  enumerable: true,
+  get: function get() {
+    return _ListWalletTransactionsRISenders["default"];
+  }
+});
+Object.defineProperty(exports, "ListWalletTransactionsRIValue", {
+  enumerable: true,
+  get: function get() {
+    return _ListWalletTransactionsRIValue["default"];
   }
 });
 Object.defineProperty(exports, "ListXRPRippleTransactionsByAddressR", {
@@ -3097,6 +4051,18 @@ Object.defineProperty(exports, "ListZilliqaTransactionsByBlockHeightRI", {
   enumerable: true,
   get: function get() {
     return _ListZilliqaTransactionsByBlockHeightRI["default"];
+  }
+});
+Object.defineProperty(exports, "ManageSubscriptionsApi", {
+  enumerable: true,
+  get: function get() {
+    return _ManageSubscriptionsApi["default"];
+  }
+});
+Object.defineProperty(exports, "MetadataApi", {
+  enumerable: true,
+  get: function get() {
+    return _MetadataApi["default"];
   }
 });
 Object.defineProperty(exports, "MinedTransactionR", {
@@ -3375,6 +4341,18 @@ Object.defineProperty(exports, "NewConfirmedTokensTransactionsRB", {
     return _NewConfirmedTokensTransactionsRB["default"];
   }
 });
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsRBData", {
+  enumerable: true,
+  get: function get() {
+    return _NewConfirmedTokensTransactionsRBData["default"];
+  }
+});
+Object.defineProperty(exports, "NewConfirmedTokensTransactionsRBDataItem", {
+  enumerable: true,
+  get: function get() {
+    return _NewConfirmedTokensTransactionsRBDataItem["default"];
+  }
+});
 Object.defineProperty(exports, "NewConfirmedTokensTransactionsRData", {
   enumerable: true,
   get: function get() {
@@ -3459,6 +4437,12 @@ Object.defineProperty(exports, "NewUnconfirmedTokensTransactionsRI", {
     return _NewUnconfirmedTokensTransactionsRI["default"];
   }
 });
+Object.defineProperty(exports, "OmniLayerApi", {
+  enumerable: true,
+  get: function get() {
+    return _OmniLayerApi["default"];
+  }
+});
 Object.defineProperty(exports, "RequestLimitReached", {
   enumerable: true,
   get: function get() {
@@ -3519,6 +4503,12 @@ Object.defineProperty(exports, "SyncHDWalletXPubYPubZPubRI", {
     return _SyncHDWalletXPubYPubZPubRI["default"];
   }
 });
+Object.defineProperty(exports, "TokensApi", {
+  enumerable: true,
+  get: function get() {
+    return _TokensApi["default"];
+  }
+});
 Object.defineProperty(exports, "TokensForwardingAutomationsLimitReached", {
   enumerable: true,
   get: function get() {
@@ -3567,22 +4557,22 @@ Object.defineProperty(exports, "TokensForwardingSuccessDataItem", {
     return _TokensForwardingSuccessDataItem["default"];
   }
 });
-Object.defineProperty(exports, "TokensForwardingSuccessEthereumerc20token", {
+Object.defineProperty(exports, "TokensForwardingSuccessErc20", {
   enumerable: true,
   get: function get() {
-    return _TokensForwardingSuccessEthereumerc20token["default"];
+    return _TokensForwardingSuccessErc["default"];
   }
 });
-Object.defineProperty(exports, "TokensForwardingSuccessEthereumerc721token", {
+Object.defineProperty(exports, "TokensForwardingSuccessErc721", {
   enumerable: true,
   get: function get() {
-    return _TokensForwardingSuccessEthereumerc721token["default"];
+    return _TokensForwardingSuccessErc2["default"];
   }
 });
-Object.defineProperty(exports, "TokensForwardingSuccessOmnilayertoken", {
+Object.defineProperty(exports, "TokensForwardingSuccessOmni", {
   enumerable: true,
   get: function get() {
-    return _TokensForwardingSuccessOmnilayertoken["default"];
+    return _TokensForwardingSuccessOmni["default"];
   }
 });
 Object.defineProperty(exports, "TokensForwardingSuccessToken", {
@@ -3699,6 +4689,18 @@ Object.defineProperty(exports, "TransactionRequestRejectionDataItem", {
     return _TransactionRequestRejectionDataItem["default"];
   }
 });
+Object.defineProperty(exports, "TransactionsApi", {
+  enumerable: true,
+  get: function get() {
+    return _TransactionsApi["default"];
+  }
+});
+Object.defineProperty(exports, "UTXOBasedApi", {
+  enumerable: true,
+  get: function get() {
+    return _UTXOBasedApi["default"];
+  }
+});
 Object.defineProperty(exports, "UnexpectedServerError", {
   enumerable: true,
   get: function get() {
@@ -3709,6 +4711,12 @@ Object.defineProperty(exports, "UnexpectedServerErrorError", {
   enumerable: true,
   get: function get() {
     return _UnexpectedServerErrorError["default"];
+  }
+});
+Object.defineProperty(exports, "UnifiedEndpointsApi", {
+  enumerable: true,
+  get: function get() {
+    return _UnifiedEndpointsApi["default"];
   }
 });
 Object.defineProperty(exports, "UnsupportedMediaType", {
@@ -3771,6 +4779,18 @@ Object.defineProperty(exports, "ValidateAddressRI", {
     return _ValidateAddressRI["default"];
   }
 });
+Object.defineProperty(exports, "WalletAsAServiceAddressBalanceNotEnough", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceAddressBalanceNotEnough["default"];
+  }
+});
+Object.defineProperty(exports, "WalletAsAServiceAddressBalanceNotEnoughError", {
+  enumerable: true,
+  get: function get() {
+    return _WalletAsAServiceAddressBalanceNotEnoughError["default"];
+  }
+});
 Object.defineProperty(exports, "WalletAsAServiceDepositAddressesLimitReached", {
   enumerable: true,
   get: function get() {
@@ -3819,6 +4839,12 @@ Object.defineProperty(exports, "WalletAsAServiceWalletBalanceNotEnoughError", {
     return _WalletAsAServiceWalletBalanceNotEnoughError["default"];
   }
 });
+Object.defineProperty(exports, "XRPRippleApi", {
+  enumerable: true,
+  get: function get() {
+    return _XRPRippleApi["default"];
+  }
+});
 Object.defineProperty(exports, "XpubNotSynced", {
   enumerable: true,
   get: function get() {
@@ -3843,108 +4869,6 @@ Object.defineProperty(exports, "XpubSyncInProgressError", {
     return _XpubSyncInProgressError["default"];
   }
 });
-Object.defineProperty(exports, "AssetsApi", {
-  enumerable: true,
-  get: function get() {
-    return _AssetsApi["default"];
-  }
-});
-Object.defineProperty(exports, "AutomaticCoinsForwardingApi", {
-  enumerable: true,
-  get: function get() {
-    return _AutomaticCoinsForwardingApi["default"];
-  }
-});
-Object.defineProperty(exports, "AutomaticTokensForwardingApi", {
-  enumerable: true,
-  get: function get() {
-    return _AutomaticTokensForwardingApi["default"];
-  }
-});
-Object.defineProperty(exports, "CreateSubscriptionsForApi", {
-  enumerable: true,
-  get: function get() {
-    return _CreateSubscriptionsForApi["default"];
-  }
-});
-Object.defineProperty(exports, "ExchangeRatesApi", {
-  enumerable: true,
-  get: function get() {
-    return _ExchangeRatesApi["default"];
-  }
-});
-Object.defineProperty(exports, "FeaturesApi", {
-  enumerable: true,
-  get: function get() {
-    return _FeaturesApi["default"];
-  }
-});
-Object.defineProperty(exports, "GeneratingApi", {
-  enumerable: true,
-  get: function get() {
-    return _GeneratingApi["default"];
-  }
-});
-Object.defineProperty(exports, "InformativeApi", {
-  enumerable: true,
-  get: function get() {
-    return _InformativeApi["default"];
-  }
-});
-Object.defineProperty(exports, "InternalApi", {
-  enumerable: true,
-  get: function get() {
-    return _InternalApi["default"];
-  }
-});
-Object.defineProperty(exports, "ManageSubscriptionsApi", {
-  enumerable: true,
-  get: function get() {
-    return _ManageSubscriptionsApi["default"];
-  }
-});
-Object.defineProperty(exports, "MetadataApi", {
-  enumerable: true,
-  get: function get() {
-    return _MetadataApi["default"];
-  }
-});
-Object.defineProperty(exports, "OmniLayerApi", {
-  enumerable: true,
-  get: function get() {
-    return _OmniLayerApi["default"];
-  }
-});
-Object.defineProperty(exports, "TokensApi", {
-  enumerable: true,
-  get: function get() {
-    return _TokensApi["default"];
-  }
-});
-Object.defineProperty(exports, "TransactionsApi", {
-  enumerable: true,
-  get: function get() {
-    return _TransactionsApi["default"];
-  }
-});
-Object.defineProperty(exports, "UTXOBasedApi", {
-  enumerable: true,
-  get: function get() {
-    return _UTXOBasedApi["default"];
-  }
-});
-Object.defineProperty(exports, "UnifiedEndpointsApi", {
-  enumerable: true,
-  get: function get() {
-    return _UnifiedEndpointsApi["default"];
-  }
-});
-Object.defineProperty(exports, "XRPRippleApi", {
-  enumerable: true,
-  get: function get() {
-    return _XRPRippleApi["default"];
-  }
-});
 Object.defineProperty(exports, "ZilliqaApi", {
   enumerable: true,
   get: function get() {
@@ -3966,7 +4890,7 @@ var _AddTokensToExistingFromAddressRBTokenData = _interopRequireDefault(require(
 
 var _AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken"));
 
-var _AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token"));
+var _AddTokensToExistingFromAddressRBTokenDataEthereumToken = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRBTokenDataEthereumToken"));
 
 var _AddTokensToExistingFromAddressRData = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRData"));
 
@@ -3976,7 +4900,7 @@ var _AddTokensToExistingFromAddressRITS = _interopRequireDefault(require("./mode
 
 var _AddTokensToExistingFromAddressRITSBOT = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRITSBOT"));
 
-var _AddTokensToExistingFromAddressRITSEET = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRITSEET"));
+var _AddTokensToExistingFromAddressRITSET = _interopRequireDefault(require("./model/AddTokensToExistingFromAddressRITSET"));
 
 var _AddressCoinsTransactionConfirmed = _interopRequireDefault(require("./model/AddressCoinsTransactionConfirmed"));
 
@@ -4002,6 +4926,8 @@ var _AddressCoinsTransactionUnconfirmedDataItem = _interopRequireDefault(require
 
 var _AddressTokensTransactionConfirmed = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmed"));
 
+var _AddressTokensTransactionConfirmedBep = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedBep20"));
+
 var _AddressTokensTransactionConfirmedData = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedData"));
 
 var _AddressTokensTransactionConfirmedDataItem = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedDataItem"));
@@ -4010,25 +4936,25 @@ var _AddressTokensTransactionConfirmedDataItemMinedInBlock = _interopRequireDefa
 
 var _AddressTokensTransactionConfirmedEachConfirmation = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmation"));
 
+var _AddressTokensTransactionConfirmedEachConfirmationBep = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationBep20"));
+
 var _AddressTokensTransactionConfirmedEachConfirmationData = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationData"));
 
 var _AddressTokensTransactionConfirmedEachConfirmationDataItem = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationDataItem"));
 
-var _AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock"));
+var _AddressTokensTransactionConfirmedEachConfirmationErc = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationErc20"));
 
-var _AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token"));
+var _AddressTokensTransactionConfirmedEachConfirmationErc2 = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationErc721"));
 
-var _AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token"));
-
-var _AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken"));
+var _AddressTokensTransactionConfirmedEachConfirmationOmni = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationOmni"));
 
 var _AddressTokensTransactionConfirmedEachConfirmationToken = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEachConfirmationToken"));
 
-var _AddressTokensTransactionConfirmedEthereumerc20token = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEthereumerc20token"));
+var _AddressTokensTransactionConfirmedErc = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedErc20"));
 
-var _AddressTokensTransactionConfirmedEthereumerc721token = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedEthereumerc721token"));
+var _AddressTokensTransactionConfirmedErc2 = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedErc721"));
 
-var _AddressTokensTransactionConfirmedOmnilayertoken = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedOmnilayertoken"));
+var _AddressTokensTransactionConfirmedOmni = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedOmni"));
 
 var _AddressTokensTransactionConfirmedToken = _interopRequireDefault(require("./model/AddressTokensTransactionConfirmedToken"));
 
@@ -4038,11 +4964,11 @@ var _AddressTokensTransactionUnconfirmedData = _interopRequireDefault(require(".
 
 var _AddressTokensTransactionUnconfirmedDataItem = _interopRequireDefault(require("./model/AddressTokensTransactionUnconfirmedDataItem"));
 
-var _AddressTokensTransactionUnconfirmedEthereumerc20token = _interopRequireDefault(require("./model/AddressTokensTransactionUnconfirmedEthereumerc20token"));
+var _AddressTokensTransactionUnconfirmedErc = _interopRequireDefault(require("./model/AddressTokensTransactionUnconfirmedErc20"));
 
-var _AddressTokensTransactionUnconfirmedEthereumerc721token = _interopRequireDefault(require("./model/AddressTokensTransactionUnconfirmedEthereumerc721token"));
+var _AddressTokensTransactionUnconfirmedErc2 = _interopRequireDefault(require("./model/AddressTokensTransactionUnconfirmedErc721"));
 
-var _AddressTokensTransactionUnconfirmedOmnilayertoken = _interopRequireDefault(require("./model/AddressTokensTransactionUnconfirmedOmnilayertoken"));
+var _AddressTokensTransactionUnconfirmedOmni = _interopRequireDefault(require("./model/AddressTokensTransactionUnconfirmedOmni"));
 
 var _AddressTokensTransactionUnconfirmedToken = _interopRequireDefault(require("./model/AddressTokensTransactionUnconfirmedToken"));
 
@@ -4158,6 +5084,22 @@ var _CreateAutomaticTokensForwardingRITSBOT = _interopRequireDefault(require("./
 
 var _CreateAutomaticTokensForwardingRITSET = _interopRequireDefault(require("./model/CreateAutomaticTokensForwardingRITSET"));
 
+var _CreateCoinsTransactionFromAddressForWholeAmountR = _interopRequireDefault(require("./model/CreateCoinsTransactionFromAddressForWholeAmountR"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmountRB = _interopRequireDefault(require("./model/CreateCoinsTransactionFromAddressForWholeAmountRB"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmountRBData = _interopRequireDefault(require("./model/CreateCoinsTransactionFromAddressForWholeAmountRBData"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmountRBDataItem = _interopRequireDefault(require("./model/CreateCoinsTransactionFromAddressForWholeAmountRBDataItem"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmountRData = _interopRequireDefault(require("./model/CreateCoinsTransactionFromAddressForWholeAmountRData"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmountRI = _interopRequireDefault(require("./model/CreateCoinsTransactionFromAddressForWholeAmountRI"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmountRIRecipients = _interopRequireDefault(require("./model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipients"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmountRISenders = _interopRequireDefault(require("./model/CreateCoinsTransactionFromAddressForWholeAmountRISenders"));
+
 var _CreateCoinsTransactionRequestFromAddressR = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressR"));
 
 var _CreateCoinsTransactionRequestFromAddressRB = _interopRequireDefault(require("./model/CreateCoinsTransactionRequestFromAddressRB"));
@@ -4206,8 +5148,6 @@ var _CreateTokensTransactionRequestFromAddressRIRecipients = _interopRequireDefa
 
 var _CreateTokensTransactionRequestFromAddressRIS = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRIS"));
 
-var _CreateTokensTransactionRequestFromAddressRISB = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRISB"));
-
 var _CreateTokensTransactionRequestFromAddressRISE = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRISE"));
 
 var _CreateTokensTransactionRequestFromAddressRISenders = _interopRequireDefault(require("./model/CreateTokensTransactionRequestFromAddressRISenders"));
@@ -4248,6 +5188,18 @@ var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("./model/
 
 var _FeatureMainnetsNotAllowedForPlanError = _interopRequireDefault(require("./model/FeatureMainnetsNotAllowedForPlanError"));
 
+var _GenerateAddressR = _interopRequireDefault(require("./model/GenerateAddressR"));
+
+var _GenerateAddressRB = _interopRequireDefault(require("./model/GenerateAddressRB"));
+
+var _GenerateAddressRBData = _interopRequireDefault(require("./model/GenerateAddressRBData"));
+
+var _GenerateAddressRData = _interopRequireDefault(require("./model/GenerateAddressRData"));
+
+var _GenerateAddressRI = _interopRequireDefault(require("./model/GenerateAddressRI"));
+
+var _GenerateAddressRIAddresses = _interopRequireDefault(require("./model/GenerateAddressRIAddresses"));
+
 var _GenerateDepositAddressR = _interopRequireDefault(require("./model/GenerateDepositAddressR"));
 
 var _GenerateDepositAddressRB = _interopRequireDefault(require("./model/GenerateDepositAddressRB"));
@@ -4284,6 +5236,8 @@ var _GetBlockDetailsByBlockHashRIBSB = _interopRequireDefault(require("./model/G
 
 var _GetBlockDetailsByBlockHashRIBSBC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSBC"));
 
+var _GetBlockDetailsByBlockHashRIBSBSC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSBSC"));
+
 var _GetBlockDetailsByBlockHashRIBSD = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSD"));
 
 var _GetBlockDetailsByBlockHashRIBSD2 = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSD2"));
@@ -4293,6 +5247,8 @@ var _GetBlockDetailsByBlockHashRIBSE = _interopRequireDefault(require("./model/G
 var _GetBlockDetailsByBlockHashRIBSEC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSEC"));
 
 var _GetBlockDetailsByBlockHashRIBSL = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSL"));
+
+var _GetBlockDetailsByBlockHashRIBSZ = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHashRIBSZ"));
 
 var _GetBlockDetailsByBlockHeightR = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightR"));
 
@@ -4306,6 +5262,8 @@ var _GetBlockDetailsByBlockHeightRIBSB = _interopRequireDefault(require("./model
 
 var _GetBlockDetailsByBlockHeightRIBSBC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSBC"));
 
+var _GetBlockDetailsByBlockHeightRIBSBSC = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSBSC"));
+
 var _GetBlockDetailsByBlockHeightRIBSD = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSD"));
 
 var _GetBlockDetailsByBlockHeightRIBSD2 = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSD2"));
@@ -4316,11 +5274,19 @@ var _GetBlockDetailsByBlockHeightRIBSEC = _interopRequireDefault(require("./mode
 
 var _GetBlockDetailsByBlockHeightRIBSL = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSL"));
 
-var _GetContractDetailsByAddressR = _interopRequireDefault(require("./model/GetContractDetailsByAddressR"));
+var _GetBlockDetailsByBlockHeightRIBSZ = _interopRequireDefault(require("./model/GetBlockDetailsByBlockHeightRIBSZ"));
 
-var _GetContractDetailsByAddressRData = _interopRequireDefault(require("./model/GetContractDetailsByAddressRData"));
+var _GetEIP1559FeeRecommendationsR = _interopRequireDefault(require("./model/GetEIP1559FeeRecommendationsR"));
 
-var _GetContractDetailsByAddressRI = _interopRequireDefault(require("./model/GetContractDetailsByAddressRI"));
+var _GetEIP1559FeeRecommendationsRData = _interopRequireDefault(require("./model/GetEIP1559FeeRecommendationsRData"));
+
+var _GetEIP1559FeeRecommendationsRI = _interopRequireDefault(require("./model/GetEIP1559FeeRecommendationsRI"));
+
+var _GetEIP1559FeeRecommendationsRIBaseFeePerGas = _interopRequireDefault(require("./model/GetEIP1559FeeRecommendationsRIBaseFeePerGas"));
+
+var _GetEIP1559FeeRecommendationsRIMaxFeePerGas = _interopRequireDefault(require("./model/GetEIP1559FeeRecommendationsRIMaxFeePerGas"));
+
+var _GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas = _interopRequireDefault(require("./model/GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas"));
 
 var _GetExchangeRateByAssetSymbolsR = _interopRequireDefault(require("./model/GetExchangeRateByAssetSymbolsR"));
 
@@ -4360,27 +5326,31 @@ var _GetInternalTransactionByTransactionHashAndOperationIdRData = _interopRequir
 
 var _GetInternalTransactionByTransactionHashAndOperationIdRI = _interopRequireDefault(require("./model/GetInternalTransactionByTransactionHashAndOperationIdRI"));
 
-var _GetLatestMinedBlockR = _interopRequireDefault(require("./model/GetLatestMinedBlockR"));
+var _GetLastMinedBlockR = _interopRequireDefault(require("./model/GetLastMinedBlockR"));
 
-var _GetLatestMinedBlockRData = _interopRequireDefault(require("./model/GetLatestMinedBlockRData"));
+var _GetLastMinedBlockRData = _interopRequireDefault(require("./model/GetLastMinedBlockRData"));
 
-var _GetLatestMinedBlockRI = _interopRequireDefault(require("./model/GetLatestMinedBlockRI"));
+var _GetLastMinedBlockRI = _interopRequireDefault(require("./model/GetLastMinedBlockRI"));
 
-var _GetLatestMinedBlockRIBS = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBS"));
+var _GetLastMinedBlockRIBS = _interopRequireDefault(require("./model/GetLastMinedBlockRIBS"));
 
-var _GetLatestMinedBlockRIBSB = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSB"));
+var _GetLastMinedBlockRIBSB = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSB"));
 
-var _GetLatestMinedBlockRIBSBC = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSBC"));
+var _GetLastMinedBlockRIBSBC = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSBC"));
 
-var _GetLatestMinedBlockRIBSD = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSD"));
+var _GetLastMinedBlockRIBSBSC = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSBSC"));
 
-var _GetLatestMinedBlockRIBSD2 = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSD2"));
+var _GetLastMinedBlockRIBSD = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSD"));
 
-var _GetLatestMinedBlockRIBSE = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSE"));
+var _GetLastMinedBlockRIBSD2 = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSD2"));
 
-var _GetLatestMinedBlockRIBSEC = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSEC"));
+var _GetLastMinedBlockRIBSE = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSE"));
 
-var _GetLatestMinedBlockRIBSL = _interopRequireDefault(require("./model/GetLatestMinedBlockRIBSL"));
+var _GetLastMinedBlockRIBSEC = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSEC"));
+
+var _GetLastMinedBlockRIBSL = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSL"));
+
+var _GetLastMinedBlockRIBSZ = _interopRequireDefault(require("./model/GetLastMinedBlockRIBSZ"));
 
 var _GetLatestMinedXRPRippleBlockR = _interopRequireDefault(require("./model/GetLatestMinedXRPRippleBlockR"));
 
@@ -4406,6 +5376,12 @@ var _GetOmniTransactionDetailsByTransactionIDTxidRI = _interopRequireDefault(req
 
 var _GetOmniTransactionDetailsByTransactionIDTxidRISenders = _interopRequireDefault(require("./model/GetOmniTransactionDetailsByTransactionIDTxidRISenders"));
 
+var _GetTokenDetailsByContractAddressR = _interopRequireDefault(require("./model/GetTokenDetailsByContractAddressR"));
+
+var _GetTokenDetailsByContractAddressRData = _interopRequireDefault(require("./model/GetTokenDetailsByContractAddressRData"));
+
+var _GetTokenDetailsByContractAddressRI = _interopRequireDefault(require("./model/GetTokenDetailsByContractAddressRI"));
+
 var _GetTransactionDetailsByTransactionIDR = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDR"));
 
 var _GetTransactionDetailsByTransactionIDRData = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRData"));
@@ -4423,6 +5399,10 @@ var _GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey = _interopRequireDef
 var _GetTransactionDetailsByTransactionIDRIBSBCVin = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBCVin"));
 
 var _GetTransactionDetailsByTransactionIDRIBSBCVout = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBCVout"));
+
+var _GetTransactionDetailsByTransactionIDRIBSBSC = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBSC"));
+
+var _GetTransactionDetailsByTransactionIDRIBSBSCGasPrice = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice"));
 
 var _GetTransactionDetailsByTransactionIDRIBSBScriptPubKey = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIBSBScriptPubKey"));
 
@@ -4475,6 +5455,14 @@ var _GetTransactionDetailsByTransactionIDRIFee = _interopRequireDefault(require(
 var _GetTransactionDetailsByTransactionIDRIRecipients = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRIRecipients"));
 
 var _GetTransactionDetailsByTransactionIDRISenders = _interopRequireDefault(require("./model/GetTransactionDetailsByTransactionIDRISenders"));
+
+var _GetTransactionRequestDetailsR = _interopRequireDefault(require("./model/GetTransactionRequestDetailsR"));
+
+var _GetTransactionRequestDetailsRData = _interopRequireDefault(require("./model/GetTransactionRequestDetailsRData"));
+
+var _GetTransactionRequestDetailsRI = _interopRequireDefault(require("./model/GetTransactionRequestDetailsRI"));
+
+var _GetTransactionRequestDetailsRIRecipients = _interopRequireDefault(require("./model/GetTransactionRequestDetailsRIRecipients"));
 
 var _GetUnconfirmedOmniTransactionByTransactionIDTxidR = _interopRequireDefault(require("./model/GetUnconfirmedOmniTransactionByTransactionIDTxidR"));
 
@@ -4610,6 +5598,58 @@ var _LimitGreaterThanAllowed = _interopRequireDefault(require("./model/LimitGrea
 
 var _LimitGreaterThanAllowedError = _interopRequireDefault(require("./model/LimitGreaterThanAllowedError"));
 
+var _ListAllUnconfirmedTransactionsR = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsR"));
+
+var _ListAllUnconfirmedTransactionsRData = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRData"));
+
+var _ListAllUnconfirmedTransactionsRI = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRI"));
+
+var _ListAllUnconfirmedTransactionsRIBS = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBS"));
+
+var _ListAllUnconfirmedTransactionsRIBSB = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSB"));
+
+var _ListAllUnconfirmedTransactionsRIBSBC = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSBC"));
+
+var _ListAllUnconfirmedTransactionsRIBSBCVin = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSBCVin"));
+
+var _ListAllUnconfirmedTransactionsRIBSBCVout = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSBCVout"));
+
+var _ListAllUnconfirmedTransactionsRIBSBSC = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSBSC"));
+
+var _ListAllUnconfirmedTransactionsRIBSBScriptSig = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSBScriptSig"));
+
+var _ListAllUnconfirmedTransactionsRIBSBVin = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSBVin"));
+
+var _ListAllUnconfirmedTransactionsRIBSD = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSD"));
+
+var _ListAllUnconfirmedTransactionsRIBSD2 = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSD2"));
+
+var _ListAllUnconfirmedTransactionsRIBSD2Vin = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSD2Vin"));
+
+var _ListAllUnconfirmedTransactionsRIBSDVin = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSDVin"));
+
+var _ListAllUnconfirmedTransactionsRIBSE = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSE"));
+
+var _ListAllUnconfirmedTransactionsRIBSEC = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSEC"));
+
+var _ListAllUnconfirmedTransactionsRIBSECFee = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSECFee"));
+
+var _ListAllUnconfirmedTransactionsRIBSECGasPrice = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSECGasPrice"));
+
+var _ListAllUnconfirmedTransactionsRIBSEFee = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSEFee"));
+
+var _ListAllUnconfirmedTransactionsRIBSEGasPrice = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSEGasPrice"));
+
+var _ListAllUnconfirmedTransactionsRIBSL = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSL"));
+
+var _ListAllUnconfirmedTransactionsRIBSLScriptPubKey = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSLScriptPubKey"));
+
+var _ListAllUnconfirmedTransactionsRIBSLVin = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSLVin"));
+
+var _ListAllUnconfirmedTransactionsRIBSLVout = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSLVout"));
+
+var _ListAllUnconfirmedTransactionsRIBSZ = _interopRequireDefault(require("./model/ListAllUnconfirmedTransactionsRIBSZ"));
+
 var _ListAssetsDetailsR = _interopRequireDefault(require("./model/ListAssetsDetailsR"));
 
 var _ListAssetsDetailsRData = _interopRequireDefault(require("./model/ListAssetsDetailsRData"));
@@ -4636,6 +5676,84 @@ var _ListCoinsForwardingAutomationsRData = _interopRequireDefault(require("./mod
 
 var _ListCoinsForwardingAutomationsRI = _interopRequireDefault(require("./model/ListCoinsForwardingAutomationsRI"));
 
+var _ListConfirmedTokensTransfersByAddressR = _interopRequireDefault(require("./model/ListConfirmedTokensTransfersByAddressR"));
+
+var _ListConfirmedTokensTransfersByAddressRData = _interopRequireDefault(require("./model/ListConfirmedTokensTransfersByAddressRData"));
+
+var _ListConfirmedTokensTransfersByAddressRI = _interopRequireDefault(require("./model/ListConfirmedTokensTransfersByAddressRI"));
+
+var _ListConfirmedTransactionsByAddressR = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressR"));
+
+var _ListConfirmedTransactionsByAddressRData = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRData"));
+
+var _ListConfirmedTransactionsByAddressRI = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRI"));
+
+var _ListConfirmedTransactionsByAddressRIBS = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBS"));
+
+var _ListConfirmedTransactionsByAddressRIBSB = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSB"));
+
+var _ListConfirmedTransactionsByAddressRIBSBC = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSBC"));
+
+var _ListConfirmedTransactionsByAddressRIBSBCVin = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSBCVin"));
+
+var _ListConfirmedTransactionsByAddressRIBSBSC = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSBSC"));
+
+var _ListConfirmedTransactionsByAddressRIBSBSCGasPrice = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice"));
+
+var _ListConfirmedTransactionsByAddressRIBSBScriptPubKey = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSBScriptPubKey"));
+
+var _ListConfirmedTransactionsByAddressRIBSBVin = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSBVin"));
+
+var _ListConfirmedTransactionsByAddressRIBSBVout = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSBVout"));
+
+var _ListConfirmedTransactionsByAddressRIBSD = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSD"));
+
+var _ListConfirmedTransactionsByAddressRIBSD2 = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSD2"));
+
+var _ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey"));
+
+var _ListConfirmedTransactionsByAddressRIBSD2ScriptSig = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSD2ScriptSig"));
+
+var _ListConfirmedTransactionsByAddressRIBSD2Vin = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSD2Vin"));
+
+var _ListConfirmedTransactionsByAddressRIBSD2Vout = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSD2Vout"));
+
+var _ListConfirmedTransactionsByAddressRIBSDScriptSig = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSDScriptSig"));
+
+var _ListConfirmedTransactionsByAddressRIBSDVin = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSDVin"));
+
+var _ListConfirmedTransactionsByAddressRIBSE = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSE"));
+
+var _ListConfirmedTransactionsByAddressRIBSEC = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSEC"));
+
+var _ListConfirmedTransactionsByAddressRIBSECGasPrice = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSECGasPrice"));
+
+var _ListConfirmedTransactionsByAddressRIBSEGasPrice = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSEGasPrice"));
+
+var _ListConfirmedTransactionsByAddressRIBSL = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSL"));
+
+var _ListConfirmedTransactionsByAddressRIBSLScriptSig = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSLScriptSig"));
+
+var _ListConfirmedTransactionsByAddressRIBSLVin = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSLVin"));
+
+var _ListConfirmedTransactionsByAddressRIBSZ = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSZ"));
+
+var _ListConfirmedTransactionsByAddressRIBSZScriptPubKey = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSZScriptPubKey"));
+
+var _ListConfirmedTransactionsByAddressRIBSZScriptSig = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSZScriptSig"));
+
+var _ListConfirmedTransactionsByAddressRIBSZVJoinSplit = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSZVJoinSplit"));
+
+var _ListConfirmedTransactionsByAddressRIBSZVShieldedOutput = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSZVShieldedOutput"));
+
+var _ListConfirmedTransactionsByAddressRIBSZVShieldedSpend = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend"));
+
+var _ListConfirmedTransactionsByAddressRIBSZVin = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSZVin"));
+
+var _ListConfirmedTransactionsByAddressRIBSZVout = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIBSZVout"));
+
+var _ListConfirmedTransactionsByAddressRIFee = _interopRequireDefault(require("./model/ListConfirmedTransactionsByAddressRIFee"));
+
 var _ListDepositAddressesR = _interopRequireDefault(require("./model/ListDepositAddressesR"));
 
 var _ListDepositAddressesRData = _interopRequireDefault(require("./model/ListDepositAddressesRData"));
@@ -4659,6 +5777,40 @@ var _ListInternalTransactionDetailsByTransactionHashR = _interopRequireDefault(r
 var _ListInternalTransactionDetailsByTransactionHashRData = _interopRequireDefault(require("./model/ListInternalTransactionDetailsByTransactionHashRData"));
 
 var _ListInternalTransactionDetailsByTransactionHashRI = _interopRequireDefault(require("./model/ListInternalTransactionDetailsByTransactionHashRI"));
+
+var _ListInternalTransactionsByAddressR = _interopRequireDefault(require("./model/ListInternalTransactionsByAddressR"));
+
+var _ListInternalTransactionsByAddressRData = _interopRequireDefault(require("./model/ListInternalTransactionsByAddressRData"));
+
+var _ListInternalTransactionsByAddressRI = _interopRequireDefault(require("./model/ListInternalTransactionsByAddressRI"));
+
+var _ListLatestMinedBlocksR = _interopRequireDefault(require("./model/ListLatestMinedBlocksR"));
+
+var _ListLatestMinedBlocksRData = _interopRequireDefault(require("./model/ListLatestMinedBlocksRData"));
+
+var _ListLatestMinedBlocksRI = _interopRequireDefault(require("./model/ListLatestMinedBlocksRI"));
+
+var _ListLatestMinedBlocksRIBS = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBS"));
+
+var _ListLatestMinedBlocksRIBSB = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSB"));
+
+var _ListLatestMinedBlocksRIBSBC = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSBC"));
+
+var _ListLatestMinedBlocksRIBSBSC = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSBSC"));
+
+var _ListLatestMinedBlocksRIBSD = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSD"));
+
+var _ListLatestMinedBlocksRIBSD2 = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSD2"));
+
+var _ListLatestMinedBlocksRIBSE = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSE"));
+
+var _ListLatestMinedBlocksRIBSEC = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSEC"));
+
+var _ListLatestMinedBlocksRIBSL = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSL"));
+
+var _ListLatestMinedBlocksRIBSZ = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSZ"));
+
+var _ListLatestMinedBlocksRIBSZ2 = _interopRequireDefault(require("./model/ListLatestMinedBlocksRIBSZ2"));
 
 var _ListOmniTokensByAddressR = _interopRequireDefault(require("./model/ListOmniTokensByAddressR"));
 
@@ -4728,67 +5880,11 @@ var _ListTokensForwardingAutomationsRITSBOT = _interopRequireDefault(require("./
 
 var _ListTokensForwardingAutomationsRITSET = _interopRequireDefault(require("./model/ListTokensForwardingAutomationsRITSET"));
 
-var _ListTokensTransfersByAddressR = _interopRequireDefault(require("./model/ListTokensTransfersByAddressR"));
-
-var _ListTokensTransfersByAddressRData = _interopRequireDefault(require("./model/ListTokensTransfersByAddressRData"));
-
-var _ListTokensTransfersByAddressRI = _interopRequireDefault(require("./model/ListTokensTransfersByAddressRI"));
-
 var _ListTokensTransfersByTransactionHashR = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashR"));
 
 var _ListTokensTransfersByTransactionHashRData = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashRData"));
 
 var _ListTokensTransfersByTransactionHashRI = _interopRequireDefault(require("./model/ListTokensTransfersByTransactionHashRI"));
-
-var _ListTransactionsByAddressR = _interopRequireDefault(require("./model/ListTransactionsByAddressR"));
-
-var _ListTransactionsByAddressRData = _interopRequireDefault(require("./model/ListTransactionsByAddressRData"));
-
-var _ListTransactionsByAddressRI = _interopRequireDefault(require("./model/ListTransactionsByAddressRI"));
-
-var _ListTransactionsByAddressRIBS = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBS"));
-
-var _ListTransactionsByAddressRIBSB = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSB"));
-
-var _ListTransactionsByAddressRIBSBC = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBC"));
-
-var _ListTransactionsByAddressRIBSBCVin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBCVin"));
-
-var _ListTransactionsByAddressRIBSBScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBScriptPubKey"));
-
-var _ListTransactionsByAddressRIBSBVin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBVin"));
-
-var _ListTransactionsByAddressRIBSBVout = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSBVout"));
-
-var _ListTransactionsByAddressRIBSD = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD"));
-
-var _ListTransactionsByAddressRIBSD2 = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2"));
-
-var _ListTransactionsByAddressRIBSD2ScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2ScriptPubKey"));
-
-var _ListTransactionsByAddressRIBSD2ScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2ScriptSig"));
-
-var _ListTransactionsByAddressRIBSD2Vin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2Vin"));
-
-var _ListTransactionsByAddressRIBSD2Vout = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSD2Vout"));
-
-var _ListTransactionsByAddressRIBSDScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSDScriptSig"));
-
-var _ListTransactionsByAddressRIBSDVin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSDVin"));
-
-var _ListTransactionsByAddressRIBSE = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSE"));
-
-var _ListTransactionsByAddressRIBSEC = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSEC"));
-
-var _ListTransactionsByAddressRIBSECGasPrice = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSECGasPrice"));
-
-var _ListTransactionsByAddressRIBSEGasPrice = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSEGasPrice"));
-
-var _ListTransactionsByAddressRIBSL = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSL"));
-
-var _ListTransactionsByAddressRIBSLScriptSig = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSLScriptSig"));
-
-var _ListTransactionsByAddressRIBSLVin = _interopRequireDefault(require("./model/ListTransactionsByAddressRIBSLVin"));
 
 var _ListTransactionsByBlockHashR = _interopRequireDefault(require("./model/ListTransactionsByBlockHashR"));
 
@@ -4807,6 +5903,10 @@ var _ListTransactionsByBlockHashRIBSBCScriptPubKey = _interopRequireDefault(requ
 var _ListTransactionsByBlockHashRIBSBCVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBCVin"));
 
 var _ListTransactionsByBlockHashRIBSBCVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBCVout"));
+
+var _ListTransactionsByBlockHashRIBSBSC = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBSC"));
+
+var _ListTransactionsByBlockHashRIBSBSCGasPrice = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBSCGasPrice"));
 
 var _ListTransactionsByBlockHashRIBSBVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSBVin"));
 
@@ -4842,6 +5942,14 @@ var _ListTransactionsByBlockHashRIBSLVin = _interopRequireDefault(require("./mod
 
 var _ListTransactionsByBlockHashRIBSLVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSLVout"));
 
+var _ListTransactionsByBlockHashRIBSZ = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSZ"));
+
+var _ListTransactionsByBlockHashRIBSZScriptSig = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSZScriptSig"));
+
+var _ListTransactionsByBlockHashRIBSZVJoinSplit = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSZVJoinSplit"));
+
+var _ListTransactionsByBlockHashRIBSZVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIBSZVin"));
+
 var _ListTransactionsByBlockHashRIFee = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIFee"));
 
 var _ListTransactionsByBlockHashRIRecipients = _interopRequireDefault(require("./model/ListTransactionsByBlockHashRIRecipients"));
@@ -4859,6 +5967,10 @@ var _ListTransactionsByBlockHeightRIBS = _interopRequireDefault(require("./model
 var _ListTransactionsByBlockHeightRIBSB = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSB"));
 
 var _ListTransactionsByBlockHeightRIBSBC = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSBC"));
+
+var _ListTransactionsByBlockHeightRIBSBSC = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSBSC"));
+
+var _ListTransactionsByBlockHeightRIBSBSCGasPrice = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSBSCGasPrice"));
 
 var _ListTransactionsByBlockHeightRIBSBScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSBScriptPubKey"));
 
@@ -4894,6 +6006,20 @@ var _ListTransactionsByBlockHeightRIBSLVin = _interopRequireDefault(require("./m
 
 var _ListTransactionsByBlockHeightRIBSLVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSLVout"));
 
+var _ListTransactionsByBlockHeightRIBSZ = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSZ"));
+
+var _ListTransactionsByBlockHeightRIBSZScriptPubKey = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSZScriptPubKey"));
+
+var _ListTransactionsByBlockHeightRIBSZScriptSig = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSZScriptSig"));
+
+var _ListTransactionsByBlockHeightRIBSZVJoinSplit = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSZVJoinSplit"));
+
+var _ListTransactionsByBlockHeightRIBSZVShieldedOutput = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSZVShieldedOutput"));
+
+var _ListTransactionsByBlockHeightRIBSZVin = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSZVin"));
+
+var _ListTransactionsByBlockHeightRIBSZVout = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIBSZVout"));
+
 var _ListTransactionsByBlockHeightRIFee = _interopRequireDefault(require("./model/ListTransactionsByBlockHeightRIFee"));
 
 var _ListUnconfirmedOmniTransactionsByAddressR = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByAddressR"));
@@ -4911,6 +6037,102 @@ var _ListUnconfirmedOmniTransactionsByPropertyIDR = _interopRequireDefault(requi
 var _ListUnconfirmedOmniTransactionsByPropertyIDRData = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByPropertyIDRData"));
 
 var _ListUnconfirmedOmniTransactionsByPropertyIDRI = _interopRequireDefault(require("./model/ListUnconfirmedOmniTransactionsByPropertyIDRI"));
+
+var _ListUnconfirmedTransactionsByAddressR = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressR"));
+
+var _ListUnconfirmedTransactionsByAddressRData = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRData"));
+
+var _ListUnconfirmedTransactionsByAddressRI = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRI"));
+
+var _ListUnconfirmedTransactionsByAddressRIBS = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBS"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSB = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSB"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBC = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBC"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBCVin = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBCVin"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBCVout = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBCVout"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBSC = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBSC"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBScriptSig = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBScriptSig"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBVin = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBVin"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSBVout = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSBVout"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSD = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSD"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSD2 = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSD2"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSD2Vin = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSD2Vin"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSD2Vout = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSD2Vout"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSDVin = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSDVin"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSE = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSE"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSEC = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSEC"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSECFee = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSECFee"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSECGasPrice = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSECGasPrice"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSEFee = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSEFee"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSL = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSL"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSLScriptSig = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSLScriptSig"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSLVin = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSLVin"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSLVout = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSLVout"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSZ = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSZ"));
+
+var _ListUnconfirmedTransactionsByAddressRIBSZVin = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIBSZVin"));
+
+var _ListUnconfirmedTransactionsByAddressRIRecipients = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRIRecipients"));
+
+var _ListUnconfirmedTransactionsByAddressRISenders = _interopRequireDefault(require("./model/ListUnconfirmedTransactionsByAddressRISenders"));
+
+var _ListUnspentTransactionOutputsByAddressR = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressR"));
+
+var _ListUnspentTransactionOutputsByAddressRData = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressRData"));
+
+var _ListUnspentTransactionOutputsByAddressRI = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressRI"));
+
+var _ListUnspentTransactionOutputsByAddressRIBlockchainSpecific = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecific"));
+
+var _ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit"));
+
+var _ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend"));
+
+var _ListUnspentTransactionOutputsByAddressRIFee = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressRIFee"));
+
+var _ListUnspentTransactionOutputsByAddressRISenders = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressRISenders"));
+
+var _ListUnspentTransactionOutputsByAddressRIVin = _interopRequireDefault(require("./model/ListUnspentTransactionOutputsByAddressRIVin"));
+
+var _ListWalletTransactionsR = _interopRequireDefault(require("./model/ListWalletTransactionsR"));
+
+var _ListWalletTransactionsRData = _interopRequireDefault(require("./model/ListWalletTransactionsRData"));
+
+var _ListWalletTransactionsRI = _interopRequireDefault(require("./model/ListWalletTransactionsRI"));
+
+var _ListWalletTransactionsRIFee = _interopRequireDefault(require("./model/ListWalletTransactionsRIFee"));
+
+var _ListWalletTransactionsRIRecipients = _interopRequireDefault(require("./model/ListWalletTransactionsRIRecipients"));
+
+var _ListWalletTransactionsRISenders = _interopRequireDefault(require("./model/ListWalletTransactionsRISenders"));
+
+var _ListWalletTransactionsRIValue = _interopRequireDefault(require("./model/ListWalletTransactionsRIValue"));
 
 var _ListXRPRippleTransactionsByAddressR = _interopRequireDefault(require("./model/ListXRPRippleTransactionsByAddressR"));
 
@@ -5076,6 +6298,10 @@ var _NewConfirmedTokensTransactionsR = _interopRequireDefault(require("./model/N
 
 var _NewConfirmedTokensTransactionsRB = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRB"));
 
+var _NewConfirmedTokensTransactionsRBData = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRBData"));
+
+var _NewConfirmedTokensTransactionsRBDataItem = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRBDataItem"));
+
 var _NewConfirmedTokensTransactionsRData = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRData"));
 
 var _NewConfirmedTokensTransactionsRI = _interopRequireDefault(require("./model/NewConfirmedTokensTransactionsRI"));
@@ -5140,11 +6366,11 @@ var _TokensForwardingSuccessData = _interopRequireDefault(require("./model/Token
 
 var _TokensForwardingSuccessDataItem = _interopRequireDefault(require("./model/TokensForwardingSuccessDataItem"));
 
-var _TokensForwardingSuccessEthereumerc20token = _interopRequireDefault(require("./model/TokensForwardingSuccessEthereumerc20token"));
+var _TokensForwardingSuccessErc = _interopRequireDefault(require("./model/TokensForwardingSuccessErc20"));
 
-var _TokensForwardingSuccessEthereumerc721token = _interopRequireDefault(require("./model/TokensForwardingSuccessEthereumerc721token"));
+var _TokensForwardingSuccessErc2 = _interopRequireDefault(require("./model/TokensForwardingSuccessErc721"));
 
-var _TokensForwardingSuccessOmnilayertoken = _interopRequireDefault(require("./model/TokensForwardingSuccessOmnilayertoken"));
+var _TokensForwardingSuccessOmni = _interopRequireDefault(require("./model/TokensForwardingSuccessOmni"));
 
 var _TokensForwardingSuccessToken = _interopRequireDefault(require("./model/TokensForwardingSuccessToken"));
 
@@ -5208,6 +6434,10 @@ var _ValidateAddressRData = _interopRequireDefault(require("./model/ValidateAddr
 
 var _ValidateAddressRI = _interopRequireDefault(require("./model/ValidateAddressRI"));
 
+var _WalletAsAServiceAddressBalanceNotEnough = _interopRequireDefault(require("./model/WalletAsAServiceAddressBalanceNotEnough"));
+
+var _WalletAsAServiceAddressBalanceNotEnoughError = _interopRequireDefault(require("./model/WalletAsAServiceAddressBalanceNotEnoughError"));
+
 var _WalletAsAServiceDepositAddressesLimitReached = _interopRequireDefault(require("./model/WalletAsAServiceDepositAddressesLimitReached"));
 
 var _WalletAsAServiceDepositAddressesLimitReachedError = _interopRequireDefault(require("./model/WalletAsAServiceDepositAddressesLimitReachedError"));
@@ -5245,6 +6475,8 @@ var _ExchangeRatesApi = _interopRequireDefault(require("./api/ExchangeRatesApi")
 var _FeaturesApi = _interopRequireDefault(require("./api/FeaturesApi"));
 
 var _GeneratingApi = _interopRequireDefault(require("./api/GeneratingApi"));
+
+var _HDWalletsApi = _interopRequireDefault(require("./api/HDWalletsApi"));
 
 var _InformativeApi = _interopRequireDefault(require("./api/InformativeApi"));
 

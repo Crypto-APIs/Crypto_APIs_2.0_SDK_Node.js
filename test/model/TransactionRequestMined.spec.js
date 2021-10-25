@@ -50,7 +50,7 @@
   describe('TransactionRequestMined', function() {
     it('should create an instance of TransactionRequestMined', function() {
       // uncomment below and update the code to test TransactionRequestMined
-      //var instane = new Cryptoapis.TransactionRequestMined();
+      //var instance = new Cryptoapis.TransactionRequestMined();
       //expect(instance).to.be.a(Cryptoapis.TransactionRequestMined);
     });
 

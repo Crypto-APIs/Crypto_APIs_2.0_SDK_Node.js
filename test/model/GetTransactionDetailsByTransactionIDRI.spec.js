@@ -50,12 +50,18 @@
   describe('GetTransactionDetailsByTransactionIDRI', function() {
     it('should create an instance of GetTransactionDetailsByTransactionIDRI', function() {
       // uncomment below and update the code to test GetTransactionDetailsByTransactionIDRI
-      //var instane = new Cryptoapis.GetTransactionDetailsByTransactionIDRI();
+      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRI();
       //expect(instance).to.be.a(Cryptoapis.GetTransactionDetailsByTransactionIDRI);
     });
 
     it('should have the property index (base name: "index")', function() {
       // uncomment below and update the code to test the property index
+      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isConfirmed (base name: "isConfirmed")', function() {
+      // uncomment below and update the code to test the property isConfirmed
       //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRI();
       //expect(instance).to.be();
     });
@@ -104,12 +110,6 @@
 
     it('should have the property fee (base name: "fee")', function() {
       // uncomment below and update the code to test the property fee
-      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property isConfirmed (base name: "isConfirmed")', function() {
-      // uncomment below and update the code to test the property isConfirmed
       //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRI();
       //expect(instance).to.be();
     });

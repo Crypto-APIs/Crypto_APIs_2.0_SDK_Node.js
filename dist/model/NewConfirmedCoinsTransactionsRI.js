@@ -18,14 +18,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsRI model module.
  * @module model/NewConfirmedCoinsTransactionsRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var NewConfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsRI</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsRI
    * @param address {String} Represents the address of the transaction, per which the result is returned.
-   * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0.
+   * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
    * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
    * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
    * @param createdTimestamp {Number} Defines the specific time/date when the subscription was created in Unix Timestamp.
@@ -124,7 +124,7 @@ var NewConfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
 
 NewConfirmedCoinsTransactionsRI.prototype['address'] = undefined;
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 

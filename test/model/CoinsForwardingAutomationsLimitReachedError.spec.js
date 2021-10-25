@@ -50,7 +50,7 @@
   describe('CoinsForwardingAutomationsLimitReachedError', function() {
     it('should create an instance of CoinsForwardingAutomationsLimitReachedError', function() {
       // uncomment below and update the code to test CoinsForwardingAutomationsLimitReachedError
-      //var instane = new Cryptoapis.CoinsForwardingAutomationsLimitReachedError();
+      //var instance = new Cryptoapis.CoinsForwardingAutomationsLimitReachedError();
       //expect(instance).to.be.a(Cryptoapis.CoinsForwardingAutomationsLimitReachedError);
     });
 

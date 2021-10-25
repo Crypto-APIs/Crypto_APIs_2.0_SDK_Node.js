@@ -17,7 +17,7 @@ import MissingApiKeyError from './MissingApiKeyError';
 /**
  * The MissingApiKey model module.
  * @module model/MissingApiKey
- * @version 1.2.1
+ * @version 1.3.0
  */
 class MissingApiKey {
     /**

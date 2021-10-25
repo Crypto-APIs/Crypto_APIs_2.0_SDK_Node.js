@@ -50,7 +50,7 @@
   describe('InvalidApiKeyError', function() {
     it('should create an instance of InvalidApiKeyError', function() {
       // uncomment below and update the code to test InvalidApiKeyError
-      //var instane = new Cryptoapis.InvalidApiKeyError();
+      //var instance = new Cryptoapis.InvalidApiKeyError();
       //expect(instance).to.be.a(Cryptoapis.InvalidApiKeyError);
     });
 

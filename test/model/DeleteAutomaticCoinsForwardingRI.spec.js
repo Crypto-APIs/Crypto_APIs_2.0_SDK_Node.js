@@ -50,7 +50,7 @@
   describe('DeleteAutomaticCoinsForwardingRI', function() {
     it('should create an instance of DeleteAutomaticCoinsForwardingRI', function() {
       // uncomment below and update the code to test DeleteAutomaticCoinsForwardingRI
-      //var instane = new Cryptoapis.DeleteAutomaticCoinsForwardingRI();
+      //var instance = new Cryptoapis.DeleteAutomaticCoinsForwardingRI();
       //expect(instance).to.be.a(Cryptoapis.DeleteAutomaticCoinsForwardingRI);
     });
 

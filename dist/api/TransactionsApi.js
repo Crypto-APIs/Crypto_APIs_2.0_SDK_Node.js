@@ -7,6 +7,10 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _CreateCoinsTransactionFromAddressForWholeAmountR = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmountR"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmountRB = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmountRB"));
+
 var _CreateCoinsTransactionRequestFromAddressR = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromAddressR"));
 
 var _CreateCoinsTransactionRequestFromAddressRB = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromAddressRB"));
@@ -35,11 +39,11 @@ var _UnexpectedServerError = _interopRequireDefault(require("../model/Unexpected
 
 var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
 
+var _WalletAsAServiceAddressBalanceNotEnough = _interopRequireDefault(require("../model/WalletAsAServiceAddressBalanceNotEnough"));
+
 var _WalletAsAServiceNoDepositAddressesFound = _interopRequireDefault(require("../model/WalletAsAServiceNoDepositAddressesFound"));
 
 var _WalletAsAServiceTokenNotSupported = _interopRequireDefault(require("../model/WalletAsAServiceTokenNotSupported"));
-
-var _WalletAsAServiceWalletBalanceNotEnough = _interopRequireDefault(require("../model/WalletAsAServiceWalletBalanceNotEnough"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -52,7 +56,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.2.1
+* @version 1.3.0
 */
 var TransactionsApi = /*#__PURE__*/function () {
   /**
@@ -68,20 +72,95 @@ var TransactionsApi = /*#__PURE__*/function () {
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
   /**
-   * Create Coins Transaction Request from Address
-   * Through this endpoint users can create a new single transaction request from one address to another.
-   * @param {String} address Defines the specific source address for the transaction.
+   * Create Coins Transaction From Address For Whole Amount
+   * Through this endpoint customers can create a new transaction from address for **coins** specifically, which will transfer over the entire available amount.
+   * @param {String} address Defines the source address.
    * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-   * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+   * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
    * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-   * @param {module:model/CreateCoinsTransactionRequestFromAddressRB} opts.createCoinsTransactionRequestFromAddressRB 
-   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCoinsTransactionRequestFromAddressR} and HTTP response
+   * @param {module:model/CreateCoinsTransactionFromAddressForWholeAmountRB} opts.createCoinsTransactionFromAddressForWholeAmountRB 
+   * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCoinsTransactionFromAddressForWholeAmountR} and HTTP response
    */
 
 
   _createClass(TransactionsApi, [{
+    key: "createCoinsTransactionFromAddressForWholeAmountWithHttpInfo",
+    value: function createCoinsTransactionFromAddressForWholeAmountWithHttpInfo(address, blockchain, network, walletId, opts) {
+      opts = opts || {};
+      var postBody = opts['createCoinsTransactionFromAddressForWholeAmountRB']; // verify the required parameter 'address' is set
+
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling createCoinsTransactionFromAddressForWholeAmount");
+      } // verify the required parameter 'blockchain' is set
+
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling createCoinsTransactionFromAddressForWholeAmount");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling createCoinsTransactionFromAddressForWholeAmount");
+      } // verify the required parameter 'walletId' is set
+
+
+      if (walletId === undefined || walletId === null) {
+        throw new Error("Missing the required parameter 'walletId' when calling createCoinsTransactionFromAddressForWholeAmount");
+      }
+
+      var pathParams = {
+        'address': address,
+        'blockchain': blockchain,
+        'network': network,
+        'walletId': walletId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _CreateCoinsTransactionFromAddressForWholeAmountR["default"];
+      return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/all-transaction-requests', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Create Coins Transaction From Address For Whole Amount
+     * Through this endpoint customers can create a new transaction from address for **coins** specifically, which will transfer over the entire available amount.
+     * @param {String} address Defines the source address.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateCoinsTransactionFromAddressForWholeAmountRB} opts.createCoinsTransactionFromAddressForWholeAmountRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateCoinsTransactionFromAddressForWholeAmountR}
+     */
+
+  }, {
+    key: "createCoinsTransactionFromAddressForWholeAmount",
+    value: function createCoinsTransactionFromAddressForWholeAmount(address, blockchain, network, walletId, opts) {
+      return this.createCoinsTransactionFromAddressForWholeAmountWithHttpInfo(address, blockchain, network, walletId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Create Coins Transaction Request from Address
+     * Through this endpoint users can create a new single transaction request from one address to another.
+     * @param {String} address Defines the specific source address for the transaction.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateCoinsTransactionRequestFromAddressRB} opts.createCoinsTransactionRequestFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateCoinsTransactionRequestFromAddressR} and HTTP response
+     */
+
+  }, {
     key: "createCoinsTransactionRequestFromAddressWithHttpInfo",
     value: function createCoinsTransactionRequestFromAddressWithHttpInfo(address, blockchain, network, walletId, opts) {
       opts = opts || {};
@@ -128,7 +207,7 @@ var TransactionsApi = /*#__PURE__*/function () {
      * Through this endpoint users can create a new single transaction request from one address to another.
      * @param {String} address Defines the specific source address for the transaction.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -147,7 +226,7 @@ var TransactionsApi = /*#__PURE__*/function () {
      * Create Coins Transaction Request from Wallet
      * Through this endpoint users can create a new transaction request from the entire Wallet instead from just a specific address. This endpoint can generate transactions from multiple to multiple addresses.    {warning}This is available **only** for UTXO-based protocols such as Bitcoin, Bitcoin Cash, Litecoin, etc. It **is not** available for Account-based protocols like Ethereum.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -195,7 +274,7 @@ var TransactionsApi = /*#__PURE__*/function () {
      * Create Coins Transaction Request from Wallet
      * Through this endpoint users can create a new transaction request from the entire Wallet instead from just a specific address. This endpoint can generate transactions from multiple to multiple addresses.    {warning}This is available **only** for UTXO-based protocols such as Bitcoin, Bitcoin Cash, Litecoin, etc. It **is not** available for Account-based protocols like Ethereum.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -214,7 +293,7 @@ var TransactionsApi = /*#__PURE__*/function () {
      * Create Tokens Transaction Request from Address
      * Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} senderAddress Defines the specific source address for the transaction.
      * @param {String} walletId Defines the unique ID of the Wallet.
      * @param {Object} opts Optional parameters
@@ -269,7 +348,7 @@ var TransactionsApi = /*#__PURE__*/function () {
      * Create Tokens Transaction Request from Address
      * Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} senderAddress Defines the specific source address for the transaction.
      * @param {String} walletId Defines the unique ID of the Wallet.
      * @param {Object} opts Optional parameters

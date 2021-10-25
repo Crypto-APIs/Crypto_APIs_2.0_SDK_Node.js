@@ -50,7 +50,7 @@
   describe('BlockchainDataBlockNotFoundError', function() {
     it('should create an instance of BlockchainDataBlockNotFoundError', function() {
       // uncomment below and update the code to test BlockchainDataBlockNotFoundError
-      //var instane = new Cryptoapis.BlockchainDataBlockNotFoundError();
+      //var instance = new Cryptoapis.BlockchainDataBlockNotFoundError();
       //expect(instance).to.be.a(Cryptoapis.BlockchainDataBlockNotFoundError);
     });
 

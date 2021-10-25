@@ -50,7 +50,7 @@
   describe('DeleteBlockchainEventSubscriptionRData', function() {
     it('should create an instance of DeleteBlockchainEventSubscriptionRData', function() {
       // uncomment below and update the code to test DeleteBlockchainEventSubscriptionRData
-      //var instane = new Cryptoapis.DeleteBlockchainEventSubscriptionRData();
+      //var instance = new Cryptoapis.DeleteBlockchainEventSubscriptionRData();
       //expect(instance).to.be.a(Cryptoapis.DeleteBlockchainEventSubscriptionRData);
     });
 

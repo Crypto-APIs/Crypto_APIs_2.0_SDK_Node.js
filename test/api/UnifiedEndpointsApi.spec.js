@@ -88,10 +88,10 @@
         done();
       });
     });
-    describe('getLatestMinedBlock', function() {
-      it('should call getLatestMinedBlock successfully', function(done) {
-        //uncomment below and update the code to test getLatestMinedBlock
-        //instance.getLatestMinedBlock(function(error) {
+    describe('getLastMinedBlock', function() {
+      it('should call getLastMinedBlock successfully', function(done) {
+        //uncomment below and update the code to test getLastMinedBlock
+        //instance.getLastMinedBlock(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -108,10 +108,30 @@
         done();
       });
     });
-    describe('listTransactionsByAddress', function() {
-      it('should call listTransactionsByAddress successfully', function(done) {
-        //uncomment below and update the code to test listTransactionsByAddress
-        //instance.listTransactionsByAddress(function(error) {
+    describe('listAllUnconfirmedTransactions', function() {
+      it('should call listAllUnconfirmedTransactions successfully', function(done) {
+        //uncomment below and update the code to test listAllUnconfirmedTransactions
+        //instance.listAllUnconfirmedTransactions(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listConfirmedTransactionsByAddress', function() {
+      it('should call listConfirmedTransactionsByAddress successfully', function(done) {
+        //uncomment below and update the code to test listConfirmedTransactionsByAddress
+        //instance.listConfirmedTransactionsByAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listLatestMinedBlocks', function() {
+      it('should call listLatestMinedBlocks successfully', function(done) {
+        //uncomment below and update the code to test listLatestMinedBlocks
+        //instance.listLatestMinedBlocks(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -132,6 +152,16 @@
       it('should call listTransactionsByBlockHeight successfully', function(done) {
         //uncomment below and update the code to test listTransactionsByBlockHeight
         //instance.listTransactionsByBlockHeight(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listUnconfirmedTransactionsByAddress', function() {
+      it('should call listUnconfirmedTransactionsByAddress successfully', function(done) {
+        //uncomment below and update the code to test listUnconfirmedTransactionsByAddress
+        //instance.listUnconfirmedTransactionsByAddress(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

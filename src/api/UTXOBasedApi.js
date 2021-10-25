@@ -13,26 +13,21 @@
 
 
 import ApiClient from "../ApiClient";
-import AlreadyExists from '../model/AlreadyExists';
 import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
-import GetHDWalletXPubYPubZPubDetailsR from '../model/GetHDWalletXPubYPubZPubDetailsR';
 import InsufficientCredits from '../model/InsufficientCredits';
 import InvalidApiKey from '../model/InvalidApiKey';
 import InvalidData from '../model/InvalidData';
-import InvalidXpub from '../model/InvalidXpub';
-import ListHDWalletXPubYPubZPubTransactionsR from '../model/ListHDWalletXPubYPubZPubTransactionsR';
+import InvalidPagination from '../model/InvalidPagination';
+import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import ListUnspentTransactionOutputsByAddressR from '../model/ListUnspentTransactionOutputsByAddressR';
 import RequestLimitReached from '../model/RequestLimitReached';
-import SyncHDWalletXPubYPubZPubR from '../model/SyncHDWalletXPubYPubZPubR';
-import SyncHDWalletXPubYPubZPubRB from '../model/SyncHDWalletXPubYPubZPubRB';
 import UnexpectedServerError from '../model/UnexpectedServerError';
 import UnsupportedMediaType from '../model/UnsupportedMediaType';
-import XpubNotSynced from '../model/XpubNotSynced';
-import XpubSyncInProgress from '../model/XpubSyncInProgress';
 
 /**
 * UTXOBased service.
 * @module api/UTXOBasedApi
-* @version 1.2.1
+* @version 1.3.0
 */
 export default class UTXOBasedApi {
 
@@ -50,113 +45,40 @@ export default class UTXOBasedApi {
 
 
     /**
-     * Get HD Wallet (xPub, yPub, zPub) Details
-     * HD wallet details is useful endpoint to get the most important data about HD wallet without the need to do a lot of calculations, once the HD Wallet is synced using Sync endpoint we keep it up to date and we calculate these details in advance.
+     * List Unspent Transaction Outputs By Address
+     * Through this endpoint customers can list their transactions' unspent outputs by `address`.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {String} extendedPublicKey Defines the account extended publicly known key which is used to derive all child public keys.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetHDWalletXPubYPubZPubDetailsR} and HTTP response
-     */
-    getHDWalletXPubYPubZPubDetailsWithHttpInfo(blockchain, extendedPublicKey, network, opts) {
-      opts = opts || {};
-      let postBody = null;
-      // verify the required parameter 'blockchain' is set
-      if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling getHDWalletXPubYPubZPubDetails");
-      }
-      // verify the required parameter 'extendedPublicKey' is set
-      if (extendedPublicKey === undefined || extendedPublicKey === null) {
-        throw new Error("Missing the required parameter 'extendedPublicKey' when calling getHDWalletXPubYPubZPubDetails");
-      }
-      // verify the required parameter 'network' is set
-      if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling getHDWalletXPubYPubZPubDetails");
-      }
-
-      let pathParams = {
-        'blockchain': blockchain,
-        'extendedPublicKey': extendedPublicKey,
-        'network': network
-      };
-      let queryParams = {
-        'context': opts['context'],
-        'derivation': opts['derivation']
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['ApiKey'];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = GetHDWalletXPubYPubZPubDetailsR;
-      return this.apiClient.callApi(
-        '/blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/details', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * Get HD Wallet (xPub, yPub, zPub) Details
-     * HD wallet details is useful endpoint to get the most important data about HD wallet without the need to do a lot of calculations, once the HD Wallet is synced using Sync endpoint we keep it up to date and we calculate these details in advance.
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {String} extendedPublicKey Defines the account extended publicly known key which is used to derive all child public keys.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetHDWalletXPubYPubZPubDetailsR}
-     */
-    getHDWalletXPubYPubZPubDetails(blockchain, extendedPublicKey, network, opts) {
-      return this.getHDWalletXPubYPubZPubDetailsWithHttpInfo(blockchain, extendedPublicKey, network, opts)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * List HD Wallet (xPub, yPub, zPub) Transactions
-     * This endpoint will list HD Wallet transactions.
-     * @param {module:model/String} blockchain Represents the specific blockchain.
-     * @param {String} extendedPublicKey Defines the master public key (xPub) of the account.
-     * @param {module:model/String} network Represents the specific network.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListHDWalletXPubYPubZPubTransactionsR} and HTTP response
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnspentTransactionOutputsByAddressR} and HTTP response
      */
-    listHDWalletXPubYPubZPubTransactionsWithHttpInfo(blockchain, extendedPublicKey, network, opts) {
+    listUnspentTransactionOutputsByAddressWithHttpInfo(blockchain, network, address, opts) {
       opts = opts || {};
       let postBody = null;
       // verify the required parameter 'blockchain' is set
       if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling listHDWalletXPubYPubZPubTransactions");
-      }
-      // verify the required parameter 'extendedPublicKey' is set
-      if (extendedPublicKey === undefined || extendedPublicKey === null) {
-        throw new Error("Missing the required parameter 'extendedPublicKey' when calling listHDWalletXPubYPubZPubTransactions");
+        throw new Error("Missing the required parameter 'blockchain' when calling listUnspentTransactionOutputsByAddress");
       }
       // verify the required parameter 'network' is set
       if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling listHDWalletXPubYPubZPubTransactions");
+        throw new Error("Missing the required parameter 'network' when calling listUnspentTransactionOutputsByAddress");
+      }
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listUnspentTransactionOutputsByAddress");
       }
 
       let pathParams = {
         'blockchain': blockchain,
-        'extendedPublicKey': extendedPublicKey,
-        'network': network
+        'network': network,
+        'address': address
       };
       let queryParams = {
         'context': opts['context'],
-        'derivation': opts['derivation'],
         'limit': opts['limit'],
         'offset': opts['offset']
       };
@@ -168,92 +90,28 @@ export default class UTXOBasedApi {
       let authNames = ['ApiKey'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = ListHDWalletXPubYPubZPubTransactionsR;
+      let returnType = ListUnspentTransactionOutputsByAddressR;
       return this.apiClient.callApi(
-        '/blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/transactions', 'GET',
+        '/blockchain-data/{blockchain}/{network}/addresses/{address}/unspent', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
     }
 
     /**
-     * List HD Wallet (xPub, yPub, zPub) Transactions
-     * This endpoint will list HD Wallet transactions.
-     * @param {module:model/String} blockchain Represents the specific blockchain.
-     * @param {String} extendedPublicKey Defines the master public key (xPub) of the account.
-     * @param {module:model/String} network Represents the specific network.
+     * List Unspent Transaction Outputs By Address
+     * Through this endpoint customers can list their transactions' unspent outputs by `address`.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListHDWalletXPubYPubZPubTransactionsR}
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnspentTransactionOutputsByAddressR}
      */
-    listHDWalletXPubYPubZPubTransactions(blockchain, extendedPublicKey, network, opts) {
-      return this.listHDWalletXPubYPubZPubTransactionsWithHttpInfo(blockchain, extendedPublicKey, network, opts)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Sync HD Wallet (xPub, yPub, zPub)
-     * HD wallets usually have a lot of addresses and transactions, getting the data on demand is a heavy operation. That's why we have created this feature, to be able to get HD wallet details or transactions this HD wallet must be synced first. In addition to the initial sync we keep updating the synced HD wallets all the time.
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/SyncHDWalletXPubYPubZPubRB} opts.syncHDWalletXPubYPubZPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SyncHDWalletXPubYPubZPubR} and HTTP response
-     */
-    syncHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts) {
-      opts = opts || {};
-      let postBody = opts['syncHDWalletXPubYPubZPubRB'];
-      // verify the required parameter 'blockchain' is set
-      if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling syncHDWalletXPubYPubZPub");
-      }
-      // verify the required parameter 'network' is set
-      if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling syncHDWalletXPubYPubZPub");
-      }
-
-      let pathParams = {
-        'blockchain': blockchain,
-        'network': network
-      };
-      let queryParams = {
-        'context': opts['context']
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['ApiKey'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = SyncHDWalletXPubYPubZPubR;
-      return this.apiClient.callApi(
-        '/blockchain-data/{blockchain}/{network}/hd/sync', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * Sync HD Wallet (xPub, yPub, zPub)
-     * HD wallets usually have a lot of addresses and transactions, getting the data on demand is a heavy operation. That's why we have created this feature, to be able to get HD wallet details or transactions this HD wallet must be synced first. In addition to the initial sync we keep updating the synced HD wallets all the time.
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/SyncHDWalletXPubYPubZPubRB} opts.syncHDWalletXPubYPubZPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SyncHDWalletXPubYPubZPubR}
-     */
-    syncHDWalletXPubYPubZPub(blockchain, network, opts) {
-      return this.syncHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts)
+    listUnspentTransactionOutputsByAddress(blockchain, network, address, opts) {
+      return this.listUnspentTransactionOutputsByAddressWithHttpInfo(blockchain, network, address, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

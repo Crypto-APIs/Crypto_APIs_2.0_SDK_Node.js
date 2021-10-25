@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestRejectionDataItem model module.
  * @module model/TransactionRequestRejectionDataItem
- * @version 1.2.1
+ * @version 1.3.0
  */
 var TransactionRequestRejectionDataItem = /*#__PURE__*/function () {
   /**

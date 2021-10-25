@@ -50,7 +50,7 @@
   describe('GetExchangeRateByAssetsIDsR', function() {
     it('should create an instance of GetExchangeRateByAssetsIDsR', function() {
       // uncomment below and update the code to test GetExchangeRateByAssetsIDsR
-      //var instane = new Cryptoapis.GetExchangeRateByAssetsIDsR();
+      //var instance = new Cryptoapis.GetExchangeRateByAssetsIDsR();
       //expect(instance).to.be.a(Cryptoapis.GetExchangeRateByAssetsIDsR);
     });
 

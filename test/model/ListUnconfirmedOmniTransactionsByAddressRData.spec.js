@@ -50,7 +50,7 @@
   describe('ListUnconfirmedOmniTransactionsByAddressRData', function() {
     it('should create an instance of ListUnconfirmedOmniTransactionsByAddressRData', function() {
       // uncomment below and update the code to test ListUnconfirmedOmniTransactionsByAddressRData
-      //var instane = new Cryptoapis.ListUnconfirmedOmniTransactionsByAddressRData();
+      //var instance = new Cryptoapis.ListUnconfirmedOmniTransactionsByAddressRData();
       //expect(instance).to.be.a(Cryptoapis.ListUnconfirmedOmniTransactionsByAddressRData);
     });
 

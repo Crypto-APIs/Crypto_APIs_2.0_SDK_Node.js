@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EndpointNotAllowedForApiKeyError model module.
  * @module model/EndpointNotAllowedForApiKeyError
- * @version 1.2.1
+ * @version 1.3.0
  */
 var EndpointNotAllowedForApiKeyError = /*#__PURE__*/function () {
   /**

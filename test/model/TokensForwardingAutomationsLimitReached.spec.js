@@ -50,7 +50,7 @@
   describe('TokensForwardingAutomationsLimitReached', function() {
     it('should create an instance of TokensForwardingAutomationsLimitReached', function() {
       // uncomment below and update the code to test TokensForwardingAutomationsLimitReached
-      //var instane = new Cryptoapis.TokensForwardingAutomationsLimitReached();
+      //var instance = new Cryptoapis.TokensForwardingAutomationsLimitReached();
       //expect(instance).to.be.a(Cryptoapis.TokensForwardingAutomationsLimitReached);
     });
 

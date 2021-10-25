@@ -48,6 +48,16 @@
   }
 
   describe('InformativeApi', function() {
+    describe('getTransactionRequestDetails', function() {
+      it('should call getTransactionRequestDetails successfully', function(done) {
+        //uncomment below and update the code to test getTransactionRequestDetails
+        //instance.getTransactionRequestDetails(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getWalletAssetDetails', function() {
       it('should call getWalletAssetDetails successfully', function(done) {
         //uncomment below and update the code to test getWalletAssetDetails
@@ -72,6 +82,16 @@
       it('should call listSupportedTokens successfully', function(done) {
         //uncomment below and update the code to test listSupportedTokens
         //instance.listSupportedTokens(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listWalletTransactions', function() {
+      it('should call listWalletTransactions successfully', function(done) {
+        //uncomment below and update the code to test listWalletTransactions
+        //instance.listWalletTransactions(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

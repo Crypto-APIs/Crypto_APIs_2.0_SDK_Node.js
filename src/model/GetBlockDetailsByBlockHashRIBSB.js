@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHashRIBSB model module.
  * @module model/GetBlockDetailsByBlockHashRIBSB
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetBlockDetailsByBlockHashRIBSB {
     /**
@@ -24,7 +24,7 @@ class GetBlockDetailsByBlockHashRIBSB {
      * Bitcoin
      * @alias module:model/GetBlockDetailsByBlockHashRIBSB
      * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-     * @param nonce {Number} Represents a random value that can be adjusted to satisfy the Proof of Work.
+     * @param nonce {String} Represents a random value that can be adjusted to satisfy the Proof of Work.
      * @param size {Number} Represents the total size of the block in Bytes.
      * @param bits {String} A sub-unit of BTC equal to 0.000001 BTC, or 100 Satoshi, and is the same as microbitcoin (μBTC). Bits have two-decimal precision.
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
@@ -72,7 +72,7 @@ class GetBlockDetailsByBlockHashRIBSB {
                 obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
             }
             if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
             }
             if (data.hasOwnProperty('size')) {
                 obj['size'] = ApiClient.convertToType(data['size'], 'Number');
@@ -113,7 +113,7 @@ GetBlockDetailsByBlockHashRIBSB.prototype['difficulty'] = undefined;
 
 /**
  * Represents a random value that can be adjusted to satisfy the Proof of Work.
- * @member {Number} nonce
+ * @member {String} nonce
  */
 GetBlockDetailsByBlockHashRIBSB.prototype['nonce'] = undefined;
 

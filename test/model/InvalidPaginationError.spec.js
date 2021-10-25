@@ -50,7 +50,7 @@
   describe('InvalidPaginationError', function() {
     it('should create an instance of InvalidPaginationError', function() {
       // uncomment below and update the code to test InvalidPaginationError
-      //var instane = new Cryptoapis.InvalidPaginationError();
+      //var instance = new Cryptoapis.InvalidPaginationError();
       //expect(instance).to.be.a(Cryptoapis.InvalidPaginationError);
     });
 

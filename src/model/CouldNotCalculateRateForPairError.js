@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The CouldNotCalculateRateForPairError model module.
  * @module model/CouldNotCalculateRateForPairError
- * @version 1.2.1
+ * @version 1.3.0
  */
 class CouldNotCalculateRateForPairError {
     /**

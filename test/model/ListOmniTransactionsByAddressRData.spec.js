@@ -50,7 +50,7 @@
   describe('ListOmniTransactionsByAddressRData', function() {
     it('should create an instance of ListOmniTransactionsByAddressRData', function() {
       // uncomment below and update the code to test ListOmniTransactionsByAddressRData
-      //var instane = new Cryptoapis.ListOmniTransactionsByAddressRData();
+      //var instance = new Cryptoapis.ListOmniTransactionsByAddressRData();
       //expect(instance).to.be.a(Cryptoapis.ListOmniTransactionsByAddressRData);
     });
 

@@ -50,7 +50,7 @@
   describe('ListAssetsDetailsRIAssetLogo', function() {
     it('should create an instance of ListAssetsDetailsRIAssetLogo', function() {
       // uncomment below and update the code to test ListAssetsDetailsRIAssetLogo
-      //var instane = new Cryptoapis.ListAssetsDetailsRIAssetLogo();
+      //var instance = new Cryptoapis.ListAssetsDetailsRIAssetLogo();
       //expect(instance).to.be.a(Cryptoapis.ListAssetsDetailsRIAssetLogo);
     });
 

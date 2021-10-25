@@ -18,14 +18,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIFee model module.
  * @module model/GetTransactionDetailsByTransactionIDRIFee
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetTransactionDetailsByTransactionIDRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIFee</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRIFee
    * @param amount {String} Defines the amount of the transaction fee.
-   * @param unit {String} 
+   * @param unit {String} Defines the unit of the fee amount, e.g. BTC, ETH, XRP.
    */
   function GetTransactionDetailsByTransactionIDRIFee(amount, unit) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDRIFee);
@@ -82,6 +82,7 @@ var GetTransactionDetailsByTransactionIDRIFee = /*#__PURE__*/function () {
 
 GetTransactionDetailsByTransactionIDRIFee.prototype['amount'] = undefined;
 /**
+ * Defines the unit of the fee amount, e.g. BTC, ETH, XRP.
  * @member {String} unit
  */
 

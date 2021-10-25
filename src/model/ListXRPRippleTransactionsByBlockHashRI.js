@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByBlockHashRIValue from './ListXRPRippleTransact
 /**
  * The ListXRPRippleTransactionsByBlockHashRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListXRPRippleTransactionsByBlockHashRI {
     /**
@@ -82,6 +82,9 @@ class ListXRPRippleTransactionsByBlockHashRI {
             if (data.hasOwnProperty('additionalData')) {
                 obj['additionalData'] = ApiClient.convertToType(data['additionalData'], 'String');
             }
+            if (data.hasOwnProperty('destinationTag')) {
+                obj['destinationTag'] = ApiClient.convertToType(data['destinationTag'], 'Number');
+            }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
@@ -133,6 +136,11 @@ class ListXRPRippleTransactionsByBlockHashRI {
  * @member {String} additionalData
  */
 ListXRPRippleTransactionsByBlockHashRI.prototype['additionalData'] = undefined;
+
+/**
+ * @member {Number} destinationTag
+ */
+ListXRPRippleTransactionsByBlockHashRI.prototype['destinationTag'] = undefined;
 
 /**
  * Represents the index position of the transaction in the specific block.

@@ -50,7 +50,7 @@
   describe('AddTokensToExistingFromAddressRITSBOT', function() {
     it('should create an instance of AddTokensToExistingFromAddressRITSBOT', function() {
       // uncomment below and update the code to test AddTokensToExistingFromAddressRITSBOT
-      //var instane = new Cryptoapis.AddTokensToExistingFromAddressRITSBOT();
+      //var instance = new Cryptoapis.AddTokensToExistingFromAddressRITSBOT();
       //expect(instance).to.be.a(Cryptoapis.AddTokensToExistingFromAddressRITSBOT);
     });
 

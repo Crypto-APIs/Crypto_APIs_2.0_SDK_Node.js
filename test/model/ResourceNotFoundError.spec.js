@@ -50,7 +50,7 @@
   describe('ResourceNotFoundError', function() {
     it('should create an instance of ResourceNotFoundError', function() {
       // uncomment below and update the code to test ResourceNotFoundError
-      //var instane = new Cryptoapis.ResourceNotFoundError();
+      //var instance = new Cryptoapis.ResourceNotFoundError();
       //expect(instance).to.be.a(Cryptoapis.ResourceNotFoundError);
     });
 

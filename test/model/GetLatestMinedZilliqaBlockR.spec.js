@@ -50,7 +50,7 @@
   describe('GetLatestMinedZilliqaBlockR', function() {
     it('should create an instance of GetLatestMinedZilliqaBlockR', function() {
       // uncomment below and update the code to test GetLatestMinedZilliqaBlockR
-      //var instane = new Cryptoapis.GetLatestMinedZilliqaBlockR();
+      //var instance = new Cryptoapis.GetLatestMinedZilliqaBlockR();
       //expect(instance).to.be.a(Cryptoapis.GetLatestMinedZilliqaBlockR);
     });
 

@@ -12,18 +12,18 @@
  */
 
 import ApiClient from '../ApiClient';
-import NewUnconfirmedTokensTransactionsRBData from './NewUnconfirmedTokensTransactionsRBData';
+import NewConfirmedTokensTransactionsRBData from './NewConfirmedTokensTransactionsRBData';
 
 /**
  * The NewConfirmedTokensTransactionsRB model module.
  * @module model/NewConfirmedTokensTransactionsRB
- * @version 1.2.1
+ * @version 1.3.0
  */
 class NewConfirmedTokensTransactionsRB {
     /**
      * Constructs a new <code>NewConfirmedTokensTransactionsRB</code>.
      * @alias module:model/NewConfirmedTokensTransactionsRB
-     * @param data {module:model/NewUnconfirmedTokensTransactionsRBData} 
+     * @param data {module:model/NewConfirmedTokensTransactionsRBData} 
      */
     constructor(data) { 
         
@@ -54,7 +54,7 @@ class NewConfirmedTokensTransactionsRB {
                 obj['context'] = ApiClient.convertToType(data['context'], 'String');
             }
             if (data.hasOwnProperty('data')) {
-                obj['data'] = NewUnconfirmedTokensTransactionsRBData.constructFromObject(data['data']);
+                obj['data'] = NewConfirmedTokensTransactionsRBData.constructFromObject(data['data']);
             }
         }
         return obj;
@@ -70,7 +70,7 @@ class NewConfirmedTokensTransactionsRB {
 NewConfirmedTokensTransactionsRB.prototype['context'] = undefined;
 
 /**
- * @member {module:model/NewUnconfirmedTokensTransactionsRBData} data
+ * @member {module:model/NewConfirmedTokensTransactionsRBData} data
  */
 NewConfirmedTokensTransactionsRB.prototype['data'] = undefined;
 

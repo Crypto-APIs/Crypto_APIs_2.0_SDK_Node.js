@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletRI model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
   /**
@@ -29,12 +29,13 @@ var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
    * @param feePriority {module:model/CreateCoinsTransactionRequestFromWalletRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
    * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromWalletRIRecipients>} Defines the destination of the transaction, whether it is incoming or outgoing.
    * @param totalTransactionAmount {String} Represents the specific amount of the transaction.
+   * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
    * @param transactionRequestStatus {module:model/CreateCoinsTransactionRequestFromWalletRI.TransactionRequestStatusEnum} Defines the status of the transaction, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
    */
-  function CreateCoinsTransactionRequestFromWalletRI(feePriority, recipients, totalTransactionAmount, transactionRequestStatus) {
+  function CreateCoinsTransactionRequestFromWalletRI(feePriority, recipients, totalTransactionAmount, transactionRequestId, transactionRequestStatus) {
     _classCallCheck(this, CreateCoinsTransactionRequestFromWalletRI);
 
-    CreateCoinsTransactionRequestFromWalletRI.initialize(this, feePriority, recipients, totalTransactionAmount, transactionRequestStatus);
+    CreateCoinsTransactionRequestFromWalletRI.initialize(this, feePriority, recipients, totalTransactionAmount, transactionRequestId, transactionRequestStatus);
   }
   /**
    * Initializes the fields of this object.
@@ -45,10 +46,11 @@ var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
 
   _createClass(CreateCoinsTransactionRequestFromWalletRI, null, [{
     key: "initialize",
-    value: function initialize(obj, feePriority, recipients, totalTransactionAmount, transactionRequestStatus) {
+    value: function initialize(obj, feePriority, recipients, totalTransactionAmount, transactionRequestId, transactionRequestStatus) {
       obj['feePriority'] = feePriority;
       obj['recipients'] = recipients;
       obj['totalTransactionAmount'] = totalTransactionAmount;
+      obj['transactionRequestId'] = transactionRequestId;
       obj['transactionRequestStatus'] = transactionRequestStatus;
     }
     /**
@@ -77,12 +79,20 @@ var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
           obj['feePriority'] = _ApiClient["default"].convertToType(data['feePriority'], 'String');
         }
 
+        if (data.hasOwnProperty('note')) {
+          obj['note'] = _ApiClient["default"].convertToType(data['note'], 'String');
+        }
+
         if (data.hasOwnProperty('recipients')) {
           obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionRequestFromWalletRIRecipients["default"]]);
         }
 
         if (data.hasOwnProperty('totalTransactionAmount')) {
           obj['totalTransactionAmount'] = _ApiClient["default"].convertToType(data['totalTransactionAmount'], 'String');
+        }
+
+        if (data.hasOwnProperty('transactionRequestId')) {
+          obj['transactionRequestId'] = _ApiClient["default"].convertToType(data['transactionRequestId'], 'String');
         }
 
         if (data.hasOwnProperty('transactionRequestStatus')) {
@@ -97,14 +107,14 @@ var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
   return CreateCoinsTransactionRequestFromWalletRI;
 }();
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.  For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 
 
 CreateCoinsTransactionRequestFromWalletRI.prototype['callbackSecretKey'] = undefined;
 /**
- * Verified URL for sending callbacks
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
  * @member {String} callbackUrl
  */
 
@@ -115,6 +125,12 @@ CreateCoinsTransactionRequestFromWalletRI.prototype['callbackUrl'] = undefined;
  */
 
 CreateCoinsTransactionRequestFromWalletRI.prototype['feePriority'] = undefined;
+/**
+ * Represents an optional note to add a free text in, explaining or providing additional detail on the transaction request.
+ * @member {String} note
+ */
+
+CreateCoinsTransactionRequestFromWalletRI.prototype['note'] = undefined;
 /**
  * Defines the destination of the transaction, whether it is incoming or outgoing.
  * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRIRecipients>} recipients
@@ -127,6 +143,12 @@ CreateCoinsTransactionRequestFromWalletRI.prototype['recipients'] = undefined;
  */
 
 CreateCoinsTransactionRequestFromWalletRI.prototype['totalTransactionAmount'] = undefined;
+/**
+ * Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
+ * @member {String} transactionRequestId
+ */
+
+CreateCoinsTransactionRequestFromWalletRI.prototype['transactionRequestId'] = undefined;
 /**
  * Defines the status of the transaction, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
  * @member {module:model/CreateCoinsTransactionRequestFromWalletRI.TransactionRequestStatusEnum} transactionRequestStatus

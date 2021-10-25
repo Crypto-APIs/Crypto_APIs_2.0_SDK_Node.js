@@ -42,7 +42,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.2.1
+* @version 1.3.0
 */
 var GeneratingApi = /*#__PURE__*/function () {
   /**
@@ -61,7 +61,7 @@ var GeneratingApi = /*#__PURE__*/function () {
    * Generate Deposit Address
    * Through this endpoint customers can generate a new Receiving/Deposit Addresses into their Wallet.
    * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-   * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+   * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
    * @param {String} walletId Represents the unique ID of the specific Wallet.
    * @param {Object} opts Optional parameters
    * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -110,7 +110,7 @@ var GeneratingApi = /*#__PURE__*/function () {
      * Generate Deposit Address
      * Through this endpoint customers can generate a new Receiving/Deposit Addresses into their Wallet.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Represents the unique ID of the specific Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.

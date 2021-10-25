@@ -48,10 +48,20 @@
   }
 
   describe('TokensApi', function() {
-    describe('getContractDetailsByAddress', function() {
-      it('should call getContractDetailsByAddress successfully', function(done) {
-        //uncomment below and update the code to test getContractDetailsByAddress
-        //instance.getContractDetailsByAddress(function(error) {
+    describe('getTokenDetailsByContractAddress', function() {
+      it('should call getTokenDetailsByContractAddress successfully', function(done) {
+        //uncomment below and update the code to test getTokenDetailsByContractAddress
+        //instance.getTokenDetailsByContractAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listConfirmedTokensTransfersByAddress', function() {
+      it('should call listConfirmedTokensTransfersByAddress successfully', function(done) {
+        //uncomment below and update the code to test listConfirmedTokensTransfersByAddress
+        //instance.listConfirmedTokensTransfersByAddress(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -62,16 +72,6 @@
       it('should call listTokensByAddress successfully', function(done) {
         //uncomment below and update the code to test listTokensByAddress
         //instance.listTokensByAddress(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('listTokensTransfersByAddress', function() {
-      it('should call listTokensTransfersByAddress successfully', function(done) {
-        //uncomment below and update the code to test listTokensTransfersByAddress
-        //instance.listTokensTransfersByAddress(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

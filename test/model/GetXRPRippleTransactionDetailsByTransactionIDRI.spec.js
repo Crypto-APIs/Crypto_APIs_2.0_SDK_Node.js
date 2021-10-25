@@ -50,12 +50,18 @@
   describe('GetXRPRippleTransactionDetailsByTransactionIDRI', function() {
     it('should create an instance of GetXRPRippleTransactionDetailsByTransactionIDRI', function() {
       // uncomment below and update the code to test GetXRPRippleTransactionDetailsByTransactionIDRI
-      //var instane = new Cryptoapis.GetXRPRippleTransactionDetailsByTransactionIDRI();
+      //var instance = new Cryptoapis.GetXRPRippleTransactionDetailsByTransactionIDRI();
       //expect(instance).to.be.a(Cryptoapis.GetXRPRippleTransactionDetailsByTransactionIDRI);
     });
 
     it('should have the property additionalData (base name: "additionalData")', function() {
       // uncomment below and update the code to test the property additionalData
+      //var instance = new Cryptoapis.GetXRPRippleTransactionDetailsByTransactionIDRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property destinationTag (base name: "destinationTag")', function() {
+      // uncomment below and update the code to test the property destinationTag
       //var instance = new Cryptoapis.GetXRPRippleTransactionDetailsByTransactionIDRI();
       //expect(instance).to.be();
     });

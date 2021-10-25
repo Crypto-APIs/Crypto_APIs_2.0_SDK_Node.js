@@ -50,7 +50,7 @@
   describe('TransactionRequestFailDataItem', function() {
     it('should create an instance of TransactionRequestFailDataItem', function() {
       // uncomment below and update the code to test TransactionRequestFailDataItem
-      //var instane = new Cryptoapis.TransactionRequestFailDataItem();
+      //var instance = new Cryptoapis.TransactionRequestFailDataItem();
       //expect(instance).to.be.a(Cryptoapis.TransactionRequestFailDataItem);
     });
 

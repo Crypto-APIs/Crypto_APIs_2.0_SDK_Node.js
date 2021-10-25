@@ -50,7 +50,7 @@
   describe('GetXRPRippleTransactionDetailsByTransactionIDRISenders', function() {
     it('should create an instance of GetXRPRippleTransactionDetailsByTransactionIDRISenders', function() {
       // uncomment below and update the code to test GetXRPRippleTransactionDetailsByTransactionIDRISenders
-      //var instane = new Cryptoapis.GetXRPRippleTransactionDetailsByTransactionIDRISenders();
+      //var instance = new Cryptoapis.GetXRPRippleTransactionDetailsByTransactionIDRISenders();
       //expect(instance).to.be.a(Cryptoapis.GetXRPRippleTransactionDetailsByTransactionIDRISenders);
     });
 

@@ -17,7 +17,7 @@ import InvalidPaginationError from './InvalidPaginationError';
 /**
  * The InvalidPagination model module.
  * @module model/InvalidPagination
- * @version 1.2.1
+ * @version 1.3.0
  */
 class InvalidPagination {
     /**

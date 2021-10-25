@@ -20,25 +20,25 @@ import GetTransactionDetailsByTransactionIDRISenders from './GetTransactionDetai
 /**
  * The GetTransactionDetailsByTransactionIDRI model module.
  * @module model/GetTransactionDetailsByTransactionIDRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetTransactionDetailsByTransactionIDRI {
     /**
      * Constructs a new <code>GetTransactionDetailsByTransactionIDRI</code>.
      * @alias module:model/GetTransactionDetailsByTransactionIDRI
      * @param index {Number} Represents the index position of the transaction in the specific block.
+     * @param isConfirmed {String} Represents the state of the transaction whether it is confirmed or not confirmed.
      * @param recipients {Array.<module:model/GetTransactionDetailsByTransactionIDRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param senders {Array.<module:model/GetTransactionDetailsByTransactionIDRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
      * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param fee {module:model/GetTransactionDetailsByTransactionIDRIFee} 
-     * @param isConfirmed {Boolean} Defines whether the transaction is mined/confirmed or not. If it is \"false\", it means the transaction is still in the Mempool waiting to be included in a block. Value \"true\" means that this transaction is already confirmed and included in a block.
      * @param blockchainSpecific {module:model/GetTransactionDetailsByTransactionIDRIBS} 
      */
-    constructor(index, recipients, senders, timestamp, transactionHash, transactionId, fee, isConfirmed, blockchainSpecific) { 
+    constructor(index, isConfirmed, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific) { 
         
-        GetTransactionDetailsByTransactionIDRI.initialize(this, index, recipients, senders, timestamp, transactionHash, transactionId, fee, isConfirmed, blockchainSpecific);
+        GetTransactionDetailsByTransactionIDRI.initialize(this, index, isConfirmed, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific);
     }
 
     /**
@@ -46,15 +46,15 @@ class GetTransactionDetailsByTransactionIDRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, index, recipients, senders, timestamp, transactionHash, transactionId, fee, isConfirmed, blockchainSpecific) { 
+    static initialize(obj, index, isConfirmed, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific) { 
         obj['index'] = index;
+        obj['isConfirmed'] = isConfirmed;
         obj['recipients'] = recipients;
         obj['senders'] = senders;
         obj['timestamp'] = timestamp;
         obj['transactionHash'] = transactionHash;
         obj['transactionId'] = transactionId;
         obj['fee'] = fee;
-        obj['isConfirmed'] = isConfirmed;
         obj['blockchainSpecific'] = blockchainSpecific;
     }
 
@@ -71,6 +71,9 @@ class GetTransactionDetailsByTransactionIDRI {
 
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
+            }
+            if (data.hasOwnProperty('isConfirmed')) {
+                obj['isConfirmed'] = ApiClient.convertToType(data['isConfirmed'], 'String');
             }
             if (data.hasOwnProperty('minedInBlockHash')) {
                 obj['minedInBlockHash'] = ApiClient.convertToType(data['minedInBlockHash'], 'String');
@@ -96,9 +99,6 @@ class GetTransactionDetailsByTransactionIDRI {
             if (data.hasOwnProperty('fee')) {
                 obj['fee'] = GetTransactionDetailsByTransactionIDRIFee.constructFromObject(data['fee']);
             }
-            if (data.hasOwnProperty('isConfirmed')) {
-                obj['isConfirmed'] = ApiClient.convertToType(data['isConfirmed'], 'Boolean');
-            }
             if (data.hasOwnProperty('blockchainSpecific')) {
                 obj['blockchainSpecific'] = GetTransactionDetailsByTransactionIDRIBS.constructFromObject(data['blockchainSpecific']);
             }
@@ -114,6 +114,12 @@ class GetTransactionDetailsByTransactionIDRI {
  * @member {Number} index
  */
 GetTransactionDetailsByTransactionIDRI.prototype['index'] = undefined;
+
+/**
+ * Represents the state of the transaction whether it is confirmed or not confirmed.
+ * @member {String} isConfirmed
+ */
+GetTransactionDetailsByTransactionIDRI.prototype['isConfirmed'] = undefined;
 
 /**
  * Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -161,12 +167,6 @@ GetTransactionDetailsByTransactionIDRI.prototype['transactionId'] = undefined;
  * @member {module:model/GetTransactionDetailsByTransactionIDRIFee} fee
  */
 GetTransactionDetailsByTransactionIDRI.prototype['fee'] = undefined;
-
-/**
- * Defines whether the transaction is mined/confirmed or not. If it is \"false\", it means the transaction is still in the Mempool waiting to be included in a block. Value \"true\" means that this transaction is already confirmed and included in a block.
- * @member {Boolean} isConfirmed
- */
-GetTransactionDetailsByTransactionIDRI.prototype['isConfirmed'] = undefined;
 
 /**
  * @member {module:model/GetTransactionDetailsByTransactionIDRIBS} blockchainSpecific

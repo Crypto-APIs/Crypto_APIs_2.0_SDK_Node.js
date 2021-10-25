@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _NewUnconfirmedTokensTransactionsRBData = _interopRequireDefault(require("./NewUnconfirmedTokensTransactionsRBData"));
+var _NewConfirmedTokensTransactionsRBData = _interopRequireDefault(require("./NewConfirmedTokensTransactionsRBData"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -20,13 +20,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsRB model module.
  * @module model/NewConfirmedTokensTransactionsRB
- * @version 1.2.1
+ * @version 1.3.0
  */
 var NewConfirmedTokensTransactionsRB = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokensTransactionsRB</code>.
    * @alias module:model/NewConfirmedTokensTransactionsRB
-   * @param data {module:model/NewUnconfirmedTokensTransactionsRBData} 
+   * @param data {module:model/NewConfirmedTokensTransactionsRBData} 
    */
   function NewConfirmedTokensTransactionsRB(data) {
     _classCallCheck(this, NewConfirmedTokensTransactionsRB);
@@ -64,7 +64,7 @@ var NewConfirmedTokensTransactionsRB = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('data')) {
-          obj['data'] = _NewUnconfirmedTokensTransactionsRBData["default"].constructFromObject(data['data']);
+          obj['data'] = _NewConfirmedTokensTransactionsRBData["default"].constructFromObject(data['data']);
         }
       }
 
@@ -82,7 +82,7 @@ var NewConfirmedTokensTransactionsRB = /*#__PURE__*/function () {
 
 NewConfirmedTokensTransactionsRB.prototype['context'] = undefined;
 /**
- * @member {module:model/NewUnconfirmedTokensTransactionsRBData} data
+ * @member {module:model/NewConfirmedTokensTransactionsRBData} data
  */
 
 NewConfirmedTokensTransactionsRB.prototype['data'] = undefined;

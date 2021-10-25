@@ -50,7 +50,7 @@
   describe('CreateAutomaticCoinsForwardingRBDataItem', function() {
     it('should create an instance of CreateAutomaticCoinsForwardingRBDataItem', function() {
       // uncomment below and update the code to test CreateAutomaticCoinsForwardingRBDataItem
-      //var instane = new Cryptoapis.CreateAutomaticCoinsForwardingRBDataItem();
+      //var instance = new Cryptoapis.CreateAutomaticCoinsForwardingRBDataItem();
       //expect(instance).to.be.a(Cryptoapis.CreateAutomaticCoinsForwardingRBDataItem);
     });
 

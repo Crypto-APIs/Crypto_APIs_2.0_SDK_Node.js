@@ -50,7 +50,7 @@
   describe('BroadcastTransactionSuccessDataItem', function() {
     it('should create an instance of BroadcastTransactionSuccessDataItem', function() {
       // uncomment below and update the code to test BroadcastTransactionSuccessDataItem
-      //var instane = new Cryptoapis.BroadcastTransactionSuccessDataItem();
+      //var instance = new Cryptoapis.BroadcastTransactionSuccessDataItem();
       //expect(instance).to.be.a(Cryptoapis.BroadcastTransactionSuccessDataItem);
     });
 

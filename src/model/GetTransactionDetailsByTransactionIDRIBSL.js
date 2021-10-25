@@ -18,7 +18,7 @@ import GetTransactionDetailsByTransactionIDRIBSLVout from './GetTransactionDetai
 /**
  * The GetTransactionDetailsByTransactionIDRIBSL model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSL
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetTransactionDetailsByTransactionIDRIBSL {
     /**
@@ -27,14 +27,14 @@ class GetTransactionDetailsByTransactionIDRIBSL {
      * @alias module:model/GetTransactionDetailsByTransactionIDRIBSL
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param size {Number} Represents the total size of this transaction.
+     * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents transaction version number.
      * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVin>} Represents the transaction inputs.
      * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} Represents the transaction outputs.
-     * @param vsize {Number} Represents the virtual size of this transaction.
      */
-    constructor(locktime, size, version, vin, vout, vsize) { 
+    constructor(locktime, size, vSize, version, vin, vout) { 
         
-        GetTransactionDetailsByTransactionIDRIBSL.initialize(this, locktime, size, version, vin, vout, vsize);
+        GetTransactionDetailsByTransactionIDRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);
     }
 
     /**
@@ -42,13 +42,13 @@ class GetTransactionDetailsByTransactionIDRIBSL {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, locktime, size, version, vin, vout, vsize) { 
+    static initialize(obj, locktime, size, vSize, version, vin, vout) { 
         obj['locktime'] = locktime;
         obj['size'] = size;
+        obj['vSize'] = vSize;
         obj['version'] = version;
         obj['vin'] = vin;
         obj['vout'] = vout;
-        obj['vsize'] = vsize;
     }
 
     /**
@@ -68,6 +68,9 @@ class GetTransactionDetailsByTransactionIDRIBSL {
             if (data.hasOwnProperty('size')) {
                 obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
+            if (data.hasOwnProperty('vSize')) {
+                obj['vSize'] = ApiClient.convertToType(data['vSize'], 'Number');
+            }
             if (data.hasOwnProperty('version')) {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
@@ -76,9 +79,6 @@ class GetTransactionDetailsByTransactionIDRIBSL {
             }
             if (data.hasOwnProperty('vout')) {
                 obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSLVout]);
-            }
-            if (data.hasOwnProperty('vsize')) {
-                obj['vsize'] = ApiClient.convertToType(data['vsize'], 'Number');
             }
         }
         return obj;
@@ -100,6 +100,12 @@ GetTransactionDetailsByTransactionIDRIBSL.prototype['locktime'] = undefined;
 GetTransactionDetailsByTransactionIDRIBSL.prototype['size'] = undefined;
 
 /**
+ * Represents the virtual size of this transaction.
+ * @member {Number} vSize
+ */
+GetTransactionDetailsByTransactionIDRIBSL.prototype['vSize'] = undefined;
+
+/**
  * Represents transaction version number.
  * @member {Number} version
  */
@@ -116,12 +122,6 @@ GetTransactionDetailsByTransactionIDRIBSL.prototype['vin'] = undefined;
  * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
  */
 GetTransactionDetailsByTransactionIDRIBSL.prototype['vout'] = undefined;
-
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
- */
-GetTransactionDetailsByTransactionIDRIBSL.prototype['vsize'] = undefined;
 
 
 

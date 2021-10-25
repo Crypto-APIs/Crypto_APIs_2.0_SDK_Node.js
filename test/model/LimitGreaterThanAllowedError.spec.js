@@ -50,7 +50,7 @@
   describe('LimitGreaterThanAllowedError', function() {
     it('should create an instance of LimitGreaterThanAllowedError', function() {
       // uncomment below and update the code to test LimitGreaterThanAllowedError
-      //var instane = new Cryptoapis.LimitGreaterThanAllowedError();
+      //var instance = new Cryptoapis.LimitGreaterThanAllowedError();
       //expect(instance).to.be.a(Cryptoapis.LimitGreaterThanAllowedError);
     });
 

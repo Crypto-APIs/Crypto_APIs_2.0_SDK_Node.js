@@ -7,11 +7,13 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token"));
+var _AddressTokensTransactionConfirmedEachConfirmationBep = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationBep20"));
 
-var _AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token"));
+var _AddressTokensTransactionConfirmedEachConfirmationErc = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationErc20"));
 
-var _AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken"));
+var _AddressTokensTransactionConfirmedEachConfirmationErc2 = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationErc721"));
+
+var _AddressTokensTransactionConfirmedEachConfirmationOmni = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationOmni"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,19 +26,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationToken model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationToken
- * @version 1.2.1
+ * @version 1.3.0
  */
 var AddressTokensTransactionConfirmedEachConfirmationToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionConfirmedEachConfirmationToken</code>.
    * @alias module:model/AddressTokensTransactionConfirmedEachConfirmationToken
-   * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token
-   * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token
-   * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken
+   * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationErc20
+   * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationErc721
+   * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationOmni
+   * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationBep20
    * @param name {String} Specifies the name of the token.
    * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
    * @param amount {String} Defines the amount of tokens sent with the confirmed transaction.
-   * @param contractAddress {String} Specifies the address of the contract.
+   * @param contractAddress {String} Defines the address of the contract.
    * @param tokenId {String} Specifies the ID of the token.
    * @param propertyId {String} Defines the ID of the property for Omni Layer.
    * @param transactionType {String} Defines the type of the transaction.
@@ -45,11 +48,13 @@ var AddressTokensTransactionConfirmedEachConfirmationToken = /*#__PURE__*/functi
   function AddressTokensTransactionConfirmedEachConfirmationToken(name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) {
     _classCallCheck(this, AddressTokensTransactionConfirmedEachConfirmationToken);
 
-    _AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token["default"].initialize(this, name, symbol, amount, contractAddress);
+    _AddressTokensTransactionConfirmedEachConfirmationErc["default"].initialize(this, name, symbol, amount, contractAddress);
 
-    _AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token["default"].initialize(this, name, symbol, tokenId, contractAddress);
+    _AddressTokensTransactionConfirmedEachConfirmationErc2["default"].initialize(this, name, symbol, tokenId, contractAddress);
 
-    _AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken["default"].initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
+    _AddressTokensTransactionConfirmedEachConfirmationOmni["default"].initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
+
+    _AddressTokensTransactionConfirmedEachConfirmationBep["default"].initialize(this, name, symbol, amount, contractAddress);
 
     AddressTokensTransactionConfirmedEachConfirmationToken.initialize(this, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId);
   }
@@ -86,11 +91,13 @@ var AddressTokensTransactionConfirmedEachConfirmationToken = /*#__PURE__*/functi
       if (data) {
         obj = obj || new AddressTokensTransactionConfirmedEachConfirmationToken();
 
-        _AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token["default"].constructFromObject(data, obj);
+        _AddressTokensTransactionConfirmedEachConfirmationErc["default"].constructFromObject(data, obj);
 
-        _AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token["default"].constructFromObject(data, obj);
+        _AddressTokensTransactionConfirmedEachConfirmationErc2["default"].constructFromObject(data, obj);
 
-        _AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken["default"].constructFromObject(data, obj);
+        _AddressTokensTransactionConfirmedEachConfirmationOmni["default"].constructFromObject(data, obj);
+
+        _AddressTokensTransactionConfirmedEachConfirmationBep["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('name')) {
           obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
@@ -161,7 +168,7 @@ AddressTokensTransactionConfirmedEachConfirmationToken.prototype['decimals'] = u
 
 AddressTokensTransactionConfirmedEachConfirmationToken.prototype['amount'] = undefined;
 /**
- * Specifies the address of the contract.
+ * Defines the address of the contract.
  * @member {String} contractAddress
  */
 
@@ -189,93 +196,124 @@ AddressTokensTransactionConfirmedEachConfirmationToken.prototype['transactionTyp
  * @member {String} createdByTransactionId
  */
 
-AddressTokensTransactionConfirmedEachConfirmationToken.prototype['createdByTransactionId'] = undefined; // Implement AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token interface:
+AddressTokensTransactionConfirmedEachConfirmationToken.prototype['createdByTransactionId'] = undefined; // Implement AddressTokensTransactionConfirmedEachConfirmationErc20 interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token["default"].prototype['name'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationErc["default"].prototype['name'] = undefined;
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token["default"].prototype['symbol'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationErc["default"].prototype['symbol'] = undefined;
 /**
  * Defines how many decimals can be used to break the token.
  * @member {String} decimals
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token["default"].prototype['decimals'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationErc["default"].prototype['decimals'] = undefined;
 /**
  * Defines the amount of tokens sent with the confirmed transaction.
  * @member {String} amount
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token["default"].prototype['amount'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationErc["default"].prototype['amount'] = undefined;
 /**
  * Defines the address of the contract.
  * @member {String} contractAddress
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token["default"].prototype['contractAddress'] = undefined; // Implement AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token interface:
+_AddressTokensTransactionConfirmedEachConfirmationErc["default"].prototype['contractAddress'] = undefined; // Implement AddressTokensTransactionConfirmedEachConfirmationErc721 interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token["default"].prototype['name'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationErc2["default"].prototype['name'] = undefined;
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token["default"].prototype['symbol'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationErc2["default"].prototype['symbol'] = undefined;
 /**
  * Specifies the ID of the token.
  * @member {String} tokenId
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token["default"].prototype['tokenId'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationErc2["default"].prototype['tokenId'] = undefined;
 /**
  * Specifies the address of the contract.
  * @member {String} contractAddress
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token["default"].prototype['contractAddress'] = undefined; // Implement AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken interface:
+_AddressTokensTransactionConfirmedEachConfirmationErc2["default"].prototype['contractAddress'] = undefined; // Implement AddressTokensTransactionConfirmedEachConfirmationOmni interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken["default"].prototype['name'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationOmni["default"].prototype['name'] = undefined;
 /**
  * Defines the ID of the property for Omni Layer.
  * @member {String} propertyId
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken["default"].prototype['propertyId'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationOmni["default"].prototype['propertyId'] = undefined;
 /**
  * Defines the type of the transaction.
  * @member {String} transactionType
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken["default"].prototype['transactionType'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationOmni["default"].prototype['transactionType'] = undefined;
 /**
  * The transaction ID used to create the token.
  * @member {String} createdByTransactionId
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken["default"].prototype['createdByTransactionId'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationOmni["default"].prototype['createdByTransactionId'] = undefined;
 /**
  * Defines the amount of tokens sent with the confirmed transaction.
  * @member {String} amount
  */
 
-_AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken["default"].prototype['amount'] = undefined;
+_AddressTokensTransactionConfirmedEachConfirmationOmni["default"].prototype['amount'] = undefined; // Implement AddressTokensTransactionConfirmedEachConfirmationBep20 interface:
+
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+
+_AddressTokensTransactionConfirmedEachConfirmationBep["default"].prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+
+_AddressTokensTransactionConfirmedEachConfirmationBep["default"].prototype['symbol'] = undefined;
+/**
+ * Defines how many decimals can be used to break the token.
+ * @member {String} decimals
+ */
+
+_AddressTokensTransactionConfirmedEachConfirmationBep["default"].prototype['decimals'] = undefined;
+/**
+ * Defines the amount of tokens sent with the confirmed transaction.
+ * @member {String} amount
+ */
+
+_AddressTokensTransactionConfirmedEachConfirmationBep["default"].prototype['amount'] = undefined;
+/**
+ * Defines the address of the contract.
+ * @member {String} contractAddress
+ */
+
+_AddressTokensTransactionConfirmedEachConfirmationBep["default"].prototype['contractAddress'] = undefined;
 var _default = AddressTokensTransactionConfirmedEachConfirmationToken;
 exports["default"] = _default;

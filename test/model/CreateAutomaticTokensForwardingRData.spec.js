@@ -50,7 +50,7 @@
   describe('CreateAutomaticTokensForwardingRData', function() {
     it('should create an instance of CreateAutomaticTokensForwardingRData', function() {
       // uncomment below and update the code to test CreateAutomaticTokensForwardingRData
-      //var instane = new Cryptoapis.CreateAutomaticTokensForwardingRData();
+      //var instance = new Cryptoapis.CreateAutomaticTokensForwardingRData();
       //expect(instance).to.be.a(Cryptoapis.CreateAutomaticTokensForwardingRData);
     });
 

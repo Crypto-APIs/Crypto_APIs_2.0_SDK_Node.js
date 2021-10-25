@@ -50,7 +50,7 @@
   describe('AlreadyExists', function() {
     it('should create an instance of AlreadyExists', function() {
       // uncomment below and update the code to test AlreadyExists
-      //var instane = new Cryptoapis.AlreadyExists();
+      //var instance = new Cryptoapis.AlreadyExists();
       //expect(instance).to.be.a(Cryptoapis.AlreadyExists);
     });
 

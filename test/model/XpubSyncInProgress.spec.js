@@ -50,7 +50,7 @@
   describe('XpubSyncInProgress', function() {
     it('should create an instance of XpubSyncInProgress', function() {
       // uncomment below and update the code to test XpubSyncInProgress
-      //var instane = new Cryptoapis.XpubSyncInProgress();
+      //var instance = new Cryptoapis.XpubSyncInProgress();
       //expect(instance).to.be.a(Cryptoapis.XpubSyncInProgress);
     });
 

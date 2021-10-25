@@ -50,7 +50,7 @@
   describe('WalletAsAServiceTokenNotSupportedError', function() {
     it('should create an instance of WalletAsAServiceTokenNotSupportedError', function() {
       // uncomment below and update the code to test WalletAsAServiceTokenNotSupportedError
-      //var instane = new Cryptoapis.WalletAsAServiceTokenNotSupportedError();
+      //var instance = new Cryptoapis.WalletAsAServiceTokenNotSupportedError();
       //expect(instance).to.be.a(Cryptoapis.WalletAsAServiceTokenNotSupportedError);
     });
 

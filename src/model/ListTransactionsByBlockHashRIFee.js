@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIFee model module.
  * @module model/ListTransactionsByBlockHashRIFee
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListTransactionsByBlockHashRIFee {
     /**
      * Constructs a new <code>ListTransactionsByBlockHashRIFee</code>.
      * @alias module:model/ListTransactionsByBlockHashRIFee
      * @param amount {String} Represents the fee amount.
-     * @param unit {String} 
+     * @param unit {String} Defines the specific unit of the fee.
      */
     constructor(amount, unit) { 
         
@@ -71,6 +71,7 @@ class ListTransactionsByBlockHashRIFee {
 ListTransactionsByBlockHashRIFee.prototype['amount'] = undefined;
 
 /**
+ * Defines the specific unit of the fee.
  * @member {String} unit
  */
 ListTransactionsByBlockHashRIFee.prototype['unit'] = undefined;

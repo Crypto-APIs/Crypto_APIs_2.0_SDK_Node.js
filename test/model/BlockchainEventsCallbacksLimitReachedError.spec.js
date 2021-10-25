@@ -50,7 +50,7 @@
   describe('BlockchainEventsCallbacksLimitReachedError', function() {
     it('should create an instance of BlockchainEventsCallbacksLimitReachedError', function() {
       // uncomment below and update the code to test BlockchainEventsCallbacksLimitReachedError
-      //var instane = new Cryptoapis.BlockchainEventsCallbacksLimitReachedError();
+      //var instance = new Cryptoapis.BlockchainEventsCallbacksLimitReachedError();
       //expect(instance).to.be.a(Cryptoapis.BlockchainEventsCallbacksLimitReachedError);
     });
 

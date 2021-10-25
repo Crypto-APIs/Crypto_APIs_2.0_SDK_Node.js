@@ -50,7 +50,7 @@
   describe('GetAddressDetailsRITotalSpent', function() {
     it('should create an instance of GetAddressDetailsRITotalSpent', function() {
       // uncomment below and update the code to test GetAddressDetailsRITotalSpent
-      //var instane = new Cryptoapis.GetAddressDetailsRITotalSpent();
+      //var instance = new Cryptoapis.GetAddressDetailsRITotalSpent();
       //expect(instance).to.be.a(Cryptoapis.GetAddressDetailsRITotalSpent);
     });
 

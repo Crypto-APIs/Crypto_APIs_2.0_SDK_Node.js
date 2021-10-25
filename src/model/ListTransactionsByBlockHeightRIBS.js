@@ -12,21 +12,26 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListTransactionsByBlockHashRIBSBCVin from './ListTransactionsByBlockHashRIBSBCVin';
-import ListTransactionsByBlockHashRIBSBCVout from './ListTransactionsByBlockHashRIBSBCVout';
+import ListConfirmedTransactionsByAddressRIBSZVShieldedSpend from './ListConfirmedTransactionsByAddressRIBSZVShieldedSpend';
 import ListTransactionsByBlockHeightRIBSB from './ListTransactionsByBlockHeightRIBSB';
 import ListTransactionsByBlockHeightRIBSBC from './ListTransactionsByBlockHeightRIBSBC';
+import ListTransactionsByBlockHeightRIBSBSC from './ListTransactionsByBlockHeightRIBSBSC';
+import ListTransactionsByBlockHeightRIBSBSCGasPrice from './ListTransactionsByBlockHeightRIBSBSCGasPrice';
 import ListTransactionsByBlockHeightRIBSD from './ListTransactionsByBlockHeightRIBSD';
 import ListTransactionsByBlockHeightRIBSD2 from './ListTransactionsByBlockHeightRIBSD2';
 import ListTransactionsByBlockHeightRIBSE from './ListTransactionsByBlockHeightRIBSE';
 import ListTransactionsByBlockHeightRIBSEC from './ListTransactionsByBlockHeightRIBSEC';
-import ListTransactionsByBlockHeightRIBSECGasPrice from './ListTransactionsByBlockHeightRIBSECGasPrice';
 import ListTransactionsByBlockHeightRIBSL from './ListTransactionsByBlockHeightRIBSL';
+import ListTransactionsByBlockHeightRIBSZ from './ListTransactionsByBlockHeightRIBSZ';
+import ListTransactionsByBlockHeightRIBSZVJoinSplit from './ListTransactionsByBlockHeightRIBSZVJoinSplit';
+import ListTransactionsByBlockHeightRIBSZVShieldedOutput from './ListTransactionsByBlockHeightRIBSZVShieldedOutput';
+import ListTransactionsByBlockHeightRIBSZVin from './ListTransactionsByBlockHeightRIBSZVin';
+import ListTransactionsByBlockHeightRIBSZVout from './ListTransactionsByBlockHeightRIBSZVout';
 
 /**
  * The ListTransactionsByBlockHeightRIBS model module.
  * @module model/ListTransactionsByBlockHeightRIBS
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListTransactionsByBlockHeightRIBS {
     /**
@@ -39,24 +44,35 @@ class ListTransactionsByBlockHeightRIBS {
      * @implements module:model/ListTransactionsByBlockHeightRIBSL
      * @implements module:model/ListTransactionsByBlockHeightRIBSBC
      * @implements module:model/ListTransactionsByBlockHeightRIBSEC
+     * @implements module:model/ListTransactionsByBlockHeightRIBSBSC
+     * @implements module:model/ListTransactionsByBlockHeightRIBSZ
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Represents the virtual size of this transaction.
-     * @param version {Number} Represents the total size of this transaction.
-     * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSBCVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/ListTransactionsByBlockHashRIBSBCVout>} Represents the transaction outputs.
+     * @param version {Number} Represents the transaction version number.
+     * @param vin {Array.<module:model/ListTransactionsByBlockHeightRIBSZVin>} Object Array representation of transaction inputs
+     * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} Object Array representation of transaction outputs
      * @param contract {String} Represents the specific transaction contract.
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-     * @param gasPrice {module:model/ListTransactionsByBlockHeightRIBSECGasPrice} 
+     * @param gasPrice {module:model/ListTransactionsByBlockHeightRIBSBSCGasPrice} 
      * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
      * @param inputData {String} Represents additional information that is required for the transaction.
-     * @param nonce {String} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
-     * @param transactionStatus {String} Represents the status of this transaction.
-     * @param vsize {Number} Represents the virtual size of this transaction.
+     * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+     * @param transactionStatus {String} Represents the status of this transaction
+     * @param bindingSig {String} It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+     * @param expiryHeight {Number} Represents a block height after which the transaction will expire.
+     * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
+     * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
+     * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
+     * @param vJoinSplit {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+     * @param vShieldedOutput {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
+     * @param vShieldedSpend {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+     * @param valueBalance {String} Defines the transaction value balance.
+     * @param versionGroupId {String} Represents the transaction version group ID.
      */
-    constructor(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, vsize) { 
-        ListTransactionsByBlockHeightRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);ListTransactionsByBlockHeightRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);ListTransactionsByBlockHeightRIBSD.initialize(this, locktime, size, version, vin, vout);ListTransactionsByBlockHeightRIBSD2.initialize(this, locktime, size, version, vin, vout);ListTransactionsByBlockHeightRIBSL.initialize(this, locktime, size, version, vin, vout, vsize);ListTransactionsByBlockHeightRIBSBC.initialize(this, locktime, size, version, vin, vout);ListTransactionsByBlockHeightRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
-        ListTransactionsByBlockHeightRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, vsize);
+    constructor(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) { 
+        ListTransactionsByBlockHeightRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);ListTransactionsByBlockHeightRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);ListTransactionsByBlockHeightRIBSD.initialize(this, locktime, size, version, vin, vout);ListTransactionsByBlockHeightRIBSD2.initialize(this, locktime, size, version, vin, vout);ListTransactionsByBlockHeightRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);ListTransactionsByBlockHeightRIBSBC.initialize(this, locktime, size, version, vin, vout);ListTransactionsByBlockHeightRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);ListTransactionsByBlockHeightRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);ListTransactionsByBlockHeightRIBSZ.initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);
+        ListTransactionsByBlockHeightRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId);
     }
 
     /**
@@ -64,7 +80,7 @@ class ListTransactionsByBlockHeightRIBS {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, vsize) { 
+    static initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) { 
         obj['locktime'] = locktime;
         obj['size'] = size;
         obj['vSize'] = vSize;
@@ -78,7 +94,16 @@ class ListTransactionsByBlockHeightRIBS {
         obj['inputData'] = inputData;
         obj['nonce'] = nonce;
         obj['transactionStatus'] = transactionStatus;
-        obj['vsize'] = vsize;
+        obj['bindingSig'] = bindingSig;
+        obj['expiryHeight'] = expiryHeight;
+        obj['joinSplitPubKey'] = joinSplitPubKey;
+        obj['joinSplitSig'] = joinSplitSig;
+        obj['overwintered'] = overwintered;
+        obj['vJoinSplit'] = vJoinSplit;
+        obj['vShieldedOutput'] = vShieldedOutput;
+        obj['vShieldedSpend'] = vShieldedSpend;
+        obj['valueBalance'] = valueBalance;
+        obj['versionGroupId'] = versionGroupId;
     }
 
     /**
@@ -98,6 +123,8 @@ class ListTransactionsByBlockHeightRIBS {
             ListTransactionsByBlockHeightRIBSL.constructFromObject(data, obj);
             ListTransactionsByBlockHeightRIBSBC.constructFromObject(data, obj);
             ListTransactionsByBlockHeightRIBSEC.constructFromObject(data, obj);
+            ListTransactionsByBlockHeightRIBSBSC.constructFromObject(data, obj);
+            ListTransactionsByBlockHeightRIBSZ.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('locktime')) {
                 obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
@@ -112,10 +139,10 @@ class ListTransactionsByBlockHeightRIBS {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHashRIBSBCVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHeightRIBSZVin]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHashRIBSBCVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHeightRIBSZVout]);
             }
             if (data.hasOwnProperty('contract')) {
                 obj['contract'] = ApiClient.convertToType(data['contract'], 'String');
@@ -124,7 +151,7 @@ class ListTransactionsByBlockHeightRIBS {
                 obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'String');
             }
             if (data.hasOwnProperty('gasPrice')) {
-                obj['gasPrice'] = ListTransactionsByBlockHeightRIBSECGasPrice.constructFromObject(data['gasPrice']);
+                obj['gasPrice'] = ListTransactionsByBlockHeightRIBSBSCGasPrice.constructFromObject(data['gasPrice']);
             }
             if (data.hasOwnProperty('gasUsed')) {
                 obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'String');
@@ -133,13 +160,40 @@ class ListTransactionsByBlockHeightRIBS {
                 obj['inputData'] = ApiClient.convertToType(data['inputData'], 'String');
             }
             if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
             }
             if (data.hasOwnProperty('transactionStatus')) {
                 obj['transactionStatus'] = ApiClient.convertToType(data['transactionStatus'], 'String');
             }
-            if (data.hasOwnProperty('vsize')) {
-                obj['vsize'] = ApiClient.convertToType(data['vsize'], 'Number');
+            if (data.hasOwnProperty('bindingSig')) {
+                obj['bindingSig'] = ApiClient.convertToType(data['bindingSig'], 'String');
+            }
+            if (data.hasOwnProperty('expiryHeight')) {
+                obj['expiryHeight'] = ApiClient.convertToType(data['expiryHeight'], 'Number');
+            }
+            if (data.hasOwnProperty('joinSplitPubKey')) {
+                obj['joinSplitPubKey'] = ApiClient.convertToType(data['joinSplitPubKey'], 'String');
+            }
+            if (data.hasOwnProperty('joinSplitSig')) {
+                obj['joinSplitSig'] = ApiClient.convertToType(data['joinSplitSig'], 'String');
+            }
+            if (data.hasOwnProperty('overwintered')) {
+                obj['overwintered'] = ApiClient.convertToType(data['overwintered'], 'Boolean');
+            }
+            if (data.hasOwnProperty('vJoinSplit')) {
+                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [ListTransactionsByBlockHeightRIBSZVJoinSplit]);
+            }
+            if (data.hasOwnProperty('vShieldedOutput')) {
+                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [ListTransactionsByBlockHeightRIBSZVShieldedOutput]);
+            }
+            if (data.hasOwnProperty('vShieldedSpend')) {
+                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [ListConfirmedTransactionsByAddressRIBSZVShieldedSpend]);
+            }
+            if (data.hasOwnProperty('valueBalance')) {
+                obj['valueBalance'] = ApiClient.convertToType(data['valueBalance'], 'String');
+            }
+            if (data.hasOwnProperty('versionGroupId')) {
+                obj['versionGroupId'] = ApiClient.convertToType(data['versionGroupId'], 'String');
             }
         }
         return obj;
@@ -167,20 +221,20 @@ ListTransactionsByBlockHeightRIBS.prototype['size'] = undefined;
 ListTransactionsByBlockHeightRIBS.prototype['vSize'] = undefined;
 
 /**
- * Represents the total size of this transaction.
+ * Represents the transaction version number.
  * @member {Number} version
  */
 ListTransactionsByBlockHeightRIBS.prototype['version'] = undefined;
 
 /**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVin>} vin
+ * Object Array representation of transaction inputs
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVin>} vin
  */
 ListTransactionsByBlockHeightRIBS.prototype['vin'] = undefined;
 
 /**
- * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVout>} vout
+ * Object Array representation of transaction outputs
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} vout
  */
 ListTransactionsByBlockHeightRIBS.prototype['vout'] = undefined;
 
@@ -197,7 +251,7 @@ ListTransactionsByBlockHeightRIBS.prototype['contract'] = undefined;
 ListTransactionsByBlockHeightRIBS.prototype['gasLimit'] = undefined;
 
 /**
- * @member {module:model/ListTransactionsByBlockHeightRIBSECGasPrice} gasPrice
+ * @member {module:model/ListTransactionsByBlockHeightRIBSBSCGasPrice} gasPrice
  */
 ListTransactionsByBlockHeightRIBS.prototype['gasPrice'] = undefined;
 
@@ -215,21 +269,75 @@ ListTransactionsByBlockHeightRIBS.prototype['inputData'] = undefined;
 
 /**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {String} nonce
+ * @member {Number} nonce
  */
 ListTransactionsByBlockHeightRIBS.prototype['nonce'] = undefined;
 
 /**
- * Represents the status of this transaction.
+ * Represents the status of this transaction
  * @member {String} transactionStatus
  */
 ListTransactionsByBlockHeightRIBS.prototype['transactionStatus'] = undefined;
 
 /**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
+ * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+ * @member {String} bindingSig
  */
-ListTransactionsByBlockHeightRIBS.prototype['vsize'] = undefined;
+ListTransactionsByBlockHeightRIBS.prototype['bindingSig'] = undefined;
+
+/**
+ * Represents a block height after which the transaction will expire.
+ * @member {Number} expiryHeight
+ */
+ListTransactionsByBlockHeightRIBS.prototype['expiryHeight'] = undefined;
+
+/**
+ * Represents an encoding of a JoinSplitSig public validating key.
+ * @member {String} joinSplitPubKey
+ */
+ListTransactionsByBlockHeightRIBS.prototype['joinSplitPubKey'] = undefined;
+
+/**
+ * Is used to sign transactions that contain at least one JoinSplit description.
+ * @member {String} joinSplitSig
+ */
+ListTransactionsByBlockHeightRIBS.prototype['joinSplitSig'] = undefined;
+
+/**
+ * \"Overwinter\" is the network upgrade for the Zcash blockchain.
+ * @member {Boolean} overwintered
+ */
+ListTransactionsByBlockHeightRIBS.prototype['overwintered'] = undefined;
+
+/**
+ * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} vJoinSplit
+ */
+ListTransactionsByBlockHeightRIBS.prototype['vJoinSplit'] = undefined;
+
+/**
+ * Object Array representation of transaction output descriptions
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} vShieldedOutput
+ */
+ListTransactionsByBlockHeightRIBS.prototype['vShieldedOutput'] = undefined;
+
+/**
+ * Object Array representation of transaction spend descriptions
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend>} vShieldedSpend
+ */
+ListTransactionsByBlockHeightRIBS.prototype['vShieldedSpend'] = undefined;
+
+/**
+ * Defines the transaction value balance.
+ * @member {String} valueBalance
+ */
+ListTransactionsByBlockHeightRIBS.prototype['valueBalance'] = undefined;
+
+/**
+ * Represents the transaction version group ID.
+ * @member {String} versionGroupId
+ */
+ListTransactionsByBlockHeightRIBS.prototype['versionGroupId'] = undefined;
 
 
 // Implement ListTransactionsByBlockHeightRIBSB interface:
@@ -362,6 +470,11 @@ ListTransactionsByBlockHeightRIBSL.prototype['locktime'] = undefined;
  */
 ListTransactionsByBlockHeightRIBSL.prototype['size'] = undefined;
 /**
+ * Represents the virtual size of this transaction.
+ * @member {Number} vSize
+ */
+ListTransactionsByBlockHeightRIBSL.prototype['vSize'] = undefined;
+/**
  * Represents transaction version number.
  * @member {Number} version
  */
@@ -376,11 +489,6 @@ ListTransactionsByBlockHeightRIBSL.prototype['vin'] = undefined;
  * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSLVout>} vout
  */
 ListTransactionsByBlockHeightRIBSL.prototype['vout'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
- */
-ListTransactionsByBlockHeightRIBSL.prototype['vsize'] = undefined;
 // Implement ListTransactionsByBlockHeightRIBSBC interface:
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.
@@ -437,6 +545,117 @@ ListTransactionsByBlockHeightRIBSEC.prototype['inputData'] = undefined;
  * @member {String} nonce
  */
 ListTransactionsByBlockHeightRIBSEC.prototype['nonce'] = undefined;
+// Implement ListTransactionsByBlockHeightRIBSBSC interface:
+/**
+ * Represents the specific transaction contract.
+ * @member {String} contract
+ */
+ListTransactionsByBlockHeightRIBSBSC.prototype['contract'] = undefined;
+/**
+ * Represents the amount of gas used by this specific transaction alone.
+ * @member {String} gasLimit
+ */
+ListTransactionsByBlockHeightRIBSBSC.prototype['gasLimit'] = undefined;
+/**
+ * @member {module:model/ListTransactionsByBlockHeightRIBSBSCGasPrice} gasPrice
+ */
+ListTransactionsByBlockHeightRIBSBSC.prototype['gasPrice'] = undefined;
+/**
+ * Represents the exact unit of gas that was used for the transaction.
+ * @member {String} gasUsed
+ */
+ListTransactionsByBlockHeightRIBSBSC.prototype['gasUsed'] = undefined;
+/**
+ * Represents additional information that is required for the transaction.
+ * @member {String} inputData
+ */
+ListTransactionsByBlockHeightRIBSBSC.prototype['inputData'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {Number} nonce
+ */
+ListTransactionsByBlockHeightRIBSBSC.prototype['nonce'] = undefined;
+/**
+ * Represents the status of this transaction
+ * @member {String} transactionStatus
+ */
+ListTransactionsByBlockHeightRIBSBSC.prototype['transactionStatus'] = undefined;
+// Implement ListTransactionsByBlockHeightRIBSZ interface:
+/**
+ * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+ * @member {String} bindingSig
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['bindingSig'] = undefined;
+/**
+ * Represents a block height after which the transaction will expire.
+ * @member {Number} expiryHeight
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['expiryHeight'] = undefined;
+/**
+ * Represents an encoding of a JoinSplitSig public validating key.
+ * @member {String} joinSplitPubKey
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['joinSplitPubKey'] = undefined;
+/**
+ * Is used to sign transactions that contain at least one JoinSplit description.
+ * @member {String} joinSplitSig
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['joinSplitSig'] = undefined;
+/**
+ * Represents the time at which a particular transaction can be added to the blockchain.
+ * @member {Number} locktime
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['locktime'] = undefined;
+/**
+ * \"Overwinter\" is the network upgrade for the Zcash blockchain.
+ * @member {Boolean} overwintered
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['overwintered'] = undefined;
+/**
+ * Represents the total size of this transaction.
+ * @member {Number} size
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['size'] = undefined;
+/**
+ * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} vJoinSplit
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['vJoinSplit'] = undefined;
+/**
+ * Object Array representation of transaction output descriptions
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} vShieldedOutput
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['vShieldedOutput'] = undefined;
+/**
+ * Object Array representation of transaction spend descriptions
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend>} vShieldedSpend
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['vShieldedSpend'] = undefined;
+/**
+ * Defines the transaction value balance.
+ * @member {String} valueBalance
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['valueBalance'] = undefined;
+/**
+ * Represents the transaction version number.
+ * @member {Number} version
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['version'] = undefined;
+/**
+ * Represents the transaction version group ID.
+ * @member {String} versionGroupId
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['versionGroupId'] = undefined;
+/**
+ * Object Array representation of transaction inputs
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVin>} vin
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['vin'] = undefined;
+/**
+ * Object Array representation of transaction outputs
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} vout
+ */
+ListTransactionsByBlockHeightRIBSZ.prototype['vout'] = undefined;
 
 
 

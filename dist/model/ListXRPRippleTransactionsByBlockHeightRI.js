@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHeightRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var ListXRPRippleTransactionsByBlockHeightRI = /*#__PURE__*/function () {
   /**
@@ -95,6 +95,10 @@ var ListXRPRippleTransactionsByBlockHeightRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('additionalData')) {
           obj['additionalData'] = _ApiClient["default"].convertToType(data['additionalData'], 'String');
+        }
+
+        if (data.hasOwnProperty('destinationTag')) {
+          obj['destinationTag'] = _ApiClient["default"].convertToType(data['destinationTag'], 'Number');
         }
 
         if (data.hasOwnProperty('index')) {
@@ -162,6 +166,11 @@ var ListXRPRippleTransactionsByBlockHeightRI = /*#__PURE__*/function () {
 
 
 ListXRPRippleTransactionsByBlockHeightRI.prototype['additionalData'] = undefined;
+/**
+ * @member {Number} destinationTag
+ */
+
+ListXRPRippleTransactionsByBlockHeightRI.prototype['destinationTag'] = undefined;
 /**
  * @member {Number} index
  */

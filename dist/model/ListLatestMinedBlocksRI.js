@@ -1,0 +1,166 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _ApiClient = _interopRequireDefault(require("../ApiClient"));
+
+var _GetLatestMinedXRPRippleBlockRITotalCoins = _interopRequireDefault(require("./GetLatestMinedXRPRippleBlockRITotalCoins"));
+
+var _GetLatestMinedXRPRippleBlockRITotalFees = _interopRequireDefault(require("./GetLatestMinedXRPRippleBlockRITotalFees"));
+
+var _ListLatestMinedBlocksRIBS = _interopRequireDefault(require("./ListLatestMinedBlocksRIBS"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+/**
+ * The ListLatestMinedBlocksRI model module.
+ * @module model/ListLatestMinedBlocksRI
+ * @version 1.3.0
+ */
+var ListLatestMinedBlocksRI = /*#__PURE__*/function () {
+  /**
+   * Constructs a new <code>ListLatestMinedBlocksRI</code>.
+   * @alias module:model/ListLatestMinedBlocksRI
+   * @param hash {String} Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
+   * @param height {Number} Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
+   * @param previousBlockHash {String} Represents the hash of the previous block, also known as the parent block.
+   * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
+   * @param transactionsCount {Number} Represents the total number of all transactions as part of this block.
+   * @param totalCoins {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} 
+   * @param totalFees {module:model/GetLatestMinedXRPRippleBlockRITotalFees} 
+   * @param blockchainSpecific {module:model/ListLatestMinedBlocksRIBS} 
+   */
+  function ListLatestMinedBlocksRI(hash, height, previousBlockHash, timestamp, transactionsCount, totalCoins, totalFees, blockchainSpecific) {
+    _classCallCheck(this, ListLatestMinedBlocksRI);
+
+    ListLatestMinedBlocksRI.initialize(this, hash, height, previousBlockHash, timestamp, transactionsCount, totalCoins, totalFees, blockchainSpecific);
+  }
+  /**
+   * Initializes the fields of this object.
+   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+   * Only for internal use.
+   */
+
+
+  _createClass(ListLatestMinedBlocksRI, null, [{
+    key: "initialize",
+    value: function initialize(obj, hash, height, previousBlockHash, timestamp, transactionsCount, totalCoins, totalFees, blockchainSpecific) {
+      obj['hash'] = hash;
+      obj['height'] = height;
+      obj['previousBlockHash'] = previousBlockHash;
+      obj['timestamp'] = timestamp;
+      obj['transactionsCount'] = transactionsCount;
+      obj['totalCoins'] = totalCoins;
+      obj['totalFees'] = totalFees;
+      obj['blockchainSpecific'] = blockchainSpecific;
+    }
+    /**
+     * Constructs a <code>ListLatestMinedBlocksRI</code> from a plain JavaScript object, optionally creating a new instance.
+     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @param {module:model/ListLatestMinedBlocksRI} obj Optional instance to populate.
+     * @return {module:model/ListLatestMinedBlocksRI} The populated <code>ListLatestMinedBlocksRI</code> instance.
+     */
+
+  }, {
+    key: "constructFromObject",
+    value: function constructFromObject(data, obj) {
+      if (data) {
+        obj = obj || new ListLatestMinedBlocksRI();
+
+        if (data.hasOwnProperty('hash')) {
+          obj['hash'] = _ApiClient["default"].convertToType(data['hash'], 'String');
+        }
+
+        if (data.hasOwnProperty('height')) {
+          obj['height'] = _ApiClient["default"].convertToType(data['height'], 'Number');
+        }
+
+        if (data.hasOwnProperty('previousBlockHash')) {
+          obj['previousBlockHash'] = _ApiClient["default"].convertToType(data['previousBlockHash'], 'String');
+        }
+
+        if (data.hasOwnProperty('timestamp')) {
+          obj['timestamp'] = _ApiClient["default"].convertToType(data['timestamp'], 'Number');
+        }
+
+        if (data.hasOwnProperty('transactionsCount')) {
+          obj['transactionsCount'] = _ApiClient["default"].convertToType(data['transactionsCount'], 'Number');
+        }
+
+        if (data.hasOwnProperty('totalCoins')) {
+          obj['totalCoins'] = _GetLatestMinedXRPRippleBlockRITotalCoins["default"].constructFromObject(data['totalCoins']);
+        }
+
+        if (data.hasOwnProperty('totalFees')) {
+          obj['totalFees'] = _GetLatestMinedXRPRippleBlockRITotalFees["default"].constructFromObject(data['totalFees']);
+        }
+
+        if (data.hasOwnProperty('blockchainSpecific')) {
+          obj['blockchainSpecific'] = _ListLatestMinedBlocksRIBS["default"].constructFromObject(data['blockchainSpecific']);
+        }
+      }
+
+      return obj;
+    }
+  }]);
+
+  return ListLatestMinedBlocksRI;
+}();
+/**
+ * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
+ * @member {String} hash
+ */
+
+
+ListLatestMinedBlocksRI.prototype['hash'] = undefined;
+/**
+ * Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
+ * @member {Number} height
+ */
+
+ListLatestMinedBlocksRI.prototype['height'] = undefined;
+/**
+ * Represents the hash of the previous block, also known as the parent block.
+ * @member {String} previousBlockHash
+ */
+
+ListLatestMinedBlocksRI.prototype['previousBlockHash'] = undefined;
+/**
+ * Defines the exact date/time when this block was mined in Unix Timestamp.
+ * @member {Number} timestamp
+ */
+
+ListLatestMinedBlocksRI.prototype['timestamp'] = undefined;
+/**
+ * Represents the total number of all transactions as part of this block.
+ * @member {Number} transactionsCount
+ */
+
+ListLatestMinedBlocksRI.prototype['transactionsCount'] = undefined;
+/**
+ * @member {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} totalCoins
+ */
+
+ListLatestMinedBlocksRI.prototype['totalCoins'] = undefined;
+/**
+ * @member {module:model/GetLatestMinedXRPRippleBlockRITotalFees} totalFees
+ */
+
+ListLatestMinedBlocksRI.prototype['totalFees'] = undefined;
+/**
+ * @member {module:model/ListLatestMinedBlocksRIBS} blockchainSpecific
+ */
+
+ListLatestMinedBlocksRI.prototype['blockchainSpecific'] = undefined;
+var _default = ListLatestMinedBlocksRI;
+exports["default"] = _default;

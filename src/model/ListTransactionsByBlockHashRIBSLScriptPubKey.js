@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSLScriptPubKey model module.
  * @module model/ListTransactionsByBlockHashRIBSLScriptPubKey
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListTransactionsByBlockHashRIBSLScriptPubKey {
     /**

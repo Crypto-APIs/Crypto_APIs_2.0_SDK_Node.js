@@ -50,7 +50,7 @@
   describe('XpubNotSyncedError', function() {
     it('should create an instance of XpubNotSyncedError', function() {
       // uncomment below and update the code to test XpubNotSyncedError
-      //var instane = new Cryptoapis.XpubNotSyncedError();
+      //var instance = new Cryptoapis.XpubNotSyncedError();
       //expect(instance).to.be.a(Cryptoapis.XpubNotSyncedError);
     });
 

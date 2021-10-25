@@ -50,7 +50,7 @@
   describe('BlockchainEventsCallbacksLimitReached', function() {
     it('should create an instance of BlockchainEventsCallbacksLimitReached', function() {
       // uncomment below and update the code to test BlockchainEventsCallbacksLimitReached
-      //var instane = new Cryptoapis.BlockchainEventsCallbacksLimitReached();
+      //var instance = new Cryptoapis.BlockchainEventsCallbacksLimitReached();
       //expect(instance).to.be.a(Cryptoapis.BlockchainEventsCallbacksLimitReached);
     });
 

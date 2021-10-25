@@ -50,7 +50,7 @@
   describe('AddressTokensTransactionConfirmed', function() {
     it('should create an instance of AddressTokensTransactionConfirmed', function() {
       // uncomment below and update the code to test AddressTokensTransactionConfirmed
-      //var instane = new Cryptoapis.AddressTokensTransactionConfirmed();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmed();
       //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionConfirmed);
     });
 

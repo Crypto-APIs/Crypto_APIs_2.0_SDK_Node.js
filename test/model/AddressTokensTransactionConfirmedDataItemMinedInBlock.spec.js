@@ -50,7 +50,7 @@
   describe('AddressTokensTransactionConfirmedDataItemMinedInBlock', function() {
     it('should create an instance of AddressTokensTransactionConfirmedDataItemMinedInBlock', function() {
       // uncomment below and update the code to test AddressTokensTransactionConfirmedDataItemMinedInBlock
-      //var instane = new Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
+      //var instance = new Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock();
       //expect(instance).to.be.a(Cryptoapis.AddressTokensTransactionConfirmedDataItemMinedInBlock);
     });
 

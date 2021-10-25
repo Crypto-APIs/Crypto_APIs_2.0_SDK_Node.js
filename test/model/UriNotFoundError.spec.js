@@ -50,7 +50,7 @@
   describe('UriNotFoundError', function() {
     it('should create an instance of UriNotFoundError', function() {
       // uncomment below and update the code to test UriNotFoundError
-      //var instane = new Cryptoapis.UriNotFoundError();
+      //var instance = new Cryptoapis.UriNotFoundError();
       //expect(instance).to.be.a(Cryptoapis.UriNotFoundError);
     });
 

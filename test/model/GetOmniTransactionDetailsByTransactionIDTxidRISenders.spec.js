@@ -50,7 +50,7 @@
   describe('GetOmniTransactionDetailsByTransactionIDTxidRISenders', function() {
     it('should create an instance of GetOmniTransactionDetailsByTransactionIDTxidRISenders', function() {
       // uncomment below and update the code to test GetOmniTransactionDetailsByTransactionIDTxidRISenders
-      //var instane = new Cryptoapis.GetOmniTransactionDetailsByTransactionIDTxidRISenders();
+      //var instance = new Cryptoapis.GetOmniTransactionDetailsByTransactionIDTxidRISenders();
       //expect(instance).to.be.a(Cryptoapis.GetOmniTransactionDetailsByTransactionIDTxidRISenders);
     });
 

@@ -50,7 +50,7 @@
   describe('LimitGreaterThanAllowed', function() {
     it('should create an instance of LimitGreaterThanAllowed', function() {
       // uncomment below and update the code to test LimitGreaterThanAllowed
-      //var instane = new Cryptoapis.LimitGreaterThanAllowed();
+      //var instance = new Cryptoapis.LimitGreaterThanAllowed();
       //expect(instance).to.be.a(Cryptoapis.LimitGreaterThanAllowed);
     });
 

@@ -50,7 +50,7 @@
   describe('BlockchainDataBlockNotFound', function() {
     it('should create an instance of BlockchainDataBlockNotFound', function() {
       // uncomment below and update the code to test BlockchainDataBlockNotFound
-      //var instane = new Cryptoapis.BlockchainDataBlockNotFound();
+      //var instance = new Cryptoapis.BlockchainDataBlockNotFound();
       //expect(instance).to.be.a(Cryptoapis.BlockchainDataBlockNotFound);
     });
 

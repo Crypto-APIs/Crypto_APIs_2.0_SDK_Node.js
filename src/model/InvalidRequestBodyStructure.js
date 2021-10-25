@@ -17,7 +17,7 @@ import InvalidRequestBodyStructureError from './InvalidRequestBodyStructureError
 /**
  * The InvalidRequestBodyStructure model module.
  * @module model/InvalidRequestBodyStructure
- * @version 1.2.1
+ * @version 1.3.0
  */
 class InvalidRequestBodyStructure {
     /**

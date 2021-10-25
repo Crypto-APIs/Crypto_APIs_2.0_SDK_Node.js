@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InsufficientCreditsError model module.
  * @module model/InsufficientCreditsError
- * @version 1.2.1
+ * @version 1.3.0
  */
 var InsufficientCreditsError = /*#__PURE__*/function () {
   /**

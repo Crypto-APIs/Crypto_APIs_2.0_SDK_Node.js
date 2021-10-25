@@ -50,7 +50,7 @@
   describe('BroadcastTransactionFail', function() {
     it('should create an instance of BroadcastTransactionFail', function() {
       // uncomment below and update the code to test BroadcastTransactionFail
-      //var instane = new Cryptoapis.BroadcastTransactionFail();
+      //var instance = new Cryptoapis.BroadcastTransactionFail();
       //expect(instance).to.be.a(Cryptoapis.BroadcastTransactionFail);
     });
 

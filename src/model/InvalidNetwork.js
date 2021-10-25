@@ -17,7 +17,7 @@ import InvalidNetworkError from './InvalidNetworkError';
 /**
  * The InvalidNetwork model module.
  * @module model/InvalidNetwork
- * @version 1.2.1
+ * @version 1.3.0
  */
 class InvalidNetwork {
     /**

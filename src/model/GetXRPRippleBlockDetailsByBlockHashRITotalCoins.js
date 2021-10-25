@@ -16,14 +16,15 @@ import ApiClient from '../ApiClient';
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRITotalCoins model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetXRPRippleBlockDetailsByBlockHashRITotalCoins {
     /**
      * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHashRITotalCoins</code>.
+     * Defines the total coins.
      * @alias module:model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins
-     * @param amount {String} 
-     * @param unit {String} 
+     * @param amount {String} Defines the amount of the total coins.
+     * @param unit {String} Defines the unit of the total coins.
      */
     constructor(amount, unit) { 
         
@@ -65,11 +66,13 @@ class GetXRPRippleBlockDetailsByBlockHashRITotalCoins {
 }
 
 /**
+ * Defines the amount of the total coins.
  * @member {String} amount
  */
 GetXRPRippleBlockDetailsByBlockHashRITotalCoins.prototype['amount'] = undefined;
 
 /**
+ * Defines the unit of the total coins.
  * @member {String} unit
  */
 GetXRPRippleBlockDetailsByBlockHashRITotalCoins.prototype['unit'] = undefined;

@@ -18,14 +18,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIFee model module.
  * @module model/ListTransactionsByBlockHashRIFee
- * @version 1.2.1
+ * @version 1.3.0
  */
 var ListTransactionsByBlockHashRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashRIFee</code>.
    * @alias module:model/ListTransactionsByBlockHashRIFee
    * @param amount {String} Represents the fee amount.
-   * @param unit {String} 
+   * @param unit {String} Defines the specific unit of the fee.
    */
   function ListTransactionsByBlockHashRIFee(amount, unit) {
     _classCallCheck(this, ListTransactionsByBlockHashRIFee);
@@ -82,6 +82,7 @@ var ListTransactionsByBlockHashRIFee = /*#__PURE__*/function () {
 
 ListTransactionsByBlockHashRIFee.prototype['amount'] = undefined;
 /**
+ * Defines the specific unit of the fee.
  * @member {String} unit
  */
 

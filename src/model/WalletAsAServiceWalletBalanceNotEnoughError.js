@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The WalletAsAServiceWalletBalanceNotEnoughError model module.
  * @module model/WalletAsAServiceWalletBalanceNotEnoughError
- * @version 1.2.1
+ * @version 1.3.0
  */
 class WalletAsAServiceWalletBalanceNotEnoughError {
     /**

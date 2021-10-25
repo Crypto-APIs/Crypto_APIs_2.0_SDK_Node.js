@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByAddressRIValue from './ListXRPRippleTransactio
 /**
  * The ListXRPRippleTransactionsByAddressRI model module.
  * @module model/ListXRPRippleTransactionsByAddressRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListXRPRippleTransactionsByAddressRI {
     /**
@@ -81,6 +81,9 @@ class ListXRPRippleTransactionsByAddressRI {
         if (data) {
             obj = obj || new ListXRPRippleTransactionsByAddressRI();
 
+            if (data.hasOwnProperty('destinationTag')) {
+                obj['destinationTag'] = ApiClient.convertToType(data['destinationTag'], 'Number');
+            }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
@@ -129,6 +132,11 @@ class ListXRPRippleTransactionsByAddressRI {
 
 
 }
+
+/**
+ * @member {Number} destinationTag
+ */
+ListXRPRippleTransactionsByAddressRI.prototype['destinationTag'] = undefined;
 
 /**
  * Represents the index position of the transaction in the block.

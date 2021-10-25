@@ -50,7 +50,7 @@
   describe('XpubSyncInProgressError', function() {
     it('should create an instance of XpubSyncInProgressError', function() {
       // uncomment below and update the code to test XpubSyncInProgressError
-      //var instane = new Cryptoapis.XpubSyncInProgressError();
+      //var instance = new Cryptoapis.XpubSyncInProgressError();
       //expect(instance).to.be.a(Cryptoapis.XpubSyncInProgressError);
     });
 

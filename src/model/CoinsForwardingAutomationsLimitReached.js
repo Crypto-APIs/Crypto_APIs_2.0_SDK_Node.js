@@ -17,7 +17,7 @@ import CoinsForwardingAutomationsLimitReachedError from './CoinsForwardingAutoma
 /**
  * The CoinsForwardingAutomationsLimitReached model module.
  * @module model/CoinsForwardingAutomationsLimitReached
- * @version 1.2.1
+ * @version 1.3.0
  */
 class CoinsForwardingAutomationsLimitReached {
     /**

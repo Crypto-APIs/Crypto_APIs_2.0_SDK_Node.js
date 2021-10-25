@@ -50,7 +50,7 @@
   describe('GetBlockDetailsByBlockHashRIBSL', function() {
     it('should create an instance of GetBlockDetailsByBlockHashRIBSL', function() {
       // uncomment below and update the code to test GetBlockDetailsByBlockHashRIBSL
-      //var instane = new Cryptoapis.GetBlockDetailsByBlockHashRIBSL();
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashRIBSL();
       //expect(instance).to.be.a(Cryptoapis.GetBlockDetailsByBlockHashRIBSL);
     });
 

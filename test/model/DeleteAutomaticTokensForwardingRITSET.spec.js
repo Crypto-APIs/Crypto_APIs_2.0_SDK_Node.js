@@ -50,7 +50,7 @@
   describe('DeleteAutomaticTokensForwardingRITSET', function() {
     it('should create an instance of DeleteAutomaticTokensForwardingRITSET', function() {
       // uncomment below and update the code to test DeleteAutomaticTokensForwardingRITSET
-      //var instane = new Cryptoapis.DeleteAutomaticTokensForwardingRITSET();
+      //var instance = new Cryptoapis.DeleteAutomaticTokensForwardingRITSET();
       //expect(instance).to.be.a(Cryptoapis.DeleteAutomaticTokensForwardingRITSET);
     });
 

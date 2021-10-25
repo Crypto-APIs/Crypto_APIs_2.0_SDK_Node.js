@@ -50,7 +50,7 @@
   describe('GetTransactionDetailsByTransactionIDRIBSDScriptPubKey', function() {
     it('should create an instance of GetTransactionDetailsByTransactionIDRIBSDScriptPubKey', function() {
       // uncomment below and update the code to test GetTransactionDetailsByTransactionIDRIBSDScriptPubKey
-      //var instane = new Cryptoapis.GetTransactionDetailsByTransactionIDRIBSDScriptPubKey();
+      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRIBSDScriptPubKey();
       //expect(instance).to.be.a(Cryptoapis.GetTransactionDetailsByTransactionIDRIBSDScriptPubKey);
     });
 

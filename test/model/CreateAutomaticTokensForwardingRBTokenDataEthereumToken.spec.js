@@ -50,7 +50,7 @@
   describe('CreateAutomaticTokensForwardingRBTokenDataEthereumToken', function() {
     it('should create an instance of CreateAutomaticTokensForwardingRBTokenDataEthereumToken', function() {
       // uncomment below and update the code to test CreateAutomaticTokensForwardingRBTokenDataEthereumToken
-      //var instane = new Cryptoapis.CreateAutomaticTokensForwardingRBTokenDataEthereumToken();
+      //var instance = new Cryptoapis.CreateAutomaticTokensForwardingRBTokenDataEthereumToken();
       //expect(instance).to.be.a(Cryptoapis.CreateAutomaticTokensForwardingRBTokenDataEthereumToken);
     });
 

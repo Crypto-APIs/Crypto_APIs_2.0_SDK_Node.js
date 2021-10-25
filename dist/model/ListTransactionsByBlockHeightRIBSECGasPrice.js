@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSECGasPrice model module.
  * @module model/ListTransactionsByBlockHeightRIBSECGasPrice
- * @version 1.2.1
+ * @version 1.3.0
  */
 var ListTransactionsByBlockHeightRIBSECGasPrice = /*#__PURE__*/function () {
   /**

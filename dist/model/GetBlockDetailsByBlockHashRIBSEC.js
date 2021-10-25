@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashRIBSEC model module.
  * @module model/GetBlockDetailsByBlockHashRIBSEC
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetBlockDetailsByBlockHashRIBSEC = /*#__PURE__*/function () {
   /**
@@ -26,7 +26,7 @@ var GetBlockDetailsByBlockHashRIBSEC = /*#__PURE__*/function () {
    * Ethereum Classic
    * @alias module:model/GetBlockDetailsByBlockHashRIBSEC
    * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-   * @param nonce {Number} Represents a random value that can be adjusted to satisfy the Proof of Work.
+   * @param nonce {String} Represents a random value that can be adjusted to satisfy the Proof of Work.
    * @param size {Number} Represents the total size of the block in Bytes.
    * @param extraData {String} Represents any data that can be included by the miner in the block.
    * @param gasLimit {String} Defines the total gas limit of all transactions in the block.
@@ -81,7 +81,7 @@ var GetBlockDetailsByBlockHashRIBSEC = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'Number');
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
         }
 
         if (data.hasOwnProperty('size')) {
@@ -132,7 +132,7 @@ var GetBlockDetailsByBlockHashRIBSEC = /*#__PURE__*/function () {
 GetBlockDetailsByBlockHashRIBSEC.prototype['difficulty'] = undefined;
 /**
  * Represents a random value that can be adjusted to satisfy the Proof of Work.
- * @member {Number} nonce
+ * @member {String} nonce
  */
 
 GetBlockDetailsByBlockHashRIBSEC.prototype['nonce'] = undefined;

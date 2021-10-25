@@ -50,7 +50,7 @@
   describe('ListInternalTransactionDetailsByTransactionHashRData', function() {
     it('should create an instance of ListInternalTransactionDetailsByTransactionHashRData', function() {
       // uncomment below and update the code to test ListInternalTransactionDetailsByTransactionHashRData
-      //var instane = new Cryptoapis.ListInternalTransactionDetailsByTransactionHashRData();
+      //var instance = new Cryptoapis.ListInternalTransactionDetailsByTransactionHashRData();
       //expect(instance).to.be.a(Cryptoapis.ListInternalTransactionDetailsByTransactionHashRData);
     });
 

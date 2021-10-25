@@ -21,7 +21,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 /**
 * @module ApiClient
-* @version 1.2.1
+* @version 1.3.0
 */
 
 /**
@@ -32,7 +32,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 * @class
 */
 var ApiClient = /*#__PURE__*/function () {
+  /**
+   * The base URL against which to resolve every API call's (relative) path.
+   * Overrides the default value set in spec file if present
+   * @param {String} basePath
+   */
   function ApiClient() {
+    var basePath = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'https://rest.cryptoapis.io/v2';
+
     _classCallCheck(this, ApiClient);
 
     /**
@@ -40,7 +47,7 @@ var ApiClient = /*#__PURE__*/function () {
      * @type {String}
      * @default https://rest.cryptoapis.io/v2
      */
-    this.basePath = 'https://rest.cryptoapis.io/v2'.replace(/\/+$/, '');
+    this.basePath = basePath.replace(/\/+$/, '');
     /**
      * The authentication methods to be included for all API calls.
      * @type {Array.<String>}
@@ -60,7 +67,7 @@ var ApiClient = /*#__PURE__*/function () {
      */
 
     this.defaultHeaders = {
-      'User-Agent': 'OpenAPI-Generator/1.2.0/Javascript'
+      'User-Agent': 'OpenAPI-Generator/1.3.0/Javascript'
     };
     /**
      * The default HTTP timeout for all API calls.

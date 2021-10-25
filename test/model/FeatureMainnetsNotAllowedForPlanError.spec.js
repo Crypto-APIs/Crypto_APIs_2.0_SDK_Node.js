@@ -50,7 +50,7 @@
   describe('FeatureMainnetsNotAllowedForPlanError', function() {
     it('should create an instance of FeatureMainnetsNotAllowedForPlanError', function() {
       // uncomment below and update the code to test FeatureMainnetsNotAllowedForPlanError
-      //var instane = new Cryptoapis.FeatureMainnetsNotAllowedForPlanError();
+      //var instance = new Cryptoapis.FeatureMainnetsNotAllowedForPlanError();
       //expect(instance).to.be.a(Cryptoapis.FeatureMainnetsNotAllowedForPlanError);
     });
 

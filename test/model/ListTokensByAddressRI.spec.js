@@ -50,7 +50,7 @@
   describe('ListTokensByAddressRI', function() {
     it('should create an instance of ListTokensByAddressRI', function() {
       // uncomment below and update the code to test ListTokensByAddressRI
-      //var instane = new Cryptoapis.ListTokensByAddressRI();
+      //var instance = new Cryptoapis.ListTokensByAddressRI();
       //expect(instance).to.be.a(Cryptoapis.ListTokensByAddressRI);
     });
 

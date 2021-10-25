@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddTokensToExistingFromAddressRITSBOT model module.
  * @module model/AddTokensToExistingFromAddressRITSBOT
- * @version 1.2.1
+ * @version 1.3.0
  */
 class AddTokensToExistingFromAddressRITSBOT {
     /**

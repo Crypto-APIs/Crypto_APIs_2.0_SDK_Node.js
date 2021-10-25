@@ -50,7 +50,7 @@
   describe('InsufficientCredits', function() {
     it('should create an instance of InsufficientCredits', function() {
       // uncomment below and update the code to test InsufficientCredits
-      //var instane = new Cryptoapis.InsufficientCredits();
+      //var instance = new Cryptoapis.InsufficientCredits();
       //expect(instance).to.be.a(Cryptoapis.InsufficientCredits);
     });
 

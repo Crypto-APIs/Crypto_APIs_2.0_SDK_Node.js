@@ -50,7 +50,7 @@
   describe('GetZilliqaTransactionDetailsByTransactionIDRISenders', function() {
     it('should create an instance of GetZilliqaTransactionDetailsByTransactionIDRISenders', function() {
       // uncomment below and update the code to test GetZilliqaTransactionDetailsByTransactionIDRISenders
-      //var instane = new Cryptoapis.GetZilliqaTransactionDetailsByTransactionIDRISenders();
+      //var instance = new Cryptoapis.GetZilliqaTransactionDetailsByTransactionIDRISenders();
       //expect(instance).to.be.a(Cryptoapis.GetZilliqaTransactionDetailsByTransactionIDRISenders);
     });
 

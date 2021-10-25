@@ -50,7 +50,7 @@
   describe('InvalidBlockchainError', function() {
     it('should create an instance of InvalidBlockchainError', function() {
       // uncomment below and update the code to test InvalidBlockchainError
-      //var instane = new Cryptoapis.InvalidBlockchainError();
+      //var instance = new Cryptoapis.InvalidBlockchainError();
       //expect(instance).to.be.a(Cryptoapis.InvalidBlockchainError);
     });
 

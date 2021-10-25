@@ -50,7 +50,7 @@
   describe('GetBlockDetailsByBlockHeightRIBS', function() {
     it('should create an instance of GetBlockDetailsByBlockHeightRIBS', function() {
       // uncomment below and update the code to test GetBlockDetailsByBlockHeightRIBS
-      //var instane = new Cryptoapis.GetBlockDetailsByBlockHeightRIBS();
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHeightRIBS();
       //expect(instance).to.be.a(Cryptoapis.GetBlockDetailsByBlockHeightRIBS);
     });
 
@@ -146,6 +146,12 @@
 
     it('should have the property totalDifficulty (base name: "totalDifficulty")', function() {
       // uncomment below and update the code to test the property totalDifficulty
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHeightRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property merkleroot (base name: "merkleroot")', function() {
+      // uncomment below and update the code to test the property merkleroot
       //var instance = new Cryptoapis.GetBlockDetailsByBlockHeightRIBS();
       //expect(instance).to.be();
     });

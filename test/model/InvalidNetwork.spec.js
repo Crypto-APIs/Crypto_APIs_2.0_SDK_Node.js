@@ -50,7 +50,7 @@
   describe('InvalidNetwork', function() {
     it('should create an instance of InvalidNetwork', function() {
       // uncomment below and update the code to test InvalidNetwork
-      //var instane = new Cryptoapis.InvalidNetwork();
+      //var instance = new Cryptoapis.InvalidNetwork();
       //expect(instance).to.be.a(Cryptoapis.InvalidNetwork);
     });
 

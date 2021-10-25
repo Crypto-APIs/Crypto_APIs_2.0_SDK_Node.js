@@ -13,24 +13,24 @@
 
 import ApiClient from '../ApiClient';
 import AddTokensToExistingFromAddressRITSBOT from './AddTokensToExistingFromAddressRITSBOT';
-import AddTokensToExistingFromAddressRITSEET from './AddTokensToExistingFromAddressRITSEET';
+import AddTokensToExistingFromAddressRITSET from './AddTokensToExistingFromAddressRITSET';
 
 /**
  * The AddTokensToExistingFromAddressRITS model module.
  * @module model/AddTokensToExistingFromAddressRITS
- * @version 1.2.1
+ * @version 1.3.0
  */
 class AddTokensToExistingFromAddressRITS {
     /**
      * Constructs a new <code>AddTokensToExistingFromAddressRITS</code>.
      * @alias module:model/AddTokensToExistingFromAddressRITS
      * @implements module:model/AddTokensToExistingFromAddressRITSBOT
-     * @implements module:model/AddTokensToExistingFromAddressRITSEET
+     * @implements module:model/AddTokensToExistingFromAddressRITSET
      * @param propertyId {Number} Defines the `propertyId` of the Omni Layer token.
      * @param contractAddress {String} Token contract address to be transferred
      */
     constructor(propertyId, contractAddress) { 
-        AddTokensToExistingFromAddressRITSBOT.initialize(this, propertyId);AddTokensToExistingFromAddressRITSEET.initialize(this, contractAddress);
+        AddTokensToExistingFromAddressRITSBOT.initialize(this, propertyId);AddTokensToExistingFromAddressRITSET.initialize(this, contractAddress);
         AddTokensToExistingFromAddressRITS.initialize(this, propertyId, contractAddress);
     }
 
@@ -55,7 +55,7 @@ class AddTokensToExistingFromAddressRITS {
         if (data) {
             obj = obj || new AddTokensToExistingFromAddressRITS();
             AddTokensToExistingFromAddressRITSBOT.constructFromObject(data, obj);
-            AddTokensToExistingFromAddressRITSEET.constructFromObject(data, obj);
+            AddTokensToExistingFromAddressRITSET.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('propertyId')) {
                 obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
@@ -89,12 +89,12 @@ AddTokensToExistingFromAddressRITS.prototype['contractAddress'] = undefined;
  * @member {Number} propertyId
  */
 AddTokensToExistingFromAddressRITSBOT.prototype['propertyId'] = undefined;
-// Implement AddTokensToExistingFromAddressRITSEET interface:
+// Implement AddTokensToExistingFromAddressRITSET interface:
 /**
  * Token contract address to be transferred
  * @member {String} contractAddress
  */
-AddTokensToExistingFromAddressRITSEET.prototype['contractAddress'] = undefined;
+AddTokensToExistingFromAddressRITSET.prototype['contractAddress'] = undefined;
 
 
 

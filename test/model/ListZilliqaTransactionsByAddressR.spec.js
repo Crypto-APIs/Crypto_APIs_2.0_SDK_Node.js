@@ -50,7 +50,7 @@
   describe('ListZilliqaTransactionsByAddressR', function() {
     it('should create an instance of ListZilliqaTransactionsByAddressR', function() {
       // uncomment below and update the code to test ListZilliqaTransactionsByAddressR
-      //var instane = new Cryptoapis.ListZilliqaTransactionsByAddressR();
+      //var instance = new Cryptoapis.ListZilliqaTransactionsByAddressR();
       //expect(instance).to.be.a(Cryptoapis.ListZilliqaTransactionsByAddressR);
     });
 

@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The UnexpectedServerErrorError model module.
  * @module model/UnexpectedServerErrorError
- * @version 1.2.1
+ * @version 1.3.0
  */
 class UnexpectedServerErrorError {
     /**

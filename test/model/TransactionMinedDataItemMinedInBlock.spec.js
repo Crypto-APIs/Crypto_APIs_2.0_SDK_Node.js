@@ -50,7 +50,7 @@
   describe('TransactionMinedDataItemMinedInBlock', function() {
     it('should create an instance of TransactionMinedDataItemMinedInBlock', function() {
       // uncomment below and update the code to test TransactionMinedDataItemMinedInBlock
-      //var instane = new Cryptoapis.TransactionMinedDataItemMinedInBlock();
+      //var instance = new Cryptoapis.TransactionMinedDataItemMinedInBlock();
       //expect(instance).to.be.a(Cryptoapis.TransactionMinedDataItemMinedInBlock);
     });
 

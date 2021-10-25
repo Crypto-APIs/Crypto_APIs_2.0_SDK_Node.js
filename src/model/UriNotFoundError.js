@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The UriNotFoundError model module.
  * @module model/UriNotFoundError
- * @version 1.2.1
+ * @version 1.3.0
  */
 class UriNotFoundError {
     /**

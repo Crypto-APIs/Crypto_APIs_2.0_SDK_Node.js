@@ -28,7 +28,7 @@ import UnsupportedMediaType from '../model/UnsupportedMediaType';
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.2.1
+* @version 1.3.0
 */
 export default class ExchangeRatesApi {
 

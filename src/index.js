@@ -19,12 +19,12 @@ import AddTokensToExistingFromAddressRBData from './model/AddTokensToExistingFro
 import AddTokensToExistingFromAddressRBDataItem from './model/AddTokensToExistingFromAddressRBDataItem';
 import AddTokensToExistingFromAddressRBTokenData from './model/AddTokensToExistingFromAddressRBTokenData';
 import AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken from './model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken';
-import AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token from './model/AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token';
+import AddTokensToExistingFromAddressRBTokenDataEthereumToken from './model/AddTokensToExistingFromAddressRBTokenDataEthereumToken';
 import AddTokensToExistingFromAddressRData from './model/AddTokensToExistingFromAddressRData';
 import AddTokensToExistingFromAddressRI from './model/AddTokensToExistingFromAddressRI';
 import AddTokensToExistingFromAddressRITS from './model/AddTokensToExistingFromAddressRITS';
 import AddTokensToExistingFromAddressRITSBOT from './model/AddTokensToExistingFromAddressRITSBOT';
-import AddTokensToExistingFromAddressRITSEET from './model/AddTokensToExistingFromAddressRITSEET';
+import AddTokensToExistingFromAddressRITSET from './model/AddTokensToExistingFromAddressRITSET';
 import AddressCoinsTransactionConfirmed from './model/AddressCoinsTransactionConfirmed';
 import AddressCoinsTransactionConfirmedData from './model/AddressCoinsTransactionConfirmedData';
 import AddressCoinsTransactionConfirmedDataItem from './model/AddressCoinsTransactionConfirmedDataItem';
@@ -37,27 +37,28 @@ import AddressCoinsTransactionUnconfirmed from './model/AddressCoinsTransactionU
 import AddressCoinsTransactionUnconfirmedData from './model/AddressCoinsTransactionUnconfirmedData';
 import AddressCoinsTransactionUnconfirmedDataItem from './model/AddressCoinsTransactionUnconfirmedDataItem';
 import AddressTokensTransactionConfirmed from './model/AddressTokensTransactionConfirmed';
+import AddressTokensTransactionConfirmedBep20 from './model/AddressTokensTransactionConfirmedBep20';
 import AddressTokensTransactionConfirmedData from './model/AddressTokensTransactionConfirmedData';
 import AddressTokensTransactionConfirmedDataItem from './model/AddressTokensTransactionConfirmedDataItem';
 import AddressTokensTransactionConfirmedDataItemMinedInBlock from './model/AddressTokensTransactionConfirmedDataItemMinedInBlock';
 import AddressTokensTransactionConfirmedEachConfirmation from './model/AddressTokensTransactionConfirmedEachConfirmation';
+import AddressTokensTransactionConfirmedEachConfirmationBep20 from './model/AddressTokensTransactionConfirmedEachConfirmationBep20';
 import AddressTokensTransactionConfirmedEachConfirmationData from './model/AddressTokensTransactionConfirmedEachConfirmationData';
 import AddressTokensTransactionConfirmedEachConfirmationDataItem from './model/AddressTokensTransactionConfirmedEachConfirmationDataItem';
-import AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock from './model/AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock';
-import AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token from './model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token';
-import AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token from './model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token';
-import AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken from './model/AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken';
+import AddressTokensTransactionConfirmedEachConfirmationErc20 from './model/AddressTokensTransactionConfirmedEachConfirmationErc20';
+import AddressTokensTransactionConfirmedEachConfirmationErc721 from './model/AddressTokensTransactionConfirmedEachConfirmationErc721';
+import AddressTokensTransactionConfirmedEachConfirmationOmni from './model/AddressTokensTransactionConfirmedEachConfirmationOmni';
 import AddressTokensTransactionConfirmedEachConfirmationToken from './model/AddressTokensTransactionConfirmedEachConfirmationToken';
-import AddressTokensTransactionConfirmedEthereumerc20token from './model/AddressTokensTransactionConfirmedEthereumerc20token';
-import AddressTokensTransactionConfirmedEthereumerc721token from './model/AddressTokensTransactionConfirmedEthereumerc721token';
-import AddressTokensTransactionConfirmedOmnilayertoken from './model/AddressTokensTransactionConfirmedOmnilayertoken';
+import AddressTokensTransactionConfirmedErc20 from './model/AddressTokensTransactionConfirmedErc20';
+import AddressTokensTransactionConfirmedErc721 from './model/AddressTokensTransactionConfirmedErc721';
+import AddressTokensTransactionConfirmedOmni from './model/AddressTokensTransactionConfirmedOmni';
 import AddressTokensTransactionConfirmedToken from './model/AddressTokensTransactionConfirmedToken';
 import AddressTokensTransactionUnconfirmed from './model/AddressTokensTransactionUnconfirmed';
 import AddressTokensTransactionUnconfirmedData from './model/AddressTokensTransactionUnconfirmedData';
 import AddressTokensTransactionUnconfirmedDataItem from './model/AddressTokensTransactionUnconfirmedDataItem';
-import AddressTokensTransactionUnconfirmedEthereumerc20token from './model/AddressTokensTransactionUnconfirmedEthereumerc20token';
-import AddressTokensTransactionUnconfirmedEthereumerc721token from './model/AddressTokensTransactionUnconfirmedEthereumerc721token';
-import AddressTokensTransactionUnconfirmedOmnilayertoken from './model/AddressTokensTransactionUnconfirmedOmnilayertoken';
+import AddressTokensTransactionUnconfirmedErc20 from './model/AddressTokensTransactionUnconfirmedErc20';
+import AddressTokensTransactionUnconfirmedErc721 from './model/AddressTokensTransactionUnconfirmedErc721';
+import AddressTokensTransactionUnconfirmedOmni from './model/AddressTokensTransactionUnconfirmedOmni';
 import AddressTokensTransactionUnconfirmedToken from './model/AddressTokensTransactionUnconfirmedToken';
 import AlreadyExists from './model/AlreadyExists';
 import AlreadyExistsError from './model/AlreadyExistsError';
@@ -115,6 +116,14 @@ import CreateAutomaticTokensForwardingRI from './model/CreateAutomaticTokensForw
 import CreateAutomaticTokensForwardingRITS from './model/CreateAutomaticTokensForwardingRITS';
 import CreateAutomaticTokensForwardingRITSBOT from './model/CreateAutomaticTokensForwardingRITSBOT';
 import CreateAutomaticTokensForwardingRITSET from './model/CreateAutomaticTokensForwardingRITSET';
+import CreateCoinsTransactionFromAddressForWholeAmountR from './model/CreateCoinsTransactionFromAddressForWholeAmountR';
+import CreateCoinsTransactionFromAddressForWholeAmountRB from './model/CreateCoinsTransactionFromAddressForWholeAmountRB';
+import CreateCoinsTransactionFromAddressForWholeAmountRBData from './model/CreateCoinsTransactionFromAddressForWholeAmountRBData';
+import CreateCoinsTransactionFromAddressForWholeAmountRBDataItem from './model/CreateCoinsTransactionFromAddressForWholeAmountRBDataItem';
+import CreateCoinsTransactionFromAddressForWholeAmountRData from './model/CreateCoinsTransactionFromAddressForWholeAmountRData';
+import CreateCoinsTransactionFromAddressForWholeAmountRI from './model/CreateCoinsTransactionFromAddressForWholeAmountRI';
+import CreateCoinsTransactionFromAddressForWholeAmountRIRecipients from './model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipients';
+import CreateCoinsTransactionFromAddressForWholeAmountRISenders from './model/CreateCoinsTransactionFromAddressForWholeAmountRISenders';
 import CreateCoinsTransactionRequestFromAddressR from './model/CreateCoinsTransactionRequestFromAddressR';
 import CreateCoinsTransactionRequestFromAddressRB from './model/CreateCoinsTransactionRequestFromAddressRB';
 import CreateCoinsTransactionRequestFromAddressRBData from './model/CreateCoinsTransactionRequestFromAddressRBData';
@@ -139,7 +148,6 @@ import CreateTokensTransactionRequestFromAddressRData from './model/CreateTokens
 import CreateTokensTransactionRequestFromAddressRI from './model/CreateTokensTransactionRequestFromAddressRI';
 import CreateTokensTransactionRequestFromAddressRIRecipients from './model/CreateTokensTransactionRequestFromAddressRIRecipients';
 import CreateTokensTransactionRequestFromAddressRIS from './model/CreateTokensTransactionRequestFromAddressRIS';
-import CreateTokensTransactionRequestFromAddressRISB from './model/CreateTokensTransactionRequestFromAddressRISB';
 import CreateTokensTransactionRequestFromAddressRISE from './model/CreateTokensTransactionRequestFromAddressRISE';
 import CreateTokensTransactionRequestFromAddressRISenders from './model/CreateTokensTransactionRequestFromAddressRISenders';
 import DeleteAutomaticCoinsForwardingR from './model/DeleteAutomaticCoinsForwardingR';
@@ -160,6 +168,12 @@ import EndpointNotAllowedForPlan from './model/EndpointNotAllowedForPlan';
 import EndpointNotAllowedForPlanError from './model/EndpointNotAllowedForPlanError';
 import FeatureMainnetsNotAllowedForPlan from './model/FeatureMainnetsNotAllowedForPlan';
 import FeatureMainnetsNotAllowedForPlanError from './model/FeatureMainnetsNotAllowedForPlanError';
+import GenerateAddressR from './model/GenerateAddressR';
+import GenerateAddressRB from './model/GenerateAddressRB';
+import GenerateAddressRBData from './model/GenerateAddressRBData';
+import GenerateAddressRData from './model/GenerateAddressRData';
+import GenerateAddressRI from './model/GenerateAddressRI';
+import GenerateAddressRIAddresses from './model/GenerateAddressRIAddresses';
 import GenerateDepositAddressR from './model/GenerateDepositAddressR';
 import GenerateDepositAddressRB from './model/GenerateDepositAddressRB';
 import GenerateDepositAddressRBData from './model/GenerateDepositAddressRBData';
@@ -178,25 +192,32 @@ import GetBlockDetailsByBlockHashRI from './model/GetBlockDetailsByBlockHashRI';
 import GetBlockDetailsByBlockHashRIBS from './model/GetBlockDetailsByBlockHashRIBS';
 import GetBlockDetailsByBlockHashRIBSB from './model/GetBlockDetailsByBlockHashRIBSB';
 import GetBlockDetailsByBlockHashRIBSBC from './model/GetBlockDetailsByBlockHashRIBSBC';
+import GetBlockDetailsByBlockHashRIBSBSC from './model/GetBlockDetailsByBlockHashRIBSBSC';
 import GetBlockDetailsByBlockHashRIBSD from './model/GetBlockDetailsByBlockHashRIBSD';
 import GetBlockDetailsByBlockHashRIBSD2 from './model/GetBlockDetailsByBlockHashRIBSD2';
 import GetBlockDetailsByBlockHashRIBSE from './model/GetBlockDetailsByBlockHashRIBSE';
 import GetBlockDetailsByBlockHashRIBSEC from './model/GetBlockDetailsByBlockHashRIBSEC';
 import GetBlockDetailsByBlockHashRIBSL from './model/GetBlockDetailsByBlockHashRIBSL';
+import GetBlockDetailsByBlockHashRIBSZ from './model/GetBlockDetailsByBlockHashRIBSZ';
 import GetBlockDetailsByBlockHeightR from './model/GetBlockDetailsByBlockHeightR';
 import GetBlockDetailsByBlockHeightRData from './model/GetBlockDetailsByBlockHeightRData';
 import GetBlockDetailsByBlockHeightRI from './model/GetBlockDetailsByBlockHeightRI';
 import GetBlockDetailsByBlockHeightRIBS from './model/GetBlockDetailsByBlockHeightRIBS';
 import GetBlockDetailsByBlockHeightRIBSB from './model/GetBlockDetailsByBlockHeightRIBSB';
 import GetBlockDetailsByBlockHeightRIBSBC from './model/GetBlockDetailsByBlockHeightRIBSBC';
+import GetBlockDetailsByBlockHeightRIBSBSC from './model/GetBlockDetailsByBlockHeightRIBSBSC';
 import GetBlockDetailsByBlockHeightRIBSD from './model/GetBlockDetailsByBlockHeightRIBSD';
 import GetBlockDetailsByBlockHeightRIBSD2 from './model/GetBlockDetailsByBlockHeightRIBSD2';
 import GetBlockDetailsByBlockHeightRIBSE from './model/GetBlockDetailsByBlockHeightRIBSE';
 import GetBlockDetailsByBlockHeightRIBSEC from './model/GetBlockDetailsByBlockHeightRIBSEC';
 import GetBlockDetailsByBlockHeightRIBSL from './model/GetBlockDetailsByBlockHeightRIBSL';
-import GetContractDetailsByAddressR from './model/GetContractDetailsByAddressR';
-import GetContractDetailsByAddressRData from './model/GetContractDetailsByAddressRData';
-import GetContractDetailsByAddressRI from './model/GetContractDetailsByAddressRI';
+import GetBlockDetailsByBlockHeightRIBSZ from './model/GetBlockDetailsByBlockHeightRIBSZ';
+import GetEIP1559FeeRecommendationsR from './model/GetEIP1559FeeRecommendationsR';
+import GetEIP1559FeeRecommendationsRData from './model/GetEIP1559FeeRecommendationsRData';
+import GetEIP1559FeeRecommendationsRI from './model/GetEIP1559FeeRecommendationsRI';
+import GetEIP1559FeeRecommendationsRIBaseFeePerGas from './model/GetEIP1559FeeRecommendationsRIBaseFeePerGas';
+import GetEIP1559FeeRecommendationsRIMaxFeePerGas from './model/GetEIP1559FeeRecommendationsRIMaxFeePerGas';
+import GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas from './model/GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas';
 import GetExchangeRateByAssetSymbolsR from './model/GetExchangeRateByAssetSymbolsR';
 import GetExchangeRateByAssetSymbolsRData from './model/GetExchangeRateByAssetSymbolsRData';
 import GetExchangeRateByAssetSymbolsRI from './model/GetExchangeRateByAssetSymbolsRI';
@@ -216,17 +237,19 @@ import GetHDWalletXPubYPubZPubDetailsRI from './model/GetHDWalletXPubYPubZPubDet
 import GetInternalTransactionByTransactionHashAndOperationIdR from './model/GetInternalTransactionByTransactionHashAndOperationIdR';
 import GetInternalTransactionByTransactionHashAndOperationIdRData from './model/GetInternalTransactionByTransactionHashAndOperationIdRData';
 import GetInternalTransactionByTransactionHashAndOperationIdRI from './model/GetInternalTransactionByTransactionHashAndOperationIdRI';
-import GetLatestMinedBlockR from './model/GetLatestMinedBlockR';
-import GetLatestMinedBlockRData from './model/GetLatestMinedBlockRData';
-import GetLatestMinedBlockRI from './model/GetLatestMinedBlockRI';
-import GetLatestMinedBlockRIBS from './model/GetLatestMinedBlockRIBS';
-import GetLatestMinedBlockRIBSB from './model/GetLatestMinedBlockRIBSB';
-import GetLatestMinedBlockRIBSBC from './model/GetLatestMinedBlockRIBSBC';
-import GetLatestMinedBlockRIBSD from './model/GetLatestMinedBlockRIBSD';
-import GetLatestMinedBlockRIBSD2 from './model/GetLatestMinedBlockRIBSD2';
-import GetLatestMinedBlockRIBSE from './model/GetLatestMinedBlockRIBSE';
-import GetLatestMinedBlockRIBSEC from './model/GetLatestMinedBlockRIBSEC';
-import GetLatestMinedBlockRIBSL from './model/GetLatestMinedBlockRIBSL';
+import GetLastMinedBlockR from './model/GetLastMinedBlockR';
+import GetLastMinedBlockRData from './model/GetLastMinedBlockRData';
+import GetLastMinedBlockRI from './model/GetLastMinedBlockRI';
+import GetLastMinedBlockRIBS from './model/GetLastMinedBlockRIBS';
+import GetLastMinedBlockRIBSB from './model/GetLastMinedBlockRIBSB';
+import GetLastMinedBlockRIBSBC from './model/GetLastMinedBlockRIBSBC';
+import GetLastMinedBlockRIBSBSC from './model/GetLastMinedBlockRIBSBSC';
+import GetLastMinedBlockRIBSD from './model/GetLastMinedBlockRIBSD';
+import GetLastMinedBlockRIBSD2 from './model/GetLastMinedBlockRIBSD2';
+import GetLastMinedBlockRIBSE from './model/GetLastMinedBlockRIBSE';
+import GetLastMinedBlockRIBSEC from './model/GetLastMinedBlockRIBSEC';
+import GetLastMinedBlockRIBSL from './model/GetLastMinedBlockRIBSL';
+import GetLastMinedBlockRIBSZ from './model/GetLastMinedBlockRIBSZ';
 import GetLatestMinedXRPRippleBlockR from './model/GetLatestMinedXRPRippleBlockR';
 import GetLatestMinedXRPRippleBlockRData from './model/GetLatestMinedXRPRippleBlockRData';
 import GetLatestMinedXRPRippleBlockRI from './model/GetLatestMinedXRPRippleBlockRI';
@@ -239,6 +262,9 @@ import GetOmniTransactionDetailsByTransactionIDTxidR from './model/GetOmniTransa
 import GetOmniTransactionDetailsByTransactionIDTxidRData from './model/GetOmniTransactionDetailsByTransactionIDTxidRData';
 import GetOmniTransactionDetailsByTransactionIDTxidRI from './model/GetOmniTransactionDetailsByTransactionIDTxidRI';
 import GetOmniTransactionDetailsByTransactionIDTxidRISenders from './model/GetOmniTransactionDetailsByTransactionIDTxidRISenders';
+import GetTokenDetailsByContractAddressR from './model/GetTokenDetailsByContractAddressR';
+import GetTokenDetailsByContractAddressRData from './model/GetTokenDetailsByContractAddressRData';
+import GetTokenDetailsByContractAddressRI from './model/GetTokenDetailsByContractAddressRI';
 import GetTransactionDetailsByTransactionIDR from './model/GetTransactionDetailsByTransactionIDR';
 import GetTransactionDetailsByTransactionIDRData from './model/GetTransactionDetailsByTransactionIDRData';
 import GetTransactionDetailsByTransactionIDRI from './model/GetTransactionDetailsByTransactionIDRI';
@@ -248,6 +274,8 @@ import GetTransactionDetailsByTransactionIDRIBSBC from './model/GetTransactionDe
 import GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey from './model/GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey';
 import GetTransactionDetailsByTransactionIDRIBSBCVin from './model/GetTransactionDetailsByTransactionIDRIBSBCVin';
 import GetTransactionDetailsByTransactionIDRIBSBCVout from './model/GetTransactionDetailsByTransactionIDRIBSBCVout';
+import GetTransactionDetailsByTransactionIDRIBSBSC from './model/GetTransactionDetailsByTransactionIDRIBSBSC';
+import GetTransactionDetailsByTransactionIDRIBSBSCGasPrice from './model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice';
 import GetTransactionDetailsByTransactionIDRIBSBScriptPubKey from './model/GetTransactionDetailsByTransactionIDRIBSBScriptPubKey';
 import GetTransactionDetailsByTransactionIDRIBSBScriptSig from './model/GetTransactionDetailsByTransactionIDRIBSBScriptSig';
 import GetTransactionDetailsByTransactionIDRIBSBVin from './model/GetTransactionDetailsByTransactionIDRIBSBVin';
@@ -274,6 +302,10 @@ import GetTransactionDetailsByTransactionIDRIBSLVout from './model/GetTransactio
 import GetTransactionDetailsByTransactionIDRIFee from './model/GetTransactionDetailsByTransactionIDRIFee';
 import GetTransactionDetailsByTransactionIDRIRecipients from './model/GetTransactionDetailsByTransactionIDRIRecipients';
 import GetTransactionDetailsByTransactionIDRISenders from './model/GetTransactionDetailsByTransactionIDRISenders';
+import GetTransactionRequestDetailsR from './model/GetTransactionRequestDetailsR';
+import GetTransactionRequestDetailsRData from './model/GetTransactionRequestDetailsRData';
+import GetTransactionRequestDetailsRI from './model/GetTransactionRequestDetailsRI';
+import GetTransactionRequestDetailsRIRecipients from './model/GetTransactionRequestDetailsRIRecipients';
 import GetUnconfirmedOmniTransactionByTransactionIDTxidR from './model/GetUnconfirmedOmniTransactionByTransactionIDTxidR';
 import GetUnconfirmedOmniTransactionByTransactionIDTxidRData from './model/GetUnconfirmedOmniTransactionByTransactionIDTxidRData';
 import GetUnconfirmedOmniTransactionByTransactionIDTxidRI from './model/GetUnconfirmedOmniTransactionByTransactionIDTxidRI';
@@ -341,6 +373,32 @@ import InvalidXpub from './model/InvalidXpub';
 import InvalidXpubError from './model/InvalidXpubError';
 import LimitGreaterThanAllowed from './model/LimitGreaterThanAllowed';
 import LimitGreaterThanAllowedError from './model/LimitGreaterThanAllowedError';
+import ListAllUnconfirmedTransactionsR from './model/ListAllUnconfirmedTransactionsR';
+import ListAllUnconfirmedTransactionsRData from './model/ListAllUnconfirmedTransactionsRData';
+import ListAllUnconfirmedTransactionsRI from './model/ListAllUnconfirmedTransactionsRI';
+import ListAllUnconfirmedTransactionsRIBS from './model/ListAllUnconfirmedTransactionsRIBS';
+import ListAllUnconfirmedTransactionsRIBSB from './model/ListAllUnconfirmedTransactionsRIBSB';
+import ListAllUnconfirmedTransactionsRIBSBC from './model/ListAllUnconfirmedTransactionsRIBSBC';
+import ListAllUnconfirmedTransactionsRIBSBCVin from './model/ListAllUnconfirmedTransactionsRIBSBCVin';
+import ListAllUnconfirmedTransactionsRIBSBCVout from './model/ListAllUnconfirmedTransactionsRIBSBCVout';
+import ListAllUnconfirmedTransactionsRIBSBSC from './model/ListAllUnconfirmedTransactionsRIBSBSC';
+import ListAllUnconfirmedTransactionsRIBSBScriptSig from './model/ListAllUnconfirmedTransactionsRIBSBScriptSig';
+import ListAllUnconfirmedTransactionsRIBSBVin from './model/ListAllUnconfirmedTransactionsRIBSBVin';
+import ListAllUnconfirmedTransactionsRIBSD from './model/ListAllUnconfirmedTransactionsRIBSD';
+import ListAllUnconfirmedTransactionsRIBSD2 from './model/ListAllUnconfirmedTransactionsRIBSD2';
+import ListAllUnconfirmedTransactionsRIBSD2Vin from './model/ListAllUnconfirmedTransactionsRIBSD2Vin';
+import ListAllUnconfirmedTransactionsRIBSDVin from './model/ListAllUnconfirmedTransactionsRIBSDVin';
+import ListAllUnconfirmedTransactionsRIBSE from './model/ListAllUnconfirmedTransactionsRIBSE';
+import ListAllUnconfirmedTransactionsRIBSEC from './model/ListAllUnconfirmedTransactionsRIBSEC';
+import ListAllUnconfirmedTransactionsRIBSECFee from './model/ListAllUnconfirmedTransactionsRIBSECFee';
+import ListAllUnconfirmedTransactionsRIBSECGasPrice from './model/ListAllUnconfirmedTransactionsRIBSECGasPrice';
+import ListAllUnconfirmedTransactionsRIBSEFee from './model/ListAllUnconfirmedTransactionsRIBSEFee';
+import ListAllUnconfirmedTransactionsRIBSEGasPrice from './model/ListAllUnconfirmedTransactionsRIBSEGasPrice';
+import ListAllUnconfirmedTransactionsRIBSL from './model/ListAllUnconfirmedTransactionsRIBSL';
+import ListAllUnconfirmedTransactionsRIBSLScriptPubKey from './model/ListAllUnconfirmedTransactionsRIBSLScriptPubKey';
+import ListAllUnconfirmedTransactionsRIBSLVin from './model/ListAllUnconfirmedTransactionsRIBSLVin';
+import ListAllUnconfirmedTransactionsRIBSLVout from './model/ListAllUnconfirmedTransactionsRIBSLVout';
+import ListAllUnconfirmedTransactionsRIBSZ from './model/ListAllUnconfirmedTransactionsRIBSZ';
 import ListAssetsDetailsR from './model/ListAssetsDetailsR';
 import ListAssetsDetailsRData from './model/ListAssetsDetailsRData';
 import ListAssetsDetailsRI from './model/ListAssetsDetailsRI';
@@ -354,6 +412,45 @@ import ListBlockchainEventsSubscriptionsRI from './model/ListBlockchainEventsSub
 import ListCoinsForwardingAutomationsR from './model/ListCoinsForwardingAutomationsR';
 import ListCoinsForwardingAutomationsRData from './model/ListCoinsForwardingAutomationsRData';
 import ListCoinsForwardingAutomationsRI from './model/ListCoinsForwardingAutomationsRI';
+import ListConfirmedTokensTransfersByAddressR from './model/ListConfirmedTokensTransfersByAddressR';
+import ListConfirmedTokensTransfersByAddressRData from './model/ListConfirmedTokensTransfersByAddressRData';
+import ListConfirmedTokensTransfersByAddressRI from './model/ListConfirmedTokensTransfersByAddressRI';
+import ListConfirmedTransactionsByAddressR from './model/ListConfirmedTransactionsByAddressR';
+import ListConfirmedTransactionsByAddressRData from './model/ListConfirmedTransactionsByAddressRData';
+import ListConfirmedTransactionsByAddressRI from './model/ListConfirmedTransactionsByAddressRI';
+import ListConfirmedTransactionsByAddressRIBS from './model/ListConfirmedTransactionsByAddressRIBS';
+import ListConfirmedTransactionsByAddressRIBSB from './model/ListConfirmedTransactionsByAddressRIBSB';
+import ListConfirmedTransactionsByAddressRIBSBC from './model/ListConfirmedTransactionsByAddressRIBSBC';
+import ListConfirmedTransactionsByAddressRIBSBCVin from './model/ListConfirmedTransactionsByAddressRIBSBCVin';
+import ListConfirmedTransactionsByAddressRIBSBSC from './model/ListConfirmedTransactionsByAddressRIBSBSC';
+import ListConfirmedTransactionsByAddressRIBSBSCGasPrice from './model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice';
+import ListConfirmedTransactionsByAddressRIBSBScriptPubKey from './model/ListConfirmedTransactionsByAddressRIBSBScriptPubKey';
+import ListConfirmedTransactionsByAddressRIBSBVin from './model/ListConfirmedTransactionsByAddressRIBSBVin';
+import ListConfirmedTransactionsByAddressRIBSBVout from './model/ListConfirmedTransactionsByAddressRIBSBVout';
+import ListConfirmedTransactionsByAddressRIBSD from './model/ListConfirmedTransactionsByAddressRIBSD';
+import ListConfirmedTransactionsByAddressRIBSD2 from './model/ListConfirmedTransactionsByAddressRIBSD2';
+import ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey from './model/ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey';
+import ListConfirmedTransactionsByAddressRIBSD2ScriptSig from './model/ListConfirmedTransactionsByAddressRIBSD2ScriptSig';
+import ListConfirmedTransactionsByAddressRIBSD2Vin from './model/ListConfirmedTransactionsByAddressRIBSD2Vin';
+import ListConfirmedTransactionsByAddressRIBSD2Vout from './model/ListConfirmedTransactionsByAddressRIBSD2Vout';
+import ListConfirmedTransactionsByAddressRIBSDScriptSig from './model/ListConfirmedTransactionsByAddressRIBSDScriptSig';
+import ListConfirmedTransactionsByAddressRIBSDVin from './model/ListConfirmedTransactionsByAddressRIBSDVin';
+import ListConfirmedTransactionsByAddressRIBSE from './model/ListConfirmedTransactionsByAddressRIBSE';
+import ListConfirmedTransactionsByAddressRIBSEC from './model/ListConfirmedTransactionsByAddressRIBSEC';
+import ListConfirmedTransactionsByAddressRIBSECGasPrice from './model/ListConfirmedTransactionsByAddressRIBSECGasPrice';
+import ListConfirmedTransactionsByAddressRIBSEGasPrice from './model/ListConfirmedTransactionsByAddressRIBSEGasPrice';
+import ListConfirmedTransactionsByAddressRIBSL from './model/ListConfirmedTransactionsByAddressRIBSL';
+import ListConfirmedTransactionsByAddressRIBSLScriptSig from './model/ListConfirmedTransactionsByAddressRIBSLScriptSig';
+import ListConfirmedTransactionsByAddressRIBSLVin from './model/ListConfirmedTransactionsByAddressRIBSLVin';
+import ListConfirmedTransactionsByAddressRIBSZ from './model/ListConfirmedTransactionsByAddressRIBSZ';
+import ListConfirmedTransactionsByAddressRIBSZScriptPubKey from './model/ListConfirmedTransactionsByAddressRIBSZScriptPubKey';
+import ListConfirmedTransactionsByAddressRIBSZScriptSig from './model/ListConfirmedTransactionsByAddressRIBSZScriptSig';
+import ListConfirmedTransactionsByAddressRIBSZVJoinSplit from './model/ListConfirmedTransactionsByAddressRIBSZVJoinSplit';
+import ListConfirmedTransactionsByAddressRIBSZVShieldedOutput from './model/ListConfirmedTransactionsByAddressRIBSZVShieldedOutput';
+import ListConfirmedTransactionsByAddressRIBSZVShieldedSpend from './model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend';
+import ListConfirmedTransactionsByAddressRIBSZVin from './model/ListConfirmedTransactionsByAddressRIBSZVin';
+import ListConfirmedTransactionsByAddressRIBSZVout from './model/ListConfirmedTransactionsByAddressRIBSZVout';
+import ListConfirmedTransactionsByAddressRIFee from './model/ListConfirmedTransactionsByAddressRIFee';
 import ListDepositAddressesR from './model/ListDepositAddressesR';
 import ListDepositAddressesRData from './model/ListDepositAddressesRData';
 import ListDepositAddressesRI from './model/ListDepositAddressesRI';
@@ -366,6 +463,23 @@ import ListHDWalletXPubYPubZPubTransactionsRISenders from './model/ListHDWalletX
 import ListInternalTransactionDetailsByTransactionHashR from './model/ListInternalTransactionDetailsByTransactionHashR';
 import ListInternalTransactionDetailsByTransactionHashRData from './model/ListInternalTransactionDetailsByTransactionHashRData';
 import ListInternalTransactionDetailsByTransactionHashRI from './model/ListInternalTransactionDetailsByTransactionHashRI';
+import ListInternalTransactionsByAddressR from './model/ListInternalTransactionsByAddressR';
+import ListInternalTransactionsByAddressRData from './model/ListInternalTransactionsByAddressRData';
+import ListInternalTransactionsByAddressRI from './model/ListInternalTransactionsByAddressRI';
+import ListLatestMinedBlocksR from './model/ListLatestMinedBlocksR';
+import ListLatestMinedBlocksRData from './model/ListLatestMinedBlocksRData';
+import ListLatestMinedBlocksRI from './model/ListLatestMinedBlocksRI';
+import ListLatestMinedBlocksRIBS from './model/ListLatestMinedBlocksRIBS';
+import ListLatestMinedBlocksRIBSB from './model/ListLatestMinedBlocksRIBSB';
+import ListLatestMinedBlocksRIBSBC from './model/ListLatestMinedBlocksRIBSBC';
+import ListLatestMinedBlocksRIBSBSC from './model/ListLatestMinedBlocksRIBSBSC';
+import ListLatestMinedBlocksRIBSD from './model/ListLatestMinedBlocksRIBSD';
+import ListLatestMinedBlocksRIBSD2 from './model/ListLatestMinedBlocksRIBSD2';
+import ListLatestMinedBlocksRIBSE from './model/ListLatestMinedBlocksRIBSE';
+import ListLatestMinedBlocksRIBSEC from './model/ListLatestMinedBlocksRIBSEC';
+import ListLatestMinedBlocksRIBSL from './model/ListLatestMinedBlocksRIBSL';
+import ListLatestMinedBlocksRIBSZ from './model/ListLatestMinedBlocksRIBSZ';
+import ListLatestMinedBlocksRIBSZ2 from './model/ListLatestMinedBlocksRIBSZ2';
 import ListOmniTokensByAddressR from './model/ListOmniTokensByAddressR';
 import ListOmniTokensByAddressRData from './model/ListOmniTokensByAddressRData';
 import ListOmniTokensByAddressRI from './model/ListOmniTokensByAddressRI';
@@ -400,37 +514,9 @@ import ListTokensForwardingAutomationsRI from './model/ListTokensForwardingAutom
 import ListTokensForwardingAutomationsRITS from './model/ListTokensForwardingAutomationsRITS';
 import ListTokensForwardingAutomationsRITSBOT from './model/ListTokensForwardingAutomationsRITSBOT';
 import ListTokensForwardingAutomationsRITSET from './model/ListTokensForwardingAutomationsRITSET';
-import ListTokensTransfersByAddressR from './model/ListTokensTransfersByAddressR';
-import ListTokensTransfersByAddressRData from './model/ListTokensTransfersByAddressRData';
-import ListTokensTransfersByAddressRI from './model/ListTokensTransfersByAddressRI';
 import ListTokensTransfersByTransactionHashR from './model/ListTokensTransfersByTransactionHashR';
 import ListTokensTransfersByTransactionHashRData from './model/ListTokensTransfersByTransactionHashRData';
 import ListTokensTransfersByTransactionHashRI from './model/ListTokensTransfersByTransactionHashRI';
-import ListTransactionsByAddressR from './model/ListTransactionsByAddressR';
-import ListTransactionsByAddressRData from './model/ListTransactionsByAddressRData';
-import ListTransactionsByAddressRI from './model/ListTransactionsByAddressRI';
-import ListTransactionsByAddressRIBS from './model/ListTransactionsByAddressRIBS';
-import ListTransactionsByAddressRIBSB from './model/ListTransactionsByAddressRIBSB';
-import ListTransactionsByAddressRIBSBC from './model/ListTransactionsByAddressRIBSBC';
-import ListTransactionsByAddressRIBSBCVin from './model/ListTransactionsByAddressRIBSBCVin';
-import ListTransactionsByAddressRIBSBScriptPubKey from './model/ListTransactionsByAddressRIBSBScriptPubKey';
-import ListTransactionsByAddressRIBSBVin from './model/ListTransactionsByAddressRIBSBVin';
-import ListTransactionsByAddressRIBSBVout from './model/ListTransactionsByAddressRIBSBVout';
-import ListTransactionsByAddressRIBSD from './model/ListTransactionsByAddressRIBSD';
-import ListTransactionsByAddressRIBSD2 from './model/ListTransactionsByAddressRIBSD2';
-import ListTransactionsByAddressRIBSD2ScriptPubKey from './model/ListTransactionsByAddressRIBSD2ScriptPubKey';
-import ListTransactionsByAddressRIBSD2ScriptSig from './model/ListTransactionsByAddressRIBSD2ScriptSig';
-import ListTransactionsByAddressRIBSD2Vin from './model/ListTransactionsByAddressRIBSD2Vin';
-import ListTransactionsByAddressRIBSD2Vout from './model/ListTransactionsByAddressRIBSD2Vout';
-import ListTransactionsByAddressRIBSDScriptSig from './model/ListTransactionsByAddressRIBSDScriptSig';
-import ListTransactionsByAddressRIBSDVin from './model/ListTransactionsByAddressRIBSDVin';
-import ListTransactionsByAddressRIBSE from './model/ListTransactionsByAddressRIBSE';
-import ListTransactionsByAddressRIBSEC from './model/ListTransactionsByAddressRIBSEC';
-import ListTransactionsByAddressRIBSECGasPrice from './model/ListTransactionsByAddressRIBSECGasPrice';
-import ListTransactionsByAddressRIBSEGasPrice from './model/ListTransactionsByAddressRIBSEGasPrice';
-import ListTransactionsByAddressRIBSL from './model/ListTransactionsByAddressRIBSL';
-import ListTransactionsByAddressRIBSLScriptSig from './model/ListTransactionsByAddressRIBSLScriptSig';
-import ListTransactionsByAddressRIBSLVin from './model/ListTransactionsByAddressRIBSLVin';
 import ListTransactionsByBlockHashR from './model/ListTransactionsByBlockHashR';
 import ListTransactionsByBlockHashRData from './model/ListTransactionsByBlockHashRData';
 import ListTransactionsByBlockHashRI from './model/ListTransactionsByBlockHashRI';
@@ -440,6 +526,8 @@ import ListTransactionsByBlockHashRIBSBC from './model/ListTransactionsByBlockHa
 import ListTransactionsByBlockHashRIBSBCScriptPubKey from './model/ListTransactionsByBlockHashRIBSBCScriptPubKey';
 import ListTransactionsByBlockHashRIBSBCVin from './model/ListTransactionsByBlockHashRIBSBCVin';
 import ListTransactionsByBlockHashRIBSBCVout from './model/ListTransactionsByBlockHashRIBSBCVout';
+import ListTransactionsByBlockHashRIBSBSC from './model/ListTransactionsByBlockHashRIBSBSC';
+import ListTransactionsByBlockHashRIBSBSCGasPrice from './model/ListTransactionsByBlockHashRIBSBSCGasPrice';
 import ListTransactionsByBlockHashRIBSBVin from './model/ListTransactionsByBlockHashRIBSBVin';
 import ListTransactionsByBlockHashRIBSD from './model/ListTransactionsByBlockHashRIBSD';
 import ListTransactionsByBlockHashRIBSD2 from './model/ListTransactionsByBlockHashRIBSD2';
@@ -457,6 +545,10 @@ import ListTransactionsByBlockHashRIBSL from './model/ListTransactionsByBlockHas
 import ListTransactionsByBlockHashRIBSLScriptPubKey from './model/ListTransactionsByBlockHashRIBSLScriptPubKey';
 import ListTransactionsByBlockHashRIBSLVin from './model/ListTransactionsByBlockHashRIBSLVin';
 import ListTransactionsByBlockHashRIBSLVout from './model/ListTransactionsByBlockHashRIBSLVout';
+import ListTransactionsByBlockHashRIBSZ from './model/ListTransactionsByBlockHashRIBSZ';
+import ListTransactionsByBlockHashRIBSZScriptSig from './model/ListTransactionsByBlockHashRIBSZScriptSig';
+import ListTransactionsByBlockHashRIBSZVJoinSplit from './model/ListTransactionsByBlockHashRIBSZVJoinSplit';
+import ListTransactionsByBlockHashRIBSZVin from './model/ListTransactionsByBlockHashRIBSZVin';
 import ListTransactionsByBlockHashRIFee from './model/ListTransactionsByBlockHashRIFee';
 import ListTransactionsByBlockHashRIRecipients from './model/ListTransactionsByBlockHashRIRecipients';
 import ListTransactionsByBlockHashRISenders from './model/ListTransactionsByBlockHashRISenders';
@@ -466,6 +558,8 @@ import ListTransactionsByBlockHeightRI from './model/ListTransactionsByBlockHeig
 import ListTransactionsByBlockHeightRIBS from './model/ListTransactionsByBlockHeightRIBS';
 import ListTransactionsByBlockHeightRIBSB from './model/ListTransactionsByBlockHeightRIBSB';
 import ListTransactionsByBlockHeightRIBSBC from './model/ListTransactionsByBlockHeightRIBSBC';
+import ListTransactionsByBlockHeightRIBSBSC from './model/ListTransactionsByBlockHeightRIBSBSC';
+import ListTransactionsByBlockHeightRIBSBSCGasPrice from './model/ListTransactionsByBlockHeightRIBSBSCGasPrice';
 import ListTransactionsByBlockHeightRIBSBScriptPubKey from './model/ListTransactionsByBlockHeightRIBSBScriptPubKey';
 import ListTransactionsByBlockHeightRIBSBVout from './model/ListTransactionsByBlockHeightRIBSBVout';
 import ListTransactionsByBlockHeightRIBSD from './model/ListTransactionsByBlockHeightRIBSD';
@@ -483,6 +577,13 @@ import ListTransactionsByBlockHeightRIBSLScriptPubKey from './model/ListTransact
 import ListTransactionsByBlockHeightRIBSLScriptSig from './model/ListTransactionsByBlockHeightRIBSLScriptSig';
 import ListTransactionsByBlockHeightRIBSLVin from './model/ListTransactionsByBlockHeightRIBSLVin';
 import ListTransactionsByBlockHeightRIBSLVout from './model/ListTransactionsByBlockHeightRIBSLVout';
+import ListTransactionsByBlockHeightRIBSZ from './model/ListTransactionsByBlockHeightRIBSZ';
+import ListTransactionsByBlockHeightRIBSZScriptPubKey from './model/ListTransactionsByBlockHeightRIBSZScriptPubKey';
+import ListTransactionsByBlockHeightRIBSZScriptSig from './model/ListTransactionsByBlockHeightRIBSZScriptSig';
+import ListTransactionsByBlockHeightRIBSZVJoinSplit from './model/ListTransactionsByBlockHeightRIBSZVJoinSplit';
+import ListTransactionsByBlockHeightRIBSZVShieldedOutput from './model/ListTransactionsByBlockHeightRIBSZVShieldedOutput';
+import ListTransactionsByBlockHeightRIBSZVin from './model/ListTransactionsByBlockHeightRIBSZVin';
+import ListTransactionsByBlockHeightRIBSZVout from './model/ListTransactionsByBlockHeightRIBSZVout';
 import ListTransactionsByBlockHeightRIFee from './model/ListTransactionsByBlockHeightRIFee';
 import ListUnconfirmedOmniTransactionsByAddressR from './model/ListUnconfirmedOmniTransactionsByAddressR';
 import ListUnconfirmedOmniTransactionsByAddressRData from './model/ListUnconfirmedOmniTransactionsByAddressRData';
@@ -492,6 +593,54 @@ import ListUnconfirmedOmniTransactionsByAddressRISenders from './model/ListUncon
 import ListUnconfirmedOmniTransactionsByPropertyIDR from './model/ListUnconfirmedOmniTransactionsByPropertyIDR';
 import ListUnconfirmedOmniTransactionsByPropertyIDRData from './model/ListUnconfirmedOmniTransactionsByPropertyIDRData';
 import ListUnconfirmedOmniTransactionsByPropertyIDRI from './model/ListUnconfirmedOmniTransactionsByPropertyIDRI';
+import ListUnconfirmedTransactionsByAddressR from './model/ListUnconfirmedTransactionsByAddressR';
+import ListUnconfirmedTransactionsByAddressRData from './model/ListUnconfirmedTransactionsByAddressRData';
+import ListUnconfirmedTransactionsByAddressRI from './model/ListUnconfirmedTransactionsByAddressRI';
+import ListUnconfirmedTransactionsByAddressRIBS from './model/ListUnconfirmedTransactionsByAddressRIBS';
+import ListUnconfirmedTransactionsByAddressRIBSB from './model/ListUnconfirmedTransactionsByAddressRIBSB';
+import ListUnconfirmedTransactionsByAddressRIBSBC from './model/ListUnconfirmedTransactionsByAddressRIBSBC';
+import ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey from './model/ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey';
+import ListUnconfirmedTransactionsByAddressRIBSBCVin from './model/ListUnconfirmedTransactionsByAddressRIBSBCVin';
+import ListUnconfirmedTransactionsByAddressRIBSBCVout from './model/ListUnconfirmedTransactionsByAddressRIBSBCVout';
+import ListUnconfirmedTransactionsByAddressRIBSBSC from './model/ListUnconfirmedTransactionsByAddressRIBSBSC';
+import ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey from './model/ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey';
+import ListUnconfirmedTransactionsByAddressRIBSBScriptSig from './model/ListUnconfirmedTransactionsByAddressRIBSBScriptSig';
+import ListUnconfirmedTransactionsByAddressRIBSBVin from './model/ListUnconfirmedTransactionsByAddressRIBSBVin';
+import ListUnconfirmedTransactionsByAddressRIBSBVout from './model/ListUnconfirmedTransactionsByAddressRIBSBVout';
+import ListUnconfirmedTransactionsByAddressRIBSD from './model/ListUnconfirmedTransactionsByAddressRIBSD';
+import ListUnconfirmedTransactionsByAddressRIBSD2 from './model/ListUnconfirmedTransactionsByAddressRIBSD2';
+import ListUnconfirmedTransactionsByAddressRIBSD2Vin from './model/ListUnconfirmedTransactionsByAddressRIBSD2Vin';
+import ListUnconfirmedTransactionsByAddressRIBSD2Vout from './model/ListUnconfirmedTransactionsByAddressRIBSD2Vout';
+import ListUnconfirmedTransactionsByAddressRIBSDVin from './model/ListUnconfirmedTransactionsByAddressRIBSDVin';
+import ListUnconfirmedTransactionsByAddressRIBSE from './model/ListUnconfirmedTransactionsByAddressRIBSE';
+import ListUnconfirmedTransactionsByAddressRIBSEC from './model/ListUnconfirmedTransactionsByAddressRIBSEC';
+import ListUnconfirmedTransactionsByAddressRIBSECFee from './model/ListUnconfirmedTransactionsByAddressRIBSECFee';
+import ListUnconfirmedTransactionsByAddressRIBSECGasPrice from './model/ListUnconfirmedTransactionsByAddressRIBSECGasPrice';
+import ListUnconfirmedTransactionsByAddressRIBSEFee from './model/ListUnconfirmedTransactionsByAddressRIBSEFee';
+import ListUnconfirmedTransactionsByAddressRIBSL from './model/ListUnconfirmedTransactionsByAddressRIBSL';
+import ListUnconfirmedTransactionsByAddressRIBSLScriptSig from './model/ListUnconfirmedTransactionsByAddressRIBSLScriptSig';
+import ListUnconfirmedTransactionsByAddressRIBSLVin from './model/ListUnconfirmedTransactionsByAddressRIBSLVin';
+import ListUnconfirmedTransactionsByAddressRIBSLVout from './model/ListUnconfirmedTransactionsByAddressRIBSLVout';
+import ListUnconfirmedTransactionsByAddressRIBSZ from './model/ListUnconfirmedTransactionsByAddressRIBSZ';
+import ListUnconfirmedTransactionsByAddressRIBSZVin from './model/ListUnconfirmedTransactionsByAddressRIBSZVin';
+import ListUnconfirmedTransactionsByAddressRIRecipients from './model/ListUnconfirmedTransactionsByAddressRIRecipients';
+import ListUnconfirmedTransactionsByAddressRISenders from './model/ListUnconfirmedTransactionsByAddressRISenders';
+import ListUnspentTransactionOutputsByAddressR from './model/ListUnspentTransactionOutputsByAddressR';
+import ListUnspentTransactionOutputsByAddressRData from './model/ListUnspentTransactionOutputsByAddressRData';
+import ListUnspentTransactionOutputsByAddressRI from './model/ListUnspentTransactionOutputsByAddressRI';
+import ListUnspentTransactionOutputsByAddressRIBlockchainSpecific from './model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecific';
+import ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit from './model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit';
+import ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend from './model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend';
+import ListUnspentTransactionOutputsByAddressRIFee from './model/ListUnspentTransactionOutputsByAddressRIFee';
+import ListUnspentTransactionOutputsByAddressRISenders from './model/ListUnspentTransactionOutputsByAddressRISenders';
+import ListUnspentTransactionOutputsByAddressRIVin from './model/ListUnspentTransactionOutputsByAddressRIVin';
+import ListWalletTransactionsR from './model/ListWalletTransactionsR';
+import ListWalletTransactionsRData from './model/ListWalletTransactionsRData';
+import ListWalletTransactionsRI from './model/ListWalletTransactionsRI';
+import ListWalletTransactionsRIFee from './model/ListWalletTransactionsRIFee';
+import ListWalletTransactionsRIRecipients from './model/ListWalletTransactionsRIRecipients';
+import ListWalletTransactionsRISenders from './model/ListWalletTransactionsRISenders';
+import ListWalletTransactionsRIValue from './model/ListWalletTransactionsRIValue';
 import ListXRPRippleTransactionsByAddressR from './model/ListXRPRippleTransactionsByAddressR';
 import ListXRPRippleTransactionsByAddressRData from './model/ListXRPRippleTransactionsByAddressRData';
 import ListXRPRippleTransactionsByAddressRI from './model/ListXRPRippleTransactionsByAddressRI';
@@ -574,6 +723,8 @@ import NewConfirmedTokensTransactionsAndEachConfirmationRData from './model/NewC
 import NewConfirmedTokensTransactionsAndEachConfirmationRI from './model/NewConfirmedTokensTransactionsAndEachConfirmationRI';
 import NewConfirmedTokensTransactionsR from './model/NewConfirmedTokensTransactionsR';
 import NewConfirmedTokensTransactionsRB from './model/NewConfirmedTokensTransactionsRB';
+import NewConfirmedTokensTransactionsRBData from './model/NewConfirmedTokensTransactionsRBData';
+import NewConfirmedTokensTransactionsRBDataItem from './model/NewConfirmedTokensTransactionsRBDataItem';
 import NewConfirmedTokensTransactionsRData from './model/NewConfirmedTokensTransactionsRData';
 import NewConfirmedTokensTransactionsRI from './model/NewConfirmedTokensTransactionsRI';
 import NewUnconfirmedCoinsTransactionsR from './model/NewUnconfirmedCoinsTransactionsR';
@@ -606,9 +757,9 @@ import TokensForwardingFailDataItem from './model/TokensForwardingFailDataItem';
 import TokensForwardingSuccess from './model/TokensForwardingSuccess';
 import TokensForwardingSuccessData from './model/TokensForwardingSuccessData';
 import TokensForwardingSuccessDataItem from './model/TokensForwardingSuccessDataItem';
-import TokensForwardingSuccessEthereumerc20token from './model/TokensForwardingSuccessEthereumerc20token';
-import TokensForwardingSuccessEthereumerc721token from './model/TokensForwardingSuccessEthereumerc721token';
-import TokensForwardingSuccessOmnilayertoken from './model/TokensForwardingSuccessOmnilayertoken';
+import TokensForwardingSuccessErc20 from './model/TokensForwardingSuccessErc20';
+import TokensForwardingSuccessErc721 from './model/TokensForwardingSuccessErc721';
+import TokensForwardingSuccessOmni from './model/TokensForwardingSuccessOmni';
 import TokensForwardingSuccessToken from './model/TokensForwardingSuccessToken';
 import TransactionMined from './model/TransactionMined';
 import TransactionMinedData from './model/TransactionMinedData';
@@ -640,6 +791,8 @@ import ValidateAddressRBData from './model/ValidateAddressRBData';
 import ValidateAddressRBDataItem from './model/ValidateAddressRBDataItem';
 import ValidateAddressRData from './model/ValidateAddressRData';
 import ValidateAddressRI from './model/ValidateAddressRI';
+import WalletAsAServiceAddressBalanceNotEnough from './model/WalletAsAServiceAddressBalanceNotEnough';
+import WalletAsAServiceAddressBalanceNotEnoughError from './model/WalletAsAServiceAddressBalanceNotEnoughError';
 import WalletAsAServiceDepositAddressesLimitReached from './model/WalletAsAServiceDepositAddressesLimitReached';
 import WalletAsAServiceDepositAddressesLimitReachedError from './model/WalletAsAServiceDepositAddressesLimitReachedError';
 import WalletAsAServiceNoDepositAddressesFound from './model/WalletAsAServiceNoDepositAddressesFound';
@@ -659,6 +812,7 @@ import CreateSubscriptionsForApi from './api/CreateSubscriptionsForApi';
 import ExchangeRatesApi from './api/ExchangeRatesApi';
 import FeaturesApi from './api/FeaturesApi';
 import GeneratingApi from './api/GeneratingApi';
+import HDWalletsApi from './api/HDWalletsApi';
 import InformativeApi from './api/InformativeApi';
 import InternalApi from './api/InternalApi';
 import ManageSubscriptionsApi from './api/ManageSubscriptionsApi';
@@ -673,7 +827,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 
 
 /**
-* Crypto APIs 2.0 Node.js library/SDK.<br>
+* Node.js library/SDK for Crypto APIs 2.0.<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
@@ -701,7 +855,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.2.1
+* @version 1.3.0
 */
 export {
     /**
@@ -747,10 +901,10 @@ export {
     AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken,
 
     /**
-     * The AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token model constructor.
-     * @property {module:model/AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token}
+     * The AddTokensToExistingFromAddressRBTokenDataEthereumToken model constructor.
+     * @property {module:model/AddTokensToExistingFromAddressRBTokenDataEthereumToken}
      */
-    AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token,
+    AddTokensToExistingFromAddressRBTokenDataEthereumToken,
 
     /**
      * The AddTokensToExistingFromAddressRData model constructor.
@@ -777,10 +931,10 @@ export {
     AddTokensToExistingFromAddressRITSBOT,
 
     /**
-     * The AddTokensToExistingFromAddressRITSEET model constructor.
-     * @property {module:model/AddTokensToExistingFromAddressRITSEET}
+     * The AddTokensToExistingFromAddressRITSET model constructor.
+     * @property {module:model/AddTokensToExistingFromAddressRITSET}
      */
-    AddTokensToExistingFromAddressRITSEET,
+    AddTokensToExistingFromAddressRITSET,
 
     /**
      * The AddressCoinsTransactionConfirmed model constructor.
@@ -855,6 +1009,12 @@ export {
     AddressTokensTransactionConfirmed,
 
     /**
+     * The AddressTokensTransactionConfirmedBep20 model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedBep20}
+     */
+    AddressTokensTransactionConfirmedBep20,
+
+    /**
      * The AddressTokensTransactionConfirmedData model constructor.
      * @property {module:model/AddressTokensTransactionConfirmedData}
      */
@@ -879,6 +1039,12 @@ export {
     AddressTokensTransactionConfirmedEachConfirmation,
 
     /**
+     * The AddressTokensTransactionConfirmedEachConfirmationBep20 model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationBep20}
+     */
+    AddressTokensTransactionConfirmedEachConfirmationBep20,
+
+    /**
      * The AddressTokensTransactionConfirmedEachConfirmationData model constructor.
      * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationData}
      */
@@ -891,28 +1057,22 @@ export {
     AddressTokensTransactionConfirmedEachConfirmationDataItem,
 
     /**
-     * The AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock model constructor.
-     * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock}
+     * The AddressTokensTransactionConfirmedEachConfirmationErc20 model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationErc20}
      */
-    AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock,
+    AddressTokensTransactionConfirmedEachConfirmationErc20,
 
     /**
-     * The AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token model constructor.
-     * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token}
+     * The AddressTokensTransactionConfirmedEachConfirmationErc721 model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationErc721}
      */
-    AddressTokensTransactionConfirmedEachConfirmationEthereumerc20token,
+    AddressTokensTransactionConfirmedEachConfirmationErc721,
 
     /**
-     * The AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token model constructor.
-     * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token}
+     * The AddressTokensTransactionConfirmedEachConfirmationOmni model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationOmni}
      */
-    AddressTokensTransactionConfirmedEachConfirmationEthereumerc721token,
-
-    /**
-     * The AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken model constructor.
-     * @property {module:model/AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken}
-     */
-    AddressTokensTransactionConfirmedEachConfirmationOmnilayertoken,
+    AddressTokensTransactionConfirmedEachConfirmationOmni,
 
     /**
      * The AddressTokensTransactionConfirmedEachConfirmationToken model constructor.
@@ -921,22 +1081,22 @@ export {
     AddressTokensTransactionConfirmedEachConfirmationToken,
 
     /**
-     * The AddressTokensTransactionConfirmedEthereumerc20token model constructor.
-     * @property {module:model/AddressTokensTransactionConfirmedEthereumerc20token}
+     * The AddressTokensTransactionConfirmedErc20 model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedErc20}
      */
-    AddressTokensTransactionConfirmedEthereumerc20token,
+    AddressTokensTransactionConfirmedErc20,
 
     /**
-     * The AddressTokensTransactionConfirmedEthereumerc721token model constructor.
-     * @property {module:model/AddressTokensTransactionConfirmedEthereumerc721token}
+     * The AddressTokensTransactionConfirmedErc721 model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedErc721}
      */
-    AddressTokensTransactionConfirmedEthereumerc721token,
+    AddressTokensTransactionConfirmedErc721,
 
     /**
-     * The AddressTokensTransactionConfirmedOmnilayertoken model constructor.
-     * @property {module:model/AddressTokensTransactionConfirmedOmnilayertoken}
+     * The AddressTokensTransactionConfirmedOmni model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedOmni}
      */
-    AddressTokensTransactionConfirmedOmnilayertoken,
+    AddressTokensTransactionConfirmedOmni,
 
     /**
      * The AddressTokensTransactionConfirmedToken model constructor.
@@ -963,22 +1123,22 @@ export {
     AddressTokensTransactionUnconfirmedDataItem,
 
     /**
-     * The AddressTokensTransactionUnconfirmedEthereumerc20token model constructor.
-     * @property {module:model/AddressTokensTransactionUnconfirmedEthereumerc20token}
+     * The AddressTokensTransactionUnconfirmedErc20 model constructor.
+     * @property {module:model/AddressTokensTransactionUnconfirmedErc20}
      */
-    AddressTokensTransactionUnconfirmedEthereumerc20token,
+    AddressTokensTransactionUnconfirmedErc20,
 
     /**
-     * The AddressTokensTransactionUnconfirmedEthereumerc721token model constructor.
-     * @property {module:model/AddressTokensTransactionUnconfirmedEthereumerc721token}
+     * The AddressTokensTransactionUnconfirmedErc721 model constructor.
+     * @property {module:model/AddressTokensTransactionUnconfirmedErc721}
      */
-    AddressTokensTransactionUnconfirmedEthereumerc721token,
+    AddressTokensTransactionUnconfirmedErc721,
 
     /**
-     * The AddressTokensTransactionUnconfirmedOmnilayertoken model constructor.
-     * @property {module:model/AddressTokensTransactionUnconfirmedOmnilayertoken}
+     * The AddressTokensTransactionUnconfirmedOmni model constructor.
+     * @property {module:model/AddressTokensTransactionUnconfirmedOmni}
      */
-    AddressTokensTransactionUnconfirmedOmnilayertoken,
+    AddressTokensTransactionUnconfirmedOmni,
 
     /**
      * The AddressTokensTransactionUnconfirmedToken model constructor.
@@ -1323,6 +1483,54 @@ export {
     CreateAutomaticTokensForwardingRITSET,
 
     /**
+     * The CreateCoinsTransactionFromAddressForWholeAmountR model constructor.
+     * @property {module:model/CreateCoinsTransactionFromAddressForWholeAmountR}
+     */
+    CreateCoinsTransactionFromAddressForWholeAmountR,
+
+    /**
+     * The CreateCoinsTransactionFromAddressForWholeAmountRB model constructor.
+     * @property {module:model/CreateCoinsTransactionFromAddressForWholeAmountRB}
+     */
+    CreateCoinsTransactionFromAddressForWholeAmountRB,
+
+    /**
+     * The CreateCoinsTransactionFromAddressForWholeAmountRBData model constructor.
+     * @property {module:model/CreateCoinsTransactionFromAddressForWholeAmountRBData}
+     */
+    CreateCoinsTransactionFromAddressForWholeAmountRBData,
+
+    /**
+     * The CreateCoinsTransactionFromAddressForWholeAmountRBDataItem model constructor.
+     * @property {module:model/CreateCoinsTransactionFromAddressForWholeAmountRBDataItem}
+     */
+    CreateCoinsTransactionFromAddressForWholeAmountRBDataItem,
+
+    /**
+     * The CreateCoinsTransactionFromAddressForWholeAmountRData model constructor.
+     * @property {module:model/CreateCoinsTransactionFromAddressForWholeAmountRData}
+     */
+    CreateCoinsTransactionFromAddressForWholeAmountRData,
+
+    /**
+     * The CreateCoinsTransactionFromAddressForWholeAmountRI model constructor.
+     * @property {module:model/CreateCoinsTransactionFromAddressForWholeAmountRI}
+     */
+    CreateCoinsTransactionFromAddressForWholeAmountRI,
+
+    /**
+     * The CreateCoinsTransactionFromAddressForWholeAmountRIRecipients model constructor.
+     * @property {module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipients}
+     */
+    CreateCoinsTransactionFromAddressForWholeAmountRIRecipients,
+
+    /**
+     * The CreateCoinsTransactionFromAddressForWholeAmountRISenders model constructor.
+     * @property {module:model/CreateCoinsTransactionFromAddressForWholeAmountRISenders}
+     */
+    CreateCoinsTransactionFromAddressForWholeAmountRISenders,
+
+    /**
      * The CreateCoinsTransactionRequestFromAddressR model constructor.
      * @property {module:model/CreateCoinsTransactionRequestFromAddressR}
      */
@@ -1467,12 +1675,6 @@ export {
     CreateTokensTransactionRequestFromAddressRIS,
 
     /**
-     * The CreateTokensTransactionRequestFromAddressRISB model constructor.
-     * @property {module:model/CreateTokensTransactionRequestFromAddressRISB}
-     */
-    CreateTokensTransactionRequestFromAddressRISB,
-
-    /**
      * The CreateTokensTransactionRequestFromAddressRISE model constructor.
      * @property {module:model/CreateTokensTransactionRequestFromAddressRISE}
      */
@@ -1593,6 +1795,42 @@ export {
     FeatureMainnetsNotAllowedForPlanError,
 
     /**
+     * The GenerateAddressR model constructor.
+     * @property {module:model/GenerateAddressR}
+     */
+    GenerateAddressR,
+
+    /**
+     * The GenerateAddressRB model constructor.
+     * @property {module:model/GenerateAddressRB}
+     */
+    GenerateAddressRB,
+
+    /**
+     * The GenerateAddressRBData model constructor.
+     * @property {module:model/GenerateAddressRBData}
+     */
+    GenerateAddressRBData,
+
+    /**
+     * The GenerateAddressRData model constructor.
+     * @property {module:model/GenerateAddressRData}
+     */
+    GenerateAddressRData,
+
+    /**
+     * The GenerateAddressRI model constructor.
+     * @property {module:model/GenerateAddressRI}
+     */
+    GenerateAddressRI,
+
+    /**
+     * The GenerateAddressRIAddresses model constructor.
+     * @property {module:model/GenerateAddressRIAddresses}
+     */
+    GenerateAddressRIAddresses,
+
+    /**
      * The GenerateDepositAddressR model constructor.
      * @property {module:model/GenerateDepositAddressR}
      */
@@ -1701,6 +1939,12 @@ export {
     GetBlockDetailsByBlockHashRIBSBC,
 
     /**
+     * The GetBlockDetailsByBlockHashRIBSBSC model constructor.
+     * @property {module:model/GetBlockDetailsByBlockHashRIBSBSC}
+     */
+    GetBlockDetailsByBlockHashRIBSBSC,
+
+    /**
      * The GetBlockDetailsByBlockHashRIBSD model constructor.
      * @property {module:model/GetBlockDetailsByBlockHashRIBSD}
      */
@@ -1729,6 +1973,12 @@ export {
      * @property {module:model/GetBlockDetailsByBlockHashRIBSL}
      */
     GetBlockDetailsByBlockHashRIBSL,
+
+    /**
+     * The GetBlockDetailsByBlockHashRIBSZ model constructor.
+     * @property {module:model/GetBlockDetailsByBlockHashRIBSZ}
+     */
+    GetBlockDetailsByBlockHashRIBSZ,
 
     /**
      * The GetBlockDetailsByBlockHeightR model constructor.
@@ -1767,6 +2017,12 @@ export {
     GetBlockDetailsByBlockHeightRIBSBC,
 
     /**
+     * The GetBlockDetailsByBlockHeightRIBSBSC model constructor.
+     * @property {module:model/GetBlockDetailsByBlockHeightRIBSBSC}
+     */
+    GetBlockDetailsByBlockHeightRIBSBSC,
+
+    /**
      * The GetBlockDetailsByBlockHeightRIBSD model constructor.
      * @property {module:model/GetBlockDetailsByBlockHeightRIBSD}
      */
@@ -1797,22 +2053,46 @@ export {
     GetBlockDetailsByBlockHeightRIBSL,
 
     /**
-     * The GetContractDetailsByAddressR model constructor.
-     * @property {module:model/GetContractDetailsByAddressR}
+     * The GetBlockDetailsByBlockHeightRIBSZ model constructor.
+     * @property {module:model/GetBlockDetailsByBlockHeightRIBSZ}
      */
-    GetContractDetailsByAddressR,
+    GetBlockDetailsByBlockHeightRIBSZ,
 
     /**
-     * The GetContractDetailsByAddressRData model constructor.
-     * @property {module:model/GetContractDetailsByAddressRData}
+     * The GetEIP1559FeeRecommendationsR model constructor.
+     * @property {module:model/GetEIP1559FeeRecommendationsR}
      */
-    GetContractDetailsByAddressRData,
+    GetEIP1559FeeRecommendationsR,
 
     /**
-     * The GetContractDetailsByAddressRI model constructor.
-     * @property {module:model/GetContractDetailsByAddressRI}
+     * The GetEIP1559FeeRecommendationsRData model constructor.
+     * @property {module:model/GetEIP1559FeeRecommendationsRData}
      */
-    GetContractDetailsByAddressRI,
+    GetEIP1559FeeRecommendationsRData,
+
+    /**
+     * The GetEIP1559FeeRecommendationsRI model constructor.
+     * @property {module:model/GetEIP1559FeeRecommendationsRI}
+     */
+    GetEIP1559FeeRecommendationsRI,
+
+    /**
+     * The GetEIP1559FeeRecommendationsRIBaseFeePerGas model constructor.
+     * @property {module:model/GetEIP1559FeeRecommendationsRIBaseFeePerGas}
+     */
+    GetEIP1559FeeRecommendationsRIBaseFeePerGas,
+
+    /**
+     * The GetEIP1559FeeRecommendationsRIMaxFeePerGas model constructor.
+     * @property {module:model/GetEIP1559FeeRecommendationsRIMaxFeePerGas}
+     */
+    GetEIP1559FeeRecommendationsRIMaxFeePerGas,
+
+    /**
+     * The GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas model constructor.
+     * @property {module:model/GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas}
+     */
+    GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas,
 
     /**
      * The GetExchangeRateByAssetSymbolsR model constructor.
@@ -1929,70 +2209,82 @@ export {
     GetInternalTransactionByTransactionHashAndOperationIdRI,
 
     /**
-     * The GetLatestMinedBlockR model constructor.
-     * @property {module:model/GetLatestMinedBlockR}
+     * The GetLastMinedBlockR model constructor.
+     * @property {module:model/GetLastMinedBlockR}
      */
-    GetLatestMinedBlockR,
+    GetLastMinedBlockR,
 
     /**
-     * The GetLatestMinedBlockRData model constructor.
-     * @property {module:model/GetLatestMinedBlockRData}
+     * The GetLastMinedBlockRData model constructor.
+     * @property {module:model/GetLastMinedBlockRData}
      */
-    GetLatestMinedBlockRData,
+    GetLastMinedBlockRData,
 
     /**
-     * The GetLatestMinedBlockRI model constructor.
-     * @property {module:model/GetLatestMinedBlockRI}
+     * The GetLastMinedBlockRI model constructor.
+     * @property {module:model/GetLastMinedBlockRI}
      */
-    GetLatestMinedBlockRI,
+    GetLastMinedBlockRI,
 
     /**
-     * The GetLatestMinedBlockRIBS model constructor.
-     * @property {module:model/GetLatestMinedBlockRIBS}
+     * The GetLastMinedBlockRIBS model constructor.
+     * @property {module:model/GetLastMinedBlockRIBS}
      */
-    GetLatestMinedBlockRIBS,
+    GetLastMinedBlockRIBS,
 
     /**
-     * The GetLatestMinedBlockRIBSB model constructor.
-     * @property {module:model/GetLatestMinedBlockRIBSB}
+     * The GetLastMinedBlockRIBSB model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSB}
      */
-    GetLatestMinedBlockRIBSB,
+    GetLastMinedBlockRIBSB,
 
     /**
-     * The GetLatestMinedBlockRIBSBC model constructor.
-     * @property {module:model/GetLatestMinedBlockRIBSBC}
+     * The GetLastMinedBlockRIBSBC model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSBC}
      */
-    GetLatestMinedBlockRIBSBC,
+    GetLastMinedBlockRIBSBC,
 
     /**
-     * The GetLatestMinedBlockRIBSD model constructor.
-     * @property {module:model/GetLatestMinedBlockRIBSD}
+     * The GetLastMinedBlockRIBSBSC model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSBSC}
      */
-    GetLatestMinedBlockRIBSD,
+    GetLastMinedBlockRIBSBSC,
 
     /**
-     * The GetLatestMinedBlockRIBSD2 model constructor.
-     * @property {module:model/GetLatestMinedBlockRIBSD2}
+     * The GetLastMinedBlockRIBSD model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSD}
      */
-    GetLatestMinedBlockRIBSD2,
+    GetLastMinedBlockRIBSD,
 
     /**
-     * The GetLatestMinedBlockRIBSE model constructor.
-     * @property {module:model/GetLatestMinedBlockRIBSE}
+     * The GetLastMinedBlockRIBSD2 model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSD2}
      */
-    GetLatestMinedBlockRIBSE,
+    GetLastMinedBlockRIBSD2,
 
     /**
-     * The GetLatestMinedBlockRIBSEC model constructor.
-     * @property {module:model/GetLatestMinedBlockRIBSEC}
+     * The GetLastMinedBlockRIBSE model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSE}
      */
-    GetLatestMinedBlockRIBSEC,
+    GetLastMinedBlockRIBSE,
 
     /**
-     * The GetLatestMinedBlockRIBSL model constructor.
-     * @property {module:model/GetLatestMinedBlockRIBSL}
+     * The GetLastMinedBlockRIBSEC model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSEC}
      */
-    GetLatestMinedBlockRIBSL,
+    GetLastMinedBlockRIBSEC,
+
+    /**
+     * The GetLastMinedBlockRIBSL model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSL}
+     */
+    GetLastMinedBlockRIBSL,
+
+    /**
+     * The GetLastMinedBlockRIBSZ model constructor.
+     * @property {module:model/GetLastMinedBlockRIBSZ}
+     */
+    GetLastMinedBlockRIBSZ,
 
     /**
      * The GetLatestMinedXRPRippleBlockR model constructor.
@@ -2067,6 +2359,24 @@ export {
     GetOmniTransactionDetailsByTransactionIDTxidRISenders,
 
     /**
+     * The GetTokenDetailsByContractAddressR model constructor.
+     * @property {module:model/GetTokenDetailsByContractAddressR}
+     */
+    GetTokenDetailsByContractAddressR,
+
+    /**
+     * The GetTokenDetailsByContractAddressRData model constructor.
+     * @property {module:model/GetTokenDetailsByContractAddressRData}
+     */
+    GetTokenDetailsByContractAddressRData,
+
+    /**
+     * The GetTokenDetailsByContractAddressRI model constructor.
+     * @property {module:model/GetTokenDetailsByContractAddressRI}
+     */
+    GetTokenDetailsByContractAddressRI,
+
+    /**
      * The GetTransactionDetailsByTransactionIDR model constructor.
      * @property {module:model/GetTransactionDetailsByTransactionIDR}
      */
@@ -2119,6 +2429,18 @@ export {
      * @property {module:model/GetTransactionDetailsByTransactionIDRIBSBCVout}
      */
     GetTransactionDetailsByTransactionIDRIBSBCVout,
+
+    /**
+     * The GetTransactionDetailsByTransactionIDRIBSBSC model constructor.
+     * @property {module:model/GetTransactionDetailsByTransactionIDRIBSBSC}
+     */
+    GetTransactionDetailsByTransactionIDRIBSBSC,
+
+    /**
+     * The GetTransactionDetailsByTransactionIDRIBSBSCGasPrice model constructor.
+     * @property {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice}
+     */
+    GetTransactionDetailsByTransactionIDRIBSBSCGasPrice,
 
     /**
      * The GetTransactionDetailsByTransactionIDRIBSBScriptPubKey model constructor.
@@ -2275,6 +2597,30 @@ export {
      * @property {module:model/GetTransactionDetailsByTransactionIDRISenders}
      */
     GetTransactionDetailsByTransactionIDRISenders,
+
+    /**
+     * The GetTransactionRequestDetailsR model constructor.
+     * @property {module:model/GetTransactionRequestDetailsR}
+     */
+    GetTransactionRequestDetailsR,
+
+    /**
+     * The GetTransactionRequestDetailsRData model constructor.
+     * @property {module:model/GetTransactionRequestDetailsRData}
+     */
+    GetTransactionRequestDetailsRData,
+
+    /**
+     * The GetTransactionRequestDetailsRI model constructor.
+     * @property {module:model/GetTransactionRequestDetailsRI}
+     */
+    GetTransactionRequestDetailsRI,
+
+    /**
+     * The GetTransactionRequestDetailsRIRecipients model constructor.
+     * @property {module:model/GetTransactionRequestDetailsRIRecipients}
+     */
+    GetTransactionRequestDetailsRIRecipients,
 
     /**
      * The GetUnconfirmedOmniTransactionByTransactionIDTxidR model constructor.
@@ -2679,6 +3025,162 @@ export {
     LimitGreaterThanAllowedError,
 
     /**
+     * The ListAllUnconfirmedTransactionsR model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsR}
+     */
+    ListAllUnconfirmedTransactionsR,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRData model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRData}
+     */
+    ListAllUnconfirmedTransactionsRData,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRI model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRI}
+     */
+    ListAllUnconfirmedTransactionsRI,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBS model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBS}
+     */
+    ListAllUnconfirmedTransactionsRIBS,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSB model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSB}
+     */
+    ListAllUnconfirmedTransactionsRIBSB,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSBC model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBC}
+     */
+    ListAllUnconfirmedTransactionsRIBSBC,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSBCVin model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBCVin}
+     */
+    ListAllUnconfirmedTransactionsRIBSBCVin,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSBCVout model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBCVout}
+     */
+    ListAllUnconfirmedTransactionsRIBSBCVout,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSBSC model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBSC}
+     */
+    ListAllUnconfirmedTransactionsRIBSBSC,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSBScriptSig model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBScriptSig}
+     */
+    ListAllUnconfirmedTransactionsRIBSBScriptSig,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSBVin model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBVin}
+     */
+    ListAllUnconfirmedTransactionsRIBSBVin,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSD model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSD}
+     */
+    ListAllUnconfirmedTransactionsRIBSD,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSD2 model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSD2}
+     */
+    ListAllUnconfirmedTransactionsRIBSD2,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSD2Vin model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSD2Vin}
+     */
+    ListAllUnconfirmedTransactionsRIBSD2Vin,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSDVin model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSDVin}
+     */
+    ListAllUnconfirmedTransactionsRIBSDVin,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSE model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSE}
+     */
+    ListAllUnconfirmedTransactionsRIBSE,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSEC model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSEC}
+     */
+    ListAllUnconfirmedTransactionsRIBSEC,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSECFee model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSECFee}
+     */
+    ListAllUnconfirmedTransactionsRIBSECFee,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSECGasPrice model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSECGasPrice}
+     */
+    ListAllUnconfirmedTransactionsRIBSECGasPrice,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSEFee model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSEFee}
+     */
+    ListAllUnconfirmedTransactionsRIBSEFee,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSEGasPrice model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSEGasPrice}
+     */
+    ListAllUnconfirmedTransactionsRIBSEGasPrice,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSL model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSL}
+     */
+    ListAllUnconfirmedTransactionsRIBSL,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSLScriptPubKey model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSLScriptPubKey}
+     */
+    ListAllUnconfirmedTransactionsRIBSLScriptPubKey,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSLVin model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSLVin}
+     */
+    ListAllUnconfirmedTransactionsRIBSLVin,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSLVout model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSLVout}
+     */
+    ListAllUnconfirmedTransactionsRIBSLVout,
+
+    /**
+     * The ListAllUnconfirmedTransactionsRIBSZ model constructor.
+     * @property {module:model/ListAllUnconfirmedTransactionsRIBSZ}
+     */
+    ListAllUnconfirmedTransactionsRIBSZ,
+
+    /**
      * The ListAssetsDetailsR model constructor.
      * @property {module:model/ListAssetsDetailsR}
      */
@@ -2757,6 +3259,240 @@ export {
     ListCoinsForwardingAutomationsRI,
 
     /**
+     * The ListConfirmedTokensTransfersByAddressR model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressR}
+     */
+    ListConfirmedTokensTransfersByAddressR,
+
+    /**
+     * The ListConfirmedTokensTransfersByAddressRData model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressRData}
+     */
+    ListConfirmedTokensTransfersByAddressRData,
+
+    /**
+     * The ListConfirmedTokensTransfersByAddressRI model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressRI}
+     */
+    ListConfirmedTokensTransfersByAddressRI,
+
+    /**
+     * The ListConfirmedTransactionsByAddressR model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressR}
+     */
+    ListConfirmedTransactionsByAddressR,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRData model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRData}
+     */
+    ListConfirmedTransactionsByAddressRData,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRI model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRI}
+     */
+    ListConfirmedTransactionsByAddressRI,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBS model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBS}
+     */
+    ListConfirmedTransactionsByAddressRIBS,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSB model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSB}
+     */
+    ListConfirmedTransactionsByAddressRIBSB,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSBC model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSBC}
+     */
+    ListConfirmedTransactionsByAddressRIBSBC,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSBCVin model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSBCVin}
+     */
+    ListConfirmedTransactionsByAddressRIBSBCVin,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSBSC model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSBSC}
+     */
+    ListConfirmedTransactionsByAddressRIBSBSC,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSBSCGasPrice model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice}
+     */
+    ListConfirmedTransactionsByAddressRIBSBSCGasPrice,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSBScriptPubKey model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSBScriptPubKey}
+     */
+    ListConfirmedTransactionsByAddressRIBSBScriptPubKey,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSBVin model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSBVin}
+     */
+    ListConfirmedTransactionsByAddressRIBSBVin,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSBVout model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSBVout}
+     */
+    ListConfirmedTransactionsByAddressRIBSBVout,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSD model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSD}
+     */
+    ListConfirmedTransactionsByAddressRIBSD,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSD2 model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSD2}
+     */
+    ListConfirmedTransactionsByAddressRIBSD2,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey}
+     */
+    ListConfirmedTransactionsByAddressRIBSD2ScriptPubKey,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSD2ScriptSig model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSD2ScriptSig}
+     */
+    ListConfirmedTransactionsByAddressRIBSD2ScriptSig,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSD2Vin model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSD2Vin}
+     */
+    ListConfirmedTransactionsByAddressRIBSD2Vin,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSD2Vout model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSD2Vout}
+     */
+    ListConfirmedTransactionsByAddressRIBSD2Vout,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSDScriptSig model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSDScriptSig}
+     */
+    ListConfirmedTransactionsByAddressRIBSDScriptSig,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSDVin model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSDVin}
+     */
+    ListConfirmedTransactionsByAddressRIBSDVin,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSE model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSE}
+     */
+    ListConfirmedTransactionsByAddressRIBSE,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSEC model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSEC}
+     */
+    ListConfirmedTransactionsByAddressRIBSEC,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSECGasPrice model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSECGasPrice}
+     */
+    ListConfirmedTransactionsByAddressRIBSECGasPrice,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSEGasPrice model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSEGasPrice}
+     */
+    ListConfirmedTransactionsByAddressRIBSEGasPrice,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSL model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSL}
+     */
+    ListConfirmedTransactionsByAddressRIBSL,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSLScriptSig model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSLScriptSig}
+     */
+    ListConfirmedTransactionsByAddressRIBSLScriptSig,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSLVin model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSLVin}
+     */
+    ListConfirmedTransactionsByAddressRIBSLVin,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSZ model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSZ}
+     */
+    ListConfirmedTransactionsByAddressRIBSZ,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSZScriptPubKey model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSZScriptPubKey}
+     */
+    ListConfirmedTransactionsByAddressRIBSZScriptPubKey,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSZScriptSig model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSZScriptSig}
+     */
+    ListConfirmedTransactionsByAddressRIBSZScriptSig,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSZVJoinSplit model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplit}
+     */
+    ListConfirmedTransactionsByAddressRIBSZVJoinSplit,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSZVShieldedOutput model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedOutput}
+     */
+    ListConfirmedTransactionsByAddressRIBSZVShieldedOutput,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSZVShieldedSpend model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend}
+     */
+    ListConfirmedTransactionsByAddressRIBSZVShieldedSpend,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSZVin model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSZVin}
+     */
+    ListConfirmedTransactionsByAddressRIBSZVin,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSZVout model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSZVout}
+     */
+    ListConfirmedTransactionsByAddressRIBSZVout,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIFee model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIFee}
+     */
+    ListConfirmedTransactionsByAddressRIFee,
+
+    /**
      * The ListDepositAddressesR model constructor.
      * @property {module:model/ListDepositAddressesR}
      */
@@ -2827,6 +3563,108 @@ export {
      * @property {module:model/ListInternalTransactionDetailsByTransactionHashRI}
      */
     ListInternalTransactionDetailsByTransactionHashRI,
+
+    /**
+     * The ListInternalTransactionsByAddressR model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressR}
+     */
+    ListInternalTransactionsByAddressR,
+
+    /**
+     * The ListInternalTransactionsByAddressRData model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressRData}
+     */
+    ListInternalTransactionsByAddressRData,
+
+    /**
+     * The ListInternalTransactionsByAddressRI model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressRI}
+     */
+    ListInternalTransactionsByAddressRI,
+
+    /**
+     * The ListLatestMinedBlocksR model constructor.
+     * @property {module:model/ListLatestMinedBlocksR}
+     */
+    ListLatestMinedBlocksR,
+
+    /**
+     * The ListLatestMinedBlocksRData model constructor.
+     * @property {module:model/ListLatestMinedBlocksRData}
+     */
+    ListLatestMinedBlocksRData,
+
+    /**
+     * The ListLatestMinedBlocksRI model constructor.
+     * @property {module:model/ListLatestMinedBlocksRI}
+     */
+    ListLatestMinedBlocksRI,
+
+    /**
+     * The ListLatestMinedBlocksRIBS model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBS}
+     */
+    ListLatestMinedBlocksRIBS,
+
+    /**
+     * The ListLatestMinedBlocksRIBSB model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSB}
+     */
+    ListLatestMinedBlocksRIBSB,
+
+    /**
+     * The ListLatestMinedBlocksRIBSBC model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSBC}
+     */
+    ListLatestMinedBlocksRIBSBC,
+
+    /**
+     * The ListLatestMinedBlocksRIBSBSC model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSBSC}
+     */
+    ListLatestMinedBlocksRIBSBSC,
+
+    /**
+     * The ListLatestMinedBlocksRIBSD model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSD}
+     */
+    ListLatestMinedBlocksRIBSD,
+
+    /**
+     * The ListLatestMinedBlocksRIBSD2 model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSD2}
+     */
+    ListLatestMinedBlocksRIBSD2,
+
+    /**
+     * The ListLatestMinedBlocksRIBSE model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSE}
+     */
+    ListLatestMinedBlocksRIBSE,
+
+    /**
+     * The ListLatestMinedBlocksRIBSEC model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSEC}
+     */
+    ListLatestMinedBlocksRIBSEC,
+
+    /**
+     * The ListLatestMinedBlocksRIBSL model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSL}
+     */
+    ListLatestMinedBlocksRIBSL,
+
+    /**
+     * The ListLatestMinedBlocksRIBSZ model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSZ}
+     */
+    ListLatestMinedBlocksRIBSZ,
+
+    /**
+     * The ListLatestMinedBlocksRIBSZ2 model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSZ2}
+     */
+    ListLatestMinedBlocksRIBSZ2,
 
     /**
      * The ListOmniTokensByAddressR model constructor.
@@ -3033,24 +3871,6 @@ export {
     ListTokensForwardingAutomationsRITSET,
 
     /**
-     * The ListTokensTransfersByAddressR model constructor.
-     * @property {module:model/ListTokensTransfersByAddressR}
-     */
-    ListTokensTransfersByAddressR,
-
-    /**
-     * The ListTokensTransfersByAddressRData model constructor.
-     * @property {module:model/ListTokensTransfersByAddressRData}
-     */
-    ListTokensTransfersByAddressRData,
-
-    /**
-     * The ListTokensTransfersByAddressRI model constructor.
-     * @property {module:model/ListTokensTransfersByAddressRI}
-     */
-    ListTokensTransfersByAddressRI,
-
-    /**
      * The ListTokensTransfersByTransactionHashR model constructor.
      * @property {module:model/ListTokensTransfersByTransactionHashR}
      */
@@ -3067,156 +3887,6 @@ export {
      * @property {module:model/ListTokensTransfersByTransactionHashRI}
      */
     ListTokensTransfersByTransactionHashRI,
-
-    /**
-     * The ListTransactionsByAddressR model constructor.
-     * @property {module:model/ListTransactionsByAddressR}
-     */
-    ListTransactionsByAddressR,
-
-    /**
-     * The ListTransactionsByAddressRData model constructor.
-     * @property {module:model/ListTransactionsByAddressRData}
-     */
-    ListTransactionsByAddressRData,
-
-    /**
-     * The ListTransactionsByAddressRI model constructor.
-     * @property {module:model/ListTransactionsByAddressRI}
-     */
-    ListTransactionsByAddressRI,
-
-    /**
-     * The ListTransactionsByAddressRIBS model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBS}
-     */
-    ListTransactionsByAddressRIBS,
-
-    /**
-     * The ListTransactionsByAddressRIBSB model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSB}
-     */
-    ListTransactionsByAddressRIBSB,
-
-    /**
-     * The ListTransactionsByAddressRIBSBC model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSBC}
-     */
-    ListTransactionsByAddressRIBSBC,
-
-    /**
-     * The ListTransactionsByAddressRIBSBCVin model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSBCVin}
-     */
-    ListTransactionsByAddressRIBSBCVin,
-
-    /**
-     * The ListTransactionsByAddressRIBSBScriptPubKey model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSBScriptPubKey}
-     */
-    ListTransactionsByAddressRIBSBScriptPubKey,
-
-    /**
-     * The ListTransactionsByAddressRIBSBVin model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSBVin}
-     */
-    ListTransactionsByAddressRIBSBVin,
-
-    /**
-     * The ListTransactionsByAddressRIBSBVout model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSBVout}
-     */
-    ListTransactionsByAddressRIBSBVout,
-
-    /**
-     * The ListTransactionsByAddressRIBSD model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSD}
-     */
-    ListTransactionsByAddressRIBSD,
-
-    /**
-     * The ListTransactionsByAddressRIBSD2 model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSD2}
-     */
-    ListTransactionsByAddressRIBSD2,
-
-    /**
-     * The ListTransactionsByAddressRIBSD2ScriptPubKey model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSD2ScriptPubKey}
-     */
-    ListTransactionsByAddressRIBSD2ScriptPubKey,
-
-    /**
-     * The ListTransactionsByAddressRIBSD2ScriptSig model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSD2ScriptSig}
-     */
-    ListTransactionsByAddressRIBSD2ScriptSig,
-
-    /**
-     * The ListTransactionsByAddressRIBSD2Vin model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSD2Vin}
-     */
-    ListTransactionsByAddressRIBSD2Vin,
-
-    /**
-     * The ListTransactionsByAddressRIBSD2Vout model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSD2Vout}
-     */
-    ListTransactionsByAddressRIBSD2Vout,
-
-    /**
-     * The ListTransactionsByAddressRIBSDScriptSig model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSDScriptSig}
-     */
-    ListTransactionsByAddressRIBSDScriptSig,
-
-    /**
-     * The ListTransactionsByAddressRIBSDVin model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSDVin}
-     */
-    ListTransactionsByAddressRIBSDVin,
-
-    /**
-     * The ListTransactionsByAddressRIBSE model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSE}
-     */
-    ListTransactionsByAddressRIBSE,
-
-    /**
-     * The ListTransactionsByAddressRIBSEC model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSEC}
-     */
-    ListTransactionsByAddressRIBSEC,
-
-    /**
-     * The ListTransactionsByAddressRIBSECGasPrice model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSECGasPrice}
-     */
-    ListTransactionsByAddressRIBSECGasPrice,
-
-    /**
-     * The ListTransactionsByAddressRIBSEGasPrice model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSEGasPrice}
-     */
-    ListTransactionsByAddressRIBSEGasPrice,
-
-    /**
-     * The ListTransactionsByAddressRIBSL model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSL}
-     */
-    ListTransactionsByAddressRIBSL,
-
-    /**
-     * The ListTransactionsByAddressRIBSLScriptSig model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSLScriptSig}
-     */
-    ListTransactionsByAddressRIBSLScriptSig,
-
-    /**
-     * The ListTransactionsByAddressRIBSLVin model constructor.
-     * @property {module:model/ListTransactionsByAddressRIBSLVin}
-     */
-    ListTransactionsByAddressRIBSLVin,
 
     /**
      * The ListTransactionsByBlockHashR model constructor.
@@ -3271,6 +3941,18 @@ export {
      * @property {module:model/ListTransactionsByBlockHashRIBSBCVout}
      */
     ListTransactionsByBlockHashRIBSBCVout,
+
+    /**
+     * The ListTransactionsByBlockHashRIBSBSC model constructor.
+     * @property {module:model/ListTransactionsByBlockHashRIBSBSC}
+     */
+    ListTransactionsByBlockHashRIBSBSC,
+
+    /**
+     * The ListTransactionsByBlockHashRIBSBSCGasPrice model constructor.
+     * @property {module:model/ListTransactionsByBlockHashRIBSBSCGasPrice}
+     */
+    ListTransactionsByBlockHashRIBSBSCGasPrice,
 
     /**
      * The ListTransactionsByBlockHashRIBSBVin model constructor.
@@ -3375,6 +4057,30 @@ export {
     ListTransactionsByBlockHashRIBSLVout,
 
     /**
+     * The ListTransactionsByBlockHashRIBSZ model constructor.
+     * @property {module:model/ListTransactionsByBlockHashRIBSZ}
+     */
+    ListTransactionsByBlockHashRIBSZ,
+
+    /**
+     * The ListTransactionsByBlockHashRIBSZScriptSig model constructor.
+     * @property {module:model/ListTransactionsByBlockHashRIBSZScriptSig}
+     */
+    ListTransactionsByBlockHashRIBSZScriptSig,
+
+    /**
+     * The ListTransactionsByBlockHashRIBSZVJoinSplit model constructor.
+     * @property {module:model/ListTransactionsByBlockHashRIBSZVJoinSplit}
+     */
+    ListTransactionsByBlockHashRIBSZVJoinSplit,
+
+    /**
+     * The ListTransactionsByBlockHashRIBSZVin model constructor.
+     * @property {module:model/ListTransactionsByBlockHashRIBSZVin}
+     */
+    ListTransactionsByBlockHashRIBSZVin,
+
+    /**
      * The ListTransactionsByBlockHashRIFee model constructor.
      * @property {module:model/ListTransactionsByBlockHashRIFee}
      */
@@ -3427,6 +4133,18 @@ export {
      * @property {module:model/ListTransactionsByBlockHeightRIBSBC}
      */
     ListTransactionsByBlockHeightRIBSBC,
+
+    /**
+     * The ListTransactionsByBlockHeightRIBSBSC model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSBSC}
+     */
+    ListTransactionsByBlockHeightRIBSBSC,
+
+    /**
+     * The ListTransactionsByBlockHeightRIBSBSCGasPrice model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSBSCGasPrice}
+     */
+    ListTransactionsByBlockHeightRIBSBSCGasPrice,
 
     /**
      * The ListTransactionsByBlockHeightRIBSBScriptPubKey model constructor.
@@ -3531,6 +4249,48 @@ export {
     ListTransactionsByBlockHeightRIBSLVout,
 
     /**
+     * The ListTransactionsByBlockHeightRIBSZ model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSZ}
+     */
+    ListTransactionsByBlockHeightRIBSZ,
+
+    /**
+     * The ListTransactionsByBlockHeightRIBSZScriptPubKey model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSZScriptPubKey}
+     */
+    ListTransactionsByBlockHeightRIBSZScriptPubKey,
+
+    /**
+     * The ListTransactionsByBlockHeightRIBSZScriptSig model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSZScriptSig}
+     */
+    ListTransactionsByBlockHeightRIBSZScriptSig,
+
+    /**
+     * The ListTransactionsByBlockHeightRIBSZVJoinSplit model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit}
+     */
+    ListTransactionsByBlockHeightRIBSZVJoinSplit,
+
+    /**
+     * The ListTransactionsByBlockHeightRIBSZVShieldedOutput model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput}
+     */
+    ListTransactionsByBlockHeightRIBSZVShieldedOutput,
+
+    /**
+     * The ListTransactionsByBlockHeightRIBSZVin model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSZVin}
+     */
+    ListTransactionsByBlockHeightRIBSZVin,
+
+    /**
+     * The ListTransactionsByBlockHeightRIBSZVout model constructor.
+     * @property {module:model/ListTransactionsByBlockHeightRIBSZVout}
+     */
+    ListTransactionsByBlockHeightRIBSZVout,
+
+    /**
      * The ListTransactionsByBlockHeightRIFee model constructor.
      * @property {module:model/ListTransactionsByBlockHeightRIFee}
      */
@@ -3583,6 +4343,294 @@ export {
      * @property {module:model/ListUnconfirmedOmniTransactionsByPropertyIDRI}
      */
     ListUnconfirmedOmniTransactionsByPropertyIDRI,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressR model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressR}
+     */
+    ListUnconfirmedTransactionsByAddressR,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRData model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRData}
+     */
+    ListUnconfirmedTransactionsByAddressRData,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRI model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRI}
+     */
+    ListUnconfirmedTransactionsByAddressRI,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBS model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBS}
+     */
+    ListUnconfirmedTransactionsByAddressRIBS,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSB model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSB}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSB,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBC model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBC}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBC,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBCVin model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBCVin}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBCVin,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBCVout model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBCVout}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBCVout,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBSC model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBSC}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBSC,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBScriptPubKey,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBScriptSig model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBScriptSig}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBScriptSig,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBVin model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBVin}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBVin,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSBVout model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSBVout}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSBVout,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSD model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSD}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSD,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSD2 model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSD2}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSD2,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSD2Vin model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSD2Vin}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSD2Vin,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSD2Vout model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSD2Vout}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSD2Vout,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSDVin model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSDVin}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSDVin,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSE model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSE}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSE,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSEC model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSEC}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSEC,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSECFee model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSECFee}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSECFee,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSECGasPrice model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSECGasPrice}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSECGasPrice,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSEFee model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSEFee}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSEFee,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSL model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSL}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSL,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSLScriptSig model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSLScriptSig}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSLScriptSig,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSLVin model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSLVin}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSLVin,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSLVout model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSLVout}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSLVout,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSZ model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSZ}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSZ,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIBSZVin model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIBSZVin}
+     */
+    ListUnconfirmedTransactionsByAddressRIBSZVin,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRIRecipients model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRIRecipients}
+     */
+    ListUnconfirmedTransactionsByAddressRIRecipients,
+
+    /**
+     * The ListUnconfirmedTransactionsByAddressRISenders model constructor.
+     * @property {module:model/ListUnconfirmedTransactionsByAddressRISenders}
+     */
+    ListUnconfirmedTransactionsByAddressRISenders,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressR model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressR}
+     */
+    ListUnspentTransactionOutputsByAddressR,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressRData model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressRData}
+     */
+    ListUnspentTransactionOutputsByAddressRData,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressRI model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressRI}
+     */
+    ListUnspentTransactionOutputsByAddressRI,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecific model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecific}
+     */
+    ListUnspentTransactionOutputsByAddressRIBlockchainSpecific,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit}
+     */
+    ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend}
+     */
+    ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressRIFee model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressRIFee}
+     */
+    ListUnspentTransactionOutputsByAddressRIFee,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressRISenders model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressRISenders}
+     */
+    ListUnspentTransactionOutputsByAddressRISenders,
+
+    /**
+     * The ListUnspentTransactionOutputsByAddressRIVin model constructor.
+     * @property {module:model/ListUnspentTransactionOutputsByAddressRIVin}
+     */
+    ListUnspentTransactionOutputsByAddressRIVin,
+
+    /**
+     * The ListWalletTransactionsR model constructor.
+     * @property {module:model/ListWalletTransactionsR}
+     */
+    ListWalletTransactionsR,
+
+    /**
+     * The ListWalletTransactionsRData model constructor.
+     * @property {module:model/ListWalletTransactionsRData}
+     */
+    ListWalletTransactionsRData,
+
+    /**
+     * The ListWalletTransactionsRI model constructor.
+     * @property {module:model/ListWalletTransactionsRI}
+     */
+    ListWalletTransactionsRI,
+
+    /**
+     * The ListWalletTransactionsRIFee model constructor.
+     * @property {module:model/ListWalletTransactionsRIFee}
+     */
+    ListWalletTransactionsRIFee,
+
+    /**
+     * The ListWalletTransactionsRIRecipients model constructor.
+     * @property {module:model/ListWalletTransactionsRIRecipients}
+     */
+    ListWalletTransactionsRIRecipients,
+
+    /**
+     * The ListWalletTransactionsRISenders model constructor.
+     * @property {module:model/ListWalletTransactionsRISenders}
+     */
+    ListWalletTransactionsRISenders,
+
+    /**
+     * The ListWalletTransactionsRIValue model constructor.
+     * @property {module:model/ListWalletTransactionsRIValue}
+     */
+    ListWalletTransactionsRIValue,
 
     /**
      * The ListXRPRippleTransactionsByAddressR model constructor.
@@ -4077,6 +5125,18 @@ export {
     NewConfirmedTokensTransactionsRB,
 
     /**
+     * The NewConfirmedTokensTransactionsRBData model constructor.
+     * @property {module:model/NewConfirmedTokensTransactionsRBData}
+     */
+    NewConfirmedTokensTransactionsRBData,
+
+    /**
+     * The NewConfirmedTokensTransactionsRBDataItem model constructor.
+     * @property {module:model/NewConfirmedTokensTransactionsRBDataItem}
+     */
+    NewConfirmedTokensTransactionsRBDataItem,
+
+    /**
      * The NewConfirmedTokensTransactionsRData model constructor.
      * @property {module:model/NewConfirmedTokensTransactionsRData}
      */
@@ -4269,22 +5329,22 @@ export {
     TokensForwardingSuccessDataItem,
 
     /**
-     * The TokensForwardingSuccessEthereumerc20token model constructor.
-     * @property {module:model/TokensForwardingSuccessEthereumerc20token}
+     * The TokensForwardingSuccessErc20 model constructor.
+     * @property {module:model/TokensForwardingSuccessErc20}
      */
-    TokensForwardingSuccessEthereumerc20token,
+    TokensForwardingSuccessErc20,
 
     /**
-     * The TokensForwardingSuccessEthereumerc721token model constructor.
-     * @property {module:model/TokensForwardingSuccessEthereumerc721token}
+     * The TokensForwardingSuccessErc721 model constructor.
+     * @property {module:model/TokensForwardingSuccessErc721}
      */
-    TokensForwardingSuccessEthereumerc721token,
+    TokensForwardingSuccessErc721,
 
     /**
-     * The TokensForwardingSuccessOmnilayertoken model constructor.
-     * @property {module:model/TokensForwardingSuccessOmnilayertoken}
+     * The TokensForwardingSuccessOmni model constructor.
+     * @property {module:model/TokensForwardingSuccessOmni}
      */
-    TokensForwardingSuccessOmnilayertoken,
+    TokensForwardingSuccessOmni,
 
     /**
      * The TokensForwardingSuccessToken model constructor.
@@ -4473,6 +5533,18 @@ export {
     ValidateAddressRI,
 
     /**
+     * The WalletAsAServiceAddressBalanceNotEnough model constructor.
+     * @property {module:model/WalletAsAServiceAddressBalanceNotEnough}
+     */
+    WalletAsAServiceAddressBalanceNotEnough,
+
+    /**
+     * The WalletAsAServiceAddressBalanceNotEnoughError model constructor.
+     * @property {module:model/WalletAsAServiceAddressBalanceNotEnoughError}
+     */
+    WalletAsAServiceAddressBalanceNotEnoughError,
+
+    /**
      * The WalletAsAServiceDepositAddressesLimitReached model constructor.
      * @property {module:model/WalletAsAServiceDepositAddressesLimitReached}
      */
@@ -4585,6 +5657,12 @@ export {
     * @property {module:api/GeneratingApi}
     */
     GeneratingApi,
+
+    /**
+    * The HDWalletsApi service constructor.
+    * @property {module:api/HDWalletsApi}
+    */
+    HDWalletsApi,
 
     /**
     * The InformativeApi service constructor.

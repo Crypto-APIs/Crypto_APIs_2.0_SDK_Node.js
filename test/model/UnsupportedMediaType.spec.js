@@ -50,7 +50,7 @@
   describe('UnsupportedMediaType', function() {
     it('should create an instance of UnsupportedMediaType', function() {
       // uncomment below and update the code to test UnsupportedMediaType
-      //var instane = new Cryptoapis.UnsupportedMediaType();
+      //var instance = new Cryptoapis.UnsupportedMediaType();
       //expect(instance).to.be.a(Cryptoapis.UnsupportedMediaType);
     });
 

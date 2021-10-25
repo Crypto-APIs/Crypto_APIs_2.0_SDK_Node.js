@@ -50,7 +50,7 @@
   describe('EndpointNotAllowedForApiKey', function() {
     it('should create an instance of EndpointNotAllowedForApiKey', function() {
       // uncomment below and update the code to test EndpointNotAllowedForApiKey
-      //var instane = new Cryptoapis.EndpointNotAllowedForApiKey();
+      //var instance = new Cryptoapis.EndpointNotAllowedForApiKey();
       //expect(instance).to.be.a(Cryptoapis.EndpointNotAllowedForApiKey);
     });
 

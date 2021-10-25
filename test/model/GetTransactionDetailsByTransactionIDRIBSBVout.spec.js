@@ -50,7 +50,7 @@
   describe('GetTransactionDetailsByTransactionIDRIBSBVout', function() {
     it('should create an instance of GetTransactionDetailsByTransactionIDRIBSBVout', function() {
       // uncomment below and update the code to test GetTransactionDetailsByTransactionIDRIBSBVout
-      //var instane = new Cryptoapis.GetTransactionDetailsByTransactionIDRIBSBVout();
+      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRIBSBVout();
       //expect(instance).to.be.a(Cryptoapis.GetTransactionDetailsByTransactionIDRIBSBVout);
     });
 

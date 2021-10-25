@@ -50,7 +50,7 @@
   describe('ListXRPRippleTransactionsByAddressRIValue', function() {
     it('should create an instance of ListXRPRippleTransactionsByAddressRIValue', function() {
       // uncomment below and update the code to test ListXRPRippleTransactionsByAddressRIValue
-      //var instane = new Cryptoapis.ListXRPRippleTransactionsByAddressRIValue();
+      //var instance = new Cryptoapis.ListXRPRippleTransactionsByAddressRIValue();
       //expect(instance).to.be.a(Cryptoapis.ListXRPRippleTransactionsByAddressRIValue);
     });
 

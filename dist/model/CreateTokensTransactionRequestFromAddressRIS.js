@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _CreateTokensTransactionRequestFromAddressRISB = _interopRequireDefault(require("./CreateTokensTransactionRequestFromAddressRISB"));
-
 var _CreateTokensTransactionRequestFromAddressRISE = _interopRequireDefault(require("./CreateTokensTransactionRequestFromAddressRISE"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -22,26 +20,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateTokensTransactionRequestFromAddressRIS model module.
  * @module model/CreateTokensTransactionRequestFromAddressRIS
- * @version 1.2.1
+ * @version 1.3.0
  */
 var CreateTokensTransactionRequestFromAddressRIS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateTokensTransactionRequestFromAddressRIS</code>.
    * Represents the specific token data which depends on its type - if it is a Coin or Token.
    * @alias module:model/CreateTokensTransactionRequestFromAddressRIS
-   * @implements module:model/CreateTokensTransactionRequestFromAddressRISB
    * @implements module:model/CreateTokensTransactionRequestFromAddressRISE
-   * @param propertyId {String} Defines the `propertyID` from Omni layer.
    * @param contractAddress {String} Defines the contract address in the blockchain for an ERC20 token.
    */
-  function CreateTokensTransactionRequestFromAddressRIS(propertyId, contractAddress) {
+  function CreateTokensTransactionRequestFromAddressRIS(contractAddress) {
     _classCallCheck(this, CreateTokensTransactionRequestFromAddressRIS);
-
-    _CreateTokensTransactionRequestFromAddressRISB["default"].initialize(this, propertyId);
 
     _CreateTokensTransactionRequestFromAddressRISE["default"].initialize(this, contractAddress);
 
-    CreateTokensTransactionRequestFromAddressRIS.initialize(this, propertyId, contractAddress);
+    CreateTokensTransactionRequestFromAddressRIS.initialize(this, contractAddress);
   }
   /**
    * Initializes the fields of this object.
@@ -52,8 +46,7 @@ var CreateTokensTransactionRequestFromAddressRIS = /*#__PURE__*/function () {
 
   _createClass(CreateTokensTransactionRequestFromAddressRIS, null, [{
     key: "initialize",
-    value: function initialize(obj, propertyId, contractAddress) {
-      obj['propertyId'] = propertyId;
+    value: function initialize(obj, contractAddress) {
       obj['contractAddress'] = contractAddress;
     }
     /**
@@ -70,13 +63,7 @@ var CreateTokensTransactionRequestFromAddressRIS = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new CreateTokensTransactionRequestFromAddressRIS();
 
-        _CreateTokensTransactionRequestFromAddressRISB["default"].constructFromObject(data, obj);
-
         _CreateTokensTransactionRequestFromAddressRISE["default"].constructFromObject(data, obj);
-
-        if (data.hasOwnProperty('propertyId')) {
-          obj['propertyId'] = _ApiClient["default"].convertToType(data['propertyId'], 'String');
-        }
 
         if (data.hasOwnProperty('contractAddress')) {
           obj['contractAddress'] = _ApiClient["default"].convertToType(data['contractAddress'], 'String');
@@ -90,25 +77,12 @@ var CreateTokensTransactionRequestFromAddressRIS = /*#__PURE__*/function () {
   return CreateTokensTransactionRequestFromAddressRIS;
 }();
 /**
- * Defines the `propertyID` from Omni layer.
- * @member {String} propertyId
- */
-
-
-CreateTokensTransactionRequestFromAddressRIS.prototype['propertyId'] = undefined;
-/**
  * Defines the contract address in the blockchain for an ERC20 token.
  * @member {String} contractAddress
  */
 
-CreateTokensTransactionRequestFromAddressRIS.prototype['contractAddress'] = undefined; // Implement CreateTokensTransactionRequestFromAddressRISB interface:
 
-/**
- * Defines the `propertyID` from Omni layer.
- * @member {String} propertyId
- */
-
-_CreateTokensTransactionRequestFromAddressRISB["default"].prototype['propertyId'] = undefined; // Implement CreateTokensTransactionRequestFromAddressRISE interface:
+CreateTokensTransactionRequestFromAddressRIS.prototype['contractAddress'] = undefined; // Implement CreateTokensTransactionRequestFromAddressRISE interface:
 
 /**
  * Defines the contract address in the blockchain for an ERC20 token.

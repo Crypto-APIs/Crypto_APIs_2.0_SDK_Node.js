@@ -50,12 +50,18 @@
   describe('ListXRPRippleTransactionsByBlockHeightRI', function() {
     it('should create an instance of ListXRPRippleTransactionsByBlockHeightRI', function() {
       // uncomment below and update the code to test ListXRPRippleTransactionsByBlockHeightRI
-      //var instane = new Cryptoapis.ListXRPRippleTransactionsByBlockHeightRI();
+      //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHeightRI();
       //expect(instance).to.be.a(Cryptoapis.ListXRPRippleTransactionsByBlockHeightRI);
     });
 
     it('should have the property additionalData (base name: "additionalData")', function() {
       // uncomment below and update the code to test the property additionalData
+      //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHeightRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property destinationTag (base name: "destinationTag")', function() {
+      // uncomment below and update the code to test the property destinationTag
       //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHeightRI();
       //expect(instance).to.be();
     });

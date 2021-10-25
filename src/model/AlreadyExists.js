@@ -17,7 +17,7 @@ import AlreadyExistsError from './AlreadyExistsError';
 /**
  * The AlreadyExists model module.
  * @module model/AlreadyExists
- * @version 1.2.1
+ * @version 1.3.0
  */
 class AlreadyExists {
     /**

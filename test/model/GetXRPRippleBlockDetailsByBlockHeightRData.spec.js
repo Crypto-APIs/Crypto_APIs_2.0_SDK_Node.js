@@ -50,7 +50,7 @@
   describe('GetXRPRippleBlockDetailsByBlockHeightRData', function() {
     it('should create an instance of GetXRPRippleBlockDetailsByBlockHeightRData', function() {
       // uncomment below and update the code to test GetXRPRippleBlockDetailsByBlockHeightRData
-      //var instane = new Cryptoapis.GetXRPRippleBlockDetailsByBlockHeightRData();
+      //var instance = new Cryptoapis.GetXRPRippleBlockDetailsByBlockHeightRData();
       //expect(instance).to.be.a(Cryptoapis.GetXRPRippleBlockDetailsByBlockHeightRData);
     });
 

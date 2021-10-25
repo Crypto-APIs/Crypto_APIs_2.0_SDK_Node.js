@@ -50,7 +50,7 @@
   describe('InvalidXpubError', function() {
     it('should create an instance of InvalidXpubError', function() {
       // uncomment below and update the code to test InvalidXpubError
-      //var instane = new Cryptoapis.InvalidXpubError();
+      //var instance = new Cryptoapis.InvalidXpubError();
       //expect(instance).to.be.a(Cryptoapis.InvalidXpubError);
     });
 

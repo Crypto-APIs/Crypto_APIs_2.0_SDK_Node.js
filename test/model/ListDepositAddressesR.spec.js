@@ -50,7 +50,7 @@
   describe('ListDepositAddressesR', function() {
     it('should create an instance of ListDepositAddressesR', function() {
       // uncomment below and update the code to test ListDepositAddressesR
-      //var instane = new Cryptoapis.ListDepositAddressesR();
+      //var instance = new Cryptoapis.ListDepositAddressesR();
       //expect(instance).to.be.a(Cryptoapis.ListDepositAddressesR);
     });
 

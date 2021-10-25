@@ -50,7 +50,7 @@
   describe('WalletAsAServiceDepositAddressesLimitReachedError', function() {
     it('should create an instance of WalletAsAServiceDepositAddressesLimitReachedError', function() {
       // uncomment below and update the code to test WalletAsAServiceDepositAddressesLimitReachedError
-      //var instane = new Cryptoapis.WalletAsAServiceDepositAddressesLimitReachedError();
+      //var instance = new Cryptoapis.WalletAsAServiceDepositAddressesLimitReachedError();
       //expect(instance).to.be.a(Cryptoapis.WalletAsAServiceDepositAddressesLimitReachedError);
     });
 

@@ -50,7 +50,7 @@
   describe('BlockMined', function() {
     it('should create an instance of BlockMined', function() {
       // uncomment below and update the code to test BlockMined
-      //var instane = new Cryptoapis.BlockMined();
+      //var instance = new Cryptoapis.BlockMined();
       //expect(instance).to.be.a(Cryptoapis.BlockMined);
     });
 

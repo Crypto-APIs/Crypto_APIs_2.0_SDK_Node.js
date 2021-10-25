@@ -50,7 +50,7 @@
   describe('TokensForwardingSuccessData', function() {
     it('should create an instance of TokensForwardingSuccessData', function() {
       // uncomment below and update the code to test TokensForwardingSuccessData
-      //var instane = new Cryptoapis.TokensForwardingSuccessData();
+      //var instance = new Cryptoapis.TokensForwardingSuccessData();
       //expect(instance).to.be.a(Cryptoapis.TokensForwardingSuccessData);
     });
 

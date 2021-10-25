@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**
@@ -95,6 +95,10 @@ var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('additionalData')) {
           obj['additionalData'] = _ApiClient["default"].convertToType(data['additionalData'], 'String');
+        }
+
+        if (data.hasOwnProperty('destinationTag')) {
+          obj['destinationTag'] = _ApiClient["default"].convertToType(data['destinationTag'], 'Number');
         }
 
         if (data.hasOwnProperty('index')) {
@@ -163,6 +167,11 @@ var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
 
 
 ListXRPRippleTransactionsByBlockHashRI.prototype['additionalData'] = undefined;
+/**
+ * @member {Number} destinationTag
+ */
+
+ListXRPRippleTransactionsByBlockHashRI.prototype['destinationTag'] = undefined;
 /**
  * Represents the index position of the transaction in the specific block.
  * @member {Number} index

@@ -12,22 +12,22 @@
  */
 
 import ApiClient from '../ApiClient';
-import TokensForwardingSuccessEthereumerc20token from './TokensForwardingSuccessEthereumerc20token';
-import TokensForwardingSuccessEthereumerc721token from './TokensForwardingSuccessEthereumerc721token';
-import TokensForwardingSuccessOmnilayertoken from './TokensForwardingSuccessOmnilayertoken';
+import TokensForwardingSuccessErc20 from './TokensForwardingSuccessErc20';
+import TokensForwardingSuccessErc721 from './TokensForwardingSuccessErc721';
+import TokensForwardingSuccessOmni from './TokensForwardingSuccessOmni';
 
 /**
  * The TokensForwardingSuccessToken model module.
  * @module model/TokensForwardingSuccessToken
- * @version 1.2.1
+ * @version 1.3.0
  */
 class TokensForwardingSuccessToken {
     /**
      * Constructs a new <code>TokensForwardingSuccessToken</code>.
      * @alias module:model/TokensForwardingSuccessToken
-     * @implements module:model/TokensForwardingSuccessEthereumerc20token
-     * @implements module:model/TokensForwardingSuccessEthereumerc721token
-     * @implements module:model/TokensForwardingSuccessOmnilayertoken
+     * @implements module:model/TokensForwardingSuccessErc20
+     * @implements module:model/TokensForwardingSuccessErc721
+     * @implements module:model/TokensForwardingSuccessOmni
      * @param name {String} Specifies the name of the token.
      * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
      * @param amount {String} Defines the amount of tokens sent with the confirmed transaction.
@@ -38,7 +38,7 @@ class TokensForwardingSuccessToken {
      * @param createdByTransactionId {String} The transaction ID used to create the token.
      */
     constructor(name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) { 
-        TokensForwardingSuccessEthereumerc20token.initialize(this, name, symbol, amount, contractAddress);TokensForwardingSuccessEthereumerc721token.initialize(this, name, symbol, tokenId, contractAddress);TokensForwardingSuccessOmnilayertoken.initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
+        TokensForwardingSuccessErc20.initialize(this, name, symbol, amount, contractAddress);TokensForwardingSuccessErc721.initialize(this, name, symbol, tokenId, contractAddress);TokensForwardingSuccessOmni.initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
         TokensForwardingSuccessToken.initialize(this, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId);
     }
 
@@ -68,9 +68,9 @@ class TokensForwardingSuccessToken {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new TokensForwardingSuccessToken();
-            TokensForwardingSuccessEthereumerc20token.constructFromObject(data, obj);
-            TokensForwardingSuccessEthereumerc721token.constructFromObject(data, obj);
-            TokensForwardingSuccessOmnilayertoken.constructFromObject(data, obj);
+            TokensForwardingSuccessErc20.constructFromObject(data, obj);
+            TokensForwardingSuccessErc721.constructFromObject(data, obj);
+            TokensForwardingSuccessOmni.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -161,79 +161,79 @@ TokensForwardingSuccessToken.prototype['transactionType'] = undefined;
 TokensForwardingSuccessToken.prototype['createdByTransactionId'] = undefined;
 
 
-// Implement TokensForwardingSuccessEthereumerc20token interface:
+// Implement TokensForwardingSuccessErc20 interface:
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
-TokensForwardingSuccessEthereumerc20token.prototype['name'] = undefined;
+TokensForwardingSuccessErc20.prototype['name'] = undefined;
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
-TokensForwardingSuccessEthereumerc20token.prototype['symbol'] = undefined;
+TokensForwardingSuccessErc20.prototype['symbol'] = undefined;
 /**
  * Defines how many decimals can be used to break the token.
  * @member {String} decimals
  */
-TokensForwardingSuccessEthereumerc20token.prototype['decimals'] = undefined;
+TokensForwardingSuccessErc20.prototype['decimals'] = undefined;
 /**
  * Defines the amount of tokens sent with the confirmed transaction.
  * @member {String} amount
  */
-TokensForwardingSuccessEthereumerc20token.prototype['amount'] = undefined;
+TokensForwardingSuccessErc20.prototype['amount'] = undefined;
 /**
  * Defines the address of the contract.
  * @member {String} contractAddress
  */
-TokensForwardingSuccessEthereumerc20token.prototype['contractAddress'] = undefined;
-// Implement TokensForwardingSuccessEthereumerc721token interface:
+TokensForwardingSuccessErc20.prototype['contractAddress'] = undefined;
+// Implement TokensForwardingSuccessErc721 interface:
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
-TokensForwardingSuccessEthereumerc721token.prototype['name'] = undefined;
+TokensForwardingSuccessErc721.prototype['name'] = undefined;
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
-TokensForwardingSuccessEthereumerc721token.prototype['symbol'] = undefined;
+TokensForwardingSuccessErc721.prototype['symbol'] = undefined;
 /**
  * Specifies the ID of the token.
  * @member {String} tokenId
  */
-TokensForwardingSuccessEthereumerc721token.prototype['tokenId'] = undefined;
+TokensForwardingSuccessErc721.prototype['tokenId'] = undefined;
 /**
  * Specifies the address of the contract.
  * @member {String} contractAddress
  */
-TokensForwardingSuccessEthereumerc721token.prototype['contractAddress'] = undefined;
-// Implement TokensForwardingSuccessOmnilayertoken interface:
+TokensForwardingSuccessErc721.prototype['contractAddress'] = undefined;
+// Implement TokensForwardingSuccessOmni interface:
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
-TokensForwardingSuccessOmnilayertoken.prototype['name'] = undefined;
+TokensForwardingSuccessOmni.prototype['name'] = undefined;
 /**
  * Defines the ID of the property for Omni Layer.
  * @member {String} propertyId
  */
-TokensForwardingSuccessOmnilayertoken.prototype['propertyId'] = undefined;
+TokensForwardingSuccessOmni.prototype['propertyId'] = undefined;
 /**
  * Defines the type of the transaction.
  * @member {String} transactionType
  */
-TokensForwardingSuccessOmnilayertoken.prototype['transactionType'] = undefined;
+TokensForwardingSuccessOmni.prototype['transactionType'] = undefined;
 /**
  * The transaction ID used to create the token.
  * @member {String} createdByTransactionId
  */
-TokensForwardingSuccessOmnilayertoken.prototype['createdByTransactionId'] = undefined;
+TokensForwardingSuccessOmni.prototype['createdByTransactionId'] = undefined;
 /**
  * Defines the amount of tokens sent with the confirmed transaction.
  * @member {String} amount
  */
-TokensForwardingSuccessOmnilayertoken.prototype['amount'] = undefined;
+TokensForwardingSuccessOmni.prototype['amount'] = undefined;
 
 
 

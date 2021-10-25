@@ -9,7 +9,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken = _interopRequireDefault(require("./AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken"));
 
-var _AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token = _interopRequireDefault(require("./AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token"));
+var _AddTokensToExistingFromAddressRBTokenDataEthereumToken = _interopRequireDefault(require("./AddTokensToExistingFromAddressRBTokenDataEthereumToken"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,14 +22,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRBTokenData model module.
  * @module model/AddTokensToExistingFromAddressRBTokenData
- * @version 1.2.1
+ * @version 1.3.0
  */
 var AddTokensToExistingFromAddressRBTokenData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressRBTokenData</code>.
    * @alias module:model/AddTokensToExistingFromAddressRBTokenData
    * @implements module:model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken
-   * @implements module:model/AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token
+   * @implements module:model/AddTokensToExistingFromAddressRBTokenDataEthereumToken
    * @param propertyId {Number} Represents the specific `propertyId` of the token data that will be forwarded.
    * @param contractAddress {String} Represents the specific `contractAddress` of the Token that will be forwarded.
    */
@@ -38,7 +38,7 @@ var AddTokensToExistingFromAddressRBTokenData = /*#__PURE__*/function () {
 
     _AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken["default"].initialize(this, propertyId);
 
-    _AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token["default"].initialize(this, contractAddress);
+    _AddTokensToExistingFromAddressRBTokenDataEthereumToken["default"].initialize(this, contractAddress);
 
     AddTokensToExistingFromAddressRBTokenData.initialize(this, propertyId, contractAddress);
   }
@@ -71,7 +71,7 @@ var AddTokensToExistingFromAddressRBTokenData = /*#__PURE__*/function () {
 
         _AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken["default"].constructFromObject(data, obj);
 
-        _AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token["default"].constructFromObject(data, obj);
+        _AddTokensToExistingFromAddressRBTokenDataEthereumToken["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('propertyId')) {
           obj['propertyId'] = _ApiClient["default"].convertToType(data['propertyId'], 'Number');
@@ -107,13 +107,13 @@ AddTokensToExistingFromAddressRBTokenData.prototype['contractAddress'] = undefin
  * @member {Number} propertyId
  */
 
-_AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken["default"].prototype['propertyId'] = undefined; // Implement AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token interface:
+_AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken["default"].prototype['propertyId'] = undefined; // Implement AddTokensToExistingFromAddressRBTokenDataEthereumToken interface:
 
 /**
  * Represents the specific `contractAddress` of the Token that will be forwarded.
  * @member {String} contractAddress
  */
 
-_AddTokensToExistingFromAddressRBTokenDataEthereumErc20Token["default"].prototype['contractAddress'] = undefined;
+_AddTokensToExistingFromAddressRBTokenDataEthereumToken["default"].prototype['contractAddress'] = undefined;
 var _default = AddTokensToExistingFromAddressRBTokenData;
 exports["default"] = _default;

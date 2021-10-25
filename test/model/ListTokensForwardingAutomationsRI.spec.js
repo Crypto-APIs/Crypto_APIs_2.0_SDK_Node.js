@@ -50,7 +50,7 @@
   describe('ListTokensForwardingAutomationsRI', function() {
     it('should create an instance of ListTokensForwardingAutomationsRI', function() {
       // uncomment below and update the code to test ListTokensForwardingAutomationsRI
-      //var instane = new Cryptoapis.ListTokensForwardingAutomationsRI();
+      //var instance = new Cryptoapis.ListTokensForwardingAutomationsRI();
       //expect(instance).to.be.a(Cryptoapis.ListTokensForwardingAutomationsRI);
     });
 

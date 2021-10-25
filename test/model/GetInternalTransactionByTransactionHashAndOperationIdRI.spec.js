@@ -50,7 +50,7 @@
   describe('GetInternalTransactionByTransactionHashAndOperationIdRI', function() {
     it('should create an instance of GetInternalTransactionByTransactionHashAndOperationIdRI', function() {
       // uncomment below and update the code to test GetInternalTransactionByTransactionHashAndOperationIdRI
-      //var instane = new Cryptoapis.GetInternalTransactionByTransactionHashAndOperationIdRI();
+      //var instance = new Cryptoapis.GetInternalTransactionByTransactionHashAndOperationIdRI();
       //expect(instance).to.be.a(Cryptoapis.GetInternalTransactionByTransactionHashAndOperationIdRI);
     });
 

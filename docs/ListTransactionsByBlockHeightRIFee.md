@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **amount** | **String** | Defines the amount of the fee. | 
-**unit** | **String** | Defines the unit of the fee amount, e.g. BTC, ETH, XRP. | 
+**unit** | **String** | Defines the specific unit of the fee. | 
 
 

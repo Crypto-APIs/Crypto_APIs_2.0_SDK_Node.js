@@ -24,23 +24,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateTokensTransactionRequestFromAddressRI model module.
  * @module model/CreateTokensTransactionRequestFromAddressRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var CreateTokensTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateTokensTransactionRequestFromAddressRI</code>.
    * @alias module:model/CreateTokensTransactionRequestFromAddressRI
-   * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
-   * @param callbackUrl {String} Verified URL for sending callbacks
+   * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
+   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
    * @param feePriority {module:model/CreateTokensTransactionRequestFromAddressRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
    * @param recipients {Array.<module:model/CreateTokensTransactionRequestFromAddressRIRecipients>} Defines the destination for the transaction, i.e. the recipient(s).
    * @param senders {module:model/CreateTokensTransactionRequestFromAddressRISenders} 
    * @param tokenTypeSpecificData {module:model/CreateTokensTransactionRequestFromAddressRIS} 
+   * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
    */
-  function CreateTokensTransactionRequestFromAddressRI(callbackSecretKey, callbackUrl, feePriority, recipients, senders, tokenTypeSpecificData) {
+  function CreateTokensTransactionRequestFromAddressRI(callbackSecretKey, callbackUrl, feePriority, recipients, senders, tokenTypeSpecificData, transactionRequestId) {
     _classCallCheck(this, CreateTokensTransactionRequestFromAddressRI);
 
-    CreateTokensTransactionRequestFromAddressRI.initialize(this, callbackSecretKey, callbackUrl, feePriority, recipients, senders, tokenTypeSpecificData);
+    CreateTokensTransactionRequestFromAddressRI.initialize(this, callbackSecretKey, callbackUrl, feePriority, recipients, senders, tokenTypeSpecificData, transactionRequestId);
   }
   /**
    * Initializes the fields of this object.
@@ -51,13 +52,14 @@ var CreateTokensTransactionRequestFromAddressRI = /*#__PURE__*/function () {
 
   _createClass(CreateTokensTransactionRequestFromAddressRI, null, [{
     key: "initialize",
-    value: function initialize(obj, callbackSecretKey, callbackUrl, feePriority, recipients, senders, tokenTypeSpecificData) {
+    value: function initialize(obj, callbackSecretKey, callbackUrl, feePriority, recipients, senders, tokenTypeSpecificData, transactionRequestId) {
       obj['callbackSecretKey'] = callbackSecretKey;
       obj['callbackUrl'] = callbackUrl;
       obj['feePriority'] = feePriority;
       obj['recipients'] = recipients;
       obj['senders'] = senders;
       obj['tokenTypeSpecificData'] = tokenTypeSpecificData;
+      obj['transactionRequestId'] = transactionRequestId;
     }
     /**
      * Constructs a <code>CreateTokensTransactionRequestFromAddressRI</code> from a plain JavaScript object, optionally creating a new instance.
@@ -85,6 +87,10 @@ var CreateTokensTransactionRequestFromAddressRI = /*#__PURE__*/function () {
           obj['feePriority'] = _ApiClient["default"].convertToType(data['feePriority'], 'String');
         }
 
+        if (data.hasOwnProperty('note')) {
+          obj['note'] = _ApiClient["default"].convertToType(data['note'], 'String');
+        }
+
         if (data.hasOwnProperty('recipients')) {
           obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateTokensTransactionRequestFromAddressRIRecipients["default"]]);
         }
@@ -96,6 +102,10 @@ var CreateTokensTransactionRequestFromAddressRI = /*#__PURE__*/function () {
         if (data.hasOwnProperty('tokenTypeSpecificData')) {
           obj['tokenTypeSpecificData'] = _CreateTokensTransactionRequestFromAddressRIS["default"].constructFromObject(data['tokenTypeSpecificData']);
         }
+
+        if (data.hasOwnProperty('transactionRequestId')) {
+          obj['transactionRequestId'] = _ApiClient["default"].convertToType(data['transactionRequestId'], 'String');
+        }
       }
 
       return obj;
@@ -105,14 +115,14 @@ var CreateTokensTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   return CreateTokensTransactionRequestFromAddressRI;
 }();
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 
 
 CreateTokensTransactionRequestFromAddressRI.prototype['callbackSecretKey'] = undefined;
 /**
- * Verified URL for sending callbacks
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
  * @member {String} callbackUrl
  */
 
@@ -123,6 +133,12 @@ CreateTokensTransactionRequestFromAddressRI.prototype['callbackUrl'] = undefined
  */
 
 CreateTokensTransactionRequestFromAddressRI.prototype['feePriority'] = undefined;
+/**
+ * Represents an optional note to add a free text in, explaining or providing additional detail on the transaction request.
+ * @member {String} note
+ */
+
+CreateTokensTransactionRequestFromAddressRI.prototype['note'] = undefined;
 /**
  * Defines the destination for the transaction, i.e. the recipient(s).
  * @member {Array.<module:model/CreateTokensTransactionRequestFromAddressRIRecipients>} recipients
@@ -139,6 +155,12 @@ CreateTokensTransactionRequestFromAddressRI.prototype['senders'] = undefined;
  */
 
 CreateTokensTransactionRequestFromAddressRI.prototype['tokenTypeSpecificData'] = undefined;
+/**
+ * Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
+ * @member {String} transactionRequestId
+ */
+
+CreateTokensTransactionRequestFromAddressRI.prototype['transactionRequestId'] = undefined;
 /**
  * Allowed values for the <code>feePriority</code> property.
  * @enum {String}

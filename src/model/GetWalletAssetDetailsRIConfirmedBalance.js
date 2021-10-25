@@ -16,14 +16,15 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletAssetDetailsRIConfirmedBalance model module.
  * @module model/GetWalletAssetDetailsRIConfirmedBalance
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetWalletAssetDetailsRIConfirmedBalance {
     /**
      * Constructs a new <code>GetWalletAssetDetailsRIConfirmedBalance</code>.
+     * Specifies the confirmed balance.
      * @alias module:model/GetWalletAssetDetailsRIConfirmedBalance
-     * @param amount {String} 
-     * @param unit {String} 
+     * @param amount {String} Specifies the amount of the confirmed balance.
+     * @param unit {String} Specifies the unit of the amount of the confirmed balance.
      */
     constructor(amount, unit) { 
         
@@ -65,11 +66,13 @@ class GetWalletAssetDetailsRIConfirmedBalance {
 }
 
 /**
+ * Specifies the amount of the confirmed balance.
  * @member {String} amount
  */
 GetWalletAssetDetailsRIConfirmedBalance.prototype['amount'] = undefined;
 
 /**
+ * Specifies the unit of the amount of the confirmed balance.
  * @member {String} unit
  */
 GetWalletAssetDetailsRIConfirmedBalance.prototype['unit'] = undefined;

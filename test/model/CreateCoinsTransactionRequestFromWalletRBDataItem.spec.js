@@ -50,7 +50,7 @@
   describe('CreateCoinsTransactionRequestFromWalletRBDataItem', function() {
     it('should create an instance of CreateCoinsTransactionRequestFromWalletRBDataItem', function() {
       // uncomment below and update the code to test CreateCoinsTransactionRequestFromWalletRBDataItem
-      //var instane = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
       //expect(instance).to.be.a(Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem);
     });
 
@@ -68,6 +68,18 @@
 
     it('should have the property feePriority (base name: "feePriority")', function() {
       // uncomment below and update the code to test the property feePriority
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property note (base name: "note")', function() {
+      // uncomment below and update the code to test the property note
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property prepareStrategy (base name: "prepareStrategy")', function() {
+      // uncomment below and update the code to test the property prepareStrategy
       //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRBDataItem();
       //expect(instance).to.be();
     });

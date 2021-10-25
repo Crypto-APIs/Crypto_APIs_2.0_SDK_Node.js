@@ -50,7 +50,7 @@
   describe('AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken', function() {
     it('should create an instance of AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken', function() {
       // uncomment below and update the code to test AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken
-      //var instane = new Cryptoapis.AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken();
+      //var instance = new Cryptoapis.AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken();
       //expect(instance).to.be.a(Cryptoapis.AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken);
     });
 

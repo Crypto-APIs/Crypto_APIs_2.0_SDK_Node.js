@@ -50,7 +50,7 @@
   describe('WalletAsAServiceTokenNotSupported', function() {
     it('should create an instance of WalletAsAServiceTokenNotSupported', function() {
       // uncomment below and update the code to test WalletAsAServiceTokenNotSupported
-      //var instane = new Cryptoapis.WalletAsAServiceTokenNotSupported();
+      //var instance = new Cryptoapis.WalletAsAServiceTokenNotSupported();
       //expect(instance).to.be.a(Cryptoapis.WalletAsAServiceTokenNotSupported);
     });
 

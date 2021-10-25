@@ -50,7 +50,7 @@
   describe('ListHDWalletXPubYPubZPubTransactionsRIRecipients', function() {
     it('should create an instance of ListHDWalletXPubYPubZPubTransactionsRIRecipients', function() {
       // uncomment below and update the code to test ListHDWalletXPubYPubZPubTransactionsRIRecipients
-      //var instane = new Cryptoapis.ListHDWalletXPubYPubZPubTransactionsRIRecipients();
+      //var instance = new Cryptoapis.ListHDWalletXPubYPubZPubTransactionsRIRecipients();
       //expect(instance).to.be.a(Cryptoapis.ListHDWalletXPubYPubZPubTransactionsRIRecipients);
     });
 

@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   /**
@@ -31,12 +31,13 @@ var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
    * @param feePriority {module:model/CreateCoinsTransactionRequestFromAddressRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
    * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromAddressRIRecipients>} Defines the destination for the transaction, i.e. the recipient(s).
    * @param senders {module:model/CreateCoinsTransactionRequestFromAddressRISenders} 
+   * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
    * @param transactionRequestStatus {module:model/CreateCoinsTransactionRequestFromAddressRI.TransactionRequestStatusEnum} Defines the status of the transaction request, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
    */
-  function CreateCoinsTransactionRequestFromAddressRI(feePriority, recipients, senders, transactionRequestStatus) {
+  function CreateCoinsTransactionRequestFromAddressRI(feePriority, recipients, senders, transactionRequestId, transactionRequestStatus) {
     _classCallCheck(this, CreateCoinsTransactionRequestFromAddressRI);
 
-    CreateCoinsTransactionRequestFromAddressRI.initialize(this, feePriority, recipients, senders, transactionRequestStatus);
+    CreateCoinsTransactionRequestFromAddressRI.initialize(this, feePriority, recipients, senders, transactionRequestId, transactionRequestStatus);
   }
   /**
    * Initializes the fields of this object.
@@ -47,10 +48,11 @@ var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
 
   _createClass(CreateCoinsTransactionRequestFromAddressRI, null, [{
     key: "initialize",
-    value: function initialize(obj, feePriority, recipients, senders, transactionRequestStatus) {
+    value: function initialize(obj, feePriority, recipients, senders, transactionRequestId, transactionRequestStatus) {
       obj['feePriority'] = feePriority;
       obj['recipients'] = recipients;
       obj['senders'] = senders;
+      obj['transactionRequestId'] = transactionRequestId;
       obj['transactionRequestStatus'] = transactionRequestStatus;
     }
     /**
@@ -79,12 +81,20 @@ var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
           obj['feePriority'] = _ApiClient["default"].convertToType(data['feePriority'], 'String');
         }
 
+        if (data.hasOwnProperty('note')) {
+          obj['note'] = _ApiClient["default"].convertToType(data['note'], 'String');
+        }
+
         if (data.hasOwnProperty('recipients')) {
           obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionRequestFromAddressRIRecipients["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
           obj['senders'] = _CreateCoinsTransactionRequestFromAddressRISenders["default"].constructFromObject(data['senders']);
+        }
+
+        if (data.hasOwnProperty('transactionRequestId')) {
+          obj['transactionRequestId'] = _ApiClient["default"].convertToType(data['transactionRequestId'], 'String');
         }
 
         if (data.hasOwnProperty('transactionRequestStatus')) {
@@ -99,14 +109,14 @@ var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   return CreateCoinsTransactionRequestFromAddressRI;
 }();
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 
 
 CreateCoinsTransactionRequestFromAddressRI.prototype['callbackSecretKey'] = undefined;
 /**
- * Verified URL for sending callbacks
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
  * @member {String} callbackUrl
  */
 
@@ -118,6 +128,12 @@ CreateCoinsTransactionRequestFromAddressRI.prototype['callbackUrl'] = undefined;
 
 CreateCoinsTransactionRequestFromAddressRI.prototype['feePriority'] = undefined;
 /**
+ * Represents an optional note to add a free text in, explaining or providing additional detail on the transaction request.
+ * @member {String} note
+ */
+
+CreateCoinsTransactionRequestFromAddressRI.prototype['note'] = undefined;
+/**
  * Defines the destination for the transaction, i.e. the recipient(s).
  * @member {Array.<module:model/CreateCoinsTransactionRequestFromAddressRIRecipients>} recipients
  */
@@ -128,6 +144,12 @@ CreateCoinsTransactionRequestFromAddressRI.prototype['recipients'] = undefined;
  */
 
 CreateCoinsTransactionRequestFromAddressRI.prototype['senders'] = undefined;
+/**
+ * Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
+ * @member {String} transactionRequestId
+ */
+
+CreateCoinsTransactionRequestFromAddressRI.prototype['transactionRequestId'] = undefined;
 /**
  * Defines the status of the transaction request, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
  * @member {module:model/CreateCoinsTransactionRequestFromAddressRI.TransactionRequestStatusEnum} transactionRequestStatus

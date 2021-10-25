@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHashRIBSEC model module.
  * @module model/GetBlockDetailsByBlockHashRIBSEC
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetBlockDetailsByBlockHashRIBSEC {
     /**
@@ -24,7 +24,7 @@ class GetBlockDetailsByBlockHashRIBSEC {
      * Ethereum Classic
      * @alias module:model/GetBlockDetailsByBlockHashRIBSEC
      * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-     * @param nonce {Number} Represents a random value that can be adjusted to satisfy the Proof of Work.
+     * @param nonce {String} Represents a random value that can be adjusted to satisfy the Proof of Work.
      * @param size {Number} Represents the total size of the block in Bytes.
      * @param extraData {String} Represents any data that can be included by the miner in the block.
      * @param gasLimit {String} Defines the total gas limit of all transactions in the block.
@@ -72,7 +72,7 @@ class GetBlockDetailsByBlockHashRIBSEC {
                 obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
             }
             if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
             }
             if (data.hasOwnProperty('size')) {
                 obj['size'] = ApiClient.convertToType(data['size'], 'Number');
@@ -113,7 +113,7 @@ GetBlockDetailsByBlockHashRIBSEC.prototype['difficulty'] = undefined;
 
 /**
  * Represents a random value that can be adjusted to satisfy the Proof of Work.
- * @member {Number} nonce
+ * @member {String} nonce
  */
 GetBlockDetailsByBlockHashRIBSEC.prototype['nonce'] = undefined;
 

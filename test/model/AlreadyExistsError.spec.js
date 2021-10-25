@@ -50,7 +50,7 @@
   describe('AlreadyExistsError', function() {
     it('should create an instance of AlreadyExistsError', function() {
       // uncomment below and update the code to test AlreadyExistsError
-      //var instane = new Cryptoapis.AlreadyExistsError();
+      //var instance = new Cryptoapis.AlreadyExistsError();
       //expect(instance).to.be.a(Cryptoapis.AlreadyExistsError);
     });
 

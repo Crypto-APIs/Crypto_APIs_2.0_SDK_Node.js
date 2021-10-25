@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRBDataItem
- * @version 1.2.1
+ * @version 1.3.0
  */
 var CreateCoinsTransactionRequestFromWalletRBDataItem = /*#__PURE__*/function () {
   /**
@@ -73,6 +73,14 @@ var CreateCoinsTransactionRequestFromWalletRBDataItem = /*#__PURE__*/function ()
           obj['feePriority'] = _ApiClient["default"].convertToType(data['feePriority'], 'String');
         }
 
+        if (data.hasOwnProperty('note')) {
+          obj['note'] = _ApiClient["default"].convertToType(data['note'], 'String');
+        }
+
+        if (data.hasOwnProperty('prepareStrategy')) {
+          obj['prepareStrategy'] = _ApiClient["default"].convertToType(data['prepareStrategy'], 'String');
+        }
+
         if (data.hasOwnProperty('recipients')) {
           obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionRequestFromWalletRBDataItemRecipients["default"]]);
         }
@@ -85,14 +93,14 @@ var CreateCoinsTransactionRequestFromWalletRBDataItem = /*#__PURE__*/function ()
   return CreateCoinsTransactionRequestFromWalletRBDataItem;
 }();
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 
 
 CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['callbackSecretKey'] = undefined;
 /**
- * Verified URL for sending callbacks
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
  * @member {String} callbackUrl
  */
 
@@ -103,6 +111,19 @@ CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['callbackUrl'] = und
  */
 
 CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['feePriority'] = undefined;
+/**
+ * Represents an optional note to add a free text in, explaining or providing additional detail on the transaction request.
+ * @member {String} note
+ */
+
+CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['note'] = undefined;
+/**
+ * Refers to a model of a UTXO spending strategy, where customers can choose how to spend their transaction outputs from multiple Bitcoin addresses. Two options available - \"minimize-dust\" (select lower amounts from multiple addresses) or \"optimize-size\" (select higher amounts from less addresses).
+ * @member {module:model/CreateCoinsTransactionRequestFromWalletRBDataItem.PrepareStrategyEnum} prepareStrategy
+ * @default 'minimize-dust'
+ */
+
+CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['prepareStrategy'] = 'minimize-dust';
 /**
  * Defines the destination of the transaction, whether it is incoming or outgoing.
  * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients>} recipients
@@ -133,6 +154,25 @@ CreateCoinsTransactionRequestFromWalletRBDataItem['FeePriorityEnum'] = {
    * @const
    */
   "fast": "fast"
+};
+/**
+ * Allowed values for the <code>prepareStrategy</code> property.
+ * @enum {String}
+ * @readonly
+ */
+
+CreateCoinsTransactionRequestFromWalletRBDataItem['PrepareStrategyEnum'] = {
+  /**
+   * value: "minimize-dust"
+   * @const
+   */
+  "minimize-dust": "minimize-dust",
+
+  /**
+   * value: "optimize-size"
+   * @const
+   */
+  "optimize-size": "optimize-size"
 };
 var _default = CreateCoinsTransactionRequestFromWalletRBDataItem;
 exports["default"] = _default;

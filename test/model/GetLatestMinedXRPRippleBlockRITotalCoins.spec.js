@@ -50,7 +50,7 @@
   describe('GetLatestMinedXRPRippleBlockRITotalCoins', function() {
     it('should create an instance of GetLatestMinedXRPRippleBlockRITotalCoins', function() {
       // uncomment below and update the code to test GetLatestMinedXRPRippleBlockRITotalCoins
-      //var instane = new Cryptoapis.GetLatestMinedXRPRippleBlockRITotalCoins();
+      //var instance = new Cryptoapis.GetLatestMinedXRPRippleBlockRITotalCoins();
       //expect(instance).to.be.a(Cryptoapis.GetLatestMinedXRPRippleBlockRITotalCoins);
     });
 

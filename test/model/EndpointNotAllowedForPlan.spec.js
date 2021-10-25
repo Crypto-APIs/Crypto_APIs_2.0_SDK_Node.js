@@ -50,7 +50,7 @@
   describe('EndpointNotAllowedForPlan', function() {
     it('should create an instance of EndpointNotAllowedForPlan', function() {
       // uncomment below and update the code to test EndpointNotAllowedForPlan
-      //var instane = new Cryptoapis.EndpointNotAllowedForPlan();
+      //var instance = new Cryptoapis.EndpointNotAllowedForPlan();
       //expect(instance).to.be.a(Cryptoapis.EndpointNotAllowedForPlan);
     });
 

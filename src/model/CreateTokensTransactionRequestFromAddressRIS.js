@@ -12,27 +12,24 @@
  */
 
 import ApiClient from '../ApiClient';
-import CreateTokensTransactionRequestFromAddressRISB from './CreateTokensTransactionRequestFromAddressRISB';
 import CreateTokensTransactionRequestFromAddressRISE from './CreateTokensTransactionRequestFromAddressRISE';
 
 /**
  * The CreateTokensTransactionRequestFromAddressRIS model module.
  * @module model/CreateTokensTransactionRequestFromAddressRIS
- * @version 1.2.1
+ * @version 1.3.0
  */
 class CreateTokensTransactionRequestFromAddressRIS {
     /**
      * Constructs a new <code>CreateTokensTransactionRequestFromAddressRIS</code>.
      * Represents the specific token data which depends on its type - if it is a Coin or Token.
      * @alias module:model/CreateTokensTransactionRequestFromAddressRIS
-     * @implements module:model/CreateTokensTransactionRequestFromAddressRISB
      * @implements module:model/CreateTokensTransactionRequestFromAddressRISE
-     * @param propertyId {String} Defines the `propertyID` from Omni layer.
      * @param contractAddress {String} Defines the contract address in the blockchain for an ERC20 token.
      */
-    constructor(propertyId, contractAddress) { 
-        CreateTokensTransactionRequestFromAddressRISB.initialize(this, propertyId);CreateTokensTransactionRequestFromAddressRISE.initialize(this, contractAddress);
-        CreateTokensTransactionRequestFromAddressRIS.initialize(this, propertyId, contractAddress);
+    constructor(contractAddress) { 
+        CreateTokensTransactionRequestFromAddressRISE.initialize(this, contractAddress);
+        CreateTokensTransactionRequestFromAddressRIS.initialize(this, contractAddress);
     }
 
     /**
@@ -40,8 +37,7 @@ class CreateTokensTransactionRequestFromAddressRIS {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, propertyId, contractAddress) { 
-        obj['propertyId'] = propertyId;
+    static initialize(obj, contractAddress) { 
         obj['contractAddress'] = contractAddress;
     }
 
@@ -55,12 +51,8 @@ class CreateTokensTransactionRequestFromAddressRIS {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new CreateTokensTransactionRequestFromAddressRIS();
-            CreateTokensTransactionRequestFromAddressRISB.constructFromObject(data, obj);
             CreateTokensTransactionRequestFromAddressRISE.constructFromObject(data, obj);
 
-            if (data.hasOwnProperty('propertyId')) {
-                obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'String');
-            }
             if (data.hasOwnProperty('contractAddress')) {
                 obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
             }
@@ -72,24 +64,12 @@ class CreateTokensTransactionRequestFromAddressRIS {
 }
 
 /**
- * Defines the `propertyID` from Omni layer.
- * @member {String} propertyId
- */
-CreateTokensTransactionRequestFromAddressRIS.prototype['propertyId'] = undefined;
-
-/**
  * Defines the contract address in the blockchain for an ERC20 token.
  * @member {String} contractAddress
  */
 CreateTokensTransactionRequestFromAddressRIS.prototype['contractAddress'] = undefined;
 
 
-// Implement CreateTokensTransactionRequestFromAddressRISB interface:
-/**
- * Defines the `propertyID` from Omni layer.
- * @member {String} propertyId
- */
-CreateTokensTransactionRequestFromAddressRISB.prototype['propertyId'] = undefined;
 // Implement CreateTokensTransactionRequestFromAddressRISE interface:
 /**
  * Defines the contract address in the blockchain for an ERC20 token.

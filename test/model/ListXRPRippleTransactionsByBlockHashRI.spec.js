@@ -50,12 +50,18 @@
   describe('ListXRPRippleTransactionsByBlockHashRI', function() {
     it('should create an instance of ListXRPRippleTransactionsByBlockHashRI', function() {
       // uncomment below and update the code to test ListXRPRippleTransactionsByBlockHashRI
-      //var instane = new Cryptoapis.ListXRPRippleTransactionsByBlockHashRI();
+      //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHashRI();
       //expect(instance).to.be.a(Cryptoapis.ListXRPRippleTransactionsByBlockHashRI);
     });
 
     it('should have the property additionalData (base name: "additionalData")', function() {
       // uncomment below and update the code to test the property additionalData
+      //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHashRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property destinationTag (base name: "destinationTag")', function() {
+      // uncomment below and update the code to test the property destinationTag
       //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHashRI();
       //expect(instance).to.be();
     });

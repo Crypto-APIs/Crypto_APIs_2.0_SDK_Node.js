@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The LimitGreaterThanAllowedError model module.
  * @module model/LimitGreaterThanAllowedError
- * @version 1.2.1
+ * @version 1.3.0
  */
 class LimitGreaterThanAllowedError {
     /**

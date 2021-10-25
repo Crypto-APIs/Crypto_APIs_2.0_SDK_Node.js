@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **additionalData** | **String** |  | [optional] 
+**destinationTag** | **Number** |  | [optional] 
 **index** | **Number** |  | 
 **minedInBlockHash** | **String** |  | 
 **recipients** | [**[ListXRPRippleTransactionsByBlockHeightRIRecipients]**](ListXRPRippleTransactionsByBlockHeightRIRecipients.md) | Object Array representation of transaction receivers | 

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticTokensForwardingRITSET model module.
  * @module model/DeleteAutomaticTokensForwardingRITSET
- * @version 1.2.1
+ * @version 1.3.0
  */
 var DeleteAutomaticTokensForwardingRITSET = /*#__PURE__*/function () {
   /**

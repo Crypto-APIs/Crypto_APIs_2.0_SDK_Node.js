@@ -50,8 +50,14 @@
   describe('ListXRPRippleTransactionsByAddressRI', function() {
     it('should create an instance of ListXRPRippleTransactionsByAddressRI', function() {
       // uncomment below and update the code to test ListXRPRippleTransactionsByAddressRI
-      //var instane = new Cryptoapis.ListXRPRippleTransactionsByAddressRI();
+      //var instance = new Cryptoapis.ListXRPRippleTransactionsByAddressRI();
       //expect(instance).to.be.a(Cryptoapis.ListXRPRippleTransactionsByAddressRI);
+    });
+
+    it('should have the property destinationTag (base name: "destinationTag")', function() {
+      // uncomment below and update the code to test the property destinationTag
+      //var instance = new Cryptoapis.ListXRPRippleTransactionsByAddressRI();
+      //expect(instance).to.be();
     });
 
     it('should have the property index (base name: "index")', function() {

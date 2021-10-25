@@ -50,7 +50,7 @@
   describe('ValidateAddressRB', function() {
     it('should create an instance of ValidateAddressRB', function() {
       // uncomment below and update the code to test ValidateAddressRB
-      //var instane = new Cryptoapis.ValidateAddressRB();
+      //var instance = new Cryptoapis.ValidateAddressRB();
       //expect(instance).to.be.a(Cryptoapis.ValidateAddressRB);
     });
 

@@ -50,7 +50,7 @@
   describe('TransactionRequestBroadcasted', function() {
     it('should create an instance of TransactionRequestBroadcasted', function() {
       // uncomment below and update the code to test TransactionRequestBroadcasted
-      //var instane = new Cryptoapis.TransactionRequestBroadcasted();
+      //var instance = new Cryptoapis.TransactionRequestBroadcasted();
       //expect(instance).to.be.a(Cryptoapis.TransactionRequestBroadcasted);
     });
 

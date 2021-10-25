@@ -17,7 +17,7 @@ import AddressTokensTransactionUnconfirmedToken from './AddressTokensTransaction
 /**
  * The AddressTokensTransactionUnconfirmedDataItem model module.
  * @module model/AddressTokensTransactionUnconfirmedDataItem
- * @version 1.2.1
+ * @version 1.3.0
  */
 class AddressTokensTransactionUnconfirmedDataItem {
     /**
@@ -155,22 +155,22 @@ AddressTokensTransactionUnconfirmedDataItem.prototype['firstSeenInMempoolTimesta
 AddressTokensTransactionUnconfirmedDataItem['TokenTypeEnum'] = {
 
     /**
-     * value: "ethereumERC20Token"
+     * value: "ERC-20"
      * @const
      */
-    "ethereumERC20Token": "ethereumERC20Token",
+    "ERC-20": "ERC-20",
 
     /**
-     * value: "ethereumERC721Token"
+     * value: "ERC-721"
      * @const
      */
-    "ethereumERC721Token": "ethereumERC721Token",
+    "ERC-721": "ERC-721",
 
     /**
-     * value: "omniLayerToken"
+     * value: "OMNI"
      * @const
      */
-    "omniLayerToken": "omniLayerToken"
+    "OMNI": "OMNI"
 };
 
 

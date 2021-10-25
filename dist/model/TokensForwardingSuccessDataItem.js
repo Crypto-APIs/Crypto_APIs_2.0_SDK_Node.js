@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessDataItem model module.
  * @module model/TokensForwardingSuccessDataItem
- * @version 1.2.1
+ * @version 1.3.0
  */
 var TokensForwardingSuccessDataItem = /*#__PURE__*/function () {
   /**
@@ -28,7 +28,7 @@ var TokensForwardingSuccessDataItem = /*#__PURE__*/function () {
    * Defines an &#x60;item&#x60; as one result.
    * @alias module:model/TokensForwardingSuccessDataItem
    * @param blockchain {String} Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-   * @param network {String} Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+   * @param network {String} Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
    * @param fromAddress {String} Represents the hash of the address that provides the tokens.
    * @param toAddress {String} Represents the hash of the address to forward the tokens to.
    * @param spentFeesAmount {String} Represents the amount of the fee spent for the tokens to be forwarded.
@@ -133,7 +133,7 @@ var TokensForwardingSuccessDataItem = /*#__PURE__*/function () {
 
 TokensForwardingSuccessDataItem.prototype['blockchain'] = undefined;
 /**
- * Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+ * Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
  * @member {String} network
  */
 
@@ -193,22 +193,22 @@ TokensForwardingSuccessDataItem.prototype['token'] = undefined;
 
 TokensForwardingSuccessDataItem['TokenTypeEnum'] = {
   /**
-   * value: "ethereumERC20Token"
+   * value: "ERC-20"
    * @const
    */
-  "ethereumERC20Token": "ethereumERC20Token",
+  "ERC-20": "ERC-20",
 
   /**
-   * value: "ethereumERC721Token"
+   * value: "ERC-721"
    * @const
    */
-  "ethereumERC721Token": "ethereumERC721Token",
+  "ERC-721": "ERC-721",
 
   /**
-   * value: "omniLayerToken"
+   * value: "OMNI"
    * @const
    */
-  "omniLayerToken": "omniLayerToken"
+  "OMNI": "OMNI"
 };
 var _default = TokensForwardingSuccessDataItem;
 exports["default"] = _default;

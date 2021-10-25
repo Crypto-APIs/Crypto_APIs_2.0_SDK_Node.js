@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewUnconfirmedCoinsTransactionsRBDataItem model module.
  * @module model/NewUnconfirmedCoinsTransactionsRBDataItem
- * @version 1.2.1
+ * @version 1.3.0
  */
 class NewUnconfirmedCoinsTransactionsRBDataItem {
     /**
@@ -84,7 +84,7 @@ NewUnconfirmedCoinsTransactionsRBDataItem.prototype['address'] = undefined;
 NewUnconfirmedCoinsTransactionsRBDataItem.prototype['allowDuplicates'] = false;
 
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 NewUnconfirmedCoinsTransactionsRBDataItem.prototype['callbackSecretKey'] = undefined;

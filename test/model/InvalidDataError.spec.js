@@ -50,7 +50,7 @@
   describe('InvalidDataError', function() {
     it('should create an instance of InvalidDataError', function() {
       // uncomment below and update the code to test InvalidDataError
-      //var instane = new Cryptoapis.InvalidDataError();
+      //var instance = new Cryptoapis.InvalidDataError();
       //expect(instance).to.be.a(Cryptoapis.InvalidDataError);
     });
 

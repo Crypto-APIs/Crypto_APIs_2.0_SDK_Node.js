@@ -50,7 +50,7 @@
   describe('XpubNotSynced', function() {
     it('should create an instance of XpubNotSynced', function() {
       // uncomment below and update the code to test XpubNotSynced
-      //var instane = new Cryptoapis.XpubNotSynced();
+      //var instance = new Cryptoapis.XpubNotSynced();
       //expect(instance).to.be.a(Cryptoapis.XpubNotSynced);
     });
 

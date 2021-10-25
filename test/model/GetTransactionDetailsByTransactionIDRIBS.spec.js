@@ -50,7 +50,7 @@
   describe('GetTransactionDetailsByTransactionIDRIBS', function() {
     it('should create an instance of GetTransactionDetailsByTransactionIDRIBS', function() {
       // uncomment below and update the code to test GetTransactionDetailsByTransactionIDRIBS
-      //var instane = new Cryptoapis.GetTransactionDetailsByTransactionIDRIBS();
+      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRIBS();
       //expect(instance).to.be.a(Cryptoapis.GetTransactionDetailsByTransactionIDRIBS);
     });
 
@@ -86,12 +86,6 @@
 
     it('should have the property vout (base name: "vout")', function() {
       // uncomment below and update the code to test the property vout
-      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRIBS();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property vsize (base name: "vsize")', function() {
-      // uncomment below and update the code to test the property vsize
       //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDRIBS();
       //expect(instance).to.be();
     });

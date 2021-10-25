@@ -18,14 +18,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRIConfirmedBalance model module.
  * @module model/GetWalletAssetDetailsRIConfirmedBalance
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetWalletAssetDetailsRIConfirmedBalance = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetailsRIConfirmedBalance</code>.
+   * Specifies the confirmed balance.
    * @alias module:model/GetWalletAssetDetailsRIConfirmedBalance
-   * @param amount {String} 
-   * @param unit {String} 
+   * @param amount {String} Specifies the amount of the confirmed balance.
+   * @param unit {String} Specifies the unit of the amount of the confirmed balance.
    */
   function GetWalletAssetDetailsRIConfirmedBalance(amount, unit) {
     _classCallCheck(this, GetWalletAssetDetailsRIConfirmedBalance);
@@ -75,12 +76,14 @@ var GetWalletAssetDetailsRIConfirmedBalance = /*#__PURE__*/function () {
   return GetWalletAssetDetailsRIConfirmedBalance;
 }();
 /**
+ * Specifies the amount of the confirmed balance.
  * @member {String} amount
  */
 
 
 GetWalletAssetDetailsRIConfirmedBalance.prototype['amount'] = undefined;
 /**
+ * Specifies the unit of the amount of the confirmed balance.
  * @member {String} unit
  */
 

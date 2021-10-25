@@ -50,7 +50,7 @@
   describe('WalletAsAServiceWalletBalanceNotEnough', function() {
     it('should create an instance of WalletAsAServiceWalletBalanceNotEnough', function() {
       // uncomment below and update the code to test WalletAsAServiceWalletBalanceNotEnough
-      //var instane = new Cryptoapis.WalletAsAServiceWalletBalanceNotEnough();
+      //var instance = new Cryptoapis.WalletAsAServiceWalletBalanceNotEnough();
       //expect(instance).to.be.a(Cryptoapis.WalletAsAServiceWalletBalanceNotEnough);
     });
 

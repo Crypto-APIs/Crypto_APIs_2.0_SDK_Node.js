@@ -50,7 +50,7 @@
   describe('ListTransactionsByBlockHeightRIBSL', function() {
     it('should create an instance of ListTransactionsByBlockHeightRIBSL', function() {
       // uncomment below and update the code to test ListTransactionsByBlockHeightRIBSL
-      //var instane = new Cryptoapis.ListTransactionsByBlockHeightRIBSL();
+      //var instance = new Cryptoapis.ListTransactionsByBlockHeightRIBSL();
       //expect(instance).to.be.a(Cryptoapis.ListTransactionsByBlockHeightRIBSL);
     });
 
@@ -62,6 +62,12 @@
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
+      //var instance = new Cryptoapis.ListTransactionsByBlockHeightRIBSL();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vSize (base name: "vSize")', function() {
+      // uncomment below and update the code to test the property vSize
       //var instance = new Cryptoapis.ListTransactionsByBlockHeightRIBSL();
       //expect(instance).to.be();
     });
@@ -80,12 +86,6 @@
 
     it('should have the property vout (base name: "vout")', function() {
       // uncomment below and update the code to test the property vout
-      //var instance = new Cryptoapis.ListTransactionsByBlockHeightRIBSL();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property vsize (base name: "vsize")', function() {
-      // uncomment below and update the code to test the property vsize
       //var instance = new Cryptoapis.ListTransactionsByBlockHeightRIBSL();
       //expect(instance).to.be();
     });

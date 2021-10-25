@@ -50,7 +50,7 @@
   describe('GetWalletAssetDetailsRIConfirmedBalance', function() {
     it('should create an instance of GetWalletAssetDetailsRIConfirmedBalance', function() {
       // uncomment below and update the code to test GetWalletAssetDetailsRIConfirmedBalance
-      //var instane = new Cryptoapis.GetWalletAssetDetailsRIConfirmedBalance();
+      //var instance = new Cryptoapis.GetWalletAssetDetailsRIConfirmedBalance();
       //expect(instance).to.be.a(Cryptoapis.GetWalletAssetDetailsRIConfirmedBalance);
     });
 

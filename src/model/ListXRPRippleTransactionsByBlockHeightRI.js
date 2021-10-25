@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByBlockHeightRIValue from './ListXRPRippleTransa
 /**
  * The ListXRPRippleTransactionsByBlockHeightRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListXRPRippleTransactionsByBlockHeightRI {
     /**
@@ -82,6 +82,9 @@ class ListXRPRippleTransactionsByBlockHeightRI {
             if (data.hasOwnProperty('additionalData')) {
                 obj['additionalData'] = ApiClient.convertToType(data['additionalData'], 'String');
             }
+            if (data.hasOwnProperty('destinationTag')) {
+                obj['destinationTag'] = ApiClient.convertToType(data['destinationTag'], 'Number');
+            }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
@@ -132,6 +135,11 @@ class ListXRPRippleTransactionsByBlockHeightRI {
  * @member {String} additionalData
  */
 ListXRPRippleTransactionsByBlockHeightRI.prototype['additionalData'] = undefined;
+
+/**
+ * @member {Number} destinationTag
+ */
+ListXRPRippleTransactionsByBlockHeightRI.prototype['destinationTag'] = undefined;
 
 /**
  * @member {Number} index

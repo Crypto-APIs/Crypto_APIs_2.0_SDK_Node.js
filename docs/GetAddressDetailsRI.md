@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **confirmedBalance** | [**GetAddressDetailsRIConfirmedBalance**](GetAddressDetailsRIConfirmedBalance.md) |  | 
 **totalReceived** | [**GetAddressDetailsRITotalReceived**](GetAddressDetailsRITotalReceived.md) |  | 
 **totalSpent** | [**GetAddressDetailsRITotalSpent**](GetAddressDetailsRITotalSpent.md) |  | 
-**incomingTransactionsCount** | **Number** | Numeric representation of the received transaction count of the address | 
-**outgoingTransactionsCount** | **Number** | Numeric representation of the sent transaction count of the address | 
+**incomingTransactionsCount** | **Number** | Defines the count of the incoming transactions. | 
+**outgoingTransactionsCount** | **Number** | Defines the count of the outgoing transactions. | 
 
 

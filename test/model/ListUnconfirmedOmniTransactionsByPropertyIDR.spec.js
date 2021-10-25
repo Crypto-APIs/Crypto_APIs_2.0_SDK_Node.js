@@ -50,7 +50,7 @@
   describe('ListUnconfirmedOmniTransactionsByPropertyIDR', function() {
     it('should create an instance of ListUnconfirmedOmniTransactionsByPropertyIDR', function() {
       // uncomment below and update the code to test ListUnconfirmedOmniTransactionsByPropertyIDR
-      //var instane = new Cryptoapis.ListUnconfirmedOmniTransactionsByPropertyIDR();
+      //var instance = new Cryptoapis.ListUnconfirmedOmniTransactionsByPropertyIDR();
       //expect(instance).to.be.a(Cryptoapis.ListUnconfirmedOmniTransactionsByPropertyIDR);
     });
 

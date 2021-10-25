@@ -16,14 +16,15 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletAssetDetailsRISentConfirmedAmount model module.
  * @module model/GetWalletAssetDetailsRISentConfirmedAmount
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetWalletAssetDetailsRISentConfirmedAmount {
     /**
      * Constructs a new <code>GetWalletAssetDetailsRISentConfirmedAmount</code>.
+     * Specifies the confirmed amount that has been sent.
      * @alias module:model/GetWalletAssetDetailsRISentConfirmedAmount
-     * @param amount {String} 
-     * @param unit {String} 
+     * @param amount {String} Specifies the confirmed amount that has been sent.
+     * @param unit {String} Specifies the unit of the confirmed amount that has been sent.
      */
     constructor(amount, unit) { 
         
@@ -65,11 +66,13 @@ class GetWalletAssetDetailsRISentConfirmedAmount {
 }
 
 /**
+ * Specifies the confirmed amount that has been sent.
  * @member {String} amount
  */
 GetWalletAssetDetailsRISentConfirmedAmount.prototype['amount'] = undefined;
 
 /**
+ * Specifies the unit of the confirmed amount that has been sent.
  * @member {String} unit
  */
 GetWalletAssetDetailsRISentConfirmedAmount.prototype['unit'] = undefined;

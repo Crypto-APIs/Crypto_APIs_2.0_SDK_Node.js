@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressRI model module.
  * @module model/ListXRPRippleTransactionsByAddressRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var ListXRPRippleTransactionsByAddressRI = /*#__PURE__*/function () {
   /**
@@ -94,6 +94,10 @@ var ListXRPRippleTransactionsByAddressRI = /*#__PURE__*/function () {
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new ListXRPRippleTransactionsByAddressRI();
+
+        if (data.hasOwnProperty('destinationTag')) {
+          obj['destinationTag'] = _ApiClient["default"].convertToType(data['destinationTag'], 'Number');
+        }
 
         if (data.hasOwnProperty('index')) {
           obj['index'] = _ApiClient["default"].convertToType(data['index'], 'Number');
@@ -159,10 +163,15 @@ var ListXRPRippleTransactionsByAddressRI = /*#__PURE__*/function () {
   return ListXRPRippleTransactionsByAddressRI;
 }();
 /**
+ * @member {Number} destinationTag
+ */
+
+
+ListXRPRippleTransactionsByAddressRI.prototype['destinationTag'] = undefined;
+/**
  * Represents the index position of the transaction in the block.
  * @member {Number} index
  */
-
 
 ListXRPRippleTransactionsByAddressRI.prototype['index'] = undefined;
 /**

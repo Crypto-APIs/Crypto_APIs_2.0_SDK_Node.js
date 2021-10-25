@@ -50,14 +50,8 @@
   describe('CreateTokensTransactionRequestFromAddressRIS', function() {
     it('should create an instance of CreateTokensTransactionRequestFromAddressRIS', function() {
       // uncomment below and update the code to test CreateTokensTransactionRequestFromAddressRIS
-      //var instane = new Cryptoapis.CreateTokensTransactionRequestFromAddressRIS();
-      //expect(instance).to.be.a(Cryptoapis.CreateTokensTransactionRequestFromAddressRIS);
-    });
-
-    it('should have the property propertyId (base name: "propertyId")', function() {
-      // uncomment below and update the code to test the property propertyId
       //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRIS();
-      //expect(instance).to.be();
+      //expect(instance).to.be.a(Cryptoapis.CreateTokensTransactionRequestFromAddressRIS);
     });
 
     it('should have the property contractAddress (base name: "contractAddress")', function() {

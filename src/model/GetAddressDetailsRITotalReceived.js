@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAddressDetailsRITotalReceived model module.
  * @module model/GetAddressDetailsRITotalReceived
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetAddressDetailsRITotalReceived {
     /**
      * Constructs a new <code>GetAddressDetailsRITotalReceived</code>.
      * @alias module:model/GetAddressDetailsRITotalReceived
      * @param amount {String} Defines the total amount of all coins received to the address, based on confirmed transactions.
-     * @param unit {String} 
+     * @param unit {String} Represents the unit of the total received amount.
      */
     constructor(amount, unit) { 
         
@@ -71,6 +71,7 @@ class GetAddressDetailsRITotalReceived {
 GetAddressDetailsRITotalReceived.prototype['amount'] = undefined;
 
 /**
+ * Represents the unit of the total received amount.
  * @member {String} unit
  */
 GetAddressDetailsRITotalReceived.prototype['unit'] = undefined;

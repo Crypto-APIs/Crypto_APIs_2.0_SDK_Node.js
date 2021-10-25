@@ -50,7 +50,7 @@
   describe('GetBlockDetailsByBlockHeightR', function() {
     it('should create an instance of GetBlockDetailsByBlockHeightR', function() {
       // uncomment below and update the code to test GetBlockDetailsByBlockHeightR
-      //var instane = new Cryptoapis.GetBlockDetailsByBlockHeightR();
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHeightR();
       //expect(instance).to.be.a(Cryptoapis.GetBlockDetailsByBlockHeightR);
     });
 

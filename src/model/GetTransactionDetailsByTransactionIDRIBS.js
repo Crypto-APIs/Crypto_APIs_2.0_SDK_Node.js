@@ -14,19 +14,20 @@
 import ApiClient from '../ApiClient';
 import GetTransactionDetailsByTransactionIDRIBSB from './GetTransactionDetailsByTransactionIDRIBSB';
 import GetTransactionDetailsByTransactionIDRIBSBC from './GetTransactionDetailsByTransactionIDRIBSBC';
+import GetTransactionDetailsByTransactionIDRIBSBSC from './GetTransactionDetailsByTransactionIDRIBSBSC';
+import GetTransactionDetailsByTransactionIDRIBSBSCGasPrice from './GetTransactionDetailsByTransactionIDRIBSBSCGasPrice';
 import GetTransactionDetailsByTransactionIDRIBSD from './GetTransactionDetailsByTransactionIDRIBSD';
 import GetTransactionDetailsByTransactionIDRIBSD2 from './GetTransactionDetailsByTransactionIDRIBSD2';
 import GetTransactionDetailsByTransactionIDRIBSD2Vin from './GetTransactionDetailsByTransactionIDRIBSD2Vin';
 import GetTransactionDetailsByTransactionIDRIBSD2Vout from './GetTransactionDetailsByTransactionIDRIBSD2Vout';
 import GetTransactionDetailsByTransactionIDRIBSE from './GetTransactionDetailsByTransactionIDRIBSE';
 import GetTransactionDetailsByTransactionIDRIBSEC from './GetTransactionDetailsByTransactionIDRIBSEC';
-import GetTransactionDetailsByTransactionIDRIBSECGasPrice from './GetTransactionDetailsByTransactionIDRIBSECGasPrice';
 import GetTransactionDetailsByTransactionIDRIBSL from './GetTransactionDetailsByTransactionIDRIBSL';
 
 /**
  * The GetTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBS
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetTransactionDetailsByTransactionIDRIBS {
     /**
@@ -39,24 +40,24 @@ class GetTransactionDetailsByTransactionIDRIBS {
      * @implements module:model/GetTransactionDetailsByTransactionIDRIBSD2
      * @implements module:model/GetTransactionDetailsByTransactionIDRIBSE
      * @implements module:model/GetTransactionDetailsByTransactionIDRIBSEC
+     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSBSC
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents transaction version number.
      * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vin>} Represents the transaction inputs.
      * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vout>} Represents the transaction outputs.
-     * @param vsize {Number} Represents the virtual size of this transaction.
-     * @param contract {String} Represents the specific transaction contract.
+     * @param contract {String} Represents the specific transaction contract
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-     * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSECGasPrice} 
-     * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
+     * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
+     * @param gasUsed {String} Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
      * @param inputData {String} Represents additional information that is required for the transaction.
-     * @param nonce {String} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+     * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
      * @param transactionStatus {String} Represents the status of this transaction.
      */
-    constructor(locktime, size, vSize, version, vin, vout, vsize, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) { 
-        GetTransactionDetailsByTransactionIDRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSBC.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSL.initialize(this, locktime, size, version, vin, vout, vsize);GetTransactionDetailsByTransactionIDRIBSD.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSD2.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);GetTransactionDetailsByTransactionIDRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
-        GetTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, vsize, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
+    constructor(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) { 
+        GetTransactionDetailsByTransactionIDRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSBC.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSD.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSD2.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);GetTransactionDetailsByTransactionIDRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetTransactionDetailsByTransactionIDRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, inputData, nonce);
+        GetTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
     }
 
     /**
@@ -64,14 +65,13 @@ class GetTransactionDetailsByTransactionIDRIBS {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, locktime, size, vSize, version, vin, vout, vsize, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) { 
+    static initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) { 
         obj['locktime'] = locktime;
         obj['size'] = size;
         obj['vSize'] = vSize;
         obj['version'] = version;
         obj['vin'] = vin;
         obj['vout'] = vout;
-        obj['vsize'] = vsize;
         obj['contract'] = contract;
         obj['gasLimit'] = gasLimit;
         obj['gasPrice'] = gasPrice;
@@ -98,6 +98,7 @@ class GetTransactionDetailsByTransactionIDRIBS {
             GetTransactionDetailsByTransactionIDRIBSD2.constructFromObject(data, obj);
             GetTransactionDetailsByTransactionIDRIBSE.constructFromObject(data, obj);
             GetTransactionDetailsByTransactionIDRIBSEC.constructFromObject(data, obj);
+            GetTransactionDetailsByTransactionIDRIBSBSC.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('locktime')) {
                 obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
@@ -117,9 +118,6 @@ class GetTransactionDetailsByTransactionIDRIBS {
             if (data.hasOwnProperty('vout')) {
                 obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSD2Vout]);
             }
-            if (data.hasOwnProperty('vsize')) {
-                obj['vsize'] = ApiClient.convertToType(data['vsize'], 'Number');
-            }
             if (data.hasOwnProperty('contract')) {
                 obj['contract'] = ApiClient.convertToType(data['contract'], 'String');
             }
@@ -127,7 +125,7 @@ class GetTransactionDetailsByTransactionIDRIBS {
                 obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'String');
             }
             if (data.hasOwnProperty('gasPrice')) {
-                obj['gasPrice'] = GetTransactionDetailsByTransactionIDRIBSECGasPrice.constructFromObject(data['gasPrice']);
+                obj['gasPrice'] = GetTransactionDetailsByTransactionIDRIBSBSCGasPrice.constructFromObject(data['gasPrice']);
             }
             if (data.hasOwnProperty('gasUsed')) {
                 obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'String');
@@ -136,7 +134,7 @@ class GetTransactionDetailsByTransactionIDRIBS {
                 obj['inputData'] = ApiClient.convertToType(data['inputData'], 'String');
             }
             if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
             }
             if (data.hasOwnProperty('transactionStatus')) {
                 obj['transactionStatus'] = ApiClient.convertToType(data['transactionStatus'], 'String');
@@ -185,13 +183,7 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['vin'] = undefined;
 GetTransactionDetailsByTransactionIDRIBS.prototype['vout'] = undefined;
 
 /**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
- */
-GetTransactionDetailsByTransactionIDRIBS.prototype['vsize'] = undefined;
-
-/**
- * Represents the specific transaction contract.
+ * Represents the specific transaction contract
  * @member {String} contract
  */
 GetTransactionDetailsByTransactionIDRIBS.prototype['contract'] = undefined;
@@ -203,12 +195,12 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['contract'] = undefined;
 GetTransactionDetailsByTransactionIDRIBS.prototype['gasLimit'] = undefined;
 
 /**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSECGasPrice} gasPrice
+ * @member {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} gasPrice
  */
 GetTransactionDetailsByTransactionIDRIBS.prototype['gasPrice'] = undefined;
 
 /**
- * Represents the exact unit of gas that was used for the transaction.
+ * Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
  * @member {String} gasUsed
  */
 GetTransactionDetailsByTransactionIDRIBS.prototype['gasUsed'] = undefined;
@@ -221,7 +213,7 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['inputData'] = undefined;
 
 /**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {String} nonce
+ * @member {Number} nonce
  */
 GetTransactionDetailsByTransactionIDRIBS.prototype['nonce'] = undefined;
 
@@ -301,6 +293,11 @@ GetTransactionDetailsByTransactionIDRIBSL.prototype['locktime'] = undefined;
  */
 GetTransactionDetailsByTransactionIDRIBSL.prototype['size'] = undefined;
 /**
+ * Represents the virtual size of this transaction.
+ * @member {Number} vSize
+ */
+GetTransactionDetailsByTransactionIDRIBSL.prototype['vSize'] = undefined;
+/**
  * Represents transaction version number.
  * @member {Number} version
  */
@@ -315,11 +312,6 @@ GetTransactionDetailsByTransactionIDRIBSL.prototype['vin'] = undefined;
  * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
  */
 GetTransactionDetailsByTransactionIDRIBSL.prototype['vout'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
- */
-GetTransactionDetailsByTransactionIDRIBSL.prototype['vsize'] = undefined;
 // Implement GetTransactionDetailsByTransactionIDRIBSD interface:
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.
@@ -437,6 +429,36 @@ GetTransactionDetailsByTransactionIDRIBSEC.prototype['inputData'] = undefined;
  * @member {String} nonce
  */
 GetTransactionDetailsByTransactionIDRIBSEC.prototype['nonce'] = undefined;
+// Implement GetTransactionDetailsByTransactionIDRIBSBSC interface:
+/**
+ * Represents the specific transaction contract
+ * @member {String} contract
+ */
+GetTransactionDetailsByTransactionIDRIBSBSC.prototype['contract'] = undefined;
+/**
+ * Represents the amount of gas used by this specific transaction alone.
+ * @member {String} gasLimit
+ */
+GetTransactionDetailsByTransactionIDRIBSBSC.prototype['gasLimit'] = undefined;
+/**
+ * @member {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} gasPrice
+ */
+GetTransactionDetailsByTransactionIDRIBSBSC.prototype['gasPrice'] = undefined;
+/**
+ * Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
+ * @member {String} gasUsed
+ */
+GetTransactionDetailsByTransactionIDRIBSBSC.prototype['gasUsed'] = undefined;
+/**
+ * Represents additional information that is required for the transaction.
+ * @member {String} inputData
+ */
+GetTransactionDetailsByTransactionIDRIBSBSC.prototype['inputData'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {Number} nonce
+ */
+GetTransactionDetailsByTransactionIDRIBSBSC.prototype['nonce'] = undefined;
 
 
 

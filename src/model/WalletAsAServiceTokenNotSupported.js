@@ -17,7 +17,7 @@ import WalletAsAServiceTokenNotSupportedError from './WalletAsAServiceTokenNotSu
 /**
  * The WalletAsAServiceTokenNotSupported model module.
  * @module model/WalletAsAServiceTokenNotSupported
- * @version 1.2.1
+ * @version 1.3.0
  */
 class WalletAsAServiceTokenNotSupported {
     /**

@@ -50,7 +50,7 @@
   describe('GenerateDepositAddressRI', function() {
     it('should create an instance of GenerateDepositAddressRI', function() {
       // uncomment below and update the code to test GenerateDepositAddressRI
-      //var instane = new Cryptoapis.GenerateDepositAddressRI();
+      //var instance = new Cryptoapis.GenerateDepositAddressRI();
       //expect(instance).to.be.a(Cryptoapis.GenerateDepositAddressRI);
     });
 

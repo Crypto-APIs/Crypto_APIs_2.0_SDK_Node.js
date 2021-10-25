@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedOmniTransactionsByPropertyIDR model module.
  * @module model/ListUnconfirmedOmniTransactionsByPropertyIDR
- * @version 1.2.1
+ * @version 1.3.0
  */
 var ListUnconfirmedOmniTransactionsByPropertyIDR = /*#__PURE__*/function () {
   /**

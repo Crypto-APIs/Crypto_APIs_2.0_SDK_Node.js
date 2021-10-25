@@ -50,7 +50,7 @@
   describe('NewBlockRBDataItem', function() {
     it('should create an instance of NewBlockRBDataItem', function() {
       // uncomment below and update the code to test NewBlockRBDataItem
-      //var instane = new Cryptoapis.NewBlockRBDataItem();
+      //var instance = new Cryptoapis.NewBlockRBDataItem();
       //expect(instance).to.be.a(Cryptoapis.NewBlockRBDataItem);
     });
 

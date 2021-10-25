@@ -17,7 +17,7 @@ import ListAssetsDetailsRData from './ListAssetsDetailsRData';
 /**
  * The ListAssetsDetailsR model module.
  * @module model/ListAssetsDetailsR
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListAssetsDetailsR {
     /**

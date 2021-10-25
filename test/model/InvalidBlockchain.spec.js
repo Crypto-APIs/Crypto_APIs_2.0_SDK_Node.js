@@ -50,7 +50,7 @@
   describe('InvalidBlockchain', function() {
     it('should create an instance of InvalidBlockchain', function() {
       // uncomment below and update the code to test InvalidBlockchain
-      //var instane = new Cryptoapis.InvalidBlockchain();
+      //var instance = new Cryptoapis.InvalidBlockchain();
       //expect(instance).to.be.a(Cryptoapis.InvalidBlockchain);
     });
 

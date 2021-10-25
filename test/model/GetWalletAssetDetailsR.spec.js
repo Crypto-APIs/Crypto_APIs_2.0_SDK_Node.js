@@ -50,7 +50,7 @@
   describe('GetWalletAssetDetailsR', function() {
     it('should create an instance of GetWalletAssetDetailsR', function() {
       // uncomment below and update the code to test GetWalletAssetDetailsR
-      //var instane = new Cryptoapis.GetWalletAssetDetailsR();
+      //var instance = new Cryptoapis.GetWalletAssetDetailsR();
       //expect(instance).to.be.a(Cryptoapis.GetWalletAssetDetailsR);
     });
 

@@ -50,7 +50,7 @@
   describe('InvalidNetworkError', function() {
     it('should create an instance of InvalidNetworkError', function() {
       // uncomment below and update the code to test InvalidNetworkError
-      //var instane = new Cryptoapis.InvalidNetworkError();
+      //var instance = new Cryptoapis.InvalidNetworkError();
       //expect(instance).to.be.a(Cryptoapis.InvalidNetworkError);
     });
 

@@ -50,7 +50,7 @@
   describe('GetLatestMinedXRPRippleBlockR', function() {
     it('should create an instance of GetLatestMinedXRPRippleBlockR', function() {
       // uncomment below and update the code to test GetLatestMinedXRPRippleBlockR
-      //var instane = new Cryptoapis.GetLatestMinedXRPRippleBlockR();
+      //var instance = new Cryptoapis.GetLatestMinedXRPRippleBlockR();
       //expect(instance).to.be.a(Cryptoapis.GetLatestMinedXRPRippleBlockR);
     });
 

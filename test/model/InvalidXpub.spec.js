@@ -50,7 +50,7 @@
   describe('InvalidXpub', function() {
     it('should create an instance of InvalidXpub', function() {
       // uncomment below and update the code to test InvalidXpub
-      //var instane = new Cryptoapis.InvalidXpub();
+      //var instance = new Cryptoapis.InvalidXpub();
       //expect(instance).to.be.a(Cryptoapis.InvalidXpub);
     });
 

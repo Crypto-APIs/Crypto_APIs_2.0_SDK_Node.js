@@ -18,16 +18,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetFeeRecommendationsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeRecommendationsRI</code>.
    * @alias module:model/GetFeeRecommendationsRI
    * @param unit {String} Defines the unit of the fee, e.g. BTC.
-   * @param fast {String} Defines the fee priority as \"FAST\". It works per byte, for UTXO-based protocols like Bitcoin, or per gas price, for account-based protocols like Ethereum. These are calculated based on Mempool.
-   * @param slow {String} Defines the fee priority as \"SLOW\". It works per byte, for UTXO-based protocols like Bitcoin, or per gas price, for account-based protocols like Ethereum. These are calculated based on Mempool.
-   * @param standard {String} Defines the fee priority as \"STANDARD\". It works per byte, for UTXO-based protocols like Bitcoin, or per gas price, for account-based protocols like Ethereum. These are calculated based on Mempool.
+   * @param fast {String} Fast fee per byte calculated from unconfirmed transactions
+   * @param slow {String} Slow fee per byte calculated from unconfirmed transactions
+   * @param standard {String} Standard fee per byte calculated from unconfirmed transactions
    */
   function GetFeeRecommendationsRI(unit, fast, slow, standard) {
     _classCallCheck(this, GetFeeRecommendationsRI);
@@ -94,19 +94,19 @@ var GetFeeRecommendationsRI = /*#__PURE__*/function () {
 
 GetFeeRecommendationsRI.prototype['unit'] = undefined;
 /**
- * Defines the fee priority as \"FAST\". It works per byte, for UTXO-based protocols like Bitcoin, or per gas price, for account-based protocols like Ethereum. These are calculated based on Mempool.
+ * Fast fee per byte calculated from unconfirmed transactions
  * @member {String} fast
  */
 
 GetFeeRecommendationsRI.prototype['fast'] = undefined;
 /**
- * Defines the fee priority as \"SLOW\". It works per byte, for UTXO-based protocols like Bitcoin, or per gas price, for account-based protocols like Ethereum. These are calculated based on Mempool.
+ * Slow fee per byte calculated from unconfirmed transactions
  * @member {String} slow
  */
 
 GetFeeRecommendationsRI.prototype['slow'] = undefined;
 /**
- * Defines the fee priority as \"STANDARD\". It works per byte, for UTXO-based protocols like Bitcoin, or per gas price, for account-based protocols like Ethereum. These are calculated based on Mempool.
+ * Standard fee per byte calculated from unconfirmed transactions
  * @member {String} standard
  */
 

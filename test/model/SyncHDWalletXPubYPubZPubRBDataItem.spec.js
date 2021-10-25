@@ -50,7 +50,7 @@
   describe('SyncHDWalletXPubYPubZPubRBDataItem', function() {
     it('should create an instance of SyncHDWalletXPubYPubZPubRBDataItem', function() {
       // uncomment below and update the code to test SyncHDWalletXPubYPubZPubRBDataItem
-      //var instane = new Cryptoapis.SyncHDWalletXPubYPubZPubRBDataItem();
+      //var instance = new Cryptoapis.SyncHDWalletXPubYPubZPubRBDataItem();
       //expect(instance).to.be.a(Cryptoapis.SyncHDWalletXPubYPubZPubRBDataItem);
     });
 

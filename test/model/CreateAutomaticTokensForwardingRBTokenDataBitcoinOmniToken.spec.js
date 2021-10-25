@@ -50,7 +50,7 @@
   describe('CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken', function() {
     it('should create an instance of CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken', function() {
       // uncomment below and update the code to test CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken
-      //var instane = new Cryptoapis.CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken();
+      //var instance = new Cryptoapis.CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken();
       //expect(instance).to.be.a(Cryptoapis.CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken);
     });
 

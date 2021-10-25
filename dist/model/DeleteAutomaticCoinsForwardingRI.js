@@ -18,15 +18,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticCoinsForwardingRI model module.
  * @module model/DeleteAutomaticCoinsForwardingRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 var DeleteAutomaticCoinsForwardingRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeleteAutomaticCoinsForwardingRI</code>.
    * @alias module:model/DeleteAutomaticCoinsForwardingRI
    * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
-   * @param confirmationsCount {String} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
-   * @param createdTimestamp {String} Defines the specific time/date when the automatic forwarding was created in Unix Timestamp.
+   * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
+   * @param createdTimestamp {Number} Defines the specific time/date when the automatic forwarding was created in Unix Timestamp.
    * @param feePriority {module:model/DeleteAutomaticCoinsForwardingRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"SLOW\", \"STANDARD\" or \"FAST\".
    * @param fromAddress {String} Represents the hash of the address that forwards the currency.
    * @param minimumTransferAmount {String} Represents the minimum transfer amount of the currency in the `fromAddress` that can be allowed for an automatic forwarding.
@@ -76,11 +76,11 @@ var DeleteAutomaticCoinsForwardingRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('confirmationsCount')) {
-          obj['confirmationsCount'] = _ApiClient["default"].convertToType(data['confirmationsCount'], 'String');
+          obj['confirmationsCount'] = _ApiClient["default"].convertToType(data['confirmationsCount'], 'Number');
         }
 
         if (data.hasOwnProperty('createdTimestamp')) {
-          obj['createdTimestamp'] = _ApiClient["default"].convertToType(data['createdTimestamp'], 'String');
+          obj['createdTimestamp'] = _ApiClient["default"].convertToType(data['createdTimestamp'], 'Number');
         }
 
         if (data.hasOwnProperty('feePriority')) {
@@ -119,13 +119,13 @@ var DeleteAutomaticCoinsForwardingRI = /*#__PURE__*/function () {
 DeleteAutomaticCoinsForwardingRI.prototype['callbackUrl'] = undefined;
 /**
  * Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
- * @member {String} confirmationsCount
+ * @member {Number} confirmationsCount
  */
 
 DeleteAutomaticCoinsForwardingRI.prototype['confirmationsCount'] = undefined;
 /**
  * Defines the specific time/date when the automatic forwarding was created in Unix Timestamp.
- * @member {String} createdTimestamp
+ * @member {Number} createdTimestamp
  */
 
 DeleteAutomaticCoinsForwardingRI.prototype['createdTimestamp'] = undefined;

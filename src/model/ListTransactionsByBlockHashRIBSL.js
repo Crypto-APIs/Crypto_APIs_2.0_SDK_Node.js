@@ -18,7 +18,7 @@ import ListTransactionsByBlockHashRIBSLVout from './ListTransactionsByBlockHashR
 /**
  * The ListTransactionsByBlockHashRIBSL model module.
  * @module model/ListTransactionsByBlockHashRIBSL
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListTransactionsByBlockHashRIBSL {
     /**
@@ -27,14 +27,14 @@ class ListTransactionsByBlockHashRIBSL {
      * @alias module:model/ListTransactionsByBlockHashRIBSL
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param size {Number} Represents the total size of this transaction.
+     * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents transaction version number.
      * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSLVin>} Represents the transaction inputs.
      * @param vout {Array.<module:model/ListTransactionsByBlockHashRIBSLVout>} Represents the transaction outputs.
-     * @param vsize {Number} Represents the virtual size of this transaction.
      */
-    constructor(locktime, size, version, vin, vout, vsize) { 
+    constructor(locktime, size, vSize, version, vin, vout) { 
         
-        ListTransactionsByBlockHashRIBSL.initialize(this, locktime, size, version, vin, vout, vsize);
+        ListTransactionsByBlockHashRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);
     }
 
     /**
@@ -42,13 +42,13 @@ class ListTransactionsByBlockHashRIBSL {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, locktime, size, version, vin, vout, vsize) { 
+    static initialize(obj, locktime, size, vSize, version, vin, vout) { 
         obj['locktime'] = locktime;
         obj['size'] = size;
+        obj['vSize'] = vSize;
         obj['version'] = version;
         obj['vin'] = vin;
         obj['vout'] = vout;
-        obj['vsize'] = vsize;
     }
 
     /**
@@ -68,6 +68,9 @@ class ListTransactionsByBlockHashRIBSL {
             if (data.hasOwnProperty('size')) {
                 obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
+            if (data.hasOwnProperty('vSize')) {
+                obj['vSize'] = ApiClient.convertToType(data['vSize'], 'Number');
+            }
             if (data.hasOwnProperty('version')) {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
@@ -76,9 +79,6 @@ class ListTransactionsByBlockHashRIBSL {
             }
             if (data.hasOwnProperty('vout')) {
                 obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHashRIBSLVout]);
-            }
-            if (data.hasOwnProperty('vsize')) {
-                obj['vsize'] = ApiClient.convertToType(data['vsize'], 'Number');
             }
         }
         return obj;
@@ -100,6 +100,12 @@ ListTransactionsByBlockHashRIBSL.prototype['locktime'] = undefined;
 ListTransactionsByBlockHashRIBSL.prototype['size'] = undefined;
 
 /**
+ * Represents the virtual size of this transaction.
+ * @member {Number} vSize
+ */
+ListTransactionsByBlockHashRIBSL.prototype['vSize'] = undefined;
+
+/**
  * Represents transaction version number.
  * @member {Number} version
  */
@@ -116,12 +122,6 @@ ListTransactionsByBlockHashRIBSL.prototype['vin'] = undefined;
  * @member {Array.<module:model/ListTransactionsByBlockHashRIBSLVout>} vout
  */
 ListTransactionsByBlockHashRIBSL.prototype['vout'] = undefined;
-
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
- */
-ListTransactionsByBlockHashRIBSL.prototype['vsize'] = undefined;
 
 
 

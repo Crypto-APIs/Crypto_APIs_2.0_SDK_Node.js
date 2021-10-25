@@ -50,7 +50,7 @@
   describe('CreateTokensTransactionRequestFromAddressRI', function() {
     it('should create an instance of CreateTokensTransactionRequestFromAddressRI', function() {
       // uncomment below and update the code to test CreateTokensTransactionRequestFromAddressRI
-      //var instane = new Cryptoapis.CreateTokensTransactionRequestFromAddressRI();
+      //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRI();
       //expect(instance).to.be.a(Cryptoapis.CreateTokensTransactionRequestFromAddressRI);
     });
 
@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property note (base name: "note")', function() {
+      // uncomment below and update the code to test the property note
+      //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property recipients (base name: "recipients")', function() {
       // uncomment below and update the code to test the property recipients
       //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRI();
@@ -86,6 +92,12 @@
 
     it('should have the property tokenTypeSpecificData (base name: "tokenTypeSpecificData")', function() {
       // uncomment below and update the code to test the property tokenTypeSpecificData
+      //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property transactionRequestId (base name: "transactionRequestId")', function() {
+      // uncomment below and update the code to test the property transactionRequestId
       //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRI();
       //expect(instance).to.be();
     });

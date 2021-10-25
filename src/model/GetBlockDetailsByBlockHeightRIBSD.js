@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHeightRIBSD model module.
  * @module model/GetBlockDetailsByBlockHeightRIBSD
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetBlockDetailsByBlockHeightRIBSD {
     /**
@@ -24,14 +24,14 @@ class GetBlockDetailsByBlockHeightRIBSD {
      * Dogecoin
      * @alias module:model/GetBlockDetailsByBlockHeightRIBSD
      * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-     * @param nonce {Number} Represents a random value that can be adjusted to satisfy the Proof of Work
+     * @param nonce {String} Represents a random value that can be adjusted to satisfy the Proof of Work.
      * @param size {Number} Represents the total size of the block in Bytes.
      * @param bits {String} Represents a specific sub-unit of Doge. Bits have two-decimal precision.
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
      * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
      * @param strippedSize {Number} Defines the numeric representation of the block size excluding the witness data.
      * @param version {Number} Represents the version of the specific block on the blockchain.
-     * @param weight {Number} Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
+     * @param weight {Number} Represents a measurement to compare the size of different transactions to each other in proportion to the block size limi
      */
     constructor(difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, weight) { 
         
@@ -70,7 +70,7 @@ class GetBlockDetailsByBlockHeightRIBSD {
                 obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
             }
             if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
             }
             if (data.hasOwnProperty('size')) {
                 obj['size'] = ApiClient.convertToType(data['size'], 'Number');
@@ -107,8 +107,8 @@ class GetBlockDetailsByBlockHeightRIBSD {
 GetBlockDetailsByBlockHeightRIBSD.prototype['difficulty'] = undefined;
 
 /**
- * Represents a random value that can be adjusted to satisfy the Proof of Work
- * @member {Number} nonce
+ * Represents a random value that can be adjusted to satisfy the Proof of Work.
+ * @member {String} nonce
  */
 GetBlockDetailsByBlockHeightRIBSD.prototype['nonce'] = undefined;
 
@@ -149,7 +149,7 @@ GetBlockDetailsByBlockHeightRIBSD.prototype['strippedSize'] = undefined;
 GetBlockDetailsByBlockHeightRIBSD.prototype['version'] = undefined;
 
 /**
- * Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
+ * Represents a measurement to compare the size of different transactions to each other in proportion to the block size limi
  * @member {Number} weight
  */
 GetBlockDetailsByBlockHeightRIBSD.prototype['weight'] = undefined;

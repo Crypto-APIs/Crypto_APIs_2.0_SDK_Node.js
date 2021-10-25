@@ -50,7 +50,7 @@
   describe('CreateTokensTransactionRequestFromAddressRBDataItem', function() {
     it('should create an instance of CreateTokensTransactionRequestFromAddressRBDataItem', function() {
       // uncomment below and update the code to test CreateTokensTransactionRequestFromAddressRBDataItem
-      //var instane = new Cryptoapis.CreateTokensTransactionRequestFromAddressRBDataItem();
+      //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRBDataItem();
       //expect(instance).to.be.a(Cryptoapis.CreateTokensTransactionRequestFromAddressRBDataItem);
     });
 
@@ -74,6 +74,12 @@
 
     it('should have the property feePriority (base name: "feePriority")', function() {
       // uncomment below and update the code to test the property feePriority
+      //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRBDataItem();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property note (base name: "note")', function() {
+      // uncomment below and update the code to test the property note
       //var instance = new Cryptoapis.CreateTokensTransactionRequestFromAddressRBDataItem();
       //expect(instance).to.be();
     });

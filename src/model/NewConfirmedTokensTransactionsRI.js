@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedTokensTransactionsRI model module.
  * @module model/NewConfirmedTokensTransactionsRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class NewConfirmedTokensTransactionsRI {
     /**
      * Constructs a new <code>NewConfirmedTokensTransactionsRI</code>.
      * @alias module:model/NewConfirmedTokensTransactionsRI
      * @param address {String} Represents the address of the transaction, per which the result is returned.
-     * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+     * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
      * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
      * @param confirmationsCount {String} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
      * @param createdTimestamp {Number} Defines the specific time/date when the subscription was created in Unix Timestamp.
@@ -106,7 +106,7 @@ class NewConfirmedTokensTransactionsRI {
 NewConfirmedTokensTransactionsRI.prototype['address'] = undefined;
 
 /**
- * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 NewConfirmedTokensTransactionsRI.prototype['callbackSecretKey'] = undefined;

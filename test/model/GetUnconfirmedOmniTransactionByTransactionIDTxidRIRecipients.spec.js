@@ -50,7 +50,7 @@
   describe('GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients', function() {
     it('should create an instance of GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients', function() {
       // uncomment below and update the code to test GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients
-      //var instane = new Cryptoapis.GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients();
+      //var instance = new Cryptoapis.GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients();
       //expect(instance).to.be.a(Cryptoapis.GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients);
     });
 

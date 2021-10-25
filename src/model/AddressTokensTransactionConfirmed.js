@@ -17,7 +17,7 @@ import AddressTokensTransactionConfirmedData from './AddressTokensTransactionCon
 /**
  * The AddressTokensTransactionConfirmed model module.
  * @module model/AddressTokensTransactionConfirmed
- * @version 1.2.1
+ * @version 1.3.0
  */
 class AddressTokensTransactionConfirmed {
     /**

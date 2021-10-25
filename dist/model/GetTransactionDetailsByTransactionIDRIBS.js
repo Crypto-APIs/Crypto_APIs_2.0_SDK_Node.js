@@ -11,6 +11,10 @@ var _GetTransactionDetailsByTransactionIDRIBSB = _interopRequireDefault(require(
 
 var _GetTransactionDetailsByTransactionIDRIBSBC = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBC"));
 
+var _GetTransactionDetailsByTransactionIDRIBSBSC = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBSC"));
+
+var _GetTransactionDetailsByTransactionIDRIBSBSCGasPrice = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBSCGasPrice"));
+
 var _GetTransactionDetailsByTransactionIDRIBSD = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSD"));
 
 var _GetTransactionDetailsByTransactionIDRIBSD2 = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSD2"));
@@ -22,8 +26,6 @@ var _GetTransactionDetailsByTransactionIDRIBSD2Vout = _interopRequireDefault(req
 var _GetTransactionDetailsByTransactionIDRIBSE = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSE"));
 
 var _GetTransactionDetailsByTransactionIDRIBSEC = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSEC"));
-
-var _GetTransactionDetailsByTransactionIDRIBSECGasPrice = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSECGasPrice"));
 
 var _GetTransactionDetailsByTransactionIDRIBSL = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSL"));
 
@@ -38,7 +40,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBS
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
   /**
@@ -51,29 +53,29 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
    * @implements module:model/GetTransactionDetailsByTransactionIDRIBSD2
    * @implements module:model/GetTransactionDetailsByTransactionIDRIBSE
    * @implements module:model/GetTransactionDetailsByTransactionIDRIBSEC
+   * @implements module:model/GetTransactionDetailsByTransactionIDRIBSBSC
    * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Represents transaction version number.
    * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vin>} Represents the transaction inputs.
    * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vout>} Represents the transaction outputs.
-   * @param vsize {Number} Represents the virtual size of this transaction.
-   * @param contract {String} Represents the specific transaction contract.
+   * @param contract {String} Represents the specific transaction contract
    * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-   * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSECGasPrice} 
-   * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
+   * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
+   * @param gasUsed {String} Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
    * @param inputData {String} Represents additional information that is required for the transaction.
-   * @param nonce {String} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+   * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
    * @param transactionStatus {String} Represents the status of this transaction.
    */
-  function GetTransactionDetailsByTransactionIDRIBS(locktime, size, vSize, version, vin, vout, vsize, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) {
+  function GetTransactionDetailsByTransactionIDRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDRIBS);
 
     _GetTransactionDetailsByTransactionIDRIBSB["default"].initialize(this, locktime, size, vSize, version, vin, vout);
 
     _GetTransactionDetailsByTransactionIDRIBSBC["default"].initialize(this, locktime, size, version, vin, vout);
 
-    _GetTransactionDetailsByTransactionIDRIBSL["default"].initialize(this, locktime, size, version, vin, vout, vsize);
+    _GetTransactionDetailsByTransactionIDRIBSL["default"].initialize(this, locktime, size, vSize, version, vin, vout);
 
     _GetTransactionDetailsByTransactionIDRIBSD["default"].initialize(this, locktime, size, version, vin, vout);
 
@@ -83,7 +85,9 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
     _GetTransactionDetailsByTransactionIDRIBSEC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
 
-    GetTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, vsize, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
+    _GetTransactionDetailsByTransactionIDRIBSBSC["default"].initialize(this, gasLimit, gasPrice, gasUsed, inputData, nonce);
+
+    GetTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
   }
   /**
    * Initializes the fields of this object.
@@ -94,14 +98,13 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
   _createClass(GetTransactionDetailsByTransactionIDRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, locktime, size, vSize, version, vin, vout, vsize, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) {
+    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) {
       obj['locktime'] = locktime;
       obj['size'] = size;
       obj['vSize'] = vSize;
       obj['version'] = version;
       obj['vin'] = vin;
       obj['vout'] = vout;
-      obj['vsize'] = vsize;
       obj['contract'] = contract;
       obj['gasLimit'] = gasLimit;
       obj['gasPrice'] = gasPrice;
@@ -138,6 +141,8 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
         _GetTransactionDetailsByTransactionIDRIBSEC["default"].constructFromObject(data, obj);
 
+        _GetTransactionDetailsByTransactionIDRIBSBSC["default"].constructFromObject(data, obj);
+
         if (data.hasOwnProperty('locktime')) {
           obj['locktime'] = _ApiClient["default"].convertToType(data['locktime'], 'Number');
         }
@@ -162,10 +167,6 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
           obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSD2Vout["default"]]);
         }
 
-        if (data.hasOwnProperty('vsize')) {
-          obj['vsize'] = _ApiClient["default"].convertToType(data['vsize'], 'Number');
-        }
-
         if (data.hasOwnProperty('contract')) {
           obj['contract'] = _ApiClient["default"].convertToType(data['contract'], 'String');
         }
@@ -175,7 +176,7 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('gasPrice')) {
-          obj['gasPrice'] = _GetTransactionDetailsByTransactionIDRIBSECGasPrice["default"].constructFromObject(data['gasPrice']);
+          obj['gasPrice'] = _GetTransactionDetailsByTransactionIDRIBSBSCGasPrice["default"].constructFromObject(data['gasPrice']);
         }
 
         if (data.hasOwnProperty('gasUsed')) {
@@ -187,7 +188,7 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'Number');
         }
 
         if (data.hasOwnProperty('transactionStatus')) {
@@ -239,13 +240,7 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['vin'] = undefined;
 
 GetTransactionDetailsByTransactionIDRIBS.prototype['vout'] = undefined;
 /**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
- */
-
-GetTransactionDetailsByTransactionIDRIBS.prototype['vsize'] = undefined;
-/**
- * Represents the specific transaction contract.
+ * Represents the specific transaction contract
  * @member {String} contract
  */
 
@@ -257,12 +252,12 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['contract'] = undefined;
 
 GetTransactionDetailsByTransactionIDRIBS.prototype['gasLimit'] = undefined;
 /**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSECGasPrice} gasPrice
+ * @member {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} gasPrice
  */
 
 GetTransactionDetailsByTransactionIDRIBS.prototype['gasPrice'] = undefined;
 /**
- * Represents the exact unit of gas that was used for the transaction.
+ * Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
  * @member {String} gasUsed
  */
 
@@ -275,7 +270,7 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['gasUsed'] = undefined;
 GetTransactionDetailsByTransactionIDRIBS.prototype['inputData'] = undefined;
 /**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {String} nonce
+ * @member {Number} nonce
  */
 
 GetTransactionDetailsByTransactionIDRIBS.prototype['nonce'] = undefined;
@@ -367,6 +362,12 @@ _GetTransactionDetailsByTransactionIDRIBSL["default"].prototype['locktime'] = un
 
 _GetTransactionDetailsByTransactionIDRIBSL["default"].prototype['size'] = undefined;
 /**
+ * Represents the virtual size of this transaction.
+ * @member {Number} vSize
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSL["default"].prototype['vSize'] = undefined;
+/**
  * Represents transaction version number.
  * @member {Number} version
  */
@@ -383,13 +384,7 @@ _GetTransactionDetailsByTransactionIDRIBSL["default"].prototype['vin'] = undefin
  * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
  */
 
-_GetTransactionDetailsByTransactionIDRIBSL["default"].prototype['vout'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vsize
- */
-
-_GetTransactionDetailsByTransactionIDRIBSL["default"].prototype['vsize'] = undefined; // Implement GetTransactionDetailsByTransactionIDRIBSD interface:
+_GetTransactionDetailsByTransactionIDRIBSL["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDRIBSD interface:
 
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.
@@ -529,6 +524,42 @@ _GetTransactionDetailsByTransactionIDRIBSEC["default"].prototype['inputData'] = 
  * @member {String} nonce
  */
 
-_GetTransactionDetailsByTransactionIDRIBSEC["default"].prototype['nonce'] = undefined;
+_GetTransactionDetailsByTransactionIDRIBSEC["default"].prototype['nonce'] = undefined; // Implement GetTransactionDetailsByTransactionIDRIBSBSC interface:
+
+/**
+ * Represents the specific transaction contract
+ * @member {String} contract
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['contract'] = undefined;
+/**
+ * Represents the amount of gas used by this specific transaction alone.
+ * @member {String} gasLimit
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['gasLimit'] = undefined;
+/**
+ * @member {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} gasPrice
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['gasPrice'] = undefined;
+/**
+ * Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
+ * @member {String} gasUsed
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['gasUsed'] = undefined;
+/**
+ * Represents additional information that is required for the transaction.
+ * @member {String} inputData
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['inputData'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {Number} nonce
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['nonce'] = undefined;
 var _default = GetTransactionDetailsByTransactionIDRIBS;
 exports["default"] = _default;

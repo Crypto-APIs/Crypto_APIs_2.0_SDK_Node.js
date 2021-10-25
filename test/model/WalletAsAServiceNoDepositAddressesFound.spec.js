@@ -50,7 +50,7 @@
   describe('WalletAsAServiceNoDepositAddressesFound', function() {
     it('should create an instance of WalletAsAServiceNoDepositAddressesFound', function() {
       // uncomment below and update the code to test WalletAsAServiceNoDepositAddressesFound
-      //var instane = new Cryptoapis.WalletAsAServiceNoDepositAddressesFound();
+      //var instance = new Cryptoapis.WalletAsAServiceNoDepositAddressesFound();
       //expect(instance).to.be.a(Cryptoapis.WalletAsAServiceNoDepositAddressesFound);
     });
 

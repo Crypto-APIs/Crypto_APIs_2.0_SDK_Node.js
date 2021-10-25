@@ -17,7 +17,7 @@ import BlockchainDataBlockNotFoundError from './BlockchainDataBlockNotFoundError
 /**
  * The BlockchainDataBlockNotFound model module.
  * @module model/BlockchainDataBlockNotFound
- * @version 1.2.1
+ * @version 1.3.0
  */
 class BlockchainDataBlockNotFound {
     /**

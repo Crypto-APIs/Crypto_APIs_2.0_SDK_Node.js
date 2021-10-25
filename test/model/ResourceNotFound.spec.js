@@ -50,7 +50,7 @@
   describe('ResourceNotFound', function() {
     it('should create an instance of ResourceNotFound', function() {
       // uncomment below and update the code to test ResourceNotFound
-      //var instane = new Cryptoapis.ResourceNotFound();
+      //var instance = new Cryptoapis.ResourceNotFound();
       //expect(instance).to.be.a(Cryptoapis.ResourceNotFound);
     });
 

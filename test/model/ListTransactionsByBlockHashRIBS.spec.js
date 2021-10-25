@@ -50,7 +50,7 @@
   describe('ListTransactionsByBlockHashRIBS', function() {
     it('should create an instance of ListTransactionsByBlockHashRIBS', function() {
       // uncomment below and update the code to test ListTransactionsByBlockHashRIBS
-      //var instane = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
       //expect(instance).to.be.a(Cryptoapis.ListTransactionsByBlockHashRIBS);
     });
 
@@ -86,12 +86,6 @@
 
     it('should have the property vout (base name: "vout")', function() {
       // uncomment below and update the code to test the property vout
-      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property vsize (base name: "vsize")', function() {
-      // uncomment below and update the code to test the property vsize
       //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
       //expect(instance).to.be();
     });
@@ -134,6 +128,66 @@
 
     it('should have the property transactionStatus (base name: "transactionStatus")', function() {
       // uncomment below and update the code to test the property transactionStatus
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property bindingSig (base name: "bindingSig")', function() {
+      // uncomment below and update the code to test the property bindingSig
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property expiryHeight (base name: "expiryHeight")', function() {
+      // uncomment below and update the code to test the property expiryHeight
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property joinSplitPubKey (base name: "joinSplitPubKey")', function() {
+      // uncomment below and update the code to test the property joinSplitPubKey
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property joinSplitSig (base name: "joinSplitSig")', function() {
+      // uncomment below and update the code to test the property joinSplitSig
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property overwintered (base name: "overwintered")', function() {
+      // uncomment below and update the code to test the property overwintered
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vJoinSplit (base name: "vJoinSplit")', function() {
+      // uncomment below and update the code to test the property vJoinSplit
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vShieldedOutput (base name: "vShieldedOutput")', function() {
+      // uncomment below and update the code to test the property vShieldedOutput
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vShieldedSpend (base name: "vShieldedSpend")', function() {
+      // uncomment below and update the code to test the property vShieldedSpend
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property valueBalance (base name: "valueBalance")', function() {
+      // uncomment below and update the code to test the property valueBalance
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property versionGroupId (base name: "versionGroupId")', function() {
+      // uncomment below and update the code to test the property versionGroupId
       //var instance = new Cryptoapis.ListTransactionsByBlockHashRIBS();
       //expect(instance).to.be();
     });

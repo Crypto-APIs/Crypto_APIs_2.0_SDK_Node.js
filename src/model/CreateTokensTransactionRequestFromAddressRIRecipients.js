@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateTokensTransactionRequestFromAddressRIRecipients model module.
  * @module model/CreateTokensTransactionRequestFromAddressRIRecipients
- * @version 1.2.1
+ * @version 1.3.0
  */
 class CreateTokensTransactionRequestFromAddressRIRecipients {
     /**

@@ -50,7 +50,7 @@
   describe('CoinsForwardingFailDataItem', function() {
     it('should create an instance of CoinsForwardingFailDataItem', function() {
       // uncomment below and update the code to test CoinsForwardingFailDataItem
-      //var instane = new Cryptoapis.CoinsForwardingFailDataItem();
+      //var instance = new Cryptoapis.CoinsForwardingFailDataItem();
       //expect(instance).to.be.a(Cryptoapis.CoinsForwardingFailDataItem);
     });
 

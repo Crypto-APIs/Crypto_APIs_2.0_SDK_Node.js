@@ -50,7 +50,7 @@
   describe('UriNotFound', function() {
     it('should create an instance of UriNotFound', function() {
       // uncomment below and update the code to test UriNotFound
-      //var instane = new Cryptoapis.UriNotFound();
+      //var instance = new Cryptoapis.UriNotFound();
       //expect(instance).to.be.a(Cryptoapis.UriNotFound);
     });
 

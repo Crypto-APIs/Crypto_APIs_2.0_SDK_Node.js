@@ -50,7 +50,7 @@
   describe('NewUnconfirmedCoinsTransactionsRBDataItem', function() {
     it('should create an instance of NewUnconfirmedCoinsTransactionsRBDataItem', function() {
       // uncomment below and update the code to test NewUnconfirmedCoinsTransactionsRBDataItem
-      //var instane = new Cryptoapis.NewUnconfirmedCoinsTransactionsRBDataItem();
+      //var instance = new Cryptoapis.NewUnconfirmedCoinsTransactionsRBDataItem();
       //expect(instance).to.be.a(Cryptoapis.NewUnconfirmedCoinsTransactionsRBDataItem);
     });
 

@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The InvalidRequestBodyStructureError model module.
  * @module model/InvalidRequestBodyStructureError
- * @version 1.2.1
+ * @version 1.3.0
  */
 class InvalidRequestBodyStructureError {
     /**

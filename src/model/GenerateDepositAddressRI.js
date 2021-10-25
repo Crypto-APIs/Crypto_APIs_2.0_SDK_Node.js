@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GenerateDepositAddressRI model module.
  * @module model/GenerateDepositAddressRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GenerateDepositAddressRI {
     /**

@@ -68,6 +68,16 @@
         done();
       });
     });
+    describe('listInternalTransactionsByAddress', function() {
+      it('should call listInternalTransactionsByAddress successfully', function(done) {
+        //uncomment below and update the code to test listInternalTransactionsByAddress
+        //instance.listInternalTransactionsByAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
   });
 
 }));

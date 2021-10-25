@@ -50,7 +50,7 @@
   describe('GetZilliqaBlockDetailsByBlockHeightR', function() {
     it('should create an instance of GetZilliqaBlockDetailsByBlockHeightR', function() {
       // uncomment below and update the code to test GetZilliqaBlockDetailsByBlockHeightR
-      //var instane = new Cryptoapis.GetZilliqaBlockDetailsByBlockHeightR();
+      //var instance = new Cryptoapis.GetZilliqaBlockDetailsByBlockHeightR();
       //expect(instance).to.be.a(Cryptoapis.GetZilliqaBlockDetailsByBlockHeightR);
     });
 

@@ -50,7 +50,7 @@
   describe('ListTransactionsByBlockHashRI', function() {
     it('should create an instance of ListTransactionsByBlockHashRI', function() {
       // uncomment below and update the code to test ListTransactionsByBlockHashRI
-      //var instane = new Cryptoapis.ListTransactionsByBlockHashRI();
+      //var instance = new Cryptoapis.ListTransactionsByBlockHashRI();
       //expect(instance).to.be.a(Cryptoapis.ListTransactionsByBlockHashRI);
     });
 

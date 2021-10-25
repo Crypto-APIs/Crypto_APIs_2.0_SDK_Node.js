@@ -50,7 +50,7 @@
   describe('ListSupportedTokensR', function() {
     it('should create an instance of ListSupportedTokensR', function() {
       // uncomment below and update the code to test ListSupportedTokensR
-      //var instane = new Cryptoapis.ListSupportedTokensR();
+      //var instance = new Cryptoapis.ListSupportedTokensR();
       //expect(instance).to.be.a(Cryptoapis.ListSupportedTokensR);
     });
 

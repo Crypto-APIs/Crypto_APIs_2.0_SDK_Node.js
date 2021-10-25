@@ -50,7 +50,7 @@
   describe('CouldNotCalculateRateForPairError', function() {
     it('should create an instance of CouldNotCalculateRateForPairError', function() {
       // uncomment below and update the code to test CouldNotCalculateRateForPairError
-      //var instane = new Cryptoapis.CouldNotCalculateRateForPairError();
+      //var instance = new Cryptoapis.CouldNotCalculateRateForPairError();
       //expect(instance).to.be.a(Cryptoapis.CouldNotCalculateRateForPairError);
     });
 

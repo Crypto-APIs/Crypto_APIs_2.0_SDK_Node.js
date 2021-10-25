@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBScriptSig from './GetTransaction
 /**
  * The ListTransactionsByBlockHashRIBSBCVin model module.
  * @module model/ListTransactionsByBlockHashRIBSBCVin
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListTransactionsByBlockHashRIBSBCVin {
     /**

@@ -50,7 +50,7 @@
   describe('InvalidData', function() {
     it('should create an instance of InvalidData', function() {
       // uncomment below and update the code to test InvalidData
-      //var instane = new Cryptoapis.InvalidData();
+      //var instance = new Cryptoapis.InvalidData();
       //expect(instance).to.be.a(Cryptoapis.InvalidData);
     });
 

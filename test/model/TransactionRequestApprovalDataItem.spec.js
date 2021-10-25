@@ -50,7 +50,7 @@
   describe('TransactionRequestApprovalDataItem', function() {
     it('should create an instance of TransactionRequestApprovalDataItem', function() {
       // uncomment below and update the code to test TransactionRequestApprovalDataItem
-      //var instane = new Cryptoapis.TransactionRequestApprovalDataItem();
+      //var instance = new Cryptoapis.TransactionRequestApprovalDataItem();
       //expect(instance).to.be.a(Cryptoapis.TransactionRequestApprovalDataItem);
     });
 

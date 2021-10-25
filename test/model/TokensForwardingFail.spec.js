@@ -50,7 +50,7 @@
   describe('TokensForwardingFail', function() {
     it('should create an instance of TokensForwardingFail', function() {
       // uncomment below and update the code to test TokensForwardingFail
-      //var instane = new Cryptoapis.TokensForwardingFail();
+      //var instance = new Cryptoapis.TokensForwardingFail();
       //expect(instance).to.be.a(Cryptoapis.TokensForwardingFail);
     });
 

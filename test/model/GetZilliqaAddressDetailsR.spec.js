@@ -50,7 +50,7 @@
   describe('GetZilliqaAddressDetailsR', function() {
     it('should create an instance of GetZilliqaAddressDetailsR', function() {
       // uncomment below and update the code to test GetZilliqaAddressDetailsR
-      //var instane = new Cryptoapis.GetZilliqaAddressDetailsR();
+      //var instance = new Cryptoapis.GetZilliqaAddressDetailsR();
       //expect(instance).to.be.a(Cryptoapis.GetZilliqaAddressDetailsR);
     });
 

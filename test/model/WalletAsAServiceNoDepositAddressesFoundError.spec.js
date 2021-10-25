@@ -50,7 +50,7 @@
   describe('WalletAsAServiceNoDepositAddressesFoundError', function() {
     it('should create an instance of WalletAsAServiceNoDepositAddressesFoundError', function() {
       // uncomment below and update the code to test WalletAsAServiceNoDepositAddressesFoundError
-      //var instane = new Cryptoapis.WalletAsAServiceNoDepositAddressesFoundError();
+      //var instance = new Cryptoapis.WalletAsAServiceNoDepositAddressesFoundError();
       //expect(instance).to.be.a(Cryptoapis.WalletAsAServiceNoDepositAddressesFoundError);
     });
 

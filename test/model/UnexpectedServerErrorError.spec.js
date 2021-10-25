@@ -50,7 +50,7 @@
   describe('UnexpectedServerErrorError', function() {
     it('should create an instance of UnexpectedServerErrorError', function() {
       // uncomment below and update the code to test UnexpectedServerErrorError
-      //var instane = new Cryptoapis.UnexpectedServerErrorError();
+      //var instance = new Cryptoapis.UnexpectedServerErrorError();
       //expect(instance).to.be.a(Cryptoapis.UnexpectedServerErrorError);
     });
 

@@ -22,7 +22,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDRIValue from './GetXRPRipple
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRI model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRI
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetXRPRippleTransactionDetailsByTransactionIDRI {
     /**
@@ -84,6 +84,9 @@ class GetXRPRippleTransactionDetailsByTransactionIDRI {
             if (data.hasOwnProperty('additionalData')) {
                 obj['additionalData'] = ApiClient.convertToType(data['additionalData'], 'String');
             }
+            if (data.hasOwnProperty('destinationTag')) {
+                obj['destinationTag'] = ApiClient.convertToType(data['destinationTag'], 'Number');
+            }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'String');
             }
@@ -138,6 +141,11 @@ class GetXRPRippleTransactionDetailsByTransactionIDRI {
  * @member {String} additionalData
  */
 GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['additionalData'] = undefined;
+
+/**
+ * @member {Number} destinationTag
+ */
+GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['destinationTag'] = undefined;
 
 /**
  * Defines the index of the transaction, i.e. the consecutive place it takes in the blockchain.

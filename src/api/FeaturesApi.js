@@ -17,9 +17,13 @@ import AlreadyExists from '../model/AlreadyExists';
 import BroadcastLocallySignedTransactionR from '../model/BroadcastLocallySignedTransactionR';
 import BroadcastLocallySignedTransactionRB from '../model/BroadcastLocallySignedTransactionRB';
 import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
+import GenerateAddressR from '../model/GenerateAddressR';
+import GenerateAddressRB from '../model/GenerateAddressRB';
+import GetEIP1559FeeRecommendationsR from '../model/GetEIP1559FeeRecommendationsR';
 import InsufficientCredits from '../model/InsufficientCredits';
 import InvalidApiKey from '../model/InvalidApiKey';
 import InvalidData from '../model/InvalidData';
+import InvalidNetwork from '../model/InvalidNetwork';
 import InvalidPagination from '../model/InvalidPagination';
 import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
 import RequestLimitReached from '../model/RequestLimitReached';
@@ -32,7 +36,7 @@ import ValidateAddressRB from '../model/ValidateAddressRB';
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.2.1
+* @version 1.3.0
 */
 export default class FeaturesApi {
 
@@ -53,7 +57,7 @@ export default class FeaturesApi {
      * Broadcast Locally Signed Transaction
      * Through this endpoint customers can broadcast transactions that have been already signed locally. Instead of using a node for broadcasting a signed transaction users can use this endpoint. We then keep the user posted about the status by sending you a callback with a success or failure status.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/BroadcastLocallySignedTransactionRB} opts.broadcastLocallySignedTransactionRB 
@@ -98,7 +102,7 @@ export default class FeaturesApi {
      * Broadcast Locally Signed Transaction
      * Through this endpoint customers can broadcast transactions that have been already signed locally. Instead of using a node for broadcasting a signed transaction users can use this endpoint. We then keep the user posted about the status by sending you a callback with a success or failure status.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/BroadcastLocallySignedTransactionRB} opts.broadcastLocallySignedTransactionRB 
@@ -113,10 +117,134 @@ export default class FeaturesApi {
 
 
     /**
+     * Generate Address
+     * This endpoint will generate a unique address for the user along with the specific transaction script, e.g. P2PKH, a private and a public key, and WIF.     Users **must** keep their private keys and WIFs secure and accessible to only them at all times. Losing those exposes a risk of losing their funds associated with the respective address.     {warning}We generate, but **do not** save or record the response in any data base, log or anywhere else on our side! In the case a user loses their private key or WIF, Crypto APIs 2.0 **will not be able** to retrieve it.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/GenerateAddressRB} opts.generateAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GenerateAddressR} and HTTP response
+     */
+    generateAddressWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      let postBody = opts['generateAddressRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling generateAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling generateAddress");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = GenerateAddressR;
+      return this.apiClient.callApi(
+        '/blockchain-tools/{blockchain}/{network}/addresses/generate', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Generate Address
+     * This endpoint will generate a unique address for the user along with the specific transaction script, e.g. P2PKH, a private and a public key, and WIF.     Users **must** keep their private keys and WIFs secure and accessible to only them at all times. Losing those exposes a risk of losing their funds associated with the respective address.     {warning}We generate, but **do not** save or record the response in any data base, log or anywhere else on our side! In the case a user loses their private key or WIF, Crypto APIs 2.0 **will not be able** to retrieve it.{/warning}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/GenerateAddressRB} opts.generateAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GenerateAddressR}
+     */
+    generateAddress(blockchain, network, opts) {
+      return this.generateAddressWithHttpInfo(blockchain, network, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Get EIP 1559 Fee Recommendations
+     * Through this endpoint customers can obtain fee recommendations specifically for EIP 1559.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetEIP1559FeeRecommendationsR} and HTTP response
+     */
+    getEIP1559FeeRecommendationsWithHttpInfo(network, blockchain, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getEIP1559FeeRecommendations");
+      }
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getEIP1559FeeRecommendations");
+      }
+
+      let pathParams = {
+        'network': network,
+        'blockchain': blockchain
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetEIP1559FeeRecommendationsR;
+      return this.apiClient.callApi(
+        '/blockchain-tools/{blockchain}/{network}/fees/eip1559', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get EIP 1559 Fee Recommendations
+     * Through this endpoint customers can obtain fee recommendations specifically for EIP 1559.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetEIP1559FeeRecommendationsR}
+     */
+    getEIP1559FeeRecommendations(network, blockchain, opts) {
+      return this.getEIP1559FeeRecommendationsWithHttpInfo(network, blockchain, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
      * Validate Address
      * This endpoint checks user public addresses whether they are valid or not.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/ValidateAddressRB} opts.validateAddressRB 
@@ -161,7 +289,7 @@ export default class FeaturesApi {
      * Validate Address
      * This endpoint checks user public addresses whether they are valid or not.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/ValidateAddressRB} opts.validateAddressRB 

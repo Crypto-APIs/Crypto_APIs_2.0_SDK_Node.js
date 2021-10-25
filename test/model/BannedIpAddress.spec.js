@@ -50,7 +50,7 @@
   describe('BannedIpAddress', function() {
     it('should create an instance of BannedIpAddress', function() {
       // uncomment below and update the code to test BannedIpAddress
-      //var instane = new Cryptoapis.BannedIpAddress();
+      //var instance = new Cryptoapis.BannedIpAddress();
       //expect(instance).to.be.a(Cryptoapis.BannedIpAddress);
     });
 

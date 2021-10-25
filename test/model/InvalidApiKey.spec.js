@@ -50,7 +50,7 @@
   describe('InvalidApiKey', function() {
     it('should create an instance of InvalidApiKey', function() {
       // uncomment below and update the code to test InvalidApiKey
-      //var instane = new Cryptoapis.InvalidApiKey();
+      //var instance = new Cryptoapis.InvalidApiKey();
       //expect(instance).to.be.a(Cryptoapis.InvalidApiKey);
     });
 

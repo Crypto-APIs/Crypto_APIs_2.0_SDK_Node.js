@@ -7,11 +7,11 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AddressTokensTransactionUnconfirmedEthereumerc20token = _interopRequireDefault(require("./AddressTokensTransactionUnconfirmedEthereumerc20token"));
+var _AddressTokensTransactionUnconfirmedErc = _interopRequireDefault(require("./AddressTokensTransactionUnconfirmedErc20"));
 
-var _AddressTokensTransactionUnconfirmedEthereumerc721token = _interopRequireDefault(require("./AddressTokensTransactionUnconfirmedEthereumerc721token"));
+var _AddressTokensTransactionUnconfirmedErc2 = _interopRequireDefault(require("./AddressTokensTransactionUnconfirmedErc721"));
 
-var _AddressTokensTransactionUnconfirmedOmnilayertoken = _interopRequireDefault(require("./AddressTokensTransactionUnconfirmedOmnilayertoken"));
+var _AddressTokensTransactionUnconfirmedOmni = _interopRequireDefault(require("./AddressTokensTransactionUnconfirmedOmni"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,15 +24,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionUnconfirmedToken model module.
  * @module model/AddressTokensTransactionUnconfirmedToken
- * @version 1.2.1
+ * @version 1.3.0
  */
 var AddressTokensTransactionUnconfirmedToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionUnconfirmedToken</code>.
    * @alias module:model/AddressTokensTransactionUnconfirmedToken
-   * @implements module:model/AddressTokensTransactionUnconfirmedEthereumerc20token
-   * @implements module:model/AddressTokensTransactionUnconfirmedEthereumerc721token
-   * @implements module:model/AddressTokensTransactionUnconfirmedOmnilayertoken
+   * @implements module:model/AddressTokensTransactionUnconfirmedErc20
+   * @implements module:model/AddressTokensTransactionUnconfirmedErc721
+   * @implements module:model/AddressTokensTransactionUnconfirmedOmni
    * @param name {String} Specifies the name of the token.
    * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
    * @param amount {String} Defines the amount of tokens sent with the transaction that is pending confirmation.
@@ -45,11 +45,11 @@ var AddressTokensTransactionUnconfirmedToken = /*#__PURE__*/function () {
   function AddressTokensTransactionUnconfirmedToken(name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) {
     _classCallCheck(this, AddressTokensTransactionUnconfirmedToken);
 
-    _AddressTokensTransactionUnconfirmedEthereumerc20token["default"].initialize(this, name, symbol, amount, contractAddress);
+    _AddressTokensTransactionUnconfirmedErc["default"].initialize(this, name, symbol, amount, contractAddress);
 
-    _AddressTokensTransactionUnconfirmedEthereumerc721token["default"].initialize(this, name, symbol, tokenId, contractAddress);
+    _AddressTokensTransactionUnconfirmedErc2["default"].initialize(this, name, symbol, tokenId, contractAddress);
 
-    _AddressTokensTransactionUnconfirmedOmnilayertoken["default"].initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
+    _AddressTokensTransactionUnconfirmedOmni["default"].initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
 
     AddressTokensTransactionUnconfirmedToken.initialize(this, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId);
   }
@@ -86,11 +86,11 @@ var AddressTokensTransactionUnconfirmedToken = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new AddressTokensTransactionUnconfirmedToken();
 
-        _AddressTokensTransactionUnconfirmedEthereumerc20token["default"].constructFromObject(data, obj);
+        _AddressTokensTransactionUnconfirmedErc["default"].constructFromObject(data, obj);
 
-        _AddressTokensTransactionUnconfirmedEthereumerc721token["default"].constructFromObject(data, obj);
+        _AddressTokensTransactionUnconfirmedErc2["default"].constructFromObject(data, obj);
 
-        _AddressTokensTransactionUnconfirmedOmnilayertoken["default"].constructFromObject(data, obj);
+        _AddressTokensTransactionUnconfirmedOmni["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('name')) {
           obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
@@ -189,93 +189,93 @@ AddressTokensTransactionUnconfirmedToken.prototype['transactionType'] = undefine
  * @member {String} createdByTransactionId
  */
 
-AddressTokensTransactionUnconfirmedToken.prototype['createdByTransactionId'] = undefined; // Implement AddressTokensTransactionUnconfirmedEthereumerc20token interface:
+AddressTokensTransactionUnconfirmedToken.prototype['createdByTransactionId'] = undefined; // Implement AddressTokensTransactionUnconfirmedErc20 interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc20token["default"].prototype['name'] = undefined;
+_AddressTokensTransactionUnconfirmedErc["default"].prototype['name'] = undefined;
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc20token["default"].prototype['symbol'] = undefined;
+_AddressTokensTransactionUnconfirmedErc["default"].prototype['symbol'] = undefined;
 /**
  * Defines how many decimals can be used to break the token.
  * @member {String} decimals
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc20token["default"].prototype['decimals'] = undefined;
+_AddressTokensTransactionUnconfirmedErc["default"].prototype['decimals'] = undefined;
 /**
  * Defines the amount of tokens sent with the transaction that is pending confirmation.
  * @member {String} amount
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc20token["default"].prototype['amount'] = undefined;
+_AddressTokensTransactionUnconfirmedErc["default"].prototype['amount'] = undefined;
 /**
  * Defines the address of the contract.
  * @member {String} contractAddress
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc20token["default"].prototype['contractAddress'] = undefined; // Implement AddressTokensTransactionUnconfirmedEthereumerc721token interface:
+_AddressTokensTransactionUnconfirmedErc["default"].prototype['contractAddress'] = undefined; // Implement AddressTokensTransactionUnconfirmedErc721 interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc721token["default"].prototype['name'] = undefined;
+_AddressTokensTransactionUnconfirmedErc2["default"].prototype['name'] = undefined;
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc721token["default"].prototype['symbol'] = undefined;
+_AddressTokensTransactionUnconfirmedErc2["default"].prototype['symbol'] = undefined;
 /**
  * Specifies the unique ID of the token.
  * @member {String} tokenId
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc721token["default"].prototype['tokenId'] = undefined;
+_AddressTokensTransactionUnconfirmedErc2["default"].prototype['tokenId'] = undefined;
 /**
  * Specifies the address of the contract.
  * @member {String} contractAddress
  */
 
-_AddressTokensTransactionUnconfirmedEthereumerc721token["default"].prototype['contractAddress'] = undefined; // Implement AddressTokensTransactionUnconfirmedOmnilayertoken interface:
+_AddressTokensTransactionUnconfirmedErc2["default"].prototype['contractAddress'] = undefined; // Implement AddressTokensTransactionUnconfirmedOmni interface:
 
 /**
  * Specifies the name of the token.
  * @member {String} name
  */
 
-_AddressTokensTransactionUnconfirmedOmnilayertoken["default"].prototype['name'] = undefined;
+_AddressTokensTransactionUnconfirmedOmni["default"].prototype['name'] = undefined;
 /**
  * Defines the ID of the property for Omni Layer.
  * @member {String} propertyId
  */
 
-_AddressTokensTransactionUnconfirmedOmnilayertoken["default"].prototype['propertyId'] = undefined;
+_AddressTokensTransactionUnconfirmedOmni["default"].prototype['propertyId'] = undefined;
 /**
  * Defines the type of the transaction made.
  * @member {String} transactionType
  */
 
-_AddressTokensTransactionUnconfirmedOmnilayertoken["default"].prototype['transactionType'] = undefined;
+_AddressTokensTransactionUnconfirmedOmni["default"].prototype['transactionType'] = undefined;
 /**
  * The transaction ID used to create the token.
  * @member {String} createdByTransactionId
  */
 
-_AddressTokensTransactionUnconfirmedOmnilayertoken["default"].prototype['createdByTransactionId'] = undefined;
+_AddressTokensTransactionUnconfirmedOmni["default"].prototype['createdByTransactionId'] = undefined;
 /**
  * Defines the amount of tokens sent with the transaction that is pending confirmation.
  * @member {String} amount
  */
 
-_AddressTokensTransactionUnconfirmedOmnilayertoken["default"].prototype['amount'] = undefined;
+_AddressTokensTransactionUnconfirmedOmni["default"].prototype['amount'] = undefined;
 var _default = AddressTokensTransactionUnconfirmedToken;
 exports["default"] = _default;

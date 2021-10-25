@@ -17,7 +17,7 @@ import BannedIpAddressErrorDetails from './BannedIpAddressErrorDetails';
 /**
  * The EndpointNotAllowedForApiKeyError model module.
  * @module model/EndpointNotAllowedForApiKeyError
- * @version 1.2.1
+ * @version 1.3.0
  */
 class EndpointNotAllowedForApiKeyError {
     /**

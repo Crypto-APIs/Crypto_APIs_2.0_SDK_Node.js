@@ -50,7 +50,7 @@
   describe('GenerateDepositAddressRBDataItem', function() {
     it('should create an instance of GenerateDepositAddressRBDataItem', function() {
       // uncomment below and update the code to test GenerateDepositAddressRBDataItem
-      //var instane = new Cryptoapis.GenerateDepositAddressRBDataItem();
+      //var instance = new Cryptoapis.GenerateDepositAddressRBDataItem();
       //expect(instance).to.be.a(Cryptoapis.GenerateDepositAddressRBDataItem);
     });
 

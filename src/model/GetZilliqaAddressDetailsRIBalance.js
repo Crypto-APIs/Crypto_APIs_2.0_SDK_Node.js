@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetZilliqaAddressDetailsRIBalance model module.
  * @module model/GetZilliqaAddressDetailsRIBalance
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetZilliqaAddressDetailsRIBalance {
     /**

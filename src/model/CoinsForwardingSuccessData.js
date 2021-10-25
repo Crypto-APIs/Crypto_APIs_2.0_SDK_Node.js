@@ -17,7 +17,7 @@ import CoinsForwardingSuccessDataItem from './CoinsForwardingSuccessDataItem';
 /**
  * The CoinsForwardingSuccessData model module.
  * @module model/CoinsForwardingSuccessData
- * @version 1.2.1
+ * @version 1.3.0
  */
 class CoinsForwardingSuccessData {
     /**

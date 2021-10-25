@@ -50,7 +50,7 @@
   describe('GetHDWalletXPubYPubZPubDetailsRData', function() {
     it('should create an instance of GetHDWalletXPubYPubZPubDetailsRData', function() {
       // uncomment below and update the code to test GetHDWalletXPubYPubZPubDetailsRData
-      //var instane = new Cryptoapis.GetHDWalletXPubYPubZPubDetailsRData();
+      //var instance = new Cryptoapis.GetHDWalletXPubYPubZPubDetailsRData();
       //expect(instance).to.be.a(Cryptoapis.GetHDWalletXPubYPubZPubDetailsRData);
     });
 

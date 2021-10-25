@@ -50,7 +50,7 @@
   describe('NewConfirmedInternalTransactionsRBData', function() {
     it('should create an instance of NewConfirmedInternalTransactionsRBData', function() {
       // uncomment below and update the code to test NewConfirmedInternalTransactionsRBData
-      //var instane = new Cryptoapis.NewConfirmedInternalTransactionsRBData();
+      //var instance = new Cryptoapis.NewConfirmedInternalTransactionsRBData();
       //expect(instance).to.be.a(Cryptoapis.NewConfirmedInternalTransactionsRBData);
     });
 

@@ -17,7 +17,7 @@ import BlockMinedData from './BlockMinedData';
 /**
  * The BlockMined model module.
  * @module model/BlockMined
- * @version 1.2.1
+ * @version 1.3.0
  */
 class BlockMined {
     /**

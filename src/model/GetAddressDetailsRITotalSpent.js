@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAddressDetailsRITotalSpent model module.
  * @module model/GetAddressDetailsRITotalSpent
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetAddressDetailsRITotalSpent {
     /**
      * Constructs a new <code>GetAddressDetailsRITotalSpent</code>.
      * @alias module:model/GetAddressDetailsRITotalSpent
      * @param amount {String} Defines the total amount of all spent by this address coins, based on confirmed transactions.
-     * @param unit {String} 
+     * @param unit {String} Represents the unit of the total spent amount.
      */
     constructor(amount, unit) { 
         
@@ -71,6 +71,7 @@ class GetAddressDetailsRITotalSpent {
 GetAddressDetailsRITotalSpent.prototype['amount'] = undefined;
 
 /**
+ * Represents the unit of the total spent amount.
  * @member {String} unit
  */
 GetAddressDetailsRITotalSpent.prototype['unit'] = undefined;

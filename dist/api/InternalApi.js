@@ -25,6 +25,8 @@ var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/Inva
 
 var _ListInternalTransactionDetailsByTransactionHashR = _interopRequireDefault(require("../model/ListInternalTransactionDetailsByTransactionHashR"));
 
+var _ListInternalTransactionsByAddressR = _interopRequireDefault(require("../model/ListInternalTransactionsByAddressR"));
+
 var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
 var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
@@ -42,7 +44,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.2.1
+* @version 1.3.0
 */
 var InternalApi = /*#__PURE__*/function () {
   /**
@@ -61,7 +63,7 @@ var InternalApi = /*#__PURE__*/function () {
    * Get Internal Transaction by Transaction Hash and Operation Id
    * Through this endpoint customers can obtain detailed information about a specific Internal Transaction by using the attributes `transactionHash`  (the parent transaction's Hash) and `operationId` (type trace address).    An internal transaction is the result of a smart contract being triggered by an EOA or a subsequent contract call.
    * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-   * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+   * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
    * @param {String} operationId Represents the unique internal transaction ID in regards to the parent transaction (type trace address).
    * @param {String} transactionHash String identifier of the parent transaction of the internal transaction represented in CryptoAPIs.
    * @param {Object} opts Optional parameters
@@ -116,7 +118,7 @@ var InternalApi = /*#__PURE__*/function () {
      * Get Internal Transaction by Transaction Hash and Operation Id
      * Through this endpoint customers can obtain detailed information about a specific Internal Transaction by using the attributes `transactionHash`  (the parent transaction's Hash) and `operationId` (type trace address).    An internal transaction is the result of a smart contract being triggered by an EOA or a subsequent contract call.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} operationId Represents the unique internal transaction ID in regards to the parent transaction (type trace address).
      * @param {String} transactionHash String identifier of the parent transaction of the internal transaction represented in CryptoAPIs.
      * @param {Object} opts Optional parameters
@@ -135,7 +137,7 @@ var InternalApi = /*#__PURE__*/function () {
      * List Internal Transaction Details by Transaction Hash
      * Through this endpoint customers can list internal transactions along with their details by a specific attribute `transactionHash`, which is the parent transaction's Hash.    An internal transaction is the result of a smart contract being triggered by an EOA or a subsequent contract call.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} transactionHash String identifier of the parent transaction of the internal transaction represented in CryptoAPIs.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -186,7 +188,7 @@ var InternalApi = /*#__PURE__*/function () {
      * List Internal Transaction Details by Transaction Hash
      * Through this endpoint customers can list internal transactions along with their details by a specific attribute `transactionHash`, which is the parent transaction's Hash.    An internal transaction is the result of a smart contract being triggered by an EOA or a subsequent contract call.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} transactionHash String identifier of the parent transaction of the internal transaction represented in CryptoAPIs.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -199,6 +201,75 @@ var InternalApi = /*#__PURE__*/function () {
     key: "listInternalTransactionDetailsByTransactionHash",
     value: function listInternalTransactionDetailsByTransactionHash(blockchain, network, transactionHash, opts) {
       return this.listInternalTransactionDetailsByTransactionHashWithHttpInfo(blockchain, network, transactionHash, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List Internal Transactions By Address
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} address String identifier of the address document represented in CryptoAPIs
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListInternalTransactionsByAddressR} and HTTP response
+     */
+
+  }, {
+    key: "listInternalTransactionsByAddressWithHttpInfo",
+    value: function listInternalTransactionsByAddressWithHttpInfo(blockchain, network, address, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listInternalTransactionsByAddress");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listInternalTransactionsByAddress");
+      } // verify the required parameter 'address' is set
+
+
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listInternalTransactionsByAddress");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      var queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListInternalTransactionsByAddressR["default"];
+      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/addresses/{address}/internal', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List Internal Transactions By Address
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {String} address String identifier of the address document represented in CryptoAPIs
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListInternalTransactionsByAddressR}
+     */
+
+  }, {
+    key: "listInternalTransactionsByAddress",
+    value: function listInternalTransactionsByAddress(blockchain, network, address, opts) {
+      return this.listInternalTransactionsByAddressWithHttpInfo(blockchain, network, address, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

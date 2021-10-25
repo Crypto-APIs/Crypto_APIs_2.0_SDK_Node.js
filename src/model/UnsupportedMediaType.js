@@ -17,7 +17,7 @@ import UnsupportedMediaTypeError from './UnsupportedMediaTypeError';
 /**
  * The UnsupportedMediaType model module.
  * @module model/UnsupportedMediaType
- * @version 1.2.1
+ * @version 1.3.0
  */
 class UnsupportedMediaType {
     /**

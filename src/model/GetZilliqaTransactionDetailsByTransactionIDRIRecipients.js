@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDRIRecipients model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDRIRecipients
- * @version 1.2.1
+ * @version 1.3.0
  */
 class GetZilliqaTransactionDetailsByTransactionIDRIRecipients {
     /**

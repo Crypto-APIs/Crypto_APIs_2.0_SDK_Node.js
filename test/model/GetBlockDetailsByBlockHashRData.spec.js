@@ -50,7 +50,7 @@
   describe('GetBlockDetailsByBlockHashRData', function() {
     it('should create an instance of GetBlockDetailsByBlockHashRData', function() {
       // uncomment below and update the code to test GetBlockDetailsByBlockHashRData
-      //var instane = new Cryptoapis.GetBlockDetailsByBlockHashRData();
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashRData();
       //expect(instance).to.be.a(Cryptoapis.GetBlockDetailsByBlockHashRData);
     });
 

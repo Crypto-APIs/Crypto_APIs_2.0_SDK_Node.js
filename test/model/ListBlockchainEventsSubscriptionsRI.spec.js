@@ -50,7 +50,7 @@
   describe('ListBlockchainEventsSubscriptionsRI', function() {
     it('should create an instance of ListBlockchainEventsSubscriptionsRI', function() {
       // uncomment below and update the code to test ListBlockchainEventsSubscriptionsRI
-      //var instane = new Cryptoapis.ListBlockchainEventsSubscriptionsRI();
+      //var instance = new Cryptoapis.ListBlockchainEventsSubscriptionsRI();
       //expect(instance).to.be.a(Cryptoapis.ListBlockchainEventsSubscriptionsRI);
     });
 

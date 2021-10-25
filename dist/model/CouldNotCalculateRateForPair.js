@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CouldNotCalculateRateForPair model module.
  * @module model/CouldNotCalculateRateForPair
- * @version 1.2.1
+ * @version 1.3.0
  */
 var CouldNotCalculateRateForPair = /*#__PURE__*/function () {
   /**

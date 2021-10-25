@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock"));
+var _AddressTokensTransactionConfirmedDataItemMinedInBlock = _interopRequireDefault(require("./AddressTokensTransactionConfirmedDataItemMinedInBlock"));
 
 var _AddressTokensTransactionConfirmedEachConfirmationToken = _interopRequireDefault(require("./AddressTokensTransactionConfirmedEachConfirmationToken"));
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationDataItem model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationDataItem
- * @version 1.2.1
+ * @version 1.3.0
  */
 var AddressTokensTransactionConfirmedEachConfirmationDataItem = /*#__PURE__*/function () {
   /**
@@ -30,9 +30,9 @@ var AddressTokensTransactionConfirmedEachConfirmationDataItem = /*#__PURE__*/fun
    * Defines an &#x60;item&#x60; as one result.
    * @alias module:model/AddressTokensTransactionConfirmedEachConfirmationDataItem
    * @param blockchain {String} Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-   * @param network {String} Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+   * @param network {String} Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\",  are test networks.
    * @param address {String} Defines the specific address to which the transaction has been sent.
-   * @param minedInBlock {module:model/AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock} 
+   * @param minedInBlock {module:model/AddressTokensTransactionConfirmedDataItemMinedInBlock} 
    * @param transactionId {String} Defines the unique ID of the specific transaction, i.e. its identification number.
    * @param currentConfirmations {Number} Defines the number of currently received confirmations for the transaction.
    * @param targetConfirmations {Number} Defines the number of confirmation transactions requested as callbacks, i.e. the system can notify till the n-th confirmation.
@@ -93,7 +93,7 @@ var AddressTokensTransactionConfirmedEachConfirmationDataItem = /*#__PURE__*/fun
         }
 
         if (data.hasOwnProperty('minedInBlock')) {
-          obj['minedInBlock'] = _AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock["default"].constructFromObject(data['minedInBlock']);
+          obj['minedInBlock'] = _AddressTokensTransactionConfirmedDataItemMinedInBlock["default"].constructFromObject(data['minedInBlock']);
         }
 
         if (data.hasOwnProperty('transactionId')) {
@@ -135,7 +135,7 @@ var AddressTokensTransactionConfirmedEachConfirmationDataItem = /*#__PURE__*/fun
 
 AddressTokensTransactionConfirmedEachConfirmationDataItem.prototype['blockchain'] = undefined;
 /**
- * Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+ * Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\",  are test networks.
  * @member {String} network
  */
 
@@ -147,7 +147,7 @@ AddressTokensTransactionConfirmedEachConfirmationDataItem.prototype['network'] =
 
 AddressTokensTransactionConfirmedEachConfirmationDataItem.prototype['address'] = undefined;
 /**
- * @member {module:model/AddressTokensTransactionConfirmedEachConfirmationDataItemMinedInBlock} minedInBlock
+ * @member {module:model/AddressTokensTransactionConfirmedDataItemMinedInBlock} minedInBlock
  */
 
 AddressTokensTransactionConfirmedEachConfirmationDataItem.prototype['minedInBlock'] = undefined;
@@ -194,22 +194,28 @@ AddressTokensTransactionConfirmedEachConfirmationDataItem.prototype['direction']
 
 AddressTokensTransactionConfirmedEachConfirmationDataItem['TokenTypeEnum'] = {
   /**
-   * value: "ethereumERC20Token"
+   * value: "ERC-20"
    * @const
    */
-  "ethereumERC20Token": "ethereumERC20Token",
+  "ERC-20": "ERC-20",
 
   /**
-   * value: "ethereumERC721Token"
+   * value: "ERC-721"
    * @const
    */
-  "ethereumERC721Token": "ethereumERC721Token",
+  "ERC-721": "ERC-721",
 
   /**
-   * value: "omniLayerToken"
+   * value: "OMNI"
    * @const
    */
-  "omniLayerToken": "omniLayerToken"
+  "OMNI": "OMNI",
+
+  /**
+   * value: "BEP-20"
+   * @const
+   */
+  "BEP-20": "BEP-20"
 };
 /**
  * Allowed values for the <code>direction</code> property.

@@ -50,7 +50,7 @@
   describe('InsufficientCreditsError', function() {
     it('should create an instance of InsufficientCreditsError', function() {
       // uncomment below and update the code to test InsufficientCreditsError
-      //var instane = new Cryptoapis.InsufficientCreditsError();
+      //var instance = new Cryptoapis.InsufficientCreditsError();
       //expect(instance).to.be.a(Cryptoapis.InsufficientCreditsError);
     });
 

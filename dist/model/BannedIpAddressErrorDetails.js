@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BannedIpAddressErrorDetails model module.
  * @module model/BannedIpAddressErrorDetails
- * @version 1.2.1
+ * @version 1.3.0
  */
 var BannedIpAddressErrorDetails = /*#__PURE__*/function () {
   /**

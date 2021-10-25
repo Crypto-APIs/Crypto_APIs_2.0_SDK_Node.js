@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetailsRIBalance model module.
  * @module model/GetXRPRippleAddressDetailsRIBalance
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetXRPRippleAddressDetailsRIBalance = /*#__PURE__*/function () {
   /**

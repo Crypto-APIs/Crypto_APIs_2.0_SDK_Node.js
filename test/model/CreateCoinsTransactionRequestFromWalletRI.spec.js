@@ -50,7 +50,7 @@
   describe('CreateCoinsTransactionRequestFromWalletRI', function() {
     it('should create an instance of CreateCoinsTransactionRequestFromWalletRI', function() {
       // uncomment below and update the code to test CreateCoinsTransactionRequestFromWalletRI
-      //var instane = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();
       //expect(instance).to.be.a(Cryptoapis.CreateCoinsTransactionRequestFromWalletRI);
     });
 
@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property note (base name: "note")', function() {
+      // uncomment below and update the code to test the property note
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property recipients (base name: "recipients")', function() {
       // uncomment below and update the code to test the property recipients
       //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();
@@ -80,6 +86,12 @@
 
     it('should have the property totalTransactionAmount (base name: "totalTransactionAmount")', function() {
       // uncomment below and update the code to test the property totalTransactionAmount
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property transactionRequestId (base name: "transactionRequestId")', function() {
+      // uncomment below and update the code to test the property transactionRequestId
       //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromWalletRI();
       //expect(instance).to.be();
     });

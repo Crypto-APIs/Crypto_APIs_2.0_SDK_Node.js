@@ -50,7 +50,7 @@
   describe('InvalidRequestBodyStructureError', function() {
     it('should create an instance of InvalidRequestBodyStructureError', function() {
       // uncomment below and update the code to test InvalidRequestBodyStructureError
-      //var instane = new Cryptoapis.InvalidRequestBodyStructureError();
+      //var instance = new Cryptoapis.InvalidRequestBodyStructureError();
       //expect(instance).to.be.a(Cryptoapis.InvalidRequestBodyStructureError);
     });
 

@@ -48,6 +48,16 @@
   }
 
   describe('TransactionsApi', function() {
+    describe('createCoinsTransactionFromAddressForWholeAmount', function() {
+      it('should call createCoinsTransactionFromAddressForWholeAmount successfully', function(done) {
+        //uncomment below and update the code to test createCoinsTransactionFromAddressForWholeAmount
+        //instance.createCoinsTransactionFromAddressForWholeAmount(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('createCoinsTransactionRequestFromAddress', function() {
       it('should call createCoinsTransactionRequestFromAddress successfully', function(done) {
         //uncomment below and update the code to test createCoinsTransactionRequestFromAddress

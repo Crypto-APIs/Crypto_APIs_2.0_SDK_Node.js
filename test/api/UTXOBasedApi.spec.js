@@ -48,30 +48,10 @@
   }
 
   describe('UTXOBasedApi', function() {
-    describe('getHDWalletXPubYPubZPubDetails', function() {
-      it('should call getHDWalletXPubYPubZPubDetails successfully', function(done) {
-        //uncomment below and update the code to test getHDWalletXPubYPubZPubDetails
-        //instance.getHDWalletXPubYPubZPubDetails(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('listHDWalletXPubYPubZPubTransactions', function() {
-      it('should call listHDWalletXPubYPubZPubTransactions successfully', function(done) {
-        //uncomment below and update the code to test listHDWalletXPubYPubZPubTransactions
-        //instance.listHDWalletXPubYPubZPubTransactions(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('syncHDWalletXPubYPubZPub', function() {
-      it('should call syncHDWalletXPubYPubZPub successfully', function(done) {
-        //uncomment below and update the code to test syncHDWalletXPubYPubZPub
-        //instance.syncHDWalletXPubYPubZPub(function(error) {
+    describe('listUnspentTransactionOutputsByAddress', function() {
+      it('should call listUnspentTransactionOutputsByAddress successfully', function(done) {
+        //uncomment below and update the code to test listUnspentTransactionOutputsByAddress
+        //instance.listUnspentTransactionOutputsByAddress(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

@@ -50,7 +50,7 @@
   describe('NewBlockRB', function() {
     it('should create an instance of NewBlockRB', function() {
       // uncomment below and update the code to test NewBlockRB
-      //var instane = new Cryptoapis.NewBlockRB();
+      //var instance = new Cryptoapis.NewBlockRB();
       //expect(instance).to.be.a(Cryptoapis.NewBlockRB);
     });
 

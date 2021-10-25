@@ -18,14 +18,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRITotalCoins model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetXRPRippleBlockDetailsByBlockHashRITotalCoins = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHashRITotalCoins</code>.
+   * Defines the total coins.
    * @alias module:model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins
-   * @param amount {String} 
-   * @param unit {String} 
+   * @param amount {String} Defines the amount of the total coins.
+   * @param unit {String} Defines the unit of the total coins.
    */
   function GetXRPRippleBlockDetailsByBlockHashRITotalCoins(amount, unit) {
     _classCallCheck(this, GetXRPRippleBlockDetailsByBlockHashRITotalCoins);
@@ -75,12 +76,14 @@ var GetXRPRippleBlockDetailsByBlockHashRITotalCoins = /*#__PURE__*/function () {
   return GetXRPRippleBlockDetailsByBlockHashRITotalCoins;
 }();
 /**
+ * Defines the amount of the total coins.
  * @member {String} amount
  */
 
 
 GetXRPRippleBlockDetailsByBlockHashRITotalCoins.prototype['amount'] = undefined;
 /**
+ * Defines the unit of the total coins.
  * @member {String} unit
  */
 

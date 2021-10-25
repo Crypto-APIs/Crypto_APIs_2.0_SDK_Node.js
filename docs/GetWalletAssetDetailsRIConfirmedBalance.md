@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amount** | **String** |  | 
-**unit** | **String** |  | 
+**amount** | **String** | Specifies the amount of the confirmed balance. | 
+**unit** | **String** | Specifies the unit of the amount of the confirmed balance. | 
 
 

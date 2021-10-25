@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSEGasPrice from './GetTransactionD
 /**
  * The ListTransactionsByBlockHeightRIBSE model module.
  * @module model/ListTransactionsByBlockHeightRIBSE
- * @version 1.2.1
+ * @version 1.3.0
  */
 class ListTransactionsByBlockHeightRIBSE {
     /**

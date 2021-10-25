@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSEGasPrice model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSEGasPrice
- * @version 1.2.1
+ * @version 1.3.0
  */
 var GetTransactionDetailsByTransactionIDRIBSEGasPrice = /*#__PURE__*/function () {
   /**
