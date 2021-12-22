@@ -18,7 +18,7 @@ import ListUnconfirmedTransactionsByAddressRIBSDVin from './ListUnconfirmedTrans
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSD model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSD
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSD {
     /**

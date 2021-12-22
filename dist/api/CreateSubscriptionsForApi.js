@@ -7,17 +7,95 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AlreadyExists = _interopRequireDefault(require("../model/AlreadyExists"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40058"));
 
-var _BlockchainEventsCallbacksLimitReached = _interopRequireDefault(require("../model/BlockchainEventsCallbacksLimitReached"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40059"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40060"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40061"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40062"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40063"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40064"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40065"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40073"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40074"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40158"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40159"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40160"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40161"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40162"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40163"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40164"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40165"));
+
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40173"));
+
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40174"));
+
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40358"));
+
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40359"));
+
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40360"));
+
+var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse40361"));
+
+var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse40362"));
+
+var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40363"));
+
+var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse40364"));
+
+var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse40365"));
+
+var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse40373"));
+
+var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse40374"));
+
+var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse40910"));
+
+var _InlineResponse33 = _interopRequireDefault(require("../model/InlineResponse40911"));
+
+var _InlineResponse34 = _interopRequireDefault(require("../model/InlineResponse40912"));
+
+var _InlineResponse35 = _interopRequireDefault(require("../model/InlineResponse40913"));
+
+var _InlineResponse36 = _interopRequireDefault(require("../model/InlineResponse40914"));
+
+var _InlineResponse37 = _interopRequireDefault(require("../model/InlineResponse40915"));
+
+var _InlineResponse38 = _interopRequireDefault(require("../model/InlineResponse4096"));
+
+var _InlineResponse39 = _interopRequireDefault(require("../model/InlineResponse4097"));
+
+var _InlineResponse40 = _interopRequireDefault(require("../model/InlineResponse4098"));
+
+var _InlineResponse41 = _interopRequireDefault(require("../model/InlineResponse4099"));
+
+var _InlineResponse42 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse43 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse44 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse45 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _MinedTransactionR = _interopRequireDefault(require("../model/MinedTransactionR"));
 
@@ -59,24 +137,18 @@ var _NewUnconfirmedTokensTransactionsR = _interopRequireDefault(require("../mode
 
 var _NewUnconfirmedTokensTransactionsRB = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactionsRB"));
 
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var CreateSubscriptionsForApi = /*#__PURE__*/function () {
   /**

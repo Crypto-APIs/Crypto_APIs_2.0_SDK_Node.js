@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSBVout from './GetTransactionDetailsByTransactionIDRIBSBVout';
 import ListTransactionsByBlockHashRIBSBVin from './ListTransactionsByBlockHashRIBSBVin';
+import ListTransactionsByBlockHashRIBSBVout from './ListTransactionsByBlockHashRIBSBVout';
 
 /**
  * The ListTransactionsByBlockHashRIBSB model module.
  * @module model/ListTransactionsByBlockHashRIBSB
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListTransactionsByBlockHashRIBSB {
     /**
@@ -30,7 +30,7 @@ class ListTransactionsByBlockHashRIBSB {
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents the transaction version number.
      * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSBVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVout>} Represents the transaction outputs.
+     * @param vout {Array.<module:model/ListTransactionsByBlockHashRIBSBVout>} Represents the transaction outputs.
      */
     constructor(locktime, size, vSize, version, vin, vout) { 
         
@@ -78,7 +78,7 @@ class ListTransactionsByBlockHashRIBSB {
                 obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHashRIBSBVin]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSBVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHashRIBSBVout]);
             }
         }
         return obj;
@@ -119,7 +119,7 @@ ListTransactionsByBlockHashRIBSB.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVout>} vout
  */
 ListTransactionsByBlockHashRIBSB.prototype['vout'] = undefined;
 

@@ -78,12 +78,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property tokenIdentifier (base name: "tokenIdentifier")', function() {
-      // uncomment below and update the code to test the property tokenIdentifier
-      //var instance = new Cryptoapis.ListWalletTransactionsRIValue();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

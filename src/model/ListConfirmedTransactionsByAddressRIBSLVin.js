@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSLScriptSig from './ListConfirmedTra
 /**
  * The ListConfirmedTransactionsByAddressRIBSLVin model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSLVin
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListConfirmedTransactionsByAddressRIBSLVin {
     /**

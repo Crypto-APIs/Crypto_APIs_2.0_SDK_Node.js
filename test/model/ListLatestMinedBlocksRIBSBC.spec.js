@@ -66,8 +66,26 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property difficulty (base name: "difficulty")', function() {
+      // uncomment below and update the code to test the property difficulty
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBC();
+      //expect(instance).to.be();
+    });
+
     it('should have the property merkleRoot (base name: "merkleRoot")', function() {
       // uncomment below and update the code to test the property merkleRoot
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBC();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nonce (base name: "nonce")', function() {
+      // uncomment below and update the code to test the property nonce
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBC();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property size (base name: "size")', function() {
+      // uncomment below and update the code to test the property size
       //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBC();
       //expect(instance).to.be();
     });

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSL model module.
  * @module model/ListLatestMinedBlocksRIBSL
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListLatestMinedBlocksRIBSL {
     /**
@@ -25,15 +25,18 @@ class ListLatestMinedBlocksRIBSL {
      * @alias module:model/ListLatestMinedBlocksRIBSL
      * @param bits {String} Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
      * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+     * @param nonce {Number} Represents a random value that can be adjusted to satisfy the proof of work
+     * @param size {Number} Represents the total size of the block in Bytes.
      * @param strippedSize {Number} Defines the numeric representation of the block size excluding the witness data.
      * @param version {Number} Represents the version of the specific block on the blockchain.
      * @param versionHex {String} Is the hexadecimal string representation of the block's version.
      * @param weight {Number} Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
      */
-    constructor(bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight) { 
+    constructor(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight) { 
         
-        ListLatestMinedBlocksRIBSL.initialize(this, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);
+        ListLatestMinedBlocksRIBSL.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);
     }
 
     /**
@@ -41,10 +44,13 @@ class ListLatestMinedBlocksRIBSL {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight) { 
+    static initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight) { 
         obj['bits'] = bits;
         obj['chainwork'] = chainwork;
+        obj['difficulty'] = difficulty;
         obj['merkleRoot'] = merkleRoot;
+        obj['nonce'] = nonce;
+        obj['size'] = size;
         obj['strippedSize'] = strippedSize;
         obj['version'] = version;
         obj['versionHex'] = versionHex;
@@ -68,8 +74,17 @@ class ListLatestMinedBlocksRIBSL {
             if (data.hasOwnProperty('chainwork')) {
                 obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
             }
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
+            }
             if (data.hasOwnProperty('merkleRoot')) {
                 obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
+            }
+            if (data.hasOwnProperty('nonce')) {
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
+            }
+            if (data.hasOwnProperty('size')) {
+                obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
             if (data.hasOwnProperty('strippedSize')) {
                 obj['strippedSize'] = ApiClient.convertToType(data['strippedSize'], 'Number');
@@ -103,10 +118,28 @@ ListLatestMinedBlocksRIBSL.prototype['bits'] = undefined;
 ListLatestMinedBlocksRIBSL.prototype['chainwork'] = undefined;
 
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+ListLatestMinedBlocksRIBSL.prototype['difficulty'] = undefined;
+
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 ListLatestMinedBlocksRIBSL.prototype['merkleRoot'] = undefined;
+
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+ListLatestMinedBlocksRIBSL.prototype['nonce'] = undefined;
+
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+ListLatestMinedBlocksRIBSL.prototype['size'] = undefined;
 
 /**
  * Defines the numeric representation of the block size excluding the witness data.

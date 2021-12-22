@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBScriptSig from './GetTransaction
 /**
  * The ListUnspentTransactionOutputsByAddressRIVin model module.
  * @module model/ListUnspentTransactionOutputsByAddressRIVin
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListUnspentTransactionOutputsByAddressRIVin {
     /**

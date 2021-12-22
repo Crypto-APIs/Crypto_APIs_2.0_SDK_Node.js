@@ -13,30 +13,51 @@
 
 
 import ApiClient from "../ApiClient";
-import BlockchainDataBlockNotFound from '../model/BlockchainDataBlockNotFound';
-import BlockchainDataTransactionNotFound from '../model/BlockchainDataTransactionNotFound';
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import GetLatestMinedZilliqaBlockR from '../model/GetLatestMinedZilliqaBlockR';
 import GetZilliqaAddressDetailsR from '../model/GetZilliqaAddressDetailsR';
 import GetZilliqaBlockDetailsByBlockHashR from '../model/GetZilliqaBlockDetailsByBlockHashR';
 import GetZilliqaBlockDetailsByBlockHeightR from '../model/GetZilliqaBlockDetailsByBlockHeightR';
 import GetZilliqaTransactionDetailsByTransactionIDR from '../model/GetZilliqaTransactionDetailsByTransactionIDR';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse40014 from '../model/InlineResponse40014';
+import InlineResponse40021 from '../model/InlineResponse40021';
+import InlineResponse40022 from '../model/InlineResponse40022';
+import InlineResponse40029 from '../model/InlineResponse40029';
+import InlineResponse4003 from '../model/InlineResponse4003';
+import InlineResponse40033 from '../model/InlineResponse40033';
+import InlineResponse40040 from '../model/InlineResponse40040';
+import InlineResponse4009 from '../model/InlineResponse4009';
+import InlineResponse40114 from '../model/InlineResponse40114';
+import InlineResponse40121 from '../model/InlineResponse40121';
+import InlineResponse40122 from '../model/InlineResponse40122';
+import InlineResponse40129 from '../model/InlineResponse40129';
+import InlineResponse4013 from '../model/InlineResponse4013';
+import InlineResponse40133 from '../model/InlineResponse40133';
+import InlineResponse40140 from '../model/InlineResponse40140';
+import InlineResponse4019 from '../model/InlineResponse4019';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40314 from '../model/InlineResponse40314';
+import InlineResponse40321 from '../model/InlineResponse40321';
+import InlineResponse40322 from '../model/InlineResponse40322';
+import InlineResponse40329 from '../model/InlineResponse40329';
+import InlineResponse4033 from '../model/InlineResponse4033';
+import InlineResponse40333 from '../model/InlineResponse40333';
+import InlineResponse40340 from '../model/InlineResponse40340';
+import InlineResponse4039 from '../model/InlineResponse4039';
+import InlineResponse404 from '../model/InlineResponse404';
+import InlineResponse4042 from '../model/InlineResponse4042';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListZilliqaTransactionsByAddressR from '../model/ListZilliqaTransactionsByAddressR';
 import ListZilliqaTransactionsByBlockHashR from '../model/ListZilliqaTransactionsByBlockHashR';
 import ListZilliqaTransactionsByBlockHeightR from '../model/ListZilliqaTransactionsByBlockHeightR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class ZilliqaApi {
 

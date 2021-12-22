@@ -60,14 +60,38 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property confirmedBalance (base name: "confirmedBalance")', function() {
+      // uncomment below and update the code to test the property confirmedBalance
+      //var instance = new Cryptoapis.ListDepositAddressesRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property createdTimestamp (base name: "createdTimestamp")', function() {
       // uncomment below and update the code to test the property createdTimestamp
       //var instance = new Cryptoapis.ListDepositAddressesRI();
       //expect(instance).to.be();
     });
 
+    it('should have the property fungibleTokens (base name: "fungibleTokens")', function() {
+      // uncomment below and update the code to test the property fungibleTokens
+      //var instance = new Cryptoapis.ListDepositAddressesRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property index (base name: "index")', function() {
+      // uncomment below and update the code to test the property index
+      //var instance = new Cryptoapis.ListDepositAddressesRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property label (base name: "label")', function() {
       // uncomment below and update the code to test the property label
+      //var instance = new Cryptoapis.ListDepositAddressesRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nonFungibleTokens (base name: "nonFungibleTokens")', function() {
+      // uncomment below and update the code to test the property nonFungibleTokens
       //var instance = new Cryptoapis.ListDepositAddressesRI();
       //expect(instance).to.be();
     });

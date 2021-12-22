@@ -7,21 +7,61 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
-
 var _GetTransactionRequestDetailsR = _interopRequireDefault(require("../model/GetTransactionRequestDetailsR"));
 
 var _GetWalletAssetDetailsR = _interopRequireDefault(require("../model/GetWalletAssetDetailsR"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _GetWalletTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetWalletTransactionDetailsByTransactionIDR"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40034"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40035"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40041"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40045"));
+
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40046"));
+
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse4007"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40134"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40135"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40141"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40145"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40146"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse4017"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40334"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40335"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40341"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40345"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40346"));
+
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse4037"));
+
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse4041"));
+
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListDepositAddressesR = _interopRequireDefault(require("../model/ListDepositAddressesR"));
 
@@ -29,26 +69,18 @@ var _ListSupportedTokensR = _interopRequireDefault(require("../model/ListSupport
 
 var _ListWalletTransactionsR = _interopRequireDefault(require("../model/ListWalletTransactionsR"));
 
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
-
-var _ResourceNotFound = _interopRequireDefault(require("../model/ResourceNotFound"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var InformativeApi = /*#__PURE__*/function () {
   /**
@@ -175,6 +207,71 @@ var InformativeApi = /*#__PURE__*/function () {
     key: "getWalletAssetDetails",
     value: function getWalletAssetDetails(blockchain, network, walletId, opts) {
       return this.getWalletAssetDetailsWithHttpInfo(blockchain, network, walletId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Get Wallet Transaction Details By Transaction ID
+     * Through this endpoint users can obtain Wallet transaction information by providing a `transactionId`. Customers can receive information only for a transaction that has been made from their own wallet.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetWalletTransactionDetailsByTransactionIDR} and HTTP response
+     */
+
+  }, {
+    key: "getWalletTransactionDetailsByTransactionIDWithHttpInfo",
+    value: function getWalletTransactionDetailsByTransactionIDWithHttpInfo(blockchain, network, transactionId, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getWalletTransactionDetailsByTransactionID");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getWalletTransactionDetailsByTransactionID");
+      } // verify the required parameter 'transactionId' is set
+
+
+      if (transactionId === undefined || transactionId === null) {
+        throw new Error("Missing the required parameter 'transactionId' when calling getWalletTransactionDetailsByTransactionID");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'transactionId': transactionId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _GetWalletTransactionDetailsByTransactionIDR["default"];
+      return this.apiClient.callApi('/wallet-as-a-service/wallets/{blockchain}/{network}/transactions/{transactionId}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Get Wallet Transaction Details By Transaction ID
+     * Through this endpoint users can obtain Wallet transaction information by providing a `transactionId`. Customers can receive information only for a transaction that has been made from their own wallet.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetWalletTransactionDetailsByTransactionIDR}
+     */
+
+  }, {
+    key: "getWalletTransactionDetailsByTransactionID",
+    value: function getWalletTransactionDetailsByTransactionID(blockchain, network, transactionId, opts) {
+      return this.getWalletTransactionDetailsByTransactionIDWithHttpInfo(blockchain, network, transactionId, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

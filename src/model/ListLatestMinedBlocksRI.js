@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetLatestMinedXRPRippleBlockRITotalCoins from './GetLatestMinedXRPRippleBlockRITotalCoins';
-import GetLatestMinedXRPRippleBlockRITotalFees from './GetLatestMinedXRPRippleBlockRITotalFees';
 import ListLatestMinedBlocksRIBS from './ListLatestMinedBlocksRIBS';
+import ListLatestMinedBlocksRITotalCoins from './ListLatestMinedBlocksRITotalCoins';
+import ListLatestMinedBlocksRITotalFees from './ListLatestMinedBlocksRITotalFees';
 
 /**
  * The ListLatestMinedBlocksRI model module.
  * @module model/ListLatestMinedBlocksRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListLatestMinedBlocksRI {
     /**
@@ -30,8 +30,8 @@ class ListLatestMinedBlocksRI {
      * @param previousBlockHash {String} Represents the hash of the previous block, also known as the parent block.
      * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
      * @param transactionsCount {Number} Represents the total number of all transactions as part of this block.
-     * @param totalCoins {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} 
-     * @param totalFees {module:model/GetLatestMinedXRPRippleBlockRITotalFees} 
+     * @param totalCoins {module:model/ListLatestMinedBlocksRITotalCoins} 
+     * @param totalFees {module:model/ListLatestMinedBlocksRITotalFees} 
      * @param blockchainSpecific {module:model/ListLatestMinedBlocksRIBS} 
      */
     constructor(hash, height, previousBlockHash, timestamp, transactionsCount, totalCoins, totalFees, blockchainSpecific) { 
@@ -82,10 +82,10 @@ class ListLatestMinedBlocksRI {
                 obj['transactionsCount'] = ApiClient.convertToType(data['transactionsCount'], 'Number');
             }
             if (data.hasOwnProperty('totalCoins')) {
-                obj['totalCoins'] = GetLatestMinedXRPRippleBlockRITotalCoins.constructFromObject(data['totalCoins']);
+                obj['totalCoins'] = ListLatestMinedBlocksRITotalCoins.constructFromObject(data['totalCoins']);
             }
             if (data.hasOwnProperty('totalFees')) {
-                obj['totalFees'] = GetLatestMinedXRPRippleBlockRITotalFees.constructFromObject(data['totalFees']);
+                obj['totalFees'] = ListLatestMinedBlocksRITotalFees.constructFromObject(data['totalFees']);
             }
             if (data.hasOwnProperty('blockchainSpecific')) {
                 obj['blockchainSpecific'] = ListLatestMinedBlocksRIBS.constructFromObject(data['blockchainSpecific']);
@@ -128,12 +128,12 @@ ListLatestMinedBlocksRI.prototype['timestamp'] = undefined;
 ListLatestMinedBlocksRI.prototype['transactionsCount'] = undefined;
 
 /**
- * @member {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} totalCoins
+ * @member {module:model/ListLatestMinedBlocksRITotalCoins} totalCoins
  */
 ListLatestMinedBlocksRI.prototype['totalCoins'] = undefined;
 
 /**
- * @member {module:model/GetLatestMinedXRPRippleBlockRITotalFees} totalFees
+ * @member {module:model/ListLatestMinedBlocksRITotalFees} totalFees
  */
 ListLatestMinedBlocksRI.prototype['totalFees'] = undefined;
 

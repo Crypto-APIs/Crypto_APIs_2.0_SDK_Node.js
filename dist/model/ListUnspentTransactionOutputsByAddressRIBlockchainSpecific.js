@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _ListConfirmedTransactionsByAddressRIBSZVShieldedOutput = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSZVShieldedOutput"));
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput"));
 
 var _ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit = _interopRequireDefault(require("./ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit"));
 
@@ -19,12 +19,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecific model module.
  * @module model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecific
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListUnspentTransactionOutputsByAddressRIBlockchainSpecific = /*#__PURE__*/function () {
   /**
@@ -108,7 +108,7 @@ var ListUnspentTransactionOutputsByAddressRIBlockchainSpecific = /*#__PURE__*/fu
         }
 
         if (data.hasOwnProperty('vShieldedOutput')) {
-          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_ListConfirmedTransactionsByAddressRIBSZVShieldedOutput["default"]]);
+          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedSpend')) {
@@ -175,7 +175,7 @@ ListUnspentTransactionOutputsByAddressRIBlockchainSpecific.prototype['overwinter
 ListUnspentTransactionOutputsByAddressRIBlockchainSpecific.prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
  */
 
 ListUnspentTransactionOutputsByAddressRIBlockchainSpecific.prototype['vShieldedOutput'] = undefined;

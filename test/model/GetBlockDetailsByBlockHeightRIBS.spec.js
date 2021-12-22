@@ -150,12 +150,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property merkleroot (base name: "merkleroot")', function() {
-      // uncomment below and update the code to test the property merkleroot
-      //var instance = new Cryptoapis.GetBlockDetailsByBlockHeightRIBS();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

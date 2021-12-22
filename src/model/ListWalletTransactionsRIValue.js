@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListWalletTransactionsRIValue model module.
  * @module model/ListWalletTransactionsRIValue
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListWalletTransactionsRIValue {
     /**
@@ -67,9 +67,6 @@ class ListWalletTransactionsRIValue {
             if (data.hasOwnProperty('symbol')) {
                 obj['symbol'] = ApiClient.convertToType(data['symbol'], 'String');
             }
-            if (data.hasOwnProperty('tokenIdentifier')) {
-                obj['tokenIdentifier'] = ApiClient.convertToType(data['tokenIdentifier'], 'String');
-            }
         }
         return obj;
     }
@@ -100,12 +97,6 @@ ListWalletTransactionsRIValue.prototype['exchangeRateUnit'] = undefined;
  * @member {String} symbol
  */
 ListWalletTransactionsRIValue.prototype['symbol'] = undefined;
-
-/**
- * Defines the token's identifier of the transaction's amount.
- * @member {String} tokenIdentifier
- */
-ListWalletTransactionsRIValue.prototype['tokenIdentifier'] = undefined;
 
 
 

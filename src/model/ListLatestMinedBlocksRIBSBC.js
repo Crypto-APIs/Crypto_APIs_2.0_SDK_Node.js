@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSBC model module.
  * @module model/ListLatestMinedBlocksRIBSBC
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListLatestMinedBlocksRIBSBC {
     /**
@@ -25,13 +25,16 @@ class ListLatestMinedBlocksRIBSBC {
      * @alias module:model/ListLatestMinedBlocksRIBSBC
      * @param bits {String} A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
      * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+     * @param nonce {Number} Represents a random value that can be adjusted to satisfy the proof of work
+     * @param size {Number} Represents a random value that can be adjusted to satisfy the proof of work
      * @param version {Number} Represents the version of the specific block on the blockchain.
      * @param versionHex {String} Is the hexadecimal string representation of the block's version.
      */
-    constructor(bits, chainwork, merkleRoot, version, versionHex) { 
+    constructor(bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex) { 
         
-        ListLatestMinedBlocksRIBSBC.initialize(this, bits, chainwork, merkleRoot, version, versionHex);
+        ListLatestMinedBlocksRIBSBC.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);
     }
 
     /**
@@ -39,10 +42,13 @@ class ListLatestMinedBlocksRIBSBC {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, bits, chainwork, merkleRoot, version, versionHex) { 
+    static initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex) { 
         obj['bits'] = bits;
         obj['chainwork'] = chainwork;
+        obj['difficulty'] = difficulty;
         obj['merkleRoot'] = merkleRoot;
+        obj['nonce'] = nonce;
+        obj['size'] = size;
         obj['version'] = version;
         obj['versionHex'] = versionHex;
     }
@@ -64,8 +70,17 @@ class ListLatestMinedBlocksRIBSBC {
             if (data.hasOwnProperty('chainwork')) {
                 obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
             }
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
+            }
             if (data.hasOwnProperty('merkleRoot')) {
                 obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
+            }
+            if (data.hasOwnProperty('nonce')) {
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
+            }
+            if (data.hasOwnProperty('size')) {
+                obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
             if (data.hasOwnProperty('version')) {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
@@ -93,10 +108,28 @@ ListLatestMinedBlocksRIBSBC.prototype['bits'] = undefined;
 ListLatestMinedBlocksRIBSBC.prototype['chainwork'] = undefined;
 
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+ListLatestMinedBlocksRIBSBC.prototype['difficulty'] = undefined;
+
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 ListLatestMinedBlocksRIBSBC.prototype['merkleRoot'] = undefined;
+
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+ListLatestMinedBlocksRIBSBC.prototype['nonce'] = undefined;
+
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} size
+ */
+ListLatestMinedBlocksRIBSBC.prototype['size'] = undefined;
 
 /**
  * Represents the version of the specific block on the blockchain.

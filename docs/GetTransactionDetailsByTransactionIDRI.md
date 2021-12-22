@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **index** | **Number** | Represents the index position of the transaction in the specific block. | 
-**isConfirmed** | **String** | Represents the state of the transaction whether it is confirmed or not confirmed. | 
+**isConfirmed** | **Boolean** | Represents the state of the transaction whether it is confirmed or not confirmed. | 
 **minedInBlockHash** | **String** | Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm. | [optional] 
 **minedInBlockHeight** | **Number** | Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block. | [optional] 
 **recipients** | [**[GetTransactionDetailsByTransactionIDRIRecipients]**](GetTransactionDetailsByTransactionIDRIRecipients.md) | Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list. | 

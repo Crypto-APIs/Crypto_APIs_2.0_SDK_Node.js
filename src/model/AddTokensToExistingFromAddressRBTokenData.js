@@ -18,7 +18,7 @@ import AddTokensToExistingFromAddressRBTokenDataEthereumToken from './AddTokensT
 /**
  * The AddTokensToExistingFromAddressRBTokenData model module.
  * @module model/AddTokensToExistingFromAddressRBTokenData
- * @version 1.3.0
+ * @version 1.4.0
  */
 class AddTokensToExistingFromAddressRBTokenData {
     /**

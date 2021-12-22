@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSD2ScriptSig from './ListConfirmedTr
 /**
  * The ListAllUnconfirmedTransactionsRIBSD2Vin model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSD2Vin
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListAllUnconfirmedTransactionsRIBSD2Vin {
     /**

@@ -16,24 +16,27 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSEC model module.
  * @module model/ListLatestMinedBlocksRIBSEC
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListLatestMinedBlocksRIBSEC {
     /**
      * Constructs a new <code>ListLatestMinedBlocksRIBSEC</code>.
      * Ethereum Classic
      * @alias module:model/ListLatestMinedBlocksRIBSEC
+     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
      * @param extraData {String} Represents any data that can be included by the miner in the block.
      * @param gasLimit {String} Defines the total gas limit of all transactions in the block.
      * @param gasUsed {String} Represents the total amount of gas used by all transactions in this block.
      * @param minedInSeconds {Number} Specifies the amount of time required for the block to be mined in seconds.
+     * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
      * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
+     * @param size {Number} Represents the total size of the block in Bytes.
      * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
      * @param uncles {Array.<String>} 
      */
-    constructor(extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles) { 
+    constructor(difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles) { 
         
-        ListLatestMinedBlocksRIBSEC.initialize(this, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);
+        ListLatestMinedBlocksRIBSEC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
     }
 
     /**
@@ -41,12 +44,15 @@ class ListLatestMinedBlocksRIBSEC {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles) { 
+    static initialize(obj, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles) { 
+        obj['difficulty'] = difficulty;
         obj['extraData'] = extraData;
         obj['gasLimit'] = gasLimit;
         obj['gasUsed'] = gasUsed;
         obj['minedInSeconds'] = minedInSeconds;
+        obj['nonce'] = nonce;
         obj['sha3Uncles'] = sha3Uncles;
+        obj['size'] = size;
         obj['totalDifficulty'] = totalDifficulty;
         obj['uncles'] = uncles;
     }
@@ -62,6 +68,9 @@ class ListLatestMinedBlocksRIBSEC {
         if (data) {
             obj = obj || new ListLatestMinedBlocksRIBSEC();
 
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
+            }
             if (data.hasOwnProperty('extraData')) {
                 obj['extraData'] = ApiClient.convertToType(data['extraData'], 'String');
             }
@@ -74,8 +83,14 @@ class ListLatestMinedBlocksRIBSEC {
             if (data.hasOwnProperty('minedInSeconds')) {
                 obj['minedInSeconds'] = ApiClient.convertToType(data['minedInSeconds'], 'Number');
             }
+            if (data.hasOwnProperty('nonce')) {
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
+            }
             if (data.hasOwnProperty('sha3Uncles')) {
                 obj['sha3Uncles'] = ApiClient.convertToType(data['sha3Uncles'], 'String');
+            }
+            if (data.hasOwnProperty('size')) {
+                obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
             if (data.hasOwnProperty('totalDifficulty')) {
                 obj['totalDifficulty'] = ApiClient.convertToType(data['totalDifficulty'], 'String');
@@ -89,6 +104,12 @@ class ListLatestMinedBlocksRIBSEC {
 
 
 }
+
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+ListLatestMinedBlocksRIBSEC.prototype['difficulty'] = undefined;
 
 /**
  * Represents any data that can be included by the miner in the block.
@@ -115,10 +136,22 @@ ListLatestMinedBlocksRIBSEC.prototype['gasUsed'] = undefined;
 ListLatestMinedBlocksRIBSEC.prototype['minedInSeconds'] = undefined;
 
 /**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+ListLatestMinedBlocksRIBSEC.prototype['nonce'] = undefined;
+
+/**
  * Defines the combined hash of all uncles for a given parent.
  * @member {String} sha3Uncles
  */
 ListLatestMinedBlocksRIBSEC.prototype['sha3Uncles'] = undefined;
+
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+ListLatestMinedBlocksRIBSEC.prototype['size'] = undefined;
 
 /**
  * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.

@@ -15,21 +15,21 @@
 import ApiClient from "../ApiClient";
 import GenerateDepositAddressR from '../model/GenerateDepositAddressR';
 import GenerateDepositAddressRB from '../model/GenerateDepositAddressRB';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
-import RequestLimitReached from '../model/RequestLimitReached';
-import ResourceNotFound from '../model/ResourceNotFound';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
-import WalletAsAServiceDepositAddressesLimitReached from '../model/WalletAsAServiceDepositAddressesLimitReached';
+import InlineResponse4008 from '../model/InlineResponse4008';
+import InlineResponse4018 from '../model/InlineResponse4018';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse4038 from '../model/InlineResponse4038';
+import InlineResponse4041 from '../model/InlineResponse4041';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class GeneratingApi {
 

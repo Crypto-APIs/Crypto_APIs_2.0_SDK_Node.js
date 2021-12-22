@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit model module.
  * @module model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit {
     /**

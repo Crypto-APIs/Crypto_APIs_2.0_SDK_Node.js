@@ -25,7 +25,7 @@ import GetBlockDetailsByBlockHeightRIBSZ from './GetBlockDetailsByBlockHeightRIB
 /**
  * The GetBlockDetailsByBlockHeightRIBS model module.
  * @module model/GetBlockDetailsByBlockHeightRIBS
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetBlockDetailsByBlockHeightRIBS {
     /**
@@ -56,11 +56,10 @@ class GetBlockDetailsByBlockHeightRIBS {
      * @param minedInSeconds {Number} Specifies the amount of time required for the block to be mined in seconds.
      * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
      * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
-     * @param merkleroot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
      */
-    constructor(difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, merkleroot) { 
-        GetBlockDetailsByBlockHeightRIBSB.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);GetBlockDetailsByBlockHeightRIBSE.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);GetBlockDetailsByBlockHeightRIBSEC.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);GetBlockDetailsByBlockHeightRIBSBC.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);GetBlockDetailsByBlockHeightRIBSL.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);GetBlockDetailsByBlockHeightRIBSD.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, weight);GetBlockDetailsByBlockHeightRIBSD2.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);GetBlockDetailsByBlockHeightRIBSBSC.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);GetBlockDetailsByBlockHeightRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleroot, version);
-        GetBlockDetailsByBlockHeightRIBS.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, merkleroot);
+    constructor(difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty) { 
+        GetBlockDetailsByBlockHeightRIBSB.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);GetBlockDetailsByBlockHeightRIBSE.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);GetBlockDetailsByBlockHeightRIBSEC.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);GetBlockDetailsByBlockHeightRIBSBC.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);GetBlockDetailsByBlockHeightRIBSL.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);GetBlockDetailsByBlockHeightRIBSD.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, weight);GetBlockDetailsByBlockHeightRIBSD2.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);GetBlockDetailsByBlockHeightRIBSBSC.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);GetBlockDetailsByBlockHeightRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version);
+        GetBlockDetailsByBlockHeightRIBS.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);
     }
 
     /**
@@ -68,7 +67,7 @@ class GetBlockDetailsByBlockHeightRIBS {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, merkleroot) { 
+    static initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty) { 
         obj['difficulty'] = difficulty;
         obj['nonce'] = nonce;
         obj['size'] = size;
@@ -85,7 +84,6 @@ class GetBlockDetailsByBlockHeightRIBS {
         obj['minedInSeconds'] = minedInSeconds;
         obj['sha3Uncles'] = sha3Uncles;
         obj['totalDifficulty'] = totalDifficulty;
-        obj['merkleroot'] = merkleroot;
     }
 
     /**
@@ -155,9 +153,6 @@ class GetBlockDetailsByBlockHeightRIBS {
             }
             if (data.hasOwnProperty('totalDifficulty')) {
                 obj['totalDifficulty'] = ApiClient.convertToType(data['totalDifficulty'], 'String');
-            }
-            if (data.hasOwnProperty('merkleroot')) {
-                obj['merkleroot'] = ApiClient.convertToType(data['merkleroot'], 'String');
             }
         }
         return obj;
@@ -261,12 +256,6 @@ GetBlockDetailsByBlockHeightRIBS.prototype['sha3Uncles'] = undefined;
  * @member {String} totalDifficulty
  */
 GetBlockDetailsByBlockHeightRIBS.prototype['totalDifficulty'] = undefined;
-
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
- */
-GetBlockDetailsByBlockHeightRIBS.prototype['merkleroot'] = undefined;
 
 
 // Implement GetBlockDetailsByBlockHeightRIBSB interface:
@@ -665,9 +654,9 @@ GetBlockDetailsByBlockHeightRIBSZ.prototype['bits'] = undefined;
 GetBlockDetailsByBlockHeightRIBSZ.prototype['chainwork'] = undefined;
 /**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
+ * @member {String} merkleRoot
  */
-GetBlockDetailsByBlockHeightRIBSZ.prototype['merkleroot'] = undefined;
+GetBlockDetailsByBlockHeightRIBSZ.prototype['merkleRoot'] = undefined;
 /**
  * Represents the block version number.
  * @member {Number} version

@@ -12,19 +12,19 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSLScriptSig from './GetTransactionDetailsByTransactionIDRIBSLScriptSig';
+import ListTransactionsByBlockHashRIBSLScriptSig from './ListTransactionsByBlockHashRIBSLScriptSig';
 
 /**
  * The ListTransactionsByBlockHashRIBSLVin model module.
  * @module model/ListTransactionsByBlockHashRIBSLVin
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListTransactionsByBlockHashRIBSLVin {
     /**
      * Constructs a new <code>ListTransactionsByBlockHashRIBSLVin</code>.
      * @alias module:model/ListTransactionsByBlockHashRIBSLVin
      * @param addresses {Array.<String>} 
-     * @param scriptSig {module:model/GetTransactionDetailsByTransactionIDRIBSLScriptSig} 
+     * @param scriptSig {module:model/ListTransactionsByBlockHashRIBSLScriptSig} 
      * @param sequence {String} Represents the script sequence number.
      * @param txid {String} Represents the reference transaction identifier.
      * @param txinwitness {Array.<String>} 
@@ -69,7 +69,7 @@ class ListTransactionsByBlockHashRIBSLVin {
                 obj['coinbase'] = ApiClient.convertToType(data['coinbase'], 'String');
             }
             if (data.hasOwnProperty('scriptSig')) {
-                obj['scriptSig'] = GetTransactionDetailsByTransactionIDRIBSLScriptSig.constructFromObject(data['scriptSig']);
+                obj['scriptSig'] = ListTransactionsByBlockHashRIBSLScriptSig.constructFromObject(data['scriptSig']);
             }
             if (data.hasOwnProperty('sequence')) {
                 obj['sequence'] = ApiClient.convertToType(data['sequence'], 'String');
@@ -105,7 +105,7 @@ ListTransactionsByBlockHashRIBSLVin.prototype['addresses'] = undefined;
 ListTransactionsByBlockHashRIBSLVin.prototype['coinbase'] = undefined;
 
 /**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSLScriptSig} scriptSig
+ * @member {module:model/ListTransactionsByBlockHashRIBSLScriptSig} scriptSig
  */
 ListTransactionsByBlockHashRIBSLVin.prototype['scriptSig'] = undefined;
 

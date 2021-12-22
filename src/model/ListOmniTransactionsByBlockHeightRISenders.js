@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListOmniTransactionsByBlockHeightRISenders model module.
  * @module model/ListOmniTransactionsByBlockHeightRISenders
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListOmniTransactionsByBlockHeightRISenders {
     /**

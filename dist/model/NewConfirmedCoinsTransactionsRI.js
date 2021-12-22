@@ -13,12 +13,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The NewConfirmedCoinsTransactionsRI model module.
  * @module model/NewConfirmedCoinsTransactionsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var NewConfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
   /**
@@ -27,17 +27,15 @@ var NewConfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
    * @param address {String} Represents the address of the transaction, per which the result is returned.
    * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
    * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
-   * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
    * @param createdTimestamp {Number} Defines the specific time/date when the subscription was created in Unix Timestamp.
    * @param eventType {String} Defines the type of the specific event available for the customer to subscribe to for callback notification.
    * @param isActive {Boolean} Defines whether the subscription is active or not. Set as boolean.
    * @param referenceId {String} Represents a unique ID used to reference the specific callback subscription.
-   * @param transactionId {String} Represents the unique identification string that defines the transaction.
    */
-  function NewConfirmedCoinsTransactionsRI(address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId) {
+  function NewConfirmedCoinsTransactionsRI(address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId) {
     _classCallCheck(this, NewConfirmedCoinsTransactionsRI);
 
-    NewConfirmedCoinsTransactionsRI.initialize(this, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId);
+    NewConfirmedCoinsTransactionsRI.initialize(this, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId);
   }
   /**
    * Initializes the fields of this object.
@@ -48,16 +46,14 @@ var NewConfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
 
   _createClass(NewConfirmedCoinsTransactionsRI, null, [{
     key: "initialize",
-    value: function initialize(obj, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId) {
+    value: function initialize(obj, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId) {
       obj['address'] = address;
       obj['callbackSecretKey'] = callbackSecretKey;
       obj['callbackUrl'] = callbackUrl;
-      obj['confirmationsCount'] = confirmationsCount;
       obj['createdTimestamp'] = createdTimestamp;
       obj['eventType'] = eventType;
       obj['isActive'] = isActive;
       obj['referenceId'] = referenceId;
-      obj['transactionId'] = transactionId;
     }
     /**
      * Constructs a <code>NewConfirmedCoinsTransactionsRI</code> from a plain JavaScript object, optionally creating a new instance.
@@ -85,10 +81,6 @@ var NewConfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
           obj['callbackUrl'] = _ApiClient["default"].convertToType(data['callbackUrl'], 'String');
         }
 
-        if (data.hasOwnProperty('confirmationsCount')) {
-          obj['confirmationsCount'] = _ApiClient["default"].convertToType(data['confirmationsCount'], 'Number');
-        }
-
         if (data.hasOwnProperty('createdTimestamp')) {
           obj['createdTimestamp'] = _ApiClient["default"].convertToType(data['createdTimestamp'], 'Number');
         }
@@ -103,10 +95,6 @@ var NewConfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('referenceId')) {
           obj['referenceId'] = _ApiClient["default"].convertToType(data['referenceId'], 'String');
-        }
-
-        if (data.hasOwnProperty('transactionId')) {
-          obj['transactionId'] = _ApiClient["default"].convertToType(data['transactionId'], 'String');
         }
       }
 
@@ -136,12 +124,6 @@ NewConfirmedCoinsTransactionsRI.prototype['callbackSecretKey'] = undefined;
 
 NewConfirmedCoinsTransactionsRI.prototype['callbackUrl'] = undefined;
 /**
- * Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
- * @member {Number} confirmationsCount
- */
-
-NewConfirmedCoinsTransactionsRI.prototype['confirmationsCount'] = undefined;
-/**
  * Defines the specific time/date when the subscription was created in Unix Timestamp.
  * @member {Number} createdTimestamp
  */
@@ -165,11 +147,5 @@ NewConfirmedCoinsTransactionsRI.prototype['isActive'] = undefined;
  */
 
 NewConfirmedCoinsTransactionsRI.prototype['referenceId'] = undefined;
-/**
- * Represents the unique identification string that defines the transaction.
- * @member {String} transactionId
- */
-
-NewConfirmedCoinsTransactionsRI.prototype['transactionId'] = undefined;
 var _default = NewConfirmedCoinsTransactionsRI;
 exports["default"] = _default;

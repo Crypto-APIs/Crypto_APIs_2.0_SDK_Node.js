@@ -17,7 +17,7 @@ import GetTransactionRequestDetailsRIRecipients from './GetTransactionRequestDet
 /**
  * The GetTransactionRequestDetailsRI model module.
  * @module model/GetTransactionRequestDetailsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetTransactionRequestDetailsRI {
     /**
@@ -213,6 +213,12 @@ GetTransactionRequestDetailsRI['BlockchainEnum'] = {
     "ethereum": "ethereum",
 
     /**
+     * value: "ethereum-classic"
+     * @const
+     */
+    "ethereum-classic": "ethereum-classic",
+
+    /**
      * value: "zcash"
      * @const
      */
@@ -270,7 +276,13 @@ GetTransactionRequestDetailsRI['NetworkEnum'] = {
      * value: "ropsten"
      * @const
      */
-    "ropsten": "ropsten"
+    "ropsten": "ropsten",
+
+    /**
+     * value: "mordor"
+     * @const
+     */
+    "mordor": "mordor"
 };
 
 

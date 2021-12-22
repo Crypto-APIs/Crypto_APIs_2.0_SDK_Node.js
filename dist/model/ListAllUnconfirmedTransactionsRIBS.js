@@ -7,6 +7,14 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZVin = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVin"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZVout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVout"));
+
 var _ListAllUnconfirmedTransactionsRIBSB = _interopRequireDefault(require("./ListAllUnconfirmedTransactionsRIBSB"));
 
 var _ListAllUnconfirmedTransactionsRIBSBC = _interopRequireDefault(require("./ListAllUnconfirmedTransactionsRIBSBC"));
@@ -31,26 +39,18 @@ var _ListConfirmedTransactionsByAddressRIBSBSCGasPrice = _interopRequireDefault(
 
 var _ListConfirmedTransactionsByAddressRIBSZVJoinSplit = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSZVJoinSplit"));
 
-var _ListConfirmedTransactionsByAddressRIBSZVShieldedOutput = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSZVShieldedOutput"));
-
-var _ListConfirmedTransactionsByAddressRIBSZVShieldedSpend = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSZVShieldedSpend"));
-
-var _ListConfirmedTransactionsByAddressRIBSZVout = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSZVout"));
-
-var _ListUnconfirmedTransactionsByAddressRIBSZVin = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIBSZVin"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListAllUnconfirmedTransactionsRIBS model module.
  * @module model/ListAllUnconfirmedTransactionsRIBS
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListAllUnconfirmedTransactionsRIBS = /*#__PURE__*/function () {
   /**
@@ -69,8 +69,8 @@ var ListAllUnconfirmedTransactionsRIBS = /*#__PURE__*/function () {
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Defines the version of the transaction.
-   * @param vin {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSZVin>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVout>} Object Array representation of transaction outputs
+   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} Object Array representation of transaction inputs
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} Object Array representation of transaction outputs
    * @param fee {module:model/ListAllUnconfirmedTransactionsRIBSECFee} 
    * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
    * @param gasPrice {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} 
@@ -83,8 +83,8 @@ var ListAllUnconfirmedTransactionsRIBS = /*#__PURE__*/function () {
    * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
    * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
    * @param vJoinSplit {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-   * @param vShieldedOutput {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
-   * @param vShieldedSpend {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+   * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
+   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
    * @param valueBalance {String} Defines the transaction value balance.
    * @param versionGroupId {String} Represents the transaction version group ID.
    */
@@ -193,11 +193,11 @@ var ListAllUnconfirmedTransactionsRIBS = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListUnconfirmedTransactionsByAddressRIBSZVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSZVin["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListConfirmedTransactionsByAddressRIBSZVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSZVout["default"]]);
         }
 
         if (data.hasOwnProperty('fee')) {
@@ -249,11 +249,11 @@ var ListAllUnconfirmedTransactionsRIBS = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vShieldedOutput')) {
-          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_ListConfirmedTransactionsByAddressRIBSZVShieldedOutput["default"]]);
+          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedSpend')) {
-          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_ListConfirmedTransactionsByAddressRIBSZVShieldedSpend["default"]]);
+          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend["default"]]);
         }
 
         if (data.hasOwnProperty('valueBalance')) {
@@ -298,13 +298,13 @@ ListAllUnconfirmedTransactionsRIBS.prototype['vSize'] = undefined;
 ListAllUnconfirmedTransactionsRIBS.prototype['version'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSZVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} vin
  */
 
 ListAllUnconfirmedTransactionsRIBS.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
  */
 
 ListAllUnconfirmedTransactionsRIBS.prototype['vout'] = undefined;
@@ -380,13 +380,13 @@ ListAllUnconfirmedTransactionsRIBS.prototype['overwintered'] = undefined;
 ListAllUnconfirmedTransactionsRIBS.prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
  */
 
 ListAllUnconfirmedTransactionsRIBS.prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
  */
 
 ListAllUnconfirmedTransactionsRIBS.prototype['vShieldedSpend'] = undefined;
@@ -503,7 +503,7 @@ _ListAllUnconfirmedTransactionsRIBSL["default"].prototype['version'] = undefined
 _ListAllUnconfirmedTransactionsRIBSL["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListAllUnconfirmedTransactionsRIBSLVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
  */
 
 _ListAllUnconfirmedTransactionsRIBSL["default"].prototype['vout'] = undefined; // Implement ListAllUnconfirmedTransactionsRIBSD interface:
@@ -684,13 +684,13 @@ _ListAllUnconfirmedTransactionsRIBSZ["default"].prototype['size'] = undefined;
 _ListAllUnconfirmedTransactionsRIBSZ["default"].prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
  */
 
 _ListAllUnconfirmedTransactionsRIBSZ["default"].prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
  */
 
 _ListAllUnconfirmedTransactionsRIBSZ["default"].prototype['vShieldedSpend'] = undefined;
@@ -714,13 +714,13 @@ _ListAllUnconfirmedTransactionsRIBSZ["default"].prototype['version'] = undefined
 _ListAllUnconfirmedTransactionsRIBSZ["default"].prototype['versionGroupId'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSZVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} vin
  */
 
 _ListAllUnconfirmedTransactionsRIBSZ["default"].prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
  */
 
 _ListAllUnconfirmedTransactionsRIBSZ["default"].prototype['vout'] = undefined; // Implement ListAllUnconfirmedTransactionsRIBSBSC interface:

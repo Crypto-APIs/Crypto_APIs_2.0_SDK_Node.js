@@ -13,35 +13,68 @@
 
 
 import ApiClient from "../ApiClient";
-import BlockchainDataBlockNotFound from '../model/BlockchainDataBlockNotFound';
-import BlockchainDataTransactionNotFound from '../model/BlockchainDataTransactionNotFound';
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import GetAddressDetailsR from '../model/GetAddressDetailsR';
 import GetBlockDetailsByBlockHashR from '../model/GetBlockDetailsByBlockHashR';
 import GetBlockDetailsByBlockHeightR from '../model/GetBlockDetailsByBlockHeightR';
 import GetFeeRecommendationsR from '../model/GetFeeRecommendationsR';
 import GetLastMinedBlockR from '../model/GetLastMinedBlockR';
 import GetTransactionDetailsByTransactionIDR from '../model/GetTransactionDetailsByTransactionIDR';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse400 from '../model/InlineResponse400';
+import InlineResponse40010 from '../model/InlineResponse40010';
+import InlineResponse40015 from '../model/InlineResponse40015';
+import InlineResponse40016 from '../model/InlineResponse40016';
+import InlineResponse40017 from '../model/InlineResponse40017';
+import InlineResponse40024 from '../model/InlineResponse40024';
+import InlineResponse40026 from '../model/InlineResponse40026';
+import InlineResponse40030 from '../model/InlineResponse40030';
+import InlineResponse40037 from '../model/InlineResponse40037';
+import InlineResponse4004 from '../model/InlineResponse4004';
+import InlineResponse40042 from '../model/InlineResponse40042';
+import InlineResponse40053 from '../model/InlineResponse40053';
+import InlineResponse401 from '../model/InlineResponse401';
+import InlineResponse40110 from '../model/InlineResponse40110';
+import InlineResponse40115 from '../model/InlineResponse40115';
+import InlineResponse40116 from '../model/InlineResponse40116';
+import InlineResponse40117 from '../model/InlineResponse40117';
+import InlineResponse40124 from '../model/InlineResponse40124';
+import InlineResponse40126 from '../model/InlineResponse40126';
+import InlineResponse40130 from '../model/InlineResponse40130';
+import InlineResponse40137 from '../model/InlineResponse40137';
+import InlineResponse4014 from '../model/InlineResponse4014';
+import InlineResponse40142 from '../model/InlineResponse40142';
+import InlineResponse40153 from '../model/InlineResponse40153';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse403 from '../model/InlineResponse403';
+import InlineResponse40310 from '../model/InlineResponse40310';
+import InlineResponse40315 from '../model/InlineResponse40315';
+import InlineResponse40316 from '../model/InlineResponse40316';
+import InlineResponse40317 from '../model/InlineResponse40317';
+import InlineResponse40324 from '../model/InlineResponse40324';
+import InlineResponse40326 from '../model/InlineResponse40326';
+import InlineResponse40330 from '../model/InlineResponse40330';
+import InlineResponse40337 from '../model/InlineResponse40337';
+import InlineResponse4034 from '../model/InlineResponse4034';
+import InlineResponse40342 from '../model/InlineResponse40342';
+import InlineResponse40353 from '../model/InlineResponse40353';
+import InlineResponse404 from '../model/InlineResponse404';
+import InlineResponse4041 from '../model/InlineResponse4041';
+import InlineResponse4042 from '../model/InlineResponse4042';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListAllUnconfirmedTransactionsR from '../model/ListAllUnconfirmedTransactionsR';
 import ListConfirmedTransactionsByAddressR from '../model/ListConfirmedTransactionsByAddressR';
 import ListLatestMinedBlocksR from '../model/ListLatestMinedBlocksR';
 import ListTransactionsByBlockHashR from '../model/ListTransactionsByBlockHashR';
 import ListTransactionsByBlockHeightR from '../model/ListTransactionsByBlockHeightR';
 import ListUnconfirmedTransactionsByAddressR from '../model/ListUnconfirmedTransactionsByAddressR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import ResourceNotFound from '../model/ResourceNotFound';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class UnifiedEndpointsApi {
 
@@ -60,7 +93,7 @@ export default class UnifiedEndpointsApi {
 
     /**
      * Get Address Details
-     * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.
+     * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here. Applies only for coins.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -110,7 +143,7 @@ export default class UnifiedEndpointsApi {
 
     /**
      * Get Address Details
-     * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.
+     * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here. Applies only for coins.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -595,7 +628,7 @@ export default class UnifiedEndpointsApi {
 
     /**
      * List Latest Mined Blocks
-     * Through this endpoint customers can list the latest 50 blocks that were mined.
+     * Through this endpoint customers can list **up to 50** from the latest blocks that were mined.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {Number} count Specifies how many records were requested.
@@ -645,7 +678,7 @@ export default class UnifiedEndpointsApi {
 
     /**
      * List Latest Mined Blocks
-     * Through this endpoint customers can list the latest 50 blocks that were mined.
+     * Through this endpoint customers can list **up to 50** from the latest blocks that were mined.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {Number} count Specifies how many records were requested.

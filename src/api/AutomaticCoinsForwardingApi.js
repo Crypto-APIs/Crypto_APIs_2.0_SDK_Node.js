@@ -13,27 +13,32 @@
 
 
 import ApiClient from "../ApiClient";
-import AlreadyExists from '../model/AlreadyExists';
-import CoinsForwardingAutomationsLimitReached from '../model/CoinsForwardingAutomationsLimitReached';
 import CreateAutomaticCoinsForwardingR from '../model/CreateAutomaticCoinsForwardingR';
 import CreateAutomaticCoinsForwardingRB from '../model/CreateAutomaticCoinsForwardingRB';
 import DeleteAutomaticCoinsForwardingR from '../model/DeleteAutomaticCoinsForwardingR';
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse40075 from '../model/InlineResponse40075';
+import InlineResponse40076 from '../model/InlineResponse40076';
+import InlineResponse40077 from '../model/InlineResponse40077';
+import InlineResponse40175 from '../model/InlineResponse40175';
+import InlineResponse40176 from '../model/InlineResponse40176';
+import InlineResponse40177 from '../model/InlineResponse40177';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40375 from '../model/InlineResponse40375';
+import InlineResponse40376 from '../model/InlineResponse40376';
+import InlineResponse40377 from '../model/InlineResponse40377';
+import InlineResponse4041 from '../model/InlineResponse4041';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse40916 from '../model/InlineResponse40916';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListCoinsForwardingAutomationsR from '../model/ListCoinsForwardingAutomationsR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import ResourceNotFound from '../model/ResourceNotFound';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class AutomaticCoinsForwardingApi {
 

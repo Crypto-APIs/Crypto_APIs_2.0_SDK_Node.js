@@ -20,6 +20,5 @@ Name | Type | Description | Notes
 **minedInSeconds** | **Number** | Specifies the amount of time required for the block to be mined in seconds. | 
 **sha3Uncles** | **String** | Defines the combined hash of all uncles for a given parent. | 
 **totalDifficulty** | **String** | Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block. | 
-**merkleroot** | **String** | Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions&#39; hashes that are part of a blockchain block. | 
 
 

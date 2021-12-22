@@ -20,14 +20,14 @@ import GetTransactionDetailsByTransactionIDRISenders from './GetTransactionDetai
 /**
  * The GetTransactionDetailsByTransactionIDRI model module.
  * @module model/GetTransactionDetailsByTransactionIDRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetTransactionDetailsByTransactionIDRI {
     /**
      * Constructs a new <code>GetTransactionDetailsByTransactionIDRI</code>.
      * @alias module:model/GetTransactionDetailsByTransactionIDRI
      * @param index {Number} Represents the index position of the transaction in the specific block.
-     * @param isConfirmed {String} Represents the state of the transaction whether it is confirmed or not confirmed.
+     * @param isConfirmed {Boolean} Represents the state of the transaction whether it is confirmed or not confirmed.
      * @param recipients {Array.<module:model/GetTransactionDetailsByTransactionIDRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param senders {Array.<module:model/GetTransactionDetailsByTransactionIDRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
@@ -73,7 +73,7 @@ class GetTransactionDetailsByTransactionIDRI {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
             if (data.hasOwnProperty('isConfirmed')) {
-                obj['isConfirmed'] = ApiClient.convertToType(data['isConfirmed'], 'String');
+                obj['isConfirmed'] = ApiClient.convertToType(data['isConfirmed'], 'Boolean');
             }
             if (data.hasOwnProperty('minedInBlockHash')) {
                 obj['minedInBlockHash'] = ApiClient.convertToType(data['minedInBlockHash'], 'String');
@@ -117,7 +117,7 @@ GetTransactionDetailsByTransactionIDRI.prototype['index'] = undefined;
 
 /**
  * Represents the state of the transaction whether it is confirmed or not confirmed.
- * @member {String} isConfirmed
+ * @member {Boolean} isConfirmed
  */
 GetTransactionDetailsByTransactionIDRI.prototype['isConfirmed'] = undefined;
 

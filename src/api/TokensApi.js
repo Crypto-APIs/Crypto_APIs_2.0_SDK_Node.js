@@ -13,24 +13,33 @@
 
 
 import ApiClient from "../ApiClient";
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import GetTokenDetailsByContractAddressR from '../model/GetTokenDetailsByContractAddressR';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse40054 from '../model/InlineResponse40054';
+import InlineResponse40055 from '../model/InlineResponse40055';
+import InlineResponse40056 from '../model/InlineResponse40056';
+import InlineResponse40057 from '../model/InlineResponse40057';
+import InlineResponse40154 from '../model/InlineResponse40154';
+import InlineResponse40155 from '../model/InlineResponse40155';
+import InlineResponse40156 from '../model/InlineResponse40156';
+import InlineResponse40157 from '../model/InlineResponse40157';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40354 from '../model/InlineResponse40354';
+import InlineResponse40355 from '../model/InlineResponse40355';
+import InlineResponse40356 from '../model/InlineResponse40356';
+import InlineResponse40357 from '../model/InlineResponse40357';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListConfirmedTokensTransfersByAddressR from '../model/ListConfirmedTokensTransfersByAddressR';
 import ListTokensByAddressR from '../model/ListTokensByAddressR';
 import ListTokensTransfersByTransactionHashR from '../model/ListTokensTransfersByTransactionHashR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class TokensApi {
 

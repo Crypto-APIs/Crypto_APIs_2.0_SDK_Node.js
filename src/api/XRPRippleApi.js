@@ -13,29 +13,50 @@
 
 
 import ApiClient from "../ApiClient";
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import GetLatestMinedXRPRippleBlockR from '../model/GetLatestMinedXRPRippleBlockR';
 import GetXRPRippleAddressDetailsR from '../model/GetXRPRippleAddressDetailsR';
 import GetXRPRippleBlockDetailsByBlockHashR from '../model/GetXRPRippleBlockDetailsByBlockHashR';
 import GetXRPRippleBlockDetailsByBlockHeightR from '../model/GetXRPRippleBlockDetailsByBlockHeightR';
 import GetXRPRippleTransactionDetailsByTransactionIDR from '../model/GetXRPRippleTransactionDetailsByTransactionIDR';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse40011 from '../model/InlineResponse40011';
+import InlineResponse40018 from '../model/InlineResponse40018';
+import InlineResponse4002 from '../model/InlineResponse4002';
+import InlineResponse40023 from '../model/InlineResponse40023';
+import InlineResponse40027 from '../model/InlineResponse40027';
+import InlineResponse40031 from '../model/InlineResponse40031';
+import InlineResponse40039 from '../model/InlineResponse40039';
+import InlineResponse4006 from '../model/InlineResponse4006';
+import InlineResponse40111 from '../model/InlineResponse40111';
+import InlineResponse40118 from '../model/InlineResponse40118';
+import InlineResponse4012 from '../model/InlineResponse4012';
+import InlineResponse40123 from '../model/InlineResponse40123';
+import InlineResponse40127 from '../model/InlineResponse40127';
+import InlineResponse40131 from '../model/InlineResponse40131';
+import InlineResponse40139 from '../model/InlineResponse40139';
+import InlineResponse4016 from '../model/InlineResponse4016';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40311 from '../model/InlineResponse40311';
+import InlineResponse40318 from '../model/InlineResponse40318';
+import InlineResponse4032 from '../model/InlineResponse4032';
+import InlineResponse40323 from '../model/InlineResponse40323';
+import InlineResponse40327 from '../model/InlineResponse40327';
+import InlineResponse40331 from '../model/InlineResponse40331';
+import InlineResponse40339 from '../model/InlineResponse40339';
+import InlineResponse4036 from '../model/InlineResponse4036';
+import InlineResponse4041 from '../model/InlineResponse4041';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListXRPRippleTransactionsByAddressR from '../model/ListXRPRippleTransactionsByAddressR';
 import ListXRPRippleTransactionsByBlockHashR from '../model/ListXRPRippleTransactionsByBlockHashR';
 import ListXRPRippleTransactionsByBlockHeightR from '../model/ListXRPRippleTransactionsByBlockHeightR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import ResourceNotFound from '../model/ResourceNotFound';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class XRPRippleApi {
 

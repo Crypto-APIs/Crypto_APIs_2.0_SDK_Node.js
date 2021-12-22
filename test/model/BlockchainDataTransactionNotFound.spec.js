@@ -54,26 +54,20 @@
       //expect(instance).to.be.a(Cryptoapis.BlockchainDataTransactionNotFound);
     });
 
-    it('should have the property apiVersion (base name: "apiVersion")', function() {
-      // uncomment below and update the code to test the property apiVersion
+    it('should have the property code (base name: "code")', function() {
+      // uncomment below and update the code to test the property code
       //var instance = new Cryptoapis.BlockchainDataTransactionNotFound();
       //expect(instance).to.be();
     });
 
-    it('should have the property requestId (base name: "requestId")', function() {
-      // uncomment below and update the code to test the property requestId
+    it('should have the property message (base name: "message")', function() {
+      // uncomment below and update the code to test the property message
       //var instance = new Cryptoapis.BlockchainDataTransactionNotFound();
       //expect(instance).to.be();
     });
 
-    it('should have the property context (base name: "context")', function() {
-      // uncomment below and update the code to test the property context
-      //var instance = new Cryptoapis.BlockchainDataTransactionNotFound();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property error (base name: "error")', function() {
-      // uncomment below and update the code to test the property error
+    it('should have the property details (base name: "details")', function() {
+      // uncomment below and update the code to test the property details
       //var instance = new Cryptoapis.BlockchainDataTransactionNotFound();
       //expect(instance).to.be();
     });

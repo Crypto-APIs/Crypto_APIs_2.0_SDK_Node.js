@@ -13,12 +13,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListConfirmedTokensTransfersByAddressRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
   /**
@@ -32,14 +32,13 @@ var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
    * @param tokenName {String} Defines the token's name as a string.
    * @param tokenSymbol {String} Defines the token symbol by which the token contract is known. It is usually 3-4 characters in length.
    * @param tokenType {String} Defines the specific token type.
-   * @param tokensAmount {String} Defines the token amount of the transfer.
    * @param transactionHash {String} Represents the hash of the transaction, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
    * @param transactionTimestamp {Number} Defines the specific time/date when the transaction was created in Unix Timestamp.
    */
-  function ListConfirmedTokensTransfersByAddressRI(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp) {
+  function ListConfirmedTokensTransfersByAddressRI(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp) {
     _classCallCheck(this, ListConfirmedTokensTransfersByAddressRI);
 
-    ListConfirmedTokensTransfersByAddressRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp);
+    ListConfirmedTokensTransfersByAddressRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp);
   }
   /**
    * Initializes the fields of this object.
@@ -50,7 +49,7 @@ var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
 
   _createClass(ListConfirmedTokensTransfersByAddressRI, null, [{
     key: "initialize",
-    value: function initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp) {
+    value: function initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp) {
       obj['contractAddress'] = contractAddress;
       obj['minedInBlockHeight'] = minedInBlockHeight;
       obj['recipientAddress'] = recipientAddress;
@@ -59,7 +58,6 @@ var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
       obj['tokenName'] = tokenName;
       obj['tokenSymbol'] = tokenSymbol;
       obj['tokenType'] = tokenType;
-      obj['tokensAmount'] = tokensAmount;
       obj['transactionHash'] = transactionHash;
       obj['transactionTimestamp'] = transactionTimestamp;
     }
@@ -95,6 +93,10 @@ var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('tokenDecimals')) {
           obj['tokenDecimals'] = _ApiClient["default"].convertToType(data['tokenDecimals'], 'Number');
+        }
+
+        if (data.hasOwnProperty('tokenId')) {
+          obj['tokenId'] = _ApiClient["default"].convertToType(data['tokenId'], 'String');
         }
 
         if (data.hasOwnProperty('tokenName')) {
@@ -159,6 +161,12 @@ ListConfirmedTokensTransfersByAddressRI.prototype['senderAddress'] = undefined;
  */
 
 ListConfirmedTokensTransfersByAddressRI.prototype['tokenDecimals'] = undefined;
+/**
+ * Represents the unique token identifier.
+ * @member {String} tokenId
+ */
+
+ListConfirmedTokensTransfersByAddressRI.prototype['tokenId'] = undefined;
 /**
  * Defines the token's name as a string.
  * @member {String} tokenName

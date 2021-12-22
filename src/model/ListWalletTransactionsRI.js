@@ -13,6 +13,9 @@
 
 import ApiClient from '../ApiClient';
 import ListWalletTransactionsRIFee from './ListWalletTransactionsRIFee';
+import ListWalletTransactionsRIFungibleTokens from './ListWalletTransactionsRIFungibleTokens';
+import ListWalletTransactionsRIInternalTransactions from './ListWalletTransactionsRIInternalTransactions';
+import ListWalletTransactionsRINonFungibleTokens from './ListWalletTransactionsRINonFungibleTokens';
 import ListWalletTransactionsRIRecipients from './ListWalletTransactionsRIRecipients';
 import ListWalletTransactionsRISenders from './ListWalletTransactionsRISenders';
 import ListWalletTransactionsRIValue from './ListWalletTransactionsRIValue';
@@ -20,7 +23,7 @@ import ListWalletTransactionsRIValue from './ListWalletTransactionsRIValue';
 /**
  * The ListWalletTransactionsRI model module.
  * @module model/ListWalletTransactionsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListWalletTransactionsRI {
     /**
@@ -73,6 +76,15 @@ class ListWalletTransactionsRI {
             if (data.hasOwnProperty('fee')) {
                 obj['fee'] = ListWalletTransactionsRIFee.constructFromObject(data['fee']);
             }
+            if (data.hasOwnProperty('fungibleTokens')) {
+                obj['fungibleTokens'] = ApiClient.convertToType(data['fungibleTokens'], [ListWalletTransactionsRIFungibleTokens]);
+            }
+            if (data.hasOwnProperty('internalTransactions')) {
+                obj['internalTransactions'] = ApiClient.convertToType(data['internalTransactions'], [ListWalletTransactionsRIInternalTransactions]);
+            }
+            if (data.hasOwnProperty('nonFungibleTokens')) {
+                obj['nonFungibleTokens'] = ApiClient.convertToType(data['nonFungibleTokens'], [ListWalletTransactionsRINonFungibleTokens]);
+            }
             if (data.hasOwnProperty('recipients')) {
                 obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListWalletTransactionsRIRecipients]);
             }
@@ -108,6 +120,23 @@ ListWalletTransactionsRI.prototype['direction'] = undefined;
  * @member {module:model/ListWalletTransactionsRIFee} fee
  */
 ListWalletTransactionsRI.prototype['fee'] = undefined;
+
+/**
+ * Represents fungible tokens'es detailed information
+ * @member {Array.<module:model/ListWalletTransactionsRIFungibleTokens>} fungibleTokens
+ */
+ListWalletTransactionsRI.prototype['fungibleTokens'] = undefined;
+
+/**
+ * @member {Array.<module:model/ListWalletTransactionsRIInternalTransactions>} internalTransactions
+ */
+ListWalletTransactionsRI.prototype['internalTransactions'] = undefined;
+
+/**
+ * Represents non-fungible tokens'es detailed information.
+ * @member {Array.<module:model/ListWalletTransactionsRINonFungibleTokens>} nonFungibleTokens
+ */
+ListWalletTransactionsRI.prototype['nonFungibleTokens'] = undefined;
 
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.

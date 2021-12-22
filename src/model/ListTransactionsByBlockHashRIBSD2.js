@@ -18,7 +18,7 @@ import ListTransactionsByBlockHashRIBSD2Vout from './ListTransactionsByBlockHash
 /**
  * The ListTransactionsByBlockHashRIBSD2 model module.
  * @module model/ListTransactionsByBlockHashRIBSD2
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListTransactionsByBlockHashRIBSD2 {
     /**

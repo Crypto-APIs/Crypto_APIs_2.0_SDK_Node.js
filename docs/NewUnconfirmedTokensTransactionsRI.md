@@ -11,6 +11,5 @@ Name | Type | Description | Notes
 **eventType** | **String** | Defines the type of the specific event available for the customer to subscribe to for callback notification. | 
 **isActive** | **Boolean** | Defines whether the subscription is active or not. Set as boolean. | 
 **referenceId** | **String** | Represents a unique ID used to reference the specific callback subscription. | 
-**transactionId** | **String** | Represents the unique identification string that defines the transaction. | 
 
 

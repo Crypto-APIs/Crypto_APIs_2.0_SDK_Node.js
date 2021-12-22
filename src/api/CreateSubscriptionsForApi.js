@@ -13,12 +13,51 @@
 
 
 import ApiClient from "../ApiClient";
-import AlreadyExists from '../model/AlreadyExists';
-import BlockchainEventsCallbacksLimitReached from '../model/BlockchainEventsCallbacksLimitReached';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse40058 from '../model/InlineResponse40058';
+import InlineResponse40059 from '../model/InlineResponse40059';
+import InlineResponse40060 from '../model/InlineResponse40060';
+import InlineResponse40061 from '../model/InlineResponse40061';
+import InlineResponse40062 from '../model/InlineResponse40062';
+import InlineResponse40063 from '../model/InlineResponse40063';
+import InlineResponse40064 from '../model/InlineResponse40064';
+import InlineResponse40065 from '../model/InlineResponse40065';
+import InlineResponse40073 from '../model/InlineResponse40073';
+import InlineResponse40074 from '../model/InlineResponse40074';
+import InlineResponse40158 from '../model/InlineResponse40158';
+import InlineResponse40159 from '../model/InlineResponse40159';
+import InlineResponse40160 from '../model/InlineResponse40160';
+import InlineResponse40161 from '../model/InlineResponse40161';
+import InlineResponse40162 from '../model/InlineResponse40162';
+import InlineResponse40163 from '../model/InlineResponse40163';
+import InlineResponse40164 from '../model/InlineResponse40164';
+import InlineResponse40165 from '../model/InlineResponse40165';
+import InlineResponse40173 from '../model/InlineResponse40173';
+import InlineResponse40174 from '../model/InlineResponse40174';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40358 from '../model/InlineResponse40358';
+import InlineResponse40359 from '../model/InlineResponse40359';
+import InlineResponse40360 from '../model/InlineResponse40360';
+import InlineResponse40361 from '../model/InlineResponse40361';
+import InlineResponse40362 from '../model/InlineResponse40362';
+import InlineResponse40363 from '../model/InlineResponse40363';
+import InlineResponse40364 from '../model/InlineResponse40364';
+import InlineResponse40365 from '../model/InlineResponse40365';
+import InlineResponse40373 from '../model/InlineResponse40373';
+import InlineResponse40374 from '../model/InlineResponse40374';
+import InlineResponse40910 from '../model/InlineResponse40910';
+import InlineResponse40911 from '../model/InlineResponse40911';
+import InlineResponse40912 from '../model/InlineResponse40912';
+import InlineResponse40913 from '../model/InlineResponse40913';
+import InlineResponse40914 from '../model/InlineResponse40914';
+import InlineResponse40915 from '../model/InlineResponse40915';
+import InlineResponse4096 from '../model/InlineResponse4096';
+import InlineResponse4097 from '../model/InlineResponse4097';
+import InlineResponse4098 from '../model/InlineResponse4098';
+import InlineResponse4099 from '../model/InlineResponse4099';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import MinedTransactionR from '../model/MinedTransactionR';
 import MinedTransactionRB from '../model/MinedTransactionRB';
 import NewBlockR from '../model/NewBlockR';
@@ -39,14 +78,11 @@ import NewUnconfirmedCoinsTransactionsR from '../model/NewUnconfirmedCoinsTransa
 import NewUnconfirmedCoinsTransactionsRB from '../model/NewUnconfirmedCoinsTransactionsRB';
 import NewUnconfirmedTokensTransactionsR from '../model/NewUnconfirmedTokensTransactionsR';
 import NewUnconfirmedTokensTransactionsRB from '../model/NewUnconfirmedTokensTransactionsRB';
-import RequestLimitReached from '../model/RequestLimitReached';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class CreateSubscriptionsForApi {
 

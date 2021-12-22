@@ -19,7 +19,7 @@ import ListOmniTransactionsByAddressRISenders from './ListOmniTransactionsByAddr
 /**
  * The ListOmniTransactionsByAddressRI model module.
  * @module model/ListOmniTransactionsByAddressRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListOmniTransactionsByAddressRI {
     /**

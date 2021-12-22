@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListAllUnconfirmedTransactionsRIBSECFee model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSECFee
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListAllUnconfirmedTransactionsRIBSECFee {
     /**
@@ -24,10 +24,11 @@ class ListAllUnconfirmedTransactionsRIBSECFee {
      * Object representation of the transaction fee
      * @alias module:model/ListAllUnconfirmedTransactionsRIBSECFee
      * @param amount {String} String representation of the fee value
+     * @param unit {String} Represents the fee unit.
      */
-    constructor(amount) { 
+    constructor(amount, unit) { 
         
-        ListAllUnconfirmedTransactionsRIBSECFee.initialize(this, amount);
+        ListAllUnconfirmedTransactionsRIBSECFee.initialize(this, amount, unit);
     }
 
     /**
@@ -35,8 +36,9 @@ class ListAllUnconfirmedTransactionsRIBSECFee {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, amount) { 
+    static initialize(obj, amount, unit) { 
         obj['amount'] = amount;
+        obj['unit'] = unit;
     }
 
     /**
@@ -53,6 +55,9 @@ class ListAllUnconfirmedTransactionsRIBSECFee {
             if (data.hasOwnProperty('amount')) {
                 obj['amount'] = ApiClient.convertToType(data['amount'], 'String');
             }
+            if (data.hasOwnProperty('unit')) {
+                obj['unit'] = ApiClient.convertToType(data['unit'], 'String');
+            }
         }
         return obj;
     }
@@ -65,6 +70,12 @@ class ListAllUnconfirmedTransactionsRIBSECFee {
  * @member {String} amount
  */
 ListAllUnconfirmedTransactionsRIBSECFee.prototype['amount'] = undefined;
+
+/**
+ * Represents the fee unit.
+ * @member {String} unit
+ */
+ListAllUnconfirmedTransactionsRIBSECFee.prototype['unit'] = undefined;
 
 
 

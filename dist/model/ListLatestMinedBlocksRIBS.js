@@ -33,12 +33,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListLatestMinedBlocksRIBS model module.
  * @module model/ListLatestMinedBlocksRIBS
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
   /**
@@ -56,7 +56,10 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
    * @implements module:model/ListLatestMinedBlocksRIBSZ2
    * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
    * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+   * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
    * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+   * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
+   * @param size {Number} Represents the total size of the block in Bytes.
    * @param strippedSize {Number} Defines the numeric representation of the block size excluding the witness data.
    * @param version {Number} Represents the transaction version number.
    * @param versionHex {String} Is the hexadecimal string representation of the block's version.
@@ -68,39 +71,35 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
    * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
    * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block
    * @param uncles {Array.<String>} 
-   * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
    * @param dsBlock {Number} Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
    * @param dsDifficulty {String} Defines how difficult it is to mine the dsBlocks.
    * @param dsLeader {String} Represents a part of the DS Committee which leads the consensus protocol for the epoch.
    * @param microBlocks {Array.<String>} 
-   * @param merkleroot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
-   * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
-   * @param size {Number} Represents the total size of the block in Bytes.
    */
-  function ListLatestMinedBlocksRIBS(bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, difficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, merkleroot, nonce, size) {
+  function ListLatestMinedBlocksRIBS(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks) {
     _classCallCheck(this, ListLatestMinedBlocksRIBS);
 
     _ListLatestMinedBlocksRIBSB["default"].initialize(this, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);
 
-    _ListLatestMinedBlocksRIBSBC["default"].initialize(this, bits, chainwork, merkleRoot, version, versionHex);
+    _ListLatestMinedBlocksRIBSBC["default"].initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);
 
-    _ListLatestMinedBlocksRIBSEC["default"].initialize(this, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);
+    _ListLatestMinedBlocksRIBSEC["default"].initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
 
-    _ListLatestMinedBlocksRIBSE["default"].initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, uncles);
+    _ListLatestMinedBlocksRIBSE["default"].initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
 
-    _ListLatestMinedBlocksRIBSL["default"].initialize(this, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);
+    _ListLatestMinedBlocksRIBSL["default"].initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);
 
-    _ListLatestMinedBlocksRIBSD["default"].initialize(this, bits, chainwork, merkleRoot, version, versionHex);
+    _ListLatestMinedBlocksRIBSD["default"].initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);
 
-    _ListLatestMinedBlocksRIBSD2["default"].initialize(this, bits, chainwork, merkleRoot, strippedSize, version, weight);
+    _ListLatestMinedBlocksRIBSD2["default"].initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, weight);
 
-    _ListLatestMinedBlocksRIBSBSC["default"].initialize(this, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);
+    _ListLatestMinedBlocksRIBSBSC["default"].initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
 
-    _ListLatestMinedBlocksRIBSZ["default"].initialize(this, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
+    _ListLatestMinedBlocksRIBSZ["default"].initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
 
-    _ListLatestMinedBlocksRIBSZ2["default"].initialize(this, bits, chainwork, merkleroot, nonce, size, version);
+    _ListLatestMinedBlocksRIBSZ2["default"].initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version);
 
-    ListLatestMinedBlocksRIBS.initialize(this, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, difficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, merkleroot, nonce, size);
+    ListLatestMinedBlocksRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks);
   }
   /**
    * Initializes the fields of this object.
@@ -111,10 +110,13 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
 
   _createClass(ListLatestMinedBlocksRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, difficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, merkleroot, nonce, size) {
+    value: function initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks) {
       obj['bits'] = bits;
       obj['chainwork'] = chainwork;
+      obj['difficulty'] = difficulty;
       obj['merkleRoot'] = merkleRoot;
+      obj['nonce'] = nonce;
+      obj['size'] = size;
       obj['strippedSize'] = strippedSize;
       obj['version'] = version;
       obj['versionHex'] = versionHex;
@@ -126,14 +128,10 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
       obj['sha3Uncles'] = sha3Uncles;
       obj['totalDifficulty'] = totalDifficulty;
       obj['uncles'] = uncles;
-      obj['difficulty'] = difficulty;
       obj['dsBlock'] = dsBlock;
       obj['dsDifficulty'] = dsDifficulty;
       obj['dsLeader'] = dsLeader;
       obj['microBlocks'] = microBlocks;
-      obj['merkleroot'] = merkleroot;
-      obj['nonce'] = nonce;
-      obj['size'] = size;
     }
     /**
      * Constructs a <code>ListLatestMinedBlocksRIBS</code> from a plain JavaScript object, optionally creating a new instance.
@@ -177,8 +175,20 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
           obj['chainwork'] = _ApiClient["default"].convertToType(data['chainwork'], 'String');
         }
 
+        if (data.hasOwnProperty('difficulty')) {
+          obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
+        }
+
         if (data.hasOwnProperty('merkleRoot')) {
           obj['merkleRoot'] = _ApiClient["default"].convertToType(data['merkleRoot'], 'String');
+        }
+
+        if (data.hasOwnProperty('nonce')) {
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
+        }
+
+        if (data.hasOwnProperty('size')) {
+          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
         }
 
         if (data.hasOwnProperty('strippedSize')) {
@@ -225,10 +235,6 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
           obj['uncles'] = _ApiClient["default"].convertToType(data['uncles'], ['String']);
         }
 
-        if (data.hasOwnProperty('difficulty')) {
-          obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
-        }
-
         if (data.hasOwnProperty('dsBlock')) {
           obj['dsBlock'] = _ApiClient["default"].convertToType(data['dsBlock'], 'Number');
         }
@@ -243,18 +249,6 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('microBlocks')) {
           obj['microBlocks'] = _ApiClient["default"].convertToType(data['microBlocks'], ['String']);
-        }
-
-        if (data.hasOwnProperty('merkleroot')) {
-          obj['merkleroot'] = _ApiClient["default"].convertToType(data['merkleroot'], 'String');
-        }
-
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
-        }
-
-        if (data.hasOwnProperty('size')) {
-          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
         }
       }
 
@@ -278,11 +272,29 @@ ListLatestMinedBlocksRIBS.prototype['bits'] = undefined;
 
 ListLatestMinedBlocksRIBS.prototype['chainwork'] = undefined;
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+ListLatestMinedBlocksRIBS.prototype['difficulty'] = undefined;
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 
 ListLatestMinedBlocksRIBS.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+
+ListLatestMinedBlocksRIBS.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+ListLatestMinedBlocksRIBS.prototype['size'] = undefined;
 /**
  * Defines the numeric representation of the block size excluding the witness data.
  * @member {Number} strippedSize
@@ -349,12 +361,6 @@ ListLatestMinedBlocksRIBS.prototype['totalDifficulty'] = undefined;
 
 ListLatestMinedBlocksRIBS.prototype['uncles'] = undefined;
 /**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-
-ListLatestMinedBlocksRIBS.prototype['difficulty'] = undefined;
-/**
  * Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
  * @member {Number} dsBlock
  */
@@ -376,25 +382,7 @@ ListLatestMinedBlocksRIBS.prototype['dsLeader'] = undefined;
  * @member {Array.<String>} microBlocks
  */
 
-ListLatestMinedBlocksRIBS.prototype['microBlocks'] = undefined;
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
- */
-
-ListLatestMinedBlocksRIBS.prototype['merkleroot'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-
-ListLatestMinedBlocksRIBS.prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-
-ListLatestMinedBlocksRIBS.prototype['size'] = undefined; // Implement ListLatestMinedBlocksRIBSB interface:
+ListLatestMinedBlocksRIBS.prototype['microBlocks'] = undefined; // Implement ListLatestMinedBlocksRIBSB interface:
 
 /**
  * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
@@ -409,11 +397,29 @@ _ListLatestMinedBlocksRIBSB["default"].prototype['bits'] = undefined;
 
 _ListLatestMinedBlocksRIBSB["default"].prototype['chainwork'] = undefined;
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+_ListLatestMinedBlocksRIBSB["default"].prototype['difficulty'] = undefined;
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 
 _ListLatestMinedBlocksRIBSB["default"].prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+
+_ListLatestMinedBlocksRIBSB["default"].prototype['nonce'] = undefined;
+/**
+ * Represents the block size
+ * @member {Number} size
+ */
+
+_ListLatestMinedBlocksRIBSB["default"].prototype['size'] = undefined;
 /**
  * Defines the numeric representation of the block size excluding the witness data.
  * @member {Number} strippedSize
@@ -452,11 +458,29 @@ _ListLatestMinedBlocksRIBSBC["default"].prototype['bits'] = undefined;
 
 _ListLatestMinedBlocksRIBSBC["default"].prototype['chainwork'] = undefined;
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+_ListLatestMinedBlocksRIBSBC["default"].prototype['difficulty'] = undefined;
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 
 _ListLatestMinedBlocksRIBSBC["default"].prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+
+_ListLatestMinedBlocksRIBSBC["default"].prototype['nonce'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} size
+ */
+
+_ListLatestMinedBlocksRIBSBC["default"].prototype['size'] = undefined;
 /**
  * Represents the version of the specific block on the blockchain.
  * @member {Number} version
@@ -470,6 +494,12 @@ _ListLatestMinedBlocksRIBSBC["default"].prototype['version'] = undefined;
 
 _ListLatestMinedBlocksRIBSBC["default"].prototype['versionHex'] = undefined; // Implement ListLatestMinedBlocksRIBSEC interface:
 
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+_ListLatestMinedBlocksRIBSEC["default"].prototype['difficulty'] = undefined;
 /**
  * Represents any data that can be included by the miner in the block.
  * @member {String} extraData
@@ -495,11 +525,23 @@ _ListLatestMinedBlocksRIBSEC["default"].prototype['gasUsed'] = undefined;
 
 _ListLatestMinedBlocksRIBSEC["default"].prototype['minedInSeconds'] = undefined;
 /**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+
+_ListLatestMinedBlocksRIBSEC["default"].prototype['nonce'] = undefined;
+/**
  * Defines the combined hash of all uncles for a given parent.
  * @member {String} sha3Uncles
  */
 
 _ListLatestMinedBlocksRIBSEC["default"].prototype['sha3Uncles'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+_ListLatestMinedBlocksRIBSEC["default"].prototype['size'] = undefined;
 /**
  * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
  * @member {String} totalDifficulty
@@ -543,11 +585,29 @@ _ListLatestMinedBlocksRIBSE["default"].prototype['gasUsed'] = undefined;
 
 _ListLatestMinedBlocksRIBSE["default"].prototype['minedInSeconds'] = undefined;
 /**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+
+_ListLatestMinedBlocksRIBSE["default"].prototype['nonce'] = undefined;
+/**
  * Defines the combined hash of all uncles for a given parent.
  * @member {String} sha3Uncles
  */
 
 _ListLatestMinedBlocksRIBSE["default"].prototype['sha3Uncles'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+_ListLatestMinedBlocksRIBSE["default"].prototype['size'] = undefined;
+/**
+ * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
+ * @member {String} totalDifficulty
+ */
+
+_ListLatestMinedBlocksRIBSE["default"].prototype['totalDifficulty'] = undefined;
 /**
  * @member {Array.<String>} uncles
  */
@@ -567,11 +627,29 @@ _ListLatestMinedBlocksRIBSL["default"].prototype['bits'] = undefined;
 
 _ListLatestMinedBlocksRIBSL["default"].prototype['chainwork'] = undefined;
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+_ListLatestMinedBlocksRIBSL["default"].prototype['difficulty'] = undefined;
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 
 _ListLatestMinedBlocksRIBSL["default"].prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+
+_ListLatestMinedBlocksRIBSL["default"].prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+_ListLatestMinedBlocksRIBSL["default"].prototype['size'] = undefined;
 /**
  * Defines the numeric representation of the block size excluding the witness data.
  * @member {Number} strippedSize
@@ -610,11 +688,29 @@ _ListLatestMinedBlocksRIBSD["default"].prototype['bits'] = undefined;
 
 _ListLatestMinedBlocksRIBSD["default"].prototype['chainwork'] = undefined;
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+_ListLatestMinedBlocksRIBSD["default"].prototype['difficulty'] = undefined;
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 
 _ListLatestMinedBlocksRIBSD["default"].prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+
+_ListLatestMinedBlocksRIBSD["default"].prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+_ListLatestMinedBlocksRIBSD["default"].prototype['size'] = undefined;
 /**
  * Represents the version of the specific block on the blockchain.
  * @member {Number} version
@@ -641,11 +737,29 @@ _ListLatestMinedBlocksRIBSD2["default"].prototype['bits'] = undefined;
 
 _ListLatestMinedBlocksRIBSD2["default"].prototype['chainwork'] = undefined;
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+_ListLatestMinedBlocksRIBSD2["default"].prototype['difficulty'] = undefined;
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 
 _ListLatestMinedBlocksRIBSD2["default"].prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+
+_ListLatestMinedBlocksRIBSD2["default"].prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+_ListLatestMinedBlocksRIBSD2["default"].prototype['size'] = undefined;
 /**
  * Defines the numeric representation of the block size excluding the witness data.
  * @member {Number} strippedSize
@@ -665,6 +779,12 @@ _ListLatestMinedBlocksRIBSD2["default"].prototype['version'] = undefined;
 
 _ListLatestMinedBlocksRIBSD2["default"].prototype['weight'] = undefined; // Implement ListLatestMinedBlocksRIBSBSC interface:
 
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+_ListLatestMinedBlocksRIBSBSC["default"].prototype['difficulty'] = undefined;
 /**
  * Represents any data that can be included by the miner in the block.
  * @member {String} extraData
@@ -690,11 +810,23 @@ _ListLatestMinedBlocksRIBSBSC["default"].prototype['gasUsed'] = undefined;
 
 _ListLatestMinedBlocksRIBSBSC["default"].prototype['minedInSeconds'] = undefined;
 /**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+
+_ListLatestMinedBlocksRIBSBSC["default"].prototype['nonce'] = undefined;
+/**
  * Defines the combined hash of all uncles for a given parent.
  * @member {String} sha3Uncles
  */
 
 _ListLatestMinedBlocksRIBSBSC["default"].prototype['sha3Uncles'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+_ListLatestMinedBlocksRIBSBSC["default"].prototype['size'] = undefined;
 /**
  * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block
  * @member {String} totalDifficulty
@@ -707,6 +839,12 @@ _ListLatestMinedBlocksRIBSBSC["default"].prototype['totalDifficulty'] = undefine
 
 _ListLatestMinedBlocksRIBSBSC["default"].prototype['uncles'] = undefined; // Implement ListLatestMinedBlocksRIBSZ interface:
 
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+_ListLatestMinedBlocksRIBSZ["default"].prototype['difficulty'] = undefined;
 /**
  * Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
  * @member {Number} dsBlock
@@ -756,11 +894,17 @@ _ListLatestMinedBlocksRIBSZ2["default"].prototype['bits'] = undefined;
 
 _ListLatestMinedBlocksRIBSZ2["default"].prototype['chainwork'] = undefined;
 /**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
  */
 
-_ListLatestMinedBlocksRIBSZ2["default"].prototype['merkleroot'] = undefined;
+_ListLatestMinedBlocksRIBSZ2["default"].prototype['difficulty'] = undefined;
+/**
+ * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+ * @member {String} merkleRoot
+ */
+
+_ListLatestMinedBlocksRIBSZ2["default"].prototype['merkleRoot'] = undefined;
 /**
  * Represents a random value that can be adjusted to satisfy the proof of work
  * @member {String} nonce

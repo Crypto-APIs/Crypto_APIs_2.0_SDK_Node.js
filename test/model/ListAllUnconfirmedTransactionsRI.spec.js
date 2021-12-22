@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property transactionHash (base name: "transactionHash")', function() {
+      // uncomment below and update the code to test the property transactionHash
+      //var instance = new Cryptoapis.ListAllUnconfirmedTransactionsRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property transactionId (base name: "transactionId")', function() {
       // uncomment below and update the code to test the property transactionId
       //var instance = new Cryptoapis.ListAllUnconfirmedTransactionsRI();

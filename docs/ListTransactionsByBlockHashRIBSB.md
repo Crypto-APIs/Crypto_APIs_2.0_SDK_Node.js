@@ -9,6 +9,6 @@ Name | Type | Description | Notes
 **vSize** | **Number** | Represents the virtual size of this transaction. | 
 **version** | **Number** | Represents the transaction version number. | 
 **vin** | [**[ListTransactionsByBlockHashRIBSBVin]**](ListTransactionsByBlockHashRIBSBVin.md) | Represents the transaction inputs. | 
-**vout** | [**[GetTransactionDetailsByTransactionIDRIBSBVout]**](GetTransactionDetailsByTransactionIDRIBSBVout.md) | Represents the transaction outputs. | 
+**vout** | [**[ListTransactionsByBlockHashRIBSBVout]**](ListTransactionsByBlockHashRIBSBVout.md) | Represents the transaction outputs. | 
 
 

@@ -17,7 +17,7 @@ import ListAllUnconfirmedTransactionsRData from './ListAllUnconfirmedTransaction
 /**
  * The ListAllUnconfirmedTransactionsR model module.
  * @module model/ListAllUnconfirmedTransactionsR
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListAllUnconfirmedTransactionsR {
     /**

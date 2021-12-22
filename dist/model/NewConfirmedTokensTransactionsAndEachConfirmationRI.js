@@ -13,12 +13,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationRI model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var NewConfirmedTokensTransactionsAndEachConfirmationRI = /*#__PURE__*/function () {
   /**
@@ -73,6 +73,10 @@ var NewConfirmedTokensTransactionsAndEachConfirmationRI = /*#__PURE__*/function 
           obj['callbackUrl'] = _ApiClient["default"].convertToType(data['callbackUrl'], 'String');
         }
 
+        if (data.hasOwnProperty('confirmationsCount')) {
+          obj['confirmationsCount'] = _ApiClient["default"].convertToType(data['confirmationsCount'], 'Number');
+        }
+
         if (data.hasOwnProperty('createdTimestamp')) {
           obj['createdTimestamp'] = _ApiClient["default"].convertToType(data['createdTimestamp'], 'Number');
         }
@@ -105,6 +109,12 @@ NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['address'] = undef
  */
 
 NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['callbackUrl'] = undefined;
+/**
+ * Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
+ * @member {Number} confirmationsCount
+ */
+
+NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['confirmationsCount'] = undefined;
 /**
  * Defines the specific time/date when the subscription was created in Unix Timestamp.
  * @member {Number} createdTimestamp

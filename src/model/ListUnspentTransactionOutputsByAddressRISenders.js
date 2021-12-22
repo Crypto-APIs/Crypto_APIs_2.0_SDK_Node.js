@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListUnspentTransactionOutputsByAddressRISenders model module.
  * @module model/ListUnspentTransactionOutputsByAddressRISenders
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListUnspentTransactionOutputsByAddressRISenders {
     /**

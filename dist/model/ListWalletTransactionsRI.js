@@ -9,6 +9,12 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _ListWalletTransactionsRIFee = _interopRequireDefault(require("./ListWalletTransactionsRIFee"));
 
+var _ListWalletTransactionsRIFungibleTokens = _interopRequireDefault(require("./ListWalletTransactionsRIFungibleTokens"));
+
+var _ListWalletTransactionsRIInternalTransactions = _interopRequireDefault(require("./ListWalletTransactionsRIInternalTransactions"));
+
+var _ListWalletTransactionsRINonFungibleTokens = _interopRequireDefault(require("./ListWalletTransactionsRINonFungibleTokens"));
+
 var _ListWalletTransactionsRIRecipients = _interopRequireDefault(require("./ListWalletTransactionsRIRecipients"));
 
 var _ListWalletTransactionsRISenders = _interopRequireDefault(require("./ListWalletTransactionsRISenders"));
@@ -21,12 +27,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListWalletTransactionsRI model module.
  * @module model/ListWalletTransactionsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListWalletTransactionsRI = /*#__PURE__*/function () {
   /**
@@ -87,6 +93,18 @@ var ListWalletTransactionsRI = /*#__PURE__*/function () {
           obj['fee'] = _ListWalletTransactionsRIFee["default"].constructFromObject(data['fee']);
         }
 
+        if (data.hasOwnProperty('fungibleTokens')) {
+          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_ListWalletTransactionsRIFungibleTokens["default"]]);
+        }
+
+        if (data.hasOwnProperty('internalTransactions')) {
+          obj['internalTransactions'] = _ApiClient["default"].convertToType(data['internalTransactions'], [_ListWalletTransactionsRIInternalTransactions["default"]]);
+        }
+
+        if (data.hasOwnProperty('nonFungibleTokens')) {
+          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_ListWalletTransactionsRINonFungibleTokens["default"]]);
+        }
+
         if (data.hasOwnProperty('recipients')) {
           obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListWalletTransactionsRIRecipients["default"]]);
         }
@@ -130,6 +148,23 @@ ListWalletTransactionsRI.prototype['direction'] = undefined;
  */
 
 ListWalletTransactionsRI.prototype['fee'] = undefined;
+/**
+ * Represents fungible tokens'es detailed information
+ * @member {Array.<module:model/ListWalletTransactionsRIFungibleTokens>} fungibleTokens
+ */
+
+ListWalletTransactionsRI.prototype['fungibleTokens'] = undefined;
+/**
+ * @member {Array.<module:model/ListWalletTransactionsRIInternalTransactions>} internalTransactions
+ */
+
+ListWalletTransactionsRI.prototype['internalTransactions'] = undefined;
+/**
+ * Represents non-fungible tokens'es detailed information.
+ * @member {Array.<module:model/ListWalletTransactionsRINonFungibleTokens>} nonFungibleTokens
+ */
+
+ListWalletTransactionsRI.prototype['nonFungibleTokens'] = undefined;
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
  * @member {Array.<module:model/ListWalletTransactionsRIRecipients>} recipients

@@ -19,7 +19,7 @@ import ListUnconfirmedOmniTransactionsByAddressRIFee from './ListUnconfirmedOmni
 /**
  * The GetUnconfirmedOmniTransactionByTransactionIDTxidRI model module.
  * @module model/GetUnconfirmedOmniTransactionByTransactionIDTxidRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetUnconfirmedOmniTransactionByTransactionIDTxidRI {
     /**

@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(Cryptoapis.ListLatestMinedBlocksRIBSZ);
     });
 
+    it('should have the property difficulty (base name: "difficulty")', function() {
+      // uncomment below and update the code to test the property difficulty
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSZ();
+      //expect(instance).to.be();
+    });
+
     it('should have the property dsBlock (base name: "dsBlock")', function() {
       // uncomment below and update the code to test the property dsBlock
       //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSZ();

@@ -66,8 +66,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property merkleroot (base name: "merkleroot")', function() {
-      // uncomment below and update the code to test the property merkleroot
+    it('should have the property difficulty (base name: "difficulty")', function() {
+      // uncomment below and update the code to test the property difficulty
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSZ2();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property merkleRoot (base name: "merkleRoot")', function() {
+      // uncomment below and update the code to test the property merkleRoot
       //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSZ2();
       //expect(instance).to.be();
     });

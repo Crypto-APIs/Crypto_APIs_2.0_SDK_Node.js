@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSD model module.
  * @module model/ListLatestMinedBlocksRIBSD
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListLatestMinedBlocksRIBSD {
     /**
@@ -25,13 +25,16 @@ class ListLatestMinedBlocksRIBSD {
      * @alias module:model/ListLatestMinedBlocksRIBSD
      * @param bits {String} Represents a specific sub-unit of Dash. Bits have two-decimal precision.
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
      * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+     * @param nonce {Number} Represents a random value that can be adjusted to satisfy the proof of work
+     * @param size {Number} Represents the total size of the block in Bytes.
      * @param version {Number} Represents the version of the specific block on the blockchain.
      * @param versionHex {String} Is the hexadecimal string representation of the block's version.
      */
-    constructor(bits, chainwork, merkleRoot, version, versionHex) { 
+    constructor(bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex) { 
         
-        ListLatestMinedBlocksRIBSD.initialize(this, bits, chainwork, merkleRoot, version, versionHex);
+        ListLatestMinedBlocksRIBSD.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);
     }
 
     /**
@@ -39,10 +42,13 @@ class ListLatestMinedBlocksRIBSD {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, bits, chainwork, merkleRoot, version, versionHex) { 
+    static initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex) { 
         obj['bits'] = bits;
         obj['chainwork'] = chainwork;
+        obj['difficulty'] = difficulty;
         obj['merkleRoot'] = merkleRoot;
+        obj['nonce'] = nonce;
+        obj['size'] = size;
         obj['version'] = version;
         obj['versionHex'] = versionHex;
     }
@@ -64,8 +70,17 @@ class ListLatestMinedBlocksRIBSD {
             if (data.hasOwnProperty('chainwork')) {
                 obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
             }
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
+            }
             if (data.hasOwnProperty('merkleRoot')) {
                 obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
+            }
+            if (data.hasOwnProperty('nonce')) {
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
+            }
+            if (data.hasOwnProperty('size')) {
+                obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
             if (data.hasOwnProperty('version')) {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
@@ -93,10 +108,28 @@ ListLatestMinedBlocksRIBSD.prototype['bits'] = undefined;
 ListLatestMinedBlocksRIBSD.prototype['chainwork'] = undefined;
 
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+ListLatestMinedBlocksRIBSD.prototype['difficulty'] = undefined;
+
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 ListLatestMinedBlocksRIBSD.prototype['merkleRoot'] = undefined;
+
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+ListLatestMinedBlocksRIBSD.prototype['nonce'] = undefined;
+
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+ListLatestMinedBlocksRIBSD.prototype['size'] = undefined;
 
 /**
  * Represents the version of the specific block on the blockchain.

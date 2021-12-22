@@ -16,18 +16,17 @@ import ApiClient from '../ApiClient';
 /**
  * The BroadcastLocallySignedTransactionRBDataItem model module.
  * @module model/BroadcastLocallySignedTransactionRBDataItem
- * @version 1.3.0
+ * @version 1.4.0
  */
 class BroadcastLocallySignedTransactionRBDataItem {
     /**
      * Constructs a new <code>BroadcastLocallySignedTransactionRBDataItem</code>.
      * @alias module:model/BroadcastLocallySignedTransactionRBDataItem
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
      * @param signedTransactionHex {String} Represents the signed transaction's specific hex.
      */
-    constructor(callbackUrl, signedTransactionHex) { 
+    constructor(signedTransactionHex) { 
         
-        BroadcastLocallySignedTransactionRBDataItem.initialize(this, callbackUrl, signedTransactionHex);
+        BroadcastLocallySignedTransactionRBDataItem.initialize(this, signedTransactionHex);
     }
 
     /**
@@ -35,8 +34,7 @@ class BroadcastLocallySignedTransactionRBDataItem {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, callbackUrl, signedTransactionHex) { 
-        obj['callbackUrl'] = callbackUrl;
+    static initialize(obj, signedTransactionHex) { 
         obj['signedTransactionHex'] = signedTransactionHex;
     }
 

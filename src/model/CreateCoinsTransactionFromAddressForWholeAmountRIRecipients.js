@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRIRecipients model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipients
- * @version 1.3.0
+ * @version 1.4.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountRIRecipients {
     /**

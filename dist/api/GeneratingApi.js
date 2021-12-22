@@ -11,25 +11,25 @@ var _GenerateDepositAddressR = _interopRequireDefault(require("../model/Generate
 
 var _GenerateDepositAddressRB = _interopRequireDefault(require("../model/GenerateDepositAddressRB"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse4008"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse4018"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse4038"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse4041"));
 
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse409"));
 
-var _ResourceNotFound = _interopRequireDefault(require("../model/ResourceNotFound"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse415"));
 
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse422"));
 
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse429"));
 
-var _WalletAsAServiceDepositAddressesLimitReached = _interopRequireDefault(require("../model/WalletAsAServiceDepositAddressesLimitReached"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -37,12 +37,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var GeneratingApi = /*#__PURE__*/function () {
   /**

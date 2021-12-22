@@ -13,26 +13,33 @@
 
 
 import ApiClient from "../ApiClient";
-import AlreadyExists from '../model/AlreadyExists';
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import GetHDWalletXPubYPubZPubDetailsR from '../model/GetHDWalletXPubYPubZPubDetailsR';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidXpub from '../model/InvalidXpub';
+import InlineResponse40043 from '../model/InlineResponse40043';
+import InlineResponse40047 from '../model/InlineResponse40047';
+import InlineResponse40049 from '../model/InlineResponse40049';
+import InlineResponse40143 from '../model/InlineResponse40143';
+import InlineResponse40147 from '../model/InlineResponse40147';
+import InlineResponse40149 from '../model/InlineResponse40149';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40343 from '../model/InlineResponse40343';
+import InlineResponse40347 from '../model/InlineResponse40347';
+import InlineResponse40349 from '../model/InlineResponse40349';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse4095 from '../model/InlineResponse4095';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse4221 from '../model/InlineResponse4221';
+import InlineResponse4222 from '../model/InlineResponse4222';
+import InlineResponse4223 from '../model/InlineResponse4223';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListHDWalletXPubYPubZPubTransactionsR from '../model/ListHDWalletXPubYPubZPubTransactionsR';
-import RequestLimitReached from '../model/RequestLimitReached';
 import SyncHDWalletXPubYPubZPubR from '../model/SyncHDWalletXPubYPubZPubR';
 import SyncHDWalletXPubYPubZPubRB from '../model/SyncHDWalletXPubYPubZPubRB';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
-import XpubNotSynced from '../model/XpubNotSynced';
-import XpubSyncInProgress from '../model/XpubSyncInProgress';
 
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class HDWalletsApi {
 

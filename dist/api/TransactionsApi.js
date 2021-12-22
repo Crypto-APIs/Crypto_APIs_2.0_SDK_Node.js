@@ -19,31 +19,51 @@ var _CreateCoinsTransactionRequestFromWalletR = _interopRequireDefault(require("
 
 var _CreateCoinsTransactionRequestFromWalletRB = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromWalletRB"));
 
-var _CreateTokensTransactionRequestFromAddressR = _interopRequireDefault(require("../model/CreateTokensTransactionRequestFromAddressR"));
+var _CreateFungibleTokensTransactionRequestFromAddressR = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddressR"));
 
-var _CreateTokensTransactionRequestFromAddressRB = _interopRequireDefault(require("../model/CreateTokensTransactionRequestFromAddressRB"));
+var _CreateFungibleTokensTransactionRequestFromAddressRB = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddressRB"));
 
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40013"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40020"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40025"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40036"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40113"));
 
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40120"));
 
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40125"));
 
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40136"));
 
-var _WalletAsAServiceAddressBalanceNotEnough = _interopRequireDefault(require("../model/WalletAsAServiceAddressBalanceNotEnough"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _WalletAsAServiceNoDepositAddressesFound = _interopRequireDefault(require("../model/WalletAsAServiceNoDepositAddressesFound"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40313"));
 
-var _WalletAsAServiceTokenNotSupported = _interopRequireDefault(require("../model/WalletAsAServiceTokenNotSupported"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40320"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40325"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40336"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse4091"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse4092"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4093"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse4094"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -51,12 +71,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var TransactionsApi = /*#__PURE__*/function () {
   /**
@@ -290,41 +310,41 @@ var TransactionsApi = /*#__PURE__*/function () {
       });
     }
     /**
-     * Create Tokens Transaction Request from Address
-     * Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * Create Fungible Tokens Transaction Request from Address
+     * Through this endpoint users can make a single token transaction.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} senderAddress Defines the specific source address for the transaction.
      * @param {String} walletId Defines the unique ID of the Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/CreateTokensTransactionRequestFromAddressRB} opts.createTokensTransactionRequestFromAddressRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateTokensTransactionRequestFromAddressR} and HTTP response
+     * @param {module:model/CreateFungibleTokensTransactionRequestFromAddressRB} opts.createFungibleTokensTransactionRequestFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateFungibleTokensTransactionRequestFromAddressR} and HTTP response
      */
 
   }, {
-    key: "createTokensTransactionRequestFromAddressWithHttpInfo",
-    value: function createTokensTransactionRequestFromAddressWithHttpInfo(blockchain, network, senderAddress, walletId, opts) {
+    key: "createFungibleTokensTransactionRequestFromAddressWithHttpInfo",
+    value: function createFungibleTokensTransactionRequestFromAddressWithHttpInfo(blockchain, network, senderAddress, walletId, opts) {
       opts = opts || {};
-      var postBody = opts['createTokensTransactionRequestFromAddressRB']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['createFungibleTokensTransactionRequestFromAddressRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling createTokensTransactionRequestFromAddress");
+        throw new Error("Missing the required parameter 'blockchain' when calling createFungibleTokensTransactionRequestFromAddress");
       } // verify the required parameter 'network' is set
 
 
       if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling createTokensTransactionRequestFromAddress");
+        throw new Error("Missing the required parameter 'network' when calling createFungibleTokensTransactionRequestFromAddress");
       } // verify the required parameter 'senderAddress' is set
 
 
       if (senderAddress === undefined || senderAddress === null) {
-        throw new Error("Missing the required parameter 'senderAddress' when calling createTokensTransactionRequestFromAddress");
+        throw new Error("Missing the required parameter 'senderAddress' when calling createFungibleTokensTransactionRequestFromAddress");
       } // verify the required parameter 'walletId' is set
 
 
       if (walletId === undefined || walletId === null) {
-        throw new Error("Missing the required parameter 'walletId' when calling createTokensTransactionRequestFromAddress");
+        throw new Error("Missing the required parameter 'walletId' when calling createFungibleTokensTransactionRequestFromAddress");
       }
 
       var pathParams = {
@@ -341,26 +361,26 @@ var TransactionsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _CreateTokensTransactionRequestFromAddressR["default"];
+      var returnType = _CreateFungibleTokensTransactionRequestFromAddressR["default"];
       return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/token-transaction-requests', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Create Tokens Transaction Request from Address
-     * Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+     * Create Fungible Tokens Transaction Request from Address
+     * Through this endpoint users can make a single token transaction.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} senderAddress Defines the specific source address for the transaction.
      * @param {String} walletId Defines the unique ID of the Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/CreateTokensTransactionRequestFromAddressRB} opts.createTokensTransactionRequestFromAddressRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateTokensTransactionRequestFromAddressR}
+     * @param {module:model/CreateFungibleTokensTransactionRequestFromAddressRB} opts.createFungibleTokensTransactionRequestFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateFungibleTokensTransactionRequestFromAddressR}
      */
 
   }, {
-    key: "createTokensTransactionRequestFromAddress",
-    value: function createTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts) {
-      return this.createTokensTransactionRequestFromAddressWithHttpInfo(blockchain, network, senderAddress, walletId, opts).then(function (response_and_data) {
+    key: "createFungibleTokensTransactionRequestFromAddress",
+    value: function createFungibleTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts) {
+      return this.createFungibleTokensTransactionRequestFromAddressWithHttpInfo(blockchain, network, senderAddress, walletId, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

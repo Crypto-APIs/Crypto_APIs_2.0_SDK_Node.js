@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSZ2 model module.
  * @module model/ListLatestMinedBlocksRIBSZ2
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListLatestMinedBlocksRIBSZ2 {
     /**
@@ -25,14 +25,15 @@ class ListLatestMinedBlocksRIBSZ2 {
      * @alias module:model/ListLatestMinedBlocksRIBSZ2
      * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
-     * @param merkleroot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
+     * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
      * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
      * @param size {Number} Represents the total size of the block in Bytes.
      * @param version {Number} Represents the transaction version number.
      */
-    constructor(bits, chainwork, merkleroot, nonce, size, version) { 
+    constructor(bits, chainwork, difficulty, merkleRoot, nonce, size, version) { 
         
-        ListLatestMinedBlocksRIBSZ2.initialize(this, bits, chainwork, merkleroot, nonce, size, version);
+        ListLatestMinedBlocksRIBSZ2.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version);
     }
 
     /**
@@ -40,10 +41,11 @@ class ListLatestMinedBlocksRIBSZ2 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, bits, chainwork, merkleroot, nonce, size, version) { 
+    static initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, version) { 
         obj['bits'] = bits;
         obj['chainwork'] = chainwork;
-        obj['merkleroot'] = merkleroot;
+        obj['difficulty'] = difficulty;
+        obj['merkleRoot'] = merkleRoot;
         obj['nonce'] = nonce;
         obj['size'] = size;
         obj['version'] = version;
@@ -66,8 +68,11 @@ class ListLatestMinedBlocksRIBSZ2 {
             if (data.hasOwnProperty('chainwork')) {
                 obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
             }
-            if (data.hasOwnProperty('merkleroot')) {
-                obj['merkleroot'] = ApiClient.convertToType(data['merkleroot'], 'String');
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
+            }
+            if (data.hasOwnProperty('merkleRoot')) {
+                obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
             }
             if (data.hasOwnProperty('nonce')) {
                 obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
@@ -98,10 +103,16 @@ ListLatestMinedBlocksRIBSZ2.prototype['bits'] = undefined;
 ListLatestMinedBlocksRIBSZ2.prototype['chainwork'] = undefined;
 
 /**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
  */
-ListLatestMinedBlocksRIBSZ2.prototype['merkleroot'] = undefined;
+ListLatestMinedBlocksRIBSZ2.prototype['difficulty'] = undefined;
+
+/**
+ * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+ * @member {String} merkleRoot
+ */
+ListLatestMinedBlocksRIBSZ2.prototype['merkleRoot'] = undefined;
 
 /**
  * Represents a random value that can be adjusted to satisfy the proof of work

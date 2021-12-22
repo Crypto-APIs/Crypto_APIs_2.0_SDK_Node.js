@@ -17,22 +17,23 @@ import GetTransactionDetailsByTransactionIDRIBSBSCGasPrice from './GetTransactio
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBSC model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBSC
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetTransactionDetailsByTransactionIDRIBSBSC {
     /**
      * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSBSC</code>.
      * Binance Smart Chain
      * @alias module:model/GetTransactionDetailsByTransactionIDRIBSBSC
+     * @param contract {String} Represents the specific transaction contract
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
      * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
      * @param gasUsed {String} Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
      * @param inputData {String} Represents additional information that is required for the transaction.
      * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
      */
-    constructor(gasLimit, gasPrice, gasUsed, inputData, nonce) { 
+    constructor(contract, gasLimit, gasPrice, gasUsed, inputData, nonce) { 
         
-        GetTransactionDetailsByTransactionIDRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, inputData, nonce);
+        GetTransactionDetailsByTransactionIDRIBSBSC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
     }
 
     /**
@@ -40,7 +41,8 @@ class GetTransactionDetailsByTransactionIDRIBSBSC {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, gasLimit, gasPrice, gasUsed, inputData, nonce) { 
+    static initialize(obj, contract, gasLimit, gasPrice, gasUsed, inputData, nonce) { 
+        obj['contract'] = contract;
         obj['gasLimit'] = gasLimit;
         obj['gasPrice'] = gasPrice;
         obj['gasUsed'] = gasUsed;

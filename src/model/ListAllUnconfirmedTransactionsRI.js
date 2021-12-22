@@ -19,7 +19,7 @@ import ListUnconfirmedTransactionsByAddressRISenders from './ListUnconfirmedTran
 /**
  * The ListAllUnconfirmedTransactionsRI model module.
  * @module model/ListAllUnconfirmedTransactionsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListAllUnconfirmedTransactionsRI {
     /**
@@ -28,12 +28,13 @@ class ListAllUnconfirmedTransactionsRI {
      * @param recipients {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param senders {Array.<module:model/ListUnconfirmedTransactionsByAddressRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
+     * @param transactionHash {String} String representation of the transaction hash
      * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param blockchainSpecific {module:model/ListAllUnconfirmedTransactionsRIBS} 
      */
-    constructor(recipients, senders, timestamp, transactionId, blockchainSpecific) { 
+    constructor(recipients, senders, timestamp, transactionHash, transactionId, blockchainSpecific) { 
         
-        ListAllUnconfirmedTransactionsRI.initialize(this, recipients, senders, timestamp, transactionId, blockchainSpecific);
+        ListAllUnconfirmedTransactionsRI.initialize(this, recipients, senders, timestamp, transactionHash, transactionId, blockchainSpecific);
     }
 
     /**
@@ -41,10 +42,11 @@ class ListAllUnconfirmedTransactionsRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, recipients, senders, timestamp, transactionId, blockchainSpecific) { 
+    static initialize(obj, recipients, senders, timestamp, transactionHash, transactionId, blockchainSpecific) { 
         obj['recipients'] = recipients;
         obj['senders'] = senders;
         obj['timestamp'] = timestamp;
+        obj['transactionHash'] = transactionHash;
         obj['transactionId'] = transactionId;
         obj['blockchainSpecific'] = blockchainSpecific;
     }
@@ -68,6 +70,9 @@ class ListAllUnconfirmedTransactionsRI {
             }
             if (data.hasOwnProperty('timestamp')) {
                 obj['timestamp'] = ApiClient.convertToType(data['timestamp'], 'Number');
+            }
+            if (data.hasOwnProperty('transactionHash')) {
+                obj['transactionHash'] = ApiClient.convertToType(data['transactionHash'], 'String');
             }
             if (data.hasOwnProperty('transactionId')) {
                 obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
@@ -99,6 +104,12 @@ ListAllUnconfirmedTransactionsRI.prototype['senders'] = undefined;
  * @member {Number} timestamp
  */
 ListAllUnconfirmedTransactionsRI.prototype['timestamp'] = undefined;
+
+/**
+ * String representation of the transaction hash
+ * @member {String} transactionHash
+ */
+ListAllUnconfirmedTransactionsRI.prototype['transactionHash'] = undefined;
 
 /**
  * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.

@@ -31,12 +31,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The GetBlockDetailsByBlockHeightRIBS model module.
  * @module model/GetBlockDetailsByBlockHeightRIBS
- * @version 1.3.0
+ * @version 1.4.0
  */
 var GetBlockDetailsByBlockHeightRIBS = /*#__PURE__*/function () {
   /**
@@ -67,9 +67,8 @@ var GetBlockDetailsByBlockHeightRIBS = /*#__PURE__*/function () {
    * @param minedInSeconds {Number} Specifies the amount of time required for the block to be mined in seconds.
    * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
    * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
-   * @param merkleroot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
    */
-  function GetBlockDetailsByBlockHeightRIBS(difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, merkleroot) {
+  function GetBlockDetailsByBlockHeightRIBS(difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty) {
     _classCallCheck(this, GetBlockDetailsByBlockHeightRIBS);
 
     _GetBlockDetailsByBlockHeightRIBSB["default"].initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);
@@ -88,9 +87,9 @@ var GetBlockDetailsByBlockHeightRIBS = /*#__PURE__*/function () {
 
     _GetBlockDetailsByBlockHeightRIBSBSC["default"].initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);
 
-    _GetBlockDetailsByBlockHeightRIBSZ["default"].initialize(this, difficulty, nonce, size, bits, chainwork, merkleroot, version);
+    _GetBlockDetailsByBlockHeightRIBSZ["default"].initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version);
 
-    GetBlockDetailsByBlockHeightRIBS.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, merkleroot);
+    GetBlockDetailsByBlockHeightRIBS.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty);
   }
   /**
    * Initializes the fields of this object.
@@ -101,7 +100,7 @@ var GetBlockDetailsByBlockHeightRIBS = /*#__PURE__*/function () {
 
   _createClass(GetBlockDetailsByBlockHeightRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, merkleroot) {
+    value: function initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty) {
       obj['difficulty'] = difficulty;
       obj['nonce'] = nonce;
       obj['size'] = size;
@@ -118,7 +117,6 @@ var GetBlockDetailsByBlockHeightRIBS = /*#__PURE__*/function () {
       obj['minedInSeconds'] = minedInSeconds;
       obj['sha3Uncles'] = sha3Uncles;
       obj['totalDifficulty'] = totalDifficulty;
-      obj['merkleroot'] = merkleroot;
     }
     /**
      * Constructs a <code>GetBlockDetailsByBlockHeightRIBS</code> from a plain JavaScript object, optionally creating a new instance.
@@ -214,10 +212,6 @@ var GetBlockDetailsByBlockHeightRIBS = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('totalDifficulty')) {
           obj['totalDifficulty'] = _ApiClient["default"].convertToType(data['totalDifficulty'], 'String');
-        }
-
-        if (data.hasOwnProperty('merkleroot')) {
-          obj['merkleroot'] = _ApiClient["default"].convertToType(data['merkleroot'], 'String');
         }
       }
 
@@ -323,13 +317,7 @@ GetBlockDetailsByBlockHeightRIBS.prototype['sha3Uncles'] = undefined;
  * @member {String} totalDifficulty
  */
 
-GetBlockDetailsByBlockHeightRIBS.prototype['totalDifficulty'] = undefined;
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
- */
-
-GetBlockDetailsByBlockHeightRIBS.prototype['merkleroot'] = undefined; // Implement GetBlockDetailsByBlockHeightRIBSB interface:
+GetBlockDetailsByBlockHeightRIBS.prototype['totalDifficulty'] = undefined; // Implement GetBlockDetailsByBlockHeightRIBSB interface:
 
 /**
  * Represents a mathematical value of how hard it is to find a valid hash for this block.
@@ -803,10 +791,10 @@ _GetBlockDetailsByBlockHeightRIBSZ["default"].prototype['bits'] = undefined;
 _GetBlockDetailsByBlockHeightRIBSZ["default"].prototype['chainwork'] = undefined;
 /**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
+ * @member {String} merkleRoot
  */
 
-_GetBlockDetailsByBlockHeightRIBSZ["default"].prototype['merkleroot'] = undefined;
+_GetBlockDetailsByBlockHeightRIBSZ["default"].prototype['merkleRoot'] = undefined;
 /**
  * Represents the block version number.
  * @member {Number} version

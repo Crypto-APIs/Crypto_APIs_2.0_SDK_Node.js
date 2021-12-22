@@ -78,10 +78,10 @@
         done();
       });
     });
-    describe('createTokensTransactionRequestFromAddress', function() {
-      it('should call createTokensTransactionRequestFromAddress successfully', function(done) {
-        //uncomment below and update the code to test createTokensTransactionRequestFromAddress
-        //instance.createTokensTransactionRequestFromAddress(function(error) {
+    describe('createFungibleTokensTransactionRequestFromAddress', function() {
+      it('should call createFungibleTokensTransactionRequestFromAddress successfully', function(done) {
+        //uncomment below and update the code to test createFungibleTokensTransactionRequestFromAddress
+        //instance.createFungibleTokensTransactionRequestFromAddress(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

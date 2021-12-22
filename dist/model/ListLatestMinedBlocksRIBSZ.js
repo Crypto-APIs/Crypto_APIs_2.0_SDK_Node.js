@@ -13,18 +13,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListLatestMinedBlocksRIBSZ model module.
  * @module model/ListLatestMinedBlocksRIBSZ
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListLatestMinedBlocksRIBSZ = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSZ</code>.
    * Zilliqa
    * @alias module:model/ListLatestMinedBlocksRIBSZ
+   * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
    * @param dsBlock {Number} Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
    * @param dsDifficulty {String} Defines how difficult it is to mine the dsBlocks.
    * @param dsLeader {String} Represents a part of the DS Committee which leads the consensus protocol for the epoch.
@@ -32,10 +33,10 @@ var ListLatestMinedBlocksRIBSZ = /*#__PURE__*/function () {
    * @param gasUsed {Number} Defines how much of the gas for the block has been used.
    * @param microBlocks {Array.<String>} 
    */
-  function ListLatestMinedBlocksRIBSZ(dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) {
+  function ListLatestMinedBlocksRIBSZ(difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) {
     _classCallCheck(this, ListLatestMinedBlocksRIBSZ);
 
-    ListLatestMinedBlocksRIBSZ.initialize(this, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
+    ListLatestMinedBlocksRIBSZ.initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
   }
   /**
    * Initializes the fields of this object.
@@ -46,7 +47,8 @@ var ListLatestMinedBlocksRIBSZ = /*#__PURE__*/function () {
 
   _createClass(ListLatestMinedBlocksRIBSZ, null, [{
     key: "initialize",
-    value: function initialize(obj, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) {
+    value: function initialize(obj, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) {
+      obj['difficulty'] = difficulty;
       obj['dsBlock'] = dsBlock;
       obj['dsDifficulty'] = dsDifficulty;
       obj['dsLeader'] = dsLeader;
@@ -67,6 +69,10 @@ var ListLatestMinedBlocksRIBSZ = /*#__PURE__*/function () {
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new ListLatestMinedBlocksRIBSZ();
+
+        if (data.hasOwnProperty('difficulty')) {
+          obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
+        }
 
         if (data.hasOwnProperty('dsBlock')) {
           obj['dsBlock'] = _ApiClient["default"].convertToType(data['dsBlock'], 'Number');
@@ -100,10 +106,16 @@ var ListLatestMinedBlocksRIBSZ = /*#__PURE__*/function () {
   return ListLatestMinedBlocksRIBSZ;
 }();
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+
+ListLatestMinedBlocksRIBSZ.prototype['difficulty'] = undefined;
+/**
  * Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
  * @member {Number} dsBlock
  */
-
 
 ListLatestMinedBlocksRIBSZ.prototype['dsBlock'] = undefined;
 /**

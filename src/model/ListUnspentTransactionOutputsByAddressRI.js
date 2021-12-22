@@ -22,7 +22,7 @@ import ListUnspentTransactionOutputsByAddressRIVin from './ListUnspentTransactio
 /**
  * The ListUnspentTransactionOutputsByAddressRI model module.
  * @module model/ListUnspentTransactionOutputsByAddressRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListUnspentTransactionOutputsByAddressRI {
     /**

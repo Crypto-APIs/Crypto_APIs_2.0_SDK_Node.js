@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property confirmationsCount (base name: "confirmationsCount")', function() {
+      // uncomment below and update the code to test the property confirmationsCount
+      //var instance = new Cryptoapis.NewConfirmedTokensTransactionsAndEachConfirmationRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property createdTimestamp (base name: "createdTimestamp")', function() {
       // uncomment below and update the code to test the property createdTimestamp
       //var instance = new Cryptoapis.NewConfirmedTokensTransactionsAndEachConfirmationRI();

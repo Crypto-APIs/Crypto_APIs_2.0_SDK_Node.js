@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetTransactionDetailsByTransactionIDRIBSBCScriptPubKey {
     /**

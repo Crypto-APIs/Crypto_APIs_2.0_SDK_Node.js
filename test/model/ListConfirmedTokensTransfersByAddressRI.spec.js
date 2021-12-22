@@ -84,6 +84,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property tokenId (base name: "tokenId")', function() {
+      // uncomment below and update the code to test the property tokenId
+      //var instance = new Cryptoapis.ListConfirmedTokensTransfersByAddressRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property tokenName (base name: "tokenName")', function() {
       // uncomment below and update the code to test the property tokenName
       //var instance = new Cryptoapis.ListConfirmedTokensTransfersByAddressRI();

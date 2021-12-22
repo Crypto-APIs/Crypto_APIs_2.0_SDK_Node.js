@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
+import GetTransactionDetailsByTransactionIDRIBSLVout from './GetTransactionDetailsByTransactionIDRIBSLVout';
 import ListAllUnconfirmedTransactionsRIBSLVin from './ListAllUnconfirmedTransactionsRIBSLVin';
-import ListAllUnconfirmedTransactionsRIBSLVout from './ListAllUnconfirmedTransactionsRIBSLVout';
 
 /**
  * The ListAllUnconfirmedTransactionsRIBSL model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSL
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListAllUnconfirmedTransactionsRIBSL {
     /**
@@ -30,7 +30,7 @@ class ListAllUnconfirmedTransactionsRIBSL {
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents the transaction's version number.
      * @param vin {Array.<module:model/ListAllUnconfirmedTransactionsRIBSLVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/ListAllUnconfirmedTransactionsRIBSLVout>} Represents the transaction outputs.
+     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} Represents the transaction outputs.
      */
     constructor(locktime, size, vSize, version, vin, vout) { 
         
@@ -78,7 +78,7 @@ class ListAllUnconfirmedTransactionsRIBSL {
                 obj['vin'] = ApiClient.convertToType(data['vin'], [ListAllUnconfirmedTransactionsRIBSLVin]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [ListAllUnconfirmedTransactionsRIBSLVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSLVout]);
             }
         }
         return obj;
@@ -119,7 +119,7 @@ ListAllUnconfirmedTransactionsRIBSL.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListAllUnconfirmedTransactionsRIBSLVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
  */
 ListAllUnconfirmedTransactionsRIBSL.prototype['vout'] = undefined;
 

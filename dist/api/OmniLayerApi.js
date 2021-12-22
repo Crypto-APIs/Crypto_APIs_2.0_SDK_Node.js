@@ -7,23 +7,71 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _BlockchainDataTransactionNotFound = _interopRequireDefault(require("../model/BlockchainDataTransactionNotFound"));
-
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
-
 var _GetOmniTransactionDetailsByTransactionIDTxidR = _interopRequireDefault(require("../model/GetOmniTransactionDetailsByTransactionIDTxidR"));
 
 var _GetUnconfirmedOmniTransactionByTransactionIDTxidR = _interopRequireDefault(require("../model/GetUnconfirmedOmniTransactionByTransactionIDTxidR"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse4001"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40012"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40019"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40028"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40032"));
+
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40038"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40044"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse4005"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse4011"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40112"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40119"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40128"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40132"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40138"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40144"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4015"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse4031"));
+
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40312"));
+
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40319"));
+
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40328"));
+
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40332"));
+
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40338"));
+
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40344"));
+
+var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse4035"));
+
+var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse404"));
+
+var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListOmniTokensByAddressR = _interopRequireDefault(require("../model/ListOmniTokensByAddressR"));
 
@@ -37,24 +85,18 @@ var _ListUnconfirmedOmniTransactionsByAddressR = _interopRequireDefault(require(
 
 var _ListUnconfirmedOmniTransactionsByPropertyIDR = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByPropertyIDR"));
 
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * OmniLayer service.
 * @module api/OmniLayerApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var OmniLayerApi = /*#__PURE__*/function () {
   /**

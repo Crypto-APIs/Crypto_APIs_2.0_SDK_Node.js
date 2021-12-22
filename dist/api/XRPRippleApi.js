@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
-
 var _GetLatestMinedXRPRippleBlockR = _interopRequireDefault(require("../model/GetLatestMinedXRPRippleBlockR"));
 
 var _GetXRPRippleAddressDetailsR = _interopRequireDefault(require("../model/GetXRPRippleAddressDetailsR"));
@@ -19,15 +17,67 @@ var _GetXRPRippleBlockDetailsByBlockHeightR = _interopRequireDefault(require("..
 
 var _GetXRPRippleTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionIDR"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40011"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40018"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse4002"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40023"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40027"));
+
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40031"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40039"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse4006"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40111"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40118"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4012"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40123"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40127"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40131"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40139"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4016"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40311"));
+
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40318"));
+
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse4032"));
+
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40323"));
+
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40327"));
+
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40331"));
+
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40339"));
+
+var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse4036"));
+
+var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse4041"));
+
+var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListXRPRippleTransactionsByAddressR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressR"));
 
@@ -35,26 +85,18 @@ var _ListXRPRippleTransactionsByBlockHashR = _interopRequireDefault(require("../
 
 var _ListXRPRippleTransactionsByBlockHeightR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHeightR"));
 
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
-
-var _ResourceNotFound = _interopRequireDefault(require("../model/ResourceNotFound"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var XRPRippleApi = /*#__PURE__*/function () {
   /**

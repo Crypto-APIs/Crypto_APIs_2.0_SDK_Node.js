@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBScriptSig from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBCVin model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBCVin
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetTransactionDetailsByTransactionIDRIBSBCVin {
     /**
@@ -25,7 +25,7 @@ class GetTransactionDetailsByTransactionIDRIBSBCVin {
      * @alias module:model/GetTransactionDetailsByTransactionIDRIBSBCVin
      * @param addresses {Array.<String>} 
      * @param scriptSig {module:model/GetTransactionDetailsByTransactionIDRIBSBScriptSig} 
-     * @param sequence {String} Represents the script sequence number.
+     * @param sequence {Number} Represents the script sequence number.
      * @param txinwitness {Array.<String>} 
      */
     constructor(addresses, scriptSig, sequence, txinwitness) { 
@@ -66,7 +66,7 @@ class GetTransactionDetailsByTransactionIDRIBSBCVin {
                 obj['scriptSig'] = GetTransactionDetailsByTransactionIDRIBSBScriptSig.constructFromObject(data['scriptSig']);
             }
             if (data.hasOwnProperty('sequence')) {
-                obj['sequence'] = ApiClient.convertToType(data['sequence'], 'String');
+                obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
             }
             if (data.hasOwnProperty('txid')) {
                 obj['txid'] = ApiClient.convertToType(data['txid'], 'String');
@@ -105,7 +105,7 @@ GetTransactionDetailsByTransactionIDRIBSBCVin.prototype['scriptSig'] = undefined
 
 /**
  * Represents the script sequence number.
- * @member {String} sequence
+ * @member {Number} sequence
  */
 GetTransactionDetailsByTransactionIDRIBSBCVin.prototype['sequence'] = undefined;
 

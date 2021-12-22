@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByBlockHeightRI from './ListZilliqaTransactionsByB
 /**
  * The ListZilliqaTransactionsByBlockHeightRData model module.
  * @module model/ListZilliqaTransactionsByBlockHeightRData
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListZilliqaTransactionsByBlockHeightRData {
     /**

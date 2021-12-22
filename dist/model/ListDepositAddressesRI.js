@@ -7,31 +7,41 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _ListDepositAddressesRIConfirmedBalance = _interopRequireDefault(require("./ListDepositAddressesRIConfirmedBalance"));
+
+var _ListDepositAddressesRIFungibleTokens = _interopRequireDefault(require("./ListDepositAddressesRIFungibleTokens"));
+
+var _ListDepositAddressesRINonFungibleTokens = _interopRequireDefault(require("./ListDepositAddressesRINonFungibleTokens"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListDepositAddressesRI model module.
  * @module model/ListDepositAddressesRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListDepositAddressesRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesRI</code>.
    * @alias module:model/ListDepositAddressesRI
    * @param address {String} Specifies the specific address's unique string value.
+   * @param confirmedBalance {module:model/ListDepositAddressesRIConfirmedBalance} 
    * @param createdTimestamp {Number} Defines the specific UNIX time when the deposit address was created.
+   * @param fungibleTokens {Array.<module:model/ListDepositAddressesRIFungibleTokens>} Represents fungible tokens'es detailed information
+   * @param index {String} Represents the index of the address in the wallet.
    * @param label {String} Represents a custom tag that customers can set up for their Wallets and addresses. E.g. custom label named \"Special addresses\".
+   * @param nonFungibleTokens {Array.<module:model/ListDepositAddressesRINonFungibleTokens>} Represents non-fungible tokens'es detailed information.
    */
-  function ListDepositAddressesRI(address, createdTimestamp, label) {
+  function ListDepositAddressesRI(address, confirmedBalance, createdTimestamp, fungibleTokens, index, label, nonFungibleTokens) {
     _classCallCheck(this, ListDepositAddressesRI);
 
-    ListDepositAddressesRI.initialize(this, address, createdTimestamp, label);
+    ListDepositAddressesRI.initialize(this, address, confirmedBalance, createdTimestamp, fungibleTokens, index, label, nonFungibleTokens);
   }
   /**
    * Initializes the fields of this object.
@@ -42,10 +52,14 @@ var ListDepositAddressesRI = /*#__PURE__*/function () {
 
   _createClass(ListDepositAddressesRI, null, [{
     key: "initialize",
-    value: function initialize(obj, address, createdTimestamp, label) {
+    value: function initialize(obj, address, confirmedBalance, createdTimestamp, fungibleTokens, index, label, nonFungibleTokens) {
       obj['address'] = address;
+      obj['confirmedBalance'] = confirmedBalance;
       obj['createdTimestamp'] = createdTimestamp;
+      obj['fungibleTokens'] = fungibleTokens;
+      obj['index'] = index;
       obj['label'] = label;
+      obj['nonFungibleTokens'] = nonFungibleTokens;
     }
     /**
      * Constructs a <code>ListDepositAddressesRI</code> from a plain JavaScript object, optionally creating a new instance.
@@ -65,12 +79,28 @@ var ListDepositAddressesRI = /*#__PURE__*/function () {
           obj['address'] = _ApiClient["default"].convertToType(data['address'], 'String');
         }
 
+        if (data.hasOwnProperty('confirmedBalance')) {
+          obj['confirmedBalance'] = _ListDepositAddressesRIConfirmedBalance["default"].constructFromObject(data['confirmedBalance']);
+        }
+
         if (data.hasOwnProperty('createdTimestamp')) {
           obj['createdTimestamp'] = _ApiClient["default"].convertToType(data['createdTimestamp'], 'Number');
         }
 
+        if (data.hasOwnProperty('fungibleTokens')) {
+          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_ListDepositAddressesRIFungibleTokens["default"]]);
+        }
+
+        if (data.hasOwnProperty('index')) {
+          obj['index'] = _ApiClient["default"].convertToType(data['index'], 'String');
+        }
+
         if (data.hasOwnProperty('label')) {
           obj['label'] = _ApiClient["default"].convertToType(data['label'], 'String');
+        }
+
+        if (data.hasOwnProperty('nonFungibleTokens')) {
+          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_ListDepositAddressesRINonFungibleTokens["default"]]);
         }
       }
 
@@ -88,16 +118,39 @@ var ListDepositAddressesRI = /*#__PURE__*/function () {
 
 ListDepositAddressesRI.prototype['address'] = undefined;
 /**
+ * @member {module:model/ListDepositAddressesRIConfirmedBalance} confirmedBalance
+ */
+
+ListDepositAddressesRI.prototype['confirmedBalance'] = undefined;
+/**
  * Defines the specific UNIX time when the deposit address was created.
  * @member {Number} createdTimestamp
  */
 
 ListDepositAddressesRI.prototype['createdTimestamp'] = undefined;
 /**
+ * Represents fungible tokens'es detailed information
+ * @member {Array.<module:model/ListDepositAddressesRIFungibleTokens>} fungibleTokens
+ */
+
+ListDepositAddressesRI.prototype['fungibleTokens'] = undefined;
+/**
+ * Represents the index of the address in the wallet.
+ * @member {String} index
+ */
+
+ListDepositAddressesRI.prototype['index'] = undefined;
+/**
  * Represents a custom tag that customers can set up for their Wallets and addresses. E.g. custom label named \"Special addresses\".
  * @member {String} label
  */
 
 ListDepositAddressesRI.prototype['label'] = undefined;
+/**
+ * Represents non-fungible tokens'es detailed information.
+ * @member {Array.<module:model/ListDepositAddressesRINonFungibleTokens>} nonFungibleTokens
+ */
+
+ListDepositAddressesRI.prototype['nonFungibleTokens'] = undefined;
 var _default = ListDepositAddressesRI;
 exports["default"] = _default;

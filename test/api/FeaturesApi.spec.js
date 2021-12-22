@@ -58,16 +58,6 @@
         done();
       });
     });
-    describe('generateAddress', function() {
-      it('should call generateAddress successfully', function(done) {
-        //uncomment below and update the code to test generateAddress
-        //instance.generateAddress(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
     describe('getEIP1559FeeRecommendations', function() {
       it('should call getEIP1559FeeRecommendations successfully', function(done) {
         //uncomment below and update the code to test getEIP1559FeeRecommendations

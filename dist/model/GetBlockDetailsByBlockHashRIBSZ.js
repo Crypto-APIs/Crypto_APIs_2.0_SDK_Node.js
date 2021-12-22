@@ -13,12 +13,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The GetBlockDetailsByBlockHashRIBSZ model module.
  * @module model/GetBlockDetailsByBlockHashRIBSZ
- * @version 1.3.0
+ * @version 1.4.0
  */
 var GetBlockDetailsByBlockHashRIBSZ = /*#__PURE__*/function () {
   /**
@@ -30,13 +30,13 @@ var GetBlockDetailsByBlockHashRIBSZ = /*#__PURE__*/function () {
    * @param size {Number} Represents the total size of the block in Bytes.
    * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
    * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
-   * @param merkleroot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+   * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
    * @param version {Number} Represents the block version number.
    */
-  function GetBlockDetailsByBlockHashRIBSZ(difficulty, nonce, size, bits, chainwork, merkleroot, version) {
+  function GetBlockDetailsByBlockHashRIBSZ(difficulty, nonce, size, bits, chainwork, merkleRoot, version) {
     _classCallCheck(this, GetBlockDetailsByBlockHashRIBSZ);
 
-    GetBlockDetailsByBlockHashRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleroot, version);
+    GetBlockDetailsByBlockHashRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version);
   }
   /**
    * Initializes the fields of this object.
@@ -47,13 +47,13 @@ var GetBlockDetailsByBlockHashRIBSZ = /*#__PURE__*/function () {
 
   _createClass(GetBlockDetailsByBlockHashRIBSZ, null, [{
     key: "initialize",
-    value: function initialize(obj, difficulty, nonce, size, bits, chainwork, merkleroot, version) {
+    value: function initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, version) {
       obj['difficulty'] = difficulty;
       obj['nonce'] = nonce;
       obj['size'] = size;
       obj['bits'] = bits;
       obj['chainwork'] = chainwork;
-      obj['merkleroot'] = merkleroot;
+      obj['merkleRoot'] = merkleRoot;
       obj['version'] = version;
     }
     /**
@@ -90,8 +90,8 @@ var GetBlockDetailsByBlockHashRIBSZ = /*#__PURE__*/function () {
           obj['chainwork'] = _ApiClient["default"].convertToType(data['chainwork'], 'String');
         }
 
-        if (data.hasOwnProperty('merkleroot')) {
-          obj['merkleroot'] = _ApiClient["default"].convertToType(data['merkleroot'], 'String');
+        if (data.hasOwnProperty('merkleRoot')) {
+          obj['merkleRoot'] = _ApiClient["default"].convertToType(data['merkleRoot'], 'String');
         }
 
         if (data.hasOwnProperty('version')) {
@@ -138,10 +138,10 @@ GetBlockDetailsByBlockHashRIBSZ.prototype['bits'] = undefined;
 GetBlockDetailsByBlockHashRIBSZ.prototype['chainwork'] = undefined;
 /**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
+ * @member {String} merkleRoot
  */
 
-GetBlockDetailsByBlockHashRIBSZ.prototype['merkleroot'] = undefined;
+GetBlockDetailsByBlockHashRIBSZ.prototype['merkleRoot'] = undefined;
 /**
  * Represents the block version number.
  * @member {Number} version

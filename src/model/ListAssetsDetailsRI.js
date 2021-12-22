@@ -19,7 +19,7 @@ import ListAssetsDetailsRIS from './ListAssetsDetailsRIS';
 /**
  * The ListAssetsDetailsRI model module.
  * @module model/ListAssetsDetailsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListAssetsDetailsRI {
     /**
@@ -141,7 +141,7 @@ ListAssetsDetailsRI.prototype['assetType'] = undefined;
 ListAssetsDetailsRI.prototype['latestRate'] = undefined;
 
 /**
- * Asset`s unique slug string in Crypto APIs listings
+ * Represents the asset`s unique slug string in Crypto APIs listings.
  * @member {String} slug
  */
 ListAssetsDetailsRI.prototype['slug'] = undefined;

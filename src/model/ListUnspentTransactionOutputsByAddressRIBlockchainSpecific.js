@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListConfirmedTransactionsByAddressRIBSZVShieldedOutput from './ListConfirmedTransactionsByAddressRIBSZVShieldedOutput';
+import GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput from './GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput';
 import ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit from './ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit';
 import ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend from './ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend';
 
 /**
  * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecific model module.
  * @module model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecific
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListUnspentTransactionOutputsByAddressRIBlockchainSpecific {
     /**
@@ -90,7 +90,7 @@ class ListUnspentTransactionOutputsByAddressRIBlockchainSpecific {
                 obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit]);
             }
             if (data.hasOwnProperty('vShieldedOutput')) {
-                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [ListConfirmedTransactionsByAddressRIBSZVShieldedOutput]);
+                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput]);
             }
             if (data.hasOwnProperty('vShieldedSpend')) {
                 obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend]);
@@ -152,7 +152,7 @@ ListUnspentTransactionOutputsByAddressRIBlockchainSpecific.prototype['vJoinSplit
 
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
  */
 ListUnspentTransactionOutputsByAddressRIBlockchainSpecific.prototype['vShieldedOutput'] = undefined;
 

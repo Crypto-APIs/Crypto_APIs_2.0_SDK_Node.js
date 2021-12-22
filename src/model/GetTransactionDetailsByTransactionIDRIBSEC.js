@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSECGasPrice from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRIBSEC model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSEC
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetTransactionDetailsByTransactionIDRIBSEC {
     /**
@@ -29,7 +29,7 @@ class GetTransactionDetailsByTransactionIDRIBSEC {
      * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSECGasPrice} 
      * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
      * @param inputData {String} Represents additional information that is required for the transaction.
-     * @param nonce {String} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+     * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
      */
     constructor(contract, gasLimit, gasPrice, gasUsed, inputData, nonce) { 
         
@@ -77,7 +77,7 @@ class GetTransactionDetailsByTransactionIDRIBSEC {
                 obj['inputData'] = ApiClient.convertToType(data['inputData'], 'String');
             }
             if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
             }
         }
         return obj;
@@ -117,7 +117,7 @@ GetTransactionDetailsByTransactionIDRIBSEC.prototype['inputData'] = undefined;
 
 /**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {String} nonce
+ * @member {Number} nonce
  */
 GetTransactionDetailsByTransactionIDRIBSEC.prototype['nonce'] = undefined;
 

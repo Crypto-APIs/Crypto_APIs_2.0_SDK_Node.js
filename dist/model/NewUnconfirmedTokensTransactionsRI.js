@@ -13,12 +13,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The NewUnconfirmedTokensTransactionsRI model module.
  * @module model/NewUnconfirmedTokensTransactionsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var NewUnconfirmedTokensTransactionsRI = /*#__PURE__*/function () {
   /**
@@ -31,12 +31,11 @@ var NewUnconfirmedTokensTransactionsRI = /*#__PURE__*/function () {
    * @param eventType {String} Defines the type of the specific event available for the customer to subscribe to for callback notification.
    * @param isActive {Boolean} Defines whether the subscription is active or not. Set as boolean.
    * @param referenceId {String} Represents a unique ID used to reference the specific callback subscription.
-   * @param transactionId {String} Represents the unique identification string that defines the transaction.
    */
-  function NewUnconfirmedTokensTransactionsRI(address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId, transactionId) {
+  function NewUnconfirmedTokensTransactionsRI(address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId) {
     _classCallCheck(this, NewUnconfirmedTokensTransactionsRI);
 
-    NewUnconfirmedTokensTransactionsRI.initialize(this, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId, transactionId);
+    NewUnconfirmedTokensTransactionsRI.initialize(this, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId);
   }
   /**
    * Initializes the fields of this object.
@@ -47,7 +46,7 @@ var NewUnconfirmedTokensTransactionsRI = /*#__PURE__*/function () {
 
   _createClass(NewUnconfirmedTokensTransactionsRI, null, [{
     key: "initialize",
-    value: function initialize(obj, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId, transactionId) {
+    value: function initialize(obj, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId) {
       obj['address'] = address;
       obj['callbackSecretKey'] = callbackSecretKey;
       obj['callbackUrl'] = callbackUrl;
@@ -55,7 +54,6 @@ var NewUnconfirmedTokensTransactionsRI = /*#__PURE__*/function () {
       obj['eventType'] = eventType;
       obj['isActive'] = isActive;
       obj['referenceId'] = referenceId;
-      obj['transactionId'] = transactionId;
     }
     /**
      * Constructs a <code>NewUnconfirmedTokensTransactionsRI</code> from a plain JavaScript object, optionally creating a new instance.
@@ -97,10 +95,6 @@ var NewUnconfirmedTokensTransactionsRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('referenceId')) {
           obj['referenceId'] = _ApiClient["default"].convertToType(data['referenceId'], 'String');
-        }
-
-        if (data.hasOwnProperty('transactionId')) {
-          obj['transactionId'] = _ApiClient["default"].convertToType(data['transactionId'], 'String');
         }
       }
 
@@ -153,11 +147,5 @@ NewUnconfirmedTokensTransactionsRI.prototype['isActive'] = undefined;
  */
 
 NewUnconfirmedTokensTransactionsRI.prototype['referenceId'] = undefined;
-/**
- * Represents the unique identification string that defines the transaction.
- * @member {String} transactionId
- */
-
-NewUnconfirmedTokensTransactionsRI.prototype['transactionId'] = undefined;
 var _default = NewUnconfirmedTokensTransactionsRI;
 exports["default"] = _default;

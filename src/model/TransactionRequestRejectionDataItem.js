@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TransactionRequestRejectionDataItem model module.
  * @module model/TransactionRequestRejectionDataItem
- * @version 1.3.0
+ * @version 1.4.0
  */
 class TransactionRequestRejectionDataItem {
     /**

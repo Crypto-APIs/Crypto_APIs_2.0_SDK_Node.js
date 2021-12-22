@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedInternalTransactionsRI model module.
  * @module model/NewConfirmedInternalTransactionsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class NewConfirmedInternalTransactionsRI {
     /**
@@ -25,16 +25,14 @@ class NewConfirmedInternalTransactionsRI {
      * @param address {String} Defines the specific address of the internal transaction.
      * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
      * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
-     * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
      * @param createdTimestamp {Number} Defines the specific time/date when the subscription was created in Unix Timestamp.
      * @param eventType {String} Defines the type of the specific event available for the customer to subscribe to for callback notification.
      * @param isActive {Boolean} Defines whether the subscription is active or not. Set as boolean.
      * @param referenceId {String} Represents a unique ID used to reference the specific callback subscription.
-     * @param transactionId {String} Represents the unique identification string that defines the transaction.
      */
-    constructor(address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId) { 
+    constructor(address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId) { 
         
-        NewConfirmedInternalTransactionsRI.initialize(this, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId);
+        NewConfirmedInternalTransactionsRI.initialize(this, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId);
     }
 
     /**
@@ -42,16 +40,14 @@ class NewConfirmedInternalTransactionsRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId) { 
+    static initialize(obj, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId) { 
         obj['address'] = address;
         obj['callbackSecretKey'] = callbackSecretKey;
         obj['callbackUrl'] = callbackUrl;
-        obj['confirmationsCount'] = confirmationsCount;
         obj['createdTimestamp'] = createdTimestamp;
         obj['eventType'] = eventType;
         obj['isActive'] = isActive;
         obj['referenceId'] = referenceId;
-        obj['transactionId'] = transactionId;
     }
 
     /**
@@ -74,9 +70,6 @@ class NewConfirmedInternalTransactionsRI {
             if (data.hasOwnProperty('callbackUrl')) {
                 obj['callbackUrl'] = ApiClient.convertToType(data['callbackUrl'], 'String');
             }
-            if (data.hasOwnProperty('confirmationsCount')) {
-                obj['confirmationsCount'] = ApiClient.convertToType(data['confirmationsCount'], 'Number');
-            }
             if (data.hasOwnProperty('createdTimestamp')) {
                 obj['createdTimestamp'] = ApiClient.convertToType(data['createdTimestamp'], 'Number');
             }
@@ -88,9 +81,6 @@ class NewConfirmedInternalTransactionsRI {
             }
             if (data.hasOwnProperty('referenceId')) {
                 obj['referenceId'] = ApiClient.convertToType(data['referenceId'], 'String');
-            }
-            if (data.hasOwnProperty('transactionId')) {
-                obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
             }
         }
         return obj;
@@ -118,12 +108,6 @@ NewConfirmedInternalTransactionsRI.prototype['callbackSecretKey'] = undefined;
 NewConfirmedInternalTransactionsRI.prototype['callbackUrl'] = undefined;
 
 /**
- * Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
- * @member {Number} confirmationsCount
- */
-NewConfirmedInternalTransactionsRI.prototype['confirmationsCount'] = undefined;
-
-/**
  * Defines the specific time/date when the subscription was created in Unix Timestamp.
  * @member {Number} createdTimestamp
  */
@@ -146,12 +130,6 @@ NewConfirmedInternalTransactionsRI.prototype['isActive'] = undefined;
  * @member {String} referenceId
  */
 NewConfirmedInternalTransactionsRI.prototype['referenceId'] = undefined;
-
-/**
- * Represents the unique identification string that defines the transaction.
- * @member {String} transactionId
- */
-NewConfirmedInternalTransactionsRI.prototype['transactionId'] = undefined;
 
 
 

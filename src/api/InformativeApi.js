@@ -13,26 +13,42 @@
 
 
 import ApiClient from "../ApiClient";
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import GetTransactionRequestDetailsR from '../model/GetTransactionRequestDetailsR';
 import GetWalletAssetDetailsR from '../model/GetWalletAssetDetailsR';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import GetWalletTransactionDetailsByTransactionIDR from '../model/GetWalletTransactionDetailsByTransactionIDR';
+import InlineResponse40034 from '../model/InlineResponse40034';
+import InlineResponse40035 from '../model/InlineResponse40035';
+import InlineResponse40041 from '../model/InlineResponse40041';
+import InlineResponse40045 from '../model/InlineResponse40045';
+import InlineResponse40046 from '../model/InlineResponse40046';
+import InlineResponse4007 from '../model/InlineResponse4007';
+import InlineResponse40134 from '../model/InlineResponse40134';
+import InlineResponse40135 from '../model/InlineResponse40135';
+import InlineResponse40141 from '../model/InlineResponse40141';
+import InlineResponse40145 from '../model/InlineResponse40145';
+import InlineResponse40146 from '../model/InlineResponse40146';
+import InlineResponse4017 from '../model/InlineResponse4017';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40334 from '../model/InlineResponse40334';
+import InlineResponse40335 from '../model/InlineResponse40335';
+import InlineResponse40341 from '../model/InlineResponse40341';
+import InlineResponse40345 from '../model/InlineResponse40345';
+import InlineResponse40346 from '../model/InlineResponse40346';
+import InlineResponse4037 from '../model/InlineResponse4037';
+import InlineResponse4041 from '../model/InlineResponse4041';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListDepositAddressesR from '../model/ListDepositAddressesR';
 import ListSupportedTokensR from '../model/ListSupportedTokensR';
 import ListWalletTransactionsR from '../model/ListWalletTransactionsR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import ResourceNotFound from '../model/ResourceNotFound';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class InformativeApi {
 
@@ -165,6 +181,74 @@ export default class InformativeApi {
      */
     getWalletAssetDetails(blockchain, network, walletId, opts) {
       return this.getWalletAssetDetailsWithHttpInfo(blockchain, network, walletId, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Get Wallet Transaction Details By Transaction ID
+     * Through this endpoint users can obtain Wallet transaction information by providing a `transactionId`. Customers can receive information only for a transaction that has been made from their own wallet.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetWalletTransactionDetailsByTransactionIDR} and HTTP response
+     */
+    getWalletTransactionDetailsByTransactionIDWithHttpInfo(blockchain, network, transactionId, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getWalletTransactionDetailsByTransactionID");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getWalletTransactionDetailsByTransactionID");
+      }
+      // verify the required parameter 'transactionId' is set
+      if (transactionId === undefined || transactionId === null) {
+        throw new Error("Missing the required parameter 'transactionId' when calling getWalletTransactionDetailsByTransactionID");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'transactionId': transactionId
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetWalletTransactionDetailsByTransactionIDR;
+      return this.apiClient.callApi(
+        '/wallet-as-a-service/wallets/{blockchain}/{network}/transactions/{transactionId}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get Wallet Transaction Details By Transaction ID
+     * Through this endpoint users can obtain Wallet transaction information by providing a `transactionId`. Customers can receive information only for a transaction that has been made from their own wallet.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetWalletTransactionDetailsByTransactionIDR}
+     */
+    getWalletTransactionDetailsByTransactionID(blockchain, network, transactionId, opts) {
+      return this.getWalletTransactionDetailsByTransactionIDWithHttpInfo(blockchain, network, transactionId, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**createCoinsTransactionFromAddressForWholeAmount**](TransactionsApi.md#createCoinsTransactionFromAddressForWholeAmount) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/all-transaction-requests | Create Coins Transaction From Address For Whole Amount
 [**createCoinsTransactionRequestFromAddress**](TransactionsApi.md#createCoinsTransactionRequestFromAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/transaction-requests | Create Coins Transaction Request from Address
 [**createCoinsTransactionRequestFromWallet**](TransactionsApi.md#createCoinsTransactionRequestFromWallet) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/transaction-requests | Create Coins Transaction Request from Wallet
-[**createTokensTransactionRequestFromAddress**](TransactionsApi.md#createTokensTransactionRequestFromAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/token-transaction-requests | Create Tokens Transaction Request from Address
+[**createFungibleTokensTransactionRequestFromAddress**](TransactionsApi.md#createFungibleTokensTransactionRequestFromAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/token-transaction-requests | Create Fungible Tokens Transaction Request from Address
 
 
 
@@ -195,13 +195,13 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## createTokensTransactionRequestFromAddress
+## createFungibleTokensTransactionRequestFromAddress
 
-> CreateTokensTransactionRequestFromAddressR createTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts)
+> CreateFungibleTokensTransactionRequestFromAddressR createFungibleTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts)
 
-Create Tokens Transaction Request from Address
+Create Fungible Tokens Transaction Request from Address
 
-Through this endpoint users can make a single token transaction.    {warning}This applies only to **fungible** tokens, **not** NFTs (non-fungible tokens).{/warning}    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
+Through this endpoint users can make a single token transaction.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn&#39;t happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
 
 ### Example
 
@@ -221,9 +221,9 @@ let senderAddress = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defi
 let walletId = 609e221675d04500068718dc; // String | Defines the unique ID of the Wallet.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'createTokensTransactionRequestFromAddressRB': new Cryptoapis.CreateTokensTransactionRequestFromAddressRB() // CreateTokensTransactionRequestFromAddressRB | 
+  'createFungibleTokensTransactionRequestFromAddressRB': new Cryptoapis.CreateFungibleTokensTransactionRequestFromAddressRB() // CreateFungibleTokensTransactionRequestFromAddressRB | 
 };
-apiInstance.createTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts).then((data) => {
+apiInstance.createFungibleTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -241,11 +241,11 @@ Name | Type | Description  | Notes
  **senderAddress** | **String**| Defines the specific source address for the transaction. | 
  **walletId** | **String**| Defines the unique ID of the Wallet. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **createTokensTransactionRequestFromAddressRB** | [**CreateTokensTransactionRequestFromAddressRB**](CreateTokensTransactionRequestFromAddressRB.md)|  | [optional] 
+ **createFungibleTokensTransactionRequestFromAddressRB** | [**CreateFungibleTokensTransactionRequestFromAddressRB**](CreateFungibleTokensTransactionRequestFromAddressRB.md)|  | [optional] 
 
 ### Return type
 
-[**CreateTokensTransactionRequestFromAddressR**](CreateTokensTransactionRequestFromAddressR.md)
+[**CreateFungibleTokensTransactionRequestFromAddressR**](CreateFungibleTokensTransactionRequestFromAddressR.md)
 
 ### Authorization
 

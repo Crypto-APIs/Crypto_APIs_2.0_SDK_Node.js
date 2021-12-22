@@ -19,15 +19,23 @@ var _GetTransactionDetailsByTransactionIDRIBSD = _interopRequireDefault(require(
 
 var _GetTransactionDetailsByTransactionIDRIBSD2 = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSD2"));
 
-var _GetTransactionDetailsByTransactionIDRIBSD2Vin = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSD2Vin"));
-
-var _GetTransactionDetailsByTransactionIDRIBSD2Vout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSD2Vout"));
-
 var _GetTransactionDetailsByTransactionIDRIBSE = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSE"));
 
 var _GetTransactionDetailsByTransactionIDRIBSEC = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSEC"));
 
 var _GetTransactionDetailsByTransactionIDRIBSL = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSL"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZ = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZ"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZVJoinSplit = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVJoinSplit"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZVin = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVin"));
+
+var _GetTransactionDetailsByTransactionIDRIBSZVout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVout"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -35,12 +43,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The GetTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBS
- * @version 1.3.0
+ * @version 1.4.0
  */
 var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
   /**
@@ -54,12 +62,13 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
    * @implements module:model/GetTransactionDetailsByTransactionIDRIBSE
    * @implements module:model/GetTransactionDetailsByTransactionIDRIBSEC
    * @implements module:model/GetTransactionDetailsByTransactionIDRIBSBSC
-   * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
+   * @implements module:model/GetTransactionDetailsByTransactionIDRIBSZ
+   * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
-   * @param version {Number} Represents transaction version number.
-   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vin>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vout>} Represents the transaction outputs.
+   * @param version {Number} Defines the version of the transaction.
+   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} Object Array representation of transaction inputs
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} Object Array representation of transaction outputs
    * @param contract {String} Represents the specific transaction contract
    * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
    * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
@@ -67,8 +76,18 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
    * @param inputData {String} Represents additional information that is required for the transaction.
    * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
    * @param transactionStatus {String} Represents the status of this transaction.
+   * @param bindingSig {String} It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+   * @param expiryHeight {Number} Represents a block height after which the transaction will expire.
+   * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
+   * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
+   * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
+   * @param vJoinSplit {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+   * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
+   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+   * @param valueBalance {String} String representation of the transaction value balance
+   * @param versionGroupId {String} Represents the transaction version group ID.
    */
-  function GetTransactionDetailsByTransactionIDRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) {
+  function GetTransactionDetailsByTransactionIDRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDRIBS);
 
     _GetTransactionDetailsByTransactionIDRIBSB["default"].initialize(this, locktime, size, vSize, version, vin, vout);
@@ -85,9 +104,11 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
     _GetTransactionDetailsByTransactionIDRIBSEC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
 
-    _GetTransactionDetailsByTransactionIDRIBSBSC["default"].initialize(this, gasLimit, gasPrice, gasUsed, inputData, nonce);
+    _GetTransactionDetailsByTransactionIDRIBSBSC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
 
-    GetTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
+    _GetTransactionDetailsByTransactionIDRIBSZ["default"].initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);
+
+    GetTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId);
   }
   /**
    * Initializes the fields of this object.
@@ -98,7 +119,7 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
   _createClass(GetTransactionDetailsByTransactionIDRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) {
+    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) {
       obj['locktime'] = locktime;
       obj['size'] = size;
       obj['vSize'] = vSize;
@@ -112,6 +133,16 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
       obj['inputData'] = inputData;
       obj['nonce'] = nonce;
       obj['transactionStatus'] = transactionStatus;
+      obj['bindingSig'] = bindingSig;
+      obj['expiryHeight'] = expiryHeight;
+      obj['joinSplitPubKey'] = joinSplitPubKey;
+      obj['joinSplitSig'] = joinSplitSig;
+      obj['overwintered'] = overwintered;
+      obj['vJoinSplit'] = vJoinSplit;
+      obj['vShieldedOutput'] = vShieldedOutput;
+      obj['vShieldedSpend'] = vShieldedSpend;
+      obj['valueBalance'] = valueBalance;
+      obj['versionGroupId'] = versionGroupId;
     }
     /**
      * Constructs a <code>GetTransactionDetailsByTransactionIDRIBS</code> from a plain JavaScript object, optionally creating a new instance.
@@ -143,6 +174,8 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
         _GetTransactionDetailsByTransactionIDRIBSBSC["default"].constructFromObject(data, obj);
 
+        _GetTransactionDetailsByTransactionIDRIBSZ["default"].constructFromObject(data, obj);
+
         if (data.hasOwnProperty('locktime')) {
           obj['locktime'] = _ApiClient["default"].convertToType(data['locktime'], 'Number');
         }
@@ -160,11 +193,11 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSD2Vin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSZVin["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSD2Vout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSZVout["default"]]);
         }
 
         if (data.hasOwnProperty('contract')) {
@@ -194,6 +227,46 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
         if (data.hasOwnProperty('transactionStatus')) {
           obj['transactionStatus'] = _ApiClient["default"].convertToType(data['transactionStatus'], 'String');
         }
+
+        if (data.hasOwnProperty('bindingSig')) {
+          obj['bindingSig'] = _ApiClient["default"].convertToType(data['bindingSig'], 'String');
+        }
+
+        if (data.hasOwnProperty('expiryHeight')) {
+          obj['expiryHeight'] = _ApiClient["default"].convertToType(data['expiryHeight'], 'Number');
+        }
+
+        if (data.hasOwnProperty('joinSplitPubKey')) {
+          obj['joinSplitPubKey'] = _ApiClient["default"].convertToType(data['joinSplitPubKey'], 'String');
+        }
+
+        if (data.hasOwnProperty('joinSplitSig')) {
+          obj['joinSplitSig'] = _ApiClient["default"].convertToType(data['joinSplitSig'], 'String');
+        }
+
+        if (data.hasOwnProperty('overwintered')) {
+          obj['overwintered'] = _ApiClient["default"].convertToType(data['overwintered'], 'Boolean');
+        }
+
+        if (data.hasOwnProperty('vJoinSplit')) {
+          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_GetTransactionDetailsByTransactionIDRIBSZVJoinSplit["default"]]);
+        }
+
+        if (data.hasOwnProperty('vShieldedOutput')) {
+          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput["default"]]);
+        }
+
+        if (data.hasOwnProperty('vShieldedSpend')) {
+          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend["default"]]);
+        }
+
+        if (data.hasOwnProperty('valueBalance')) {
+          obj['valueBalance'] = _ApiClient["default"].convertToType(data['valueBalance'], 'String');
+        }
+
+        if (data.hasOwnProperty('versionGroupId')) {
+          obj['versionGroupId'] = _ApiClient["default"].convertToType(data['versionGroupId'], 'String');
+        }
       }
 
       return obj;
@@ -203,7 +276,7 @@ var GetTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
   return GetTransactionDetailsByTransactionIDRIBS;
 }();
 /**
- * Represents the time at which a particular transaction can be added to the blockchain.
+ * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
  * @member {Number} locktime
  */
 
@@ -222,20 +295,20 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['size'] = undefined;
 
 GetTransactionDetailsByTransactionIDRIBS.prototype['vSize'] = undefined;
 /**
- * Represents transaction version number.
+ * Defines the version of the transaction.
  * @member {Number} version
  */
 
 GetTransactionDetailsByTransactionIDRIBS.prototype['version'] = undefined;
 /**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vin>} vin
+ * Object Array representation of transaction inputs
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} vin
  */
 
 GetTransactionDetailsByTransactionIDRIBS.prototype['vin'] = undefined;
 /**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vout>} vout
+ * Object Array representation of transaction outputs
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
  */
 
 GetTransactionDetailsByTransactionIDRIBS.prototype['vout'] = undefined;
@@ -279,7 +352,67 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['nonce'] = undefined;
  * @member {String} transactionStatus
  */
 
-GetTransactionDetailsByTransactionIDRIBS.prototype['transactionStatus'] = undefined; // Implement GetTransactionDetailsByTransactionIDRIBSB interface:
+GetTransactionDetailsByTransactionIDRIBS.prototype['transactionStatus'] = undefined;
+/**
+ * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+ * @member {String} bindingSig
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['bindingSig'] = undefined;
+/**
+ * Represents a block height after which the transaction will expire.
+ * @member {Number} expiryHeight
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['expiryHeight'] = undefined;
+/**
+ * Represents an encoding of a JoinSplitSig public validating key.
+ * @member {String} joinSplitPubKey
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['joinSplitPubKey'] = undefined;
+/**
+ * Is used to sign transactions that contain at least one JoinSplit description.
+ * @member {String} joinSplitSig
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['joinSplitSig'] = undefined;
+/**
+ * \"Overwinter\" is the network upgrade for the Zcash blockchain.
+ * @member {Boolean} overwintered
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['overwintered'] = undefined;
+/**
+ * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplit>} vJoinSplit
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['vJoinSplit'] = undefined;
+/**
+ * Object Array representation of transaction output descriptions
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['vShieldedOutput'] = undefined;
+/**
+ * Object Array representation of transaction spend descriptions
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['vShieldedSpend'] = undefined;
+/**
+ * String representation of the transaction value balance
+ * @member {String} valueBalance
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['valueBalance'] = undefined;
+/**
+ * Represents the transaction version group ID.
+ * @member {String} versionGroupId
+ */
+
+GetTransactionDetailsByTransactionIDRIBS.prototype['versionGroupId'] = undefined; // Implement GetTransactionDetailsByTransactionIDRIBSB interface:
 
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.
@@ -521,7 +654,7 @@ _GetTransactionDetailsByTransactionIDRIBSEC["default"].prototype['gasUsed'] = un
 _GetTransactionDetailsByTransactionIDRIBSEC["default"].prototype['inputData'] = undefined;
 /**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {String} nonce
+ * @member {Number} nonce
  */
 
 _GetTransactionDetailsByTransactionIDRIBSEC["default"].prototype['nonce'] = undefined; // Implement GetTransactionDetailsByTransactionIDRIBSBSC interface:
@@ -560,6 +693,97 @@ _GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['inputData'] =
  * @member {Number} nonce
  */
 
-_GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['nonce'] = undefined;
+_GetTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['nonce'] = undefined; // Implement GetTransactionDetailsByTransactionIDRIBSZ interface:
+
+/**
+ * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+ * @member {String} bindingSig
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['bindingSig'] = undefined;
+/**
+ * Represents a block height after which the transaction will expire.
+ * @member {Number} expiryHeight
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['expiryHeight'] = undefined;
+/**
+ * Represents an encoding of a JoinSplitSig public validating key.
+ * @member {String} joinSplitPubKey
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['joinSplitPubKey'] = undefined;
+/**
+ * Is used to sign transactions that contain at least one JoinSplit description.
+ * @member {String} joinSplitSig
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['joinSplitSig'] = undefined;
+/**
+ * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
+ * @member {Number} locktime
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['locktime'] = undefined;
+/**
+ * \"Overwinter\" is the network upgrade for the Zcash blockchain.
+ * @member {Boolean} overwintered
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['overwintered'] = undefined;
+/**
+ * Represents the total size of this transaction.
+ * @member {Number} size
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['size'] = undefined;
+/**
+ * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplit>} vJoinSplit
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['vJoinSplit'] = undefined;
+/**
+ * Object Array representation of transaction output descriptions
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['vShieldedOutput'] = undefined;
+/**
+ * Object Array representation of transaction spend descriptions
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['vShieldedSpend'] = undefined;
+/**
+ * String representation of the transaction value balance
+ * @member {String} valueBalance
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['valueBalance'] = undefined;
+/**
+ * Defines the version of the transaction.
+ * @member {Number} version
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['version'] = undefined;
+/**
+ * Represents the transaction version group ID.
+ * @member {String} versionGroupId
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['versionGroupId'] = undefined;
+/**
+ * Object Array representation of transaction inputs
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} vin
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['vin'] = undefined;
+/**
+ * Object Array representation of transaction outputs
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
+ */
+
+_GetTransactionDetailsByTransactionIDRIBSZ["default"].prototype['vout'] = undefined;
 var _default = GetTransactionDetailsByTransactionIDRIBS;
 exports["default"] = _default;

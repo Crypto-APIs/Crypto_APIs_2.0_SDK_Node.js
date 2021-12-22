@@ -15,12 +15,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListAssetsDetailsRIS model module.
  * @module model/ListAssetsDetailsRIS
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListAssetsDetailsRIS = /*#__PURE__*/function () {
   /**
@@ -32,7 +32,7 @@ var ListAssetsDetailsRIS = /*#__PURE__*/function () {
    * @param _1weekPriceChangeInPercentage {String} Represents the percentage of the asset's current price against the its price from 1 week ago.
    * @param _24hoursPriceChangeInPercentage {String} Represents the percentage of the asset's current price against the its price from 24 hours ago.
    * @param _24hoursTradingVolume {String} Represents the trading volume of the asset for the time frame of 24 hours.
-   * @param assetType {module:model/ListAssetsDetailsRIS.AssetTypeEnum} Subtype of the crypto assets. Could be COIN or TOKEN
+   * @param assetType {module:model/ListAssetsDetailsRIS.AssetTypeEnum} Represent a subtype of the crypto assets. Could be COIN or TOKEN.
    * @param circulatingSupply {String} Represents the amount of the asset that is circulating on the market and in public hands.
    * @param marketCapInUSD {String} Defines the total market value of the asset's circulating supply in USD.
    * @param maxSupply {String} Represents the maximum amount of all coins of a specific asset that will ever exist in its lifetime.
@@ -144,7 +144,7 @@ ListAssetsDetailsRIS.prototype['24HoursPriceChangeInPercentage'] = undefined;
 
 ListAssetsDetailsRIS.prototype['24HoursTradingVolume'] = undefined;
 /**
- * Subtype of the crypto assets. Could be COIN or TOKEN
+ * Represent a subtype of the crypto assets. Could be COIN or TOKEN.
  * @member {module:model/ListAssetsDetailsRIS.AssetTypeEnum} assetType
  */
 
@@ -193,7 +193,7 @@ _ListAssetsDetailsRISC["default"].prototype['24HoursPriceChangeInPercentage'] = 
 
 _ListAssetsDetailsRISC["default"].prototype['24HoursTradingVolume'] = undefined;
 /**
- * Subtype of the crypto assets. Could be COIN or TOKEN
+ * Represent a subtype of the crypto assets. Could be COIN or TOKEN.
  * @member {module:model/ListAssetsDetailsRISC.AssetTypeEnum} assetType
  */
 

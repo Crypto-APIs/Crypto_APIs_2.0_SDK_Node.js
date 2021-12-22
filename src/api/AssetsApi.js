@@ -13,21 +13,29 @@
 
 
 import ApiClient from "../ApiClient";
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import GetAssetDetailsByAssetIDR from '../model/GetAssetDetailsByAssetIDR';
+import GetAssetDetailsByAssetSymbolR from '../model/GetAssetDetailsByAssetSymbolR';
+import InlineResponse40089 from '../model/InlineResponse40089';
+import InlineResponse40090 from '../model/InlineResponse40090';
+import InlineResponse40091 from '../model/InlineResponse40091';
+import InlineResponse40189 from '../model/InlineResponse40189';
+import InlineResponse40190 from '../model/InlineResponse40190';
+import InlineResponse40191 from '../model/InlineResponse40191';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40389 from '../model/InlineResponse40389';
+import InlineResponse40390 from '../model/InlineResponse40390';
+import InlineResponse40391 from '../model/InlineResponse40391';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListAssetsDetailsR from '../model/ListAssetsDetailsR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class AssetsApi {
 
@@ -42,6 +50,114 @@ export default class AssetsApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+
+    /**
+     * Get Asset Details By Asset ID
+     * Through this endpoint users can obtain information on assets by `assetId`.    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.
+     * @param {String} assetId Defines the unique ID of the specific asset.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAssetDetailsByAssetIDR} and HTTP response
+     */
+    getAssetDetailsByAssetIDWithHttpInfo(assetId, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'assetId' is set
+      if (assetId === undefined || assetId === null) {
+        throw new Error("Missing the required parameter 'assetId' when calling getAssetDetailsByAssetID");
+      }
+
+      let pathParams = {
+        'assetId': assetId
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetAssetDetailsByAssetIDR;
+      return this.apiClient.callApi(
+        '/market-data/assets/assetId/{assetId}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get Asset Details By Asset ID
+     * Through this endpoint users can obtain information on assets by `assetId`.    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.
+     * @param {String} assetId Defines the unique ID of the specific asset.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAssetDetailsByAssetIDR}
+     */
+    getAssetDetailsByAssetID(assetId, opts) {
+      return this.getAssetDetailsByAssetIDWithHttpInfo(assetId, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Get Asset Details By Asset Symbol
+     * Through this endpoint users can obtain information on assets by asset symbol.    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.
+     * @param {String} assetSymbol Specifies the asset's unique symbol in the Crypto APIs listings.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAssetDetailsByAssetSymbolR} and HTTP response
+     */
+    getAssetDetailsByAssetSymbolWithHttpInfo(assetSymbol, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'assetSymbol' is set
+      if (assetSymbol === undefined || assetSymbol === null) {
+        throw new Error("Missing the required parameter 'assetSymbol' when calling getAssetDetailsByAssetSymbol");
+      }
+
+      let pathParams = {
+        'assetSymbol': assetSymbol
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetAssetDetailsByAssetSymbolR;
+      return this.apiClient.callApi(
+        '/market-data/assets/{assetSymbol}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get Asset Details By Asset Symbol
+     * Through this endpoint users can obtain information on assets by asset symbol.    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.
+     * @param {String} assetSymbol Specifies the asset's unique symbol in the Crypto APIs listings.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAssetDetailsByAssetSymbolR}
+     */
+    getAssetDetailsByAssetSymbol(assetSymbol, opts) {
+      return this.getAssetDetailsByAssetSymbolWithHttpInfo(assetSymbol, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
 
 
     /**

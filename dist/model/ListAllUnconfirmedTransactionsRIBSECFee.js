@@ -13,12 +13,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListAllUnconfirmedTransactionsRIBSECFee model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSECFee
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListAllUnconfirmedTransactionsRIBSECFee = /*#__PURE__*/function () {
   /**
@@ -26,11 +26,12 @@ var ListAllUnconfirmedTransactionsRIBSECFee = /*#__PURE__*/function () {
    * Object representation of the transaction fee
    * @alias module:model/ListAllUnconfirmedTransactionsRIBSECFee
    * @param amount {String} String representation of the fee value
+   * @param unit {String} Represents the fee unit.
    */
-  function ListAllUnconfirmedTransactionsRIBSECFee(amount) {
+  function ListAllUnconfirmedTransactionsRIBSECFee(amount, unit) {
     _classCallCheck(this, ListAllUnconfirmedTransactionsRIBSECFee);
 
-    ListAllUnconfirmedTransactionsRIBSECFee.initialize(this, amount);
+    ListAllUnconfirmedTransactionsRIBSECFee.initialize(this, amount, unit);
   }
   /**
    * Initializes the fields of this object.
@@ -41,8 +42,9 @@ var ListAllUnconfirmedTransactionsRIBSECFee = /*#__PURE__*/function () {
 
   _createClass(ListAllUnconfirmedTransactionsRIBSECFee, null, [{
     key: "initialize",
-    value: function initialize(obj, amount) {
+    value: function initialize(obj, amount, unit) {
       obj['amount'] = amount;
+      obj['unit'] = unit;
     }
     /**
      * Constructs a <code>ListAllUnconfirmedTransactionsRIBSECFee</code> from a plain JavaScript object, optionally creating a new instance.
@@ -61,6 +63,10 @@ var ListAllUnconfirmedTransactionsRIBSECFee = /*#__PURE__*/function () {
         if (data.hasOwnProperty('amount')) {
           obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
         }
+
+        if (data.hasOwnProperty('unit')) {
+          obj['unit'] = _ApiClient["default"].convertToType(data['unit'], 'String');
+        }
       }
 
       return obj;
@@ -76,5 +82,11 @@ var ListAllUnconfirmedTransactionsRIBSECFee = /*#__PURE__*/function () {
 
 
 ListAllUnconfirmedTransactionsRIBSECFee.prototype['amount'] = undefined;
+/**
+ * Represents the fee unit.
+ * @member {String} unit
+ */
+
+ListAllUnconfirmedTransactionsRIBSECFee.prototype['unit'] = undefined;
 var _default = ListAllUnconfirmedTransactionsRIBSECFee;
 exports["default"] = _default;

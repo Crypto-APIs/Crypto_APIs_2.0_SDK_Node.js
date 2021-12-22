@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedCoinsTransactionsAndEachConfirmationRI model module.
  * @module model/NewConfirmedCoinsTransactionsAndEachConfirmationRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class NewConfirmedCoinsTransactionsAndEachConfirmationRI {
     /**
@@ -30,11 +30,10 @@ class NewConfirmedCoinsTransactionsAndEachConfirmationRI {
      * @param eventType {String} Defines the type of the specific event available for the customer to subscribe to for callback notification.
      * @param isActive {Boolean} Defines whether the subscription is active or not. Set as boolean.
      * @param referenceId {String} Represents a unique ID used to reference the specific callback subscription.
-     * @param transactionId {String} Represents the unique identification string that defines the transaction.
      */
-    constructor(address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId) { 
+    constructor(address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId) { 
         
-        NewConfirmedCoinsTransactionsAndEachConfirmationRI.initialize(this, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId);
+        NewConfirmedCoinsTransactionsAndEachConfirmationRI.initialize(this, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId);
     }
 
     /**
@@ -42,7 +41,7 @@ class NewConfirmedCoinsTransactionsAndEachConfirmationRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId) { 
+    static initialize(obj, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId) { 
         obj['address'] = address;
         obj['callbackSecretKey'] = callbackSecretKey;
         obj['callbackUrl'] = callbackUrl;
@@ -51,7 +50,6 @@ class NewConfirmedCoinsTransactionsAndEachConfirmationRI {
         obj['eventType'] = eventType;
         obj['isActive'] = isActive;
         obj['referenceId'] = referenceId;
-        obj['transactionId'] = transactionId;
     }
 
     /**
@@ -88,9 +86,6 @@ class NewConfirmedCoinsTransactionsAndEachConfirmationRI {
             }
             if (data.hasOwnProperty('referenceId')) {
                 obj['referenceId'] = ApiClient.convertToType(data['referenceId'], 'String');
-            }
-            if (data.hasOwnProperty('transactionId')) {
-                obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
             }
         }
         return obj;
@@ -146,12 +141,6 @@ NewConfirmedCoinsTransactionsAndEachConfirmationRI.prototype['isActive'] = undef
  * @member {String} referenceId
  */
 NewConfirmedCoinsTransactionsAndEachConfirmationRI.prototype['referenceId'] = undefined;
-
-/**
- * Represents the unique identification string that defines the transaction.
- * @member {String} transactionId
- */
-NewConfirmedCoinsTransactionsAndEachConfirmationRI.prototype['transactionId'] = undefined;
 
 
 

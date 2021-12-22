@@ -17,7 +17,7 @@ import BroadcastTransactionSuccessDataItem from './BroadcastTransactionSuccessDa
 /**
  * The BroadcastTransactionSuccessData model module.
  * @module model/BroadcastTransactionSuccessData
- * @version 1.3.0
+ * @version 1.4.0
  */
 class BroadcastTransactionSuccessData {
     /**

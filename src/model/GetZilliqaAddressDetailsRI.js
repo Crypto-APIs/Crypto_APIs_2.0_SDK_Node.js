@@ -17,7 +17,7 @@ import GetZilliqaAddressDetailsRIBalance from './GetZilliqaAddressDetailsRIBalan
 /**
  * The GetZilliqaAddressDetailsRI model module.
  * @module model/GetZilliqaAddressDetailsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetZilliqaAddressDetailsRI {
     /**

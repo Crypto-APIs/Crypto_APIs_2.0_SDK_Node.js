@@ -66,6 +66,24 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property fungibleTokens (base name: "fungibleTokens")', function() {
+      // uncomment below and update the code to test the property fungibleTokens
+      //var instance = new Cryptoapis.ListWalletTransactionsRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property internalTransactions (base name: "internalTransactions")', function() {
+      // uncomment below and update the code to test the property internalTransactions
+      //var instance = new Cryptoapis.ListWalletTransactionsRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nonFungibleTokens (base name: "nonFungibleTokens")', function() {
+      // uncomment below and update the code to test the property nonFungibleTokens
+      //var instance = new Cryptoapis.ListWalletTransactionsRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property recipients (base name: "recipients")', function() {
       // uncomment below and update the code to test the property recipients
       //var instance = new Cryptoapis.ListWalletTransactionsRI();

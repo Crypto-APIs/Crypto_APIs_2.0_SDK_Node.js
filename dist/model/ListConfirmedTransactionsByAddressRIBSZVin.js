@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _ListConfirmedTransactionsByAddressRIBSZScriptSig = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSZScriptSig"));
+var _GetTransactionDetailsByTransactionIDRIBSZScriptSig = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZScriptSig"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -15,12 +15,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListConfirmedTransactionsByAddressRIBSZVin model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSZVin
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListConfirmedTransactionsByAddressRIBSZVin = /*#__PURE__*/function () {
   /**
@@ -28,7 +28,7 @@ var ListConfirmedTransactionsByAddressRIBSZVin = /*#__PURE__*/function () {
    * @alias module:model/ListConfirmedTransactionsByAddressRIBSZVin
    * @param addresses {Array.<String>} 
    * @param coinbase {String} Represents the coinbase hex.
-   * @param scriptSig {module:model/ListConfirmedTransactionsByAddressRIBSZScriptSig} 
+   * @param scriptSig {module:model/GetTransactionDetailsByTransactionIDRIBSZScriptSig} 
    * @param sequence {Number} Represents the script sequence number.
    * @param txid {String} Represents the reference transaction identifier.
    * @param txinwitness {Array.<String>} 
@@ -82,7 +82,7 @@ var ListConfirmedTransactionsByAddressRIBSZVin = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('scriptSig')) {
-          obj['scriptSig'] = _ListConfirmedTransactionsByAddressRIBSZScriptSig["default"].constructFromObject(data['scriptSig']);
+          obj['scriptSig'] = _GetTransactionDetailsByTransactionIDRIBSZScriptSig["default"].constructFromObject(data['scriptSig']);
         }
 
         if (data.hasOwnProperty('sequence')) {
@@ -125,7 +125,7 @@ ListConfirmedTransactionsByAddressRIBSZVin.prototype['addresses'] = undefined;
 
 ListConfirmedTransactionsByAddressRIBSZVin.prototype['coinbase'] = undefined;
 /**
- * @member {module:model/ListConfirmedTransactionsByAddressRIBSZScriptSig} scriptSig
+ * @member {module:model/GetTransactionDetailsByTransactionIDRIBSZScriptSig} scriptSig
  */
 
 ListConfirmedTransactionsByAddressRIBSZVin.prototype['scriptSig'] = undefined;

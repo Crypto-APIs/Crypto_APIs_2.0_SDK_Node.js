@@ -32,6 +32,8 @@ Name | Type | Description | Notes
 
 * `ethereum` (value: `"ethereum"`)
 
+* `ethereum-classic` (value: `"ethereum-classic"`)
+
 * `zcash` (value: `"zcash"`)
 
 
@@ -59,6 +61,8 @@ Name | Type | Description | Notes
 * `testnet` (value: `"testnet"`)
 
 * `ropsten` (value: `"ropsten"`)
+
+* `mordor` (value: `"mordor"`)
 
 
 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHashRIBSBC model module.
  * @module model/GetBlockDetailsByBlockHashRIBSBC
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetBlockDetailsByBlockHashRIBSBC {
     /**
@@ -28,13 +28,13 @@ class GetBlockDetailsByBlockHashRIBSBC {
      * @param size {Number} Represents the total size of the block in Bytes.
      * @param bits {String} A sub-unit of BTC equal to 0.000001 BTC, or 100 Satoshi, and is the same as microbitcoin (μBTC). Bits have two-decimal precision.
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
-     * @param merkleroot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+     * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
      * @param version {Number} Represents the version of the specific block on the blockchain.
      * @param versionHex {String} Is the hexadecimal string representation of the block's version.
      */
-    constructor(difficulty, nonce, size, bits, chainwork, merkleroot, version, versionHex) { 
+    constructor(difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex) { 
         
-        GetBlockDetailsByBlockHashRIBSBC.initialize(this, difficulty, nonce, size, bits, chainwork, merkleroot, version, versionHex);
+        GetBlockDetailsByBlockHashRIBSBC.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);
     }
 
     /**
@@ -42,13 +42,13 @@ class GetBlockDetailsByBlockHashRIBSBC {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, difficulty, nonce, size, bits, chainwork, merkleroot, version, versionHex) { 
+    static initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex) { 
         obj['difficulty'] = difficulty;
         obj['nonce'] = nonce;
         obj['size'] = size;
         obj['bits'] = bits;
         obj['chainwork'] = chainwork;
-        obj['merkleroot'] = merkleroot;
+        obj['merkleRoot'] = merkleRoot;
         obj['version'] = version;
         obj['versionHex'] = versionHex;
     }
@@ -79,8 +79,8 @@ class GetBlockDetailsByBlockHashRIBSBC {
             if (data.hasOwnProperty('chainwork')) {
                 obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
             }
-            if (data.hasOwnProperty('merkleroot')) {
-                obj['merkleroot'] = ApiClient.convertToType(data['merkleroot'], 'String');
+            if (data.hasOwnProperty('merkleRoot')) {
+                obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
             }
             if (data.hasOwnProperty('version')) {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
@@ -127,9 +127,9 @@ GetBlockDetailsByBlockHashRIBSBC.prototype['chainwork'] = undefined;
 
 /**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
+ * @member {String} merkleRoot
  */
-GetBlockDetailsByBlockHashRIBSBC.prototype['merkleroot'] = undefined;
+GetBlockDetailsByBlockHashRIBSBC.prototype['merkleRoot'] = undefined;
 
 /**
  * Represents the version of the specific block on the blockchain.

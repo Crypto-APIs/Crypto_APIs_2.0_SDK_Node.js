@@ -25,7 +25,7 @@ import GetLastMinedBlockRIBSZ from './GetLastMinedBlockRIBSZ';
 /**
  * The GetLastMinedBlockRIBS model module.
  * @module model/GetLastMinedBlockRIBS
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetLastMinedBlockRIBS {
     /**
@@ -57,11 +57,10 @@ class GetLastMinedBlockRIBS {
      * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
      * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block
      * @param uncles {Array.<String>} 
-     * @param merkleroot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
      */
-    constructor(difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, merkleroot) { 
-        GetLastMinedBlockRIBSB.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);GetLastMinedBlockRIBSE.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);GetLastMinedBlockRIBSEC.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);GetLastMinedBlockRIBSBC.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);GetLastMinedBlockRIBSL.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);GetLastMinedBlockRIBSD.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, weight);GetLastMinedBlockRIBSD2.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);GetLastMinedBlockRIBSBSC.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);GetLastMinedBlockRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleroot, version);
-        GetLastMinedBlockRIBS.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, merkleroot);
+    constructor(difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles) { 
+        GetLastMinedBlockRIBSB.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);GetLastMinedBlockRIBSE.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);GetLastMinedBlockRIBSEC.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);GetLastMinedBlockRIBSBC.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);GetLastMinedBlockRIBSL.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);GetLastMinedBlockRIBSD.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, weight);GetLastMinedBlockRIBSD2.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);GetLastMinedBlockRIBSBSC.initialize(this, difficulty, nonce, size, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);GetLastMinedBlockRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version);
+        GetLastMinedBlockRIBS.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles);
     }
 
     /**
@@ -69,7 +68,7 @@ class GetLastMinedBlockRIBS {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, merkleroot) { 
+    static initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles) { 
         obj['difficulty'] = difficulty;
         obj['nonce'] = nonce;
         obj['size'] = size;
@@ -87,7 +86,6 @@ class GetLastMinedBlockRIBS {
         obj['sha3Uncles'] = sha3Uncles;
         obj['totalDifficulty'] = totalDifficulty;
         obj['uncles'] = uncles;
-        obj['merkleroot'] = merkleroot;
     }
 
     /**
@@ -160,9 +158,6 @@ class GetLastMinedBlockRIBS {
             }
             if (data.hasOwnProperty('uncles')) {
                 obj['uncles'] = ApiClient.convertToType(data['uncles'], ['String']);
-            }
-            if (data.hasOwnProperty('merkleroot')) {
-                obj['merkleroot'] = ApiClient.convertToType(data['merkleroot'], 'String');
             }
         }
         return obj;
@@ -271,12 +266,6 @@ GetLastMinedBlockRIBS.prototype['totalDifficulty'] = undefined;
  * @member {Array.<String>} uncles
  */
 GetLastMinedBlockRIBS.prototype['uncles'] = undefined;
-
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
- */
-GetLastMinedBlockRIBS.prototype['merkleroot'] = undefined;
 
 
 // Implement GetLastMinedBlockRIBSB interface:
@@ -687,9 +676,9 @@ GetLastMinedBlockRIBSZ.prototype['bits'] = undefined;
 GetLastMinedBlockRIBSZ.prototype['chainwork'] = undefined;
 /**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
+ * @member {String} merkleRoot
  */
-GetLastMinedBlockRIBSZ.prototype['merkleroot'] = undefined;
+GetLastMinedBlockRIBSZ.prototype['merkleRoot'] = undefined;
 /**
  * Represents the transaction version number.
  * @member {Number} version

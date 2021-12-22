@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHashRIBSZ model module.
  * @module model/GetBlockDetailsByBlockHashRIBSZ
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetBlockDetailsByBlockHashRIBSZ {
     /**
@@ -28,12 +28,12 @@ class GetBlockDetailsByBlockHashRIBSZ {
      * @param size {Number} Represents the total size of the block in Bytes.
      * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
-     * @param merkleroot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+     * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
      * @param version {Number} Represents the block version number.
      */
-    constructor(difficulty, nonce, size, bits, chainwork, merkleroot, version) { 
+    constructor(difficulty, nonce, size, bits, chainwork, merkleRoot, version) { 
         
-        GetBlockDetailsByBlockHashRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleroot, version);
+        GetBlockDetailsByBlockHashRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version);
     }
 
     /**
@@ -41,13 +41,13 @@ class GetBlockDetailsByBlockHashRIBSZ {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, difficulty, nonce, size, bits, chainwork, merkleroot, version) { 
+    static initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, version) { 
         obj['difficulty'] = difficulty;
         obj['nonce'] = nonce;
         obj['size'] = size;
         obj['bits'] = bits;
         obj['chainwork'] = chainwork;
-        obj['merkleroot'] = merkleroot;
+        obj['merkleRoot'] = merkleRoot;
         obj['version'] = version;
     }
 
@@ -77,8 +77,8 @@ class GetBlockDetailsByBlockHashRIBSZ {
             if (data.hasOwnProperty('chainwork')) {
                 obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
             }
-            if (data.hasOwnProperty('merkleroot')) {
-                obj['merkleroot'] = ApiClient.convertToType(data['merkleroot'], 'String');
+            if (data.hasOwnProperty('merkleRoot')) {
+                obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
             }
             if (data.hasOwnProperty('version')) {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
@@ -122,9 +122,9 @@ GetBlockDetailsByBlockHashRIBSZ.prototype['chainwork'] = undefined;
 
 /**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleroot
+ * @member {String} merkleRoot
  */
-GetBlockDetailsByBlockHashRIBSZ.prototype['merkleroot'] = undefined;
+GetBlockDetailsByBlockHashRIBSZ.prototype['merkleRoot'] = undefined;
 
 /**
  * Represents the block version number.

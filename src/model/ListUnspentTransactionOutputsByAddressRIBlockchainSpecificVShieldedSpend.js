@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend model module.
  * @module model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend {
     /**

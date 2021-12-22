@@ -13,23 +13,31 @@
 
 
 import ApiClient from "../ApiClient";
+import ActivateBlockchainEventSubscriptionR from '../model/ActivateBlockchainEventSubscriptionR';
+import ActivateBlockchainEventSubscriptionRB from '../model/ActivateBlockchainEventSubscriptionRB';
 import DeleteBlockchainEventSubscriptionR from '../model/DeleteBlockchainEventSubscriptionR';
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse40066 from '../model/InlineResponse40066';
+import InlineResponse40067 from '../model/InlineResponse40067';
+import InlineResponse40068 from '../model/InlineResponse40068';
+import InlineResponse40166 from '../model/InlineResponse40166';
+import InlineResponse40167 from '../model/InlineResponse40167';
+import InlineResponse40168 from '../model/InlineResponse40168';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40366 from '../model/InlineResponse40366';
+import InlineResponse40367 from '../model/InlineResponse40367';
+import InlineResponse40368 from '../model/InlineResponse40368';
+import InlineResponse4041 from '../model/InlineResponse4041';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListBlockchainEventsSubscriptionsR from '../model/ListBlockchainEventsSubscriptionsR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import ResourceNotFound from '../model/ResourceNotFound';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * ManageSubscriptions service.
 * @module api/ManageSubscriptionsApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class ManageSubscriptionsApi {
 
@@ -44,6 +52,62 @@ export default class ManageSubscriptionsApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+
+    /**
+     * Activate Blockchain Event Subscription
+     * Through this endpoint customers can reactivate an event subscription (callback) which has been deactivated by the system. Deactivations could happen due to various reasons, most often \"maximum retry attempts reached\".
+     * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/ActivateBlockchainEventSubscriptionRB} opts.activateBlockchainEventSubscriptionRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ActivateBlockchainEventSubscriptionR} and HTTP response
+     */
+    activateBlockchainEventSubscriptionWithHttpInfo(referenceId, opts) {
+      opts = opts || {};
+      let postBody = opts['activateBlockchainEventSubscriptionRB'];
+      // verify the required parameter 'referenceId' is set
+      if (referenceId === undefined || referenceId === null) {
+        throw new Error("Missing the required parameter 'referenceId' when calling activateBlockchainEventSubscription");
+      }
+
+      let pathParams = {
+        'referenceId': referenceId
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = ActivateBlockchainEventSubscriptionR;
+      return this.apiClient.callApi(
+        '/blockchain-events/subscriptions/{referenceId}/activate', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Activate Blockchain Event Subscription
+     * Through this endpoint customers can reactivate an event subscription (callback) which has been deactivated by the system. Deactivations could happen due to various reasons, most often \"maximum retry attempts reached\".
+     * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/ActivateBlockchainEventSubscriptionRB} opts.activateBlockchainEventSubscriptionRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ActivateBlockchainEventSubscriptionR}
+     */
+    activateBlockchainEventSubscription(referenceId, opts) {
+      return this.activateBlockchainEventSubscriptionWithHttpInfo(referenceId, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
 
 
     /**

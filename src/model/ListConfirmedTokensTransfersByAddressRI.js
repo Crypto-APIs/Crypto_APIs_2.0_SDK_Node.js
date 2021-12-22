@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTokensTransfersByAddressRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListConfirmedTokensTransfersByAddressRI {
     /**
@@ -30,13 +30,12 @@ class ListConfirmedTokensTransfersByAddressRI {
      * @param tokenName {String} Defines the token's name as a string.
      * @param tokenSymbol {String} Defines the token symbol by which the token contract is known. It is usually 3-4 characters in length.
      * @param tokenType {String} Defines the specific token type.
-     * @param tokensAmount {String} Defines the token amount of the transfer.
      * @param transactionHash {String} Represents the hash of the transaction, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param transactionTimestamp {Number} Defines the specific time/date when the transaction was created in Unix Timestamp.
      */
-    constructor(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp) { 
+    constructor(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp) { 
         
-        ListConfirmedTokensTransfersByAddressRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp);
+        ListConfirmedTokensTransfersByAddressRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp);
     }
 
     /**
@@ -44,7 +43,7 @@ class ListConfirmedTokensTransfersByAddressRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp) { 
+    static initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp) { 
         obj['contractAddress'] = contractAddress;
         obj['minedInBlockHeight'] = minedInBlockHeight;
         obj['recipientAddress'] = recipientAddress;
@@ -53,7 +52,6 @@ class ListConfirmedTokensTransfersByAddressRI {
         obj['tokenName'] = tokenName;
         obj['tokenSymbol'] = tokenSymbol;
         obj['tokenType'] = tokenType;
-        obj['tokensAmount'] = tokensAmount;
         obj['transactionHash'] = transactionHash;
         obj['transactionTimestamp'] = transactionTimestamp;
     }
@@ -83,6 +81,9 @@ class ListConfirmedTokensTransfersByAddressRI {
             }
             if (data.hasOwnProperty('tokenDecimals')) {
                 obj['tokenDecimals'] = ApiClient.convertToType(data['tokenDecimals'], 'Number');
+            }
+            if (data.hasOwnProperty('tokenId')) {
+                obj['tokenId'] = ApiClient.convertToType(data['tokenId'], 'String');
             }
             if (data.hasOwnProperty('tokenName')) {
                 obj['tokenName'] = ApiClient.convertToType(data['tokenName'], 'String');
@@ -138,6 +139,12 @@ ListConfirmedTokensTransfersByAddressRI.prototype['senderAddress'] = undefined;
  * @member {Number} tokenDecimals
  */
 ListConfirmedTokensTransfersByAddressRI.prototype['tokenDecimals'] = undefined;
+
+/**
+ * Represents the unique token identifier.
+ * @member {String} tokenId
+ */
+ListConfirmedTokensTransfersByAddressRI.prototype['tokenId'] = undefined;
 
 /**
  * Defines the token's name as a string.

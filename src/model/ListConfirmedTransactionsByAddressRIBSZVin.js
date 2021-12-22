@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListConfirmedTransactionsByAddressRIBSZScriptSig from './ListConfirmedTransactionsByAddressRIBSZScriptSig';
+import GetTransactionDetailsByTransactionIDRIBSZScriptSig from './GetTransactionDetailsByTransactionIDRIBSZScriptSig';
 
 /**
  * The ListConfirmedTransactionsByAddressRIBSZVin model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSZVin
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListConfirmedTransactionsByAddressRIBSZVin {
     /**
@@ -25,7 +25,7 @@ class ListConfirmedTransactionsByAddressRIBSZVin {
      * @alias module:model/ListConfirmedTransactionsByAddressRIBSZVin
      * @param addresses {Array.<String>} 
      * @param coinbase {String} Represents the coinbase hex.
-     * @param scriptSig {module:model/ListConfirmedTransactionsByAddressRIBSZScriptSig} 
+     * @param scriptSig {module:model/GetTransactionDetailsByTransactionIDRIBSZScriptSig} 
      * @param sequence {Number} Represents the script sequence number.
      * @param txid {String} Represents the reference transaction identifier.
      * @param txinwitness {Array.<String>} 
@@ -71,7 +71,7 @@ class ListConfirmedTransactionsByAddressRIBSZVin {
                 obj['coinbase'] = ApiClient.convertToType(data['coinbase'], 'String');
             }
             if (data.hasOwnProperty('scriptSig')) {
-                obj['scriptSig'] = ListConfirmedTransactionsByAddressRIBSZScriptSig.constructFromObject(data['scriptSig']);
+                obj['scriptSig'] = GetTransactionDetailsByTransactionIDRIBSZScriptSig.constructFromObject(data['scriptSig']);
             }
             if (data.hasOwnProperty('sequence')) {
                 obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
@@ -107,7 +107,7 @@ ListConfirmedTransactionsByAddressRIBSZVin.prototype['addresses'] = undefined;
 ListConfirmedTransactionsByAddressRIBSZVin.prototype['coinbase'] = undefined;
 
 /**
- * @member {module:model/ListConfirmedTransactionsByAddressRIBSZScriptSig} scriptSig
+ * @member {module:model/GetTransactionDetailsByTransactionIDRIBSZScriptSig} scriptSig
  */
 ListConfirmedTransactionsByAddressRIBSZVin.prototype['scriptSig'] = undefined;
 

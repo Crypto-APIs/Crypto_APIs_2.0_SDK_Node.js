@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property unit (base name: "unit")', function() {
+      // uncomment below and update the code to test the property unit
+      //var instance = new Cryptoapis.ListAllUnconfirmedTransactionsRIBSECFee();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

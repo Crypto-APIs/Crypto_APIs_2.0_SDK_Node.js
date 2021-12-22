@@ -16,13 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSZ model module.
  * @module model/ListLatestMinedBlocksRIBSZ
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListLatestMinedBlocksRIBSZ {
     /**
      * Constructs a new <code>ListLatestMinedBlocksRIBSZ</code>.
      * Zilliqa
      * @alias module:model/ListLatestMinedBlocksRIBSZ
+     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
      * @param dsBlock {Number} Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
      * @param dsDifficulty {String} Defines how difficult it is to mine the dsBlocks.
      * @param dsLeader {String} Represents a part of the DS Committee which leads the consensus protocol for the epoch.
@@ -30,9 +31,9 @@ class ListLatestMinedBlocksRIBSZ {
      * @param gasUsed {Number} Defines how much of the gas for the block has been used.
      * @param microBlocks {Array.<String>} 
      */
-    constructor(dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) { 
+    constructor(difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) { 
         
-        ListLatestMinedBlocksRIBSZ.initialize(this, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
+        ListLatestMinedBlocksRIBSZ.initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
     }
 
     /**
@@ -40,7 +41,8 @@ class ListLatestMinedBlocksRIBSZ {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) { 
+    static initialize(obj, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) { 
+        obj['difficulty'] = difficulty;
         obj['dsBlock'] = dsBlock;
         obj['dsDifficulty'] = dsDifficulty;
         obj['dsLeader'] = dsLeader;
@@ -60,6 +62,9 @@ class ListLatestMinedBlocksRIBSZ {
         if (data) {
             obj = obj || new ListLatestMinedBlocksRIBSZ();
 
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
+            }
             if (data.hasOwnProperty('dsBlock')) {
                 obj['dsBlock'] = ApiClient.convertToType(data['dsBlock'], 'Number');
             }
@@ -84,6 +89,12 @@ class ListLatestMinedBlocksRIBSZ {
 
 
 }
+
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+ListLatestMinedBlocksRIBSZ.prototype['difficulty'] = undefined;
 
 /**
  * Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.

@@ -72,12 +72,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property confirmationsCount (base name: "confirmationsCount")', function() {
-      // uncomment below and update the code to test the property confirmationsCount
-      //var instance = new Cryptoapis.NewConfirmedInternalTransactionsRI();
-      //expect(instance).to.be();
-    });
-
     it('should have the property createdTimestamp (base name: "createdTimestamp")', function() {
       // uncomment below and update the code to test the property createdTimestamp
       //var instance = new Cryptoapis.NewConfirmedInternalTransactionsRI();
@@ -98,12 +92,6 @@
 
     it('should have the property referenceId (base name: "referenceId")', function() {
       // uncomment below and update the code to test the property referenceId
-      //var instance = new Cryptoapis.NewConfirmedInternalTransactionsRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property transactionId (base name: "transactionId")', function() {
-      // uncomment below and update the code to test the property transactionId
       //var instance = new Cryptoapis.NewConfirmedInternalTransactionsRI();
       //expect(instance).to.be();
     });

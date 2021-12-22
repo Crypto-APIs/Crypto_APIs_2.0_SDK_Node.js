@@ -48,6 +48,26 @@
   }
 
   describe('AssetsApi', function() {
+    describe('getAssetDetailsByAssetID', function() {
+      it('should call getAssetDetailsByAssetID successfully', function(done) {
+        //uncomment below and update the code to test getAssetDetailsByAssetID
+        //instance.getAssetDetailsByAssetID(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getAssetDetailsByAssetSymbol', function() {
+      it('should call getAssetDetailsByAssetSymbol successfully', function(done) {
+        //uncomment below and update the code to test getAssetDetailsByAssetSymbol
+        //instance.getAssetDetailsByAssetSymbol(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('listAssetsDetails', function() {
       it('should call listAssetsDetails successfully', function(done) {
         //uncomment below and update the code to test listAssetsDetails

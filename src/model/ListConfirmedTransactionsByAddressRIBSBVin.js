@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBScriptSig from './GetTransaction
 /**
  * The ListConfirmedTransactionsByAddressRIBSBVin model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBVin
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListConfirmedTransactionsByAddressRIBSBVin {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken model module.
  * @module model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken
- * @version 1.3.0
+ * @version 1.4.0
  */
 class AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken {
     /**

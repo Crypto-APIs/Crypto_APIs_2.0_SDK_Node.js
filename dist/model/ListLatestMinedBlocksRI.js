@@ -7,11 +7,11 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetLatestMinedXRPRippleBlockRITotalCoins = _interopRequireDefault(require("./GetLatestMinedXRPRippleBlockRITotalCoins"));
-
-var _GetLatestMinedXRPRippleBlockRITotalFees = _interopRequireDefault(require("./GetLatestMinedXRPRippleBlockRITotalFees"));
-
 var _ListLatestMinedBlocksRIBS = _interopRequireDefault(require("./ListLatestMinedBlocksRIBS"));
+
+var _ListLatestMinedBlocksRITotalCoins = _interopRequireDefault(require("./ListLatestMinedBlocksRITotalCoins"));
+
+var _ListLatestMinedBlocksRITotalFees = _interopRequireDefault(require("./ListLatestMinedBlocksRITotalFees"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -19,12 +19,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The ListLatestMinedBlocksRI model module.
  * @module model/ListLatestMinedBlocksRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var ListLatestMinedBlocksRI = /*#__PURE__*/function () {
   /**
@@ -35,8 +35,8 @@ var ListLatestMinedBlocksRI = /*#__PURE__*/function () {
    * @param previousBlockHash {String} Represents the hash of the previous block, also known as the parent block.
    * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
    * @param transactionsCount {Number} Represents the total number of all transactions as part of this block.
-   * @param totalCoins {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} 
-   * @param totalFees {module:model/GetLatestMinedXRPRippleBlockRITotalFees} 
+   * @param totalCoins {module:model/ListLatestMinedBlocksRITotalCoins} 
+   * @param totalFees {module:model/ListLatestMinedBlocksRITotalFees} 
    * @param blockchainSpecific {module:model/ListLatestMinedBlocksRIBS} 
    */
   function ListLatestMinedBlocksRI(hash, height, previousBlockHash, timestamp, transactionsCount, totalCoins, totalFees, blockchainSpecific) {
@@ -98,11 +98,11 @@ var ListLatestMinedBlocksRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('totalCoins')) {
-          obj['totalCoins'] = _GetLatestMinedXRPRippleBlockRITotalCoins["default"].constructFromObject(data['totalCoins']);
+          obj['totalCoins'] = _ListLatestMinedBlocksRITotalCoins["default"].constructFromObject(data['totalCoins']);
         }
 
         if (data.hasOwnProperty('totalFees')) {
-          obj['totalFees'] = _GetLatestMinedXRPRippleBlockRITotalFees["default"].constructFromObject(data['totalFees']);
+          obj['totalFees'] = _ListLatestMinedBlocksRITotalFees["default"].constructFromObject(data['totalFees']);
         }
 
         if (data.hasOwnProperty('blockchainSpecific')) {
@@ -148,12 +148,12 @@ ListLatestMinedBlocksRI.prototype['timestamp'] = undefined;
 
 ListLatestMinedBlocksRI.prototype['transactionsCount'] = undefined;
 /**
- * @member {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} totalCoins
+ * @member {module:model/ListLatestMinedBlocksRITotalCoins} totalCoins
  */
 
 ListLatestMinedBlocksRI.prototype['totalCoins'] = undefined;
 /**
- * @member {module:model/GetLatestMinedXRPRippleBlockRITotalFees} totalFees
+ * @member {module:model/ListLatestMinedBlocksRITotalFees} totalFees
  */
 
 ListLatestMinedBlocksRI.prototype['totalFees'] = undefined;

@@ -7,35 +7,49 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AlreadyExists = _interopRequireDefault(require("../model/AlreadyExists"));
-
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
-
 var _GetHDWalletXPubYPubZPubDetailsR = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubDetailsR"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40043"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40047"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40049"));
 
-var _InvalidXpub = _interopRequireDefault(require("../model/InvalidXpub"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40143"));
+
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40147"));
+
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40149"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40343"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40347"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40349"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse4095"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse4221"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse4222"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4223"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListHDWalletXPubYPubZPubTransactionsR = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubTransactionsR"));
-
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
 
 var _SyncHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPubR"));
 
 var _SyncHDWalletXPubYPubZPubRB = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPubRB"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
-
-var _XpubNotSynced = _interopRequireDefault(require("../model/XpubNotSynced"));
-
-var _XpubSyncInProgress = _interopRequireDefault(require("../model/XpubSyncInProgress"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -43,12 +57,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var HDWalletsApi = /*#__PURE__*/function () {
   /**

@@ -15,12 +15,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The GetTransactionDetailsByTransactionIDRIBSDVin model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSDVin
- * @version 1.3.0
+ * @version 1.4.0
  */
 var GetTransactionDetailsByTransactionIDRIBSDVin = /*#__PURE__*/function () {
   /**
@@ -28,7 +28,7 @@ var GetTransactionDetailsByTransactionIDRIBSDVin = /*#__PURE__*/function () {
    * @alias module:model/GetTransactionDetailsByTransactionIDRIBSDVin
    * @param addresses {Array.<String>} 
    * @param scriptSig {module:model/GetTransactionDetailsByTransactionIDRIBSDScriptSig} 
-   * @param sequence {String} Represents the script sequence number.
+   * @param sequence {Number} Represents the script sequence number.
    * @param txinwitness {Array.<String>} 
    * @param value {String} Represents the sent/received amount.
    */
@@ -80,7 +80,7 @@ var GetTransactionDetailsByTransactionIDRIBSDVin = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('sequence')) {
-          obj['sequence'] = _ApiClient["default"].convertToType(data['sequence'], 'String');
+          obj['sequence'] = _ApiClient["default"].convertToType(data['sequence'], 'Number');
         }
 
         if (data.hasOwnProperty('txid')) {
@@ -125,7 +125,7 @@ GetTransactionDetailsByTransactionIDRIBSDVin.prototype['coinbase'] = undefined;
 GetTransactionDetailsByTransactionIDRIBSDVin.prototype['scriptSig'] = undefined;
 /**
  * Represents the script sequence number.
- * @member {String} sequence
+ * @member {Number} sequence
  */
 
 GetTransactionDetailsByTransactionIDRIBSDVin.prototype['sequence'] = undefined;

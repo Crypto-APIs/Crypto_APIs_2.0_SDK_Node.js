@@ -17,7 +17,7 @@ import GetLastMinedBlockRData from './GetLastMinedBlockRData';
 /**
  * The GetLastMinedBlockR model module.
  * @module model/GetLastMinedBlockR
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetLastMinedBlockR {
     /**

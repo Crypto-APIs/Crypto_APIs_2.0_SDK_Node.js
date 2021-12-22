@@ -21,19 +21,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The GetTransactionDetailsByTransactionIDRI model module.
  * @module model/GetTransactionDetailsByTransactionIDRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var GetTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRI</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRI
    * @param index {Number} Represents the index position of the transaction in the specific block.
-   * @param isConfirmed {String} Represents the state of the transaction whether it is confirmed or not confirmed.
+   * @param isConfirmed {Boolean} Represents the state of the transaction whether it is confirmed or not confirmed.
    * @param recipients {Array.<module:model/GetTransactionDetailsByTransactionIDRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
    * @param senders {Array.<module:model/GetTransactionDetailsByTransactionIDRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
@@ -86,7 +86,7 @@ var GetTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('isConfirmed')) {
-          obj['isConfirmed'] = _ApiClient["default"].convertToType(data['isConfirmed'], 'String');
+          obj['isConfirmed'] = _ApiClient["default"].convertToType(data['isConfirmed'], 'Boolean');
         }
 
         if (data.hasOwnProperty('minedInBlockHash')) {
@@ -141,7 +141,7 @@ var GetTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
 GetTransactionDetailsByTransactionIDRI.prototype['index'] = undefined;
 /**
  * Represents the state of the transaction whether it is confirmed or not confirmed.
- * @member {String} isConfirmed
+ * @member {Boolean} isConfirmed
  */
 
 GetTransactionDetailsByTransactionIDRI.prototype['isConfirmed'] = undefined;

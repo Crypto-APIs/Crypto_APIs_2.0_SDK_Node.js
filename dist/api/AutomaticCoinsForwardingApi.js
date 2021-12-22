@@ -7,37 +7,47 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _AlreadyExists = _interopRequireDefault(require("../model/AlreadyExists"));
-
-var _CoinsForwardingAutomationsLimitReached = _interopRequireDefault(require("../model/CoinsForwardingAutomationsLimitReached"));
-
 var _CreateAutomaticCoinsForwardingR = _interopRequireDefault(require("../model/CreateAutomaticCoinsForwardingR"));
 
 var _CreateAutomaticCoinsForwardingRB = _interopRequireDefault(require("../model/CreateAutomaticCoinsForwardingRB"));
 
 var _DeleteAutomaticCoinsForwardingR = _interopRequireDefault(require("../model/DeleteAutomaticCoinsForwardingR"));
 
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40075"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40076"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40077"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40175"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40176"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40177"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40375"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40376"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40377"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4041"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40916"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListCoinsForwardingAutomationsR = _interopRequireDefault(require("../model/ListCoinsForwardingAutomationsR"));
-
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
-
-var _ResourceNotFound = _interopRequireDefault(require("../model/ResourceNotFound"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -45,12 +55,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var AutomaticCoinsForwardingApi = /*#__PURE__*/function () {
   /**

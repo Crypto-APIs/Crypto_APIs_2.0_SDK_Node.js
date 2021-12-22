@@ -13,21 +13,21 @@
 
 
 import ApiClient from "../ApiClient";
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse40086 from '../model/InlineResponse40086';
+import InlineResponse40186 from '../model/InlineResponse40186';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40386 from '../model/InlineResponse40386';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListSupportedAssetsR from '../model/ListSupportedAssetsR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class MetadataApi {
 

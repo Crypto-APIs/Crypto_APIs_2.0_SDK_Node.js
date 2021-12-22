@@ -13,29 +13,50 @@
 
 
 import ApiClient from "../ApiClient";
-import BlockchainDataTransactionNotFound from '../model/BlockchainDataTransactionNotFound';
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import GetOmniTransactionDetailsByTransactionIDTxidR from '../model/GetOmniTransactionDetailsByTransactionIDTxidR';
 import GetUnconfirmedOmniTransactionByTransactionIDTxidR from '../model/GetUnconfirmedOmniTransactionByTransactionIDTxidR';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse4001 from '../model/InlineResponse4001';
+import InlineResponse40012 from '../model/InlineResponse40012';
+import InlineResponse40019 from '../model/InlineResponse40019';
+import InlineResponse40028 from '../model/InlineResponse40028';
+import InlineResponse40032 from '../model/InlineResponse40032';
+import InlineResponse40038 from '../model/InlineResponse40038';
+import InlineResponse40044 from '../model/InlineResponse40044';
+import InlineResponse4005 from '../model/InlineResponse4005';
+import InlineResponse4011 from '../model/InlineResponse4011';
+import InlineResponse40112 from '../model/InlineResponse40112';
+import InlineResponse40119 from '../model/InlineResponse40119';
+import InlineResponse40128 from '../model/InlineResponse40128';
+import InlineResponse40132 from '../model/InlineResponse40132';
+import InlineResponse40138 from '../model/InlineResponse40138';
+import InlineResponse40144 from '../model/InlineResponse40144';
+import InlineResponse4015 from '../model/InlineResponse4015';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse4031 from '../model/InlineResponse4031';
+import InlineResponse40312 from '../model/InlineResponse40312';
+import InlineResponse40319 from '../model/InlineResponse40319';
+import InlineResponse40328 from '../model/InlineResponse40328';
+import InlineResponse40332 from '../model/InlineResponse40332';
+import InlineResponse40338 from '../model/InlineResponse40338';
+import InlineResponse40344 from '../model/InlineResponse40344';
+import InlineResponse4035 from '../model/InlineResponse4035';
+import InlineResponse404 from '../model/InlineResponse404';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListOmniTokensByAddressR from '../model/ListOmniTokensByAddressR';
 import ListOmniTransactionsByAddressR from '../model/ListOmniTransactionsByAddressR';
 import ListOmniTransactionsByBlockHashR from '../model/ListOmniTransactionsByBlockHashR';
 import ListOmniTransactionsByBlockHeightR from '../model/ListOmniTransactionsByBlockHeightR';
 import ListUnconfirmedOmniTransactionsByAddressR from '../model/ListUnconfirmedOmniTransactionsByAddressR';
 import ListUnconfirmedOmniTransactionsByPropertyIDR from '../model/ListUnconfirmedOmniTransactionsByPropertyIDR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * OmniLayer service.
 * @module api/OmniLayerApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class OmniLayerApi {
 

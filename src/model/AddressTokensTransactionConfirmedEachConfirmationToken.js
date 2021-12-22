@@ -20,7 +20,7 @@ import AddressTokensTransactionConfirmedEachConfirmationOmni from './AddressToke
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationToken model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationToken
- * @version 1.3.0
+ * @version 1.4.0
  */
 class AddressTokensTransactionConfirmedEachConfirmationToken {
     /**

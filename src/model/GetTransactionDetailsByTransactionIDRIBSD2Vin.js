@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSD2ScriptSig from './GetTransactio
 /**
  * The GetTransactionDetailsByTransactionIDRIBSD2Vin model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSD2Vin
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetTransactionDetailsByTransactionIDRIBSD2Vin {
     /**
@@ -25,7 +25,7 @@ class GetTransactionDetailsByTransactionIDRIBSD2Vin {
      * @alias module:model/GetTransactionDetailsByTransactionIDRIBSD2Vin
      * @param addresses {Array.<String>} 
      * @param scriptSig {module:model/GetTransactionDetailsByTransactionIDRIBSD2ScriptSig} 
-     * @param sequence {String} Represents the script sequence number.
+     * @param sequence {Number} Represents the script sequence number.
      * @param txinwitness {Array.<String>} 
      */
     constructor(addresses, scriptSig, sequence, txinwitness) { 
@@ -66,7 +66,7 @@ class GetTransactionDetailsByTransactionIDRIBSD2Vin {
                 obj['scriptSig'] = GetTransactionDetailsByTransactionIDRIBSD2ScriptSig.constructFromObject(data['scriptSig']);
             }
             if (data.hasOwnProperty('sequence')) {
-                obj['sequence'] = ApiClient.convertToType(data['sequence'], 'String');
+                obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
             }
             if (data.hasOwnProperty('txid')) {
                 obj['txid'] = ApiClient.convertToType(data['txid'], 'String');
@@ -105,7 +105,7 @@ GetTransactionDetailsByTransactionIDRIBSD2Vin.prototype['scriptSig'] = undefined
 
 /**
  * Represents the script sequence number.
- * @member {String} sequence
+ * @member {Number} sequence
  */
 GetTransactionDetailsByTransactionIDRIBSD2Vin.prototype['sequence'] = undefined;
 

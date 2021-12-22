@@ -9,6 +9,10 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _GetWalletAssetDetailsRIConfirmedBalance = _interopRequireDefault(require("./GetWalletAssetDetailsRIConfirmedBalance"));
 
+var _GetWalletAssetDetailsRIFungibleTokens = _interopRequireDefault(require("./GetWalletAssetDetailsRIFungibleTokens"));
+
+var _GetWalletAssetDetailsRINonFungibleTokens = _interopRequireDefault(require("./GetWalletAssetDetailsRINonFungibleTokens"));
+
 var _GetWalletAssetDetailsRIRecievedConfirmedAmount = _interopRequireDefault(require("./GetWalletAssetDetailsRIRecievedConfirmedAmount"));
 
 var _GetWalletAssetDetailsRISentConfirmedAmount = _interopRequireDefault(require("./GetWalletAssetDetailsRISentConfirmedAmount"));
@@ -19,12 +23,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The GetWalletAssetDetailsRI model module.
  * @module model/GetWalletAssetDetailsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
   /**
@@ -32,14 +36,16 @@ var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
    * @alias module:model/GetWalletAssetDetailsRI
    * @param confirmedBalance {module:model/GetWalletAssetDetailsRIConfirmedBalance} 
    * @param depositAddressesCount {Number} Specifies the count of deposit addresses in the Wallet.
+   * @param fungibleTokens {Array.<module:model/GetWalletAssetDetailsRIFungibleTokens>} Represents fungible tokens'es detailed information
    * @param name {String} Defines the name of the Wallet given to it by the user.
+   * @param nonFungibleTokens {Array.<module:model/GetWalletAssetDetailsRINonFungibleTokens>} Represents non-fungible tokens'es detailed information.
    * @param recievedConfirmedAmount {module:model/GetWalletAssetDetailsRIRecievedConfirmedAmount} 
    * @param sentConfirmedAmount {module:model/GetWalletAssetDetailsRISentConfirmedAmount} 
    */
-  function GetWalletAssetDetailsRI(confirmedBalance, depositAddressesCount, name, recievedConfirmedAmount, sentConfirmedAmount) {
+  function GetWalletAssetDetailsRI(confirmedBalance, depositAddressesCount, fungibleTokens, name, nonFungibleTokens, recievedConfirmedAmount, sentConfirmedAmount) {
     _classCallCheck(this, GetWalletAssetDetailsRI);
 
-    GetWalletAssetDetailsRI.initialize(this, confirmedBalance, depositAddressesCount, name, recievedConfirmedAmount, sentConfirmedAmount);
+    GetWalletAssetDetailsRI.initialize(this, confirmedBalance, depositAddressesCount, fungibleTokens, name, nonFungibleTokens, recievedConfirmedAmount, sentConfirmedAmount);
   }
   /**
    * Initializes the fields of this object.
@@ -50,10 +56,12 @@ var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
 
   _createClass(GetWalletAssetDetailsRI, null, [{
     key: "initialize",
-    value: function initialize(obj, confirmedBalance, depositAddressesCount, name, recievedConfirmedAmount, sentConfirmedAmount) {
+    value: function initialize(obj, confirmedBalance, depositAddressesCount, fungibleTokens, name, nonFungibleTokens, recievedConfirmedAmount, sentConfirmedAmount) {
       obj['confirmedBalance'] = confirmedBalance;
       obj['depositAddressesCount'] = depositAddressesCount;
+      obj['fungibleTokens'] = fungibleTokens;
       obj['name'] = name;
+      obj['nonFungibleTokens'] = nonFungibleTokens;
       obj['recievedConfirmedAmount'] = recievedConfirmedAmount;
       obj['sentConfirmedAmount'] = sentConfirmedAmount;
     }
@@ -79,8 +87,16 @@ var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
           obj['depositAddressesCount'] = _ApiClient["default"].convertToType(data['depositAddressesCount'], 'Number');
         }
 
+        if (data.hasOwnProperty('fungibleTokens')) {
+          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_GetWalletAssetDetailsRIFungibleTokens["default"]]);
+        }
+
         if (data.hasOwnProperty('name')) {
           obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
+        }
+
+        if (data.hasOwnProperty('nonFungibleTokens')) {
+          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_GetWalletAssetDetailsRINonFungibleTokens["default"]]);
         }
 
         if (data.hasOwnProperty('recievedConfirmedAmount')) {
@@ -111,11 +127,23 @@ GetWalletAssetDetailsRI.prototype['confirmedBalance'] = undefined;
 
 GetWalletAssetDetailsRI.prototype['depositAddressesCount'] = undefined;
 /**
+ * Represents fungible tokens'es detailed information
+ * @member {Array.<module:model/GetWalletAssetDetailsRIFungibleTokens>} fungibleTokens
+ */
+
+GetWalletAssetDetailsRI.prototype['fungibleTokens'] = undefined;
+/**
  * Defines the name of the Wallet given to it by the user.
  * @member {String} name
  */
 
 GetWalletAssetDetailsRI.prototype['name'] = undefined;
+/**
+ * Represents non-fungible tokens'es detailed information.
+ * @member {Array.<module:model/GetWalletAssetDetailsRINonFungibleTokens>} nonFungibleTokens
+ */
+
+GetWalletAssetDetailsRI.prototype['nonFungibleTokens'] = undefined;
 /**
  * @member {module:model/GetWalletAssetDetailsRIRecievedConfirmedAmount} recievedConfirmedAmount
  */

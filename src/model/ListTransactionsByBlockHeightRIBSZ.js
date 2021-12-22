@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListConfirmedTransactionsByAddressRIBSZVShieldedSpend from './ListConfirmedTransactionsByAddressRIBSZVShieldedSpend';
+import GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend from './GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend';
 import ListTransactionsByBlockHeightRIBSZVJoinSplit from './ListTransactionsByBlockHeightRIBSZVJoinSplit';
 import ListTransactionsByBlockHeightRIBSZVShieldedOutput from './ListTransactionsByBlockHeightRIBSZVShieldedOutput';
 import ListTransactionsByBlockHeightRIBSZVin from './ListTransactionsByBlockHeightRIBSZVin';
@@ -21,7 +21,7 @@ import ListTransactionsByBlockHeightRIBSZVout from './ListTransactionsByBlockHei
 /**
  * The ListTransactionsByBlockHeightRIBSZ model module.
  * @module model/ListTransactionsByBlockHeightRIBSZ
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListTransactionsByBlockHeightRIBSZ {
     /**
@@ -37,7 +37,7 @@ class ListTransactionsByBlockHeightRIBSZ {
      * @param size {Number} Represents the total size of this transaction.
      * @param vJoinSplit {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
      * @param vShieldedOutput {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
-     * @param vShieldedSpend {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+     * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
      * @param valueBalance {String} Defines the transaction value balance.
      * @param version {Number} Represents the transaction version number.
      * @param versionGroupId {String} Represents the transaction version group ID.
@@ -111,7 +111,7 @@ class ListTransactionsByBlockHeightRIBSZ {
                 obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [ListTransactionsByBlockHeightRIBSZVShieldedOutput]);
             }
             if (data.hasOwnProperty('vShieldedSpend')) {
-                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [ListConfirmedTransactionsByAddressRIBSZVShieldedSpend]);
+                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend]);
             }
             if (data.hasOwnProperty('valueBalance')) {
                 obj['valueBalance'] = ApiClient.convertToType(data['valueBalance'], 'String');
@@ -191,7 +191,7 @@ ListTransactionsByBlockHeightRIBSZ.prototype['vShieldedOutput'] = undefined;
 
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
  */
 ListTransactionsByBlockHeightRIBSZ.prototype['vShieldedSpend'] = undefined;
 

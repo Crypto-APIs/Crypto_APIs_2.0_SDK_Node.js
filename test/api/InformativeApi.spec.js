@@ -68,6 +68,16 @@
         done();
       });
     });
+    describe('getWalletTransactionDetailsByTransactionID', function() {
+      it('should call getWalletTransactionDetailsByTransactionID successfully', function(done) {
+        //uncomment below and update the code to test getWalletTransactionDetailsByTransactionID
+        //instance.getWalletTransactionDetailsByTransactionID(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('listDepositAddresses', function() {
       it('should call listDepositAddresses successfully', function(done) {
         //uncomment below and update the code to test listDepositAddresses

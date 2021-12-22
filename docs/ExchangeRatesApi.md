@@ -33,7 +33,7 @@ let fromAssetSymbol = btc; // String | Defines the base asset symbol to get a ra
 let toAssetSymbol = usd; // String | Defines the relation asset symbol in which the base asset rate will be displayed.
 let opts = {
   'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'calculationTimestamp': 1618577849 // Number | Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+  'calculationTimestamp': 1635514425 // Number | Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
 };
 apiInstance.getExchangeRateByAssetSymbols(fromAssetSymbol, toAssetSymbol, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

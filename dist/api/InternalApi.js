@@ -7,31 +7,43 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _BlockchainDataInternalTransactionNotFound = _interopRequireDefault(require("../model/BlockchainDataInternalTransactionNotFound"));
-
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
-
 var _GetInternalTransactionByTransactionHashAndOperationIdR = _interopRequireDefault(require("../model/GetInternalTransactionByTransactionHashAndOperationIdR"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40048"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40050"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40051"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40148"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40150"));
+
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40151"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40348"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40350"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40351"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4043"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListInternalTransactionDetailsByTransactionHashR = _interopRequireDefault(require("../model/ListInternalTransactionDetailsByTransactionHashR"));
 
 var _ListInternalTransactionsByAddressR = _interopRequireDefault(require("../model/ListInternalTransactionsByAddressR"));
-
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -39,12 +51,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var InternalApi = /*#__PURE__*/function () {
   /**
@@ -206,8 +218,9 @@ var InternalApi = /*#__PURE__*/function () {
     }
     /**
      * List Internal Transactions By Address
+     * Through this endpoint customers can list internal transactions by the `address` attribute.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address String identifier of the address document represented in CryptoAPIs
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -256,8 +269,9 @@ var InternalApi = /*#__PURE__*/function () {
     }
     /**
      * List Internal Transactions By Address
+     * Through this endpoint customers can list internal transactions by the `address` attribute.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address String identifier of the address document represented in CryptoAPIs
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.

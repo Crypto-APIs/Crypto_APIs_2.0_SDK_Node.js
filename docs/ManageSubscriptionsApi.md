@@ -4,9 +4,66 @@ All URIs are relative to *https://rest.cryptoapis.io/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**activateBlockchainEventSubscription**](ManageSubscriptionsApi.md#activateBlockchainEventSubscription) | **POST** /blockchain-events/subscriptions/{referenceId}/activate | Activate Blockchain Event Subscription
 [**deleteBlockchainEventSubscription**](ManageSubscriptionsApi.md#deleteBlockchainEventSubscription) | **DELETE** /blockchain-events/{blockchain}/{network}/subscriptions/{referenceId} | Delete Blockchain Event Subscription
 [**listBlockchainEventsSubscriptions**](ManageSubscriptionsApi.md#listBlockchainEventsSubscriptions) | **GET** /blockchain-events/{blockchain}/{network}/subscriptions | List Blockchain Events Subscriptions
 
+
+
+## activateBlockchainEventSubscription
+
+> ActivateBlockchainEventSubscriptionR activateBlockchainEventSubscription(referenceId, opts)
+
+Activate Blockchain Event Subscription
+
+Through this endpoint customers can reactivate an event subscription (callback) which has been deactivated by the system. Deactivations could happen due to various reasons, most often \&quot;maximum retry attempts reached\&quot;.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.ManageSubscriptionsApi();
+let referenceId = bc243c86-0902-4386-b30d-e6b30fa1f2aa; // String | Represents a unique ID used to reference the specific callback subscription.
+let opts = {
+  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'activateBlockchainEventSubscriptionRB': new Cryptoapis.ActivateBlockchainEventSubscriptionRB() // ActivateBlockchainEventSubscriptionRB | 
+};
+apiInstance.activateBlockchainEventSubscription(referenceId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **referenceId** | **String**| Represents a unique ID used to reference the specific callback subscription. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **activateBlockchainEventSubscriptionRB** | [**ActivateBlockchainEventSubscriptionRB**](ActivateBlockchainEventSubscriptionRB.md)|  | [optional] 
+
+### Return type
+
+[**ActivateBlockchainEventSubscriptionR**](ActivateBlockchainEventSubscriptionR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
 
 
 ## deleteBlockchainEventSubscription

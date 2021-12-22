@@ -7,12 +7,6 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _BlockchainDataBlockNotFound = _interopRequireDefault(require("../model/BlockchainDataBlockNotFound"));
-
-var _BlockchainDataTransactionNotFound = _interopRequireDefault(require("../model/BlockchainDataTransactionNotFound"));
-
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
-
 var _GetAddressDetailsR = _interopRequireDefault(require("../model/GetAddressDetailsR"));
 
 var _GetBlockDetailsByBlockHashR = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHashR"));
@@ -25,15 +19,95 @@ var _GetLastMinedBlockR = _interopRequireDefault(require("../model/GetLastMinedB
 
 var _GetTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDR"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40010"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40015"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40016"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40017"));
+
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40024"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40026"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40030"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40037"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse4004"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40042"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40053"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse401"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40110"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40115"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40116"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40117"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40124"));
+
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40126"));
+
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40130"));
+
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40137"));
+
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse4014"));
+
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40142"));
+
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40153"));
+
+var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse403"));
+
+var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40310"));
+
+var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse40315"));
+
+var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse40316"));
+
+var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse40317"));
+
+var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse40324"));
+
+var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse40326"));
+
+var _InlineResponse33 = _interopRequireDefault(require("../model/InlineResponse40330"));
+
+var _InlineResponse34 = _interopRequireDefault(require("../model/InlineResponse40337"));
+
+var _InlineResponse35 = _interopRequireDefault(require("../model/InlineResponse4034"));
+
+var _InlineResponse36 = _interopRequireDefault(require("../model/InlineResponse40342"));
+
+var _InlineResponse37 = _interopRequireDefault(require("../model/InlineResponse40353"));
+
+var _InlineResponse38 = _interopRequireDefault(require("../model/InlineResponse404"));
+
+var _InlineResponse39 = _interopRequireDefault(require("../model/InlineResponse4041"));
+
+var _InlineResponse40 = _interopRequireDefault(require("../model/InlineResponse4042"));
+
+var _InlineResponse41 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse42 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse43 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse44 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse45 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListAllUnconfirmedTransactionsR = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactionsR"));
 
@@ -47,26 +121,18 @@ var _ListTransactionsByBlockHeightR = _interopRequireDefault(require("../model/L
 
 var _ListUnconfirmedTransactionsByAddressR = _interopRequireDefault(require("../model/ListUnconfirmedTransactionsByAddressR"));
 
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
-
-var _ResourceNotFound = _interopRequireDefault(require("../model/ResourceNotFound"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var UnifiedEndpointsApi = /*#__PURE__*/function () {
   /**
@@ -83,7 +149,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
   }
   /**
    * Get Address Details
-   * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.
+   * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here. Applies only for coins.
    * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
    * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
    * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -131,7 +197,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
     }
     /**
      * Get Address Details
-     * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here.
+     * Through this endpoint the customer can receive basic information about a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing **unconfirmed** transactions for the specific address, they **will not** be counted or calculated here. Applies only for coins.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
@@ -592,7 +658,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
     }
     /**
      * List Latest Mined Blocks
-     * Through this endpoint customers can list the latest 50 blocks that were mined.
+     * Through this endpoint customers can list **up to 50** from the latest blocks that were mined.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {Number} count Specifies how many records were requested.
@@ -639,7 +705,7 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
     }
     /**
      * List Latest Mined Blocks
-     * Through this endpoint customers can list the latest 50 blocks that were mined.
+     * Through this endpoint customers can list **up to 50** from the latest blocks that were mined.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {Number} count Specifies how many records were requested.

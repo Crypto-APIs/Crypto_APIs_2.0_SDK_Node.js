@@ -13,24 +13,30 @@
 
 
 import ApiClient from "../ApiClient";
-import BlockchainDataInternalTransactionNotFound from '../model/BlockchainDataInternalTransactionNotFound';
-import FeatureMainnetsNotAllowedForPlan from '../model/FeatureMainnetsNotAllowedForPlan';
 import GetInternalTransactionByTransactionHashAndOperationIdR from '../model/GetInternalTransactionByTransactionHashAndOperationIdR';
-import InsufficientCredits from '../model/InsufficientCredits';
-import InvalidApiKey from '../model/InvalidApiKey';
-import InvalidData from '../model/InvalidData';
-import InvalidPagination from '../model/InvalidPagination';
-import InvalidRequestBodyStructure from '../model/InvalidRequestBodyStructure';
+import InlineResponse40048 from '../model/InlineResponse40048';
+import InlineResponse40050 from '../model/InlineResponse40050';
+import InlineResponse40051 from '../model/InlineResponse40051';
+import InlineResponse40148 from '../model/InlineResponse40148';
+import InlineResponse40150 from '../model/InlineResponse40150';
+import InlineResponse40151 from '../model/InlineResponse40151';
+import InlineResponse402 from '../model/InlineResponse402';
+import InlineResponse40348 from '../model/InlineResponse40348';
+import InlineResponse40350 from '../model/InlineResponse40350';
+import InlineResponse40351 from '../model/InlineResponse40351';
+import InlineResponse4043 from '../model/InlineResponse4043';
+import InlineResponse409 from '../model/InlineResponse409';
+import InlineResponse415 from '../model/InlineResponse415';
+import InlineResponse422 from '../model/InlineResponse422';
+import InlineResponse429 from '../model/InlineResponse429';
+import InlineResponse500 from '../model/InlineResponse500';
 import ListInternalTransactionDetailsByTransactionHashR from '../model/ListInternalTransactionDetailsByTransactionHashR';
 import ListInternalTransactionsByAddressR from '../model/ListInternalTransactionsByAddressR';
-import RequestLimitReached from '../model/RequestLimitReached';
-import UnexpectedServerError from '../model/UnexpectedServerError';
-import UnsupportedMediaType from '../model/UnsupportedMediaType';
 
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.3.0
+* @version 1.4.0
 */
 export default class InternalApi {
 
@@ -198,8 +204,9 @@ export default class InternalApi {
 
     /**
      * List Internal Transactions By Address
+     * Through this endpoint customers can list internal transactions by the `address` attribute.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address String identifier of the address document represented in CryptoAPIs
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -251,8 +258,9 @@ export default class InternalApi {
 
     /**
      * List Internal Transactions By Address
+     * Through this endpoint customers can list internal transactions by the `address` attribute.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} address String identifier of the address document represented in CryptoAPIs
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.

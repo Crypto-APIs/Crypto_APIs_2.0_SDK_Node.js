@@ -13,19 +13,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
  * The GetTransactionDetailsByTransactionIDRIFee model module.
  * @module model/GetTransactionDetailsByTransactionIDRIFee
- * @version 1.3.0
+ * @version 1.4.0
  */
 var GetTransactionDetailsByTransactionIDRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIFee</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRIFee
-   * @param amount {String} Defines the amount of the transaction fee.
-   * @param unit {String} Defines the unit of the fee amount, e.g. BTC, ETH, XRP.
+   * @param amount {String} When isConfirmed is True - Defines the amount of the transaction fee  When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
+   * @param unit {String} Defines the fee unit.
    */
   function GetTransactionDetailsByTransactionIDRIFee(amount, unit) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDRIFee);
@@ -75,14 +75,14 @@ var GetTransactionDetailsByTransactionIDRIFee = /*#__PURE__*/function () {
   return GetTransactionDetailsByTransactionIDRIFee;
 }();
 /**
- * Defines the amount of the transaction fee.
+ * When isConfirmed is True - Defines the amount of the transaction fee  When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
  * @member {String} amount
  */
 
 
 GetTransactionDetailsByTransactionIDRIFee.prototype['amount'] = undefined;
 /**
- * Defines the unit of the fee amount, e.g. BTC, ETH, XRP.
+ * Defines the fee unit.
  * @member {String} unit
  */
 

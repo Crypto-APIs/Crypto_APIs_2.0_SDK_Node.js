@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationRI model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class NewConfirmedTokensTransactionsAndEachConfirmationRI {
     /**
@@ -63,6 +63,9 @@ class NewConfirmedTokensTransactionsAndEachConfirmationRI {
             if (data.hasOwnProperty('callbackUrl')) {
                 obj['callbackUrl'] = ApiClient.convertToType(data['callbackUrl'], 'String');
             }
+            if (data.hasOwnProperty('confirmationsCount')) {
+                obj['confirmationsCount'] = ApiClient.convertToType(data['confirmationsCount'], 'Number');
+            }
             if (data.hasOwnProperty('createdTimestamp')) {
                 obj['createdTimestamp'] = ApiClient.convertToType(data['createdTimestamp'], 'Number');
             }
@@ -90,6 +93,12 @@ NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['address'] = undef
  * @member {String} callbackUrl
  */
 NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['callbackUrl'] = undefined;
+
+/**
+ * Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
+ * @member {Number} confirmationsCount
+ */
+NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['confirmationsCount'] = undefined;
 
 /**
  * Defines the specific time/date when the subscription was created in Unix Timestamp.

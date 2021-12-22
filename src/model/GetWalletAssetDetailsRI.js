@@ -13,13 +13,15 @@
 
 import ApiClient from '../ApiClient';
 import GetWalletAssetDetailsRIConfirmedBalance from './GetWalletAssetDetailsRIConfirmedBalance';
+import GetWalletAssetDetailsRIFungibleTokens from './GetWalletAssetDetailsRIFungibleTokens';
+import GetWalletAssetDetailsRINonFungibleTokens from './GetWalletAssetDetailsRINonFungibleTokens';
 import GetWalletAssetDetailsRIRecievedConfirmedAmount from './GetWalletAssetDetailsRIRecievedConfirmedAmount';
 import GetWalletAssetDetailsRISentConfirmedAmount from './GetWalletAssetDetailsRISentConfirmedAmount';
 
 /**
  * The GetWalletAssetDetailsRI model module.
  * @module model/GetWalletAssetDetailsRI
- * @version 1.3.0
+ * @version 1.4.0
  */
 class GetWalletAssetDetailsRI {
     /**
@@ -27,13 +29,15 @@ class GetWalletAssetDetailsRI {
      * @alias module:model/GetWalletAssetDetailsRI
      * @param confirmedBalance {module:model/GetWalletAssetDetailsRIConfirmedBalance} 
      * @param depositAddressesCount {Number} Specifies the count of deposit addresses in the Wallet.
+     * @param fungibleTokens {Array.<module:model/GetWalletAssetDetailsRIFungibleTokens>} Represents fungible tokens'es detailed information
      * @param name {String} Defines the name of the Wallet given to it by the user.
+     * @param nonFungibleTokens {Array.<module:model/GetWalletAssetDetailsRINonFungibleTokens>} Represents non-fungible tokens'es detailed information.
      * @param recievedConfirmedAmount {module:model/GetWalletAssetDetailsRIRecievedConfirmedAmount} 
      * @param sentConfirmedAmount {module:model/GetWalletAssetDetailsRISentConfirmedAmount} 
      */
-    constructor(confirmedBalance, depositAddressesCount, name, recievedConfirmedAmount, sentConfirmedAmount) { 
+    constructor(confirmedBalance, depositAddressesCount, fungibleTokens, name, nonFungibleTokens, recievedConfirmedAmount, sentConfirmedAmount) { 
         
-        GetWalletAssetDetailsRI.initialize(this, confirmedBalance, depositAddressesCount, name, recievedConfirmedAmount, sentConfirmedAmount);
+        GetWalletAssetDetailsRI.initialize(this, confirmedBalance, depositAddressesCount, fungibleTokens, name, nonFungibleTokens, recievedConfirmedAmount, sentConfirmedAmount);
     }
 
     /**
@@ -41,10 +45,12 @@ class GetWalletAssetDetailsRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, confirmedBalance, depositAddressesCount, name, recievedConfirmedAmount, sentConfirmedAmount) { 
+    static initialize(obj, confirmedBalance, depositAddressesCount, fungibleTokens, name, nonFungibleTokens, recievedConfirmedAmount, sentConfirmedAmount) { 
         obj['confirmedBalance'] = confirmedBalance;
         obj['depositAddressesCount'] = depositAddressesCount;
+        obj['fungibleTokens'] = fungibleTokens;
         obj['name'] = name;
+        obj['nonFungibleTokens'] = nonFungibleTokens;
         obj['recievedConfirmedAmount'] = recievedConfirmedAmount;
         obj['sentConfirmedAmount'] = sentConfirmedAmount;
     }
@@ -66,8 +72,14 @@ class GetWalletAssetDetailsRI {
             if (data.hasOwnProperty('depositAddressesCount')) {
                 obj['depositAddressesCount'] = ApiClient.convertToType(data['depositAddressesCount'], 'Number');
             }
+            if (data.hasOwnProperty('fungibleTokens')) {
+                obj['fungibleTokens'] = ApiClient.convertToType(data['fungibleTokens'], [GetWalletAssetDetailsRIFungibleTokens]);
+            }
             if (data.hasOwnProperty('name')) {
                 obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            }
+            if (data.hasOwnProperty('nonFungibleTokens')) {
+                obj['nonFungibleTokens'] = ApiClient.convertToType(data['nonFungibleTokens'], [GetWalletAssetDetailsRINonFungibleTokens]);
             }
             if (data.hasOwnProperty('recievedConfirmedAmount')) {
                 obj['recievedConfirmedAmount'] = GetWalletAssetDetailsRIRecievedConfirmedAmount.constructFromObject(data['recievedConfirmedAmount']);
@@ -94,10 +106,22 @@ GetWalletAssetDetailsRI.prototype['confirmedBalance'] = undefined;
 GetWalletAssetDetailsRI.prototype['depositAddressesCount'] = undefined;
 
 /**
+ * Represents fungible tokens'es detailed information
+ * @member {Array.<module:model/GetWalletAssetDetailsRIFungibleTokens>} fungibleTokens
+ */
+GetWalletAssetDetailsRI.prototype['fungibleTokens'] = undefined;
+
+/**
  * Defines the name of the Wallet given to it by the user.
  * @member {String} name
  */
 GetWalletAssetDetailsRI.prototype['name'] = undefined;
+
+/**
+ * Represents non-fungible tokens'es detailed information.
+ * @member {Array.<module:model/GetWalletAssetDetailsRINonFungibleTokens>} nonFungibleTokens
+ */
+GetWalletAssetDetailsRI.prototype['nonFungibleTokens'] = undefined;
 
 /**
  * @member {module:model/GetWalletAssetDetailsRIRecievedConfirmedAmount} recievedConfirmedAmount

@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(Cryptoapis.ListLatestMinedBlocksRIBSBSC);
     });
 
+    it('should have the property difficulty (base name: "difficulty")', function() {
+      // uncomment below and update the code to test the property difficulty
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBSC();
+      //expect(instance).to.be();
+    });
+
     it('should have the property extraData (base name: "extraData")', function() {
       // uncomment below and update the code to test the property extraData
       //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBSC();
@@ -78,8 +84,20 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property nonce (base name: "nonce")', function() {
+      // uncomment below and update the code to test the property nonce
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBSC();
+      //expect(instance).to.be();
+    });
+
     it('should have the property sha3Uncles (base name: "sha3Uncles")', function() {
       // uncomment below and update the code to test the property sha3Uncles
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBSC();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property size (base name: "size")', function() {
+      // uncomment below and update the code to test the property size
       //var instance = new Cryptoapis.ListLatestMinedBlocksRIBSBSC();
       //expect(instance).to.be();
     });

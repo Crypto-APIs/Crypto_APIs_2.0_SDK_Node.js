@@ -7,19 +7,43 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("../model/FeatureMainnetsNotAllowedForPlan"));
-
 var _GetTokenDetailsByContractAddressR = _interopRequireDefault(require("../model/GetTokenDetailsByContractAddressR"));
 
-var _InsufficientCredits = _interopRequireDefault(require("../model/InsufficientCredits"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40054"));
 
-var _InvalidApiKey = _interopRequireDefault(require("../model/InvalidApiKey"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40055"));
 
-var _InvalidData = _interopRequireDefault(require("../model/InvalidData"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40056"));
 
-var _InvalidPagination = _interopRequireDefault(require("../model/InvalidPagination"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40057"));
 
-var _InvalidRequestBodyStructure = _interopRequireDefault(require("../model/InvalidRequestBodyStructure"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40154"));
+
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40155"));
+
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40156"));
+
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40157"));
+
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse402"));
+
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40354"));
+
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40355"));
+
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40356"));
+
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40357"));
+
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListConfirmedTokensTransfersByAddressR = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddressR"));
 
@@ -27,24 +51,18 @@ var _ListTokensByAddressR = _interopRequireDefault(require("../model/ListTokensB
 
 var _ListTokensTransfersByTransactionHashR = _interopRequireDefault(require("../model/ListTokensTransfersByTransactionHashR"));
 
-var _RequestLimitReached = _interopRequireDefault(require("../model/RequestLimitReached"));
-
-var _UnexpectedServerError = _interopRequireDefault(require("../model/UnexpectedServerError"));
-
-var _UnsupportedMediaType = _interopRequireDefault(require("../model/UnsupportedMediaType"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.3.0
+* @version 1.4.0
 */
 var TokensApi = /*#__PURE__*/function () {
   /**

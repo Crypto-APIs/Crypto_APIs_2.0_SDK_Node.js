@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSB model module.
  * @module model/ListLatestMinedBlocksRIBSB
- * @version 1.3.0
+ * @version 1.4.0
  */
 class ListLatestMinedBlocksRIBSB {
     /**
@@ -68,8 +68,17 @@ class ListLatestMinedBlocksRIBSB {
             if (data.hasOwnProperty('chainwork')) {
                 obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
             }
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
+            }
             if (data.hasOwnProperty('merkleRoot')) {
                 obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
+            }
+            if (data.hasOwnProperty('nonce')) {
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
+            }
+            if (data.hasOwnProperty('size')) {
+                obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
             if (data.hasOwnProperty('strippedSize')) {
                 obj['strippedSize'] = ApiClient.convertToType(data['strippedSize'], 'Number');
@@ -103,10 +112,28 @@ ListLatestMinedBlocksRIBSB.prototype['bits'] = undefined;
 ListLatestMinedBlocksRIBSB.prototype['chainwork'] = undefined;
 
 /**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+ListLatestMinedBlocksRIBSB.prototype['difficulty'] = undefined;
+
+/**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
  * @member {String} merkleRoot
  */
 ListLatestMinedBlocksRIBSB.prototype['merkleRoot'] = undefined;
+
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+ListLatestMinedBlocksRIBSB.prototype['nonce'] = undefined;
+
+/**
+ * Represents the block size
+ * @member {Number} size
+ */
+ListLatestMinedBlocksRIBSB.prototype['size'] = undefined;
 
 /**
  * Defines the numeric representation of the block size excluding the witness data.
