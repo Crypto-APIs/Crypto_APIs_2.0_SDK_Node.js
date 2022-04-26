@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockE403 model module.
  * @module model/NewBlockE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 var NewBlockE403 = /*#__PURE__*/function () {
   /**

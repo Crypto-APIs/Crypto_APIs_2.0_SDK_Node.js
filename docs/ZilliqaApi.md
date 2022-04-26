@@ -37,7 +37,7 @@ ApiKey.apiKey = 'YOUR API KEY';
 let apiInstance = new Cryptoapis.ZilliqaApi();
 let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getLatestMinedZilliqaBlock(network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -92,7 +92,7 @@ let apiInstance = new Cryptoapis.ZilliqaApi();
 let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let address = zil17v9gs6ctn9pq6wka8k668umdlaj88nrfej7rnm; // String | Defines the specific transaction's address.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getZilliqaAddressDetails(network, address, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -148,7 +148,7 @@ let apiInstance = new Cryptoapis.ZilliqaApi();
 let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHash = 0xf679d0b5387f0b0b3c3c1f368305512b23860888ba4415063d464a09b8bb6205; // String | Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getZilliqaBlockDetailsByBlockHash(network, blockHash, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -204,7 +204,7 @@ let apiInstance = new Cryptoapis.ZilliqaApi();
 let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHeight = 1244298; // Number | Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getZilliqaBlockDetailsByBlockHeight(network, blockHeight, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -260,7 +260,7 @@ let apiInstance = new Cryptoapis.ZilliqaApi();
 let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let transactionHash = 0xe649afbe2849c70a7a8b3087bee2c7b2fa0b6b77ab658b4fff390a1d06f0a8bc; // String | String identifier of the transaction
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getZilliqaTransactionDetailsByTransactionID(network, transactionHash, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -316,9 +316,9 @@ let apiInstance = new Cryptoapis.ZilliqaApi();
 let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let address = zil17v9gs6ctn9pq6wka8k668umdlaj88nrfej7rnm; // String | Defines the specific address of the sender.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listZilliqaTransactionsByAddress(network, address, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -376,9 +376,9 @@ let apiInstance = new Cryptoapis.ZilliqaApi();
 let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHash = 0x3160ca05ac12f60023de6b6987596eccbf084629f1a92b59534c5c021bf27041; // String | Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listZilliqaTransactionsByBlockHash(network, blockHash, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -436,9 +436,9 @@ let apiInstance = new Cryptoapis.ZilliqaApi();
 let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHeight = 1250392; // Number | Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listZilliqaTransactionsByBlockHeight(network, blockHeight, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

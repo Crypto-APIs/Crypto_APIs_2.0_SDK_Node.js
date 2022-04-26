@@ -17,7 +17,7 @@ import GetZilliqaAddressDetailsE400 from './GetZilliqaAddressDetailsE400';
 /**
  * The InlineResponse4003 model module.
  * @module model/InlineResponse4003
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4003 {
     /**

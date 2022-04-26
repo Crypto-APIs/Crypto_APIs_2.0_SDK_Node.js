@@ -17,7 +17,7 @@ import GenerateDepositAddressE400 from './GenerateDepositAddressE400';
 /**
  * The InlineResponse4008 model module.
  * @module model/InlineResponse4008
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4008 {
     /**

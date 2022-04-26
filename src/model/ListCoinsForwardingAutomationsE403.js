@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListCoinsForwardingAutomationsE403 model module.
  * @module model/ListCoinsForwardingAutomationsE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListCoinsForwardingAutomationsE403 {
     /**

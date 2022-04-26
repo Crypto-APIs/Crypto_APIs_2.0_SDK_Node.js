@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property callbackSecretKey (base name: "callbackSecretKey")', function() {
+      // uncomment below and update the code to test the property callbackSecretKey
+      //var instance = new Cryptoapis.NewConfirmedTokensTransactionsAndEachConfirmationRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property callbackUrl (base name: "callbackUrl")', function() {
       // uncomment below and update the code to test the property callbackUrl
       //var instance = new Cryptoapis.NewConfirmedTokensTransactionsAndEachConfirmationRI();
@@ -80,6 +86,12 @@
 
     it('should have the property eventType (base name: "eventType")', function() {
       // uncomment below and update the code to test the property eventType
+      //var instance = new Cryptoapis.NewConfirmedTokensTransactionsAndEachConfirmationRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isActive (base name: "isActive")', function() {
+      // uncomment below and update the code to test the property isActive
       //var instance = new Cryptoapis.NewConfirmedTokensTransactionsAndEachConfirmationRI();
       //expect(instance).to.be();
     });

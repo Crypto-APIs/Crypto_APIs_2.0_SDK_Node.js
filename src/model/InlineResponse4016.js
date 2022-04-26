@@ -17,7 +17,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDE401 from './GetXRPRippleTra
 /**
  * The InlineResponse4016 model module.
  * @module model/InlineResponse4016
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4016 {
     /**

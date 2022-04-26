@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashE400 model module.
  * @module model/ListTransactionsByBlockHashE400
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListTransactionsByBlockHashE400 = /*#__PURE__*/function () {
   /**

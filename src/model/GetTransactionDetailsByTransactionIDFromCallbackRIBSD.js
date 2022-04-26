@@ -18,7 +18,7 @@ import GetTransactionDetailsByTransactionIDRIBSD2Vout from './GetTransactionDeta
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSD model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSD {
     /**

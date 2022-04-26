@@ -17,7 +17,7 @@ import NewConfirmedTokensTransactionsE409 from './NewConfirmedTokensTransactions
 /**
  * The InlineResponse4099 model module.
  * @module model/InlineResponse4099
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4099 {
     /**

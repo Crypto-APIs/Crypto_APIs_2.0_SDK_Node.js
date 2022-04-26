@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListOmniTokensByAddressE401 model module.
  * @module model/ListOmniTokensByAddressE401
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListOmniTokensByAddressE401 {
     /**

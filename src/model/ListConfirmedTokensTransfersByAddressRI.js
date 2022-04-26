@@ -12,11 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
+import ListTokensTransfersByTransactionHashRITransactionFee from './ListTokensTransfersByTransactionHashRITransactionFee';
 
 /**
  * The ListConfirmedTokensTransfersByAddressRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListConfirmedTokensTransfersByAddressRI {
     /**
@@ -32,10 +33,11 @@ class ListConfirmedTokensTransfersByAddressRI {
      * @param tokenType {String} Defines the specific token type.
      * @param transactionHash {String} Represents the hash of the transaction, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param transactionTimestamp {Number} Defines the specific time/date when the transaction was created in Unix Timestamp.
+     * @param transactionFee {module:model/ListTokensTransfersByTransactionHashRITransactionFee} 
      */
-    constructor(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp) { 
+    constructor(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp, transactionFee) { 
         
-        ListConfirmedTokensTransfersByAddressRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp);
+        ListConfirmedTokensTransfersByAddressRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp, transactionFee);
     }
 
     /**
@@ -43,7 +45,7 @@ class ListConfirmedTokensTransfersByAddressRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp) { 
+    static initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp, transactionFee) { 
         obj['contractAddress'] = contractAddress;
         obj['minedInBlockHeight'] = minedInBlockHeight;
         obj['recipientAddress'] = recipientAddress;
@@ -54,6 +56,7 @@ class ListConfirmedTokensTransfersByAddressRI {
         obj['tokenType'] = tokenType;
         obj['transactionHash'] = transactionHash;
         obj['transactionTimestamp'] = transactionTimestamp;
+        obj['transactionFee'] = transactionFee;
     }
 
     /**
@@ -102,6 +105,9 @@ class ListConfirmedTokensTransfersByAddressRI {
             }
             if (data.hasOwnProperty('transactionTimestamp')) {
                 obj['transactionTimestamp'] = ApiClient.convertToType(data['transactionTimestamp'], 'Number');
+            }
+            if (data.hasOwnProperty('transactionFee')) {
+                obj['transactionFee'] = ListTokensTransfersByTransactionHashRITransactionFee.constructFromObject(data['transactionFee']);
             }
         }
         return obj;
@@ -181,6 +187,11 @@ ListConfirmedTokensTransfersByAddressRI.prototype['transactionHash'] = undefined
  * @member {Number} transactionTimestamp
  */
 ListConfirmedTokensTransfersByAddressRI.prototype['transactionTimestamp'] = undefined;
+
+/**
+ * @member {module:model/ListTokensTransfersByTransactionHashRITransactionFee} transactionFee
+ */
+ListConfirmedTokensTransfersByAddressRI.prototype['transactionFee'] = undefined;
 
 
 

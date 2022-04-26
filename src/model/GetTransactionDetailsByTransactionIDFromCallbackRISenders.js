@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRISenders model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRISenders
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRISenders {
     /**

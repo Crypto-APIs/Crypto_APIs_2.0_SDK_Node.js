@@ -19,65 +19,73 @@ var _GetXRPRippleTransactionDetailsByTransactionIDR = _interopRequireDefault(req
 
 var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40011"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40018"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40016"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse4002"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40019"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40023"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse4002"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40027"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40024"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40031"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40028"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40039"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40032"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse4006"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40042"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40111"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse4006"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40118"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40111"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4012"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40116"));
 
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40123"));
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40119"));
 
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40127"));
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse4012"));
 
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40131"));
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40124"));
 
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40139"));
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40128"));
 
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4016"));
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40132"));
 
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse402"));
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40142"));
 
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40311"));
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse4016"));
 
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40318"));
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse4032"));
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40311"));
 
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40323"));
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40316"));
 
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40327"));
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40319"));
 
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40331"));
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse4032"));
 
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40339"));
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40324"));
 
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse4036"));
+var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse40328"));
 
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse4041"));
+var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse40332"));
 
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse409"));
+var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40342"));
 
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse415"));
+var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse4036"));
 
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse422"));
+var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse4041"));
 
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse429"));
+var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse409"));
 
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse33 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse34 = _interopRequireDefault(require("../model/InlineResponse500"));
+
+var _ListXRPRippleTransactionsByAddressAndTimeRangeR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressAndTimeRangeR"));
 
 var _ListXRPRippleTransactionsByAddressR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressR"));
 
@@ -96,7 +104,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var XRPRippleApi = /*#__PURE__*/function () {
   /**
@@ -452,6 +460,88 @@ var XRPRippleApi = /*#__PURE__*/function () {
     key: "listXRPRippleTransactionsByAddress",
     value: function listXRPRippleTransactionsByAddress(network, address, opts) {
       return this.listXRPRippleTransactionsByAddressWithHttpInfo(network, address, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List XRP (Ripple) Transactions By Address And Time Range
+     * Тhis endpoint lists XRP transactions by the attribute `address` and the query parameters `fromTimestamp` and `toTimestamp`  which gives customers the opportunity to filter the results by a specified time period.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @param {module:model/String} opts.transactionType Defines the transaction type.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListXRPRippleTransactionsByAddressAndTimeRangeR} and HTTP response
+     */
+
+  }, {
+    key: "listXRPRippleTransactionsByAddressAndTimeRangeWithHttpInfo",
+    value: function listXRPRippleTransactionsByAddressAndTimeRangeWithHttpInfo(network, address, fromTimestamp, toTimestamp, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'network' is set
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listXRPRippleTransactionsByAddressAndTimeRange");
+      } // verify the required parameter 'address' is set
+
+
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listXRPRippleTransactionsByAddressAndTimeRange");
+      } // verify the required parameter 'fromTimestamp' is set
+
+
+      if (fromTimestamp === undefined || fromTimestamp === null) {
+        throw new Error("Missing the required parameter 'fromTimestamp' when calling listXRPRippleTransactionsByAddressAndTimeRange");
+      } // verify the required parameter 'toTimestamp' is set
+
+
+      if (toTimestamp === undefined || toTimestamp === null) {
+        throw new Error("Missing the required parameter 'toTimestamp' when calling listXRPRippleTransactionsByAddressAndTimeRange");
+      }
+
+      var pathParams = {
+        'network': network,
+        'address': address
+      };
+      var queryParams = {
+        'context': opts['context'],
+        'fromTimestamp': fromTimestamp,
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+        'toTimestamp': toTimestamp,
+        'transactionType': opts['transactionType']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListXRPRippleTransactionsByAddressAndTimeRangeR["default"];
+      return this.apiClient.callApi('/blockchain-data/xrp-specific/{network}/addresses/{address}/transactions-by-time-range', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List XRP (Ripple) Transactions By Address And Time Range
+     * Тhis endpoint lists XRP transactions by the attribute `address` and the query parameters `fromTimestamp` and `toTimestamp`  which gives customers the opportunity to filter the results by a specified time period.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @param {module:model/String} opts.transactionType Defines the transaction type.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListXRPRippleTransactionsByAddressAndTimeRangeR}
+     */
+
+  }, {
+    key: "listXRPRippleTransactionsByAddressAndTimeRange",
+    value: function listXRPRippleTransactionsByAddressAndTimeRange(network, address, fromTimestamp, toTimestamp, opts) {
+      return this.listXRPRippleTransactionsByAddressAndTimeRangeWithHttpInfo(network, address, fromTimestamp, toTimestamp, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

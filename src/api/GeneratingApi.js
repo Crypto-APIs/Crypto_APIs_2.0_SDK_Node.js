@@ -29,7 +29,7 @@ import InlineResponse500 from '../model/InlineResponse500';
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class GeneratingApi {
 

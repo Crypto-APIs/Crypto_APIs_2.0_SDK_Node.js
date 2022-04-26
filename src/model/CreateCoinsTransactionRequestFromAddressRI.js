@@ -18,7 +18,7 @@ import CreateCoinsTransactionRequestFromAddressRISenders from './CreateCoinsTran
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class CreateCoinsTransactionRequestFromAddressRI {
     /**
@@ -59,11 +59,17 @@ class CreateCoinsTransactionRequestFromAddressRI {
         if (data) {
             obj = obj || new CreateCoinsTransactionRequestFromAddressRI();
 
+            if (data.hasOwnProperty('addressTag')) {
+                obj['addressTag'] = ApiClient.convertToType(data['addressTag'], 'Number');
+            }
             if (data.hasOwnProperty('callbackSecretKey')) {
                 obj['callbackSecretKey'] = ApiClient.convertToType(data['callbackSecretKey'], 'String');
             }
             if (data.hasOwnProperty('callbackUrl')) {
                 obj['callbackUrl'] = ApiClient.convertToType(data['callbackUrl'], 'String');
+            }
+            if (data.hasOwnProperty('classicAddress')) {
+                obj['classicAddress'] = ApiClient.convertToType(data['classicAddress'], 'String');
             }
             if (data.hasOwnProperty('feePriority')) {
                 obj['feePriority'] = ApiClient.convertToType(data['feePriority'], 'String');
@@ -91,16 +97,28 @@ class CreateCoinsTransactionRequestFromAddressRI {
 }
 
 /**
+ * Defines a specific Tag that is an additional XRP address feature. It helps identify a transaction recipient beyond a wallet address. The tag that was encoded into the x-Address along with the Source Classic Address.
+ * @member {Number} addressTag
+ */
+CreateCoinsTransactionRequestFromAddressRI.prototype['addressTag'] = undefined;
+
+/**
  * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
  * @member {String} callbackSecretKey
  */
 CreateCoinsTransactionRequestFromAddressRI.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 CreateCoinsTransactionRequestFromAddressRI.prototype['callbackUrl'] = undefined;
+
+/**
+ * Represents the public address, which is a compressed and shortened form of a public key. The classic address is shown when the source address is an x-Address.
+ * @member {String} classicAddress
+ */
+CreateCoinsTransactionRequestFromAddressRI.prototype['classicAddress'] = undefined;
 
 /**
  * Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".

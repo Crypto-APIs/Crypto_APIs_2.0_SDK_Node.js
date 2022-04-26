@@ -17,7 +17,7 @@ import ListTransactionsByBlockHashRData from './ListTransactionsByBlockHashRData
 /**
  * The ListTransactionsByBlockHashR model module.
  * @module model/ListTransactionsByBlockHashR
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListTransactionsByBlockHashR {
     /**

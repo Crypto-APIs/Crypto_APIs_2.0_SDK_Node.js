@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InlineResponse409 model module.
  * @module model/InlineResponse409
- * @version 1.4.0
+ * @version 1.5.0
  */
 var InlineResponse409 = /*#__PURE__*/function () {
   /**

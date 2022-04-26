@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressE403 model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressE403 {
     /**

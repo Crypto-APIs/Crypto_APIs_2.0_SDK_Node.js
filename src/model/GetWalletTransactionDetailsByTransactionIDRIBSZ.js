@@ -21,7 +21,7 @@ import ListTransactionsByBlockHeightRIBSZVout from './ListTransactionsByBlockHei
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSZ model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSZ
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSZ {
     /**

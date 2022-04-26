@@ -17,7 +17,7 @@ import RequestLimitReached from './RequestLimitReached';
 /**
  * The InlineResponse429 model module.
  * @module model/InlineResponse429
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse429 {
     /**

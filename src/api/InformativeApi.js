@@ -16,24 +16,30 @@ import ApiClient from "../ApiClient";
 import GetTransactionRequestDetailsR from '../model/GetTransactionRequestDetailsR';
 import GetWalletAssetDetailsR from '../model/GetWalletAssetDetailsR';
 import GetWalletTransactionDetailsByTransactionIDR from '../model/GetWalletTransactionDetailsByTransactionIDR';
-import InlineResponse40034 from '../model/InlineResponse40034';
 import InlineResponse40035 from '../model/InlineResponse40035';
-import InlineResponse40041 from '../model/InlineResponse40041';
-import InlineResponse40045 from '../model/InlineResponse40045';
-import InlineResponse40046 from '../model/InlineResponse40046';
+import InlineResponse40036 from '../model/InlineResponse40036';
+import InlineResponse40038 from '../model/InlineResponse40038';
+import InlineResponse40039 from '../model/InlineResponse40039';
+import InlineResponse40044 from '../model/InlineResponse40044';
+import InlineResponse40048 from '../model/InlineResponse40048';
+import InlineResponse40049 from '../model/InlineResponse40049';
 import InlineResponse4007 from '../model/InlineResponse4007';
-import InlineResponse40134 from '../model/InlineResponse40134';
 import InlineResponse40135 from '../model/InlineResponse40135';
-import InlineResponse40141 from '../model/InlineResponse40141';
-import InlineResponse40145 from '../model/InlineResponse40145';
-import InlineResponse40146 from '../model/InlineResponse40146';
+import InlineResponse40136 from '../model/InlineResponse40136';
+import InlineResponse40138 from '../model/InlineResponse40138';
+import InlineResponse40139 from '../model/InlineResponse40139';
+import InlineResponse40144 from '../model/InlineResponse40144';
+import InlineResponse40148 from '../model/InlineResponse40148';
+import InlineResponse40149 from '../model/InlineResponse40149';
 import InlineResponse4017 from '../model/InlineResponse4017';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40334 from '../model/InlineResponse40334';
 import InlineResponse40335 from '../model/InlineResponse40335';
-import InlineResponse40341 from '../model/InlineResponse40341';
-import InlineResponse40345 from '../model/InlineResponse40345';
-import InlineResponse40346 from '../model/InlineResponse40346';
+import InlineResponse40336 from '../model/InlineResponse40336';
+import InlineResponse40338 from '../model/InlineResponse40338';
+import InlineResponse40339 from '../model/InlineResponse40339';
+import InlineResponse40344 from '../model/InlineResponse40344';
+import InlineResponse40348 from '../model/InlineResponse40348';
+import InlineResponse40349 from '../model/InlineResponse40349';
 import InlineResponse4037 from '../model/InlineResponse4037';
 import InlineResponse4041 from '../model/InlineResponse4041';
 import InlineResponse409 from '../model/InlineResponse409';
@@ -41,6 +47,8 @@ import InlineResponse415 from '../model/InlineResponse415';
 import InlineResponse422 from '../model/InlineResponse422';
 import InlineResponse429 from '../model/InlineResponse429';
 import InlineResponse500 from '../model/InlineResponse500';
+import ListAllAssetsByWalletIDR from '../model/ListAllAssetsByWalletIDR';
+import ListAllAssetsFromAllWalletsR from '../model/ListAllAssetsFromAllWalletsR';
 import ListDepositAddressesR from '../model/ListDepositAddressesR';
 import ListSupportedTokensR from '../model/ListSupportedTokensR';
 import ListWalletTransactionsR from '../model/ListWalletTransactionsR';
@@ -48,7 +56,7 @@ import ListWalletTransactionsR from '../model/ListWalletTransactionsR';
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class InformativeApi {
 
@@ -121,7 +129,7 @@ export default class InformativeApi {
 
     /**
      * Get Wallet Asset Details
-     * Through this endpoint customers can obtain details about a specific Wallet/Vault.
+     * Through this endpoint customers can obtain details on all assets (coins, fungible tokens, non-fungible tokens) for the entire Wallet.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Defines the unique ID of the Wallet.
@@ -171,7 +179,7 @@ export default class InformativeApi {
 
     /**
      * Get Wallet Asset Details
-     * Through this endpoint customers can obtain details about a specific Wallet/Vault.
+     * Through this endpoint customers can obtain details on all assets (coins, fungible tokens, non-fungible tokens) for the entire Wallet.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Defines the unique ID of the Wallet.
@@ -249,6 +257,113 @@ export default class InformativeApi {
      */
     getWalletTransactionDetailsByTransactionID(blockchain, network, transactionId, opts) {
       return this.getWalletTransactionDetailsByTransactionIDWithHttpInfo(blockchain, network, transactionId, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * List All Assets By Wallet ID
+     * Through this endpoint customers can obtain information about available assets in one of their wallets, regardless of the blockchain protocol or network, by providing walletId.
+     * @param {String} walletId Defines the unique ID of the Wallet.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAllAssetsByWalletIDR} and HTTP response
+     */
+    listAllAssetsByWalletIDWithHttpInfo(walletId, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'walletId' is set
+      if (walletId === undefined || walletId === null) {
+        throw new Error("Missing the required parameter 'walletId' when calling listAllAssetsByWalletID");
+      }
+
+      let pathParams = {
+        'walletId': walletId
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListAllAssetsByWalletIDR;
+      return this.apiClient.callApi(
+        '/wallet-as-a-service/wallets/{walletId}/assets', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List All Assets By Wallet ID
+     * Through this endpoint customers can obtain information about available assets in one of their wallets, regardless of the blockchain protocol or network, by providing walletId.
+     * @param {String} walletId Defines the unique ID of the Wallet.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListAllAssetsByWalletIDR}
+     */
+    listAllAssetsByWalletID(walletId, opts) {
+      return this.listAllAssetsByWalletIDWithHttpInfo(walletId, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * List All Assets From All Wallets
+     * Through this endpoint customers can obtain information about available assets in all of their wallets, regardless of the blockchain protocol or network.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAllAssetsFromAllWalletsR} and HTTP response
+     */
+    listAllAssetsFromAllWalletsWithHttpInfo(opts) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListAllAssetsFromAllWalletsR;
+      return this.apiClient.callApi(
+        '/wallet-as-a-service/wallets/all-assets', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List All Assets From All Wallets
+     * Through this endpoint customers can obtain information about available assets in all of their wallets, regardless of the blockchain protocol or network.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListAllAssetsFromAllWalletsR}
+     */
+    listAllAssetsFromAllWallets(opts) {
+      return this.listAllAssetsFromAllWalletsWithHttpInfo(opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

@@ -17,7 +17,7 @@ import ListUnconfirmedTransactionsByAddressE403 from './ListUnconfirmedTransacti
 /**
  * The InlineResponse40315 model module.
  * @module model/InlineResponse40315
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40315 {
     /**

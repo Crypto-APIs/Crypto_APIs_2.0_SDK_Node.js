@@ -54,14 +54,14 @@
       //expect(instance).to.be.a(Cryptoapis.ListCoinsForwardingAutomationsRData);
     });
 
-    it('should have the property offset (base name: "offset")', function() {
-      // uncomment below and update the code to test the property offset
+    it('should have the property limit (base name: "limit")', function() {
+      // uncomment below and update the code to test the property limit
       //var instance = new Cryptoapis.ListCoinsForwardingAutomationsRData();
       //expect(instance).to.be();
     });
 
-    it('should have the property limit (base name: "limit")', function() {
-      // uncomment below and update the code to test the property limit
+    it('should have the property offset (base name: "offset")', function() {
+      // uncomment below and update the code to test the property offset
       //var instance = new Cryptoapis.ListCoinsForwardingAutomationsRData();
       //expect(instance).to.be();
     });

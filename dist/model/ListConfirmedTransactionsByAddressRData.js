@@ -20,21 +20,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRData model module.
  * @module model/ListConfirmedTransactionsByAddressRData
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListConfirmedTransactionsByAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRData</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressRData
-   * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
    * @param limit {Number} Defines how many items should be returned in the response per page basis.
+   * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
    * @param total {Number} Defines the total number of items returned in the response.
    * @param items {Array.<module:model/ListConfirmedTransactionsByAddressRI>} 
    */
-  function ListConfirmedTransactionsByAddressRData(offset, limit, total, items) {
+  function ListConfirmedTransactionsByAddressRData(limit, offset, total, items) {
     _classCallCheck(this, ListConfirmedTransactionsByAddressRData);
 
-    ListConfirmedTransactionsByAddressRData.initialize(this, offset, limit, total, items);
+    ListConfirmedTransactionsByAddressRData.initialize(this, limit, offset, total, items);
   }
   /**
    * Initializes the fields of this object.
@@ -45,9 +45,9 @@ var ListConfirmedTransactionsByAddressRData = /*#__PURE__*/function () {
 
   _createClass(ListConfirmedTransactionsByAddressRData, null, [{
     key: "initialize",
-    value: function initialize(obj, offset, limit, total, items) {
-      obj['offset'] = offset;
+    value: function initialize(obj, limit, offset, total, items) {
       obj['limit'] = limit;
+      obj['offset'] = offset;
       obj['total'] = total;
       obj['items'] = items;
     }
@@ -65,12 +65,12 @@ var ListConfirmedTransactionsByAddressRData = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new ListConfirmedTransactionsByAddressRData();
 
-        if (data.hasOwnProperty('offset')) {
-          obj['offset'] = _ApiClient["default"].convertToType(data['offset'], 'Number');
-        }
-
         if (data.hasOwnProperty('limit')) {
           obj['limit'] = _ApiClient["default"].convertToType(data['limit'], 'Number');
+        }
+
+        if (data.hasOwnProperty('offset')) {
+          obj['offset'] = _ApiClient["default"].convertToType(data['offset'], 'Number');
         }
 
         if (data.hasOwnProperty('total')) {
@@ -89,18 +89,18 @@ var ListConfirmedTransactionsByAddressRData = /*#__PURE__*/function () {
   return ListConfirmedTransactionsByAddressRData;
 }();
 /**
- * The starting index of the response items, i.e. where the response should start listing the returned items.
- * @member {Number} offset
- */
-
-
-ListConfirmedTransactionsByAddressRData.prototype['offset'] = undefined;
-/**
  * Defines how many items should be returned in the response per page basis.
  * @member {Number} limit
  */
 
+
 ListConfirmedTransactionsByAddressRData.prototype['limit'] = undefined;
+/**
+ * The starting index of the response items, i.e. where the response should start listing the returned items.
+ * @member {Number} offset
+ */
+
+ListConfirmedTransactionsByAddressRData.prototype['offset'] = undefined;
 /**
  * Defines the total number of items returned in the response.
  * @member {Number} total

@@ -17,7 +17,7 @@ import GetZilliqaAddressDetailsE401 from './GetZilliqaAddressDetailsE401';
 /**
  * The InlineResponse4013 model module.
  * @module model/InlineResponse4013
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4013 {
     /**

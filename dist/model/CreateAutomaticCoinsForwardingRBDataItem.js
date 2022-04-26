@@ -18,14 +18,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwardingRBDataItem model module.
  * @module model/CreateAutomaticCoinsForwardingRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 var CreateAutomaticCoinsForwardingRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticCoinsForwardingRBDataItem</code>.
    * @alias module:model/CreateAutomaticCoinsForwardingRBDataItem
    * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
-   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
    * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
    * @param feePriority {module:model/CreateAutomaticCoinsForwardingRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
    * @param minimumTransferAmount {String} Represents the minimum transfer amount of the currency in the `fromAddress` that can be allowed for an automatic forwarding.
@@ -106,7 +106,7 @@ var CreateAutomaticCoinsForwardingRBDataItem = /*#__PURE__*/function () {
 
 CreateAutomaticCoinsForwardingRBDataItem.prototype['callbackSecretKey'] = undefined;
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 

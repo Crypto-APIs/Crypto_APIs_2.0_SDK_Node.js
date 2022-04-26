@@ -29,10 +29,10 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.MetadataApi();
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'assetType': crypto, // String | Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listSupportedAssets(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

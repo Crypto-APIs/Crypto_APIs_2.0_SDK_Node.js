@@ -31,7 +31,7 @@ import ListConfirmedTransactionsByAddressRIBSZVin from './ListConfirmedTransacti
 /**
  * The ListConfirmedTransactionsByAddressRIBS model module.
  * @module model/ListConfirmedTransactionsByAddressRIBS
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListConfirmedTransactionsByAddressRIBS {
     /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The CreateAutomaticTokensForwardingE400 model module.
  * @module model/CreateAutomaticTokensForwardingE400
- * @version 1.4.0
+ * @version 1.5.0
  */
 class CreateAutomaticTokensForwardingE400 {
     /**

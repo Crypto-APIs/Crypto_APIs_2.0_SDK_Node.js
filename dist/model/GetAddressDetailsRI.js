@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsRI model module.
  * @module model/GetAddressDetailsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetAddressDetailsRI = /*#__PURE__*/function () {
   /**
@@ -34,8 +34,8 @@ var GetAddressDetailsRI = /*#__PURE__*/function () {
    * @param confirmedBalance {module:model/GetAddressDetailsRIConfirmedBalance} 
    * @param totalReceived {module:model/GetAddressDetailsRITotalReceived} 
    * @param totalSpent {module:model/GetAddressDetailsRITotalSpent} 
-   * @param incomingTransactionsCount {Number} Defines the count of the incoming transactions.
-   * @param outgoingTransactionsCount {Number} Defines the count of the outgoing transactions.
+   * @param incomingTransactionsCount {Number} Defines the received transaction count to the address.
+   * @param outgoingTransactionsCount {Number} Defines the sent transaction count from the address.
    */
   function GetAddressDetailsRI(transactionsCount, confirmedBalance, totalReceived, totalSpent, incomingTransactionsCount, outgoingTransactionsCount) {
     _classCallCheck(this, GetAddressDetailsRI);
@@ -127,13 +127,13 @@ GetAddressDetailsRI.prototype['totalReceived'] = undefined;
 
 GetAddressDetailsRI.prototype['totalSpent'] = undefined;
 /**
- * Defines the count of the incoming transactions.
+ * Defines the received transaction count to the address.
  * @member {Number} incomingTransactionsCount
  */
 
 GetAddressDetailsRI.prototype['incomingTransactionsCount'] = undefined;
 /**
- * Defines the count of the outgoing transactions.
+ * Defines the sent transaction count from the address.
  * @member {Number} outgoingTransactionsCount
  */
 

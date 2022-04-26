@@ -54,12 +54,6 @@
       //expect(instance).to.be.a(Cryptoapis.MinedTransactionRI);
     });
 
-    it('should have the property address (base name: "address")', function() {
-      // uncomment below and update the code to test the property address
-      //var instance = new Cryptoapis.MinedTransactionRI();
-      //expect(instance).to.be();
-    });
-
     it('should have the property callbackSecretKey (base name: "callbackSecretKey")', function() {
       // uncomment below and update the code to test the property callbackSecretKey
       //var instance = new Cryptoapis.MinedTransactionRI();
@@ -68,12 +62,6 @@
 
     it('should have the property callbackUrl (base name: "callbackUrl")', function() {
       // uncomment below and update the code to test the property callbackUrl
-      //var instance = new Cryptoapis.MinedTransactionRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property confirmationsCount (base name: "confirmationsCount")', function() {
-      // uncomment below and update the code to test the property confirmationsCount
       //var instance = new Cryptoapis.MinedTransactionRI();
       //expect(instance).to.be();
     });

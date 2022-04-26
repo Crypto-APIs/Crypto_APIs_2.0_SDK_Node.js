@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetFeeRecommendationsRI {
     /**
@@ -26,10 +26,11 @@ class GetFeeRecommendationsRI {
      * @param fast {String} Fast fee per byte calculated from unconfirmed transactions
      * @param slow {String} Slow fee per byte calculated from unconfirmed transactions
      * @param standard {String} Standard fee per byte calculated from unconfirmed transactions
+     * @param feeCushionMultiplier {String} Represents the fee cushion multiplier used to multiply the base fee.
      */
-    constructor(unit, fast, slow, standard) { 
+    constructor(unit, fast, slow, standard, feeCushionMultiplier) { 
         
-        GetFeeRecommendationsRI.initialize(this, unit, fast, slow, standard);
+        GetFeeRecommendationsRI.initialize(this, unit, fast, slow, standard, feeCushionMultiplier);
     }
 
     /**
@@ -37,11 +38,12 @@ class GetFeeRecommendationsRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, unit, fast, slow, standard) { 
+    static initialize(obj, unit, fast, slow, standard, feeCushionMultiplier) { 
         obj['unit'] = unit;
         obj['fast'] = fast;
         obj['slow'] = slow;
         obj['standard'] = standard;
+        obj['feeCushionMultiplier'] = feeCushionMultiplier;
     }
 
     /**
@@ -66,6 +68,9 @@ class GetFeeRecommendationsRI {
             }
             if (data.hasOwnProperty('standard')) {
                 obj['standard'] = ApiClient.convertToType(data['standard'], 'String');
+            }
+            if (data.hasOwnProperty('feeCushionMultiplier')) {
+                obj['feeCushionMultiplier'] = ApiClient.convertToType(data['feeCushionMultiplier'], 'String');
             }
         }
         return obj;
@@ -97,6 +102,12 @@ GetFeeRecommendationsRI.prototype['slow'] = undefined;
  * @member {String} standard
  */
 GetFeeRecommendationsRI.prototype['standard'] = undefined;
+
+/**
+ * Represents the fee cushion multiplier used to multiply the base fee.
+ * @member {String} feeCushionMultiplier
+ */
+GetFeeRecommendationsRI.prototype['feeCushionMultiplier'] = undefined;
 
 
 

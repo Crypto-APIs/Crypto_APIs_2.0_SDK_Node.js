@@ -16,16 +16,16 @@ import ApiClient from "../ApiClient";
 import CreateAutomaticCoinsForwardingR from '../model/CreateAutomaticCoinsForwardingR';
 import CreateAutomaticCoinsForwardingRB from '../model/CreateAutomaticCoinsForwardingRB';
 import DeleteAutomaticCoinsForwardingR from '../model/DeleteAutomaticCoinsForwardingR';
-import InlineResponse40075 from '../model/InlineResponse40075';
-import InlineResponse40076 from '../model/InlineResponse40076';
-import InlineResponse40077 from '../model/InlineResponse40077';
-import InlineResponse40175 from '../model/InlineResponse40175';
-import InlineResponse40176 from '../model/InlineResponse40176';
-import InlineResponse40177 from '../model/InlineResponse40177';
+import InlineResponse40089 from '../model/InlineResponse40089';
+import InlineResponse40090 from '../model/InlineResponse40090';
+import InlineResponse40091 from '../model/InlineResponse40091';
+import InlineResponse40189 from '../model/InlineResponse40189';
+import InlineResponse40190 from '../model/InlineResponse40190';
+import InlineResponse40191 from '../model/InlineResponse40191';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40375 from '../model/InlineResponse40375';
-import InlineResponse40376 from '../model/InlineResponse40376';
-import InlineResponse40377 from '../model/InlineResponse40377';
+import InlineResponse40389 from '../model/InlineResponse40389';
+import InlineResponse40390 from '../model/InlineResponse40390';
+import InlineResponse40391 from '../model/InlineResponse40391';
 import InlineResponse4041 from '../model/InlineResponse4041';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse40916 from '../model/InlineResponse40916';
@@ -38,7 +38,7 @@ import ListCoinsForwardingAutomationsR from '../model/ListCoinsForwardingAutomat
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class AutomaticCoinsForwardingApi {
 

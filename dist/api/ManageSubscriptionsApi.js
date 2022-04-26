@@ -13,37 +13,45 @@ var _ActivateBlockchainEventSubscriptionRB = _interopRequireDefault(require("../
 
 var _DeleteBlockchainEventSubscriptionR = _interopRequireDefault(require("../model/DeleteBlockchainEventSubscriptionR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40066"));
+var _GetBlockchainEventSubscriptionDetailsByReferenceIDR = _interopRequireDefault(require("../model/GetBlockchainEventSubscriptionDetailsByReferenceIDR"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40067"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40079"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40068"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40080"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40166"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40081"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40167"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40082"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40168"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40179"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40180"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40366"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40181"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40367"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40182"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40368"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4041"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40379"));
 
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse409"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40380"));
 
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse415"));
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40381"));
 
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse422"));
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40382"));
 
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse429"));
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse4041"));
 
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListBlockchainEventsSubscriptionsR = _interopRequireDefault(require("../model/ListBlockchainEventsSubscriptionsR"));
 
@@ -58,7 +66,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * ManageSubscriptions service.
 * @module api/ManageSubscriptionsApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var ManageSubscriptionsApi = /*#__PURE__*/function () {
   /**
@@ -187,6 +195,55 @@ var ManageSubscriptionsApi = /*#__PURE__*/function () {
     key: "deleteBlockchainEventSubscription",
     value: function deleteBlockchainEventSubscription(blockchain, network, referenceId, opts) {
       return this.deleteBlockchainEventSubscriptionWithHttpInfo(blockchain, network, referenceId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Get Blockchain Event Subscription Details By Reference ID
+     * Through this endpoint the customer can get detailed information for a callback subscription by providing its reference ID.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.
+     * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDR} and HTTP response
+     */
+
+  }, {
+    key: "getBlockchainEventSubscriptionDetailsByReferenceIDWithHttpInfo",
+    value: function getBlockchainEventSubscriptionDetailsByReferenceIDWithHttpInfo(referenceId, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'referenceId' is set
+
+      if (referenceId === undefined || referenceId === null) {
+        throw new Error("Missing the required parameter 'referenceId' when calling getBlockchainEventSubscriptionDetailsByReferenceID");
+      }
+
+      var pathParams = {
+        'referenceId': referenceId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _GetBlockchainEventSubscriptionDetailsByReferenceIDR["default"];
+      return this.apiClient.callApi('/blockchain-events/subscriptions/{referenceId}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Get Blockchain Event Subscription Details By Reference ID
+     * Through this endpoint the customer can get detailed information for a callback subscription by providing its reference ID.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.
+     * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDR}
+     */
+
+  }, {
+    key: "getBlockchainEventSubscriptionDetailsByReferenceID",
+    value: function getBlockchainEventSubscriptionDetailsByReferenceID(referenceId, opts) {
+      return this.getBlockchainEventSubscriptionDetailsByReferenceIDWithHttpInfo(referenceId, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

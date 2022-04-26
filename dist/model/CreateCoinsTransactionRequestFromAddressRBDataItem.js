@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddressRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 var CreateCoinsTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function () {
   /**
@@ -26,7 +26,7 @@ var CreateCoinsTransactionRequestFromAddressRBDataItem = /*#__PURE__*/function (
    * @alias module:model/CreateCoinsTransactionRequestFromAddressRBDataItem
    * @param amount {String} Represents the specific amount of the transaction.
    * @param feePriority {module:model/CreateCoinsTransactionRequestFromAddressRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-   * @param recipientAddress {String} Defines the specific recipient address for the transaction.
+   * @param recipientAddress {String} Defines the specific recipient address for the transaction. For XRP we also support the X-address format.
    */
   function CreateCoinsTransactionRequestFromAddressRBDataItem(amount, feePriority, recipientAddress) {
     _classCallCheck(this, CreateCoinsTransactionRequestFromAddressRBDataItem);
@@ -106,7 +106,7 @@ CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['amount'] = undefin
 
 CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['callbackSecretKey'] = undefined;
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 
@@ -124,7 +124,7 @@ CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['feePriority'] = un
 
 CreateCoinsTransactionRequestFromAddressRBDataItem.prototype['note'] = undefined;
 /**
- * Defines the specific recipient address for the transaction.
+ * Defines the specific recipient address for the transaction. For XRP we also support the X-address format.
  * @member {String} recipientAddress
  */
 

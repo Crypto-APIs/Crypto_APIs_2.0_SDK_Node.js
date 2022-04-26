@@ -17,7 +17,7 @@ import GenerateDepositAddressRBDataItem from './GenerateDepositAddressRBDataItem
 /**
  * The GenerateDepositAddressRBData model module.
  * @module model/GenerateDepositAddressRBData
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GenerateDepositAddressRBData {
     /**

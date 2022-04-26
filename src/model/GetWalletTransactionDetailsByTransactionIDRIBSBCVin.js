@@ -17,7 +17,7 @@ import GetWalletTransactionDetailsByTransactionIDRIBSBCScriptSig from './GetWall
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBCVin model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBCVin
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSBCVin {
     /**

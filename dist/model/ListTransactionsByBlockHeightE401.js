@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightE401 model module.
  * @module model/ListTransactionsByBlockHeightE401
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListTransactionsByBlockHeightE401 = /*#__PURE__*/function () {
   /**

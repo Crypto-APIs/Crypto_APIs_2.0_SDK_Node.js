@@ -32,7 +32,7 @@ import ListConfirmedTransactionsByAddressRIBSZVJoinSplit from './ListConfirmedTr
 /**
  * The ListAllUnconfirmedTransactionsRIBS model module.
  * @module model/ListAllUnconfirmedTransactionsRIBS
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListAllUnconfirmedTransactionsRIBS {
     /**

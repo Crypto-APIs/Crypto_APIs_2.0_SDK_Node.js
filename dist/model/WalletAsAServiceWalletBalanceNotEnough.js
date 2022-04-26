@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The WalletAsAServiceWalletBalanceNotEnough model module.
  * @module model/WalletAsAServiceWalletBalanceNotEnough
- * @version 1.4.0
+ * @version 1.5.0
  */
 var WalletAsAServiceWalletBalanceNotEnough = /*#__PURE__*/function () {
   /**

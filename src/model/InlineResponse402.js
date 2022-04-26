@@ -17,7 +17,7 @@ import InsufficientCredits from './InsufficientCredits';
 /**
  * The InlineResponse402 model module.
  * @module model/InlineResponse402
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse402 {
     /**

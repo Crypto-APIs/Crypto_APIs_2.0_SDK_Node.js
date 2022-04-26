@@ -16,21 +16,22 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationRI model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class NewConfirmedTokensTransactionsAndEachConfirmationRI {
     /**
      * Constructs a new <code>NewConfirmedTokensTransactionsAndEachConfirmationRI</code>.
      * @alias module:model/NewConfirmedTokensTransactionsAndEachConfirmationRI
      * @param address {String} Represents the address of the transaction, per which the result is returned.
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      * @param createdTimestamp {Number} Defines the specific time/date when the subscription was created in Unix Timestamp.
      * @param eventType {String} Defines the type of the specific event available for the customer to subscribe to for callback notification.
+     * @param isActive {Boolean} Defines whether the subscription is active or not. Set as boolean.
      * @param referenceId {String} Represents a unique ID used to reference the specific callback subscription.
      */
-    constructor(address, callbackUrl, createdTimestamp, eventType, referenceId) { 
+    constructor(address, callbackUrl, createdTimestamp, eventType, isActive, referenceId) { 
         
-        NewConfirmedTokensTransactionsAndEachConfirmationRI.initialize(this, address, callbackUrl, createdTimestamp, eventType, referenceId);
+        NewConfirmedTokensTransactionsAndEachConfirmationRI.initialize(this, address, callbackUrl, createdTimestamp, eventType, isActive, referenceId);
     }
 
     /**
@@ -38,11 +39,12 @@ class NewConfirmedTokensTransactionsAndEachConfirmationRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, address, callbackUrl, createdTimestamp, eventType, referenceId) { 
+    static initialize(obj, address, callbackUrl, createdTimestamp, eventType, isActive, referenceId) { 
         obj['address'] = address;
         obj['callbackUrl'] = callbackUrl;
         obj['createdTimestamp'] = createdTimestamp;
         obj['eventType'] = eventType;
+        obj['isActive'] = isActive;
         obj['referenceId'] = referenceId;
     }
 
@@ -60,6 +62,9 @@ class NewConfirmedTokensTransactionsAndEachConfirmationRI {
             if (data.hasOwnProperty('address')) {
                 obj['address'] = ApiClient.convertToType(data['address'], 'String');
             }
+            if (data.hasOwnProperty('callbackSecretKey')) {
+                obj['callbackSecretKey'] = ApiClient.convertToType(data['callbackSecretKey'], 'String');
+            }
             if (data.hasOwnProperty('callbackUrl')) {
                 obj['callbackUrl'] = ApiClient.convertToType(data['callbackUrl'], 'String');
             }
@@ -71,6 +76,9 @@ class NewConfirmedTokensTransactionsAndEachConfirmationRI {
             }
             if (data.hasOwnProperty('eventType')) {
                 obj['eventType'] = ApiClient.convertToType(data['eventType'], 'String');
+            }
+            if (data.hasOwnProperty('isActive')) {
+                obj['isActive'] = ApiClient.convertToType(data['isActive'], 'Boolean');
             }
             if (data.hasOwnProperty('referenceId')) {
                 obj['referenceId'] = ApiClient.convertToType(data['referenceId'], 'String');
@@ -89,7 +97,13 @@ class NewConfirmedTokensTransactionsAndEachConfirmationRI {
 NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['address'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
+ * @member {String} callbackSecretKey
+ */
+NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['callbackSecretKey'] = undefined;
+
+/**
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['callbackUrl'] = undefined;
@@ -111,6 +125,12 @@ NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['createdTimestamp'
  * @member {String} eventType
  */
 NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['eventType'] = undefined;
+
+/**
+ * Defines whether the subscription is active or not. Set as boolean.
+ * @member {Boolean} isActive
+ */
+NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['isActive'] = undefined;
 
 /**
  * Represents a unique ID used to reference the specific callback subscription.

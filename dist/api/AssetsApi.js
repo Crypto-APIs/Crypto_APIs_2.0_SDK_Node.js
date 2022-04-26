@@ -11,25 +11,25 @@ var _GetAssetDetailsByAssetIDR = _interopRequireDefault(require("../model/GetAss
 
 var _GetAssetDetailsByAssetSymbolR = _interopRequireDefault(require("../model/GetAssetDetailsByAssetSymbolR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40089"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400108"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40090"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse400109"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40091"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse400110"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40189"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse401108"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40190"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse401109"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40191"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse401110"));
 
 var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40389"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse403108"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40390"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse403109"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40391"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse403110"));
 
 var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse409"));
 
@@ -54,7 +54,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var AssetsApi = /*#__PURE__*/function () {
   /**

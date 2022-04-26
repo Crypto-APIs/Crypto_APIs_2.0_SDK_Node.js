@@ -20,7 +20,7 @@ import GetWalletTransactionDetailsByTransactionIDRISenders from './GetWalletTran
 /**
  * The GetWalletTransactionDetailsByTransactionIDRI model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetWalletTransactionDetailsByTransactionIDRI {
     /**

@@ -7,67 +7,67 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40058"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40071"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40059"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40072"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40060"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40073"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40061"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40074"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40062"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40075"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40063"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40076"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40064"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40077"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40065"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40078"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40073"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40087"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40074"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40088"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40158"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40171"));
 
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40159"));
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40172"));
 
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40160"));
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40173"));
 
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40161"));
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40174"));
 
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40162"));
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40175"));
 
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40163"));
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40176"));
 
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40164"));
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40177"));
 
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40165"));
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40178"));
 
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40173"));
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40187"));
 
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40174"));
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40188"));
 
 var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40358"));
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40371"));
 
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40359"));
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40372"));
 
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40360"));
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40373"));
 
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse40361"));
+var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse40374"));
 
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse40362"));
+var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse40375"));
 
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40363"));
+var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40376"));
 
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse40364"));
+var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse40377"));
 
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse40365"));
+var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse40378"));
 
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse40373"));
+var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse40387"));
 
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse40374"));
+var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse40388"));
 
 var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse40910"));
 
@@ -148,7 +148,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var CreateSubscriptionsForApi = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBScriptSig from './GetTransaction
 /**
  * The ListAllUnconfirmedTransactionsRIBSBCVin model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSBCVin
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListAllUnconfirmedTransactionsRIBSBCVin {
     /**

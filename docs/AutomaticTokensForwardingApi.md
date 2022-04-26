@@ -35,7 +35,7 @@ let apiInstance = new Cryptoapis.AutomaticTokensForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'addTokensToExistingFromAddressRB': new Cryptoapis.AddTokensToExistingFromAddressRB() // AddTokensToExistingFromAddressRB | 
 };
 apiInstance.addTokensToExistingFromAddress(blockchain, network, opts).then((data) => {
@@ -93,7 +93,7 @@ let apiInstance = new Cryptoapis.AutomaticTokensForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createAutomaticTokensForwardingRB': new Cryptoapis.CreateAutomaticTokensForwardingRB() // CreateAutomaticTokensForwardingRB | 
 };
 apiInstance.createAutomaticTokensForwarding(blockchain, network, opts).then((data) => {
@@ -152,7 +152,7 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let referenceId = 6017dd02a309213863be9e55; // String | Represents a unique ID used to reference the specific callback subscription.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.deleteAutomaticTokensForwarding(blockchain, network, referenceId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -209,7 +209,7 @@ let apiInstance = new Cryptoapis.AutomaticTokensForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getFeeAddressDetails(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -265,9 +265,9 @@ let apiInstance = new Cryptoapis.AutomaticTokensForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listTokensForwardingAutomations(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The RequestLimitReached model module.
  * @module model/RequestLimitReached
- * @version 1.4.0
+ * @version 1.5.0
  */
 var RequestLimitReached = /*#__PURE__*/function () {
   /**

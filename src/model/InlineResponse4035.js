@@ -17,7 +17,7 @@ import ListOmniTransactionsByAddressE403 from './ListOmniTransactionsByAddressE4
 /**
  * The InlineResponse4035 model module.
  * @module model/InlineResponse4035
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4035 {
     /**

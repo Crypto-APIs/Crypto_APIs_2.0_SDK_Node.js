@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetOmniTransactionDetailsByTransactionIDTxidE403 model module.
  * @module model/GetOmniTransactionDetailsByTransactionIDTxidE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetOmniTransactionDetailsByTransactionIDTxidE403 {
     /**

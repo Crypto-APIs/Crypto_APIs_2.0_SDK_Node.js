@@ -17,7 +17,7 @@ import SyncHDWalletXPubYPubZPubE409 from './SyncHDWalletXPubYPubZPubE409';
 /**
  * The InlineResponse4095 model module.
  * @module model/InlineResponse4095
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4095 {
     /**

@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromWalletRBDataItemRecipients from './Creat
 /**
  * The CreateCoinsTransactionRequestFromWalletRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 class CreateCoinsTransactionRequestFromWalletRBDataItem {
     /**
@@ -84,7 +84,7 @@ class CreateCoinsTransactionRequestFromWalletRBDataItem {
 CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['callbackUrl'] = undefined;

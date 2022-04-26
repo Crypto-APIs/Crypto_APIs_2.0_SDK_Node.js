@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromWalletE401 from './CreateCoinsTransactio
 /**
  * The InlineResponse40113 model module.
  * @module model/InlineResponse40113
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40113 {
     /**

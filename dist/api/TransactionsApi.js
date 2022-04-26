@@ -25,29 +25,29 @@ var _CreateFungibleTokensTransactionRequestFromAddressRB = _interopRequireDefaul
 
 var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40013"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40020"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40021"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40025"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40026"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40036"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40037"));
 
 var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40113"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40120"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40121"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40125"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40126"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40136"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40137"));
 
 var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse402"));
 
 var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40313"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40320"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40321"));
 
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40325"));
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40326"));
 
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40336"));
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40337"));
 
 var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse4091"));
 
@@ -76,7 +76,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var TransactionsApi = /*#__PURE__*/function () {
   /**
@@ -170,7 +170,7 @@ var TransactionsApi = /*#__PURE__*/function () {
     /**
      * Create Coins Transaction Request from Address
      * Through this endpoint users can create a new single transaction request from one address to another.
-     * @param {String} address Defines the specific source address for the transaction.
+     * @param {String} address Defines the specific source address for the transaction. For XRP we also support the X-address format.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
@@ -225,7 +225,7 @@ var TransactionsApi = /*#__PURE__*/function () {
     /**
      * Create Coins Transaction Request from Address
      * Through this endpoint users can create a new single transaction request from one address to another.
-     * @param {String} address Defines the specific source address for the transaction.
+     * @param {String} address Defines the specific source address for the transaction. For XRP we also support the X-address format.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.

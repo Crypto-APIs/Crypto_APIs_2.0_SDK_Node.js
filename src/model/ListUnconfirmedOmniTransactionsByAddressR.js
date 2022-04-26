@@ -17,7 +17,7 @@ import ListUnconfirmedOmniTransactionsByAddressRData from './ListUnconfirmedOmni
 /**
  * The ListUnconfirmedOmniTransactionsByAddressR model module.
  * @module model/ListUnconfirmedOmniTransactionsByAddressR
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListUnconfirmedOmniTransactionsByAddressR {
     /**

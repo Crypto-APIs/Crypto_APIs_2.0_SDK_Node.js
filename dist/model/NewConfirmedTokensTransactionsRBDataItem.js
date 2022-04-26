@@ -18,14 +18,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsRBDataItem model module.
  * @module model/NewConfirmedTokensTransactionsRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 var NewConfirmedTokensTransactionsRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokensTransactionsRBDataItem</code>.
    * @alias module:model/NewConfirmedTokensTransactionsRBDataItem
    * @param address {String} Represents the address of the transaction, per which the result is returned.
-   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
    */
   function NewConfirmedTokensTransactionsRBDataItem(address, callbackUrl) {
     _classCallCheck(this, NewConfirmedTokensTransactionsRBDataItem);
@@ -74,6 +74,10 @@ var NewConfirmedTokensTransactionsRBDataItem = /*#__PURE__*/function () {
         if (data.hasOwnProperty('callbackUrl')) {
           obj['callbackUrl'] = _ApiClient["default"].convertToType(data['callbackUrl'], 'String');
         }
+
+        if (data.hasOwnProperty('receiveCallbackOn')) {
+          obj['receiveCallbackOn'] = _ApiClient["default"].convertToType(data['receiveCallbackOn'], 'Number');
+        }
       }
 
       return obj;
@@ -103,10 +107,16 @@ NewConfirmedTokensTransactionsRBDataItem.prototype['allowDuplicates'] = false;
 
 NewConfirmedTokensTransactionsRBDataItem.prototype['callbackSecretKey'] = undefined;
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 
 NewConfirmedTokensTransactionsRBDataItem.prototype['callbackUrl'] = undefined;
+/**
+ * Represents the exact confirmation, on which the user wants to receive callback.
+ * @member {Number} receiveCallbackOn
+ */
+
+NewConfirmedTokensTransactionsRBDataItem.prototype['receiveCallbackOn'] = undefined;
 var _default = NewConfirmedTokensTransactionsRBDataItem;
 exports["default"] = _default;

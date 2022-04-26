@@ -9,47 +9,55 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _GetTokenDetailsByContractAddressR = _interopRequireDefault(require("../model/GetTokenDetailsByContractAddressR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40054"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40060"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40055"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40064"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40056"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40066"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40057"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40067"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40154"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40069"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40155"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40160"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40156"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40164"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40157"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40166"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse402"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40167"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40354"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40169"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40355"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40356"));
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40360"));
 
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40357"));
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40364"));
 
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse409"));
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40366"));
 
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse415"));
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40367"));
 
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse422"));
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40369"));
 
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse429"));
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse409"));
 
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 var _ListConfirmedTokensTransfersByAddressR = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddressR"));
 
 var _ListTokensByAddressR = _interopRequireDefault(require("../model/ListTokensByAddressR"));
 
 var _ListTokensTransfersByTransactionHashR = _interopRequireDefault(require("../model/ListTokensTransfersByTransactionHashR"));
+
+var _ListUnconfirmedTokensTransfersByAddressR = _interopRequireDefault(require("../model/ListUnconfirmedTokensTransfersByAddressR"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -62,7 +70,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var TokensApi = /*#__PURE__*/function () {
   /**
@@ -353,6 +361,77 @@ var TokensApi = /*#__PURE__*/function () {
     key: "listTokensTransfersByTransactionHash",
     value: function listTokensTransfersByTransactionHash(blockchain, network, transactionHash, opts) {
       return this.listTokensTransfersByTransactionHashWithHttpInfo(blockchain, network, transactionHash, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List Unconfirmed Tokens Transfers By Address
+     * Through this endpoint customers can obtain a list with **unconfirmed** token transfers by the `address` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **unconfirmed tokens** not coins.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnconfirmedTokensTransfersByAddressR} and HTTP response
+     */
+
+  }, {
+    key: "listUnconfirmedTokensTransfersByAddressWithHttpInfo",
+    value: function listUnconfirmedTokensTransfersByAddressWithHttpInfo(blockchain, network, address, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listUnconfirmedTokensTransfersByAddress");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listUnconfirmedTokensTransfersByAddress");
+      } // verify the required parameter 'address' is set
+
+
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listUnconfirmedTokensTransfersByAddress");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      var queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListUnconfirmedTokensTransfersByAddressR["default"];
+      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/addresses/{address}/tokens-transfers-unconfirmed', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List Unconfirmed Tokens Transfers By Address
+     * Through this endpoint customers can obtain a list with **unconfirmed** token transfers by the `address` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **unconfirmed tokens** not coins.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnconfirmedTokensTransfersByAddressR}
+     */
+
+  }, {
+    key: "listUnconfirmedTokensTransfersByAddress",
+    value: function listUnconfirmedTokensTransfersByAddress(blockchain, network, address, opts) {
+      return this.listUnconfirmedTokensTransfersByAddressWithHttpInfo(blockchain, network, address, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

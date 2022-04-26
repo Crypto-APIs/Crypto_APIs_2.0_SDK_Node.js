@@ -18,13 +18,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListCoinsForwardingAutomationsRI model module.
  * @module model/ListCoinsForwardingAutomationsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListCoinsForwardingAutomationsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListCoinsForwardingAutomationsRI</code>.
    * @alias module:model/ListCoinsForwardingAutomationsRI
-   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
    * @param confirmationsCountTrigger {Number} Represents the total count of the transaction confirmations before triggering the event.
    * @param createdTimestamp {Number} Defines the specific time/date when the automatic forwarding was created in Unix Timestamp.
    * @param feePriority {module:model/ListCoinsForwardingAutomationsRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".
@@ -111,7 +111,7 @@ var ListCoinsForwardingAutomationsRI = /*#__PURE__*/function () {
   return ListCoinsForwardingAutomationsRI;
 }();
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 

@@ -17,7 +17,7 @@ import BlockchainDataBlockNotFound from './BlockchainDataBlockNotFound';
 /**
  * The InlineResponse4042 model module.
  * @module model/InlineResponse4042
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4042 {
     /**

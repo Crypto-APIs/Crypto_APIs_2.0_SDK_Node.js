@@ -17,7 +17,7 @@ import GetXRPRippleAddressDetailsE403 from './GetXRPRippleAddressDetailsE403';
 /**
  * The InlineResponse4032 model module.
  * @module model/InlineResponse4032
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4032 {
     /**

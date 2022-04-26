@@ -39,7 +39,7 @@ let network = testnet; // String | Represents the name of the blockchain network
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let transactionId = d237ff4a681617b767bf22c4e1e8f5115b95c8c168d6cf53bbdec68529f91ecb; // String | Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getOmniTransactionDetailsByTransactionIDTxid(network, blockchain, transactionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -97,7 +97,7 @@ let network = testnet; // String | Represents the name of the blockchain network
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let transactionId = 92f17d3d16a1baf7de570a86179cc263cb9866c66778feec2dce111430f41c08; // String | Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getUnconfirmedOmniTransactionByTransactionIDTxid(network, blockchain, transactionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -155,7 +155,7 @@ let network = testnet; // String | Represents the name of the blockchain network
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let address = mi7iSsKcvyFYNsiYdDZqJmH75RmoHomwmo; // String | Represents the public address, which is a compressed and shortened form of a public key.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.listOmniTokensByAddress(network, blockchain, address, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -213,9 +213,9 @@ let network = testnet; // String | Represents the name of the blockchain network
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let address = mi7iSsKcvyFYNsiYdDZqJmH75RmoHomwmo; // String | Represents the public address, which is a compressed and shortened form of a public key.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listOmniTransactionsByAddress(network, blockchain, address, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -275,9 +275,9 @@ let network = testnet; // String | Represents the name of the blockchain network
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let blockHash = 000000000000001f50c9d33d122562daa7fc9582df0b415e626216c37d015818; // String | Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listOmniTransactionsByBlockHash(network, blockchain, blockHash, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -337,9 +337,9 @@ let network = testnet; // String | Represents the name of the blockchain network
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let blockHeight = 1941222; // String | Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listOmniTransactionsByBlockHeight(network, blockchain, blockHeight, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -399,9 +399,9 @@ let network = testnet; // String | Represents the name of the blockchain network
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let address = mi7iSsKcvyFYNsiYdDZqJmH75RmoHomwmo; // String | Represents the public address, which is a compressed and shortened form of a public key.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listUnconfirmedOmniTransactionsByAddress(network, blockchain, address, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -461,9 +461,9 @@ let network = testnet; // String | Represents the name of the blockchain network
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let propertyId = 2; // String | Represents the identifier of the tokens to send.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listUnconfirmedOmniTransactionsByPropertyID(network, blockchain, propertyId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

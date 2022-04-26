@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddTokensToExistingFromAddressRITSET model module.
  * @module model/AddTokensToExistingFromAddressRITSET
- * @version 1.4.0
+ * @version 1.5.0
  */
 class AddTokensToExistingFromAddressRITSET {
     /**

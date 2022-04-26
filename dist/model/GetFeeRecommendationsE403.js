@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendationsE403 model module.
  * @module model/GetFeeRecommendationsE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetFeeRecommendationsE403 = /*#__PURE__*/function () {
   /**

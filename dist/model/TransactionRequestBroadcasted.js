@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestBroadcasted model module.
  * @module model/TransactionRequestBroadcasted
- * @version 1.4.0
+ * @version 1.5.0
  */
 var TransactionRequestBroadcasted = /*#__PURE__*/function () {
   /**

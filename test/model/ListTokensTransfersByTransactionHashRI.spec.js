@@ -120,6 +120,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property transactionFee (base name: "transactionFee")', function() {
+      // uncomment below and update the code to test the property transactionFee
+      //var instance = new Cryptoapis.ListTokensTransfersByTransactionHashRI();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

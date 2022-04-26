@@ -17,7 +17,7 @@ import NewConfirmedCoinsTransactionsE409 from './NewConfirmedCoinsTransactionsE4
 /**
  * The InlineResponse4098 model module.
  * @module model/InlineResponse4098
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4098 {
     /**

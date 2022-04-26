@@ -35,7 +35,7 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let address = mzYijhgmzZrmuB7wBDazRKirnChKyow4M3; // String | Represents the public address, which is a compressed and shortened form of a public key.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getAddressDetailsFromCallback(blockchain, network, address, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -93,7 +93,7 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHash = 000000000000000bdea8ba7df4bfd9f398e428fde8ee47152bcf93834ee48e8a; // String | Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getBlockDetailsByBlockHashFromCallback(blockchain, network, blockHash, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -151,7 +151,7 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHeight = "blockHeight_example"; // String | Numeric representation of the block height
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getBlockDetailsByBlockHeightFromCallback(blockchain, network, blockHeight, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -209,7 +209,7 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let transactionId = 8888f6c8168ff69aaf6438ab185c690e8c76c63e5f9c472c1c86f08406ea74f2; // String | String identifier of the transaction
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getTransactionDetailsByTransactionIDFromCallback(blockchain, network, transactionId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

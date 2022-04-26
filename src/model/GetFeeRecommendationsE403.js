@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetFeeRecommendationsE403 model module.
  * @module model/GetFeeRecommendationsE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetFeeRecommendationsE403 {
     /**

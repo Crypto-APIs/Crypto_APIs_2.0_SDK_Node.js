@@ -25,7 +25,7 @@ import GetBlockDetailsByBlockHashRIBSZ from './GetBlockDetailsByBlockHashRIBSZ';
 /**
  * The GetBlockDetailsByBlockHashRIBS model module.
  * @module model/GetBlockDetailsByBlockHashRIBS
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetBlockDetailsByBlockHashRIBS {
     /**

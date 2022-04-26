@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput = /*#__PURE__*/function () {
   /**

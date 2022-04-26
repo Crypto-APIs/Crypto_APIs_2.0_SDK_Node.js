@@ -17,7 +17,7 @@ import ListUnconfirmedOmniTransactionsByAddressE400 from './ListUnconfirmedOmniT
 /**
  * The InlineResponse40012 model module.
  * @module model/InlineResponse40012
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40012 {
     /**

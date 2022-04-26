@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressRIValue model module.
  * @module model/ListXRPRippleTransactionsByAddressRIValue
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListXRPRippleTransactionsByAddressRIValue = /*#__PURE__*/function () {
   /**

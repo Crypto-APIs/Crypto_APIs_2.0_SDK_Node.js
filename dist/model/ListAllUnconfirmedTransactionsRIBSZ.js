@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactionsRIBSZ model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSZ
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListAllUnconfirmedTransactionsRIBSZ = /*#__PURE__*/function () {
   /**

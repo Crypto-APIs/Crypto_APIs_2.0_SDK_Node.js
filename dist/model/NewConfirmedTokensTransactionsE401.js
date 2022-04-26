@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsE401 model module.
  * @module model/NewConfirmedTokensTransactionsE401
- * @version 1.4.0
+ * @version 1.5.0
  */
 var NewConfirmedTokensTransactionsE401 = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The WalletAsAServiceTokenNotSupported model module.
  * @module model/WalletAsAServiceTokenNotSupported
- * @version 1.4.0
+ * @version 1.5.0
  */
 var WalletAsAServiceTokenNotSupported = /*#__PURE__*/function () {
   /**

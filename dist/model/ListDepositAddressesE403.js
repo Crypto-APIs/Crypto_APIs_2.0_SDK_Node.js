@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesE403 model module.
  * @module model/ListDepositAddressesE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListDepositAddressesE403 = /*#__PURE__*/function () {
   /**

@@ -19,7 +19,7 @@ import ListUnconfirmedTransactionsByAddressRISenders from './ListUnconfirmedTran
 /**
  * The ListAllUnconfirmedTransactionsRI model module.
  * @module model/ListAllUnconfirmedTransactionsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListAllUnconfirmedTransactionsRI {
     /**

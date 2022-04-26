@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsAndEachConfirmationE409 from './NewConfir
 /**
  * The InlineResponse40915 model module.
  * @module model/InlineResponse40915
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40915 {
     /**

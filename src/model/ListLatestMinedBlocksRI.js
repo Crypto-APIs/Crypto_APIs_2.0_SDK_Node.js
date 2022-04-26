@@ -19,7 +19,7 @@ import ListLatestMinedBlocksRITotalFees from './ListLatestMinedBlocksRITotalFees
 /**
  * The ListLatestMinedBlocksRI model module.
  * @module model/ListLatestMinedBlocksRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListLatestMinedBlocksRI {
     /**

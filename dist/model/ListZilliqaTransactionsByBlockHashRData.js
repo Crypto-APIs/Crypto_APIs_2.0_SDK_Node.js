@@ -20,21 +20,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHashRData model module.
  * @module model/ListZilliqaTransactionsByBlockHashRData
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListZilliqaTransactionsByBlockHashRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByBlockHashRData</code>.
    * @alias module:model/ListZilliqaTransactionsByBlockHashRData
-   * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
    * @param limit {Number} Defines how many items should be returned in the response per page basis.
+   * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
    * @param total {Number} Defines the total number of items returned in the response.
    * @param items {Array.<module:model/ListZilliqaTransactionsByBlockHashRI>} 
    */
-  function ListZilliqaTransactionsByBlockHashRData(offset, limit, total, items) {
+  function ListZilliqaTransactionsByBlockHashRData(limit, offset, total, items) {
     _classCallCheck(this, ListZilliqaTransactionsByBlockHashRData);
 
-    ListZilliqaTransactionsByBlockHashRData.initialize(this, offset, limit, total, items);
+    ListZilliqaTransactionsByBlockHashRData.initialize(this, limit, offset, total, items);
   }
   /**
    * Initializes the fields of this object.
@@ -45,9 +45,9 @@ var ListZilliqaTransactionsByBlockHashRData = /*#__PURE__*/function () {
 
   _createClass(ListZilliqaTransactionsByBlockHashRData, null, [{
     key: "initialize",
-    value: function initialize(obj, offset, limit, total, items) {
-      obj['offset'] = offset;
+    value: function initialize(obj, limit, offset, total, items) {
       obj['limit'] = limit;
+      obj['offset'] = offset;
       obj['total'] = total;
       obj['items'] = items;
     }
@@ -65,12 +65,12 @@ var ListZilliqaTransactionsByBlockHashRData = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new ListZilliqaTransactionsByBlockHashRData();
 
-        if (data.hasOwnProperty('offset')) {
-          obj['offset'] = _ApiClient["default"].convertToType(data['offset'], 'Number');
-        }
-
         if (data.hasOwnProperty('limit')) {
           obj['limit'] = _ApiClient["default"].convertToType(data['limit'], 'Number');
+        }
+
+        if (data.hasOwnProperty('offset')) {
+          obj['offset'] = _ApiClient["default"].convertToType(data['offset'], 'Number');
         }
 
         if (data.hasOwnProperty('total')) {
@@ -89,18 +89,18 @@ var ListZilliqaTransactionsByBlockHashRData = /*#__PURE__*/function () {
   return ListZilliqaTransactionsByBlockHashRData;
 }();
 /**
- * The starting index of the response items, i.e. where the response should start listing the returned items.
- * @member {Number} offset
- */
-
-
-ListZilliqaTransactionsByBlockHashRData.prototype['offset'] = undefined;
-/**
  * Defines how many items should be returned in the response per page basis.
  * @member {Number} limit
  */
 
+
 ListZilliqaTransactionsByBlockHashRData.prototype['limit'] = undefined;
+/**
+ * The starting index of the response items, i.e. where the response should start listing the returned items.
+ * @member {Number} offset
+ */
+
+ListZilliqaTransactionsByBlockHashRData.prototype['offset'] = undefined;
 /**
  * Defines the total number of items returned in the response.
  * @member {Number} total

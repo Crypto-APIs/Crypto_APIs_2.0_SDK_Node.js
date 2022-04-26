@@ -20,21 +20,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesRData model module.
  * @module model/ListDepositAddressesRData
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListDepositAddressesRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesRData</code>.
    * @alias module:model/ListDepositAddressesRData
-   * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
    * @param limit {Number} Defines how many items should be returned in the response per page basis.
+   * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
    * @param total {Number} Defines the total number of items returned in the response.
    * @param items {Array.<module:model/ListDepositAddressesRI>} 
    */
-  function ListDepositAddressesRData(offset, limit, total, items) {
+  function ListDepositAddressesRData(limit, offset, total, items) {
     _classCallCheck(this, ListDepositAddressesRData);
 
-    ListDepositAddressesRData.initialize(this, offset, limit, total, items);
+    ListDepositAddressesRData.initialize(this, limit, offset, total, items);
   }
   /**
    * Initializes the fields of this object.
@@ -45,9 +45,9 @@ var ListDepositAddressesRData = /*#__PURE__*/function () {
 
   _createClass(ListDepositAddressesRData, null, [{
     key: "initialize",
-    value: function initialize(obj, offset, limit, total, items) {
-      obj['offset'] = offset;
+    value: function initialize(obj, limit, offset, total, items) {
       obj['limit'] = limit;
+      obj['offset'] = offset;
       obj['total'] = total;
       obj['items'] = items;
     }
@@ -65,12 +65,12 @@ var ListDepositAddressesRData = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new ListDepositAddressesRData();
 
-        if (data.hasOwnProperty('offset')) {
-          obj['offset'] = _ApiClient["default"].convertToType(data['offset'], 'Number');
-        }
-
         if (data.hasOwnProperty('limit')) {
           obj['limit'] = _ApiClient["default"].convertToType(data['limit'], 'Number');
+        }
+
+        if (data.hasOwnProperty('offset')) {
+          obj['offset'] = _ApiClient["default"].convertToType(data['offset'], 'Number');
         }
 
         if (data.hasOwnProperty('total')) {
@@ -89,18 +89,18 @@ var ListDepositAddressesRData = /*#__PURE__*/function () {
   return ListDepositAddressesRData;
 }();
 /**
- * The starting index of the response items, i.e. where the response should start listing the returned items.
- * @member {Number} offset
- */
-
-
-ListDepositAddressesRData.prototype['offset'] = undefined;
-/**
  * Defines how many items should be returned in the response per page basis.
  * @member {Number} limit
  */
 
+
 ListDepositAddressesRData.prototype['limit'] = undefined;
+/**
+ * The starting index of the response items, i.e. where the response should start listing the returned items.
+ * @member {Number} offset
+ */
+
+ListDepositAddressesRData.prototype['offset'] = undefined;
 /**
  * Defines the total number of items returned in the response.
  * @member {Number} total

@@ -17,7 +17,7 @@ import UnexpectedServerError from './UnexpectedServerError';
 /**
  * The InlineResponse500 model module.
  * @module model/InlineResponse500
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse500 {
     /**

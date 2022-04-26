@@ -17,7 +17,7 @@ import BannedIpAddressDetails from './BannedIpAddressDetails';
 /**
  * The BlockchainDataAddressEventSubscriptionNotFound model module.
  * @module model/BlockchainDataAddressEventSubscriptionNotFound
- * @version 1.4.0
+ * @version 1.5.0
  */
 class BlockchainDataAddressEventSubscriptionNotFound {
     /**

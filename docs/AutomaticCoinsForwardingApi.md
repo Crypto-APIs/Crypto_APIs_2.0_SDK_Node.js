@@ -33,7 +33,7 @@ let apiInstance = new Cryptoapis.AutomaticCoinsForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createAutomaticCoinsForwardingRB': new Cryptoapis.CreateAutomaticCoinsForwardingRB() // CreateAutomaticCoinsForwardingRB | 
 };
 apiInstance.createAutomaticCoinsForwarding(blockchain, network, opts).then((data) => {
@@ -92,7 +92,7 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let referenceId = 600955ea5e75d660e71d3c7d; // String | Represents a unique ID used to reference the specific callback subscription.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.deleteAutomaticCoinsForwarding(blockchain, network, referenceId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -149,9 +149,9 @@ let apiInstance = new Cryptoapis.AutomaticCoinsForwardingApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listCoinsForwardingAutomations(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

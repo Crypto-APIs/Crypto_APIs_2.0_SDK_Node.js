@@ -17,7 +17,7 @@ import GetAddressDetailsE403 from './GetAddressDetailsE403';
 /**
  * The InlineResponse403 model module.
  * @module model/InlineResponse403
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse403 {
     /**

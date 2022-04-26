@@ -15,24 +15,24 @@
 import ApiClient from "../ApiClient";
 import GetExchangeRateByAssetSymbolsR from '../model/GetExchangeRateByAssetSymbolsR';
 import GetExchangeRateByAssetsIDsR from '../model/GetExchangeRateByAssetsIDsR';
-import InlineResponse40087 from '../model/InlineResponse40087';
-import InlineResponse40088 from '../model/InlineResponse40088';
-import InlineResponse40187 from '../model/InlineResponse40187';
-import InlineResponse40188 from '../model/InlineResponse40188';
+import InlineResponse400106 from '../model/InlineResponse400106';
+import InlineResponse400107 from '../model/InlineResponse400107';
+import InlineResponse401106 from '../model/InlineResponse401106';
+import InlineResponse401107 from '../model/InlineResponse401107';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40387 from '../model/InlineResponse40387';
-import InlineResponse40388 from '../model/InlineResponse40388';
+import InlineResponse403106 from '../model/InlineResponse403106';
+import InlineResponse403107 from '../model/InlineResponse403107';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse4224 from '../model/InlineResponse4224';
-import InlineResponse4225 from '../model/InlineResponse4225';
+import InlineResponse4226 from '../model/InlineResponse4226';
+import InlineResponse4227 from '../model/InlineResponse4227';
 import InlineResponse429 from '../model/InlineResponse429';
 import InlineResponse500 from '../model/InlineResponse500';
 
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class ExchangeRatesApi {
 

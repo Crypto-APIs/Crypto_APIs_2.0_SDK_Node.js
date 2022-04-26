@@ -16,13 +16,13 @@ import ApiClient from '../ApiClient';
 /**
  * The MinedTransactionRBDataItem model module.
  * @module model/MinedTransactionRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 class MinedTransactionRBDataItem {
     /**
      * Constructs a new <code>MinedTransactionRBDataItem</code>.
      * @alias module:model/MinedTransactionRBDataItem
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      * @param transactionId {String} Represents the unique identification string that defines the transaction.
      */
     constructor(callbackUrl, transactionId) { 
@@ -83,7 +83,7 @@ MinedTransactionRBDataItem.prototype['allowDuplicates'] = undefined;
 MinedTransactionRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 MinedTransactionRBDataItem.prototype['callbackUrl'] = undefined;

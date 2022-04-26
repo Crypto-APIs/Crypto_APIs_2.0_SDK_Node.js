@@ -88,6 +88,16 @@
         done();
       });
     });
+    describe('listUnconfirmedTokensTransfersByAddress', function() {
+      it('should call listUnconfirmedTokensTransfersByAddress successfully', function(done) {
+        //uncomment below and update the code to test listUnconfirmedTokensTransfersByAddress
+        //instance.listUnconfirmedTokensTransfersByAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
   });
 
 }));

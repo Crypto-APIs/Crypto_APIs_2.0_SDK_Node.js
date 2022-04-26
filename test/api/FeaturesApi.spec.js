@@ -58,6 +58,66 @@
         done();
       });
     });
+    describe('decodeRawTransactionHex', function() {
+      it('should call decodeRawTransactionHex successfully', function(done) {
+        //uncomment below and update the code to test decodeRawTransactionHex
+        //instance.decodeRawTransactionHex(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('decodeXAddress', function() {
+      it('should call decodeXAddress successfully', function(done) {
+        //uncomment below and update the code to test decodeXAddress
+        //instance.decodeXAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('deriveHDWalletXPubYPubZPubChangeOrReceivingAddresses', function() {
+      it('should call deriveHDWalletXPubYPubZPubChangeOrReceivingAddresses successfully', function(done) {
+        //uncomment below and update the code to test deriveHDWalletXPubYPubZPubChangeOrReceivingAddresses
+        //instance.deriveHDWalletXPubYPubZPubChangeOrReceivingAddresses(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('encodeXAddress', function() {
+      it('should call encodeXAddress successfully', function(done) {
+        //uncomment below and update the code to test encodeXAddress
+        //instance.encodeXAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('estimateGasLimit', function() {
+      it('should call estimateGasLimit successfully', function(done) {
+        //uncomment below and update the code to test estimateGasLimit
+        //instance.estimateGasLimit(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('estimateTokenGasLimit', function() {
+      it('should call estimateTokenGasLimit successfully', function(done) {
+        //uncomment below and update the code to test estimateTokenGasLimit
+        //instance.estimateTokenGasLimit(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getEIP1559FeeRecommendations', function() {
       it('should call getEIP1559FeeRecommendations successfully', function(done) {
         //uncomment below and update the code to test getEIP1559FeeRecommendations

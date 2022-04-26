@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 class NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem {
     /**
@@ -25,7 +25,7 @@ class NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem {
      * @param address {String} Defines the specific address of the internal transaction.
      * @param allowDuplicates {Boolean} Specifies a flag that permits or denies the creation of duplicate addresses.
      * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
      */
     constructor(address, allowDuplicates, callbackSecretKey, callbackUrl, confirmationsCount) { 
@@ -99,7 +99,7 @@ NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem.prototype['allowDu
 NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 NewConfirmedInternalTransactionsAndEachConfirmationRBDataItem.prototype['callbackUrl'] = undefined;

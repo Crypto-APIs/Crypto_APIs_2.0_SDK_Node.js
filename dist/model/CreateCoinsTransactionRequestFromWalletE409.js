@@ -11,6 +11,8 @@ var _BannedIpAddressDetails = _interopRequireDefault(require("./BannedIpAddressD
 
 var _InvalidData = _interopRequireDefault(require("./InvalidData"));
 
+var _WalletAsAServiceAddressBalanceNotEnough = _interopRequireDefault(require("./WalletAsAServiceAddressBalanceNotEnough"));
+
 var _WalletAsAServiceNoDepositAddressesFound = _interopRequireDefault(require("./WalletAsAServiceNoDepositAddressesFound"));
 
 var _WalletAsAServiceWalletBalanceNotEnough = _interopRequireDefault(require("./WalletAsAServiceWalletBalanceNotEnough"));
@@ -26,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletE409 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE409
- * @version 1.4.0
+ * @version 1.5.0
  */
 var CreateCoinsTransactionRequestFromWalletE409 = /*#__PURE__*/function () {
   /**
@@ -34,6 +36,7 @@ var CreateCoinsTransactionRequestFromWalletE409 = /*#__PURE__*/function () {
    * @alias module:model/CreateCoinsTransactionRequestFromWalletE409
    * @implements module:model/InvalidData
    * @implements module:model/WalletAsAServiceWalletBalanceNotEnough
+   * @implements module:model/WalletAsAServiceAddressBalanceNotEnough
    * @implements module:model/WalletAsAServiceNoDepositAddressesFound
    * @param code {String} Specifies an error code, e.g. error 404.
    * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
@@ -44,6 +47,8 @@ var CreateCoinsTransactionRequestFromWalletE409 = /*#__PURE__*/function () {
     _InvalidData["default"].initialize(this, code, message);
 
     _WalletAsAServiceWalletBalanceNotEnough["default"].initialize(this, code, message);
+
+    _WalletAsAServiceAddressBalanceNotEnough["default"].initialize(this, code, message);
 
     _WalletAsAServiceNoDepositAddressesFound["default"].initialize(this, code, message);
 
@@ -79,6 +84,8 @@ var CreateCoinsTransactionRequestFromWalletE409 = /*#__PURE__*/function () {
         _InvalidData["default"].constructFromObject(data, obj);
 
         _WalletAsAServiceWalletBalanceNotEnough["default"].constructFromObject(data, obj);
+
+        _WalletAsAServiceAddressBalanceNotEnough["default"].constructFromObject(data, obj);
 
         _WalletAsAServiceNoDepositAddressesFound["default"].constructFromObject(data, obj);
 
@@ -154,7 +161,25 @@ _WalletAsAServiceWalletBalanceNotEnough["default"].prototype['message'] = undefi
  * @member {Array.<module:model/BannedIpAddressDetails>} details
  */
 
-_WalletAsAServiceWalletBalanceNotEnough["default"].prototype['details'] = undefined; // Implement WalletAsAServiceNoDepositAddressesFound interface:
+_WalletAsAServiceWalletBalanceNotEnough["default"].prototype['details'] = undefined; // Implement WalletAsAServiceAddressBalanceNotEnough interface:
+
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+
+_WalletAsAServiceAddressBalanceNotEnough["default"].prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+
+_WalletAsAServiceAddressBalanceNotEnough["default"].prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetails>} details
+ */
+
+_WalletAsAServiceAddressBalanceNotEnough["default"].prototype['details'] = undefined; // Implement WalletAsAServiceNoDepositAddressesFound interface:
 
 /**
  * Specifies an error code, e.g. error 404.

@@ -16,16 +16,20 @@ import ApiClient from "../ApiClient";
 import ActivateBlockchainEventSubscriptionR from '../model/ActivateBlockchainEventSubscriptionR';
 import ActivateBlockchainEventSubscriptionRB from '../model/ActivateBlockchainEventSubscriptionRB';
 import DeleteBlockchainEventSubscriptionR from '../model/DeleteBlockchainEventSubscriptionR';
-import InlineResponse40066 from '../model/InlineResponse40066';
-import InlineResponse40067 from '../model/InlineResponse40067';
-import InlineResponse40068 from '../model/InlineResponse40068';
-import InlineResponse40166 from '../model/InlineResponse40166';
-import InlineResponse40167 from '../model/InlineResponse40167';
-import InlineResponse40168 from '../model/InlineResponse40168';
+import GetBlockchainEventSubscriptionDetailsByReferenceIDR from '../model/GetBlockchainEventSubscriptionDetailsByReferenceIDR';
+import InlineResponse40079 from '../model/InlineResponse40079';
+import InlineResponse40080 from '../model/InlineResponse40080';
+import InlineResponse40081 from '../model/InlineResponse40081';
+import InlineResponse40082 from '../model/InlineResponse40082';
+import InlineResponse40179 from '../model/InlineResponse40179';
+import InlineResponse40180 from '../model/InlineResponse40180';
+import InlineResponse40181 from '../model/InlineResponse40181';
+import InlineResponse40182 from '../model/InlineResponse40182';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40366 from '../model/InlineResponse40366';
-import InlineResponse40367 from '../model/InlineResponse40367';
-import InlineResponse40368 from '../model/InlineResponse40368';
+import InlineResponse40379 from '../model/InlineResponse40379';
+import InlineResponse40380 from '../model/InlineResponse40380';
+import InlineResponse40381 from '../model/InlineResponse40381';
+import InlineResponse40382 from '../model/InlineResponse40382';
 import InlineResponse4041 from '../model/InlineResponse4041';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse415 from '../model/InlineResponse415';
@@ -37,7 +41,7 @@ import ListBlockchainEventsSubscriptionsR from '../model/ListBlockchainEventsSub
 /**
 * ManageSubscriptions service.
 * @module api/ManageSubscriptionsApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class ManageSubscriptionsApi {
 
@@ -172,6 +176,60 @@ export default class ManageSubscriptionsApi {
      */
     deleteBlockchainEventSubscription(blockchain, network, referenceId, opts) {
       return this.deleteBlockchainEventSubscriptionWithHttpInfo(blockchain, network, referenceId, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Get Blockchain Event Subscription Details By Reference ID
+     * Through this endpoint the customer can get detailed information for a callback subscription by providing its reference ID.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.
+     * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDR} and HTTP response
+     */
+    getBlockchainEventSubscriptionDetailsByReferenceIDWithHttpInfo(referenceId, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'referenceId' is set
+      if (referenceId === undefined || referenceId === null) {
+        throw new Error("Missing the required parameter 'referenceId' when calling getBlockchainEventSubscriptionDetailsByReferenceID");
+      }
+
+      let pathParams = {
+        'referenceId': referenceId
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetBlockchainEventSubscriptionDetailsByReferenceIDR;
+      return this.apiClient.callApi(
+        '/blockchain-events/subscriptions/{referenceId}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get Blockchain Event Subscription Details By Reference ID
+     * Through this endpoint the customer can get detailed information for a callback subscription by providing its reference ID.    Currently Crypto APIs 2.0 offers certain Blockchain event endpoints which allow the user to subscribe for one/a few/all and receive callback notifications when the specific event occurs.
+     * @param {String} referenceId Represents a unique ID used to reference the specific callback subscription.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDR}
+     */
+    getBlockchainEventSubscriptionDetailsByReferenceID(referenceId, opts) {
+      return this.getBlockchainEventSubscriptionDetailsByReferenceIDWithHttpInfo(referenceId, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

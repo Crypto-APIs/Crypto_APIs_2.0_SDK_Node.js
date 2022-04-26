@@ -17,7 +17,7 @@ import BroadcastLocallySignedTransactionRBDataItem from './BroadcastLocallySigne
 /**
  * The BroadcastLocallySignedTransactionRBData model module.
  * @module model/BroadcastLocallySignedTransactionRBData
- * @version 1.4.0
+ * @version 1.5.0
  */
 class BroadcastLocallySignedTransactionRBData {
     /**

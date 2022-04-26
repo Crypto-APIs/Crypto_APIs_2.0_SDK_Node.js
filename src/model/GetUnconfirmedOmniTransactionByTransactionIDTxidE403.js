@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetUnconfirmedOmniTransactionByTransactionIDTxidE403 model module.
  * @module model/GetUnconfirmedOmniTransactionByTransactionIDTxidE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetUnconfirmedOmniTransactionByTransactionIDTxidE403 {
     /**

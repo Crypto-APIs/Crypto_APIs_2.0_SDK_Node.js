@@ -7,6 +7,8 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _ListTokensTransfersByTransactionHashRITransactionFee = _interopRequireDefault(require("./ListTokensTransfersByTransactionHashRITransactionFee"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
   /**
@@ -34,11 +36,12 @@ var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
    * @param tokenType {String} Defines the specific token type.
    * @param transactionHash {String} Represents the hash of the transaction, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
    * @param transactionTimestamp {Number} Defines the specific time/date when the transaction was created in Unix Timestamp.
+   * @param transactionFee {module:model/ListTokensTransfersByTransactionHashRITransactionFee} 
    */
-  function ListConfirmedTokensTransfersByAddressRI(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp) {
+  function ListConfirmedTokensTransfersByAddressRI(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp, transactionFee) {
     _classCallCheck(this, ListConfirmedTokensTransfersByAddressRI);
 
-    ListConfirmedTokensTransfersByAddressRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp);
+    ListConfirmedTokensTransfersByAddressRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp, transactionFee);
   }
   /**
    * Initializes the fields of this object.
@@ -49,7 +52,7 @@ var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
 
   _createClass(ListConfirmedTokensTransfersByAddressRI, null, [{
     key: "initialize",
-    value: function initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp) {
+    value: function initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, transactionHash, transactionTimestamp, transactionFee) {
       obj['contractAddress'] = contractAddress;
       obj['minedInBlockHeight'] = minedInBlockHeight;
       obj['recipientAddress'] = recipientAddress;
@@ -60,6 +63,7 @@ var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
       obj['tokenType'] = tokenType;
       obj['transactionHash'] = transactionHash;
       obj['transactionTimestamp'] = transactionTimestamp;
+      obj['transactionFee'] = transactionFee;
     }
     /**
      * Constructs a <code>ListConfirmedTokensTransfersByAddressRI</code> from a plain JavaScript object, optionally creating a new instance.
@@ -121,6 +125,10 @@ var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('transactionTimestamp')) {
           obj['transactionTimestamp'] = _ApiClient["default"].convertToType(data['transactionTimestamp'], 'Number');
+        }
+
+        if (data.hasOwnProperty('transactionFee')) {
+          obj['transactionFee'] = _ListTokensTransfersByTransactionHashRITransactionFee["default"].constructFromObject(data['transactionFee']);
         }
       }
 
@@ -203,5 +211,10 @@ ListConfirmedTokensTransfersByAddressRI.prototype['transactionHash'] = undefined
  */
 
 ListConfirmedTokensTransfersByAddressRI.prototype['transactionTimestamp'] = undefined;
+/**
+ * @member {module:model/ListTokensTransfersByTransactionHashRITransactionFee} transactionFee
+ */
+
+ListConfirmedTokensTransfersByAddressRI.prototype['transactionFee'] = undefined;
 var _default = ListConfirmedTokensTransfersByAddressRI;
 exports["default"] = _default;

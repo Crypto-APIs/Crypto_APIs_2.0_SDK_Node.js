@@ -108,6 +108,16 @@
         done();
       });
     });
+    describe('listXRPRippleTransactionsByAddressAndTimeRange', function() {
+      it('should call listXRPRippleTransactionsByAddressAndTimeRange successfully', function(done) {
+        //uncomment below and update the code to test listXRPRippleTransactionsByAddressAndTimeRange
+        //instance.listXRPRippleTransactionsByAddressAndTimeRange(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('listXRPRippleTransactionsByBlockHash', function() {
       it('should call listXRPRippleTransactionsByBlockHash successfully', function(done) {
         //uncomment below and update the code to test listXRPRippleTransactionsByBlockHash

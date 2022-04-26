@@ -19,22 +19,22 @@ import CreateAutomaticTokensForwardingR from '../model/CreateAutomaticTokensForw
 import CreateAutomaticTokensForwardingRB from '../model/CreateAutomaticTokensForwardingRB';
 import DeleteAutomaticTokensForwardingR from '../model/DeleteAutomaticTokensForwardingR';
 import GetFeeAddressDetailsR from '../model/GetFeeAddressDetailsR';
-import InlineResponse40078 from '../model/InlineResponse40078';
-import InlineResponse40079 from '../model/InlineResponse40079';
-import InlineResponse40080 from '../model/InlineResponse40080';
-import InlineResponse40081 from '../model/InlineResponse40081';
-import InlineResponse40082 from '../model/InlineResponse40082';
-import InlineResponse40178 from '../model/InlineResponse40178';
-import InlineResponse40179 from '../model/InlineResponse40179';
-import InlineResponse40180 from '../model/InlineResponse40180';
-import InlineResponse40181 from '../model/InlineResponse40181';
-import InlineResponse40182 from '../model/InlineResponse40182';
+import InlineResponse40092 from '../model/InlineResponse40092';
+import InlineResponse40093 from '../model/InlineResponse40093';
+import InlineResponse40094 from '../model/InlineResponse40094';
+import InlineResponse40095 from '../model/InlineResponse40095';
+import InlineResponse40096 from '../model/InlineResponse40096';
+import InlineResponse40192 from '../model/InlineResponse40192';
+import InlineResponse40193 from '../model/InlineResponse40193';
+import InlineResponse40194 from '../model/InlineResponse40194';
+import InlineResponse40195 from '../model/InlineResponse40195';
+import InlineResponse40196 from '../model/InlineResponse40196';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40378 from '../model/InlineResponse40378';
-import InlineResponse40379 from '../model/InlineResponse40379';
-import InlineResponse40380 from '../model/InlineResponse40380';
-import InlineResponse40381 from '../model/InlineResponse40381';
-import InlineResponse40382 from '../model/InlineResponse40382';
+import InlineResponse40392 from '../model/InlineResponse40392';
+import InlineResponse40393 from '../model/InlineResponse40393';
+import InlineResponse40394 from '../model/InlineResponse40394';
+import InlineResponse40395 from '../model/InlineResponse40395';
+import InlineResponse40396 from '../model/InlineResponse40396';
 import InlineResponse4041 from '../model/InlineResponse4041';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse415 from '../model/InlineResponse415';
@@ -46,7 +46,7 @@ import ListTokensForwardingAutomationsR from '../model/ListTokensForwardingAutom
 /**
 * AutomaticTokensForwarding service.
 * @module api/AutomaticTokensForwardingApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class AutomaticTokensForwardingApi {
 

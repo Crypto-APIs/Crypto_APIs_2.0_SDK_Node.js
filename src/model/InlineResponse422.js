@@ -17,7 +17,7 @@ import InvalidRequestBodyStructure from './InvalidRequestBodyStructure';
 /**
  * The InlineResponse422 model module.
  * @module model/InlineResponse422
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse422 {
     /**

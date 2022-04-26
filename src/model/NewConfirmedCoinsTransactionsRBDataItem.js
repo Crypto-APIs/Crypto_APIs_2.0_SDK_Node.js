@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedCoinsTransactionsRBDataItem model module.
  * @module model/NewConfirmedCoinsTransactionsRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 class NewConfirmedCoinsTransactionsRBDataItem {
     /**
      * Constructs a new <code>NewConfirmedCoinsTransactionsRBDataItem</code>.
      * @alias module:model/NewConfirmedCoinsTransactionsRBDataItem
      * @param address {String} Represents the address of the transaction, per which the result is returned.
-     * @param callbackURL {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackURL {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      */
     constructor(address, callbackURL) { 
         
@@ -63,6 +63,9 @@ class NewConfirmedCoinsTransactionsRBDataItem {
             if (data.hasOwnProperty('callbackURL')) {
                 obj['callbackURL'] = ApiClient.convertToType(data['callbackURL'], 'String');
             }
+            if (data.hasOwnProperty('receiveCallbackOn')) {
+                obj['receiveCallbackOn'] = ApiClient.convertToType(data['receiveCallbackOn'], 'Number');
+            }
         }
         return obj;
     }
@@ -90,10 +93,16 @@ NewConfirmedCoinsTransactionsRBDataItem.prototype['allowDuplicates'] = false;
 NewConfirmedCoinsTransactionsRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackURL
  */
 NewConfirmedCoinsTransactionsRBDataItem.prototype['callbackURL'] = undefined;
+
+/**
+ * Represents the exact confirmation, on which the user wants to receive callback.
+ * @member {Number} receiveCallbackOn
+ */
+NewConfirmedCoinsTransactionsRBDataItem.prototype['receiveCallbackOn'] = undefined;
 
 
 

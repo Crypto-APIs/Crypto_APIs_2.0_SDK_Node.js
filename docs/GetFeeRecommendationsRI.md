@@ -8,5 +8,6 @@ Name | Type | Description | Notes
 **fast** | **String** | Fast fee per byte calculated from unconfirmed transactions | 
 **slow** | **String** | Slow fee per byte calculated from unconfirmed transactions | 
 **standard** | **String** | Standard fee per byte calculated from unconfirmed transactions | 
+**feeCushionMultiplier** | **String** | Represents the fee cushion multiplier used to multiply the base fee. | 
 
 

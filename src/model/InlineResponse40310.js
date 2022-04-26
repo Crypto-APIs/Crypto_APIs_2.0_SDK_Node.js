@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressE403 from './ListConfirmedTransactionsB
 /**
  * The InlineResponse40310 model module.
  * @module model/InlineResponse40310
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40310 {
     /**

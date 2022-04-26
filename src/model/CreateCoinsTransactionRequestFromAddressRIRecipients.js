@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateCoinsTransactionRequestFromAddressRIRecipients model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRIRecipients
- * @version 1.4.0
+ * @version 1.5.0
  */
 class CreateCoinsTransactionRequestFromAddressRIRecipients {
     /**
@@ -54,8 +54,14 @@ class CreateCoinsTransactionRequestFromAddressRIRecipients {
             if (data.hasOwnProperty('address')) {
                 obj['address'] = ApiClient.convertToType(data['address'], 'String');
             }
+            if (data.hasOwnProperty('addressTag')) {
+                obj['addressTag'] = ApiClient.convertToType(data['addressTag'], 'Number');
+            }
             if (data.hasOwnProperty('amount')) {
                 obj['amount'] = ApiClient.convertToType(data['amount'], 'String');
+            }
+            if (data.hasOwnProperty('classicAddress')) {
+                obj['classicAddress'] = ApiClient.convertToType(data['classicAddress'], 'String');
             }
         }
         return obj;
@@ -71,10 +77,22 @@ class CreateCoinsTransactionRequestFromAddressRIRecipients {
 CreateCoinsTransactionRequestFromAddressRIRecipients.prototype['address'] = undefined;
 
 /**
+ * Defines a specific Tag that is an additional XRP address feature. It helps identify a transaction recipient beyond a wallet address. The tag that was encoded into the x-Address along with the Source Classic Address.
+ * @member {Number} addressTag
+ */
+CreateCoinsTransactionRequestFromAddressRIRecipients.prototype['addressTag'] = undefined;
+
+/**
  * Defines the amount sent to the destination address.
  * @member {String} amount
  */
 CreateCoinsTransactionRequestFromAddressRIRecipients.prototype['amount'] = undefined;
+
+/**
+ * Represents the public address, which is a compressed and shortened form of a public key. The classic address is shown when the source address is an x-Address.
+ * @member {String} classicAddress
+ */
+CreateCoinsTransactionRequestFromAddressRIRecipients.prototype['classicAddress'] = undefined;
 
 
 

@@ -90,6 +90,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property receiveCallbackOn (base name: "receiveCallbackOn")', function() {
+      // uncomment below and update the code to test the property receiveCallbackOn
+      //var instance = new Cryptoapis.NewConfirmedInternalTransactionsRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property referenceId (base name: "referenceId")', function() {
       // uncomment below and update the code to test the property referenceId
       //var instance = new Cryptoapis.NewConfirmedInternalTransactionsRI();

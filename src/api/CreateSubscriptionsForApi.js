@@ -13,37 +13,37 @@
 
 
 import ApiClient from "../ApiClient";
-import InlineResponse40058 from '../model/InlineResponse40058';
-import InlineResponse40059 from '../model/InlineResponse40059';
-import InlineResponse40060 from '../model/InlineResponse40060';
-import InlineResponse40061 from '../model/InlineResponse40061';
-import InlineResponse40062 from '../model/InlineResponse40062';
-import InlineResponse40063 from '../model/InlineResponse40063';
-import InlineResponse40064 from '../model/InlineResponse40064';
-import InlineResponse40065 from '../model/InlineResponse40065';
+import InlineResponse40071 from '../model/InlineResponse40071';
+import InlineResponse40072 from '../model/InlineResponse40072';
 import InlineResponse40073 from '../model/InlineResponse40073';
 import InlineResponse40074 from '../model/InlineResponse40074';
-import InlineResponse40158 from '../model/InlineResponse40158';
-import InlineResponse40159 from '../model/InlineResponse40159';
-import InlineResponse40160 from '../model/InlineResponse40160';
-import InlineResponse40161 from '../model/InlineResponse40161';
-import InlineResponse40162 from '../model/InlineResponse40162';
-import InlineResponse40163 from '../model/InlineResponse40163';
-import InlineResponse40164 from '../model/InlineResponse40164';
-import InlineResponse40165 from '../model/InlineResponse40165';
+import InlineResponse40075 from '../model/InlineResponse40075';
+import InlineResponse40076 from '../model/InlineResponse40076';
+import InlineResponse40077 from '../model/InlineResponse40077';
+import InlineResponse40078 from '../model/InlineResponse40078';
+import InlineResponse40087 from '../model/InlineResponse40087';
+import InlineResponse40088 from '../model/InlineResponse40088';
+import InlineResponse40171 from '../model/InlineResponse40171';
+import InlineResponse40172 from '../model/InlineResponse40172';
 import InlineResponse40173 from '../model/InlineResponse40173';
 import InlineResponse40174 from '../model/InlineResponse40174';
+import InlineResponse40175 from '../model/InlineResponse40175';
+import InlineResponse40176 from '../model/InlineResponse40176';
+import InlineResponse40177 from '../model/InlineResponse40177';
+import InlineResponse40178 from '../model/InlineResponse40178';
+import InlineResponse40187 from '../model/InlineResponse40187';
+import InlineResponse40188 from '../model/InlineResponse40188';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40358 from '../model/InlineResponse40358';
-import InlineResponse40359 from '../model/InlineResponse40359';
-import InlineResponse40360 from '../model/InlineResponse40360';
-import InlineResponse40361 from '../model/InlineResponse40361';
-import InlineResponse40362 from '../model/InlineResponse40362';
-import InlineResponse40363 from '../model/InlineResponse40363';
-import InlineResponse40364 from '../model/InlineResponse40364';
-import InlineResponse40365 from '../model/InlineResponse40365';
+import InlineResponse40371 from '../model/InlineResponse40371';
+import InlineResponse40372 from '../model/InlineResponse40372';
 import InlineResponse40373 from '../model/InlineResponse40373';
 import InlineResponse40374 from '../model/InlineResponse40374';
+import InlineResponse40375 from '../model/InlineResponse40375';
+import InlineResponse40376 from '../model/InlineResponse40376';
+import InlineResponse40377 from '../model/InlineResponse40377';
+import InlineResponse40378 from '../model/InlineResponse40378';
+import InlineResponse40387 from '../model/InlineResponse40387';
+import InlineResponse40388 from '../model/InlineResponse40388';
 import InlineResponse40910 from '../model/InlineResponse40910';
 import InlineResponse40911 from '../model/InlineResponse40911';
 import InlineResponse40912 from '../model/InlineResponse40912';
@@ -82,7 +82,7 @@ import NewUnconfirmedTokensTransactionsRB from '../model/NewUnconfirmedTokensTra
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class CreateSubscriptionsForApi {
 

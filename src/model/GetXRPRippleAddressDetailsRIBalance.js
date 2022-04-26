@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetXRPRippleAddressDetailsRIBalance model module.
  * @module model/GetXRPRippleAddressDetailsRIBalance
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetXRPRippleAddressDetailsRIBalance {
     /**

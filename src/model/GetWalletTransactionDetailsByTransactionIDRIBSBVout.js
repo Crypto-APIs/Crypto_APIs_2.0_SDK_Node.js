@@ -17,7 +17,7 @@ import GetWalletTransactionDetailsByTransactionIDRIBSBScriptPubKey from './GetWa
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBVout model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBVout
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSBVout {
     /**

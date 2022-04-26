@@ -17,7 +17,7 @@ import GetAddressDetailsRData from './GetAddressDetailsRData';
 /**
  * The GetAddressDetailsR model module.
  * @module model/GetAddressDetailsR
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetAddressDetailsR {
     /**

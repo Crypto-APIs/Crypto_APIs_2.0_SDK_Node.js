@@ -14,13 +14,14 @@
 import ApiClient from '../ApiClient';
 import BannedIpAddressDetails from './BannedIpAddressDetails';
 import InvalidData from './InvalidData';
+import WalletAsAServiceAddressBalanceNotEnough from './WalletAsAServiceAddressBalanceNotEnough';
 import WalletAsAServiceNoDepositAddressesFound from './WalletAsAServiceNoDepositAddressesFound';
 import WalletAsAServiceWalletBalanceNotEnough from './WalletAsAServiceWalletBalanceNotEnough';
 
 /**
  * The CreateCoinsTransactionRequestFromWalletE409 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE409
- * @version 1.4.0
+ * @version 1.5.0
  */
 class CreateCoinsTransactionRequestFromWalletE409 {
     /**
@@ -28,12 +29,13 @@ class CreateCoinsTransactionRequestFromWalletE409 {
      * @alias module:model/CreateCoinsTransactionRequestFromWalletE409
      * @implements module:model/InvalidData
      * @implements module:model/WalletAsAServiceWalletBalanceNotEnough
+     * @implements module:model/WalletAsAServiceAddressBalanceNotEnough
      * @implements module:model/WalletAsAServiceNoDepositAddressesFound
      * @param code {String} Specifies an error code, e.g. error 404.
      * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
      */
     constructor(code, message) { 
-        InvalidData.initialize(this, code, message);WalletAsAServiceWalletBalanceNotEnough.initialize(this, code, message);WalletAsAServiceNoDepositAddressesFound.initialize(this, code, message);
+        InvalidData.initialize(this, code, message);WalletAsAServiceWalletBalanceNotEnough.initialize(this, code, message);WalletAsAServiceAddressBalanceNotEnough.initialize(this, code, message);WalletAsAServiceNoDepositAddressesFound.initialize(this, code, message);
         CreateCoinsTransactionRequestFromWalletE409.initialize(this, code, message);
     }
 
@@ -59,6 +61,7 @@ class CreateCoinsTransactionRequestFromWalletE409 {
             obj = obj || new CreateCoinsTransactionRequestFromWalletE409();
             InvalidData.constructFromObject(data, obj);
             WalletAsAServiceWalletBalanceNotEnough.constructFromObject(data, obj);
+            WalletAsAServiceAddressBalanceNotEnough.constructFromObject(data, obj);
             WalletAsAServiceNoDepositAddressesFound.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('code')) {
@@ -125,6 +128,21 @@ WalletAsAServiceWalletBalanceNotEnough.prototype['message'] = undefined;
  * @member {Array.<module:model/BannedIpAddressDetails>} details
  */
 WalletAsAServiceWalletBalanceNotEnough.prototype['details'] = undefined;
+// Implement WalletAsAServiceAddressBalanceNotEnough interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+WalletAsAServiceAddressBalanceNotEnough.prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+WalletAsAServiceAddressBalanceNotEnough.prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetails>} details
+ */
+WalletAsAServiceAddressBalanceNotEnough.prototype['details'] = undefined;
 // Implement WalletAsAServiceNoDepositAddressesFound interface:
 /**
  * Specifies an error code, e.g. error 404.

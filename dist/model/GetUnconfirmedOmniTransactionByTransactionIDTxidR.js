@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetUnconfirmedOmniTransactionByTransactionIDTxidR model module.
  * @module model/GetUnconfirmedOmniTransactionByTransactionIDTxidR
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetUnconfirmedOmniTransactionByTransactionIDTxidR = /*#__PURE__*/function () {
   /**

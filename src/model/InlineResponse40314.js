@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByAddressE403 from './ListZilliqaTransactionsByAdd
 /**
  * The InlineResponse40314 model module.
  * @module model/InlineResponse40314
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40314 {
     /**

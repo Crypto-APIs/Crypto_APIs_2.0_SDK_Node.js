@@ -18,13 +18,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockRBDataItem model module.
  * @module model/NewBlockRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 var NewBlockRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewBlockRBDataItem</code>.
    * @alias module:model/NewBlockRBDataItem
-   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
    */
   function NewBlockRBDataItem(callbackUrl) {
     _classCallCheck(this, NewBlockRBDataItem);
@@ -91,7 +91,7 @@ NewBlockRBDataItem.prototype['allowDuplicates'] = false;
 
 NewBlockRBDataItem.prototype['callbackSecretKey'] = undefined;
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 

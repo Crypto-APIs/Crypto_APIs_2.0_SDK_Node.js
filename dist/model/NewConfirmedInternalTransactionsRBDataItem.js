@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsRBDataItem model module.
  * @module model/NewConfirmedInternalTransactionsRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 var NewConfirmedInternalTransactionsRBDataItem = /*#__PURE__*/function () {
   /**
@@ -27,7 +27,7 @@ var NewConfirmedInternalTransactionsRBDataItem = /*#__PURE__*/function () {
    * @param address {String} Defines the specific address of the internal transaction.
    * @param allowDuplicates {Boolean} Flag that permits or denies creation of duplicates
    * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
-   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
    */
   function NewConfirmedInternalTransactionsRBDataItem(address, allowDuplicates, callbackSecretKey, callbackUrl) {
     _classCallCheck(this, NewConfirmedInternalTransactionsRBDataItem);
@@ -78,6 +78,10 @@ var NewConfirmedInternalTransactionsRBDataItem = /*#__PURE__*/function () {
         if (data.hasOwnProperty('callbackUrl')) {
           obj['callbackUrl'] = _ApiClient["default"].convertToType(data['callbackUrl'], 'String');
         }
+
+        if (data.hasOwnProperty('receiveCallbackOn')) {
+          obj['receiveCallbackOn'] = _ApiClient["default"].convertToType(data['receiveCallbackOn'], 'Number');
+        }
       }
 
       return obj;
@@ -107,10 +111,16 @@ NewConfirmedInternalTransactionsRBDataItem.prototype['allowDuplicates'] = false;
 
 NewConfirmedInternalTransactionsRBDataItem.prototype['callbackSecretKey'] = undefined;
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 
 NewConfirmedInternalTransactionsRBDataItem.prototype['callbackUrl'] = undefined;
+/**
+ * Represents the exact confirmation, on which the user wants to receive callback.
+ * @member {Number} receiveCallbackOn
+ */
+
+NewConfirmedInternalTransactionsRBDataItem.prototype['receiveCallbackOn'] = undefined;
 var _default = NewConfirmedInternalTransactionsRBDataItem;
 exports["default"] = _default;

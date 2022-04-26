@@ -19,7 +19,7 @@ import GetAssetDetailsByAssetSymbolRIS from './GetAssetDetailsByAssetSymbolRIS';
 /**
  * The GetAssetDetailsByAssetSymbolRI model module.
  * @module model/GetAssetDetailsByAssetSymbolRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetAssetDetailsByAssetSymbolRI {
     /**

@@ -21,7 +21,7 @@ import GetTransactionDetailsByTransactionIDRIBSZVout from './GetTransactionDetai
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZ model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZ
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetTransactionDetailsByTransactionIDRIBSZ {
     /**

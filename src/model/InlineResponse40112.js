@@ -17,7 +17,7 @@ import ListUnconfirmedOmniTransactionsByAddressE401 from './ListUnconfirmedOmniT
 /**
  * The InlineResponse40112 model module.
  * @module model/InlineResponse40112
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40112 {
     /**

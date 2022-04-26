@@ -32,7 +32,7 @@ let apiInstance = new Cryptoapis.ExchangeRatesApi();
 let fromAssetSymbol = btc; // String | Defines the base asset symbol to get a rate for.
 let toAssetSymbol = usd; // String | Defines the relation asset symbol in which the base asset rate will be displayed.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'calculationTimestamp': 1635514425 // Number | Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
 };
 apiInstance.getExchangeRateByAssetSymbols(fromAssetSymbol, toAssetSymbol, opts).then((data) => {
@@ -90,7 +90,7 @@ let apiInstance = new Cryptoapis.ExchangeRatesApi();
 let fromAssetId = 5b1ea92e584bf50020130612; // String | Defines the base asset Reference ID to get a rate for.
 let toAssetId = 5b1ea92e584bf50020130615; // String | Defines the relation asset Reference ID in which the base asset rate will be displayed.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'calculationTimestamp': 1618577849 // Number | Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
 };
 apiInstance.getExchangeRateByAssetsIDs(fromAssetId, toAssetId, opts).then((data) => {

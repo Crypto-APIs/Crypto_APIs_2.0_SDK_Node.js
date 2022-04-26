@@ -17,7 +17,7 @@ import GetAddressDetailsE400 from './GetAddressDetailsE400';
 /**
  * The InlineResponse400 model module.
  * @module model/InlineResponse400
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse400 {
     /**

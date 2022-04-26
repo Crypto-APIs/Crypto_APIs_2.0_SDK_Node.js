@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByAddressE400 from './ListXRPRippleTransactionsB
 /**
  * The InlineResponse40011 model module.
  * @module model/InlineResponse40011
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40011 {
     /**

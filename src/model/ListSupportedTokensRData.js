@@ -17,20 +17,20 @@ import ListSupportedTokensRI from './ListSupportedTokensRI';
 /**
  * The ListSupportedTokensRData model module.
  * @module model/ListSupportedTokensRData
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListSupportedTokensRData {
     /**
      * Constructs a new <code>ListSupportedTokensRData</code>.
      * @alias module:model/ListSupportedTokensRData
-     * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
      * @param limit {Number} Defines how many items should be returned in the response per page basis.
+     * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
      * @param total {Number} Defines the total number of items returned in the response.
      * @param items {Array.<module:model/ListSupportedTokensRI>} 
      */
-    constructor(offset, limit, total, items) { 
+    constructor(limit, offset, total, items) { 
         
-        ListSupportedTokensRData.initialize(this, offset, limit, total, items);
+        ListSupportedTokensRData.initialize(this, limit, offset, total, items);
     }
 
     /**
@@ -38,9 +38,9 @@ class ListSupportedTokensRData {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, offset, limit, total, items) { 
-        obj['offset'] = offset;
+    static initialize(obj, limit, offset, total, items) { 
         obj['limit'] = limit;
+        obj['offset'] = offset;
         obj['total'] = total;
         obj['items'] = items;
     }
@@ -56,11 +56,11 @@ class ListSupportedTokensRData {
         if (data) {
             obj = obj || new ListSupportedTokensRData();
 
-            if (data.hasOwnProperty('offset')) {
-                obj['offset'] = ApiClient.convertToType(data['offset'], 'Number');
-            }
             if (data.hasOwnProperty('limit')) {
                 obj['limit'] = ApiClient.convertToType(data['limit'], 'Number');
+            }
+            if (data.hasOwnProperty('offset')) {
+                obj['offset'] = ApiClient.convertToType(data['offset'], 'Number');
             }
             if (data.hasOwnProperty('total')) {
                 obj['total'] = ApiClient.convertToType(data['total'], 'Number');
@@ -76,16 +76,16 @@ class ListSupportedTokensRData {
 }
 
 /**
- * The starting index of the response items, i.e. where the response should start listing the returned items.
- * @member {Number} offset
- */
-ListSupportedTokensRData.prototype['offset'] = undefined;
-
-/**
  * Defines how many items should be returned in the response per page basis.
  * @member {Number} limit
  */
 ListSupportedTokensRData.prototype['limit'] = undefined;
+
+/**
+ * The starting index of the response items, i.e. where the response should start listing the returned items.
+ * @member {Number} offset
+ */
+ListSupportedTokensRData.prototype['offset'] = undefined;
 
 /**
  * Defines the total number of items returned in the response.

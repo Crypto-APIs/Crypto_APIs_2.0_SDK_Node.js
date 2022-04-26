@@ -17,7 +17,7 @@ import BlockchainDataTransactionNotFound from './BlockchainDataTransactionNotFou
 /**
  * The InlineResponse404 model module.
  * @module model/InlineResponse404
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse404 {
     /**

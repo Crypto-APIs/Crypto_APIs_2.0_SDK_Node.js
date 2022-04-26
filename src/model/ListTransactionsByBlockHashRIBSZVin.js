@@ -17,7 +17,7 @@ import ListTransactionsByBlockHashRIBSZScriptSig from './ListTransactionsByBlock
 /**
  * The ListTransactionsByBlockHashRIBSZVin model module.
  * @module model/ListTransactionsByBlockHashRIBSZVin
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListTransactionsByBlockHashRIBSZVin {
     /**

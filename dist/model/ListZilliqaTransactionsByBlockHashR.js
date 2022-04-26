@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHashR model module.
  * @module model/ListZilliqaTransactionsByBlockHashR
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListZilliqaTransactionsByBlockHashR = /*#__PURE__*/function () {
   /**

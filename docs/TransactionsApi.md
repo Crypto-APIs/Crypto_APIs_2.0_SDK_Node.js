@@ -36,7 +36,7 @@ let blockchain = ethereum; // String | Represents the specific blockchain protoc
 let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let walletId = 609e221675d04500068718dc; // String | Represents the sender's specific and unique Wallet ID of the sender.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createCoinsTransactionFromAddressForWholeAmountRB': new Cryptoapis.CreateCoinsTransactionFromAddressForWholeAmountRB() // CreateCoinsTransactionFromAddressForWholeAmountRB | 
 };
 apiInstance.createCoinsTransactionFromAddressForWholeAmount(address, blockchain, network, walletId, opts).then((data) => {
@@ -93,12 +93,12 @@ ApiKey.apiKey = 'YOUR API KEY';
 //ApiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new Cryptoapis.TransactionsApi();
-let address = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defines the specific source address for the transaction.
+let address = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defines the specific source address for the transaction. For XRP we also support the X-address format.
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let walletId = 609e221675d04500068718dc; // String | Represents the sender's specific and unique Wallet ID of the sender.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createCoinsTransactionRequestFromAddressRB': new Cryptoapis.CreateCoinsTransactionRequestFromAddressRB() // CreateCoinsTransactionRequestFromAddressRB | 
 };
 apiInstance.createCoinsTransactionRequestFromAddress(address, blockchain, network, walletId, opts).then((data) => {
@@ -114,7 +114,7 @@ apiInstance.createCoinsTransactionRequestFromAddress(address, blockchain, networ
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **address** | **String**| Defines the specific source address for the transaction. | 
+ **address** | **String**| Defines the specific source address for the transaction. For XRP we also support the X-address format. | 
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
  **walletId** | **String**| Represents the sender&#39;s specific and unique Wallet ID of the sender. | 
@@ -159,7 +159,7 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let walletId = 609e221675d04500068718dc; // String | Represents the sender's specific and unique Wallet ID of the sender.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createCoinsTransactionRequestFromWalletRB': new Cryptoapis.CreateCoinsTransactionRequestFromWalletRB() // CreateCoinsTransactionRequestFromWalletRB | 
 };
 apiInstance.createCoinsTransactionRequestFromWallet(blockchain, network, walletId, opts).then((data) => {
@@ -220,7 +220,7 @@ let network = mainnet; // String | Represents the name of the blockchain network
 let senderAddress = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defines the specific source address for the transaction.
 let walletId = 609e221675d04500068718dc; // String | Defines the unique ID of the Wallet.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createFungibleTokensTransactionRequestFromAddressRB': new Cryptoapis.CreateFungibleTokensTransactionRequestFromAddressRB() // CreateFungibleTokensTransactionRequestFromAddressRB | 
 };
 apiInstance.createFungibleTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts).then((data) => {

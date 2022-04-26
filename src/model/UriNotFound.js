@@ -17,7 +17,7 @@ import BannedIpAddressDetails from './BannedIpAddressDetails';
 /**
  * The UriNotFound model module.
  * @module model/UriNotFound
- * @version 1.4.0
+ * @version 1.5.0
  */
 class UriNotFound {
     /**

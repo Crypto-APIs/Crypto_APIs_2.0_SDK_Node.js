@@ -78,6 +78,26 @@
         done();
       });
     });
+    describe('listAllAssetsByWalletID', function() {
+      it('should call listAllAssetsByWalletID successfully', function(done) {
+        //uncomment below and update the code to test listAllAssetsByWalletID
+        //instance.listAllAssetsByWalletID(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listAllAssetsFromAllWallets', function() {
+      it('should call listAllAssetsFromAllWallets successfully', function(done) {
+        //uncomment below and update the code to test listAllAssetsFromAllWallets
+        //instance.listAllAssetsFromAllWallets(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('listDepositAddresses', function() {
       it('should call listDepositAddresses successfully', function(done) {
         //uncomment below and update the code to test listDepositAddresses

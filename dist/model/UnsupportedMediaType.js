@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The UnsupportedMediaType model module.
  * @module model/UnsupportedMediaType
- * @version 1.4.0
+ * @version 1.5.0
  */
 var UnsupportedMediaType = /*#__PURE__*/function () {
   /**

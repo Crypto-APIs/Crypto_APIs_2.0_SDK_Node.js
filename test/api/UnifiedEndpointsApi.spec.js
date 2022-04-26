@@ -48,6 +48,16 @@
   }
 
   describe('UnifiedEndpointsApi', function() {
+    describe('estimateTransactionSmartFee', function() {
+      it('should call estimateTransactionSmartFee successfully', function(done) {
+        //uncomment below and update the code to test estimateTransactionSmartFee
+        //instance.estimateTransactionSmartFee(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getAddressDetails', function() {
       it('should call getAddressDetails successfully', function(done) {
         //uncomment below and update the code to test getAddressDetails
@@ -98,6 +108,26 @@
         done();
       });
     });
+    describe('getNextAvailableNonce', function() {
+      it('should call getNextAvailableNonce successfully', function(done) {
+        //uncomment below and update the code to test getNextAvailableNonce
+        //instance.getNextAvailableNonce(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('getRawTransactionData', function() {
+      it('should call getRawTransactionData successfully', function(done) {
+        //uncomment below and update the code to test getRawTransactionData
+        //instance.getRawTransactionData(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getTransactionDetailsByTransactionID', function() {
       it('should call getTransactionDetailsByTransactionID successfully', function(done) {
         //uncomment below and update the code to test getTransactionDetailsByTransactionID
@@ -118,10 +148,40 @@
         done();
       });
     });
+    describe('listConfirmedTokensTransfersByAddressAndTimeRange', function() {
+      it('should call listConfirmedTokensTransfersByAddressAndTimeRange successfully', function(done) {
+        //uncomment below and update the code to test listConfirmedTokensTransfersByAddressAndTimeRange
+        //instance.listConfirmedTokensTransfersByAddressAndTimeRange(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('listConfirmedTransactionsByAddress', function() {
       it('should call listConfirmedTransactionsByAddress successfully', function(done) {
         //uncomment below and update the code to test listConfirmedTransactionsByAddress
         //instance.listConfirmedTransactionsByAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listConfirmedTransactionsByAddressAndTimeRange', function() {
+      it('should call listConfirmedTransactionsByAddressAndTimeRange successfully', function(done) {
+        //uncomment below and update the code to test listConfirmedTransactionsByAddressAndTimeRange
+        //instance.listConfirmedTransactionsByAddressAndTimeRange(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listInternalTransactionsByAddressAndTimeRange', function() {
+      it('should call listInternalTransactionsByAddressAndTimeRange successfully', function(done) {
+        //uncomment below and update the code to test listInternalTransactionsByAddressAndTimeRange
+        //instance.listInternalTransactionsByAddressAndTimeRange(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
@@ -162,6 +222,16 @@
       it('should call listUnconfirmedTransactionsByAddress successfully', function(done) {
         //uncomment below and update the code to test listUnconfirmedTransactionsByAddress
         //instance.listUnconfirmedTransactionsByAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listUnspentTransactionOutputsByAddress', function() {
+      it('should call listUnspentTransactionOutputsByAddress successfully', function(done) {
+        //uncomment below and update the code to test listUnspentTransactionOutputsByAddress
+        //instance.listUnspentTransactionOutputsByAddress(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

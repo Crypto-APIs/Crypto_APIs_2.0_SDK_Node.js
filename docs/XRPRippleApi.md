@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**getXRPRippleBlockDetailsByBlockHeight**](XRPRippleApi.md#getXRPRippleBlockDetailsByBlockHeight) | **GET** /blockchain-data/xrp-specific/{network}/blocks/height/{blockHeight} | Get XRP (Ripple) Block Details By Block Height
 [**getXRPRippleTransactionDetailsByTransactionID**](XRPRippleApi.md#getXRPRippleTransactionDetailsByTransactionID) | **GET** /blockchain-data/xrp-specific/{network}/transactions/{transactionHash} | Get XRP (Ripple) Transaction Details By Transaction ID
 [**listXRPRippleTransactionsByAddress**](XRPRippleApi.md#listXRPRippleTransactionsByAddress) | **GET** /blockchain-data/xrp-specific/{network}/addresses/{address}/transactions | List XRP (Ripple) Transactions by Address
+[**listXRPRippleTransactionsByAddressAndTimeRange**](XRPRippleApi.md#listXRPRippleTransactionsByAddressAndTimeRange) | **GET** /blockchain-data/xrp-specific/{network}/addresses/{address}/transactions-by-time-range | List XRP (Ripple) Transactions By Address And Time Range
 [**listXRPRippleTransactionsByBlockHash**](XRPRippleApi.md#listXRPRippleTransactionsByBlockHash) | **GET** /blockchain-data/xrp-specific/{network}/blocks/hash/{blockHash}/transactions | List XRP (Ripple) Transactions By Block Hash
 [**listXRPRippleTransactionsByBlockHeight**](XRPRippleApi.md#listXRPRippleTransactionsByBlockHeight) | **GET** /blockchain-data/xrp-specific/{network}/blocks/height/{blockHeight}/transactions | List XRP (Ripple) Transactions By Block Height
 
@@ -37,7 +38,7 @@ ApiKey.apiKey = 'YOUR API KEY';
 let apiInstance = new Cryptoapis.XRPRippleApi();
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getLatestMinedXRPRippleBlock(network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -92,7 +93,7 @@ let apiInstance = new Cryptoapis.XRPRippleApi();
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\",  are test networks.
 let address = rA9bXGJcXvZKaWofrRphdJsBWzhyCfH3z; // String | Represents the public address, which is a compressed and shortened form of a public key.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getXRPRippleAddressDetails(network, address, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -148,7 +149,7 @@ let apiInstance = new Cryptoapis.XRPRippleApi();
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHash = 1ab0614d2a438da8b23086cbceef7d443edbd295d9c7619fc8a19c7618bc22c9; // String | Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getXRPRippleBlockDetailsByBlockHash(network, blockHash, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -204,7 +205,7 @@ let apiInstance = new Cryptoapis.XRPRippleApi();
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\",  are test networks.
 let blockHeight = 15886156; // String | Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getXRPRippleBlockDetailsByBlockHeight(network, blockHeight, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -260,7 +261,7 @@ let apiInstance = new Cryptoapis.XRPRippleApi();
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let transactionHash = 36a1737481edec87bacc3101dfb752ae2c76f9171e7edebe587e330c1ea77c8d; // String | Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
 let opts = {
-  'context': "context_example" // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
 apiInstance.getXRPRippleTransactionDetailsByTransactionID(network, transactionHash, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -316,9 +317,9 @@ let apiInstance = new Cryptoapis.XRPRippleApi();
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let address = rA9bXGJcXvZKaWofrRphdJsBWzhyCfH3z; // String | Represents the public address, which is a compressed and shortened form of a public key.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10, // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0, // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
   'transactionType': payment // String | 
 };
 apiInstance.listXRPRippleTransactionsByAddress(network, address, opts).then((data) => {
@@ -355,6 +356,72 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## listXRPRippleTransactionsByAddressAndTimeRange
+
+> ListXRPRippleTransactionsByAddressAndTimeRangeR listXRPRippleTransactionsByAddressAndTimeRange(network, address, fromTimestamp, toTimestamp, opts)
+
+List XRP (Ripple) Transactions By Address And Time Range
+
+Тhis endpoint lists XRP transactions by the attribute &#x60;address&#x60; and the query parameters &#x60;fromTimestamp&#x60; and &#x60;toTimestamp&#x60;  which gives customers the opportunity to filter the results by a specified time period.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.XRPRippleApi();
+let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let address = rA9bXGJcXvZKaWofrRphdJsBWzhyCfH3z; // String | Represents the public address, which is a compressed and shortened form of a public key.
+let fromTimestamp = 1616347862; // Number | Defines the specific time/date from which the results will start being listed.
+let toTimestamp = 1616347870; // Number | Defines the specific time/date to which the results will be listed.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
+  'offset': 0, // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'transactionType': payment // String | Defines the transaction type.
+};
+apiInstance.listXRPRippleTransactionsByAddressAndTimeRange(network, address, fromTimestamp, toTimestamp, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
+ **address** | **String**| Represents the public address, which is a compressed and shortened form of a public key. | 
+ **fromTimestamp** | **Number**| Defines the specific time/date from which the results will start being listed. | 
+ **toTimestamp** | **Number**| Defines the specific time/date to which the results will be listed. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **limit** | **Number**| Defines how many items should be returned in the response per page basis. | [optional] [default to 50]
+ **offset** | **Number**| The starting index of the response items, i.e. where the response should start listing the returned items. | [optional] [default to 0]
+ **transactionType** | **String**| Defines the transaction type. | [optional] 
+
+### Return type
+
+[**ListXRPRippleTransactionsByAddressAndTimeRangeR**](ListXRPRippleTransactionsByAddressAndTimeRangeR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
 ## listXRPRippleTransactionsByBlockHash
 
 > ListXRPRippleTransactionsByBlockHashR listXRPRippleTransactionsByBlockHash(network, blockHash, opts)
@@ -378,9 +445,9 @@ let apiInstance = new Cryptoapis.XRPRippleApi();
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHash = 14754656235f865a74eba27791fd41a47bdfe07fe811ff6d78f53db32e129e39; // String | Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listXRPRippleTransactionsByBlockHash(network, blockHash, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -438,9 +505,9 @@ let apiInstance = new Cryptoapis.XRPRippleApi();
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let blockHeight = 15971358; // Number | 
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 10 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listXRPRippleTransactionsByBlockHeight(network, blockHeight, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

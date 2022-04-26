@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListOmniTransactionsByBlockHeightE403 model module.
  * @module model/ListOmniTransactionsByBlockHeightE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListOmniTransactionsByBlockHeightE403 {
     /**

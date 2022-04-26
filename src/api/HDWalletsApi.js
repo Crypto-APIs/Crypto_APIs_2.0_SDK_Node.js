@@ -13,33 +13,43 @@
 
 
 import ApiClient from "../ApiClient";
+import GetHDWalletXPubYPubZPubAssetsR from '../model/GetHDWalletXPubYPubZPubAssetsR';
 import GetHDWalletXPubYPubZPubDetailsR from '../model/GetHDWalletXPubYPubZPubDetailsR';
-import InlineResponse40043 from '../model/InlineResponse40043';
-import InlineResponse40047 from '../model/InlineResponse40047';
-import InlineResponse40049 from '../model/InlineResponse40049';
-import InlineResponse40143 from '../model/InlineResponse40143';
-import InlineResponse40147 from '../model/InlineResponse40147';
-import InlineResponse40149 from '../model/InlineResponse40149';
+import InlineResponse40046 from '../model/InlineResponse40046';
+import InlineResponse40050 from '../model/InlineResponse40050';
+import InlineResponse40051 from '../model/InlineResponse40051';
+import InlineResponse40053 from '../model/InlineResponse40053';
+import InlineResponse40055 from '../model/InlineResponse40055';
+import InlineResponse40146 from '../model/InlineResponse40146';
+import InlineResponse40150 from '../model/InlineResponse40150';
+import InlineResponse40151 from '../model/InlineResponse40151';
+import InlineResponse40153 from '../model/InlineResponse40153';
+import InlineResponse40155 from '../model/InlineResponse40155';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40343 from '../model/InlineResponse40343';
-import InlineResponse40347 from '../model/InlineResponse40347';
-import InlineResponse40349 from '../model/InlineResponse40349';
+import InlineResponse40346 from '../model/InlineResponse40346';
+import InlineResponse40350 from '../model/InlineResponse40350';
+import InlineResponse40351 from '../model/InlineResponse40351';
+import InlineResponse40353 from '../model/InlineResponse40353';
+import InlineResponse40355 from '../model/InlineResponse40355';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse4095 from '../model/InlineResponse4095';
 import InlineResponse415 from '../model/InlineResponse415';
 import InlineResponse4221 from '../model/InlineResponse4221';
 import InlineResponse4222 from '../model/InlineResponse4222';
 import InlineResponse4223 from '../model/InlineResponse4223';
+import InlineResponse4224 from '../model/InlineResponse4224';
+import InlineResponse4225 from '../model/InlineResponse4225';
 import InlineResponse429 from '../model/InlineResponse429';
 import InlineResponse500 from '../model/InlineResponse500';
 import ListHDWalletXPubYPubZPubTransactionsR from '../model/ListHDWalletXPubYPubZPubTransactionsR';
+import ListHDWalletXPubYPubZPubUTXOsR from '../model/ListHDWalletXPubYPubZPubUTXOsR';
 import SyncHDWalletXPubYPubZPubR from '../model/SyncHDWalletXPubYPubZPubR';
 import SyncHDWalletXPubYPubZPubRB from '../model/SyncHDWalletXPubYPubZPubRB';
 
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class HDWalletsApi {
 
@@ -54,6 +64,77 @@ export default class HDWalletsApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+
+    /**
+     * Get HD Wallet (xPub, yPub, zPub) Assets
+     * This endpoint will return details on assets we support for a specified from the customer extended public key (xPub). These could be cryptocurrencies, fungible or non-fungible (NFT) tokens. Each asset has a unique identifier - assetId, and a unique symbol in the form of a string, e.g. \"USDT\".
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {String} extendedPublicKey Defines the account extended publicly known key which is used to derive all child public keys.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetHDWalletXPubYPubZPubAssetsR} and HTTP response
+     */
+    getHDWalletXPubYPubZPubAssetsWithHttpInfo(blockchain, extendedPublicKey, network, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getHDWalletXPubYPubZPubAssets");
+      }
+      // verify the required parameter 'extendedPublicKey' is set
+      if (extendedPublicKey === undefined || extendedPublicKey === null) {
+        throw new Error("Missing the required parameter 'extendedPublicKey' when calling getHDWalletXPubYPubZPubAssets");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getHDWalletXPubYPubZPubAssets");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'extendedPublicKey': extendedPublicKey,
+        'network': network
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'derivation': opts['derivation']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetHDWalletXPubYPubZPubAssetsR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/assets', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get HD Wallet (xPub, yPub, zPub) Assets
+     * This endpoint will return details on assets we support for a specified from the customer extended public key (xPub). These could be cryptocurrencies, fungible or non-fungible (NFT) tokens. Each asset has a unique identifier - assetId, and a unique symbol in the form of a string, e.g. \"USDT\".
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {String} extendedPublicKey Defines the account extended publicly known key which is used to derive all child public keys.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetHDWalletXPubYPubZPubAssetsR}
+     */
+    getHDWalletXPubYPubZPubAssets(blockchain, extendedPublicKey, network, opts) {
+      return this.getHDWalletXPubYPubZPubAssetsWithHttpInfo(blockchain, extendedPublicKey, network, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
 
 
     /**
@@ -198,6 +279,83 @@ export default class HDWalletsApi {
      */
     listHDWalletXPubYPubZPubTransactions(blockchain, extendedPublicKey, network, opts) {
       return this.listHDWalletXPubYPubZPubTransactionsWithHttpInfo(blockchain, extendedPublicKey, network, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * List HD Wallet (xPub, yPub, zPub) UTXOs
+     * Through this endpoint you can list HD wallet's UTXOs (Unspent Transaction Outputs) by providing extended public key of an already synced HD wallet.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {String} extendedPublicKey Defines the account extended publicly known key which is used to derive all child public keys.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListHDWalletXPubYPubZPubUTXOsR} and HTTP response
+     */
+    listHDWalletXPubYPubZPubUTXOsWithHttpInfo(blockchain, extendedPublicKey, network, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listHDWalletXPubYPubZPubUTXOs");
+      }
+      // verify the required parameter 'extendedPublicKey' is set
+      if (extendedPublicKey === undefined || extendedPublicKey === null) {
+        throw new Error("Missing the required parameter 'extendedPublicKey' when calling listHDWalletXPubYPubZPubUTXOs");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listHDWalletXPubYPubZPubUTXOs");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'extendedPublicKey': extendedPublicKey,
+        'network': network
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'derivation': opts['derivation'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListHDWalletXPubYPubZPubUTXOsR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/utxos', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List HD Wallet (xPub, yPub, zPub) UTXOs
+     * Through this endpoint you can list HD wallet's UTXOs (Unspent Transaction Outputs) by providing extended public key of an already synced HD wallet.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {String} extendedPublicKey Defines the account extended publicly known key which is used to derive all child public keys.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/String} opts.derivation The way how the HD walled derives, for example when the type is ACCOUNT, it derives change and receive addresses while when the type is BIP32 it derives directly.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListHDWalletXPubYPubZPubUTXOsR}
+     */
+    listHDWalletXPubYPubZPubUTXOs(blockchain, extendedPublicKey, network, opts) {
+      return this.listHDWalletXPubYPubZPubUTXOsWithHttpInfo(blockchain, extendedPublicKey, network, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

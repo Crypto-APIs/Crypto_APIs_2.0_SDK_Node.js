@@ -48,6 +48,16 @@
   }
 
   describe('HDWalletsApi', function() {
+    describe('getHDWalletXPubYPubZPubAssets', function() {
+      it('should call getHDWalletXPubYPubZPubAssets successfully', function(done) {
+        //uncomment below and update the code to test getHDWalletXPubYPubZPubAssets
+        //instance.getHDWalletXPubYPubZPubAssets(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getHDWalletXPubYPubZPubDetails', function() {
       it('should call getHDWalletXPubYPubZPubDetails successfully', function(done) {
         //uncomment below and update the code to test getHDWalletXPubYPubZPubDetails
@@ -62,6 +72,16 @@
       it('should call listHDWalletXPubYPubZPubTransactions successfully', function(done) {
         //uncomment below and update the code to test listHDWalletXPubYPubZPubTransactions
         //instance.listHDWalletXPubYPubZPubTransactions(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('listHDWalletXPubYPubZPubUTXOs', function() {
+      it('should call listHDWalletXPubYPubZPubUTXOs successfully', function(done) {
+        //uncomment below and update the code to test listHDWalletXPubYPubZPubUTXOs
+        //instance.listHDWalletXPubYPubZPubUTXOs(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

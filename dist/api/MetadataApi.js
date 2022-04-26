@@ -7,13 +7,13 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40086"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400105"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40186"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse401105"));
 
 var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40386"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse403105"));
 
 var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse409"));
 
@@ -38,7 +38,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var MetadataApi = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import GetAddressDetailsE401 from './GetAddressDetailsE401';
 /**
  * The InlineResponse401 model module.
  * @module model/InlineResponse401
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse401 {
     /**

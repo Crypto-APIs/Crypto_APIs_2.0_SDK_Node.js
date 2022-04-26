@@ -17,7 +17,7 @@ import ListOmniTransactionsByAddressE400 from './ListOmniTransactionsByAddressE4
 /**
  * The InlineResponse4005 model module.
  * @module model/InlineResponse4005
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4005 {
     /**

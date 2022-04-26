@@ -13,55 +13,71 @@ var _GetWalletAssetDetailsR = _interopRequireDefault(require("../model/GetWallet
 
 var _GetWalletTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetWalletTransactionDetailsByTransactionIDR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40034"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40035"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40035"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40036"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40041"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40038"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40045"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40039"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40046"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40044"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse4007"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40048"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40134"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40049"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40135"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse4007"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40141"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40135"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40145"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40136"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40146"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40138"));
 
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse4017"));
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40139"));
 
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse402"));
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40144"));
 
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40334"));
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40148"));
 
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40335"));
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40149"));
 
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40341"));
+var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4017"));
 
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40345"));
+var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40346"));
+var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40335"));
 
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse4037"));
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40336"));
 
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse4041"));
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40338"));
 
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse409"));
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40339"));
 
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse415"));
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40344"));
 
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse422"));
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40348"));
 
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse429"));
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40349"));
 
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse4037"));
+
+var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse4041"));
+
+var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse409"));
+
+var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse415"));
+
+var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse422"));
+
+var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse429"));
+
+var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse500"));
+
+var _ListAllAssetsByWalletIDR = _interopRequireDefault(require("../model/ListAllAssetsByWalletIDR"));
+
+var _ListAllAssetsFromAllWalletsR = _interopRequireDefault(require("../model/ListAllAssetsFromAllWalletsR"));
 
 var _ListDepositAddressesR = _interopRequireDefault(require("../model/ListDepositAddressesR"));
 
@@ -80,7 +96,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var InformativeApi = /*#__PURE__*/function () {
   /**
@@ -147,7 +163,7 @@ var InformativeApi = /*#__PURE__*/function () {
     }
     /**
      * Get Wallet Asset Details
-     * Through this endpoint customers can obtain details about a specific Wallet/Vault.
+     * Through this endpoint customers can obtain details on all assets (coins, fungible tokens, non-fungible tokens) for the entire Wallet.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Defines the unique ID of the Wallet.
@@ -194,7 +210,7 @@ var InformativeApi = /*#__PURE__*/function () {
     }
     /**
      * Get Wallet Asset Details
-     * Through this endpoint customers can obtain details about a specific Wallet/Vault.
+     * Through this endpoint customers can obtain details on all assets (coins, fungible tokens, non-fungible tokens) for the entire Wallet.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Defines the unique ID of the Wallet.
@@ -272,6 +288,101 @@ var InformativeApi = /*#__PURE__*/function () {
     key: "getWalletTransactionDetailsByTransactionID",
     value: function getWalletTransactionDetailsByTransactionID(blockchain, network, transactionId, opts) {
       return this.getWalletTransactionDetailsByTransactionIDWithHttpInfo(blockchain, network, transactionId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List All Assets By Wallet ID
+     * Through this endpoint customers can obtain information about available assets in one of their wallets, regardless of the blockchain protocol or network, by providing walletId.
+     * @param {String} walletId Defines the unique ID of the Wallet.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAllAssetsByWalletIDR} and HTTP response
+     */
+
+  }, {
+    key: "listAllAssetsByWalletIDWithHttpInfo",
+    value: function listAllAssetsByWalletIDWithHttpInfo(walletId, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'walletId' is set
+
+      if (walletId === undefined || walletId === null) {
+        throw new Error("Missing the required parameter 'walletId' when calling listAllAssetsByWalletID");
+      }
+
+      var pathParams = {
+        'walletId': walletId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListAllAssetsByWalletIDR["default"];
+      return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/assets', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List All Assets By Wallet ID
+     * Through this endpoint customers can obtain information about available assets in one of their wallets, regardless of the blockchain protocol or network, by providing walletId.
+     * @param {String} walletId Defines the unique ID of the Wallet.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListAllAssetsByWalletIDR}
+     */
+
+  }, {
+    key: "listAllAssetsByWalletID",
+    value: function listAllAssetsByWalletID(walletId, opts) {
+      return this.listAllAssetsByWalletIDWithHttpInfo(walletId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * List All Assets From All Wallets
+     * Through this endpoint customers can obtain information about available assets in all of their wallets, regardless of the blockchain protocol or network.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAllAssetsFromAllWalletsR} and HTTP response
+     */
+
+  }, {
+    key: "listAllAssetsFromAllWalletsWithHttpInfo",
+    value: function listAllAssetsFromAllWalletsWithHttpInfo(opts) {
+      opts = opts || {};
+      var postBody = null;
+      var pathParams = {};
+      var queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _ListAllAssetsFromAllWalletsR["default"];
+      return this.apiClient.callApi('/wallet-as-a-service/wallets/all-assets', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * List All Assets From All Wallets
+     * Through this endpoint customers can obtain information about available assets in all of their wallets, regardless of the blockchain protocol or network.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListAllAssetsFromAllWalletsR}
+     */
+
+  }, {
+    key: "listAllAssetsFromAllWallets",
+    value: function listAllAssetsFromAllWallets(opts) {
+      return this.listAllAssetsFromAllWalletsWithHttpInfo(opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

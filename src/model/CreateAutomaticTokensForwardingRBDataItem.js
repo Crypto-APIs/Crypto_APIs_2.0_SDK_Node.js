@@ -17,13 +17,13 @@ import CreateAutomaticTokensForwardingRBTokenData from './CreateAutomaticTokensF
 /**
  * The CreateAutomaticTokensForwardingRBDataItem model module.
  * @module model/CreateAutomaticTokensForwardingRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 class CreateAutomaticTokensForwardingRBDataItem {
     /**
      * Constructs a new <code>CreateAutomaticTokensForwardingRBDataItem</code>.
      * @alias module:model/CreateAutomaticTokensForwardingRBDataItem
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      * @param confirmationsCount {String} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
      * @param feePriority {module:model/CreateAutomaticTokensForwardingRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"SLOW\", \"STANDARD\" or \"FAST\".
      * @param minimumTransferAmount {String} Represents the minimum transfer amount of the currency in the `fromAddress` that can be allowed for an automatic forwarding.
@@ -95,7 +95,7 @@ class CreateAutomaticTokensForwardingRBDataItem {
 CreateAutomaticTokensForwardingRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 CreateAutomaticTokensForwardingRBDataItem.prototype['callbackUrl'] = undefined;

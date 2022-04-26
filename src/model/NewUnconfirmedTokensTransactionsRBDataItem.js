@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The NewUnconfirmedTokensTransactionsRBDataItem model module.
  * @module model/NewUnconfirmedTokensTransactionsRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 class NewUnconfirmedTokensTransactionsRBDataItem {
     /**
      * Constructs a new <code>NewUnconfirmedTokensTransactionsRBDataItem</code>.
      * @alias module:model/NewUnconfirmedTokensTransactionsRBDataItem
      * @param address {String} Represents the address of the transaction, per which the result is returned.
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      */
     constructor(address, callbackUrl) { 
         
@@ -90,7 +90,7 @@ NewUnconfirmedTokensTransactionsRBDataItem.prototype['allowDuplicates'] = false;
 NewUnconfirmedTokensTransactionsRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 NewUnconfirmedTokensTransactionsRBDataItem.prototype['callbackUrl'] = undefined;

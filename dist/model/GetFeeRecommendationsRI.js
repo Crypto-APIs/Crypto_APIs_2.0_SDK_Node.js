@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetFeeRecommendationsRI = /*#__PURE__*/function () {
   /**
@@ -28,11 +28,12 @@ var GetFeeRecommendationsRI = /*#__PURE__*/function () {
    * @param fast {String} Fast fee per byte calculated from unconfirmed transactions
    * @param slow {String} Slow fee per byte calculated from unconfirmed transactions
    * @param standard {String} Standard fee per byte calculated from unconfirmed transactions
+   * @param feeCushionMultiplier {String} Represents the fee cushion multiplier used to multiply the base fee.
    */
-  function GetFeeRecommendationsRI(unit, fast, slow, standard) {
+  function GetFeeRecommendationsRI(unit, fast, slow, standard, feeCushionMultiplier) {
     _classCallCheck(this, GetFeeRecommendationsRI);
 
-    GetFeeRecommendationsRI.initialize(this, unit, fast, slow, standard);
+    GetFeeRecommendationsRI.initialize(this, unit, fast, slow, standard, feeCushionMultiplier);
   }
   /**
    * Initializes the fields of this object.
@@ -43,11 +44,12 @@ var GetFeeRecommendationsRI = /*#__PURE__*/function () {
 
   _createClass(GetFeeRecommendationsRI, null, [{
     key: "initialize",
-    value: function initialize(obj, unit, fast, slow, standard) {
+    value: function initialize(obj, unit, fast, slow, standard, feeCushionMultiplier) {
       obj['unit'] = unit;
       obj['fast'] = fast;
       obj['slow'] = slow;
       obj['standard'] = standard;
+      obj['feeCushionMultiplier'] = feeCushionMultiplier;
     }
     /**
      * Constructs a <code>GetFeeRecommendationsRI</code> from a plain JavaScript object, optionally creating a new instance.
@@ -77,6 +79,10 @@ var GetFeeRecommendationsRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('standard')) {
           obj['standard'] = _ApiClient["default"].convertToType(data['standard'], 'String');
+        }
+
+        if (data.hasOwnProperty('feeCushionMultiplier')) {
+          obj['feeCushionMultiplier'] = _ApiClient["default"].convertToType(data['feeCushionMultiplier'], 'String');
         }
       }
 
@@ -111,5 +117,11 @@ GetFeeRecommendationsRI.prototype['slow'] = undefined;
  */
 
 GetFeeRecommendationsRI.prototype['standard'] = undefined;
+/**
+ * Represents the fee cushion multiplier used to multiply the base fee.
+ * @member {String} feeCushionMultiplier
+ */
+
+GetFeeRecommendationsRI.prototype['feeCushionMultiplier'] = undefined;
 var _default = GetFeeRecommendationsRI;
 exports["default"] = _default;

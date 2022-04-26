@@ -17,7 +17,7 @@ import ListUnconfirmedTransactionsByAddressE400 from './ListUnconfirmedTransacti
 /**
  * The InlineResponse40015 model module.
  * @module model/InlineResponse40015
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40015 {
     /**

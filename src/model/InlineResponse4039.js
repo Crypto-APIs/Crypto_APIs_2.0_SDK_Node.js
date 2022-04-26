@@ -17,7 +17,7 @@ import GetZilliqaTransactionDetailsByTransactionIDE403 from './GetZilliqaTransac
 /**
  * The InlineResponse4039 model module.
  * @module model/InlineResponse4039
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4039 {
     /**

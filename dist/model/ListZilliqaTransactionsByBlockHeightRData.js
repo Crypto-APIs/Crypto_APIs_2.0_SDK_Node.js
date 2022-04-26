@@ -20,21 +20,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHeightRData model module.
  * @module model/ListZilliqaTransactionsByBlockHeightRData
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListZilliqaTransactionsByBlockHeightRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByBlockHeightRData</code>.
    * @alias module:model/ListZilliqaTransactionsByBlockHeightRData
-   * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
    * @param limit {Number} Defines how many items should be returned in the response per page basis.
+   * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
    * @param total {Number} Defines the total number of items returned in the response.
    * @param items {Array.<module:model/ListZilliqaTransactionsByBlockHeightRI>} 
    */
-  function ListZilliqaTransactionsByBlockHeightRData(offset, limit, total, items) {
+  function ListZilliqaTransactionsByBlockHeightRData(limit, offset, total, items) {
     _classCallCheck(this, ListZilliqaTransactionsByBlockHeightRData);
 
-    ListZilliqaTransactionsByBlockHeightRData.initialize(this, offset, limit, total, items);
+    ListZilliqaTransactionsByBlockHeightRData.initialize(this, limit, offset, total, items);
   }
   /**
    * Initializes the fields of this object.
@@ -45,9 +45,9 @@ var ListZilliqaTransactionsByBlockHeightRData = /*#__PURE__*/function () {
 
   _createClass(ListZilliqaTransactionsByBlockHeightRData, null, [{
     key: "initialize",
-    value: function initialize(obj, offset, limit, total, items) {
-      obj['offset'] = offset;
+    value: function initialize(obj, limit, offset, total, items) {
       obj['limit'] = limit;
+      obj['offset'] = offset;
       obj['total'] = total;
       obj['items'] = items;
     }
@@ -65,12 +65,12 @@ var ListZilliqaTransactionsByBlockHeightRData = /*#__PURE__*/function () {
       if (data) {
         obj = obj || new ListZilliqaTransactionsByBlockHeightRData();
 
-        if (data.hasOwnProperty('offset')) {
-          obj['offset'] = _ApiClient["default"].convertToType(data['offset'], 'Number');
-        }
-
         if (data.hasOwnProperty('limit')) {
           obj['limit'] = _ApiClient["default"].convertToType(data['limit'], 'Number');
+        }
+
+        if (data.hasOwnProperty('offset')) {
+          obj['offset'] = _ApiClient["default"].convertToType(data['offset'], 'Number');
         }
 
         if (data.hasOwnProperty('total')) {
@@ -89,18 +89,18 @@ var ListZilliqaTransactionsByBlockHeightRData = /*#__PURE__*/function () {
   return ListZilliqaTransactionsByBlockHeightRData;
 }();
 /**
- * The starting index of the response items, i.e. where the response should start listing the returned items.
- * @member {Number} offset
- */
-
-
-ListZilliqaTransactionsByBlockHeightRData.prototype['offset'] = undefined;
-/**
  * Defines how many items should be returned in the response per page basis.
  * @member {Number} limit
  */
 
+
 ListZilliqaTransactionsByBlockHeightRData.prototype['limit'] = undefined;
+/**
+ * The starting index of the response items, i.e. where the response should start listing the returned items.
+ * @member {Number} offset
+ */
+
+ListZilliqaTransactionsByBlockHeightRData.prototype['offset'] = undefined;
 /**
  * Defines the total number of items returned in the response.
  * @member {Number} total

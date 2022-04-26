@@ -13,25 +13,25 @@ var _CreateAutomaticCoinsForwardingRB = _interopRequireDefault(require("../model
 
 var _DeleteAutomaticCoinsForwardingR = _interopRequireDefault(require("../model/DeleteAutomaticCoinsForwardingR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40075"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40089"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40076"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40090"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40077"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40091"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40175"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40189"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40176"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40190"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40177"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40191"));
 
 var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40375"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40389"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40376"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40390"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40377"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40391"));
 
 var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4041"));
 
@@ -60,7 +60,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var AutomaticCoinsForwardingApi = /*#__PURE__*/function () {
   /**

@@ -19,29 +19,32 @@ import GetXRPRippleBlockDetailsByBlockHashR from '../model/GetXRPRippleBlockDeta
 import GetXRPRippleBlockDetailsByBlockHeightR from '../model/GetXRPRippleBlockDetailsByBlockHeightR';
 import GetXRPRippleTransactionDetailsByTransactionIDR from '../model/GetXRPRippleTransactionDetailsByTransactionIDR';
 import InlineResponse40011 from '../model/InlineResponse40011';
-import InlineResponse40018 from '../model/InlineResponse40018';
+import InlineResponse40016 from '../model/InlineResponse40016';
+import InlineResponse40019 from '../model/InlineResponse40019';
 import InlineResponse4002 from '../model/InlineResponse4002';
-import InlineResponse40023 from '../model/InlineResponse40023';
-import InlineResponse40027 from '../model/InlineResponse40027';
-import InlineResponse40031 from '../model/InlineResponse40031';
-import InlineResponse40039 from '../model/InlineResponse40039';
+import InlineResponse40024 from '../model/InlineResponse40024';
+import InlineResponse40028 from '../model/InlineResponse40028';
+import InlineResponse40032 from '../model/InlineResponse40032';
+import InlineResponse40042 from '../model/InlineResponse40042';
 import InlineResponse4006 from '../model/InlineResponse4006';
 import InlineResponse40111 from '../model/InlineResponse40111';
-import InlineResponse40118 from '../model/InlineResponse40118';
+import InlineResponse40116 from '../model/InlineResponse40116';
+import InlineResponse40119 from '../model/InlineResponse40119';
 import InlineResponse4012 from '../model/InlineResponse4012';
-import InlineResponse40123 from '../model/InlineResponse40123';
-import InlineResponse40127 from '../model/InlineResponse40127';
-import InlineResponse40131 from '../model/InlineResponse40131';
-import InlineResponse40139 from '../model/InlineResponse40139';
+import InlineResponse40124 from '../model/InlineResponse40124';
+import InlineResponse40128 from '../model/InlineResponse40128';
+import InlineResponse40132 from '../model/InlineResponse40132';
+import InlineResponse40142 from '../model/InlineResponse40142';
 import InlineResponse4016 from '../model/InlineResponse4016';
 import InlineResponse402 from '../model/InlineResponse402';
 import InlineResponse40311 from '../model/InlineResponse40311';
-import InlineResponse40318 from '../model/InlineResponse40318';
+import InlineResponse40316 from '../model/InlineResponse40316';
+import InlineResponse40319 from '../model/InlineResponse40319';
 import InlineResponse4032 from '../model/InlineResponse4032';
-import InlineResponse40323 from '../model/InlineResponse40323';
-import InlineResponse40327 from '../model/InlineResponse40327';
-import InlineResponse40331 from '../model/InlineResponse40331';
-import InlineResponse40339 from '../model/InlineResponse40339';
+import InlineResponse40324 from '../model/InlineResponse40324';
+import InlineResponse40328 from '../model/InlineResponse40328';
+import InlineResponse40332 from '../model/InlineResponse40332';
+import InlineResponse40342 from '../model/InlineResponse40342';
 import InlineResponse4036 from '../model/InlineResponse4036';
 import InlineResponse4041 from '../model/InlineResponse4041';
 import InlineResponse409 from '../model/InlineResponse409';
@@ -49,6 +52,7 @@ import InlineResponse415 from '../model/InlineResponse415';
 import InlineResponse422 from '../model/InlineResponse422';
 import InlineResponse429 from '../model/InlineResponse429';
 import InlineResponse500 from '../model/InlineResponse500';
+import ListXRPRippleTransactionsByAddressAndTimeRangeR from '../model/ListXRPRippleTransactionsByAddressAndTimeRangeR';
 import ListXRPRippleTransactionsByAddressR from '../model/ListXRPRippleTransactionsByAddressR';
 import ListXRPRippleTransactionsByBlockHashR from '../model/ListXRPRippleTransactionsByBlockHashR';
 import ListXRPRippleTransactionsByBlockHeightR from '../model/ListXRPRippleTransactionsByBlockHeightR';
@@ -56,7 +60,7 @@ import ListXRPRippleTransactionsByBlockHeightR from '../model/ListXRPRippleTrans
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class XRPRippleApi {
 
@@ -435,6 +439,90 @@ export default class XRPRippleApi {
      */
     listXRPRippleTransactionsByAddress(network, address, opts) {
       return this.listXRPRippleTransactionsByAddressWithHttpInfo(network, address, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * List XRP (Ripple) Transactions By Address And Time Range
+     * Тhis endpoint lists XRP transactions by the attribute `address` and the query parameters `fromTimestamp` and `toTimestamp`  which gives customers the opportunity to filter the results by a specified time period.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @param {module:model/String} opts.transactionType Defines the transaction type.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListXRPRippleTransactionsByAddressAndTimeRangeR} and HTTP response
+     */
+    listXRPRippleTransactionsByAddressAndTimeRangeWithHttpInfo(network, address, fromTimestamp, toTimestamp, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listXRPRippleTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listXRPRippleTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'fromTimestamp' is set
+      if (fromTimestamp === undefined || fromTimestamp === null) {
+        throw new Error("Missing the required parameter 'fromTimestamp' when calling listXRPRippleTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'toTimestamp' is set
+      if (toTimestamp === undefined || toTimestamp === null) {
+        throw new Error("Missing the required parameter 'toTimestamp' when calling listXRPRippleTransactionsByAddressAndTimeRange");
+      }
+
+      let pathParams = {
+        'network': network,
+        'address': address
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'fromTimestamp': fromTimestamp,
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+        'toTimestamp': toTimestamp,
+        'transactionType': opts['transactionType']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListXRPRippleTransactionsByAddressAndTimeRangeR;
+      return this.apiClient.callApi(
+        '/blockchain-data/xrp-specific/{network}/addresses/{address}/transactions-by-time-range', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List XRP (Ripple) Transactions By Address And Time Range
+     * Тhis endpoint lists XRP transactions by the attribute `address` and the query parameters `fromTimestamp` and `toTimestamp`  which gives customers the opportunity to filter the results by a specified time period.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @param {module:model/String} opts.transactionType Defines the transaction type.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListXRPRippleTransactionsByAddressAndTimeRangeR}
+     */
+    listXRPRippleTransactionsByAddressAndTimeRange(network, address, fromTimestamp, toTimestamp, opts) {
+      return this.listXRPRippleTransactionsByAddressAndTimeRangeWithHttpInfo(network, address, fromTimestamp, toTimestamp, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

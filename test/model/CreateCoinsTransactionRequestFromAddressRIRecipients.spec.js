@@ -60,8 +60,20 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property addressTag (base name: "addressTag")', function() {
+      // uncomment below and update the code to test the property addressTag
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromAddressRIRecipients();
+      //expect(instance).to.be();
+    });
+
     it('should have the property amount (base name: "amount")', function() {
       // uncomment below and update the code to test the property amount
+      //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromAddressRIRecipients();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property classicAddress (base name: "classicAddress")', function() {
+      // uncomment below and update the code to test the property classicAddress
       //var instance = new Cryptoapis.CreateCoinsTransactionRequestFromAddressRIRecipients();
       //expect(instance).to.be();
     });

@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem model module.
  * @module model/NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 class NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem {
     /**
      * Constructs a new <code>NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem</code>.
      * @alias module:model/NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem
      * @param address {String} Represents the address of the transaction, per which the result is returned.
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
      */
     constructor(address, callbackUrl, confirmationsCount) { 
@@ -95,7 +95,7 @@ NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem.prototype['allowDupli
 NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 NewConfirmedCoinsTransactionsAndEachConfirmationRBDataItem.prototype['callbackUrl'] = undefined;

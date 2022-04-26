@@ -17,20 +17,20 @@ import ListZilliqaTransactionsByAddressRI from './ListZilliqaTransactionsByAddre
 /**
  * The ListZilliqaTransactionsByAddressRData model module.
  * @module model/ListZilliqaTransactionsByAddressRData
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListZilliqaTransactionsByAddressRData {
     /**
      * Constructs a new <code>ListZilliqaTransactionsByAddressRData</code>.
      * @alias module:model/ListZilliqaTransactionsByAddressRData
-     * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
      * @param limit {Number} Defines how many items should be returned in the response per page basis.
+     * @param offset {Number} The starting index of the response items, i.e. where the response should start listing the returned items.
      * @param total {Number} Defines the total number of items returned in the response.
      * @param items {Array.<module:model/ListZilliqaTransactionsByAddressRI>} 
      */
-    constructor(offset, limit, total, items) { 
+    constructor(limit, offset, total, items) { 
         
-        ListZilliqaTransactionsByAddressRData.initialize(this, offset, limit, total, items);
+        ListZilliqaTransactionsByAddressRData.initialize(this, limit, offset, total, items);
     }
 
     /**
@@ -38,9 +38,9 @@ class ListZilliqaTransactionsByAddressRData {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, offset, limit, total, items) { 
-        obj['offset'] = offset;
+    static initialize(obj, limit, offset, total, items) { 
         obj['limit'] = limit;
+        obj['offset'] = offset;
         obj['total'] = total;
         obj['items'] = items;
     }
@@ -56,11 +56,11 @@ class ListZilliqaTransactionsByAddressRData {
         if (data) {
             obj = obj || new ListZilliqaTransactionsByAddressRData();
 
-            if (data.hasOwnProperty('offset')) {
-                obj['offset'] = ApiClient.convertToType(data['offset'], 'Number');
-            }
             if (data.hasOwnProperty('limit')) {
                 obj['limit'] = ApiClient.convertToType(data['limit'], 'Number');
+            }
+            if (data.hasOwnProperty('offset')) {
+                obj['offset'] = ApiClient.convertToType(data['offset'], 'Number');
             }
             if (data.hasOwnProperty('total')) {
                 obj['total'] = ApiClient.convertToType(data['total'], 'Number');
@@ -76,16 +76,16 @@ class ListZilliqaTransactionsByAddressRData {
 }
 
 /**
- * The starting index of the response items, i.e. where the response should start listing the returned items.
- * @member {Number} offset
- */
-ListZilliqaTransactionsByAddressRData.prototype['offset'] = undefined;
-
-/**
  * Defines how many items should be returned in the response per page basis.
  * @member {Number} limit
  */
 ListZilliqaTransactionsByAddressRData.prototype['limit'] = undefined;
+
+/**
+ * The starting index of the response items, i.e. where the response should start listing the returned items.
+ * @member {Number} offset
+ */
+ListZilliqaTransactionsByAddressRData.prototype['offset'] = undefined;
 
 /**
  * Defines the total number of items returned in the response.

@@ -16,19 +16,17 @@ import ApiClient from '../ApiClient';
 /**
  * The GetHDWalletXPubYPubZPubDetailsRI model module.
  * @module model/GetHDWalletXPubYPubZPubDetailsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetHDWalletXPubYPubZPubDetailsRI {
     /**
      * Constructs a new <code>GetHDWalletXPubYPubZPubDetailsRI</code>.
      * @alias module:model/GetHDWalletXPubYPubZPubDetailsRI
      * @param confirmedBalance {String} Specifies the confirmed coins balance of the Wallet.
-     * @param totalReceived {String} Defines the total currency received to the Wallet.
-     * @param totalSpent {String} Defines the total currency spent from the Wallet.
      */
-    constructor(confirmedBalance, totalReceived, totalSpent) { 
+    constructor(confirmedBalance) { 
         
-        GetHDWalletXPubYPubZPubDetailsRI.initialize(this, confirmedBalance, totalReceived, totalSpent);
+        GetHDWalletXPubYPubZPubDetailsRI.initialize(this, confirmedBalance);
     }
 
     /**
@@ -36,10 +34,8 @@ class GetHDWalletXPubYPubZPubDetailsRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, confirmedBalance, totalReceived, totalSpent) { 
+    static initialize(obj, confirmedBalance) { 
         obj['confirmedBalance'] = confirmedBalance;
-        obj['totalReceived'] = totalReceived;
-        obj['totalSpent'] = totalSpent;
     }
 
     /**

@@ -17,7 +17,7 @@ import NewConfirmedCoinsTransactionsAndEachConfirmationE409 from './NewConfirmed
 /**
  * The InlineResponse40911 model module.
  * @module model/InlineResponse40911
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40911 {
     /**

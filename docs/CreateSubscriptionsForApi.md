@@ -40,7 +40,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'minedTransactionRB': new Cryptoapis.MinedTransactionRB() // MinedTransactionRB | 
 };
 apiInstance.minedTransaction(blockchain, network, opts).then((data) => {
@@ -98,7 +98,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newBlockRB': new Cryptoapis.NewBlockRB() // NewBlockRB | 
 };
 apiInstance.newBlock(blockchain, network, opts).then((data) => {
@@ -156,7 +156,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newConfirmedCoinsTransactionsRB': new Cryptoapis.NewConfirmedCoinsTransactionsRB() // NewConfirmedCoinsTransactionsRB | 
 };
 apiInstance.newConfirmedCoinsTransactions(blockchain, network, opts).then((data) => {
@@ -214,7 +214,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newConfirmedCoinsTransactionsAndEachConfirmationRB': new Cryptoapis.NewConfirmedCoinsTransactionsAndEachConfirmationRB() // NewConfirmedCoinsTransactionsAndEachConfirmationRB | 
 };
 apiInstance.newConfirmedCoinsTransactionsAndEachConfirmation(blockchain, network, opts).then((data) => {
@@ -272,7 +272,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = ethereum-classic; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = mordor; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newConfirmedInternalTransactionsRB': new Cryptoapis.NewConfirmedInternalTransactionsRB() // NewConfirmedInternalTransactionsRB | 
 };
 apiInstance.newConfirmedInternalTransactions(blockchain, network, opts).then((data) => {
@@ -330,7 +330,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = ethereum-classic; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = mordor; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newConfirmedInternalTransactionsAndEachConfirmationRB': new Cryptoapis.NewConfirmedInternalTransactionsAndEachConfirmationRB() // NewConfirmedInternalTransactionsAndEachConfirmationRB | 
 };
 apiInstance.newConfirmedInternalTransactionsAndEachConfirmation(blockchain, network, opts).then((data) => {
@@ -388,7 +388,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newConfirmedTokensTransactionsRB': new Cryptoapis.NewConfirmedTokensTransactionsRB() // NewConfirmedTokensTransactionsRB | 
 };
 apiInstance.newConfirmedTokensTransactions(blockchain, network, opts).then((data) => {
@@ -446,7 +446,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newConfirmedTokensTransactionsAndEachConfirmationRB': new Cryptoapis.NewConfirmedTokensTransactionsAndEachConfirmationRB() // NewConfirmedTokensTransactionsAndEachConfirmationRB | 
 };
 apiInstance.newConfirmedTokensTransactionsAndEachConfirmation(blockchain, network, opts).then((data) => {
@@ -504,7 +504,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newUnconfirmedCoinsTransactionsRB': new Cryptoapis.NewUnconfirmedCoinsTransactionsRB() // NewUnconfirmedCoinsTransactionsRB | 
 };
 apiInstance.newUnconfirmedCoinsTransactions(blockchain, network, opts).then((data) => {
@@ -562,7 +562,7 @@ let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
-  'context': "context_example", // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'newUnconfirmedTokensTransactionsRB': new Cryptoapis.NewUnconfirmedTokensTransactionsRB() // NewUnconfirmedTokensTransactionsRB | 
 };
 apiInstance.newUnconfirmedTokensTransactions(blockchain, network, opts).then((data) => {

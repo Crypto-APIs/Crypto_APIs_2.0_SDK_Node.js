@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BannedIpAddress model module.
  * @module model/BannedIpAddress
- * @version 1.4.0
+ * @version 1.5.0
  */
 var BannedIpAddress = /*#__PURE__*/function () {
   /**

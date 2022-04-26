@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTransactionsByAddressRIBSDScriptSig model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSDScriptSig
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListConfirmedTransactionsByAddressRIBSDScriptSig {
     /**

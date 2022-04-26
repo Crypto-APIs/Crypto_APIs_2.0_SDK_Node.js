@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionRequestDetailsRIRecipients model module.
  * @module model/GetTransactionRequestDetailsRIRecipients
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetTransactionRequestDetailsRIRecipients {
     /**
@@ -56,8 +56,14 @@ class GetTransactionRequestDetailsRIRecipients {
             if (data.hasOwnProperty('address')) {
                 obj['address'] = ApiClient.convertToType(data['address'], 'String');
             }
+            if (data.hasOwnProperty('addressTag')) {
+                obj['addressTag'] = ApiClient.convertToType(data['addressTag'], 'Number');
+            }
             if (data.hasOwnProperty('amount')) {
                 obj['amount'] = ApiClient.convertToType(data['amount'], 'String');
+            }
+            if (data.hasOwnProperty('classicAddress')) {
+                obj['classicAddress'] = ApiClient.convertToType(data['classicAddress'], 'String');
             }
             if (data.hasOwnProperty('unit')) {
                 obj['unit'] = ApiClient.convertToType(data['unit'], 'String');
@@ -76,10 +82,22 @@ class GetTransactionRequestDetailsRIRecipients {
 GetTransactionRequestDetailsRIRecipients.prototype['address'] = undefined;
 
 /**
+ * Defines a specific Tag that is an additional XRP address feature. It helps identify a transaction recipient beyond a wallet address. The tag that was encoded into the x-Address along with the Classic Address.
+ * @member {Number} addressTag
+ */
+GetTransactionRequestDetailsRIRecipients.prototype['addressTag'] = undefined;
+
+/**
  * Represents the amount received to this address.
  * @member {String} amount
  */
 GetTransactionRequestDetailsRIRecipients.prototype['amount'] = undefined;
+
+/**
+ * Represents the public address, which is a compressed and shortened form of a public key. A classic address is shown when the destination address is an x-Address.
+ * @member {String} classicAddress
+ */
+GetTransactionRequestDetailsRIRecipients.prototype['classicAddress'] = undefined;
 
 /**
  * Defines the unit of the amount.

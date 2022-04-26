@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSLScriptPubKey from './GetTransact
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSLVout model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSLVout
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSLVout {
     /**

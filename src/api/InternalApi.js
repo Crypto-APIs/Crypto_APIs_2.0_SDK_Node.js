@@ -14,16 +14,16 @@
 
 import ApiClient from "../ApiClient";
 import GetInternalTransactionByTransactionHashAndOperationIdR from '../model/GetInternalTransactionByTransactionHashAndOperationIdR';
-import InlineResponse40048 from '../model/InlineResponse40048';
-import InlineResponse40050 from '../model/InlineResponse40050';
-import InlineResponse40051 from '../model/InlineResponse40051';
-import InlineResponse40148 from '../model/InlineResponse40148';
-import InlineResponse40150 from '../model/InlineResponse40150';
-import InlineResponse40151 from '../model/InlineResponse40151';
+import InlineResponse40052 from '../model/InlineResponse40052';
+import InlineResponse40054 from '../model/InlineResponse40054';
+import InlineResponse40056 from '../model/InlineResponse40056';
+import InlineResponse40152 from '../model/InlineResponse40152';
+import InlineResponse40154 from '../model/InlineResponse40154';
+import InlineResponse40156 from '../model/InlineResponse40156';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40348 from '../model/InlineResponse40348';
-import InlineResponse40350 from '../model/InlineResponse40350';
-import InlineResponse40351 from '../model/InlineResponse40351';
+import InlineResponse40352 from '../model/InlineResponse40352';
+import InlineResponse40354 from '../model/InlineResponse40354';
+import InlineResponse40356 from '../model/InlineResponse40356';
 import InlineResponse4043 from '../model/InlineResponse4043';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse415 from '../model/InlineResponse415';
@@ -36,7 +36,7 @@ import ListInternalTransactionsByAddressR from '../model/ListInternalTransaction
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class InternalApi {
 

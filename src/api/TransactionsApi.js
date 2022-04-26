@@ -22,18 +22,18 @@ import CreateCoinsTransactionRequestFromWalletRB from '../model/CreateCoinsTrans
 import CreateFungibleTokensTransactionRequestFromAddressR from '../model/CreateFungibleTokensTransactionRequestFromAddressR';
 import CreateFungibleTokensTransactionRequestFromAddressRB from '../model/CreateFungibleTokensTransactionRequestFromAddressRB';
 import InlineResponse40013 from '../model/InlineResponse40013';
-import InlineResponse40020 from '../model/InlineResponse40020';
-import InlineResponse40025 from '../model/InlineResponse40025';
-import InlineResponse40036 from '../model/InlineResponse40036';
+import InlineResponse40021 from '../model/InlineResponse40021';
+import InlineResponse40026 from '../model/InlineResponse40026';
+import InlineResponse40037 from '../model/InlineResponse40037';
 import InlineResponse40113 from '../model/InlineResponse40113';
-import InlineResponse40120 from '../model/InlineResponse40120';
-import InlineResponse40125 from '../model/InlineResponse40125';
-import InlineResponse40136 from '../model/InlineResponse40136';
+import InlineResponse40121 from '../model/InlineResponse40121';
+import InlineResponse40126 from '../model/InlineResponse40126';
+import InlineResponse40137 from '../model/InlineResponse40137';
 import InlineResponse402 from '../model/InlineResponse402';
 import InlineResponse40313 from '../model/InlineResponse40313';
-import InlineResponse40320 from '../model/InlineResponse40320';
-import InlineResponse40325 from '../model/InlineResponse40325';
-import InlineResponse40336 from '../model/InlineResponse40336';
+import InlineResponse40321 from '../model/InlineResponse40321';
+import InlineResponse40326 from '../model/InlineResponse40326';
+import InlineResponse40337 from '../model/InlineResponse40337';
 import InlineResponse4091 from '../model/InlineResponse4091';
 import InlineResponse4092 from '../model/InlineResponse4092';
 import InlineResponse4093 from '../model/InlineResponse4093';
@@ -46,7 +46,7 @@ import InlineResponse500 from '../model/InlineResponse500';
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class TransactionsApi {
 
@@ -143,7 +143,7 @@ export default class TransactionsApi {
     /**
      * Create Coins Transaction Request from Address
      * Through this endpoint users can create a new single transaction request from one address to another.
-     * @param {String} address Defines the specific source address for the transaction.
+     * @param {String} address Defines the specific source address for the transaction. For XRP we also support the X-address format.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
@@ -200,7 +200,7 @@ export default class TransactionsApi {
     /**
      * Create Coins Transaction Request from Address
      * Through this endpoint users can create a new single transaction request from one address to another.
-     * @param {String} address Defines the specific source address for the transaction.
+     * @param {String} address Defines the specific source address for the transaction. For XRP we also support the X-address format.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.

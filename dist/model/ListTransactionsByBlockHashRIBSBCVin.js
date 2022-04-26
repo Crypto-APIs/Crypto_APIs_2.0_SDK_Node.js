@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSBCVin model module.
  * @module model/ListTransactionsByBlockHashRIBSBCVin
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListTransactionsByBlockHashRIBSBCVin = /*#__PURE__*/function () {
   /**

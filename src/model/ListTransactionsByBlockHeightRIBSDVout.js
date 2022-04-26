@@ -17,7 +17,7 @@ import ListTransactionsByBlockHeightRIBSDScriptPubKey from './ListTransactionsBy
 /**
  * The ListTransactionsByBlockHeightRIBSDVout model module.
  * @module model/ListTransactionsByBlockHeightRIBSDVout
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListTransactionsByBlockHeightRIBSDVout {
     /**

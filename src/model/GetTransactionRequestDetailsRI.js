@@ -17,7 +17,7 @@ import GetTransactionRequestDetailsRIRecipients from './GetTransactionRequestDet
 /**
  * The GetTransactionRequestDetailsRI model module.
  * @module model/GetTransactionRequestDetailsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetTransactionRequestDetailsRI {
     /**
@@ -86,6 +86,9 @@ class GetTransactionRequestDetailsRI {
             if (data.hasOwnProperty('totalTransactionAmount')) {
                 obj['totalTransactionAmount'] = ApiClient.convertToType(data['totalTransactionAmount'], 'String');
             }
+            if (data.hasOwnProperty('transactionId')) {
+                obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
+            }
             if (data.hasOwnProperty('transactionRequestStatus')) {
                 obj['transactionRequestStatus'] = ApiClient.convertToType(data['transactionRequestStatus'], 'String');
             }
@@ -140,6 +143,12 @@ GetTransactionRequestDetailsRI.prototype['recipients'] = undefined;
  * @member {String} totalTransactionAmount
  */
 GetTransactionRequestDetailsRI.prototype['totalTransactionAmount'] = undefined;
+
+/**
+ * Represents the unique identifier of a transaction, i.e. it could be transactionId in UTXO-based protocols like Bitcoin, and transaction hash in Ethereum blockchain.
+ * @member {String} transactionId
+ */
+GetTransactionRequestDetailsRI.prototype['transactionId'] = undefined;
 
 /**
  * Defines the status of the transaction request, e.g. pending.
@@ -217,6 +226,12 @@ GetTransactionRequestDetailsRI['BlockchainEnum'] = {
      * @const
      */
     "ethereum-classic": "ethereum-classic",
+
+    /**
+     * value: "xrp"
+     * @const
+     */
+    "xrp": "xrp",
 
     /**
      * value: "zcash"

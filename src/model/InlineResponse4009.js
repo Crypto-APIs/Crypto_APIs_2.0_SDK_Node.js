@@ -17,7 +17,7 @@ import GetZilliqaTransactionDetailsByTransactionIDE400 from './GetZilliqaTransac
 /**
  * The InlineResponse4009 model module.
  * @module model/InlineResponse4009
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4009 {
     /**

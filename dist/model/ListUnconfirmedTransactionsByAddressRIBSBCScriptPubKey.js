@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListUnconfirmedTransactionsByAddressRIBSBCScriptPubKey = /*#__PURE__*/function () {
   /**

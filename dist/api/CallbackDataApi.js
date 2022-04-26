@@ -15,31 +15,31 @@ var _GetBlockDetailsByBlockHeightFromCallbackR = _interopRequireDefault(require(
 
 var _GetTransactionDetailsByTransactionIDFromCallbackR = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDFromCallbackR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40069"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40083"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40070"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40084"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40071"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40085"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40072"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40086"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40169"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40183"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40170"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40184"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40171"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40185"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40172"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40186"));
 
 var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40369"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40383"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40370"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40384"));
 
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40371"));
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40385"));
 
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40372"));
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40386"));
 
 var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse4041"));
 
@@ -68,7 +68,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var CallbackDataApi = /*#__PURE__*/function () {
   /**

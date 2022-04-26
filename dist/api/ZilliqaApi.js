@@ -19,33 +19,33 @@ var _GetZilliqaTransactionDetailsByTransactionIDR = _interopRequireDefault(requi
 
 var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40014"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40021"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40022"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40022"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40023"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40029"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse4003"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse4003"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40030"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40033"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40034"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40040"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40043"));
 
 var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse4009"));
 
 var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40114"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40121"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40122"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40122"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40123"));
 
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40129"));
+var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse4013"));
 
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse4013"));
+var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40130"));
 
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40133"));
+var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40134"));
 
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40140"));
+var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40143"));
 
 var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4019"));
 
@@ -53,17 +53,17 @@ var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse4
 
 var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40314"));
 
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40321"));
+var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40322"));
 
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40322"));
+var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40323"));
 
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40329"));
+var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse4033"));
 
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse4033"));
+var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40330"));
 
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40333"));
+var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40334"));
 
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40340"));
+var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40343"));
 
 var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse4039"));
 
@@ -98,7 +98,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var ZilliqaApi = /*#__PURE__*/function () {
   /**

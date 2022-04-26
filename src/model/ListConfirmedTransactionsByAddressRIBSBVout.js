@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSBScriptPubKey from './ListConfirmed
 /**
  * The ListConfirmedTransactionsByAddressRIBSBVout model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBVout
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListConfirmedTransactionsByAddressRIBSBVout {
     /**

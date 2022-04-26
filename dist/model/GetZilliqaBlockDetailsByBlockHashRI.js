@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHashRI model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetZilliqaBlockDetailsByBlockHashRI = /*#__PURE__*/function () {
   /**

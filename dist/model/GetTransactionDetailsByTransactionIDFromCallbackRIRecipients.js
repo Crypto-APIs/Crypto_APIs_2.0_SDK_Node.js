@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIRecipients model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIRecipients
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIRecipients = /*#__PURE__*/function () {
   /**

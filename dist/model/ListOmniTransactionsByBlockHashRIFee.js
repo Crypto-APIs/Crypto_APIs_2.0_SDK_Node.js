@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListOmniTransactionsByBlockHashRIFee model module.
  * @module model/ListOmniTransactionsByBlockHashRIFee
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListOmniTransactionsByBlockHashRIFee = /*#__PURE__*/function () {
   /**

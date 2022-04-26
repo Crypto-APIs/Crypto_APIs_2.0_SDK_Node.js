@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRIFungibleTokens model module.
  * @module model/GetWalletAssetDetailsRIFungibleTokens
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetWalletAssetDetailsRIFungibleTokens = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSZVShieldedOutput model module.
  * @module model/ListTransactionsByBlockHeightRIBSZVShieldedOutput
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListTransactionsByBlockHeightRIBSZVShieldedOutput = /*#__PURE__*/function () {
   /**

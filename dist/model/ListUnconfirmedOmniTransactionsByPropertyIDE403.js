@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedOmniTransactionsByPropertyIDE403 model module.
  * @module model/ListUnconfirmedOmniTransactionsByPropertyIDE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListUnconfirmedOmniTransactionsByPropertyIDE403 = /*#__PURE__*/function () {
   /**

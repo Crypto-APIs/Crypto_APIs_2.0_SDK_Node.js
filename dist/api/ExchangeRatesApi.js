@@ -11,27 +11,27 @@ var _GetExchangeRateByAssetSymbolsR = _interopRequireDefault(require("../model/G
 
 var _GetExchangeRateByAssetsIDsR = _interopRequireDefault(require("../model/GetExchangeRateByAssetsIDsR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40087"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400106"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40088"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse400107"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40187"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse401106"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40188"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse401107"));
 
 var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40387"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse403106"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40388"));
+var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse403107"));
 
 var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse409"));
 
 var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse415"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse4224"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse4226"));
 
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4225"));
+var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4227"));
 
 var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse429"));
 
@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var ExchangeRatesApi = /*#__PURE__*/function () {
   /**

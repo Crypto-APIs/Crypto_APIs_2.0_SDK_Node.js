@@ -31,7 +31,7 @@ import ListTransactionsByBlockHashRIBSZVin from './ListTransactionsByBlockHashRI
 /**
  * The ListTransactionsByBlockHashRIBS model module.
  * @module model/ListTransactionsByBlockHashRIBS
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListTransactionsByBlockHashRIBS {
     /**

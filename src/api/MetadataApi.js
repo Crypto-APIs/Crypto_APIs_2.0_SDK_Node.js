@@ -13,10 +13,10 @@
 
 
 import ApiClient from "../ApiClient";
-import InlineResponse40086 from '../model/InlineResponse40086';
-import InlineResponse40186 from '../model/InlineResponse40186';
+import InlineResponse400105 from '../model/InlineResponse400105';
+import InlineResponse401105 from '../model/InlineResponse401105';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40386 from '../model/InlineResponse40386';
+import InlineResponse403105 from '../model/InlineResponse403105';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse415 from '../model/InlineResponse415';
 import InlineResponse422 from '../model/InlineResponse422';
@@ -27,7 +27,7 @@ import ListSupportedAssetsR from '../model/ListSupportedAssetsR';
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class MetadataApi {
 

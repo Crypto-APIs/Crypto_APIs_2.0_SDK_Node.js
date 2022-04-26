@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastTransactionFail model module.
  * @module model/BroadcastTransactionFail
- * @version 1.4.0
+ * @version 1.5.0
  */
 var BroadcastTransactionFail = /*#__PURE__*/function () {
   /**

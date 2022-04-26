@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListOmniTransactionsByAddressRISenders model module.
  * @module model/ListOmniTransactionsByAddressRISenders
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListOmniTransactionsByAddressRISenders = /*#__PURE__*/function () {
   /**

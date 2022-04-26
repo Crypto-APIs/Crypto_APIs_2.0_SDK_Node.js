@@ -17,7 +17,7 @@ import ListOmniTokensByAddressE403 from './ListOmniTokensByAddressE403';
 /**
  * The InlineResponse4031 model module.
  * @module model/InlineResponse4031
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4031 {
     /**

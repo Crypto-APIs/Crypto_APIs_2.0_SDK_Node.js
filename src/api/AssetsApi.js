@@ -15,16 +15,16 @@
 import ApiClient from "../ApiClient";
 import GetAssetDetailsByAssetIDR from '../model/GetAssetDetailsByAssetIDR';
 import GetAssetDetailsByAssetSymbolR from '../model/GetAssetDetailsByAssetSymbolR';
-import InlineResponse40089 from '../model/InlineResponse40089';
-import InlineResponse40090 from '../model/InlineResponse40090';
-import InlineResponse40091 from '../model/InlineResponse40091';
-import InlineResponse40189 from '../model/InlineResponse40189';
-import InlineResponse40190 from '../model/InlineResponse40190';
-import InlineResponse40191 from '../model/InlineResponse40191';
+import InlineResponse400108 from '../model/InlineResponse400108';
+import InlineResponse400109 from '../model/InlineResponse400109';
+import InlineResponse400110 from '../model/InlineResponse400110';
+import InlineResponse401108 from '../model/InlineResponse401108';
+import InlineResponse401109 from '../model/InlineResponse401109';
+import InlineResponse401110 from '../model/InlineResponse401110';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40389 from '../model/InlineResponse40389';
-import InlineResponse40390 from '../model/InlineResponse40390';
-import InlineResponse40391 from '../model/InlineResponse40391';
+import InlineResponse403108 from '../model/InlineResponse403108';
+import InlineResponse403109 from '../model/InlineResponse403109';
+import InlineResponse403110 from '../model/InlineResponse403110';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse415 from '../model/InlineResponse415';
 import InlineResponse422 from '../model/InlineResponse422';
@@ -35,7 +35,7 @@ import ListAssetsDetailsR from '../model/ListAssetsDetailsR';
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class AssetsApi {
 

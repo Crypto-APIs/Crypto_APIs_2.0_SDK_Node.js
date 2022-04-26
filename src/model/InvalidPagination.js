@@ -17,7 +17,7 @@ import BannedIpAddressDetails from './BannedIpAddressDetails';
 /**
  * The InvalidPagination model module.
  * @module model/InvalidPagination
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InvalidPagination {
     /**

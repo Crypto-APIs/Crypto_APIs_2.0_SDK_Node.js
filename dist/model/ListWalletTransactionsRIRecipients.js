@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRIRecipients model module.
  * @module model/ListWalletTransactionsRIRecipients
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListWalletTransactionsRIRecipients = /*#__PURE__*/function () {
   /**

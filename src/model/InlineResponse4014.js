@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDE401 from './GetTransactionDetailsByT
 /**
  * The InlineResponse4014 model module.
  * @module model/InlineResponse4014
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4014 {
     /**

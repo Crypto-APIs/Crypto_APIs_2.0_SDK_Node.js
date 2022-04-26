@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactionsRIBSD2Vin model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSD2Vin
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListAllUnconfirmedTransactionsRIBSD2Vin = /*#__PURE__*/function () {
   /**

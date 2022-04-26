@@ -17,7 +17,7 @@ import ListDepositAddressesE403 from './ListDepositAddressesE403';
 /**
  * The InlineResponse4037 model module.
  * @module model/InlineResponse4037
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4037 {
     /**

@@ -7,6 +7,8 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _ListBlockchainEventsSubscriptionsRIDeactivationReasons = _interopRequireDefault(require("./ListBlockchainEventsSubscriptionsRIDeactivationReasons"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18,26 +20,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptionsRI model module.
  * @module model/ListBlockchainEventsSubscriptionsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListBlockchainEventsSubscriptionsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListBlockchainEventsSubscriptionsRI</code>.
    * @alias module:model/ListBlockchainEventsSubscriptionsRI
    * @param address {String} Represents the address of the transaction.
-   * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
-   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
    * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
    * @param createdTimestamp {Number} Defines the specific time/date when the subscription was created in Unix Timestamp.
    * @param eventType {String} Defines the type of the specific event available for the customer to subscribe to for callback notification.
    * @param isActive {Boolean} Defines whether the subscription is active or not. Set as boolean.
    * @param referenceId {String} Represents a unique ID used to reference the specific callback subscription.
-   * @param transactionId {String} Represents the unique identification string that defines the transaction.
    */
-  function ListBlockchainEventsSubscriptionsRI(address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId) {
+  function ListBlockchainEventsSubscriptionsRI(address, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId) {
     _classCallCheck(this, ListBlockchainEventsSubscriptionsRI);
 
-    ListBlockchainEventsSubscriptionsRI.initialize(this, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId);
+    ListBlockchainEventsSubscriptionsRI.initialize(this, address, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId);
   }
   /**
    * Initializes the fields of this object.
@@ -48,16 +48,14 @@ var ListBlockchainEventsSubscriptionsRI = /*#__PURE__*/function () {
 
   _createClass(ListBlockchainEventsSubscriptionsRI, null, [{
     key: "initialize",
-    value: function initialize(obj, address, callbackSecretKey, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId, transactionId) {
+    value: function initialize(obj, address, callbackUrl, confirmationsCount, createdTimestamp, eventType, isActive, referenceId) {
       obj['address'] = address;
-      obj['callbackSecretKey'] = callbackSecretKey;
       obj['callbackUrl'] = callbackUrl;
       obj['confirmationsCount'] = confirmationsCount;
       obj['createdTimestamp'] = createdTimestamp;
       obj['eventType'] = eventType;
       obj['isActive'] = isActive;
       obj['referenceId'] = referenceId;
-      obj['transactionId'] = transactionId;
     }
     /**
      * Constructs a <code>ListBlockchainEventsSubscriptionsRI</code> from a plain JavaScript object, optionally creating a new instance.
@@ -91,6 +89,10 @@ var ListBlockchainEventsSubscriptionsRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('createdTimestamp')) {
           obj['createdTimestamp'] = _ApiClient["default"].convertToType(data['createdTimestamp'], 'Number');
+        }
+
+        if (data.hasOwnProperty('deactivationReasons')) {
+          obj['deactivationReasons'] = _ApiClient["default"].convertToType(data['deactivationReasons'], [_ListBlockchainEventsSubscriptionsRIDeactivationReasons["default"]]);
         }
 
         if (data.hasOwnProperty('eventType')) {
@@ -130,7 +132,7 @@ ListBlockchainEventsSubscriptionsRI.prototype['address'] = undefined;
 
 ListBlockchainEventsSubscriptionsRI.prototype['callbackSecretKey'] = undefined;
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 
@@ -147,6 +149,12 @@ ListBlockchainEventsSubscriptionsRI.prototype['confirmationsCount'] = undefined;
  */
 
 ListBlockchainEventsSubscriptionsRI.prototype['createdTimestamp'] = undefined;
+/**
+ * Represents the deactivation reason details, available when a blockchain event subscription has status isActive - false.
+ * @member {Array.<module:model/ListBlockchainEventsSubscriptionsRIDeactivationReasons>} deactivationReasons
+ */
+
+ListBlockchainEventsSubscriptionsRI.prototype['deactivationReasons'] = undefined;
 /**
  * Defines the type of the specific event available for the customer to subscribe to for callback notification.
  * @member {String} eventType

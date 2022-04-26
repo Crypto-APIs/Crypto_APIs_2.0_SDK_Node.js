@@ -17,7 +17,7 @@ import BroadcastLocallySignedTransactionE409 from './BroadcastLocallySignedTrans
 /**
  * The InlineResponse40917 model module.
  * @module model/InlineResponse40917
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse40917 {
     /**

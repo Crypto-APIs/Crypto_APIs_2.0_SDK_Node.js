@@ -54,44 +54,26 @@
       //expect(instance).to.be.a(Cryptoapis.ListUnspentTransactionOutputsByAddressRI);
     });
 
+    it('should have the property address (base name: "address")', function() {
+      // uncomment below and update the code to test the property address
+      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property amount (base name: "amount")', function() {
+      // uncomment below and update the code to test the property amount
+      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property index (base name: "index")', function() {
       // uncomment below and update the code to test the property index
       //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
       //expect(instance).to.be();
     });
 
-    it('should have the property locktime (base name: "locktime")', function() {
-      // uncomment below and update the code to test the property locktime
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property minedInBlockHash (base name: "minedInBlockHash")', function() {
-      // uncomment below and update the code to test the property minedInBlockHash
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property minedInBlockHeight (base name: "minedInBlockHeight")', function() {
-      // uncomment below and update the code to test the property minedInBlockHeight
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property recipients (base name: "recipients")', function() {
-      // uncomment below and update the code to test the property recipients
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property senders (base name: "senders")', function() {
-      // uncomment below and update the code to test the property senders
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property size (base name: "size")', function() {
-      // uncomment below and update the code to test the property size
+    it('should have the property isConfirmed (base name: "isConfirmed")', function() {
+      // uncomment below and update the code to test the property isConfirmed
       //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
       //expect(instance).to.be();
     });
@@ -102,44 +84,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property transactionHash (base name: "transactionHash")', function() {
-      // uncomment below and update the code to test the property transactionHash
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
     it('should have the property transactionId (base name: "transactionId")', function() {
       // uncomment below and update the code to test the property transactionId
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property version (base name: "version")', function() {
-      // uncomment below and update the code to test the property version
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property vin (base name: "vin")', function() {
-      // uncomment below and update the code to test the property vin
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property vout (base name: "vout")', function() {
-      // uncomment below and update the code to test the property vout
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property fee (base name: "fee")', function() {
-      // uncomment below and update the code to test the property fee
-      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property blockchainSpecific (base name: "blockchainSpecific")', function() {
-      // uncomment below and update the code to test the property blockchainSpecific
       //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
       //expect(instance).to.be();
     });

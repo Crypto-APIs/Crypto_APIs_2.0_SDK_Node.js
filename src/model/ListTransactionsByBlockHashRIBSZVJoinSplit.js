@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSZVJoinSplit model module.
  * @module model/ListTransactionsByBlockHashRIBSZVJoinSplit
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListTransactionsByBlockHashRIBSZVJoinSplit {
     /**

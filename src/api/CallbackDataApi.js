@@ -17,19 +17,19 @@ import GetAddressDetailsFromCallbackR from '../model/GetAddressDetailsFromCallba
 import GetBlockDetailsByBlockHashFromCallbackR from '../model/GetBlockDetailsByBlockHashFromCallbackR';
 import GetBlockDetailsByBlockHeightFromCallbackR from '../model/GetBlockDetailsByBlockHeightFromCallbackR';
 import GetTransactionDetailsByTransactionIDFromCallbackR from '../model/GetTransactionDetailsByTransactionIDFromCallbackR';
-import InlineResponse40069 from '../model/InlineResponse40069';
-import InlineResponse40070 from '../model/InlineResponse40070';
-import InlineResponse40071 from '../model/InlineResponse40071';
-import InlineResponse40072 from '../model/InlineResponse40072';
-import InlineResponse40169 from '../model/InlineResponse40169';
-import InlineResponse40170 from '../model/InlineResponse40170';
-import InlineResponse40171 from '../model/InlineResponse40171';
-import InlineResponse40172 from '../model/InlineResponse40172';
+import InlineResponse40083 from '../model/InlineResponse40083';
+import InlineResponse40084 from '../model/InlineResponse40084';
+import InlineResponse40085 from '../model/InlineResponse40085';
+import InlineResponse40086 from '../model/InlineResponse40086';
+import InlineResponse40183 from '../model/InlineResponse40183';
+import InlineResponse40184 from '../model/InlineResponse40184';
+import InlineResponse40185 from '../model/InlineResponse40185';
+import InlineResponse40186 from '../model/InlineResponse40186';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40369 from '../model/InlineResponse40369';
-import InlineResponse40370 from '../model/InlineResponse40370';
-import InlineResponse40371 from '../model/InlineResponse40371';
-import InlineResponse40372 from '../model/InlineResponse40372';
+import InlineResponse40383 from '../model/InlineResponse40383';
+import InlineResponse40384 from '../model/InlineResponse40384';
+import InlineResponse40385 from '../model/InlineResponse40385';
+import InlineResponse40386 from '../model/InlineResponse40386';
 import InlineResponse4041 from '../model/InlineResponse4041';
 import InlineResponse4042 from '../model/InlineResponse4042';
 import InlineResponse4044 from '../model/InlineResponse4044';
@@ -42,7 +42,7 @@ import InlineResponse500 from '../model/InlineResponse500';
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class CallbackDataApi {
 

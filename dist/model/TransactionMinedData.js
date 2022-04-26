@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionMinedData model module.
  * @module model/TransactionMinedData
- * @version 1.4.0
+ * @version 1.5.0
  */
 var TransactionMinedData = /*#__PURE__*/function () {
   /**

@@ -19,29 +19,29 @@ import GetZilliqaBlockDetailsByBlockHashR from '../model/GetZilliqaBlockDetailsB
 import GetZilliqaBlockDetailsByBlockHeightR from '../model/GetZilliqaBlockDetailsByBlockHeightR';
 import GetZilliqaTransactionDetailsByTransactionIDR from '../model/GetZilliqaTransactionDetailsByTransactionIDR';
 import InlineResponse40014 from '../model/InlineResponse40014';
-import InlineResponse40021 from '../model/InlineResponse40021';
 import InlineResponse40022 from '../model/InlineResponse40022';
-import InlineResponse40029 from '../model/InlineResponse40029';
+import InlineResponse40023 from '../model/InlineResponse40023';
 import InlineResponse4003 from '../model/InlineResponse4003';
-import InlineResponse40033 from '../model/InlineResponse40033';
-import InlineResponse40040 from '../model/InlineResponse40040';
+import InlineResponse40030 from '../model/InlineResponse40030';
+import InlineResponse40034 from '../model/InlineResponse40034';
+import InlineResponse40043 from '../model/InlineResponse40043';
 import InlineResponse4009 from '../model/InlineResponse4009';
 import InlineResponse40114 from '../model/InlineResponse40114';
-import InlineResponse40121 from '../model/InlineResponse40121';
 import InlineResponse40122 from '../model/InlineResponse40122';
-import InlineResponse40129 from '../model/InlineResponse40129';
+import InlineResponse40123 from '../model/InlineResponse40123';
 import InlineResponse4013 from '../model/InlineResponse4013';
-import InlineResponse40133 from '../model/InlineResponse40133';
-import InlineResponse40140 from '../model/InlineResponse40140';
+import InlineResponse40130 from '../model/InlineResponse40130';
+import InlineResponse40134 from '../model/InlineResponse40134';
+import InlineResponse40143 from '../model/InlineResponse40143';
 import InlineResponse4019 from '../model/InlineResponse4019';
 import InlineResponse402 from '../model/InlineResponse402';
 import InlineResponse40314 from '../model/InlineResponse40314';
-import InlineResponse40321 from '../model/InlineResponse40321';
 import InlineResponse40322 from '../model/InlineResponse40322';
-import InlineResponse40329 from '../model/InlineResponse40329';
+import InlineResponse40323 from '../model/InlineResponse40323';
 import InlineResponse4033 from '../model/InlineResponse4033';
-import InlineResponse40333 from '../model/InlineResponse40333';
-import InlineResponse40340 from '../model/InlineResponse40340';
+import InlineResponse40330 from '../model/InlineResponse40330';
+import InlineResponse40334 from '../model/InlineResponse40334';
+import InlineResponse40343 from '../model/InlineResponse40343';
 import InlineResponse4039 from '../model/InlineResponse4039';
 import InlineResponse404 from '../model/InlineResponse404';
 import InlineResponse4042 from '../model/InlineResponse4042';
@@ -57,7 +57,7 @@ import ListZilliqaTransactionsByBlockHeightR from '../model/ListZilliqaTransacti
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class ZilliqaApi {
 

@@ -17,7 +17,7 @@ import ListOmniTokensByAddressE400 from './ListOmniTokensByAddressE400';
 /**
  * The InlineResponse4001 model module.
  * @module model/InlineResponse4001
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4001 {
     /**

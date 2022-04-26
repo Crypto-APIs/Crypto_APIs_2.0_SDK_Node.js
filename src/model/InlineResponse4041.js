@@ -17,7 +17,7 @@ import ResourceNotFound from './ResourceNotFound';
 /**
  * The InlineResponse4041 model module.
  * @module model/InlineResponse4041
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4041 {
     /**

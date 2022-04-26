@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddressE400 model module.
  * @module model/GenerateDepositAddressE400
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GenerateDepositAddressE400 = /*#__PURE__*/function () {
   /**

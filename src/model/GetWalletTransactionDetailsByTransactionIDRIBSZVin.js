@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSZScriptSig from './GetTransaction
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSZVin model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSZVin
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSZVin {
     /**

@@ -17,28 +17,28 @@ import GetOmniTransactionDetailsByTransactionIDTxidR from '../model/GetOmniTrans
 import GetUnconfirmedOmniTransactionByTransactionIDTxidR from '../model/GetUnconfirmedOmniTransactionByTransactionIDTxidR';
 import InlineResponse4001 from '../model/InlineResponse4001';
 import InlineResponse40012 from '../model/InlineResponse40012';
-import InlineResponse40019 from '../model/InlineResponse40019';
-import InlineResponse40028 from '../model/InlineResponse40028';
-import InlineResponse40032 from '../model/InlineResponse40032';
-import InlineResponse40038 from '../model/InlineResponse40038';
-import InlineResponse40044 from '../model/InlineResponse40044';
+import InlineResponse40020 from '../model/InlineResponse40020';
+import InlineResponse40029 from '../model/InlineResponse40029';
+import InlineResponse40033 from '../model/InlineResponse40033';
+import InlineResponse40041 from '../model/InlineResponse40041';
+import InlineResponse40047 from '../model/InlineResponse40047';
 import InlineResponse4005 from '../model/InlineResponse4005';
 import InlineResponse4011 from '../model/InlineResponse4011';
 import InlineResponse40112 from '../model/InlineResponse40112';
-import InlineResponse40119 from '../model/InlineResponse40119';
-import InlineResponse40128 from '../model/InlineResponse40128';
-import InlineResponse40132 from '../model/InlineResponse40132';
-import InlineResponse40138 from '../model/InlineResponse40138';
-import InlineResponse40144 from '../model/InlineResponse40144';
+import InlineResponse40120 from '../model/InlineResponse40120';
+import InlineResponse40129 from '../model/InlineResponse40129';
+import InlineResponse40133 from '../model/InlineResponse40133';
+import InlineResponse40141 from '../model/InlineResponse40141';
+import InlineResponse40147 from '../model/InlineResponse40147';
 import InlineResponse4015 from '../model/InlineResponse4015';
 import InlineResponse402 from '../model/InlineResponse402';
 import InlineResponse4031 from '../model/InlineResponse4031';
 import InlineResponse40312 from '../model/InlineResponse40312';
-import InlineResponse40319 from '../model/InlineResponse40319';
-import InlineResponse40328 from '../model/InlineResponse40328';
-import InlineResponse40332 from '../model/InlineResponse40332';
-import InlineResponse40338 from '../model/InlineResponse40338';
-import InlineResponse40344 from '../model/InlineResponse40344';
+import InlineResponse40320 from '../model/InlineResponse40320';
+import InlineResponse40329 from '../model/InlineResponse40329';
+import InlineResponse40333 from '../model/InlineResponse40333';
+import InlineResponse40341 from '../model/InlineResponse40341';
+import InlineResponse40347 from '../model/InlineResponse40347';
 import InlineResponse4035 from '../model/InlineResponse4035';
 import InlineResponse404 from '../model/InlineResponse404';
 import InlineResponse409 from '../model/InlineResponse409';
@@ -56,7 +56,7 @@ import ListUnconfirmedOmniTransactionsByPropertyIDR from '../model/ListUnconfirm
 /**
 * OmniLayer service.
 * @module api/OmniLayerApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class OmniLayerApi {
 

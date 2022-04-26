@@ -12,11 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
+import ListTokensTransfersByTransactionHashRITransactionFee from './ListTokensTransfersByTransactionHashRITransactionFee';
 
 /**
  * The ListTokensTransfersByTransactionHashRI model module.
  * @module model/ListTokensTransfersByTransactionHashRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListTokensTransfersByTransactionHashRI {
     /**
@@ -33,10 +34,11 @@ class ListTokensTransfersByTransactionHashRI {
      * @param tokensAmount {String} Defines the token amount of the transfer.
      * @param transactionHash {String} Represents the hash of the transaction, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param transactionTimestamp {Number} Defines the specific time/date when the transaction was created in Unix Timestamp.
+     * @param transactionFee {module:model/ListTokensTransfersByTransactionHashRITransactionFee} 
      */
-    constructor(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp) { 
+    constructor(contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp, transactionFee) { 
         
-        ListTokensTransfersByTransactionHashRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp);
+        ListTokensTransfersByTransactionHashRI.initialize(this, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp, transactionFee);
     }
 
     /**
@@ -44,7 +46,7 @@ class ListTokensTransfersByTransactionHashRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp) { 
+    static initialize(obj, contractAddress, minedInBlockHeight, recipientAddress, senderAddress, tokenDecimals, tokenName, tokenSymbol, tokenType, tokensAmount, transactionHash, transactionTimestamp, transactionFee) { 
         obj['contractAddress'] = contractAddress;
         obj['minedInBlockHeight'] = minedInBlockHeight;
         obj['recipientAddress'] = recipientAddress;
@@ -56,6 +58,7 @@ class ListTokensTransfersByTransactionHashRI {
         obj['tokensAmount'] = tokensAmount;
         obj['transactionHash'] = transactionHash;
         obj['transactionTimestamp'] = transactionTimestamp;
+        obj['transactionFee'] = transactionFee;
     }
 
     /**
@@ -101,6 +104,9 @@ class ListTokensTransfersByTransactionHashRI {
             }
             if (data.hasOwnProperty('transactionTimestamp')) {
                 obj['transactionTimestamp'] = ApiClient.convertToType(data['transactionTimestamp'], 'Number');
+            }
+            if (data.hasOwnProperty('transactionFee')) {
+                obj['transactionFee'] = ListTokensTransfersByTransactionHashRITransactionFee.constructFromObject(data['transactionFee']);
             }
         }
         return obj;
@@ -174,6 +180,11 @@ ListTokensTransfersByTransactionHashRI.prototype['transactionHash'] = undefined;
  * @member {Number} transactionTimestamp
  */
 ListTokensTransfersByTransactionHashRI.prototype['transactionTimestamp'] = undefined;
+
+/**
+ * @member {module:model/ListTokensTransfersByTransactionHashRITransactionFee} transactionFee
+ */
+ListTokensTransfersByTransactionHashRI.prototype['transactionFee'] = undefined;
 
 
 

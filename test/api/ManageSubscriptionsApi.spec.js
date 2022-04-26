@@ -68,6 +68,16 @@
         done();
       });
     });
+    describe('getBlockchainEventSubscriptionDetailsByReferenceID', function() {
+      it('should call getBlockchainEventSubscriptionDetailsByReferenceID successfully', function(done) {
+        //uncomment below and update the code to test getBlockchainEventSubscriptionDetailsByReferenceID
+        //instance.getBlockchainEventSubscriptionDetailsByReferenceID(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('listBlockchainEventsSubscriptions', function() {
       it('should call listBlockchainEventsSubscriptions successfully', function(done) {
         //uncomment below and update the code to test listBlockchainEventsSubscriptions

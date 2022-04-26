@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSZVJoinSplit model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSZVJoinSplit
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListConfirmedTransactionsByAddressRIBSZVJoinSplit = /*#__PURE__*/function () {
   /**

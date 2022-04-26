@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListUnconfirmedOmniTransactionsByPropertyIDE401 model module.
  * @module model/ListUnconfirmedOmniTransactionsByPropertyIDE401
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListUnconfirmedOmniTransactionsByPropertyIDE401 {
     /**

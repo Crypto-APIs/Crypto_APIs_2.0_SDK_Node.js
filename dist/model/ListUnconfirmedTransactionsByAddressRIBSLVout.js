@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSLVout model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSLVout
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListUnconfirmedTransactionsByAddressRIBSLVout = /*#__PURE__*/function () {
   /**

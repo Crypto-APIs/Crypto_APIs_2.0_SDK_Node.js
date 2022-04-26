@@ -18,20 +18,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubDetailsRI model module.
  * @module model/GetHDWalletXPubYPubZPubDetailsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetHDWalletXPubYPubZPubDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetHDWalletXPubYPubZPubDetailsRI</code>.
    * @alias module:model/GetHDWalletXPubYPubZPubDetailsRI
    * @param confirmedBalance {String} Specifies the confirmed coins balance of the Wallet.
-   * @param totalReceived {String} Defines the total currency received to the Wallet.
-   * @param totalSpent {String} Defines the total currency spent from the Wallet.
    */
-  function GetHDWalletXPubYPubZPubDetailsRI(confirmedBalance, totalReceived, totalSpent) {
+  function GetHDWalletXPubYPubZPubDetailsRI(confirmedBalance) {
     _classCallCheck(this, GetHDWalletXPubYPubZPubDetailsRI);
 
-    GetHDWalletXPubYPubZPubDetailsRI.initialize(this, confirmedBalance, totalReceived, totalSpent);
+    GetHDWalletXPubYPubZPubDetailsRI.initialize(this, confirmedBalance);
   }
   /**
    * Initializes the fields of this object.
@@ -42,10 +40,8 @@ var GetHDWalletXPubYPubZPubDetailsRI = /*#__PURE__*/function () {
 
   _createClass(GetHDWalletXPubYPubZPubDetailsRI, null, [{
     key: "initialize",
-    value: function initialize(obj, confirmedBalance, totalReceived, totalSpent) {
+    value: function initialize(obj, confirmedBalance) {
       obj['confirmedBalance'] = confirmedBalance;
-      obj['totalReceived'] = totalReceived;
-      obj['totalSpent'] = totalSpent;
     }
     /**
      * Constructs a <code>GetHDWalletXPubYPubZPubDetailsRI</code> from a plain JavaScript object, optionally creating a new instance.

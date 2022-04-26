@@ -17,7 +17,7 @@ import ListDepositAddressesE400 from './ListDepositAddressesE400';
 /**
  * The InlineResponse4007 model module.
  * @module model/InlineResponse4007
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4007 {
     /**

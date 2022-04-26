@@ -17,7 +17,7 @@ import CreateCoinsTransactionFromAddressForWholeAmountE409 from './CreateCoinsTr
 /**
  * The InlineResponse4093 model module.
  * @module model/InlineResponse4093
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4093 {
     /**

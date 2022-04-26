@@ -17,7 +17,7 @@ import ActivateBlockchainEventSubscriptionRData from './ActivateBlockchainEventS
 /**
  * The ActivateBlockchainEventSubscriptionR model module.
  * @module model/ActivateBlockchainEventSubscriptionR
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ActivateBlockchainEventSubscriptionR {
     /**

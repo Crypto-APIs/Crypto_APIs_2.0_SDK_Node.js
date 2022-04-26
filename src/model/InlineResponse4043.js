@@ -17,7 +17,7 @@ import BlockchainDataInternalTransactionNotFound from './BlockchainDataInternalT
 /**
  * The InlineResponse4043 model module.
  * @module model/InlineResponse4043
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse4043 {
     /**

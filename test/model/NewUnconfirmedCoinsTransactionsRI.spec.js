@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(Cryptoapis.NewUnconfirmedCoinsTransactionsRI);
     });
 
+    it('should have the property address (base name: "address")', function() {
+      // uncomment below and update the code to test the property address
+      //var instance = new Cryptoapis.NewUnconfirmedCoinsTransactionsRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property callbackSecretKey (base name: "callbackSecretKey")', function() {
       // uncomment below and update the code to test the property callbackSecretKey
       //var instance = new Cryptoapis.NewUnconfirmedCoinsTransactionsRI();

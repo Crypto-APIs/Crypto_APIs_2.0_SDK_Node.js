@@ -14,19 +14,22 @@
 
 import ApiClient from "../ApiClient";
 import GetTokenDetailsByContractAddressR from '../model/GetTokenDetailsByContractAddressR';
-import InlineResponse40054 from '../model/InlineResponse40054';
-import InlineResponse40055 from '../model/InlineResponse40055';
-import InlineResponse40056 from '../model/InlineResponse40056';
-import InlineResponse40057 from '../model/InlineResponse40057';
-import InlineResponse40154 from '../model/InlineResponse40154';
-import InlineResponse40155 from '../model/InlineResponse40155';
-import InlineResponse40156 from '../model/InlineResponse40156';
-import InlineResponse40157 from '../model/InlineResponse40157';
+import InlineResponse40060 from '../model/InlineResponse40060';
+import InlineResponse40064 from '../model/InlineResponse40064';
+import InlineResponse40066 from '../model/InlineResponse40066';
+import InlineResponse40067 from '../model/InlineResponse40067';
+import InlineResponse40069 from '../model/InlineResponse40069';
+import InlineResponse40160 from '../model/InlineResponse40160';
+import InlineResponse40164 from '../model/InlineResponse40164';
+import InlineResponse40166 from '../model/InlineResponse40166';
+import InlineResponse40167 from '../model/InlineResponse40167';
+import InlineResponse40169 from '../model/InlineResponse40169';
 import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40354 from '../model/InlineResponse40354';
-import InlineResponse40355 from '../model/InlineResponse40355';
-import InlineResponse40356 from '../model/InlineResponse40356';
-import InlineResponse40357 from '../model/InlineResponse40357';
+import InlineResponse40360 from '../model/InlineResponse40360';
+import InlineResponse40364 from '../model/InlineResponse40364';
+import InlineResponse40366 from '../model/InlineResponse40366';
+import InlineResponse40367 from '../model/InlineResponse40367';
+import InlineResponse40369 from '../model/InlineResponse40369';
 import InlineResponse409 from '../model/InlineResponse409';
 import InlineResponse415 from '../model/InlineResponse415';
 import InlineResponse422 from '../model/InlineResponse422';
@@ -35,11 +38,12 @@ import InlineResponse500 from '../model/InlineResponse500';
 import ListConfirmedTokensTransfersByAddressR from '../model/ListConfirmedTokensTransfersByAddressR';
 import ListTokensByAddressR from '../model/ListTokensByAddressR';
 import ListTokensTransfersByTransactionHashR from '../model/ListTokensTransfersByTransactionHashR';
+import ListUnconfirmedTokensTransfersByAddressR from '../model/ListUnconfirmedTokensTransfersByAddressR';
 
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class TokensApi {
 
@@ -340,6 +344,80 @@ export default class TokensApi {
      */
     listTokensTransfersByTransactionHash(blockchain, network, transactionHash, opts) {
       return this.listTokensTransfersByTransactionHashWithHttpInfo(blockchain, network, transactionHash, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * List Unconfirmed Tokens Transfers By Address
+     * Through this endpoint customers can obtain a list with **unconfirmed** token transfers by the `address` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **unconfirmed tokens** not coins.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnconfirmedTokensTransfersByAddressR} and HTTP response
+     */
+    listUnconfirmedTokensTransfersByAddressWithHttpInfo(blockchain, network, address, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listUnconfirmedTokensTransfersByAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listUnconfirmedTokensTransfersByAddress");
+      }
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listUnconfirmedTokensTransfersByAddress");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListUnconfirmedTokensTransfersByAddressR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/addresses/{address}/tokens-transfers-unconfirmed', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List Unconfirmed Tokens Transfers By Address
+     * Through this endpoint customers can obtain a list with **unconfirmed** token transfers by the `address` attribute. Token transfers may include information such as addresses of the sender and recipient, token name, token symbol, etc.    {note}This refers only to transfers done for **unconfirmed tokens** not coins.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnconfirmedTokensTransfersByAddressR}
+     */
+    listUnconfirmedTokensTransfersByAddress(blockchain, network, address, opts) {
+      return this.listUnconfirmedTokensTransfersByAddressWithHttpInfo(blockchain, network, address, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

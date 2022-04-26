@@ -19,7 +19,7 @@ import GetAddressDetailsRITotalSpent from './GetAddressDetailsRITotalSpent';
 /**
  * The GetAddressDetailsRI model module.
  * @module model/GetAddressDetailsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetAddressDetailsRI {
     /**
@@ -29,8 +29,8 @@ class GetAddressDetailsRI {
      * @param confirmedBalance {module:model/GetAddressDetailsRIConfirmedBalance} 
      * @param totalReceived {module:model/GetAddressDetailsRITotalReceived} 
      * @param totalSpent {module:model/GetAddressDetailsRITotalSpent} 
-     * @param incomingTransactionsCount {Number} Defines the count of the incoming transactions.
-     * @param outgoingTransactionsCount {Number} Defines the count of the outgoing transactions.
+     * @param incomingTransactionsCount {Number} Defines the received transaction count to the address.
+     * @param outgoingTransactionsCount {Number} Defines the sent transaction count from the address.
      */
     constructor(transactionsCount, confirmedBalance, totalReceived, totalSpent, incomingTransactionsCount, outgoingTransactionsCount) { 
         
@@ -109,13 +109,13 @@ GetAddressDetailsRI.prototype['totalReceived'] = undefined;
 GetAddressDetailsRI.prototype['totalSpent'] = undefined;
 
 /**
- * Defines the count of the incoming transactions.
+ * Defines the received transaction count to the address.
  * @member {Number} incomingTransactionsCount
  */
 GetAddressDetailsRI.prototype['incomingTransactionsCount'] = undefined;
 
 /**
- * Defines the count of the outgoing transactions.
+ * Defines the sent transaction count from the address.
  * @member {Number} outgoingTransactionsCount
  */
 GetAddressDetailsRI.prototype['outgoingTransactionsCount'] = undefined;

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetailsRIRecipients model module.
  * @module model/GetTransactionRequestDetailsRIRecipients
- * @version 1.4.0
+ * @version 1.5.0
  */
 var GetTransactionRequestDetailsRIRecipients = /*#__PURE__*/function () {
   /**
@@ -65,8 +65,16 @@ var GetTransactionRequestDetailsRIRecipients = /*#__PURE__*/function () {
           obj['address'] = _ApiClient["default"].convertToType(data['address'], 'String');
         }
 
+        if (data.hasOwnProperty('addressTag')) {
+          obj['addressTag'] = _ApiClient["default"].convertToType(data['addressTag'], 'Number');
+        }
+
         if (data.hasOwnProperty('amount')) {
           obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
+        }
+
+        if (data.hasOwnProperty('classicAddress')) {
+          obj['classicAddress'] = _ApiClient["default"].convertToType(data['classicAddress'], 'String');
         }
 
         if (data.hasOwnProperty('unit')) {
@@ -88,11 +96,23 @@ var GetTransactionRequestDetailsRIRecipients = /*#__PURE__*/function () {
 
 GetTransactionRequestDetailsRIRecipients.prototype['address'] = undefined;
 /**
+ * Defines a specific Tag that is an additional XRP address feature. It helps identify a transaction recipient beyond a wallet address. The tag that was encoded into the x-Address along with the Classic Address.
+ * @member {Number} addressTag
+ */
+
+GetTransactionRequestDetailsRIRecipients.prototype['addressTag'] = undefined;
+/**
  * Represents the amount received to this address.
  * @member {String} amount
  */
 
 GetTransactionRequestDetailsRIRecipients.prototype['amount'] = undefined;
+/**
+ * Represents the public address, which is a compressed and shortened form of a public key. A classic address is shown when the destination address is an x-Address.
+ * @member {String} classicAddress
+ */
+
+GetTransactionRequestDetailsRIRecipients.prototype['classicAddress'] = undefined;
 /**
  * Defines the unit of the amount.
  * @member {String} unit

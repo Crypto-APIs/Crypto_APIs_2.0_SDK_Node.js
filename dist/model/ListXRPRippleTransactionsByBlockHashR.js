@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashR model module.
  * @module model/ListXRPRippleTransactionsByBlockHashR
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListXRPRippleTransactionsByBlockHashR = /*#__PURE__*/function () {
   /**

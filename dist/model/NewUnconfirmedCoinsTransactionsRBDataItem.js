@@ -18,14 +18,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewUnconfirmedCoinsTransactionsRBDataItem model module.
  * @module model/NewUnconfirmedCoinsTransactionsRBDataItem
- * @version 1.4.0
+ * @version 1.5.0
  */
 var NewUnconfirmedCoinsTransactionsRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewUnconfirmedCoinsTransactionsRBDataItem</code>.
    * @alias module:model/NewUnconfirmedCoinsTransactionsRBDataItem
    * @param address {String} Represents the address of the transaction, per which the result is returned.
-   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+   * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
    */
   function NewUnconfirmedCoinsTransactionsRBDataItem(address, callbackUrl) {
     _classCallCheck(this, NewUnconfirmedCoinsTransactionsRBDataItem);
@@ -103,7 +103,7 @@ NewUnconfirmedCoinsTransactionsRBDataItem.prototype['allowDuplicates'] = false;
 
 NewUnconfirmedCoinsTransactionsRBDataItem.prototype['callbackSecretKey'] = undefined;
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 

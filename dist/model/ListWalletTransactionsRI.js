@@ -32,7 +32,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRI model module.
  * @module model/ListWalletTransactionsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListWalletTransactionsRI = /*#__PURE__*/function () {
   /**

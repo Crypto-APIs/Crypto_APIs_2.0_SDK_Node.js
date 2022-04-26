@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedInternalTransactionsRI model module.
  * @module model/NewConfirmedInternalTransactionsRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class NewConfirmedInternalTransactionsRI {
     /**
@@ -24,15 +24,16 @@ class NewConfirmedInternalTransactionsRI {
      * @alias module:model/NewConfirmedInternalTransactionsRI
      * @param address {String} Defines the specific address of the internal transaction.
      * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs 2.0. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      * @param createdTimestamp {Number} Defines the specific time/date when the subscription was created in Unix Timestamp.
      * @param eventType {String} Defines the type of the specific event available for the customer to subscribe to for callback notification.
      * @param isActive {Boolean} Defines whether the subscription is active or not. Set as boolean.
+     * @param receiveCallbackOn {Number} Represents the exact confirmation, on which the user wants to receive callback.
      * @param referenceId {String} Represents a unique ID used to reference the specific callback subscription.
      */
-    constructor(address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId) { 
+    constructor(address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, receiveCallbackOn, referenceId) { 
         
-        NewConfirmedInternalTransactionsRI.initialize(this, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId);
+        NewConfirmedInternalTransactionsRI.initialize(this, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, receiveCallbackOn, referenceId);
     }
 
     /**
@@ -40,13 +41,14 @@ class NewConfirmedInternalTransactionsRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, referenceId) { 
+    static initialize(obj, address, callbackSecretKey, callbackUrl, createdTimestamp, eventType, isActive, receiveCallbackOn, referenceId) { 
         obj['address'] = address;
         obj['callbackSecretKey'] = callbackSecretKey;
         obj['callbackUrl'] = callbackUrl;
         obj['createdTimestamp'] = createdTimestamp;
         obj['eventType'] = eventType;
         obj['isActive'] = isActive;
+        obj['receiveCallbackOn'] = receiveCallbackOn;
         obj['referenceId'] = referenceId;
     }
 
@@ -79,6 +81,9 @@ class NewConfirmedInternalTransactionsRI {
             if (data.hasOwnProperty('isActive')) {
                 obj['isActive'] = ApiClient.convertToType(data['isActive'], 'Boolean');
             }
+            if (data.hasOwnProperty('receiveCallbackOn')) {
+                obj['receiveCallbackOn'] = ApiClient.convertToType(data['receiveCallbackOn'], 'Number');
+            }
             if (data.hasOwnProperty('referenceId')) {
                 obj['referenceId'] = ApiClient.convertToType(data['referenceId'], 'String');
             }
@@ -102,7 +107,7 @@ NewConfirmedInternalTransactionsRI.prototype['address'] = undefined;
 NewConfirmedInternalTransactionsRI.prototype['callbackSecretKey'] = undefined;
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 NewConfirmedInternalTransactionsRI.prototype['callbackUrl'] = undefined;
@@ -124,6 +129,12 @@ NewConfirmedInternalTransactionsRI.prototype['eventType'] = undefined;
  * @member {Boolean} isActive
  */
 NewConfirmedInternalTransactionsRI.prototype['isActive'] = undefined;
+
+/**
+ * Represents the exact confirmation, on which the user wants to receive callback.
+ * @member {Number} receiveCallbackOn
+ */
+NewConfirmedInternalTransactionsRI.prototype['receiveCallbackOn'] = undefined;
 
 /**
  * Represents a unique ID used to reference the specific callback subscription.

@@ -1,7 +1,7 @@
 {
   "name": "cryptoapis",
-  "version": "1.4.1",
-  "description": "Crypto APIs 2.0 Node.js library/SDK",
+  "version": "1.5.0",
+  "description": "Node.js library/SDK for Crypto APIs 2.0",
   "license": "MIT",
   "main": "dist/index.js",
   "homepage": "https://github.com/Crypto-APIs/Crypto_APIs_2.0_SDK_Node.js#readme",

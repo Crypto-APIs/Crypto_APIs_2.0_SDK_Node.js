@@ -9,25 +9,25 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _GetInternalTransactionByTransactionHashAndOperationIdR = _interopRequireDefault(require("../model/GetInternalTransactionByTransactionHashAndOperationIdR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40048"));
+var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40052"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40050"));
+var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40054"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40051"));
+var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40056"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40148"));
+var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40152"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40150"));
+var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40154"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40151"));
+var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40156"));
 
 var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40348"));
+var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40352"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40350"));
+var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40354"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40351"));
+var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40356"));
 
 var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4043"));
 
@@ -56,7 +56,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.4.0
+* @version 1.5.0
 */
 var InternalApi = /*#__PURE__*/function () {
   /**

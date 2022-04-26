@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsE403 model module.
  * @module model/NewConfirmedCoinsTransactionsE403
- * @version 1.4.0
+ * @version 1.5.0
  */
 var NewConfirmedCoinsTransactionsE403 = /*#__PURE__*/function () {
   /**

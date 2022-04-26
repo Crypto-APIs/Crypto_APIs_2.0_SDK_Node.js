@@ -84,6 +84,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property deactivationReasons (base name: "deactivationReasons")', function() {
+      // uncomment below and update the code to test the property deactivationReasons
+      //var instance = new Cryptoapis.ListBlockchainEventsSubscriptionsRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property eventType (base name: "eventType")', function() {
       // uncomment below and update the code to test the property eventType
       //var instance = new Cryptoapis.ListBlockchainEventsSubscriptionsRI();

@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE409 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE409
- * @version 1.4.0
+ * @version 1.5.0
  */
 var CreateCoinsTransactionFromAddressForWholeAmountE409 = /*#__PURE__*/function () {
   /**

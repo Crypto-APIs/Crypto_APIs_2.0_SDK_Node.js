@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSZVJoinSplit model module.
  * @module model/ListTransactionsByBlockHashRIBSZVJoinSplit
- * @version 1.4.0
+ * @version 1.5.0
  */
 var ListTransactionsByBlockHashRIBSZVJoinSplit = /*#__PURE__*/function () {
   /**

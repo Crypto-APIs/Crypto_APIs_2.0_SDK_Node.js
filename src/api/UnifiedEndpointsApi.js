@@ -13,49 +13,73 @@
 
 
 import ApiClient from "../ApiClient";
+import EstimateTransactionSmartFeeR from '../model/EstimateTransactionSmartFeeR';
 import GetAddressDetailsR from '../model/GetAddressDetailsR';
 import GetBlockDetailsByBlockHashR from '../model/GetBlockDetailsByBlockHashR';
 import GetBlockDetailsByBlockHeightR from '../model/GetBlockDetailsByBlockHeightR';
 import GetFeeRecommendationsR from '../model/GetFeeRecommendationsR';
 import GetLastMinedBlockR from '../model/GetLastMinedBlockR';
+import GetNextAvailableNonceR from '../model/GetNextAvailableNonceR';
+import GetRawTransactionDataR from '../model/GetRawTransactionDataR';
 import GetTransactionDetailsByTransactionIDR from '../model/GetTransactionDetailsByTransactionIDR';
 import InlineResponse400 from '../model/InlineResponse400';
 import InlineResponse40010 from '../model/InlineResponse40010';
 import InlineResponse40015 from '../model/InlineResponse40015';
-import InlineResponse40016 from '../model/InlineResponse40016';
 import InlineResponse40017 from '../model/InlineResponse40017';
-import InlineResponse40024 from '../model/InlineResponse40024';
-import InlineResponse40026 from '../model/InlineResponse40026';
-import InlineResponse40030 from '../model/InlineResponse40030';
-import InlineResponse40037 from '../model/InlineResponse40037';
+import InlineResponse40018 from '../model/InlineResponse40018';
+import InlineResponse40025 from '../model/InlineResponse40025';
+import InlineResponse40027 from '../model/InlineResponse40027';
+import InlineResponse40031 from '../model/InlineResponse40031';
 import InlineResponse4004 from '../model/InlineResponse4004';
-import InlineResponse40042 from '../model/InlineResponse40042';
-import InlineResponse40053 from '../model/InlineResponse40053';
+import InlineResponse40040 from '../model/InlineResponse40040';
+import InlineResponse40045 from '../model/InlineResponse40045';
+import InlineResponse40057 from '../model/InlineResponse40057';
+import InlineResponse40058 from '../model/InlineResponse40058';
+import InlineResponse40059 from '../model/InlineResponse40059';
+import InlineResponse40061 from '../model/InlineResponse40061';
+import InlineResponse40062 from '../model/InlineResponse40062';
+import InlineResponse40063 from '../model/InlineResponse40063';
+import InlineResponse40065 from '../model/InlineResponse40065';
+import InlineResponse40068 from '../model/InlineResponse40068';
 import InlineResponse401 from '../model/InlineResponse401';
 import InlineResponse40110 from '../model/InlineResponse40110';
 import InlineResponse40115 from '../model/InlineResponse40115';
-import InlineResponse40116 from '../model/InlineResponse40116';
 import InlineResponse40117 from '../model/InlineResponse40117';
-import InlineResponse40124 from '../model/InlineResponse40124';
-import InlineResponse40126 from '../model/InlineResponse40126';
-import InlineResponse40130 from '../model/InlineResponse40130';
-import InlineResponse40137 from '../model/InlineResponse40137';
+import InlineResponse40118 from '../model/InlineResponse40118';
+import InlineResponse40125 from '../model/InlineResponse40125';
+import InlineResponse40127 from '../model/InlineResponse40127';
+import InlineResponse40131 from '../model/InlineResponse40131';
 import InlineResponse4014 from '../model/InlineResponse4014';
-import InlineResponse40142 from '../model/InlineResponse40142';
-import InlineResponse40153 from '../model/InlineResponse40153';
+import InlineResponse40140 from '../model/InlineResponse40140';
+import InlineResponse40145 from '../model/InlineResponse40145';
+import InlineResponse40157 from '../model/InlineResponse40157';
+import InlineResponse40158 from '../model/InlineResponse40158';
+import InlineResponse40159 from '../model/InlineResponse40159';
+import InlineResponse40161 from '../model/InlineResponse40161';
+import InlineResponse40162 from '../model/InlineResponse40162';
+import InlineResponse40163 from '../model/InlineResponse40163';
+import InlineResponse40165 from '../model/InlineResponse40165';
+import InlineResponse40168 from '../model/InlineResponse40168';
 import InlineResponse402 from '../model/InlineResponse402';
 import InlineResponse403 from '../model/InlineResponse403';
 import InlineResponse40310 from '../model/InlineResponse40310';
 import InlineResponse40315 from '../model/InlineResponse40315';
-import InlineResponse40316 from '../model/InlineResponse40316';
 import InlineResponse40317 from '../model/InlineResponse40317';
-import InlineResponse40324 from '../model/InlineResponse40324';
-import InlineResponse40326 from '../model/InlineResponse40326';
-import InlineResponse40330 from '../model/InlineResponse40330';
-import InlineResponse40337 from '../model/InlineResponse40337';
+import InlineResponse40318 from '../model/InlineResponse40318';
+import InlineResponse40325 from '../model/InlineResponse40325';
+import InlineResponse40327 from '../model/InlineResponse40327';
+import InlineResponse40331 from '../model/InlineResponse40331';
 import InlineResponse4034 from '../model/InlineResponse4034';
-import InlineResponse40342 from '../model/InlineResponse40342';
-import InlineResponse40353 from '../model/InlineResponse40353';
+import InlineResponse40340 from '../model/InlineResponse40340';
+import InlineResponse40345 from '../model/InlineResponse40345';
+import InlineResponse40357 from '../model/InlineResponse40357';
+import InlineResponse40358 from '../model/InlineResponse40358';
+import InlineResponse40359 from '../model/InlineResponse40359';
+import InlineResponse40361 from '../model/InlineResponse40361';
+import InlineResponse40362 from '../model/InlineResponse40362';
+import InlineResponse40363 from '../model/InlineResponse40363';
+import InlineResponse40365 from '../model/InlineResponse40365';
+import InlineResponse40368 from '../model/InlineResponse40368';
 import InlineResponse404 from '../model/InlineResponse404';
 import InlineResponse4041 from '../model/InlineResponse4041';
 import InlineResponse4042 from '../model/InlineResponse4042';
@@ -64,17 +88,22 @@ import InlineResponse415 from '../model/InlineResponse415';
 import InlineResponse422 from '../model/InlineResponse422';
 import InlineResponse429 from '../model/InlineResponse429';
 import InlineResponse500 from '../model/InlineResponse500';
+import InlineResponse501 from '../model/InlineResponse501';
 import ListAllUnconfirmedTransactionsR from '../model/ListAllUnconfirmedTransactionsR';
+import ListConfirmedTokensTransfersByAddressAndTimeRangeR from '../model/ListConfirmedTokensTransfersByAddressAndTimeRangeR';
+import ListConfirmedTransactionsByAddressAndTimeRangeR from '../model/ListConfirmedTransactionsByAddressAndTimeRangeR';
 import ListConfirmedTransactionsByAddressR from '../model/ListConfirmedTransactionsByAddressR';
+import ListInternalTransactionsByAddressAndTimeRangeR from '../model/ListInternalTransactionsByAddressAndTimeRangeR';
 import ListLatestMinedBlocksR from '../model/ListLatestMinedBlocksR';
 import ListTransactionsByBlockHashR from '../model/ListTransactionsByBlockHashR';
 import ListTransactionsByBlockHeightR from '../model/ListTransactionsByBlockHeightR';
 import ListUnconfirmedTransactionsByAddressR from '../model/ListUnconfirmedTransactionsByAddressR';
+import ListUnspentTransactionOutputsByAddressR from '../model/ListUnspentTransactionOutputsByAddressR';
 
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.4.0
+* @version 1.5.0
 */
 export default class UnifiedEndpointsApi {
 
@@ -89,6 +118,73 @@ export default class UnifiedEndpointsApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+
+    /**
+     * Estimate Transaction Smart Fee
+     * Through this endpoint, customers can estimate the approximate fee per kilobyte needed for a transaction to begin confirmation within the `confirmationTarget` blocks when possible. After which it will return the number of blocks for which the estimate is valid.
+     * @param {module:model/String} blockchain 
+     * @param {module:model/String} network 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.confirmationTarget Integer representation of confirmation target in blocks that estimation will be valid for
+     * @param {module:model/String} opts.estimateMode String representation of the address
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/EstimateTransactionSmartFeeR} and HTTP response
+     */
+    estimateTransactionSmartFeeWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling estimateTransactionSmartFee");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling estimateTransactionSmartFee");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'confirmationTarget': opts['confirmationTarget'],
+        'estimateMode': opts['estimateMode']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = EstimateTransactionSmartFeeR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/estimate-transaction-smart-fee', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Estimate Transaction Smart Fee
+     * Through this endpoint, customers can estimate the approximate fee per kilobyte needed for a transaction to begin confirmation within the `confirmationTarget` blocks when possible. After which it will return the number of blocks for which the estimate is valid.
+     * @param {module:model/String} blockchain 
+     * @param {module:model/String} network 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.confirmationTarget Integer representation of confirmation target in blocks that estimation will be valid for
+     * @param {module:model/String} opts.estimateMode String representation of the address
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/EstimateTransactionSmartFeeR}
+     */
+    estimateTransactionSmartFee(blockchain, network, opts) {
+      return this.estimateTransactionSmartFeeWithHttpInfo(blockchain, network, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
 
 
     /**
@@ -418,6 +514,142 @@ export default class UnifiedEndpointsApi {
 
 
     /**
+     * Get Next Available Nonce
+     * Through this endpoint customers can get information about the next available nonce by providing the specific blockchain, network and address.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetNextAvailableNonceR} and HTTP response
+     */
+    getNextAvailableNonceWithHttpInfo(blockchain, network, address, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getNextAvailableNonce");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getNextAvailableNonce");
+      }
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling getNextAvailableNonce");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetNextAvailableNonceR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/addresses/{address}/next-available-nonce', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get Next Available Nonce
+     * Through this endpoint customers can get information about the next available nonce by providing the specific blockchain, network and address.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetNextAvailableNonceR}
+     */
+    getNextAvailableNonce(blockchain, network, address, opts) {
+      return this.getNextAvailableNonceWithHttpInfo(blockchain, network, address, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Get Raw Transaction Data
+     * Through this endpoint customers can get information on a transaction in its raw format by providing its `transactionId`.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be transactionId in UTXO-based protocols like Bitcoin, and transaction hash in Ethereum blockchain.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetRawTransactionDataR} and HTTP response
+     */
+    getRawTransactionDataWithHttpInfo(blockchain, network, transactionId, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getRawTransactionData");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getRawTransactionData");
+      }
+      // verify the required parameter 'transactionId' is set
+      if (transactionId === undefined || transactionId === null) {
+        throw new Error("Missing the required parameter 'transactionId' when calling getRawTransactionData");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'transactionId': transactionId
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = GetRawTransactionDataR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/transactions/{transactionId}/raw-data', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Get Raw Transaction Data
+     * Through this endpoint customers can get information on a transaction in its raw format by providing its `transactionId`.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} transactionId Represents the unique identifier of a transaction, i.e. it could be transactionId in UTXO-based protocols like Bitcoin, and transaction hash in Ethereum blockchain.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetRawTransactionDataR}
+     */
+    getRawTransactionData(blockchain, network, transactionId, opts) {
+      return this.getRawTransactionDataWithHttpInfo(blockchain, network, transactionId, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
      * Get Transaction Details By Transaction ID
      * Through this endpoint customers can obtain details about a transaction by the transaction's unique identifier. In UTXO-based protocols like BTC there are attributes such as `transactionId` and transaction `hash`. They still could be different. In protocols like Ethereum there is only one unique value and it's `hash`.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
@@ -553,6 +785,94 @@ export default class UnifiedEndpointsApi {
 
 
     /**
+     * List Confirmed Tokens Transfers By Address And Time Range
+     * Through this endpoint customers can obtain a list with **confirmed** token transfers by the `address` attribute and the query parameters `fromTimestamp` and `toTimestamp` which gives customers the opportunity to filter the results by a specified time period.    {note}This refers only to transfers done for **confirmed tokens** not coins.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeR} and HTTP response
+     */
+    listConfirmedTokensTransfersByAddressAndTimeRangeWithHttpInfo(blockchain, network, address, fromTimestamp, toTimestamp, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listConfirmedTokensTransfersByAddressAndTimeRange");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listConfirmedTokensTransfersByAddressAndTimeRange");
+      }
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listConfirmedTokensTransfersByAddressAndTimeRange");
+      }
+      // verify the required parameter 'fromTimestamp' is set
+      if (fromTimestamp === undefined || fromTimestamp === null) {
+        throw new Error("Missing the required parameter 'fromTimestamp' when calling listConfirmedTokensTransfersByAddressAndTimeRange");
+      }
+      // verify the required parameter 'toTimestamp' is set
+      if (toTimestamp === undefined || toTimestamp === null) {
+        throw new Error("Missing the required parameter 'toTimestamp' when calling listConfirmedTokensTransfersByAddressAndTimeRange");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'fromTimestamp': fromTimestamp,
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+        'toTimestamp': toTimestamp
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListConfirmedTokensTransfersByAddressAndTimeRangeR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/addresses/{address}/tokens-transfers-by-time-range', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List Confirmed Tokens Transfers By Address And Time Range
+     * Through this endpoint customers can obtain a list with **confirmed** token transfers by the `address` attribute and the query parameters `fromTimestamp` and `toTimestamp` which gives customers the opportunity to filter the results by a specified time period.    {note}This refers only to transfers done for **confirmed tokens** not coins.{/note}
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeR}
+     */
+    listConfirmedTokensTransfersByAddressAndTimeRange(blockchain, network, address, fromTimestamp, toTimestamp, opts) {
+      return this.listConfirmedTokensTransfersByAddressAndTimeRangeWithHttpInfo(blockchain, network, address, fromTimestamp, toTimestamp, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
      * List Confirmed Transactions By Address
      * This endpoint will list transactions by an attribute `address`. The transactions listed will detail additional information such as hash, height, time of creation in Unix timestamp, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
@@ -620,6 +940,182 @@ export default class UnifiedEndpointsApi {
      */
     listConfirmedTransactionsByAddress(blockchain, network, address, opts) {
       return this.listConfirmedTransactionsByAddressWithHttpInfo(blockchain, network, address, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * List Confirmed Transactions By Address And Time Range
+     * This endpoint will list confirmed transactions by the attribute `address` and the query parameters `fromTimestamp` and `toTimestamp` which gives customers the opportunity to filter the results by a specified time period.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListConfirmedTransactionsByAddressAndTimeRangeR} and HTTP response
+     */
+    listConfirmedTransactionsByAddressAndTimeRangeWithHttpInfo(blockchain, network, address, fromTimestamp, toTimestamp, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listConfirmedTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listConfirmedTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listConfirmedTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'fromTimestamp' is set
+      if (fromTimestamp === undefined || fromTimestamp === null) {
+        throw new Error("Missing the required parameter 'fromTimestamp' when calling listConfirmedTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'toTimestamp' is set
+      if (toTimestamp === undefined || toTimestamp === null) {
+        throw new Error("Missing the required parameter 'toTimestamp' when calling listConfirmedTransactionsByAddressAndTimeRange");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+        'fromTimestamp': fromTimestamp,
+        'toTimestamp': toTimestamp
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListConfirmedTransactionsByAddressAndTimeRangeR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/addresses/{address}/transactions-by-time-range', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List Confirmed Transactions By Address And Time Range
+     * This endpoint will list confirmed transactions by the attribute `address` and the query parameters `fromTimestamp` and `toTimestamp` which gives customers the opportunity to filter the results by a specified time period.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListConfirmedTransactionsByAddressAndTimeRangeR}
+     */
+    listConfirmedTransactionsByAddressAndTimeRange(blockchain, network, address, fromTimestamp, toTimestamp, opts) {
+      return this.listConfirmedTransactionsByAddressAndTimeRangeWithHttpInfo(blockchain, network, address, fromTimestamp, toTimestamp, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * List Internal Transactions By Address And Time Range
+     * Through this endpoint customers can list internal transactions by the `address` attribute and the query parameters `fromTimestamp` and `toTimestamp`  which gives customers the opportunity to filter the results by a specified time period.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address String identifier of the address document represented in CryptoAPIs
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListInternalTransactionsByAddressAndTimeRangeR} and HTTP response
+     */
+    listInternalTransactionsByAddressAndTimeRangeWithHttpInfo(blockchain, network, address, fromTimestamp, toTimestamp, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listInternalTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listInternalTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listInternalTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'fromTimestamp' is set
+      if (fromTimestamp === undefined || fromTimestamp === null) {
+        throw new Error("Missing the required parameter 'fromTimestamp' when calling listInternalTransactionsByAddressAndTimeRange");
+      }
+      // verify the required parameter 'toTimestamp' is set
+      if (toTimestamp === undefined || toTimestamp === null) {
+        throw new Error("Missing the required parameter 'toTimestamp' when calling listInternalTransactionsByAddressAndTimeRange");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'fromTimestamp': fromTimestamp,
+        'limit': opts['limit'],
+        'offset': opts['offset'],
+        'toTimestamp': toTimestamp
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListInternalTransactionsByAddressAndTimeRangeR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/addresses/{address}/internal-by-time-range', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List Internal Transactions By Address And Time Range
+     * Through this endpoint customers can list internal transactions by the `address` attribute and the query parameters `fromTimestamp` and `toTimestamp`  which gives customers the opportunity to filter the results by a specified time period.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address String identifier of the address document represented in CryptoAPIs
+     * @param {Number} fromTimestamp Defines the specific time/date from which the results will start being listed.
+     * @param {Number} toTimestamp Defines the specific time/date to which the results will be listed.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListInternalTransactionsByAddressAndTimeRangeR}
+     */
+    listInternalTransactionsByAddressAndTimeRange(blockchain, network, address, fromTimestamp, toTimestamp, opts) {
+      return this.listInternalTransactionsByAddressAndTimeRangeWithHttpInfo(blockchain, network, address, fromTimestamp, toTimestamp, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });
@@ -910,6 +1406,80 @@ export default class UnifiedEndpointsApi {
      */
     listUnconfirmedTransactionsByAddress(blockchain, network, address, opts) {
       return this.listUnconfirmedTransactionsByAddressWithHttpInfo(blockchain, network, address, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * List Unspent Transaction Outputs By Address
+     * Through this endpoint customers can list their transactions' unspent outputs by `address`.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the address that has unspend funds per which the result is returned.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListUnspentTransactionOutputsByAddressR} and HTTP response
+     */
+    listUnspentTransactionOutputsByAddressWithHttpInfo(blockchain, network, address, opts) {
+      opts = opts || {};
+      let postBody = null;
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling listUnspentTransactionOutputsByAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling listUnspentTransactionOutputsByAddress");
+      }
+      // verify the required parameter 'address' is set
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling listUnspentTransactionOutputsByAddress");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      let queryParams = {
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ListUnspentTransactionOutputsByAddressR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/addresses/{address}/unspent-outputs', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * List Unspent Transaction Outputs By Address
+     * Through this endpoint customers can list their transactions' unspent outputs by `address`.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the address that has unspend funds per which the result is returned.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListUnspentTransactionOutputsByAddressR}
+     */
+    listUnspentTransactionOutputsByAddress(blockchain, network, address, opts) {
+      return this.listUnspentTransactionOutputsByAddressWithHttpInfo(blockchain, network, address, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

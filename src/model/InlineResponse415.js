@@ -17,7 +17,7 @@ import UnsupportedMediaType from './UnsupportedMediaType';
 /**
  * The InlineResponse415 model module.
  * @module model/InlineResponse415
- * @version 1.4.0
+ * @version 1.5.0
  */
 class InlineResponse415 {
     /**

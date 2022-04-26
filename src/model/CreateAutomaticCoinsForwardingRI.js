@@ -16,13 +16,13 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateAutomaticCoinsForwardingRI model module.
  * @module model/CreateAutomaticCoinsForwardingRI
- * @version 1.4.0
+ * @version 1.5.0
  */
 class CreateAutomaticCoinsForwardingRI {
     /**
      * Constructs a new <code>CreateAutomaticCoinsForwardingRI</code>.
      * @alias module:model/CreateAutomaticCoinsForwardingRI
-     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+     * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      * @param confirmationsCount {Number} Represents the number of confirmations, i.e. the amount of blocks that have been built on top of this block.
      * @param createdTimestamp {Number} Defines the specific time/date when the automatic forwarding was created in Unix Timestamp.
      * @param feePriority {module:model/CreateAutomaticCoinsForwardingRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"SLOW\", \"STANDARD\" OR \"FAST\".
@@ -95,7 +95,7 @@ class CreateAutomaticCoinsForwardingRI {
 }
 
 /**
- * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs.
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
  * @member {String} callbackUrl
  */
 CreateAutomaticCoinsForwardingRI.prototype['callbackUrl'] = undefined;

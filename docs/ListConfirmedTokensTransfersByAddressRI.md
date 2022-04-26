@@ -16,5 +16,6 @@ Name | Type | Description | Notes
 **tokensAmount** | **String** | Defines the token amount of the transfer. | [optional] 
 **transactionHash** | **String** | Represents the hash of the transaction, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm. | 
 **transactionTimestamp** | **Number** | Defines the specific time/date when the transaction was created in Unix Timestamp. | 
+**transactionFee** | [**ListTokensTransfersByTransactionHashRITransactionFee**](ListTokensTransfersByTransactionHashRITransactionFee.md) |  | 
 
 

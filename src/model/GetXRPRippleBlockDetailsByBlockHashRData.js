@@ -17,7 +17,7 @@ import GetXRPRippleBlockDetailsByBlockHashRI from './GetXRPRippleBlockDetailsByB
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRData model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRData
- * @version 1.4.0
+ * @version 1.5.0
  */
 class GetXRPRippleBlockDetailsByBlockHashRData {
     /**

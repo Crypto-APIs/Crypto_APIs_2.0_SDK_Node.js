@@ -189,6 +189,54 @@ import CreateFungibleTokensTransactionRequestFromAddressRIRecipients from './mod
 import CreateFungibleTokensTransactionRequestFromAddressRIS from './model/CreateFungibleTokensTransactionRequestFromAddressRIS';
 import CreateFungibleTokensTransactionRequestFromAddressRISE from './model/CreateFungibleTokensTransactionRequestFromAddressRISE';
 import CreateFungibleTokensTransactionRequestFromAddressRISenders from './model/CreateFungibleTokensTransactionRequestFromAddressRISenders';
+import DecodeRawTransactionHexE400 from './model/DecodeRawTransactionHexE400';
+import DecodeRawTransactionHexE401 from './model/DecodeRawTransactionHexE401';
+import DecodeRawTransactionHexE403 from './model/DecodeRawTransactionHexE403';
+import DecodeRawTransactionHexR from './model/DecodeRawTransactionHexR';
+import DecodeRawTransactionHexRB from './model/DecodeRawTransactionHexRB';
+import DecodeRawTransactionHexRBData from './model/DecodeRawTransactionHexRBData';
+import DecodeRawTransactionHexRBDataItem from './model/DecodeRawTransactionHexRBDataItem';
+import DecodeRawTransactionHexRData from './model/DecodeRawTransactionHexRData';
+import DecodeRawTransactionHexRI from './model/DecodeRawTransactionHexRI';
+import DecodeRawTransactionHexRIS from './model/DecodeRawTransactionHexRIS';
+import DecodeRawTransactionHexRISB from './model/DecodeRawTransactionHexRISB';
+import DecodeRawTransactionHexRISB2 from './model/DecodeRawTransactionHexRISB2';
+import DecodeRawTransactionHexRISB22 from './model/DecodeRawTransactionHexRISB22';
+import DecodeRawTransactionHexRISB2ScriptPubKey from './model/DecodeRawTransactionHexRISB2ScriptPubKey';
+import DecodeRawTransactionHexRISB2Vin from './model/DecodeRawTransactionHexRISB2Vin';
+import DecodeRawTransactionHexRISB2Vout from './model/DecodeRawTransactionHexRISB2Vout';
+import DecodeRawTransactionHexRISBScriptPubKey from './model/DecodeRawTransactionHexRISBScriptPubKey';
+import DecodeRawTransactionHexRISBScriptSig from './model/DecodeRawTransactionHexRISBScriptSig';
+import DecodeRawTransactionHexRISBVin from './model/DecodeRawTransactionHexRISBVin';
+import DecodeRawTransactionHexRISBVout from './model/DecodeRawTransactionHexRISBVout';
+import DecodeRawTransactionHexRISD from './model/DecodeRawTransactionHexRISD';
+import DecodeRawTransactionHexRISD2 from './model/DecodeRawTransactionHexRISD2';
+import DecodeRawTransactionHexRISD2ScriptPubKey from './model/DecodeRawTransactionHexRISD2ScriptPubKey';
+import DecodeRawTransactionHexRISD2ScriptSig from './model/DecodeRawTransactionHexRISD2ScriptSig';
+import DecodeRawTransactionHexRISD2Vin from './model/DecodeRawTransactionHexRISD2Vin';
+import DecodeRawTransactionHexRISD2Vout from './model/DecodeRawTransactionHexRISD2Vout';
+import DecodeRawTransactionHexRISDScriptPubKey from './model/DecodeRawTransactionHexRISDScriptPubKey';
+import DecodeRawTransactionHexRISDScriptSig from './model/DecodeRawTransactionHexRISDScriptSig';
+import DecodeRawTransactionHexRISDVin from './model/DecodeRawTransactionHexRISDVin';
+import DecodeRawTransactionHexRISDVout from './model/DecodeRawTransactionHexRISDVout';
+import DecodeRawTransactionHexRISE from './model/DecodeRawTransactionHexRISE';
+import DecodeRawTransactionHexRISE2 from './model/DecodeRawTransactionHexRISE2';
+import DecodeRawTransactionHexRISL from './model/DecodeRawTransactionHexRISL';
+import DecodeRawTransactionHexRISLScriptPubKey from './model/DecodeRawTransactionHexRISLScriptPubKey';
+import DecodeRawTransactionHexRISLScriptSig from './model/DecodeRawTransactionHexRISLScriptSig';
+import DecodeRawTransactionHexRISLVin from './model/DecodeRawTransactionHexRISLVin';
+import DecodeRawTransactionHexRISLVout from './model/DecodeRawTransactionHexRISLVout';
+import DecodeRawTransactionHexRISZ from './model/DecodeRawTransactionHexRISZ';
+import DecodeRawTransactionHexRISZScriptPubKey from './model/DecodeRawTransactionHexRISZScriptPubKey';
+import DecodeRawTransactionHexRISZScriptSig from './model/DecodeRawTransactionHexRISZScriptSig';
+import DecodeRawTransactionHexRISZVin from './model/DecodeRawTransactionHexRISZVin';
+import DecodeRawTransactionHexRISZVout from './model/DecodeRawTransactionHexRISZVout';
+import DecodeXAddressE400 from './model/DecodeXAddressE400';
+import DecodeXAddressE401 from './model/DecodeXAddressE401';
+import DecodeXAddressE403 from './model/DecodeXAddressE403';
+import DecodeXAddressR from './model/DecodeXAddressR';
+import DecodeXAddressRData from './model/DecodeXAddressRData';
+import DecodeXAddressRI from './model/DecodeXAddressRI';
 import DeleteAutomaticCoinsForwardingE400 from './model/DeleteAutomaticCoinsForwardingE400';
 import DeleteAutomaticCoinsForwardingE401 from './model/DeleteAutomaticCoinsForwardingE401';
 import DeleteAutomaticCoinsForwardingE403 from './model/DeleteAutomaticCoinsForwardingE403';
@@ -210,8 +258,45 @@ import DeleteBlockchainEventSubscriptionE403 from './model/DeleteBlockchainEvent
 import DeleteBlockchainEventSubscriptionR from './model/DeleteBlockchainEventSubscriptionR';
 import DeleteBlockchainEventSubscriptionRData from './model/DeleteBlockchainEventSubscriptionRData';
 import DeleteBlockchainEventSubscriptionRI from './model/DeleteBlockchainEventSubscriptionRI';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400 from './model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE401 from './model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE401';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403 from './model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR from './model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData from './model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI from './model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses from './model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses';
+import EncodeXAddressE400 from './model/EncodeXAddressE400';
+import EncodeXAddressE401 from './model/EncodeXAddressE401';
+import EncodeXAddressE403 from './model/EncodeXAddressE403';
+import EncodeXAddressR from './model/EncodeXAddressR';
+import EncodeXAddressRData from './model/EncodeXAddressRData';
+import EncodeXAddressRI from './model/EncodeXAddressRI';
 import EndpointNotAllowedForApiKey from './model/EndpointNotAllowedForApiKey';
 import EndpointNotAllowedForPlan from './model/EndpointNotAllowedForPlan';
+import EstimateGasLimitE400 from './model/EstimateGasLimitE400';
+import EstimateGasLimitE401 from './model/EstimateGasLimitE401';
+import EstimateGasLimitE403 from './model/EstimateGasLimitE403';
+import EstimateGasLimitR from './model/EstimateGasLimitR';
+import EstimateGasLimitRB from './model/EstimateGasLimitRB';
+import EstimateGasLimitRBData from './model/EstimateGasLimitRBData';
+import EstimateGasLimitRBDataItem from './model/EstimateGasLimitRBDataItem';
+import EstimateGasLimitRData from './model/EstimateGasLimitRData';
+import EstimateGasLimitRI from './model/EstimateGasLimitRI';
+import EstimateTokenGasLimitE400 from './model/EstimateTokenGasLimitE400';
+import EstimateTokenGasLimitE401 from './model/EstimateTokenGasLimitE401';
+import EstimateTokenGasLimitE403 from './model/EstimateTokenGasLimitE403';
+import EstimateTokenGasLimitR from './model/EstimateTokenGasLimitR';
+import EstimateTokenGasLimitRB from './model/EstimateTokenGasLimitRB';
+import EstimateTokenGasLimitRBData from './model/EstimateTokenGasLimitRBData';
+import EstimateTokenGasLimitRBDataItem from './model/EstimateTokenGasLimitRBDataItem';
+import EstimateTokenGasLimitRData from './model/EstimateTokenGasLimitRData';
+import EstimateTokenGasLimitRI from './model/EstimateTokenGasLimitRI';
+import EstimateTransactionSmartFeeE400 from './model/EstimateTransactionSmartFeeE400';
+import EstimateTransactionSmartFeeE401 from './model/EstimateTransactionSmartFeeE401';
+import EstimateTransactionSmartFeeE403 from './model/EstimateTransactionSmartFeeE403';
+import EstimateTransactionSmartFeeR from './model/EstimateTransactionSmartFeeR';
+import EstimateTransactionSmartFeeRData from './model/EstimateTransactionSmartFeeRData';
+import EstimateTransactionSmartFeeRI from './model/EstimateTransactionSmartFeeRI';
 import FeatureMainnetsNotAllowedForPlan from './model/FeatureMainnetsNotAllowedForPlan';
 import GenerateDepositAddressE400 from './model/GenerateDepositAddressE400';
 import GenerateDepositAddressE401 from './model/GenerateDepositAddressE401';
@@ -325,6 +410,12 @@ import GetBlockDetailsByBlockHeightRIBSE from './model/GetBlockDetailsByBlockHei
 import GetBlockDetailsByBlockHeightRIBSEC from './model/GetBlockDetailsByBlockHeightRIBSEC';
 import GetBlockDetailsByBlockHeightRIBSL from './model/GetBlockDetailsByBlockHeightRIBSL';
 import GetBlockDetailsByBlockHeightRIBSZ from './model/GetBlockDetailsByBlockHeightRIBSZ';
+import GetBlockchainEventSubscriptionDetailsByReferenceIDE400 from './model/GetBlockchainEventSubscriptionDetailsByReferenceIDE400';
+import GetBlockchainEventSubscriptionDetailsByReferenceIDE401 from './model/GetBlockchainEventSubscriptionDetailsByReferenceIDE401';
+import GetBlockchainEventSubscriptionDetailsByReferenceIDE403 from './model/GetBlockchainEventSubscriptionDetailsByReferenceIDE403';
+import GetBlockchainEventSubscriptionDetailsByReferenceIDR from './model/GetBlockchainEventSubscriptionDetailsByReferenceIDR';
+import GetBlockchainEventSubscriptionDetailsByReferenceIDRData from './model/GetBlockchainEventSubscriptionDetailsByReferenceIDRData';
+import GetBlockchainEventSubscriptionDetailsByReferenceIDRI from './model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI';
 import GetEIP1559FeeRecommendationsE400 from './model/GetEIP1559FeeRecommendationsE400';
 import GetEIP1559FeeRecommendationsE401 from './model/GetEIP1559FeeRecommendationsE401';
 import GetEIP1559FeeRecommendationsE403 from './model/GetEIP1559FeeRecommendationsE403';
@@ -361,6 +452,16 @@ import GetFeeRecommendationsE403 from './model/GetFeeRecommendationsE403';
 import GetFeeRecommendationsR from './model/GetFeeRecommendationsR';
 import GetFeeRecommendationsRData from './model/GetFeeRecommendationsRData';
 import GetFeeRecommendationsRI from './model/GetFeeRecommendationsRI';
+import GetHDWalletXPubYPubZPubAssetsE400 from './model/GetHDWalletXPubYPubZPubAssetsE400';
+import GetHDWalletXPubYPubZPubAssetsE401 from './model/GetHDWalletXPubYPubZPubAssetsE401';
+import GetHDWalletXPubYPubZPubAssetsE403 from './model/GetHDWalletXPubYPubZPubAssetsE403';
+import GetHDWalletXPubYPubZPubAssetsE422 from './model/GetHDWalletXPubYPubZPubAssetsE422';
+import GetHDWalletXPubYPubZPubAssetsR from './model/GetHDWalletXPubYPubZPubAssetsR';
+import GetHDWalletXPubYPubZPubAssetsRData from './model/GetHDWalletXPubYPubZPubAssetsRData';
+import GetHDWalletXPubYPubZPubAssetsRI from './model/GetHDWalletXPubYPubZPubAssetsRI';
+import GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance from './model/GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance';
+import GetHDWalletXPubYPubZPubAssetsRIFungibleTokens from './model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokens';
+import GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens from './model/GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens';
 import GetHDWalletXPubYPubZPubDetailsE400 from './model/GetHDWalletXPubYPubZPubDetailsE400';
 import GetHDWalletXPubYPubZPubDetailsE401 from './model/GetHDWalletXPubYPubZPubDetailsE401';
 import GetHDWalletXPubYPubZPubDetailsE403 from './model/GetHDWalletXPubYPubZPubDetailsE403';
@@ -404,6 +505,12 @@ import GetLatestMinedZilliqaBlockE403 from './model/GetLatestMinedZilliqaBlockE4
 import GetLatestMinedZilliqaBlockR from './model/GetLatestMinedZilliqaBlockR';
 import GetLatestMinedZilliqaBlockRData from './model/GetLatestMinedZilliqaBlockRData';
 import GetLatestMinedZilliqaBlockRI from './model/GetLatestMinedZilliqaBlockRI';
+import GetNextAvailableNonceE400 from './model/GetNextAvailableNonceE400';
+import GetNextAvailableNonceE401 from './model/GetNextAvailableNonceE401';
+import GetNextAvailableNonceE403 from './model/GetNextAvailableNonceE403';
+import GetNextAvailableNonceR from './model/GetNextAvailableNonceR';
+import GetNextAvailableNonceRData from './model/GetNextAvailableNonceRData';
+import GetNextAvailableNonceRI from './model/GetNextAvailableNonceRI';
 import GetOmniTransactionDetailsByTransactionIDTxidE400 from './model/GetOmniTransactionDetailsByTransactionIDTxidE400';
 import GetOmniTransactionDetailsByTransactionIDTxidE401 from './model/GetOmniTransactionDetailsByTransactionIDTxidE401';
 import GetOmniTransactionDetailsByTransactionIDTxidE403 from './model/GetOmniTransactionDetailsByTransactionIDTxidE403';
@@ -411,6 +518,12 @@ import GetOmniTransactionDetailsByTransactionIDTxidR from './model/GetOmniTransa
 import GetOmniTransactionDetailsByTransactionIDTxidRData from './model/GetOmniTransactionDetailsByTransactionIDTxidRData';
 import GetOmniTransactionDetailsByTransactionIDTxidRI from './model/GetOmniTransactionDetailsByTransactionIDTxidRI';
 import GetOmniTransactionDetailsByTransactionIDTxidRISenders from './model/GetOmniTransactionDetailsByTransactionIDTxidRISenders';
+import GetRawTransactionDataE400 from './model/GetRawTransactionDataE400';
+import GetRawTransactionDataE401 from './model/GetRawTransactionDataE401';
+import GetRawTransactionDataE403 from './model/GetRawTransactionDataE403';
+import GetRawTransactionDataR from './model/GetRawTransactionDataR';
+import GetRawTransactionDataRData from './model/GetRawTransactionDataRData';
+import GetRawTransactionDataRI from './model/GetRawTransactionDataRI';
 import GetTokenDetailsByContractAddressE400 from './model/GetTokenDetailsByContractAddressE400';
 import GetTokenDetailsByContractAddressE401 from './model/GetTokenDetailsByContractAddressE401';
 import GetTokenDetailsByContractAddressE403 from './model/GetTokenDetailsByContractAddressE403';
@@ -618,7 +731,18 @@ import GetZilliqaTransactionDetailsByTransactionIDRISenders from './model/GetZil
 import InlineResponse400 from './model/InlineResponse400';
 import InlineResponse4001 from './model/InlineResponse4001';
 import InlineResponse40010 from './model/InlineResponse40010';
+import InlineResponse400100 from './model/InlineResponse400100';
+import InlineResponse400101 from './model/InlineResponse400101';
+import InlineResponse400102 from './model/InlineResponse400102';
+import InlineResponse400103 from './model/InlineResponse400103';
+import InlineResponse400104 from './model/InlineResponse400104';
+import InlineResponse400105 from './model/InlineResponse400105';
+import InlineResponse400106 from './model/InlineResponse400106';
+import InlineResponse400107 from './model/InlineResponse400107';
+import InlineResponse400108 from './model/InlineResponse400108';
+import InlineResponse400109 from './model/InlineResponse400109';
 import InlineResponse40011 from './model/InlineResponse40011';
+import InlineResponse400110 from './model/InlineResponse400110';
 import InlineResponse40012 from './model/InlineResponse40012';
 import InlineResponse40013 from './model/InlineResponse40013';
 import InlineResponse40014 from './model/InlineResponse40014';
@@ -707,10 +831,29 @@ import InlineResponse40089 from './model/InlineResponse40089';
 import InlineResponse4009 from './model/InlineResponse4009';
 import InlineResponse40090 from './model/InlineResponse40090';
 import InlineResponse40091 from './model/InlineResponse40091';
+import InlineResponse40092 from './model/InlineResponse40092';
+import InlineResponse40093 from './model/InlineResponse40093';
+import InlineResponse40094 from './model/InlineResponse40094';
+import InlineResponse40095 from './model/InlineResponse40095';
+import InlineResponse40096 from './model/InlineResponse40096';
+import InlineResponse40097 from './model/InlineResponse40097';
+import InlineResponse40098 from './model/InlineResponse40098';
+import InlineResponse40099 from './model/InlineResponse40099';
 import InlineResponse401 from './model/InlineResponse401';
 import InlineResponse4011 from './model/InlineResponse4011';
 import InlineResponse40110 from './model/InlineResponse40110';
+import InlineResponse401100 from './model/InlineResponse401100';
+import InlineResponse401101 from './model/InlineResponse401101';
+import InlineResponse401102 from './model/InlineResponse401102';
+import InlineResponse401103 from './model/InlineResponse401103';
+import InlineResponse401104 from './model/InlineResponse401104';
+import InlineResponse401105 from './model/InlineResponse401105';
+import InlineResponse401106 from './model/InlineResponse401106';
+import InlineResponse401107 from './model/InlineResponse401107';
+import InlineResponse401108 from './model/InlineResponse401108';
+import InlineResponse401109 from './model/InlineResponse401109';
 import InlineResponse40111 from './model/InlineResponse40111';
+import InlineResponse401110 from './model/InlineResponse401110';
 import InlineResponse40112 from './model/InlineResponse40112';
 import InlineResponse40113 from './model/InlineResponse40113';
 import InlineResponse40114 from './model/InlineResponse40114';
@@ -799,11 +942,30 @@ import InlineResponse40189 from './model/InlineResponse40189';
 import InlineResponse4019 from './model/InlineResponse4019';
 import InlineResponse40190 from './model/InlineResponse40190';
 import InlineResponse40191 from './model/InlineResponse40191';
+import InlineResponse40192 from './model/InlineResponse40192';
+import InlineResponse40193 from './model/InlineResponse40193';
+import InlineResponse40194 from './model/InlineResponse40194';
+import InlineResponse40195 from './model/InlineResponse40195';
+import InlineResponse40196 from './model/InlineResponse40196';
+import InlineResponse40197 from './model/InlineResponse40197';
+import InlineResponse40198 from './model/InlineResponse40198';
+import InlineResponse40199 from './model/InlineResponse40199';
 import InlineResponse402 from './model/InlineResponse402';
 import InlineResponse403 from './model/InlineResponse403';
 import InlineResponse4031 from './model/InlineResponse4031';
 import InlineResponse40310 from './model/InlineResponse40310';
+import InlineResponse403100 from './model/InlineResponse403100';
+import InlineResponse403101 from './model/InlineResponse403101';
+import InlineResponse403102 from './model/InlineResponse403102';
+import InlineResponse403103 from './model/InlineResponse403103';
+import InlineResponse403104 from './model/InlineResponse403104';
+import InlineResponse403105 from './model/InlineResponse403105';
+import InlineResponse403106 from './model/InlineResponse403106';
+import InlineResponse403107 from './model/InlineResponse403107';
+import InlineResponse403108 from './model/InlineResponse403108';
+import InlineResponse403109 from './model/InlineResponse403109';
 import InlineResponse40311 from './model/InlineResponse40311';
+import InlineResponse403110 from './model/InlineResponse403110';
 import InlineResponse40312 from './model/InlineResponse40312';
 import InlineResponse40313 from './model/InlineResponse40313';
 import InlineResponse40314 from './model/InlineResponse40314';
@@ -892,6 +1054,14 @@ import InlineResponse40389 from './model/InlineResponse40389';
 import InlineResponse4039 from './model/InlineResponse4039';
 import InlineResponse40390 from './model/InlineResponse40390';
 import InlineResponse40391 from './model/InlineResponse40391';
+import InlineResponse40392 from './model/InlineResponse40392';
+import InlineResponse40393 from './model/InlineResponse40393';
+import InlineResponse40394 from './model/InlineResponse40394';
+import InlineResponse40395 from './model/InlineResponse40395';
+import InlineResponse40396 from './model/InlineResponse40396';
+import InlineResponse40397 from './model/InlineResponse40397';
+import InlineResponse40398 from './model/InlineResponse40398';
+import InlineResponse40399 from './model/InlineResponse40399';
 import InlineResponse404 from './model/InlineResponse404';
 import InlineResponse4041 from './model/InlineResponse4041';
 import InlineResponse4042 from './model/InlineResponse4042';
@@ -922,8 +1092,11 @@ import InlineResponse4222 from './model/InlineResponse4222';
 import InlineResponse4223 from './model/InlineResponse4223';
 import InlineResponse4224 from './model/InlineResponse4224';
 import InlineResponse4225 from './model/InlineResponse4225';
+import InlineResponse4226 from './model/InlineResponse4226';
+import InlineResponse4227 from './model/InlineResponse4227';
 import InlineResponse429 from './model/InlineResponse429';
 import InlineResponse500 from './model/InlineResponse500';
+import InlineResponse501 from './model/InlineResponse501';
 import InsufficientCredits from './model/InsufficientCredits';
 import InvalidApiKey from './model/InvalidApiKey';
 import InvalidBlockchain from './model/InvalidBlockchain';
@@ -931,8 +1104,24 @@ import InvalidData from './model/InvalidData';
 import InvalidNetwork from './model/InvalidNetwork';
 import InvalidPagination from './model/InvalidPagination';
 import InvalidRequestBodyStructure from './model/InvalidRequestBodyStructure';
+import InvalidTransactionHex from './model/InvalidTransactionHex';
 import InvalidXpub from './model/InvalidXpub';
 import LimitGreaterThanAllowed from './model/LimitGreaterThanAllowed';
+import ListAllAssetsByWalletIDE400 from './model/ListAllAssetsByWalletIDE400';
+import ListAllAssetsByWalletIDE401 from './model/ListAllAssetsByWalletIDE401';
+import ListAllAssetsByWalletIDE403 from './model/ListAllAssetsByWalletIDE403';
+import ListAllAssetsByWalletIDR from './model/ListAllAssetsByWalletIDR';
+import ListAllAssetsByWalletIDRData from './model/ListAllAssetsByWalletIDRData';
+import ListAllAssetsByWalletIDRI from './model/ListAllAssetsByWalletIDRI';
+import ListAllAssetsFromAllWalletsE400 from './model/ListAllAssetsFromAllWalletsE400';
+import ListAllAssetsFromAllWalletsE401 from './model/ListAllAssetsFromAllWalletsE401';
+import ListAllAssetsFromAllWalletsE403 from './model/ListAllAssetsFromAllWalletsE403';
+import ListAllAssetsFromAllWalletsR from './model/ListAllAssetsFromAllWalletsR';
+import ListAllAssetsFromAllWalletsRData from './model/ListAllAssetsFromAllWalletsRData';
+import ListAllAssetsFromAllWalletsRI from './model/ListAllAssetsFromAllWalletsRI';
+import ListAllAssetsFromAllWalletsRICoins from './model/ListAllAssetsFromAllWalletsRICoins';
+import ListAllAssetsFromAllWalletsRIFungibleTokens from './model/ListAllAssetsFromAllWalletsRIFungibleTokens';
+import ListAllAssetsFromAllWalletsRINonFungibleTokens from './model/ListAllAssetsFromAllWalletsRINonFungibleTokens';
 import ListAllUnconfirmedTransactionsE400 from './model/ListAllUnconfirmedTransactionsE400';
 import ListAllUnconfirmedTransactionsE401 from './model/ListAllUnconfirmedTransactionsE401';
 import ListAllUnconfirmedTransactionsE403 from './model/ListAllUnconfirmedTransactionsE403';
@@ -976,18 +1165,41 @@ import ListBlockchainEventsSubscriptionsE403 from './model/ListBlockchainEventsS
 import ListBlockchainEventsSubscriptionsR from './model/ListBlockchainEventsSubscriptionsR';
 import ListBlockchainEventsSubscriptionsRData from './model/ListBlockchainEventsSubscriptionsRData';
 import ListBlockchainEventsSubscriptionsRI from './model/ListBlockchainEventsSubscriptionsRI';
+import ListBlockchainEventsSubscriptionsRIDeactivationReasons from './model/ListBlockchainEventsSubscriptionsRIDeactivationReasons';
 import ListCoinsForwardingAutomationsE400 from './model/ListCoinsForwardingAutomationsE400';
 import ListCoinsForwardingAutomationsE401 from './model/ListCoinsForwardingAutomationsE401';
 import ListCoinsForwardingAutomationsE403 from './model/ListCoinsForwardingAutomationsE403';
 import ListCoinsForwardingAutomationsR from './model/ListCoinsForwardingAutomationsR';
 import ListCoinsForwardingAutomationsRData from './model/ListCoinsForwardingAutomationsRData';
 import ListCoinsForwardingAutomationsRI from './model/ListCoinsForwardingAutomationsRI';
+import ListConfirmedTokensTransfersByAddressAndTimeRangeE400 from './model/ListConfirmedTokensTransfersByAddressAndTimeRangeE400';
+import ListConfirmedTokensTransfersByAddressAndTimeRangeE401 from './model/ListConfirmedTokensTransfersByAddressAndTimeRangeE401';
+import ListConfirmedTokensTransfersByAddressAndTimeRangeE403 from './model/ListConfirmedTokensTransfersByAddressAndTimeRangeE403';
+import ListConfirmedTokensTransfersByAddressAndTimeRangeR from './model/ListConfirmedTokensTransfersByAddressAndTimeRangeR';
+import ListConfirmedTokensTransfersByAddressAndTimeRangeRData from './model/ListConfirmedTokensTransfersByAddressAndTimeRangeRData';
+import ListConfirmedTokensTransfersByAddressAndTimeRangeRI from './model/ListConfirmedTokensTransfersByAddressAndTimeRangeRI';
 import ListConfirmedTokensTransfersByAddressE400 from './model/ListConfirmedTokensTransfersByAddressE400';
 import ListConfirmedTokensTransfersByAddressE401 from './model/ListConfirmedTokensTransfersByAddressE401';
 import ListConfirmedTokensTransfersByAddressE403 from './model/ListConfirmedTokensTransfersByAddressE403';
 import ListConfirmedTokensTransfersByAddressR from './model/ListConfirmedTokensTransfersByAddressR';
 import ListConfirmedTokensTransfersByAddressRData from './model/ListConfirmedTokensTransfersByAddressRData';
 import ListConfirmedTokensTransfersByAddressRI from './model/ListConfirmedTokensTransfersByAddressRI';
+import ListConfirmedTransactionsByAddressAndTimeRangeE400 from './model/ListConfirmedTransactionsByAddressAndTimeRangeE400';
+import ListConfirmedTransactionsByAddressAndTimeRangeE401 from './model/ListConfirmedTransactionsByAddressAndTimeRangeE401';
+import ListConfirmedTransactionsByAddressAndTimeRangeE403 from './model/ListConfirmedTransactionsByAddressAndTimeRangeE403';
+import ListConfirmedTransactionsByAddressAndTimeRangeR from './model/ListConfirmedTransactionsByAddressAndTimeRangeR';
+import ListConfirmedTransactionsByAddressAndTimeRangeRData from './model/ListConfirmedTransactionsByAddressAndTimeRangeRData';
+import ListConfirmedTransactionsByAddressAndTimeRangeRI from './model/ListConfirmedTransactionsByAddressAndTimeRangeRI';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBS from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBS';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSB from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSB';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSBSC from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSBSC';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSD from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSD';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2 from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSE from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSE';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSL from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSL';
+import ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ from './model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ';
 import ListConfirmedTransactionsByAddressE400 from './model/ListConfirmedTransactionsByAddressE400';
 import ListConfirmedTransactionsByAddressE401 from './model/ListConfirmedTransactionsByAddressE401';
 import ListConfirmedTransactionsByAddressE403 from './model/ListConfirmedTransactionsByAddressE403';
@@ -1041,12 +1253,25 @@ import ListHDWalletXPubYPubZPubTransactionsRI from './model/ListHDWalletXPubYPub
 import ListHDWalletXPubYPubZPubTransactionsRIFee from './model/ListHDWalletXPubYPubZPubTransactionsRIFee';
 import ListHDWalletXPubYPubZPubTransactionsRIRecipients from './model/ListHDWalletXPubYPubZPubTransactionsRIRecipients';
 import ListHDWalletXPubYPubZPubTransactionsRISenders from './model/ListHDWalletXPubYPubZPubTransactionsRISenders';
+import ListHDWalletXPubYPubZPubUTXOsE400 from './model/ListHDWalletXPubYPubZPubUTXOsE400';
+import ListHDWalletXPubYPubZPubUTXOsE401 from './model/ListHDWalletXPubYPubZPubUTXOsE401';
+import ListHDWalletXPubYPubZPubUTXOsE403 from './model/ListHDWalletXPubYPubZPubUTXOsE403';
+import ListHDWalletXPubYPubZPubUTXOsE422 from './model/ListHDWalletXPubYPubZPubUTXOsE422';
+import ListHDWalletXPubYPubZPubUTXOsR from './model/ListHDWalletXPubYPubZPubUTXOsR';
+import ListHDWalletXPubYPubZPubUTXOsRData from './model/ListHDWalletXPubYPubZPubUTXOsRData';
+import ListHDWalletXPubYPubZPubUTXOsRI from './model/ListHDWalletXPubYPubZPubUTXOsRI';
 import ListInternalTransactionDetailsByTransactionHashE400 from './model/ListInternalTransactionDetailsByTransactionHashE400';
 import ListInternalTransactionDetailsByTransactionHashE401 from './model/ListInternalTransactionDetailsByTransactionHashE401';
 import ListInternalTransactionDetailsByTransactionHashE403 from './model/ListInternalTransactionDetailsByTransactionHashE403';
 import ListInternalTransactionDetailsByTransactionHashR from './model/ListInternalTransactionDetailsByTransactionHashR';
 import ListInternalTransactionDetailsByTransactionHashRData from './model/ListInternalTransactionDetailsByTransactionHashRData';
 import ListInternalTransactionDetailsByTransactionHashRI from './model/ListInternalTransactionDetailsByTransactionHashRI';
+import ListInternalTransactionsByAddressAndTimeRangeE400 from './model/ListInternalTransactionsByAddressAndTimeRangeE400';
+import ListInternalTransactionsByAddressAndTimeRangeE401 from './model/ListInternalTransactionsByAddressAndTimeRangeE401';
+import ListInternalTransactionsByAddressAndTimeRangeE403 from './model/ListInternalTransactionsByAddressAndTimeRangeE403';
+import ListInternalTransactionsByAddressAndTimeRangeR from './model/ListInternalTransactionsByAddressAndTimeRangeR';
+import ListInternalTransactionsByAddressAndTimeRangeRData from './model/ListInternalTransactionsByAddressAndTimeRangeRData';
+import ListInternalTransactionsByAddressAndTimeRangeRI from './model/ListInternalTransactionsByAddressAndTimeRangeRI';
 import ListInternalTransactionsByAddressE400 from './model/ListInternalTransactionsByAddressE400';
 import ListInternalTransactionsByAddressE401 from './model/ListInternalTransactionsByAddressE401';
 import ListInternalTransactionsByAddressE403 from './model/ListInternalTransactionsByAddressE403';
@@ -1136,6 +1361,7 @@ import ListTokensTransfersByTransactionHashE403 from './model/ListTokensTransfer
 import ListTokensTransfersByTransactionHashR from './model/ListTokensTransfersByTransactionHashR';
 import ListTokensTransfersByTransactionHashRData from './model/ListTokensTransfersByTransactionHashRData';
 import ListTokensTransfersByTransactionHashRI from './model/ListTokensTransfersByTransactionHashRI';
+import ListTokensTransfersByTransactionHashRITransactionFee from './model/ListTokensTransfersByTransactionHashRITransactionFee';
 import ListTransactionsByBlockHashE400 from './model/ListTransactionsByBlockHashE400';
 import ListTransactionsByBlockHashE401 from './model/ListTransactionsByBlockHashE401';
 import ListTransactionsByBlockHashE403 from './model/ListTransactionsByBlockHashE403';
@@ -1227,6 +1453,12 @@ import ListUnconfirmedOmniTransactionsByPropertyIDE403 from './model/ListUnconfi
 import ListUnconfirmedOmniTransactionsByPropertyIDR from './model/ListUnconfirmedOmniTransactionsByPropertyIDR';
 import ListUnconfirmedOmniTransactionsByPropertyIDRData from './model/ListUnconfirmedOmniTransactionsByPropertyIDRData';
 import ListUnconfirmedOmniTransactionsByPropertyIDRI from './model/ListUnconfirmedOmniTransactionsByPropertyIDRI';
+import ListUnconfirmedTokensTransfersByAddressE400 from './model/ListUnconfirmedTokensTransfersByAddressE400';
+import ListUnconfirmedTokensTransfersByAddressE401 from './model/ListUnconfirmedTokensTransfersByAddressE401';
+import ListUnconfirmedTokensTransfersByAddressE403 from './model/ListUnconfirmedTokensTransfersByAddressE403';
+import ListUnconfirmedTokensTransfersByAddressR from './model/ListUnconfirmedTokensTransfersByAddressR';
+import ListUnconfirmedTokensTransfersByAddressRData from './model/ListUnconfirmedTokensTransfersByAddressRData';
+import ListUnconfirmedTokensTransfersByAddressRI from './model/ListUnconfirmedTokensTransfersByAddressRI';
 import ListUnconfirmedTransactionsByAddressE400 from './model/ListUnconfirmedTransactionsByAddressE400';
 import ListUnconfirmedTransactionsByAddressE401 from './model/ListUnconfirmedTransactionsByAddressE401';
 import ListUnconfirmedTransactionsByAddressE403 from './model/ListUnconfirmedTransactionsByAddressE403';
@@ -1267,12 +1499,6 @@ import ListUnspentTransactionOutputsByAddressE403 from './model/ListUnspentTrans
 import ListUnspentTransactionOutputsByAddressR from './model/ListUnspentTransactionOutputsByAddressR';
 import ListUnspentTransactionOutputsByAddressRData from './model/ListUnspentTransactionOutputsByAddressRData';
 import ListUnspentTransactionOutputsByAddressRI from './model/ListUnspentTransactionOutputsByAddressRI';
-import ListUnspentTransactionOutputsByAddressRIBlockchainSpecific from './model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecific';
-import ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit from './model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit';
-import ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend from './model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend';
-import ListUnspentTransactionOutputsByAddressRIFee from './model/ListUnspentTransactionOutputsByAddressRIFee';
-import ListUnspentTransactionOutputsByAddressRISenders from './model/ListUnspentTransactionOutputsByAddressRISenders';
-import ListUnspentTransactionOutputsByAddressRIVin from './model/ListUnspentTransactionOutputsByAddressRIVin';
 import ListWalletTransactionsE400 from './model/ListWalletTransactionsE400';
 import ListWalletTransactionsE401 from './model/ListWalletTransactionsE401';
 import ListWalletTransactionsE403 from './model/ListWalletTransactionsE403';
@@ -1286,6 +1512,12 @@ import ListWalletTransactionsRINonFungibleTokens from './model/ListWalletTransac
 import ListWalletTransactionsRIRecipients from './model/ListWalletTransactionsRIRecipients';
 import ListWalletTransactionsRISenders from './model/ListWalletTransactionsRISenders';
 import ListWalletTransactionsRIValue from './model/ListWalletTransactionsRIValue';
+import ListXRPRippleTransactionsByAddressAndTimeRangeE400 from './model/ListXRPRippleTransactionsByAddressAndTimeRangeE400';
+import ListXRPRippleTransactionsByAddressAndTimeRangeE401 from './model/ListXRPRippleTransactionsByAddressAndTimeRangeE401';
+import ListXRPRippleTransactionsByAddressAndTimeRangeE403 from './model/ListXRPRippleTransactionsByAddressAndTimeRangeE403';
+import ListXRPRippleTransactionsByAddressAndTimeRangeR from './model/ListXRPRippleTransactionsByAddressAndTimeRangeR';
+import ListXRPRippleTransactionsByAddressAndTimeRangeRData from './model/ListXRPRippleTransactionsByAddressAndTimeRangeRData';
+import ListXRPRippleTransactionsByAddressAndTimeRangeRI from './model/ListXRPRippleTransactionsByAddressAndTimeRangeRI';
 import ListXRPRippleTransactionsByAddressE400 from './model/ListXRPRippleTransactionsByAddressE400';
 import ListXRPRippleTransactionsByAddressE401 from './model/ListXRPRippleTransactionsByAddressE401';
 import ListXRPRippleTransactionsByAddressE403 from './model/ListXRPRippleTransactionsByAddressE403';
@@ -1484,6 +1716,7 @@ import TransactionRequestRejection from './model/TransactionRequestRejection';
 import TransactionRequestRejectionData from './model/TransactionRequestRejectionData';
 import TransactionRequestRejectionDataItem from './model/TransactionRequestRejectionDataItem';
 import UnexpectedServerError from './model/UnexpectedServerError';
+import Unimplemented from './model/Unimplemented';
 import UnsupportedMediaType from './model/UnsupportedMediaType';
 import UriNotFound from './model/UriNotFound';
 import ValidateAddressE400 from './model/ValidateAddressE400';
@@ -1518,7 +1751,6 @@ import MetadataApi from './api/MetadataApi';
 import OmniLayerApi from './api/OmniLayerApi';
 import TokensApi from './api/TokensApi';
 import TransactionsApi from './api/TransactionsApi';
-import UTXOBasedApi from './api/UTXOBasedApi';
 import UnifiedEndpointsApi from './api/UnifiedEndpointsApi';
 import XRPRippleApi from './api/XRPRippleApi';
 import ZilliqaApi from './api/ZilliqaApi';
@@ -1553,7 +1785,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.4.0
+* @version 1.5.0
 */
 export {
     /**
@@ -2619,6 +2851,294 @@ export {
     CreateFungibleTokensTransactionRequestFromAddressRISenders,
 
     /**
+     * The DecodeRawTransactionHexE400 model constructor.
+     * @property {module:model/DecodeRawTransactionHexE400}
+     */
+    DecodeRawTransactionHexE400,
+
+    /**
+     * The DecodeRawTransactionHexE401 model constructor.
+     * @property {module:model/DecodeRawTransactionHexE401}
+     */
+    DecodeRawTransactionHexE401,
+
+    /**
+     * The DecodeRawTransactionHexE403 model constructor.
+     * @property {module:model/DecodeRawTransactionHexE403}
+     */
+    DecodeRawTransactionHexE403,
+
+    /**
+     * The DecodeRawTransactionHexR model constructor.
+     * @property {module:model/DecodeRawTransactionHexR}
+     */
+    DecodeRawTransactionHexR,
+
+    /**
+     * The DecodeRawTransactionHexRB model constructor.
+     * @property {module:model/DecodeRawTransactionHexRB}
+     */
+    DecodeRawTransactionHexRB,
+
+    /**
+     * The DecodeRawTransactionHexRBData model constructor.
+     * @property {module:model/DecodeRawTransactionHexRBData}
+     */
+    DecodeRawTransactionHexRBData,
+
+    /**
+     * The DecodeRawTransactionHexRBDataItem model constructor.
+     * @property {module:model/DecodeRawTransactionHexRBDataItem}
+     */
+    DecodeRawTransactionHexRBDataItem,
+
+    /**
+     * The DecodeRawTransactionHexRData model constructor.
+     * @property {module:model/DecodeRawTransactionHexRData}
+     */
+    DecodeRawTransactionHexRData,
+
+    /**
+     * The DecodeRawTransactionHexRI model constructor.
+     * @property {module:model/DecodeRawTransactionHexRI}
+     */
+    DecodeRawTransactionHexRI,
+
+    /**
+     * The DecodeRawTransactionHexRIS model constructor.
+     * @property {module:model/DecodeRawTransactionHexRIS}
+     */
+    DecodeRawTransactionHexRIS,
+
+    /**
+     * The DecodeRawTransactionHexRISB model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISB}
+     */
+    DecodeRawTransactionHexRISB,
+
+    /**
+     * The DecodeRawTransactionHexRISB2 model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISB2}
+     */
+    DecodeRawTransactionHexRISB2,
+
+    /**
+     * The DecodeRawTransactionHexRISB22 model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISB22}
+     */
+    DecodeRawTransactionHexRISB22,
+
+    /**
+     * The DecodeRawTransactionHexRISB2ScriptPubKey model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISB2ScriptPubKey}
+     */
+    DecodeRawTransactionHexRISB2ScriptPubKey,
+
+    /**
+     * The DecodeRawTransactionHexRISB2Vin model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISB2Vin}
+     */
+    DecodeRawTransactionHexRISB2Vin,
+
+    /**
+     * The DecodeRawTransactionHexRISB2Vout model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISB2Vout}
+     */
+    DecodeRawTransactionHexRISB2Vout,
+
+    /**
+     * The DecodeRawTransactionHexRISBScriptPubKey model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISBScriptPubKey}
+     */
+    DecodeRawTransactionHexRISBScriptPubKey,
+
+    /**
+     * The DecodeRawTransactionHexRISBScriptSig model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISBScriptSig}
+     */
+    DecodeRawTransactionHexRISBScriptSig,
+
+    /**
+     * The DecodeRawTransactionHexRISBVin model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISBVin}
+     */
+    DecodeRawTransactionHexRISBVin,
+
+    /**
+     * The DecodeRawTransactionHexRISBVout model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISBVout}
+     */
+    DecodeRawTransactionHexRISBVout,
+
+    /**
+     * The DecodeRawTransactionHexRISD model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISD}
+     */
+    DecodeRawTransactionHexRISD,
+
+    /**
+     * The DecodeRawTransactionHexRISD2 model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISD2}
+     */
+    DecodeRawTransactionHexRISD2,
+
+    /**
+     * The DecodeRawTransactionHexRISD2ScriptPubKey model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISD2ScriptPubKey}
+     */
+    DecodeRawTransactionHexRISD2ScriptPubKey,
+
+    /**
+     * The DecodeRawTransactionHexRISD2ScriptSig model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISD2ScriptSig}
+     */
+    DecodeRawTransactionHexRISD2ScriptSig,
+
+    /**
+     * The DecodeRawTransactionHexRISD2Vin model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISD2Vin}
+     */
+    DecodeRawTransactionHexRISD2Vin,
+
+    /**
+     * The DecodeRawTransactionHexRISD2Vout model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISD2Vout}
+     */
+    DecodeRawTransactionHexRISD2Vout,
+
+    /**
+     * The DecodeRawTransactionHexRISDScriptPubKey model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISDScriptPubKey}
+     */
+    DecodeRawTransactionHexRISDScriptPubKey,
+
+    /**
+     * The DecodeRawTransactionHexRISDScriptSig model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISDScriptSig}
+     */
+    DecodeRawTransactionHexRISDScriptSig,
+
+    /**
+     * The DecodeRawTransactionHexRISDVin model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISDVin}
+     */
+    DecodeRawTransactionHexRISDVin,
+
+    /**
+     * The DecodeRawTransactionHexRISDVout model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISDVout}
+     */
+    DecodeRawTransactionHexRISDVout,
+
+    /**
+     * The DecodeRawTransactionHexRISE model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISE}
+     */
+    DecodeRawTransactionHexRISE,
+
+    /**
+     * The DecodeRawTransactionHexRISE2 model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISE2}
+     */
+    DecodeRawTransactionHexRISE2,
+
+    /**
+     * The DecodeRawTransactionHexRISL model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISL}
+     */
+    DecodeRawTransactionHexRISL,
+
+    /**
+     * The DecodeRawTransactionHexRISLScriptPubKey model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISLScriptPubKey}
+     */
+    DecodeRawTransactionHexRISLScriptPubKey,
+
+    /**
+     * The DecodeRawTransactionHexRISLScriptSig model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISLScriptSig}
+     */
+    DecodeRawTransactionHexRISLScriptSig,
+
+    /**
+     * The DecodeRawTransactionHexRISLVin model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISLVin}
+     */
+    DecodeRawTransactionHexRISLVin,
+
+    /**
+     * The DecodeRawTransactionHexRISLVout model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISLVout}
+     */
+    DecodeRawTransactionHexRISLVout,
+
+    /**
+     * The DecodeRawTransactionHexRISZ model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISZ}
+     */
+    DecodeRawTransactionHexRISZ,
+
+    /**
+     * The DecodeRawTransactionHexRISZScriptPubKey model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISZScriptPubKey}
+     */
+    DecodeRawTransactionHexRISZScriptPubKey,
+
+    /**
+     * The DecodeRawTransactionHexRISZScriptSig model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISZScriptSig}
+     */
+    DecodeRawTransactionHexRISZScriptSig,
+
+    /**
+     * The DecodeRawTransactionHexRISZVin model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISZVin}
+     */
+    DecodeRawTransactionHexRISZVin,
+
+    /**
+     * The DecodeRawTransactionHexRISZVout model constructor.
+     * @property {module:model/DecodeRawTransactionHexRISZVout}
+     */
+    DecodeRawTransactionHexRISZVout,
+
+    /**
+     * The DecodeXAddressE400 model constructor.
+     * @property {module:model/DecodeXAddressE400}
+     */
+    DecodeXAddressE400,
+
+    /**
+     * The DecodeXAddressE401 model constructor.
+     * @property {module:model/DecodeXAddressE401}
+     */
+    DecodeXAddressE401,
+
+    /**
+     * The DecodeXAddressE403 model constructor.
+     * @property {module:model/DecodeXAddressE403}
+     */
+    DecodeXAddressE403,
+
+    /**
+     * The DecodeXAddressR model constructor.
+     * @property {module:model/DecodeXAddressR}
+     */
+    DecodeXAddressR,
+
+    /**
+     * The DecodeXAddressRData model constructor.
+     * @property {module:model/DecodeXAddressRData}
+     */
+    DecodeXAddressRData,
+
+    /**
+     * The DecodeXAddressRI model constructor.
+     * @property {module:model/DecodeXAddressRI}
+     */
+    DecodeXAddressRI,
+
+    /**
      * The DeleteAutomaticCoinsForwardingE400 model constructor.
      * @property {module:model/DeleteAutomaticCoinsForwardingE400}
      */
@@ -2745,6 +3265,84 @@ export {
     DeleteBlockchainEventSubscriptionRI,
 
     /**
+     * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400 model constructor.
+     * @property {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400}
+     */
+    DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400,
+
+    /**
+     * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE401 model constructor.
+     * @property {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE401}
+     */
+    DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE401,
+
+    /**
+     * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403 model constructor.
+     * @property {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403}
+     */
+    DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403,
+
+    /**
+     * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR model constructor.
+     * @property {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR}
+     */
+    DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR,
+
+    /**
+     * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData model constructor.
+     * @property {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData}
+     */
+    DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData,
+
+    /**
+     * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI model constructor.
+     * @property {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI}
+     */
+    DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI,
+
+    /**
+     * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses model constructor.
+     * @property {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses}
+     */
+    DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses,
+
+    /**
+     * The EncodeXAddressE400 model constructor.
+     * @property {module:model/EncodeXAddressE400}
+     */
+    EncodeXAddressE400,
+
+    /**
+     * The EncodeXAddressE401 model constructor.
+     * @property {module:model/EncodeXAddressE401}
+     */
+    EncodeXAddressE401,
+
+    /**
+     * The EncodeXAddressE403 model constructor.
+     * @property {module:model/EncodeXAddressE403}
+     */
+    EncodeXAddressE403,
+
+    /**
+     * The EncodeXAddressR model constructor.
+     * @property {module:model/EncodeXAddressR}
+     */
+    EncodeXAddressR,
+
+    /**
+     * The EncodeXAddressRData model constructor.
+     * @property {module:model/EncodeXAddressRData}
+     */
+    EncodeXAddressRData,
+
+    /**
+     * The EncodeXAddressRI model constructor.
+     * @property {module:model/EncodeXAddressRI}
+     */
+    EncodeXAddressRI,
+
+    /**
      * The EndpointNotAllowedForApiKey model constructor.
      * @property {module:model/EndpointNotAllowedForApiKey}
      */
@@ -2755,6 +3353,150 @@ export {
      * @property {module:model/EndpointNotAllowedForPlan}
      */
     EndpointNotAllowedForPlan,
+
+    /**
+     * The EstimateGasLimitE400 model constructor.
+     * @property {module:model/EstimateGasLimitE400}
+     */
+    EstimateGasLimitE400,
+
+    /**
+     * The EstimateGasLimitE401 model constructor.
+     * @property {module:model/EstimateGasLimitE401}
+     */
+    EstimateGasLimitE401,
+
+    /**
+     * The EstimateGasLimitE403 model constructor.
+     * @property {module:model/EstimateGasLimitE403}
+     */
+    EstimateGasLimitE403,
+
+    /**
+     * The EstimateGasLimitR model constructor.
+     * @property {module:model/EstimateGasLimitR}
+     */
+    EstimateGasLimitR,
+
+    /**
+     * The EstimateGasLimitRB model constructor.
+     * @property {module:model/EstimateGasLimitRB}
+     */
+    EstimateGasLimitRB,
+
+    /**
+     * The EstimateGasLimitRBData model constructor.
+     * @property {module:model/EstimateGasLimitRBData}
+     */
+    EstimateGasLimitRBData,
+
+    /**
+     * The EstimateGasLimitRBDataItem model constructor.
+     * @property {module:model/EstimateGasLimitRBDataItem}
+     */
+    EstimateGasLimitRBDataItem,
+
+    /**
+     * The EstimateGasLimitRData model constructor.
+     * @property {module:model/EstimateGasLimitRData}
+     */
+    EstimateGasLimitRData,
+
+    /**
+     * The EstimateGasLimitRI model constructor.
+     * @property {module:model/EstimateGasLimitRI}
+     */
+    EstimateGasLimitRI,
+
+    /**
+     * The EstimateTokenGasLimitE400 model constructor.
+     * @property {module:model/EstimateTokenGasLimitE400}
+     */
+    EstimateTokenGasLimitE400,
+
+    /**
+     * The EstimateTokenGasLimitE401 model constructor.
+     * @property {module:model/EstimateTokenGasLimitE401}
+     */
+    EstimateTokenGasLimitE401,
+
+    /**
+     * The EstimateTokenGasLimitE403 model constructor.
+     * @property {module:model/EstimateTokenGasLimitE403}
+     */
+    EstimateTokenGasLimitE403,
+
+    /**
+     * The EstimateTokenGasLimitR model constructor.
+     * @property {module:model/EstimateTokenGasLimitR}
+     */
+    EstimateTokenGasLimitR,
+
+    /**
+     * The EstimateTokenGasLimitRB model constructor.
+     * @property {module:model/EstimateTokenGasLimitRB}
+     */
+    EstimateTokenGasLimitRB,
+
+    /**
+     * The EstimateTokenGasLimitRBData model constructor.
+     * @property {module:model/EstimateTokenGasLimitRBData}
+     */
+    EstimateTokenGasLimitRBData,
+
+    /**
+     * The EstimateTokenGasLimitRBDataItem model constructor.
+     * @property {module:model/EstimateTokenGasLimitRBDataItem}
+     */
+    EstimateTokenGasLimitRBDataItem,
+
+    /**
+     * The EstimateTokenGasLimitRData model constructor.
+     * @property {module:model/EstimateTokenGasLimitRData}
+     */
+    EstimateTokenGasLimitRData,
+
+    /**
+     * The EstimateTokenGasLimitRI model constructor.
+     * @property {module:model/EstimateTokenGasLimitRI}
+     */
+    EstimateTokenGasLimitRI,
+
+    /**
+     * The EstimateTransactionSmartFeeE400 model constructor.
+     * @property {module:model/EstimateTransactionSmartFeeE400}
+     */
+    EstimateTransactionSmartFeeE400,
+
+    /**
+     * The EstimateTransactionSmartFeeE401 model constructor.
+     * @property {module:model/EstimateTransactionSmartFeeE401}
+     */
+    EstimateTransactionSmartFeeE401,
+
+    /**
+     * The EstimateTransactionSmartFeeE403 model constructor.
+     * @property {module:model/EstimateTransactionSmartFeeE403}
+     */
+    EstimateTransactionSmartFeeE403,
+
+    /**
+     * The EstimateTransactionSmartFeeR model constructor.
+     * @property {module:model/EstimateTransactionSmartFeeR}
+     */
+    EstimateTransactionSmartFeeR,
+
+    /**
+     * The EstimateTransactionSmartFeeRData model constructor.
+     * @property {module:model/EstimateTransactionSmartFeeRData}
+     */
+    EstimateTransactionSmartFeeRData,
+
+    /**
+     * The EstimateTransactionSmartFeeRI model constructor.
+     * @property {module:model/EstimateTransactionSmartFeeRI}
+     */
+    EstimateTransactionSmartFeeRI,
 
     /**
      * The FeatureMainnetsNotAllowedForPlan model constructor.
@@ -3435,6 +4177,42 @@ export {
     GetBlockDetailsByBlockHeightRIBSZ,
 
     /**
+     * The GetBlockchainEventSubscriptionDetailsByReferenceIDE400 model constructor.
+     * @property {module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDE400}
+     */
+    GetBlockchainEventSubscriptionDetailsByReferenceIDE400,
+
+    /**
+     * The GetBlockchainEventSubscriptionDetailsByReferenceIDE401 model constructor.
+     * @property {module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDE401}
+     */
+    GetBlockchainEventSubscriptionDetailsByReferenceIDE401,
+
+    /**
+     * The GetBlockchainEventSubscriptionDetailsByReferenceIDE403 model constructor.
+     * @property {module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDE403}
+     */
+    GetBlockchainEventSubscriptionDetailsByReferenceIDE403,
+
+    /**
+     * The GetBlockchainEventSubscriptionDetailsByReferenceIDR model constructor.
+     * @property {module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDR}
+     */
+    GetBlockchainEventSubscriptionDetailsByReferenceIDR,
+
+    /**
+     * The GetBlockchainEventSubscriptionDetailsByReferenceIDRData model constructor.
+     * @property {module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDRData}
+     */
+    GetBlockchainEventSubscriptionDetailsByReferenceIDRData,
+
+    /**
+     * The GetBlockchainEventSubscriptionDetailsByReferenceIDRI model constructor.
+     * @property {module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI}
+     */
+    GetBlockchainEventSubscriptionDetailsByReferenceIDRI,
+
+    /**
      * The GetEIP1559FeeRecommendationsE400 model constructor.
      * @property {module:model/GetEIP1559FeeRecommendationsE400}
      */
@@ -3649,6 +4427,66 @@ export {
      * @property {module:model/GetFeeRecommendationsRI}
      */
     GetFeeRecommendationsRI,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsE400 model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsE400}
+     */
+    GetHDWalletXPubYPubZPubAssetsE400,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsE401 model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsE401}
+     */
+    GetHDWalletXPubYPubZPubAssetsE401,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsE403 model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsE403}
+     */
+    GetHDWalletXPubYPubZPubAssetsE403,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsE422 model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsE422}
+     */
+    GetHDWalletXPubYPubZPubAssetsE422,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsR model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsR}
+     */
+    GetHDWalletXPubYPubZPubAssetsR,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsRData model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsRData}
+     */
+    GetHDWalletXPubYPubZPubAssetsRData,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsRI model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsRI}
+     */
+    GetHDWalletXPubYPubZPubAssetsRI,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance}
+     */
+    GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsRIFungibleTokens model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokens}
+     */
+    GetHDWalletXPubYPubZPubAssetsRIFungibleTokens,
+
+    /**
+     * The GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens model constructor.
+     * @property {module:model/GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens}
+     */
+    GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens,
 
     /**
      * The GetHDWalletXPubYPubZPubDetailsE400 model constructor.
@@ -3909,6 +4747,42 @@ export {
     GetLatestMinedZilliqaBlockRI,
 
     /**
+     * The GetNextAvailableNonceE400 model constructor.
+     * @property {module:model/GetNextAvailableNonceE400}
+     */
+    GetNextAvailableNonceE400,
+
+    /**
+     * The GetNextAvailableNonceE401 model constructor.
+     * @property {module:model/GetNextAvailableNonceE401}
+     */
+    GetNextAvailableNonceE401,
+
+    /**
+     * The GetNextAvailableNonceE403 model constructor.
+     * @property {module:model/GetNextAvailableNonceE403}
+     */
+    GetNextAvailableNonceE403,
+
+    /**
+     * The GetNextAvailableNonceR model constructor.
+     * @property {module:model/GetNextAvailableNonceR}
+     */
+    GetNextAvailableNonceR,
+
+    /**
+     * The GetNextAvailableNonceRData model constructor.
+     * @property {module:model/GetNextAvailableNonceRData}
+     */
+    GetNextAvailableNonceRData,
+
+    /**
+     * The GetNextAvailableNonceRI model constructor.
+     * @property {module:model/GetNextAvailableNonceRI}
+     */
+    GetNextAvailableNonceRI,
+
+    /**
      * The GetOmniTransactionDetailsByTransactionIDTxidE400 model constructor.
      * @property {module:model/GetOmniTransactionDetailsByTransactionIDTxidE400}
      */
@@ -3949,6 +4823,42 @@ export {
      * @property {module:model/GetOmniTransactionDetailsByTransactionIDTxidRISenders}
      */
     GetOmniTransactionDetailsByTransactionIDTxidRISenders,
+
+    /**
+     * The GetRawTransactionDataE400 model constructor.
+     * @property {module:model/GetRawTransactionDataE400}
+     */
+    GetRawTransactionDataE400,
+
+    /**
+     * The GetRawTransactionDataE401 model constructor.
+     * @property {module:model/GetRawTransactionDataE401}
+     */
+    GetRawTransactionDataE401,
+
+    /**
+     * The GetRawTransactionDataE403 model constructor.
+     * @property {module:model/GetRawTransactionDataE403}
+     */
+    GetRawTransactionDataE403,
+
+    /**
+     * The GetRawTransactionDataR model constructor.
+     * @property {module:model/GetRawTransactionDataR}
+     */
+    GetRawTransactionDataR,
+
+    /**
+     * The GetRawTransactionDataRData model constructor.
+     * @property {module:model/GetRawTransactionDataRData}
+     */
+    GetRawTransactionDataRData,
+
+    /**
+     * The GetRawTransactionDataRI model constructor.
+     * @property {module:model/GetRawTransactionDataRI}
+     */
+    GetRawTransactionDataRI,
 
     /**
      * The GetTokenDetailsByContractAddressE400 model constructor.
@@ -5193,10 +6103,76 @@ export {
     InlineResponse40010,
 
     /**
+     * The InlineResponse400100 model constructor.
+     * @property {module:model/InlineResponse400100}
+     */
+    InlineResponse400100,
+
+    /**
+     * The InlineResponse400101 model constructor.
+     * @property {module:model/InlineResponse400101}
+     */
+    InlineResponse400101,
+
+    /**
+     * The InlineResponse400102 model constructor.
+     * @property {module:model/InlineResponse400102}
+     */
+    InlineResponse400102,
+
+    /**
+     * The InlineResponse400103 model constructor.
+     * @property {module:model/InlineResponse400103}
+     */
+    InlineResponse400103,
+
+    /**
+     * The InlineResponse400104 model constructor.
+     * @property {module:model/InlineResponse400104}
+     */
+    InlineResponse400104,
+
+    /**
+     * The InlineResponse400105 model constructor.
+     * @property {module:model/InlineResponse400105}
+     */
+    InlineResponse400105,
+
+    /**
+     * The InlineResponse400106 model constructor.
+     * @property {module:model/InlineResponse400106}
+     */
+    InlineResponse400106,
+
+    /**
+     * The InlineResponse400107 model constructor.
+     * @property {module:model/InlineResponse400107}
+     */
+    InlineResponse400107,
+
+    /**
+     * The InlineResponse400108 model constructor.
+     * @property {module:model/InlineResponse400108}
+     */
+    InlineResponse400108,
+
+    /**
+     * The InlineResponse400109 model constructor.
+     * @property {module:model/InlineResponse400109}
+     */
+    InlineResponse400109,
+
+    /**
      * The InlineResponse40011 model constructor.
      * @property {module:model/InlineResponse40011}
      */
     InlineResponse40011,
+
+    /**
+     * The InlineResponse400110 model constructor.
+     * @property {module:model/InlineResponse400110}
+     */
+    InlineResponse400110,
 
     /**
      * The InlineResponse40012 model constructor.
@@ -5727,6 +6703,54 @@ export {
     InlineResponse40091,
 
     /**
+     * The InlineResponse40092 model constructor.
+     * @property {module:model/InlineResponse40092}
+     */
+    InlineResponse40092,
+
+    /**
+     * The InlineResponse40093 model constructor.
+     * @property {module:model/InlineResponse40093}
+     */
+    InlineResponse40093,
+
+    /**
+     * The InlineResponse40094 model constructor.
+     * @property {module:model/InlineResponse40094}
+     */
+    InlineResponse40094,
+
+    /**
+     * The InlineResponse40095 model constructor.
+     * @property {module:model/InlineResponse40095}
+     */
+    InlineResponse40095,
+
+    /**
+     * The InlineResponse40096 model constructor.
+     * @property {module:model/InlineResponse40096}
+     */
+    InlineResponse40096,
+
+    /**
+     * The InlineResponse40097 model constructor.
+     * @property {module:model/InlineResponse40097}
+     */
+    InlineResponse40097,
+
+    /**
+     * The InlineResponse40098 model constructor.
+     * @property {module:model/InlineResponse40098}
+     */
+    InlineResponse40098,
+
+    /**
+     * The InlineResponse40099 model constructor.
+     * @property {module:model/InlineResponse40099}
+     */
+    InlineResponse40099,
+
+    /**
      * The InlineResponse401 model constructor.
      * @property {module:model/InlineResponse401}
      */
@@ -5745,10 +6769,76 @@ export {
     InlineResponse40110,
 
     /**
+     * The InlineResponse401100 model constructor.
+     * @property {module:model/InlineResponse401100}
+     */
+    InlineResponse401100,
+
+    /**
+     * The InlineResponse401101 model constructor.
+     * @property {module:model/InlineResponse401101}
+     */
+    InlineResponse401101,
+
+    /**
+     * The InlineResponse401102 model constructor.
+     * @property {module:model/InlineResponse401102}
+     */
+    InlineResponse401102,
+
+    /**
+     * The InlineResponse401103 model constructor.
+     * @property {module:model/InlineResponse401103}
+     */
+    InlineResponse401103,
+
+    /**
+     * The InlineResponse401104 model constructor.
+     * @property {module:model/InlineResponse401104}
+     */
+    InlineResponse401104,
+
+    /**
+     * The InlineResponse401105 model constructor.
+     * @property {module:model/InlineResponse401105}
+     */
+    InlineResponse401105,
+
+    /**
+     * The InlineResponse401106 model constructor.
+     * @property {module:model/InlineResponse401106}
+     */
+    InlineResponse401106,
+
+    /**
+     * The InlineResponse401107 model constructor.
+     * @property {module:model/InlineResponse401107}
+     */
+    InlineResponse401107,
+
+    /**
+     * The InlineResponse401108 model constructor.
+     * @property {module:model/InlineResponse401108}
+     */
+    InlineResponse401108,
+
+    /**
+     * The InlineResponse401109 model constructor.
+     * @property {module:model/InlineResponse401109}
+     */
+    InlineResponse401109,
+
+    /**
      * The InlineResponse40111 model constructor.
      * @property {module:model/InlineResponse40111}
      */
     InlineResponse40111,
+
+    /**
+     * The InlineResponse401110 model constructor.
+     * @property {module:model/InlineResponse401110}
+     */
+    InlineResponse401110,
 
     /**
      * The InlineResponse40112 model constructor.
@@ -6279,6 +7369,54 @@ export {
     InlineResponse40191,
 
     /**
+     * The InlineResponse40192 model constructor.
+     * @property {module:model/InlineResponse40192}
+     */
+    InlineResponse40192,
+
+    /**
+     * The InlineResponse40193 model constructor.
+     * @property {module:model/InlineResponse40193}
+     */
+    InlineResponse40193,
+
+    /**
+     * The InlineResponse40194 model constructor.
+     * @property {module:model/InlineResponse40194}
+     */
+    InlineResponse40194,
+
+    /**
+     * The InlineResponse40195 model constructor.
+     * @property {module:model/InlineResponse40195}
+     */
+    InlineResponse40195,
+
+    /**
+     * The InlineResponse40196 model constructor.
+     * @property {module:model/InlineResponse40196}
+     */
+    InlineResponse40196,
+
+    /**
+     * The InlineResponse40197 model constructor.
+     * @property {module:model/InlineResponse40197}
+     */
+    InlineResponse40197,
+
+    /**
+     * The InlineResponse40198 model constructor.
+     * @property {module:model/InlineResponse40198}
+     */
+    InlineResponse40198,
+
+    /**
+     * The InlineResponse40199 model constructor.
+     * @property {module:model/InlineResponse40199}
+     */
+    InlineResponse40199,
+
+    /**
      * The InlineResponse402 model constructor.
      * @property {module:model/InlineResponse402}
      */
@@ -6303,10 +7441,76 @@ export {
     InlineResponse40310,
 
     /**
+     * The InlineResponse403100 model constructor.
+     * @property {module:model/InlineResponse403100}
+     */
+    InlineResponse403100,
+
+    /**
+     * The InlineResponse403101 model constructor.
+     * @property {module:model/InlineResponse403101}
+     */
+    InlineResponse403101,
+
+    /**
+     * The InlineResponse403102 model constructor.
+     * @property {module:model/InlineResponse403102}
+     */
+    InlineResponse403102,
+
+    /**
+     * The InlineResponse403103 model constructor.
+     * @property {module:model/InlineResponse403103}
+     */
+    InlineResponse403103,
+
+    /**
+     * The InlineResponse403104 model constructor.
+     * @property {module:model/InlineResponse403104}
+     */
+    InlineResponse403104,
+
+    /**
+     * The InlineResponse403105 model constructor.
+     * @property {module:model/InlineResponse403105}
+     */
+    InlineResponse403105,
+
+    /**
+     * The InlineResponse403106 model constructor.
+     * @property {module:model/InlineResponse403106}
+     */
+    InlineResponse403106,
+
+    /**
+     * The InlineResponse403107 model constructor.
+     * @property {module:model/InlineResponse403107}
+     */
+    InlineResponse403107,
+
+    /**
+     * The InlineResponse403108 model constructor.
+     * @property {module:model/InlineResponse403108}
+     */
+    InlineResponse403108,
+
+    /**
+     * The InlineResponse403109 model constructor.
+     * @property {module:model/InlineResponse403109}
+     */
+    InlineResponse403109,
+
+    /**
      * The InlineResponse40311 model constructor.
      * @property {module:model/InlineResponse40311}
      */
     InlineResponse40311,
+
+    /**
+     * The InlineResponse403110 model constructor.
+     * @property {module:model/InlineResponse403110}
+     */
+    InlineResponse403110,
 
     /**
      * The InlineResponse40312 model constructor.
@@ -6837,6 +8041,54 @@ export {
     InlineResponse40391,
 
     /**
+     * The InlineResponse40392 model constructor.
+     * @property {module:model/InlineResponse40392}
+     */
+    InlineResponse40392,
+
+    /**
+     * The InlineResponse40393 model constructor.
+     * @property {module:model/InlineResponse40393}
+     */
+    InlineResponse40393,
+
+    /**
+     * The InlineResponse40394 model constructor.
+     * @property {module:model/InlineResponse40394}
+     */
+    InlineResponse40394,
+
+    /**
+     * The InlineResponse40395 model constructor.
+     * @property {module:model/InlineResponse40395}
+     */
+    InlineResponse40395,
+
+    /**
+     * The InlineResponse40396 model constructor.
+     * @property {module:model/InlineResponse40396}
+     */
+    InlineResponse40396,
+
+    /**
+     * The InlineResponse40397 model constructor.
+     * @property {module:model/InlineResponse40397}
+     */
+    InlineResponse40397,
+
+    /**
+     * The InlineResponse40398 model constructor.
+     * @property {module:model/InlineResponse40398}
+     */
+    InlineResponse40398,
+
+    /**
+     * The InlineResponse40399 model constructor.
+     * @property {module:model/InlineResponse40399}
+     */
+    InlineResponse40399,
+
+    /**
      * The InlineResponse404 model constructor.
      * @property {module:model/InlineResponse404}
      */
@@ -7017,6 +8269,18 @@ export {
     InlineResponse4225,
 
     /**
+     * The InlineResponse4226 model constructor.
+     * @property {module:model/InlineResponse4226}
+     */
+    InlineResponse4226,
+
+    /**
+     * The InlineResponse4227 model constructor.
+     * @property {module:model/InlineResponse4227}
+     */
+    InlineResponse4227,
+
+    /**
      * The InlineResponse429 model constructor.
      * @property {module:model/InlineResponse429}
      */
@@ -7027,6 +8291,12 @@ export {
      * @property {module:model/InlineResponse500}
      */
     InlineResponse500,
+
+    /**
+     * The InlineResponse501 model constructor.
+     * @property {module:model/InlineResponse501}
+     */
+    InlineResponse501,
 
     /**
      * The InsufficientCredits model constructor.
@@ -7071,6 +8341,12 @@ export {
     InvalidRequestBodyStructure,
 
     /**
+     * The InvalidTransactionHex model constructor.
+     * @property {module:model/InvalidTransactionHex}
+     */
+    InvalidTransactionHex,
+
+    /**
      * The InvalidXpub model constructor.
      * @property {module:model/InvalidXpub}
      */
@@ -7081,6 +8357,96 @@ export {
      * @property {module:model/LimitGreaterThanAllowed}
      */
     LimitGreaterThanAllowed,
+
+    /**
+     * The ListAllAssetsByWalletIDE400 model constructor.
+     * @property {module:model/ListAllAssetsByWalletIDE400}
+     */
+    ListAllAssetsByWalletIDE400,
+
+    /**
+     * The ListAllAssetsByWalletIDE401 model constructor.
+     * @property {module:model/ListAllAssetsByWalletIDE401}
+     */
+    ListAllAssetsByWalletIDE401,
+
+    /**
+     * The ListAllAssetsByWalletIDE403 model constructor.
+     * @property {module:model/ListAllAssetsByWalletIDE403}
+     */
+    ListAllAssetsByWalletIDE403,
+
+    /**
+     * The ListAllAssetsByWalletIDR model constructor.
+     * @property {module:model/ListAllAssetsByWalletIDR}
+     */
+    ListAllAssetsByWalletIDR,
+
+    /**
+     * The ListAllAssetsByWalletIDRData model constructor.
+     * @property {module:model/ListAllAssetsByWalletIDRData}
+     */
+    ListAllAssetsByWalletIDRData,
+
+    /**
+     * The ListAllAssetsByWalletIDRI model constructor.
+     * @property {module:model/ListAllAssetsByWalletIDRI}
+     */
+    ListAllAssetsByWalletIDRI,
+
+    /**
+     * The ListAllAssetsFromAllWalletsE400 model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsE400}
+     */
+    ListAllAssetsFromAllWalletsE400,
+
+    /**
+     * The ListAllAssetsFromAllWalletsE401 model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsE401}
+     */
+    ListAllAssetsFromAllWalletsE401,
+
+    /**
+     * The ListAllAssetsFromAllWalletsE403 model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsE403}
+     */
+    ListAllAssetsFromAllWalletsE403,
+
+    /**
+     * The ListAllAssetsFromAllWalletsR model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsR}
+     */
+    ListAllAssetsFromAllWalletsR,
+
+    /**
+     * The ListAllAssetsFromAllWalletsRData model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsRData}
+     */
+    ListAllAssetsFromAllWalletsRData,
+
+    /**
+     * The ListAllAssetsFromAllWalletsRI model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsRI}
+     */
+    ListAllAssetsFromAllWalletsRI,
+
+    /**
+     * The ListAllAssetsFromAllWalletsRICoins model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsRICoins}
+     */
+    ListAllAssetsFromAllWalletsRICoins,
+
+    /**
+     * The ListAllAssetsFromAllWalletsRIFungibleTokens model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsRIFungibleTokens}
+     */
+    ListAllAssetsFromAllWalletsRIFungibleTokens,
+
+    /**
+     * The ListAllAssetsFromAllWalletsRINonFungibleTokens model constructor.
+     * @property {module:model/ListAllAssetsFromAllWalletsRINonFungibleTokens}
+     */
+    ListAllAssetsFromAllWalletsRINonFungibleTokens,
 
     /**
      * The ListAllUnconfirmedTransactionsE400 model constructor.
@@ -7341,6 +8707,12 @@ export {
     ListBlockchainEventsSubscriptionsRI,
 
     /**
+     * The ListBlockchainEventsSubscriptionsRIDeactivationReasons model constructor.
+     * @property {module:model/ListBlockchainEventsSubscriptionsRIDeactivationReasons}
+     */
+    ListBlockchainEventsSubscriptionsRIDeactivationReasons,
+
+    /**
      * The ListCoinsForwardingAutomationsE400 model constructor.
      * @property {module:model/ListCoinsForwardingAutomationsE400}
      */
@@ -7377,6 +8749,42 @@ export {
     ListCoinsForwardingAutomationsRI,
 
     /**
+     * The ListConfirmedTokensTransfersByAddressAndTimeRangeE400 model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeE400}
+     */
+    ListConfirmedTokensTransfersByAddressAndTimeRangeE400,
+
+    /**
+     * The ListConfirmedTokensTransfersByAddressAndTimeRangeE401 model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeE401}
+     */
+    ListConfirmedTokensTransfersByAddressAndTimeRangeE401,
+
+    /**
+     * The ListConfirmedTokensTransfersByAddressAndTimeRangeE403 model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeE403}
+     */
+    ListConfirmedTokensTransfersByAddressAndTimeRangeE403,
+
+    /**
+     * The ListConfirmedTokensTransfersByAddressAndTimeRangeR model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeR}
+     */
+    ListConfirmedTokensTransfersByAddressAndTimeRangeR,
+
+    /**
+     * The ListConfirmedTokensTransfersByAddressAndTimeRangeRData model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeRData}
+     */
+    ListConfirmedTokensTransfersByAddressAndTimeRangeRData,
+
+    /**
+     * The ListConfirmedTokensTransfersByAddressAndTimeRangeRI model constructor.
+     * @property {module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeRI}
+     */
+    ListConfirmedTokensTransfersByAddressAndTimeRangeRI,
+
+    /**
      * The ListConfirmedTokensTransfersByAddressE400 model constructor.
      * @property {module:model/ListConfirmedTokensTransfersByAddressE400}
      */
@@ -7411,6 +8819,102 @@ export {
      * @property {module:model/ListConfirmedTokensTransfersByAddressRI}
      */
     ListConfirmedTokensTransfersByAddressRI,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeE400 model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeE400}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeE400,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeE401 model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeE401}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeE401,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeE403 model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeE403}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeE403,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeR model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeR}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeR,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRData model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRData}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRData,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRI model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRI}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRI,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBS model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBS}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBS,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSB model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSB}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSB,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSBSC model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSBSC}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSBSC,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSD model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSD}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSD,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2 model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSE model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSE}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSE,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSL model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSL}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSL,
+
+    /**
+     * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ}
+     */
+    ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ,
 
     /**
      * The ListConfirmedTransactionsByAddressE400 model constructor.
@@ -7731,6 +9235,48 @@ export {
     ListHDWalletXPubYPubZPubTransactionsRISenders,
 
     /**
+     * The ListHDWalletXPubYPubZPubUTXOsE400 model constructor.
+     * @property {module:model/ListHDWalletXPubYPubZPubUTXOsE400}
+     */
+    ListHDWalletXPubYPubZPubUTXOsE400,
+
+    /**
+     * The ListHDWalletXPubYPubZPubUTXOsE401 model constructor.
+     * @property {module:model/ListHDWalletXPubYPubZPubUTXOsE401}
+     */
+    ListHDWalletXPubYPubZPubUTXOsE401,
+
+    /**
+     * The ListHDWalletXPubYPubZPubUTXOsE403 model constructor.
+     * @property {module:model/ListHDWalletXPubYPubZPubUTXOsE403}
+     */
+    ListHDWalletXPubYPubZPubUTXOsE403,
+
+    /**
+     * The ListHDWalletXPubYPubZPubUTXOsE422 model constructor.
+     * @property {module:model/ListHDWalletXPubYPubZPubUTXOsE422}
+     */
+    ListHDWalletXPubYPubZPubUTXOsE422,
+
+    /**
+     * The ListHDWalletXPubYPubZPubUTXOsR model constructor.
+     * @property {module:model/ListHDWalletXPubYPubZPubUTXOsR}
+     */
+    ListHDWalletXPubYPubZPubUTXOsR,
+
+    /**
+     * The ListHDWalletXPubYPubZPubUTXOsRData model constructor.
+     * @property {module:model/ListHDWalletXPubYPubZPubUTXOsRData}
+     */
+    ListHDWalletXPubYPubZPubUTXOsRData,
+
+    /**
+     * The ListHDWalletXPubYPubZPubUTXOsRI model constructor.
+     * @property {module:model/ListHDWalletXPubYPubZPubUTXOsRI}
+     */
+    ListHDWalletXPubYPubZPubUTXOsRI,
+
+    /**
      * The ListInternalTransactionDetailsByTransactionHashE400 model constructor.
      * @property {module:model/ListInternalTransactionDetailsByTransactionHashE400}
      */
@@ -7765,6 +9311,42 @@ export {
      * @property {module:model/ListInternalTransactionDetailsByTransactionHashRI}
      */
     ListInternalTransactionDetailsByTransactionHashRI,
+
+    /**
+     * The ListInternalTransactionsByAddressAndTimeRangeE400 model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressAndTimeRangeE400}
+     */
+    ListInternalTransactionsByAddressAndTimeRangeE400,
+
+    /**
+     * The ListInternalTransactionsByAddressAndTimeRangeE401 model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressAndTimeRangeE401}
+     */
+    ListInternalTransactionsByAddressAndTimeRangeE401,
+
+    /**
+     * The ListInternalTransactionsByAddressAndTimeRangeE403 model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressAndTimeRangeE403}
+     */
+    ListInternalTransactionsByAddressAndTimeRangeE403,
+
+    /**
+     * The ListInternalTransactionsByAddressAndTimeRangeR model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressAndTimeRangeR}
+     */
+    ListInternalTransactionsByAddressAndTimeRangeR,
+
+    /**
+     * The ListInternalTransactionsByAddressAndTimeRangeRData model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressAndTimeRangeRData}
+     */
+    ListInternalTransactionsByAddressAndTimeRangeRData,
+
+    /**
+     * The ListInternalTransactionsByAddressAndTimeRangeRI model constructor.
+     * @property {module:model/ListInternalTransactionsByAddressAndTimeRangeRI}
+     */
+    ListInternalTransactionsByAddressAndTimeRangeRI,
 
     /**
      * The ListInternalTransactionsByAddressE400 model constructor.
@@ -8299,6 +9881,12 @@ export {
      * @property {module:model/ListTokensTransfersByTransactionHashRI}
      */
     ListTokensTransfersByTransactionHashRI,
+
+    /**
+     * The ListTokensTransfersByTransactionHashRITransactionFee model constructor.
+     * @property {module:model/ListTokensTransfersByTransactionHashRITransactionFee}
+     */
+    ListTokensTransfersByTransactionHashRITransactionFee,
 
     /**
      * The ListTransactionsByBlockHashE400 model constructor.
@@ -8847,6 +10435,42 @@ export {
     ListUnconfirmedOmniTransactionsByPropertyIDRI,
 
     /**
+     * The ListUnconfirmedTokensTransfersByAddressE400 model constructor.
+     * @property {module:model/ListUnconfirmedTokensTransfersByAddressE400}
+     */
+    ListUnconfirmedTokensTransfersByAddressE400,
+
+    /**
+     * The ListUnconfirmedTokensTransfersByAddressE401 model constructor.
+     * @property {module:model/ListUnconfirmedTokensTransfersByAddressE401}
+     */
+    ListUnconfirmedTokensTransfersByAddressE401,
+
+    /**
+     * The ListUnconfirmedTokensTransfersByAddressE403 model constructor.
+     * @property {module:model/ListUnconfirmedTokensTransfersByAddressE403}
+     */
+    ListUnconfirmedTokensTransfersByAddressE403,
+
+    /**
+     * The ListUnconfirmedTokensTransfersByAddressR model constructor.
+     * @property {module:model/ListUnconfirmedTokensTransfersByAddressR}
+     */
+    ListUnconfirmedTokensTransfersByAddressR,
+
+    /**
+     * The ListUnconfirmedTokensTransfersByAddressRData model constructor.
+     * @property {module:model/ListUnconfirmedTokensTransfersByAddressRData}
+     */
+    ListUnconfirmedTokensTransfersByAddressRData,
+
+    /**
+     * The ListUnconfirmedTokensTransfersByAddressRI model constructor.
+     * @property {module:model/ListUnconfirmedTokensTransfersByAddressRI}
+     */
+    ListUnconfirmedTokensTransfersByAddressRI,
+
+    /**
      * The ListUnconfirmedTransactionsByAddressE400 model constructor.
      * @property {module:model/ListUnconfirmedTransactionsByAddressE400}
      */
@@ -9087,42 +10711,6 @@ export {
     ListUnspentTransactionOutputsByAddressRI,
 
     /**
-     * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecific model constructor.
-     * @property {module:model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecific}
-     */
-    ListUnspentTransactionOutputsByAddressRIBlockchainSpecific,
-
-    /**
-     * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit model constructor.
-     * @property {module:model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit}
-     */
-    ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVJoinSplit,
-
-    /**
-     * The ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend model constructor.
-     * @property {module:model/ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend}
-     */
-    ListUnspentTransactionOutputsByAddressRIBlockchainSpecificVShieldedSpend,
-
-    /**
-     * The ListUnspentTransactionOutputsByAddressRIFee model constructor.
-     * @property {module:model/ListUnspentTransactionOutputsByAddressRIFee}
-     */
-    ListUnspentTransactionOutputsByAddressRIFee,
-
-    /**
-     * The ListUnspentTransactionOutputsByAddressRISenders model constructor.
-     * @property {module:model/ListUnspentTransactionOutputsByAddressRISenders}
-     */
-    ListUnspentTransactionOutputsByAddressRISenders,
-
-    /**
-     * The ListUnspentTransactionOutputsByAddressRIVin model constructor.
-     * @property {module:model/ListUnspentTransactionOutputsByAddressRIVin}
-     */
-    ListUnspentTransactionOutputsByAddressRIVin,
-
-    /**
      * The ListWalletTransactionsE400 model constructor.
      * @property {module:model/ListWalletTransactionsE400}
      */
@@ -9199,6 +10787,42 @@ export {
      * @property {module:model/ListWalletTransactionsRIValue}
      */
     ListWalletTransactionsRIValue,
+
+    /**
+     * The ListXRPRippleTransactionsByAddressAndTimeRangeE400 model constructor.
+     * @property {module:model/ListXRPRippleTransactionsByAddressAndTimeRangeE400}
+     */
+    ListXRPRippleTransactionsByAddressAndTimeRangeE400,
+
+    /**
+     * The ListXRPRippleTransactionsByAddressAndTimeRangeE401 model constructor.
+     * @property {module:model/ListXRPRippleTransactionsByAddressAndTimeRangeE401}
+     */
+    ListXRPRippleTransactionsByAddressAndTimeRangeE401,
+
+    /**
+     * The ListXRPRippleTransactionsByAddressAndTimeRangeE403 model constructor.
+     * @property {module:model/ListXRPRippleTransactionsByAddressAndTimeRangeE403}
+     */
+    ListXRPRippleTransactionsByAddressAndTimeRangeE403,
+
+    /**
+     * The ListXRPRippleTransactionsByAddressAndTimeRangeR model constructor.
+     * @property {module:model/ListXRPRippleTransactionsByAddressAndTimeRangeR}
+     */
+    ListXRPRippleTransactionsByAddressAndTimeRangeR,
+
+    /**
+     * The ListXRPRippleTransactionsByAddressAndTimeRangeRData model constructor.
+     * @property {module:model/ListXRPRippleTransactionsByAddressAndTimeRangeRData}
+     */
+    ListXRPRippleTransactionsByAddressAndTimeRangeRData,
+
+    /**
+     * The ListXRPRippleTransactionsByAddressAndTimeRangeRI model constructor.
+     * @property {module:model/ListXRPRippleTransactionsByAddressAndTimeRangeRI}
+     */
+    ListXRPRippleTransactionsByAddressAndTimeRangeRI,
 
     /**
      * The ListXRPRippleTransactionsByAddressE400 model constructor.
@@ -10389,6 +12013,12 @@ export {
     UnexpectedServerError,
 
     /**
+     * The Unimplemented model constructor.
+     * @property {module:model/Unimplemented}
+     */
+    Unimplemented,
+
+    /**
      * The UnsupportedMediaType model constructor.
      * @property {module:model/UnsupportedMediaType}
      */
@@ -10591,12 +12221,6 @@ export {
     * @property {module:api/TransactionsApi}
     */
     TransactionsApi,
-
-    /**
-    * The UTXOBasedApi service constructor.
-    * @property {module:api/UTXOBasedApi}
-    */
-    UTXOBasedApi,
 
     /**
     * The UnifiedEndpointsApi service constructor.

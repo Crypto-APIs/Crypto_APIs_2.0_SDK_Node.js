@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListUnconfirmedOmniTransactionsByPropertyIDE400 model module.
  * @module model/ListUnconfirmedOmniTransactionsByPropertyIDE400
- * @version 1.4.0
+ * @version 1.5.0
  */
 class ListUnconfirmedOmniTransactionsByPropertyIDE400 {
     /**
