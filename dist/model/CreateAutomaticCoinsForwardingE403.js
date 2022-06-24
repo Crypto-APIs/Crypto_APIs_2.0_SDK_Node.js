@@ -9,7 +9,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _BannedIpAddress = _interopRequireDefault(require("./BannedIpAddress"));
 
-var _BannedIpAddressDetails = _interopRequireDefault(require("./BannedIpAddressDetails"));
+var _BannedIpAddressDetailsInner = _interopRequireDefault(require("./BannedIpAddressDetailsInner"));
 
 var _CoinsForwardingAutomationsLimitReached = _interopRequireDefault(require("./CoinsForwardingAutomationsLimitReached"));
 
@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwardingE403 model module.
  * @module model/CreateAutomaticCoinsForwardingE403
- * @version 1.5.0
+ * @version 1.6.0
  */
 var CreateAutomaticCoinsForwardingE403 = /*#__PURE__*/function () {
   /**
@@ -105,7 +105,7 @@ var CreateAutomaticCoinsForwardingE403 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetails["default"]]);
+          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
         }
       }
 
@@ -129,7 +129,7 @@ CreateAutomaticCoinsForwardingE403.prototype['code'] = undefined;
 
 CreateAutomaticCoinsForwardingE403.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 CreateAutomaticCoinsForwardingE403.prototype['details'] = undefined; // Implement BannedIpAddress interface:
@@ -147,7 +147,7 @@ _BannedIpAddress["default"].prototype['code'] = undefined;
 
 _BannedIpAddress["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _BannedIpAddress["default"].prototype['details'] = undefined; // Implement EndpointNotAllowedForPlan interface:
@@ -165,7 +165,7 @@ _EndpointNotAllowedForPlan["default"].prototype['code'] = undefined;
 
 _EndpointNotAllowedForPlan["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _EndpointNotAllowedForPlan["default"].prototype['details'] = undefined; // Implement EndpointNotAllowedForApiKey interface:
@@ -183,7 +183,7 @@ _EndpointNotAllowedForApiKey["default"].prototype['code'] = undefined;
 
 _EndpointNotAllowedForApiKey["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _EndpointNotAllowedForApiKey["default"].prototype['details'] = undefined; // Implement FeatureMainnetsNotAllowedForPlan interface:
@@ -201,7 +201,7 @@ _FeatureMainnetsNotAllowedForPlan["default"].prototype['code'] = undefined;
 
 _FeatureMainnetsNotAllowedForPlan["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _FeatureMainnetsNotAllowedForPlan["default"].prototype['details'] = undefined; // Implement CoinsForwardingAutomationsLimitReached interface:
@@ -219,7 +219,7 @@ _CoinsForwardingAutomationsLimitReached["default"].prototype['code'] = undefined
 
 _CoinsForwardingAutomationsLimitReached["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _CoinsForwardingAutomationsLimitReached["default"].prototype['details'] = undefined;

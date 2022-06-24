@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListOmniTransactionsByAddressRIRecipients from './ListOmniTransactionsByAddressRIRecipients';
+import ListOmniTransactionsByAddressRIRecipientsInner from './ListOmniTransactionsByAddressRIRecipientsInner';
 import ListUnconfirmedOmniTransactionsByAddressRIFee from './ListUnconfirmedOmniTransactionsByAddressRIFee';
-import ListUnconfirmedOmniTransactionsByAddressRISenders from './ListUnconfirmedOmniTransactionsByAddressRISenders';
+import ListUnconfirmedOmniTransactionsByAddressRISendersInner from './ListUnconfirmedOmniTransactionsByAddressRISendersInner';
 
 /**
  * The ListUnconfirmedOmniTransactionsByAddressRI model module.
  * @module model/ListUnconfirmedOmniTransactionsByAddressRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListUnconfirmedOmniTransactionsByAddressRI {
     /**
@@ -29,8 +29,8 @@ class ListUnconfirmedOmniTransactionsByAddressRI {
      * @param divisible {Boolean} Defines whether the attribute can be divisible or not, as boolean. E.g., if it is \"true\", the attribute is divisible.
      * @param mined {Boolean} Defines whether the transaction has been mined or not, as boolean. E.g. if set to \"true\", it means the transaction is mined.
      * @param propertyId {Number} Represents the identifier of the tokens to send.
-     * @param recipients {Array.<module:model/ListOmniTransactionsByAddressRIRecipients>} Represents an object of addresses that receive the transactions.
-     * @param senders {Array.<module:model/ListUnconfirmedOmniTransactionsByAddressRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/ListOmniTransactionsByAddressRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+     * @param senders {Array.<module:model/ListUnconfirmedOmniTransactionsByAddressRISendersInner>} Represents an object of addresses that provide the funds.
      * @param sent {Boolean} Defines whether the transaction has been sent or not, as boolean. E.g. if set to \"true\", it means the transaction is sent.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
@@ -89,10 +89,10 @@ class ListUnconfirmedOmniTransactionsByAddressRI {
                 obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListOmniTransactionsByAddressRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListOmniTransactionsByAddressRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [ListUnconfirmedOmniTransactionsByAddressRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [ListUnconfirmedOmniTransactionsByAddressRISendersInner]);
             }
             if (data.hasOwnProperty('sent')) {
                 obj['sent'] = ApiClient.convertToType(data['sent'], 'Boolean');
@@ -148,13 +148,13 @@ ListUnconfirmedOmniTransactionsByAddressRI.prototype['propertyId'] = undefined;
 
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/ListOmniTransactionsByAddressRIRecipients>} recipients
+ * @member {Array.<module:model/ListOmniTransactionsByAddressRIRecipientsInner>} recipients
  */
 ListUnconfirmedOmniTransactionsByAddressRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/ListUnconfirmedOmniTransactionsByAddressRISenders>} senders
+ * @member {Array.<module:model/ListUnconfirmedOmniTransactionsByAddressRISendersInner>} senders
  */
 ListUnconfirmedOmniTransactionsByAddressRI.prototype['senders'] = undefined;
 

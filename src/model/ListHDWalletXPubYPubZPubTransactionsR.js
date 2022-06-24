@@ -17,7 +17,7 @@ import ListHDWalletXPubYPubZPubTransactionsRData from './ListHDWalletXPubYPubZPu
 /**
  * The ListHDWalletXPubYPubZPubTransactionsR model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsR
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListHDWalletXPubYPubZPubTransactionsR {
     /**

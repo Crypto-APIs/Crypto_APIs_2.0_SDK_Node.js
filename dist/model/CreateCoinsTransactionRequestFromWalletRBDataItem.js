@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _CreateCoinsTransactionRequestFromWalletRBDataItemRecipients = _interopRequireDefault(require("./CreateCoinsTransactionRequestFromWalletRBDataItemRecipients"));
+var _CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner = _interopRequireDefault(require("./CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -20,14 +20,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRBDataItem
- * @version 1.5.0
+ * @version 1.6.0
  */
 var CreateCoinsTransactionRequestFromWalletRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromWalletRBDataItem</code>.
    * @alias module:model/CreateCoinsTransactionRequestFromWalletRBDataItem
    * @param feePriority {module:model/CreateCoinsTransactionRequestFromWalletRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-   * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients>} Defines the destination of the transaction, whether it is incoming or outgoing.
+   * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner>} Defines the destination of the transaction, whether it is incoming or outgoing.
    */
   function CreateCoinsTransactionRequestFromWalletRBDataItem(feePriority, recipients) {
     _classCallCheck(this, CreateCoinsTransactionRequestFromWalletRBDataItem);
@@ -82,7 +82,7 @@ var CreateCoinsTransactionRequestFromWalletRBDataItem = /*#__PURE__*/function ()
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionRequestFromWalletRBDataItemRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner["default"]]);
         }
       }
 
@@ -126,7 +126,7 @@ CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['note'] = undefined;
 CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['prepareStrategy'] = 'minimize-dust';
 /**
  * Defines the destination of the transaction, whether it is incoming or outgoing.
- * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients>} recipients
+ * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner>} recipients
  */
 
 CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['recipients'] = undefined;

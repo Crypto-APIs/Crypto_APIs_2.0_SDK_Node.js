@@ -13,20 +13,20 @@
 
 import ApiClient from '../ApiClient';
 import ListUnconfirmedTransactionsByAddressRIBS from './ListUnconfirmedTransactionsByAddressRIBS';
-import ListUnconfirmedTransactionsByAddressRIRecipients from './ListUnconfirmedTransactionsByAddressRIRecipients';
-import ListUnconfirmedTransactionsByAddressRISenders from './ListUnconfirmedTransactionsByAddressRISenders';
+import ListUnconfirmedTransactionsByAddressRIRecipientsInner from './ListUnconfirmedTransactionsByAddressRIRecipientsInner';
+import ListUnconfirmedTransactionsByAddressRISendersInner from './ListUnconfirmedTransactionsByAddressRISendersInner';
 
 /**
  * The ListUnconfirmedTransactionsByAddressRI model module.
  * @module model/ListUnconfirmedTransactionsByAddressRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListUnconfirmedTransactionsByAddressRI {
     /**
      * Constructs a new <code>ListUnconfirmedTransactionsByAddressRI</code>.
      * @alias module:model/ListUnconfirmedTransactionsByAddressRI
-     * @param recipients {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
-     * @param senders {Array.<module:model/ListUnconfirmedTransactionsByAddressRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param recipients {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param senders {Array.<module:model/ListUnconfirmedTransactionsByAddressRISendersInner>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
      * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
@@ -63,10 +63,10 @@ class ListUnconfirmedTransactionsByAddressRI {
             obj = obj || new ListUnconfirmedTransactionsByAddressRI();
 
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListUnconfirmedTransactionsByAddressRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListUnconfirmedTransactionsByAddressRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [ListUnconfirmedTransactionsByAddressRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [ListUnconfirmedTransactionsByAddressRISendersInner]);
             }
             if (data.hasOwnProperty('timestamp')) {
                 obj['timestamp'] = ApiClient.convertToType(data['timestamp'], 'Number');
@@ -89,13 +89,13 @@ class ListUnconfirmedTransactionsByAddressRI {
 
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipients>} recipients
+ * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipientsInner>} recipients
  */
 ListUnconfirmedTransactionsByAddressRI.prototype['recipients'] = undefined;
 
 /**
  * Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRISenders>} senders
+ * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRISendersInner>} senders
  */
 ListUnconfirmedTransactionsByAddressRI.prototype['senders'] = undefined;
 

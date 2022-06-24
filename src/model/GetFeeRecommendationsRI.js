@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetFeeRecommendationsRI {
     /**
@@ -26,11 +26,10 @@ class GetFeeRecommendationsRI {
      * @param fast {String} Fast fee per byte calculated from unconfirmed transactions
      * @param slow {String} Slow fee per byte calculated from unconfirmed transactions
      * @param standard {String} Standard fee per byte calculated from unconfirmed transactions
-     * @param feeCushionMultiplier {String} Represents the fee cushion multiplier used to multiply the base fee.
      */
-    constructor(unit, fast, slow, standard, feeCushionMultiplier) { 
+    constructor(unit, fast, slow, standard) { 
         
-        GetFeeRecommendationsRI.initialize(this, unit, fast, slow, standard, feeCushionMultiplier);
+        GetFeeRecommendationsRI.initialize(this, unit, fast, slow, standard);
     }
 
     /**
@@ -38,12 +37,11 @@ class GetFeeRecommendationsRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, unit, fast, slow, standard, feeCushionMultiplier) { 
+    static initialize(obj, unit, fast, slow, standard) { 
         obj['unit'] = unit;
         obj['fast'] = fast;
         obj['slow'] = slow;
         obj['standard'] = standard;
-        obj['feeCushionMultiplier'] = feeCushionMultiplier;
     }
 
     /**
@@ -69,8 +67,8 @@ class GetFeeRecommendationsRI {
             if (data.hasOwnProperty('standard')) {
                 obj['standard'] = ApiClient.convertToType(data['standard'], 'String');
             }
-            if (data.hasOwnProperty('feeCushionMultiplier')) {
-                obj['feeCushionMultiplier'] = ApiClient.convertToType(data['feeCushionMultiplier'], 'String');
+            if (data.hasOwnProperty('feeMultiplier')) {
+                obj['feeMultiplier'] = ApiClient.convertToType(data['feeMultiplier'], 'String');
             }
         }
         return obj;
@@ -105,9 +103,9 @@ GetFeeRecommendationsRI.prototype['standard'] = undefined;
 
 /**
  * Represents the fee cushion multiplier used to multiply the base fee.
- * @member {String} feeCushionMultiplier
+ * @member {String} feeMultiplier
  */
-GetFeeRecommendationsRI.prototype['feeCushionMultiplier'] = undefined;
+GetFeeRecommendationsRI.prototype['feeMultiplier'] = undefined;
 
 
 

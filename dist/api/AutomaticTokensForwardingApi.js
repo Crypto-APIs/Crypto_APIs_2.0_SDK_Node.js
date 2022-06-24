@@ -7,61 +7,61 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _AddTokensToExistingFromAddress400Response = _interopRequireDefault(require("../model/AddTokensToExistingFromAddress400Response"));
+
+var _AddTokensToExistingFromAddress401Response = _interopRequireDefault(require("../model/AddTokensToExistingFromAddress401Response"));
+
+var _AddTokensToExistingFromAddress403Response = _interopRequireDefault(require("../model/AddTokensToExistingFromAddress403Response"));
+
 var _AddTokensToExistingFromAddressR = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressR"));
 
 var _AddTokensToExistingFromAddressRB = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressRB"));
+
+var _CreateAutomaticTokensForwarding400Response = _interopRequireDefault(require("../model/CreateAutomaticTokensForwarding400Response"));
+
+var _CreateAutomaticTokensForwarding401Response = _interopRequireDefault(require("../model/CreateAutomaticTokensForwarding401Response"));
+
+var _CreateAutomaticTokensForwarding403Response = _interopRequireDefault(require("../model/CreateAutomaticTokensForwarding403Response"));
 
 var _CreateAutomaticTokensForwardingR = _interopRequireDefault(require("../model/CreateAutomaticTokensForwardingR"));
 
 var _CreateAutomaticTokensForwardingRB = _interopRequireDefault(require("../model/CreateAutomaticTokensForwardingRB"));
 
+var _DeleteAutomaticTokensForwarding400Response = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwarding400Response"));
+
+var _DeleteAutomaticTokensForwarding401Response = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwarding401Response"));
+
+var _DeleteAutomaticTokensForwarding403Response = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwarding403Response"));
+
 var _DeleteAutomaticTokensForwardingR = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwardingR"));
+
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetFeeAddressDetails400Response = _interopRequireDefault(require("../model/GetFeeAddressDetails400Response"));
+
+var _GetFeeAddressDetails401Response = _interopRequireDefault(require("../model/GetFeeAddressDetails401Response"));
+
+var _GetFeeAddressDetails403Response = _interopRequireDefault(require("../model/GetFeeAddressDetails403Response"));
 
 var _GetFeeAddressDetailsR = _interopRequireDefault(require("../model/GetFeeAddressDetailsR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40092"));
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40093"));
+var _ListTokensForwardingAutomations400Response = _interopRequireDefault(require("../model/ListTokensForwardingAutomations400Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40094"));
+var _ListTokensForwardingAutomations401Response = _interopRequireDefault(require("../model/ListTokensForwardingAutomations401Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40095"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40096"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40192"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40193"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40194"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40195"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40196"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40392"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40393"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40394"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40395"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40396"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse4041"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListTokensForwardingAutomations403Response = _interopRequireDefault(require("../model/ListTokensForwardingAutomations403Response"));
 
 var _ListTokensForwardingAutomationsR = _interopRequireDefault(require("../model/ListTokensForwardingAutomationsR"));
 
@@ -76,7 +76,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * AutomaticTokensForwarding service.
 * @module api/AutomaticTokensForwardingApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
   /**

@@ -7,29 +7,29 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GenerateDepositAddress400Response = _interopRequireDefault(require("../model/GenerateDepositAddress400Response"));
+
+var _GenerateDepositAddress401Response = _interopRequireDefault(require("../model/GenerateDepositAddress401Response"));
+
+var _GenerateDepositAddress403Response = _interopRequireDefault(require("../model/GenerateDepositAddress403Response"));
+
 var _GenerateDepositAddressR = _interopRequireDefault(require("../model/GenerateDepositAddressR"));
 
 var _GenerateDepositAddressRB = _interopRequireDefault(require("../model/GenerateDepositAddressRB"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse4008"));
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse4018"));
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse402"));
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse4038"));
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse4041"));
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse409"));
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -42,7 +42,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var GeneratingApi = /*#__PURE__*/function () {
   /**

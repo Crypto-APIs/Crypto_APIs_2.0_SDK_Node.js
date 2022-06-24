@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSD2Vout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSD2Vout"));
+var _GetTransactionDetailsByTransactionIDRIBSD2VoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSD2VoutInner"));
 
-var _GetWalletTransactionDetailsByTransactionIDRIBSD2Vin = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSD2Vin"));
+var _GetWalletTransactionDetailsByTransactionIDRIBSD2VinInner = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSD2VinInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSD2 model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSD2
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetWalletTransactionDetailsByTransactionIDRIBSD2 = /*#__PURE__*/function () {
   /**
@@ -32,8 +32,8 @@ var GetWalletTransactionDetailsByTransactionIDRIBSD2 = /*#__PURE__*/function () 
    * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
    * @param size {Number} Represents the total size of this transaction.
    * @param version {Number} Represents the transaction version number.
-   * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSD2Vin>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vout>} Object Array representation of transaction outputs
+   * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSD2VinInner>} Object Array representation of transaction inputs
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner>} Object Array representation of transaction outputs
    */
   function GetWalletTransactionDetailsByTransactionIDRIBSD2(locktime, size, version, vin, vout) {
     _classCallCheck(this, GetWalletTransactionDetailsByTransactionIDRIBSD2);
@@ -83,11 +83,11 @@ var GetWalletTransactionDetailsByTransactionIDRIBSD2 = /*#__PURE__*/function () 
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetWalletTransactionDetailsByTransactionIDRIBSD2Vin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetWalletTransactionDetailsByTransactionIDRIBSD2VinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSD2Vout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSD2VoutInner["default"]]);
         }
       }
 
@@ -118,13 +118,13 @@ GetWalletTransactionDetailsByTransactionIDRIBSD2.prototype['size'] = undefined;
 GetWalletTransactionDetailsByTransactionIDRIBSD2.prototype['version'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSD2Vin>} vin
+ * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSD2VinInner>} vin
  */
 
 GetWalletTransactionDetailsByTransactionIDRIBSD2.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner>} vout
  */
 
 GetWalletTransactionDetailsByTransactionIDRIBSD2.prototype['vout'] = undefined;

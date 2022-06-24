@@ -17,7 +17,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDRData from './GetXRPRippleTr
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDR model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDR
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetXRPRippleTransactionDetailsByTransactionIDR {
     /**

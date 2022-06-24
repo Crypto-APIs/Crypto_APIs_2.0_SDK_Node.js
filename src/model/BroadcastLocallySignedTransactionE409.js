@@ -13,13 +13,13 @@
 
 import ApiClient from '../ApiClient';
 import AlreadyExists from './AlreadyExists';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import InvalidData from './InvalidData';
 
 /**
  * The BroadcastLocallySignedTransactionE409 model module.
  * @module model/BroadcastLocallySignedTransactionE409
- * @version 1.5.0
+ * @version 1.6.0
  */
 class BroadcastLocallySignedTransactionE409 {
     /**
@@ -65,7 +65,7 @@ class BroadcastLocallySignedTransactionE409 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -87,7 +87,7 @@ BroadcastLocallySignedTransactionE409.prototype['code'] = undefined;
 BroadcastLocallySignedTransactionE409.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 BroadcastLocallySignedTransactionE409.prototype['details'] = undefined;
 
@@ -104,7 +104,7 @@ InvalidData.prototype['code'] = undefined;
  */
 InvalidData.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidData.prototype['details'] = undefined;
 // Implement AlreadyExists interface:
@@ -119,7 +119,7 @@ AlreadyExists.prototype['code'] = undefined;
  */
 AlreadyExists.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 AlreadyExists.prototype['details'] = undefined;
 

@@ -7,11 +7,11 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _ListAllAssetsFromAllWalletsRICoins = _interopRequireDefault(require("./ListAllAssetsFromAllWalletsRICoins"));
+var _ListAllAssetsFromAllWalletsRICoinsInner = _interopRequireDefault(require("./ListAllAssetsFromAllWalletsRICoinsInner"));
 
-var _ListAllAssetsFromAllWalletsRIFungibleTokens = _interopRequireDefault(require("./ListAllAssetsFromAllWalletsRIFungibleTokens"));
+var _ListAllAssetsFromAllWalletsRIFungibleTokensInner = _interopRequireDefault(require("./ListAllAssetsFromAllWalletsRIFungibleTokensInner"));
 
-var _ListAllAssetsFromAllWalletsRINonFungibleTokens = _interopRequireDefault(require("./ListAllAssetsFromAllWalletsRINonFungibleTokens"));
+var _ListAllAssetsFromAllWalletsRINonFungibleTokensInner = _interopRequireDefault(require("./ListAllAssetsFromAllWalletsRINonFungibleTokensInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,15 +24,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsByWalletIDRI model module.
  * @module model/ListAllAssetsByWalletIDRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListAllAssetsByWalletIDRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsByWalletIDRI</code>.
    * @alias module:model/ListAllAssetsByWalletIDRI
-   * @param coins {Array.<module:model/ListAllAssetsFromAllWalletsRICoins>} 
-   * @param fungibleTokens {Array.<module:model/ListAllAssetsFromAllWalletsRIFungibleTokens>} Represents fungible tokens'es detailed information
-   * @param nonFungibleTokens {Array.<module:model/ListAllAssetsFromAllWalletsRINonFungibleTokens>} Represents non-fungible tokens'es detailed information.
+   * @param coins {Array.<module:model/ListAllAssetsFromAllWalletsRICoinsInner>} 
+   * @param fungibleTokens {Array.<module:model/ListAllAssetsFromAllWalletsRIFungibleTokensInner>} Represents fungible tokens'es detailed information
+   * @param nonFungibleTokens {Array.<module:model/ListAllAssetsFromAllWalletsRINonFungibleTokensInner>} Represents non-fungible tokens'es detailed information.
    * @param walletId {String} Defines the unique ID of the Wallet.
    * @param walletName {String} Represents the name of the wallet.
    */
@@ -72,15 +72,15 @@ var ListAllAssetsByWalletIDRI = /*#__PURE__*/function () {
         obj = obj || new ListAllAssetsByWalletIDRI();
 
         if (data.hasOwnProperty('coins')) {
-          obj['coins'] = _ApiClient["default"].convertToType(data['coins'], [_ListAllAssetsFromAllWalletsRICoins["default"]]);
+          obj['coins'] = _ApiClient["default"].convertToType(data['coins'], [_ListAllAssetsFromAllWalletsRICoinsInner["default"]]);
         }
 
         if (data.hasOwnProperty('fungibleTokens')) {
-          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_ListAllAssetsFromAllWalletsRIFungibleTokens["default"]]);
+          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_ListAllAssetsFromAllWalletsRIFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('nonFungibleTokens')) {
-          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_ListAllAssetsFromAllWalletsRINonFungibleTokens["default"]]);
+          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_ListAllAssetsFromAllWalletsRINonFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('walletId')) {
@@ -99,20 +99,20 @@ var ListAllAssetsByWalletIDRI = /*#__PURE__*/function () {
   return ListAllAssetsByWalletIDRI;
 }();
 /**
- * @member {Array.<module:model/ListAllAssetsFromAllWalletsRICoins>} coins
+ * @member {Array.<module:model/ListAllAssetsFromAllWalletsRICoinsInner>} coins
  */
 
 
 ListAllAssetsByWalletIDRI.prototype['coins'] = undefined;
 /**
  * Represents fungible tokens'es detailed information
- * @member {Array.<module:model/ListAllAssetsFromAllWalletsRIFungibleTokens>} fungibleTokens
+ * @member {Array.<module:model/ListAllAssetsFromAllWalletsRIFungibleTokensInner>} fungibleTokens
  */
 
 ListAllAssetsByWalletIDRI.prototype['fungibleTokens'] = undefined;
 /**
  * Represents non-fungible tokens'es detailed information.
- * @member {Array.<module:model/ListAllAssetsFromAllWalletsRINonFungibleTokens>} nonFungibleTokens
+ * @member {Array.<module:model/ListAllAssetsFromAllWalletsRINonFungibleTokensInner>} nonFungibleTokens
  */
 
 ListAllAssetsByWalletIDRI.prototype['nonFungibleTokens'] = undefined;

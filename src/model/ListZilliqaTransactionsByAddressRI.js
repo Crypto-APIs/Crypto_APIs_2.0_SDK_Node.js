@@ -13,13 +13,13 @@
 
 import ApiClient from '../ApiClient';
 import GetZilliqaTransactionDetailsByTransactionIDRIFee from './GetZilliqaTransactionDetailsByTransactionIDRIFee';
-import ListZilliqaTransactionsByAddressRIRecipients from './ListZilliqaTransactionsByAddressRIRecipients';
-import ListZilliqaTransactionsByAddressRISenders from './ListZilliqaTransactionsByAddressRISenders';
+import ListZilliqaTransactionsByAddressRIRecipientsInner from './ListZilliqaTransactionsByAddressRIRecipientsInner';
+import ListZilliqaTransactionsByAddressRISendersInner from './ListZilliqaTransactionsByAddressRISendersInner';
 
 /**
  * The ListZilliqaTransactionsByAddressRI model module.
  * @module model/ListZilliqaTransactionsByAddressRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListZilliqaTransactionsByAddressRI {
     /**
@@ -32,8 +32,8 @@ class ListZilliqaTransactionsByAddressRI {
      * @param minedInBlockHash {String} Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param minedInBlockHeight {Number} Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param nonce {Number} Represents a random value that can be adjusted to satisfy the Proof of Work.
-     * @param recipients {Array.<module:model/ListZilliqaTransactionsByAddressRIRecipients>} Defines an object array of the transaction recipients.
-     * @param senders {Array.<module:model/ListZilliqaTransactionsByAddressRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/ListZilliqaTransactionsByAddressRIRecipientsInner>} Defines an object array of the transaction recipients.
+     * @param senders {Array.<module:model/ListZilliqaTransactionsByAddressRISendersInner>} Represents an object of addresses that provide the funds.
      * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
      * @param transactionHash {String} Represents the hash of the transaction, which is its unique identifier.
      * @param transactionIndex {Number} Defines the numeric representation of the transaction index.
@@ -98,10 +98,10 @@ class ListZilliqaTransactionsByAddressRI {
                 obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListZilliqaTransactionsByAddressRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListZilliqaTransactionsByAddressRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [ListZilliqaTransactionsByAddressRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [ListZilliqaTransactionsByAddressRISendersInner]);
             }
             if (data.hasOwnProperty('timestamp')) {
                 obj['timestamp'] = ApiClient.convertToType(data['timestamp'], 'Number');
@@ -165,13 +165,13 @@ ListZilliqaTransactionsByAddressRI.prototype['nonce'] = undefined;
 
 /**
  * Defines an object array of the transaction recipients.
- * @member {Array.<module:model/ListZilliqaTransactionsByAddressRIRecipients>} recipients
+ * @member {Array.<module:model/ListZilliqaTransactionsByAddressRIRecipientsInner>} recipients
  */
 ListZilliqaTransactionsByAddressRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/ListZilliqaTransactionsByAddressRISenders>} senders
+ * @member {Array.<module:model/ListZilliqaTransactionsByAddressRISendersInner>} senders
  */
 ListZilliqaTransactionsByAddressRI.prototype['senders'] = undefined;
 

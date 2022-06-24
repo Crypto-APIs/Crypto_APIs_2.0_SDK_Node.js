@@ -9,9 +9,9 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance = _interopRequireDefault(require("./GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance"));
 
-var _GetHDWalletXPubYPubZPubAssetsRIFungibleTokens = _interopRequireDefault(require("./GetHDWalletXPubYPubZPubAssetsRIFungibleTokens"));
+var _GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner = _interopRequireDefault(require("./GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner"));
 
-var _GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens = _interopRequireDefault(require("./GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens"));
+var _GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner = _interopRequireDefault(require("./GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubAssetsRI model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetHDWalletXPubYPubZPubAssetsRI = /*#__PURE__*/function () {
   /**
@@ -64,11 +64,11 @@ var GetHDWalletXPubYPubZPubAssetsRI = /*#__PURE__*/function () {
         obj = obj || new GetHDWalletXPubYPubZPubAssetsRI();
 
         if (data.hasOwnProperty('fungibleTokens')) {
-          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_GetHDWalletXPubYPubZPubAssetsRIFungibleTokens["default"]]);
+          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('nonFungibleTokens')) {
-          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens["default"]]);
+          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('confirmedBalance')) {
@@ -84,14 +84,14 @@ var GetHDWalletXPubYPubZPubAssetsRI = /*#__PURE__*/function () {
 }();
 /**
  * Represents fungible tokens'es detailed information
- * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokens>} fungibleTokens
+ * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner>} fungibleTokens
  */
 
 
 GetHDWalletXPubYPubZPubAssetsRI.prototype['fungibleTokens'] = undefined;
 /**
  * Represents non-fungible tokens'es detailed information.
- * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens>} nonFungibleTokens
+ * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner>} nonFungibleTokens
  */
 
 GetHDWalletXPubYPubZPubAssetsRI.prototype['nonFungibleTokens'] = undefined;

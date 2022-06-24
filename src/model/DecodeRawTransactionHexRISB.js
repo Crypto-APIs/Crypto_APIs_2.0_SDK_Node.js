@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import DecodeRawTransactionHexRISBVin from './DecodeRawTransactionHexRISBVin';
-import DecodeRawTransactionHexRISBVout from './DecodeRawTransactionHexRISBVout';
+import DecodeRawTransactionHexRISBVinInner from './DecodeRawTransactionHexRISBVinInner';
+import DecodeRawTransactionHexRISBVoutInner from './DecodeRawTransactionHexRISBVoutInner';
 
 /**
  * The DecodeRawTransactionHexRISB model module.
  * @module model/DecodeRawTransactionHexRISB
- * @version 1.5.0
+ * @version 1.6.0
  */
 class DecodeRawTransactionHexRISB {
     /**
@@ -29,8 +29,8 @@ class DecodeRawTransactionHexRISB {
      * @param transactionHash {String} Represents the same as transactionId for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols hash is different from transactionId for SegWit transactions.
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents the transaction version number.
-     * @param vin {Array.<module:model/DecodeRawTransactionHexRISBVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/DecodeRawTransactionHexRISBVout>} Represents the transaction outputs.
+     * @param vin {Array.<module:model/DecodeRawTransactionHexRISBVinInner>} Represents the transaction inputs.
+     * @param vout {Array.<module:model/DecodeRawTransactionHexRISBVoutInner>} Represents the transaction outputs.
      */
     constructor(locktime, transactionHash, vSize, version, vin, vout) { 
         
@@ -75,10 +75,10 @@ class DecodeRawTransactionHexRISB {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [DecodeRawTransactionHexRISBVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [DecodeRawTransactionHexRISBVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [DecodeRawTransactionHexRISBVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [DecodeRawTransactionHexRISBVoutInner]);
             }
             if (data.hasOwnProperty('weight')) {
                 obj['weight'] = ApiClient.convertToType(data['weight'], 'Number');
@@ -116,13 +116,13 @@ DecodeRawTransactionHexRISB.prototype['version'] = undefined;
 
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISBVin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISBVinInner>} vin
  */
 DecodeRawTransactionHexRISB.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISBVout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISBVoutInner>} vout
  */
 DecodeRawTransactionHexRISB.prototype['vout'] = undefined;
 

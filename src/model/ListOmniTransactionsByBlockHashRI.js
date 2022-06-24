@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListOmniTransactionsByAddressRIRecipients from './ListOmniTransactionsByAddressRIRecipients';
-import ListOmniTransactionsByAddressRISenders from './ListOmniTransactionsByAddressRISenders';
+import ListOmniTransactionsByAddressRIRecipientsInner from './ListOmniTransactionsByAddressRIRecipientsInner';
+import ListOmniTransactionsByAddressRISendersInner from './ListOmniTransactionsByAddressRISendersInner';
 import ListOmniTransactionsByBlockHashRIFee from './ListOmniTransactionsByBlockHashRIFee';
 
 /**
  * The ListOmniTransactionsByBlockHashRI model module.
  * @module model/ListOmniTransactionsByBlockHashRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListOmniTransactionsByBlockHashRI {
     /**
@@ -31,8 +31,8 @@ class ListOmniTransactionsByBlockHashRI {
      * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
      * @param positionInBlock {Number} Represents the index position of the transaction in the specific block.
      * @param propertyId {Number} Represents the identifier of the tokens to send.
-     * @param recipients {Array.<module:model/ListOmniTransactionsByAddressRIRecipients>} Represents an object of addresses that receive the transactions.
-     * @param senders {Array.<module:model/ListOmniTransactionsByAddressRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/ListOmniTransactionsByAddressRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+     * @param senders {Array.<module:model/ListOmniTransactionsByAddressRISendersInner>} Represents an object of addresses that provide the funds.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param type {String} Defines the type of the transaction as a string.
@@ -99,10 +99,10 @@ class ListOmniTransactionsByBlockHashRI {
                 obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListOmniTransactionsByAddressRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListOmniTransactionsByAddressRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [ListOmniTransactionsByAddressRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [ListOmniTransactionsByAddressRISendersInner]);
             }
             if (data.hasOwnProperty('timestamp')) {
                 obj['timestamp'] = ApiClient.convertToType(data['timestamp'], 'Number');
@@ -170,13 +170,13 @@ ListOmniTransactionsByBlockHashRI.prototype['propertyId'] = undefined;
 
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/ListOmniTransactionsByAddressRIRecipients>} recipients
+ * @member {Array.<module:model/ListOmniTransactionsByAddressRIRecipientsInner>} recipients
  */
 ListOmniTransactionsByBlockHashRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/ListOmniTransactionsByAddressRISenders>} senders
+ * @member {Array.<module:model/ListOmniTransactionsByAddressRISendersInner>} senders
  */
 ListOmniTransactionsByBlockHashRI.prototype['senders'] = undefined;
 

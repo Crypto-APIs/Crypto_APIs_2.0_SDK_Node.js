@@ -13,37 +13,37 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetTokenDetailsByContractAddress400Response from '../model/GetTokenDetailsByContractAddress400Response';
+import GetTokenDetailsByContractAddress401Response from '../model/GetTokenDetailsByContractAddress401Response';
+import GetTokenDetailsByContractAddress403Response from '../model/GetTokenDetailsByContractAddress403Response';
 import GetTokenDetailsByContractAddressR from '../model/GetTokenDetailsByContractAddressR';
-import InlineResponse40060 from '../model/InlineResponse40060';
-import InlineResponse40064 from '../model/InlineResponse40064';
-import InlineResponse40066 from '../model/InlineResponse40066';
-import InlineResponse40067 from '../model/InlineResponse40067';
-import InlineResponse40069 from '../model/InlineResponse40069';
-import InlineResponse40160 from '../model/InlineResponse40160';
-import InlineResponse40164 from '../model/InlineResponse40164';
-import InlineResponse40166 from '../model/InlineResponse40166';
-import InlineResponse40167 from '../model/InlineResponse40167';
-import InlineResponse40169 from '../model/InlineResponse40169';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40360 from '../model/InlineResponse40360';
-import InlineResponse40364 from '../model/InlineResponse40364';
-import InlineResponse40366 from '../model/InlineResponse40366';
-import InlineResponse40367 from '../model/InlineResponse40367';
-import InlineResponse40369 from '../model/InlineResponse40369';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import ListConfirmedTokensTransfersByAddress400Response from '../model/ListConfirmedTokensTransfersByAddress400Response';
+import ListConfirmedTokensTransfersByAddress401Response from '../model/ListConfirmedTokensTransfersByAddress401Response';
+import ListConfirmedTokensTransfersByAddress403Response from '../model/ListConfirmedTokensTransfersByAddress403Response';
 import ListConfirmedTokensTransfersByAddressR from '../model/ListConfirmedTokensTransfersByAddressR';
+import ListTokensByAddress400Response from '../model/ListTokensByAddress400Response';
+import ListTokensByAddress401Response from '../model/ListTokensByAddress401Response';
+import ListTokensByAddress403Response from '../model/ListTokensByAddress403Response';
 import ListTokensByAddressR from '../model/ListTokensByAddressR';
+import ListTokensTransfersByTransactionHash400Response from '../model/ListTokensTransfersByTransactionHash400Response';
+import ListTokensTransfersByTransactionHash401Response from '../model/ListTokensTransfersByTransactionHash401Response';
+import ListTokensTransfersByTransactionHash403Response from '../model/ListTokensTransfersByTransactionHash403Response';
 import ListTokensTransfersByTransactionHashR from '../model/ListTokensTransfersByTransactionHashR';
+import ListUnconfirmedTokensTransfersByAddress400Response from '../model/ListUnconfirmedTokensTransfersByAddress400Response';
+import ListUnconfirmedTokensTransfersByAddress401Response from '../model/ListUnconfirmedTokensTransfersByAddress401Response';
+import ListUnconfirmedTokensTransfersByAddress403Response from '../model/ListUnconfirmedTokensTransfersByAddress403Response';
 import ListUnconfirmedTokensTransfersByAddressR from '../model/ListUnconfirmedTokensTransfersByAddressR';
 
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class TokensApi {
 

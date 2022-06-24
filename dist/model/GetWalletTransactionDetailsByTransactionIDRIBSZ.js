@@ -7,15 +7,15 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVJoinSplit = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVJoinSplit"));
+var _GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput"));
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend"));
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner"));
 
-var _GetWalletTransactionDetailsByTransactionIDRIBSZVin = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSZVin"));
+var _GetWalletTransactionDetailsByTransactionIDRIBSZVinInner = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSZVinInner"));
 
-var _ListTransactionsByBlockHeightRIBSZVout = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVout"));
+var _ListTransactionsByBlockHeightRIBSZVoutInner = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSZ model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSZ
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetWalletTransactionDetailsByTransactionIDRIBSZ = /*#__PURE__*/function () {
   /**
@@ -45,8 +45,8 @@ var GetWalletTransactionDetailsByTransactionIDRIBSZ = /*#__PURE__*/function () {
    * @param valueBalance {String} String representation of the transaction value balance
    * @param version {Number} Represents the transaction version number.
    * @param versionGroupId {String} Represents the transaction version group ID.
-   * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVin>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} Object Array representation of transaction outputs
+   * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
+   * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} Object Array representation of transaction outputs
    */
   function GetWalletTransactionDetailsByTransactionIDRIBSZ(bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, valueBalance, version, versionGroupId, vin, vout) {
     _classCallCheck(this, GetWalletTransactionDetailsByTransactionIDRIBSZ);
@@ -119,15 +119,15 @@ var GetWalletTransactionDetailsByTransactionIDRIBSZ = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vJoinSplit')) {
-          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_GetTransactionDetailsByTransactionIDRIBSZVJoinSplit["default"]]);
+          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedOutput')) {
-          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput["default"]]);
+          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedSpend')) {
-          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend["default"]]);
+          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner["default"]]);
         }
 
         if (data.hasOwnProperty('valueBalance')) {
@@ -143,11 +143,11 @@ var GetWalletTransactionDetailsByTransactionIDRIBSZ = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetWalletTransactionDetailsByTransactionIDRIBSZVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetWalletTransactionDetailsByTransactionIDRIBSZVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListTransactionsByBlockHeightRIBSZVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListTransactionsByBlockHeightRIBSZVoutInner["default"]]);
         }
       }
 
@@ -202,19 +202,19 @@ GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['overwintered'] = unde
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['size'] = undefined;
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} vJoinSplit
  */
 
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vShieldedSpend'] = undefined;
@@ -238,13 +238,13 @@ GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['version'] = undefined
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['versionGroupId'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVin>} vin
+ * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner>} vin
  */
 
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} vout
  */
 
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vout'] = undefined;

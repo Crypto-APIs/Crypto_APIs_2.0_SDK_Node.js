@@ -18,7 +18,7 @@ import GetLatestMinedXRPRippleBlockRITotalFees from './GetLatestMinedXRPRippleBl
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBSX model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBSX
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetBlockDetailsByBlockHashFromCallbackRIBSX {
     /**

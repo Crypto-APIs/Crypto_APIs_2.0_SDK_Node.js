@@ -9,9 +9,9 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _GetWalletAssetDetailsRIConfirmedBalance = _interopRequireDefault(require("./GetWalletAssetDetailsRIConfirmedBalance"));
 
-var _GetWalletAssetDetailsRIFungibleTokens = _interopRequireDefault(require("./GetWalletAssetDetailsRIFungibleTokens"));
+var _GetWalletAssetDetailsRIFungibleTokensInner = _interopRequireDefault(require("./GetWalletAssetDetailsRIFungibleTokensInner"));
 
-var _GetWalletAssetDetailsRINonFungibleTokens = _interopRequireDefault(require("./GetWalletAssetDetailsRINonFungibleTokens"));
+var _GetWalletAssetDetailsRINonFungibleTokensInner = _interopRequireDefault(require("./GetWalletAssetDetailsRINonFungibleTokensInner"));
 
 var _GetWalletAssetDetailsRIRecievedConfirmedAmount = _interopRequireDefault(require("./GetWalletAssetDetailsRIRecievedConfirmedAmount"));
 
@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRI model module.
  * @module model/GetWalletAssetDetailsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
   /**
@@ -36,9 +36,9 @@ var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
    * @alias module:model/GetWalletAssetDetailsRI
    * @param confirmedBalance {module:model/GetWalletAssetDetailsRIConfirmedBalance} 
    * @param depositAddressesCount {Number} Specifies the count of deposit addresses in the Wallet.
-   * @param fungibleTokens {Array.<module:model/GetWalletAssetDetailsRIFungibleTokens>} Represents fungible tokens'es detailed information
+   * @param fungibleTokens {Array.<module:model/GetWalletAssetDetailsRIFungibleTokensInner>} Represents fungible tokens'es detailed information
    * @param name {String} Defines the name of the Wallet given to it by the user.
-   * @param nonFungibleTokens {Array.<module:model/GetWalletAssetDetailsRINonFungibleTokens>} Represents non-fungible tokens'es detailed information.
+   * @param nonFungibleTokens {Array.<module:model/GetWalletAssetDetailsRINonFungibleTokensInner>} Represents non-fungible tokens'es detailed information.
    * @param recievedConfirmedAmount {module:model/GetWalletAssetDetailsRIRecievedConfirmedAmount} 
    * @param sentConfirmedAmount {module:model/GetWalletAssetDetailsRISentConfirmedAmount} 
    */
@@ -88,7 +88,7 @@ var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('fungibleTokens')) {
-          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_GetWalletAssetDetailsRIFungibleTokens["default"]]);
+          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_GetWalletAssetDetailsRIFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('name')) {
@@ -96,7 +96,7 @@ var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('nonFungibleTokens')) {
-          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_GetWalletAssetDetailsRINonFungibleTokens["default"]]);
+          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_GetWalletAssetDetailsRINonFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('recievedConfirmedAmount')) {
@@ -128,7 +128,7 @@ GetWalletAssetDetailsRI.prototype['confirmedBalance'] = undefined;
 GetWalletAssetDetailsRI.prototype['depositAddressesCount'] = undefined;
 /**
  * Represents fungible tokens'es detailed information
- * @member {Array.<module:model/GetWalletAssetDetailsRIFungibleTokens>} fungibleTokens
+ * @member {Array.<module:model/GetWalletAssetDetailsRIFungibleTokensInner>} fungibleTokens
  */
 
 GetWalletAssetDetailsRI.prototype['fungibleTokens'] = undefined;
@@ -140,7 +140,7 @@ GetWalletAssetDetailsRI.prototype['fungibleTokens'] = undefined;
 GetWalletAssetDetailsRI.prototype['name'] = undefined;
 /**
  * Represents non-fungible tokens'es detailed information.
- * @member {Array.<module:model/GetWalletAssetDetailsRINonFungibleTokens>} nonFungibleTokens
+ * @member {Array.<module:model/GetWalletAssetDetailsRINonFungibleTokensInner>} nonFungibleTokens
  */
 
 GetWalletAssetDetailsRI.prototype['nonFungibleTokens'] = undefined;

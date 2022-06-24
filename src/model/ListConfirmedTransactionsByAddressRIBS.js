@@ -12,9 +12,9 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput from './GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput';
-import GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend from './GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend';
-import GetTransactionDetailsByTransactionIDRIBSZVout from './GetTransactionDetailsByTransactionIDRIBSZVout';
+import GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner from './GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner';
+import GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner from './GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner';
+import GetTransactionDetailsByTransactionIDRIBSZVoutInner from './GetTransactionDetailsByTransactionIDRIBSZVoutInner';
 import ListConfirmedTransactionsByAddressRIBSB from './ListConfirmedTransactionsByAddressRIBSB';
 import ListConfirmedTransactionsByAddressRIBSBC from './ListConfirmedTransactionsByAddressRIBSBC';
 import ListConfirmedTransactionsByAddressRIBSBSC from './ListConfirmedTransactionsByAddressRIBSBSC';
@@ -25,13 +25,13 @@ import ListConfirmedTransactionsByAddressRIBSE from './ListConfirmedTransactions
 import ListConfirmedTransactionsByAddressRIBSEC from './ListConfirmedTransactionsByAddressRIBSEC';
 import ListConfirmedTransactionsByAddressRIBSL from './ListConfirmedTransactionsByAddressRIBSL';
 import ListConfirmedTransactionsByAddressRIBSZ from './ListConfirmedTransactionsByAddressRIBSZ';
-import ListConfirmedTransactionsByAddressRIBSZVJoinSplit from './ListConfirmedTransactionsByAddressRIBSZVJoinSplit';
-import ListConfirmedTransactionsByAddressRIBSZVin from './ListConfirmedTransactionsByAddressRIBSZVin';
+import ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner from './ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner';
+import ListConfirmedTransactionsByAddressRIBSZVinInner from './ListConfirmedTransactionsByAddressRIBSZVinInner';
 
 /**
  * The ListConfirmedTransactionsByAddressRIBS model module.
  * @module model/ListConfirmedTransactionsByAddressRIBS
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListConfirmedTransactionsByAddressRIBS {
     /**
@@ -50,8 +50,8 @@ class ListConfirmedTransactionsByAddressRIBS {
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Defines the version of the transaction.
-     * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVin>} Object Array representation of transaction inputs
-     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} Object Array representation of transaction outputs
+     * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVinInner>} Object Array representation of transaction inputs
+     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} Object Array representation of transaction outputs
      * @param contract {String} Represents the specific transaction contract.
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
      * @param gasPrice {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} 
@@ -64,9 +64,9 @@ class ListConfirmedTransactionsByAddressRIBS {
      * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
      * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
      * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
-     * @param vJoinSplit {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-     * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
-     * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+     * @param vJoinSplit {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+     * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
+     * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
      * @param valueBalance {String} Defines the transaction value balance.
      * @param versionGroupId {String} Represents the transaction version group ID.
      */
@@ -139,10 +139,10 @@ class ListConfirmedTransactionsByAddressRIBS {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListConfirmedTransactionsByAddressRIBSZVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [ListConfirmedTransactionsByAddressRIBSZVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSZVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSZVoutInner]);
             }
             if (data.hasOwnProperty('contract')) {
                 obj['contract'] = ApiClient.convertToType(data['contract'], 'String');
@@ -181,13 +181,13 @@ class ListConfirmedTransactionsByAddressRIBS {
                 obj['overwintered'] = ApiClient.convertToType(data['overwintered'], 'Boolean');
             }
             if (data.hasOwnProperty('vJoinSplit')) {
-                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [ListConfirmedTransactionsByAddressRIBSZVJoinSplit]);
+                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner]);
             }
             if (data.hasOwnProperty('vShieldedOutput')) {
-                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput]);
+                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner]);
             }
             if (data.hasOwnProperty('vShieldedSpend')) {
-                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend]);
+                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner]);
             }
             if (data.hasOwnProperty('valueBalance')) {
                 obj['valueBalance'] = ApiClient.convertToType(data['valueBalance'], 'String');
@@ -228,13 +228,13 @@ ListConfirmedTransactionsByAddressRIBS.prototype['version'] = undefined;
 
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVinInner>} vin
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['vin'] = undefined;
 
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['vout'] = undefined;
 
@@ -311,19 +311,19 @@ ListConfirmedTransactionsByAddressRIBS.prototype['overwintered'] = undefined;
 
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner>} vJoinSplit
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['vJoinSplit'] = undefined;
 
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['vShieldedOutput'] = undefined;
 
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['vShieldedSpend'] = undefined;
 
@@ -363,12 +363,12 @@ ListConfirmedTransactionsByAddressRIBSB.prototype['vSize'] = undefined;
 ListConfirmedTransactionsByAddressRIBSB.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBVin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBVinInner>} vin
  */
 ListConfirmedTransactionsByAddressRIBSB.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBVout>} vout
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBVoutInner>} vout
  */
 ListConfirmedTransactionsByAddressRIBSB.prototype['vout'] = undefined;
 // Implement ListConfirmedTransactionsByAddressRIBSBC interface:
@@ -389,12 +389,12 @@ ListConfirmedTransactionsByAddressRIBSBC.prototype['size'] = undefined;
 ListConfirmedTransactionsByAddressRIBSBC.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBCVin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBCVinInner>} vin
  */
 ListConfirmedTransactionsByAddressRIBSBC.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} vout
  */
 ListConfirmedTransactionsByAddressRIBSBC.prototype['vout'] = undefined;
 // Implement ListConfirmedTransactionsByAddressRIBSL interface:
@@ -420,12 +420,12 @@ ListConfirmedTransactionsByAddressRIBSL.prototype['vSize'] = undefined;
 ListConfirmedTransactionsByAddressRIBSL.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSLVin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSLVinInner>} vin
  */
 ListConfirmedTransactionsByAddressRIBSL.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} vout
  */
 ListConfirmedTransactionsByAddressRIBSL.prototype['vout'] = undefined;
 // Implement ListConfirmedTransactionsByAddressRIBSD interface:
@@ -446,12 +446,12 @@ ListConfirmedTransactionsByAddressRIBSD.prototype['size'] = undefined;
 ListConfirmedTransactionsByAddressRIBSD.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSDVin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSDVinInner>} vin
  */
 ListConfirmedTransactionsByAddressRIBSD.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVoutInner>} vout
  */
 ListConfirmedTransactionsByAddressRIBSD.prototype['vout'] = undefined;
 // Implement ListConfirmedTransactionsByAddressRIBSD2 interface:
@@ -472,12 +472,12 @@ ListConfirmedTransactionsByAddressRIBSD2.prototype['size'] = undefined;
 ListConfirmedTransactionsByAddressRIBSD2.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VinInner>} vin
  */
 ListConfirmedTransactionsByAddressRIBSD2.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vout>} vout
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VoutInner>} vout
  */
 ListConfirmedTransactionsByAddressRIBSD2.prototype['vout'] = undefined;
 // Implement ListConfirmedTransactionsByAddressRIBSEC interface:
@@ -623,17 +623,17 @@ ListConfirmedTransactionsByAddressRIBSZ.prototype['overwintered'] = undefined;
 ListConfirmedTransactionsByAddressRIBSZ.prototype['size'] = undefined;
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner>} vJoinSplit
  */
 ListConfirmedTransactionsByAddressRIBSZ.prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 ListConfirmedTransactionsByAddressRIBSZ.prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 ListConfirmedTransactionsByAddressRIBSZ.prototype['vShieldedSpend'] = undefined;
 /**
@@ -653,12 +653,12 @@ ListConfirmedTransactionsByAddressRIBSZ.prototype['version'] = undefined;
 ListConfirmedTransactionsByAddressRIBSZ.prototype['versionGroupId'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVinInner>} vin
  */
 ListConfirmedTransactionsByAddressRIBSZ.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
  */
 ListConfirmedTransactionsByAddressRIBSZ.prototype['vout'] = undefined;
 

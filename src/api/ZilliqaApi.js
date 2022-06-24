@@ -13,51 +13,51 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetLatestMinedZilliqaBlock400Response from '../model/GetLatestMinedZilliqaBlock400Response';
+import GetLatestMinedZilliqaBlock401Response from '../model/GetLatestMinedZilliqaBlock401Response';
+import GetLatestMinedZilliqaBlock403Response from '../model/GetLatestMinedZilliqaBlock403Response';
 import GetLatestMinedZilliqaBlockR from '../model/GetLatestMinedZilliqaBlockR';
+import GetTransactionDetailsByTransactionID404Response from '../model/GetTransactionDetailsByTransactionID404Response';
+import GetZilliqaAddressDetails400Response from '../model/GetZilliqaAddressDetails400Response';
+import GetZilliqaAddressDetails401Response from '../model/GetZilliqaAddressDetails401Response';
+import GetZilliqaAddressDetails403Response from '../model/GetZilliqaAddressDetails403Response';
 import GetZilliqaAddressDetailsR from '../model/GetZilliqaAddressDetailsR';
+import GetZilliqaBlockDetailsByBlockHash400Response from '../model/GetZilliqaBlockDetailsByBlockHash400Response';
+import GetZilliqaBlockDetailsByBlockHash401Response from '../model/GetZilliqaBlockDetailsByBlockHash401Response';
+import GetZilliqaBlockDetailsByBlockHash403Response from '../model/GetZilliqaBlockDetailsByBlockHash403Response';
 import GetZilliqaBlockDetailsByBlockHashR from '../model/GetZilliqaBlockDetailsByBlockHashR';
+import GetZilliqaBlockDetailsByBlockHeight400Response from '../model/GetZilliqaBlockDetailsByBlockHeight400Response';
+import GetZilliqaBlockDetailsByBlockHeight401Response from '../model/GetZilliqaBlockDetailsByBlockHeight401Response';
+import GetZilliqaBlockDetailsByBlockHeight403Response from '../model/GetZilliqaBlockDetailsByBlockHeight403Response';
 import GetZilliqaBlockDetailsByBlockHeightR from '../model/GetZilliqaBlockDetailsByBlockHeightR';
+import GetZilliqaTransactionDetailsByTransactionID400Response from '../model/GetZilliqaTransactionDetailsByTransactionID400Response';
+import GetZilliqaTransactionDetailsByTransactionID401Response from '../model/GetZilliqaTransactionDetailsByTransactionID401Response';
+import GetZilliqaTransactionDetailsByTransactionID403Response from '../model/GetZilliqaTransactionDetailsByTransactionID403Response';
 import GetZilliqaTransactionDetailsByTransactionIDR from '../model/GetZilliqaTransactionDetailsByTransactionIDR';
-import InlineResponse40014 from '../model/InlineResponse40014';
-import InlineResponse40022 from '../model/InlineResponse40022';
-import InlineResponse40023 from '../model/InlineResponse40023';
-import InlineResponse4003 from '../model/InlineResponse4003';
-import InlineResponse40030 from '../model/InlineResponse40030';
-import InlineResponse40034 from '../model/InlineResponse40034';
-import InlineResponse40043 from '../model/InlineResponse40043';
-import InlineResponse4009 from '../model/InlineResponse4009';
-import InlineResponse40114 from '../model/InlineResponse40114';
-import InlineResponse40122 from '../model/InlineResponse40122';
-import InlineResponse40123 from '../model/InlineResponse40123';
-import InlineResponse4013 from '../model/InlineResponse4013';
-import InlineResponse40130 from '../model/InlineResponse40130';
-import InlineResponse40134 from '../model/InlineResponse40134';
-import InlineResponse40143 from '../model/InlineResponse40143';
-import InlineResponse4019 from '../model/InlineResponse4019';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40314 from '../model/InlineResponse40314';
-import InlineResponse40322 from '../model/InlineResponse40322';
-import InlineResponse40323 from '../model/InlineResponse40323';
-import InlineResponse4033 from '../model/InlineResponse4033';
-import InlineResponse40330 from '../model/InlineResponse40330';
-import InlineResponse40334 from '../model/InlineResponse40334';
-import InlineResponse40343 from '../model/InlineResponse40343';
-import InlineResponse4039 from '../model/InlineResponse4039';
-import InlineResponse404 from '../model/InlineResponse404';
-import InlineResponse4042 from '../model/InlineResponse4042';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import ListTransactionsByBlockHeight404Response from '../model/ListTransactionsByBlockHeight404Response';
+import ListZilliqaTransactionsByAddress400Response from '../model/ListZilliqaTransactionsByAddress400Response';
+import ListZilliqaTransactionsByAddress401Response from '../model/ListZilliqaTransactionsByAddress401Response';
+import ListZilliqaTransactionsByAddress403Response from '../model/ListZilliqaTransactionsByAddress403Response';
 import ListZilliqaTransactionsByAddressR from '../model/ListZilliqaTransactionsByAddressR';
+import ListZilliqaTransactionsByBlockHash400Response from '../model/ListZilliqaTransactionsByBlockHash400Response';
+import ListZilliqaTransactionsByBlockHash401Response from '../model/ListZilliqaTransactionsByBlockHash401Response';
+import ListZilliqaTransactionsByBlockHash403Response from '../model/ListZilliqaTransactionsByBlockHash403Response';
 import ListZilliqaTransactionsByBlockHashR from '../model/ListZilliqaTransactionsByBlockHashR';
+import ListZilliqaTransactionsByBlockHeight400Response from '../model/ListZilliqaTransactionsByBlockHeight400Response';
+import ListZilliqaTransactionsByBlockHeight401Response from '../model/ListZilliqaTransactionsByBlockHeight401Response';
+import ListZilliqaTransactionsByBlockHeight403Response from '../model/ListZilliqaTransactionsByBlockHeight403Response';
 import ListZilliqaTransactionsByBlockHeightR from '../model/ListZilliqaTransactionsByBlockHeightR';
 
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class ZilliqaApi {
 

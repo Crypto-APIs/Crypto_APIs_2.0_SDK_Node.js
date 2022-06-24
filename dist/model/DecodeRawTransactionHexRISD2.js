@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _DecodeRawTransactionHexRISD2Vin = _interopRequireDefault(require("./DecodeRawTransactionHexRISD2Vin"));
+var _DecodeRawTransactionHexRISD2VinInner = _interopRequireDefault(require("./DecodeRawTransactionHexRISD2VinInner"));
 
-var _DecodeRawTransactionHexRISD2Vout = _interopRequireDefault(require("./DecodeRawTransactionHexRISD2Vout"));
+var _DecodeRawTransactionHexRISD2VoutInner = _interopRequireDefault(require("./DecodeRawTransactionHexRISD2VoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISD2 model module.
  * @module model/DecodeRawTransactionHexRISD2
- * @version 1.5.0
+ * @version 1.6.0
  */
 var DecodeRawTransactionHexRISD2 = /*#__PURE__*/function () {
   /**
@@ -33,8 +33,8 @@ var DecodeRawTransactionHexRISD2 = /*#__PURE__*/function () {
    * @param transactionHash {String} Represents the same as transactionId for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols hash is different from transactionId for SegWit transactions.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Represents transaction version number
-   * @param vin {Array.<module:model/DecodeRawTransactionHexRISD2Vin>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/DecodeRawTransactionHexRISD2Vout>} Represents the transaction outputs.
+   * @param vin {Array.<module:model/DecodeRawTransactionHexRISD2VinInner>} Represents the transaction inputs.
+   * @param vout {Array.<module:model/DecodeRawTransactionHexRISD2VoutInner>} Represents the transaction outputs.
    */
   function DecodeRawTransactionHexRISD2(locktime, transactionHash, vSize, version, vin, vout) {
     _classCallCheck(this, DecodeRawTransactionHexRISD2);
@@ -89,11 +89,11 @@ var DecodeRawTransactionHexRISD2 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_DecodeRawTransactionHexRISD2Vin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_DecodeRawTransactionHexRISD2VinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_DecodeRawTransactionHexRISD2Vout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_DecodeRawTransactionHexRISD2VoutInner["default"]]);
         }
 
         if (data.hasOwnProperty('weight')) {
@@ -134,13 +134,13 @@ DecodeRawTransactionHexRISD2.prototype['vSize'] = undefined;
 DecodeRawTransactionHexRISD2.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISD2Vin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISD2VinInner>} vin
  */
 
 DecodeRawTransactionHexRISD2.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISD2Vout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISD2VoutInner>} vout
  */
 
 DecodeRawTransactionHexRISD2.prototype['vout'] = undefined;

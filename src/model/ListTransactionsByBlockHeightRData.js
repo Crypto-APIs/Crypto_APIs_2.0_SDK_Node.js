@@ -17,7 +17,7 @@ import ListTransactionsByBlockHeightRI from './ListTransactionsByBlockHeightRI';
 /**
  * The ListTransactionsByBlockHeightRData model module.
  * @module model/ListTransactionsByBlockHeightRData
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListTransactionsByBlockHeightRData {
     /**

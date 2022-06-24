@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBSEC model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBSEC
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetBlockDetailsByBlockHashFromCallbackRIBSEC {
     /**

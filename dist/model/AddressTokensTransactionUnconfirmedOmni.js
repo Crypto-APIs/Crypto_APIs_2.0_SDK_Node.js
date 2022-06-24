@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionUnconfirmedOmni model module.
  * @module model/AddressTokensTransactionUnconfirmedOmni
- * @version 1.5.0
+ * @version 1.6.0
  */
 var AddressTokensTransactionUnconfirmedOmni = /*#__PURE__*/function () {
   /**

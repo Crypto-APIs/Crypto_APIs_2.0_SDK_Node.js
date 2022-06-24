@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _ListOmniTransactionsByAddressRIRecipients = _interopRequireDefault(require("./ListOmniTransactionsByAddressRIRecipients"));
+var _ListOmniTransactionsByAddressRIRecipientsInner = _interopRequireDefault(require("./ListOmniTransactionsByAddressRIRecipientsInner"));
 
-var _ListOmniTransactionsByAddressRISenders = _interopRequireDefault(require("./ListOmniTransactionsByAddressRISenders"));
+var _ListOmniTransactionsByAddressRISendersInner = _interopRequireDefault(require("./ListOmniTransactionsByAddressRISendersInner"));
 
 var _ListOmniTransactionsByBlockHashRIFee = _interopRequireDefault(require("./ListOmniTransactionsByBlockHashRIFee"));
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListOmniTransactionsByBlockHashRI model module.
  * @module model/ListOmniTransactionsByBlockHashRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListOmniTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**
@@ -36,8 +36,8 @@ var ListOmniTransactionsByBlockHashRI = /*#__PURE__*/function () {
    * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
    * @param positionInBlock {Number} Represents the index position of the transaction in the specific block.
    * @param propertyId {Number} Represents the identifier of the tokens to send.
-   * @param recipients {Array.<module:model/ListOmniTransactionsByAddressRIRecipients>} Represents an object of addresses that receive the transactions.
-   * @param senders {Array.<module:model/ListOmniTransactionsByAddressRISenders>} Represents an object of addresses that provide the funds.
+   * @param recipients {Array.<module:model/ListOmniTransactionsByAddressRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+   * @param senders {Array.<module:model/ListOmniTransactionsByAddressRISendersInner>} Represents an object of addresses that provide the funds.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
    * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
    * @param type {String} Defines the type of the transaction as a string.
@@ -116,11 +116,11 @@ var ListOmniTransactionsByBlockHashRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListOmniTransactionsByAddressRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListOmniTransactionsByAddressRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListOmniTransactionsByAddressRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListOmniTransactionsByAddressRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('timestamp')) {
@@ -197,13 +197,13 @@ ListOmniTransactionsByBlockHashRI.prototype['positionInBlock'] = undefined;
 ListOmniTransactionsByBlockHashRI.prototype['propertyId'] = undefined;
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/ListOmniTransactionsByAddressRIRecipients>} recipients
+ * @member {Array.<module:model/ListOmniTransactionsByAddressRIRecipientsInner>} recipients
  */
 
 ListOmniTransactionsByBlockHashRI.prototype['recipients'] = undefined;
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/ListOmniTransactionsByAddressRISenders>} senders
+ * @member {Array.<module:model/ListOmniTransactionsByAddressRISendersInner>} senders
  */
 
 ListOmniTransactionsByBlockHashRI.prototype['senders'] = undefined;

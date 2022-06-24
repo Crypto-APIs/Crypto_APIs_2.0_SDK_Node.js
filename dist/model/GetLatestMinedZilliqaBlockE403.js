@@ -9,7 +9,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _BannedIpAddress = _interopRequireDefault(require("./BannedIpAddress"));
 
-var _BannedIpAddressDetails = _interopRequireDefault(require("./BannedIpAddressDetails"));
+var _BannedIpAddressDetailsInner = _interopRequireDefault(require("./BannedIpAddressDetailsInner"));
 
 var _EndpointNotAllowedForApiKey = _interopRequireDefault(require("./EndpointNotAllowedForApiKey"));
 
@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlockE403 model module.
  * @module model/GetLatestMinedZilliqaBlockE403
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetLatestMinedZilliqaBlockE403 = /*#__PURE__*/function () {
   /**
@@ -98,7 +98,7 @@ var GetLatestMinedZilliqaBlockE403 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetails["default"]]);
+          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
         }
       }
 
@@ -122,7 +122,7 @@ GetLatestMinedZilliqaBlockE403.prototype['code'] = undefined;
 
 GetLatestMinedZilliqaBlockE403.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 GetLatestMinedZilliqaBlockE403.prototype['details'] = undefined; // Implement BannedIpAddress interface:
@@ -140,7 +140,7 @@ _BannedIpAddress["default"].prototype['code'] = undefined;
 
 _BannedIpAddress["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _BannedIpAddress["default"].prototype['details'] = undefined; // Implement EndpointNotAllowedForPlan interface:
@@ -158,7 +158,7 @@ _EndpointNotAllowedForPlan["default"].prototype['code'] = undefined;
 
 _EndpointNotAllowedForPlan["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _EndpointNotAllowedForPlan["default"].prototype['details'] = undefined; // Implement EndpointNotAllowedForApiKey interface:
@@ -176,7 +176,7 @@ _EndpointNotAllowedForApiKey["default"].prototype['code'] = undefined;
 
 _EndpointNotAllowedForApiKey["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _EndpointNotAllowedForApiKey["default"].prototype['details'] = undefined; // Implement FeatureMainnetsNotAllowedForPlan interface:
@@ -194,7 +194,7 @@ _FeatureMainnetsNotAllowedForPlan["default"].prototype['code'] = undefined;
 
 _FeatureMainnetsNotAllowedForPlan["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _FeatureMainnetsNotAllowedForPlan["default"].prototype['details'] = undefined;

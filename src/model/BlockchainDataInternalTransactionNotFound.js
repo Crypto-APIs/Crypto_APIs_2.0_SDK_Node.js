@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 
 /**
  * The BlockchainDataInternalTransactionNotFound model module.
  * @module model/BlockchainDataInternalTransactionNotFound
- * @version 1.5.0
+ * @version 1.6.0
  */
 class BlockchainDataInternalTransactionNotFound {
     /**
@@ -60,7 +60,7 @@ class BlockchainDataInternalTransactionNotFound {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -82,7 +82,7 @@ BlockchainDataInternalTransactionNotFound.prototype['code'] = undefined;
 BlockchainDataInternalTransactionNotFound.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 BlockchainDataInternalTransactionNotFound.prototype['details'] = undefined;
 

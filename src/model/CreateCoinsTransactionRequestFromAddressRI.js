@@ -12,20 +12,20 @@
  */
 
 import ApiClient from '../ApiClient';
-import CreateCoinsTransactionRequestFromAddressRIRecipients from './CreateCoinsTransactionRequestFromAddressRIRecipients';
+import CreateCoinsTransactionRequestFromAddressRIRecipientsInner from './CreateCoinsTransactionRequestFromAddressRIRecipientsInner';
 import CreateCoinsTransactionRequestFromAddressRISenders from './CreateCoinsTransactionRequestFromAddressRISenders';
 
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class CreateCoinsTransactionRequestFromAddressRI {
     /**
      * Constructs a new <code>CreateCoinsTransactionRequestFromAddressRI</code>.
      * @alias module:model/CreateCoinsTransactionRequestFromAddressRI
      * @param feePriority {module:model/CreateCoinsTransactionRequestFromAddressRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-     * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromAddressRIRecipients>} Defines the destination for the transaction, i.e. the recipient(s).
+     * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromAddressRIRecipientsInner>} Defines the destination for the transaction, i.e. the recipient(s).
      * @param senders {module:model/CreateCoinsTransactionRequestFromAddressRISenders} 
      * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
      * @param transactionRequestStatus {module:model/CreateCoinsTransactionRequestFromAddressRI.TransactionRequestStatusEnum} Defines the status of the transaction request, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
@@ -78,7 +78,7 @@ class CreateCoinsTransactionRequestFromAddressRI {
                 obj['note'] = ApiClient.convertToType(data['note'], 'String');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateCoinsTransactionRequestFromAddressRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateCoinsTransactionRequestFromAddressRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
                 obj['senders'] = CreateCoinsTransactionRequestFromAddressRISenders.constructFromObject(data['senders']);
@@ -134,7 +134,7 @@ CreateCoinsTransactionRequestFromAddressRI.prototype['note'] = undefined;
 
 /**
  * Defines the destination for the transaction, i.e. the recipient(s).
- * @member {Array.<module:model/CreateCoinsTransactionRequestFromAddressRIRecipients>} recipients
+ * @member {Array.<module:model/CreateCoinsTransactionRequestFromAddressRIRecipientsInner>} recipients
  */
 CreateCoinsTransactionRequestFromAddressRI.prototype['recipients'] = undefined;
 

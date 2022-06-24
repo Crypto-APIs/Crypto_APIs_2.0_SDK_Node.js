@@ -7,89 +7,89 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetLatestMinedXRPRippleBlock400Response = _interopRequireDefault(require("../model/GetLatestMinedXRPRippleBlock400Response"));
+
+var _GetLatestMinedXRPRippleBlock401Response = _interopRequireDefault(require("../model/GetLatestMinedXRPRippleBlock401Response"));
+
+var _GetLatestMinedXRPRippleBlock403Response = _interopRequireDefault(require("../model/GetLatestMinedXRPRippleBlock403Response"));
+
 var _GetLatestMinedXRPRippleBlockR = _interopRequireDefault(require("../model/GetLatestMinedXRPRippleBlockR"));
+
+var _GetXRPRippleAddressDetails400Response = _interopRequireDefault(require("../model/GetXRPRippleAddressDetails400Response"));
+
+var _GetXRPRippleAddressDetails401Response = _interopRequireDefault(require("../model/GetXRPRippleAddressDetails401Response"));
+
+var _GetXRPRippleAddressDetails403Response = _interopRequireDefault(require("../model/GetXRPRippleAddressDetails403Response"));
 
 var _GetXRPRippleAddressDetailsR = _interopRequireDefault(require("../model/GetXRPRippleAddressDetailsR"));
 
+var _GetXRPRippleBlockDetailsByBlockHash400Response = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHash400Response"));
+
+var _GetXRPRippleBlockDetailsByBlockHash401Response = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHash401Response"));
+
+var _GetXRPRippleBlockDetailsByBlockHash403Response = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHash403Response"));
+
 var _GetXRPRippleBlockDetailsByBlockHashR = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHashR"));
+
+var _GetXRPRippleBlockDetailsByBlockHeight400Response = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHeight400Response"));
+
+var _GetXRPRippleBlockDetailsByBlockHeight401Response = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHeight401Response"));
+
+var _GetXRPRippleBlockDetailsByBlockHeight403Response = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHeight403Response"));
 
 var _GetXRPRippleBlockDetailsByBlockHeightR = _interopRequireDefault(require("../model/GetXRPRippleBlockDetailsByBlockHeightR"));
 
+var _GetXRPRippleTransactionDetailsByTransactionID400Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID400Response"));
+
+var _GetXRPRippleTransactionDetailsByTransactionID401Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID401Response"));
+
+var _GetXRPRippleTransactionDetailsByTransactionID403Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID403Response"));
+
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
+
 var _GetXRPRippleTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionIDR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40011"));
+var _ListXRPRippleTransactionsByAddress400Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddress400Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40016"));
+var _ListXRPRippleTransactionsByAddress401Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddress401Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40019"));
+var _ListXRPRippleTransactionsByAddress403Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddress403Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse4002"));
+var _ListXRPRippleTransactionsByAddressAndTimeRange400Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressAndTimeRange400Response"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40024"));
+var _ListXRPRippleTransactionsByAddressAndTimeRange401Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressAndTimeRange401Response"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40028"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40032"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40042"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse4006"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40111"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40116"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40119"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse4012"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40124"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40128"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40132"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40142"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse4016"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40311"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40316"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40319"));
-
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse4032"));
-
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40324"));
-
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse40328"));
-
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse40332"));
-
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40342"));
-
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse4036"));
-
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse4041"));
-
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse33 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse34 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListXRPRippleTransactionsByAddressAndTimeRange403Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressAndTimeRange403Response"));
 
 var _ListXRPRippleTransactionsByAddressAndTimeRangeR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressAndTimeRangeR"));
 
 var _ListXRPRippleTransactionsByAddressR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByAddressR"));
 
+var _ListXRPRippleTransactionsByBlockHash400Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHash400Response"));
+
+var _ListXRPRippleTransactionsByBlockHash401Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHash401Response"));
+
+var _ListXRPRippleTransactionsByBlockHash403Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHash403Response"));
+
 var _ListXRPRippleTransactionsByBlockHashR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHashR"));
+
+var _ListXRPRippleTransactionsByBlockHeight400Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHeight400Response"));
+
+var _ListXRPRippleTransactionsByBlockHeight401Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHeight401Response"));
+
+var _ListXRPRippleTransactionsByBlockHeight403Response = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHeight403Response"));
 
 var _ListXRPRippleTransactionsByBlockHeightR = _interopRequireDefault(require("../model/ListXRPRippleTransactionsByBlockHeightR"));
 
@@ -104,7 +104,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var XRPRippleApi = /*#__PURE__*/function () {
   /**

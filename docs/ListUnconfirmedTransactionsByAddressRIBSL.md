@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **size** | **Number** | Represents the total size of this transaction. | 
 **vSize** | **Number** | Represents the virtual size of this transaction. | 
 **version** | **Number** | Represents the transaction&#39;s version number. | 
-**vin** | [**[ListUnconfirmedTransactionsByAddressRIBSLVin]**](ListUnconfirmedTransactionsByAddressRIBSLVin.md) | Represents the transaction inputs. | 
-**vout** | [**[ListUnconfirmedTransactionsByAddressRIBSLVout]**](ListUnconfirmedTransactionsByAddressRIBSLVout.md) | Represents the transaction outputs. | 
+**vin** | [**[ListUnconfirmedTransactionsByAddressRIBSLVinInner]**](ListUnconfirmedTransactionsByAddressRIBSLVinInner.md) | Represents the transaction inputs. | 
+**vout** | [**[ListUnconfirmedTransactionsByAddressRIBSLVoutInner]**](ListUnconfirmedTransactionsByAddressRIBSLVoutInner.md) | Represents the transaction outputs. | 
 
 

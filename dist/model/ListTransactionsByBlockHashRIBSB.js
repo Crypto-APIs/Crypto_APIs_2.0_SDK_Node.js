@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _ListTransactionsByBlockHashRIBSBVin = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSBVin"));
+var _ListTransactionsByBlockHashRIBSBVinInner = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSBVinInner"));
 
-var _ListTransactionsByBlockHashRIBSBVout = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSBVout"));
+var _ListTransactionsByBlockHashRIBSBVoutInner = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSBVoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSB model module.
  * @module model/ListTransactionsByBlockHashRIBSB
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListTransactionsByBlockHashRIBSB = /*#__PURE__*/function () {
   /**
@@ -33,8 +33,8 @@ var ListTransactionsByBlockHashRIBSB = /*#__PURE__*/function () {
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Represents the transaction version number.
-   * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSBVin>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/ListTransactionsByBlockHashRIBSBVout>} Represents the transaction outputs.
+   * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSBVinInner>} Represents the transaction inputs.
+   * @param vout {Array.<module:model/ListTransactionsByBlockHashRIBSBVoutInner>} Represents the transaction outputs.
    */
   function ListTransactionsByBlockHashRIBSB(locktime, size, vSize, version, vin, vout) {
     _classCallCheck(this, ListTransactionsByBlockHashRIBSB);
@@ -89,11 +89,11 @@ var ListTransactionsByBlockHashRIBSB = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListTransactionsByBlockHashRIBSBVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListTransactionsByBlockHashRIBSBVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListTransactionsByBlockHashRIBSBVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListTransactionsByBlockHashRIBSBVoutInner["default"]]);
         }
       }
 
@@ -130,13 +130,13 @@ ListTransactionsByBlockHashRIBSB.prototype['vSize'] = undefined;
 ListTransactionsByBlockHashRIBSB.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVinInner>} vin
  */
 
 ListTransactionsByBlockHashRIBSB.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVoutInner>} vout
  */
 
 ListTransactionsByBlockHashRIBSB.prototype['vout'] = undefined;

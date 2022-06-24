@@ -13,50 +13,50 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetOmniTransactionDetailsByTransactionIDTxid400Response from '../model/GetOmniTransactionDetailsByTransactionIDTxid400Response';
+import GetOmniTransactionDetailsByTransactionIDTxid401Response from '../model/GetOmniTransactionDetailsByTransactionIDTxid401Response';
+import GetOmniTransactionDetailsByTransactionIDTxid403Response from '../model/GetOmniTransactionDetailsByTransactionIDTxid403Response';
 import GetOmniTransactionDetailsByTransactionIDTxidR from '../model/GetOmniTransactionDetailsByTransactionIDTxidR';
+import GetTransactionDetailsByTransactionID404Response from '../model/GetTransactionDetailsByTransactionID404Response';
+import GetUnconfirmedOmniTransactionByTransactionIDTxid400Response from '../model/GetUnconfirmedOmniTransactionByTransactionIDTxid400Response';
+import GetUnconfirmedOmniTransactionByTransactionIDTxid401Response from '../model/GetUnconfirmedOmniTransactionByTransactionIDTxid401Response';
+import GetUnconfirmedOmniTransactionByTransactionIDTxid403Response from '../model/GetUnconfirmedOmniTransactionByTransactionIDTxid403Response';
 import GetUnconfirmedOmniTransactionByTransactionIDTxidR from '../model/GetUnconfirmedOmniTransactionByTransactionIDTxidR';
-import InlineResponse4001 from '../model/InlineResponse4001';
-import InlineResponse40012 from '../model/InlineResponse40012';
-import InlineResponse40020 from '../model/InlineResponse40020';
-import InlineResponse40029 from '../model/InlineResponse40029';
-import InlineResponse40033 from '../model/InlineResponse40033';
-import InlineResponse40041 from '../model/InlineResponse40041';
-import InlineResponse40047 from '../model/InlineResponse40047';
-import InlineResponse4005 from '../model/InlineResponse4005';
-import InlineResponse4011 from '../model/InlineResponse4011';
-import InlineResponse40112 from '../model/InlineResponse40112';
-import InlineResponse40120 from '../model/InlineResponse40120';
-import InlineResponse40129 from '../model/InlineResponse40129';
-import InlineResponse40133 from '../model/InlineResponse40133';
-import InlineResponse40141 from '../model/InlineResponse40141';
-import InlineResponse40147 from '../model/InlineResponse40147';
-import InlineResponse4015 from '../model/InlineResponse4015';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse4031 from '../model/InlineResponse4031';
-import InlineResponse40312 from '../model/InlineResponse40312';
-import InlineResponse40320 from '../model/InlineResponse40320';
-import InlineResponse40329 from '../model/InlineResponse40329';
-import InlineResponse40333 from '../model/InlineResponse40333';
-import InlineResponse40341 from '../model/InlineResponse40341';
-import InlineResponse40347 from '../model/InlineResponse40347';
-import InlineResponse4035 from '../model/InlineResponse4035';
-import InlineResponse404 from '../model/InlineResponse404';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import ListOmniTokensByAddress400Response from '../model/ListOmniTokensByAddress400Response';
+import ListOmniTokensByAddress401Response from '../model/ListOmniTokensByAddress401Response';
+import ListOmniTokensByAddress403Response from '../model/ListOmniTokensByAddress403Response';
 import ListOmniTokensByAddressR from '../model/ListOmniTokensByAddressR';
+import ListOmniTransactionsByAddress400Response from '../model/ListOmniTransactionsByAddress400Response';
+import ListOmniTransactionsByAddress401Response from '../model/ListOmniTransactionsByAddress401Response';
+import ListOmniTransactionsByAddress403Response from '../model/ListOmniTransactionsByAddress403Response';
 import ListOmniTransactionsByAddressR from '../model/ListOmniTransactionsByAddressR';
+import ListOmniTransactionsByBlockHash400Response from '../model/ListOmniTransactionsByBlockHash400Response';
+import ListOmniTransactionsByBlockHash401Response from '../model/ListOmniTransactionsByBlockHash401Response';
+import ListOmniTransactionsByBlockHash403Response from '../model/ListOmniTransactionsByBlockHash403Response';
 import ListOmniTransactionsByBlockHashR from '../model/ListOmniTransactionsByBlockHashR';
+import ListOmniTransactionsByBlockHeight400Response from '../model/ListOmniTransactionsByBlockHeight400Response';
+import ListOmniTransactionsByBlockHeight401Response from '../model/ListOmniTransactionsByBlockHeight401Response';
+import ListOmniTransactionsByBlockHeight403Response from '../model/ListOmniTransactionsByBlockHeight403Response';
 import ListOmniTransactionsByBlockHeightR from '../model/ListOmniTransactionsByBlockHeightR';
+import ListUnconfirmedOmniTransactionsByAddress400Response from '../model/ListUnconfirmedOmniTransactionsByAddress400Response';
+import ListUnconfirmedOmniTransactionsByAddress401Response from '../model/ListUnconfirmedOmniTransactionsByAddress401Response';
+import ListUnconfirmedOmniTransactionsByAddress403Response from '../model/ListUnconfirmedOmniTransactionsByAddress403Response';
 import ListUnconfirmedOmniTransactionsByAddressR from '../model/ListUnconfirmedOmniTransactionsByAddressR';
+import ListUnconfirmedOmniTransactionsByPropertyID400Response from '../model/ListUnconfirmedOmniTransactionsByPropertyID400Response';
+import ListUnconfirmedOmniTransactionsByPropertyID401Response from '../model/ListUnconfirmedOmniTransactionsByPropertyID401Response';
+import ListUnconfirmedOmniTransactionsByPropertyID403Response from '../model/ListUnconfirmedOmniTransactionsByPropertyID403Response';
 import ListUnconfirmedOmniTransactionsByPropertyIDR from '../model/ListUnconfirmedOmniTransactionsByPropertyIDR';
 
 /**
 * OmniLayer service.
 * @module api/OmniLayerApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class OmniLayerApi {
 

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISE model module.
  * @module model/DecodeRawTransactionHexRISE
- * @version 1.5.0
+ * @version 1.6.0
  */
 var DecodeRawTransactionHexRISE = /*#__PURE__*/function () {
   /**

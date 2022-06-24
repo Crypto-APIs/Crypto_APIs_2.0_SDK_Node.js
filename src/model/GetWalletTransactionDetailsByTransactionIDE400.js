@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import InvalidPagination from './InvalidPagination';
 import LimitGreaterThanAllowed from './LimitGreaterThanAllowed';
 import UriNotFound from './UriNotFound';
@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetWalletTransactionDetailsByTransactionIDE400 model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDE400
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetWalletTransactionDetailsByTransactionIDE400 {
     /**
@@ -68,7 +68,7 @@ class GetWalletTransactionDetailsByTransactionIDE400 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -90,7 +90,7 @@ GetWalletTransactionDetailsByTransactionIDE400.prototype['code'] = undefined;
 GetWalletTransactionDetailsByTransactionIDE400.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 GetWalletTransactionDetailsByTransactionIDE400.prototype['details'] = undefined;
 
@@ -107,7 +107,7 @@ UriNotFound.prototype['code'] = undefined;
  */
 UriNotFound.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 UriNotFound.prototype['details'] = undefined;
 // Implement LimitGreaterThanAllowed interface:
@@ -122,7 +122,7 @@ LimitGreaterThanAllowed.prototype['code'] = undefined;
  */
 LimitGreaterThanAllowed.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 LimitGreaterThanAllowed.prototype['details'] = undefined;
 // Implement InvalidPagination interface:
@@ -137,7 +137,7 @@ InvalidPagination.prototype['code'] = undefined;
  */
 InvalidPagination.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidPagination.prototype['details'] = undefined;
 

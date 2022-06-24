@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _CreateCoinsTransactionRequestFromWalletRIRecipients = _interopRequireDefault(require("./CreateCoinsTransactionRequestFromWalletRIRecipients"));
+var _CreateCoinsTransactionRequestFromWalletRIRecipientsInner = _interopRequireDefault(require("./CreateCoinsTransactionRequestFromWalletRIRecipientsInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -20,14 +20,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletRI model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromWalletRI</code>.
    * @alias module:model/CreateCoinsTransactionRequestFromWalletRI
    * @param feePriority {module:model/CreateCoinsTransactionRequestFromWalletRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-   * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromWalletRIRecipients>} Defines the destination of the transaction, whether it is incoming or outgoing.
+   * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromWalletRIRecipientsInner>} Defines the destination of the transaction, whether it is incoming or outgoing.
    * @param totalTransactionAmount {String} Represents the specific amount of the transaction.
    * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
    * @param transactionRequestStatus {module:model/CreateCoinsTransactionRequestFromWalletRI.TransactionRequestStatusEnum} Defines the status of the transaction, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
@@ -84,7 +84,7 @@ var CreateCoinsTransactionRequestFromWalletRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionRequestFromWalletRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionRequestFromWalletRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('totalTransactionAmount')) {
@@ -133,7 +133,7 @@ CreateCoinsTransactionRequestFromWalletRI.prototype['feePriority'] = undefined;
 CreateCoinsTransactionRequestFromWalletRI.prototype['note'] = undefined;
 /**
  * Defines the destination of the transaction, whether it is incoming or outgoing.
- * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRIRecipients>} recipients
+ * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRIRecipientsInner>} recipients
  */
 
 CreateCoinsTransactionRequestFromWalletRI.prototype['recipients'] = undefined;

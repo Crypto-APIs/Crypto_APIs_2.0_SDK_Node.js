@@ -18,7 +18,7 @@ import ListAllUnconfirmedTransactionsRIBSECGasPrice from './ListAllUnconfirmedTr
 /**
  * The ListAllUnconfirmedTransactionsRIBSEC model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSEC
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListAllUnconfirmedTransactionsRIBSEC {
     /**

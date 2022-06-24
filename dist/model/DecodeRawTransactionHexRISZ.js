@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _DecodeRawTransactionHexRISZVin = _interopRequireDefault(require("./DecodeRawTransactionHexRISZVin"));
+var _DecodeRawTransactionHexRISZVinInner = _interopRequireDefault(require("./DecodeRawTransactionHexRISZVinInner"));
 
-var _DecodeRawTransactionHexRISZVout = _interopRequireDefault(require("./DecodeRawTransactionHexRISZVout"));
+var _DecodeRawTransactionHexRISZVoutInner = _interopRequireDefault(require("./DecodeRawTransactionHexRISZVoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISZ model module.
  * @module model/DecodeRawTransactionHexRISZ
- * @version 1.5.0
+ * @version 1.6.0
  */
 var DecodeRawTransactionHexRISZ = /*#__PURE__*/function () {
   /**
@@ -37,8 +37,8 @@ var DecodeRawTransactionHexRISZ = /*#__PURE__*/function () {
    * @param valueBalance {String} Defines the transaction value balance.
    * @param version {Number} Represents the transaction version number.
    * @param versionGroupId {String} Represents the transaction version group ID
-   * @param vin {Array.<module:model/DecodeRawTransactionHexRISZVin>} Represents the Inputs of the transaction
-   * @param vout {Array.<module:model/DecodeRawTransactionHexRISZVout>} Represents the Inputs of the transaction
+   * @param vin {Array.<module:model/DecodeRawTransactionHexRISZVinInner>} Represents the Inputs of the transaction
+   * @param vout {Array.<module:model/DecodeRawTransactionHexRISZVoutInner>} Represents the Inputs of the transaction
    */
   function DecodeRawTransactionHexRISZ(expiryHeight, locktime, overwintered, saplinged, transactionHash, valueBalance, version, versionGroupId, vin, vout) {
     _classCallCheck(this, DecodeRawTransactionHexRISZ);
@@ -113,11 +113,11 @@ var DecodeRawTransactionHexRISZ = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_DecodeRawTransactionHexRISZVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_DecodeRawTransactionHexRISZVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_DecodeRawTransactionHexRISZVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_DecodeRawTransactionHexRISZVoutInner["default"]]);
         }
       }
 
@@ -178,13 +178,13 @@ DecodeRawTransactionHexRISZ.prototype['version'] = undefined;
 DecodeRawTransactionHexRISZ.prototype['versionGroupId'] = undefined;
 /**
  * Represents the Inputs of the transaction
- * @member {Array.<module:model/DecodeRawTransactionHexRISZVin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISZVinInner>} vin
  */
 
 DecodeRawTransactionHexRISZ.prototype['vin'] = undefined;
 /**
  * Represents the Inputs of the transaction
- * @member {Array.<module:model/DecodeRawTransactionHexRISZVout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISZVoutInner>} vout
  */
 
 DecodeRawTransactionHexRISZ.prototype['vout'] = undefined;

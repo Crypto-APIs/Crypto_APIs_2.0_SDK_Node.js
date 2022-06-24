@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import InvalidRequestBodyStructure from './InvalidRequestBodyStructure';
 import XpubSyncInProgress from './XpubSyncInProgress';
 
 /**
  * The GetHDWalletXPubYPubZPubAssetsE422 model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsE422
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetHDWalletXPubYPubZPubAssetsE422 {
     /**
@@ -65,7 +65,7 @@ class GetHDWalletXPubYPubZPubAssetsE422 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -87,7 +87,7 @@ GetHDWalletXPubYPubZPubAssetsE422.prototype['code'] = undefined;
 GetHDWalletXPubYPubZPubAssetsE422.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 GetHDWalletXPubYPubZPubAssetsE422.prototype['details'] = undefined;
 
@@ -104,7 +104,7 @@ InvalidRequestBodyStructure.prototype['code'] = undefined;
  */
 InvalidRequestBodyStructure.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidRequestBodyStructure.prototype['details'] = undefined;
 // Implement XpubSyncInProgress interface:
@@ -119,7 +119,7 @@ XpubSyncInProgress.prototype['code'] = undefined;
  */
 XpubSyncInProgress.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 XpubSyncInProgress.prototype['details'] = undefined;
 

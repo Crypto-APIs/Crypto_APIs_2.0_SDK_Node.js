@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHashRData model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashRData
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetZilliqaBlockDetailsByBlockHashRData = /*#__PURE__*/function () {
   /**

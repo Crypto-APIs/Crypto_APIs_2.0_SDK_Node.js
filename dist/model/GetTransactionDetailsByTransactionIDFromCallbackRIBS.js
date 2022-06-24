@@ -33,15 +33,15 @@ var _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 = _interopRequireDef
 
 var _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVJoinSplit = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVJoinSplit"));
+var _GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput"));
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend"));
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVin = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVin"));
+var _GetTransactionDetailsByTransactionIDRIBSZVinInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVinInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVout"));
+var _GetTransactionDetailsByTransactionIDRIBSZVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVoutInner"));
 
 var _GetXRPRippleTransactionDetailsByTransactionIDRIOffer = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIOffer"));
 
@@ -58,7 +58,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBS
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function () {
   /**
@@ -79,8 +79,8 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Defines the version of the transaction.
-   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} Object Array representation of transaction outputs
+   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} Object Array representation of transaction outputs
    * @param contract {String} Represents the specific transaction contract
    * @param gasLimit {Number} Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
    * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice} 
@@ -93,9 +93,9 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
    * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
    * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
    * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
-   * @param vJoinSplit {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-   * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
-   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+   * @param vJoinSplit {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+   * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
+   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
    * @param valueBalance {String} String representation of the transaction value balance
    * @param versionGroupId {String} Represents the transaction version group ID
    * @param additionalData {String} Represents additional data that may be needed.
@@ -227,11 +227,11 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSZVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSZVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSZVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSZVoutInner["default"]]);
         }
 
         if (data.hasOwnProperty('contract')) {
@@ -283,15 +283,15 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
         }
 
         if (data.hasOwnProperty('vJoinSplit')) {
-          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_GetTransactionDetailsByTransactionIDRIBSZVJoinSplit["default"]]);
+          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedOutput')) {
-          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput["default"]]);
+          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedSpend')) {
-          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend["default"]]);
+          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner["default"]]);
         }
 
         if (data.hasOwnProperty('valueBalance')) {
@@ -368,13 +368,13 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['vSize'] = undefi
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['version'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} vin
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['vout'] = undefined;
@@ -451,19 +451,19 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['joinSplitSig'] =
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['overwintered'] = undefined;
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} vJoinSplit
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['vShieldedSpend'] = undefined;
@@ -551,13 +551,13 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['vSi
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBVinInner>} vin
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSE interface:
@@ -624,13 +624,13 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['si
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVinInner>} vin
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSL interface:
@@ -661,13 +661,13 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['vSi
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVinInner>} vin
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSD interface:
@@ -692,13 +692,13 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['siz
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner>} vin
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2Vout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 interface:
@@ -723,13 +723,13 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['si
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VinInner>} vin
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSZ interface:
@@ -778,19 +778,19 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['ove
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['size'] = undefined;
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} vJoinSplit
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vShieldedSpend'] = undefined;
@@ -814,13 +814,13 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['ver
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['versionGroupId'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} vin
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSEC interface:

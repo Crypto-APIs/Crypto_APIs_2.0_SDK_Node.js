@@ -9,9 +9,9 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _ListHDWalletXPubYPubZPubTransactionsRIFee = _interopRequireDefault(require("./ListHDWalletXPubYPubZPubTransactionsRIFee"));
 
-var _ListHDWalletXPubYPubZPubTransactionsRIRecipients = _interopRequireDefault(require("./ListHDWalletXPubYPubZPubTransactionsRIRecipients"));
+var _ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner = _interopRequireDefault(require("./ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner"));
 
-var _ListHDWalletXPubYPubZPubTransactionsRISenders = _interopRequireDefault(require("./ListHDWalletXPubYPubZPubTransactionsRISenders"));
+var _ListHDWalletXPubYPubZPubTransactionsRISendersInner = _interopRequireDefault(require("./ListHDWalletXPubYPubZPubTransactionsRISendersInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRI model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListHDWalletXPubYPubZPubTransactionsRI = /*#__PURE__*/function () {
   /**
@@ -33,8 +33,8 @@ var ListHDWalletXPubYPubZPubTransactionsRI = /*#__PURE__*/function () {
    * @param index {Number} Represents the index position of the transaction in the block.
    * @param minedInBlockHash {String} Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
    * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
-   * @param recipients {Array.<module:model/ListHDWalletXPubYPubZPubTransactionsRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
-   * @param senders {Array.<module:model/ListHDWalletXPubYPubZPubTransactionsRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+   * @param recipients {Array.<module:model/ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+   * @param senders {Array.<module:model/ListHDWalletXPubYPubZPubTransactionsRISendersInner>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
    * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
    * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
@@ -92,11 +92,11 @@ var ListHDWalletXPubYPubZPubTransactionsRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListHDWalletXPubYPubZPubTransactionsRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListHDWalletXPubYPubZPubTransactionsRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListHDWalletXPubYPubZPubTransactionsRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('timestamp')) {
@@ -143,13 +143,13 @@ ListHDWalletXPubYPubZPubTransactionsRI.prototype['minedInBlockHash'] = undefined
 ListHDWalletXPubYPubZPubTransactionsRI.prototype['minedInBlockHeight'] = undefined;
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListHDWalletXPubYPubZPubTransactionsRIRecipients>} recipients
+ * @member {Array.<module:model/ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner>} recipients
  */
 
 ListHDWalletXPubYPubZPubTransactionsRI.prototype['recipients'] = undefined;
 /**
  * Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListHDWalletXPubYPubZPubTransactionsRISenders>} senders
+ * @member {Array.<module:model/ListHDWalletXPubYPubZPubTransactionsRISendersInner>} senders
  */
 
 ListHDWalletXPubYPubZPubTransactionsRI.prototype['senders'] = undefined;

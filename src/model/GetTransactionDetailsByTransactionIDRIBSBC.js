@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSBCVin from './GetTransactionDetailsByTransactionIDRIBSBCVin';
-import GetTransactionDetailsByTransactionIDRIBSBCVout from './GetTransactionDetailsByTransactionIDRIBSBCVout';
+import GetTransactionDetailsByTransactionIDRIBSBCVinInner from './GetTransactionDetailsByTransactionIDRIBSBCVinInner';
+import GetTransactionDetailsByTransactionIDRIBSBCVoutInner from './GetTransactionDetailsByTransactionIDRIBSBCVoutInner';
 
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBC model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBC
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetTransactionDetailsByTransactionIDRIBSBC {
     /**
@@ -28,8 +28,8 @@ class GetTransactionDetailsByTransactionIDRIBSBC {
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param size {Number} Represents the total size of this transaction.
      * @param version {Number} Represents transaction version number.
-     * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVout>} Represents the transaction outputs.
+     * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVinInner>} Represents the transaction inputs.
+     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} Represents the transaction outputs.
      */
     constructor(locktime, size, version, vin, vout) { 
         
@@ -70,10 +70,10 @@ class GetTransactionDetailsByTransactionIDRIBSBC {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [GetTransactionDetailsByTransactionIDRIBSBCVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [GetTransactionDetailsByTransactionIDRIBSBCVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSBCVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSBCVoutInner]);
             }
         }
         return obj;
@@ -102,13 +102,13 @@ GetTransactionDetailsByTransactionIDRIBSBC.prototype['version'] = undefined;
 
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVinInner>} vin
  */
 GetTransactionDetailsByTransactionIDRIBSBC.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} vout
  */
 GetTransactionDetailsByTransactionIDRIBSBC.prototype['vout'] = undefined;
 

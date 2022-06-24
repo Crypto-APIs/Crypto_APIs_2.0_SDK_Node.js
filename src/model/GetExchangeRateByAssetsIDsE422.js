@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import CouldNotCalculateRateForPair from './CouldNotCalculateRateForPair';
 import InvalidRequestBodyStructure from './InvalidRequestBodyStructure';
 
 /**
  * The GetExchangeRateByAssetsIDsE422 model module.
  * @module model/GetExchangeRateByAssetsIDsE422
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetExchangeRateByAssetsIDsE422 {
     /**
@@ -65,7 +65,7 @@ class GetExchangeRateByAssetsIDsE422 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -87,7 +87,7 @@ GetExchangeRateByAssetsIDsE422.prototype['code'] = undefined;
 GetExchangeRateByAssetsIDsE422.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 GetExchangeRateByAssetsIDsE422.prototype['details'] = undefined;
 
@@ -104,7 +104,7 @@ InvalidRequestBodyStructure.prototype['code'] = undefined;
  */
 InvalidRequestBodyStructure.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidRequestBodyStructure.prototype['details'] = undefined;
 // Implement CouldNotCalculateRateForPair interface:
@@ -119,7 +119,7 @@ CouldNotCalculateRateForPair.prototype['code'] = undefined;
  */
 CouldNotCalculateRateForPair.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 CouldNotCalculateRateForPair.prototype['details'] = undefined;
 

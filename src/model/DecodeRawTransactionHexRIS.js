@@ -21,13 +21,13 @@ import DecodeRawTransactionHexRISE from './DecodeRawTransactionHexRISE';
 import DecodeRawTransactionHexRISE2 from './DecodeRawTransactionHexRISE2';
 import DecodeRawTransactionHexRISL from './DecodeRawTransactionHexRISL';
 import DecodeRawTransactionHexRISZ from './DecodeRawTransactionHexRISZ';
-import DecodeRawTransactionHexRISZVin from './DecodeRawTransactionHexRISZVin';
-import DecodeRawTransactionHexRISZVout from './DecodeRawTransactionHexRISZVout';
+import DecodeRawTransactionHexRISZVinInner from './DecodeRawTransactionHexRISZVinInner';
+import DecodeRawTransactionHexRISZVoutInner from './DecodeRawTransactionHexRISZVoutInner';
 
 /**
  * The DecodeRawTransactionHexRIS model module.
  * @module model/DecodeRawTransactionHexRIS
- * @version 1.5.0
+ * @version 1.6.0
  */
 class DecodeRawTransactionHexRIS {
     /**
@@ -47,8 +47,8 @@ class DecodeRawTransactionHexRIS {
      * @param transactionHash {String} Represents the same as transactionId for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols hash is different from transactionId for SegWit transactions.
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents the transaction version number.
-     * @param vin {Array.<module:model/DecodeRawTransactionHexRISZVin>} Represents the Inputs of the transaction
-     * @param vout {Array.<module:model/DecodeRawTransactionHexRISZVout>} Represents the Inputs of the transaction
+     * @param vin {Array.<module:model/DecodeRawTransactionHexRISZVinInner>} Represents the Inputs of the transaction
+     * @param vout {Array.<module:model/DecodeRawTransactionHexRISZVoutInner>} Represents the Inputs of the transaction
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
      * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
      * @param recipient {String} The address which receives this transaction. In UTXO-based protocols like Bitcoin there could be several senders while in account-based protocols like Ethereum there is always only one recipient.
@@ -122,10 +122,10 @@ class DecodeRawTransactionHexRIS {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [DecodeRawTransactionHexRISZVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [DecodeRawTransactionHexRISZVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [DecodeRawTransactionHexRISZVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [DecodeRawTransactionHexRISZVoutInner]);
             }
             if (data.hasOwnProperty('weight')) {
                 obj['weight'] = ApiClient.convertToType(data['weight'], 'Number');
@@ -226,13 +226,13 @@ DecodeRawTransactionHexRIS.prototype['version'] = undefined;
 
 /**
  * Represents the Inputs of the transaction
- * @member {Array.<module:model/DecodeRawTransactionHexRISZVin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISZVinInner>} vin
  */
 DecodeRawTransactionHexRIS.prototype['vin'] = undefined;
 
 /**
  * Represents the Inputs of the transaction
- * @member {Array.<module:model/DecodeRawTransactionHexRISZVout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISZVoutInner>} vout
  */
 DecodeRawTransactionHexRIS.prototype['vout'] = undefined;
 
@@ -392,12 +392,12 @@ DecodeRawTransactionHexRISB.prototype['vSize'] = undefined;
 DecodeRawTransactionHexRISB.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISBVin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISBVinInner>} vin
  */
 DecodeRawTransactionHexRISB.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISBVout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISBVoutInner>} vout
  */
 DecodeRawTransactionHexRISB.prototype['vout'] = undefined;
 /**
@@ -428,12 +428,12 @@ DecodeRawTransactionHexRISB2.prototype['vSize'] = undefined;
 DecodeRawTransactionHexRISB2.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISB2Vin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISB2VinInner>} vin
  */
 DecodeRawTransactionHexRISB2.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISB2Vout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISB2VoutInner>} vout
  */
 DecodeRawTransactionHexRISB2.prototype['vout'] = undefined;
 /**
@@ -464,12 +464,12 @@ DecodeRawTransactionHexRISD.prototype['vSize'] = undefined;
 DecodeRawTransactionHexRISD.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISDVin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISDVinInner>} vin
  */
 DecodeRawTransactionHexRISD.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISDVout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISDVoutInner>} vout
  */
 DecodeRawTransactionHexRISD.prototype['vout'] = undefined;
 /**
@@ -500,12 +500,12 @@ DecodeRawTransactionHexRISD2.prototype['vSize'] = undefined;
 DecodeRawTransactionHexRISD2.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISD2Vin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISD2VinInner>} vin
  */
 DecodeRawTransactionHexRISD2.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISD2Vout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISD2VoutInner>} vout
  */
 DecodeRawTransactionHexRISD2.prototype['vout'] = undefined;
 /**
@@ -536,12 +536,12 @@ DecodeRawTransactionHexRISL.prototype['vSize'] = undefined;
 DecodeRawTransactionHexRISL.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISLVin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISLVinInner>} vin
  */
 DecodeRawTransactionHexRISL.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/DecodeRawTransactionHexRISLVout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISLVoutInner>} vout
  */
 DecodeRawTransactionHexRISL.prototype['vout'] = undefined;
 /**
@@ -815,12 +815,12 @@ DecodeRawTransactionHexRISZ.prototype['version'] = undefined;
 DecodeRawTransactionHexRISZ.prototype['versionGroupId'] = undefined;
 /**
  * Represents the Inputs of the transaction
- * @member {Array.<module:model/DecodeRawTransactionHexRISZVin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISZVinInner>} vin
  */
 DecodeRawTransactionHexRISZ.prototype['vin'] = undefined;
 /**
  * Represents the Inputs of the transaction
- * @member {Array.<module:model/DecodeRawTransactionHexRISZVout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISZVoutInner>} vout
  */
 DecodeRawTransactionHexRISZ.prototype['vout'] = undefined;
 

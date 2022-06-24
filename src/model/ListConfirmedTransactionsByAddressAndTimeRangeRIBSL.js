@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSLVout from './GetTransactionDetailsByTransactionIDRIBSLVout';
-import ListConfirmedTransactionsByAddressRIBSLVin from './ListConfirmedTransactionsByAddressRIBSLVin';
+import GetTransactionDetailsByTransactionIDRIBSLVoutInner from './GetTransactionDetailsByTransactionIDRIBSLVoutInner';
+import ListConfirmedTransactionsByAddressRIBSLVinInner from './ListConfirmedTransactionsByAddressRIBSLVinInner';
 
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSL model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSL
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeRIBSL {
     /**
@@ -29,8 +29,8 @@ class ListConfirmedTransactionsByAddressAndTimeRangeRIBSL {
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents the transaction's version number.
-     * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSLVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} Represents the transaction outputs.
+     * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSLVinInner>} Represents the transaction inputs.
+     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} Represents the transaction outputs.
      */
     constructor(locktime, size, vSize, version, vin, vout) { 
         
@@ -75,10 +75,10 @@ class ListConfirmedTransactionsByAddressAndTimeRangeRIBSL {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListConfirmedTransactionsByAddressRIBSLVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [ListConfirmedTransactionsByAddressRIBSLVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSLVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSLVoutInner]);
             }
         }
         return obj;
@@ -113,13 +113,13 @@ ListConfirmedTransactionsByAddressAndTimeRangeRIBSL.prototype['version'] = undef
 
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSLVin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSLVinInner>} vin
  */
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSL.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} vout
  */
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSL.prototype['vout'] = undefined;
 

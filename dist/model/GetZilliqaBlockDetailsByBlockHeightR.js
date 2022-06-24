@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHeightR model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeightR
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetZilliqaBlockDetailsByBlockHeightR = /*#__PURE__*/function () {
   /**

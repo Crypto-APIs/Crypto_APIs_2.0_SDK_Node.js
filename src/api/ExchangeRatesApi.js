@@ -13,26 +13,26 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetExchangeRateByAssetSymbols400Response from '../model/GetExchangeRateByAssetSymbols400Response';
+import GetExchangeRateByAssetSymbols401Response from '../model/GetExchangeRateByAssetSymbols401Response';
+import GetExchangeRateByAssetSymbols403Response from '../model/GetExchangeRateByAssetSymbols403Response';
+import GetExchangeRateByAssetSymbols422Response from '../model/GetExchangeRateByAssetSymbols422Response';
 import GetExchangeRateByAssetSymbolsR from '../model/GetExchangeRateByAssetSymbolsR';
+import GetExchangeRateByAssetsIDs400Response from '../model/GetExchangeRateByAssetsIDs400Response';
+import GetExchangeRateByAssetsIDs401Response from '../model/GetExchangeRateByAssetsIDs401Response';
+import GetExchangeRateByAssetsIDs403Response from '../model/GetExchangeRateByAssetsIDs403Response';
+import GetExchangeRateByAssetsIDs422Response from '../model/GetExchangeRateByAssetsIDs422Response';
 import GetExchangeRateByAssetsIDsR from '../model/GetExchangeRateByAssetsIDsR';
-import InlineResponse400106 from '../model/InlineResponse400106';
-import InlineResponse400107 from '../model/InlineResponse400107';
-import InlineResponse401106 from '../model/InlineResponse401106';
-import InlineResponse401107 from '../model/InlineResponse401107';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse403106 from '../model/InlineResponse403106';
-import InlineResponse403107 from '../model/InlineResponse403107';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse4226 from '../model/InlineResponse4226';
-import InlineResponse4227 from '../model/InlineResponse4227';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
 
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class ExchangeRatesApi {
 

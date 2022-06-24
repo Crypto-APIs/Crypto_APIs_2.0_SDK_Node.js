@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeXAddressRData model module.
  * @module model/DecodeXAddressRData
- * @version 1.5.0
+ * @version 1.6.0
  */
 var DecodeXAddressRData = /*#__PURE__*/function () {
   /**

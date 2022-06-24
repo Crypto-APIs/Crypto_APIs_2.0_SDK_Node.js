@@ -13,50 +13,50 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetTransactionRequestDetails400Response from '../model/GetTransactionRequestDetails400Response';
+import GetTransactionRequestDetails401Response from '../model/GetTransactionRequestDetails401Response';
+import GetTransactionRequestDetails403Response from '../model/GetTransactionRequestDetails403Response';
 import GetTransactionRequestDetailsR from '../model/GetTransactionRequestDetailsR';
+import GetWalletAssetDetails400Response from '../model/GetWalletAssetDetails400Response';
+import GetWalletAssetDetails401Response from '../model/GetWalletAssetDetails401Response';
+import GetWalletAssetDetails403Response from '../model/GetWalletAssetDetails403Response';
 import GetWalletAssetDetailsR from '../model/GetWalletAssetDetailsR';
+import GetWalletTransactionDetailsByTransactionID400Response from '../model/GetWalletTransactionDetailsByTransactionID400Response';
+import GetWalletTransactionDetailsByTransactionID401Response from '../model/GetWalletTransactionDetailsByTransactionID401Response';
+import GetWalletTransactionDetailsByTransactionID403Response from '../model/GetWalletTransactionDetailsByTransactionID403Response';
 import GetWalletTransactionDetailsByTransactionIDR from '../model/GetWalletTransactionDetailsByTransactionIDR';
-import InlineResponse40035 from '../model/InlineResponse40035';
-import InlineResponse40036 from '../model/InlineResponse40036';
-import InlineResponse40038 from '../model/InlineResponse40038';
-import InlineResponse40039 from '../model/InlineResponse40039';
-import InlineResponse40044 from '../model/InlineResponse40044';
-import InlineResponse40048 from '../model/InlineResponse40048';
-import InlineResponse40049 from '../model/InlineResponse40049';
-import InlineResponse4007 from '../model/InlineResponse4007';
-import InlineResponse40135 from '../model/InlineResponse40135';
-import InlineResponse40136 from '../model/InlineResponse40136';
-import InlineResponse40138 from '../model/InlineResponse40138';
-import InlineResponse40139 from '../model/InlineResponse40139';
-import InlineResponse40144 from '../model/InlineResponse40144';
-import InlineResponse40148 from '../model/InlineResponse40148';
-import InlineResponse40149 from '../model/InlineResponse40149';
-import InlineResponse4017 from '../model/InlineResponse4017';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40335 from '../model/InlineResponse40335';
-import InlineResponse40336 from '../model/InlineResponse40336';
-import InlineResponse40338 from '../model/InlineResponse40338';
-import InlineResponse40339 from '../model/InlineResponse40339';
-import InlineResponse40344 from '../model/InlineResponse40344';
-import InlineResponse40348 from '../model/InlineResponse40348';
-import InlineResponse40349 from '../model/InlineResponse40349';
-import InlineResponse4037 from '../model/InlineResponse4037';
-import InlineResponse4041 from '../model/InlineResponse4041';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
+import ListAllAssetsByWalletID400Response from '../model/ListAllAssetsByWalletID400Response';
+import ListAllAssetsByWalletID401Response from '../model/ListAllAssetsByWalletID401Response';
+import ListAllAssetsByWalletID403Response from '../model/ListAllAssetsByWalletID403Response';
 import ListAllAssetsByWalletIDR from '../model/ListAllAssetsByWalletIDR';
+import ListAllAssetsFromAllWallets400Response from '../model/ListAllAssetsFromAllWallets400Response';
+import ListAllAssetsFromAllWallets401Response from '../model/ListAllAssetsFromAllWallets401Response';
+import ListAllAssetsFromAllWallets403Response from '../model/ListAllAssetsFromAllWallets403Response';
 import ListAllAssetsFromAllWalletsR from '../model/ListAllAssetsFromAllWalletsR';
+import ListDepositAddresses400Response from '../model/ListDepositAddresses400Response';
+import ListDepositAddresses401Response from '../model/ListDepositAddresses401Response';
+import ListDepositAddresses403Response from '../model/ListDepositAddresses403Response';
 import ListDepositAddressesR from '../model/ListDepositAddressesR';
+import ListSupportedTokens400Response from '../model/ListSupportedTokens400Response';
+import ListSupportedTokens401Response from '../model/ListSupportedTokens401Response';
+import ListSupportedTokens403Response from '../model/ListSupportedTokens403Response';
 import ListSupportedTokensR from '../model/ListSupportedTokensR';
+import ListWalletTransactions400Response from '../model/ListWalletTransactions400Response';
+import ListWalletTransactions401Response from '../model/ListWalletTransactions401Response';
+import ListWalletTransactions403Response from '../model/ListWalletTransactions403Response';
 import ListWalletTransactionsR from '../model/ListWalletTransactionsR';
 
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class InformativeApi {
 

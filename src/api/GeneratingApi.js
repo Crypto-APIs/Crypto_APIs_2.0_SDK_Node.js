@@ -13,23 +13,23 @@
 
 
 import ApiClient from "../ApiClient";
+import GenerateDepositAddress400Response from '../model/GenerateDepositAddress400Response';
+import GenerateDepositAddress401Response from '../model/GenerateDepositAddress401Response';
+import GenerateDepositAddress403Response from '../model/GenerateDepositAddress403Response';
 import GenerateDepositAddressR from '../model/GenerateDepositAddressR';
 import GenerateDepositAddressRB from '../model/GenerateDepositAddressRB';
-import InlineResponse4008 from '../model/InlineResponse4008';
-import InlineResponse4018 from '../model/InlineResponse4018';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse4038 from '../model/InlineResponse4038';
-import InlineResponse4041 from '../model/InlineResponse4041';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
 
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class GeneratingApi {
 

@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListTransactionsByBlockHashRIBSD2Vin from './ListTransactionsByBlockHashRIBSD2Vin';
-import ListTransactionsByBlockHashRIBSD2Vout from './ListTransactionsByBlockHashRIBSD2Vout';
+import ListTransactionsByBlockHashRIBSD2VinInner from './ListTransactionsByBlockHashRIBSD2VinInner';
+import ListTransactionsByBlockHashRIBSD2VoutInner from './ListTransactionsByBlockHashRIBSD2VoutInner';
 
 /**
  * The ListTransactionsByBlockHashRIBSD2 model module.
  * @module model/ListTransactionsByBlockHashRIBSD2
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListTransactionsByBlockHashRIBSD2 {
     /**
@@ -28,8 +28,8 @@ class ListTransactionsByBlockHashRIBSD2 {
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param size {Number} Represents the total size of this transaction.
      * @param version {Number} Represents transaction version number.
-     * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSD2Vin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/ListTransactionsByBlockHashRIBSD2Vout>} Represents the transaction outputs.
+     * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSD2VinInner>} Represents the transaction inputs.
+     * @param vout {Array.<module:model/ListTransactionsByBlockHashRIBSD2VoutInner>} Represents the transaction outputs.
      */
     constructor(locktime, size, version, vin, vout) { 
         
@@ -70,10 +70,10 @@ class ListTransactionsByBlockHashRIBSD2 {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHashRIBSD2Vin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHashRIBSD2VinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHashRIBSD2Vout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHashRIBSD2VoutInner]);
             }
         }
         return obj;
@@ -102,13 +102,13 @@ ListTransactionsByBlockHashRIBSD2.prototype['version'] = undefined;
 
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSD2Vin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSD2VinInner>} vin
  */
 ListTransactionsByBlockHashRIBSD2.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSD2Vout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSD2VoutInner>} vout
  */
 ListTransactionsByBlockHashRIBSD2.prototype['vout'] = undefined;
 

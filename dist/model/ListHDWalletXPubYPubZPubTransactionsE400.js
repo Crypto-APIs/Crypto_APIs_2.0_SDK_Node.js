@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _BannedIpAddressDetails = _interopRequireDefault(require("./BannedIpAddressDetails"));
+var _BannedIpAddressDetailsInner = _interopRequireDefault(require("./BannedIpAddressDetailsInner"));
 
 var _InvalidBlockchain = _interopRequireDefault(require("./InvalidBlockchain"));
 
@@ -34,7 +34,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsE400 model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsE400
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListHDWalletXPubYPubZPubTransactionsE400 = /*#__PURE__*/function () {
   /**
@@ -119,7 +119,7 @@ var ListHDWalletXPubYPubZPubTransactionsE400 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetails["default"]]);
+          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
         }
       }
 
@@ -143,7 +143,7 @@ ListHDWalletXPubYPubZPubTransactionsE400.prototype['code'] = undefined;
 
 ListHDWalletXPubYPubZPubTransactionsE400.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 ListHDWalletXPubYPubZPubTransactionsE400.prototype['details'] = undefined; // Implement UriNotFound interface:
@@ -161,7 +161,7 @@ _UriNotFound["default"].prototype['code'] = undefined;
 
 _UriNotFound["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _UriNotFound["default"].prototype['details'] = undefined; // Implement LimitGreaterThanAllowed interface:
@@ -179,7 +179,7 @@ _LimitGreaterThanAllowed["default"].prototype['code'] = undefined;
 
 _LimitGreaterThanAllowed["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _LimitGreaterThanAllowed["default"].prototype['details'] = undefined; // Implement InvalidPagination interface:
@@ -197,7 +197,7 @@ _InvalidPagination["default"].prototype['code'] = undefined;
 
 _InvalidPagination["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _InvalidPagination["default"].prototype['details'] = undefined; // Implement InvalidXpub interface:
@@ -215,7 +215,7 @@ _InvalidXpub["default"].prototype['code'] = undefined;
 
 _InvalidXpub["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _InvalidXpub["default"].prototype['details'] = undefined; // Implement InvalidBlockchain interface:
@@ -233,7 +233,7 @@ _InvalidBlockchain["default"].prototype['code'] = undefined;
 
 _InvalidBlockchain["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _InvalidBlockchain["default"].prototype['details'] = undefined; // Implement InvalidNetwork interface:
@@ -251,7 +251,7 @@ _InvalidNetwork["default"].prototype['code'] = undefined;
 
 _InvalidNetwork["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _InvalidNetwork["default"].prototype['details'] = undefined; // Implement XpubNotSynced interface:
@@ -269,7 +269,7 @@ _XpubNotSynced["default"].prototype['code'] = undefined;
 
 _XpubNotSynced["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _XpubNotSynced["default"].prototype['details'] = undefined;

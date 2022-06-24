@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **transactionHash** | **String** | Represents the same as transactionId for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols hash is different from transactionId for SegWit transactions. | 
 **vSize** | **Number** | Represents the virtual size of this transaction. | 
 **version** | **Number** | Represents the transaction version number. | 
-**vin** | [**[DecodeRawTransactionHexRISBVin]**](DecodeRawTransactionHexRISBVin.md) | Represents the transaction inputs. | 
-**vout** | [**[DecodeRawTransactionHexRISBVout]**](DecodeRawTransactionHexRISBVout.md) | Represents the transaction outputs. | 
+**vin** | [**[DecodeRawTransactionHexRISBVinInner]**](DecodeRawTransactionHexRISBVinInner.md) | Represents the transaction inputs. | 
+**vout** | [**[DecodeRawTransactionHexRISBVoutInner]**](DecodeRawTransactionHexRISBVoutInner.md) | Represents the transaction outputs. | 
 **weight** | **Number** | Represents the size of Bitcoin block, measured in weight units and including the segwit discount. | [optional] 
 
 

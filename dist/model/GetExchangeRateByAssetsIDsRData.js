@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetsIDsRData model module.
  * @module model/GetExchangeRateByAssetsIDsRData
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetExchangeRateByAssetsIDsRData = /*#__PURE__*/function () {
   /**

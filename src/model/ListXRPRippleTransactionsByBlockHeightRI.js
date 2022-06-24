@@ -15,14 +15,14 @@ import ApiClient from '../ApiClient';
 import ListXRPRippleTransactionsByBlockHeightRIFee from './ListXRPRippleTransactionsByBlockHeightRIFee';
 import ListXRPRippleTransactionsByBlockHeightRIOffer from './ListXRPRippleTransactionsByBlockHeightRIOffer';
 import ListXRPRippleTransactionsByBlockHeightRIReceive from './ListXRPRippleTransactionsByBlockHeightRIReceive';
-import ListXRPRippleTransactionsByBlockHeightRIRecipients from './ListXRPRippleTransactionsByBlockHeightRIRecipients';
-import ListXRPRippleTransactionsByBlockHeightRISenders from './ListXRPRippleTransactionsByBlockHeightRISenders';
+import ListXRPRippleTransactionsByBlockHeightRIRecipientsInner from './ListXRPRippleTransactionsByBlockHeightRIRecipientsInner';
+import ListXRPRippleTransactionsByBlockHeightRISendersInner from './ListXRPRippleTransactionsByBlockHeightRISendersInner';
 import ListXRPRippleTransactionsByBlockHeightRIValue from './ListXRPRippleTransactionsByBlockHeightRIValue';
 
 /**
  * The ListXRPRippleTransactionsByBlockHeightRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListXRPRippleTransactionsByBlockHeightRI {
     /**
@@ -30,8 +30,8 @@ class ListXRPRippleTransactionsByBlockHeightRI {
      * @alias module:model/ListXRPRippleTransactionsByBlockHeightRI
      * @param index {Number} 
      * @param minedInBlockHash {String} 
-     * @param recipients {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRIRecipients>} Object Array representation of transaction receivers
-     * @param senders {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRISenders>} Object Array representation of transaction senders
+     * @param recipients {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRIRecipientsInner>} Object Array representation of transaction receivers
+     * @param senders {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRISendersInner>} Object Array representation of transaction senders
      * @param sequence {Number} 
      * @param status {String} 
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
@@ -92,10 +92,10 @@ class ListXRPRippleTransactionsByBlockHeightRI {
                 obj['minedInBlockHash'] = ApiClient.convertToType(data['minedInBlockHash'], 'String');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListXRPRippleTransactionsByBlockHeightRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListXRPRippleTransactionsByBlockHeightRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [ListXRPRippleTransactionsByBlockHeightRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [ListXRPRippleTransactionsByBlockHeightRISendersInner]);
             }
             if (data.hasOwnProperty('sequence')) {
                 obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
@@ -153,13 +153,13 @@ ListXRPRippleTransactionsByBlockHeightRI.prototype['minedInBlockHash'] = undefin
 
 /**
  * Object Array representation of transaction receivers
- * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRIRecipients>} recipients
+ * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRIRecipientsInner>} recipients
  */
 ListXRPRippleTransactionsByBlockHeightRI.prototype['recipients'] = undefined;
 
 /**
  * Object Array representation of transaction senders
- * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRISenders>} senders
+ * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRISendersInner>} senders
  */
 ListXRPRippleTransactionsByBlockHeightRI.prototype['senders'] = undefined;
 

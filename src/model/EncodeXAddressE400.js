@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import InvalidBlockchain from './InvalidBlockchain';
 import InvalidNetwork from './InvalidNetwork';
 import InvalidPagination from './InvalidPagination';
@@ -22,7 +22,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The EncodeXAddressE400 model module.
  * @module model/EncodeXAddressE400
- * @version 1.5.0
+ * @version 1.6.0
  */
 class EncodeXAddressE400 {
     /**
@@ -74,7 +74,7 @@ class EncodeXAddressE400 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -96,7 +96,7 @@ EncodeXAddressE400.prototype['code'] = undefined;
 EncodeXAddressE400.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 EncodeXAddressE400.prototype['details'] = undefined;
 
@@ -113,7 +113,7 @@ UriNotFound.prototype['code'] = undefined;
  */
 UriNotFound.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 UriNotFound.prototype['details'] = undefined;
 // Implement LimitGreaterThanAllowed interface:
@@ -128,7 +128,7 @@ LimitGreaterThanAllowed.prototype['code'] = undefined;
  */
 LimitGreaterThanAllowed.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 LimitGreaterThanAllowed.prototype['details'] = undefined;
 // Implement InvalidPagination interface:
@@ -143,7 +143,7 @@ InvalidPagination.prototype['code'] = undefined;
  */
 InvalidPagination.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidPagination.prototype['details'] = undefined;
 // Implement InvalidBlockchain interface:
@@ -158,7 +158,7 @@ InvalidBlockchain.prototype['code'] = undefined;
  */
 InvalidBlockchain.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidBlockchain.prototype['details'] = undefined;
 // Implement InvalidNetwork interface:
@@ -173,7 +173,7 @@ InvalidNetwork.prototype['code'] = undefined;
  */
 InvalidNetwork.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidNetwork.prototype['details'] = undefined;
 

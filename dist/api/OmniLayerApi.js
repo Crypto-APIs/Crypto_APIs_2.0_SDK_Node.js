@@ -7,81 +7,81 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetOmniTransactionDetailsByTransactionIDTxid400Response = _interopRequireDefault(require("../model/GetOmniTransactionDetailsByTransactionIDTxid400Response"));
+
+var _GetOmniTransactionDetailsByTransactionIDTxid401Response = _interopRequireDefault(require("../model/GetOmniTransactionDetailsByTransactionIDTxid401Response"));
+
+var _GetOmniTransactionDetailsByTransactionIDTxid403Response = _interopRequireDefault(require("../model/GetOmniTransactionDetailsByTransactionIDTxid403Response"));
+
 var _GetOmniTransactionDetailsByTransactionIDTxidR = _interopRequireDefault(require("../model/GetOmniTransactionDetailsByTransactionIDTxidR"));
+
+var _GetTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionID404Response"));
+
+var _GetUnconfirmedOmniTransactionByTransactionIDTxid400Response = _interopRequireDefault(require("../model/GetUnconfirmedOmniTransactionByTransactionIDTxid400Response"));
+
+var _GetUnconfirmedOmniTransactionByTransactionIDTxid401Response = _interopRequireDefault(require("../model/GetUnconfirmedOmniTransactionByTransactionIDTxid401Response"));
+
+var _GetUnconfirmedOmniTransactionByTransactionIDTxid403Response = _interopRequireDefault(require("../model/GetUnconfirmedOmniTransactionByTransactionIDTxid403Response"));
 
 var _GetUnconfirmedOmniTransactionByTransactionIDTxidR = _interopRequireDefault(require("../model/GetUnconfirmedOmniTransactionByTransactionIDTxidR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse4001"));
+var _ListOmniTokensByAddress400Response = _interopRequireDefault(require("../model/ListOmniTokensByAddress400Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40012"));
+var _ListOmniTokensByAddress401Response = _interopRequireDefault(require("../model/ListOmniTokensByAddress401Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40020"));
-
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40029"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40033"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40041"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40047"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse4005"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse4011"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40112"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40120"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40129"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40133"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40141"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40147"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4015"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse4031"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40312"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40320"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40329"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40333"));
-
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40341"));
-
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40347"));
-
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse4035"));
-
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse404"));
-
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListOmniTokensByAddress403Response = _interopRequireDefault(require("../model/ListOmniTokensByAddress403Response"));
 
 var _ListOmniTokensByAddressR = _interopRequireDefault(require("../model/ListOmniTokensByAddressR"));
 
+var _ListOmniTransactionsByAddress400Response = _interopRequireDefault(require("../model/ListOmniTransactionsByAddress400Response"));
+
+var _ListOmniTransactionsByAddress401Response = _interopRequireDefault(require("../model/ListOmniTransactionsByAddress401Response"));
+
+var _ListOmniTransactionsByAddress403Response = _interopRequireDefault(require("../model/ListOmniTransactionsByAddress403Response"));
+
 var _ListOmniTransactionsByAddressR = _interopRequireDefault(require("../model/ListOmniTransactionsByAddressR"));
+
+var _ListOmniTransactionsByBlockHash400Response = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHash400Response"));
+
+var _ListOmniTransactionsByBlockHash401Response = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHash401Response"));
+
+var _ListOmniTransactionsByBlockHash403Response = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHash403Response"));
 
 var _ListOmniTransactionsByBlockHashR = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHashR"));
 
+var _ListOmniTransactionsByBlockHeight400Response = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHeight400Response"));
+
+var _ListOmniTransactionsByBlockHeight401Response = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHeight401Response"));
+
+var _ListOmniTransactionsByBlockHeight403Response = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHeight403Response"));
+
 var _ListOmniTransactionsByBlockHeightR = _interopRequireDefault(require("../model/ListOmniTransactionsByBlockHeightR"));
 
+var _ListUnconfirmedOmniTransactionsByAddress400Response = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByAddress400Response"));
+
+var _ListUnconfirmedOmniTransactionsByAddress401Response = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByAddress401Response"));
+
+var _ListUnconfirmedOmniTransactionsByAddress403Response = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByAddress403Response"));
+
 var _ListUnconfirmedOmniTransactionsByAddressR = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByAddressR"));
+
+var _ListUnconfirmedOmniTransactionsByPropertyID400Response = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByPropertyID400Response"));
+
+var _ListUnconfirmedOmniTransactionsByPropertyID401Response = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByPropertyID401Response"));
+
+var _ListUnconfirmedOmniTransactionsByPropertyID403Response = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByPropertyID403Response"));
 
 var _ListUnconfirmedOmniTransactionsByPropertyIDR = _interopRequireDefault(require("../model/ListUnconfirmedOmniTransactionsByPropertyIDR"));
 
@@ -96,7 +96,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * OmniLayer service.
 * @module api/OmniLayerApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var OmniLayerApi = /*#__PURE__*/function () {
   /**

@@ -9,9 +9,9 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _GetZilliqaTransactionDetailsByTransactionIDRIFee = _interopRequireDefault(require("./GetZilliqaTransactionDetailsByTransactionIDRIFee"));
 
-var _ListZilliqaTransactionsByAddressRIRecipients = _interopRequireDefault(require("./ListZilliqaTransactionsByAddressRIRecipients"));
+var _ListZilliqaTransactionsByAddressRIRecipientsInner = _interopRequireDefault(require("./ListZilliqaTransactionsByAddressRIRecipientsInner"));
 
-var _ListZilliqaTransactionsByAddressRISenders = _interopRequireDefault(require("./ListZilliqaTransactionsByAddressRISenders"));
+var _ListZilliqaTransactionsByAddressRISendersInner = _interopRequireDefault(require("./ListZilliqaTransactionsByAddressRISendersInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHeightRI model module.
  * @module model/ListZilliqaTransactionsByBlockHeightRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListZilliqaTransactionsByBlockHeightRI = /*#__PURE__*/function () {
   /**
@@ -36,8 +36,8 @@ var ListZilliqaTransactionsByBlockHeightRI = /*#__PURE__*/function () {
    * @param gasUsed {Number} Defines how much of the gas for the block has been used.
    * @param minedInBlockHash {String} Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
    * @param nonce {Number} Represents a random value that can be adjusted to satisfy the Proof of Work.
-   * @param recipients {Array.<module:model/ListZilliqaTransactionsByAddressRIRecipients>} Defines an object array of the transaction recipients.
-   * @param senders {Array.<module:model/ListZilliqaTransactionsByAddressRISenders>} Represents an object of addresses that provide the funds.
+   * @param recipients {Array.<module:model/ListZilliqaTransactionsByAddressRIRecipientsInner>} Defines an object array of the transaction recipients.
+   * @param senders {Array.<module:model/ListZilliqaTransactionsByAddressRISendersInner>} Represents an object of addresses that provide the funds.
    * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
    * @param transactionHash {String} Represents the hash of the transaction, which is its unique identifier.
    * @param transactionIndex {Number} Defines the numeric representation of the transaction index.
@@ -110,11 +110,11 @@ var ListZilliqaTransactionsByBlockHeightRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListZilliqaTransactionsByAddressRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListZilliqaTransactionsByAddressRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListZilliqaTransactionsByAddressRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListZilliqaTransactionsByAddressRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('timestamp')) {
@@ -178,13 +178,13 @@ ListZilliqaTransactionsByBlockHeightRI.prototype['minedInBlockHash'] = undefined
 ListZilliqaTransactionsByBlockHeightRI.prototype['nonce'] = undefined;
 /**
  * Defines an object array of the transaction recipients.
- * @member {Array.<module:model/ListZilliqaTransactionsByAddressRIRecipients>} recipients
+ * @member {Array.<module:model/ListZilliqaTransactionsByAddressRIRecipientsInner>} recipients
  */
 
 ListZilliqaTransactionsByBlockHeightRI.prototype['recipients'] = undefined;
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/ListZilliqaTransactionsByAddressRISenders>} senders
+ * @member {Array.<module:model/ListZilliqaTransactionsByAddressRISendersInner>} senders
  */
 
 ListZilliqaTransactionsByBlockHeightRI.prototype['senders'] = undefined;

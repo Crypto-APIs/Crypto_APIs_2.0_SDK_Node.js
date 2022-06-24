@@ -9,9 +9,9 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _ListDepositAddressesRIConfirmedBalance = _interopRequireDefault(require("./ListDepositAddressesRIConfirmedBalance"));
 
-var _ListDepositAddressesRIFungibleTokens = _interopRequireDefault(require("./ListDepositAddressesRIFungibleTokens"));
+var _ListDepositAddressesRIFungibleTokensInner = _interopRequireDefault(require("./ListDepositAddressesRIFungibleTokensInner"));
 
-var _ListDepositAddressesRINonFungibleTokens = _interopRequireDefault(require("./ListDepositAddressesRINonFungibleTokens"));
+var _ListDepositAddressesRINonFungibleTokensInner = _interopRequireDefault(require("./ListDepositAddressesRINonFungibleTokensInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesRI model module.
  * @module model/ListDepositAddressesRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListDepositAddressesRI = /*#__PURE__*/function () {
   /**
@@ -33,10 +33,10 @@ var ListDepositAddressesRI = /*#__PURE__*/function () {
    * @param address {String} Specifies the specific address's unique string value.
    * @param confirmedBalance {module:model/ListDepositAddressesRIConfirmedBalance} 
    * @param createdTimestamp {Number} Defines the specific UNIX time when the deposit address was created.
-   * @param fungibleTokens {Array.<module:model/ListDepositAddressesRIFungibleTokens>} Represents fungible tokens'es detailed information
+   * @param fungibleTokens {Array.<module:model/ListDepositAddressesRIFungibleTokensInner>} Represents fungible tokens'es detailed information
    * @param index {String} Represents the index of the address in the wallet.
    * @param label {String} Represents a custom tag that customers can set up for their Wallets and addresses. E.g. custom label named \"Special addresses\".
-   * @param nonFungibleTokens {Array.<module:model/ListDepositAddressesRINonFungibleTokens>} Represents non-fungible tokens'es detailed information.
+   * @param nonFungibleTokens {Array.<module:model/ListDepositAddressesRINonFungibleTokensInner>} Represents non-fungible tokens'es detailed information.
    */
   function ListDepositAddressesRI(address, confirmedBalance, createdTimestamp, fungibleTokens, index, label, nonFungibleTokens) {
     _classCallCheck(this, ListDepositAddressesRI);
@@ -88,7 +88,7 @@ var ListDepositAddressesRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('fungibleTokens')) {
-          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_ListDepositAddressesRIFungibleTokens["default"]]);
+          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_ListDepositAddressesRIFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('index')) {
@@ -100,7 +100,7 @@ var ListDepositAddressesRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('nonFungibleTokens')) {
-          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_ListDepositAddressesRINonFungibleTokens["default"]]);
+          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_ListDepositAddressesRINonFungibleTokensInner["default"]]);
         }
       }
 
@@ -130,7 +130,7 @@ ListDepositAddressesRI.prototype['confirmedBalance'] = undefined;
 ListDepositAddressesRI.prototype['createdTimestamp'] = undefined;
 /**
  * Represents fungible tokens'es detailed information
- * @member {Array.<module:model/ListDepositAddressesRIFungibleTokens>} fungibleTokens
+ * @member {Array.<module:model/ListDepositAddressesRIFungibleTokensInner>} fungibleTokens
  */
 
 ListDepositAddressesRI.prototype['fungibleTokens'] = undefined;
@@ -148,7 +148,7 @@ ListDepositAddressesRI.prototype['index'] = undefined;
 ListDepositAddressesRI.prototype['label'] = undefined;
 /**
  * Represents non-fungible tokens'es detailed information.
- * @member {Array.<module:model/ListDepositAddressesRINonFungibleTokens>} nonFungibleTokens
+ * @member {Array.<module:model/ListDepositAddressesRINonFungibleTokensInner>} nonFungibleTokens
  */
 
 ListDepositAddressesRI.prototype['nonFungibleTokens'] = undefined;

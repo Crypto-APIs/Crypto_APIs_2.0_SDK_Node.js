@@ -12,16 +12,16 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSZVJoinSplit from './GetTransactionDetailsByTransactionIDRIBSZVJoinSplit';
-import GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput from './GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput';
-import GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend from './GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend';
-import GetWalletTransactionDetailsByTransactionIDRIBSZVin from './GetWalletTransactionDetailsByTransactionIDRIBSZVin';
-import ListTransactionsByBlockHeightRIBSZVout from './ListTransactionsByBlockHeightRIBSZVout';
+import GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner from './GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner';
+import GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner from './GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner';
+import GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner from './GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner';
+import GetWalletTransactionDetailsByTransactionIDRIBSZVinInner from './GetWalletTransactionDetailsByTransactionIDRIBSZVinInner';
+import ListTransactionsByBlockHeightRIBSZVoutInner from './ListTransactionsByBlockHeightRIBSZVoutInner';
 
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSZ model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSZ
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSZ {
     /**
@@ -38,8 +38,8 @@ class GetWalletTransactionDetailsByTransactionIDRIBSZ {
      * @param valueBalance {String} String representation of the transaction value balance
      * @param version {Number} Represents the transaction version number.
      * @param versionGroupId {String} Represents the transaction version group ID.
-     * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVin>} Object Array representation of transaction inputs
-     * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} Object Array representation of transaction outputs
+     * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
+     * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} Object Array representation of transaction outputs
      */
     constructor(bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, valueBalance, version, versionGroupId, vin, vout) { 
         
@@ -99,13 +99,13 @@ class GetWalletTransactionDetailsByTransactionIDRIBSZ {
                 obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
             if (data.hasOwnProperty('vJoinSplit')) {
-                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [GetTransactionDetailsByTransactionIDRIBSZVJoinSplit]);
+                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner]);
             }
             if (data.hasOwnProperty('vShieldedOutput')) {
-                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput]);
+                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner]);
             }
             if (data.hasOwnProperty('vShieldedSpend')) {
-                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend]);
+                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner]);
             }
             if (data.hasOwnProperty('valueBalance')) {
                 obj['valueBalance'] = ApiClient.convertToType(data['valueBalance'], 'String');
@@ -117,10 +117,10 @@ class GetWalletTransactionDetailsByTransactionIDRIBSZ {
                 obj['versionGroupId'] = ApiClient.convertToType(data['versionGroupId'], 'String');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [GetWalletTransactionDetailsByTransactionIDRIBSZVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [GetWalletTransactionDetailsByTransactionIDRIBSZVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHeightRIBSZVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHeightRIBSZVoutInner]);
             }
         }
         return obj;
@@ -173,19 +173,19 @@ GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['size'] = undefined;
 
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} vJoinSplit
  */
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vJoinSplit'] = undefined;
 
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vShieldedOutput'] = undefined;
 
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vShieldedSpend'] = undefined;
 
@@ -209,13 +209,13 @@ GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['versionGroupId'] = un
 
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVin>} vin
+ * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner>} vin
  */
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vin'] = undefined;
 
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} vout
  */
 GetWalletTransactionDetailsByTransactionIDRIBSZ.prototype['vout'] = undefined;
 

@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _BannedIpAddressDetails = _interopRequireDefault(require("./BannedIpAddressDetails"));
+var _BannedIpAddressDetailsInner = _interopRequireDefault(require("./BannedIpAddressDetailsInner"));
 
 var _InvalidApiKey = _interopRequireDefault(require("./InvalidApiKey"));
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressE401 model module.
  * @module model/ListInternalTransactionsByAddressE401
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListInternalTransactionsByAddressE401 = /*#__PURE__*/function () {
   /**
@@ -84,7 +84,7 @@ var ListInternalTransactionsByAddressE401 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetails["default"]]);
+          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
         }
       }
 
@@ -108,7 +108,7 @@ ListInternalTransactionsByAddressE401.prototype['code'] = undefined;
 
 ListInternalTransactionsByAddressE401.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 ListInternalTransactionsByAddressE401.prototype['details'] = undefined; // Implement MissingApiKey interface:
@@ -126,7 +126,7 @@ _MissingApiKey["default"].prototype['code'] = undefined;
 
 _MissingApiKey["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _MissingApiKey["default"].prototype['details'] = undefined; // Implement InvalidApiKey interface:
@@ -144,7 +144,7 @@ _InvalidApiKey["default"].prototype['code'] = undefined;
 
 _InvalidApiKey["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _InvalidApiKey["default"].prototype['details'] = undefined;

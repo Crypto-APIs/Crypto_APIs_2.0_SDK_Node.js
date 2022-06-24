@@ -12,19 +12,19 @@
  */
 
 import ApiClient from '../ApiClient';
-import CreateCoinsTransactionRequestFromWalletRBDataItemRecipients from './CreateCoinsTransactionRequestFromWalletRBDataItemRecipients';
+import CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner from './CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner';
 
 /**
  * The CreateCoinsTransactionRequestFromWalletRBDataItem model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRBDataItem
- * @version 1.5.0
+ * @version 1.6.0
  */
 class CreateCoinsTransactionRequestFromWalletRBDataItem {
     /**
      * Constructs a new <code>CreateCoinsTransactionRequestFromWalletRBDataItem</code>.
      * @alias module:model/CreateCoinsTransactionRequestFromWalletRBDataItem
      * @param feePriority {module:model/CreateCoinsTransactionRequestFromWalletRBDataItem.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-     * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients>} Defines the destination of the transaction, whether it is incoming or outgoing.
+     * @param recipients {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner>} Defines the destination of the transaction, whether it is incoming or outgoing.
      */
     constructor(feePriority, recipients) { 
         
@@ -68,7 +68,7 @@ class CreateCoinsTransactionRequestFromWalletRBDataItem {
                 obj['prepareStrategy'] = ApiClient.convertToType(data['prepareStrategy'], 'String');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateCoinsTransactionRequestFromWalletRBDataItemRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner]);
             }
         }
         return obj;
@@ -110,7 +110,7 @@ CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['prepareStrategy'] =
 
 /**
  * Defines the destination of the transaction, whether it is incoming or outgoing.
- * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipients>} recipients
+ * @member {Array.<module:model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner>} recipients
  */
 CreateCoinsTransactionRequestFromWalletRBDataItem.prototype['recipients'] = undefined;
 

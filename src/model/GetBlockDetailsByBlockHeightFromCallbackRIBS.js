@@ -29,7 +29,7 @@ import GetLatestMinedXRPRippleBlockRITotalFees from './GetLatestMinedXRPRippleBl
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBS model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBS
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetBlockDetailsByBlockHeightFromCallbackRIBS {
     /**

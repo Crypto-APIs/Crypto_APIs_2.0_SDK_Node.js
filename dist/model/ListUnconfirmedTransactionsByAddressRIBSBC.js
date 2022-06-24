@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _ListUnconfirmedTransactionsByAddressRIBSBCVin = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIBSBCVin"));
+var _ListUnconfirmedTransactionsByAddressRIBSBCVinInner = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIBSBCVinInner"));
 
-var _ListUnconfirmedTransactionsByAddressRIBSBCVout = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIBSBCVout"));
+var _ListUnconfirmedTransactionsByAddressRIBSBCVoutInner = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIBSBCVoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSBC model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSBC
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListUnconfirmedTransactionsByAddressRIBSBC = /*#__PURE__*/function () {
   /**
@@ -32,8 +32,8 @@ var ListUnconfirmedTransactionsByAddressRIBSBC = /*#__PURE__*/function () {
    * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
    * @param size {Number} Represents the total size of this transaction.
    * @param version {Number} Represents the transaction's version number.
-   * @param vin {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVin>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVout>} Represents the transaction outputs.
+   * @param vin {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVinInner>} Represents the transaction inputs.
+   * @param vout {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVoutInner>} Represents the transaction outputs.
    */
   function ListUnconfirmedTransactionsByAddressRIBSBC(locktime, size, version, vin, vout) {
     _classCallCheck(this, ListUnconfirmedTransactionsByAddressRIBSBC);
@@ -83,11 +83,11 @@ var ListUnconfirmedTransactionsByAddressRIBSBC = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListUnconfirmedTransactionsByAddressRIBSBCVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListUnconfirmedTransactionsByAddressRIBSBCVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListUnconfirmedTransactionsByAddressRIBSBCVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListUnconfirmedTransactionsByAddressRIBSBCVoutInner["default"]]);
         }
       }
 
@@ -118,13 +118,13 @@ ListUnconfirmedTransactionsByAddressRIBSBC.prototype['size'] = undefined;
 ListUnconfirmedTransactionsByAddressRIBSBC.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVin>} vin
+ * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVinInner>} vin
  */
 
 ListUnconfirmedTransactionsByAddressRIBSBC.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVout>} vout
+ * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVoutInner>} vout
  */
 
 ListUnconfirmedTransactionsByAddressRIBSBC.prototype['vout'] = undefined;

@@ -13,7 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import BannedIpAddress from './BannedIpAddress';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import BlockchainEventsCallbacksLimitReached from './BlockchainEventsCallbacksLimitReached';
 import EndpointNotAllowedForApiKey from './EndpointNotAllowedForApiKey';
 import EndpointNotAllowedForPlan from './EndpointNotAllowedForPlan';
@@ -22,7 +22,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The NewBlockE403 model module.
  * @module model/NewBlockE403
- * @version 1.5.0
+ * @version 1.6.0
  */
 class NewBlockE403 {
     /**
@@ -74,7 +74,7 @@ class NewBlockE403 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -96,7 +96,7 @@ NewBlockE403.prototype['code'] = undefined;
 NewBlockE403.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 NewBlockE403.prototype['details'] = undefined;
 
@@ -113,7 +113,7 @@ BannedIpAddress.prototype['code'] = undefined;
  */
 BannedIpAddress.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 BannedIpAddress.prototype['details'] = undefined;
 // Implement EndpointNotAllowedForPlan interface:
@@ -128,7 +128,7 @@ EndpointNotAllowedForPlan.prototype['code'] = undefined;
  */
 EndpointNotAllowedForPlan.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 EndpointNotAllowedForPlan.prototype['details'] = undefined;
 // Implement EndpointNotAllowedForApiKey interface:
@@ -143,7 +143,7 @@ EndpointNotAllowedForApiKey.prototype['code'] = undefined;
  */
 EndpointNotAllowedForApiKey.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 EndpointNotAllowedForApiKey.prototype['details'] = undefined;
 // Implement FeatureMainnetsNotAllowedForPlan interface:
@@ -158,7 +158,7 @@ FeatureMainnetsNotAllowedForPlan.prototype['code'] = undefined;
  */
 FeatureMainnetsNotAllowedForPlan.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 FeatureMainnetsNotAllowedForPlan.prototype['details'] = undefined;
 // Implement BlockchainEventsCallbacksLimitReached interface:
@@ -173,7 +173,7 @@ BlockchainEventsCallbacksLimitReached.prototype['code'] = undefined;
  */
 BlockchainEventsCallbacksLimitReached.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 BlockchainEventsCallbacksLimitReached.prototype['details'] = undefined;
 

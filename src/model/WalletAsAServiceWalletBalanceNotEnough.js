@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 
 /**
  * The WalletAsAServiceWalletBalanceNotEnough model module.
  * @module model/WalletAsAServiceWalletBalanceNotEnough
- * @version 1.5.0
+ * @version 1.6.0
  */
 class WalletAsAServiceWalletBalanceNotEnough {
     /**
@@ -60,7 +60,7 @@ class WalletAsAServiceWalletBalanceNotEnough {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -82,7 +82,7 @@ WalletAsAServiceWalletBalanceNotEnough.prototype['code'] = undefined;
 WalletAsAServiceWalletBalanceNotEnough.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 WalletAsAServiceWalletBalanceNotEnough.prototype['details'] = undefined;
 

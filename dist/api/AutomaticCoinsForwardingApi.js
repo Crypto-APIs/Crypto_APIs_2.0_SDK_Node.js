@@ -7,45 +7,45 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _CreateAutomaticCoinsForwarding400Response = _interopRequireDefault(require("../model/CreateAutomaticCoinsForwarding400Response"));
+
+var _CreateAutomaticCoinsForwarding401Response = _interopRequireDefault(require("../model/CreateAutomaticCoinsForwarding401Response"));
+
+var _CreateAutomaticCoinsForwarding403Response = _interopRequireDefault(require("../model/CreateAutomaticCoinsForwarding403Response"));
+
+var _CreateAutomaticCoinsForwarding409Response = _interopRequireDefault(require("../model/CreateAutomaticCoinsForwarding409Response"));
+
 var _CreateAutomaticCoinsForwardingR = _interopRequireDefault(require("../model/CreateAutomaticCoinsForwardingR"));
 
 var _CreateAutomaticCoinsForwardingRB = _interopRequireDefault(require("../model/CreateAutomaticCoinsForwardingRB"));
 
+var _DeleteAutomaticCoinsForwarding400Response = _interopRequireDefault(require("../model/DeleteAutomaticCoinsForwarding400Response"));
+
+var _DeleteAutomaticCoinsForwarding401Response = _interopRequireDefault(require("../model/DeleteAutomaticCoinsForwarding401Response"));
+
+var _DeleteAutomaticCoinsForwarding403Response = _interopRequireDefault(require("../model/DeleteAutomaticCoinsForwarding403Response"));
+
 var _DeleteAutomaticCoinsForwardingR = _interopRequireDefault(require("../model/DeleteAutomaticCoinsForwardingR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40089"));
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40090"));
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40091"));
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40189"));
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40190"));
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40191"));
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40389"));
+var _ListCoinsForwardingAutomations400Response = _interopRequireDefault(require("../model/ListCoinsForwardingAutomations400Response"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40390"));
+var _ListCoinsForwardingAutomations401Response = _interopRequireDefault(require("../model/ListCoinsForwardingAutomations401Response"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40391"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4041"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40916"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListCoinsForwardingAutomations403Response = _interopRequireDefault(require("../model/ListCoinsForwardingAutomations403Response"));
 
 var _ListCoinsForwardingAutomationsR = _interopRequireDefault(require("../model/ListCoinsForwardingAutomationsR"));
 
@@ -60,7 +60,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var AutomaticCoinsForwardingApi = /*#__PURE__*/function () {
   /**

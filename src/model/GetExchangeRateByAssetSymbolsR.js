@@ -17,7 +17,7 @@ import GetExchangeRateByAssetSymbolsRData from './GetExchangeRateByAssetSymbolsR
 /**
  * The GetExchangeRateByAssetSymbolsR model module.
  * @module model/GetExchangeRateByAssetSymbolsR
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetExchangeRateByAssetSymbolsR {
     /**

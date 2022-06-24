@@ -13,17 +13,17 @@
 
 import ApiClient from '../ApiClient';
 import ListWalletTransactionsRIFee from './ListWalletTransactionsRIFee';
-import ListWalletTransactionsRIFungibleTokens from './ListWalletTransactionsRIFungibleTokens';
-import ListWalletTransactionsRIInternalTransactions from './ListWalletTransactionsRIInternalTransactions';
-import ListWalletTransactionsRINonFungibleTokens from './ListWalletTransactionsRINonFungibleTokens';
-import ListWalletTransactionsRIRecipients from './ListWalletTransactionsRIRecipients';
-import ListWalletTransactionsRISenders from './ListWalletTransactionsRISenders';
+import ListWalletTransactionsRIFungibleTokensInner from './ListWalletTransactionsRIFungibleTokensInner';
+import ListWalletTransactionsRIInternalTransactionsInner from './ListWalletTransactionsRIInternalTransactionsInner';
+import ListWalletTransactionsRINonFungibleTokensInner from './ListWalletTransactionsRINonFungibleTokensInner';
+import ListWalletTransactionsRIRecipientsInner from './ListWalletTransactionsRIRecipientsInner';
+import ListWalletTransactionsRISendersInner from './ListWalletTransactionsRISendersInner';
 import ListWalletTransactionsRIValue from './ListWalletTransactionsRIValue';
 
 /**
  * The ListWalletTransactionsRI model module.
  * @module model/ListWalletTransactionsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListWalletTransactionsRI {
     /**
@@ -31,8 +31,8 @@ class ListWalletTransactionsRI {
      * @alias module:model/ListWalletTransactionsRI
      * @param direction {String} Defines the direction of the transaction, e.g. incoming.
      * @param fee {module:model/ListWalletTransactionsRIFee} 
-     * @param recipients {Array.<module:model/ListWalletTransactionsRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
-     * @param senders {Array.<module:model/ListWalletTransactionsRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param recipients {Array.<module:model/ListWalletTransactionsRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param senders {Array.<module:model/ListWalletTransactionsRISendersInner>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param status {String} Defines the status of the transaction, if it is confirmed or unconfirmed.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionId {String} Represents the unique TD of the transaction.
@@ -77,19 +77,19 @@ class ListWalletTransactionsRI {
                 obj['fee'] = ListWalletTransactionsRIFee.constructFromObject(data['fee']);
             }
             if (data.hasOwnProperty('fungibleTokens')) {
-                obj['fungibleTokens'] = ApiClient.convertToType(data['fungibleTokens'], [ListWalletTransactionsRIFungibleTokens]);
+                obj['fungibleTokens'] = ApiClient.convertToType(data['fungibleTokens'], [ListWalletTransactionsRIFungibleTokensInner]);
             }
             if (data.hasOwnProperty('internalTransactions')) {
-                obj['internalTransactions'] = ApiClient.convertToType(data['internalTransactions'], [ListWalletTransactionsRIInternalTransactions]);
+                obj['internalTransactions'] = ApiClient.convertToType(data['internalTransactions'], [ListWalletTransactionsRIInternalTransactionsInner]);
             }
             if (data.hasOwnProperty('nonFungibleTokens')) {
-                obj['nonFungibleTokens'] = ApiClient.convertToType(data['nonFungibleTokens'], [ListWalletTransactionsRINonFungibleTokens]);
+                obj['nonFungibleTokens'] = ApiClient.convertToType(data['nonFungibleTokens'], [ListWalletTransactionsRINonFungibleTokensInner]);
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListWalletTransactionsRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListWalletTransactionsRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [ListWalletTransactionsRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [ListWalletTransactionsRISendersInner]);
             }
             if (data.hasOwnProperty('status')) {
                 obj['status'] = ApiClient.convertToType(data['status'], 'String');
@@ -123,30 +123,30 @@ ListWalletTransactionsRI.prototype['fee'] = undefined;
 
 /**
  * Represents fungible tokens'es detailed information
- * @member {Array.<module:model/ListWalletTransactionsRIFungibleTokens>} fungibleTokens
+ * @member {Array.<module:model/ListWalletTransactionsRIFungibleTokensInner>} fungibleTokens
  */
 ListWalletTransactionsRI.prototype['fungibleTokens'] = undefined;
 
 /**
- * @member {Array.<module:model/ListWalletTransactionsRIInternalTransactions>} internalTransactions
+ * @member {Array.<module:model/ListWalletTransactionsRIInternalTransactionsInner>} internalTransactions
  */
 ListWalletTransactionsRI.prototype['internalTransactions'] = undefined;
 
 /**
  * Represents non-fungible tokens'es detailed information.
- * @member {Array.<module:model/ListWalletTransactionsRINonFungibleTokens>} nonFungibleTokens
+ * @member {Array.<module:model/ListWalletTransactionsRINonFungibleTokensInner>} nonFungibleTokens
  */
 ListWalletTransactionsRI.prototype['nonFungibleTokens'] = undefined;
 
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListWalletTransactionsRIRecipients>} recipients
+ * @member {Array.<module:model/ListWalletTransactionsRIRecipientsInner>} recipients
  */
 ListWalletTransactionsRI.prototype['recipients'] = undefined;
 
 /**
  * Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListWalletTransactionsRISenders>} senders
+ * @member {Array.<module:model/ListWalletTransactionsRISendersInner>} senders
  */
 ListWalletTransactionsRI.prototype['senders'] = undefined;
 

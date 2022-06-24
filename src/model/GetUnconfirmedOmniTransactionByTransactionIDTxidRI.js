@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients from './GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients';
-import GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders from './GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders';
+import GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipientsInner from './GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipientsInner';
+import GetUnconfirmedOmniTransactionByTransactionIDTxidRISendersInner from './GetUnconfirmedOmniTransactionByTransactionIDTxidRISendersInner';
 import ListUnconfirmedOmniTransactionsByAddressRIFee from './ListUnconfirmedOmniTransactionsByAddressRIFee';
 
 /**
  * The GetUnconfirmedOmniTransactionByTransactionIDTxidRI model module.
  * @module model/GetUnconfirmedOmniTransactionByTransactionIDTxidRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetUnconfirmedOmniTransactionByTransactionIDTxidRI {
     /**
@@ -29,8 +29,8 @@ class GetUnconfirmedOmniTransactionByTransactionIDTxidRI {
      * @param divisible {Boolean} Defines whether the attribute can be divisible or not, as boolean. E.g., if it is \"true\", the attribute is divisible.
      * @param mined {Boolean} Defines whether the transaction has been mined or not, as boolean. E.g. if set to \"true\", it means the transaction is mined.
      * @param propertyId {Number} Represents the identifier of the tokens to send.
-     * @param recipients {Array.<module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients>} Represents an object of addresses that receive the transactions.
-     * @param senders {Array.<module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+     * @param senders {Array.<module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidRISendersInner>} Represents an object of addresses that provide the funds.
      * @param sent {Boolean} Defines whether the transaction has been sent or not, as boolean. E.g. if set to \"true\", it means the transaction is sent.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionId {String} String representation of the transaction identifier (txid)
@@ -89,10 +89,10 @@ class GetUnconfirmedOmniTransactionByTransactionIDTxidRI {
                 obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [GetUnconfirmedOmniTransactionByTransactionIDTxidRISendersInner]);
             }
             if (data.hasOwnProperty('sent')) {
                 obj['sent'] = ApiClient.convertToType(data['sent'], 'Boolean');
@@ -148,13 +148,13 @@ GetUnconfirmedOmniTransactionByTransactionIDTxidRI.prototype['propertyId'] = und
 
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipients>} recipients
+ * @member {Array.<module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidRIRecipientsInner>} recipients
  */
 GetUnconfirmedOmniTransactionByTransactionIDTxidRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidRISenders>} senders
+ * @member {Array.<module:model/GetUnconfirmedOmniTransactionByTransactionIDTxidRISendersInner>} senders
  */
 GetUnconfirmedOmniTransactionByTransactionIDTxidRI.prototype['senders'] = undefined;
 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **size** | **Number** | Represents the total size of this transaction. | 
 **vSize** | **Number** | Represents the virtual size of this transaction. | 
 **version** | **Number** | Represents the transaction version number. | 
-**vin** | [**[ListTransactionsByBlockHashRIBSBVin]**](ListTransactionsByBlockHashRIBSBVin.md) | Represents the transaction inputs. | 
-**vout** | [**[ListTransactionsByBlockHashRIBSBVout]**](ListTransactionsByBlockHashRIBSBVout.md) | Represents the transaction outputs. | 
+**vin** | [**[ListTransactionsByBlockHashRIBSBVinInner]**](ListTransactionsByBlockHashRIBSBVinInner.md) | Represents the transaction inputs. | 
+**vout** | [**[ListTransactionsByBlockHashRIBSBVoutInner]**](ListTransactionsByBlockHashRIBSBVoutInner.md) | Represents the transaction outputs. | 
 
 

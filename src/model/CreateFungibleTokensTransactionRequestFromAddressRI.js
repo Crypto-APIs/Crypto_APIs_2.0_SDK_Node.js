@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import CreateFungibleTokensTransactionRequestFromAddressRIRecipients from './CreateFungibleTokensTransactionRequestFromAddressRIRecipients';
+import CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner from './CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner';
 import CreateFungibleTokensTransactionRequestFromAddressRIS from './CreateFungibleTokensTransactionRequestFromAddressRIS';
 import CreateFungibleTokensTransactionRequestFromAddressRISenders from './CreateFungibleTokensTransactionRequestFromAddressRISenders';
 
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRI model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRI {
     /**
@@ -28,7 +28,7 @@ class CreateFungibleTokensTransactionRequestFromAddressRI {
      * @param callbackSecretKey {String} Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
      * @param callbackUrl {String} Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
      * @param feePriority {module:model/CreateFungibleTokensTransactionRequestFromAddressRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-     * @param recipients {Array.<module:model/CreateFungibleTokensTransactionRequestFromAddressRIRecipients>} Defines the destination for the transaction, i.e. the recipient(s).
+     * @param recipients {Array.<module:model/CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner>} Defines the destination for the transaction, i.e. the recipient(s).
      * @param senders {module:model/CreateFungibleTokensTransactionRequestFromAddressRISenders} 
      * @param tokenTypeSpecificData {module:model/CreateFungibleTokensTransactionRequestFromAddressRIS} 
      * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
@@ -77,7 +77,7 @@ class CreateFungibleTokensTransactionRequestFromAddressRI {
                 obj['note'] = ApiClient.convertToType(data['note'], 'String');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateFungibleTokensTransactionRequestFromAddressRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
                 obj['senders'] = CreateFungibleTokensTransactionRequestFromAddressRISenders.constructFromObject(data['senders']);
@@ -121,7 +121,7 @@ CreateFungibleTokensTransactionRequestFromAddressRI.prototype['note'] = undefine
 
 /**
  * Defines the destination for the transaction, i.e. the recipient(s).
- * @member {Array.<module:model/CreateFungibleTokensTransactionRequestFromAddressRIRecipients>} recipients
+ * @member {Array.<module:model/CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner>} recipients
  */
 CreateFungibleTokensTransactionRequestFromAddressRI.prototype['recipients'] = undefined;
 

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWalletsRData model module.
  * @module model/ListAllAssetsFromAllWalletsRData
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListAllAssetsFromAllWalletsRData = /*#__PURE__*/function () {
   /**

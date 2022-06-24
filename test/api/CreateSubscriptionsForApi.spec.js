@@ -88,6 +88,16 @@
         done();
       });
     });
+    describe('newConfirmedCoinsTransactionsForSpecificAmount', function() {
+      it('should call newConfirmedCoinsTransactionsForSpecificAmount successfully', function(done) {
+        //uncomment below and update the code to test newConfirmedCoinsTransactionsForSpecificAmount
+        //instance.newConfirmedCoinsTransactionsForSpecificAmount(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('newConfirmedInternalTransactions', function() {
       it('should call newConfirmedInternalTransactions successfully', function(done) {
         //uncomment below and update the code to test newConfirmedInternalTransactions
@@ -102,6 +112,26 @@
       it('should call newConfirmedInternalTransactionsAndEachConfirmation successfully', function(done) {
         //uncomment below and update the code to test newConfirmedInternalTransactionsAndEachConfirmation
         //instance.newConfirmedInternalTransactionsAndEachConfirmation(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('newConfirmedInternalTransactionsForSpecificAmount', function() {
+      it('should call newConfirmedInternalTransactionsForSpecificAmount successfully', function(done) {
+        //uncomment below and update the code to test newConfirmedInternalTransactionsForSpecificAmount
+        //instance.newConfirmedInternalTransactionsForSpecificAmount(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('newConfirmedTokenTransactionsForSpecificAmount', function() {
+      it('should call newConfirmedTokenTransactionsForSpecificAmount successfully', function(done) {
+        //uncomment below and update the code to test newConfirmedTokenTransactionsForSpecificAmount
+        //instance.newConfirmedTokenTransactionsForSpecificAmount(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

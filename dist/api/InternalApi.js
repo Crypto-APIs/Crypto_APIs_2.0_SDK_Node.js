@@ -7,41 +7,41 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetInternalTransactionByTransactionHashAndOperationId400Response = _interopRequireDefault(require("../model/GetInternalTransactionByTransactionHashAndOperationId400Response"));
+
+var _GetInternalTransactionByTransactionHashAndOperationId401Response = _interopRequireDefault(require("../model/GetInternalTransactionByTransactionHashAndOperationId401Response"));
+
+var _GetInternalTransactionByTransactionHashAndOperationId403Response = _interopRequireDefault(require("../model/GetInternalTransactionByTransactionHashAndOperationId403Response"));
+
+var _GetInternalTransactionByTransactionHashAndOperationId404Response = _interopRequireDefault(require("../model/GetInternalTransactionByTransactionHashAndOperationId404Response"));
+
 var _GetInternalTransactionByTransactionHashAndOperationIdR = _interopRequireDefault(require("../model/GetInternalTransactionByTransactionHashAndOperationIdR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40052"));
+var _ListInternalTransactionDetailsByTransactionHash400Response = _interopRequireDefault(require("../model/ListInternalTransactionDetailsByTransactionHash400Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40054"));
+var _ListInternalTransactionDetailsByTransactionHash401Response = _interopRequireDefault(require("../model/ListInternalTransactionDetailsByTransactionHash401Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40056"));
-
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40152"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40154"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40156"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40352"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40354"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40356"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4043"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListInternalTransactionDetailsByTransactionHash403Response = _interopRequireDefault(require("../model/ListInternalTransactionDetailsByTransactionHash403Response"));
 
 var _ListInternalTransactionDetailsByTransactionHashR = _interopRequireDefault(require("../model/ListInternalTransactionDetailsByTransactionHashR"));
+
+var _ListInternalTransactionsByAddress400Response = _interopRequireDefault(require("../model/ListInternalTransactionsByAddress400Response"));
+
+var _ListInternalTransactionsByAddress401Response = _interopRequireDefault(require("../model/ListInternalTransactionsByAddress401Response"));
+
+var _ListInternalTransactionsByAddress403Response = _interopRequireDefault(require("../model/ListInternalTransactionsByAddress403Response"));
 
 var _ListInternalTransactionsByAddressR = _interopRequireDefault(require("../model/ListInternalTransactionsByAddressR"));
 
@@ -56,7 +56,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var InternalApi = /*#__PURE__*/function () {
   /**

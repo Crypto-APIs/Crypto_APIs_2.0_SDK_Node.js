@@ -15,14 +15,14 @@ import ApiClient from '../ApiClient';
 import GetXRPRippleTransactionDetailsByTransactionIDRIFee from './GetXRPRippleTransactionDetailsByTransactionIDRIFee';
 import GetXRPRippleTransactionDetailsByTransactionIDRIOffer from './GetXRPRippleTransactionDetailsByTransactionIDRIOffer';
 import GetXRPRippleTransactionDetailsByTransactionIDRIReceive from './GetXRPRippleTransactionDetailsByTransactionIDRIReceive';
-import GetXRPRippleTransactionDetailsByTransactionIDRIRecipients from './GetXRPRippleTransactionDetailsByTransactionIDRIRecipients';
-import GetXRPRippleTransactionDetailsByTransactionIDRISenders from './GetXRPRippleTransactionDetailsByTransactionIDRISenders';
+import GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner from './GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner';
+import GetXRPRippleTransactionDetailsByTransactionIDRISendersInner from './GetXRPRippleTransactionDetailsByTransactionIDRISendersInner';
 import GetXRPRippleTransactionDetailsByTransactionIDRIValue from './GetXRPRippleTransactionDetailsByTransactionIDRIValue';
 
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRI model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetXRPRippleTransactionDetailsByTransactionIDRI {
     /**
@@ -34,8 +34,8 @@ class GetXRPRippleTransactionDetailsByTransactionIDRI {
      * @param minedInBlockHeight {String} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
      * @param offer {module:model/GetXRPRippleTransactionDetailsByTransactionIDRIOffer} 
      * @param receive {module:model/GetXRPRippleTransactionDetailsByTransactionIDRIReceive} 
-     * @param recipients {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients>} Represents an object of addresses that receive the transactions.
-     * @param senders {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+     * @param senders {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner>} Represents an object of addresses that provide the funds.
      * @param sequence {Number} Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
@@ -103,10 +103,10 @@ class GetXRPRippleTransactionDetailsByTransactionIDRI {
                 obj['receive'] = GetXRPRippleTransactionDetailsByTransactionIDRIReceive.constructFromObject(data['receive']);
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetXRPRippleTransactionDetailsByTransactionIDRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [GetXRPRippleTransactionDetailsByTransactionIDRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [GetXRPRippleTransactionDetailsByTransactionIDRISendersInner]);
             }
             if (data.hasOwnProperty('sequence')) {
                 obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
@@ -177,13 +177,13 @@ GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['receive'] = undefined
 
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients>} recipients
+ * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner>} recipients
  */
 GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISenders>} senders
+ * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner>} senders
  */
 GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['senders'] = undefined;
 

@@ -13,21 +13,21 @@
 
 
 import ApiClient from "../ApiClient";
-import InlineResponse400105 from '../model/InlineResponse400105';
-import InlineResponse401105 from '../model/InlineResponse401105';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse403105 from '../model/InlineResponse403105';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import ListSupportedAssets400Response from '../model/ListSupportedAssets400Response';
+import ListSupportedAssets401Response from '../model/ListSupportedAssets401Response';
+import ListSupportedAssets403Response from '../model/ListSupportedAssets403Response';
 import ListSupportedAssetsR from '../model/ListSupportedAssetsR';
 
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class MetadataApi {
 

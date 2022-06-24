@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionRequestDetailsRIRecipients from './GetTransactionRequestDetailsRIRecipients';
+import GetTransactionRequestDetailsRIRecipientsInner from './GetTransactionRequestDetailsRIRecipientsInner';
 
 /**
  * The GetTransactionRequestDetailsRI model module.
  * @module model/GetTransactionRequestDetailsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetTransactionRequestDetailsRI {
     /**
@@ -27,7 +27,7 @@ class GetTransactionRequestDetailsRI {
      * @param blockchain {module:model/GetTransactionRequestDetailsRI.BlockchainEnum} Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param feePriority {module:model/GetTransactionRequestDetailsRI.FeePriorityEnum} Defines the priority for the fee, if it is \"slow\", \"standard\" or \"fast\".
      * @param network {module:model/GetTransactionRequestDetailsRI.NetworkEnum} Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param recipients {Array.<module:model/GetTransactionRequestDetailsRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param recipients {Array.<module:model/GetTransactionRequestDetailsRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param totalTransactionAmount {String} Defines the total transaction amount.
      * @param transactionRequestStatus {module:model/GetTransactionRequestDetailsRI.TransactionRequestStatusEnum} Defines the status of the transaction request, e.g. pending.
      * @param transactionType {module:model/GetTransactionRequestDetailsRI.TransactionTypeEnum} Defines the transaction type, if it is for coins or tokens.
@@ -81,7 +81,7 @@ class GetTransactionRequestDetailsRI {
                 obj['network'] = ApiClient.convertToType(data['network'], 'String');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetTransactionRequestDetailsRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetTransactionRequestDetailsRIRecipientsInner]);
             }
             if (data.hasOwnProperty('totalTransactionAmount')) {
                 obj['totalTransactionAmount'] = ApiClient.convertToType(data['totalTransactionAmount'], 'String');
@@ -134,7 +134,7 @@ GetTransactionRequestDetailsRI.prototype['network'] = undefined;
 
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/GetTransactionRequestDetailsRIRecipients>} recipients
+ * @member {Array.<module:model/GetTransactionRequestDetailsRIRecipientsInner>} recipients
  */
 GetTransactionRequestDetailsRI.prototype['recipients'] = undefined;
 

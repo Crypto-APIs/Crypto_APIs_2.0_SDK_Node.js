@@ -7,55 +7,55 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetAddressDetailsFromCallback400Response = _interopRequireDefault(require("../model/GetAddressDetailsFromCallback400Response"));
+
+var _GetAddressDetailsFromCallback401Response = _interopRequireDefault(require("../model/GetAddressDetailsFromCallback401Response"));
+
+var _GetAddressDetailsFromCallback403Response = _interopRequireDefault(require("../model/GetAddressDetailsFromCallback403Response"));
+
+var _GetAddressDetailsFromCallback404Response = _interopRequireDefault(require("../model/GetAddressDetailsFromCallback404Response"));
+
 var _GetAddressDetailsFromCallbackR = _interopRequireDefault(require("../model/GetAddressDetailsFromCallbackR"));
+
+var _GetBlockDetailsByBlockHashFromCallback400Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHashFromCallback400Response"));
+
+var _GetBlockDetailsByBlockHashFromCallback401Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHashFromCallback401Response"));
+
+var _GetBlockDetailsByBlockHashFromCallback403Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHashFromCallback403Response"));
 
 var _GetBlockDetailsByBlockHashFromCallbackR = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHashFromCallbackR"));
 
+var _GetBlockDetailsByBlockHeightFromCallback400Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHeightFromCallback400Response"));
+
+var _GetBlockDetailsByBlockHeightFromCallback401Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHeightFromCallback401Response"));
+
+var _GetBlockDetailsByBlockHeightFromCallback403Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHeightFromCallback403Response"));
+
 var _GetBlockDetailsByBlockHeightFromCallbackR = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHeightFromCallbackR"));
+
+var _GetTransactionDetailsByTransactionIDFromCallback400Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDFromCallback400Response"));
+
+var _GetTransactionDetailsByTransactionIDFromCallback401Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDFromCallback401Response"));
+
+var _GetTransactionDetailsByTransactionIDFromCallback403Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDFromCallback403Response"));
 
 var _GetTransactionDetailsByTransactionIDFromCallbackR = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDFromCallbackR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40083"));
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40084"));
-
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40085"));
-
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40086"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40183"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40184"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40185"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40186"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40383"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40384"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40385"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40386"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse4041"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse4042"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4044"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListTransactionsByBlockHeight404Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHeight404Response"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -68,7 +68,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var CallbackDataApi = /*#__PURE__*/function () {
   /**
@@ -194,7 +194,7 @@ var CallbackDataApi = /*#__PURE__*/function () {
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = _GetBlockDetailsByBlockHashFromCallbackR["default"];
-      return this.apiClient.callApi('/blockcain-events/{blockchain}/{network}/blocks/hash/{blockHash}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/blocks/hash/{blockHash}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * Get Block Details By Block Hash From Callback
@@ -259,7 +259,7 @@ var CallbackDataApi = /*#__PURE__*/function () {
       var contentTypes = [];
       var accepts = ['application/json'];
       var returnType = _GetBlockDetailsByBlockHeightFromCallbackR["default"];
-      return this.apiClient.callApi('/blockcain-events/{blockchain}/{network}/blocks/height/{blockHeight}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+      return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/blocks/height/{blockHeight}', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
      * Get Block Details By Block Height From Callback

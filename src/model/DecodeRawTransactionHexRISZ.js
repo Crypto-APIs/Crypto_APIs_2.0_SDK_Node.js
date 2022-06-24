@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import DecodeRawTransactionHexRISZVin from './DecodeRawTransactionHexRISZVin';
-import DecodeRawTransactionHexRISZVout from './DecodeRawTransactionHexRISZVout';
+import DecodeRawTransactionHexRISZVinInner from './DecodeRawTransactionHexRISZVinInner';
+import DecodeRawTransactionHexRISZVoutInner from './DecodeRawTransactionHexRISZVoutInner';
 
 /**
  * The DecodeRawTransactionHexRISZ model module.
  * @module model/DecodeRawTransactionHexRISZ
- * @version 1.5.0
+ * @version 1.6.0
  */
 class DecodeRawTransactionHexRISZ {
     /**
@@ -33,8 +33,8 @@ class DecodeRawTransactionHexRISZ {
      * @param valueBalance {String} Defines the transaction value balance.
      * @param version {Number} Represents the transaction version number.
      * @param versionGroupId {String} Represents the transaction version group ID
-     * @param vin {Array.<module:model/DecodeRawTransactionHexRISZVin>} Represents the Inputs of the transaction
-     * @param vout {Array.<module:model/DecodeRawTransactionHexRISZVout>} Represents the Inputs of the transaction
+     * @param vin {Array.<module:model/DecodeRawTransactionHexRISZVinInner>} Represents the Inputs of the transaction
+     * @param vout {Array.<module:model/DecodeRawTransactionHexRISZVoutInner>} Represents the Inputs of the transaction
      */
     constructor(expiryHeight, locktime, overwintered, saplinged, transactionHash, valueBalance, version, versionGroupId, vin, vout) { 
         
@@ -95,10 +95,10 @@ class DecodeRawTransactionHexRISZ {
                 obj['versionGroupId'] = ApiClient.convertToType(data['versionGroupId'], 'String');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [DecodeRawTransactionHexRISZVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [DecodeRawTransactionHexRISZVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [DecodeRawTransactionHexRISZVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [DecodeRawTransactionHexRISZVoutInner]);
             }
         }
         return obj;
@@ -157,13 +157,13 @@ DecodeRawTransactionHexRISZ.prototype['versionGroupId'] = undefined;
 
 /**
  * Represents the Inputs of the transaction
- * @member {Array.<module:model/DecodeRawTransactionHexRISZVin>} vin
+ * @member {Array.<module:model/DecodeRawTransactionHexRISZVinInner>} vin
  */
 DecodeRawTransactionHexRISZ.prototype['vin'] = undefined;
 
 /**
  * Represents the Inputs of the transaction
- * @member {Array.<module:model/DecodeRawTransactionHexRISZVout>} vout
+ * @member {Array.<module:model/DecodeRawTransactionHexRISZVoutInner>} vout
  */
 DecodeRawTransactionHexRISZ.prototype['vout'] = undefined;
 

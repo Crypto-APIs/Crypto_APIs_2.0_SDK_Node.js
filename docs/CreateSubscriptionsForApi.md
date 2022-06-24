@@ -8,8 +8,11 @@ Method | HTTP request | Description
 [**newBlock**](CreateSubscriptionsForApi.md#newBlock) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/block-mined | New Block
 [**newConfirmedCoinsTransactions**](CreateSubscriptionsForApi.md#newConfirmedCoinsTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-confirmed | New confirmed coins transactions
 [**newConfirmedCoinsTransactionsAndEachConfirmation**](CreateSubscriptionsForApi.md#newConfirmedCoinsTransactionsAndEachConfirmation) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-confirmed-each-confirmation | New confirmed coins transactions and each confirmation
+[**newConfirmedCoinsTransactionsForSpecificAmount**](CreateSubscriptionsForApi.md#newConfirmedCoinsTransactionsForSpecificAmount) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/coins-transactions-for-specific-amount | New Confirmed Coins Transactions For Specific Amount
 [**newConfirmedInternalTransactions**](CreateSubscriptionsForApi.md#newConfirmedInternalTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-internal-transactions-confirmed | New confirmed internal transactions
 [**newConfirmedInternalTransactionsAndEachConfirmation**](CreateSubscriptionsForApi.md#newConfirmedInternalTransactionsAndEachConfirmation) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-internal-transactions-confirmed-each-confirmation | New confirmed internal transactions and each confirmation
+[**newConfirmedInternalTransactionsForSpecificAmount**](CreateSubscriptionsForApi.md#newConfirmedInternalTransactionsForSpecificAmount) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/internal-transactions-for-specific-amount | New Confirmed Internal Transactions For Specific Amount
+[**newConfirmedTokenTransactionsForSpecificAmount**](CreateSubscriptionsForApi.md#newConfirmedTokenTransactionsForSpecificAmount) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/tokens-transfers-for-specific-amount | New Confirmed Token Transactions For Specific Amount
 [**newConfirmedTokensTransactions**](CreateSubscriptionsForApi.md#newConfirmedTokensTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-confirmed | New confirmed tokens transactions
 [**newConfirmedTokensTransactionsAndEachConfirmation**](CreateSubscriptionsForApi.md#newConfirmedTokensTransactionsAndEachConfirmation) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-confirmed-each-confirmation | New confirmed tokens transactions and each confirmation
 [**newUnconfirmedCoinsTransactions**](CreateSubscriptionsForApi.md#newUnconfirmedCoinsTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-unconfirmed | New unconfirmed coins transactions
@@ -249,6 +252,64 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
+## newConfirmedCoinsTransactionsForSpecificAmount
+
+> NewConfirmedCoinsTransactionsForSpecificAmountR newConfirmedCoinsTransactionsForSpecificAmount(blockchain, network, opts)
+
+New Confirmed Coins Transactions For Specific Amount
+
+Through this endpoint customers can create callback subscriptions for a specific event and \&quot;amountHigherThan\&quot; value. In this case the event is when there are new incoming or outgoing confirmed coins transactions for the specified blockchain and the amount is equal or higher than the value specified.  By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs  filtered for the specified amount. The information is returned per specified address.    Being confirmed means that the transactions are verified by miners and added to the next block.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
+let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'newConfirmedCoinsTransactionsForSpecificAmountRB': new Cryptoapis.NewConfirmedCoinsTransactionsForSpecificAmountRB() // NewConfirmedCoinsTransactionsForSpecificAmountRB | 
+};
+apiInstance.newConfirmedCoinsTransactionsForSpecificAmount(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **newConfirmedCoinsTransactionsForSpecificAmountRB** | [**NewConfirmedCoinsTransactionsForSpecificAmountRB**](NewConfirmedCoinsTransactionsForSpecificAmountRB.md)|  | [optional] 
+
+### Return type
+
+[**NewConfirmedCoinsTransactionsForSpecificAmountR**](NewConfirmedCoinsTransactionsForSpecificAmountR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
 ## newConfirmedInternalTransactions
 
 > NewConfirmedInternalTransactionsR newConfirmedInternalTransactions(blockchain, network, opts)
@@ -354,6 +415,122 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**NewConfirmedInternalTransactionsAndEachConfirmationR**](NewConfirmedInternalTransactionsAndEachConfirmationR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## newConfirmedInternalTransactionsForSpecificAmount
+
+> NewConfirmedInternalTransactionsForSpecificAmountR newConfirmedInternalTransactionsForSpecificAmount(blockchain, network, opts)
+
+New Confirmed Internal Transactions For Specific Amount
+
+Through this endpoint customers can create callback subscriptions for a specific event and \&quot;amountHigherThan\&quot; value. In this case the event is when there are new confirmed internal transactions and the amount is equal or higher than a value, specified by the customer. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs, filtered for the specified amount.  Being confirmed means that the transactions are verified by miners and added to the next block
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
+let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'newConfirmedInternalTransactionsForSpecificAmountRB': new Cryptoapis.NewConfirmedInternalTransactionsForSpecificAmountRB() // NewConfirmedInternalTransactionsForSpecificAmountRB | 
+};
+apiInstance.newConfirmedInternalTransactionsForSpecificAmount(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **newConfirmedInternalTransactionsForSpecificAmountRB** | [**NewConfirmedInternalTransactionsForSpecificAmountRB**](NewConfirmedInternalTransactionsForSpecificAmountRB.md)|  | [optional] 
+
+### Return type
+
+[**NewConfirmedInternalTransactionsForSpecificAmountR**](NewConfirmedInternalTransactionsForSpecificAmountR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## newConfirmedTokenTransactionsForSpecificAmount
+
+> NewConfirmedTokenTransactionsForSpecificAmountR newConfirmedTokenTransactionsForSpecificAmount(blockchain, network, opts)
+
+New Confirmed Token Transactions For Specific Amount
+
+Through this endpoint customers can create callback subscriptions for a specific event and \&quot;amountHigherThan\&quot; value. In this case the event is when there are new incoming or outgoing confirmed token transactions for the specified blockchain and the amount is equal or higher than the value specified. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs, filtered for the specified amount.  Being confirmed means that the transactions are verified by miners and added to the next block. This endpoint refers to tokens transactions only, not coins.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
+let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'newConfirmedTokenTransactionsForSpecificAmountRB': new Cryptoapis.NewConfirmedTokenTransactionsForSpecificAmountRB() // NewConfirmedTokenTransactionsForSpecificAmountRB | 
+};
+apiInstance.newConfirmedTokenTransactionsForSpecificAmount(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **newConfirmedTokenTransactionsForSpecificAmountRB** | [**NewConfirmedTokenTransactionsForSpecificAmountRB**](NewConfirmedTokenTransactionsForSpecificAmountRB.md)|  | [optional] 
+
+### Return type
+
+[**NewConfirmedTokenTransactionsForSpecificAmountR**](NewConfirmedTokenTransactionsForSpecificAmountR.md)
 
 ### Authorization
 

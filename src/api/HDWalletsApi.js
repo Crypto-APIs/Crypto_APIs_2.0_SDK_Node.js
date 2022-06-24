@@ -13,43 +13,43 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetHDWalletXPubYPubZPubAssets400Response from '../model/GetHDWalletXPubYPubZPubAssets400Response';
+import GetHDWalletXPubYPubZPubAssets401Response from '../model/GetHDWalletXPubYPubZPubAssets401Response';
+import GetHDWalletXPubYPubZPubAssets403Response from '../model/GetHDWalletXPubYPubZPubAssets403Response';
+import GetHDWalletXPubYPubZPubAssets422Response from '../model/GetHDWalletXPubYPubZPubAssets422Response';
 import GetHDWalletXPubYPubZPubAssetsR from '../model/GetHDWalletXPubYPubZPubAssetsR';
+import GetHDWalletXPubYPubZPubDetails400Response from '../model/GetHDWalletXPubYPubZPubDetails400Response';
+import GetHDWalletXPubYPubZPubDetails401Response from '../model/GetHDWalletXPubYPubZPubDetails401Response';
+import GetHDWalletXPubYPubZPubDetails403Response from '../model/GetHDWalletXPubYPubZPubDetails403Response';
+import GetHDWalletXPubYPubZPubDetails422Response from '../model/GetHDWalletXPubYPubZPubDetails422Response';
 import GetHDWalletXPubYPubZPubDetailsR from '../model/GetHDWalletXPubYPubZPubDetailsR';
-import InlineResponse40046 from '../model/InlineResponse40046';
-import InlineResponse40050 from '../model/InlineResponse40050';
-import InlineResponse40051 from '../model/InlineResponse40051';
-import InlineResponse40053 from '../model/InlineResponse40053';
-import InlineResponse40055 from '../model/InlineResponse40055';
-import InlineResponse40146 from '../model/InlineResponse40146';
-import InlineResponse40150 from '../model/InlineResponse40150';
-import InlineResponse40151 from '../model/InlineResponse40151';
-import InlineResponse40153 from '../model/InlineResponse40153';
-import InlineResponse40155 from '../model/InlineResponse40155';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40346 from '../model/InlineResponse40346';
-import InlineResponse40350 from '../model/InlineResponse40350';
-import InlineResponse40351 from '../model/InlineResponse40351';
-import InlineResponse40353 from '../model/InlineResponse40353';
-import InlineResponse40355 from '../model/InlineResponse40355';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse4095 from '../model/InlineResponse4095';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse4221 from '../model/InlineResponse4221';
-import InlineResponse4222 from '../model/InlineResponse4222';
-import InlineResponse4223 from '../model/InlineResponse4223';
-import InlineResponse4224 from '../model/InlineResponse4224';
-import InlineResponse4225 from '../model/InlineResponse4225';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import ListHDWalletXPubYPubZPubTransactions400Response from '../model/ListHDWalletXPubYPubZPubTransactions400Response';
+import ListHDWalletXPubYPubZPubTransactions401Response from '../model/ListHDWalletXPubYPubZPubTransactions401Response';
+import ListHDWalletXPubYPubZPubTransactions403Response from '../model/ListHDWalletXPubYPubZPubTransactions403Response';
+import ListHDWalletXPubYPubZPubTransactions422Response from '../model/ListHDWalletXPubYPubZPubTransactions422Response';
 import ListHDWalletXPubYPubZPubTransactionsR from '../model/ListHDWalletXPubYPubZPubTransactionsR';
+import ListHDWalletXPubYPubZPubUTXOs400Response from '../model/ListHDWalletXPubYPubZPubUTXOs400Response';
+import ListHDWalletXPubYPubZPubUTXOs401Response from '../model/ListHDWalletXPubYPubZPubUTXOs401Response';
+import ListHDWalletXPubYPubZPubUTXOs403Response from '../model/ListHDWalletXPubYPubZPubUTXOs403Response';
+import ListHDWalletXPubYPubZPubUTXOs422Response from '../model/ListHDWalletXPubYPubZPubUTXOs422Response';
 import ListHDWalletXPubYPubZPubUTXOsR from '../model/ListHDWalletXPubYPubZPubUTXOsR';
+import SyncHDWalletXPubYPubZPub400Response from '../model/SyncHDWalletXPubYPubZPub400Response';
+import SyncHDWalletXPubYPubZPub401Response from '../model/SyncHDWalletXPubYPubZPub401Response';
+import SyncHDWalletXPubYPubZPub403Response from '../model/SyncHDWalletXPubYPubZPub403Response';
+import SyncHDWalletXPubYPubZPub409Response from '../model/SyncHDWalletXPubYPubZPub409Response';
+import SyncHDWalletXPubYPubZPub422Response from '../model/SyncHDWalletXPubYPubZPub422Response';
 import SyncHDWalletXPubYPubZPubR from '../model/SyncHDWalletXPubYPubZPubR';
 import SyncHDWalletXPubYPubZPubRB from '../model/SyncHDWalletXPubYPubZPubRB';
 
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class HDWalletsApi {
 

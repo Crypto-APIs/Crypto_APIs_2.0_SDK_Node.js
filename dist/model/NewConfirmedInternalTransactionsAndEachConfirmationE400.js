@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _BannedIpAddressDetails = _interopRequireDefault(require("./BannedIpAddressDetails"));
+var _BannedIpAddressDetailsInner = _interopRequireDefault(require("./BannedIpAddressDetailsInner"));
 
 var _InvalidPagination = _interopRequireDefault(require("./InvalidPagination"));
 
@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationE400 model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationE400
- * @version 1.5.0
+ * @version 1.6.0
  */
 var NewConfirmedInternalTransactionsAndEachConfirmationE400 = /*#__PURE__*/function () {
   /**
@@ -91,7 +91,7 @@ var NewConfirmedInternalTransactionsAndEachConfirmationE400 = /*#__PURE__*/funct
         }
 
         if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetails["default"]]);
+          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
         }
       }
 
@@ -115,7 +115,7 @@ NewConfirmedInternalTransactionsAndEachConfirmationE400.prototype['code'] = unde
 
 NewConfirmedInternalTransactionsAndEachConfirmationE400.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 NewConfirmedInternalTransactionsAndEachConfirmationE400.prototype['details'] = undefined; // Implement UriNotFound interface:
@@ -133,7 +133,7 @@ _UriNotFound["default"].prototype['code'] = undefined;
 
 _UriNotFound["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _UriNotFound["default"].prototype['details'] = undefined; // Implement LimitGreaterThanAllowed interface:
@@ -151,7 +151,7 @@ _LimitGreaterThanAllowed["default"].prototype['code'] = undefined;
 
 _LimitGreaterThanAllowed["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _LimitGreaterThanAllowed["default"].prototype['details'] = undefined; // Implement InvalidPagination interface:
@@ -169,7 +169,7 @@ _InvalidPagination["default"].prototype['code'] = undefined;
 
 _InvalidPagination["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _InvalidPagination["default"].prototype['details'] = undefined;

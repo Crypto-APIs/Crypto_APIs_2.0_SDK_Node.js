@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import InvalidApiKey from './InvalidApiKey';
 import MissingApiKey from './MissingApiKey';
 
 /**
  * The DecodeXAddressE401 model module.
  * @module model/DecodeXAddressE401
- * @version 1.5.0
+ * @version 1.6.0
  */
 class DecodeXAddressE401 {
     /**
@@ -65,7 +65,7 @@ class DecodeXAddressE401 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -87,7 +87,7 @@ DecodeXAddressE401.prototype['code'] = undefined;
 DecodeXAddressE401.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 DecodeXAddressE401.prototype['details'] = undefined;
 
@@ -104,7 +104,7 @@ MissingApiKey.prototype['code'] = undefined;
  */
 MissingApiKey.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 MissingApiKey.prototype['details'] = undefined;
 // Implement InvalidApiKey interface:
@@ -119,7 +119,7 @@ InvalidApiKey.prototype['code'] = undefined;
  */
 InvalidApiKey.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidApiKey.prototype['details'] = undefined;
 

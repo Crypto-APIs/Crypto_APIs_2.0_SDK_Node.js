@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListBlockchainEventsSubscriptionsRIDeactivationReasons from './ListBlockchainEventsSubscriptionsRIDeactivationReasons';
+import ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner from './ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner';
 
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDRI model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetBlockchainEventSubscriptionDetailsByReferenceIDRI {
     /**
@@ -81,7 +81,7 @@ class GetBlockchainEventSubscriptionDetailsByReferenceIDRI {
                 obj['createdTimestamp'] = ApiClient.convertToType(data['createdTimestamp'], 'Number');
             }
             if (data.hasOwnProperty('deactivationReasons')) {
-                obj['deactivationReasons'] = ApiClient.convertToType(data['deactivationReasons'], [ListBlockchainEventsSubscriptionsRIDeactivationReasons]);
+                obj['deactivationReasons'] = ApiClient.convertToType(data['deactivationReasons'], [ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner]);
             }
             if (data.hasOwnProperty('eventType')) {
                 obj['eventType'] = ApiClient.convertToType(data['eventType'], 'String');
@@ -143,7 +143,7 @@ GetBlockchainEventSubscriptionDetailsByReferenceIDRI.prototype['createdTimestamp
 
 /**
  * Represents the deactivation reason details, available when a blockchain event subscription has status isActive - false.
- * @member {Array.<module:model/ListBlockchainEventsSubscriptionsRIDeactivationReasons>} deactivationReasons
+ * @member {Array.<module:model/ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner>} deactivationReasons
  */
 GetBlockchainEventSubscriptionDetailsByReferenceIDRI.prototype['deactivationReasons'] = undefined;
 

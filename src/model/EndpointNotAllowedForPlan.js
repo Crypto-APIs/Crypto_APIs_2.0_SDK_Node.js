@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 
 /**
  * The EndpointNotAllowedForPlan model module.
  * @module model/EndpointNotAllowedForPlan
- * @version 1.5.0
+ * @version 1.6.0
  */
 class EndpointNotAllowedForPlan {
     /**
@@ -60,7 +60,7 @@ class EndpointNotAllowedForPlan {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -82,7 +82,7 @@ EndpointNotAllowedForPlan.prototype['code'] = undefined;
 EndpointNotAllowedForPlan.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 EndpointNotAllowedForPlan.prototype['details'] = undefined;
 

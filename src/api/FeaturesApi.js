@@ -13,60 +13,60 @@
 
 
 import ApiClient from "../ApiClient";
+import BroadcastLocallySignedTransaction400Response from '../model/BroadcastLocallySignedTransaction400Response';
+import BroadcastLocallySignedTransaction401Response from '../model/BroadcastLocallySignedTransaction401Response';
+import BroadcastLocallySignedTransaction403Response from '../model/BroadcastLocallySignedTransaction403Response';
+import BroadcastLocallySignedTransaction409Response from '../model/BroadcastLocallySignedTransaction409Response';
 import BroadcastLocallySignedTransactionR from '../model/BroadcastLocallySignedTransactionR';
 import BroadcastLocallySignedTransactionRB from '../model/BroadcastLocallySignedTransactionRB';
+import DecodeRawTransactionHex400Response from '../model/DecodeRawTransactionHex400Response';
+import DecodeRawTransactionHex401Response from '../model/DecodeRawTransactionHex401Response';
+import DecodeRawTransactionHex403Response from '../model/DecodeRawTransactionHex403Response';
 import DecodeRawTransactionHexR from '../model/DecodeRawTransactionHexR';
 import DecodeRawTransactionHexRB from '../model/DecodeRawTransactionHexRB';
+import DecodeXAddress400Response from '../model/DecodeXAddress400Response';
+import DecodeXAddress401Response from '../model/DecodeXAddress401Response';
+import DecodeXAddress403Response from '../model/DecodeXAddress403Response';
 import DecodeXAddressR from '../model/DecodeXAddressR';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response from '../model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses401Response from '../model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses401Response';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses403Response from '../model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses403Response';
 import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR from '../model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR';
+import EncodeXAddress400Response from '../model/EncodeXAddress400Response';
+import EncodeXAddress401Response from '../model/EncodeXAddress401Response';
+import EncodeXAddress403Response from '../model/EncodeXAddress403Response';
 import EncodeXAddressR from '../model/EncodeXAddressR';
+import EstimateGasLimit400Response from '../model/EstimateGasLimit400Response';
+import EstimateGasLimit401Response from '../model/EstimateGasLimit401Response';
+import EstimateGasLimit403Response from '../model/EstimateGasLimit403Response';
 import EstimateGasLimitR from '../model/EstimateGasLimitR';
 import EstimateGasLimitRB from '../model/EstimateGasLimitRB';
+import EstimateTokenGasLimit400Response from '../model/EstimateTokenGasLimit400Response';
+import EstimateTokenGasLimit401Response from '../model/EstimateTokenGasLimit401Response';
+import EstimateTokenGasLimit403Response from '../model/EstimateTokenGasLimit403Response';
 import EstimateTokenGasLimitR from '../model/EstimateTokenGasLimitR';
 import EstimateTokenGasLimitRB from '../model/EstimateTokenGasLimitRB';
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetEIP1559FeeRecommendations400Response from '../model/GetEIP1559FeeRecommendations400Response';
+import GetEIP1559FeeRecommendations401Response from '../model/GetEIP1559FeeRecommendations401Response';
+import GetEIP1559FeeRecommendations403Response from '../model/GetEIP1559FeeRecommendations403Response';
 import GetEIP1559FeeRecommendationsR from '../model/GetEIP1559FeeRecommendationsR';
-import InlineResponse400100 from '../model/InlineResponse400100';
-import InlineResponse400101 from '../model/InlineResponse400101';
-import InlineResponse400102 from '../model/InlineResponse400102';
-import InlineResponse400103 from '../model/InlineResponse400103';
-import InlineResponse400104 from '../model/InlineResponse400104';
-import InlineResponse40070 from '../model/InlineResponse40070';
-import InlineResponse40097 from '../model/InlineResponse40097';
-import InlineResponse40098 from '../model/InlineResponse40098';
-import InlineResponse40099 from '../model/InlineResponse40099';
-import InlineResponse401100 from '../model/InlineResponse401100';
-import InlineResponse401101 from '../model/InlineResponse401101';
-import InlineResponse401102 from '../model/InlineResponse401102';
-import InlineResponse401103 from '../model/InlineResponse401103';
-import InlineResponse401104 from '../model/InlineResponse401104';
-import InlineResponse40170 from '../model/InlineResponse40170';
-import InlineResponse40197 from '../model/InlineResponse40197';
-import InlineResponse40198 from '../model/InlineResponse40198';
-import InlineResponse40199 from '../model/InlineResponse40199';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse403100 from '../model/InlineResponse403100';
-import InlineResponse403101 from '../model/InlineResponse403101';
-import InlineResponse403102 from '../model/InlineResponse403102';
-import InlineResponse403103 from '../model/InlineResponse403103';
-import InlineResponse403104 from '../model/InlineResponse403104';
-import InlineResponse40370 from '../model/InlineResponse40370';
-import InlineResponse40397 from '../model/InlineResponse40397';
-import InlineResponse40398 from '../model/InlineResponse40398';
-import InlineResponse40399 from '../model/InlineResponse40399';
-import InlineResponse4041 from '../model/InlineResponse4041';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse40917 from '../model/InlineResponse40917';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
+import ValidateAddress400Response from '../model/ValidateAddress400Response';
+import ValidateAddress401Response from '../model/ValidateAddress401Response';
+import ValidateAddress403Response from '../model/ValidateAddress403Response';
 import ValidateAddressR from '../model/ValidateAddressR';
 import ValidateAddressRB from '../model/ValidateAddressRB';
 
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class FeaturesApi {
 

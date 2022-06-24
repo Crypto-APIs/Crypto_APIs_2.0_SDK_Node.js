@@ -9,9 +9,9 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _ListAllUnconfirmedTransactionsRIBS = _interopRequireDefault(require("./ListAllUnconfirmedTransactionsRIBS"));
 
-var _ListUnconfirmedTransactionsByAddressRIRecipients = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIRecipients"));
+var _ListUnconfirmedTransactionsByAddressRIRecipientsInner = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIRecipientsInner"));
 
-var _ListUnconfirmedTransactionsByAddressRISenders = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRISenders"));
+var _ListUnconfirmedTransactionsByAddressRISendersInner = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRISendersInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,14 +24,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactionsRI model module.
  * @module model/ListAllUnconfirmedTransactionsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListAllUnconfirmedTransactionsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllUnconfirmedTransactionsRI</code>.
    * @alias module:model/ListAllUnconfirmedTransactionsRI
-   * @param recipients {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
-   * @param senders {Array.<module:model/ListUnconfirmedTransactionsByAddressRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+   * @param recipients {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+   * @param senders {Array.<module:model/ListUnconfirmedTransactionsByAddressRISendersInner>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
    * @param transactionHash {String} String representation of the transaction hash
    * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
@@ -74,11 +74,11 @@ var ListAllUnconfirmedTransactionsRI = /*#__PURE__*/function () {
         obj = obj || new ListAllUnconfirmedTransactionsRI();
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListUnconfirmedTransactionsByAddressRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListUnconfirmedTransactionsByAddressRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListUnconfirmedTransactionsByAddressRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListUnconfirmedTransactionsByAddressRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('timestamp')) {
@@ -106,14 +106,14 @@ var ListAllUnconfirmedTransactionsRI = /*#__PURE__*/function () {
 }();
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipients>} recipients
+ * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipientsInner>} recipients
  */
 
 
 ListAllUnconfirmedTransactionsRI.prototype['recipients'] = undefined;
 /**
  * Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRISenders>} senders
+ * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRISendersInner>} senders
  */
 
 ListAllUnconfirmedTransactionsRI.prototype['senders'] = undefined;

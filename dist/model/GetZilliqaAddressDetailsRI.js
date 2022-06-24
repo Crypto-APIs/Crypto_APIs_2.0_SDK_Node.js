@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetailsRI model module.
  * @module model/GetZilliqaAddressDetailsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
   /**

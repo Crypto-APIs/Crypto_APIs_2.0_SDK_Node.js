@@ -13,54 +13,54 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetLatestMinedXRPRippleBlock400Response from '../model/GetLatestMinedXRPRippleBlock400Response';
+import GetLatestMinedXRPRippleBlock401Response from '../model/GetLatestMinedXRPRippleBlock401Response';
+import GetLatestMinedXRPRippleBlock403Response from '../model/GetLatestMinedXRPRippleBlock403Response';
 import GetLatestMinedXRPRippleBlockR from '../model/GetLatestMinedXRPRippleBlockR';
+import GetXRPRippleAddressDetails400Response from '../model/GetXRPRippleAddressDetails400Response';
+import GetXRPRippleAddressDetails401Response from '../model/GetXRPRippleAddressDetails401Response';
+import GetXRPRippleAddressDetails403Response from '../model/GetXRPRippleAddressDetails403Response';
 import GetXRPRippleAddressDetailsR from '../model/GetXRPRippleAddressDetailsR';
+import GetXRPRippleBlockDetailsByBlockHash400Response from '../model/GetXRPRippleBlockDetailsByBlockHash400Response';
+import GetXRPRippleBlockDetailsByBlockHash401Response from '../model/GetXRPRippleBlockDetailsByBlockHash401Response';
+import GetXRPRippleBlockDetailsByBlockHash403Response from '../model/GetXRPRippleBlockDetailsByBlockHash403Response';
 import GetXRPRippleBlockDetailsByBlockHashR from '../model/GetXRPRippleBlockDetailsByBlockHashR';
+import GetXRPRippleBlockDetailsByBlockHeight400Response from '../model/GetXRPRippleBlockDetailsByBlockHeight400Response';
+import GetXRPRippleBlockDetailsByBlockHeight401Response from '../model/GetXRPRippleBlockDetailsByBlockHeight401Response';
+import GetXRPRippleBlockDetailsByBlockHeight403Response from '../model/GetXRPRippleBlockDetailsByBlockHeight403Response';
 import GetXRPRippleBlockDetailsByBlockHeightR from '../model/GetXRPRippleBlockDetailsByBlockHeightR';
+import GetXRPRippleTransactionDetailsByTransactionID400Response from '../model/GetXRPRippleTransactionDetailsByTransactionID400Response';
+import GetXRPRippleTransactionDetailsByTransactionID401Response from '../model/GetXRPRippleTransactionDetailsByTransactionID401Response';
+import GetXRPRippleTransactionDetailsByTransactionID403Response from '../model/GetXRPRippleTransactionDetailsByTransactionID403Response';
+import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
 import GetXRPRippleTransactionDetailsByTransactionIDR from '../model/GetXRPRippleTransactionDetailsByTransactionIDR';
-import InlineResponse40011 from '../model/InlineResponse40011';
-import InlineResponse40016 from '../model/InlineResponse40016';
-import InlineResponse40019 from '../model/InlineResponse40019';
-import InlineResponse4002 from '../model/InlineResponse4002';
-import InlineResponse40024 from '../model/InlineResponse40024';
-import InlineResponse40028 from '../model/InlineResponse40028';
-import InlineResponse40032 from '../model/InlineResponse40032';
-import InlineResponse40042 from '../model/InlineResponse40042';
-import InlineResponse4006 from '../model/InlineResponse4006';
-import InlineResponse40111 from '../model/InlineResponse40111';
-import InlineResponse40116 from '../model/InlineResponse40116';
-import InlineResponse40119 from '../model/InlineResponse40119';
-import InlineResponse4012 from '../model/InlineResponse4012';
-import InlineResponse40124 from '../model/InlineResponse40124';
-import InlineResponse40128 from '../model/InlineResponse40128';
-import InlineResponse40132 from '../model/InlineResponse40132';
-import InlineResponse40142 from '../model/InlineResponse40142';
-import InlineResponse4016 from '../model/InlineResponse4016';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40311 from '../model/InlineResponse40311';
-import InlineResponse40316 from '../model/InlineResponse40316';
-import InlineResponse40319 from '../model/InlineResponse40319';
-import InlineResponse4032 from '../model/InlineResponse4032';
-import InlineResponse40324 from '../model/InlineResponse40324';
-import InlineResponse40328 from '../model/InlineResponse40328';
-import InlineResponse40332 from '../model/InlineResponse40332';
-import InlineResponse40342 from '../model/InlineResponse40342';
-import InlineResponse4036 from '../model/InlineResponse4036';
-import InlineResponse4041 from '../model/InlineResponse4041';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import ListXRPRippleTransactionsByAddress400Response from '../model/ListXRPRippleTransactionsByAddress400Response';
+import ListXRPRippleTransactionsByAddress401Response from '../model/ListXRPRippleTransactionsByAddress401Response';
+import ListXRPRippleTransactionsByAddress403Response from '../model/ListXRPRippleTransactionsByAddress403Response';
+import ListXRPRippleTransactionsByAddressAndTimeRange400Response from '../model/ListXRPRippleTransactionsByAddressAndTimeRange400Response';
+import ListXRPRippleTransactionsByAddressAndTimeRange401Response from '../model/ListXRPRippleTransactionsByAddressAndTimeRange401Response';
+import ListXRPRippleTransactionsByAddressAndTimeRange403Response from '../model/ListXRPRippleTransactionsByAddressAndTimeRange403Response';
 import ListXRPRippleTransactionsByAddressAndTimeRangeR from '../model/ListXRPRippleTransactionsByAddressAndTimeRangeR';
 import ListXRPRippleTransactionsByAddressR from '../model/ListXRPRippleTransactionsByAddressR';
+import ListXRPRippleTransactionsByBlockHash400Response from '../model/ListXRPRippleTransactionsByBlockHash400Response';
+import ListXRPRippleTransactionsByBlockHash401Response from '../model/ListXRPRippleTransactionsByBlockHash401Response';
+import ListXRPRippleTransactionsByBlockHash403Response from '../model/ListXRPRippleTransactionsByBlockHash403Response';
 import ListXRPRippleTransactionsByBlockHashR from '../model/ListXRPRippleTransactionsByBlockHashR';
+import ListXRPRippleTransactionsByBlockHeight400Response from '../model/ListXRPRippleTransactionsByBlockHeight400Response';
+import ListXRPRippleTransactionsByBlockHeight401Response from '../model/ListXRPRippleTransactionsByBlockHeight401Response';
+import ListXRPRippleTransactionsByBlockHeight403Response from '../model/ListXRPRippleTransactionsByBlockHeight403Response';
 import ListXRPRippleTransactionsByBlockHeightR from '../model/ListXRPRippleTransactionsByBlockHeightR';
 
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class XRPRippleApi {
 

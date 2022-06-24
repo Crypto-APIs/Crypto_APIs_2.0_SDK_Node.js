@@ -7,39 +7,39 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetAssetDetailsByAssetID400Response = _interopRequireDefault(require("../model/GetAssetDetailsByAssetID400Response"));
+
+var _GetAssetDetailsByAssetID401Response = _interopRequireDefault(require("../model/GetAssetDetailsByAssetID401Response"));
+
+var _GetAssetDetailsByAssetID403Response = _interopRequireDefault(require("../model/GetAssetDetailsByAssetID403Response"));
+
 var _GetAssetDetailsByAssetIDR = _interopRequireDefault(require("../model/GetAssetDetailsByAssetIDR"));
+
+var _GetAssetDetailsByAssetSymbol400Response = _interopRequireDefault(require("../model/GetAssetDetailsByAssetSymbol400Response"));
+
+var _GetAssetDetailsByAssetSymbol401Response = _interopRequireDefault(require("../model/GetAssetDetailsByAssetSymbol401Response"));
+
+var _GetAssetDetailsByAssetSymbol403Response = _interopRequireDefault(require("../model/GetAssetDetailsByAssetSymbol403Response"));
 
 var _GetAssetDetailsByAssetSymbolR = _interopRequireDefault(require("../model/GetAssetDetailsByAssetSymbolR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400108"));
+var _ListAssetsDetails400Response = _interopRequireDefault(require("../model/ListAssetsDetails400Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse400109"));
+var _ListAssetsDetails401Response = _interopRequireDefault(require("../model/ListAssetsDetails401Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse400110"));
-
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse401108"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse401109"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse401110"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse403108"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse403109"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse403110"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListAssetsDetails403Response = _interopRequireDefault(require("../model/ListAssetsDetails403Response"));
 
 var _ListAssetsDetailsR = _interopRequireDefault(require("../model/ListAssetsDetailsR"));
 
@@ -54,7 +54,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var AssetsApi = /*#__PURE__*/function () {
   /**

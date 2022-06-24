@@ -13,40 +13,40 @@
 
 
 import ApiClient from "../ApiClient";
+import AddTokensToExistingFromAddress400Response from '../model/AddTokensToExistingFromAddress400Response';
+import AddTokensToExistingFromAddress401Response from '../model/AddTokensToExistingFromAddress401Response';
+import AddTokensToExistingFromAddress403Response from '../model/AddTokensToExistingFromAddress403Response';
 import AddTokensToExistingFromAddressR from '../model/AddTokensToExistingFromAddressR';
 import AddTokensToExistingFromAddressRB from '../model/AddTokensToExistingFromAddressRB';
+import CreateAutomaticTokensForwarding400Response from '../model/CreateAutomaticTokensForwarding400Response';
+import CreateAutomaticTokensForwarding401Response from '../model/CreateAutomaticTokensForwarding401Response';
+import CreateAutomaticTokensForwarding403Response from '../model/CreateAutomaticTokensForwarding403Response';
 import CreateAutomaticTokensForwardingR from '../model/CreateAutomaticTokensForwardingR';
 import CreateAutomaticTokensForwardingRB from '../model/CreateAutomaticTokensForwardingRB';
+import DeleteAutomaticTokensForwarding400Response from '../model/DeleteAutomaticTokensForwarding400Response';
+import DeleteAutomaticTokensForwarding401Response from '../model/DeleteAutomaticTokensForwarding401Response';
+import DeleteAutomaticTokensForwarding403Response from '../model/DeleteAutomaticTokensForwarding403Response';
 import DeleteAutomaticTokensForwardingR from '../model/DeleteAutomaticTokensForwardingR';
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetFeeAddressDetails400Response from '../model/GetFeeAddressDetails400Response';
+import GetFeeAddressDetails401Response from '../model/GetFeeAddressDetails401Response';
+import GetFeeAddressDetails403Response from '../model/GetFeeAddressDetails403Response';
 import GetFeeAddressDetailsR from '../model/GetFeeAddressDetailsR';
-import InlineResponse40092 from '../model/InlineResponse40092';
-import InlineResponse40093 from '../model/InlineResponse40093';
-import InlineResponse40094 from '../model/InlineResponse40094';
-import InlineResponse40095 from '../model/InlineResponse40095';
-import InlineResponse40096 from '../model/InlineResponse40096';
-import InlineResponse40192 from '../model/InlineResponse40192';
-import InlineResponse40193 from '../model/InlineResponse40193';
-import InlineResponse40194 from '../model/InlineResponse40194';
-import InlineResponse40195 from '../model/InlineResponse40195';
-import InlineResponse40196 from '../model/InlineResponse40196';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40392 from '../model/InlineResponse40392';
-import InlineResponse40393 from '../model/InlineResponse40393';
-import InlineResponse40394 from '../model/InlineResponse40394';
-import InlineResponse40395 from '../model/InlineResponse40395';
-import InlineResponse40396 from '../model/InlineResponse40396';
-import InlineResponse4041 from '../model/InlineResponse4041';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
+import ListTokensForwardingAutomations400Response from '../model/ListTokensForwardingAutomations400Response';
+import ListTokensForwardingAutomations401Response from '../model/ListTokensForwardingAutomations401Response';
+import ListTokensForwardingAutomations403Response from '../model/ListTokensForwardingAutomations403Response';
 import ListTokensForwardingAutomationsR from '../model/ListTokensForwardingAutomationsR';
 
 /**
 * AutomaticTokensForwarding service.
 * @module api/AutomaticTokensForwardingApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class AutomaticTokensForwardingApi {
 

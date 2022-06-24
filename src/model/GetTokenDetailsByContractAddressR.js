@@ -17,7 +17,7 @@ import GetTokenDetailsByContractAddressRData from './GetTokenDetailsByContractAd
 /**
  * The GetTokenDetailsByContractAddressR model module.
  * @module model/GetTokenDetailsByContractAddressR
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetTokenDetailsByContractAddressR {
     /**

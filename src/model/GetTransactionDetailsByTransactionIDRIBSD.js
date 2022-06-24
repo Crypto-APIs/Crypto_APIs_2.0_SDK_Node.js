@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSDVin from './GetTransactionDetailsByTransactionIDRIBSDVin';
-import GetTransactionDetailsByTransactionIDRIBSDVout from './GetTransactionDetailsByTransactionIDRIBSDVout';
+import GetTransactionDetailsByTransactionIDRIBSDVinInner from './GetTransactionDetailsByTransactionIDRIBSDVinInner';
+import GetTransactionDetailsByTransactionIDRIBSDVoutInner from './GetTransactionDetailsByTransactionIDRIBSDVoutInner';
 
 /**
  * The GetTransactionDetailsByTransactionIDRIBSD model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSD
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetTransactionDetailsByTransactionIDRIBSD {
     /**
@@ -28,8 +28,8 @@ class GetTransactionDetailsByTransactionIDRIBSD {
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param size {Number} Represents the total size of this transaction.
      * @param version {Number} Represents transaction version number.
-     * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVout>} Represents the transaction outputs.
+     * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVinInner>} Represents the transaction inputs.
+     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVoutInner>} Represents the transaction outputs.
      */
     constructor(locktime, size, version, vin, vout) { 
         
@@ -70,10 +70,10 @@ class GetTransactionDetailsByTransactionIDRIBSD {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [GetTransactionDetailsByTransactionIDRIBSDVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [GetTransactionDetailsByTransactionIDRIBSDVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSDVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSDVoutInner]);
             }
         }
         return obj;
@@ -102,13 +102,13 @@ GetTransactionDetailsByTransactionIDRIBSD.prototype['version'] = undefined;
 
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVinInner>} vin
  */
 GetTransactionDetailsByTransactionIDRIBSD.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVoutInner>} vout
  */
 GetTransactionDetailsByTransactionIDRIBSD.prototype['vout'] = undefined;
 

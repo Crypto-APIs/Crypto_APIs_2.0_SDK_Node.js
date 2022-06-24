@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **size** | **Number** | Represents the total size of this transaction. | 
 **vSize** | **Number** | Represents the virtual size of this transaction. | 
 **version** | **Number** | Defines the version of the transaction. | 
-**vin** | [**[GetTransactionDetailsByTransactionIDRIBSZVin]**](GetTransactionDetailsByTransactionIDRIBSZVin.md) | Object Array representation of transaction inputs | 
-**vout** | [**[GetTransactionDetailsByTransactionIDRIBSZVout]**](GetTransactionDetailsByTransactionIDRIBSZVout.md) | Object Array representation of transaction outputs | 
+**vin** | [**[GetTransactionDetailsByTransactionIDRIBSZVinInner]**](GetTransactionDetailsByTransactionIDRIBSZVinInner.md) | Object Array representation of transaction inputs | 
+**vout** | [**[GetTransactionDetailsByTransactionIDRIBSZVoutInner]**](GetTransactionDetailsByTransactionIDRIBSZVoutInner.md) | Object Array representation of transaction outputs | 
 **contract** | **String** | Represents the specific transaction contract | 
 **gasLimit** | **Number** | Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit. | 
 **gasPrice** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice**](GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice.md) |  | 
@@ -22,9 +22,9 @@ Name | Type | Description | Notes
 **joinSplitPubKey** | **String** | Represents an encoding of a JoinSplitSig public validating key. | 
 **joinSplitSig** | **String** | Is used to sign transactions that contain at least one JoinSplit description. | 
 **overwintered** | **Boolean** | \&quot;Overwinter\&quot; is the network upgrade for the Zcash blockchain. | 
-**vJoinSplit** | [**[GetTransactionDetailsByTransactionIDRIBSZVJoinSplit]**](GetTransactionDetailsByTransactionIDRIBSZVJoinSplit.md) | Represents a sequence of JoinSplit descriptions using BCTV14 proofs. | 
-**vShieldedOutput** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput.md) | Object Array representation of transaction output descriptions | 
-**vShieldedSpend** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend.md) | Object Array representation of transaction spend descriptions | 
+**vJoinSplit** | [**[GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner]**](GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner.md) | Represents a sequence of JoinSplit descriptions using BCTV14 proofs. | 
+**vShieldedOutput** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner.md) | Object Array representation of transaction output descriptions | 
+**vShieldedSpend** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner.md) | Object Array representation of transaction spend descriptions | 
 **valueBalance** | **String** | String representation of the transaction value balance | 
 **versionGroupId** | **String** | Represents the transaction version group ID | 
 **additionalData** | **String** | Represents additional data that may be needed. | 

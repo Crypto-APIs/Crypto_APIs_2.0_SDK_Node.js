@@ -13,9 +13,9 @@ var _ListXRPRippleTransactionsByBlockHeightRIOffer = _interopRequireDefault(requ
 
 var _ListXRPRippleTransactionsByBlockHeightRIReceive = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHeightRIReceive"));
 
-var _ListXRPRippleTransactionsByBlockHeightRIRecipients = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHeightRIRecipients"));
+var _ListXRPRippleTransactionsByBlockHeightRIRecipientsInner = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHeightRIRecipientsInner"));
 
-var _ListXRPRippleTransactionsByBlockHeightRISenders = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHeightRISenders"));
+var _ListXRPRippleTransactionsByBlockHeightRISendersInner = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHeightRISendersInner"));
 
 var _ListXRPRippleTransactionsByBlockHeightRIValue = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHeightRIValue"));
 
@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHeightRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListXRPRippleTransactionsByBlockHeightRI = /*#__PURE__*/function () {
   /**
@@ -38,8 +38,8 @@ var ListXRPRippleTransactionsByBlockHeightRI = /*#__PURE__*/function () {
    * @alias module:model/ListXRPRippleTransactionsByBlockHeightRI
    * @param index {Number} 
    * @param minedInBlockHash {String} 
-   * @param recipients {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRIRecipients>} Object Array representation of transaction receivers
-   * @param senders {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRISenders>} Object Array representation of transaction senders
+   * @param recipients {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRIRecipientsInner>} Object Array representation of transaction receivers
+   * @param senders {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRISendersInner>} Object Array representation of transaction senders
    * @param sequence {Number} 
    * @param status {String} 
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
@@ -110,11 +110,11 @@ var ListXRPRippleTransactionsByBlockHeightRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListXRPRippleTransactionsByBlockHeightRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListXRPRippleTransactionsByBlockHeightRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListXRPRippleTransactionsByBlockHeightRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListXRPRippleTransactionsByBlockHeightRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('sequence')) {
@@ -183,13 +183,13 @@ ListXRPRippleTransactionsByBlockHeightRI.prototype['index'] = undefined;
 ListXRPRippleTransactionsByBlockHeightRI.prototype['minedInBlockHash'] = undefined;
 /**
  * Object Array representation of transaction receivers
- * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRIRecipients>} recipients
+ * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRIRecipientsInner>} recipients
  */
 
 ListXRPRippleTransactionsByBlockHeightRI.prototype['recipients'] = undefined;
 /**
  * Object Array representation of transaction senders
- * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRISenders>} senders
+ * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHeightRISendersInner>} senders
  */
 
 ListXRPRippleTransactionsByBlockHeightRI.prototype['senders'] = undefined;

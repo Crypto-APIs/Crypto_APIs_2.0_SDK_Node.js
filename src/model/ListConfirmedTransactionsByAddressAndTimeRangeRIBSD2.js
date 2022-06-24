@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListConfirmedTransactionsByAddressRIBSD2Vin from './ListConfirmedTransactionsByAddressRIBSD2Vin';
-import ListConfirmedTransactionsByAddressRIBSD2Vout from './ListConfirmedTransactionsByAddressRIBSD2Vout';
+import ListConfirmedTransactionsByAddressRIBSD2VinInner from './ListConfirmedTransactionsByAddressRIBSD2VinInner';
+import ListConfirmedTransactionsByAddressRIBSD2VoutInner from './ListConfirmedTransactionsByAddressRIBSD2VoutInner';
 
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2 model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2 {
     /**
@@ -28,8 +28,8 @@ class ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2 {
      * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
      * @param size {Number} Represents the total size of this transaction.
      * @param version {Number} Represents the transaction's version number.
-     * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vout>} Represents the transaction outputs.
+     * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VinInner>} Represents the transaction inputs.
+     * @param vout {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VoutInner>} Represents the transaction outputs.
      */
     constructor(locktime, size, version, vin, vout) { 
         
@@ -70,10 +70,10 @@ class ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2 {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListConfirmedTransactionsByAddressRIBSD2Vin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [ListConfirmedTransactionsByAddressRIBSD2VinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [ListConfirmedTransactionsByAddressRIBSD2Vout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [ListConfirmedTransactionsByAddressRIBSD2VoutInner]);
             }
         }
         return obj;
@@ -102,13 +102,13 @@ ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2.prototype['version'] = unde
 
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VinInner>} vin
  */
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vout>} vout
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VoutInner>} vout
  */
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSD2.prototype['vout'] = undefined;
 

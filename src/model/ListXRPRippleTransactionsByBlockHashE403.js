@@ -13,7 +13,7 @@
 
 import ApiClient from '../ApiClient';
 import BannedIpAddress from './BannedIpAddress';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import EndpointNotAllowedForApiKey from './EndpointNotAllowedForApiKey';
 import EndpointNotAllowedForPlan from './EndpointNotAllowedForPlan';
 import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan';
@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListXRPRippleTransactionsByBlockHashE403 model module.
  * @module model/ListXRPRippleTransactionsByBlockHashE403
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListXRPRippleTransactionsByBlockHashE403 {
     /**
@@ -71,7 +71,7 @@ class ListXRPRippleTransactionsByBlockHashE403 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -93,7 +93,7 @@ ListXRPRippleTransactionsByBlockHashE403.prototype['code'] = undefined;
 ListXRPRippleTransactionsByBlockHashE403.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 ListXRPRippleTransactionsByBlockHashE403.prototype['details'] = undefined;
 
@@ -110,7 +110,7 @@ BannedIpAddress.prototype['code'] = undefined;
  */
 BannedIpAddress.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 BannedIpAddress.prototype['details'] = undefined;
 // Implement EndpointNotAllowedForPlan interface:
@@ -125,7 +125,7 @@ EndpointNotAllowedForPlan.prototype['code'] = undefined;
  */
 EndpointNotAllowedForPlan.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 EndpointNotAllowedForPlan.prototype['details'] = undefined;
 // Implement EndpointNotAllowedForApiKey interface:
@@ -140,7 +140,7 @@ EndpointNotAllowedForApiKey.prototype['code'] = undefined;
  */
 EndpointNotAllowedForApiKey.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 EndpointNotAllowedForApiKey.prototype['details'] = undefined;
 // Implement FeatureMainnetsNotAllowedForPlan interface:
@@ -155,7 +155,7 @@ FeatureMainnetsNotAllowedForPlan.prototype['code'] = undefined;
  */
 FeatureMainnetsNotAllowedForPlan.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 FeatureMainnetsNotAllowedForPlan.prototype['details'] = undefined;
 

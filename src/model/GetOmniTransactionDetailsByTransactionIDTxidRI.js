@@ -12,14 +12,14 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetOmniTransactionDetailsByTransactionIDTxidRISenders from './GetOmniTransactionDetailsByTransactionIDTxidRISenders';
-import ListOmniTransactionsByAddressRIRecipients from './ListOmniTransactionsByAddressRIRecipients';
+import GetOmniTransactionDetailsByTransactionIDTxidRISendersInner from './GetOmniTransactionDetailsByTransactionIDTxidRISendersInner';
+import ListOmniTransactionsByAddressRIRecipientsInner from './ListOmniTransactionsByAddressRIRecipientsInner';
 import ListUnconfirmedOmniTransactionsByAddressRIFee from './ListUnconfirmedOmniTransactionsByAddressRIFee';
 
 /**
  * The GetOmniTransactionDetailsByTransactionIDTxidRI model module.
  * @module model/GetOmniTransactionDetailsByTransactionIDTxidRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetOmniTransactionDetailsByTransactionIDTxidRI {
     /**
@@ -30,8 +30,8 @@ class GetOmniTransactionDetailsByTransactionIDTxidRI {
      * @param minedInBlockHash {String} Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
      * @param propertyId {Number} Represents the identifier of the tokens to send.
-     * @param recipients {Array.<module:model/ListOmniTransactionsByAddressRIRecipients>} Represents an object of addresses that receive the transactions.
-     * @param senders {Array.<module:model/GetOmniTransactionDetailsByTransactionIDTxidRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/ListOmniTransactionsByAddressRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+     * @param senders {Array.<module:model/GetOmniTransactionDetailsByTransactionIDTxidRISendersInner>} Represents an object of addresses that provide the funds.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param type {String} Defines the type of the transaction as a string.
@@ -94,10 +94,10 @@ class GetOmniTransactionDetailsByTransactionIDTxidRI {
                 obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListOmniTransactionsByAddressRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListOmniTransactionsByAddressRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [GetOmniTransactionDetailsByTransactionIDTxidRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [GetOmniTransactionDetailsByTransactionIDTxidRISendersInner]);
             }
             if (data.hasOwnProperty('timestamp')) {
                 obj['timestamp'] = ApiClient.convertToType(data['timestamp'], 'Number');
@@ -159,13 +159,13 @@ GetOmniTransactionDetailsByTransactionIDTxidRI.prototype['propertyId'] = undefin
 
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/ListOmniTransactionsByAddressRIRecipients>} recipients
+ * @member {Array.<module:model/ListOmniTransactionsByAddressRIRecipientsInner>} recipients
  */
 GetOmniTransactionDetailsByTransactionIDTxidRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/GetOmniTransactionDetailsByTransactionIDTxidRISenders>} senders
+ * @member {Array.<module:model/GetOmniTransactionDetailsByTransactionIDTxidRISendersInner>} senders
  */
 GetOmniTransactionDetailsByTransactionIDTxidRI.prototype['senders'] = undefined;
 

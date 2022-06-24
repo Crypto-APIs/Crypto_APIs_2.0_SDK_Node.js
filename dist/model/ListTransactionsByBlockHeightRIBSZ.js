@@ -7,15 +7,15 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend"));
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner"));
 
-var _ListTransactionsByBlockHeightRIBSZVJoinSplit = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVJoinSplit"));
+var _ListTransactionsByBlockHeightRIBSZVJoinSplitInner = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVJoinSplitInner"));
 
-var _ListTransactionsByBlockHeightRIBSZVShieldedOutput = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVShieldedOutput"));
+var _ListTransactionsByBlockHeightRIBSZVShieldedOutputInner = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVShieldedOutputInner"));
 
-var _ListTransactionsByBlockHeightRIBSZVin = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVin"));
+var _ListTransactionsByBlockHeightRIBSZVinInner = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVinInner"));
 
-var _ListTransactionsByBlockHeightRIBSZVout = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVout"));
+var _ListTransactionsByBlockHeightRIBSZVoutInner = _interopRequireDefault(require("./ListTransactionsByBlockHeightRIBSZVoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSZ model module.
  * @module model/ListTransactionsByBlockHeightRIBSZ
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListTransactionsByBlockHeightRIBSZ = /*#__PURE__*/function () {
   /**
@@ -42,14 +42,14 @@ var ListTransactionsByBlockHeightRIBSZ = /*#__PURE__*/function () {
    * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
    * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
    * @param size {Number} Represents the total size of this transaction.
-   * @param vJoinSplit {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-   * @param vShieldedOutput {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
-   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+   * @param vJoinSplit {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+   * @param vShieldedOutput {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
+   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
    * @param valueBalance {String} Defines the transaction value balance.
    * @param version {Number} Represents the transaction version number.
    * @param versionGroupId {String} Represents the transaction version group ID.
-   * @param vin {Array.<module:model/ListTransactionsByBlockHeightRIBSZVin>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} Object Array representation of transaction outputs
+   * @param vin {Array.<module:model/ListTransactionsByBlockHeightRIBSZVinInner>} Object Array representation of transaction inputs
+   * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} Object Array representation of transaction outputs
    */
   function ListTransactionsByBlockHeightRIBSZ(bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout) {
     _classCallCheck(this, ListTransactionsByBlockHeightRIBSZ);
@@ -125,15 +125,15 @@ var ListTransactionsByBlockHeightRIBSZ = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vJoinSplit')) {
-          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_ListTransactionsByBlockHeightRIBSZVJoinSplit["default"]]);
+          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_ListTransactionsByBlockHeightRIBSZVJoinSplitInner["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedOutput')) {
-          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_ListTransactionsByBlockHeightRIBSZVShieldedOutput["default"]]);
+          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_ListTransactionsByBlockHeightRIBSZVShieldedOutputInner["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedSpend')) {
-          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend["default"]]);
+          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner["default"]]);
         }
 
         if (data.hasOwnProperty('valueBalance')) {
@@ -149,11 +149,11 @@ var ListTransactionsByBlockHeightRIBSZ = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListTransactionsByBlockHeightRIBSZVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListTransactionsByBlockHeightRIBSZVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListTransactionsByBlockHeightRIBSZVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListTransactionsByBlockHeightRIBSZVoutInner["default"]]);
         }
       }
 
@@ -208,19 +208,19 @@ ListTransactionsByBlockHeightRIBSZ.prototype['overwintered'] = undefined;
 ListTransactionsByBlockHeightRIBSZ.prototype['size'] = undefined;
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplitInner>} vJoinSplit
  */
 
 ListTransactionsByBlockHeightRIBSZ.prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 
 ListTransactionsByBlockHeightRIBSZ.prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 
 ListTransactionsByBlockHeightRIBSZ.prototype['vShieldedSpend'] = undefined;
@@ -244,13 +244,13 @@ ListTransactionsByBlockHeightRIBSZ.prototype['version'] = undefined;
 ListTransactionsByBlockHeightRIBSZ.prototype['versionGroupId'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVinInner>} vin
  */
 
 ListTransactionsByBlockHeightRIBSZ.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} vout
  */
 
 ListTransactionsByBlockHeightRIBSZ.prototype['vout'] = undefined;

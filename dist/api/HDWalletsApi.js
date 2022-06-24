@@ -7,65 +7,65 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetHDWalletXPubYPubZPubAssets400Response = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubAssets400Response"));
+
+var _GetHDWalletXPubYPubZPubAssets401Response = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubAssets401Response"));
+
+var _GetHDWalletXPubYPubZPubAssets403Response = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubAssets403Response"));
+
+var _GetHDWalletXPubYPubZPubAssets422Response = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubAssets422Response"));
+
 var _GetHDWalletXPubYPubZPubAssetsR = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubAssetsR"));
+
+var _GetHDWalletXPubYPubZPubDetails400Response = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubDetails400Response"));
+
+var _GetHDWalletXPubYPubZPubDetails401Response = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubDetails401Response"));
+
+var _GetHDWalletXPubYPubZPubDetails403Response = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubDetails403Response"));
+
+var _GetHDWalletXPubYPubZPubDetails422Response = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubDetails422Response"));
 
 var _GetHDWalletXPubYPubZPubDetailsR = _interopRequireDefault(require("../model/GetHDWalletXPubYPubZPubDetailsR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40046"));
+var _ListHDWalletXPubYPubZPubTransactions400Response = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubTransactions400Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40050"));
+var _ListHDWalletXPubYPubZPubTransactions401Response = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubTransactions401Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40051"));
+var _ListHDWalletXPubYPubZPubTransactions403Response = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubTransactions403Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40053"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40055"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40146"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40150"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40151"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40153"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40155"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40346"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40350"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40351"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40353"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40355"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse4095"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse4221"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse4222"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse4223"));
-
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse4224"));
-
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse4225"));
-
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListHDWalletXPubYPubZPubTransactions422Response = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubTransactions422Response"));
 
 var _ListHDWalletXPubYPubZPubTransactionsR = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubTransactionsR"));
 
+var _ListHDWalletXPubYPubZPubUTXOs400Response = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubUTXOs400Response"));
+
+var _ListHDWalletXPubYPubZPubUTXOs401Response = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubUTXOs401Response"));
+
+var _ListHDWalletXPubYPubZPubUTXOs403Response = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubUTXOs403Response"));
+
+var _ListHDWalletXPubYPubZPubUTXOs422Response = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubUTXOs422Response"));
+
 var _ListHDWalletXPubYPubZPubUTXOsR = _interopRequireDefault(require("../model/ListHDWalletXPubYPubZPubUTXOsR"));
+
+var _SyncHDWalletXPubYPubZPub400Response = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPub400Response"));
+
+var _SyncHDWalletXPubYPubZPub401Response = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPub401Response"));
+
+var _SyncHDWalletXPubYPubZPub403Response = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPub403Response"));
+
+var _SyncHDWalletXPubYPubZPub409Response = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPub409Response"));
+
+var _SyncHDWalletXPubYPubZPub422Response = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPub422Response"));
 
 var _SyncHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPubR"));
 
@@ -82,7 +82,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var HDWalletsApi = /*#__PURE__*/function () {
   /**

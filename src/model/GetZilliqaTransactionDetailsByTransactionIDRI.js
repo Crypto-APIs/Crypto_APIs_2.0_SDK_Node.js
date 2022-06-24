@@ -13,13 +13,13 @@
 
 import ApiClient from '../ApiClient';
 import GetZilliqaTransactionDetailsByTransactionIDRIFee from './GetZilliqaTransactionDetailsByTransactionIDRIFee';
-import GetZilliqaTransactionDetailsByTransactionIDRIRecipients from './GetZilliqaTransactionDetailsByTransactionIDRIRecipients';
-import GetZilliqaTransactionDetailsByTransactionIDRISenders from './GetZilliqaTransactionDetailsByTransactionIDRISenders';
+import GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner from './GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner';
+import GetZilliqaTransactionDetailsByTransactionIDRISendersInner from './GetZilliqaTransactionDetailsByTransactionIDRISendersInner';
 
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDRI model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetZilliqaTransactionDetailsByTransactionIDRI {
     /**
@@ -32,8 +32,8 @@ class GetZilliqaTransactionDetailsByTransactionIDRI {
      * @param minedInBlockHash {String} Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param minedInBlockHeight {Number} Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
-     * @param recipients {Array.<module:model/GetZilliqaTransactionDetailsByTransactionIDRIRecipients>} Represents an object of addresses that receive the transactions.
-     * @param senders {Array.<module:model/GetZilliqaTransactionDetailsByTransactionIDRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+     * @param senders {Array.<module:model/GetZilliqaTransactionDetailsByTransactionIDRISendersInner>} Represents an object of addresses that provide the funds.
      * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
      * @param transactionIndex {Number} Defines the numeric representation of the transaction index.
      * @param transactionStatus {String} Defines the status of the transaction, whether it is e.g. pending or complete.
@@ -96,10 +96,10 @@ class GetZilliqaTransactionDetailsByTransactionIDRI {
                 obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetZilliqaTransactionDetailsByTransactionIDRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [GetZilliqaTransactionDetailsByTransactionIDRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [GetZilliqaTransactionDetailsByTransactionIDRISendersInner]);
             }
             if (data.hasOwnProperty('timestamp')) {
                 obj['timestamp'] = ApiClient.convertToType(data['timestamp'], 'Number');
@@ -160,13 +160,13 @@ GetZilliqaTransactionDetailsByTransactionIDRI.prototype['nonce'] = undefined;
 
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/GetZilliqaTransactionDetailsByTransactionIDRIRecipients>} recipients
+ * @member {Array.<module:model/GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner>} recipients
  */
 GetZilliqaTransactionDetailsByTransactionIDRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/GetZilliqaTransactionDetailsByTransactionIDRISenders>} senders
+ * @member {Array.<module:model/GetZilliqaTransactionDetailsByTransactionIDRISendersInner>} senders
  */
 GetZilliqaTransactionDetailsByTransactionIDRI.prototype['senders'] = undefined;
 

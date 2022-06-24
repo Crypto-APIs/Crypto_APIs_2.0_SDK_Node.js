@@ -7,83 +7,83 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetLatestMinedZilliqaBlock400Response = _interopRequireDefault(require("../model/GetLatestMinedZilliqaBlock400Response"));
+
+var _GetLatestMinedZilliqaBlock401Response = _interopRequireDefault(require("../model/GetLatestMinedZilliqaBlock401Response"));
+
+var _GetLatestMinedZilliqaBlock403Response = _interopRequireDefault(require("../model/GetLatestMinedZilliqaBlock403Response"));
+
 var _GetLatestMinedZilliqaBlockR = _interopRequireDefault(require("../model/GetLatestMinedZilliqaBlockR"));
+
+var _GetTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionID404Response"));
+
+var _GetZilliqaAddressDetails400Response = _interopRequireDefault(require("../model/GetZilliqaAddressDetails400Response"));
+
+var _GetZilliqaAddressDetails401Response = _interopRequireDefault(require("../model/GetZilliqaAddressDetails401Response"));
+
+var _GetZilliqaAddressDetails403Response = _interopRequireDefault(require("../model/GetZilliqaAddressDetails403Response"));
 
 var _GetZilliqaAddressDetailsR = _interopRequireDefault(require("../model/GetZilliqaAddressDetailsR"));
 
+var _GetZilliqaBlockDetailsByBlockHash400Response = _interopRequireDefault(require("../model/GetZilliqaBlockDetailsByBlockHash400Response"));
+
+var _GetZilliqaBlockDetailsByBlockHash401Response = _interopRequireDefault(require("../model/GetZilliqaBlockDetailsByBlockHash401Response"));
+
+var _GetZilliqaBlockDetailsByBlockHash403Response = _interopRequireDefault(require("../model/GetZilliqaBlockDetailsByBlockHash403Response"));
+
 var _GetZilliqaBlockDetailsByBlockHashR = _interopRequireDefault(require("../model/GetZilliqaBlockDetailsByBlockHashR"));
+
+var _GetZilliqaBlockDetailsByBlockHeight400Response = _interopRequireDefault(require("../model/GetZilliqaBlockDetailsByBlockHeight400Response"));
+
+var _GetZilliqaBlockDetailsByBlockHeight401Response = _interopRequireDefault(require("../model/GetZilliqaBlockDetailsByBlockHeight401Response"));
+
+var _GetZilliqaBlockDetailsByBlockHeight403Response = _interopRequireDefault(require("../model/GetZilliqaBlockDetailsByBlockHeight403Response"));
 
 var _GetZilliqaBlockDetailsByBlockHeightR = _interopRequireDefault(require("../model/GetZilliqaBlockDetailsByBlockHeightR"));
 
+var _GetZilliqaTransactionDetailsByTransactionID400Response = _interopRequireDefault(require("../model/GetZilliqaTransactionDetailsByTransactionID400Response"));
+
+var _GetZilliqaTransactionDetailsByTransactionID401Response = _interopRequireDefault(require("../model/GetZilliqaTransactionDetailsByTransactionID401Response"));
+
+var _GetZilliqaTransactionDetailsByTransactionID403Response = _interopRequireDefault(require("../model/GetZilliqaTransactionDetailsByTransactionID403Response"));
+
 var _GetZilliqaTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetZilliqaTransactionDetailsByTransactionIDR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40014"));
+var _ListTransactionsByBlockHeight404Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHeight404Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40022"));
+var _ListZilliqaTransactionsByAddress400Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByAddress400Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40023"));
+var _ListZilliqaTransactionsByAddress401Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByAddress401Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse4003"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40030"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40034"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40043"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse4009"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40114"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40122"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40123"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse4013"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40130"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40134"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40143"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4019"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40314"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40322"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40323"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse4033"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40330"));
-
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40334"));
-
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40343"));
-
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse4039"));
-
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse404"));
-
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse4042"));
-
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListZilliqaTransactionsByAddress403Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByAddress403Response"));
 
 var _ListZilliqaTransactionsByAddressR = _interopRequireDefault(require("../model/ListZilliqaTransactionsByAddressR"));
 
+var _ListZilliqaTransactionsByBlockHash400Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByBlockHash400Response"));
+
+var _ListZilliqaTransactionsByBlockHash401Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByBlockHash401Response"));
+
+var _ListZilliqaTransactionsByBlockHash403Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByBlockHash403Response"));
+
 var _ListZilliqaTransactionsByBlockHashR = _interopRequireDefault(require("../model/ListZilliqaTransactionsByBlockHashR"));
+
+var _ListZilliqaTransactionsByBlockHeight400Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByBlockHeight400Response"));
+
+var _ListZilliqaTransactionsByBlockHeight401Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByBlockHeight401Response"));
+
+var _ListZilliqaTransactionsByBlockHeight403Response = _interopRequireDefault(require("../model/ListZilliqaTransactionsByBlockHeight403Response"));
 
 var _ListZilliqaTransactionsByBlockHeightR = _interopRequireDefault(require("../model/ListZilliqaTransactionsByBlockHeightR"));
 
@@ -98,7 +98,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var ZilliqaApi = /*#__PURE__*/function () {
   /**

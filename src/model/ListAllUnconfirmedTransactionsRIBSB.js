@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListAllUnconfirmedTransactionsRIBSBVin from './ListAllUnconfirmedTransactionsRIBSBVin';
-import ListUnconfirmedTransactionsByAddressRIBSBVout from './ListUnconfirmedTransactionsByAddressRIBSBVout';
+import ListAllUnconfirmedTransactionsRIBSBVinInner from './ListAllUnconfirmedTransactionsRIBSBVinInner';
+import ListUnconfirmedTransactionsByAddressRIBSBVoutInner from './ListUnconfirmedTransactionsByAddressRIBSBVoutInner';
 
 /**
  * The ListAllUnconfirmedTransactionsRIBSB model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSB
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListAllUnconfirmedTransactionsRIBSB {
     /**
@@ -29,8 +29,8 @@ class ListAllUnconfirmedTransactionsRIBSB {
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Defines the transaction's virtual size.
      * @param version {Number} Defines the version of the transaction.
-     * @param vin {Array.<module:model/ListAllUnconfirmedTransactionsRIBSBVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBVout>} Represents the transaction outputs.
+     * @param vin {Array.<module:model/ListAllUnconfirmedTransactionsRIBSBVinInner>} Represents the transaction inputs.
+     * @param vout {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBVoutInner>} Represents the transaction outputs.
      */
     constructor(locktime, size, vSize, version, vin, vout) { 
         
@@ -75,10 +75,10 @@ class ListAllUnconfirmedTransactionsRIBSB {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListAllUnconfirmedTransactionsRIBSBVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [ListAllUnconfirmedTransactionsRIBSBVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [ListUnconfirmedTransactionsByAddressRIBSBVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [ListUnconfirmedTransactionsByAddressRIBSBVoutInner]);
             }
         }
         return obj;
@@ -113,13 +113,13 @@ ListAllUnconfirmedTransactionsRIBSB.prototype['version'] = undefined;
 
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListAllUnconfirmedTransactionsRIBSBVin>} vin
+ * @member {Array.<module:model/ListAllUnconfirmedTransactionsRIBSBVinInner>} vin
  */
 ListAllUnconfirmedTransactionsRIBSB.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBVout>} vout
+ * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBVoutInner>} vout
  */
 ListAllUnconfirmedTransactionsRIBSB.prototype['vout'] = undefined;
 

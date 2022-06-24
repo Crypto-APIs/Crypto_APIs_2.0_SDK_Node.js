@@ -13,36 +13,36 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetAddressDetailsFromCallback400Response from '../model/GetAddressDetailsFromCallback400Response';
+import GetAddressDetailsFromCallback401Response from '../model/GetAddressDetailsFromCallback401Response';
+import GetAddressDetailsFromCallback403Response from '../model/GetAddressDetailsFromCallback403Response';
+import GetAddressDetailsFromCallback404Response from '../model/GetAddressDetailsFromCallback404Response';
 import GetAddressDetailsFromCallbackR from '../model/GetAddressDetailsFromCallbackR';
+import GetBlockDetailsByBlockHashFromCallback400Response from '../model/GetBlockDetailsByBlockHashFromCallback400Response';
+import GetBlockDetailsByBlockHashFromCallback401Response from '../model/GetBlockDetailsByBlockHashFromCallback401Response';
+import GetBlockDetailsByBlockHashFromCallback403Response from '../model/GetBlockDetailsByBlockHashFromCallback403Response';
 import GetBlockDetailsByBlockHashFromCallbackR from '../model/GetBlockDetailsByBlockHashFromCallbackR';
+import GetBlockDetailsByBlockHeightFromCallback400Response from '../model/GetBlockDetailsByBlockHeightFromCallback400Response';
+import GetBlockDetailsByBlockHeightFromCallback401Response from '../model/GetBlockDetailsByBlockHeightFromCallback401Response';
+import GetBlockDetailsByBlockHeightFromCallback403Response from '../model/GetBlockDetailsByBlockHeightFromCallback403Response';
 import GetBlockDetailsByBlockHeightFromCallbackR from '../model/GetBlockDetailsByBlockHeightFromCallbackR';
+import GetTransactionDetailsByTransactionIDFromCallback400Response from '../model/GetTransactionDetailsByTransactionIDFromCallback400Response';
+import GetTransactionDetailsByTransactionIDFromCallback401Response from '../model/GetTransactionDetailsByTransactionIDFromCallback401Response';
+import GetTransactionDetailsByTransactionIDFromCallback403Response from '../model/GetTransactionDetailsByTransactionIDFromCallback403Response';
 import GetTransactionDetailsByTransactionIDFromCallbackR from '../model/GetTransactionDetailsByTransactionIDFromCallbackR';
-import InlineResponse40083 from '../model/InlineResponse40083';
-import InlineResponse40084 from '../model/InlineResponse40084';
-import InlineResponse40085 from '../model/InlineResponse40085';
-import InlineResponse40086 from '../model/InlineResponse40086';
-import InlineResponse40183 from '../model/InlineResponse40183';
-import InlineResponse40184 from '../model/InlineResponse40184';
-import InlineResponse40185 from '../model/InlineResponse40185';
-import InlineResponse40186 from '../model/InlineResponse40186';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40383 from '../model/InlineResponse40383';
-import InlineResponse40384 from '../model/InlineResponse40384';
-import InlineResponse40385 from '../model/InlineResponse40385';
-import InlineResponse40386 from '../model/InlineResponse40386';
-import InlineResponse4041 from '../model/InlineResponse4041';
-import InlineResponse4042 from '../model/InlineResponse4042';
-import InlineResponse4044 from '../model/InlineResponse4044';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
+import ListTransactionsByBlockHeight404Response from '../model/ListTransactionsByBlockHeight404Response';
 
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class CallbackDataApi {
 
@@ -171,7 +171,7 @@ export default class CallbackDataApi {
       let accepts = ['application/json'];
       let returnType = GetBlockDetailsByBlockHashFromCallbackR;
       return this.apiClient.callApi(
-        '/blockcain-events/{blockchain}/{network}/blocks/hash/{blockHash}', 'GET',
+        '/blockchain-events/{blockchain}/{network}/blocks/hash/{blockHash}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );
@@ -239,7 +239,7 @@ export default class CallbackDataApi {
       let accepts = ['application/json'];
       let returnType = GetBlockDetailsByBlockHeightFromCallbackR;
       return this.apiClient.callApi(
-        '/blockcain-events/{blockchain}/{network}/blocks/height/{blockHeight}', 'GET',
+        '/blockchain-events/{blockchain}/{network}/blocks/height/{blockHeight}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null
       );

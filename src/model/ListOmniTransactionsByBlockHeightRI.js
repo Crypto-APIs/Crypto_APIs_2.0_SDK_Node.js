@@ -13,13 +13,13 @@
 
 import ApiClient from '../ApiClient';
 import ListOmniTransactionsByBlockHeightRIFee from './ListOmniTransactionsByBlockHeightRIFee';
-import ListOmniTransactionsByBlockHeightRIRecipients from './ListOmniTransactionsByBlockHeightRIRecipients';
-import ListOmniTransactionsByBlockHeightRISenders from './ListOmniTransactionsByBlockHeightRISenders';
+import ListOmniTransactionsByBlockHeightRIRecipientsInner from './ListOmniTransactionsByBlockHeightRIRecipientsInner';
+import ListOmniTransactionsByBlockHeightRISendersInner from './ListOmniTransactionsByBlockHeightRISendersInner';
 
 /**
  * The ListOmniTransactionsByBlockHeightRI model module.
  * @module model/ListOmniTransactionsByBlockHeightRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListOmniTransactionsByBlockHeightRI {
     /**
@@ -31,8 +31,8 @@ class ListOmniTransactionsByBlockHeightRI {
      * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
      * @param positionInBlock {Number} Represents the index position of the transaction in the specific block.
      * @param propertyId {Number} Represents the identifier of the tokens to send.
-     * @param recipients {Array.<module:model/ListOmniTransactionsByBlockHeightRIRecipients>} Represents an object of addresses that receive the transactions.
-     * @param senders {Array.<module:model/ListOmniTransactionsByBlockHeightRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/ListOmniTransactionsByBlockHeightRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+     * @param senders {Array.<module:model/ListOmniTransactionsByBlockHeightRISendersInner>} Represents an object of addresses that provide the funds.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param type {String} Defines the type of the transaction as a string.
@@ -99,10 +99,10 @@ class ListOmniTransactionsByBlockHeightRI {
                 obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListOmniTransactionsByBlockHeightRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListOmniTransactionsByBlockHeightRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [ListOmniTransactionsByBlockHeightRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [ListOmniTransactionsByBlockHeightRISendersInner]);
             }
             if (data.hasOwnProperty('timestamp')) {
                 obj['timestamp'] = ApiClient.convertToType(data['timestamp'], 'Number');
@@ -170,13 +170,13 @@ ListOmniTransactionsByBlockHeightRI.prototype['propertyId'] = undefined;
 
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/ListOmniTransactionsByBlockHeightRIRecipients>} recipients
+ * @member {Array.<module:model/ListOmniTransactionsByBlockHeightRIRecipientsInner>} recipients
  */
 ListOmniTransactionsByBlockHeightRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/ListOmniTransactionsByBlockHeightRISenders>} senders
+ * @member {Array.<module:model/ListOmniTransactionsByBlockHeightRISendersInner>} senders
  */
 ListOmniTransactionsByBlockHeightRI.prototype['senders'] = undefined;
 

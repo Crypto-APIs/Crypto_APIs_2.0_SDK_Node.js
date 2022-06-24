@@ -12,18 +12,18 @@
  */
 
 import ApiClient from '../ApiClient';
-import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses from './DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses';
+import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner from './DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner';
 
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI {
     /**
      * Constructs a new <code>DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI</code>.
      * @alias module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI
-     * @param addresses {Array.<module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses>} Represents the address details.
+     * @param addresses {Array.<module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner>} Represents the address details.
      */
     constructor(addresses) { 
         
@@ -51,7 +51,7 @@ class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI {
             obj = obj || new DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI();
 
             if (data.hasOwnProperty('addresses')) {
-                obj['addresses'] = ApiClient.convertToType(data['addresses'], [DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses]);
+                obj['addresses'] = ApiClient.convertToType(data['addresses'], [DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner]);
             }
         }
         return obj;
@@ -62,7 +62,7 @@ class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI {
 
 /**
  * Represents the address details.
- * @member {Array.<module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses>} addresses
+ * @member {Array.<module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner>} addresses
  */
 DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI.prototype['addresses'] = undefined;
 

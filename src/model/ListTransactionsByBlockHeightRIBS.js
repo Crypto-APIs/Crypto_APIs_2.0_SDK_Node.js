@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend from './GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend';
+import GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner from './GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner';
 import ListTransactionsByBlockHeightRIBSB from './ListTransactionsByBlockHeightRIBSB';
 import ListTransactionsByBlockHeightRIBSBC from './ListTransactionsByBlockHeightRIBSBC';
 import ListTransactionsByBlockHeightRIBSBSC from './ListTransactionsByBlockHeightRIBSBSC';
@@ -23,15 +23,15 @@ import ListTransactionsByBlockHeightRIBSE from './ListTransactionsByBlockHeightR
 import ListTransactionsByBlockHeightRIBSEC from './ListTransactionsByBlockHeightRIBSEC';
 import ListTransactionsByBlockHeightRIBSL from './ListTransactionsByBlockHeightRIBSL';
 import ListTransactionsByBlockHeightRIBSZ from './ListTransactionsByBlockHeightRIBSZ';
-import ListTransactionsByBlockHeightRIBSZVJoinSplit from './ListTransactionsByBlockHeightRIBSZVJoinSplit';
-import ListTransactionsByBlockHeightRIBSZVShieldedOutput from './ListTransactionsByBlockHeightRIBSZVShieldedOutput';
-import ListTransactionsByBlockHeightRIBSZVin from './ListTransactionsByBlockHeightRIBSZVin';
-import ListTransactionsByBlockHeightRIBSZVout from './ListTransactionsByBlockHeightRIBSZVout';
+import ListTransactionsByBlockHeightRIBSZVJoinSplitInner from './ListTransactionsByBlockHeightRIBSZVJoinSplitInner';
+import ListTransactionsByBlockHeightRIBSZVShieldedOutputInner from './ListTransactionsByBlockHeightRIBSZVShieldedOutputInner';
+import ListTransactionsByBlockHeightRIBSZVinInner from './ListTransactionsByBlockHeightRIBSZVinInner';
+import ListTransactionsByBlockHeightRIBSZVoutInner from './ListTransactionsByBlockHeightRIBSZVoutInner';
 
 /**
  * The ListTransactionsByBlockHeightRIBS model module.
  * @module model/ListTransactionsByBlockHeightRIBS
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListTransactionsByBlockHeightRIBS {
     /**
@@ -50,8 +50,8 @@ class ListTransactionsByBlockHeightRIBS {
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents the transaction version number.
-     * @param vin {Array.<module:model/ListTransactionsByBlockHeightRIBSZVin>} Object Array representation of transaction inputs
-     * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} Object Array representation of transaction outputs
+     * @param vin {Array.<module:model/ListTransactionsByBlockHeightRIBSZVinInner>} Object Array representation of transaction inputs
+     * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} Object Array representation of transaction outputs
      * @param contract {String} Represents the specific transaction contract.
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
      * @param gasPrice {module:model/ListTransactionsByBlockHeightRIBSBSCGasPrice} 
@@ -64,9 +64,9 @@ class ListTransactionsByBlockHeightRIBS {
      * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
      * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
      * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
-     * @param vJoinSplit {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-     * @param vShieldedOutput {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
-     * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+     * @param vJoinSplit {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+     * @param vShieldedOutput {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
+     * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
      * @param valueBalance {String} Defines the transaction value balance.
      * @param versionGroupId {String} Represents the transaction version group ID.
      */
@@ -139,10 +139,10 @@ class ListTransactionsByBlockHeightRIBS {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHeightRIBSZVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHeightRIBSZVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHeightRIBSZVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHeightRIBSZVoutInner]);
             }
             if (data.hasOwnProperty('contract')) {
                 obj['contract'] = ApiClient.convertToType(data['contract'], 'String');
@@ -181,13 +181,13 @@ class ListTransactionsByBlockHeightRIBS {
                 obj['overwintered'] = ApiClient.convertToType(data['overwintered'], 'Boolean');
             }
             if (data.hasOwnProperty('vJoinSplit')) {
-                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [ListTransactionsByBlockHeightRIBSZVJoinSplit]);
+                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [ListTransactionsByBlockHeightRIBSZVJoinSplitInner]);
             }
             if (data.hasOwnProperty('vShieldedOutput')) {
-                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [ListTransactionsByBlockHeightRIBSZVShieldedOutput]);
+                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [ListTransactionsByBlockHeightRIBSZVShieldedOutputInner]);
             }
             if (data.hasOwnProperty('vShieldedSpend')) {
-                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend]);
+                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner]);
             }
             if (data.hasOwnProperty('valueBalance')) {
                 obj['valueBalance'] = ApiClient.convertToType(data['valueBalance'], 'String');
@@ -228,13 +228,13 @@ ListTransactionsByBlockHeightRIBS.prototype['version'] = undefined;
 
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVinInner>} vin
  */
 ListTransactionsByBlockHeightRIBS.prototype['vin'] = undefined;
 
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} vout
  */
 ListTransactionsByBlockHeightRIBS.prototype['vout'] = undefined;
 
@@ -311,19 +311,19 @@ ListTransactionsByBlockHeightRIBS.prototype['overwintered'] = undefined;
 
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplitInner>} vJoinSplit
  */
 ListTransactionsByBlockHeightRIBS.prototype['vJoinSplit'] = undefined;
 
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 ListTransactionsByBlockHeightRIBS.prototype['vShieldedOutput'] = undefined;
 
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 ListTransactionsByBlockHeightRIBS.prototype['vShieldedSpend'] = undefined;
 
@@ -363,12 +363,12 @@ ListTransactionsByBlockHeightRIBSB.prototype['vSize'] = undefined;
 ListTransactionsByBlockHeightRIBSB.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVinInner>} vin
  */
 ListTransactionsByBlockHeightRIBSB.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSBVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSBVoutInner>} vout
  */
 ListTransactionsByBlockHeightRIBSB.prototype['vout'] = undefined;
 // Implement ListTransactionsByBlockHeightRIBSE interface:
@@ -424,12 +424,12 @@ ListTransactionsByBlockHeightRIBSD.prototype['size'] = undefined;
 ListTransactionsByBlockHeightRIBSD.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSDVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSDVinInner>} vin
  */
 ListTransactionsByBlockHeightRIBSD.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSDVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSDVoutInner>} vout
  */
 ListTransactionsByBlockHeightRIBSD.prototype['vout'] = undefined;
 // Implement ListTransactionsByBlockHeightRIBSD2 interface:
@@ -450,12 +450,12 @@ ListTransactionsByBlockHeightRIBSD2.prototype['size'] = undefined;
 ListTransactionsByBlockHeightRIBSD2.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSD2Vin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSD2VinInner>} vin
  */
 ListTransactionsByBlockHeightRIBSD2.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSDVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSDVoutInner>} vout
  */
 ListTransactionsByBlockHeightRIBSD2.prototype['vout'] = undefined;
 // Implement ListTransactionsByBlockHeightRIBSL interface:
@@ -481,12 +481,12 @@ ListTransactionsByBlockHeightRIBSL.prototype['vSize'] = undefined;
 ListTransactionsByBlockHeightRIBSL.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSLVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSLVinInner>} vin
  */
 ListTransactionsByBlockHeightRIBSL.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSLVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSLVoutInner>} vout
  */
 ListTransactionsByBlockHeightRIBSL.prototype['vout'] = undefined;
 // Implement ListTransactionsByBlockHeightRIBSBC interface:
@@ -507,12 +507,12 @@ ListTransactionsByBlockHeightRIBSBC.prototype['size'] = undefined;
 ListTransactionsByBlockHeightRIBSBC.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVinInner>} vin
  */
 ListTransactionsByBlockHeightRIBSBC.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVoutInner>} vout
  */
 ListTransactionsByBlockHeightRIBSBC.prototype['vout'] = undefined;
 // Implement ListTransactionsByBlockHeightRIBSEC interface:
@@ -618,17 +618,17 @@ ListTransactionsByBlockHeightRIBSZ.prototype['overwintered'] = undefined;
 ListTransactionsByBlockHeightRIBSZ.prototype['size'] = undefined;
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVJoinSplitInner>} vJoinSplit
  */
 ListTransactionsByBlockHeightRIBSZ.prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 ListTransactionsByBlockHeightRIBSZ.prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 ListTransactionsByBlockHeightRIBSZ.prototype['vShieldedSpend'] = undefined;
 /**
@@ -648,12 +648,12 @@ ListTransactionsByBlockHeightRIBSZ.prototype['version'] = undefined;
 ListTransactionsByBlockHeightRIBSZ.prototype['versionGroupId'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVinInner>} vin
  */
 ListTransactionsByBlockHeightRIBSZ.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} vout
  */
 ListTransactionsByBlockHeightRIBSZ.prototype['vout'] = undefined;
 

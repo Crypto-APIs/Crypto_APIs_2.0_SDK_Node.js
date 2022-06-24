@@ -9,9 +9,9 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _ListOmniTransactionsByBlockHeightRIFee = _interopRequireDefault(require("./ListOmniTransactionsByBlockHeightRIFee"));
 
-var _ListOmniTransactionsByBlockHeightRIRecipients = _interopRequireDefault(require("./ListOmniTransactionsByBlockHeightRIRecipients"));
+var _ListOmniTransactionsByBlockHeightRIRecipientsInner = _interopRequireDefault(require("./ListOmniTransactionsByBlockHeightRIRecipientsInner"));
 
-var _ListOmniTransactionsByBlockHeightRISenders = _interopRequireDefault(require("./ListOmniTransactionsByBlockHeightRISenders"));
+var _ListOmniTransactionsByBlockHeightRISendersInner = _interopRequireDefault(require("./ListOmniTransactionsByBlockHeightRISendersInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListOmniTransactionsByBlockHeightRI model module.
  * @module model/ListOmniTransactionsByBlockHeightRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListOmniTransactionsByBlockHeightRI = /*#__PURE__*/function () {
   /**
@@ -36,8 +36,8 @@ var ListOmniTransactionsByBlockHeightRI = /*#__PURE__*/function () {
    * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
    * @param positionInBlock {Number} Represents the index position of the transaction in the specific block.
    * @param propertyId {Number} Represents the identifier of the tokens to send.
-   * @param recipients {Array.<module:model/ListOmniTransactionsByBlockHeightRIRecipients>} Represents an object of addresses that receive the transactions.
-   * @param senders {Array.<module:model/ListOmniTransactionsByBlockHeightRISenders>} Represents an object of addresses that provide the funds.
+   * @param recipients {Array.<module:model/ListOmniTransactionsByBlockHeightRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+   * @param senders {Array.<module:model/ListOmniTransactionsByBlockHeightRISendersInner>} Represents an object of addresses that provide the funds.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
    * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
    * @param type {String} Defines the type of the transaction as a string.
@@ -116,11 +116,11 @@ var ListOmniTransactionsByBlockHeightRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListOmniTransactionsByBlockHeightRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListOmniTransactionsByBlockHeightRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListOmniTransactionsByBlockHeightRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListOmniTransactionsByBlockHeightRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('timestamp')) {
@@ -197,13 +197,13 @@ ListOmniTransactionsByBlockHeightRI.prototype['positionInBlock'] = undefined;
 ListOmniTransactionsByBlockHeightRI.prototype['propertyId'] = undefined;
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/ListOmniTransactionsByBlockHeightRIRecipients>} recipients
+ * @member {Array.<module:model/ListOmniTransactionsByBlockHeightRIRecipientsInner>} recipients
  */
 
 ListOmniTransactionsByBlockHeightRI.prototype['recipients'] = undefined;
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/ListOmniTransactionsByBlockHeightRISenders>} senders
+ * @member {Array.<module:model/ListOmniTransactionsByBlockHeightRISendersInner>} senders
  */
 
 ListOmniTransactionsByBlockHeightRI.prototype['senders'] = undefined;

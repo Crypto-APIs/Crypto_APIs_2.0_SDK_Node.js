@@ -13,9 +13,9 @@ var _GetXRPRippleTransactionDetailsByTransactionIDRIOffer = _interopRequireDefau
 
 var _GetXRPRippleTransactionDetailsByTransactionIDRIReceive = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIReceive"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDRIRecipients = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIRecipients"));
+var _GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDRISenders = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRISenders"));
+var _GetXRPRippleTransactionDetailsByTransactionIDRISendersInner = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRISendersInner"));
 
 var _GetXRPRippleTransactionDetailsByTransactionIDRIValue = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIValue"));
 
@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRI model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetXRPRippleTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
   /**
@@ -42,8 +42,8 @@ var GetXRPRippleTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
    * @param minedInBlockHeight {String} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
    * @param offer {module:model/GetXRPRippleTransactionDetailsByTransactionIDRIOffer} 
    * @param receive {module:model/GetXRPRippleTransactionDetailsByTransactionIDRIReceive} 
-   * @param recipients {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients>} Represents an object of addresses that receive the transactions.
-   * @param senders {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISenders>} Represents an object of addresses that provide the funds.
+   * @param recipients {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+   * @param senders {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner>} Represents an object of addresses that provide the funds.
    * @param sequence {Number} Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
    * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
@@ -124,11 +124,11 @@ var GetXRPRippleTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_GetXRPRippleTransactionDetailsByTransactionIDRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_GetXRPRippleTransactionDetailsByTransactionIDRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_GetXRPRippleTransactionDetailsByTransactionIDRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('sequence')) {
@@ -208,13 +208,13 @@ GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['offer'] = undefined;
 GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['receive'] = undefined;
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients>} recipients
+ * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner>} recipients
  */
 
 GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['recipients'] = undefined;
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISenders>} senders
+ * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner>} senders
  */
 
 GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['senders'] = undefined;

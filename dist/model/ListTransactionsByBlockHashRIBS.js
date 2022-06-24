@@ -7,11 +7,11 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput"));
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend"));
+var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSZVout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVout"));
+var _GetTransactionDetailsByTransactionIDRIBSZVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVoutInner"));
 
 var _ListTransactionsByBlockHashRIBSB = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSB"));
 
@@ -33,9 +33,9 @@ var _ListTransactionsByBlockHashRIBSL = _interopRequireDefault(require("./ListTr
 
 var _ListTransactionsByBlockHashRIBSZ = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSZ"));
 
-var _ListTransactionsByBlockHashRIBSZVJoinSplit = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSZVJoinSplit"));
+var _ListTransactionsByBlockHashRIBSZVJoinSplitInner = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSZVJoinSplitInner"));
 
-var _ListTransactionsByBlockHashRIBSZVin = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSZVin"));
+var _ListTransactionsByBlockHashRIBSZVinInner = _interopRequireDefault(require("./ListTransactionsByBlockHashRIBSZVinInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBS model module.
  * @module model/ListTransactionsByBlockHashRIBS
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListTransactionsByBlockHashRIBS = /*#__PURE__*/function () {
   /**
@@ -67,8 +67,8 @@ var ListTransactionsByBlockHashRIBS = /*#__PURE__*/function () {
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Numeric representation of the transaction Represents the transaction version number.
-   * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSZVin>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} Object Array representation of transaction outputs
+   * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSZVinInner>} Object Array representation of transaction inputs
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} Object Array representation of transaction outputs
    * @param contract {String} Represents the specific transaction contract.
    * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
    * @param gasPrice {module:model/ListTransactionsByBlockHashRIBSBSCGasPrice} 
@@ -81,9 +81,9 @@ var ListTransactionsByBlockHashRIBS = /*#__PURE__*/function () {
    * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
    * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
    * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
-   * @param vJoinSplit {Array.<module:model/ListTransactionsByBlockHashRIBSZVJoinSplit>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-   * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} Object Array representation of transaction output descriptions
-   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} Object Array representation of transaction spend descriptions
+   * @param vJoinSplit {Array.<module:model/ListTransactionsByBlockHashRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
+   * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
+   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
    * @param valueBalance {String} Defines the transaction value balance.
    * @param versionGroupId {String} Represents the transaction version group ID.
    */
@@ -193,11 +193,11 @@ var ListTransactionsByBlockHashRIBS = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListTransactionsByBlockHashRIBSZVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListTransactionsByBlockHashRIBSZVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSZVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSZVoutInner["default"]]);
         }
 
         if (data.hasOwnProperty('contract')) {
@@ -249,15 +249,15 @@ var ListTransactionsByBlockHashRIBS = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vJoinSplit')) {
-          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_ListTransactionsByBlockHashRIBSZVJoinSplit["default"]]);
+          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_ListTransactionsByBlockHashRIBSZVJoinSplitInner["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedOutput')) {
-          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput["default"]]);
+          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner["default"]]);
         }
 
         if (data.hasOwnProperty('vShieldedSpend')) {
-          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend["default"]]);
+          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner["default"]]);
         }
 
         if (data.hasOwnProperty('valueBalance')) {
@@ -302,13 +302,13 @@ ListTransactionsByBlockHashRIBS.prototype['vSize'] = undefined;
 ListTransactionsByBlockHashRIBS.prototype['version'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSZVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSZVinInner>} vin
  */
 
 ListTransactionsByBlockHashRIBS.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
  */
 
 ListTransactionsByBlockHashRIBS.prototype['vout'] = undefined;
@@ -385,19 +385,19 @@ ListTransactionsByBlockHashRIBS.prototype['joinSplitSig'] = undefined;
 ListTransactionsByBlockHashRIBS.prototype['overwintered'] = undefined;
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSZVJoinSplitInner>} vJoinSplit
  */
 
 ListTransactionsByBlockHashRIBS.prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 
 ListTransactionsByBlockHashRIBS.prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 
 ListTransactionsByBlockHashRIBS.prototype['vShieldedSpend'] = undefined;
@@ -440,13 +440,13 @@ _ListTransactionsByBlockHashRIBSB["default"].prototype['vSize'] = undefined;
 _ListTransactionsByBlockHashRIBSB["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVinInner>} vin
  */
 
 _ListTransactionsByBlockHashRIBSB["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVoutInner>} vout
  */
 
 _ListTransactionsByBlockHashRIBSB["default"].prototype['vout'] = undefined; // Implement ListTransactionsByBlockHashRIBSBC interface:
@@ -471,13 +471,13 @@ _ListTransactionsByBlockHashRIBSBC["default"].prototype['size'] = undefined;
 _ListTransactionsByBlockHashRIBSBC["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVinInner>} vin
  */
 
 _ListTransactionsByBlockHashRIBSBC["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBCVoutInner>} vout
  */
 
 _ListTransactionsByBlockHashRIBSBC["default"].prototype['vout'] = undefined; // Implement ListTransactionsByBlockHashRIBSL interface:
@@ -508,13 +508,13 @@ _ListTransactionsByBlockHashRIBSL["default"].prototype['vSize'] = undefined;
 _ListTransactionsByBlockHashRIBSL["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSLVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSLVinInner>} vin
  */
 
 _ListTransactionsByBlockHashRIBSL["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSLVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSLVoutInner>} vout
  */
 
 _ListTransactionsByBlockHashRIBSL["default"].prototype['vout'] = undefined; // Implement ListTransactionsByBlockHashRIBSD interface:
@@ -539,13 +539,13 @@ _ListTransactionsByBlockHashRIBSD["default"].prototype['size'] = undefined;
 _ListTransactionsByBlockHashRIBSD["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSDVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSDVinInner>} vin
  */
 
 _ListTransactionsByBlockHashRIBSD["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSDVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSDVoutInner>} vout
  */
 
 _ListTransactionsByBlockHashRIBSD["default"].prototype['vout'] = undefined; // Implement ListTransactionsByBlockHashRIBSD2 interface:
@@ -570,13 +570,13 @@ _ListTransactionsByBlockHashRIBSD2["default"].prototype['size'] = undefined;
 _ListTransactionsByBlockHashRIBSD2["default"].prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSD2Vin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSD2VinInner>} vin
  */
 
 _ListTransactionsByBlockHashRIBSD2["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSD2Vout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSD2VoutInner>} vout
  */
 
 _ListTransactionsByBlockHashRIBSD2["default"].prototype['vout'] = undefined; // Implement ListTransactionsByBlockHashRIBSE interface:
@@ -751,19 +751,19 @@ _ListTransactionsByBlockHashRIBSZ["default"].prototype['overwintered'] = undefin
 _ListTransactionsByBlockHashRIBSZ["default"].prototype['size'] = undefined;
 /**
  * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSZVJoinSplit>} vJoinSplit
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSZVJoinSplitInner>} vJoinSplit
  */
 
 _ListTransactionsByBlockHashRIBSZ["default"].prototype['vJoinSplit'] = undefined;
 /**
  * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput>} vShieldedOutput
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
  */
 
 _ListTransactionsByBlockHashRIBSZ["default"].prototype['vShieldedOutput'] = undefined;
 /**
  * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend>} vShieldedSpend
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
  */
 
 _ListTransactionsByBlockHashRIBSZ["default"].prototype['vShieldedSpend'] = undefined;
@@ -787,13 +787,13 @@ _ListTransactionsByBlockHashRIBSZ["default"].prototype['version'] = undefined;
 _ListTransactionsByBlockHashRIBSZ["default"].prototype['versionGroupId'] = undefined;
 /**
  * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSZVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSZVinInner>} vin
  */
 
 _ListTransactionsByBlockHashRIBSZ["default"].prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
  */
 
 _ListTransactionsByBlockHashRIBSZ["default"].prototype['vout'] = undefined;

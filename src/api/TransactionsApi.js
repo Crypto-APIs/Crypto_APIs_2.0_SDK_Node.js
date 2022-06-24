@@ -13,40 +13,40 @@
 
 
 import ApiClient from "../ApiClient";
+import CreateCoinsTransactionFromAddressForWholeAmount400Response from '../model/CreateCoinsTransactionFromAddressForWholeAmount400Response';
+import CreateCoinsTransactionFromAddressForWholeAmount401Response from '../model/CreateCoinsTransactionFromAddressForWholeAmount401Response';
+import CreateCoinsTransactionFromAddressForWholeAmount403Response from '../model/CreateCoinsTransactionFromAddressForWholeAmount403Response';
+import CreateCoinsTransactionFromAddressForWholeAmount409Response from '../model/CreateCoinsTransactionFromAddressForWholeAmount409Response';
 import CreateCoinsTransactionFromAddressForWholeAmountR from '../model/CreateCoinsTransactionFromAddressForWholeAmountR';
 import CreateCoinsTransactionFromAddressForWholeAmountRB from '../model/CreateCoinsTransactionFromAddressForWholeAmountRB';
+import CreateCoinsTransactionRequestFromAddress400Response from '../model/CreateCoinsTransactionRequestFromAddress400Response';
+import CreateCoinsTransactionRequestFromAddress401Response from '../model/CreateCoinsTransactionRequestFromAddress401Response';
+import CreateCoinsTransactionRequestFromAddress403Response from '../model/CreateCoinsTransactionRequestFromAddress403Response';
+import CreateCoinsTransactionRequestFromAddress409Response from '../model/CreateCoinsTransactionRequestFromAddress409Response';
 import CreateCoinsTransactionRequestFromAddressR from '../model/CreateCoinsTransactionRequestFromAddressR';
 import CreateCoinsTransactionRequestFromAddressRB from '../model/CreateCoinsTransactionRequestFromAddressRB';
+import CreateCoinsTransactionRequestFromWallet400Response from '../model/CreateCoinsTransactionRequestFromWallet400Response';
+import CreateCoinsTransactionRequestFromWallet401Response from '../model/CreateCoinsTransactionRequestFromWallet401Response';
+import CreateCoinsTransactionRequestFromWallet403Response from '../model/CreateCoinsTransactionRequestFromWallet403Response';
+import CreateCoinsTransactionRequestFromWallet409Response from '../model/CreateCoinsTransactionRequestFromWallet409Response';
 import CreateCoinsTransactionRequestFromWalletR from '../model/CreateCoinsTransactionRequestFromWalletR';
 import CreateCoinsTransactionRequestFromWalletRB from '../model/CreateCoinsTransactionRequestFromWalletRB';
+import CreateFungibleTokensTransactionRequestFromAddress400Response from '../model/CreateFungibleTokensTransactionRequestFromAddress400Response';
+import CreateFungibleTokensTransactionRequestFromAddress401Response from '../model/CreateFungibleTokensTransactionRequestFromAddress401Response';
+import CreateFungibleTokensTransactionRequestFromAddress403Response from '../model/CreateFungibleTokensTransactionRequestFromAddress403Response';
+import CreateFungibleTokensTransactionRequestFromAddress409Response from '../model/CreateFungibleTokensTransactionRequestFromAddress409Response';
 import CreateFungibleTokensTransactionRequestFromAddressR from '../model/CreateFungibleTokensTransactionRequestFromAddressR';
 import CreateFungibleTokensTransactionRequestFromAddressRB from '../model/CreateFungibleTokensTransactionRequestFromAddressRB';
-import InlineResponse40013 from '../model/InlineResponse40013';
-import InlineResponse40021 from '../model/InlineResponse40021';
-import InlineResponse40026 from '../model/InlineResponse40026';
-import InlineResponse40037 from '../model/InlineResponse40037';
-import InlineResponse40113 from '../model/InlineResponse40113';
-import InlineResponse40121 from '../model/InlineResponse40121';
-import InlineResponse40126 from '../model/InlineResponse40126';
-import InlineResponse40137 from '../model/InlineResponse40137';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40313 from '../model/InlineResponse40313';
-import InlineResponse40321 from '../model/InlineResponse40321';
-import InlineResponse40326 from '../model/InlineResponse40326';
-import InlineResponse40337 from '../model/InlineResponse40337';
-import InlineResponse4091 from '../model/InlineResponse4091';
-import InlineResponse4092 from '../model/InlineResponse4092';
-import InlineResponse4093 from '../model/InlineResponse4093';
-import InlineResponse4094 from '../model/InlineResponse4094';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
 
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class TransactionsApi {
 

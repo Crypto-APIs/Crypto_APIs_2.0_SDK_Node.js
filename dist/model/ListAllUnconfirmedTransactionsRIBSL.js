@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSLVout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSLVout"));
+var _GetTransactionDetailsByTransactionIDRIBSLVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSLVoutInner"));
 
-var _ListAllUnconfirmedTransactionsRIBSLVin = _interopRequireDefault(require("./ListAllUnconfirmedTransactionsRIBSLVin"));
+var _ListAllUnconfirmedTransactionsRIBSLVinInner = _interopRequireDefault(require("./ListAllUnconfirmedTransactionsRIBSLVinInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactionsRIBSL model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSL
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListAllUnconfirmedTransactionsRIBSL = /*#__PURE__*/function () {
   /**
@@ -33,8 +33,8 @@ var ListAllUnconfirmedTransactionsRIBSL = /*#__PURE__*/function () {
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Represents the transaction's version number.
-   * @param vin {Array.<module:model/ListAllUnconfirmedTransactionsRIBSLVin>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} Represents the transaction outputs.
+   * @param vin {Array.<module:model/ListAllUnconfirmedTransactionsRIBSLVinInner>} Represents the transaction inputs.
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} Represents the transaction outputs.
    */
   function ListAllUnconfirmedTransactionsRIBSL(locktime, size, vSize, version, vin, vout) {
     _classCallCheck(this, ListAllUnconfirmedTransactionsRIBSL);
@@ -89,11 +89,11 @@ var ListAllUnconfirmedTransactionsRIBSL = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListAllUnconfirmedTransactionsRIBSLVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListAllUnconfirmedTransactionsRIBSLVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSLVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSLVoutInner["default"]]);
         }
       }
 
@@ -130,13 +130,13 @@ ListAllUnconfirmedTransactionsRIBSL.prototype['vSize'] = undefined;
 ListAllUnconfirmedTransactionsRIBSL.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListAllUnconfirmedTransactionsRIBSLVin>} vin
+ * @member {Array.<module:model/ListAllUnconfirmedTransactionsRIBSLVinInner>} vin
  */
 
 ListAllUnconfirmedTransactionsRIBSL.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} vout
  */
 
 ListAllUnconfirmedTransactionsRIBSL.prototype['vout'] = undefined;

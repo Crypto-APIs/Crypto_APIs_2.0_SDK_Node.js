@@ -7,175 +7,175 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _EstimateTransactionSmartFee400Response = _interopRequireDefault(require("../model/EstimateTransactionSmartFee400Response"));
+
+var _EstimateTransactionSmartFee401Response = _interopRequireDefault(require("../model/EstimateTransactionSmartFee401Response"));
+
+var _EstimateTransactionSmartFee403Response = _interopRequireDefault(require("../model/EstimateTransactionSmartFee403Response"));
+
+var _EstimateTransactionSmartFee501Response = _interopRequireDefault(require("../model/EstimateTransactionSmartFee501Response"));
+
 var _EstimateTransactionSmartFeeR = _interopRequireDefault(require("../model/EstimateTransactionSmartFeeR"));
+
+var _GetAddressDetails400Response = _interopRequireDefault(require("../model/GetAddressDetails400Response"));
+
+var _GetAddressDetails401Response = _interopRequireDefault(require("../model/GetAddressDetails401Response"));
+
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails403Response = _interopRequireDefault(require("../model/GetAddressDetails403Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
 var _GetAddressDetailsR = _interopRequireDefault(require("../model/GetAddressDetailsR"));
 
+var _GetBlockDetailsByBlockHash400Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHash400Response"));
+
+var _GetBlockDetailsByBlockHash401Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHash401Response"));
+
+var _GetBlockDetailsByBlockHash403Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHash403Response"));
+
 var _GetBlockDetailsByBlockHashR = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHashR"));
+
+var _GetBlockDetailsByBlockHeight400Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHeight400Response"));
+
+var _GetBlockDetailsByBlockHeight401Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHeight401Response"));
+
+var _GetBlockDetailsByBlockHeight403Response = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHeight403Response"));
 
 var _GetBlockDetailsByBlockHeightR = _interopRequireDefault(require("../model/GetBlockDetailsByBlockHeightR"));
 
+var _GetFeeRecommendations400Response = _interopRequireDefault(require("../model/GetFeeRecommendations400Response"));
+
+var _GetFeeRecommendations401Response = _interopRequireDefault(require("../model/GetFeeRecommendations401Response"));
+
+var _GetFeeRecommendations403Response = _interopRequireDefault(require("../model/GetFeeRecommendations403Response"));
+
 var _GetFeeRecommendationsR = _interopRequireDefault(require("../model/GetFeeRecommendationsR"));
+
+var _GetLastMinedBlock400Response = _interopRequireDefault(require("../model/GetLastMinedBlock400Response"));
+
+var _GetLastMinedBlock401Response = _interopRequireDefault(require("../model/GetLastMinedBlock401Response"));
+
+var _GetLastMinedBlock403Response = _interopRequireDefault(require("../model/GetLastMinedBlock403Response"));
 
 var _GetLastMinedBlockR = _interopRequireDefault(require("../model/GetLastMinedBlockR"));
 
+var _GetNextAvailableNonce400Response = _interopRequireDefault(require("../model/GetNextAvailableNonce400Response"));
+
+var _GetNextAvailableNonce401Response = _interopRequireDefault(require("../model/GetNextAvailableNonce401Response"));
+
+var _GetNextAvailableNonce403Response = _interopRequireDefault(require("../model/GetNextAvailableNonce403Response"));
+
 var _GetNextAvailableNonceR = _interopRequireDefault(require("../model/GetNextAvailableNonceR"));
+
+var _GetRawTransactionData400Response = _interopRequireDefault(require("../model/GetRawTransactionData400Response"));
+
+var _GetRawTransactionData401Response = _interopRequireDefault(require("../model/GetRawTransactionData401Response"));
+
+var _GetRawTransactionData403Response = _interopRequireDefault(require("../model/GetRawTransactionData403Response"));
 
 var _GetRawTransactionDataR = _interopRequireDefault(require("../model/GetRawTransactionDataR"));
 
+var _GetTransactionDetailsByTransactionID400Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionID400Response"));
+
+var _GetTransactionDetailsByTransactionID401Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionID401Response"));
+
+var _GetTransactionDetailsByTransactionID403Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionID403Response"));
+
+var _GetTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionID404Response"));
+
 var _GetTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400"));
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40010"));
+var _ListAllUnconfirmedTransactions400Response = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactions400Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40015"));
+var _ListAllUnconfirmedTransactions401Response = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactions401Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40017"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40018"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40025"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40027"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40031"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse4004"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40040"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40045"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40057"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40058"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40059"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40061"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40062"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40063"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40065"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40068"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse401"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40110"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40115"));
-
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40117"));
-
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40118"));
-
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse40125"));
-
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse40127"));
-
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40131"));
-
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse4014"));
-
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse40140"));
-
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse40145"));
-
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse40157"));
-
-var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse40158"));
-
-var _InlineResponse33 = _interopRequireDefault(require("../model/InlineResponse40159"));
-
-var _InlineResponse34 = _interopRequireDefault(require("../model/InlineResponse40161"));
-
-var _InlineResponse35 = _interopRequireDefault(require("../model/InlineResponse40162"));
-
-var _InlineResponse36 = _interopRequireDefault(require("../model/InlineResponse40163"));
-
-var _InlineResponse37 = _interopRequireDefault(require("../model/InlineResponse40165"));
-
-var _InlineResponse38 = _interopRequireDefault(require("../model/InlineResponse40168"));
-
-var _InlineResponse39 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse40 = _interopRequireDefault(require("../model/InlineResponse403"));
-
-var _InlineResponse41 = _interopRequireDefault(require("../model/InlineResponse40310"));
-
-var _InlineResponse42 = _interopRequireDefault(require("../model/InlineResponse40315"));
-
-var _InlineResponse43 = _interopRequireDefault(require("../model/InlineResponse40317"));
-
-var _InlineResponse44 = _interopRequireDefault(require("../model/InlineResponse40318"));
-
-var _InlineResponse45 = _interopRequireDefault(require("../model/InlineResponse40325"));
-
-var _InlineResponse46 = _interopRequireDefault(require("../model/InlineResponse40327"));
-
-var _InlineResponse47 = _interopRequireDefault(require("../model/InlineResponse40331"));
-
-var _InlineResponse48 = _interopRequireDefault(require("../model/InlineResponse4034"));
-
-var _InlineResponse49 = _interopRequireDefault(require("../model/InlineResponse40340"));
-
-var _InlineResponse50 = _interopRequireDefault(require("../model/InlineResponse40345"));
-
-var _InlineResponse51 = _interopRequireDefault(require("../model/InlineResponse40357"));
-
-var _InlineResponse52 = _interopRequireDefault(require("../model/InlineResponse40358"));
-
-var _InlineResponse53 = _interopRequireDefault(require("../model/InlineResponse40359"));
-
-var _InlineResponse54 = _interopRequireDefault(require("../model/InlineResponse40361"));
-
-var _InlineResponse55 = _interopRequireDefault(require("../model/InlineResponse40362"));
-
-var _InlineResponse56 = _interopRequireDefault(require("../model/InlineResponse40363"));
-
-var _InlineResponse57 = _interopRequireDefault(require("../model/InlineResponse40365"));
-
-var _InlineResponse58 = _interopRequireDefault(require("../model/InlineResponse40368"));
-
-var _InlineResponse59 = _interopRequireDefault(require("../model/InlineResponse404"));
-
-var _InlineResponse60 = _interopRequireDefault(require("../model/InlineResponse4041"));
-
-var _InlineResponse61 = _interopRequireDefault(require("../model/InlineResponse4042"));
-
-var _InlineResponse62 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse63 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse64 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse65 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse66 = _interopRequireDefault(require("../model/InlineResponse500"));
-
-var _InlineResponse67 = _interopRequireDefault(require("../model/InlineResponse501"));
+var _ListAllUnconfirmedTransactions403Response = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactions403Response"));
 
 var _ListAllUnconfirmedTransactionsR = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactionsR"));
 
+var _ListConfirmedTokensTransfersByAddressAndTimeRange400Response = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddressAndTimeRange400Response"));
+
+var _ListConfirmedTokensTransfersByAddressAndTimeRange401Response = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddressAndTimeRange401Response"));
+
+var _ListConfirmedTokensTransfersByAddressAndTimeRange403Response = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddressAndTimeRange403Response"));
+
 var _ListConfirmedTokensTransfersByAddressAndTimeRangeR = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddressAndTimeRangeR"));
+
+var _ListConfirmedTransactionsByAddress400Response = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddress400Response"));
+
+var _ListConfirmedTransactionsByAddress401Response = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddress401Response"));
+
+var _ListConfirmedTransactionsByAddress403Response = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddress403Response"));
+
+var _ListConfirmedTransactionsByAddressAndTimeRange400Response = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddressAndTimeRange400Response"));
+
+var _ListConfirmedTransactionsByAddressAndTimeRange401Response = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddressAndTimeRange401Response"));
+
+var _ListConfirmedTransactionsByAddressAndTimeRange403Response = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddressAndTimeRange403Response"));
 
 var _ListConfirmedTransactionsByAddressAndTimeRangeR = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddressAndTimeRangeR"));
 
 var _ListConfirmedTransactionsByAddressR = _interopRequireDefault(require("../model/ListConfirmedTransactionsByAddressR"));
 
+var _ListInternalTransactionsByAddressAndTimeRange400Response = _interopRequireDefault(require("../model/ListInternalTransactionsByAddressAndTimeRange400Response"));
+
+var _ListInternalTransactionsByAddressAndTimeRange401Response = _interopRequireDefault(require("../model/ListInternalTransactionsByAddressAndTimeRange401Response"));
+
+var _ListInternalTransactionsByAddressAndTimeRange403Response = _interopRequireDefault(require("../model/ListInternalTransactionsByAddressAndTimeRange403Response"));
+
 var _ListInternalTransactionsByAddressAndTimeRangeR = _interopRequireDefault(require("../model/ListInternalTransactionsByAddressAndTimeRangeR"));
+
+var _ListLatestMinedBlocks400Response = _interopRequireDefault(require("../model/ListLatestMinedBlocks400Response"));
+
+var _ListLatestMinedBlocks401Response = _interopRequireDefault(require("../model/ListLatestMinedBlocks401Response"));
+
+var _ListLatestMinedBlocks403Response = _interopRequireDefault(require("../model/ListLatestMinedBlocks403Response"));
 
 var _ListLatestMinedBlocksR = _interopRequireDefault(require("../model/ListLatestMinedBlocksR"));
 
+var _ListTransactionsByBlockHash400Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHash400Response"));
+
+var _ListTransactionsByBlockHash401Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHash401Response"));
+
+var _ListTransactionsByBlockHash403Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHash403Response"));
+
 var _ListTransactionsByBlockHashR = _interopRequireDefault(require("../model/ListTransactionsByBlockHashR"));
+
+var _ListTransactionsByBlockHeight400Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHeight400Response"));
+
+var _ListTransactionsByBlockHeight401Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHeight401Response"));
+
+var _ListTransactionsByBlockHeight403Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHeight403Response"));
+
+var _ListTransactionsByBlockHeight404Response = _interopRequireDefault(require("../model/ListTransactionsByBlockHeight404Response"));
 
 var _ListTransactionsByBlockHeightR = _interopRequireDefault(require("../model/ListTransactionsByBlockHeightR"));
 
+var _ListUnconfirmedTransactionsByAddress400Response = _interopRequireDefault(require("../model/ListUnconfirmedTransactionsByAddress400Response"));
+
+var _ListUnconfirmedTransactionsByAddress401Response = _interopRequireDefault(require("../model/ListUnconfirmedTransactionsByAddress401Response"));
+
+var _ListUnconfirmedTransactionsByAddress403Response = _interopRequireDefault(require("../model/ListUnconfirmedTransactionsByAddress403Response"));
+
 var _ListUnconfirmedTransactionsByAddressR = _interopRequireDefault(require("../model/ListUnconfirmedTransactionsByAddressR"));
+
+var _ListUnspentTransactionOutputsByAddress400Response = _interopRequireDefault(require("../model/ListUnspentTransactionOutputsByAddress400Response"));
+
+var _ListUnspentTransactionOutputsByAddress401Response = _interopRequireDefault(require("../model/ListUnspentTransactionOutputsByAddress401Response"));
+
+var _ListUnspentTransactionOutputsByAddress403Response = _interopRequireDefault(require("../model/ListUnspentTransactionOutputsByAddress403Response"));
 
 var _ListUnspentTransactionOutputsByAddressR = _interopRequireDefault(require("../model/ListUnspentTransactionOutputsByAddressR"));
 
@@ -190,7 +190,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var UnifiedEndpointsApi = /*#__PURE__*/function () {
   /**

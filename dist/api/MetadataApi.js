@@ -7,23 +7,23 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400105"));
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse401105"));
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse402"));
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse403105"));
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse409"));
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse415"));
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse422"));
+var _ListSupportedAssets400Response = _interopRequireDefault(require("../model/ListSupportedAssets400Response"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse429"));
+var _ListSupportedAssets401Response = _interopRequireDefault(require("../model/ListSupportedAssets401Response"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListSupportedAssets403Response = _interopRequireDefault(require("../model/ListSupportedAssets403Response"));
 
 var _ListSupportedAssetsR = _interopRequireDefault(require("../model/ListSupportedAssetsR"));
 
@@ -38,7 +38,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var MetadataApi = /*#__PURE__*/function () {
   /**

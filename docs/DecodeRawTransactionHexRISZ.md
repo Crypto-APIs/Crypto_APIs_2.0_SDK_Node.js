@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **valueBalance** | **String** | Defines the transaction value balance. | 
 **version** | **Number** | Represents the transaction version number. | 
 **versionGroupId** | **String** | Represents the transaction version group ID | 
-**vin** | [**[DecodeRawTransactionHexRISZVin]**](DecodeRawTransactionHexRISZVin.md) | Represents the Inputs of the transaction | 
-**vout** | [**[DecodeRawTransactionHexRISZVout]**](DecodeRawTransactionHexRISZVout.md) | Represents the Inputs of the transaction | 
+**vin** | [**[DecodeRawTransactionHexRISZVinInner]**](DecodeRawTransactionHexRISZVinInner.md) | Represents the Inputs of the transaction | 
+**vout** | [**[DecodeRawTransactionHexRISZVoutInner]**](DecodeRawTransactionHexRISZVoutInner.md) | Represents the Inputs of the transaction | 
 
 

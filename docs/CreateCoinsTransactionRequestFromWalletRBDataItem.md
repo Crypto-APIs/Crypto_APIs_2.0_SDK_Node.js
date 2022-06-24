@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **feePriority** | **String** | Represents the fee priority of the automation, whether it is \&quot;slow\&quot;, \&quot;standard\&quot; or \&quot;fast\&quot;. | 
 **note** | **String** | Represents an optional note to add a free text in, explaining or providing additional detail on the transaction request. | [optional] 
 **prepareStrategy** | **String** | Refers to a model of a UTXO spending strategy, where customers can choose how to spend their transaction outputs from multiple Bitcoin addresses. Two options available - \&quot;minimize-dust\&quot; (select lower amounts from multiple addresses) or \&quot;optimize-size\&quot; (select higher amounts from less addresses). | [optional] [default to &#39;minimize-dust&#39;]
-**recipients** | [**[CreateCoinsTransactionRequestFromWalletRBDataItemRecipients]**](CreateCoinsTransactionRequestFromWalletRBDataItemRecipients.md) | Defines the destination of the transaction, whether it is incoming or outgoing. | 
+**recipients** | [**[CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner]**](CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner.md) | Defines the destination of the transaction, whether it is incoming or outgoing. | 
 
 
 

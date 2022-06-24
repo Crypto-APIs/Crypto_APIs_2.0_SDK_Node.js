@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRIFee model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRIFee
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListHDWalletXPubYPubZPubTransactionsRIFee {
     /**

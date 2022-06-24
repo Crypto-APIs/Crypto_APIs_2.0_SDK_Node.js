@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ActivateBlockchainEventSubscriptionRB model module.
  * @module model/ActivateBlockchainEventSubscriptionRB
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ActivateBlockchainEventSubscriptionRB = /*#__PURE__*/function () {
   /**

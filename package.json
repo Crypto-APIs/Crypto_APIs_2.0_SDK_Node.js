@@ -1,6 +1,6 @@
 {
   "name": "cryptoapis",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Node.js library/SDK for Crypto APIs 2.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -42,7 +42,7 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/register": "^7.0.0",
     "expect.js": "^0.3.1",
-    "mocha": "^9.1.3",
+    "mocha": "^8.0.1",
     "sinon": "^7.2.0",
     "minimist": "^1.2.6"
   },

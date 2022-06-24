@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _ListConfirmedTransactionsByAddressRIBSD2Vin = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSD2Vin"));
+var _ListConfirmedTransactionsByAddressRIBSD2VinInner = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSD2VinInner"));
 
-var _ListConfirmedTransactionsByAddressRIBSD2Vout = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSD2Vout"));
+var _ListConfirmedTransactionsByAddressRIBSD2VoutInner = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSD2VoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSD2 model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSD2
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListConfirmedTransactionsByAddressRIBSD2 = /*#__PURE__*/function () {
   /**
@@ -32,8 +32,8 @@ var ListConfirmedTransactionsByAddressRIBSD2 = /*#__PURE__*/function () {
    * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
    * @param size {Number} Represents the total size of this transaction.
    * @param version {Number} Represents the transaction's version number.
-   * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vin>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vout>} Represents the transaction outputs.
+   * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VinInner>} Represents the transaction inputs.
+   * @param vout {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VoutInner>} Represents the transaction outputs.
    */
   function ListConfirmedTransactionsByAddressRIBSD2(locktime, size, version, vin, vout) {
     _classCallCheck(this, ListConfirmedTransactionsByAddressRIBSD2);
@@ -83,11 +83,11 @@ var ListConfirmedTransactionsByAddressRIBSD2 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListConfirmedTransactionsByAddressRIBSD2Vin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListConfirmedTransactionsByAddressRIBSD2VinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListConfirmedTransactionsByAddressRIBSD2Vout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_ListConfirmedTransactionsByAddressRIBSD2VoutInner["default"]]);
         }
       }
 
@@ -118,13 +118,13 @@ ListConfirmedTransactionsByAddressRIBSD2.prototype['size'] = undefined;
 ListConfirmedTransactionsByAddressRIBSD2.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VinInner>} vin
  */
 
 ListConfirmedTransactionsByAddressRIBSD2.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2Vout>} vout
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VoutInner>} vout
  */
 
 ListConfirmedTransactionsByAddressRIBSD2.prototype['vout'] = undefined;

@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDRIRecipients = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIRecipients"));
+var _GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner"));
 
-var _GetXRPRippleTransactionDetailsByTransactionIDRISenders = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRISenders"));
+var _GetXRPRippleTransactionDetailsByTransactionIDRISendersInner = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRISendersInner"));
 
 var _ListXRPRippleTransactionsByAddressRIFee = _interopRequireDefault(require("./ListXRPRippleTransactionsByAddressRIFee"));
 
@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListXRPRippleTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**
@@ -39,8 +39,8 @@ var ListXRPRippleTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () 
    * @param index {Number} Represents the index position of the transaction in the block.
    * @param minedInBlockHash {String} Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
    * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
-   * @param recipients {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients>} Represents an object of addresses that receive the transactions.
-   * @param senders {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISenders>} Represents an object of addresses that provide the funds.
+   * @param recipients {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+   * @param senders {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner>} Represents an object of addresses that provide the funds.
    * @param sequence {Number} Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
    * @param status {String} Defines the status of the transaction.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
@@ -112,11 +112,11 @@ var ListXRPRippleTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () 
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_GetXRPRippleTransactionDetailsByTransactionIDRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_GetXRPRippleTransactionDetailsByTransactionIDRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_GetXRPRippleTransactionDetailsByTransactionIDRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('sequence')) {
@@ -189,13 +189,13 @@ ListXRPRippleTransactionsByAddressAndTimeRangeRI.prototype['minedInBlockHash'] =
 ListXRPRippleTransactionsByAddressAndTimeRangeRI.prototype['minedInBlockHeight'] = undefined;
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients>} recipients
+ * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner>} recipients
  */
 
 ListXRPRippleTransactionsByAddressAndTimeRangeRI.prototype['recipients'] = undefined;
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISenders>} senders
+ * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner>} senders
  */
 
 ListXRPRippleTransactionsByAddressAndTimeRangeRI.prototype['senders'] = undefined;

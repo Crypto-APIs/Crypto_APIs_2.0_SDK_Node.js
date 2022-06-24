@@ -13,32 +13,32 @@
 
 
 import ApiClient from "../ApiClient";
+import CreateAutomaticCoinsForwarding400Response from '../model/CreateAutomaticCoinsForwarding400Response';
+import CreateAutomaticCoinsForwarding401Response from '../model/CreateAutomaticCoinsForwarding401Response';
+import CreateAutomaticCoinsForwarding403Response from '../model/CreateAutomaticCoinsForwarding403Response';
+import CreateAutomaticCoinsForwarding409Response from '../model/CreateAutomaticCoinsForwarding409Response';
 import CreateAutomaticCoinsForwardingR from '../model/CreateAutomaticCoinsForwardingR';
 import CreateAutomaticCoinsForwardingRB from '../model/CreateAutomaticCoinsForwardingRB';
+import DeleteAutomaticCoinsForwarding400Response from '../model/DeleteAutomaticCoinsForwarding400Response';
+import DeleteAutomaticCoinsForwarding401Response from '../model/DeleteAutomaticCoinsForwarding401Response';
+import DeleteAutomaticCoinsForwarding403Response from '../model/DeleteAutomaticCoinsForwarding403Response';
 import DeleteAutomaticCoinsForwardingR from '../model/DeleteAutomaticCoinsForwardingR';
-import InlineResponse40089 from '../model/InlineResponse40089';
-import InlineResponse40090 from '../model/InlineResponse40090';
-import InlineResponse40091 from '../model/InlineResponse40091';
-import InlineResponse40189 from '../model/InlineResponse40189';
-import InlineResponse40190 from '../model/InlineResponse40190';
-import InlineResponse40191 from '../model/InlineResponse40191';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse40389 from '../model/InlineResponse40389';
-import InlineResponse40390 from '../model/InlineResponse40390';
-import InlineResponse40391 from '../model/InlineResponse40391';
-import InlineResponse4041 from '../model/InlineResponse4041';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse40916 from '../model/InlineResponse40916';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
+import ListCoinsForwardingAutomations400Response from '../model/ListCoinsForwardingAutomations400Response';
+import ListCoinsForwardingAutomations401Response from '../model/ListCoinsForwardingAutomations401Response';
+import ListCoinsForwardingAutomations403Response from '../model/ListCoinsForwardingAutomations403Response';
 import ListCoinsForwardingAutomationsR from '../model/ListCoinsForwardingAutomationsR';
 
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class AutomaticCoinsForwardingApi {
 

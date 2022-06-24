@@ -7,63 +7,63 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _CreateCoinsTransactionFromAddressForWholeAmount400Response = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmount400Response"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmount401Response = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmount401Response"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmount403Response = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmount403Response"));
+
+var _CreateCoinsTransactionFromAddressForWholeAmount409Response = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmount409Response"));
+
 var _CreateCoinsTransactionFromAddressForWholeAmountR = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmountR"));
 
 var _CreateCoinsTransactionFromAddressForWholeAmountRB = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmountRB"));
+
+var _CreateCoinsTransactionRequestFromAddress400Response = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromAddress400Response"));
+
+var _CreateCoinsTransactionRequestFromAddress401Response = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromAddress401Response"));
+
+var _CreateCoinsTransactionRequestFromAddress403Response = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromAddress403Response"));
+
+var _CreateCoinsTransactionRequestFromAddress409Response = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromAddress409Response"));
 
 var _CreateCoinsTransactionRequestFromAddressR = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromAddressR"));
 
 var _CreateCoinsTransactionRequestFromAddressRB = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromAddressRB"));
 
+var _CreateCoinsTransactionRequestFromWallet400Response = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromWallet400Response"));
+
+var _CreateCoinsTransactionRequestFromWallet401Response = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromWallet401Response"));
+
+var _CreateCoinsTransactionRequestFromWallet403Response = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromWallet403Response"));
+
+var _CreateCoinsTransactionRequestFromWallet409Response = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromWallet409Response"));
+
 var _CreateCoinsTransactionRequestFromWalletR = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromWalletR"));
 
 var _CreateCoinsTransactionRequestFromWalletRB = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromWalletRB"));
+
+var _CreateFungibleTokensTransactionRequestFromAddress400Response = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddress400Response"));
+
+var _CreateFungibleTokensTransactionRequestFromAddress401Response = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddress401Response"));
+
+var _CreateFungibleTokensTransactionRequestFromAddress403Response = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddress403Response"));
+
+var _CreateFungibleTokensTransactionRequestFromAddress409Response = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddress409Response"));
 
 var _CreateFungibleTokensTransactionRequestFromAddressR = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddressR"));
 
 var _CreateFungibleTokensTransactionRequestFromAddressRB = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddressRB"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40013"));
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40021"));
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40026"));
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40037"));
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40113"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40121"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40126"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40137"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40313"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40321"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40326"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40337"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse4091"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse4092"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4093"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse4094"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -76,7 +76,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var TransactionsApi = /*#__PURE__*/function () {
   /**

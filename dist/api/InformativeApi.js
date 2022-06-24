@@ -7,81 +7,81 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetTransactionRequestDetails400Response = _interopRequireDefault(require("../model/GetTransactionRequestDetails400Response"));
+
+var _GetTransactionRequestDetails401Response = _interopRequireDefault(require("../model/GetTransactionRequestDetails401Response"));
+
+var _GetTransactionRequestDetails403Response = _interopRequireDefault(require("../model/GetTransactionRequestDetails403Response"));
+
 var _GetTransactionRequestDetailsR = _interopRequireDefault(require("../model/GetTransactionRequestDetailsR"));
+
+var _GetWalletAssetDetails400Response = _interopRequireDefault(require("../model/GetWalletAssetDetails400Response"));
+
+var _GetWalletAssetDetails401Response = _interopRequireDefault(require("../model/GetWalletAssetDetails401Response"));
+
+var _GetWalletAssetDetails403Response = _interopRequireDefault(require("../model/GetWalletAssetDetails403Response"));
 
 var _GetWalletAssetDetailsR = _interopRequireDefault(require("../model/GetWalletAssetDetailsR"));
 
+var _GetWalletTransactionDetailsByTransactionID400Response = _interopRequireDefault(require("../model/GetWalletTransactionDetailsByTransactionID400Response"));
+
+var _GetWalletTransactionDetailsByTransactionID401Response = _interopRequireDefault(require("../model/GetWalletTransactionDetailsByTransactionID401Response"));
+
+var _GetWalletTransactionDetailsByTransactionID403Response = _interopRequireDefault(require("../model/GetWalletTransactionDetailsByTransactionID403Response"));
+
 var _GetWalletTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetWalletTransactionDetailsByTransactionIDR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40035"));
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40036"));
+var _ListAllAssetsByWalletID400Response = _interopRequireDefault(require("../model/ListAllAssetsByWalletID400Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40038"));
+var _ListAllAssetsByWalletID401Response = _interopRequireDefault(require("../model/ListAllAssetsByWalletID401Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40039"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40044"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40048"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40049"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse4007"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40135"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40136"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40138"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40139"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40144"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40148"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40149"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse4017"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40335"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40336"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40338"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse40339"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40344"));
-
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40348"));
-
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40349"));
-
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse4037"));
-
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse4041"));
-
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListAllAssetsByWalletID403Response = _interopRequireDefault(require("../model/ListAllAssetsByWalletID403Response"));
 
 var _ListAllAssetsByWalletIDR = _interopRequireDefault(require("../model/ListAllAssetsByWalletIDR"));
 
+var _ListAllAssetsFromAllWallets400Response = _interopRequireDefault(require("../model/ListAllAssetsFromAllWallets400Response"));
+
+var _ListAllAssetsFromAllWallets401Response = _interopRequireDefault(require("../model/ListAllAssetsFromAllWallets401Response"));
+
+var _ListAllAssetsFromAllWallets403Response = _interopRequireDefault(require("../model/ListAllAssetsFromAllWallets403Response"));
+
 var _ListAllAssetsFromAllWalletsR = _interopRequireDefault(require("../model/ListAllAssetsFromAllWalletsR"));
+
+var _ListDepositAddresses400Response = _interopRequireDefault(require("../model/ListDepositAddresses400Response"));
+
+var _ListDepositAddresses401Response = _interopRequireDefault(require("../model/ListDepositAddresses401Response"));
+
+var _ListDepositAddresses403Response = _interopRequireDefault(require("../model/ListDepositAddresses403Response"));
 
 var _ListDepositAddressesR = _interopRequireDefault(require("../model/ListDepositAddressesR"));
 
+var _ListSupportedTokens400Response = _interopRequireDefault(require("../model/ListSupportedTokens400Response"));
+
+var _ListSupportedTokens401Response = _interopRequireDefault(require("../model/ListSupportedTokens401Response"));
+
+var _ListSupportedTokens403Response = _interopRequireDefault(require("../model/ListSupportedTokens403Response"));
+
 var _ListSupportedTokensR = _interopRequireDefault(require("../model/ListSupportedTokensR"));
+
+var _ListWalletTransactions400Response = _interopRequireDefault(require("../model/ListWalletTransactions400Response"));
+
+var _ListWalletTransactions401Response = _interopRequireDefault(require("../model/ListWalletTransactions401Response"));
+
+var _ListWalletTransactions403Response = _interopRequireDefault(require("../model/ListWalletTransactions403Response"));
 
 var _ListWalletTransactionsR = _interopRequireDefault(require("../model/ListWalletTransactionsR"));
 
@@ -96,7 +96,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var InformativeApi = /*#__PURE__*/function () {
   /**

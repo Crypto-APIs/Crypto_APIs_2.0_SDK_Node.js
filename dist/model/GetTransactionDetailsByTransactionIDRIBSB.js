@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSBVin = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBVin"));
+var _GetTransactionDetailsByTransactionIDRIBSBVinInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBVinInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSBVout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBVout"));
+var _GetTransactionDetailsByTransactionIDRIBSBVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBVoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSB model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSB
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetTransactionDetailsByTransactionIDRIBSB = /*#__PURE__*/function () {
   /**
@@ -33,8 +33,8 @@ var GetTransactionDetailsByTransactionIDRIBSB = /*#__PURE__*/function () {
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Represents the transaction version number.
-   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVin>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVout>} Represents the transaction outputs.
+   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVinInner>} Represents the transaction inputs.
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVoutInner>} Represents the transaction outputs.
    */
   function GetTransactionDetailsByTransactionIDRIBSB(locktime, size, vSize, version, vin, vout) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDRIBSB);
@@ -89,11 +89,11 @@ var GetTransactionDetailsByTransactionIDRIBSB = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSBVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSBVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSBVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSBVoutInner["default"]]);
         }
       }
 
@@ -130,13 +130,13 @@ GetTransactionDetailsByTransactionIDRIBSB.prototype['vSize'] = undefined;
 GetTransactionDetailsByTransactionIDRIBSB.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVinInner>} vin
  */
 
 GetTransactionDetailsByTransactionIDRIBSB.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVoutInner>} vout
  */
 
 GetTransactionDetailsByTransactionIDRIBSB.prototype['vout'] = undefined;

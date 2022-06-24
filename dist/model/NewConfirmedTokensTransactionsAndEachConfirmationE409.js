@@ -9,7 +9,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _AlreadyExists = _interopRequireDefault(require("./AlreadyExists"));
 
-var _BannedIpAddressDetails = _interopRequireDefault(require("./BannedIpAddressDetails"));
+var _BannedIpAddressDetailsInner = _interopRequireDefault(require("./BannedIpAddressDetailsInner"));
 
 var _InvalidData = _interopRequireDefault(require("./InvalidData"));
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationE409 model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationE409
- * @version 1.5.0
+ * @version 1.6.0
  */
 var NewConfirmedTokensTransactionsAndEachConfirmationE409 = /*#__PURE__*/function () {
   /**
@@ -84,7 +84,7 @@ var NewConfirmedTokensTransactionsAndEachConfirmationE409 = /*#__PURE__*/functio
         }
 
         if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetails["default"]]);
+          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
         }
       }
 
@@ -108,7 +108,7 @@ NewConfirmedTokensTransactionsAndEachConfirmationE409.prototype['code'] = undefi
 
 NewConfirmedTokensTransactionsAndEachConfirmationE409.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 NewConfirmedTokensTransactionsAndEachConfirmationE409.prototype['details'] = undefined; // Implement InvalidData interface:
@@ -126,7 +126,7 @@ _InvalidData["default"].prototype['code'] = undefined;
 
 _InvalidData["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _InvalidData["default"].prototype['details'] = undefined; // Implement AlreadyExists interface:
@@ -144,7 +144,7 @@ _AlreadyExists["default"].prototype['code'] = undefined;
 
 _AlreadyExists["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _AlreadyExists["default"].prototype['details'] = undefined;

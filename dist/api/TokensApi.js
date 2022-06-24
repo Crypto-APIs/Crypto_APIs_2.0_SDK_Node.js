@@ -7,55 +7,55 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetTokenDetailsByContractAddress400Response = _interopRequireDefault(require("../model/GetTokenDetailsByContractAddress400Response"));
+
+var _GetTokenDetailsByContractAddress401Response = _interopRequireDefault(require("../model/GetTokenDetailsByContractAddress401Response"));
+
+var _GetTokenDetailsByContractAddress403Response = _interopRequireDefault(require("../model/GetTokenDetailsByContractAddress403Response"));
+
 var _GetTokenDetailsByContractAddressR = _interopRequireDefault(require("../model/GetTokenDetailsByContractAddressR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40060"));
+var _ListConfirmedTokensTransfersByAddress400Response = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddress400Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40064"));
+var _ListConfirmedTokensTransfersByAddress401Response = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddress401Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40066"));
-
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40067"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40069"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40160"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40164"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40166"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40167"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40169"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40360"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40364"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40366"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40367"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40369"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ListConfirmedTokensTransfersByAddress403Response = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddress403Response"));
 
 var _ListConfirmedTokensTransfersByAddressR = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddressR"));
 
+var _ListTokensByAddress400Response = _interopRequireDefault(require("../model/ListTokensByAddress400Response"));
+
+var _ListTokensByAddress401Response = _interopRequireDefault(require("../model/ListTokensByAddress401Response"));
+
+var _ListTokensByAddress403Response = _interopRequireDefault(require("../model/ListTokensByAddress403Response"));
+
 var _ListTokensByAddressR = _interopRequireDefault(require("../model/ListTokensByAddressR"));
 
+var _ListTokensTransfersByTransactionHash400Response = _interopRequireDefault(require("../model/ListTokensTransfersByTransactionHash400Response"));
+
+var _ListTokensTransfersByTransactionHash401Response = _interopRequireDefault(require("../model/ListTokensTransfersByTransactionHash401Response"));
+
+var _ListTokensTransfersByTransactionHash403Response = _interopRequireDefault(require("../model/ListTokensTransfersByTransactionHash403Response"));
+
 var _ListTokensTransfersByTransactionHashR = _interopRequireDefault(require("../model/ListTokensTransfersByTransactionHashR"));
+
+var _ListUnconfirmedTokensTransfersByAddress400Response = _interopRequireDefault(require("../model/ListUnconfirmedTokensTransfersByAddress400Response"));
+
+var _ListUnconfirmedTokensTransfersByAddress401Response = _interopRequireDefault(require("../model/ListUnconfirmedTokensTransfersByAddress401Response"));
+
+var _ListUnconfirmedTokensTransfersByAddress403Response = _interopRequireDefault(require("../model/ListUnconfirmedTokensTransfersByAddress403Response"));
 
 var _ListUnconfirmedTokensTransfersByAddressR = _interopRequireDefault(require("../model/ListUnconfirmedTokensTransfersByAddressR"));
 
@@ -70,7 +70,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var TokensApi = /*#__PURE__*/function () {
   /**

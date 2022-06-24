@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListTransactionsByBlockHashRIBSBVin from './ListTransactionsByBlockHashRIBSBVin';
-import ListTransactionsByBlockHeightRIBSBVout from './ListTransactionsByBlockHeightRIBSBVout';
+import ListTransactionsByBlockHashRIBSBVinInner from './ListTransactionsByBlockHashRIBSBVinInner';
+import ListTransactionsByBlockHeightRIBSBVoutInner from './ListTransactionsByBlockHeightRIBSBVoutInner';
 
 /**
  * The ListTransactionsByBlockHeightRIBSB model module.
  * @module model/ListTransactionsByBlockHeightRIBSB
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListTransactionsByBlockHeightRIBSB {
     /**
@@ -29,8 +29,8 @@ class ListTransactionsByBlockHeightRIBSB {
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents the transaction version number.
-     * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSBVin>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSBVout>} Represents the transaction outputs.
+     * @param vin {Array.<module:model/ListTransactionsByBlockHashRIBSBVinInner>} Represents the transaction inputs.
+     * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSBVoutInner>} Represents the transaction outputs.
      */
     constructor(locktime, size, vSize, version, vin, vout) { 
         
@@ -75,10 +75,10 @@ class ListTransactionsByBlockHeightRIBSB {
                 obj['version'] = ApiClient.convertToType(data['version'], 'Number');
             }
             if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHashRIBSBVin]);
+                obj['vin'] = ApiClient.convertToType(data['vin'], [ListTransactionsByBlockHashRIBSBVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHeightRIBSBVout]);
+                obj['vout'] = ApiClient.convertToType(data['vout'], [ListTransactionsByBlockHeightRIBSBVoutInner]);
             }
         }
         return obj;
@@ -113,13 +113,13 @@ ListTransactionsByBlockHeightRIBSB.prototype['version'] = undefined;
 
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVin>} vin
+ * @member {Array.<module:model/ListTransactionsByBlockHashRIBSBVinInner>} vin
  */
 ListTransactionsByBlockHeightRIBSB.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSBVout>} vout
+ * @member {Array.<module:model/ListTransactionsByBlockHeightRIBSBVoutInner>} vout
  */
 ListTransactionsByBlockHeightRIBSB.prototype['vout'] = undefined;
 

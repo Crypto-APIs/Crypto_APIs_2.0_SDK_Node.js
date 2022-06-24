@@ -7,119 +7,141 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse40071"));
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse40072"));
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse40073"));
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse40074"));
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
 
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse40075"));
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40076"));
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40077"));
+var _MinedTransaction400Response = _interopRequireDefault(require("../model/MinedTransaction400Response"));
 
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40078"));
+var _MinedTransaction401Response = _interopRequireDefault(require("../model/MinedTransaction401Response"));
 
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40087"));
+var _MinedTransaction403Response = _interopRequireDefault(require("../model/MinedTransaction403Response"));
 
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse40088"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse40171"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse40172"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse40173"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse40174"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40175"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40176"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40177"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40178"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse40187"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse40188"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse40371"));
-
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse40372"));
-
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse40373"));
-
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse40374"));
-
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse40375"));
-
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40376"));
-
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse40377"));
-
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse40378"));
-
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse40387"));
-
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse40388"));
-
-var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse40910"));
-
-var _InlineResponse33 = _interopRequireDefault(require("../model/InlineResponse40911"));
-
-var _InlineResponse34 = _interopRequireDefault(require("../model/InlineResponse40912"));
-
-var _InlineResponse35 = _interopRequireDefault(require("../model/InlineResponse40913"));
-
-var _InlineResponse36 = _interopRequireDefault(require("../model/InlineResponse40914"));
-
-var _InlineResponse37 = _interopRequireDefault(require("../model/InlineResponse40915"));
-
-var _InlineResponse38 = _interopRequireDefault(require("../model/InlineResponse4096"));
-
-var _InlineResponse39 = _interopRequireDefault(require("../model/InlineResponse4097"));
-
-var _InlineResponse40 = _interopRequireDefault(require("../model/InlineResponse4098"));
-
-var _InlineResponse41 = _interopRequireDefault(require("../model/InlineResponse4099"));
-
-var _InlineResponse42 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse43 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse44 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse45 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _MinedTransaction409Response = _interopRequireDefault(require("../model/MinedTransaction409Response"));
 
 var _MinedTransactionR = _interopRequireDefault(require("../model/MinedTransactionR"));
 
 var _MinedTransactionRB = _interopRequireDefault(require("../model/MinedTransactionRB"));
 
+var _NewBlock400Response = _interopRequireDefault(require("../model/NewBlock400Response"));
+
+var _NewBlock401Response = _interopRequireDefault(require("../model/NewBlock401Response"));
+
+var _NewBlock403Response = _interopRequireDefault(require("../model/NewBlock403Response"));
+
+var _NewBlock409Response = _interopRequireDefault(require("../model/NewBlock409Response"));
+
 var _NewBlockR = _interopRequireDefault(require("../model/NewBlockR"));
 
 var _NewBlockRB = _interopRequireDefault(require("../model/NewBlockRB"));
+
+var _NewConfirmedCoinsTransactions400Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactions400Response"));
+
+var _NewConfirmedCoinsTransactions401Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactions401Response"));
+
+var _NewConfirmedCoinsTransactions403Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactions403Response"));
+
+var _NewConfirmedCoinsTransactions409Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactions409Response"));
+
+var _NewConfirmedCoinsTransactionsAndEachConfirmation400Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmation400Response"));
+
+var _NewConfirmedCoinsTransactionsAndEachConfirmation401Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmation401Response"));
+
+var _NewConfirmedCoinsTransactionsAndEachConfirmation403Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmation403Response"));
+
+var _NewConfirmedCoinsTransactionsAndEachConfirmation409Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmation409Response"));
 
 var _NewConfirmedCoinsTransactionsAndEachConfirmationR = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmationR"));
 
 var _NewConfirmedCoinsTransactionsAndEachConfirmationRB = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsAndEachConfirmationRB"));
 
+var _NewConfirmedCoinsTransactionsForSpecificAmount400Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsForSpecificAmount400Response"));
+
+var _NewConfirmedCoinsTransactionsForSpecificAmount401Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsForSpecificAmount401Response"));
+
+var _NewConfirmedCoinsTransactionsForSpecificAmount403Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsForSpecificAmount403Response"));
+
+var _NewConfirmedCoinsTransactionsForSpecificAmount409Response = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsForSpecificAmount409Response"));
+
+var _NewConfirmedCoinsTransactionsForSpecificAmountR = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsForSpecificAmountR"));
+
+var _NewConfirmedCoinsTransactionsForSpecificAmountRB = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsForSpecificAmountRB"));
+
 var _NewConfirmedCoinsTransactionsR = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsR"));
 
 var _NewConfirmedCoinsTransactionsRB = _interopRequireDefault(require("../model/NewConfirmedCoinsTransactionsRB"));
+
+var _NewConfirmedInternalTransactions400Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactions400Response"));
+
+var _NewConfirmedInternalTransactions401Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactions401Response"));
+
+var _NewConfirmedInternalTransactions403Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactions403Response"));
+
+var _NewConfirmedInternalTransactions409Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactions409Response"));
+
+var _NewConfirmedInternalTransactionsAndEachConfirmation400Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsAndEachConfirmation400Response"));
+
+var _NewConfirmedInternalTransactionsAndEachConfirmation401Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsAndEachConfirmation401Response"));
+
+var _NewConfirmedInternalTransactionsAndEachConfirmation403Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsAndEachConfirmation403Response"));
+
+var _NewConfirmedInternalTransactionsAndEachConfirmation409Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsAndEachConfirmation409Response"));
 
 var _NewConfirmedInternalTransactionsAndEachConfirmationR = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsAndEachConfirmationR"));
 
 var _NewConfirmedInternalTransactionsAndEachConfirmationRB = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsAndEachConfirmationRB"));
 
+var _NewConfirmedInternalTransactionsForSpecificAmount400Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsForSpecificAmount400Response"));
+
+var _NewConfirmedInternalTransactionsForSpecificAmount401Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsForSpecificAmount401Response"));
+
+var _NewConfirmedInternalTransactionsForSpecificAmount403Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsForSpecificAmount403Response"));
+
+var _NewConfirmedInternalTransactionsForSpecificAmount409Response = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsForSpecificAmount409Response"));
+
+var _NewConfirmedInternalTransactionsForSpecificAmountR = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsForSpecificAmountR"));
+
+var _NewConfirmedInternalTransactionsForSpecificAmountRB = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsForSpecificAmountRB"));
+
 var _NewConfirmedInternalTransactionsR = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsR"));
 
 var _NewConfirmedInternalTransactionsRB = _interopRequireDefault(require("../model/NewConfirmedInternalTransactionsRB"));
+
+var _NewConfirmedTokenTransactionsForSpecificAmount400Response = _interopRequireDefault(require("../model/NewConfirmedTokenTransactionsForSpecificAmount400Response"));
+
+var _NewConfirmedTokenTransactionsForSpecificAmount401Response = _interopRequireDefault(require("../model/NewConfirmedTokenTransactionsForSpecificAmount401Response"));
+
+var _NewConfirmedTokenTransactionsForSpecificAmount403Response = _interopRequireDefault(require("../model/NewConfirmedTokenTransactionsForSpecificAmount403Response"));
+
+var _NewConfirmedTokenTransactionsForSpecificAmount409Response = _interopRequireDefault(require("../model/NewConfirmedTokenTransactionsForSpecificAmount409Response"));
+
+var _NewConfirmedTokenTransactionsForSpecificAmountR = _interopRequireDefault(require("../model/NewConfirmedTokenTransactionsForSpecificAmountR"));
+
+var _NewConfirmedTokenTransactionsForSpecificAmountRB = _interopRequireDefault(require("../model/NewConfirmedTokenTransactionsForSpecificAmountRB"));
+
+var _NewConfirmedTokensTransactions400Response = _interopRequireDefault(require("../model/NewConfirmedTokensTransactions400Response"));
+
+var _NewConfirmedTokensTransactions401Response = _interopRequireDefault(require("../model/NewConfirmedTokensTransactions401Response"));
+
+var _NewConfirmedTokensTransactions403Response = _interopRequireDefault(require("../model/NewConfirmedTokensTransactions403Response"));
+
+var _NewConfirmedTokensTransactions409Response = _interopRequireDefault(require("../model/NewConfirmedTokensTransactions409Response"));
+
+var _NewConfirmedTokensTransactionsAndEachConfirmation400Response = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmation400Response"));
+
+var _NewConfirmedTokensTransactionsAndEachConfirmation401Response = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmation401Response"));
+
+var _NewConfirmedTokensTransactionsAndEachConfirmation403Response = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmation403Response"));
+
+var _NewConfirmedTokensTransactionsAndEachConfirmation409Response = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmation409Response"));
 
 var _NewConfirmedTokensTransactionsAndEachConfirmationR = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsAndEachConfirmationR"));
 
@@ -129,9 +151,25 @@ var _NewConfirmedTokensTransactionsR = _interopRequireDefault(require("../model/
 
 var _NewConfirmedTokensTransactionsRB = _interopRequireDefault(require("../model/NewConfirmedTokensTransactionsRB"));
 
+var _NewUnconfirmedCoinsTransactions400Response = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactions400Response"));
+
+var _NewUnconfirmedCoinsTransactions401Response = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactions401Response"));
+
+var _NewUnconfirmedCoinsTransactions403Response = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactions403Response"));
+
+var _NewUnconfirmedCoinsTransactions409Response = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactions409Response"));
+
 var _NewUnconfirmedCoinsTransactionsR = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactionsR"));
 
 var _NewUnconfirmedCoinsTransactionsRB = _interopRequireDefault(require("../model/NewUnconfirmedCoinsTransactionsRB"));
+
+var _NewUnconfirmedTokensTransactions400Response = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactions400Response"));
+
+var _NewUnconfirmedTokensTransactions401Response = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactions401Response"));
+
+var _NewUnconfirmedTokensTransactions403Response = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactions403Response"));
+
+var _NewUnconfirmedTokensTransactions409Response = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactions409Response"));
 
 var _NewUnconfirmedTokensTransactionsR = _interopRequireDefault(require("../model/NewUnconfirmedTokensTransactionsR"));
 
@@ -148,7 +186,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var CreateSubscriptionsForApi = /*#__PURE__*/function () {
   /**
@@ -401,6 +439,65 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
       });
     }
     /**
+     * New Confirmed Coins Transactions For Specific Amount
+     * Through this endpoint customers can create callback subscriptions for a specific event and \"amountHigherThan\" value. In this case the event is when there are new incoming or outgoing confirmed coins transactions for the specified blockchain and the amount is equal or higher than the value specified.  By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs  filtered for the specified amount. The information is returned per specified address.    Being confirmed means that the transactions are verified by miners and added to the next block.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedCoinsTransactionsForSpecificAmountRB} opts.newConfirmedCoinsTransactionsForSpecificAmountRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedCoinsTransactionsForSpecificAmountR} and HTTP response
+     */
+
+  }, {
+    key: "newConfirmedCoinsTransactionsForSpecificAmountWithHttpInfo",
+    value: function newConfirmedCoinsTransactionsForSpecificAmountWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['newConfirmedCoinsTransactionsForSpecificAmountRB']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedCoinsTransactionsForSpecificAmount");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling newConfirmedCoinsTransactionsForSpecificAmount");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _NewConfirmedCoinsTransactionsForSpecificAmountR["default"];
+      return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/coins-transactions-for-specific-amount', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * New Confirmed Coins Transactions For Specific Amount
+     * Through this endpoint customers can create callback subscriptions for a specific event and \"amountHigherThan\" value. In this case the event is when there are new incoming or outgoing confirmed coins transactions for the specified blockchain and the amount is equal or higher than the value specified.  By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs  filtered for the specified amount. The information is returned per specified address.    Being confirmed means that the transactions are verified by miners and added to the next block.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedCoinsTransactionsForSpecificAmountRB} opts.newConfirmedCoinsTransactionsForSpecificAmountRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedCoinsTransactionsForSpecificAmountR}
+     */
+
+  }, {
+    key: "newConfirmedCoinsTransactionsForSpecificAmount",
+    value: function newConfirmedCoinsTransactionsForSpecificAmount(blockchain, network, opts) {
+      return this.newConfirmedCoinsTransactionsForSpecificAmountWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
      * New confirmed internal transactions
      * Through this endpoint customers can create callback subscriptions for a specific event. In this case the event is when there are new confirmed internal transactions. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs.    Being confirmed means that the transactions are verified by miners and added to the next block.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
@@ -515,6 +612,124 @@ var CreateSubscriptionsForApi = /*#__PURE__*/function () {
     key: "newConfirmedInternalTransactionsAndEachConfirmation",
     value: function newConfirmedInternalTransactionsAndEachConfirmation(blockchain, network, opts) {
       return this.newConfirmedInternalTransactionsAndEachConfirmationWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * New Confirmed Internal Transactions For Specific Amount
+     * Through this endpoint customers can create callback subscriptions for a specific event and \"amountHigherThan\" value. In this case the event is when there are new confirmed internal transactions and the amount is equal or higher than a value, specified by the customer. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs, filtered for the specified amount.  Being confirmed means that the transactions are verified by miners and added to the next block
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedInternalTransactionsForSpecificAmountRB} opts.newConfirmedInternalTransactionsForSpecificAmountRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedInternalTransactionsForSpecificAmountR} and HTTP response
+     */
+
+  }, {
+    key: "newConfirmedInternalTransactionsForSpecificAmountWithHttpInfo",
+    value: function newConfirmedInternalTransactionsForSpecificAmountWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['newConfirmedInternalTransactionsForSpecificAmountRB']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedInternalTransactionsForSpecificAmount");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling newConfirmedInternalTransactionsForSpecificAmount");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _NewConfirmedInternalTransactionsForSpecificAmountR["default"];
+      return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/internal-transactions-for-specific-amount', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * New Confirmed Internal Transactions For Specific Amount
+     * Through this endpoint customers can create callback subscriptions for a specific event and \"amountHigherThan\" value. In this case the event is when there are new confirmed internal transactions and the amount is equal or higher than a value, specified by the customer. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs, filtered for the specified amount.  Being confirmed means that the transactions are verified by miners and added to the next block
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedInternalTransactionsForSpecificAmountRB} opts.newConfirmedInternalTransactionsForSpecificAmountRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedInternalTransactionsForSpecificAmountR}
+     */
+
+  }, {
+    key: "newConfirmedInternalTransactionsForSpecificAmount",
+    value: function newConfirmedInternalTransactionsForSpecificAmount(blockchain, network, opts) {
+      return this.newConfirmedInternalTransactionsForSpecificAmountWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * New Confirmed Token Transactions For Specific Amount
+     * Through this endpoint customers can create callback subscriptions for a specific event and \"amountHigherThan\" value. In this case the event is when there are new incoming or outgoing confirmed token transactions for the specified blockchain and the amount is equal or higher than the value specified. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs, filtered for the specified amount.  Being confirmed means that the transactions are verified by miners and added to the next block. This endpoint refers to tokens transactions only, not coins.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedTokenTransactionsForSpecificAmountRB} opts.newConfirmedTokenTransactionsForSpecificAmountRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewConfirmedTokenTransactionsForSpecificAmountR} and HTTP response
+     */
+
+  }, {
+    key: "newConfirmedTokenTransactionsForSpecificAmountWithHttpInfo",
+    value: function newConfirmedTokenTransactionsForSpecificAmountWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['newConfirmedTokenTransactionsForSpecificAmountRB']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling newConfirmedTokenTransactionsForSpecificAmount");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling newConfirmedTokenTransactionsForSpecificAmount");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _NewConfirmedTokenTransactionsForSpecificAmountR["default"];
+      return this.apiClient.callApi('/blockchain-events/{blockchain}/{network}/subscriptions/tokens-transfers-for-specific-amount', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * New Confirmed Token Transactions For Specific Amount
+     * Through this endpoint customers can create callback subscriptions for a specific event and \"amountHigherThan\" value. In this case the event is when there are new incoming or outgoing confirmed token transactions for the specified blockchain and the amount is equal or higher than the value specified. By creating this subscription the user will be notified by Crypto APIs 2.0 when that event occurs, filtered for the specified amount.  Being confirmed means that the transactions are verified by miners and added to the next block. This endpoint refers to tokens transactions only, not coins.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewConfirmedTokenTransactionsForSpecificAmountRB} opts.newConfirmedTokenTransactionsForSpecificAmountRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewConfirmedTokenTransactionsForSpecificAmountR}
+     */
+
+  }, {
+    key: "newConfirmedTokenTransactionsForSpecificAmount",
+    value: function newConfirmedTokenTransactionsForSpecificAmount(blockchain, network, opts) {
+      return this.newConfirmedTokenTransactionsForSpecificAmountWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

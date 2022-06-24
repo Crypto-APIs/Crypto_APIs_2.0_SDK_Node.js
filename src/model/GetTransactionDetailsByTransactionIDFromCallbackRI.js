@@ -14,13 +14,13 @@
 import ApiClient from '../ApiClient';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBS from './GetTransactionDetailsByTransactionIDFromCallbackRIBS';
 import GetTransactionDetailsByTransactionIDFromCallbackRIFee from './GetTransactionDetailsByTransactionIDFromCallbackRIFee';
-import GetTransactionDetailsByTransactionIDFromCallbackRIRecipients from './GetTransactionDetailsByTransactionIDFromCallbackRIRecipients';
-import GetTransactionDetailsByTransactionIDFromCallbackRISenders from './GetTransactionDetailsByTransactionIDFromCallbackRISenders';
+import GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner from './GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner';
+import GetTransactionDetailsByTransactionIDFromCallbackRISendersInner from './GetTransactionDetailsByTransactionIDFromCallbackRISendersInner';
 
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRI model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRI {
     /**
@@ -29,8 +29,8 @@ class GetTransactionDetailsByTransactionIDFromCallbackRI {
      * @param index {Number} Represents the index position of the transaction in the specific block.
      * @param minedInBlockHash {String} Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
-     * @param recipients {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
-     * @param senders {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param recipients {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param senders {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRISendersInner>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionHash {String} Represents the same as transactionId for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols hash is different from transactionId for SegWit transactions.
      * @param fee {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIFee} 
@@ -81,10 +81,10 @@ class GetTransactionDetailsByTransactionIDFromCallbackRI {
                 obj['minedInBlockHeight'] = ApiClient.convertToType(data['minedInBlockHeight'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetTransactionDetailsByTransactionIDFromCallbackRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [GetTransactionDetailsByTransactionIDFromCallbackRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [GetTransactionDetailsByTransactionIDFromCallbackRISendersInner]);
             }
             if (data.hasOwnProperty('timestamp')) {
                 obj['timestamp'] = ApiClient.convertToType(data['timestamp'], 'Number');
@@ -128,13 +128,13 @@ GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['minedInBlockHeight
 
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIRecipients>} recipients
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner>} recipients
  */
 GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['recipients'] = undefined;
 
 /**
  * Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRISenders>} senders
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRISendersInner>} senders
  */
 GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['senders'] = undefined;
 

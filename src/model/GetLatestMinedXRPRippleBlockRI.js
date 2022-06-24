@@ -18,7 +18,7 @@ import GetLatestMinedXRPRippleBlockRITotalFees from './GetLatestMinedXRPRippleBl
 /**
  * The GetLatestMinedXRPRippleBlockRI model module.
  * @module model/GetLatestMinedXRPRippleBlockRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetLatestMinedXRPRippleBlockRI {
     /**

@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSBCVout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBCVout"));
+var _GetTransactionDetailsByTransactionIDRIBSBCVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBCVoutInner"));
 
-var _ListConfirmedTransactionsByAddressRIBSBCVin = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSBCVin"));
+var _ListConfirmedTransactionsByAddressRIBSBCVinInner = _interopRequireDefault(require("./ListConfirmedTransactionsByAddressRIBSBCVinInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC = /*#__PURE__*/function () {
   /**
@@ -32,7 +32,7 @@ var ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC = /*#__PURE__*/function
    * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
    * @param size {Number} Represents the total size of this transaction.
    * @param version {Number} Represents the transaction's version number.
-   * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBCVin>} Represents the transaction inputs.
+   * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBCVinInner>} Represents the transaction inputs.
    */
   function ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC(locktime, size, version, vin) {
     _classCallCheck(this, ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC);
@@ -81,11 +81,11 @@ var ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC = /*#__PURE__*/function
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListConfirmedTransactionsByAddressRIBSBCVin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_ListConfirmedTransactionsByAddressRIBSBCVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSBCVout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSBCVoutInner["default"]]);
         }
       }
 
@@ -116,13 +116,13 @@ ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC.prototype['size'] = undefin
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBCVin>} vin
+ * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBCVinInner>} vin
  */
 
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} vout
  */
 
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC.prototype['vout'] = undefined;

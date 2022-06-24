@@ -17,7 +17,7 @@ import AddTokensToExistingFromAddressRI from './AddTokensToExistingFromAddressRI
 /**
  * The AddTokensToExistingFromAddressRData model module.
  * @module model/AddTokensToExistingFromAddressRData
- * @version 1.5.0
+ * @version 1.6.0
  */
 class AddTokensToExistingFromAddressRData {
     /**

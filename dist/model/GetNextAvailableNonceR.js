@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetNextAvailableNonceR model module.
  * @module model/GetNextAvailableNonceR
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetNextAvailableNonceR = /*#__PURE__*/function () {
   /**

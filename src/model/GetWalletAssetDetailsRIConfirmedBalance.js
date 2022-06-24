@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletAssetDetailsRIConfirmedBalance model module.
  * @module model/GetWalletAssetDetailsRIConfirmedBalance
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetWalletAssetDetailsRIConfirmedBalance {
     /**

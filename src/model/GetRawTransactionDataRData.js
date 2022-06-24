@@ -17,7 +17,7 @@ import GetRawTransactionDataRI from './GetRawTransactionDataRI';
 /**
  * The GetRawTransactionDataRData model module.
  * @module model/GetRawTransactionDataRData
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetRawTransactionDataRData {
     /**

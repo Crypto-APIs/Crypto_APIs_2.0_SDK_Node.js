@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _BannedIpAddressDetails = _interopRequireDefault(require("./BannedIpAddressDetails"));
+var _BannedIpAddressDetailsInner = _interopRequireDefault(require("./BannedIpAddressDetailsInner"));
 
 var _InvalidRequestBodyStructure = _interopRequireDefault(require("./InvalidRequestBodyStructure"));
 
@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsE422 model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsE422
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListHDWalletXPubYPubZPubTransactionsE422 = /*#__PURE__*/function () {
   /**
@@ -84,7 +84,7 @@ var ListHDWalletXPubYPubZPubTransactionsE422 = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetails["default"]]);
+          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
         }
       }
 
@@ -108,7 +108,7 @@ ListHDWalletXPubYPubZPubTransactionsE422.prototype['code'] = undefined;
 
 ListHDWalletXPubYPubZPubTransactionsE422.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 ListHDWalletXPubYPubZPubTransactionsE422.prototype['details'] = undefined; // Implement InvalidRequestBodyStructure interface:
@@ -126,7 +126,7 @@ _InvalidRequestBodyStructure["default"].prototype['code'] = undefined;
 
 _InvalidRequestBodyStructure["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _InvalidRequestBodyStructure["default"].prototype['details'] = undefined; // Implement XpubSyncInProgress interface:
@@ -144,7 +144,7 @@ _XpubSyncInProgress["default"].prototype['code'] = undefined;
 
 _XpubSyncInProgress["default"].prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
 _XpubSyncInProgress["default"].prototype['details'] = undefined;

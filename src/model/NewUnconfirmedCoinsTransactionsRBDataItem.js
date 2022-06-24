@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewUnconfirmedCoinsTransactionsRBDataItem model module.
  * @module model/NewUnconfirmedCoinsTransactionsRBDataItem
- * @version 1.5.0
+ * @version 1.6.0
  */
 class NewUnconfirmedCoinsTransactionsRBDataItem {
     /**

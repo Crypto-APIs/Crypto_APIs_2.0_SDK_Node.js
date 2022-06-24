@@ -11,9 +11,9 @@ var _GetWalletTransactionDetailsByTransactionIDRIBS = _interopRequireDefault(req
 
 var _GetWalletTransactionDetailsByTransactionIDRIFee = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIFee"));
 
-var _GetWalletTransactionDetailsByTransactionIDRIRecipients = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIRecipients"));
+var _GetWalletTransactionDetailsByTransactionIDRIRecipientsInner = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIRecipientsInner"));
 
-var _GetWalletTransactionDetailsByTransactionIDRISenders = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRISenders"));
+var _GetWalletTransactionDetailsByTransactionIDRISendersInner = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRISendersInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRI model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetWalletTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
   /**
@@ -34,8 +34,8 @@ var GetWalletTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDRI
    * @param index {Number} Represents the index position of the transaction in the specific block.
    * @param isConfirmed {Boolean} Represents the state of the transaction whether it is confirmed or not confirmed.
-   * @param recipients {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIRecipients>} Object Array representation of transaction receivers
-   * @param senders {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRISenders>} Object Array representation of transaction senders
+   * @param recipients {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIRecipientsInner>} Object Array representation of transaction receivers
+   * @param senders {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRISendersInner>} Object Array representation of transaction senders
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
    * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
    * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
@@ -98,11 +98,11 @@ var GetWalletTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_GetWalletTransactionDetailsByTransactionIDRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_GetWalletTransactionDetailsByTransactionIDRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_GetWalletTransactionDetailsByTransactionIDRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_GetWalletTransactionDetailsByTransactionIDRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('timestamp')) {
@@ -159,13 +159,13 @@ GetWalletTransactionDetailsByTransactionIDRI.prototype['minedInBlockHash'] = und
 GetWalletTransactionDetailsByTransactionIDRI.prototype['minedInBlockHeight'] = undefined;
 /**
  * Object Array representation of transaction receivers
- * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIRecipients>} recipients
+ * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIRecipientsInner>} recipients
  */
 
 GetWalletTransactionDetailsByTransactionIDRI.prototype['recipients'] = undefined;
 /**
  * Object Array representation of transaction senders
- * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRISenders>} senders
+ * @member {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRISendersInner>} senders
  */
 
 GetWalletTransactionDetailsByTransactionIDRI.prototype['senders'] = undefined;

@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 
 /**
  * The TokensForwardingAutomationsLimitReached model module.
  * @module model/TokensForwardingAutomationsLimitReached
- * @version 1.5.0
+ * @version 1.6.0
  */
 class TokensForwardingAutomationsLimitReached {
     /**
@@ -60,7 +60,7 @@ class TokensForwardingAutomationsLimitReached {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -82,7 +82,7 @@ TokensForwardingAutomationsLimitReached.prototype['code'] = undefined;
 TokensForwardingAutomationsLimitReached.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 TokensForwardingAutomationsLimitReached.prototype['details'] = undefined;
 

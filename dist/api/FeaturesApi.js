@@ -7,99 +7,99 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _BroadcastLocallySignedTransaction400Response = _interopRequireDefault(require("../model/BroadcastLocallySignedTransaction400Response"));
+
+var _BroadcastLocallySignedTransaction401Response = _interopRequireDefault(require("../model/BroadcastLocallySignedTransaction401Response"));
+
+var _BroadcastLocallySignedTransaction403Response = _interopRequireDefault(require("../model/BroadcastLocallySignedTransaction403Response"));
+
+var _BroadcastLocallySignedTransaction409Response = _interopRequireDefault(require("../model/BroadcastLocallySignedTransaction409Response"));
+
 var _BroadcastLocallySignedTransactionR = _interopRequireDefault(require("../model/BroadcastLocallySignedTransactionR"));
 
 var _BroadcastLocallySignedTransactionRB = _interopRequireDefault(require("../model/BroadcastLocallySignedTransactionRB"));
+
+var _DecodeRawTransactionHex400Response = _interopRequireDefault(require("../model/DecodeRawTransactionHex400Response"));
+
+var _DecodeRawTransactionHex401Response = _interopRequireDefault(require("../model/DecodeRawTransactionHex401Response"));
+
+var _DecodeRawTransactionHex403Response = _interopRequireDefault(require("../model/DecodeRawTransactionHex403Response"));
 
 var _DecodeRawTransactionHexR = _interopRequireDefault(require("../model/DecodeRawTransactionHexR"));
 
 var _DecodeRawTransactionHexRB = _interopRequireDefault(require("../model/DecodeRawTransactionHexRB"));
 
+var _DecodeXAddress400Response = _interopRequireDefault(require("../model/DecodeXAddress400Response"));
+
+var _DecodeXAddress401Response = _interopRequireDefault(require("../model/DecodeXAddress401Response"));
+
+var _DecodeXAddress403Response = _interopRequireDefault(require("../model/DecodeXAddress403Response"));
+
 var _DecodeXAddressR = _interopRequireDefault(require("../model/DecodeXAddressR"));
+
+var _DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response = _interopRequireDefault(require("../model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response"));
+
+var _DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses401Response = _interopRequireDefault(require("../model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses401Response"));
+
+var _DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses403Response = _interopRequireDefault(require("../model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses403Response"));
 
 var _DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR = _interopRequireDefault(require("../model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR"));
 
+var _EncodeXAddress400Response = _interopRequireDefault(require("../model/EncodeXAddress400Response"));
+
+var _EncodeXAddress401Response = _interopRequireDefault(require("../model/EncodeXAddress401Response"));
+
+var _EncodeXAddress403Response = _interopRequireDefault(require("../model/EncodeXAddress403Response"));
+
 var _EncodeXAddressR = _interopRequireDefault(require("../model/EncodeXAddressR"));
+
+var _EstimateGasLimit400Response = _interopRequireDefault(require("../model/EstimateGasLimit400Response"));
+
+var _EstimateGasLimit401Response = _interopRequireDefault(require("../model/EstimateGasLimit401Response"));
+
+var _EstimateGasLimit403Response = _interopRequireDefault(require("../model/EstimateGasLimit403Response"));
 
 var _EstimateGasLimitR = _interopRequireDefault(require("../model/EstimateGasLimitR"));
 
 var _EstimateGasLimitRB = _interopRequireDefault(require("../model/EstimateGasLimitRB"));
 
+var _EstimateTokenGasLimit400Response = _interopRequireDefault(require("../model/EstimateTokenGasLimit400Response"));
+
+var _EstimateTokenGasLimit401Response = _interopRequireDefault(require("../model/EstimateTokenGasLimit401Response"));
+
+var _EstimateTokenGasLimit403Response = _interopRequireDefault(require("../model/EstimateTokenGasLimit403Response"));
+
 var _EstimateTokenGasLimitR = _interopRequireDefault(require("../model/EstimateTokenGasLimitR"));
 
 var _EstimateTokenGasLimitRB = _interopRequireDefault(require("../model/EstimateTokenGasLimitRB"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetEIP1559FeeRecommendations400Response = _interopRequireDefault(require("../model/GetEIP1559FeeRecommendations400Response"));
+
+var _GetEIP1559FeeRecommendations401Response = _interopRequireDefault(require("../model/GetEIP1559FeeRecommendations401Response"));
+
+var _GetEIP1559FeeRecommendations403Response = _interopRequireDefault(require("../model/GetEIP1559FeeRecommendations403Response"));
+
 var _GetEIP1559FeeRecommendationsR = _interopRequireDefault(require("../model/GetEIP1559FeeRecommendationsR"));
 
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400100"));
+var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse400101"));
+var _ValidateAddress400Response = _interopRequireDefault(require("../model/ValidateAddress400Response"));
 
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse400102"));
+var _ValidateAddress401Response = _interopRequireDefault(require("../model/ValidateAddress401Response"));
 
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse400103"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse400104"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse40070"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse40097"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse40098"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse40099"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse401100"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse401101"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse401102"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse401103"));
-
-var _InlineResponse14 = _interopRequireDefault(require("../model/InlineResponse401104"));
-
-var _InlineResponse15 = _interopRequireDefault(require("../model/InlineResponse40170"));
-
-var _InlineResponse16 = _interopRequireDefault(require("../model/InlineResponse40197"));
-
-var _InlineResponse17 = _interopRequireDefault(require("../model/InlineResponse40198"));
-
-var _InlineResponse18 = _interopRequireDefault(require("../model/InlineResponse40199"));
-
-var _InlineResponse19 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse20 = _interopRequireDefault(require("../model/InlineResponse403100"));
-
-var _InlineResponse21 = _interopRequireDefault(require("../model/InlineResponse403101"));
-
-var _InlineResponse22 = _interopRequireDefault(require("../model/InlineResponse403102"));
-
-var _InlineResponse23 = _interopRequireDefault(require("../model/InlineResponse403103"));
-
-var _InlineResponse24 = _interopRequireDefault(require("../model/InlineResponse403104"));
-
-var _InlineResponse25 = _interopRequireDefault(require("../model/InlineResponse40370"));
-
-var _InlineResponse26 = _interopRequireDefault(require("../model/InlineResponse40397"));
-
-var _InlineResponse27 = _interopRequireDefault(require("../model/InlineResponse40398"));
-
-var _InlineResponse28 = _interopRequireDefault(require("../model/InlineResponse40399"));
-
-var _InlineResponse29 = _interopRequireDefault(require("../model/InlineResponse4041"));
-
-var _InlineResponse30 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse31 = _interopRequireDefault(require("../model/InlineResponse40917"));
-
-var _InlineResponse32 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse33 = _interopRequireDefault(require("../model/InlineResponse422"));
-
-var _InlineResponse34 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse35 = _interopRequireDefault(require("../model/InlineResponse500"));
+var _ValidateAddress403Response = _interopRequireDefault(require("../model/ValidateAddress403Response"));
 
 var _ValidateAddressR = _interopRequireDefault(require("../model/ValidateAddressR"));
 
@@ -116,7 +116,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var FeaturesApi = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAssetsDetailsRIS model module.
  * @module model/ListAssetsDetailsRIS
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListAssetsDetailsRIS = /*#__PURE__*/function () {
   /**

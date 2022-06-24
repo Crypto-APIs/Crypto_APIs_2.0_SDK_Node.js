@@ -12,20 +12,20 @@
  */
 
 import ApiClient from '../ApiClient';
-import CreateCoinsTransactionFromAddressForWholeAmountRIRecipients from './CreateCoinsTransactionFromAddressForWholeAmountRIRecipients';
+import CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner from './CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner';
 import CreateCoinsTransactionFromAddressForWholeAmountRISenders from './CreateCoinsTransactionFromAddressForWholeAmountRISenders';
 
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRI model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountRI {
     /**
      * Constructs a new <code>CreateCoinsTransactionFromAddressForWholeAmountRI</code>.
      * @alias module:model/CreateCoinsTransactionFromAddressForWholeAmountRI
      * @param feePriority {module:model/CreateCoinsTransactionFromAddressForWholeAmountRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-     * @param recipients {Array.<module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipients>} Defines the destination for the transaction, i.e. the recipient(s).
+     * @param recipients {Array.<module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner>} Defines the destination for the transaction, i.e. the recipient(s).
      * @param senders {module:model/CreateCoinsTransactionFromAddressForWholeAmountRISenders} 
      * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
      * @param transactionRequestStatus {module:model/CreateCoinsTransactionFromAddressForWholeAmountRI.TransactionRequestStatusEnum} Defines the status of the transaction, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
@@ -72,7 +72,7 @@ class CreateCoinsTransactionFromAddressForWholeAmountRI {
                 obj['note'] = ApiClient.convertToType(data['note'], 'String');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateCoinsTransactionFromAddressForWholeAmountRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
                 obj['senders'] = CreateCoinsTransactionFromAddressForWholeAmountRISenders.constructFromObject(data['senders']);
@@ -116,7 +116,7 @@ CreateCoinsTransactionFromAddressForWholeAmountRI.prototype['note'] = undefined;
 
 /**
  * Defines the destination for the transaction, i.e. the recipient(s).
- * @member {Array.<module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipients>} recipients
+ * @member {Array.<module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner>} recipients
  */
 CreateCoinsTransactionFromAddressForWholeAmountRI.prototype['recipients'] = undefined;
 

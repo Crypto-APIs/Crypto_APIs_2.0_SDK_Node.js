@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses = _interopRequireDefault(require("./DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses"));
+var _DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner = _interopRequireDefault(require("./DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -20,13 +20,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI</code>.
    * @alias module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI
-   * @param addresses {Array.<module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses>} Represents the address details.
+   * @param addresses {Array.<module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner>} Represents the address details.
    */
   function DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI(addresses) {
     _classCallCheck(this, DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI);
@@ -60,7 +60,7 @@ var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI = /*#__PURE__*/functi
         obj = obj || new DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI();
 
         if (data.hasOwnProperty('addresses')) {
-          obj['addresses'] = _ApiClient["default"].convertToType(data['addresses'], [_DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses["default"]]);
+          obj['addresses'] = _ApiClient["default"].convertToType(data['addresses'], [_DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner["default"]]);
         }
       }
 
@@ -72,7 +72,7 @@ var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI = /*#__PURE__*/functi
 }();
 /**
  * Represents the address details.
- * @member {Array.<module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddresses>} addresses
+ * @member {Array.<module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner>} addresses
  */
 
 

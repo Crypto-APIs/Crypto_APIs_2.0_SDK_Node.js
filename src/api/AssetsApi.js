@@ -13,29 +13,29 @@
 
 
 import ApiClient from "../ApiClient";
+import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
+import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
+import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
+import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
+import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
+import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import GetAssetDetailsByAssetID400Response from '../model/GetAssetDetailsByAssetID400Response';
+import GetAssetDetailsByAssetID401Response from '../model/GetAssetDetailsByAssetID401Response';
+import GetAssetDetailsByAssetID403Response from '../model/GetAssetDetailsByAssetID403Response';
 import GetAssetDetailsByAssetIDR from '../model/GetAssetDetailsByAssetIDR';
+import GetAssetDetailsByAssetSymbol400Response from '../model/GetAssetDetailsByAssetSymbol400Response';
+import GetAssetDetailsByAssetSymbol401Response from '../model/GetAssetDetailsByAssetSymbol401Response';
+import GetAssetDetailsByAssetSymbol403Response from '../model/GetAssetDetailsByAssetSymbol403Response';
 import GetAssetDetailsByAssetSymbolR from '../model/GetAssetDetailsByAssetSymbolR';
-import InlineResponse400108 from '../model/InlineResponse400108';
-import InlineResponse400109 from '../model/InlineResponse400109';
-import InlineResponse400110 from '../model/InlineResponse400110';
-import InlineResponse401108 from '../model/InlineResponse401108';
-import InlineResponse401109 from '../model/InlineResponse401109';
-import InlineResponse401110 from '../model/InlineResponse401110';
-import InlineResponse402 from '../model/InlineResponse402';
-import InlineResponse403108 from '../model/InlineResponse403108';
-import InlineResponse403109 from '../model/InlineResponse403109';
-import InlineResponse403110 from '../model/InlineResponse403110';
-import InlineResponse409 from '../model/InlineResponse409';
-import InlineResponse415 from '../model/InlineResponse415';
-import InlineResponse422 from '../model/InlineResponse422';
-import InlineResponse429 from '../model/InlineResponse429';
-import InlineResponse500 from '../model/InlineResponse500';
+import ListAssetsDetails400Response from '../model/ListAssetsDetails400Response';
+import ListAssetsDetails401Response from '../model/ListAssetsDetails401Response';
+import ListAssetsDetails403Response from '../model/ListAssetsDetails403Response';
 import ListAssetsDetailsR from '../model/ListAssetsDetailsR';
 
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 1.5.0
+* @version 1.6.0
 */
 export default class AssetsApi {
 

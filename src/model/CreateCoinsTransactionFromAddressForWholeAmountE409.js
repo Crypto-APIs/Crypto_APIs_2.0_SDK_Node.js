@@ -12,7 +12,7 @@
  */
 
 import ApiClient from '../ApiClient';
-import BannedIpAddressDetails from './BannedIpAddressDetails';
+import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import InvalidData from './InvalidData';
 import WalletAsAServiceAddressBalanceNotEnough from './WalletAsAServiceAddressBalanceNotEnough';
 import WalletAsAServiceWalletBalanceNotEnough from './WalletAsAServiceWalletBalanceNotEnough';
@@ -20,7 +20,7 @@ import WalletAsAServiceWalletBalanceNotEnough from './WalletAsAServiceWalletBala
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE409 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE409
- * @version 1.5.0
+ * @version 1.6.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountE409 {
     /**
@@ -68,7 +68,7 @@ class CreateCoinsTransactionFromAddressForWholeAmountE409 {
                 obj['message'] = ApiClient.convertToType(data['message'], 'String');
             }
             if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetails]);
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
             }
         }
         return obj;
@@ -90,7 +90,7 @@ CreateCoinsTransactionFromAddressForWholeAmountE409.prototype['code'] = undefine
 CreateCoinsTransactionFromAddressForWholeAmountE409.prototype['message'] = undefined;
 
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 CreateCoinsTransactionFromAddressForWholeAmountE409.prototype['details'] = undefined;
 
@@ -107,7 +107,7 @@ InvalidData.prototype['code'] = undefined;
  */
 InvalidData.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 InvalidData.prototype['details'] = undefined;
 // Implement WalletAsAServiceWalletBalanceNotEnough interface:
@@ -122,7 +122,7 @@ WalletAsAServiceWalletBalanceNotEnough.prototype['code'] = undefined;
  */
 WalletAsAServiceWalletBalanceNotEnough.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 WalletAsAServiceWalletBalanceNotEnough.prototype['details'] = undefined;
 // Implement WalletAsAServiceAddressBalanceNotEnough interface:
@@ -137,7 +137,7 @@ WalletAsAServiceAddressBalanceNotEnough.prototype['code'] = undefined;
  */
 WalletAsAServiceAddressBalanceNotEnough.prototype['message'] = undefined;
 /**
- * @member {Array.<module:model/BannedIpAddressDetails>} details
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 WalletAsAServiceAddressBalanceNotEnough.prototype['details'] = undefined;
 

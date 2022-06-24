@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetNextAvailableNonceRI model module.
  * @module model/GetNextAvailableNonceRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetNextAvailableNonceRI = /*#__PURE__*/function () {
   /**

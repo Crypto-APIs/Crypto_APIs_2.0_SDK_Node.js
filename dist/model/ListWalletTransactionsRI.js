@@ -9,15 +9,15 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _ListWalletTransactionsRIFee = _interopRequireDefault(require("./ListWalletTransactionsRIFee"));
 
-var _ListWalletTransactionsRIFungibleTokens = _interopRequireDefault(require("./ListWalletTransactionsRIFungibleTokens"));
+var _ListWalletTransactionsRIFungibleTokensInner = _interopRequireDefault(require("./ListWalletTransactionsRIFungibleTokensInner"));
 
-var _ListWalletTransactionsRIInternalTransactions = _interopRequireDefault(require("./ListWalletTransactionsRIInternalTransactions"));
+var _ListWalletTransactionsRIInternalTransactionsInner = _interopRequireDefault(require("./ListWalletTransactionsRIInternalTransactionsInner"));
 
-var _ListWalletTransactionsRINonFungibleTokens = _interopRequireDefault(require("./ListWalletTransactionsRINonFungibleTokens"));
+var _ListWalletTransactionsRINonFungibleTokensInner = _interopRequireDefault(require("./ListWalletTransactionsRINonFungibleTokensInner"));
 
-var _ListWalletTransactionsRIRecipients = _interopRequireDefault(require("./ListWalletTransactionsRIRecipients"));
+var _ListWalletTransactionsRIRecipientsInner = _interopRequireDefault(require("./ListWalletTransactionsRIRecipientsInner"));
 
-var _ListWalletTransactionsRISenders = _interopRequireDefault(require("./ListWalletTransactionsRISenders"));
+var _ListWalletTransactionsRISendersInner = _interopRequireDefault(require("./ListWalletTransactionsRISendersInner"));
 
 var _ListWalletTransactionsRIValue = _interopRequireDefault(require("./ListWalletTransactionsRIValue"));
 
@@ -32,7 +32,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRI model module.
  * @module model/ListWalletTransactionsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListWalletTransactionsRI = /*#__PURE__*/function () {
   /**
@@ -40,8 +40,8 @@ var ListWalletTransactionsRI = /*#__PURE__*/function () {
    * @alias module:model/ListWalletTransactionsRI
    * @param direction {String} Defines the direction of the transaction, e.g. incoming.
    * @param fee {module:model/ListWalletTransactionsRIFee} 
-   * @param recipients {Array.<module:model/ListWalletTransactionsRIRecipients>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
-   * @param senders {Array.<module:model/ListWalletTransactionsRISenders>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+   * @param recipients {Array.<module:model/ListWalletTransactionsRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+   * @param senders {Array.<module:model/ListWalletTransactionsRISendersInner>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
    * @param status {String} Defines the status of the transaction, if it is confirmed or unconfirmed.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
    * @param transactionId {String} Represents the unique TD of the transaction.
@@ -94,23 +94,23 @@ var ListWalletTransactionsRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('fungibleTokens')) {
-          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_ListWalletTransactionsRIFungibleTokens["default"]]);
+          obj['fungibleTokens'] = _ApiClient["default"].convertToType(data['fungibleTokens'], [_ListWalletTransactionsRIFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('internalTransactions')) {
-          obj['internalTransactions'] = _ApiClient["default"].convertToType(data['internalTransactions'], [_ListWalletTransactionsRIInternalTransactions["default"]]);
+          obj['internalTransactions'] = _ApiClient["default"].convertToType(data['internalTransactions'], [_ListWalletTransactionsRIInternalTransactionsInner["default"]]);
         }
 
         if (data.hasOwnProperty('nonFungibleTokens')) {
-          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_ListWalletTransactionsRINonFungibleTokens["default"]]);
+          obj['nonFungibleTokens'] = _ApiClient["default"].convertToType(data['nonFungibleTokens'], [_ListWalletTransactionsRINonFungibleTokensInner["default"]]);
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListWalletTransactionsRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListWalletTransactionsRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListWalletTransactionsRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListWalletTransactionsRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('status')) {
@@ -150,30 +150,30 @@ ListWalletTransactionsRI.prototype['direction'] = undefined;
 ListWalletTransactionsRI.prototype['fee'] = undefined;
 /**
  * Represents fungible tokens'es detailed information
- * @member {Array.<module:model/ListWalletTransactionsRIFungibleTokens>} fungibleTokens
+ * @member {Array.<module:model/ListWalletTransactionsRIFungibleTokensInner>} fungibleTokens
  */
 
 ListWalletTransactionsRI.prototype['fungibleTokens'] = undefined;
 /**
- * @member {Array.<module:model/ListWalletTransactionsRIInternalTransactions>} internalTransactions
+ * @member {Array.<module:model/ListWalletTransactionsRIInternalTransactionsInner>} internalTransactions
  */
 
 ListWalletTransactionsRI.prototype['internalTransactions'] = undefined;
 /**
  * Represents non-fungible tokens'es detailed information.
- * @member {Array.<module:model/ListWalletTransactionsRINonFungibleTokens>} nonFungibleTokens
+ * @member {Array.<module:model/ListWalletTransactionsRINonFungibleTokensInner>} nonFungibleTokens
  */
 
 ListWalletTransactionsRI.prototype['nonFungibleTokens'] = undefined;
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListWalletTransactionsRIRecipients>} recipients
+ * @member {Array.<module:model/ListWalletTransactionsRIRecipientsInner>} recipients
  */
 
 ListWalletTransactionsRI.prototype['recipients'] = undefined;
 /**
  * Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
- * @member {Array.<module:model/ListWalletTransactionsRISenders>} senders
+ * @member {Array.<module:model/ListWalletTransactionsRISendersInner>} senders
  */
 
 ListWalletTransactionsRI.prototype['senders'] = undefined;

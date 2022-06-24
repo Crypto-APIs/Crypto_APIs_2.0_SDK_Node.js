@@ -17,7 +17,7 @@ import GetBlockDetailsByBlockHashRIBS from './GetBlockDetailsByBlockHashRIBS';
 /**
  * The GetBlockDetailsByBlockHashRI model module.
  * @module model/GetBlockDetailsByBlockHashRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetBlockDetailsByBlockHashRI {
     /**

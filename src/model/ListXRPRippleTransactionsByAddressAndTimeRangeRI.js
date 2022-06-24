@@ -12,8 +12,8 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetXRPRippleTransactionDetailsByTransactionIDRIRecipients from './GetXRPRippleTransactionDetailsByTransactionIDRIRecipients';
-import GetXRPRippleTransactionDetailsByTransactionIDRISenders from './GetXRPRippleTransactionDetailsByTransactionIDRISenders';
+import GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner from './GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner';
+import GetXRPRippleTransactionDetailsByTransactionIDRISendersInner from './GetXRPRippleTransactionDetailsByTransactionIDRISendersInner';
 import ListXRPRippleTransactionsByAddressRIFee from './ListXRPRippleTransactionsByAddressRIFee';
 import ListXRPRippleTransactionsByAddressRIOffer from './ListXRPRippleTransactionsByAddressRIOffer';
 import ListXRPRippleTransactionsByAddressRIReceive from './ListXRPRippleTransactionsByAddressRIReceive';
@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByAddressRIValue from './ListXRPRippleTransactio
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListXRPRippleTransactionsByAddressAndTimeRangeRI {
     /**
@@ -31,8 +31,8 @@ class ListXRPRippleTransactionsByAddressAndTimeRangeRI {
      * @param index {Number} Represents the index position of the transaction in the block.
      * @param minedInBlockHash {String} Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
-     * @param recipients {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients>} Represents an object of addresses that receive the transactions.
-     * @param senders {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISenders>} Represents an object of addresses that provide the funds.
+     * @param recipients {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+     * @param senders {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner>} Represents an object of addresses that provide the funds.
      * @param sequence {Number} Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
      * @param status {String} Defines the status of the transaction.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
@@ -94,10 +94,10 @@ class ListXRPRippleTransactionsByAddressAndTimeRangeRI {
                 obj['minedInBlockHeight'] = ApiClient.convertToType(data['minedInBlockHeight'], 'Number');
             }
             if (data.hasOwnProperty('recipients')) {
-                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetXRPRippleTransactionDetailsByTransactionIDRIRecipients]);
+                obj['recipients'] = ApiClient.convertToType(data['recipients'], [GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner]);
             }
             if (data.hasOwnProperty('senders')) {
-                obj['senders'] = ApiClient.convertToType(data['senders'], [GetXRPRippleTransactionDetailsByTransactionIDRISenders]);
+                obj['senders'] = ApiClient.convertToType(data['senders'], [GetXRPRippleTransactionDetailsByTransactionIDRISendersInner]);
             }
             if (data.hasOwnProperty('sequence')) {
                 obj['sequence'] = ApiClient.convertToType(data['sequence'], 'Number');
@@ -159,13 +159,13 @@ ListXRPRippleTransactionsByAddressAndTimeRangeRI.prototype['minedInBlockHeight']
 
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipients>} recipients
+ * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRIRecipientsInner>} recipients
  */
 ListXRPRippleTransactionsByAddressAndTimeRangeRI.prototype['recipients'] = undefined;
 
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISenders>} senders
+ * @member {Array.<module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner>} senders
  */
 ListXRPRippleTransactionsByAddressAndTimeRangeRI.prototype['senders'] = undefined;
 

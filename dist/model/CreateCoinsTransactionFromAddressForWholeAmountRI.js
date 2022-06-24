@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _CreateCoinsTransactionFromAddressForWholeAmountRIRecipients = _interopRequireDefault(require("./CreateCoinsTransactionFromAddressForWholeAmountRIRecipients"));
+var _CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner = _interopRequireDefault(require("./CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner"));
 
 var _CreateCoinsTransactionFromAddressForWholeAmountRISenders = _interopRequireDefault(require("./CreateCoinsTransactionFromAddressForWholeAmountRISenders"));
 
@@ -22,14 +22,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRI model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var CreateCoinsTransactionFromAddressForWholeAmountRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionFromAddressForWholeAmountRI</code>.
    * @alias module:model/CreateCoinsTransactionFromAddressForWholeAmountRI
    * @param feePriority {module:model/CreateCoinsTransactionFromAddressForWholeAmountRI.FeePriorityEnum} Represents the fee priority of the automation, whether it is \"slow\", \"standard\" or \"fast\".
-   * @param recipients {Array.<module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipients>} Defines the destination for the transaction, i.e. the recipient(s).
+   * @param recipients {Array.<module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner>} Defines the destination for the transaction, i.e. the recipient(s).
    * @param senders {module:model/CreateCoinsTransactionFromAddressForWholeAmountRISenders} 
    * @param transactionRequestId {String} Represents a unique identifier of the transaction request (the request sent to make a transaction), which helps in identifying which callback and which `referenceId` concern that specific transaction request.
    * @param transactionRequestStatus {module:model/CreateCoinsTransactionFromAddressForWholeAmountRI.TransactionRequestStatusEnum} Defines the status of the transaction, e.g. \"created, \"await_approval\", \"pending\", \"prepared\", \"signed\", \"broadcasted\", \"success\", \"failed\", \"rejected\", mined\".
@@ -86,7 +86,7 @@ var CreateCoinsTransactionFromAddressForWholeAmountRI = /*#__PURE__*/function ()
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionFromAddressForWholeAmountRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
@@ -135,7 +135,7 @@ CreateCoinsTransactionFromAddressForWholeAmountRI.prototype['feePriority'] = und
 CreateCoinsTransactionFromAddressForWholeAmountRI.prototype['note'] = undefined;
 /**
  * Defines the destination for the transaction, i.e. the recipient(s).
- * @member {Array.<module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipients>} recipients
+ * @member {Array.<module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner>} recipients
  */
 
 CreateCoinsTransactionFromAddressForWholeAmountRI.prototype['recipients'] = undefined;

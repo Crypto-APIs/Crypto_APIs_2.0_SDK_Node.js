@@ -13,9 +13,9 @@ var _ListXRPRippleTransactionsByBlockHashRIOffer = _interopRequireDefault(requir
 
 var _ListXRPRippleTransactionsByBlockHashRIReceive = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHashRIReceive"));
 
-var _ListXRPRippleTransactionsByBlockHashRIRecipients = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHashRIRecipients"));
+var _ListXRPRippleTransactionsByBlockHashRIRecipientsInner = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHashRIRecipientsInner"));
 
-var _ListXRPRippleTransactionsByBlockHashRISenders = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHashRISenders"));
+var _ListXRPRippleTransactionsByBlockHashRISendersInner = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHashRISendersInner"));
 
 var _ListXRPRippleTransactionsByBlockHashRIValue = _interopRequireDefault(require("./ListXRPRippleTransactionsByBlockHashRIValue"));
 
@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**
@@ -38,8 +38,8 @@ var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
    * @alias module:model/ListXRPRippleTransactionsByBlockHashRI
    * @param index {Number} Represents the index position of the transaction in the specific block.
    * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
-   * @param recipients {Array.<module:model/ListXRPRippleTransactionsByBlockHashRIRecipients>} Represents an object of addresses that receive the transactions.
-   * @param senders {Array.<module:model/ListXRPRippleTransactionsByBlockHashRISenders>} Represents an object of addresses that provide the funds.
+   * @param recipients {Array.<module:model/ListXRPRippleTransactionsByBlockHashRIRecipientsInner>} Represents an object of addresses that receive the transactions.
+   * @param senders {Array.<module:model/ListXRPRippleTransactionsByBlockHashRISendersInner>} Represents an object of addresses that provide the funds.
    * @param sequence {Number} Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
    * @param status {String} Defines the status of the transaction.
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
@@ -110,11 +110,11 @@ var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListXRPRippleTransactionsByBlockHashRIRecipients["default"]]);
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListXRPRippleTransactionsByBlockHashRIRecipientsInner["default"]]);
         }
 
         if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListXRPRippleTransactionsByBlockHashRISenders["default"]]);
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], [_ListXRPRippleTransactionsByBlockHashRISendersInner["default"]]);
         }
 
         if (data.hasOwnProperty('sequence')) {
@@ -186,13 +186,13 @@ ListXRPRippleTransactionsByBlockHashRI.prototype['index'] = undefined;
 ListXRPRippleTransactionsByBlockHashRI.prototype['minedInBlockHeight'] = undefined;
 /**
  * Represents an object of addresses that receive the transactions.
- * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHashRIRecipients>} recipients
+ * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHashRIRecipientsInner>} recipients
  */
 
 ListXRPRippleTransactionsByBlockHashRI.prototype['recipients'] = undefined;
 /**
  * Represents an object of addresses that provide the funds.
- * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHashRISenders>} senders
+ * @member {Array.<module:model/ListXRPRippleTransactionsByBlockHashRISendersInner>} senders
  */
 
 ListXRPRippleTransactionsByBlockHashRI.prototype['senders'] = undefined;

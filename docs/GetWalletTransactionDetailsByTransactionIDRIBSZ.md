@@ -11,13 +11,13 @@ Name | Type | Description | Notes
 **locktime** | **Number** | Represents the time at which a particular transaction can be added to the blockchain. | 
 **overwintered** | **Boolean** | \&quot;Overwinter\&quot; is the network upgrade for the Zcash blockchain. | 
 **size** | **Number** | Represents the total size of this transaction. | 
-**vJoinSplit** | [**[GetTransactionDetailsByTransactionIDRIBSZVJoinSplit]**](GetTransactionDetailsByTransactionIDRIBSZVJoinSplit.md) | Represents a sequence of JoinSplit descriptions using BCTV14 proofs. | [optional] 
-**vShieldedOutput** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedOutput.md) | Object Array representation of transaction output descriptions | [optional] 
-**vShieldedSpend** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedSpend.md) | Object Array representation of transaction spend descriptions | [optional] 
+**vJoinSplit** | [**[GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner]**](GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner.md) | Represents a sequence of JoinSplit descriptions using BCTV14 proofs. | [optional] 
+**vShieldedOutput** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner.md) | Object Array representation of transaction output descriptions | [optional] 
+**vShieldedSpend** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner.md) | Object Array representation of transaction spend descriptions | [optional] 
 **valueBalance** | **String** | String representation of the transaction value balance | 
 **version** | **Number** | Represents the transaction version number. | 
 **versionGroupId** | **String** | Represents the transaction version group ID. | 
-**vin** | [**[GetWalletTransactionDetailsByTransactionIDRIBSZVin]**](GetWalletTransactionDetailsByTransactionIDRIBSZVin.md) | Object Array representation of transaction inputs | 
-**vout** | [**[ListTransactionsByBlockHeightRIBSZVout]**](ListTransactionsByBlockHeightRIBSZVout.md) | Object Array representation of transaction outputs | 
+**vin** | [**[GetWalletTransactionDetailsByTransactionIDRIBSZVinInner]**](GetWalletTransactionDetailsByTransactionIDRIBSZVinInner.md) | Object Array representation of transaction inputs | 
+**vout** | [**[ListTransactionsByBlockHeightRIBSZVoutInner]**](ListTransactionsByBlockHeightRIBSZVoutInner.md) | Object Array representation of transaction outputs | 
 
 

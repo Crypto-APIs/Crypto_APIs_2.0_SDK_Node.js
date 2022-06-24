@@ -13,13 +13,13 @@
 
 import ApiClient from '../ApiClient';
 import GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance from './GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance';
-import GetHDWalletXPubYPubZPubAssetsRIFungibleTokens from './GetHDWalletXPubYPubZPubAssetsRIFungibleTokens';
-import GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens from './GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens';
+import GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner from './GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner';
+import GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner from './GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner';
 
 /**
  * The GetHDWalletXPubYPubZPubAssetsRI model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class GetHDWalletXPubYPubZPubAssetsRI {
     /**
@@ -53,10 +53,10 @@ class GetHDWalletXPubYPubZPubAssetsRI {
             obj = obj || new GetHDWalletXPubYPubZPubAssetsRI();
 
             if (data.hasOwnProperty('fungibleTokens')) {
-                obj['fungibleTokens'] = ApiClient.convertToType(data['fungibleTokens'], [GetHDWalletXPubYPubZPubAssetsRIFungibleTokens]);
+                obj['fungibleTokens'] = ApiClient.convertToType(data['fungibleTokens'], [GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner]);
             }
             if (data.hasOwnProperty('nonFungibleTokens')) {
-                obj['nonFungibleTokens'] = ApiClient.convertToType(data['nonFungibleTokens'], [GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens]);
+                obj['nonFungibleTokens'] = ApiClient.convertToType(data['nonFungibleTokens'], [GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner]);
             }
             if (data.hasOwnProperty('confirmedBalance')) {
                 obj['confirmedBalance'] = GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance.constructFromObject(data['confirmedBalance']);
@@ -70,13 +70,13 @@ class GetHDWalletXPubYPubZPubAssetsRI {
 
 /**
  * Represents fungible tokens'es detailed information
- * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokens>} fungibleTokens
+ * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner>} fungibleTokens
  */
 GetHDWalletXPubYPubZPubAssetsRI.prototype['fungibleTokens'] = undefined;
 
 /**
  * Represents non-fungible tokens'es detailed information.
- * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRINonFungibleTokens>} nonFungibleTokens
+ * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner>} nonFungibleTokens
  */
 GetHDWalletXPubYPubZPubAssetsRI.prototype['nonFungibleTokens'] = undefined;
 

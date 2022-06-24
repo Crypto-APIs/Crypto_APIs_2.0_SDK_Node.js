@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnspentTransactionOutputsByAddressRData model module.
  * @module model/ListUnspentTransactionOutputsByAddressRData
- * @version 1.5.0
+ * @version 1.6.0
  */
 var ListUnspentTransactionOutputsByAddressRData = /*#__PURE__*/function () {
   /**

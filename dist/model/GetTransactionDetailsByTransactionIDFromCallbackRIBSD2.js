@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vin = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vin"));
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VinInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VinInner"));
 
-var _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vout = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vout"));
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2
- * @version 1.5.0
+ * @version 1.6.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 = /*#__PURE__*/function () {
   /**
@@ -32,8 +32,8 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 = /*#__PURE__*/functi
    * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
    * @param size {Number} Represents the total size of this transaction.
    * @param version {Number} Represents transaction version number.
-   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vin>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vout>} Represents the transaction outputs.
+   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VinInner>} Represents the transaction inputs.
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner>} Represents the transaction outputs.
    */
   function GetTransactionDetailsByTransactionIDFromCallbackRIBSD2(locktime, size, version, vin, vout) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDFromCallbackRIBSD2);
@@ -83,11 +83,11 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 = /*#__PURE__*/functi
         }
 
         if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vin["default"]]);
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vout["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner["default"]]);
         }
       }
 
@@ -118,13 +118,13 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBSD2.prototype['size'] = undef
 GetTransactionDetailsByTransactionIDFromCallbackRIBSD2.prototype['version'] = undefined;
 /**
  * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vin>} vin
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VinInner>} vin
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBSD2.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2Vout>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner>} vout
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBSD2.prototype['vout'] = undefined;

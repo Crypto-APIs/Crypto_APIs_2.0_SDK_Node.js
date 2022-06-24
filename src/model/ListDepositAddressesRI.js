@@ -13,13 +13,13 @@
 
 import ApiClient from '../ApiClient';
 import ListDepositAddressesRIConfirmedBalance from './ListDepositAddressesRIConfirmedBalance';
-import ListDepositAddressesRIFungibleTokens from './ListDepositAddressesRIFungibleTokens';
-import ListDepositAddressesRINonFungibleTokens from './ListDepositAddressesRINonFungibleTokens';
+import ListDepositAddressesRIFungibleTokensInner from './ListDepositAddressesRIFungibleTokensInner';
+import ListDepositAddressesRINonFungibleTokensInner from './ListDepositAddressesRINonFungibleTokensInner';
 
 /**
  * The ListDepositAddressesRI model module.
  * @module model/ListDepositAddressesRI
- * @version 1.5.0
+ * @version 1.6.0
  */
 class ListDepositAddressesRI {
     /**
@@ -28,10 +28,10 @@ class ListDepositAddressesRI {
      * @param address {String} Specifies the specific address's unique string value.
      * @param confirmedBalance {module:model/ListDepositAddressesRIConfirmedBalance} 
      * @param createdTimestamp {Number} Defines the specific UNIX time when the deposit address was created.
-     * @param fungibleTokens {Array.<module:model/ListDepositAddressesRIFungibleTokens>} Represents fungible tokens'es detailed information
+     * @param fungibleTokens {Array.<module:model/ListDepositAddressesRIFungibleTokensInner>} Represents fungible tokens'es detailed information
      * @param index {String} Represents the index of the address in the wallet.
      * @param label {String} Represents a custom tag that customers can set up for their Wallets and addresses. E.g. custom label named \"Special addresses\".
-     * @param nonFungibleTokens {Array.<module:model/ListDepositAddressesRINonFungibleTokens>} Represents non-fungible tokens'es detailed information.
+     * @param nonFungibleTokens {Array.<module:model/ListDepositAddressesRINonFungibleTokensInner>} Represents non-fungible tokens'es detailed information.
      */
     constructor(address, confirmedBalance, createdTimestamp, fungibleTokens, index, label, nonFungibleTokens) { 
         
@@ -74,7 +74,7 @@ class ListDepositAddressesRI {
                 obj['createdTimestamp'] = ApiClient.convertToType(data['createdTimestamp'], 'Number');
             }
             if (data.hasOwnProperty('fungibleTokens')) {
-                obj['fungibleTokens'] = ApiClient.convertToType(data['fungibleTokens'], [ListDepositAddressesRIFungibleTokens]);
+                obj['fungibleTokens'] = ApiClient.convertToType(data['fungibleTokens'], [ListDepositAddressesRIFungibleTokensInner]);
             }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'String');
@@ -83,7 +83,7 @@ class ListDepositAddressesRI {
                 obj['label'] = ApiClient.convertToType(data['label'], 'String');
             }
             if (data.hasOwnProperty('nonFungibleTokens')) {
-                obj['nonFungibleTokens'] = ApiClient.convertToType(data['nonFungibleTokens'], [ListDepositAddressesRINonFungibleTokens]);
+                obj['nonFungibleTokens'] = ApiClient.convertToType(data['nonFungibleTokens'], [ListDepositAddressesRINonFungibleTokensInner]);
             }
         }
         return obj;
@@ -111,7 +111,7 @@ ListDepositAddressesRI.prototype['createdTimestamp'] = undefined;
 
 /**
  * Represents fungible tokens'es detailed information
- * @member {Array.<module:model/ListDepositAddressesRIFungibleTokens>} fungibleTokens
+ * @member {Array.<module:model/ListDepositAddressesRIFungibleTokensInner>} fungibleTokens
  */
 ListDepositAddressesRI.prototype['fungibleTokens'] = undefined;
 
@@ -129,7 +129,7 @@ ListDepositAddressesRI.prototype['label'] = undefined;
 
 /**
  * Represents non-fungible tokens'es detailed information.
- * @member {Array.<module:model/ListDepositAddressesRINonFungibleTokens>} nonFungibleTokens
+ * @member {Array.<module:model/ListDepositAddressesRINonFungibleTokensInner>} nonFungibleTokens
  */
 ListDepositAddressesRI.prototype['nonFungibleTokens'] = undefined;
 

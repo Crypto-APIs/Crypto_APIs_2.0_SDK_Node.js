@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **blockchain** | **String** | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
 **feePriority** | **String** | Defines the priority for the fee, if it is \&quot;slow\&quot;, \&quot;standard\&quot; or \&quot;fast\&quot;. | 
 **network** | **String** | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
-**recipients** | [**[GetTransactionRequestDetailsRIRecipients]**](GetTransactionRequestDetailsRIRecipients.md) | Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list. | 
+**recipients** | [**[GetTransactionRequestDetailsRIRecipientsInner]**](GetTransactionRequestDetailsRIRecipientsInner.md) | Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list. | 
 **totalTransactionAmount** | **String** | Defines the total transaction amount. | 
 **transactionId** | **String** | Represents the unique identifier of a transaction, i.e. it could be transactionId in UTXO-based protocols like Bitcoin, and transaction hash in Ethereum blockchain. | [optional] 
 **transactionRequestStatus** | **String** | Defines the status of the transaction request, e.g. pending. | 

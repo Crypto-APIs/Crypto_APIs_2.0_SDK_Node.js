@@ -7,35 +7,35 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+
+var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+
+var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+
+var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+
+var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+
+var _GetExchangeRateByAssetSymbols400Response = _interopRequireDefault(require("../model/GetExchangeRateByAssetSymbols400Response"));
+
+var _GetExchangeRateByAssetSymbols401Response = _interopRequireDefault(require("../model/GetExchangeRateByAssetSymbols401Response"));
+
+var _GetExchangeRateByAssetSymbols403Response = _interopRequireDefault(require("../model/GetExchangeRateByAssetSymbols403Response"));
+
+var _GetExchangeRateByAssetSymbols422Response = _interopRequireDefault(require("../model/GetExchangeRateByAssetSymbols422Response"));
+
 var _GetExchangeRateByAssetSymbolsR = _interopRequireDefault(require("../model/GetExchangeRateByAssetSymbolsR"));
 
+var _GetExchangeRateByAssetsIDs400Response = _interopRequireDefault(require("../model/GetExchangeRateByAssetsIDs400Response"));
+
+var _GetExchangeRateByAssetsIDs401Response = _interopRequireDefault(require("../model/GetExchangeRateByAssetsIDs401Response"));
+
+var _GetExchangeRateByAssetsIDs403Response = _interopRequireDefault(require("../model/GetExchangeRateByAssetsIDs403Response"));
+
+var _GetExchangeRateByAssetsIDs422Response = _interopRequireDefault(require("../model/GetExchangeRateByAssetsIDs422Response"));
+
 var _GetExchangeRateByAssetsIDsR = _interopRequireDefault(require("../model/GetExchangeRateByAssetsIDsR"));
-
-var _InlineResponse = _interopRequireDefault(require("../model/InlineResponse400106"));
-
-var _InlineResponse2 = _interopRequireDefault(require("../model/InlineResponse400107"));
-
-var _InlineResponse3 = _interopRequireDefault(require("../model/InlineResponse401106"));
-
-var _InlineResponse4 = _interopRequireDefault(require("../model/InlineResponse401107"));
-
-var _InlineResponse5 = _interopRequireDefault(require("../model/InlineResponse402"));
-
-var _InlineResponse6 = _interopRequireDefault(require("../model/InlineResponse403106"));
-
-var _InlineResponse7 = _interopRequireDefault(require("../model/InlineResponse403107"));
-
-var _InlineResponse8 = _interopRequireDefault(require("../model/InlineResponse409"));
-
-var _InlineResponse9 = _interopRequireDefault(require("../model/InlineResponse415"));
-
-var _InlineResponse10 = _interopRequireDefault(require("../model/InlineResponse4226"));
-
-var _InlineResponse11 = _interopRequireDefault(require("../model/InlineResponse4227"));
-
-var _InlineResponse12 = _interopRequireDefault(require("../model/InlineResponse429"));
-
-var _InlineResponse13 = _interopRequireDefault(require("../model/InlineResponse500"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.5.0
+* @version 1.6.0
 */
 var ExchangeRatesApi = /*#__PURE__*/function () {
   /**
