@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeRI
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListConfirmedTokensTransfersByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**

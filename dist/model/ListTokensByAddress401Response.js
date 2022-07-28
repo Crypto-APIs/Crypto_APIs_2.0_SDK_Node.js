@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddress401Response model module.
  * @module model/ListTokensByAddress401Response
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListTokensByAddress401Response = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHeightRIReceive model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRIReceive
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListXRPRippleTransactionsByBlockHeightRIReceive = /*#__PURE__*/function () {
   /**

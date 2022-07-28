@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSDVoutInnerScriptPubKey = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSDVoutInnerScriptPubKey"));
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInnerScriptPubKey = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInnerScriptPubKey"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -20,14 +20,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner
    * @param isSpent {Boolean} Defines whether the output is spent or not.
-   * @param scriptPubKey {module:model/GetTransactionDetailsByTransactionIDRIBSDVoutInnerScriptPubKey} 
+   * @param scriptPubKey {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInnerScriptPubKey} 
    * @param value {String} String representation of the amount
    */
   function GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner(isSpent, scriptPubKey, value) {
@@ -68,7 +68,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner = /*#__PURE_
         }
 
         if (data.hasOwnProperty('scriptPubKey')) {
-          obj['scriptPubKey'] = _GetTransactionDetailsByTransactionIDRIBSDVoutInnerScriptPubKey["default"].constructFromObject(data['scriptPubKey']);
+          obj['scriptPubKey'] = _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInnerScriptPubKey["default"].constructFromObject(data['scriptPubKey']);
         }
 
         if (data.hasOwnProperty('value')) {
@@ -90,7 +90,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner = /*#__PURE_
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner.prototype['isSpent'] = undefined;
 /**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSDVoutInnerScriptPubKey} scriptPubKey
+ * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInnerScriptPubKey} scriptPubKey
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner.prototype['scriptPubKey'] = undefined;

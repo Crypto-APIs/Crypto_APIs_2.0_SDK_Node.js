@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRIReceive model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRIReceive
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListXRPRippleTransactionsByBlockHashRIReceive = /*#__PURE__*/function () {
   /**

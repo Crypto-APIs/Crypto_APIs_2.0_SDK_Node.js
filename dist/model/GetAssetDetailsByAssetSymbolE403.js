@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolE403 model module.
  * @module model/GetAssetDetailsByAssetSymbolE403
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetAssetDetailsByAssetSymbolE403 = /*#__PURE__*/function () {
   /**

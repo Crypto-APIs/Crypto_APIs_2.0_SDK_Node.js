@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbol401Response model module.
  * @module model/GetAssetDetailsByAssetSymbol401Response
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetAssetDetailsByAssetSymbol401Response = /*#__PURE__*/function () {
   /**

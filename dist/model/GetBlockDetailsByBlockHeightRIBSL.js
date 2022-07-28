@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightRIBSL model module.
  * @module model/GetBlockDetailsByBlockHeightRIBSL
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetBlockDetailsByBlockHeightRIBSL = /*#__PURE__*/function () {
   /**
@@ -26,20 +26,20 @@ var GetBlockDetailsByBlockHeightRIBSL = /*#__PURE__*/function () {
    * Litecoin
    * @alias module:model/GetBlockDetailsByBlockHeightRIBSL
    * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-   * @param nonce {String} Represents a random value that can be adjusted to satisfy the Proof of Work.
-   * @param size {Number} Represents the total size of the block in Bytes.
    * @param bits {String} Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
    * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
    * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+   * @param nonce {String} Represents a random value that can be adjusted to satisfy the Proof of Work.
+   * @param size {Number} Represents the total size of the block in Bytes.
    * @param strippedSize {Number} Defines the numeric representation of the block size excluding the witness data.
    * @param version {Number} Represents the version of the specific block on the blockchain.
    * @param versionHex {String} Is the hexadecimal string representation of the block's version.
    * @param weight {Number} Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
    */
-  function GetBlockDetailsByBlockHeightRIBSL(difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight) {
+  function GetBlockDetailsByBlockHeightRIBSL(difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, versionHex, weight) {
     _classCallCheck(this, GetBlockDetailsByBlockHeightRIBSL);
 
-    GetBlockDetailsByBlockHeightRIBSL.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);
+    GetBlockDetailsByBlockHeightRIBSL.initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);
   }
   /**
    * Initializes the fields of this object.
@@ -50,13 +50,13 @@ var GetBlockDetailsByBlockHeightRIBSL = /*#__PURE__*/function () {
 
   _createClass(GetBlockDetailsByBlockHeightRIBSL, null, [{
     key: "initialize",
-    value: function initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight) {
+    value: function initialize(obj, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, versionHex, weight) {
       obj['difficulty'] = difficulty;
-      obj['nonce'] = nonce;
-      obj['size'] = size;
       obj['bits'] = bits;
       obj['chainwork'] = chainwork;
       obj['merkleRoot'] = merkleRoot;
+      obj['nonce'] = nonce;
+      obj['size'] = size;
       obj['strippedSize'] = strippedSize;
       obj['version'] = version;
       obj['versionHex'] = versionHex;
@@ -80,14 +80,6 @@ var GetBlockDetailsByBlockHeightRIBSL = /*#__PURE__*/function () {
           obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
         }
 
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
-        }
-
-        if (data.hasOwnProperty('size')) {
-          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
-        }
-
         if (data.hasOwnProperty('bits')) {
           obj['bits'] = _ApiClient["default"].convertToType(data['bits'], 'String');
         }
@@ -98,6 +90,14 @@ var GetBlockDetailsByBlockHeightRIBSL = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('merkleRoot')) {
           obj['merkleRoot'] = _ApiClient["default"].convertToType(data['merkleRoot'], 'String');
+        }
+
+        if (data.hasOwnProperty('nonce')) {
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
+        }
+
+        if (data.hasOwnProperty('size')) {
+          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
         }
 
         if (data.hasOwnProperty('strippedSize')) {
@@ -131,18 +131,6 @@ var GetBlockDetailsByBlockHeightRIBSL = /*#__PURE__*/function () {
 
 GetBlockDetailsByBlockHeightRIBSL.prototype['difficulty'] = undefined;
 /**
- * Represents a random value that can be adjusted to satisfy the Proof of Work.
- * @member {String} nonce
- */
-
-GetBlockDetailsByBlockHeightRIBSL.prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-
-GetBlockDetailsByBlockHeightRIBSL.prototype['size'] = undefined;
-/**
  * Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
  * @member {String} bits
  */
@@ -160,6 +148,18 @@ GetBlockDetailsByBlockHeightRIBSL.prototype['chainwork'] = undefined;
  */
 
 GetBlockDetailsByBlockHeightRIBSL.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the Proof of Work.
+ * @member {String} nonce
+ */
+
+GetBlockDetailsByBlockHeightRIBSL.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+GetBlockDetailsByBlockHeightRIBSL.prototype['size'] = undefined;
 /**
  * Defines the numeric representation of the block size excluding the witness data.
  * @member {Number} strippedSize

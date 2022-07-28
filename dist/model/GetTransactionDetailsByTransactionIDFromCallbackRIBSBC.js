@@ -7,9 +7,9 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSBCVinInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBCVinInner"));
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSBCVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBCVoutInner"));
+var _GetTransactionDetailsByTransactionIDRIBSBCVinInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBCVinInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSBC model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBC
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBSBC = /*#__PURE__*/function () {
   /**
@@ -33,7 +33,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBSBC = /*#__PURE__*/functi
    * @param size {Number} Represents the total size of this transaction.
    * @param version {Number} Represents transaction version number.
    * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVinInner>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} Represents the transaction outputs.
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner>} Represents the transaction outputs.
    */
   function GetTransactionDetailsByTransactionIDFromCallbackRIBSBC(locktime, size, version, vin, vout) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDFromCallbackRIBSBC);
@@ -87,7 +87,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBSBC = /*#__PURE__*/functi
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSBCVoutInner["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner["default"]]);
         }
       }
 
@@ -124,7 +124,7 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBSBC.prototype['version'] = un
 GetTransactionDetailsByTransactionIDFromCallbackRIBSBC.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner>} vout
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBSBC.prototype['vout'] = undefined;

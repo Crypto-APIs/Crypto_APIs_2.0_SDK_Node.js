@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticTokensForwarding400Response model module.
  * @module model/DeleteAutomaticTokensForwarding400Response
- * @version 1.6.0
+ * @version 1.7.0
  */
 var DeleteAutomaticTokensForwarding400Response = /*#__PURE__*/function () {
   /**

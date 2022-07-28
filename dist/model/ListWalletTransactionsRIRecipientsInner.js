@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRIRecipientsInner model module.
  * @module model/ListWalletTransactionsRIRecipientsInner
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListWalletTransactionsRIRecipientsInner = /*#__PURE__*/function () {
   /**

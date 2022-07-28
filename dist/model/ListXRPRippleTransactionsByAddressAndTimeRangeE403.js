@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeE403 model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeE403
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListXRPRippleTransactionsByAddressAndTimeRangeE403 = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingFail model module.
  * @module model/TokensForwardingFail
- * @version 1.6.0
+ * @version 1.7.0
  */
 var TokensForwardingFail = /*#__PURE__*/function () {
   /**

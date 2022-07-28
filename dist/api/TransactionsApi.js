@@ -43,6 +43,18 @@ var _CreateCoinsTransactionRequestFromWalletR = _interopRequireDefault(require("
 
 var _CreateCoinsTransactionRequestFromWalletRB = _interopRequireDefault(require("../model/CreateCoinsTransactionRequestFromWalletRB"));
 
+var _CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response = _interopRequireDefault(require("../model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response"));
+
+var _CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority401Response = _interopRequireDefault(require("../model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority401Response"));
+
+var _CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority403Response = _interopRequireDefault(require("../model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority403Response"));
+
+var _CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority409Response = _interopRequireDefault(require("../model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority409Response"));
+
+var _CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityR = _interopRequireDefault(require("../model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityR"));
+
+var _CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRB = _interopRequireDefault(require("../model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRB"));
+
 var _CreateFungibleTokensTransactionRequestFromAddress400Response = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddress400Response"));
 
 var _CreateFungibleTokensTransactionRequestFromAddress401Response = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddress401Response"));
@@ -54,6 +66,18 @@ var _CreateFungibleTokensTransactionRequestFromAddress409Response = _interopRequ
 var _CreateFungibleTokensTransactionRequestFromAddressR = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddressR"));
 
 var _CreateFungibleTokensTransactionRequestFromAddressRB = _interopRequireDefault(require("../model/CreateFungibleTokensTransactionRequestFromAddressRB"));
+
+var _CreateSingleTransactionRequestFromAddressWithoutFeePriority400Response = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriority400Response"));
+
+var _CreateSingleTransactionRequestFromAddressWithoutFeePriority401Response = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriority401Response"));
+
+var _CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response"));
+
+var _CreateSingleTransactionRequestFromAddressWithoutFeePriority409Response = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriority409Response"));
+
+var _CreateSingleTransactionRequestFromAddressWithoutFeePriorityR = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityR"));
+
+var _CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB"));
 
 var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
 
@@ -76,7 +100,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.6.0
+* @version 1.7.0
 */
 var TransactionsApi = /*#__PURE__*/function () {
   /**
@@ -310,6 +334,81 @@ var TransactionsApi = /*#__PURE__*/function () {
       });
     }
     /**
+     * Create Fungible Token Transaction Request From Address Without Fee Priority
+     * Through this endpoint customers can make a single feeless token transaction on the Tron blockchain protocol. TRX transactions burn certain resources called Bandwidth and Energy. Each account has 1500 bandwidth free for use every 24 hours and more can be obtained by staking TRX. The unit price of Energy is 280 SUN and of bandwidth - 1000 SUN. If the resources are insufficient, TRX will be burned to pay for them.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} senderAddress Defines the specific source address for the transaction.
+     * @param {String} walletId Defines the unique ID of the Wallet.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRB} opts.createFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityR} and HTTP response
+     */
+
+  }, {
+    key: "createFungibleTokenTransactionRequestFromAddressWithoutFeePriorityWithHttpInfo",
+    value: function createFungibleTokenTransactionRequestFromAddressWithoutFeePriorityWithHttpInfo(blockchain, network, senderAddress, walletId, opts) {
+      opts = opts || {};
+      var postBody = opts['createFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRB']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling createFungibleTokenTransactionRequestFromAddressWithoutFeePriority");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling createFungibleTokenTransactionRequestFromAddressWithoutFeePriority");
+      } // verify the required parameter 'senderAddress' is set
+
+
+      if (senderAddress === undefined || senderAddress === null) {
+        throw new Error("Missing the required parameter 'senderAddress' when calling createFungibleTokenTransactionRequestFromAddressWithoutFeePriority");
+      } // verify the required parameter 'walletId' is set
+
+
+      if (walletId === undefined || walletId === null) {
+        throw new Error("Missing the required parameter 'walletId' when calling createFungibleTokenTransactionRequestFromAddressWithoutFeePriority");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'senderAddress': senderAddress,
+        'walletId': walletId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityR["default"];
+      return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/feeless-token-transaction-requests', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Create Fungible Token Transaction Request From Address Without Fee Priority
+     * Through this endpoint customers can make a single feeless token transaction on the Tron blockchain protocol. TRX transactions burn certain resources called Bandwidth and Energy. Each account has 1500 bandwidth free for use every 24 hours and more can be obtained by staking TRX. The unit price of Energy is 280 SUN and of bandwidth - 1000 SUN. If the resources are insufficient, TRX will be burned to pay for them.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} senderAddress Defines the specific source address for the transaction.
+     * @param {String} walletId Defines the unique ID of the Wallet.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRB} opts.createFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityR}
+     */
+
+  }, {
+    key: "createFungibleTokenTransactionRequestFromAddressWithoutFeePriority",
+    value: function createFungibleTokenTransactionRequestFromAddressWithoutFeePriority(blockchain, network, senderAddress, walletId, opts) {
+      return this.createFungibleTokenTransactionRequestFromAddressWithoutFeePriorityWithHttpInfo(blockchain, network, senderAddress, walletId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
      * Create Fungible Tokens Transaction Request from Address
      * Through this endpoint users can make a single token transaction.    {note}To have an operational callback subscription, you need to first verify a domain for the Callback URL. Please see more information on Callbacks [here](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-url).{/note}    {warning}Crypto APIs will notify the user **only when** the event occurs. There are cases when the specific event doesn't happen at all, or takes a long time to do so. A callback notification **will not** be sent if the event does not or cannot occur, or will take long time to occur.{/warning}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
@@ -381,6 +480,81 @@ var TransactionsApi = /*#__PURE__*/function () {
     key: "createFungibleTokensTransactionRequestFromAddress",
     value: function createFungibleTokensTransactionRequestFromAddress(blockchain, network, senderAddress, walletId, opts) {
       return this.createFungibleTokensTransactionRequestFromAddressWithHttpInfo(blockchain, network, senderAddress, walletId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Create Single Transaction Request From Address Without Fee Priority
+     * Through this endpoint users can create a new single transaction request from one address to another. The difference between this endpoint and \"Create Coins Transaction Request from Address\"  is that for Tron blockchain there is no Fee Priority that defines how fast a transaction can be mined.
+     * @param {String} address Defines the specific source address for the transaction.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB} opts.createSingleTransactionRequestFromAddressWithoutFeePriorityRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityR} and HTTP response
+     */
+
+  }, {
+    key: "createSingleTransactionRequestFromAddressWithoutFeePriorityWithHttpInfo",
+    value: function createSingleTransactionRequestFromAddressWithoutFeePriorityWithHttpInfo(address, blockchain, network, walletId, opts) {
+      opts = opts || {};
+      var postBody = opts['createSingleTransactionRequestFromAddressWithoutFeePriorityRB']; // verify the required parameter 'address' is set
+
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling createSingleTransactionRequestFromAddressWithoutFeePriority");
+      } // verify the required parameter 'blockchain' is set
+
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling createSingleTransactionRequestFromAddressWithoutFeePriority");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling createSingleTransactionRequestFromAddressWithoutFeePriority");
+      } // verify the required parameter 'walletId' is set
+
+
+      if (walletId === undefined || walletId === null) {
+        throw new Error("Missing the required parameter 'walletId' when calling createSingleTransactionRequestFromAddressWithoutFeePriority");
+      }
+
+      var pathParams = {
+        'address': address,
+        'blockchain': blockchain,
+        'network': network,
+        'walletId': walletId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _CreateSingleTransactionRequestFromAddressWithoutFeePriorityR["default"];
+      return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/feeless-transaction-requests', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Create Single Transaction Request From Address Without Fee Priority
+     * Through this endpoint users can create a new single transaction request from one address to another. The difference between this endpoint and \"Create Coins Transaction Request from Address\"  is that for Tron blockchain there is no Fee Priority that defines how fast a transaction can be mined.
+     * @param {String} address Defines the specific source address for the transaction.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB} opts.createSingleTransactionRequestFromAddressWithoutFeePriorityRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityR}
+     */
+
+  }, {
+    key: "createSingleTransactionRequestFromAddressWithoutFeePriority",
+    value: function createSingleTransactionRequestFromAddressWithoutFeePriority(address, blockchain, network, walletId, opts) {
+      return this.createSingleTransactionRequestFromAddressWithoutFeePriorityWithHttpInfo(address, blockchain, network, walletId, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

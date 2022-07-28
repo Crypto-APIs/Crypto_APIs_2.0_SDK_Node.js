@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddressE400 model module.
  * @module model/ListTokensByAddressE400
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListTokensByAddressE400 = /*#__PURE__*/function () {
   /**

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **version** | **Number** | Represents the transaction version number. | 
 **vin** | [**[GetWalletTransactionDetailsByTransactionIDRIBSZVinInner]**](GetWalletTransactionDetailsByTransactionIDRIBSZVinInner.md) | Object Array representation of transaction inputs | 
 **vout** | [**[ListTransactionsByBlockHeightRIBSZVoutInner]**](ListTransactionsByBlockHeightRIBSZVoutInner.md) | Object Array representation of transaction outputs | 
-**contract** | **String** | Represents the specific transaction contract | 
+**contract** | **String** | Numeric representation of the transaction contract | 
 **gasLimit** | **String** | Represents the amount of gas used by this specific transaction alone. | 
 **gasPrice** | [**GetTransactionDetailsByTransactionIDRIBSBSCGasPrice**](GetTransactionDetailsByTransactionIDRIBSBSCGasPrice.md) |  | 
 **gasUsed** | **String** | Defines the unit of the gas price amount, e.g. BTC, ETH, XRP. | 
@@ -27,5 +27,12 @@ Name | Type | Description | Notes
 **vShieldedSpend** | [**[GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner]**](GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner.md) | Object Array representation of transaction spend descriptions | [optional] 
 **valueBalance** | **String** | String representation of the transaction value balance | 
 **versionGroupId** | **String** | Represents the transaction version group ID. | 
+**amount** | **String** | String representation of the amount value | 
+**bandwidthUsed** | **String** | Numeric representation of the transaction used bandwidth | 
+**energyUsed** | **String** | String representation of the transaction used energy | 
+**hasInternalTransactions** | **Boolean** |  | 
+**hasTokenTransfers** | **Boolean** |  | 
+**input** | **String** | Numeric representation of the transaction input | 
+**status** | **String** | String representation of the transaction status | 
 
 

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressCoinsTransactionConfirmedDataItem model module.
  * @module model/AddressCoinsTransactionConfirmedDataItem
- * @version 1.6.0
+ * @version 1.7.0
  */
 var AddressCoinsTransactionConfirmedDataItem = /*#__PURE__*/function () {
   /**
@@ -28,7 +28,7 @@ var AddressCoinsTransactionConfirmedDataItem = /*#__PURE__*/function () {
    * Defines an &#x60;item&#x60; as one result.
    * @alias module:model/AddressCoinsTransactionConfirmedDataItem
    * @param blockchain {String} Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-   * @param network {String} Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+   * @param network {String} Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"mordor\" are test networks.
    * @param address {String} Defines the specific address to which the coin transaction has been sent and is confirmed.
    * @param minedInBlock {module:model/AddressCoinsTransactionConfirmedDataItemMinedInBlock} 
    * @param transactionId {String} Defines the unique ID of the specific transaction, i.e. its identification number.
@@ -121,7 +121,7 @@ var AddressCoinsTransactionConfirmedDataItem = /*#__PURE__*/function () {
 
 AddressCoinsTransactionConfirmedDataItem.prototype['blockchain'] = undefined;
 /**
- * Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"rinkeby\" are test networks.
+ * Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\", \"mordor\" are test networks.
  * @member {String} network
  */
 

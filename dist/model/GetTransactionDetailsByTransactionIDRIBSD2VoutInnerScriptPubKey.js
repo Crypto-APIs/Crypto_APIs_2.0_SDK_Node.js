@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**
@@ -28,13 +28,12 @@ var GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey = /*#__PURE_
    * @param addresses {Array.<String>} 
    * @param asm {String} Represents the assembly of the script public key of the address.
    * @param hex {String} Represents the hex of the script public key of the address.
-   * @param reqSigs {Number} Represents the required signatures.
    * @param type {String} Represents the script type.
    */
-  function GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey(addresses, asm, hex, reqSigs, type) {
+  function GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey(addresses, asm, hex, type) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey);
 
-    GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey.initialize(this, addresses, asm, hex, reqSigs, type);
+    GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey.initialize(this, addresses, asm, hex, type);
   }
   /**
    * Initializes the fields of this object.
@@ -45,11 +44,10 @@ var GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey = /*#__PURE_
 
   _createClass(GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey, null, [{
     key: "initialize",
-    value: function initialize(obj, addresses, asm, hex, reqSigs, type) {
+    value: function initialize(obj, addresses, asm, hex, type) {
       obj['addresses'] = addresses;
       obj['asm'] = asm;
       obj['hex'] = hex;
-      obj['reqSigs'] = reqSigs;
       obj['type'] = type;
     }
     /**

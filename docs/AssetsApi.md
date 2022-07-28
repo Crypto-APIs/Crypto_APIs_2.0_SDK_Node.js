@@ -1,12 +1,11 @@
 # Cryptoapis.AssetsApi
 
-All URIs are relative to *https://rest.cryptoapis.io/v2*
+All URIs are relative to *https://rest.cryptoapis.io*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getAssetDetailsByAssetID**](AssetsApi.md#getAssetDetailsByAssetID) | **GET** /market-data/assets/assetId/{assetId} | Get Asset Details By Asset ID
 [**getAssetDetailsByAssetSymbol**](AssetsApi.md#getAssetDetailsByAssetSymbol) | **GET** /market-data/assets/{assetSymbol} | Get Asset Details By Asset Symbol
-[**listAssetsDetails**](AssetsApi.md#listAssetsDetails) | **GET** /market-data/assets/details | List Assets Details
 
 
 
@@ -107,68 +106,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetAssetDetailsByAssetSymbolR**](GetAssetDetailsByAssetSymbolR.md)
-
-### Authorization
-
-[ApiKey](../README.md#ApiKey)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
-## listAssetsDetails
-
-> ListAssetsDetailsR listAssetsDetails(opts)
-
-List Assets Details
-
-This endpoint will return a list of details on assets. These could be cryptocurrencies or FIAT assets that we support. Each asset has a unique identifier - &#x60;assetId&#x60; and a unique symbol in the form of a string, e.g. \&quot;BTC\&quot;.    The details returned could include information on the latest rate and rate fluctuation of different periods of time - 24 hours, a week, one hour, the encoding of the logo, and more.
-
-### Example
-
-```javascript
-import Cryptoapis from 'cryptoapis';
-let defaultClient = Cryptoapis.ApiClient.instance;
-// Configure API key authorization: ApiKey
-let ApiKey = defaultClient.authentications['ApiKey'];
-ApiKey.apiKey = 'YOUR API KEY';
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//ApiKey.apiKeyPrefix = 'Token';
-
-let apiInstance = new Cryptoapis.AssetsApi();
-let opts = {
-  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'assetType': crypto, // String | Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
-  'cryptoType': coin, // String | Subtype of the crypto assets. Could be COIN or TOKEN
-  'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
-  'offset': 0, // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
-  'waasEnabled': true // Boolean | Show only if WaaS is/not enabled
-};
-apiInstance.listAssetsDetails(opts).then((data) => {
-  console.log('API called successfully. Returned data: ' + data);
-}, (error) => {
-  console.error(error);
-});
-
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **assetType** | **String**| Defines the type of the supported asset. This could be either \&quot;crypto\&quot; or \&quot;fiat\&quot;. | [optional] 
- **cryptoType** | **String**| Subtype of the crypto assets. Could be COIN or TOKEN | [optional] 
- **limit** | **Number**| Defines how many items should be returned in the response per page basis. | [optional] [default to 50]
- **offset** | **Number**| The starting index of the response items, i.e. where the response should start listing the returned items. | [optional] [default to 0]
- **waasEnabled** | **Boolean**| Show only if WaaS is/not enabled | [optional] 
-
-### Return type
-
-[**ListAssetsDetailsR**](ListAssetsDetailsR.md)
 
 ### Authorization
 

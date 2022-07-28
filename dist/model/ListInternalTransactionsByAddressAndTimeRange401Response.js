@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressAndTimeRange401Response model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRange401Response
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListInternalTransactionsByAddressAndTimeRange401Response = /*#__PURE__*/function () {
   /**

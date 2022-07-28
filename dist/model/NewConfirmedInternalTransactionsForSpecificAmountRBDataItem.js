@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsForSpecificAmountRBDataItem model module.
  * @module model/NewConfirmedInternalTransactionsForSpecificAmountRBDataItem
- * @version 1.6.0
+ * @version 1.7.0
  */
 var NewConfirmedInternalTransactionsForSpecificAmountRBDataItem = /*#__PURE__*/function () {
   /**

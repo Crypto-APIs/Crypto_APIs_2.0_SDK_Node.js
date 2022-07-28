@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressE401 model module.
  * @module model/ListXRPRippleTransactionsByAddressE401
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListXRPRippleTransactionsByAddressE401 = /*#__PURE__*/function () {
   /**

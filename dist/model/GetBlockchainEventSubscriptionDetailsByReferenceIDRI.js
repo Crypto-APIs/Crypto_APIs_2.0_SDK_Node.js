@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDRI model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetBlockchainEventSubscriptionDetailsByReferenceIDRI = /*#__PURE__*/function () {
   /**

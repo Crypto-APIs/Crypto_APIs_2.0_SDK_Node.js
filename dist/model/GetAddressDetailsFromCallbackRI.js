@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackRI model module.
  * @module model/GetAddressDetailsFromCallbackRI
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetAddressDetailsFromCallbackRI = /*#__PURE__*/function () {
   /**
@@ -32,7 +32,7 @@ var GetAddressDetailsFromCallbackRI = /*#__PURE__*/function () {
    * @alias module:model/GetAddressDetailsFromCallbackRI
    * @param incomingTransactionsCount {Number} Defines the count of the incoming transactions.
    * @param outgoingTransactionsCount {Number} Defines the count of the outgoing transactions.
-   * @param transactionsCount {Number} Represents the total number of confirmed coins transactions for this address, both incoming and outgoing. Applies for coins only **and not** tokens transfers e.g. for Ethereum. `transactionsCount` could result as less than incoming and outgoing transactions put together (e.g. in Bitcoin), due to the fact that one and the same address could be in senders and receivers addresses.
+   * @param transactionsCount {Number} Represents the total number of confirmed coins transactions for this address, both incoming and outgoing. Applies for coins only and not tokens transfers e.g. for Ethereum. transactionsCount could result as less than incoming and outgoing transactions put together (e.g. in Bitcoin), due to the fact that one and the same address could be in senders and receivers addresses.
    * @param confirmedBalance {module:model/GetAddressDetailsRIConfirmedBalance} 
    */
   function GetAddressDetailsFromCallbackRI(incomingTransactionsCount, outgoingTransactionsCount, transactionsCount, confirmedBalance) {
@@ -118,7 +118,7 @@ GetAddressDetailsFromCallbackRI.prototype['incomingTransactionsCount'] = undefin
 
 GetAddressDetailsFromCallbackRI.prototype['outgoingTransactionsCount'] = undefined;
 /**
- * Represents the total number of confirmed coins transactions for this address, both incoming and outgoing. Applies for coins only **and not** tokens transfers e.g. for Ethereum. `transactionsCount` could result as less than incoming and outgoing transactions put together (e.g. in Bitcoin), due to the fact that one and the same address could be in senders and receivers addresses.
+ * Represents the total number of confirmed coins transactions for this address, both incoming and outgoing. Applies for coins only and not tokens transfers e.g. for Ethereum. transactionsCount could result as less than incoming and outgoing transactions put together (e.g. in Bitcoin), due to the fact that one and the same address could be in senders and receivers addresses.
  * @member {Number} transactionsCount
  */
 

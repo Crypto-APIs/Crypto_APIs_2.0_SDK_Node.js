@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **vSize** | **Number** | Represents the virtual size of this transaction. | 
 **version** | **Number** | Defines the version of the transaction. | 
 **vin** | [**[GetTransactionDetailsByTransactionIDRIBSZVinInner]**](GetTransactionDetailsByTransactionIDRIBSZVinInner.md) | Object Array representation of transaction inputs | 
-**vout** | [**[GetTransactionDetailsByTransactionIDRIBSZVoutInner]**](GetTransactionDetailsByTransactionIDRIBSZVoutInner.md) | Object Array representation of transaction outputs | 
-**contract** | **String** | Represents the specific transaction contract | 
+**vout** | [**[GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner]**](GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner.md) | Object Array representation of transaction outputs | 
+**contract** | **String** | Represents the specific transaction contract. | 
 **gasLimit** | **Number** | Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit. | 
 **gasPrice** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice**](GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice.md) |  | 
 **gasUsed** | **Number** | Defines how much of the gas for the block has been used. | 
@@ -35,5 +35,13 @@ Name | Type | Description | Notes
 **status** | **String** | Defines the status of the transaction. | 
 **type** | **String** | Defines the type of the transaction. | 
 **value** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue**](GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue.md) |  | 
+**amount** | **String** | Defines the amount of the transaction. | 
+**bandwidthUsed** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed**](GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed.md) |  | 
+**energyUsed** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed**](GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed.md) |  | 
+**hasInternalTransactions** | **Boolean** | Defines if the transaction includes internal transactions (true) or not (false). | 
+**hasTokenTransfers** | **String** | Defines if the transaction includes token transfers (true) or not (false). | 
+**input** | **String** | Represents the transaction&#39;s input value. | 
+**recipients** | **String** | Represents the recipient address. | 
+**senders** | **String** | Represents the sender address. | 
 
 

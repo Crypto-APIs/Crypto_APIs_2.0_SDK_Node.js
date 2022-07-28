@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRIBSBC model module.
  * @module model/GetLastMinedBlockRIBSBC
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetLastMinedBlockRIBSBC = /*#__PURE__*/function () {
   /**
@@ -26,18 +26,18 @@ var GetLastMinedBlockRIBSBC = /*#__PURE__*/function () {
    * Bitcoin Cash
    * @alias module:model/GetLastMinedBlockRIBSBC
    * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-   * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
-   * @param size {Number} Represents the total size of the block in Bytes.
    * @param bits {String} A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
    * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
    * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+   * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
+   * @param size {Number} Represents the total size of the block in Bytes.
    * @param version {Number} Represents the version of the specific block on the blockchain.
    * @param versionHex {String} Is the hexadecimal string representation of the block's version.
    */
-  function GetLastMinedBlockRIBSBC(difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex) {
+  function GetLastMinedBlockRIBSBC(difficulty, bits, chainwork, merkleRoot, nonce, size, version, versionHex) {
     _classCallCheck(this, GetLastMinedBlockRIBSBC);
 
-    GetLastMinedBlockRIBSBC.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex);
+    GetLastMinedBlockRIBSBC.initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, version, versionHex);
   }
   /**
    * Initializes the fields of this object.
@@ -48,13 +48,13 @@ var GetLastMinedBlockRIBSBC = /*#__PURE__*/function () {
 
   _createClass(GetLastMinedBlockRIBSBC, null, [{
     key: "initialize",
-    value: function initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, version, versionHex) {
+    value: function initialize(obj, difficulty, bits, chainwork, merkleRoot, nonce, size, version, versionHex) {
       obj['difficulty'] = difficulty;
-      obj['nonce'] = nonce;
-      obj['size'] = size;
       obj['bits'] = bits;
       obj['chainwork'] = chainwork;
       obj['merkleRoot'] = merkleRoot;
+      obj['nonce'] = nonce;
+      obj['size'] = size;
       obj['version'] = version;
       obj['versionHex'] = versionHex;
     }
@@ -76,14 +76,6 @@ var GetLastMinedBlockRIBSBC = /*#__PURE__*/function () {
           obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
         }
 
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
-        }
-
-        if (data.hasOwnProperty('size')) {
-          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
-        }
-
         if (data.hasOwnProperty('bits')) {
           obj['bits'] = _ApiClient["default"].convertToType(data['bits'], 'String');
         }
@@ -94,6 +86,14 @@ var GetLastMinedBlockRIBSBC = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('merkleRoot')) {
           obj['merkleRoot'] = _ApiClient["default"].convertToType(data['merkleRoot'], 'String');
+        }
+
+        if (data.hasOwnProperty('nonce')) {
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
+        }
+
+        if (data.hasOwnProperty('size')) {
+          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
         }
 
         if (data.hasOwnProperty('version')) {
@@ -119,18 +119,6 @@ var GetLastMinedBlockRIBSBC = /*#__PURE__*/function () {
 
 GetLastMinedBlockRIBSBC.prototype['difficulty'] = undefined;
 /**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-
-GetLastMinedBlockRIBSBC.prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-
-GetLastMinedBlockRIBSBC.prototype['size'] = undefined;
-/**
  * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
  * @member {String} bits
  */
@@ -148,6 +136,18 @@ GetLastMinedBlockRIBSBC.prototype['chainwork'] = undefined;
  */
 
 GetLastMinedBlockRIBSBC.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+
+GetLastMinedBlockRIBSBC.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+GetLastMinedBlockRIBSBC.prototype['size'] = undefined;
 /**
  * Represents the version of the specific block on the blockchain.
  * @member {Number} version

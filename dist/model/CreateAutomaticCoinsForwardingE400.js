@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwardingE400 model module.
  * @module model/CreateAutomaticCoinsForwardingE400
- * @version 1.6.0
+ * @version 1.7.0
  */
 var CreateAutomaticCoinsForwardingE400 = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestApprovalDataItem model module.
  * @module model/TransactionRequestApprovalDataItem
- * @version 1.6.0
+ * @version 1.7.0
  */
 var TransactionRequestApprovalDataItem = /*#__PURE__*/function () {
   /**

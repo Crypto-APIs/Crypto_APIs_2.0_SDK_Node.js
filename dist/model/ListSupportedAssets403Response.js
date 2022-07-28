@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssets403Response model module.
  * @module model/ListSupportedAssets403Response
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListSupportedAssets403Response = /*#__PURE__*/function () {
   /**

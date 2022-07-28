@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBVinInnerScriptSig model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBVinInnerScriptSig
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetTransactionDetailsByTransactionIDRIBSBVinInnerScriptSig = /*#__PURE__*/function () {
   /**

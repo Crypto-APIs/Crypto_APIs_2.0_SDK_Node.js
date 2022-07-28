@@ -23,6 +23,12 @@ var _ListLatestMinedBlocksRIBSEC = _interopRequireDefault(require("./ListLatestM
 
 var _ListLatestMinedBlocksRIBSL = _interopRequireDefault(require("./ListLatestMinedBlocksRIBSL"));
 
+var _ListLatestMinedBlocksRIBSX = _interopRequireDefault(require("./ListLatestMinedBlocksRIBSX"));
+
+var _ListLatestMinedBlocksRIBSXTotalCoins = _interopRequireDefault(require("./ListLatestMinedBlocksRIBSXTotalCoins"));
+
+var _ListLatestMinedBlocksRIBSXTotalFees = _interopRequireDefault(require("./ListLatestMinedBlocksRIBSXTotalFees"));
+
 var _ListLatestMinedBlocksRIBSZ = _interopRequireDefault(require("./ListLatestMinedBlocksRIBSZ"));
 
 var _ListLatestMinedBlocksRIBSZ2 = _interopRequireDefault(require("./ListLatestMinedBlocksRIBSZ2"));
@@ -38,7 +44,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBS model module.
  * @module model/ListLatestMinedBlocksRIBS
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
   /**
@@ -54,6 +60,7 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
    * @implements module:model/ListLatestMinedBlocksRIBSBSC
    * @implements module:model/ListLatestMinedBlocksRIBSZ
    * @implements module:model/ListLatestMinedBlocksRIBSZ2
+   * @implements module:model/ListLatestMinedBlocksRIBSX
    * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
    * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
    * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
@@ -75,8 +82,9 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
    * @param dsDifficulty {String} Defines how difficult it is to mine the dsBlocks.
    * @param dsLeader {String} Represents a part of the DS Committee which leads the consensus protocol for the epoch.
    * @param microBlocks {Array.<String>} 
+   * @param totalFees {module:model/ListLatestMinedBlocksRIBSXTotalFees} 
    */
-  function ListLatestMinedBlocksRIBS(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks) {
+  function ListLatestMinedBlocksRIBS(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks, totalFees) {
     _classCallCheck(this, ListLatestMinedBlocksRIBS);
 
     _ListLatestMinedBlocksRIBSB["default"].initialize(this, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);
@@ -99,7 +107,9 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
 
     _ListLatestMinedBlocksRIBSZ2["default"].initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version);
 
-    ListLatestMinedBlocksRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks);
+    _ListLatestMinedBlocksRIBSX["default"].initialize(this, totalFees);
+
+    ListLatestMinedBlocksRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks, totalFees);
   }
   /**
    * Initializes the fields of this object.
@@ -110,7 +120,7 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
 
   _createClass(ListLatestMinedBlocksRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks) {
+    value: function initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks, totalFees) {
       obj['bits'] = bits;
       obj['chainwork'] = chainwork;
       obj['difficulty'] = difficulty;
@@ -132,6 +142,7 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
       obj['dsDifficulty'] = dsDifficulty;
       obj['dsLeader'] = dsLeader;
       obj['microBlocks'] = microBlocks;
+      obj['totalFees'] = totalFees;
     }
     /**
      * Constructs a <code>ListLatestMinedBlocksRIBS</code> from a plain JavaScript object, optionally creating a new instance.
@@ -166,6 +177,8 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
         _ListLatestMinedBlocksRIBSZ["default"].constructFromObject(data, obj);
 
         _ListLatestMinedBlocksRIBSZ2["default"].constructFromObject(data, obj);
+
+        _ListLatestMinedBlocksRIBSX["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('bits')) {
           obj['bits'] = _ApiClient["default"].convertToType(data['bits'], 'String');
@@ -249,6 +262,14 @@ var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('microBlocks')) {
           obj['microBlocks'] = _ApiClient["default"].convertToType(data['microBlocks'], ['String']);
+        }
+
+        if (data.hasOwnProperty('totalCoins')) {
+          obj['totalCoins'] = _ListLatestMinedBlocksRIBSXTotalCoins["default"].constructFromObject(data['totalCoins']);
+        }
+
+        if (data.hasOwnProperty('totalFees')) {
+          obj['totalFees'] = _ListLatestMinedBlocksRIBSXTotalFees["default"].constructFromObject(data['totalFees']);
         }
       }
 
@@ -382,7 +403,17 @@ ListLatestMinedBlocksRIBS.prototype['dsLeader'] = undefined;
  * @member {Array.<String>} microBlocks
  */
 
-ListLatestMinedBlocksRIBS.prototype['microBlocks'] = undefined; // Implement ListLatestMinedBlocksRIBSB interface:
+ListLatestMinedBlocksRIBS.prototype['microBlocks'] = undefined;
+/**
+ * @member {module:model/ListLatestMinedBlocksRIBSXTotalCoins} totalCoins
+ */
+
+ListLatestMinedBlocksRIBS.prototype['totalCoins'] = undefined;
+/**
+ * @member {module:model/ListLatestMinedBlocksRIBSXTotalFees} totalFees
+ */
+
+ListLatestMinedBlocksRIBS.prototype['totalFees'] = undefined; // Implement ListLatestMinedBlocksRIBSB interface:
 
 /**
  * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
@@ -922,6 +953,17 @@ _ListLatestMinedBlocksRIBSZ2["default"].prototype['size'] = undefined;
  * @member {Number} version
  */
 
-_ListLatestMinedBlocksRIBSZ2["default"].prototype['version'] = undefined;
+_ListLatestMinedBlocksRIBSZ2["default"].prototype['version'] = undefined; // Implement ListLatestMinedBlocksRIBSX interface:
+
+/**
+ * @member {module:model/ListLatestMinedBlocksRIBSXTotalCoins} totalCoins
+ */
+
+_ListLatestMinedBlocksRIBSX["default"].prototype['totalCoins'] = undefined;
+/**
+ * @member {module:model/ListLatestMinedBlocksRIBSXTotalFees} totalFees
+ */
+
+_ListLatestMinedBlocksRIBSX["default"].prototype['totalFees'] = undefined;
 var _default = ListLatestMinedBlocksRIBS;
 exports["default"] = _default;

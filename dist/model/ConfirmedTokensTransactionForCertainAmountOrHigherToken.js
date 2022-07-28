@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherToken model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherToken
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ConfirmedTokensTransactionForCertainAmountOrHigherToken = /*#__PURE__*/function () {
   /**

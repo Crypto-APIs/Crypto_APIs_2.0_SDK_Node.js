@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRIBSZ model module.
  * @module model/GetLastMinedBlockRIBSZ
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetLastMinedBlockRIBSZ = /*#__PURE__*/function () {
   /**
@@ -26,17 +26,17 @@ var GetLastMinedBlockRIBSZ = /*#__PURE__*/function () {
    * Zcash
    * @alias module:model/GetLastMinedBlockRIBSZ
    * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-   * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
-   * @param size {Number} Represents the total size of the block in Bytes.
    * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
    * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
    * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+   * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work.
+   * @param size {Number} Represents the total size of the block in Bytes.
    * @param version {Number} Represents the transaction version number.
    */
-  function GetLastMinedBlockRIBSZ(difficulty, nonce, size, bits, chainwork, merkleRoot, version) {
+  function GetLastMinedBlockRIBSZ(difficulty, bits, chainwork, merkleRoot, nonce, size, version) {
     _classCallCheck(this, GetLastMinedBlockRIBSZ);
 
-    GetLastMinedBlockRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version);
+    GetLastMinedBlockRIBSZ.initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, version);
   }
   /**
    * Initializes the fields of this object.
@@ -47,13 +47,13 @@ var GetLastMinedBlockRIBSZ = /*#__PURE__*/function () {
 
   _createClass(GetLastMinedBlockRIBSZ, null, [{
     key: "initialize",
-    value: function initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, version) {
+    value: function initialize(obj, difficulty, bits, chainwork, merkleRoot, nonce, size, version) {
       obj['difficulty'] = difficulty;
-      obj['nonce'] = nonce;
-      obj['size'] = size;
       obj['bits'] = bits;
       obj['chainwork'] = chainwork;
       obj['merkleRoot'] = merkleRoot;
+      obj['nonce'] = nonce;
+      obj['size'] = size;
       obj['version'] = version;
     }
     /**
@@ -74,14 +74,6 @@ var GetLastMinedBlockRIBSZ = /*#__PURE__*/function () {
           obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
         }
 
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
-        }
-
-        if (data.hasOwnProperty('size')) {
-          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
-        }
-
         if (data.hasOwnProperty('bits')) {
           obj['bits'] = _ApiClient["default"].convertToType(data['bits'], 'String');
         }
@@ -92,6 +84,14 @@ var GetLastMinedBlockRIBSZ = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('merkleRoot')) {
           obj['merkleRoot'] = _ApiClient["default"].convertToType(data['merkleRoot'], 'String');
+        }
+
+        if (data.hasOwnProperty('nonce')) {
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
+        }
+
+        if (data.hasOwnProperty('size')) {
+          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
         }
 
         if (data.hasOwnProperty('version')) {
@@ -113,18 +113,6 @@ var GetLastMinedBlockRIBSZ = /*#__PURE__*/function () {
 
 GetLastMinedBlockRIBSZ.prototype['difficulty'] = undefined;
 /**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-
-GetLastMinedBlockRIBSZ.prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-
-GetLastMinedBlockRIBSZ.prototype['size'] = undefined;
-/**
  * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
  * @member {String} bits
  */
@@ -142,6 +130,18 @@ GetLastMinedBlockRIBSZ.prototype['chainwork'] = undefined;
  */
 
 GetLastMinedBlockRIBSZ.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work.
+ * @member {String} nonce
+ */
+
+GetLastMinedBlockRIBSZ.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+GetLastMinedBlockRIBSZ.prototype['size'] = undefined;
 /**
  * Represents the transaction version number.
  * @member {Number} version

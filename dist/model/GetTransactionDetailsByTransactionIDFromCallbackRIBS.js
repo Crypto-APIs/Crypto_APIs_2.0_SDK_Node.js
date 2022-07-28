@@ -23,6 +23,12 @@ var _GetTransactionDetailsByTransactionIDFromCallbackRIBSEC = _interopRequireDef
 
 var _GetTransactionDetailsByTransactionIDFromCallbackRIBSL = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSL"));
 
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBST = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBST"));
+
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed"));
+
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed"));
+
 var _GetTransactionDetailsByTransactionIDFromCallbackRIBSX = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSX"));
 
 var _GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue"));
@@ -33,6 +39,8 @@ var _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 = _interopRequireDef
 
 var _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice"));
 
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner"));
+
 var _GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner"));
 
 var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner"));
@@ -40,8 +48,6 @@ var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner = _interopReq
 var _GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner"));
 
 var _GetTransactionDetailsByTransactionIDRIBSZVinInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVinInner"));
-
-var _GetTransactionDetailsByTransactionIDRIBSZVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVoutInner"));
 
 var _GetXRPRippleTransactionDetailsByTransactionIDRIOffer = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIOffer"));
 
@@ -58,7 +64,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBS
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function () {
   /**
@@ -75,13 +81,14 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
    * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC
    * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2
    * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSX
+   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBST
    * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Defines the version of the transaction.
    * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} Object Array representation of transaction outputs
-   * @param contract {String} Represents the specific transaction contract
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner>} Object Array representation of transaction outputs
+   * @param contract {String} Represents the specific transaction contract.
    * @param gasLimit {Number} Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
    * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice} 
    * @param gasUsed {Number} Defines how much of the gas for the block has been used.
@@ -105,8 +112,16 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
    * @param status {String} Defines the status of the transaction.
    * @param type {String} Defines the type of the transaction.
    * @param value {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue} 
+   * @param amount {String} Defines the amount of the transaction.
+   * @param bandwidthUsed {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed} 
+   * @param energyUsed {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed} 
+   * @param hasInternalTransactions {Boolean} Defines if the transaction includes internal transactions (true) or not (false).
+   * @param hasTokenTransfers {String} Defines if the transaction includes token transfers (true) or not (false).
+   * @param input {String} Represents the transaction's input value.
+   * @param recipients {String} Represents the recipient address.
+   * @param senders {String} Represents the sender address.
    */
-  function GetTransactionDetailsByTransactionIDFromCallbackRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value) {
+  function GetTransactionDetailsByTransactionIDFromCallbackRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDFromCallbackRIBS);
 
     _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].initialize(this, locktime, size, vSize, version, vin, vout);
@@ -131,7 +146,9 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
 
     _GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].initialize(this, additionalData, offer, receive, sequence, status, type, value);
 
-    GetTransactionDetailsByTransactionIDFromCallbackRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value);
+    _GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].initialize(this, amount, bandwidthUsed, contract, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders, transactionStatus);
+
+    GetTransactionDetailsByTransactionIDFromCallbackRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders);
   }
   /**
    * Initializes the fields of this object.
@@ -142,7 +159,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
 
   _createClass(GetTransactionDetailsByTransactionIDFromCallbackRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value) {
+    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders) {
       obj['locktime'] = locktime;
       obj['size'] = size;
       obj['vSize'] = vSize;
@@ -173,6 +190,14 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
       obj['status'] = status;
       obj['type'] = type;
       obj['value'] = value;
+      obj['amount'] = amount;
+      obj['bandwidthUsed'] = bandwidthUsed;
+      obj['energyUsed'] = energyUsed;
+      obj['hasInternalTransactions'] = hasInternalTransactions;
+      obj['hasTokenTransfers'] = hasTokenTransfers;
+      obj['input'] = input;
+      obj['recipients'] = recipients;
+      obj['senders'] = senders;
     }
     /**
      * Constructs a <code>GetTransactionDetailsByTransactionIDFromCallbackRIBS</code> from a plain JavaScript object, optionally creating a new instance.
@@ -210,6 +235,8 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
 
         _GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].constructFromObject(data, obj);
 
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].constructFromObject(data, obj);
+
         if (data.hasOwnProperty('locktime')) {
           obj['locktime'] = _ApiClient["default"].convertToType(data['locktime'], 'Number');
         }
@@ -231,7 +258,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSZVoutInner["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner["default"]]);
         }
 
         if (data.hasOwnProperty('contract')) {
@@ -333,6 +360,38 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
         if (data.hasOwnProperty('value')) {
           obj['value'] = _GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue["default"].constructFromObject(data['value']);
         }
+
+        if (data.hasOwnProperty('amount')) {
+          obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
+        }
+
+        if (data.hasOwnProperty('bandwidthUsed')) {
+          obj['bandwidthUsed'] = _GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed["default"].constructFromObject(data['bandwidthUsed']);
+        }
+
+        if (data.hasOwnProperty('energyUsed')) {
+          obj['energyUsed'] = _GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed["default"].constructFromObject(data['energyUsed']);
+        }
+
+        if (data.hasOwnProperty('hasInternalTransactions')) {
+          obj['hasInternalTransactions'] = _ApiClient["default"].convertToType(data['hasInternalTransactions'], 'Boolean');
+        }
+
+        if (data.hasOwnProperty('hasTokenTransfers')) {
+          obj['hasTokenTransfers'] = _ApiClient["default"].convertToType(data['hasTokenTransfers'], 'String');
+        }
+
+        if (data.hasOwnProperty('input')) {
+          obj['input'] = _ApiClient["default"].convertToType(data['input'], 'String');
+        }
+
+        if (data.hasOwnProperty('recipients')) {
+          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], 'String');
+        }
+
+        if (data.hasOwnProperty('senders')) {
+          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], 'String');
+        }
       }
 
       return obj;
@@ -374,12 +433,12 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['version'] = unde
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner>} vout
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['vout'] = undefined;
 /**
- * Represents the specific transaction contract
+ * Represents the specific transaction contract.
  * @member {String} contract
  */
 
@@ -523,7 +582,53 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['type'] = undefin
  * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue} value
  */
 
-GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['value'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSB interface:
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['value'] = undefined;
+/**
+ * Defines the amount of the transaction.
+ * @member {String} amount
+ */
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['amount'] = undefined;
+/**
+ * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed} bandwidthUsed
+ */
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['bandwidthUsed'] = undefined;
+/**
+ * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed} energyUsed
+ */
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['energyUsed'] = undefined;
+/**
+ * Defines if the transaction includes internal transactions (true) or not (false).
+ * @member {Boolean} hasInternalTransactions
+ */
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['hasInternalTransactions'] = undefined;
+/**
+ * Defines if the transaction includes token transfers (true) or not (false).
+ * @member {String} hasTokenTransfers
+ */
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['hasTokenTransfers'] = undefined;
+/**
+ * Represents the transaction's input value.
+ * @member {String} input
+ */
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['input'] = undefined;
+/**
+ * Represents the recipient address.
+ * @member {String} recipients
+ */
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['recipients'] = undefined;
+/**
+ * Represents the sender address.
+ * @member {String} senders
+ */
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['senders'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSB interface:
 
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.
@@ -557,7 +662,7 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['ver
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVoutInner>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSE interface:
@@ -630,7 +735,7 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['ve
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSL interface:
@@ -667,7 +772,7 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['ver
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSD interface:
@@ -698,7 +803,7 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['ver
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 interface:
@@ -820,7 +925,7 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['ver
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vin'] = undefined;
 /**
  * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner>} vout
  */
 
 _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vout'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSEC interface:
@@ -971,6 +1076,65 @@ _GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['typ
  * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue} value
  */
 
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['value'] = undefined;
+_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['value'] = undefined; // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBST interface:
+
+/**
+ * Defines the amount of the transaction.
+ * @member {String} amount
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['amount'] = undefined;
+/**
+ * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed} bandwidthUsed
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['bandwidthUsed'] = undefined;
+/**
+ * Represents the specific transaction contract.
+ * @member {String} contract
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['contract'] = undefined;
+/**
+ * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed} energyUsed
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['energyUsed'] = undefined;
+/**
+ * Defines if the transaction includes internal transactions (true) or not (false).
+ * @member {Boolean} hasInternalTransactions
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['hasInternalTransactions'] = undefined;
+/**
+ * Defines if the transaction includes token transfers (true) or not (false).
+ * @member {String} hasTokenTransfers
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['hasTokenTransfers'] = undefined;
+/**
+ * Represents the transaction's input value.
+ * @member {String} input
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['input'] = undefined;
+/**
+ * Represents the recipient address.
+ * @member {String} recipients
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['recipients'] = undefined;
+/**
+ * Represents the sender address.
+ * @member {String} senders
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['senders'] = undefined;
+/**
+ * Represents the status of this transaction.
+ * @member {String} transactionStatus
+ */
+
+_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['transactionStatus'] = undefined;
 var _default = GetTransactionDetailsByTransactionIDFromCallbackRIBS;
 exports["default"] = _default;

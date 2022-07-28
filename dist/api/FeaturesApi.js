@@ -95,6 +95,26 @@ var _GetEIP1559FeeRecommendationsR = _interopRequireDefault(require("../model/Ge
 
 var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
+var _PrepareAUTXOBasedTransactionFromXPub400Response = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromXPub400Response"));
+
+var _PrepareAUTXOBasedTransactionFromXPub401Response = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromXPub401Response"));
+
+var _PrepareAUTXOBasedTransactionFromXPub403Response = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromXPub403Response"));
+
+var _PrepareAUTXOBasedTransactionFromXPubR = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromXPubR"));
+
+var _PrepareAUTXOBasedTransactionFromXPubRB = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromXPubRB"));
+
+var _PrepareAnAccountBasedTransactionFromXPub400Response = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromXPub400Response"));
+
+var _PrepareAnAccountBasedTransactionFromXPub401Response = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromXPub401Response"));
+
+var _PrepareAnAccountBasedTransactionFromXPub403Response = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromXPub403Response"));
+
+var _PrepareAnAccountBasedTransactionFromXPubR = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromXPubR"));
+
+var _PrepareAnAccountBasedTransactionFromXPubRB = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromXPubRB"));
+
 var _ValidateAddress400Response = _interopRequireDefault(require("../model/ValidateAddress400Response"));
 
 var _ValidateAddress401Response = _interopRequireDefault(require("../model/ValidateAddress401Response"));
@@ -116,7 +136,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.6.0
+* @version 1.7.0
 */
 var FeaturesApi = /*#__PURE__*/function () {
   /**
@@ -637,6 +657,124 @@ var FeaturesApi = /*#__PURE__*/function () {
     key: "getEIP1559FeeRecommendations",
     value: function getEIP1559FeeRecommendations(network, blockchain, opts) {
       return this.getEIP1559FeeRecommendationsWithHttpInfo(network, blockchain, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Prepare A UTXO-Based Transaction From xPub
+     * Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the `selectionStrategy` and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
+     * @param {module:model/String} blockchain 
+     * @param {module:model/String} network 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareAUTXOBasedTransactionFromXPubRB} opts.prepareAUTXOBasedTransactionFromXPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareAUTXOBasedTransactionFromXPubR} and HTTP response
+     */
+
+  }, {
+    key: "prepareAUTXOBasedTransactionFromXPubWithHttpInfo",
+    value: function prepareAUTXOBasedTransactionFromXPubWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['prepareAUTXOBasedTransactionFromXPubRB']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling prepareAUTXOBasedTransactionFromXPub");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling prepareAUTXOBasedTransactionFromXPub");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _PrepareAUTXOBasedTransactionFromXPubR["default"];
+      return this.apiClient.callApi('/blockchain-tools/{blockchain}/{network}/transactions/prepare-utxo-transaction', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Prepare A UTXO-Based Transaction From xPub
+     * Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the `selectionStrategy` and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
+     * @param {module:model/String} blockchain 
+     * @param {module:model/String} network 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareAUTXOBasedTransactionFromXPubRB} opts.prepareAUTXOBasedTransactionFromXPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareAUTXOBasedTransactionFromXPubR}
+     */
+
+  }, {
+    key: "prepareAUTXOBasedTransactionFromXPub",
+    value: function prepareAUTXOBasedTransactionFromXPub(blockchain, network, opts) {
+      return this.prepareAUTXOBasedTransactionFromXPubWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Prepare An Account-Based Transaction From xPub
+     * Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
+     * @param {module:model/String} blockchain 
+     * @param {module:model/String} network 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareAnAccountBasedTransactionFromXPubRB} opts.prepareAnAccountBasedTransactionFromXPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareAnAccountBasedTransactionFromXPubR} and HTTP response
+     */
+
+  }, {
+    key: "prepareAnAccountBasedTransactionFromXPubWithHttpInfo",
+    value: function prepareAnAccountBasedTransactionFromXPubWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['prepareAnAccountBasedTransactionFromXPubRB']; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling prepareAnAccountBasedTransactionFromXPub");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling prepareAnAccountBasedTransactionFromXPub");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _PrepareAnAccountBasedTransactionFromXPubR["default"];
+      return this.apiClient.callApi('/blockchain-tools/{blockchain}/{network}/transactions/prepare-account-based-transaction', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Prepare An Account-Based Transaction From xPub
+     * Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
+     * @param {module:model/String} blockchain 
+     * @param {module:model/String} network 
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareAnAccountBasedTransactionFromXPubRB} opts.prepareAnAccountBasedTransactionFromXPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareAnAccountBasedTransactionFromXPubR}
+     */
+
+  }, {
+    key: "prepareAnAccountBasedTransactionFromXPub",
+    value: function prepareAnAccountBasedTransactionFromXPub(blockchain, network, opts) {
+      return this.prepareAnAccountBasedTransactionFromXPubWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ResourceNotFound model module.
  * @module model/ResourceNotFound
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ResourceNotFound = /*#__PURE__*/function () {
   /**

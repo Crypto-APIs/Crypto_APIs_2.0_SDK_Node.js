@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWallets401Response model module.
  * @module model/ListAllAssetsFromAllWallets401Response
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListAllAssetsFromAllWallets401Response = /*#__PURE__*/function () {
   /**

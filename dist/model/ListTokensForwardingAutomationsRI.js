@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensForwardingAutomationsRI model module.
  * @module model/ListTokensForwardingAutomationsRI
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListTokensForwardingAutomationsRI = /*#__PURE__*/function () {
   /**

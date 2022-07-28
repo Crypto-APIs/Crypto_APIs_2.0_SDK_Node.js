@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptionsE401 model module.
  * @module model/ListBlockchainEventsSubscriptionsE401
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListBlockchainEventsSubscriptionsE401 = /*#__PURE__*/function () {
   /**

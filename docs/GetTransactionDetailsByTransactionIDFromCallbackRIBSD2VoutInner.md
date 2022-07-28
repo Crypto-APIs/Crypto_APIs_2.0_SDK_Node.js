@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **isSpent** | **Boolean** | Defines whether the output is spent or not. | 
-**scriptPubKey** | [**GetTransactionDetailsByTransactionIDRIBSDVoutInnerScriptPubKey**](GetTransactionDetailsByTransactionIDRIBSDVoutInnerScriptPubKey.md) |  | 
+**scriptPubKey** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInnerScriptPubKey**](GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInnerScriptPubKey.md) |  | 
 **value** | **String** | String representation of the amount | 
 
 

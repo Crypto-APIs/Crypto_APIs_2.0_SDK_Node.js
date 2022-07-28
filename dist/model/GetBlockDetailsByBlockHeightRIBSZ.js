@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightRIBSZ model module.
  * @module model/GetBlockDetailsByBlockHeightRIBSZ
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetBlockDetailsByBlockHeightRIBSZ = /*#__PURE__*/function () {
   /**
@@ -26,17 +26,17 @@ var GetBlockDetailsByBlockHeightRIBSZ = /*#__PURE__*/function () {
    * Zcash
    * @alias module:model/GetBlockDetailsByBlockHeightRIBSZ
    * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-   * @param nonce {String} Represents a random value that can be adjusted to satisfy the Proof of Work.
-   * @param size {Number} Represents the total size of the block in Bytes.
    * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
    * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
    * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+   * @param nonce {String} Represents a random value that can be adjusted to satisfy the Proof of Work.
+   * @param size {Number} Represents the total size of the block in Bytes.
    * @param version {Number} Represents the block version number.
    */
-  function GetBlockDetailsByBlockHeightRIBSZ(difficulty, nonce, size, bits, chainwork, merkleRoot, version) {
+  function GetBlockDetailsByBlockHeightRIBSZ(difficulty, bits, chainwork, merkleRoot, nonce, size, version) {
     _classCallCheck(this, GetBlockDetailsByBlockHeightRIBSZ);
 
-    GetBlockDetailsByBlockHeightRIBSZ.initialize(this, difficulty, nonce, size, bits, chainwork, merkleRoot, version);
+    GetBlockDetailsByBlockHeightRIBSZ.initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, version);
   }
   /**
    * Initializes the fields of this object.
@@ -47,13 +47,13 @@ var GetBlockDetailsByBlockHeightRIBSZ = /*#__PURE__*/function () {
 
   _createClass(GetBlockDetailsByBlockHeightRIBSZ, null, [{
     key: "initialize",
-    value: function initialize(obj, difficulty, nonce, size, bits, chainwork, merkleRoot, version) {
+    value: function initialize(obj, difficulty, bits, chainwork, merkleRoot, nonce, size, version) {
       obj['difficulty'] = difficulty;
-      obj['nonce'] = nonce;
-      obj['size'] = size;
       obj['bits'] = bits;
       obj['chainwork'] = chainwork;
       obj['merkleRoot'] = merkleRoot;
+      obj['nonce'] = nonce;
+      obj['size'] = size;
       obj['version'] = version;
     }
     /**
@@ -74,14 +74,6 @@ var GetBlockDetailsByBlockHeightRIBSZ = /*#__PURE__*/function () {
           obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
         }
 
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
-        }
-
-        if (data.hasOwnProperty('size')) {
-          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
-        }
-
         if (data.hasOwnProperty('bits')) {
           obj['bits'] = _ApiClient["default"].convertToType(data['bits'], 'String');
         }
@@ -92,6 +84,14 @@ var GetBlockDetailsByBlockHeightRIBSZ = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('merkleRoot')) {
           obj['merkleRoot'] = _ApiClient["default"].convertToType(data['merkleRoot'], 'String');
+        }
+
+        if (data.hasOwnProperty('nonce')) {
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
+        }
+
+        if (data.hasOwnProperty('size')) {
+          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
         }
 
         if (data.hasOwnProperty('version')) {
@@ -113,18 +113,6 @@ var GetBlockDetailsByBlockHeightRIBSZ = /*#__PURE__*/function () {
 
 GetBlockDetailsByBlockHeightRIBSZ.prototype['difficulty'] = undefined;
 /**
- * Represents a random value that can be adjusted to satisfy the Proof of Work.
- * @member {String} nonce
- */
-
-GetBlockDetailsByBlockHeightRIBSZ.prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-
-GetBlockDetailsByBlockHeightRIBSZ.prototype['size'] = undefined;
-/**
  * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
  * @member {String} bits
  */
@@ -142,6 +130,18 @@ GetBlockDetailsByBlockHeightRIBSZ.prototype['chainwork'] = undefined;
  */
 
 GetBlockDetailsByBlockHeightRIBSZ.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the Proof of Work.
+ * @member {String} nonce
+ */
+
+GetBlockDetailsByBlockHeightRIBSZ.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+GetBlockDetailsByBlockHeightRIBSZ.prototype['size'] = undefined;
 /**
  * Represents the block version number.
  * @member {Number} version

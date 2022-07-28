@@ -9,7 +9,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner"));
 
-var _GetTransactionDetailsByTransactionIDRIBSD2VoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSD2VoutInner"));
+var _GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSD model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBSD = /*#__PURE__*/function () {
   /**
@@ -33,7 +33,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBSD = /*#__PURE__*/functio
    * @param size {Number} Represents the total size of this transaction.
    * @param version {Number} Represents transaction version number.
    * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner>} Represents the transaction inputs.
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner>} Represents the transaction outputs.
+   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner>} Represents the transaction outputs.
    */
   function GetTransactionDetailsByTransactionIDFromCallbackRIBSD(locktime, size, version, vin, vout) {
     _classCallCheck(this, GetTransactionDetailsByTransactionIDFromCallbackRIBSD);
@@ -87,7 +87,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBSD = /*#__PURE__*/functio
         }
 
         if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSD2VoutInner["default"]]);
+          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner["default"]]);
         }
       }
 
@@ -124,7 +124,7 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBSD.prototype['version'] = und
 GetTransactionDetailsByTransactionIDFromCallbackRIBSD.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner>} vout
+ * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner>} vout
  */
 
 GetTransactionDetailsByTransactionIDFromCallbackRIBSD.prototype['vout'] = undefined;

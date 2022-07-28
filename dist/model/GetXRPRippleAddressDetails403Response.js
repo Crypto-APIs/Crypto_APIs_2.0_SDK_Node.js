@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetails403Response model module.
  * @module model/GetXRPRippleAddressDetails403Response
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetXRPRippleAddressDetails403Response = /*#__PURE__*/function () {
   /**

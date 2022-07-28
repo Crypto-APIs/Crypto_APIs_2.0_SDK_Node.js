@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetFeeRecommendationsRI = /*#__PURE__*/function () {
   /**

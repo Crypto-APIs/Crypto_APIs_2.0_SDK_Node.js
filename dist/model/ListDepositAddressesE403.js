@@ -17,6 +17,8 @@ var _EndpointNotAllowedForPlan = _interopRequireDefault(require("./EndpointNotAl
 
 var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("./FeatureMainnetsNotAllowedForPlan"));
 
+var _WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType = _interopRequireDefault(require("./WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesE403 model module.
  * @module model/ListDepositAddressesE403
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListDepositAddressesE403 = /*#__PURE__*/function () {
   /**
@@ -38,6 +40,7 @@ var ListDepositAddressesE403 = /*#__PURE__*/function () {
    * @implements module:model/EndpointNotAllowedForPlan
    * @implements module:model/EndpointNotAllowedForApiKey
    * @implements module:model/FeatureMainnetsNotAllowedForPlan
+   * @implements module:model/WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType
    * @param code {String} Specifies an error code, e.g. error 404.
    * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
    */
@@ -51,6 +54,8 @@ var ListDepositAddressesE403 = /*#__PURE__*/function () {
     _EndpointNotAllowedForApiKey["default"].initialize(this, code, message);
 
     _FeatureMainnetsNotAllowedForPlan["default"].initialize(this, code, message);
+
+    _WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType["default"].initialize(this, code, message);
 
     ListDepositAddressesE403.initialize(this, code, message);
   }
@@ -88,6 +93,8 @@ var ListDepositAddressesE403 = /*#__PURE__*/function () {
         _EndpointNotAllowedForApiKey["default"].constructFromObject(data, obj);
 
         _FeatureMainnetsNotAllowedForPlan["default"].constructFromObject(data, obj);
+
+        _WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('code')) {
           obj['code'] = _ApiClient["default"].convertToType(data['code'], 'String');
@@ -197,6 +204,24 @@ _FeatureMainnetsNotAllowedForPlan["default"].prototype['message'] = undefined;
  * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 
-_FeatureMainnetsNotAllowedForPlan["default"].prototype['details'] = undefined;
+_FeatureMainnetsNotAllowedForPlan["default"].prototype['details'] = undefined; // Implement WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType interface:
+
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+
+_WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType["default"].prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+
+_WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType["default"].prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+
+_WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType["default"].prototype['details'] = undefined;
 var _default = ListDepositAddressesE403;
 exports["default"] = _default;

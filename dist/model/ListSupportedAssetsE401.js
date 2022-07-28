@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssetsE401 model module.
  * @module model/ListSupportedAssetsE401
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListSupportedAssetsE401 = /*#__PURE__*/function () {
   /**

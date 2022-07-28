@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRI model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRI
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRI = /*#__PURE__*/function () {
   /**
@@ -40,7 +40,7 @@ var GetTransactionDetailsByTransactionIDFromCallbackRI = /*#__PURE__*/function (
    * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
    * @param transactionHash {String} Represents the same as transactionId for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols hash is different from transactionId for SegWit transactions.
    * @param fee {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIFee} 
-   * @param isConfirmed {Boolean} 
+   * @param isConfirmed {Boolean} Represents the state of the transaction whether it is confirmed or not confirmed.
    * @param blockchainSpecific {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBS} 
    */
   function GetTransactionDetailsByTransactionIDFromCallbackRI(index, minedInBlockHash, minedInBlockHeight, recipients, senders, timestamp, transactionHash, fee, isConfirmed, blockchainSpecific) {
@@ -179,6 +179,7 @@ GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['transactionHash'] 
 
 GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['fee'] = undefined;
 /**
+ * Represents the state of the transaction whether it is confirmed or not confirmed.
  * @member {Boolean} isConfirmed
  */
 

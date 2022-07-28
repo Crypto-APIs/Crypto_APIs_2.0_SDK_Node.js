@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSD2VinInnerScriptSig model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSD2VinInnerScriptSig
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListConfirmedTransactionsByAddressRIBSD2VinInnerScriptSig = /*#__PURE__*/function () {
   /**

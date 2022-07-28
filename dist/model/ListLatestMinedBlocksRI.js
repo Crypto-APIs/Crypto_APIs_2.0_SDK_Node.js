@@ -9,10 +9,6 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
 var _ListLatestMinedBlocksRIBS = _interopRequireDefault(require("./ListLatestMinedBlocksRIBS"));
 
-var _ListLatestMinedBlocksRITotalCoins = _interopRequireDefault(require("./ListLatestMinedBlocksRITotalCoins"));
-
-var _ListLatestMinedBlocksRITotalFees = _interopRequireDefault(require("./ListLatestMinedBlocksRITotalFees"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRI model module.
  * @module model/ListLatestMinedBlocksRI
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListLatestMinedBlocksRI = /*#__PURE__*/function () {
   /**
@@ -35,14 +31,12 @@ var ListLatestMinedBlocksRI = /*#__PURE__*/function () {
    * @param previousBlockHash {String} Represents the hash of the previous block, also known as the parent block.
    * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
    * @param transactionsCount {Number} Represents the total number of all transactions as part of this block.
-   * @param totalCoins {module:model/ListLatestMinedBlocksRITotalCoins} 
-   * @param totalFees {module:model/ListLatestMinedBlocksRITotalFees} 
    * @param blockchainSpecific {module:model/ListLatestMinedBlocksRIBS} 
    */
-  function ListLatestMinedBlocksRI(hash, height, previousBlockHash, timestamp, transactionsCount, totalCoins, totalFees, blockchainSpecific) {
+  function ListLatestMinedBlocksRI(hash, height, previousBlockHash, timestamp, transactionsCount, blockchainSpecific) {
     _classCallCheck(this, ListLatestMinedBlocksRI);
 
-    ListLatestMinedBlocksRI.initialize(this, hash, height, previousBlockHash, timestamp, transactionsCount, totalCoins, totalFees, blockchainSpecific);
+    ListLatestMinedBlocksRI.initialize(this, hash, height, previousBlockHash, timestamp, transactionsCount, blockchainSpecific);
   }
   /**
    * Initializes the fields of this object.
@@ -53,14 +47,12 @@ var ListLatestMinedBlocksRI = /*#__PURE__*/function () {
 
   _createClass(ListLatestMinedBlocksRI, null, [{
     key: "initialize",
-    value: function initialize(obj, hash, height, previousBlockHash, timestamp, transactionsCount, totalCoins, totalFees, blockchainSpecific) {
+    value: function initialize(obj, hash, height, previousBlockHash, timestamp, transactionsCount, blockchainSpecific) {
       obj['hash'] = hash;
       obj['height'] = height;
       obj['previousBlockHash'] = previousBlockHash;
       obj['timestamp'] = timestamp;
       obj['transactionsCount'] = transactionsCount;
-      obj['totalCoins'] = totalCoins;
-      obj['totalFees'] = totalFees;
       obj['blockchainSpecific'] = blockchainSpecific;
     }
     /**
@@ -95,14 +87,6 @@ var ListLatestMinedBlocksRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('transactionsCount')) {
           obj['transactionsCount'] = _ApiClient["default"].convertToType(data['transactionsCount'], 'Number');
-        }
-
-        if (data.hasOwnProperty('totalCoins')) {
-          obj['totalCoins'] = _ListLatestMinedBlocksRITotalCoins["default"].constructFromObject(data['totalCoins']);
-        }
-
-        if (data.hasOwnProperty('totalFees')) {
-          obj['totalFees'] = _ListLatestMinedBlocksRITotalFees["default"].constructFromObject(data['totalFees']);
         }
 
         if (data.hasOwnProperty('blockchainSpecific')) {
@@ -147,16 +131,6 @@ ListLatestMinedBlocksRI.prototype['timestamp'] = undefined;
  */
 
 ListLatestMinedBlocksRI.prototype['transactionsCount'] = undefined;
-/**
- * @member {module:model/ListLatestMinedBlocksRITotalCoins} totalCoins
- */
-
-ListLatestMinedBlocksRI.prototype['totalCoins'] = undefined;
-/**
- * @member {module:model/ListLatestMinedBlocksRITotalFees} totalFees
- */
-
-ListLatestMinedBlocksRI.prototype['totalFees'] = undefined;
 /**
  * @member {module:model/ListLatestMinedBlocksRIBS} blockchainSpecific
  */

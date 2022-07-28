@@ -23,6 +23,8 @@ var _GetBlockDetailsByBlockHashFromCallbackRIBSEC = _interopRequireDefault(requi
 
 var _GetBlockDetailsByBlockHashFromCallbackRIBSL = _interopRequireDefault(require("./GetBlockDetailsByBlockHashFromCallbackRIBSL"));
 
+var _GetBlockDetailsByBlockHashFromCallbackRIBST = _interopRequireDefault(require("./GetBlockDetailsByBlockHashFromCallbackRIBST"));
+
 var _GetBlockDetailsByBlockHashFromCallbackRIBSX = _interopRequireDefault(require("./GetBlockDetailsByBlockHashFromCallbackRIBSX"));
 
 var _GetBlockDetailsByBlockHashFromCallbackRIBSZ = _interopRequireDefault(require("./GetBlockDetailsByBlockHashFromCallbackRIBSZ"));
@@ -44,7 +46,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBS model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBS
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
   /**
@@ -61,6 +63,7 @@ var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
    * @implements module:model/GetBlockDetailsByBlockHashFromCallbackRIBSZ
    * @implements module:model/GetBlockDetailsByBlockHashFromCallbackRIBSX
    * @implements module:model/GetBlockDetailsByBlockHashFromCallbackRIBSZ2
+   * @implements module:model/GetBlockDetailsByBlockHashFromCallbackRIBST
    * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
    * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
    * @param difficulty {String} Defines how difficult it is for a specific miner to mine the block.
@@ -84,8 +87,11 @@ var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
    * @param microBlocks {Array.<String>} 
    * @param totalCoins {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} 
    * @param totalFees {module:model/GetLatestMinedXRPRippleBlockRITotalFees} 
+   * @param bandwidthUsed {String} Represents the bandwidth used for the transaction.
+   * @param burnedTrx {String} Represents the block burned TRX.
+   * @param energyUsed {String} Representats the used energy for the transaction.
    */
-  function GetBlockDetailsByBlockHashFromCallbackRIBS(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees) {
+  function GetBlockDetailsByBlockHashFromCallbackRIBS(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed) {
     _classCallCheck(this, GetBlockDetailsByBlockHashFromCallbackRIBS);
 
     _GetBlockDetailsByBlockHashFromCallbackRIBSB["default"].initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);
@@ -110,7 +116,9 @@ var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
 
     _GetBlockDetailsByBlockHashFromCallbackRIBSZ2["default"].initialize(this, bits, chainwork, merkleRoot, nonce, size, version);
 
-    GetBlockDetailsByBlockHashFromCallbackRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees);
+    _GetBlockDetailsByBlockHashFromCallbackRIBST["default"].initialize(this, bandwidthUsed, burnedTrx, energyUsed, size);
+
+    GetBlockDetailsByBlockHashFromCallbackRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed);
   }
   /**
    * Initializes the fields of this object.
@@ -121,7 +129,7 @@ var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
 
   _createClass(GetBlockDetailsByBlockHashFromCallbackRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees) {
+    value: function initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed) {
       obj['bits'] = bits;
       obj['chainwork'] = chainwork;
       obj['difficulty'] = difficulty;
@@ -145,6 +153,9 @@ var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
       obj['microBlocks'] = microBlocks;
       obj['totalCoins'] = totalCoins;
       obj['totalFees'] = totalFees;
+      obj['bandwidthUsed'] = bandwidthUsed;
+      obj['burnedTrx'] = burnedTrx;
+      obj['energyUsed'] = energyUsed;
     }
     /**
      * Constructs a <code>GetBlockDetailsByBlockHashFromCallbackRIBS</code> from a plain JavaScript object, optionally creating a new instance.
@@ -181,6 +192,8 @@ var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
         _GetBlockDetailsByBlockHashFromCallbackRIBSX["default"].constructFromObject(data, obj);
 
         _GetBlockDetailsByBlockHashFromCallbackRIBSZ2["default"].constructFromObject(data, obj);
+
+        _GetBlockDetailsByBlockHashFromCallbackRIBST["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('bits')) {
           obj['bits'] = _ApiClient["default"].convertToType(data['bits'], 'String');
@@ -276,6 +289,18 @@ var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('totalFees')) {
           obj['totalFees'] = _GetLatestMinedXRPRippleBlockRITotalFees["default"].constructFromObject(data['totalFees']);
+        }
+
+        if (data.hasOwnProperty('bandwidthUsed')) {
+          obj['bandwidthUsed'] = _ApiClient["default"].convertToType(data['bandwidthUsed'], 'String');
+        }
+
+        if (data.hasOwnProperty('burnedTrx')) {
+          obj['burnedTrx'] = _ApiClient["default"].convertToType(data['burnedTrx'], 'String');
+        }
+
+        if (data.hasOwnProperty('energyUsed')) {
+          obj['energyUsed'] = _ApiClient["default"].convertToType(data['energyUsed'], 'String');
         }
       }
 
@@ -425,7 +450,25 @@ GetBlockDetailsByBlockHashFromCallbackRIBS.prototype['totalCoins'] = undefined;
  * @member {module:model/GetLatestMinedXRPRippleBlockRITotalFees} totalFees
  */
 
-GetBlockDetailsByBlockHashFromCallbackRIBS.prototype['totalFees'] = undefined; // Implement GetBlockDetailsByBlockHashFromCallbackRIBSB interface:
+GetBlockDetailsByBlockHashFromCallbackRIBS.prototype['totalFees'] = undefined;
+/**
+ * Represents the bandwidth used for the transaction.
+ * @member {String} bandwidthUsed
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRIBS.prototype['bandwidthUsed'] = undefined;
+/**
+ * Represents the block burned TRX.
+ * @member {String} burnedTrx
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRIBS.prototype['burnedTrx'] = undefined;
+/**
+ * Representats the used energy for the transaction.
+ * @member {String} energyUsed
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRIBS.prototype['energyUsed'] = undefined; // Implement GetBlockDetailsByBlockHashFromCallbackRIBSB interface:
 
 /**
  * A sub-unit of BTC equal to 0.000001 BTC, or 100 Satoshi, and is the same as microbitcoin (μBTC). Bits have two-decimal precision.
@@ -970,6 +1013,31 @@ _GetBlockDetailsByBlockHashFromCallbackRIBSZ2["default"].prototype['size'] = und
  * @member {Number} version
  */
 
-_GetBlockDetailsByBlockHashFromCallbackRIBSZ2["default"].prototype['version'] = undefined;
+_GetBlockDetailsByBlockHashFromCallbackRIBSZ2["default"].prototype['version'] = undefined; // Implement GetBlockDetailsByBlockHashFromCallbackRIBST interface:
+
+/**
+ * Represents the bandwidth used for the transaction.
+ * @member {String} bandwidthUsed
+ */
+
+_GetBlockDetailsByBlockHashFromCallbackRIBST["default"].prototype['bandwidthUsed'] = undefined;
+/**
+ * Represents the block burned TRX.
+ * @member {String} burnedTrx
+ */
+
+_GetBlockDetailsByBlockHashFromCallbackRIBST["default"].prototype['burnedTrx'] = undefined;
+/**
+ * Representats the used energy for the transaction.
+ * @member {String} energyUsed
+ */
+
+_GetBlockDetailsByBlockHashFromCallbackRIBST["default"].prototype['energyUsed'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+_GetBlockDetailsByBlockHashFromCallbackRIBST["default"].prototype['size'] = undefined;
 var _default = GetBlockDetailsByBlockHashFromCallbackRIBS;
 exports["default"] = _default;

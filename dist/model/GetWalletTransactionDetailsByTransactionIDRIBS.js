@@ -31,6 +31,8 @@ var _GetWalletTransactionDetailsByTransactionIDRIBSEC = _interopRequireDefault(r
 
 var _GetWalletTransactionDetailsByTransactionIDRIBSL = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSL"));
 
+var _GetWalletTransactionDetailsByTransactionIDRIBST = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBST"));
+
 var _GetWalletTransactionDetailsByTransactionIDRIBSZ = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSZ"));
 
 var _GetWalletTransactionDetailsByTransactionIDRIBSZVinInner = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSZVinInner"));
@@ -48,7 +50,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBS
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
   /**
@@ -63,13 +65,14 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
    * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSD2
    * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSZ
    * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSBSC
+   * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBST
    * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Represents the transaction version number.
    * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
    * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} Object Array representation of transaction outputs
-   * @param contract {String} Represents the specific transaction contract
+   * @param contract {String} Numeric representation of the transaction contract
    * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
    * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
    * @param gasUsed {String} Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
@@ -83,8 +86,15 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
    * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
    * @param valueBalance {String} String representation of the transaction value balance
    * @param versionGroupId {String} Represents the transaction version group ID.
+   * @param amount {String} String representation of the amount value
+   * @param bandwidthUsed {String} Numeric representation of the transaction used bandwidth
+   * @param energyUsed {String} String representation of the transaction used energy
+   * @param hasInternalTransactions {Boolean} 
+   * @param hasTokenTransfers {Boolean} 
+   * @param input {String} Numeric representation of the transaction input
+   * @param status {String} String representation of the transaction status
    */
-  function GetWalletTransactionDetailsByTransactionIDRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId) {
+  function GetWalletTransactionDetailsByTransactionIDRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status) {
     _classCallCheck(this, GetWalletTransactionDetailsByTransactionIDRIBS);
 
     _GetWalletTransactionDetailsByTransactionIDRIBSB["default"].initialize(this, locktime, size, vSize, version, vin, vout);
@@ -105,7 +115,9 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
     _GetWalletTransactionDetailsByTransactionIDRIBSBSC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
 
-    GetWalletTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId);
+    _GetWalletTransactionDetailsByTransactionIDRIBST["default"].initialize(this, amount, bandwidthUsed, contract, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status);
+
+    GetWalletTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status);
   }
   /**
    * Initializes the fields of this object.
@@ -116,7 +128,7 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
   _createClass(GetWalletTransactionDetailsByTransactionIDRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId) {
+    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status) {
       obj['locktime'] = locktime;
       obj['size'] = size;
       obj['vSize'] = vSize;
@@ -137,6 +149,13 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
       obj['overwintered'] = overwintered;
       obj['valueBalance'] = valueBalance;
       obj['versionGroupId'] = versionGroupId;
+      obj['amount'] = amount;
+      obj['bandwidthUsed'] = bandwidthUsed;
+      obj['energyUsed'] = energyUsed;
+      obj['hasInternalTransactions'] = hasInternalTransactions;
+      obj['hasTokenTransfers'] = hasTokenTransfers;
+      obj['input'] = input;
+      obj['status'] = status;
     }
     /**
      * Constructs a <code>GetWalletTransactionDetailsByTransactionIDRIBS</code> from a plain JavaScript object, optionally creating a new instance.
@@ -169,6 +188,8 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
         _GetWalletTransactionDetailsByTransactionIDRIBSZ["default"].constructFromObject(data, obj);
 
         _GetWalletTransactionDetailsByTransactionIDRIBSBSC["default"].constructFromObject(data, obj);
+
+        _GetWalletTransactionDetailsByTransactionIDRIBST["default"].constructFromObject(data, obj);
 
         if (data.hasOwnProperty('locktime')) {
           obj['locktime'] = _ApiClient["default"].convertToType(data['locktime'], 'Number');
@@ -261,6 +282,34 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
         if (data.hasOwnProperty('versionGroupId')) {
           obj['versionGroupId'] = _ApiClient["default"].convertToType(data['versionGroupId'], 'String');
         }
+
+        if (data.hasOwnProperty('amount')) {
+          obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
+        }
+
+        if (data.hasOwnProperty('bandwidthUsed')) {
+          obj['bandwidthUsed'] = _ApiClient["default"].convertToType(data['bandwidthUsed'], 'String');
+        }
+
+        if (data.hasOwnProperty('energyUsed')) {
+          obj['energyUsed'] = _ApiClient["default"].convertToType(data['energyUsed'], 'String');
+        }
+
+        if (data.hasOwnProperty('hasInternalTransactions')) {
+          obj['hasInternalTransactions'] = _ApiClient["default"].convertToType(data['hasInternalTransactions'], 'Boolean');
+        }
+
+        if (data.hasOwnProperty('hasTokenTransfers')) {
+          obj['hasTokenTransfers'] = _ApiClient["default"].convertToType(data['hasTokenTransfers'], 'Boolean');
+        }
+
+        if (data.hasOwnProperty('input')) {
+          obj['input'] = _ApiClient["default"].convertToType(data['input'], 'String');
+        }
+
+        if (data.hasOwnProperty('status')) {
+          obj['status'] = _ApiClient["default"].convertToType(data['status'], 'String');
+        }
       }
 
       return obj;
@@ -307,7 +356,7 @@ GetWalletTransactionDetailsByTransactionIDRIBS.prototype['vin'] = undefined;
 
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['vout'] = undefined;
 /**
- * Represents the specific transaction contract
+ * Numeric representation of the transaction contract
  * @member {String} contract
  */
 
@@ -406,7 +455,47 @@ GetWalletTransactionDetailsByTransactionIDRIBS.prototype['valueBalance'] = undef
  * @member {String} versionGroupId
  */
 
-GetWalletTransactionDetailsByTransactionIDRIBS.prototype['versionGroupId'] = undefined; // Implement GetWalletTransactionDetailsByTransactionIDRIBSB interface:
+GetWalletTransactionDetailsByTransactionIDRIBS.prototype['versionGroupId'] = undefined;
+/**
+ * String representation of the amount value
+ * @member {String} amount
+ */
+
+GetWalletTransactionDetailsByTransactionIDRIBS.prototype['amount'] = undefined;
+/**
+ * Numeric representation of the transaction used bandwidth
+ * @member {String} bandwidthUsed
+ */
+
+GetWalletTransactionDetailsByTransactionIDRIBS.prototype['bandwidthUsed'] = undefined;
+/**
+ * String representation of the transaction used energy
+ * @member {String} energyUsed
+ */
+
+GetWalletTransactionDetailsByTransactionIDRIBS.prototype['energyUsed'] = undefined;
+/**
+ * @member {Boolean} hasInternalTransactions
+ */
+
+GetWalletTransactionDetailsByTransactionIDRIBS.prototype['hasInternalTransactions'] = undefined;
+/**
+ * @member {Boolean} hasTokenTransfers
+ */
+
+GetWalletTransactionDetailsByTransactionIDRIBS.prototype['hasTokenTransfers'] = undefined;
+/**
+ * Numeric representation of the transaction input
+ * @member {String} input
+ */
+
+GetWalletTransactionDetailsByTransactionIDRIBS.prototype['input'] = undefined;
+/**
+ * String representation of the transaction status
+ * @member {String} status
+ */
+
+GetWalletTransactionDetailsByTransactionIDRIBS.prototype['status'] = undefined; // Implement GetWalletTransactionDetailsByTransactionIDRIBSB interface:
 
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.
@@ -778,6 +867,53 @@ _GetWalletTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['inputDa
  * @member {Number} nonce
  */
 
-_GetWalletTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['nonce'] = undefined;
+_GetWalletTransactionDetailsByTransactionIDRIBSBSC["default"].prototype['nonce'] = undefined; // Implement GetWalletTransactionDetailsByTransactionIDRIBST interface:
+
+/**
+ * String representation of the amount value
+ * @member {String} amount
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['amount'] = undefined;
+/**
+ * Numeric representation of the transaction used bandwidth
+ * @member {String} bandwidthUsed
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['bandwidthUsed'] = undefined;
+/**
+ * Numeric representation of the transaction contract
+ * @member {String} contract
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['contract'] = undefined;
+/**
+ * String representation of the transaction used energy
+ * @member {String} energyUsed
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['energyUsed'] = undefined;
+/**
+ * @member {Boolean} hasInternalTransactions
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['hasInternalTransactions'] = undefined;
+/**
+ * @member {Boolean} hasTokenTransfers
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['hasTokenTransfers'] = undefined;
+/**
+ * Numeric representation of the transaction input
+ * @member {String} input
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['input'] = undefined;
+/**
+ * String representation of the transaction status
+ * @member {String} status
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['status'] = undefined;
 var _default = GetWalletTransactionDetailsByTransactionIDRIBS;
 exports["default"] = _default;

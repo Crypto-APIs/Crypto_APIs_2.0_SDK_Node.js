@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddress401Response model module.
  * @module model/GenerateDepositAddress401Response
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GenerateDepositAddress401Response = /*#__PURE__*/function () {
   /**

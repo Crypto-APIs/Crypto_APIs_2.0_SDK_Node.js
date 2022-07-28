@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIFee model module.
  * @module model/ListTransactionsByBlockHeightRIFee
- * @version 1.6.0
+ * @version 1.7.0
  */
 var ListTransactionsByBlockHeightRIFee = /*#__PURE__*/function () {
   /**

@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **size** | **Number** | Represents the total size of this transaction. | 
 **version** | **Number** | Represents transaction version number. | 
 **vin** | [**[GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner]**](GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner.md) | Represents the transaction inputs. | 
-**vout** | [**[GetTransactionDetailsByTransactionIDRIBSD2VoutInner]**](GetTransactionDetailsByTransactionIDRIBSD2VoutInner.md) | Represents the transaction outputs. | 
+**vout** | [**[GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner]**](GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner.md) | Represents the transaction outputs. | 
 
 

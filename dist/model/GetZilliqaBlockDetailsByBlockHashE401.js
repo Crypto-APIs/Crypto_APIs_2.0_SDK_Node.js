@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHashE401 model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashE401
- * @version 1.6.0
+ * @version 1.7.0
  */
 var GetZilliqaBlockDetailsByBlockHashE401 = /*#__PURE__*/function () {
   /**

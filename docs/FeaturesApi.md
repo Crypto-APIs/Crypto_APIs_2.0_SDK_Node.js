@@ -1,6 +1,6 @@
 # Cryptoapis.FeaturesApi
 
-All URIs are relative to *https://rest.cryptoapis.io/v2*
+All URIs are relative to *https://rest.cryptoapis.io*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,6 +12,8 @@ Method | HTTP request | Description
 [**estimateGasLimit**](FeaturesApi.md#estimateGasLimit) | **POST** /blockchain-tools/{blockchain}/{network}/gas-limit | Estimate Gas Limit
 [**estimateTokenGasLimit**](FeaturesApi.md#estimateTokenGasLimit) | **POST** /blockchain-tools/{blockchain}/{network}/gas-limit/contract | Estimate Token Gas Limit
 [**getEIP1559FeeRecommendations**](FeaturesApi.md#getEIP1559FeeRecommendations) | **GET** /blockchain-tools/{blockchain}/{network}/fees/eip1559 | Get EIP 1559 Fee Recommendations
+[**prepareAUTXOBasedTransactionFromXPub**](FeaturesApi.md#prepareAUTXOBasedTransactionFromXPub) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/prepare-utxo-transaction | Prepare A UTXO-Based Transaction From xPub
+[**prepareAnAccountBasedTransactionFromXPub**](FeaturesApi.md#prepareAnAccountBasedTransactionFromXPub) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/prepare-account-based-transaction | Prepare An Account-Based Transaction From xPub
 [**validateAddress**](FeaturesApi.md#validateAddress) | **POST** /blockchain-tools/{blockchain}/{network}/addresses/validate | Validate Address
 
 
@@ -485,6 +487,122 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## prepareAUTXOBasedTransactionFromXPub
+
+> PrepareAUTXOBasedTransactionFromXPubR prepareAUTXOBasedTransactionFromXPub(blockchain, network, opts)
+
+Prepare A UTXO-Based Transaction From xPub
+
+Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the &#x60;selectionStrategy&#x60; and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.FeaturesApi();
+let blockchain = bitcoin; // String | 
+let network = testnet; // String | 
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'prepareAUTXOBasedTransactionFromXPubRB': new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRB() // PrepareAUTXOBasedTransactionFromXPubRB | 
+};
+apiInstance.prepareAUTXOBasedTransactionFromXPub(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**|  | 
+ **network** | **String**|  | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **prepareAUTXOBasedTransactionFromXPubRB** | [**PrepareAUTXOBasedTransactionFromXPubRB**](PrepareAUTXOBasedTransactionFromXPubRB.md)|  | [optional] 
+
+### Return type
+
+[**PrepareAUTXOBasedTransactionFromXPubR**](PrepareAUTXOBasedTransactionFromXPubR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## prepareAnAccountBasedTransactionFromXPub
+
+> PrepareAnAccountBasedTransactionFromXPubR prepareAnAccountBasedTransactionFromXPub(blockchain, network, opts)
+
+Prepare An Account-Based Transaction From xPub
+
+Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.FeaturesApi();
+let blockchain = ethereum; // String | 
+let network = ropsten; // String | 
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'prepareAnAccountBasedTransactionFromXPubRB': new Cryptoapis.PrepareAnAccountBasedTransactionFromXPubRB() // PrepareAnAccountBasedTransactionFromXPubRB | 
+};
+apiInstance.prepareAnAccountBasedTransactionFromXPub(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**|  | 
+ **network** | **String**|  | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **prepareAnAccountBasedTransactionFromXPubRB** | [**PrepareAnAccountBasedTransactionFromXPubRB**](PrepareAnAccountBasedTransactionFromXPubRB.md)|  | [optional] 
+
+### Return type
+
+[**PrepareAnAccountBasedTransactionFromXPubR**](PrepareAnAccountBasedTransactionFromXPubR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 

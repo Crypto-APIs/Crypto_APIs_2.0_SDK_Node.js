@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransactionE409 model module.
  * @module model/MinedTransactionE409
- * @version 1.6.0
+ * @version 1.7.0
  */
 var MinedTransactionE409 = /*#__PURE__*/function () {
   /**

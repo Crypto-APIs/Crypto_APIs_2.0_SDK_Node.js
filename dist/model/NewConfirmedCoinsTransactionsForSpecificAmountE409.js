@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountE409 model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountE409
- * @version 1.6.0
+ * @version 1.7.0
  */
 var NewConfirmedCoinsTransactionsForSpecificAmountE409 = /*#__PURE__*/function () {
   /**
