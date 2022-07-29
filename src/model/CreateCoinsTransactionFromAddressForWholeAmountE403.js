@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE403 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateCoinsTransactionFromAddressForWholeAmountE403 {
     /**

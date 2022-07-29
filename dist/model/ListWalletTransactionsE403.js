@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsE403 model module.
  * @module model/ListWalletTransactionsE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListWalletTransactionsE403 = /*#__PURE__*/function () {
   /**

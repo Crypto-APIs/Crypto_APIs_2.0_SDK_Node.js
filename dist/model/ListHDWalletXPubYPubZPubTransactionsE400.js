@@ -34,7 +34,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsE400 model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListHDWalletXPubYPubZPubTransactionsE400 = /*#__PURE__*/function () {
   /**

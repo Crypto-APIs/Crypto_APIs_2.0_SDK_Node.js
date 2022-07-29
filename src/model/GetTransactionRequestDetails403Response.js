@@ -17,7 +17,7 @@ import GetTransactionRequestDetailsE403 from './GetTransactionRequestDetailsE403
 /**
  * The GetTransactionRequestDetails403Response model module.
  * @module model/GetTransactionRequestDetails403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetTransactionRequestDetails403Response {
     /**

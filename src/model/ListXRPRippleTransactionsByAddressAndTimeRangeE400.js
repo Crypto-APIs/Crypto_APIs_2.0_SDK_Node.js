@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeE400 model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByAddressAndTimeRangeE400 {
     /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeE403 model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListConfirmedTokensTransfersByAddressAndTimeRangeE403 {
     /**

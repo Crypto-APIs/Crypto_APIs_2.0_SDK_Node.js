@@ -17,7 +17,7 @@ import GenerateDepositAddressE403 from './GenerateDepositAddressE403';
 /**
  * The GenerateDepositAddress403Response model module.
  * @module model/GenerateDepositAddress403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GenerateDepositAddress403Response {
     /**

@@ -17,7 +17,7 @@ import NewConfirmedTokenTransactionsForSpecificAmountE400 from './NewConfirmedTo
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmount400Response model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmount400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class NewConfirmedTokenTransactionsForSpecificAmount400Response {
     /**

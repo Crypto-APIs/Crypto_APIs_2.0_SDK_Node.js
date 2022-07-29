@@ -42,7 +42,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.7.0
+* @version 1.7.1
 */
 var GeneratingApi = /*#__PURE__*/function () {
   /**

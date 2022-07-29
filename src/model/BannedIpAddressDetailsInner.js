@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BannedIpAddressDetailsInner model module.
  * @module model/BannedIpAddressDetailsInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class BannedIpAddressDetailsInner {
     /**

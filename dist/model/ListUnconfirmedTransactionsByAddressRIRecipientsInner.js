@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIRecipientsInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIRecipientsInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListUnconfirmedTransactionsByAddressRIRecipientsInner = /*#__PURE__*/function () {
   /**

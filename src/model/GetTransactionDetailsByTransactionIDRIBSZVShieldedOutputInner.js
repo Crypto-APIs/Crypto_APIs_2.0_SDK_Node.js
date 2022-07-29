@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner {
     /**

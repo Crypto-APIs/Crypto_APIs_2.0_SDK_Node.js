@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionRBDataItem model module.
  * @module model/BroadcastLocallySignedTransactionRBDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 var BroadcastLocallySignedTransactionRBDataItem = /*#__PURE__*/function () {
   /**

@@ -23,7 +23,7 @@ import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './Wal
 /**
  * The GenerateDepositAddressE403 model module.
  * @module model/GenerateDepositAddressE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GenerateDepositAddressE403 {
     /**

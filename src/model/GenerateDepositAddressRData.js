@@ -17,7 +17,7 @@ import GenerateDepositAddressRI from './GenerateDepositAddressRI';
 /**
  * The GenerateDepositAddressRData model module.
  * @module model/GenerateDepositAddressRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GenerateDepositAddressRData {
     /**

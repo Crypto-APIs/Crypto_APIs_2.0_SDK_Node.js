@@ -17,7 +17,7 @@ import DeriveAndSyncNewReceivingAddressesRData from './DeriveAndSyncNewReceiving
 /**
  * The DeriveAndSyncNewReceivingAddressesR model module.
  * @module model/DeriveAndSyncNewReceivingAddressesR
- * @version 1.7.0
+ * @version 1.7.1
  */
 class DeriveAndSyncNewReceivingAddressesR {
     /**

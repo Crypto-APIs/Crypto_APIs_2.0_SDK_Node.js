@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTransactionsByAddressRIBSECGasPrice model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSECGasPrice
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListConfirmedTransactionsByAddressRIBSECGasPrice {
     /**

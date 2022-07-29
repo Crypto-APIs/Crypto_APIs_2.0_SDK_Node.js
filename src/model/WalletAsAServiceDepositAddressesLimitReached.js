@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The WalletAsAServiceDepositAddressesLimitReached model module.
  * @module model/WalletAsAServiceDepositAddressesLimitReached
- * @version 1.7.0
+ * @version 1.7.1
  */
 class WalletAsAServiceDepositAddressesLimitReached {
     /**

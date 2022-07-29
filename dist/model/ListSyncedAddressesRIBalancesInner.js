@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesRIBalancesInner model module.
  * @module model/ListSyncedAddressesRIBalancesInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListSyncedAddressesRIBalancesInner = /*#__PURE__*/function () {
   /**

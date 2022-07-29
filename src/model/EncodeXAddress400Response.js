@@ -17,7 +17,7 @@ import EncodeXAddressE400 from './EncodeXAddressE400';
 /**
  * The EncodeXAddress400Response model module.
  * @module model/EncodeXAddress400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class EncodeXAddress400Response {
     /**

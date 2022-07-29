@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteBlockchainEventSubscriptionRI model module.
  * @module model/DeleteBlockchainEventSubscriptionRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 var DeleteBlockchainEventSubscriptionRI = /*#__PURE__*/function () {
   /**

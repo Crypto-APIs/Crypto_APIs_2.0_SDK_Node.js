@@ -16,14 +16,14 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /**
- * The PrepareAUTXOBasedTransactionFromXPubRIInputsInner model module.
- * @module model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner
- * @version 1.7.0
+ * The PrepareAUTXOBasedTransactionFromXPubRIVinInner model module.
+ * @module model/PrepareAUTXOBasedTransactionFromXPubRIVinInner
+ * @version 1.7.1
  */
-var PrepareAUTXOBasedTransactionFromXPubRIInputsInner = /*#__PURE__*/function () {
+var PrepareAUTXOBasedTransactionFromXPubRIVinInner = /*#__PURE__*/function () {
   /**
-   * Constructs a new <code>PrepareAUTXOBasedTransactionFromXPubRIInputsInner</code>.
-   * @alias module:model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner
+   * Constructs a new <code>PrepareAUTXOBasedTransactionFromXPubRIVinInner</code>.
+   * @alias module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner
    * @param address {String} Representation of the address
    * @param outputIndex {Number} Representation of the output index
    * @param satoshis {Number} Representation of the satoshis value
@@ -31,10 +31,10 @@ var PrepareAUTXOBasedTransactionFromXPubRIInputsInner = /*#__PURE__*/function ()
    * @param sighash {String} Representation of the hash that should be signed.
    * @param transactionId {String} Represents the reference transaction identifier.
    */
-  function PrepareAUTXOBasedTransactionFromXPubRIInputsInner(address, outputIndex, satoshis, script, sighash, transactionId) {
-    _classCallCheck(this, PrepareAUTXOBasedTransactionFromXPubRIInputsInner);
+  function PrepareAUTXOBasedTransactionFromXPubRIVinInner(address, outputIndex, satoshis, script, sighash, transactionId) {
+    _classCallCheck(this, PrepareAUTXOBasedTransactionFromXPubRIVinInner);
 
-    PrepareAUTXOBasedTransactionFromXPubRIInputsInner.initialize(this, address, outputIndex, satoshis, script, sighash, transactionId);
+    PrepareAUTXOBasedTransactionFromXPubRIVinInner.initialize(this, address, outputIndex, satoshis, script, sighash, transactionId);
   }
   /**
    * Initializes the fields of this object.
@@ -43,7 +43,7 @@ var PrepareAUTXOBasedTransactionFromXPubRIInputsInner = /*#__PURE__*/function ()
    */
 
 
-  _createClass(PrepareAUTXOBasedTransactionFromXPubRIInputsInner, null, [{
+  _createClass(PrepareAUTXOBasedTransactionFromXPubRIVinInner, null, [{
     key: "initialize",
     value: function initialize(obj, address, outputIndex, satoshis, script, sighash, transactionId) {
       obj['address'] = address;
@@ -54,18 +54,18 @@ var PrepareAUTXOBasedTransactionFromXPubRIInputsInner = /*#__PURE__*/function ()
       obj['transactionId'] = transactionId;
     }
     /**
-     * Constructs a <code>PrepareAUTXOBasedTransactionFromXPubRIInputsInner</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>PrepareAUTXOBasedTransactionFromXPubRIVinInner</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner} obj Optional instance to populate.
-     * @return {module:model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner} The populated <code>PrepareAUTXOBasedTransactionFromXPubRIInputsInner</code> instance.
+     * @param {module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner} obj Optional instance to populate.
+     * @return {module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner} The populated <code>PrepareAUTXOBasedTransactionFromXPubRIVinInner</code> instance.
      */
 
   }, {
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
       if (data) {
-        obj = obj || new PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+        obj = obj || new PrepareAUTXOBasedTransactionFromXPubRIVinInner();
 
         if (data.hasOwnProperty('address')) {
           obj['address'] = _ApiClient["default"].convertToType(data['address'], 'String');
@@ -104,7 +104,7 @@ var PrepareAUTXOBasedTransactionFromXPubRIInputsInner = /*#__PURE__*/function ()
     }
   }]);
 
-  return PrepareAUTXOBasedTransactionFromXPubRIInputsInner;
+  return PrepareAUTXOBasedTransactionFromXPubRIVinInner;
 }();
 /**
  * Representation of the address
@@ -112,48 +112,48 @@ var PrepareAUTXOBasedTransactionFromXPubRIInputsInner = /*#__PURE__*/function ()
  */
 
 
-PrepareAUTXOBasedTransactionFromXPubRIInputsInner.prototype['address'] = undefined;
+PrepareAUTXOBasedTransactionFromXPubRIVinInner.prototype['address'] = undefined;
 /**
  * Representation of the change value
  * @member {Number} change
  */
 
-PrepareAUTXOBasedTransactionFromXPubRIInputsInner.prototype['change'] = undefined;
+PrepareAUTXOBasedTransactionFromXPubRIVinInner.prototype['change'] = undefined;
 /**
  * Representation of the derivation index of the xpub address.
  * @member {Number} derivationIndex
  */
 
-PrepareAUTXOBasedTransactionFromXPubRIInputsInner.prototype['derivationIndex'] = undefined;
+PrepareAUTXOBasedTransactionFromXPubRIVinInner.prototype['derivationIndex'] = undefined;
 /**
  * Representation of the output index
  * @member {Number} outputIndex
  */
 
-PrepareAUTXOBasedTransactionFromXPubRIInputsInner.prototype['outputIndex'] = undefined;
+PrepareAUTXOBasedTransactionFromXPubRIVinInner.prototype['outputIndex'] = undefined;
 /**
  * Representation of the satoshis value
  * @member {Number} satoshis
  */
 
-PrepareAUTXOBasedTransactionFromXPubRIInputsInner.prototype['satoshis'] = undefined;
+PrepareAUTXOBasedTransactionFromXPubRIVinInner.prototype['satoshis'] = undefined;
 /**
  * Representation of the script string
  * @member {String} script
  */
 
-PrepareAUTXOBasedTransactionFromXPubRIInputsInner.prototype['script'] = undefined;
+PrepareAUTXOBasedTransactionFromXPubRIVinInner.prototype['script'] = undefined;
 /**
  * Representation of the hash that should be signed.
  * @member {String} sighash
  */
 
-PrepareAUTXOBasedTransactionFromXPubRIInputsInner.prototype['sighash'] = undefined;
+PrepareAUTXOBasedTransactionFromXPubRIVinInner.prototype['sighash'] = undefined;
 /**
  * Represents the reference transaction identifier.
  * @member {String} transactionId
  */
 
-PrepareAUTXOBasedTransactionFromXPubRIInputsInner.prototype['transactionId'] = undefined;
-var _default = PrepareAUTXOBasedTransactionFromXPubRIInputsInner;
+PrepareAUTXOBasedTransactionFromXPubRIVinInner.prototype['transactionId'] = undefined;
+var _default = PrepareAUTXOBasedTransactionFromXPubRIVinInner;
 exports["default"] = _default;

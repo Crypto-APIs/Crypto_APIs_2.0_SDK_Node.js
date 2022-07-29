@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewReceivingAddressesE403 model module.
  * @module model/DeriveAndSyncNewReceivingAddressesE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 var DeriveAndSyncNewReceivingAddressesE403 = /*#__PURE__*/function () {
   /**

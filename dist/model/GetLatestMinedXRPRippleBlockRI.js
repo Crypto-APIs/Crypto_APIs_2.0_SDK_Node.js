@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedXRPRippleBlockRI model module.
  * @module model/GetLatestMinedXRPRippleBlockRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetLatestMinedXRPRippleBlockRI = /*#__PURE__*/function () {
   /**

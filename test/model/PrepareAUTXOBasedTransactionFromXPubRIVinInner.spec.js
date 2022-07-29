@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+    instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,58 +47,58 @@
       object[property] = value;
   }
 
-  describe('PrepareAUTXOBasedTransactionFromXPubRIInputsInner', function() {
-    it('should create an instance of PrepareAUTXOBasedTransactionFromXPubRIInputsInner', function() {
-      // uncomment below and update the code to test PrepareAUTXOBasedTransactionFromXPubRIInputsInner
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
-      //expect(instance).to.be.a(Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner);
+  describe('PrepareAUTXOBasedTransactionFromXPubRIVinInner', function() {
+    it('should create an instance of PrepareAUTXOBasedTransactionFromXPubRIVinInner', function() {
+      // uncomment below and update the code to test PrepareAUTXOBasedTransactionFromXPubRIVinInner
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
+      //expect(instance).to.be.a(Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner);
     });
 
     it('should have the property address (base name: "address")', function() {
       // uncomment below and update the code to test the property address
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
       //expect(instance).to.be();
     });
 
     it('should have the property change (base name: "change")', function() {
       // uncomment below and update the code to test the property change
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
       //expect(instance).to.be();
     });
 
     it('should have the property derivationIndex (base name: "derivationIndex")', function() {
       // uncomment below and update the code to test the property derivationIndex
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
       //expect(instance).to.be();
     });
 
     it('should have the property outputIndex (base name: "outputIndex")', function() {
       // uncomment below and update the code to test the property outputIndex
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
       //expect(instance).to.be();
     });
 
     it('should have the property satoshis (base name: "satoshis")', function() {
       // uncomment below and update the code to test the property satoshis
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
       //expect(instance).to.be();
     });
 
     it('should have the property script (base name: "script")', function() {
       // uncomment below and update the code to test the property script
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
       //expect(instance).to.be();
     });
 
     it('should have the property sighash (base name: "sighash")', function() {
       // uncomment below and update the code to test the property sighash
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
       //expect(instance).to.be();
     });
 
     it('should have the property transactionId (base name: "transactionId")', function() {
       // uncomment below and update the code to test the property transactionId
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIInputsInner();
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRIVinInner();
       //expect(instance).to.be();
     });
 

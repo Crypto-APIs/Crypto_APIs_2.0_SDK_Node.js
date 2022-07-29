@@ -24,7 +24,7 @@ import XpubNotSynced from './XpubNotSynced';
 /**
  * The GetHDWalletXPubYPubZPubAssetsE400 model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetHDWalletXPubYPubZPubAssetsE400 {
     /**

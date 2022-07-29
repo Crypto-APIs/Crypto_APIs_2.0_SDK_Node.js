@@ -17,7 +17,7 @@ import CreateAutomaticTokensForwardingE401 from './CreateAutomaticTokensForwardi
 /**
  * The CreateAutomaticTokensForwarding401Response model module.
  * @module model/CreateAutomaticTokensForwarding401Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateAutomaticTokensForwarding401Response {
     /**

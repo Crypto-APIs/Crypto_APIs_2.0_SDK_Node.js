@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeight404Response model module.
  * @module model/ListTransactionsByBlockHeight404Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListTransactionsByBlockHeight404Response = /*#__PURE__*/function () {
   /**

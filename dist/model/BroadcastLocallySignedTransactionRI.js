@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionRI model module.
  * @module model/BroadcastLocallySignedTransactionRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 var BroadcastLocallySignedTransactionRI = /*#__PURE__*/function () {
   /**

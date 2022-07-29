@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSBVoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHashRIBSBVoutInnerScriptPubKey
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListTransactionsByBlockHashRIBSBVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**

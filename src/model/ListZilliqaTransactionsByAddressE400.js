@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListZilliqaTransactionsByAddressE400 model module.
  * @module model/ListZilliqaTransactionsByAddressE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListZilliqaTransactionsByAddressE400 {
     /**

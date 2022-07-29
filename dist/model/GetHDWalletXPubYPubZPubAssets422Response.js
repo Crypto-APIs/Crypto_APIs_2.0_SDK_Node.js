@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubAssets422Response model module.
  * @module model/GetHDWalletXPubYPubZPubAssets422Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetHDWalletXPubYPubZPubAssets422Response = /*#__PURE__*/function () {
   /**

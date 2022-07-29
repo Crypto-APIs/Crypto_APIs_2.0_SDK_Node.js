@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactions409Response model module.
  * @module model/NewConfirmedCoinsTransactions409Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var NewConfirmedCoinsTransactions409Response = /*#__PURE__*/function () {
   /**

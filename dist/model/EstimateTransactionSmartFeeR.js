@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTransactionSmartFeeR model module.
  * @module model/EstimateTransactionSmartFeeR
- * @version 1.7.0
+ * @version 1.7.1
  */
 var EstimateTransactionSmartFeeR = /*#__PURE__*/function () {
   /**

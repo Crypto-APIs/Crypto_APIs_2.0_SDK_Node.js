@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeRData model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListInternalTransactionsByAddressAndTimeRangeRData = /*#__PURE__*/function () {
   /**

@@ -38,7 +38,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashRIBS model module.
  * @module model/GetBlockDetailsByBlockHashRIBS
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetBlockDetailsByBlockHashRIBS = /*#__PURE__*/function () {
   /**

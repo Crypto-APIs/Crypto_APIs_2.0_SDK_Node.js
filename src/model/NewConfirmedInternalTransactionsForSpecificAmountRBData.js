@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsForSpecificAmountRBDataItem from './NewCo
 /**
  * The NewConfirmedInternalTransactionsForSpecificAmountRBData model module.
  * @module model/NewConfirmedInternalTransactionsForSpecificAmountRBData
- * @version 1.7.0
+ * @version 1.7.1
  */
 class NewConfirmedInternalTransactionsForSpecificAmountRBData {
     /**

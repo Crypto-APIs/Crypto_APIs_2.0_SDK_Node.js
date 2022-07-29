@@ -17,7 +17,7 @@ import TransactionRequestRejectionData from './TransactionRequestRejectionData';
 /**
  * The TransactionRequestRejection model module.
  * @module model/TransactionRequestRejection
- * @version 1.7.0
+ * @version 1.7.1
  */
 class TransactionRequestRejection {
     /**

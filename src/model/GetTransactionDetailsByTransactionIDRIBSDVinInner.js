@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig from './GetTra
 /**
  * The GetTransactionDetailsByTransactionIDRIBSDVinInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSDVinInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetTransactionDetailsByTransactionIDRIBSDVinInner {
     /**

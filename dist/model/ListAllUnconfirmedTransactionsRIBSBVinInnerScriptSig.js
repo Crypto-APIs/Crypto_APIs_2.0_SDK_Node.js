@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig = /*#__PURE__*/function () {
   /**

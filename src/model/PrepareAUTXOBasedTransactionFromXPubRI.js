@@ -12,29 +12,28 @@
  */
 
 import ApiClient from '../ApiClient';
-import PrepareAUTXOBasedTransactionFromXPubRIInputsInner from './PrepareAUTXOBasedTransactionFromXPubRIInputsInner';
+import PrepareAUTXOBasedTransactionFromXPubRIVinInner from './PrepareAUTXOBasedTransactionFromXPubRIVinInner';
 import PrepareAUTXOBasedTransactionFromXPubRIVoutInner from './PrepareAUTXOBasedTransactionFromXPubRIVoutInner';
 
 /**
  * The PrepareAUTXOBasedTransactionFromXPubRI model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPubRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPubRI {
     /**
      * Constructs a new <code>PrepareAUTXOBasedTransactionFromXPubRI</code>.
      * @alias module:model/PrepareAUTXOBasedTransactionFromXPubRI
-     * @param additionalData {String} Representation of the additional data
      * @param fee {String} When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
-     * @param inputs {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner>} Represents the transaction inputs.
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param replaceable {Boolean} Representation of whether the transaction is replaceable
      * @param size {Number} Represents the total size of this transaction.
+     * @param vin {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner>} Represents the transaction inputs.
      * @param vout {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIVoutInner>} Represents the transaction outputs.
      */
-    constructor(additionalData, fee, inputs, locktime, replaceable, size, vout) { 
+    constructor(fee, locktime, replaceable, size, vin, vout) { 
         
-        PrepareAUTXOBasedTransactionFromXPubRI.initialize(this, additionalData, fee, inputs, locktime, replaceable, size, vout);
+        PrepareAUTXOBasedTransactionFromXPubRI.initialize(this, fee, locktime, replaceable, size, vin, vout);
     }
 
     /**
@@ -42,13 +41,12 @@ class PrepareAUTXOBasedTransactionFromXPubRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, additionalData, fee, inputs, locktime, replaceable, size, vout) { 
-        obj['additionalData'] = additionalData;
+    static initialize(obj, fee, locktime, replaceable, size, vin, vout) { 
         obj['fee'] = fee;
-        obj['inputs'] = inputs;
         obj['locktime'] = locktime;
         obj['replaceable'] = replaceable;
         obj['size'] = size;
+        obj['vin'] = vin;
         obj['vout'] = vout;
     }
 
@@ -72,9 +70,6 @@ class PrepareAUTXOBasedTransactionFromXPubRI {
             if (data.hasOwnProperty('feePerByte')) {
                 obj['feePerByte'] = ApiClient.convertToType(data['feePerByte'], 'String');
             }
-            if (data.hasOwnProperty('inputs')) {
-                obj['inputs'] = ApiClient.convertToType(data['inputs'], [PrepareAUTXOBasedTransactionFromXPubRIInputsInner]);
-            }
             if (data.hasOwnProperty('locktime')) {
                 obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
             }
@@ -83,6 +78,9 @@ class PrepareAUTXOBasedTransactionFromXPubRI {
             }
             if (data.hasOwnProperty('size')) {
                 obj['size'] = ApiClient.convertToType(data['size'], 'Number');
+            }
+            if (data.hasOwnProperty('vin')) {
+                obj['vin'] = ApiClient.convertToType(data['vin'], [PrepareAUTXOBasedTransactionFromXPubRIVinInner]);
             }
             if (data.hasOwnProperty('vout')) {
                 obj['vout'] = ApiClient.convertToType(data['vout'], [PrepareAUTXOBasedTransactionFromXPubRIVoutInner]);
@@ -113,12 +111,6 @@ PrepareAUTXOBasedTransactionFromXPubRI.prototype['fee'] = undefined;
 PrepareAUTXOBasedTransactionFromXPubRI.prototype['feePerByte'] = undefined;
 
 /**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner>} inputs
- */
-PrepareAUTXOBasedTransactionFromXPubRI.prototype['inputs'] = undefined;
-
-/**
  * Represents the time at which a particular transaction can be added to the blockchain.
  * @member {Number} locktime
  */
@@ -135,6 +127,12 @@ PrepareAUTXOBasedTransactionFromXPubRI.prototype['replaceable'] = undefined;
  * @member {Number} size
  */
 PrepareAUTXOBasedTransactionFromXPubRI.prototype['size'] = undefined;
+
+/**
+ * Represents the transaction inputs.
+ * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner>} vin
+ */
+PrepareAUTXOBasedTransactionFromXPubRI.prototype['vin'] = undefined;
 
 /**
  * Represents the transaction outputs.

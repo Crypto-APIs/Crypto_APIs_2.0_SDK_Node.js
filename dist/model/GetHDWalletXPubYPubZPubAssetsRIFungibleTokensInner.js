@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner = /*#__PURE__*/function () {
   /**

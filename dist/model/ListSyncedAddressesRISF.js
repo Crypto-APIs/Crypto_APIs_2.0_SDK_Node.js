@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesRISF model module.
  * @module model/ListSyncedAddressesRISF
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListSyncedAddressesRISF = /*#__PURE__*/function () {
   /**

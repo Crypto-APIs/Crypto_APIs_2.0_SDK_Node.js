@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncNewXPubE409 model module.
  * @module model/SyncNewXPubE409
- * @version 1.7.0
+ * @version 1.7.1
  */
 var SyncNewXPubE409 = /*#__PURE__*/function () {
   /**

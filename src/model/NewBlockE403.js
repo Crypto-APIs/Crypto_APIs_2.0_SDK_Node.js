@@ -22,7 +22,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The NewBlockE403 model module.
  * @module model/NewBlockE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class NewBlockE403 {
     /**

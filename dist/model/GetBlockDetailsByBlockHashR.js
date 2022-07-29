@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashR model module.
  * @module model/GetBlockDetailsByBlockHashR
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetBlockDetailsByBlockHashR = /*#__PURE__*/function () {
   /**

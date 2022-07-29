@@ -17,7 +17,7 @@ import ListAllUnconfirmedTransactionsE400 from './ListAllUnconfirmedTransactions
 /**
  * The ListAllUnconfirmedTransactions400Response model module.
  * @module model/ListAllUnconfirmedTransactions400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListAllUnconfirmedTransactions400Response {
     /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListTokensByAddressE403 model module.
  * @module model/ListTokensByAddressE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListTokensByAddressE403 {
     /**

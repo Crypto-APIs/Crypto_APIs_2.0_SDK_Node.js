@@ -21,7 +21,7 @@ import ListTransactionsByBlockHeightRIBSZVoutInner from './ListTransactionsByBlo
 /**
  * The ListTransactionsByBlockHeightRIBSZ model module.
  * @module model/ListTransactionsByBlockHeightRIBSZ
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListTransactionsByBlockHeightRIBSZ {
     /**

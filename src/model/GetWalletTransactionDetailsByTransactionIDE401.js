@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetWalletTransactionDetailsByTransactionIDE401 model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetWalletTransactionDetailsByTransactionIDE401 {
     /**

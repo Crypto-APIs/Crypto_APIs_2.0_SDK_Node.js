@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastTransactionFailDataItem model module.
  * @module model/BroadcastTransactionFailDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 var BroadcastTransactionFailDataItem = /*#__PURE__*/function () {
   /**

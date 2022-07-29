@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubUTXOs403Response model module.
  * @module model/ListHDWalletXPubYPubZPubUTXOs403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListHDWalletXPubYPubZPubUTXOs403Response = /*#__PURE__*/function () {
   /**

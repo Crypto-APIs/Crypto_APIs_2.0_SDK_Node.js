@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The PrepareAnAccountBasedTransactionFromXPubE403 model module.
  * @module model/PrepareAnAccountBasedTransactionFromXPubE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAnAccountBasedTransactionFromXPubE403 {
     /**

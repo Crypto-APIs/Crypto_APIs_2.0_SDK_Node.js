@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWalletsRIFungibleTokensInner model module.
  * @module model/ListAllAssetsFromAllWalletsRIFungibleTokensInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListAllAssetsFromAllWalletsRIFungibleTokensInner = /*#__PURE__*/function () {
   /**

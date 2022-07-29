@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListUnconfirmedTransactionsByAddressE403 model module.
  * @module model/ListUnconfirmedTransactionsByAddressE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListUnconfirmedTransactionsByAddressE403 {
     /**

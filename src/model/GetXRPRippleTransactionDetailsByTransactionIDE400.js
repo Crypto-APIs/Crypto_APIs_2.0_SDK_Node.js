@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDE400 model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetXRPRippleTransactionDetailsByTransactionIDE400 {
     /**

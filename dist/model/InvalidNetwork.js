@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidNetwork model module.
  * @module model/InvalidNetwork
- * @version 1.7.0
+ * @version 1.7.1
  */
 var InvalidNetwork = /*#__PURE__*/function () {
   /**

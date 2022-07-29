@@ -22,7 +22,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The BlockHeightReachedE403 model module.
  * @module model/BlockHeightReachedE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class BlockHeightReachedE403 {
     /**

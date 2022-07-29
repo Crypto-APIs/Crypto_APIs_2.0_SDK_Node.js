@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListUnconfirmedTransactionsByAddressRISendersInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRISendersInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListUnconfirmedTransactionsByAddressRISendersInner {
     /**

@@ -17,7 +17,7 @@ import SyncNewXPubE401 from './SyncNewXPubE401';
 /**
  * The SyncNewXPub401Response model module.
  * @module model/SyncNewXPub401Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class SyncNewXPub401Response {
     /**

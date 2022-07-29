@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The WalletAsAServiceTokenNotSupported model module.
  * @module model/WalletAsAServiceTokenNotSupported
- * @version 1.7.0
+ * @version 1.7.1
  */
 class WalletAsAServiceTokenNotSupported {
     /**

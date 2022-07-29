@@ -19,7 +19,7 @@ import ListSyncedAddressesRISN from './ListSyncedAddressesRISN';
 /**
  * The ListSyncedAddressesRIS model module.
  * @module model/ListSyncedAddressesRIS
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListSyncedAddressesRIS {
     /**

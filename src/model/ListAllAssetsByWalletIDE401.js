@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListAllAssetsByWalletIDE401 model module.
  * @module model/ListAllAssetsByWalletIDE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListAllAssetsByWalletIDE401 {
     /**

@@ -19,7 +19,7 @@ import GetAddressDetailsRITotalSpent from './GetAddressDetailsRITotalSpent';
 /**
  * The GetAddressDetailsRI model module.
  * @module model/GetAddressDetailsRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetAddressDetailsRI {
     /**

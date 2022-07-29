@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ActivateBlockchainEventSubscription401Response model module.
  * @module model/ActivateBlockchainEventSubscription401Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ActivateBlockchainEventSubscription401Response = /*#__PURE__*/function () {
   /**

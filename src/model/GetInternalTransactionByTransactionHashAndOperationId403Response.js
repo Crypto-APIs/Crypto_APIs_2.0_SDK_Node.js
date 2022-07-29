@@ -17,7 +17,7 @@ import GetInternalTransactionByTransactionHashAndOperationIdE403 from './GetInte
 /**
  * The GetInternalTransactionByTransactionHashAndOperationId403Response model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationId403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetInternalTransactionByTransactionHashAndOperationId403Response {
     /**

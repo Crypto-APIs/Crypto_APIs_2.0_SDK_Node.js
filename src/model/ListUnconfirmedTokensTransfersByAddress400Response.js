@@ -17,7 +17,7 @@ import ListUnconfirmedTokensTransfersByAddressE400 from './ListUnconfirmedTokens
 /**
  * The ListUnconfirmedTokensTransfersByAddress400Response model module.
  * @module model/ListUnconfirmedTokensTransfersByAddress400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListUnconfirmedTokensTransfersByAddress400Response {
     /**

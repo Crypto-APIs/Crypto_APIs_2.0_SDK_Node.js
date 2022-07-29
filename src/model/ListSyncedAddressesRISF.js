@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListSyncedAddressesRISF model module.
  * @module model/ListSyncedAddressesRISF
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListSyncedAddressesRISF {
     /**

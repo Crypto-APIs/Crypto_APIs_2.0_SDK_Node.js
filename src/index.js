@@ -1745,7 +1745,7 @@ import PrepareAUTXOBasedTransactionFromXPubRBDataItemFee from './model/PrepareAU
 import PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner from './model/PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner';
 import PrepareAUTXOBasedTransactionFromXPubRData from './model/PrepareAUTXOBasedTransactionFromXPubRData';
 import PrepareAUTXOBasedTransactionFromXPubRI from './model/PrepareAUTXOBasedTransactionFromXPubRI';
-import PrepareAUTXOBasedTransactionFromXPubRIInputsInner from './model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner';
+import PrepareAUTXOBasedTransactionFromXPubRIVinInner from './model/PrepareAUTXOBasedTransactionFromXPubRIVinInner';
 import PrepareAUTXOBasedTransactionFromXPubRIVoutInner from './model/PrepareAUTXOBasedTransactionFromXPubRIVoutInner';
 import PrepareAnAccountBasedTransactionFromXPub400Response from './model/PrepareAnAccountBasedTransactionFromXPub400Response';
 import PrepareAnAccountBasedTransactionFromXPub401Response from './model/PrepareAnAccountBasedTransactionFromXPub401Response';
@@ -1895,7 +1895,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.7.0
+* @version 1.7.1
 */
 export {
     /**
@@ -12297,10 +12297,10 @@ export {
     PrepareAUTXOBasedTransactionFromXPubRI,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRIInputsInner model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner}
+     * The PrepareAUTXOBasedTransactionFromXPubRIVinInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner}
      */
-    PrepareAUTXOBasedTransactionFromXPubRIInputsInner,
+    PrepareAUTXOBasedTransactionFromXPubRIVinInner,
 
     /**
      * The PrepareAUTXOBasedTransactionFromXPubRIVoutInner model constructor.

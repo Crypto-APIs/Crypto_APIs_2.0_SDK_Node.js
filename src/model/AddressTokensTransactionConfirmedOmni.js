@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedOmni model module.
  * @module model/AddressTokensTransactionConfirmedOmni
- * @version 1.7.0
+ * @version 1.7.1
  */
 class AddressTokensTransactionConfirmedOmni {
     /**

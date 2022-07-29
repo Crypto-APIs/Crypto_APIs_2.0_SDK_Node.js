@@ -18,7 +18,7 @@ import ListConfirmedTransactionsByAddressRIBSD2VoutInner from './ListConfirmedTr
 /**
  * The ListConfirmedTransactionsByAddressRIBSD2 model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSD2
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListConfirmedTransactionsByAddressRIBSD2 {
     /**

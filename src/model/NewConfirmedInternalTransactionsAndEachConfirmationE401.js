@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationE401 model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class NewConfirmedInternalTransactionsAndEachConfirmationE401 {
     /**

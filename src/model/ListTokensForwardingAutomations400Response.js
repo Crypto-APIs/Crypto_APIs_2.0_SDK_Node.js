@@ -17,7 +17,7 @@ import ListTokensForwardingAutomationsE400 from './ListTokensForwardingAutomatio
 /**
  * The ListTokensForwardingAutomations400Response model module.
  * @module model/ListTokensForwardingAutomations400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListTokensForwardingAutomations400Response {
     /**

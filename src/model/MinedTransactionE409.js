@@ -19,7 +19,7 @@ import InvalidData from './InvalidData';
 /**
  * The MinedTransactionE409 model module.
  * @module model/MinedTransactionE409
- * @version 1.7.0
+ * @version 1.7.1
  */
 class MinedTransactionE409 {
     /**

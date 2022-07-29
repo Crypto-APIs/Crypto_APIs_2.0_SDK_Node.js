@@ -76,7 +76,7 @@ import ValidateAddressRB from '../model/ValidateAddressRB';
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.7.0
+* @version 1.7.1
 */
 export default class FeaturesApi {
 

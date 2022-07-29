@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListXRPRippleTransactionsByBlockHashRIRecipientsInner model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRIRecipientsInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByBlockHashRIRecipientsInner {
     /**

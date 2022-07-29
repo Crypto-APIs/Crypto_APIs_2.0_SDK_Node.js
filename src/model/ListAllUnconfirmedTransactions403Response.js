@@ -17,7 +17,7 @@ import ListAllUnconfirmedTransactionsE403 from './ListAllUnconfirmedTransactions
 /**
  * The ListAllUnconfirmedTransactions403Response model module.
  * @module model/ListAllUnconfirmedTransactions403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListAllUnconfirmedTransactions403Response {
     /**

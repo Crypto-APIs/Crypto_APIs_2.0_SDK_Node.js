@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GenerateDepositAddressE400 model module.
  * @module model/GenerateDepositAddressE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GenerateDepositAddressE400 {
     /**

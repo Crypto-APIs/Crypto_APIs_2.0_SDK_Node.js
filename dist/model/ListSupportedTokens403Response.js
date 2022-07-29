@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokens403Response model module.
  * @module model/ListSupportedTokens403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListSupportedTokens403Response = /*#__PURE__*/function () {
   /**

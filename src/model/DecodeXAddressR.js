@@ -17,7 +17,7 @@ import DecodeXAddressRData from './DecodeXAddressRData';
 /**
  * The DecodeXAddressR model module.
  * @module model/DecodeXAddressR
- * @version 1.7.0
+ * @version 1.7.1
  */
 class DecodeXAddressR {
     /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSL model module.
  * @module model/ListLatestMinedBlocksRIBSL
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListLatestMinedBlocksRIBSL = /*#__PURE__*/function () {
   /**

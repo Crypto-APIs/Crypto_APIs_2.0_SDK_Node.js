@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The CreateCoinsTransactionRequestFromAddressE400 model module.
  * @module model/CreateCoinsTransactionRequestFromAddressE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateCoinsTransactionRequestFromAddressE400 {
     /**

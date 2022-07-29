@@ -17,7 +17,7 @@ import AddressTokensTransactionConfirmedEachConfirmationData from './AddressToke
 /**
  * The AddressTokensTransactionConfirmedEachConfirmation model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmation
- * @version 1.7.0
+ * @version 1.7.1
  */
 class AddressTokensTransactionConfirmedEachConfirmation {
     /**

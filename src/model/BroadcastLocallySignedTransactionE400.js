@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The BroadcastLocallySignedTransactionE400 model module.
  * @module model/BroadcastLocallySignedTransactionE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class BroadcastLocallySignedTransactionE400 {
     /**

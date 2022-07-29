@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListCoinsForwardingAutomationsE400 model module.
  * @module model/ListCoinsForwardingAutomationsE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListCoinsForwardingAutomationsE400 {
     /**

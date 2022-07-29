@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionID404Response model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionID404Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetXRPRippleTransactionDetailsByTransactionID404Response = /*#__PURE__*/function () {
   /**

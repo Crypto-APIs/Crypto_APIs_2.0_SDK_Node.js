@@ -17,7 +17,7 @@ import ListTransactionsByBlockHashE400 from './ListTransactionsByBlockHashE400';
 /**
  * The ListTransactionsByBlockHash400Response model module.
  * @module model/ListTransactionsByBlockHash400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListTransactionsByBlockHash400Response {
     /**

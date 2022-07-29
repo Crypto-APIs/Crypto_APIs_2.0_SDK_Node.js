@@ -19,7 +19,7 @@ import InvalidData from './InvalidData';
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationE409 model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationE409
- * @version 1.7.0
+ * @version 1.7.1
  */
 class NewConfirmedInternalTransactionsAndEachConfirmationE409 {
     /**

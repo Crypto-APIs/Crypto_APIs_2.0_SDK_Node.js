@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The PrepareAUTXOBasedTransactionFromXPubE403 model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPubE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPubE403 {
     /**

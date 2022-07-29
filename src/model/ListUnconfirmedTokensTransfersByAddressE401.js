@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListUnconfirmedTokensTransfersByAddressE401 model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListUnconfirmedTokensTransfersByAddressE401 {
     /**

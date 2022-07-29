@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSBSC model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBSC
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListConfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import DeleteAutomaticTokensForwardingE401 from './DeleteAutomaticTokensForwardi
 /**
  * The DeleteAutomaticTokensForwarding401Response model module.
  * @module model/DeleteAutomaticTokensForwarding401Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class DeleteAutomaticTokensForwarding401Response {
     /**

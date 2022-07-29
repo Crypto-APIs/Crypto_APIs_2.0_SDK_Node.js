@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The DeriveAndSyncNewReceivingAddressesE403 model module.
  * @module model/DeriveAndSyncNewReceivingAddressesE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class DeriveAndSyncNewReceivingAddressesE403 {
     /**

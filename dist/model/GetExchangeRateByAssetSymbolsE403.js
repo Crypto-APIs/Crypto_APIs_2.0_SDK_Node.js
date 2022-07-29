@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbolsE403 model module.
  * @module model/GetExchangeRateByAssetSymbolsE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetExchangeRateByAssetSymbolsE403 = /*#__PURE__*/function () {
   /**

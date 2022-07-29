@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressR model module.
  * @module model/EncodeXAddressR
- * @version 1.7.0
+ * @version 1.7.1
  */
 var EncodeXAddressR = /*#__PURE__*/function () {
   /**

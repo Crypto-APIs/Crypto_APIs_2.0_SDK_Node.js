@@ -56,7 +56,7 @@ import ListWalletTransactionsR from '../model/ListWalletTransactionsR';
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.7.0
+* @version 1.7.1
 */
 export default class InformativeApi {
 

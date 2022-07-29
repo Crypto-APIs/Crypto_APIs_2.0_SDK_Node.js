@@ -22,7 +22,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The CreateAutomaticCoinsForwardingE403 model module.
  * @module model/CreateAutomaticCoinsForwardingE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateAutomaticCoinsForwardingE403 {
     /**

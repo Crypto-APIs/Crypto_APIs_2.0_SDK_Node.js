@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIRecipientsInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIRecipientsInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetTransactionDetailsByTransactionIDRIRecipientsInner = /*#__PURE__*/function () {
   /**

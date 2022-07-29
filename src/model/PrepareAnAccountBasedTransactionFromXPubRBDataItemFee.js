@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAnAccountBasedTransactionFromXPubRBDataItemFee model module.
  * @module model/PrepareAnAccountBasedTransactionFromXPubRBDataItemFee
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAnAccountBasedTransactionFromXPubRBDataItemFee {
     /**

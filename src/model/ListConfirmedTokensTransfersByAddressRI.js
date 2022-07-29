@@ -17,7 +17,7 @@ import ListTokensTransfersByTransactionHashRITransactionFee from './ListTokensTr
 /**
  * The ListConfirmedTokensTransfersByAddressRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListConfirmedTokensTransfersByAddressRI {
     /**

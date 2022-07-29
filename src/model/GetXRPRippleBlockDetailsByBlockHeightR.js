@@ -17,7 +17,7 @@ import GetXRPRippleBlockDetailsByBlockHeightRData from './GetXRPRippleBlockDetai
 /**
  * The GetXRPRippleBlockDetailsByBlockHeightR model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeightR
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetXRPRippleBlockDetailsByBlockHeightR {
     /**

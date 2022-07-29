@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByBlockHeightRData from './ListXRPRippleTransact
 /**
  * The ListXRPRippleTransactionsByBlockHeightR model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightR
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByBlockHeightR {
     /**

@@ -17,7 +17,7 @@ import GetXRPRippleAddressDetailsE403 from './GetXRPRippleAddressDetailsE403';
 /**
  * The GetXRPRippleAddressDetails403Response model module.
  * @module model/GetXRPRippleAddressDetails403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetXRPRippleAddressDetails403Response {
     /**

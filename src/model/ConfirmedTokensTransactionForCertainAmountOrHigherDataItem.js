@@ -18,7 +18,7 @@ import ConfirmedTokensTransactionForCertainAmountOrHigherToken from './Confirmed
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherDataItem model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ConfirmedTokensTransactionForCertainAmountOrHigherDataItem {
     /**

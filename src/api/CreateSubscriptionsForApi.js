@@ -107,7 +107,7 @@ import NewUnconfirmedTokensTransactionsRB from '../model/NewUnconfirmedTokensTra
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.7.0
+* @version 1.7.1
 */
 export default class CreateSubscriptionsForApi {
 

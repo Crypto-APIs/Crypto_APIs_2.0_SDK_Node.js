@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByAddressRIValue from './ListXRPRippleTransactio
 /**
  * The ListXRPRippleTransactionsByAddressRI model module.
  * @module model/ListXRPRippleTransactionsByAddressRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByAddressRI {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddress403Response model module.
  * @module model/ValidateAddress403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ValidateAddress403Response = /*#__PURE__*/function () {
   /**

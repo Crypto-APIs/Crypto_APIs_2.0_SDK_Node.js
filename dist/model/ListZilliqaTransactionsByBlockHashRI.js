@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHashRI model module.
  * @module model/ListZilliqaTransactionsByBlockHashRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListZilliqaTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**

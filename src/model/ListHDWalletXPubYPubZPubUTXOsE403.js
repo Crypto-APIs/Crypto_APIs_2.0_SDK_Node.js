@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListHDWalletXPubYPubZPubUTXOsE403 model module.
  * @module model/ListHDWalletXPubYPubZPubUTXOsE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListHDWalletXPubYPubZPubUTXOsE403 {
     /**

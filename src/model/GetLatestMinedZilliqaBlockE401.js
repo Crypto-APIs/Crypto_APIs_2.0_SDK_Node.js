@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetLatestMinedZilliqaBlockE401 model module.
  * @module model/GetLatestMinedZilliqaBlockE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetLatestMinedZilliqaBlockE401 {
     /**

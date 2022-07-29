@@ -17,7 +17,7 @@ import PrepareAUTXOBasedTransactionFromXPubE403 from './PrepareAUTXOBasedTransac
 /**
  * The PrepareAUTXOBasedTransactionFromXPub403Response model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPub403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPub403Response {
     /**

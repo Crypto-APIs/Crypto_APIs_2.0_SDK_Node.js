@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListXRPRippleTransactionsByBlockHashE401 model module.
  * @module model/ListXRPRippleTransactionsByBlockHashE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByBlockHashE401 {
     /**

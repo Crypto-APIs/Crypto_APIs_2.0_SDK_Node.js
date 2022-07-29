@@ -17,7 +17,7 @@ import SyncNewXPubRI from './SyncNewXPubRI';
 /**
  * The SyncNewXPubRData model module.
  * @module model/SyncNewXPubRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 class SyncNewXPubRData {
     /**

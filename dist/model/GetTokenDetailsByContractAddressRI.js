@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTokenDetailsByContractAddressRI model module.
  * @module model/GetTokenDetailsByContractAddressRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetTokenDetailsByContractAddressRI = /*#__PURE__*/function () {
   /**

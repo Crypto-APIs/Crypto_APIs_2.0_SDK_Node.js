@@ -18,7 +18,7 @@ import GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner from './GetWall
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBC model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBC
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSBC {
     /**

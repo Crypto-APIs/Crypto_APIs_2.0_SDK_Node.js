@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeR model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeR
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListConfirmedTransactionsByAddressAndTimeRangeR = /*#__PURE__*/function () {
   /**

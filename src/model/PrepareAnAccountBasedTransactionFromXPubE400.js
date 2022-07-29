@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The PrepareAnAccountBasedTransactionFromXPubE400 model module.
  * @module model/PrepareAnAccountBasedTransactionFromXPubE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAnAccountBasedTransactionFromXPubE400 {
     /**

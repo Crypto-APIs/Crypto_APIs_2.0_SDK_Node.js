@@ -20,24 +20,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAnAccountBasedTransactionFromXPubRBDataItem model module.
  * @module model/PrepareAnAccountBasedTransactionFromXPubRBDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 var PrepareAnAccountBasedTransactionFromXPubRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAnAccountBasedTransactionFromXPubRBDataItem</code>.
    * @alias module:model/PrepareAnAccountBasedTransactionFromXPubRBDataItem
-   * @param additionalData {String} Representation of the additional data.
    * @param amount {String} Representation of the amount of the transaction
    * @param fee {module:model/PrepareAnAccountBasedTransactionFromXPubRBDataItemFee} 
    * @param recipient {String} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
    * @param sender {String} Represents a  sender address with the respective amount. In account-based protocols like Ethereum there is only one address in this list.
-   * @param transactionType {module:model/PrepareAnAccountBasedTransactionFromXPubRBDataItem.TransactionTypeEnum} Representation of the transaction type
    * @param xpub {String} Defines the account extended publicly known key which is used to derive all child public keys.
    */
-  function PrepareAnAccountBasedTransactionFromXPubRBDataItem(additionalData, amount, fee, recipient, sender, transactionType, xpub) {
+  function PrepareAnAccountBasedTransactionFromXPubRBDataItem(amount, fee, recipient, sender, xpub) {
     _classCallCheck(this, PrepareAnAccountBasedTransactionFromXPubRBDataItem);
 
-    PrepareAnAccountBasedTransactionFromXPubRBDataItem.initialize(this, additionalData, amount, fee, recipient, sender, transactionType, xpub);
+    PrepareAnAccountBasedTransactionFromXPubRBDataItem.initialize(this, amount, fee, recipient, sender, xpub);
   }
   /**
    * Initializes the fields of this object.
@@ -48,13 +46,11 @@ var PrepareAnAccountBasedTransactionFromXPubRBDataItem = /*#__PURE__*/function (
 
   _createClass(PrepareAnAccountBasedTransactionFromXPubRBDataItem, null, [{
     key: "initialize",
-    value: function initialize(obj, additionalData, amount, fee, recipient, sender, transactionType, xpub) {
-      obj['additionalData'] = additionalData;
+    value: function initialize(obj, amount, fee, recipient, sender, xpub) {
       obj['amount'] = amount;
       obj['fee'] = fee;
       obj['recipient'] = recipient;
       obj['sender'] = sender;
-      obj['transactionType'] = transactionType;
       obj['xpub'] = xpub;
     }
     /**

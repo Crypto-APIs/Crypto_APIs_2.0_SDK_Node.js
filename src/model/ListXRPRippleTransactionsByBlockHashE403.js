@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListXRPRippleTransactionsByBlockHashE403 model module.
  * @module model/ListXRPRippleTransactionsByBlockHashE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByBlockHashE403 {
     /**

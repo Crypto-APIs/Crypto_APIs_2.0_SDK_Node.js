@@ -36,7 +36,7 @@ import ListInternalTransactionsByAddressR from '../model/ListInternalTransaction
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.7.0
+* @version 1.7.1
 */
 export default class InternalApi {
 

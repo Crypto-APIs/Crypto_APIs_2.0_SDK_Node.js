@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBCVoutInnerScriptPubKey from './G
 /**
  * The ListAllUnconfirmedTransactionsRIBSBCVoutInner model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSBCVoutInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListAllUnconfirmedTransactionsRIBSBCVoutInner {
     /**

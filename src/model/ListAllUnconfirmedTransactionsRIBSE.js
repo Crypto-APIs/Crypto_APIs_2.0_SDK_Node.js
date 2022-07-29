@@ -18,7 +18,7 @@ import ListAllUnconfirmedTransactionsRIBSEGasPrice from './ListAllUnconfirmedTra
 /**
  * The ListAllUnconfirmedTransactionsRIBSE model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSE
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListAllUnconfirmedTransactionsRIBSE {
     /**

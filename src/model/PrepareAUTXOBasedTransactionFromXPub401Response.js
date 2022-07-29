@@ -17,7 +17,7 @@ import PrepareAUTXOBasedTransactionFromXPubE401 from './PrepareAUTXOBasedTransac
 /**
  * The PrepareAUTXOBasedTransactionFromXPub401Response model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPub401Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPub401Response {
     /**

@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByAddressAndTimeRangeRI from './ListXRPRippleTra
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeRData model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByAddressAndTimeRangeRData {
     /**

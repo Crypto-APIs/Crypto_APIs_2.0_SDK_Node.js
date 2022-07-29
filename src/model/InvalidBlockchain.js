@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The InvalidBlockchain model module.
  * @module model/InvalidBlockchain
- * @version 1.7.0
+ * @version 1.7.1
  */
 class InvalidBlockchain {
     /**

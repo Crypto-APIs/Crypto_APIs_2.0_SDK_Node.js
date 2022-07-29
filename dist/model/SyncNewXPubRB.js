@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncNewXPubRB model module.
  * @module model/SyncNewXPubRB
- * @version 1.7.0
+ * @version 1.7.1
  */
 var SyncNewXPubRB = /*#__PURE__*/function () {
   /**

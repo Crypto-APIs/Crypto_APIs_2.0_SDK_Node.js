@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByAddressRData model module.
  * @module model/ListZilliqaTransactionsByAddressRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListZilliqaTransactionsByAddressRData = /*#__PURE__*/function () {
   /**

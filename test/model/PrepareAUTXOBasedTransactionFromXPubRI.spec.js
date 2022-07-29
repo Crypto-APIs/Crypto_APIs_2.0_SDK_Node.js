@@ -72,12 +72,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property inputs (base name: "inputs")', function() {
-      // uncomment below and update the code to test the property inputs
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRI();
-      //expect(instance).to.be();
-    });
-
     it('should have the property locktime (base name: "locktime")', function() {
       // uncomment below and update the code to test the property locktime
       //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRI();
@@ -92,6 +86,12 @@
 
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property vin (base name: "vin")', function() {
+      // uncomment below and update the code to test the property vin
       //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRI();
       //expect(instance).to.be();
     });

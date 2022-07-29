@@ -17,7 +17,7 @@ import NewConfirmedTokenTransactionsForSpecificAmountRData from './NewConfirmedT
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmountR model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmountR
- * @version 1.7.0
+ * @version 1.7.1
  */
 class NewConfirmedTokenTransactionsForSpecificAmountR {
     /**

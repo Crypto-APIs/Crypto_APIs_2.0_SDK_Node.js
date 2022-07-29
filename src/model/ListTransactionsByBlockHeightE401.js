@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListTransactionsByBlockHeightE401 model module.
  * @module model/ListTransactionsByBlockHeightE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListTransactionsByBlockHeightE401 {
     /**

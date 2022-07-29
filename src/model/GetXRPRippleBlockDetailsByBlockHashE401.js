@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetXRPRippleBlockDetailsByBlockHashE401 model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetXRPRippleBlockDetailsByBlockHashE401 {
     /**

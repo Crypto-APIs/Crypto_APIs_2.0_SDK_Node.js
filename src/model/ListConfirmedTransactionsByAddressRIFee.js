@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTransactionsByAddressRIFee model module.
  * @module model/ListConfirmedTransactionsByAddressRIFee
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListConfirmedTransactionsByAddressRIFee {
     /**

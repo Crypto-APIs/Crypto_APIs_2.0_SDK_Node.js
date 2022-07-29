@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListXRPRippleTransactionsByAddressRIOffer model module.
  * @module model/ListXRPRippleTransactionsByAddressRIOffer
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByAddressRIOffer {
     /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddressRBDataItem model module.
  * @module model/GenerateDepositAddressRBDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GenerateDepositAddressRBDataItem = /*#__PURE__*/function () {
   /**

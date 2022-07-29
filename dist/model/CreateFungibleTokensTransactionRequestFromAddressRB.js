@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRB model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRB
- * @version 1.7.0
+ * @version 1.7.1
  */
 var CreateFungibleTokensTransactionRequestFromAddressRB = /*#__PURE__*/function () {
   /**

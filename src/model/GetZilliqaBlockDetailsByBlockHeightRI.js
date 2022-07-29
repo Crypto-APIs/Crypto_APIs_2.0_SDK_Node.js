@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetZilliqaBlockDetailsByBlockHeightRI model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeightRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetZilliqaBlockDetailsByBlockHeightRI {
     /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsRITotalReceived model module.
  * @module model/GetAddressDetailsRITotalReceived
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetAddressDetailsRITotalReceived = /*#__PURE__*/function () {
   /**

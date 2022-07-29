@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessOmni model module.
  * @module model/TokensForwardingSuccessOmni
- * @version 1.7.0
+ * @version 1.7.1
  */
 var TokensForwardingSuccessOmni = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesRINonFungibleTokensInner model module.
  * @module model/ListDepositAddressesRINonFungibleTokensInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListDepositAddressesRINonFungibleTokensInner = /*#__PURE__*/function () {
   /**

@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeE403 model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListConfirmedTransactionsByAddressAndTimeRangeE403 = /*#__PURE__*/function () {
   /**

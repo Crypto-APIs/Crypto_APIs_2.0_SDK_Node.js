@@ -27,7 +27,7 @@ import ListSupportedAssetsR from '../model/ListSupportedAssetsR';
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.7.0
+* @version 1.7.1
 */
 export default class MetadataApi {
 

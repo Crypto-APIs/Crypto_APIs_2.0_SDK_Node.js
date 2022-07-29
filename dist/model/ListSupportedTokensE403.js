@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokensE403 model module.
  * @module model/ListSupportedTokensE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListSupportedTokensE403 = /*#__PURE__*/function () {
   /**

@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationE400 model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 var NewConfirmedInternalTransactionsAndEachConfirmationE400 = /*#__PURE__*/function () {
   /**

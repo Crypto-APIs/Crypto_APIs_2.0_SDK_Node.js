@@ -17,7 +17,7 @@ import SyncNewXPubE422 from './SyncNewXPubE422';
 /**
  * The SyncNewXPub422Response model module.
  * @module model/SyncNewXPub422Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class SyncNewXPub422Response {
     /**

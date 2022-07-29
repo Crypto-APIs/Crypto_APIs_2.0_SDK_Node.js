@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EncodeXAddressRI model module.
  * @module model/EncodeXAddressRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 class EncodeXAddressRI {
     /**

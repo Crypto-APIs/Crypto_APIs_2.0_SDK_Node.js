@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListBlockchainEventsSubscriptionsE400 model module.
  * @module model/ListBlockchainEventsSubscriptionsE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListBlockchainEventsSubscriptionsE400 {
     /**

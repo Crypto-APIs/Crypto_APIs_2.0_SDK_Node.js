@@ -7,7 +7,7 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _PrepareAUTXOBasedTransactionFromXPubRIInputsInner = _interopRequireDefault(require("./PrepareAUTXOBasedTransactionFromXPubRIInputsInner"));
+var _PrepareAUTXOBasedTransactionFromXPubRIVinInner = _interopRequireDefault(require("./PrepareAUTXOBasedTransactionFromXPubRIVinInner"));
 
 var _PrepareAUTXOBasedTransactionFromXPubRIVoutInner = _interopRequireDefault(require("./PrepareAUTXOBasedTransactionFromXPubRIVoutInner"));
 
@@ -22,24 +22,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromXPubRI model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPubRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 var PrepareAUTXOBasedTransactionFromXPubRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromXPubRI</code>.
    * @alias module:model/PrepareAUTXOBasedTransactionFromXPubRI
-   * @param additionalData {String} Representation of the additional data
    * @param fee {String} When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
-   * @param inputs {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner>} Represents the transaction inputs.
    * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
    * @param replaceable {Boolean} Representation of whether the transaction is replaceable
    * @param size {Number} Represents the total size of this transaction.
+   * @param vin {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner>} Represents the transaction inputs.
    * @param vout {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIVoutInner>} Represents the transaction outputs.
    */
-  function PrepareAUTXOBasedTransactionFromXPubRI(additionalData, fee, inputs, locktime, replaceable, size, vout) {
+  function PrepareAUTXOBasedTransactionFromXPubRI(fee, locktime, replaceable, size, vin, vout) {
     _classCallCheck(this, PrepareAUTXOBasedTransactionFromXPubRI);
 
-    PrepareAUTXOBasedTransactionFromXPubRI.initialize(this, additionalData, fee, inputs, locktime, replaceable, size, vout);
+    PrepareAUTXOBasedTransactionFromXPubRI.initialize(this, fee, locktime, replaceable, size, vin, vout);
   }
   /**
    * Initializes the fields of this object.
@@ -50,13 +49,12 @@ var PrepareAUTXOBasedTransactionFromXPubRI = /*#__PURE__*/function () {
 
   _createClass(PrepareAUTXOBasedTransactionFromXPubRI, null, [{
     key: "initialize",
-    value: function initialize(obj, additionalData, fee, inputs, locktime, replaceable, size, vout) {
-      obj['additionalData'] = additionalData;
+    value: function initialize(obj, fee, locktime, replaceable, size, vin, vout) {
       obj['fee'] = fee;
-      obj['inputs'] = inputs;
       obj['locktime'] = locktime;
       obj['replaceable'] = replaceable;
       obj['size'] = size;
+      obj['vin'] = vin;
       obj['vout'] = vout;
     }
     /**
@@ -85,10 +83,6 @@ var PrepareAUTXOBasedTransactionFromXPubRI = /*#__PURE__*/function () {
           obj['feePerByte'] = _ApiClient["default"].convertToType(data['feePerByte'], 'String');
         }
 
-        if (data.hasOwnProperty('inputs')) {
-          obj['inputs'] = _ApiClient["default"].convertToType(data['inputs'], [_PrepareAUTXOBasedTransactionFromXPubRIInputsInner["default"]]);
-        }
-
         if (data.hasOwnProperty('locktime')) {
           obj['locktime'] = _ApiClient["default"].convertToType(data['locktime'], 'Number');
         }
@@ -99,6 +93,10 @@ var PrepareAUTXOBasedTransactionFromXPubRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('size')) {
           obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
+        }
+
+        if (data.hasOwnProperty('vin')) {
+          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_PrepareAUTXOBasedTransactionFromXPubRIVinInner["default"]]);
         }
 
         if (data.hasOwnProperty('vout')) {
@@ -132,12 +130,6 @@ PrepareAUTXOBasedTransactionFromXPubRI.prototype['fee'] = undefined;
 
 PrepareAUTXOBasedTransactionFromXPubRI.prototype['feePerByte'] = undefined;
 /**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIInputsInner>} inputs
- */
-
-PrepareAUTXOBasedTransactionFromXPubRI.prototype['inputs'] = undefined;
-/**
  * Represents the time at which a particular transaction can be added to the blockchain.
  * @member {Number} locktime
  */
@@ -155,6 +147,12 @@ PrepareAUTXOBasedTransactionFromXPubRI.prototype['replaceable'] = undefined;
  */
 
 PrepareAUTXOBasedTransactionFromXPubRI.prototype['size'] = undefined;
+/**
+ * Represents the transaction inputs.
+ * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner>} vin
+ */
+
+PrepareAUTXOBasedTransactionFromXPubRI.prototype['vin'] = undefined;
 /**
  * Represents the transaction outputs.
  * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromXPubRIVoutInner>} vout

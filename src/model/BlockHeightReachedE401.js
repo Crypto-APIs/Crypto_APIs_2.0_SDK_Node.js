@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The BlockHeightReachedE401 model module.
  * @module model/BlockHeightReachedE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class BlockHeightReachedE401 {
     /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAnAccountBasedTransactionFromXPubRIFee model module.
  * @module model/PrepareAnAccountBasedTransactionFromXPubRIFee
- * @version 1.7.0
+ * @version 1.7.1
  */
 var PrepareAnAccountBasedTransactionFromXPubRIFee = /*#__PURE__*/function () {
   /**

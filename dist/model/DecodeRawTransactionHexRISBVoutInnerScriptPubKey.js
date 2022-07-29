@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISBVoutInnerScriptPubKey model module.
  * @module model/DecodeRawTransactionHexRISBVoutInnerScriptPubKey
- * @version 1.7.0
+ * @version 1.7.1
  */
 var DecodeRawTransactionHexRISBVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**

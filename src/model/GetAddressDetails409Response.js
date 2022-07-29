@@ -17,7 +17,7 @@ import InvalidData from './InvalidData';
 /**
  * The GetAddressDetails409Response model module.
  * @module model/GetAddressDetails409Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetAddressDetails409Response {
     /**

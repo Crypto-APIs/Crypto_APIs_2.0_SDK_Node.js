@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncNewXPubRI model module.
  * @module model/SyncNewXPubRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 var SyncNewXPubRI = /*#__PURE__*/function () {
   /**

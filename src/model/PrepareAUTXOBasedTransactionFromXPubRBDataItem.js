@@ -18,7 +18,7 @@ import PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner from './Pre
 /**
  * The PrepareAUTXOBasedTransactionFromXPubRBDataItem model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPubRBDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPubRBDataItem {
     /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetLatestMinedZilliqaBlockE403 model module.
  * @module model/GetLatestMinedZilliqaBlockE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetLatestMinedZilliqaBlockE403 {
     /**

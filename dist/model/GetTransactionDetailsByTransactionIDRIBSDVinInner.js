@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSDVinInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSDVinInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetTransactionDetailsByTransactionIDRIBSDVinInner = /*#__PURE__*/function () {
   /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetNextAvailableNonceE403 model module.
  * @module model/GetNextAvailableNonceE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetNextAvailableNonceE403 {
     /**

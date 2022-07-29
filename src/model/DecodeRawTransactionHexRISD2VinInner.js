@@ -17,7 +17,7 @@ import DecodeRawTransactionHexRISD2VinInnerScriptSig from './DecodeRawTransactio
 /**
  * The DecodeRawTransactionHexRISD2VinInner model module.
  * @module model/DecodeRawTransactionHexRISD2VinInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class DecodeRawTransactionHexRISD2VinInner {
     /**

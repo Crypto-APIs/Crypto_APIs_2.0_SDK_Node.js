@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The SyncNewXPubE403 model module.
  * @module model/SyncNewXPubE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class SyncNewXPubE403 {
     /**

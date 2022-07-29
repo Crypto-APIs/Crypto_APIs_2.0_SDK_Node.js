@@ -17,7 +17,7 @@ import BlockchainDataInternalTransactionNotFound from './BlockchainDataInternalT
 /**
  * The GetInternalTransactionByTransactionHashAndOperationId404Response model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationId404Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetInternalTransactionByTransactionHashAndOperationId404Response {
     /**

@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHashE400 model module.
  * @module model/ListZilliqaTransactionsByBlockHashE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListZilliqaTransactionsByBlockHashE400 = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner = /*#__PURE__*/function () {
   /**

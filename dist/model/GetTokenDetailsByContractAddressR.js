@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTokenDetailsByContractAddressR model module.
  * @module model/GetTokenDetailsByContractAddressR
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetTokenDetailsByContractAddressR = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import GetAssetDetailsByAssetIDE403 from './GetAssetDetailsByAssetIDE403';
 /**
  * The GetAssetDetailsByAssetID403Response model module.
  * @module model/GetAssetDetailsByAssetID403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetAssetDetailsByAssetID403Response {
     /**

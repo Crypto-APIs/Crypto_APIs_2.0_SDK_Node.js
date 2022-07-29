@@ -17,7 +17,7 @@ import ListTransactionsByBlockHashRIBSD2VinInnerScriptSig from './ListTransactio
 /**
  * The ListTransactionsByBlockHashRIBSD2VinInner model module.
  * @module model/ListTransactionsByBlockHashRIBSD2VinInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListTransactionsByBlockHashRIBSD2VinInner {
     /**

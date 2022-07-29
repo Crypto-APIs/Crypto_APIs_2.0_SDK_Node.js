@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSZVoutInnerScriptPubKey from './Ge
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVoutInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVoutInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetTransactionDetailsByTransactionIDRIBSZVoutInner {
     /**

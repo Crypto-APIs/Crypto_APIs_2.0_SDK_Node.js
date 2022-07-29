@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListWalletTransactionsE400 model module.
  * @module model/ListWalletTransactionsE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListWalletTransactionsE400 {
     /**

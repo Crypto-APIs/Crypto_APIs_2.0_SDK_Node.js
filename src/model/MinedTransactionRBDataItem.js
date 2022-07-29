@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The MinedTransactionRBDataItem model module.
  * @module model/MinedTransactionRBDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 class MinedTransactionRBDataItem {
     /**

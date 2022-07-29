@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The PrepareAUTXOBasedTransactionFromXPubE401 model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPubE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPubE401 {
     /**

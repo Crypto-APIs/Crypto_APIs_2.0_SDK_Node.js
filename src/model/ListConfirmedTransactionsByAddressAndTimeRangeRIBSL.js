@@ -18,7 +18,7 @@ import ListConfirmedTransactionsByAddressRIBSLVinInner from './ListConfirmedTran
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSL model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSL
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeRIBSL {
     /**

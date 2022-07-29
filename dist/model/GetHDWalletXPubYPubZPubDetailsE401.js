@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubDetailsE401 model module.
  * @module model/GetHDWalletXPubYPubZPubDetailsE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetHDWalletXPubYPubZPubDetailsE401 = /*#__PURE__*/function () {
   /**

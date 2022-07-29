@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHeightRISendersInner model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRISendersInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListXRPRippleTransactionsByBlockHeightRISendersInner = /*#__PURE__*/function () {
   /**

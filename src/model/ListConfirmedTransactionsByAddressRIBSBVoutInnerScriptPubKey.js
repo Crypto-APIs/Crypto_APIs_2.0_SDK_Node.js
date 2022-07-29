@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey {
     /**

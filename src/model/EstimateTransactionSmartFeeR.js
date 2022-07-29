@@ -17,7 +17,7 @@ import EstimateTransactionSmartFeeRData from './EstimateTransactionSmartFeeRData
 /**
  * The EstimateTransactionSmartFeeR model module.
  * @module model/EstimateTransactionSmartFeeR
- * @version 1.7.0
+ * @version 1.7.1
  */
 class EstimateTransactionSmartFeeR {
     /**

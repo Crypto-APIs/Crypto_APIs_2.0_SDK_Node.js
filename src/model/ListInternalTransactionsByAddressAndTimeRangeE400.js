@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeE400 model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListInternalTransactionsByAddressAndTimeRangeE400 {
     /**

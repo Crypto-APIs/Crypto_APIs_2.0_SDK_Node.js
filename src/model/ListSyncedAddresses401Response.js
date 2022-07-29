@@ -17,7 +17,7 @@ import ListSyncedAddressesE401 from './ListSyncedAddressesE401';
 /**
  * The ListSyncedAddresses401Response model module.
  * @module model/ListSyncedAddresses401Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListSyncedAddresses401Response {
     /**

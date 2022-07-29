@@ -60,7 +60,7 @@ import ListXRPRippleTransactionsByBlockHeightR from '../model/ListXRPRippleTrans
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.7.0
+* @version 1.7.1
 */
 export default class XRPRippleApi {
 

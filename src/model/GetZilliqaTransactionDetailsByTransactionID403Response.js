@@ -17,7 +17,7 @@ import GetZilliqaTransactionDetailsByTransactionIDE403 from './GetZilliqaTransac
 /**
  * The GetZilliqaTransactionDetailsByTransactionID403Response model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionID403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetZilliqaTransactionDetailsByTransactionID403Response {
     /**

@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The SyncNewXPubE401 model module.
  * @module model/SyncNewXPubE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class SyncNewXPubE401 {
     /**

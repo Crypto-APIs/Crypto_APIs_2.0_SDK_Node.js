@@ -19,7 +19,7 @@ import XpubSyncInProgress from './XpubSyncInProgress';
 /**
  * The SyncNewXPubE422 model module.
  * @module model/SyncNewXPubE422
- * @version 1.7.0
+ * @version 1.7.1
  */
 class SyncNewXPubE422 {
     /**

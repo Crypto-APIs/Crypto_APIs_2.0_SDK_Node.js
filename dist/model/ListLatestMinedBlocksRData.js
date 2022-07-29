@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRData model module.
  * @module model/ListLatestMinedBlocksRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListLatestMinedBlocksRData = /*#__PURE__*/function () {
   /**

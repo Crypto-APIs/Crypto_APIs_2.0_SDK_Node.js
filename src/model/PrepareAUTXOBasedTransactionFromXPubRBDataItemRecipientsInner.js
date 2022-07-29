@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner {
     /**

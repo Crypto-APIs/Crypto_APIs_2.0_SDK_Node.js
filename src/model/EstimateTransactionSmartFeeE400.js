@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The EstimateTransactionSmartFeeE400 model module.
  * @module model/EstimateTransactionSmartFeeE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class EstimateTransactionSmartFeeE400 {
     /**

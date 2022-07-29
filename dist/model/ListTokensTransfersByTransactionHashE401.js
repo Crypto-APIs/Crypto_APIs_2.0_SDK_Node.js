@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensTransfersByTransactionHashE401 model module.
  * @module model/ListTokensTransfersByTransactionHashE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListTokensTransfersByTransactionHashE401 = /*#__PURE__*/function () {
   /**

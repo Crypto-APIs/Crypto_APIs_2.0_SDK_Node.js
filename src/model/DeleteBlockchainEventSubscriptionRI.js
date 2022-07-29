@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeleteBlockchainEventSubscriptionRI model module.
  * @module model/DeleteBlockchainEventSubscriptionRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 class DeleteBlockchainEventSubscriptionRI {
     /**

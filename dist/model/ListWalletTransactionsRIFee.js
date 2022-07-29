@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRIFee model module.
  * @module model/ListWalletTransactionsRIFee
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListWalletTransactionsRIFee = /*#__PURE__*/function () {
   /**

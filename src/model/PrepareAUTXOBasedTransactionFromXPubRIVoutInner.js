@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAUTXOBasedTransactionFromXPubRIVoutInner model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPubRIVoutInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPubRIVoutInner {
     /**

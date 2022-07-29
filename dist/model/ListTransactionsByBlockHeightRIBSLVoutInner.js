@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSLVoutInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSLVoutInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListTransactionsByBlockHeightRIBSLVoutInner = /*#__PURE__*/function () {
   /**

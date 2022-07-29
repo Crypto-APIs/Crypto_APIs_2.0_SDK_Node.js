@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmed model module.
  * @module model/AddressTokensTransactionConfirmed
- * @version 1.7.0
+ * @version 1.7.1
  */
 var AddressTokensTransactionConfirmed = /*#__PURE__*/function () {
   /**

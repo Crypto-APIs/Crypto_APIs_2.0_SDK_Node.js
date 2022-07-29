@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The CreateCoinsTransactionRequestFromAddressE403 model module.
  * @module model/CreateCoinsTransactionRequestFromAddressE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateCoinsTransactionRequestFromAddressE403 {
     /**

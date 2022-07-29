@@ -126,7 +126,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.7.0
+* @version 1.7.1
 */
 var HDWalletsApi = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAddressDetailsFromCallbackRITotalReceived model module.
  * @module model/GetAddressDetailsFromCallbackRITotalReceived
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetAddressDetailsFromCallbackRITotalReceived {
     /**

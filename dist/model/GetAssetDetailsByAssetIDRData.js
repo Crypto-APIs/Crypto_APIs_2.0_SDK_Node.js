@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRData model module.
  * @module model/GetAssetDetailsByAssetIDRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetAssetDetailsByAssetIDRData = /*#__PURE__*/function () {
   /**

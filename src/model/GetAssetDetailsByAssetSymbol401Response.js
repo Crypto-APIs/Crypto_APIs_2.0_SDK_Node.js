@@ -17,7 +17,7 @@ import GetAssetDetailsByAssetSymbolE401 from './GetAssetDetailsByAssetSymbolE401
 /**
  * The GetAssetDetailsByAssetSymbol401Response model module.
  * @module model/GetAssetDetailsByAssetSymbol401Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetAssetDetailsByAssetSymbol401Response {
     /**

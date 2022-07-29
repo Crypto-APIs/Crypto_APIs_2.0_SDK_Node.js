@@ -32,7 +32,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewReceivingAddressesE400 model module.
  * @module model/DeriveAndSyncNewReceivingAddressesE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 var DeriveAndSyncNewReceivingAddressesE400 = /*#__PURE__*/function () {
   /**

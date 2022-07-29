@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAnAccountBasedTransactionFromXPubRIFee model module.
  * @module model/PrepareAnAccountBasedTransactionFromXPubRIFee
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAnAccountBasedTransactionFromXPubRIFee {
     /**

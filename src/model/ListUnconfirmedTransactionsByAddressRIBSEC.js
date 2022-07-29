@@ -18,7 +18,7 @@ import ListUnconfirmedTransactionsByAddressRIBSECGasPrice from './ListUnconfirme
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSEC model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSEC
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListUnconfirmedTransactionsByAddressRIBSEC {
     /**

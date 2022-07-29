@@ -21,7 +21,7 @@ import WalletAsAServiceWalletBalanceNotEnough from './WalletAsAServiceWalletBala
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressE409 model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressE409
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateFungibleTokensTransactionRequestFromAddressE409 {
     /**

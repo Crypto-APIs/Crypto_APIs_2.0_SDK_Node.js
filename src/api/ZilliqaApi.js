@@ -57,7 +57,7 @@ import ListZilliqaTransactionsByBlockHeightR from '../model/ListZilliqaTransacti
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.7.0
+* @version 1.7.1
 */
 export default class ZilliqaApi {
 

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetXRPRippleBlockDetailsByBlockHashE400 model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetXRPRippleBlockDetailsByBlockHashE400 {
     /**

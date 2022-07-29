@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTokenGasLimitR model module.
  * @module model/EstimateTokenGasLimitR
- * @version 1.7.0
+ * @version 1.7.1
  */
 var EstimateTokenGasLimitR = /*#__PURE__*/function () {
   /**

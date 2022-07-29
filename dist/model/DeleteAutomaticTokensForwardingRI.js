@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticTokensForwardingRI model module.
  * @module model/DeleteAutomaticTokensForwardingRI
- * @version 1.7.0
+ * @version 1.7.1
  */
 var DeleteAutomaticTokensForwardingRI = /*#__PURE__*/function () {
   /**

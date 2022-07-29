@@ -17,7 +17,7 @@ import BlockHeightReachedRData from './BlockHeightReachedRData';
 /**
  * The BlockHeightReachedR model module.
  * @module model/BlockHeightReachedR
- * @version 1.7.0
+ * @version 1.7.1
  */
 class BlockHeightReachedR {
     /**

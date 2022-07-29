@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsForSpecificAmountE409 from './NewConfirme
 /**
  * The NewConfirmedInternalTransactionsForSpecificAmount409Response model module.
  * @module model/NewConfirmedInternalTransactionsForSpecificAmount409Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class NewConfirmedInternalTransactionsForSpecificAmount409Response {
     /**

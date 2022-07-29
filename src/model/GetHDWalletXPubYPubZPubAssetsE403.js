@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetHDWalletXPubYPubZPubAssetsE403 model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetHDWalletXPubYPubZPubAssetsE403 {
     /**

@@ -17,7 +17,7 @@ import ListSyncedAddressesRIS from './ListSyncedAddressesRIS';
 /**
  * The ListSyncedAddressesRIBalancesInner model module.
  * @module model/ListSyncedAddressesRIBalancesInner
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListSyncedAddressesRIBalancesInner {
     /**

@@ -17,7 +17,7 @@ import PrepareAnAccountBasedTransactionFromXPubRBData from './PrepareAnAccountBa
 /**
  * The PrepareAnAccountBasedTransactionFromXPubRB model module.
  * @module model/PrepareAnAccountBasedTransactionFromXPubRB
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAnAccountBasedTransactionFromXPubRB {
     /**

@@ -17,7 +17,7 @@ import ListInternalTransactionsByAddressAndTimeRangeRI from './ListInternalTrans
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeRData model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListInternalTransactionsByAddressAndTimeRangeRData {
     /**

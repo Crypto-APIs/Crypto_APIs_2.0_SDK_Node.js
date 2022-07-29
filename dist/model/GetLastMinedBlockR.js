@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockR model module.
  * @module model/GetLastMinedBlockR
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetLastMinedBlockR = /*#__PURE__*/function () {
   /**

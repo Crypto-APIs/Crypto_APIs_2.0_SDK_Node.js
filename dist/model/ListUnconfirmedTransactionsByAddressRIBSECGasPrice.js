@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSECGasPrice model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSECGasPrice
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListUnconfirmedTransactionsByAddressRIBSECGasPrice = /*#__PURE__*/function () {
   /**

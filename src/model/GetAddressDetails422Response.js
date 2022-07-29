@@ -17,7 +17,7 @@ import InvalidRequestBodyStructure from './InvalidRequestBodyStructure';
 /**
  * The GetAddressDetails422Response model module.
  * @module model/GetAddressDetails422Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetAddressDetails422Response {
     /**

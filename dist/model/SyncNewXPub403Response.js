@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncNewXPub403Response model module.
  * @module model/SyncNewXPub403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var SyncNewXPub403Response = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import CoinsForwardingFailData from './CoinsForwardingFailData';
 /**
  * The CoinsForwardingFail model module.
  * @module model/CoinsForwardingFail
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CoinsForwardingFail {
     /**

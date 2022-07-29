@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetZilliqaBlockDetailsByBlockHashE403 model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetZilliqaBlockDetailsByBlockHashE403 {
     /**

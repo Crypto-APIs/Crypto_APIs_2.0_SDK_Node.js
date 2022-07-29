@@ -17,7 +17,7 @@ import ListBlockchainEventsSubscriptionsE400 from './ListBlockchainEventsSubscri
 /**
  * The ListBlockchainEventsSubscriptions400Response model module.
  * @module model/ListBlockchainEventsSubscriptions400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListBlockchainEventsSubscriptions400Response {
     /**

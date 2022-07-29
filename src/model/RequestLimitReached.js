@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The RequestLimitReached model module.
  * @module model/RequestLimitReached
- * @version 1.7.0
+ * @version 1.7.1
  */
 class RequestLimitReached {
     /**

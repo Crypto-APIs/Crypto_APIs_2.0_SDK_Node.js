@@ -17,7 +17,7 @@ import PrepareAnAccountBasedTransactionFromXPubE403 from './PrepareAnAccountBase
 /**
  * The PrepareAnAccountBasedTransactionFromXPub403Response model module.
  * @module model/PrepareAnAccountBasedTransactionFromXPub403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAnAccountBasedTransactionFromXPub403Response {
     /**

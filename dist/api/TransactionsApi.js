@@ -100,7 +100,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.7.0
+* @version 1.7.1
 */
 var TransactionsApi = /*#__PURE__*/function () {
   /**

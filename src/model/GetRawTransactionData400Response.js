@@ -17,7 +17,7 @@ import GetRawTransactionDataE400 from './GetRawTransactionDataE400';
 /**
  * The GetRawTransactionData400Response model module.
  * @module model/GetRawTransactionData400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetRawTransactionData400Response {
     /**

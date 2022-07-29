@@ -17,7 +17,7 @@ import CreateAutomaticCoinsForwardingE403 from './CreateAutomaticCoinsForwarding
 /**
  * The CreateAutomaticCoinsForwarding403Response model module.
  * @module model/CreateAutomaticCoinsForwarding403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateAutomaticCoinsForwarding403Response {
     /**

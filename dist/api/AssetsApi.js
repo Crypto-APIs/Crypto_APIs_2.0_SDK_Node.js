@@ -46,7 +46,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 1.7.0
+* @version 1.7.1
 */
 var AssetsApi = /*#__PURE__*/function () {
   /**

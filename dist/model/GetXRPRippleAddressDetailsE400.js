@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetailsE400 model module.
  * @module model/GetXRPRippleAddressDetailsE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetXRPRippleAddressDetailsE400 = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityR model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityR
- * @version 1.7.0
+ * @version 1.7.1
  */
 var CreateSingleTransactionRequestFromAddressWithoutFeePriorityR = /*#__PURE__*/function () {
   /**

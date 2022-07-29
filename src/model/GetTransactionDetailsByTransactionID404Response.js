@@ -17,7 +17,7 @@ import BlockchainDataTransactionNotFound from './BlockchainDataTransactionNotFou
 /**
  * The GetTransactionDetailsByTransactionID404Response model module.
  * @module model/GetTransactionDetailsByTransactionID404Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetTransactionDetailsByTransactionID404Response {
     /**

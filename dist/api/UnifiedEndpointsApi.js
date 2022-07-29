@@ -190,7 +190,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.7.0
+* @version 1.7.1
 */
 var UnifiedEndpointsApi = /*#__PURE__*/function () {
   /**

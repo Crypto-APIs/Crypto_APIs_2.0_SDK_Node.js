@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig {
     /**

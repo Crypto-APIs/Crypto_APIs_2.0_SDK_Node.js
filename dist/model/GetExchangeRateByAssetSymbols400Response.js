@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbols400Response model module.
  * @module model/GetExchangeRateByAssetSymbols400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var GetExchangeRateByAssetSymbols400Response = /*#__PURE__*/function () {
   /**

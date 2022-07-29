@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddress400Response model module.
  * @module model/EncodeXAddress400Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 var EncodeXAddress400Response = /*#__PURE__*/function () {
   /**

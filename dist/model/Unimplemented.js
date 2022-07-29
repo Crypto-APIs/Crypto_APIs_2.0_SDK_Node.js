@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Unimplemented model module.
  * @module model/Unimplemented
- * @version 1.7.0
+ * @version 1.7.1
  */
 var Unimplemented = /*#__PURE__*/function () {
   /**

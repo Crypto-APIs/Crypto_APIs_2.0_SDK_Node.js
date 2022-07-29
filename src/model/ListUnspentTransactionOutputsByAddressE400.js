@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListUnspentTransactionOutputsByAddressE400 model module.
  * @module model/ListUnspentTransactionOutputsByAddressE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListUnspentTransactionOutputsByAddressE400 {
     /**

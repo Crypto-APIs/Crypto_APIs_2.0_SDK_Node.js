@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The ResourceNotFound model module.
  * @module model/ResourceNotFound
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ResourceNotFound {
     /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListConfirmedTransactionsByAddressE400 model module.
  * @module model/ListConfirmedTransactionsByAddressE400
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListConfirmedTransactionsByAddressE400 {
     /**

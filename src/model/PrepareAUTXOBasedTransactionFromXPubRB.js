@@ -17,7 +17,7 @@ import PrepareAUTXOBasedTransactionFromXPubRBData from './PrepareAUTXOBasedTrans
 /**
  * The PrepareAUTXOBasedTransactionFromXPubRB model module.
  * @module model/PrepareAUTXOBasedTransactionFromXPubRB
- * @version 1.7.0
+ * @version 1.7.1
  */
 class PrepareAUTXOBasedTransactionFromXPubRB {
     /**

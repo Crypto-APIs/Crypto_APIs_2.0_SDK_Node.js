@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListSupportedTokensE403 model module.
  * @module model/ListSupportedTokensE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListSupportedTokensE403 {
     /**

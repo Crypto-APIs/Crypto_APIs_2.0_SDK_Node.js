@@ -17,7 +17,7 @@ import GetNextAvailableNonceE401 from './GetNextAvailableNonceE401';
 /**
  * The GetNextAvailableNonce401Response model module.
  * @module model/GetNextAvailableNonce401Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetNextAvailableNonce401Response {
     /**

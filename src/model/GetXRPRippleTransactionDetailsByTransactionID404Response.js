@@ -17,7 +17,7 @@ import ResourceNotFound from './ResourceNotFound';
 /**
  * The GetXRPRippleTransactionDetailsByTransactionID404Response model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionID404Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetXRPRippleTransactionDetailsByTransactionID404Response {
     /**

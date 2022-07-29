@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListLatestMinedBlocksE403 model module.
  * @module model/ListLatestMinedBlocksE403
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListLatestMinedBlocksE403 {
     /**

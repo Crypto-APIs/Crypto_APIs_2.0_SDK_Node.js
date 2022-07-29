@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem {
     /**

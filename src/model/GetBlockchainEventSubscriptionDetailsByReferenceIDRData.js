@@ -17,7 +17,7 @@ import GetBlockchainEventSubscriptionDetailsByReferenceIDRI from './GetBlockchai
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDRData model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDRData
- * @version 1.7.0
+ * @version 1.7.1
  */
 class GetBlockchainEventSubscriptionDetailsByReferenceIDRData {
     /**

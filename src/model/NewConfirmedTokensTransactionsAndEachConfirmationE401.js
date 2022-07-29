@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationE401 model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationE401
- * @version 1.7.0
+ * @version 1.7.1
  */
 class NewConfirmedTokensTransactionsAndEachConfirmationE401 {
     /**

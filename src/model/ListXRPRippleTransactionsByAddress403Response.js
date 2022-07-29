@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByAddressE403 from './ListXRPRippleTransactionsB
 /**
  * The ListXRPRippleTransactionsByAddress403Response model module.
  * @module model/ListXRPRippleTransactionsByAddress403Response
- * @version 1.7.0
+ * @version 1.7.1
  */
 class ListXRPRippleTransactionsByAddress403Response {
     /**

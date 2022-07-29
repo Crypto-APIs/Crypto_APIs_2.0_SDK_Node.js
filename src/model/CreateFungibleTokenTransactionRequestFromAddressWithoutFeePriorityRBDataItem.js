@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem {
     /**

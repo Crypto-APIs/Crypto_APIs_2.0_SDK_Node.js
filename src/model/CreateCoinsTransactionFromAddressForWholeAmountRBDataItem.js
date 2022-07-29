@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRBDataItem model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRBDataItem
- * @version 1.7.0
+ * @version 1.7.1
  */
 class CreateCoinsTransactionFromAddressForWholeAmountRBDataItem {
     /**

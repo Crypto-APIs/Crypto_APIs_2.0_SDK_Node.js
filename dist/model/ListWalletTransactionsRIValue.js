@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRIValue model module.
  * @module model/ListWalletTransactionsRIValue
- * @version 1.7.0
+ * @version 1.7.1
  */
 var ListWalletTransactionsRIValue = /*#__PURE__*/function () {
   /**
