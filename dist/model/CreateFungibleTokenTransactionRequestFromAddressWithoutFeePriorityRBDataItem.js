@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem = /*#__PURE__*/function () {
   /**

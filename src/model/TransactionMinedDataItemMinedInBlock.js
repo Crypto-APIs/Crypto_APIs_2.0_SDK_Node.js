@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TransactionMinedDataItemMinedInBlock model module.
  * @module model/TransactionMinedDataItemMinedInBlock
- * @version 1.7.1
+ * @version 1.7.2
  */
 class TransactionMinedDataItemMinedInBlock {
     /**

@@ -12,8 +12,8 @@ Method | HTTP request | Description
 [**estimateGasLimit**](FeaturesApi.md#estimateGasLimit) | **POST** /blockchain-tools/{blockchain}/{network}/gas-limit | Estimate Gas Limit
 [**estimateTokenGasLimit**](FeaturesApi.md#estimateTokenGasLimit) | **POST** /blockchain-tools/{blockchain}/{network}/gas-limit/contract | Estimate Token Gas Limit
 [**getEIP1559FeeRecommendations**](FeaturesApi.md#getEIP1559FeeRecommendations) | **GET** /blockchain-tools/{blockchain}/{network}/fees/eip1559 | Get EIP 1559 Fee Recommendations
-[**prepareAUTXOBasedTransactionFromXPub**](FeaturesApi.md#prepareAUTXOBasedTransactionFromXPub) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/prepare-utxo-transaction | Prepare A UTXO-Based Transaction From xPub
-[**prepareAnAccountBasedTransactionFromXPub**](FeaturesApi.md#prepareAnAccountBasedTransactionFromXPub) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/prepare-account-based-transaction | Prepare An Account-Based Transaction From xPub
+[**prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub**](FeaturesApi.md#prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/prepare-utxo-transaction | Prepare A UTXO-Based Transaction From HD Wallet (xPub, yPub, zPub)
+[**prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub**](FeaturesApi.md#prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/prepare-account-based-transaction | Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
 [**validateAddress**](FeaturesApi.md#validateAddress) | **POST** /blockchain-tools/{blockchain}/{network}/addresses/validate | Validate Address
 
 
@@ -490,11 +490,11 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## prepareAUTXOBasedTransactionFromXPub
+## prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub
 
-> PrepareAUTXOBasedTransactionFromXPubR prepareAUTXOBasedTransactionFromXPub(blockchain, network, opts)
+> PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts)
 
-Prepare A UTXO-Based Transaction From xPub
+Prepare A UTXO-Based Transaction From HD Wallet (xPub, yPub, zPub)
 
 Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the &#x60;selectionStrategy&#x60; and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
 
@@ -514,9 +514,9 @@ let blockchain = bitcoin; // String |
 let network = testnet; // String | 
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'prepareAUTXOBasedTransactionFromXPubRB': new Cryptoapis.PrepareAUTXOBasedTransactionFromXPubRB() // PrepareAUTXOBasedTransactionFromXPubRB | 
+  'prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB': new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB() // PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB | 
 };
-apiInstance.prepareAUTXOBasedTransactionFromXPub(blockchain, network, opts).then((data) => {
+apiInstance.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -532,11 +532,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**|  | 
  **network** | **String**|  | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **prepareAUTXOBasedTransactionFromXPubRB** | [**PrepareAUTXOBasedTransactionFromXPubRB**](PrepareAUTXOBasedTransactionFromXPubRB.md)|  | [optional] 
+ **prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB** | [**PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB.md)|  | [optional] 
 
 ### Return type
 
-[**PrepareAUTXOBasedTransactionFromXPubR**](PrepareAUTXOBasedTransactionFromXPubR.md)
+[**PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR.md)
 
 ### Authorization
 
@@ -548,11 +548,11 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## prepareAnAccountBasedTransactionFromXPub
+## prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub
 
-> PrepareAnAccountBasedTransactionFromXPubR prepareAnAccountBasedTransactionFromXPub(blockchain, network, opts)
+> PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts)
 
-Prepare An Account-Based Transaction From xPub
+Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
 
 Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
 
@@ -572,9 +572,9 @@ let blockchain = ethereum; // String |
 let network = ropsten; // String | 
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'prepareAnAccountBasedTransactionFromXPubRB': new Cryptoapis.PrepareAnAccountBasedTransactionFromXPubRB() // PrepareAnAccountBasedTransactionFromXPubRB | 
+  'prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB': new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB() // PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB | 
 };
-apiInstance.prepareAnAccountBasedTransactionFromXPub(blockchain, network, opts).then((data) => {
+apiInstance.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -590,11 +590,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**|  | 
  **network** | **String**|  | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **prepareAnAccountBasedTransactionFromXPubRB** | [**PrepareAnAccountBasedTransactionFromXPubRB**](PrepareAnAccountBasedTransactionFromXPubRB.md)|  | [optional] 
+ **prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB** | [**PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB**](PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB.md)|  | [optional] 
 
 ### Return type
 
-[**PrepareAnAccountBasedTransactionFromXPubR**](PrepareAnAccountBasedTransactionFromXPubR.md)
+[**PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR**](PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR.md)
 
 ### Authorization
 

@@ -17,7 +17,7 @@ import GetNextAvailableNonceRData from './GetNextAvailableNonceRData';
 /**
  * The GetNextAvailableNonceR model module.
  * @module model/GetNextAvailableNonceR
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetNextAvailableNonceR {
     /**

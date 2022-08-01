@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ActivateBlockchainEventSubscriptionE403 model module.
  * @module model/ActivateBlockchainEventSubscriptionE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ActivateBlockchainEventSubscriptionE403 {
     /**

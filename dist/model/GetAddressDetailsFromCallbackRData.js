@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackRData model module.
  * @module model/GetAddressDetailsFromCallbackRData
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetAddressDetailsFromCallbackRData = /*#__PURE__*/function () {
   /**

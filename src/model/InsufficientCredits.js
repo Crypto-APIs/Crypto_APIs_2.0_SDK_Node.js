@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The InsufficientCredits model module.
  * @module model/InsufficientCredits
- * @version 1.7.1
+ * @version 1.7.2
  */
 class InsufficientCredits {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsR model module.
  * @module model/GetAddressDetailsR
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetAddressDetailsR = /*#__PURE__*/function () {
   /**

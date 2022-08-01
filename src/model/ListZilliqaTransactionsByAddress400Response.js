@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByAddressE400 from './ListZilliqaTransactionsByAdd
 /**
  * The ListZilliqaTransactionsByAddress400Response model module.
  * @module model/ListZilliqaTransactionsByAddress400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListZilliqaTransactionsByAddress400Response {
     /**

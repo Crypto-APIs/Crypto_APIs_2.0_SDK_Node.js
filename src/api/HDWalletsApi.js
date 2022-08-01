@@ -60,18 +60,18 @@ import SyncHDWalletXPubYPubZPub409Response from '../model/SyncHDWalletXPubYPubZP
 import SyncHDWalletXPubYPubZPub422Response from '../model/SyncHDWalletXPubYPubZPub422Response';
 import SyncHDWalletXPubYPubZPubR from '../model/SyncHDWalletXPubYPubZPubR';
 import SyncHDWalletXPubYPubZPubRB from '../model/SyncHDWalletXPubYPubZPubRB';
-import SyncNewXPub400Response from '../model/SyncNewXPub400Response';
-import SyncNewXPub401Response from '../model/SyncNewXPub401Response';
-import SyncNewXPub403Response from '../model/SyncNewXPub403Response';
-import SyncNewXPub409Response from '../model/SyncNewXPub409Response';
-import SyncNewXPub422Response from '../model/SyncNewXPub422Response';
-import SyncNewXPubR from '../model/SyncNewXPubR';
-import SyncNewXPubRB from '../model/SyncNewXPubRB';
+import SyncNewHDWalletXPubYPubZPub400Response from '../model/SyncNewHDWalletXPubYPubZPub400Response';
+import SyncNewHDWalletXPubYPubZPub401Response from '../model/SyncNewHDWalletXPubYPubZPub401Response';
+import SyncNewHDWalletXPubYPubZPub403Response from '../model/SyncNewHDWalletXPubYPubZPub403Response';
+import SyncNewHDWalletXPubYPubZPub409Response from '../model/SyncNewHDWalletXPubYPubZPub409Response';
+import SyncNewHDWalletXPubYPubZPub422Response from '../model/SyncNewHDWalletXPubYPubZPub422Response';
+import SyncNewHDWalletXPubYPubZPubR from '../model/SyncNewHDWalletXPubYPubZPubR';
+import SyncNewHDWalletXPubYPubZPubRB from '../model/SyncNewHDWalletXPubYPubZPubRB';
 
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.7.1
+* @version 1.7.2
 */
 export default class HDWalletsApi {
 
@@ -518,7 +518,7 @@ export default class HDWalletsApi {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/String} opts.addressFormat Represents the format of the address.
+     * @param {module:model/String} opts.addressFormat Defines the address format value.
      * @param {Boolean} opts.isChangeAddress Defines if the address is change addres or not. (default to true)
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
@@ -576,7 +576,7 @@ export default class HDWalletsApi {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/String} opts.addressFormat Represents the format of the address.
+     * @param {module:model/String} opts.addressFormat Defines the address format value.
      * @param {Boolean} opts.isChangeAddress Defines if the address is change addres or not. (default to true)
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
@@ -654,25 +654,25 @@ export default class HDWalletsApi {
 
 
     /**
-     * Sync New xPub
+     * Sync New HD Wallet (xPub, yPub, zPub)
      * Through this endpoint users can add a brand new xPub to the Crypto APIs system to be ready for deriving. Unlike our other similar endpoint “Sync HD Wallet (xPub, yPub, zPub)”, this endpoint does not create new addresses nor syncs old data.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/SyncNewXPubRB} opts.syncNewXPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SyncNewXPubR} and HTTP response
+     * @param {module:model/SyncNewHDWalletXPubYPubZPubRB} opts.syncNewHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SyncNewHDWalletXPubYPubZPubR} and HTTP response
      */
-    syncNewXPubWithHttpInfo(blockchain, network, opts) {
+    syncNewHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      let postBody = opts['syncNewXPubRB'];
+      let postBody = opts['syncNewHDWalletXPubYPubZPubRB'];
       // verify the required parameter 'blockchain' is set
       if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling syncNewXPub");
+        throw new Error("Missing the required parameter 'blockchain' when calling syncNewHDWalletXPubYPubZPub");
       }
       // verify the required parameter 'network' is set
       if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling syncNewXPub");
+        throw new Error("Missing the required parameter 'network' when calling syncNewHDWalletXPubYPubZPub");
       }
 
       let pathParams = {
@@ -690,7 +690,7 @@ export default class HDWalletsApi {
       let authNames = ['ApiKey'];
       let contentTypes = ['application/json'];
       let accepts = ['application/json'];
-      let returnType = SyncNewXPubR;
+      let returnType = SyncNewHDWalletXPubYPubZPubR;
       return this.apiClient.callApi(
         '/blockchain-data/{blockchain}/{network}/hd/sync-new', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
@@ -699,17 +699,17 @@ export default class HDWalletsApi {
     }
 
     /**
-     * Sync New xPub
+     * Sync New HD Wallet (xPub, yPub, zPub)
      * Through this endpoint users can add a brand new xPub to the Crypto APIs system to be ready for deriving. Unlike our other similar endpoint “Sync HD Wallet (xPub, yPub, zPub)”, this endpoint does not create new addresses nor syncs old data.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/SyncNewXPubRB} opts.syncNewXPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SyncNewXPubR}
+     * @param {module:model/SyncNewHDWalletXPubYPubZPubRB} opts.syncNewHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SyncNewHDWalletXPubYPubZPubR}
      */
-    syncNewXPub(blockchain, network, opts) {
-      return this.syncNewXPubWithHttpInfo(blockchain, network, opts)
+    syncNewHDWalletXPubYPubZPub(blockchain, network, opts) {
+      return this.syncNewHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

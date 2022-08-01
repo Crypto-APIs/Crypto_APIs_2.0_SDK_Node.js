@@ -17,7 +17,7 @@ import EncodeXAddressE403 from './EncodeXAddressE403';
 /**
  * The EncodeXAddress403Response model module.
  * @module model/EncodeXAddress403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class EncodeXAddress403Response {
     /**

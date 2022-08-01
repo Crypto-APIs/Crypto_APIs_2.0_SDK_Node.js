@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListUnspentTransactionOutputsByAddressE403 model module.
  * @module model/ListUnspentTransactionOutputsByAddressE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListUnspentTransactionOutputsByAddressE403 {
     /**

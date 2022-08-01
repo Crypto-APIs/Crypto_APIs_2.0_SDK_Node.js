@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The NewBlockE401 model module.
  * @module model/NewBlockE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class NewBlockE401 {
     /**

@@ -17,7 +17,7 @@ import GetLastMinedBlockE400 from './GetLastMinedBlockE400';
 /**
  * The GetLastMinedBlock400Response model module.
  * @module model/GetLastMinedBlock400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetLastMinedBlock400Response {
     /**

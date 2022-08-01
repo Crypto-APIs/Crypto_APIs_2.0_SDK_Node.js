@@ -17,7 +17,7 @@ import DecodeRawTransactionHexRISLVinInnerScriptSig from './DecodeRawTransaction
 /**
  * The DecodeRawTransactionHexRISLVinInner model module.
  * @module model/DecodeRawTransactionHexRISLVinInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 class DecodeRawTransactionHexRISLVinInner {
     /**

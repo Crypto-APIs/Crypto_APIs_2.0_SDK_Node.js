@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListZilliqaTransactionsByAddressRIRecipientsInner model module.
  * @module model/ListZilliqaTransactionsByAddressRIRecipientsInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListZilliqaTransactionsByAddressRIRecipientsInner {
     /**

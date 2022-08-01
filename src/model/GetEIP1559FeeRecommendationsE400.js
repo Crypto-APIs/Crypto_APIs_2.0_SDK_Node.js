@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetEIP1559FeeRecommendationsE400 model module.
  * @module model/GetEIP1559FeeRecommendationsE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetEIP1559FeeRecommendationsE400 {
     /**

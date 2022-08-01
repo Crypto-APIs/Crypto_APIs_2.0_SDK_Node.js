@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The DeleteBlockchainEventSubscriptionE400 model module.
  * @module model/DeleteBlockchainEventSubscriptionE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 class DeleteBlockchainEventSubscriptionE400 {
     /**

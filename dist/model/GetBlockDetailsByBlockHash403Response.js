@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHash403Response model module.
  * @module model/GetBlockDetailsByBlockHash403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetBlockDetailsByBlockHash403Response = /*#__PURE__*/function () {
   /**

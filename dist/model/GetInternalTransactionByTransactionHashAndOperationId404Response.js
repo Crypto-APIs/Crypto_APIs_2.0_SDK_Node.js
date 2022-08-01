@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetInternalTransactionByTransactionHashAndOperationId404Response model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationId404Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetInternalTransactionByTransactionHashAndOperationId404Response = /*#__PURE__*/function () {
   /**

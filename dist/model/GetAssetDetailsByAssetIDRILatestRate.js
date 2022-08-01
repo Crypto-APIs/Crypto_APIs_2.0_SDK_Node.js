@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRILatestRate model module.
  * @module model/GetAssetDetailsByAssetIDRILatestRate
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetAssetDetailsByAssetIDRILatestRate = /*#__PURE__*/function () {
   /**
@@ -87,7 +87,7 @@ var GetAssetDetailsByAssetIDRILatestRate = /*#__PURE__*/function () {
 
 GetAssetDetailsByAssetIDRILatestRate.prototype['amount'] = undefined;
 /**
- * Defines when the price was calculated in UNIX timestamp.
+ * Defines when the price was calculated in UNIX timestamp. Oldest possible timestamp is 30 days.
  * @member {Number} calculationTimestamp
  */
 

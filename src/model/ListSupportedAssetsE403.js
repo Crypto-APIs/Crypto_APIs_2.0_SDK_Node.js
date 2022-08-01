@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListSupportedAssetsE403 model module.
  * @module model/ListSupportedAssetsE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListSupportedAssetsE403 {
     /**

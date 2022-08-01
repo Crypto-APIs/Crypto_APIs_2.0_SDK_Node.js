@@ -17,7 +17,7 @@ import ListInternalTransactionsByAddressAndTimeRangeE403 from './ListInternalTra
 /**
  * The ListInternalTransactionsByAddressAndTimeRange403Response model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRange403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListInternalTransactionsByAddressAndTimeRange403Response {
     /**

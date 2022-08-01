@@ -70,7 +70,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.7.1
+* @version 1.7.2
 */
 var TokensApi = /*#__PURE__*/function () {
   /**

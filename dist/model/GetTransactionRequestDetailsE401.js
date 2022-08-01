@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetailsE401 model module.
  * @module model/GetTransactionRequestDetailsE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetTransactionRequestDetailsE401 = /*#__PURE__*/function () {
   /**

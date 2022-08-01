@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddress401Response model module.
  * @module model/ListConfirmedTokensTransfersByAddress401Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListConfirmedTokensTransfersByAddress401Response = /*#__PURE__*/function () {
   /**

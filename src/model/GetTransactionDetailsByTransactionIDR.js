@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRData from './GetTransactionDetailsBy
 /**
  * The GetTransactionDetailsByTransactionIDR model module.
  * @module model/GetTransactionDetailsByTransactionIDR
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetTransactionDetailsByTransactionIDR {
     /**

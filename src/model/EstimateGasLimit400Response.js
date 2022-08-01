@@ -17,7 +17,7 @@ import EstimateGasLimitE400 from './EstimateGasLimitE400';
 /**
  * The EstimateGasLimit400Response model module.
  * @module model/EstimateGasLimit400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class EstimateGasLimit400Response {
     /**

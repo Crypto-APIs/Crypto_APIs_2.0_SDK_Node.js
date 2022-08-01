@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTokenDetailsByContractAddress403Response model module.
  * @module model/GetTokenDetailsByContractAddress403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetTokenDetailsByContractAddress403Response = /*#__PURE__*/function () {
   /**

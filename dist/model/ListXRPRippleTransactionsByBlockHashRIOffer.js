@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRIOffer model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRIOffer
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListXRPRippleTransactionsByBlockHashRIOffer = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import GetXRPRippleBlockDetailsByBlockHeightE403 from './GetXRPRippleBlockDetail
 /**
  * The GetXRPRippleBlockDetailsByBlockHeight403Response model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeight403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetXRPRippleBlockDetailsByBlockHeight403Response {
     /**

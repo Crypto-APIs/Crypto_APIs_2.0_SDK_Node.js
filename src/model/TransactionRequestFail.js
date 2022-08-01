@@ -17,7 +17,7 @@ import TransactionRequestFailData from './TransactionRequestFailData';
 /**
  * The TransactionRequestFail model module.
  * @module model/TransactionRequestFail
- * @version 1.7.1
+ * @version 1.7.2
  */
 class TransactionRequestFail {
     /**

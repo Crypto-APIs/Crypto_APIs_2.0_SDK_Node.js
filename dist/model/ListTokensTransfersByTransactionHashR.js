@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensTransfersByTransactionHashR model module.
  * @module model/ListTokensTransfersByTransactionHashR
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListTokensTransfersByTransactionHashR = /*#__PURE__*/function () {
   /**

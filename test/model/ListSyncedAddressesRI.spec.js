@@ -60,12 +60,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property balances (base name: "balances")', function() {
-      // uncomment below and update the code to test the property balances
-      //var instance = new Cryptoapis.ListSyncedAddressesRI();
-      //expect(instance).to.be();
-    });
-
     it('should have the property index (base name: "index")', function() {
       // uncomment below and update the code to test the property index
       //var instance = new Cryptoapis.ListSyncedAddressesRI();

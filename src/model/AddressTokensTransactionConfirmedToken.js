@@ -20,7 +20,7 @@ import AddressTokensTransactionConfirmedOmni from './AddressTokensTransactionCon
 /**
  * The AddressTokensTransactionConfirmedToken model module.
  * @module model/AddressTokensTransactionConfirmedToken
- * @version 1.7.1
+ * @version 1.7.2
  */
 class AddressTokensTransactionConfirmedToken {
     /**

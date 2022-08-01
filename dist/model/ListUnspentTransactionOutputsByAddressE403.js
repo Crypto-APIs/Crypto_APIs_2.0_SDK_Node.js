@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnspentTransactionOutputsByAddressE403 model module.
  * @module model/ListUnspentTransactionOutputsByAddressE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListUnspentTransactionOutputsByAddressE403 = /*#__PURE__*/function () {
   /**

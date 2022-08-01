@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByBlockHashE403 from './ListZilliqaTransactionsByB
 /**
  * The ListZilliqaTransactionsByBlockHash403Response model module.
  * @module model/ListZilliqaTransactionsByBlockHash403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListZilliqaTransactionsByBlockHash403Response {
     /**

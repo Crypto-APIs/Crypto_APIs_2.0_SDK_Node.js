@@ -50,7 +50,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactionsRIBS model module.
  * @module model/ListAllUnconfirmedTransactionsRIBS
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListAllUnconfirmedTransactionsRIBS = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListDepositAddressesRIFungibleTokensInner model module.
  * @module model/ListDepositAddressesRIFungibleTokensInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListDepositAddressesRIFungibleTokensInner {
     /**

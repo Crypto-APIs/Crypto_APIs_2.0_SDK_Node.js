@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackE401 model module.
  * @module model/GetAddressDetailsFromCallbackE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetAddressDetailsFromCallbackE401 = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConfirmedInternalTransactionForCertainAmountOrHigher model module.
  * @module model/ConfirmedInternalTransactionForCertainAmountOrHigher
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ConfirmedInternalTransactionForCertainAmountOrHigher = /*#__PURE__*/function () {
   /**

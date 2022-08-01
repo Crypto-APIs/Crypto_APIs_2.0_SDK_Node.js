@@ -43,7 +43,7 @@ import ListUnconfirmedTokensTransfersByAddressR from '../model/ListUnconfirmedTo
 /**
 * Tokens service.
 * @module api/TokensApi
-* @version 1.7.1
+* @version 1.7.2
 */
 export default class TokensApi {
 

@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBCVoutInnerScriptPubKey from './G
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBCVoutInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetTransactionDetailsByTransactionIDRIBSBCVoutInner {
     /**

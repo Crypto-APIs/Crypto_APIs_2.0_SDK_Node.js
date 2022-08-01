@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListSupportedTokensRI model module.
  * @module model/ListSupportedTokensRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListSupportedTokensRI {
     /**

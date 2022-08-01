@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListSupportedAssetsE400 model module.
  * @module model/ListSupportedAssetsE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListSupportedAssetsE400 {
     /**

@@ -17,7 +17,7 @@ import AddressCoinsTransactionConfirmedDataItemMinedInBlock from './AddressCoins
 /**
  * The ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem model module.
  * @module model/ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem {
     /**

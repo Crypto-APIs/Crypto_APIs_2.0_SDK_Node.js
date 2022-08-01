@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EstimateTokenGasLimitRBDataItem model module.
  * @module model/EstimateTokenGasLimitRBDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 class EstimateTokenGasLimitRBDataItem {
     /**

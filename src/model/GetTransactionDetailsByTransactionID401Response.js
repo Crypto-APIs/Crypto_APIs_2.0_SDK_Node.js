@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDE401 from './GetTransactionDetailsByT
 /**
  * The GetTransactionDetailsByTransactionID401Response model module.
  * @module model/GetTransactionDetailsByTransactionID401Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetTransactionDetailsByTransactionID401Response {
     /**

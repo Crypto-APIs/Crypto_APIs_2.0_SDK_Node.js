@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByAddressAndTimeRangeE403 from './ListXRPRippleT
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRange403Response model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRange403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListXRPRippleTransactionsByAddressAndTimeRange403Response {
     /**

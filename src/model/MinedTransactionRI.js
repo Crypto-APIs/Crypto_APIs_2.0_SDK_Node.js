@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The MinedTransactionRI model module.
  * @module model/MinedTransactionRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 class MinedTransactionRI {
     /**

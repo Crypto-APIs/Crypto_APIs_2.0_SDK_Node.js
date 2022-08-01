@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddressRBData model module.
  * @module model/ValidateAddressRBData
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ValidateAddressRBData = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackE400 model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetBlockDetailsByBlockHeightFromCallbackE400 {
     /**

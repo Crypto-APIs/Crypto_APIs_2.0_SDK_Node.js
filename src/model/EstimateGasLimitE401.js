@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The EstimateGasLimitE401 model module.
  * @module model/EstimateGasLimitE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class EstimateGasLimitE401 {
     /**

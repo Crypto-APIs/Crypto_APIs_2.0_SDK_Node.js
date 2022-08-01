@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetailsRData model module.
  * @module model/GetTransactionRequestDetailsRData
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetTransactionRequestDetailsRData = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import DeriveAndSyncNewChangeAddressesE400 from './DeriveAndSyncNewChangeAddress
 /**
  * The DeriveAndSyncNewChangeAddresses400Response model module.
  * @module model/DeriveAndSyncNewChangeAddresses400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class DeriveAndSyncNewChangeAddresses400Response {
     /**

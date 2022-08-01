@@ -58,7 +58,7 @@ import GetAddressDetails500Response from '../model/GetAddressDetails500Response'
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.7.1
+* @version 1.7.2
 */
 export default class TransactionsApi {
 

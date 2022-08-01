@@ -17,7 +17,7 @@ import GetZilliqaBlockDetailsByBlockHashE403 from './GetZilliqaBlockDetailsByBlo
 /**
  * The GetZilliqaBlockDetailsByBlockHash403Response model module.
  * @module model/GetZilliqaBlockDetailsByBlockHash403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetZilliqaBlockDetailsByBlockHash403Response {
     /**

@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The AlreadyExists model module.
  * @module model/AlreadyExists
- * @version 1.7.1
+ * @version 1.7.2
  */
 class AlreadyExists {
     /**

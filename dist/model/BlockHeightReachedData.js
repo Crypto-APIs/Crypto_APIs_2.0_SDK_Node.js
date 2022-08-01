@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReachedData model module.
  * @module model/BlockHeightReachedData
- * @version 1.7.1
+ * @version 1.7.2
  */
 var BlockHeightReachedData = /*#__PURE__*/function () {
   /**

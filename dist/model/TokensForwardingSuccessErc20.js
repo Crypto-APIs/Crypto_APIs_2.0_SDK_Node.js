@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessErc20 model module.
  * @module model/TokensForwardingSuccessErc20
- * @version 1.7.1
+ * @version 1.7.2
  */
 var TokensForwardingSuccessErc20 = /*#__PURE__*/function () {
   /**

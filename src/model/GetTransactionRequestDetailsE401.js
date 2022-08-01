@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetTransactionRequestDetailsE401 model module.
  * @module model/GetTransactionRequestDetailsE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetTransactionRequestDetailsE401 {
     /**

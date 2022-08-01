@@ -17,7 +17,7 @@ import ListTransactionsByBlockHashE403 from './ListTransactionsByBlockHashE403';
 /**
  * The ListTransactionsByBlockHash403Response model module.
  * @module model/ListTransactionsByBlockHash403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListTransactionsByBlockHash403Response {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwardingRData model module.
  * @module model/CreateAutomaticCoinsForwardingRData
- * @version 1.7.1
+ * @version 1.7.2
  */
 var CreateAutomaticCoinsForwardingRData = /*#__PURE__*/function () {
   /**

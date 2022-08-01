@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetExchangeRateByAssetsIDsE403 model module.
  * @module model/GetExchangeRateByAssetsIDsE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetExchangeRateByAssetsIDsE403 {
     /**

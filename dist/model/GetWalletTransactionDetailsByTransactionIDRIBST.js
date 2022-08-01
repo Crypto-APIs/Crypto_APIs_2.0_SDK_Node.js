@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBST model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBST
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetWalletTransactionDetailsByTransactionIDRIBST = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockRBDataItem model module.
  * @module model/NewBlockRBDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 var NewBlockRBDataItem = /*#__PURE__*/function () {
   /**

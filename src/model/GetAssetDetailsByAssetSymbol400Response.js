@@ -17,7 +17,7 @@ import GetAssetDetailsByAssetSymbolE400 from './GetAssetDetailsByAssetSymbolE400
 /**
  * The GetAssetDetailsByAssetSymbol400Response model module.
  * @module model/GetAssetDetailsByAssetSymbol400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetAssetDetailsByAssetSymbol400Response {
     /**

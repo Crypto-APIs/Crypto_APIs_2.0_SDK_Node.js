@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The EstimateTransactionSmartFeeE403 model module.
  * @module model/EstimateTransactionSmartFeeE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class EstimateTransactionSmartFeeE403 {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransaction409Response model module.
  * @module model/BroadcastLocallySignedTransaction409Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var BroadcastLocallySignedTransaction409Response = /*#__PURE__*/function () {
   /**

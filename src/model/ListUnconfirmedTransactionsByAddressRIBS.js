@@ -32,7 +32,7 @@ import ListUnconfirmedTransactionsByAddressRIBSZ from './ListUnconfirmedTransact
 /**
  * The ListUnconfirmedTransactionsByAddressRIBS model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBS
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListUnconfirmedTransactionsByAddressRIBS {
     /**

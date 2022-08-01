@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI = /*#__PURE__*/function () {
   /**

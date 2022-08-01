@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletE400 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 var CreateCoinsTransactionRequestFromWalletE400 = /*#__PURE__*/function () {
   /**

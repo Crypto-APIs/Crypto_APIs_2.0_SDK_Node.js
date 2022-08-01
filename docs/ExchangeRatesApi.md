@@ -33,7 +33,7 @@ let fromAssetSymbol = btc; // String | Defines the base asset symbol to get a ra
 let toAssetSymbol = usd; // String | Defines the relation asset symbol in which the base asset rate will be displayed.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'calculationTimestamp': 1635514425 // Number | Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+  'calculationTimestamp': 1635514425 // Number | Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
 };
 apiInstance.getExchangeRateByAssetSymbols(fromAssetSymbol, toAssetSymbol, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
  **fromAssetSymbol** | **String**| Defines the base asset symbol to get a rate for. | 
  **toAssetSymbol** | **String**| Defines the relation asset symbol in which the base asset rate will be displayed. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **calculationTimestamp** | **Number**| Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. | [optional] 
+ **calculationTimestamp** | **Number**| Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days. | [optional] 
 
 ### Return type
 
@@ -91,7 +91,7 @@ let fromAssetId = 5b1ea92e584bf50020130612; // String | Defines the base asset R
 let toAssetId = 5b1ea92e584bf50020130615; // String | Defines the relation asset Reference ID in which the base asset rate will be displayed.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'calculationTimestamp': 1618577849 // Number | Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+  'calculationTimestamp': 1618577849 // Number | Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
 };
 apiInstance.getExchangeRateByAssetsIDs(fromAssetId, toAssetId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
  **fromAssetId** | **String**| Defines the base asset Reference ID to get a rate for. | 
  **toAssetId** | **String**| Defines the relation asset Reference ID in which the base asset rate will be displayed. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **calculationTimestamp** | **Number**| Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. | [optional] 
+ **calculationTimestamp** | **Number**| Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days. | [optional] 
 
 ### Return type
 

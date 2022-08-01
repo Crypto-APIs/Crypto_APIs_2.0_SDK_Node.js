@@ -17,7 +17,7 @@ import GetHDWalletXPubYPubZPubDetailsE422 from './GetHDWalletXPubYPubZPubDetails
 /**
  * The GetHDWalletXPubYPubZPubDetails422Response model module.
  * @module model/GetHDWalletXPubYPubZPubDetails422Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetHDWalletXPubYPubZPubDetails422Response {
     /**

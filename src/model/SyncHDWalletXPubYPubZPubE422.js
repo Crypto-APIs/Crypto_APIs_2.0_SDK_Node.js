@@ -19,7 +19,7 @@ import XpubSyncInProgress from './XpubSyncInProgress';
 /**
  * The SyncHDWalletXPubYPubZPubE422 model module.
  * @module model/SyncHDWalletXPubYPubZPubE422
- * @version 1.7.1
+ * @version 1.7.2
  */
 class SyncHDWalletXPubYPubZPubE422 {
     /**

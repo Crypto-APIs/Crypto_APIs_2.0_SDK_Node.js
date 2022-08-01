@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByAddressE400 model module.
  * @module model/ListZilliqaTransactionsByAddressE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListZilliqaTransactionsByAddressE400 = /*#__PURE__*/function () {
   /**

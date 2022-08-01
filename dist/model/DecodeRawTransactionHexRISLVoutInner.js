@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISLVoutInner model module.
  * @module model/DecodeRawTransactionHexRISLVoutInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 var DecodeRawTransactionHexRISLVoutInner = /*#__PURE__*/function () {
   /**

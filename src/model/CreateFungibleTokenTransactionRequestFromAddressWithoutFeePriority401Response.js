@@ -17,7 +17,7 @@ import CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401 fr
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority401Response model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority401Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority401Response {
     /**

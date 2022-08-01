@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DecodeRawTransactionHexRISB22 model module.
  * @module model/DecodeRawTransactionHexRISB22
- * @version 1.7.1
+ * @version 1.7.2
  */
 class DecodeRawTransactionHexRISB22 {
     /**

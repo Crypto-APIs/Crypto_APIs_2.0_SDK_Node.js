@@ -17,7 +17,7 @@ import GetBlockchainEventSubscriptionDetailsByReferenceIDE403 from './GetBlockch
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceID403Response model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceID403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetBlockchainEventSubscriptionDetailsByReferenceID403Response {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BlockMinedDataItem model module.
  * @module model/BlockMinedDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 class BlockMinedDataItem {
     /**

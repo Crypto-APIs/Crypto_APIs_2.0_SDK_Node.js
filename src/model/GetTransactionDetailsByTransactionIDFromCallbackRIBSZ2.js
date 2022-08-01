@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice from './Ge
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountRData model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountRData
- * @version 1.7.1
+ * @version 1.7.2
  */
 var NewConfirmedCoinsTransactionsForSpecificAmountRData = /*#__PURE__*/function () {
   /**

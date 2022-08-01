@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRIConfirmedBalance model module.
  * @module model/GetWalletAssetDetailsRIConfirmedBalance
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetWalletAssetDetailsRIConfirmedBalance = /*#__PURE__*/function () {
   /**

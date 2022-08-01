@@ -40,7 +40,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRIS model module.
  * @module model/DecodeRawTransactionHexRIS
- * @version 1.7.1
+ * @version 1.7.2
  */
 var DecodeRawTransactionHexRIS = /*#__PURE__*/function () {
   /**

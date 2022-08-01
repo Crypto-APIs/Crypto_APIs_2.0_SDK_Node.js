@@ -22,7 +22,7 @@ import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './Wal
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403 model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403 {
     /**

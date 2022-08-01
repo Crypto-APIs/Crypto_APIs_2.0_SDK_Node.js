@@ -17,7 +17,7 @@ import ListTokensTransfersByTransactionHashE403 from './ListTokensTransfersByTra
 /**
  * The ListTokensTransfersByTransactionHash403Response model module.
  * @module model/ListTokensTransfersByTransactionHash403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListTokensTransfersByTransactionHash403Response {
     /**

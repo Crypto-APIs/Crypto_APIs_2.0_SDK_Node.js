@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlock403Response model module.
  * @module model/GetLatestMinedZilliqaBlock403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetLatestMinedZilliqaBlock403Response = /*#__PURE__*/function () {
   /**

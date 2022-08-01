@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListConfirmedTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**

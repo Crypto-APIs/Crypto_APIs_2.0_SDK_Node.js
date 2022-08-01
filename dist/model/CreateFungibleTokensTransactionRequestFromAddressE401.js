@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressE401 model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 var CreateFungibleTokensTransactionRequestFromAddressE401 = /*#__PURE__*/function () {
   /**

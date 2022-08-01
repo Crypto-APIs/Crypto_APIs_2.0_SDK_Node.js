@@ -101,19 +101,19 @@ var _SyncHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/SyncHD
 
 var _SyncHDWalletXPubYPubZPubRB = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPubRB"));
 
-var _SyncNewXPub400Response = _interopRequireDefault(require("../model/SyncNewXPub400Response"));
+var _SyncNewHDWalletXPubYPubZPub400Response = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPub400Response"));
 
-var _SyncNewXPub401Response = _interopRequireDefault(require("../model/SyncNewXPub401Response"));
+var _SyncNewHDWalletXPubYPubZPub401Response = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPub401Response"));
 
-var _SyncNewXPub403Response = _interopRequireDefault(require("../model/SyncNewXPub403Response"));
+var _SyncNewHDWalletXPubYPubZPub403Response = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPub403Response"));
 
-var _SyncNewXPub409Response = _interopRequireDefault(require("../model/SyncNewXPub409Response"));
+var _SyncNewHDWalletXPubYPubZPub409Response = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPub409Response"));
 
-var _SyncNewXPub422Response = _interopRequireDefault(require("../model/SyncNewXPub422Response"));
+var _SyncNewHDWalletXPubYPubZPub422Response = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPub422Response"));
 
-var _SyncNewXPubR = _interopRequireDefault(require("../model/SyncNewXPubR"));
+var _SyncNewHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPubR"));
 
-var _SyncNewXPubRB = _interopRequireDefault(require("../model/SyncNewXPubRB"));
+var _SyncNewHDWalletXPubYPubZPubRB = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPubRB"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -126,7 +126,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.7.1
+* @version 1.7.2
 */
 var HDWalletsApi = /*#__PURE__*/function () {
   /**
@@ -552,7 +552,7 @@ var HDWalletsApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/String} opts.addressFormat Represents the format of the address.
+     * @param {module:model/String} opts.addressFormat Defines the address format value.
      * @param {Boolean} opts.isChangeAddress Defines if the address is change addres or not. (default to true)
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
@@ -607,7 +607,7 @@ var HDWalletsApi = /*#__PURE__*/function () {
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/String} opts.addressFormat Represents the format of the address.
+     * @param {module:model/String} opts.addressFormat Defines the address format value.
      * @param {Boolean} opts.isChangeAddress Defines if the address is change addres or not. (default to true)
      * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
@@ -681,29 +681,29 @@ var HDWalletsApi = /*#__PURE__*/function () {
       });
     }
     /**
-     * Sync New xPub
+     * Sync New HD Wallet (xPub, yPub, zPub)
      * Through this endpoint users can add a brand new xPub to the Crypto APIs system to be ready for deriving. Unlike our other similar endpoint “Sync HD Wallet (xPub, yPub, zPub)”, this endpoint does not create new addresses nor syncs old data.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/SyncNewXPubRB} opts.syncNewXPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SyncNewXPubR} and HTTP response
+     * @param {module:model/SyncNewHDWalletXPubYPubZPubRB} opts.syncNewHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SyncNewHDWalletXPubYPubZPubR} and HTTP response
      */
 
   }, {
-    key: "syncNewXPubWithHttpInfo",
-    value: function syncNewXPubWithHttpInfo(blockchain, network, opts) {
+    key: "syncNewHDWalletXPubYPubZPubWithHttpInfo",
+    value: function syncNewHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts) {
       opts = opts || {};
-      var postBody = opts['syncNewXPubRB']; // verify the required parameter 'blockchain' is set
+      var postBody = opts['syncNewHDWalletXPubYPubZPubRB']; // verify the required parameter 'blockchain' is set
 
       if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling syncNewXPub");
+        throw new Error("Missing the required parameter 'blockchain' when calling syncNewHDWalletXPubYPubZPub");
       } // verify the required parameter 'network' is set
 
 
       if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling syncNewXPub");
+        throw new Error("Missing the required parameter 'network' when calling syncNewHDWalletXPubYPubZPub");
       }
 
       var pathParams = {
@@ -718,24 +718,24 @@ var HDWalletsApi = /*#__PURE__*/function () {
       var authNames = ['ApiKey'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = _SyncNewXPubR["default"];
+      var returnType = _SyncNewHDWalletXPubYPubZPubR["default"];
       return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/hd/sync-new', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
     /**
-     * Sync New xPub
+     * Sync New HD Wallet (xPub, yPub, zPub)
      * Through this endpoint users can add a brand new xPub to the Crypto APIs system to be ready for deriving. Unlike our other similar endpoint “Sync HD Wallet (xPub, yPub, zPub)”, this endpoint does not create new addresses nor syncs old data.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/SyncNewXPubRB} opts.syncNewXPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SyncNewXPubR}
+     * @param {module:model/SyncNewHDWalletXPubYPubZPubRB} opts.syncNewHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SyncNewHDWalletXPubYPubZPubR}
      */
 
   }, {
-    key: "syncNewXPub",
-    value: function syncNewXPub(blockchain, network, opts) {
-      return this.syncNewXPubWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+    key: "syncNewHDWalletXPubYPubZPub",
+    value: function syncNewHDWalletXPubYPubZPub(blockchain, network, opts) {
+      return this.syncNewHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

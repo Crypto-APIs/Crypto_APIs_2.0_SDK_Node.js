@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken
- * @version 1.7.1
+ * @version 1.7.2
  */
 var CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken = /*#__PURE__*/function () {
   /**

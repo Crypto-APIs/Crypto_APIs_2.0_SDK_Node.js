@@ -17,7 +17,7 @@ import UnexpectedServerError from './UnexpectedServerError';
 /**
  * The GetAddressDetails500Response model module.
  * @module model/GetAddressDetails500Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetAddressDetails500Response {
     /**

@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRBTokenData model module.
  * @module model/AddTokensToExistingFromAddressRBTokenData
- * @version 1.7.1
+ * @version 1.7.2
  */
 var AddTokensToExistingFromAddressRBTokenData = /*#__PURE__*/function () {
   /**

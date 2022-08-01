@@ -17,7 +17,7 @@ import ListLatestMinedBlocksRIBS from './ListLatestMinedBlocksRIBS';
 /**
  * The ListLatestMinedBlocksRI model module.
  * @module model/ListLatestMinedBlocksRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListLatestMinedBlocksRI {
     /**

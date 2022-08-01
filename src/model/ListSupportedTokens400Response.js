@@ -17,7 +17,7 @@ import ListSupportedTokensE400 from './ListSupportedTokensE400';
 /**
  * The ListSupportedTokens400Response model module.
  * @module model/ListSupportedTokens400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListSupportedTokens400Response {
     /**

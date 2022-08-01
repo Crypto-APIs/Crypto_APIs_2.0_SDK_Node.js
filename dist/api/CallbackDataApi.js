@@ -68,7 +68,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.7.1
+* @version 1.7.2
 */
 var CallbackDataApi = /*#__PURE__*/function () {
   /**

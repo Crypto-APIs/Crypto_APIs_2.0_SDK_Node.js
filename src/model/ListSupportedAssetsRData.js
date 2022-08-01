@@ -17,7 +17,7 @@ import ListSupportedAssetsRI from './ListSupportedAssetsRI';
 /**
  * The ListSupportedAssetsRData model module.
  * @module model/ListSupportedAssetsRData
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListSupportedAssetsRData {
     /**

@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The BroadcastLocallySignedTransactionE401 model module.
  * @module model/BroadcastLocallySignedTransactionE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class BroadcastLocallySignedTransactionE401 {
     /**

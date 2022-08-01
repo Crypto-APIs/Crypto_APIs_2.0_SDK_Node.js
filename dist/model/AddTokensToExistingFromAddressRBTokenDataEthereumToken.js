@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRBTokenDataEthereumToken model module.
  * @module model/AddTokensToExistingFromAddressRBTokenDataEthereumToken
- * @version 1.7.1
+ * @version 1.7.2
  */
 var AddTokensToExistingFromAddressRBTokenDataEthereumToken = /*#__PURE__*/function () {
   /**

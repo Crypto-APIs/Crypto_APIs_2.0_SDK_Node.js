@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressE400 model module.
  * @module model/AddTokensToExistingFromAddressE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 var AddTokensToExistingFromAddressE400 = /*#__PURE__*/function () {
   /**

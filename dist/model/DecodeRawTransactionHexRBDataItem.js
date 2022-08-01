@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRBDataItem model module.
  * @module model/DecodeRawTransactionHexRBDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 var DecodeRawTransactionHexRBDataItem = /*#__PURE__*/function () {
   /**

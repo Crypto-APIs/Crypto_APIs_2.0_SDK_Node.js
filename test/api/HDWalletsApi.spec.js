@@ -128,10 +128,10 @@
         done();
       });
     });
-    describe('syncNewXPub', function() {
-      it('should call syncNewXPub successfully', function(done) {
-        //uncomment below and update the code to test syncNewXPub
-        //instance.syncNewXPub(function(error) {
+    describe('syncNewHDWalletXPubYPubZPub', function() {
+      it('should call syncNewHDWalletXPubYPubZPub successfully', function(done) {
+        //uncomment below and update the code to test syncNewHDWalletXPubYPubZPub
+        //instance.syncNewHDWalletXPubYPubZPub(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

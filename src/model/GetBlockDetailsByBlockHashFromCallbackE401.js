@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetBlockDetailsByBlockHashFromCallbackE401 model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetBlockDetailsByBlockHashFromCallbackE401 {
     /**

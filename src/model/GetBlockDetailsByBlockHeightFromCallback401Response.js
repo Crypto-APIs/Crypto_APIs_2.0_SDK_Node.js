@@ -17,7 +17,7 @@ import GetBlockDetailsByBlockHeightFromCallbackE401 from './GetBlockDetailsByBlo
 /**
  * The GetBlockDetailsByBlockHeightFromCallback401Response model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallback401Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetBlockDetailsByBlockHeightFromCallback401Response {
     /**

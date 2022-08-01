@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken model module.
  * @module model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken
- * @version 1.7.1
+ * @version 1.7.2
  */
 var AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken = /*#__PURE__*/function () {
   /**

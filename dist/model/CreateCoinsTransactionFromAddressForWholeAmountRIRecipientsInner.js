@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 var CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner = /*#__PURE__*/function () {
   /**

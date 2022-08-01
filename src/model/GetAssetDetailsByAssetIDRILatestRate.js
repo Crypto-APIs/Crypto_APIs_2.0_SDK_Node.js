@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAssetDetailsByAssetIDRILatestRate model module.
  * @module model/GetAssetDetailsByAssetIDRILatestRate
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetAssetDetailsByAssetIDRILatestRate {
     /**
@@ -75,7 +75,7 @@ class GetAssetDetailsByAssetIDRILatestRate {
 GetAssetDetailsByAssetIDRILatestRate.prototype['amount'] = undefined;
 
 /**
- * Defines when the price was calculated in UNIX timestamp.
+ * Defines when the price was calculated in UNIX timestamp. Oldest possible timestamp is 30 days.
  * @member {Number} calculationTimestamp
  */
 GetAssetDetailsByAssetIDRILatestRate.prototype['calculationTimestamp'] = undefined;

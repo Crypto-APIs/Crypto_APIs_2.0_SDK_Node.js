@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses401Response model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses401Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses401Response = /*#__PURE__*/function () {
   /**

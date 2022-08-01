@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedBep20 model module.
  * @module model/AddressTokensTransactionConfirmedBep20
- * @version 1.7.1
+ * @version 1.7.2
  */
 class AddressTokensTransactionConfirmedBep20 {
     /**

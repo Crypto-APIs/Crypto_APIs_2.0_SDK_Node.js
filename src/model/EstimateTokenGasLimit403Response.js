@@ -17,7 +17,7 @@ import EstimateTokenGasLimitE403 from './EstimateTokenGasLimitE403';
 /**
  * The EstimateTokenGasLimit403Response model module.
  * @module model/EstimateTokenGasLimit403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class EstimateTokenGasLimit403Response {
     /**

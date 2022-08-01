@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetNextAvailableNonceE400 model module.
  * @module model/GetNextAvailableNonceE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetNextAvailableNonceE400 {
     /**

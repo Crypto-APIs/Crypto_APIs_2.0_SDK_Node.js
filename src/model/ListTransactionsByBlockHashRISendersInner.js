@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRISendersInner model module.
  * @module model/ListTransactionsByBlockHashRISendersInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListTransactionsByBlockHashRISendersInner {
     /**

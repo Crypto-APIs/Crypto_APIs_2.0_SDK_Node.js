@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddresses403Response model module.
  * @module model/ListSyncedAddresses403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListSyncedAddresses403Response = /*#__PURE__*/function () {
   /**

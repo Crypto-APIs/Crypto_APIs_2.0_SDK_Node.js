@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner {
     /**

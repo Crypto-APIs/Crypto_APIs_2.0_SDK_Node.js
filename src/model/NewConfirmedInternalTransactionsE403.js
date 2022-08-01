@@ -22,7 +22,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The NewConfirmedInternalTransactionsE403 model module.
  * @module model/NewConfirmedInternalTransactionsE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class NewConfirmedInternalTransactionsE403 {
     /**

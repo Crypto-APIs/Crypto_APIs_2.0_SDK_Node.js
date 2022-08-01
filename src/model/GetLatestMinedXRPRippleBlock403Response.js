@@ -17,7 +17,7 @@ import GetLatestMinedXRPRippleBlockE403 from './GetLatestMinedXRPRippleBlockE403
 /**
  * The GetLatestMinedXRPRippleBlock403Response model module.
  * @module model/GetLatestMinedXRPRippleBlock403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetLatestMinedXRPRippleBlock403Response {
     /**

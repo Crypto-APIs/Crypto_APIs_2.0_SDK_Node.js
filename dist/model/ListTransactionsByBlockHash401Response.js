@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHash401Response model module.
  * @module model/ListTransactionsByBlockHash401Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListTransactionsByBlockHash401Response = /*#__PURE__*/function () {
   /**

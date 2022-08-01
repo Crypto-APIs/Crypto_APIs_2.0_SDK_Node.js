@@ -17,7 +17,7 @@ import ListTransactionsByBlockHeightRIBSECGasPrice from './ListTransactionsByBlo
 /**
  * The ListTransactionsByBlockHeightRIBSEC model module.
  * @module model/ListTransactionsByBlockHeightRIBSEC
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListTransactionsByBlockHeightRIBSEC {
     /**

@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressE400 model module.
  * @module model/EncodeXAddressE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 var EncodeXAddressE400 = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncHDWalletXPubYPubZPub422Response model module.
  * @module model/SyncHDWalletXPubYPubZPub422Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var SyncHDWalletXPubYPubZPub422Response = /*#__PURE__*/function () {
   /**

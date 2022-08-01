@@ -20,7 +20,7 @@ import WalletAsAServiceWalletBalanceNotEnough from './WalletAsAServiceWalletBala
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityE409 model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityE409
- * @version 1.7.1
+ * @version 1.7.2
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityE409 {
     /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetTransactionRequestDetailsE403 model module.
  * @module model/GetTransactionRequestDetailsE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetTransactionRequestDetailsE403 {
     /**

@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDE401 model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetZilliqaTransactionDetailsByTransactionIDE401 = /*#__PURE__*/function () {
   /**

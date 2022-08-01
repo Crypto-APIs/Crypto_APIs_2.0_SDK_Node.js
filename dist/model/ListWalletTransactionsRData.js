@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRData model module.
  * @module model/ListWalletTransactionsRData
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListWalletTransactionsRData = /*#__PURE__*/function () {
   /**

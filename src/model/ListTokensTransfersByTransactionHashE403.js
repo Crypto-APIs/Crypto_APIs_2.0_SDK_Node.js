@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListTokensTransfersByTransactionHashE403 model module.
  * @module model/ListTokensTransfersByTransactionHashE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListTokensTransfersByTransactionHashE403 {
     /**

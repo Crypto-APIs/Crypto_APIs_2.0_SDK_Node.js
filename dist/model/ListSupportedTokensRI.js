@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokensRI model module.
  * @module model/ListSupportedTokensRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListSupportedTokensRI = /*#__PURE__*/function () {
   /**

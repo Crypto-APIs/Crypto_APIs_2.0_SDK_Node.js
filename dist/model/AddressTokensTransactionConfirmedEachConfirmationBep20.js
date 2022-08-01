@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationBep20 model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationBep20
- * @version 1.7.1
+ * @version 1.7.2
  */
 var AddressTokensTransactionConfirmedEachConfirmationBep20 = /*#__PURE__*/function () {
   /**

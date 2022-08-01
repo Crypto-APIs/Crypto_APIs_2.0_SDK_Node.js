@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSLVinInnerScriptSig model module.
  * @module model/ListTransactionsByBlockHeightRIBSLVinInnerScriptSig
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListTransactionsByBlockHeightRIBSLVinInnerScriptSig = /*#__PURE__*/function () {
   /**

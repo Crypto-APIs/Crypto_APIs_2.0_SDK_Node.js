@@ -41,7 +41,7 @@ import ListBlockchainEventsSubscriptionsR from '../model/ListBlockchainEventsSub
 /**
 * ManageSubscriptions service.
 * @module api/ManageSubscriptionsApi
-* @version 1.7.1
+* @version 1.7.2
 */
 export default class ManageSubscriptionsApi {
 

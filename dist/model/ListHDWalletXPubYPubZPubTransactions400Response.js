@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactions400Response model module.
  * @module model/ListHDWalletXPubYPubZPubTransactions400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListHDWalletXPubYPubZPubTransactions400Response = /*#__PURE__*/function () {
   /**

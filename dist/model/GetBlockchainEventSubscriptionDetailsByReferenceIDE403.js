@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDE403 model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetBlockchainEventSubscriptionDetailsByReferenceIDE403 = /*#__PURE__*/function () {
   /**

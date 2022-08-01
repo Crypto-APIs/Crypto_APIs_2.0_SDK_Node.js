@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSECGasPrice from './ListConfirmedTra
 /**
  * The ListConfirmedTransactionsByAddressRIBSEC model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSEC
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListConfirmedTransactionsByAddressRIBSEC {
     /**

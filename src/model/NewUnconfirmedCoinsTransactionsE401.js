@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The NewUnconfirmedCoinsTransactionsE401 model module.
  * @module model/NewUnconfirmedCoinsTransactionsE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class NewUnconfirmedCoinsTransactionsE401 {
     /**

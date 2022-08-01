@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The Unimplemented model module.
  * @module model/Unimplemented
- * @version 1.7.1
+ * @version 1.7.2
  */
 class Unimplemented {
     /**

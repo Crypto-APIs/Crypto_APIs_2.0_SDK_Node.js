@@ -17,7 +17,7 @@ import NewConfirmedCoinsTransactionsAndEachConfirmationE409 from './NewConfirmed
 /**
  * The NewConfirmedCoinsTransactionsAndEachConfirmation409Response model module.
  * @module model/NewConfirmedCoinsTransactionsAndEachConfirmation409Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class NewConfirmedCoinsTransactionsAndEachConfirmation409Response {
     /**

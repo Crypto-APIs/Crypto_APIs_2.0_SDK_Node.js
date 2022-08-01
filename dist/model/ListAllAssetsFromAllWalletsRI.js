@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWalletsRI model module.
  * @module model/ListAllAssetsFromAllWalletsRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListAllAssetsFromAllWalletsRI = /*#__PURE__*/function () {
   /**

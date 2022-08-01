@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTokenGasLimitRBDataItem model module.
  * @module model/EstimateTokenGasLimitRBDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 var EstimateTokenGasLimitRBDataItem = /*#__PURE__*/function () {
   /**

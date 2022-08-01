@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListZilliqaTransactionsByBlockHeightE403 model module.
  * @module model/ListZilliqaTransactionsByBlockHeightE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListZilliqaTransactionsByBlockHeightE403 {
     /**

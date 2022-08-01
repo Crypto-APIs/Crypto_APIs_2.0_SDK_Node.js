@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeXAddressE403 model module.
  * @module model/DecodeXAddressE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 var DecodeXAddressE403 = /*#__PURE__*/function () {
   /**

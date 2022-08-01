@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolRISC model module.
  * @module model/GetAssetDetailsByAssetSymbolRISC
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetAssetDetailsByAssetSymbolRISC = /*#__PURE__*/function () {
   /**

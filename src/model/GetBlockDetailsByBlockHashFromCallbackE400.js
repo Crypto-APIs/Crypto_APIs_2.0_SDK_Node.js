@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetBlockDetailsByBlockHashFromCallbackE400 model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetBlockDetailsByBlockHashFromCallbackE400 {
     /**

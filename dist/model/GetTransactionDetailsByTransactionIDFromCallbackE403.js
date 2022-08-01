@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackE403 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetTransactionDetailsByTransactionIDFromCallbackE403 = /*#__PURE__*/function () {
   /**

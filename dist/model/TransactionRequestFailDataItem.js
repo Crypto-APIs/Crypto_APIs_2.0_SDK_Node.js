@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestFailDataItem model module.
  * @module model/TransactionRequestFailDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 var TransactionRequestFailDataItem = /*#__PURE__*/function () {
   /**

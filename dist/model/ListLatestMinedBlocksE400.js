@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksE400 model module.
  * @module model/ListLatestMinedBlocksE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListLatestMinedBlocksE400 = /*#__PURE__*/function () {
   /**

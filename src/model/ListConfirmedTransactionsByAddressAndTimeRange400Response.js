@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressAndTimeRangeE400 from './ListConfirmedT
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRange400Response model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRange400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListConfirmedTransactionsByAddressAndTimeRange400Response {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetailsR model module.
  * @module model/GetXRPRippleAddressDetailsR
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetXRPRippleAddressDetailsR = /*#__PURE__*/function () {
   /**

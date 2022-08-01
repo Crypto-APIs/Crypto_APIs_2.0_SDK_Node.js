@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRIBSD2 model module.
  * @module model/GetLastMinedBlockRIBSD2
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetLastMinedBlockRIBSD2 = /*#__PURE__*/function () {
   /**

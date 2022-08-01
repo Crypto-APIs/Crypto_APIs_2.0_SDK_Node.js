@@ -22,7 +22,7 @@ import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './Wal
 /**
  * The GetWalletAssetDetailsE403 model module.
  * @module model/GetWalletAssetDetailsE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetWalletAssetDetailsE403 {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRange403Response model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRange403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListXRPRippleTransactionsByAddressAndTimeRange403Response = /*#__PURE__*/function () {
   /**

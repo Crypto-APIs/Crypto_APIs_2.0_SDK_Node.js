@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdE403 model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetInternalTransactionByTransactionHashAndOperationIdE403 = /*#__PURE__*/function () {
   /**

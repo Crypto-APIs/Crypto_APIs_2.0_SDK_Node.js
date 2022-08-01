@@ -17,7 +17,7 @@ import ListConfirmedTokensTransfersByAddressE403 from './ListConfirmedTokensTran
 /**
  * The ListConfirmedTokensTransfersByAddress403Response model module.
  * @module model/ListConfirmedTokensTransfersByAddress403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListConfirmedTokensTransfersByAddress403Response {
     /**

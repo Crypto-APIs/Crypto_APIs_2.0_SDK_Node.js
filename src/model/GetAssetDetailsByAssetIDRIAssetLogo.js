@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAssetDetailsByAssetIDRIAssetLogo model module.
  * @module model/GetAssetDetailsByAssetIDRIAssetLogo
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetAssetDetailsByAssetIDRIAssetLogo {
     /**

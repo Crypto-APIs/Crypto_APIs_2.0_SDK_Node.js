@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDE403 model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetBlockchainEventSubscriptionDetailsByReferenceIDE403 {
     /**

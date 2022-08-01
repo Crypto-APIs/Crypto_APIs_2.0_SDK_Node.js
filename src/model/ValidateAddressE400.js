@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ValidateAddressE400 model module.
  * @module model/ValidateAddressE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ValidateAddressE400 {
     /**

@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactionsE401 model module.
  * @module model/ListAllUnconfirmedTransactionsE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListAllUnconfirmedTransactionsE401 = /*#__PURE__*/function () {
   /**

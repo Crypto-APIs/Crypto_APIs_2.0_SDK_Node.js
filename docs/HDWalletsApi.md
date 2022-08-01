@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**listHDWalletXPubYPubZPubUTXOs**](HDWalletsApi.md#listHDWalletXPubYPubZPubUTXOs) | **GET** /blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/utxos | List HD Wallet (xPub, yPub, zPub) UTXOs
 [**listSyncedAddresses**](HDWalletsApi.md#listSyncedAddresses) | **GET** /blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/synced-addresses | List Synced Addresses
 [**syncHDWalletXPubYPubZPub**](HDWalletsApi.md#syncHDWalletXPubYPubZPub) | **POST** /blockchain-data/{blockchain}/{network}/hd/sync | Sync HD Wallet (xPub, yPub, zPub)
-[**syncNewXPub**](HDWalletsApi.md#syncNewXPub) | **POST** /blockchain-data/{blockchain}/{network}/hd/sync-new | Sync New xPub
+[**syncNewHDWalletXPubYPubZPub**](HDWalletsApi.md#syncNewHDWalletXPubYPubZPub) | **POST** /blockchain-data/{blockchain}/{network}/hd/sync-new | Sync New HD Wallet (xPub, yPub, zPub)
 
 
 
@@ -405,7 +405,7 @@ let extendedPublicKey = tpubD9GMECjiZHCaF9NHSMAeMbQMXnM7CviEJZsYBuztVwsUjPHWjxew
 let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'addressFormat': P2WPKH, // String | Represents the format of the address.
+  'addressFormat': standard, // String | Defines the address format value.
   'isChangeAddress': false, // Boolean | Defines if the address is change addres or not.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
   'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
@@ -427,7 +427,7 @@ Name | Type | Description  | Notes
  **extendedPublicKey** | **String**| Defines the account extended publicly known key which is used to derive all child public keys. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **addressFormat** | **String**| Represents the format of the address. | [optional] 
+ **addressFormat** | **String**| Defines the address format value. | [optional] 
  **isChangeAddress** | **Boolean**| Defines if the address is change addres or not. | [optional] [default to true]
  **limit** | **Number**| Defines how many items should be returned in the response per page basis. | [optional] [default to 50]
  **offset** | **Number**| The starting index of the response items, i.e. where the response should start listing the returned items. | [optional] [default to 0]
@@ -504,11 +504,11 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## syncNewXPub
+## syncNewHDWalletXPubYPubZPub
 
-> SyncNewXPubR syncNewXPub(blockchain, network, opts)
+> SyncNewHDWalletXPubYPubZPubR syncNewHDWalletXPubYPubZPub(blockchain, network, opts)
 
-Sync New xPub
+Sync New HD Wallet (xPub, yPub, zPub)
 
 Through this endpoint users can add a brand new xPub to the Crypto APIs system to be ready for deriving. Unlike our other similar endpoint “Sync HD Wallet (xPub, yPub, zPub)”, this endpoint does not create new addresses nor syncs old data.
 
@@ -528,9 +528,9 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'syncNewXPubRB': new Cryptoapis.SyncNewXPubRB() // SyncNewXPubRB | 
+  'syncNewHDWalletXPubYPubZPubRB': new Cryptoapis.SyncNewHDWalletXPubYPubZPubRB() // SyncNewHDWalletXPubYPubZPubRB | 
 };
-apiInstance.syncNewXPub(blockchain, network, opts).then((data) => {
+apiInstance.syncNewHDWalletXPubYPubZPub(blockchain, network, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -546,11 +546,11 @@ Name | Type | Description  | Notes
  **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **syncNewXPubRB** | [**SyncNewXPubRB**](SyncNewXPubRB.md)|  | [optional] 
+ **syncNewHDWalletXPubYPubZPubRB** | [**SyncNewHDWalletXPubYPubZPubRB**](SyncNewHDWalletXPubYPubZPubRB.md)|  | [optional] 
 
 ### Return type
 
-[**SyncNewXPubR**](SyncNewXPubR.md)
+[**SyncNewHDWalletXPubYPubZPubR**](SyncNewHDWalletXPubYPubZPubR.md)
 
 ### Authorization
 

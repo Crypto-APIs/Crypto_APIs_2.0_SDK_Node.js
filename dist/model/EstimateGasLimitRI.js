@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateGasLimitRI model module.
  * @module model/EstimateGasLimitRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var EstimateGasLimitRI = /*#__PURE__*/function () {
   /**

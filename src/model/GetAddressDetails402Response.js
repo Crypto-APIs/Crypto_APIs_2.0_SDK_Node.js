@@ -17,7 +17,7 @@ import InsufficientCredits from './InsufficientCredits';
 /**
  * The GetAddressDetails402Response model module.
  * @module model/GetAddressDetails402Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetAddressDetails402Response {
     /**

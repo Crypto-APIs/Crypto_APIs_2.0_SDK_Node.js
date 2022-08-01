@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDRIBSECGasPrice model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSECGasPrice
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetTransactionDetailsByTransactionIDRIBSECGasPrice {
     /**

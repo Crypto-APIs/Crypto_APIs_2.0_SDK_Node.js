@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastTransactionSuccessDataItem model module.
  * @module model/BroadcastTransactionSuccessDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 var BroadcastTransactionSuccessDataItem = /*#__PURE__*/function () {
   /**

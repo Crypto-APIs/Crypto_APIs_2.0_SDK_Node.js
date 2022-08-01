@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The CreateCoinsTransactionRequestFromWalletE401 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class CreateCoinsTransactionRequestFromWalletE401 {
     /**

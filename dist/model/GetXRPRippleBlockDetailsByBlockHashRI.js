@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRI model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetXRPRippleBlockDetailsByBlockHashRI = /*#__PURE__*/function () {
   /**

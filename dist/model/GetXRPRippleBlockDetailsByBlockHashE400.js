@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHashE400 model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetXRPRippleBlockDetailsByBlockHashE400 = /*#__PURE__*/function () {
   /**

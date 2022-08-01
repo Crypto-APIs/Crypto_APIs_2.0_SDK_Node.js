@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByAddressRIRecipientsInner model module.
  * @module model/ListZilliqaTransactionsByAddressRIRecipientsInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListZilliqaTransactionsByAddressRIRecipientsInner = /*#__PURE__*/function () {
   /**

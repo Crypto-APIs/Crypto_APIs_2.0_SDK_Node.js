@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressCoinsTransactionUnconfirmedDataItem model module.
  * @module model/AddressCoinsTransactionUnconfirmedDataItem
- * @version 1.7.1
+ * @version 1.7.2
  */
 class AddressCoinsTransactionUnconfirmedDataItem {
     /**

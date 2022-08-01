@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsE401 model module.
  * @module model/ListWalletTransactionsE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListWalletTransactionsE401 = /*#__PURE__*/function () {
   /**

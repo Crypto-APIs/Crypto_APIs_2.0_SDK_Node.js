@@ -19,7 +19,7 @@ import GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner from './GetHDWallet
 /**
  * The GetHDWalletXPubYPubZPubAssetsRI model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetHDWalletXPubYPubZPubAssetsRI {
     /**

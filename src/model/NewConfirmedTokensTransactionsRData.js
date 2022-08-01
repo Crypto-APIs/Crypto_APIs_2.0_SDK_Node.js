@@ -17,7 +17,7 @@ import NewConfirmedTokensTransactionsRI from './NewConfirmedTokensTransactionsRI
 /**
  * The NewConfirmedTokensTransactionsRData model module.
  * @module model/NewConfirmedTokensTransactionsRData
- * @version 1.7.1
+ * @version 1.7.2
  */
 class NewConfirmedTokensTransactionsRData {
     /**

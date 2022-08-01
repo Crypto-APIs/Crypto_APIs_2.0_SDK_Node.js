@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListDepositAddressesE400 model module.
  * @module model/ListDepositAddressesE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListDepositAddressesE400 {
     /**

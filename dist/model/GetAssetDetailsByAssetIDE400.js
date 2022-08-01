@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDE400 model module.
  * @module model/GetAssetDetailsByAssetIDE400
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetAssetDetailsByAssetIDE400 = /*#__PURE__*/function () {
   /**

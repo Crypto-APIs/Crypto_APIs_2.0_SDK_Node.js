@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRISE model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRISE
- * @version 1.7.1
+ * @version 1.7.2
  */
 var CreateFungibleTokensTransactionRequestFromAddressRISE = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListSupportedAssetsRI model module.
  * @module model/ListSupportedAssetsRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListSupportedAssetsRI {
     /**

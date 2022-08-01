@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig from './GetTra
 /**
  * The ListTransactionsByBlockHashRIBSDVinInner model module.
  * @module model/ListTransactionsByBlockHashRIBSDVinInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListTransactionsByBlockHashRIBSDVinInner {
     /**

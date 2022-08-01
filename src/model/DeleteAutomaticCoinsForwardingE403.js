@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The DeleteAutomaticCoinsForwardingE403 model module.
  * @module model/DeleteAutomaticCoinsForwardingE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class DeleteAutomaticCoinsForwardingE403 {
     /**

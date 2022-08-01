@@ -17,7 +17,7 @@ import ListLatestMinedBlocksRData from './ListLatestMinedBlocksRData';
 /**
  * The ListLatestMinedBlocksR model module.
  * @module model/ListLatestMinedBlocksR
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListLatestMinedBlocksR {
     /**

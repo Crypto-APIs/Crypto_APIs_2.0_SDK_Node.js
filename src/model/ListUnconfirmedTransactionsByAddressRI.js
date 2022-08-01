@@ -19,7 +19,7 @@ import ListUnconfirmedTransactionsByAddressRISendersInner from './ListUnconfirme
 /**
  * The ListUnconfirmedTransactionsByAddressRI model module.
  * @module model/ListUnconfirmedTransactionsByAddressRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListUnconfirmedTransactionsByAddressRI {
     /**

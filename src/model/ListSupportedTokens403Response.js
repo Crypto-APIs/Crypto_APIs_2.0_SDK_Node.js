@@ -17,7 +17,7 @@ import ListSupportedTokensE403 from './ListSupportedTokensE403';
 /**
  * The ListSupportedTokens403Response model module.
  * @module model/ListSupportedTokens403Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListSupportedTokens403Response {
     /**

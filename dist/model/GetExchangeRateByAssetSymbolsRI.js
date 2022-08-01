@@ -18,13 +18,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbolsRI model module.
  * @module model/GetExchangeRateByAssetSymbolsRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetExchangeRateByAssetSymbolsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetSymbolsRI</code>.
    * @alias module:model/GetExchangeRateByAssetSymbolsRI
-   * @param calculationTimestamp {Number} Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+   * @param calculationTimestamp {Number} Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
    * @param fromAssetId {String} Defines the base asset Reference ID to get a rate for.
    * @param fromAssetSymbol {String} Defines the base asset symbol to get a rate for.
    * @param rate {String} Defines the exchange rate between assets calculated by weighted average of the last trades in every exchange for the last 24 hours by giving more weight to exchanges with higher volume.
@@ -99,7 +99,7 @@ var GetExchangeRateByAssetSymbolsRI = /*#__PURE__*/function () {
   return GetExchangeRateByAssetSymbolsRI;
 }();
 /**
- * Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+ * Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
  * @member {Number} calculationTimestamp
  */
 

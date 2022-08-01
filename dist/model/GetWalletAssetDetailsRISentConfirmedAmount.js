@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRISentConfirmedAmount model module.
  * @module model/GetWalletAssetDetailsRISentConfirmedAmount
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetWalletAssetDetailsRISentConfirmedAmount = /*#__PURE__*/function () {
   /**

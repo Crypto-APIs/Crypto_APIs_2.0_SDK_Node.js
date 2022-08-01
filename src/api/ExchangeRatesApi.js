@@ -32,7 +32,7 @@ import GetExchangeRateByAssetsIDsR from '../model/GetExchangeRateByAssetsIDsR';
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.7.1
+* @version 1.7.2
 */
 export default class ExchangeRatesApi {
 
@@ -56,7 +56,7 @@ export default class ExchangeRatesApi {
      * @param {String} toAssetSymbol Defines the relation asset symbol in which the base asset rate will be displayed.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetExchangeRateByAssetSymbolsR} and HTTP response
      */
     getExchangeRateByAssetSymbolsWithHttpInfo(fromAssetSymbol, toAssetSymbol, opts) {
@@ -102,7 +102,7 @@ export default class ExchangeRatesApi {
      * @param {String} toAssetSymbol Defines the relation asset symbol in which the base asset rate will be displayed.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetExchangeRateByAssetSymbolsR}
      */
     getExchangeRateByAssetSymbols(fromAssetSymbol, toAssetSymbol, opts) {
@@ -120,7 +120,7 @@ export default class ExchangeRatesApi {
      * @param {String} toAssetId Defines the relation asset Reference ID in which the base asset rate will be displayed.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetExchangeRateByAssetsIDsR} and HTTP response
      */
     getExchangeRateByAssetsIDsWithHttpInfo(fromAssetId, toAssetId, opts) {
@@ -166,7 +166,7 @@ export default class ExchangeRatesApi {
      * @param {String} toAssetId Defines the relation asset Reference ID in which the base asset rate will be displayed.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp.
+     * @param {Number} opts.calculationTimestamp Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetExchangeRateByAssetsIDsR}
      */
     getExchangeRateByAssetsIDs(fromAssetId, toAssetId, opts) {

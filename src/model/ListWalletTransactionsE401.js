@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListWalletTransactionsE401 model module.
  * @module model/ListWalletTransactionsE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListWalletTransactionsE401 {
     /**

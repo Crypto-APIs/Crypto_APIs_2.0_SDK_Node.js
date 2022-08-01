@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EstimateTransactionSmartFeeRI model module.
  * @module model/EstimateTransactionSmartFeeRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 class EstimateTransactionSmartFeeRI {
     /**

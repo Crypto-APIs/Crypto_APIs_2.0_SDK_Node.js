@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The EstimateTransactionSmartFeeE401 model module.
  * @module model/EstimateTransactionSmartFeeE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class EstimateTransactionSmartFeeE401 {
     /**

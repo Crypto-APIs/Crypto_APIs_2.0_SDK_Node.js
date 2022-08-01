@@ -17,7 +17,7 @@ import ListUnspentTransactionOutputsByAddressE400 from './ListUnspentTransaction
 /**
  * The ListUnspentTransactionOutputsByAddress400Response model module.
  * @module model/ListUnspentTransactionOutputsByAddress400Response
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListUnspentTransactionOutputsByAddress400Response {
     /**

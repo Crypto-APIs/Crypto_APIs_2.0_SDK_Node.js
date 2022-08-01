@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeAddressDetailsRIBalance model module.
  * @module model/GetFeeAddressDetailsRIBalance
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetFeeAddressDetailsRIBalance = /*#__PURE__*/function () {
   /**

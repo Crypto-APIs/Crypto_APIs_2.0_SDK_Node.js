@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListXRPRippleTransactionsByBlockHeightE401 model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListXRPRippleTransactionsByBlockHeightE401 {
     /**

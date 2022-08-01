@@ -18,7 +18,7 @@ import ListTransactionsByBlockHashRIBSLVoutInner from './ListTransactionsByBlock
 /**
  * The ListTransactionsByBlockHashRIBSL model module.
  * @module model/ListTransactionsByBlockHashRIBSL
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListTransactionsByBlockHashRIBSL {
     /**

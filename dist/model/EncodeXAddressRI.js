@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressRI model module.
  * @module model/EncodeXAddressRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var EncodeXAddressRI = /*#__PURE__*/function () {
   /**

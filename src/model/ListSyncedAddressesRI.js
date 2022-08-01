@@ -12,24 +12,22 @@
  */
 
 import ApiClient from '../ApiClient';
-import ListSyncedAddressesRIBalancesInner from './ListSyncedAddressesRIBalancesInner';
 
 /**
  * The ListSyncedAddressesRI model module.
  * @module model/ListSyncedAddressesRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListSyncedAddressesRI {
     /**
      * Constructs a new <code>ListSyncedAddressesRI</code>.
      * @alias module:model/ListSyncedAddressesRI
      * @param address {String} Represents the address.
-     * @param balances {Array.<module:model/ListSyncedAddressesRIBalancesInner>} Represents the balance of the address.
      * @param index {Number} Represents the index position of the transaction in the specific block.
      */
-    constructor(address, balances, index) { 
+    constructor(address, index) { 
         
-        ListSyncedAddressesRI.initialize(this, address, balances, index);
+        ListSyncedAddressesRI.initialize(this, address, index);
     }
 
     /**
@@ -37,9 +35,8 @@ class ListSyncedAddressesRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, address, balances, index) { 
+    static initialize(obj, address, index) { 
         obj['address'] = address;
-        obj['balances'] = balances;
         obj['index'] = index;
     }
 
@@ -57,9 +54,6 @@ class ListSyncedAddressesRI {
             if (data.hasOwnProperty('address')) {
                 obj['address'] = ApiClient.convertToType(data['address'], 'String');
             }
-            if (data.hasOwnProperty('balances')) {
-                obj['balances'] = ApiClient.convertToType(data['balances'], [ListSyncedAddressesRIBalancesInner]);
-            }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
@@ -75,12 +69,6 @@ class ListSyncedAddressesRI {
  * @member {String} address
  */
 ListSyncedAddressesRI.prototype['address'] = undefined;
-
-/**
- * Represents the balance of the address.
- * @member {Array.<module:model/ListSyncedAddressesRIBalancesInner>} balances
- */
-ListSyncedAddressesRI.prototype['balances'] = undefined;
 
 /**
  * Represents the index position of the transaction in the specific block.

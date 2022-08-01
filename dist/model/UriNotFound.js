@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The UriNotFound model module.
  * @module model/UriNotFound
- * @version 1.7.1
+ * @version 1.7.2
  */
 var UriNotFound = /*#__PURE__*/function () {
   /**

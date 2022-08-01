@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateAutomaticTokensForwardingRBTokenDataEthereumToken model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenDataEthereumToken
- * @version 1.7.1
+ * @version 1.7.2
  */
 class CreateAutomaticTokensForwardingRBTokenDataEthereumToken {
     /**

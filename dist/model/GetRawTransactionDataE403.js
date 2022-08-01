@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetRawTransactionDataE403 model module.
  * @module model/GetRawTransactionDataE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetRawTransactionDataE403 = /*#__PURE__*/function () {
   /**

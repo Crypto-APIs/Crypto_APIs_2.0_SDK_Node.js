@@ -18,7 +18,7 @@ import GetTransactionDetailsByTransactionIDRIBSLVoutInner from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRIBSL model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSL
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetTransactionDetailsByTransactionIDRIBSL {
     /**

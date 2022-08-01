@@ -29,7 +29,7 @@ import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/G
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.7.1
+* @version 1.7.2
 */
 export default class GeneratingApi {
 

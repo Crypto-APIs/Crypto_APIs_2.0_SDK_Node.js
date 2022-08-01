@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddressRI model module.
  * @module model/GenerateDepositAddressRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GenerateDepositAddressRI = /*#__PURE__*/function () {
   /**

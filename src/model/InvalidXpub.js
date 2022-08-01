@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The InvalidXpub model module.
  * @module model/InvalidXpub
- * @version 1.7.1
+ * @version 1.7.2
  */
 class InvalidXpub {
     /**

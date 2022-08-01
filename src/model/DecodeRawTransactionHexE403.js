@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The DecodeRawTransactionHexE403 model module.
  * @module model/DecodeRawTransactionHexE403
- * @version 1.7.1
+ * @version 1.7.2
  */
 class DecodeRawTransactionHexE403 {
     /**

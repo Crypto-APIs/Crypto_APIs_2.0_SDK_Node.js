@@ -17,7 +17,7 @@ import ValidateAddressRBDataItem from './ValidateAddressRBDataItem';
 /**
  * The ValidateAddressRBData model module.
  * @module model/ValidateAddressRBData
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ValidateAddressRBData {
     /**

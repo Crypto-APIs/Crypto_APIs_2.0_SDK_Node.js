@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListTokensTransfersByTransactionHashE401 model module.
  * @module model/ListTokensTransfersByTransactionHashE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 class ListTokensTransfersByTransactionHashE401 {
     /**

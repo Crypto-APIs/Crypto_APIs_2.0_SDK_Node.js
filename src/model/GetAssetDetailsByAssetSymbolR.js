@@ -17,7 +17,7 @@ import GetAssetDetailsByAssetSymbolRData from './GetAssetDetailsByAssetSymbolRDa
 /**
  * The GetAssetDetailsByAssetSymbolR model module.
  * @module model/GetAssetDetailsByAssetSymbolR
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetAssetDetailsByAssetSymbolR {
     /**

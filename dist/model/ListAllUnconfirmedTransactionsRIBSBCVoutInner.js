@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactionsRIBSBCVoutInner model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSBCVoutInner
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListAllUnconfirmedTransactionsRIBSBCVoutInner = /*#__PURE__*/function () {
   /**

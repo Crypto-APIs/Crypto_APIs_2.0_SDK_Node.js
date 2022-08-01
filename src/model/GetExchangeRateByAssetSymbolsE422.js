@@ -19,7 +19,7 @@ import InvalidRequestBodyStructure from './InvalidRequestBodyStructure';
 /**
  * The GetExchangeRateByAssetSymbolsE422 model module.
  * @module model/GetExchangeRateByAssetSymbolsE422
- * @version 1.7.1
+ * @version 1.7.2
  */
 class GetExchangeRateByAssetSymbolsE422 {
     /**

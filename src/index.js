@@ -1276,11 +1276,6 @@ import ListSyncedAddressesE403 from './model/ListSyncedAddressesE403';
 import ListSyncedAddressesR from './model/ListSyncedAddressesR';
 import ListSyncedAddressesRData from './model/ListSyncedAddressesRData';
 import ListSyncedAddressesRI from './model/ListSyncedAddressesRI';
-import ListSyncedAddressesRIBalancesInner from './model/ListSyncedAddressesRIBalancesInner';
-import ListSyncedAddressesRIS from './model/ListSyncedAddressesRIS';
-import ListSyncedAddressesRISC from './model/ListSyncedAddressesRISC';
-import ListSyncedAddressesRISF from './model/ListSyncedAddressesRISF';
-import ListSyncedAddressesRISN from './model/ListSyncedAddressesRISN';
 import ListTokensByAddress400Response from './model/ListTokensByAddress400Response';
 import ListTokensByAddress401Response from './model/ListTokensByAddress401Response';
 import ListTokensByAddress403Response from './model/ListTokensByAddress403Response';
@@ -1731,36 +1726,36 @@ import NewUnconfirmedTokensTransactionsRBData from './model/NewUnconfirmedTokens
 import NewUnconfirmedTokensTransactionsRBDataItem from './model/NewUnconfirmedTokensTransactionsRBDataItem';
 import NewUnconfirmedTokensTransactionsRData from './model/NewUnconfirmedTokensTransactionsRData';
 import NewUnconfirmedTokensTransactionsRI from './model/NewUnconfirmedTokensTransactionsRI';
-import PrepareAUTXOBasedTransactionFromXPub400Response from './model/PrepareAUTXOBasedTransactionFromXPub400Response';
-import PrepareAUTXOBasedTransactionFromXPub401Response from './model/PrepareAUTXOBasedTransactionFromXPub401Response';
-import PrepareAUTXOBasedTransactionFromXPub403Response from './model/PrepareAUTXOBasedTransactionFromXPub403Response';
-import PrepareAUTXOBasedTransactionFromXPubE400 from './model/PrepareAUTXOBasedTransactionFromXPubE400';
-import PrepareAUTXOBasedTransactionFromXPubE401 from './model/PrepareAUTXOBasedTransactionFromXPubE401';
-import PrepareAUTXOBasedTransactionFromXPubE403 from './model/PrepareAUTXOBasedTransactionFromXPubE403';
-import PrepareAUTXOBasedTransactionFromXPubR from './model/PrepareAUTXOBasedTransactionFromXPubR';
-import PrepareAUTXOBasedTransactionFromXPubRB from './model/PrepareAUTXOBasedTransactionFromXPubRB';
-import PrepareAUTXOBasedTransactionFromXPubRBData from './model/PrepareAUTXOBasedTransactionFromXPubRBData';
-import PrepareAUTXOBasedTransactionFromXPubRBDataItem from './model/PrepareAUTXOBasedTransactionFromXPubRBDataItem';
-import PrepareAUTXOBasedTransactionFromXPubRBDataItemFee from './model/PrepareAUTXOBasedTransactionFromXPubRBDataItemFee';
-import PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner from './model/PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner';
-import PrepareAUTXOBasedTransactionFromXPubRData from './model/PrepareAUTXOBasedTransactionFromXPubRData';
-import PrepareAUTXOBasedTransactionFromXPubRI from './model/PrepareAUTXOBasedTransactionFromXPubRI';
-import PrepareAUTXOBasedTransactionFromXPubRIVinInner from './model/PrepareAUTXOBasedTransactionFromXPubRIVinInner';
-import PrepareAUTXOBasedTransactionFromXPubRIVoutInner from './model/PrepareAUTXOBasedTransactionFromXPubRIVoutInner';
-import PrepareAnAccountBasedTransactionFromXPub400Response from './model/PrepareAnAccountBasedTransactionFromXPub400Response';
-import PrepareAnAccountBasedTransactionFromXPub401Response from './model/PrepareAnAccountBasedTransactionFromXPub401Response';
-import PrepareAnAccountBasedTransactionFromXPub403Response from './model/PrepareAnAccountBasedTransactionFromXPub403Response';
-import PrepareAnAccountBasedTransactionFromXPubE400 from './model/PrepareAnAccountBasedTransactionFromXPubE400';
-import PrepareAnAccountBasedTransactionFromXPubE401 from './model/PrepareAnAccountBasedTransactionFromXPubE401';
-import PrepareAnAccountBasedTransactionFromXPubE403 from './model/PrepareAnAccountBasedTransactionFromXPubE403';
-import PrepareAnAccountBasedTransactionFromXPubR from './model/PrepareAnAccountBasedTransactionFromXPubR';
-import PrepareAnAccountBasedTransactionFromXPubRB from './model/PrepareAnAccountBasedTransactionFromXPubRB';
-import PrepareAnAccountBasedTransactionFromXPubRBData from './model/PrepareAnAccountBasedTransactionFromXPubRBData';
-import PrepareAnAccountBasedTransactionFromXPubRBDataItem from './model/PrepareAnAccountBasedTransactionFromXPubRBDataItem';
-import PrepareAnAccountBasedTransactionFromXPubRBDataItemFee from './model/PrepareAnAccountBasedTransactionFromXPubRBDataItemFee';
-import PrepareAnAccountBasedTransactionFromXPubRData from './model/PrepareAnAccountBasedTransactionFromXPubRData';
-import PrepareAnAccountBasedTransactionFromXPubRI from './model/PrepareAnAccountBasedTransactionFromXPubRI';
-import PrepareAnAccountBasedTransactionFromXPubRIFee from './model/PrepareAnAccountBasedTransactionFromXPubRIFee';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE400 from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE400';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401 from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE403 from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE403';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBData from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBData';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401 from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403 from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee';
 import RequestLimitReached from './model/RequestLimitReached';
 import ResourceNotFound from './model/ResourceNotFound';
 import SyncHDWalletXPubYPubZPub400Response from './model/SyncHDWalletXPubYPubZPub400Response';
@@ -1779,20 +1774,20 @@ import SyncHDWalletXPubYPubZPubRBData from './model/SyncHDWalletXPubYPubZPubRBDa
 import SyncHDWalletXPubYPubZPubRBDataItem from './model/SyncHDWalletXPubYPubZPubRBDataItem';
 import SyncHDWalletXPubYPubZPubRData from './model/SyncHDWalletXPubYPubZPubRData';
 import SyncHDWalletXPubYPubZPubRI from './model/SyncHDWalletXPubYPubZPubRI';
-import SyncNewXPub400Response from './model/SyncNewXPub400Response';
-import SyncNewXPub401Response from './model/SyncNewXPub401Response';
-import SyncNewXPub403Response from './model/SyncNewXPub403Response';
-import SyncNewXPub409Response from './model/SyncNewXPub409Response';
-import SyncNewXPub422Response from './model/SyncNewXPub422Response';
-import SyncNewXPubE400 from './model/SyncNewXPubE400';
-import SyncNewXPubE401 from './model/SyncNewXPubE401';
-import SyncNewXPubE403 from './model/SyncNewXPubE403';
-import SyncNewXPubE409 from './model/SyncNewXPubE409';
-import SyncNewXPubE422 from './model/SyncNewXPubE422';
-import SyncNewXPubR from './model/SyncNewXPubR';
-import SyncNewXPubRB from './model/SyncNewXPubRB';
-import SyncNewXPubRData from './model/SyncNewXPubRData';
-import SyncNewXPubRI from './model/SyncNewXPubRI';
+import SyncNewHDWalletXPubYPubZPub400Response from './model/SyncNewHDWalletXPubYPubZPub400Response';
+import SyncNewHDWalletXPubYPubZPub401Response from './model/SyncNewHDWalletXPubYPubZPub401Response';
+import SyncNewHDWalletXPubYPubZPub403Response from './model/SyncNewHDWalletXPubYPubZPub403Response';
+import SyncNewHDWalletXPubYPubZPub409Response from './model/SyncNewHDWalletXPubYPubZPub409Response';
+import SyncNewHDWalletXPubYPubZPub422Response from './model/SyncNewHDWalletXPubYPubZPub422Response';
+import SyncNewHDWalletXPubYPubZPubE400 from './model/SyncNewHDWalletXPubYPubZPubE400';
+import SyncNewHDWalletXPubYPubZPubE401 from './model/SyncNewHDWalletXPubYPubZPubE401';
+import SyncNewHDWalletXPubYPubZPubE403 from './model/SyncNewHDWalletXPubYPubZPubE403';
+import SyncNewHDWalletXPubYPubZPubE409 from './model/SyncNewHDWalletXPubYPubZPubE409';
+import SyncNewHDWalletXPubYPubZPubE422 from './model/SyncNewHDWalletXPubYPubZPubE422';
+import SyncNewHDWalletXPubYPubZPubR from './model/SyncNewHDWalletXPubYPubZPubR';
+import SyncNewHDWalletXPubYPubZPubRB from './model/SyncNewHDWalletXPubYPubZPubRB';
+import SyncNewHDWalletXPubYPubZPubRData from './model/SyncNewHDWalletXPubYPubZPubRData';
+import SyncNewHDWalletXPubYPubZPubRI from './model/SyncNewHDWalletXPubYPubZPubRI';
 import TokensForwardingAutomationsLimitReached from './model/TokensForwardingAutomationsLimitReached';
 import TokensForwardingFail from './model/TokensForwardingFail';
 import TokensForwardingFailData from './model/TokensForwardingFailData';
@@ -1895,7 +1890,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.7.1
+* @version 1.7.2
 */
 export {
     /**
@@ -9483,36 +9478,6 @@ export {
     ListSyncedAddressesRI,
 
     /**
-     * The ListSyncedAddressesRIBalancesInner model constructor.
-     * @property {module:model/ListSyncedAddressesRIBalancesInner}
-     */
-    ListSyncedAddressesRIBalancesInner,
-
-    /**
-     * The ListSyncedAddressesRIS model constructor.
-     * @property {module:model/ListSyncedAddressesRIS}
-     */
-    ListSyncedAddressesRIS,
-
-    /**
-     * The ListSyncedAddressesRISC model constructor.
-     * @property {module:model/ListSyncedAddressesRISC}
-     */
-    ListSyncedAddressesRISC,
-
-    /**
-     * The ListSyncedAddressesRISF model constructor.
-     * @property {module:model/ListSyncedAddressesRISF}
-     */
-    ListSyncedAddressesRISF,
-
-    /**
-     * The ListSyncedAddressesRISN model constructor.
-     * @property {module:model/ListSyncedAddressesRISN}
-     */
-    ListSyncedAddressesRISN,
-
-    /**
      * The ListTokensByAddress400Response model constructor.
      * @property {module:model/ListTokensByAddress400Response}
      */
@@ -12213,184 +12178,184 @@ export {
     NewUnconfirmedTokensTransactionsRI,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPub400Response model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPub400Response}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response}
      */
-    PrepareAUTXOBasedTransactionFromXPub400Response,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPub401Response model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPub401Response}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response}
      */
-    PrepareAUTXOBasedTransactionFromXPub401Response,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPub403Response model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPub403Response}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response}
      */
-    PrepareAUTXOBasedTransactionFromXPub403Response,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubE400 model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubE400}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE400 model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE400}
      */
-    PrepareAUTXOBasedTransactionFromXPubE400,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE400,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubE401 model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubE401}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401 model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401}
      */
-    PrepareAUTXOBasedTransactionFromXPubE401,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubE403 model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubE403}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE403 model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE403}
      */
-    PrepareAUTXOBasedTransactionFromXPubE403,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE403,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubR model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubR}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR}
      */
-    PrepareAUTXOBasedTransactionFromXPubR,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRB model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRB}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB}
      */
-    PrepareAUTXOBasedTransactionFromXPubRB,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRBData model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRBData}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBData model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBData}
      */
-    PrepareAUTXOBasedTransactionFromXPubRBData,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBData,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRBDataItem model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRBDataItem}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem}
      */
-    PrepareAUTXOBasedTransactionFromXPubRBDataItem,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRBDataItemFee model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRBDataItemFee}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee}
      */
-    PrepareAUTXOBasedTransactionFromXPubRBDataItemFee,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner}
      */
-    PrepareAUTXOBasedTransactionFromXPubRBDataItemRecipientsInner,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRData model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRData}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData}
      */
-    PrepareAUTXOBasedTransactionFromXPubRData,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRI model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRI}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI}
      */
-    PrepareAUTXOBasedTransactionFromXPubRI,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRIVinInner model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRIVinInner}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner}
      */
-    PrepareAUTXOBasedTransactionFromXPubRIVinInner,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromXPubRIVoutInner model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromXPubRIVoutInner}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner}
      */
-    PrepareAUTXOBasedTransactionFromXPubRIVoutInner,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPub400Response model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPub400Response}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response}
      */
-    PrepareAnAccountBasedTransactionFromXPub400Response,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPub401Response model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPub401Response}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response}
      */
-    PrepareAnAccountBasedTransactionFromXPub401Response,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPub403Response model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPub403Response}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response}
      */
-    PrepareAnAccountBasedTransactionFromXPub403Response,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubE400 model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubE400}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400}
      */
-    PrepareAnAccountBasedTransactionFromXPubE400,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubE401 model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubE401}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401 model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401}
      */
-    PrepareAnAccountBasedTransactionFromXPubE401,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubE403 model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubE403}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403 model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403}
      */
-    PrepareAnAccountBasedTransactionFromXPubE403,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubR model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubR}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR}
      */
-    PrepareAnAccountBasedTransactionFromXPubR,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubRB model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubRB}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB}
      */
-    PrepareAnAccountBasedTransactionFromXPubRB,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubRBData model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubRBData}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData}
      */
-    PrepareAnAccountBasedTransactionFromXPubRBData,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubRBDataItem model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubRBDataItem}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem}
      */
-    PrepareAnAccountBasedTransactionFromXPubRBDataItem,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubRBDataItemFee model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubRBDataItemFee}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee}
      */
-    PrepareAnAccountBasedTransactionFromXPubRBDataItemFee,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubRData model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubRData}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData}
      */
-    PrepareAnAccountBasedTransactionFromXPubRData,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubRI model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubRI}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI}
      */
-    PrepareAnAccountBasedTransactionFromXPubRI,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromXPubRIFee model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromXPubRIFee}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee}
      */
-    PrepareAnAccountBasedTransactionFromXPubRIFee,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee,
 
     /**
      * The RequestLimitReached model constructor.
@@ -12501,88 +12466,88 @@ export {
     SyncHDWalletXPubYPubZPubRI,
 
     /**
-     * The SyncNewXPub400Response model constructor.
-     * @property {module:model/SyncNewXPub400Response}
+     * The SyncNewHDWalletXPubYPubZPub400Response model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPub400Response}
      */
-    SyncNewXPub400Response,
+    SyncNewHDWalletXPubYPubZPub400Response,
 
     /**
-     * The SyncNewXPub401Response model constructor.
-     * @property {module:model/SyncNewXPub401Response}
+     * The SyncNewHDWalletXPubYPubZPub401Response model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPub401Response}
      */
-    SyncNewXPub401Response,
+    SyncNewHDWalletXPubYPubZPub401Response,
 
     /**
-     * The SyncNewXPub403Response model constructor.
-     * @property {module:model/SyncNewXPub403Response}
+     * The SyncNewHDWalletXPubYPubZPub403Response model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPub403Response}
      */
-    SyncNewXPub403Response,
+    SyncNewHDWalletXPubYPubZPub403Response,
 
     /**
-     * The SyncNewXPub409Response model constructor.
-     * @property {module:model/SyncNewXPub409Response}
+     * The SyncNewHDWalletXPubYPubZPub409Response model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPub409Response}
      */
-    SyncNewXPub409Response,
+    SyncNewHDWalletXPubYPubZPub409Response,
 
     /**
-     * The SyncNewXPub422Response model constructor.
-     * @property {module:model/SyncNewXPub422Response}
+     * The SyncNewHDWalletXPubYPubZPub422Response model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPub422Response}
      */
-    SyncNewXPub422Response,
+    SyncNewHDWalletXPubYPubZPub422Response,
 
     /**
-     * The SyncNewXPubE400 model constructor.
-     * @property {module:model/SyncNewXPubE400}
+     * The SyncNewHDWalletXPubYPubZPubE400 model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubE400}
      */
-    SyncNewXPubE400,
+    SyncNewHDWalletXPubYPubZPubE400,
 
     /**
-     * The SyncNewXPubE401 model constructor.
-     * @property {module:model/SyncNewXPubE401}
+     * The SyncNewHDWalletXPubYPubZPubE401 model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubE401}
      */
-    SyncNewXPubE401,
+    SyncNewHDWalletXPubYPubZPubE401,
 
     /**
-     * The SyncNewXPubE403 model constructor.
-     * @property {module:model/SyncNewXPubE403}
+     * The SyncNewHDWalletXPubYPubZPubE403 model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubE403}
      */
-    SyncNewXPubE403,
+    SyncNewHDWalletXPubYPubZPubE403,
 
     /**
-     * The SyncNewXPubE409 model constructor.
-     * @property {module:model/SyncNewXPubE409}
+     * The SyncNewHDWalletXPubYPubZPubE409 model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubE409}
      */
-    SyncNewXPubE409,
+    SyncNewHDWalletXPubYPubZPubE409,
 
     /**
-     * The SyncNewXPubE422 model constructor.
-     * @property {module:model/SyncNewXPubE422}
+     * The SyncNewHDWalletXPubYPubZPubE422 model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubE422}
      */
-    SyncNewXPubE422,
+    SyncNewHDWalletXPubYPubZPubE422,
 
     /**
-     * The SyncNewXPubR model constructor.
-     * @property {module:model/SyncNewXPubR}
+     * The SyncNewHDWalletXPubYPubZPubR model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubR}
      */
-    SyncNewXPubR,
+    SyncNewHDWalletXPubYPubZPubR,
 
     /**
-     * The SyncNewXPubRB model constructor.
-     * @property {module:model/SyncNewXPubRB}
+     * The SyncNewHDWalletXPubYPubZPubRB model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubRB}
      */
-    SyncNewXPubRB,
+    SyncNewHDWalletXPubYPubZPubRB,
 
     /**
-     * The SyncNewXPubRData model constructor.
-     * @property {module:model/SyncNewXPubRData}
+     * The SyncNewHDWalletXPubYPubZPubRData model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubRData}
      */
-    SyncNewXPubRData,
+    SyncNewHDWalletXPubYPubZPubRData,
 
     /**
-     * The SyncNewXPubRI model constructor.
-     * @property {module:model/SyncNewXPubRI}
+     * The SyncNewHDWalletXPubYPubZPubRI model constructor.
+     * @property {module:model/SyncNewHDWalletXPubYPubZPubRI}
      */
-    SyncNewXPubRI,
+    SyncNewHDWalletXPubYPubZPubRI,
 
     /**
      * The TokensForwardingAutomationsLimitReached model constructor.

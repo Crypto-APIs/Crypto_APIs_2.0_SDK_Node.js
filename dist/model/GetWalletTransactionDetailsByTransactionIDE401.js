@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDE401 model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDE401
- * @version 1.7.1
+ * @version 1.7.2
  */
 var GetWalletTransactionDetailsByTransactionIDE401 = /*#__PURE__*/function () {
   /**

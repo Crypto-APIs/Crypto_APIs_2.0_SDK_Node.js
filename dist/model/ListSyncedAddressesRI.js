@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _ListSyncedAddressesRIBalancesInner = _interopRequireDefault(require("./ListSyncedAddressesRIBalancesInner"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20,20 +18,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesRI model module.
  * @module model/ListSyncedAddressesRI
- * @version 1.7.1
+ * @version 1.7.2
  */
 var ListSyncedAddressesRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSyncedAddressesRI</code>.
    * @alias module:model/ListSyncedAddressesRI
    * @param address {String} Represents the address.
-   * @param balances {Array.<module:model/ListSyncedAddressesRIBalancesInner>} Represents the balance of the address.
    * @param index {Number} Represents the index position of the transaction in the specific block.
    */
-  function ListSyncedAddressesRI(address, balances, index) {
+  function ListSyncedAddressesRI(address, index) {
     _classCallCheck(this, ListSyncedAddressesRI);
 
-    ListSyncedAddressesRI.initialize(this, address, balances, index);
+    ListSyncedAddressesRI.initialize(this, address, index);
   }
   /**
    * Initializes the fields of this object.
@@ -44,9 +41,8 @@ var ListSyncedAddressesRI = /*#__PURE__*/function () {
 
   _createClass(ListSyncedAddressesRI, null, [{
     key: "initialize",
-    value: function initialize(obj, address, balances, index) {
+    value: function initialize(obj, address, index) {
       obj['address'] = address;
-      obj['balances'] = balances;
       obj['index'] = index;
     }
     /**
@@ -67,10 +63,6 @@ var ListSyncedAddressesRI = /*#__PURE__*/function () {
           obj['address'] = _ApiClient["default"].convertToType(data['address'], 'String');
         }
 
-        if (data.hasOwnProperty('balances')) {
-          obj['balances'] = _ApiClient["default"].convertToType(data['balances'], [_ListSyncedAddressesRIBalancesInner["default"]]);
-        }
-
         if (data.hasOwnProperty('index')) {
           obj['index'] = _ApiClient["default"].convertToType(data['index'], 'Number');
         }
@@ -89,12 +81,6 @@ var ListSyncedAddressesRI = /*#__PURE__*/function () {
 
 
 ListSyncedAddressesRI.prototype['address'] = undefined;
-/**
- * Represents the balance of the address.
- * @member {Array.<module:model/ListSyncedAddressesRIBalancesInner>} balances
- */
-
-ListSyncedAddressesRI.prototype['balances'] = undefined;
 /**
  * Represents the index position of the transaction in the specific block.
  * @member {Number} index
