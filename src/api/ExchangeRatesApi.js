@@ -32,7 +32,7 @@ import GetExchangeRateByAssetsIDsR from '../model/GetExchangeRateByAssetsIDsR';
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.7.2
+* @version 1.7.3
 */
 export default class ExchangeRatesApi {
 

@@ -29,7 +29,7 @@ import ListLatestMinedBlocksRIBSZ2 from './ListLatestMinedBlocksRIBSZ2';
 /**
  * The ListLatestMinedBlocksRIBS model module.
  * @module model/ListLatestMinedBlocksRIBS
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListLatestMinedBlocksRIBS {
     /**

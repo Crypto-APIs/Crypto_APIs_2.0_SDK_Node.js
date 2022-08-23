@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListSupportedAssetsE401 model module.
  * @module model/ListSupportedAssetsE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListSupportedAssetsE401 {
     /**

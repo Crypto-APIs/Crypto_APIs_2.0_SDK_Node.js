@@ -17,7 +17,7 @@ import ListInternalTransactionDetailsByTransactionHashE403 from './ListInternalT
 /**
  * The ListInternalTransactionDetailsByTransactionHash403Response model module.
  * @module model/ListInternalTransactionDetailsByTransactionHash403Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListInternalTransactionDetailsByTransactionHash403Response {
     /**

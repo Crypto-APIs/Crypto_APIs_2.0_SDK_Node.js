@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolRI model module.
  * @module model/GetAssetDetailsByAssetSymbolRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetAssetDetailsByAssetSymbolRI = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHeightRIBSZVShieldedOutputInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSZVShieldedOutputInner
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTransactionsByBlockHeightRIBSZVShieldedOutputInner {
     /**

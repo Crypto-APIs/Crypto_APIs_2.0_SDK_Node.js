@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionUnconfirmedErc721 model module.
  * @module model/AddressTokensTransactionUnconfirmedErc721
- * @version 1.7.2
+ * @version 1.7.3
  */
 var AddressTokensTransactionUnconfirmedErc721 = /*#__PURE__*/function () {
   /**

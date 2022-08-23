@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetExchangeRateByAssetSymbolsE400 model module.
  * @module model/GetExchangeRateByAssetSymbolsE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetExchangeRateByAssetSymbolsE400 {
     /**

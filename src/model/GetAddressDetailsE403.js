@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetAddressDetailsE403 model module.
  * @module model/GetAddressDetailsE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetAddressDetailsE403 {
     /**

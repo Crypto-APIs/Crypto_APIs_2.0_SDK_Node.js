@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListTokensByAddressE400 model module.
  * @module model/ListTokensByAddressE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTokensByAddressE400 {
     /**

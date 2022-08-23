@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityE401 model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityE401 {
     /**

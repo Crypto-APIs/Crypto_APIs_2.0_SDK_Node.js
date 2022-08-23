@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSBSCGasPrice from './ListConfirmedTr
 /**
  * The ListAllUnconfirmedTransactionsRIBSBSC model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSBSC
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListAllUnconfirmedTransactionsRIBSBSC {
     /**

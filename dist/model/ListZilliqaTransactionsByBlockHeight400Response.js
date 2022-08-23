@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHeight400Response model module.
  * @module model/ListZilliqaTransactionsByBlockHeight400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListZilliqaTransactionsByBlockHeight400Response = /*#__PURE__*/function () {
   /**

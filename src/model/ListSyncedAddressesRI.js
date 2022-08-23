@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListSyncedAddressesRI model module.
  * @module model/ListSyncedAddressesRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListSyncedAddressesRI {
     /**

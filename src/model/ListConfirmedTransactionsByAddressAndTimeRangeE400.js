@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeE400 model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeE400 {
     /**

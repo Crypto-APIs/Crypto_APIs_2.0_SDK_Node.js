@@ -17,7 +17,7 @@ import GetFeeAddressDetailsE400 from './GetFeeAddressDetailsE400';
 /**
  * The GetFeeAddressDetails400Response model module.
  * @module model/GetFeeAddressDetails400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetFeeAddressDetails400Response {
     /**

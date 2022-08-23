@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSBCVoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHashRIBSBCVoutInnerScriptPubKey
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTransactionsByBlockHashRIBSBCVoutInnerScriptPubKey {
     /**

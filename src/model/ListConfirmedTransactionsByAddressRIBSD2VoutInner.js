@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSD2VoutInnerScriptPubKey from './Lis
 /**
  * The ListConfirmedTransactionsByAddressRIBSD2VoutInner model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSD2VoutInner
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListConfirmedTransactionsByAddressRIBSD2VoutInner {
     /**

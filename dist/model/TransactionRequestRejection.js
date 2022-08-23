@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestRejection model module.
  * @module model/TransactionRequestRejection
- * @version 1.7.2
+ * @version 1.7.3
  */
 var TransactionRequestRejection = /*#__PURE__*/function () {
   /**

@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBST model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBST
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBST = /*#__PURE__*/function () {
   /**

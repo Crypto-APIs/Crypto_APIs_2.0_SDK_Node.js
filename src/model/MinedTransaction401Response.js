@@ -17,7 +17,7 @@ import MinedTransactionE401 from './MinedTransactionE401';
 /**
  * The MinedTransaction401Response model module.
  * @module model/MinedTransaction401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class MinedTransaction401Response {
     /**

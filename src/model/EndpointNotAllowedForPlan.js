@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The EndpointNotAllowedForPlan model module.
  * @module model/EndpointNotAllowedForPlan
- * @version 1.7.2
+ * @version 1.7.3
  */
 class EndpointNotAllowedForPlan {
     /**

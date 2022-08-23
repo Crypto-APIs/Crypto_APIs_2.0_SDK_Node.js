@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetLastMinedBlockE400 model module.
  * @module model/GetLastMinedBlockE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetLastMinedBlockE400 {
     /**

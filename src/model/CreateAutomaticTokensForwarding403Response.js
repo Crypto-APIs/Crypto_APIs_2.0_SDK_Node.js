@@ -17,7 +17,7 @@ import CreateAutomaticTokensForwardingE403 from './CreateAutomaticTokensForwardi
 /**
  * The CreateAutomaticTokensForwarding403Response model module.
  * @module model/CreateAutomaticTokensForwarding403Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateAutomaticTokensForwarding403Response {
     /**

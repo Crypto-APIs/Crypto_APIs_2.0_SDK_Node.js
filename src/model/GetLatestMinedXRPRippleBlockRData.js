@@ -17,7 +17,7 @@ import GetLatestMinedXRPRippleBlockRI from './GetLatestMinedXRPRippleBlockRI';
 /**
  * The GetLatestMinedXRPRippleBlockRData model module.
  * @module model/GetLatestMinedXRPRippleBlockRData
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetLatestMinedXRPRippleBlockRData {
     /**

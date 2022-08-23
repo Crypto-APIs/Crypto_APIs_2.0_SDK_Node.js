@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTokenDetailsByContractAddressE403 model module.
  * @module model/GetTokenDetailsByContractAddressE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetTokenDetailsByContractAddressE403 = /*#__PURE__*/function () {
   /**

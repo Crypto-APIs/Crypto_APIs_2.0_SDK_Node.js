@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticTokensForwarding403Response model module.
  * @module model/DeleteAutomaticTokensForwarding403Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 var DeleteAutomaticTokensForwarding403Response = /*#__PURE__*/function () {
   /**

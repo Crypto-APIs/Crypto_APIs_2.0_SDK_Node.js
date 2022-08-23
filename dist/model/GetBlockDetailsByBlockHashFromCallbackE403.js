@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackE403 model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetBlockDetailsByBlockHashFromCallbackE403 = /*#__PURE__*/function () {
   /**

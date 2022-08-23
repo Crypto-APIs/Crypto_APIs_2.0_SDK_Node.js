@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetFeeRecommendationsE400 model module.
  * @module model/GetFeeRecommendationsE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetFeeRecommendationsE400 {
     /**

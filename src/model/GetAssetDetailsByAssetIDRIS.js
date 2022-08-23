@@ -17,7 +17,7 @@ import GetAssetDetailsByAssetIDRISC from './GetAssetDetailsByAssetIDRISC';
 /**
  * The GetAssetDetailsByAssetIDRIS model module.
  * @module model/GetAssetDetailsByAssetIDRIS
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetAssetDetailsByAssetIDRIS {
     /**

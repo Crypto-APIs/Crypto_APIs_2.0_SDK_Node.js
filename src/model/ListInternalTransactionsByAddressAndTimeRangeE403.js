@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeE403 model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListInternalTransactionsByAddressAndTimeRangeE403 {
     /**

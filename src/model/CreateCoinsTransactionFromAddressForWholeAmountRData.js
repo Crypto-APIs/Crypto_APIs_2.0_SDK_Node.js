@@ -17,7 +17,7 @@ import CreateCoinsTransactionFromAddressForWholeAmountRI from './CreateCoinsTran
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRData model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRData
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateCoinsTransactionFromAddressForWholeAmountRData {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSD model module.
  * @module model/ListLatestMinedBlocksRIBSD
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListLatestMinedBlocksRIBSD {
     /**

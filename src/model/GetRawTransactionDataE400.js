@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetRawTransactionDataE400 model module.
  * @module model/GetRawTransactionDataE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetRawTransactionDataE400 {
     /**

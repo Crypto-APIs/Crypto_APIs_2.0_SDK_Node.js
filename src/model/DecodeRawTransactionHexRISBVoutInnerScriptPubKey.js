@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DecodeRawTransactionHexRISBVoutInnerScriptPubKey model module.
  * @module model/DecodeRawTransactionHexRISBVoutInnerScriptPubKey
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DecodeRawTransactionHexRISBVoutInnerScriptPubKey {
     /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdE400 model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetInternalTransactionByTransactionHashAndOperationIdE400 {
     /**

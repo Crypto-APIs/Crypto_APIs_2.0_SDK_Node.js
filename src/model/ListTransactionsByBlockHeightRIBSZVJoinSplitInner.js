@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHeightRIBSZVJoinSplitInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSZVJoinSplitInner
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTransactionsByBlockHeightRIBSZVJoinSplitInner {
     /**

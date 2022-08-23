@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403 model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403 {
     /**

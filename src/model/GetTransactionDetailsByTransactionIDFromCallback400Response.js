@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackE400 from './GetTransacti
 /**
  * The GetTransactionDetailsByTransactionIDFromCallback400Response model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallback400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDFromCallback400Response {
     /**

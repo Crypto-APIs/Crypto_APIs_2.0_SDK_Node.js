@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The CouldNotCalculateRateForPair model module.
  * @module model/CouldNotCalculateRateForPair
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CouldNotCalculateRateForPair {
     /**

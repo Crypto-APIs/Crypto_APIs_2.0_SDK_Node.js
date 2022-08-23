@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessDataItem model module.
  * @module model/TokensForwardingSuccessDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 var TokensForwardingSuccessDataItem = /*#__PURE__*/function () {
   /**

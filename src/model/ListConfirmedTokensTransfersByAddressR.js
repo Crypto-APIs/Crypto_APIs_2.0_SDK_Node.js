@@ -17,7 +17,7 @@ import ListConfirmedTokensTransfersByAddressRData from './ListConfirmedTokensTra
 /**
  * The ListConfirmedTokensTransfersByAddressR model module.
  * @module model/ListConfirmedTokensTransfersByAddressR
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListConfirmedTokensTransfersByAddressR {
     /**

@@ -17,7 +17,7 @@ import ListSupportedAssetsE401 from './ListSupportedAssetsE401';
 /**
  * The ListSupportedAssets401Response model module.
  * @module model/ListSupportedAssets401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListSupportedAssets401Response {
     /**

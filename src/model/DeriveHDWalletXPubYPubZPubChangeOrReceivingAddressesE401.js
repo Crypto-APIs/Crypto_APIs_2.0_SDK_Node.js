@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE401 model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE401 {
     /**

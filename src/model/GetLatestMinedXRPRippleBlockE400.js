@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetLatestMinedXRPRippleBlockE400 model module.
  * @module model/GetLatestMinedXRPRippleBlockE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetLatestMinedXRPRippleBlockE400 {
     /**

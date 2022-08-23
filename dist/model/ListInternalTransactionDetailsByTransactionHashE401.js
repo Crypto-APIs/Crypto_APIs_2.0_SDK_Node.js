@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionDetailsByTransactionHashE401 model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListInternalTransactionDetailsByTransactionHashE401 = /*#__PURE__*/function () {
   /**

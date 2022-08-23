@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionMinedDataItemMinedInBlock model module.
  * @module model/TransactionMinedDataItemMinedInBlock
- * @version 1.7.2
+ * @version 1.7.3
  */
 var TransactionMinedDataItemMinedInBlock = /*#__PURE__*/function () {
   /**

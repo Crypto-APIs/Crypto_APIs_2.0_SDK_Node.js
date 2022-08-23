@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListZilliqaTransactionsByBlockHeightE400 model module.
  * @module model/ListZilliqaTransactionsByBlockHeightE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListZilliqaTransactionsByBlockHeightE400 {
     /**

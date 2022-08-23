@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBST model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBST
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetWalletTransactionDetailsByTransactionIDRIBST {
     /**

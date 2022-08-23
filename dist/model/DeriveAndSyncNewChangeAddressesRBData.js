@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewChangeAddressesRBData model module.
  * @module model/DeriveAndSyncNewChangeAddressesRBData
- * @version 1.7.2
+ * @version 1.7.3
  */
 var DeriveAndSyncNewChangeAddressesRBData = /*#__PURE__*/function () {
   /**

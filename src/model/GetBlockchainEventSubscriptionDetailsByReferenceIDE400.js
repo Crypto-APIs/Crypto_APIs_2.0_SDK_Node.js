@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDE400 model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetBlockchainEventSubscriptionDetailsByReferenceIDE400 {
     /**

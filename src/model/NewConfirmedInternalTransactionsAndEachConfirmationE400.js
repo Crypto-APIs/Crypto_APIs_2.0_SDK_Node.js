@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationE400 model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class NewConfirmedInternalTransactionsAndEachConfirmationE400 {
     /**

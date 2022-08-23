@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetsIDsE422 model module.
  * @module model/GetExchangeRateByAssetsIDsE422
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetExchangeRateByAssetsIDsE422 = /*#__PURE__*/function () {
   /**

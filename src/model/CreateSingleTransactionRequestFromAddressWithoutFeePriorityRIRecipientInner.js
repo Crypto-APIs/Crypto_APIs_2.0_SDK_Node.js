@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner {
     /**

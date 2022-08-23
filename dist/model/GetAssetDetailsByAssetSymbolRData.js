@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolRData model module.
  * @module model/GetAssetDetailsByAssetSymbolRData
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetAssetDetailsByAssetSymbolRData = /*#__PURE__*/function () {
   /**

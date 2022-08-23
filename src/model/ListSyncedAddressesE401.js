@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListSyncedAddressesE401 model module.
  * @module model/ListSyncedAddressesE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListSyncedAddressesE401 {
     /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetExchangeRateByAssetSymbolsE403 model module.
  * @module model/GetExchangeRateByAssetSymbolsE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetExchangeRateByAssetSymbolsE403 {
     /**

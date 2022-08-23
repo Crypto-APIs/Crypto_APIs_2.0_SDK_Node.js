@@ -17,7 +17,7 @@ import CreateAutomaticCoinsForwardingE401 from './CreateAutomaticCoinsForwarding
 /**
  * The CreateAutomaticCoinsForwarding401Response model module.
  * @module model/CreateAutomaticCoinsForwarding401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateAutomaticCoinsForwarding401Response {
     /**

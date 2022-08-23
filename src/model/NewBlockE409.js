@@ -19,7 +19,7 @@ import InvalidData from './InvalidData';
 /**
  * The NewBlockE409 model module.
  * @module model/NewBlockE409
- * @version 1.7.2
+ * @version 1.7.3
  */
 class NewBlockE409 {
     /**

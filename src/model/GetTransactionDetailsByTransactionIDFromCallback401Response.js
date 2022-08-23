@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackE401 from './GetTransacti
 /**
  * The GetTransactionDetailsByTransactionIDFromCallback401Response model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallback401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDFromCallback401Response {
     /**

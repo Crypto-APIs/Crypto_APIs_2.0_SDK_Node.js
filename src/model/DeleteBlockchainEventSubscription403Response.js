@@ -17,7 +17,7 @@ import DeleteBlockchainEventSubscriptionE403 from './DeleteBlockchainEventSubscr
 /**
  * The DeleteBlockchainEventSubscription403Response model module.
  * @module model/DeleteBlockchainEventSubscription403Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeleteBlockchainEventSubscription403Response {
     /**

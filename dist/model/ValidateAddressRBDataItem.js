@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddressRBDataItem model module.
  * @module model/ValidateAddressRBDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ValidateAddressRBDataItem = /*#__PURE__*/function () {
   /**

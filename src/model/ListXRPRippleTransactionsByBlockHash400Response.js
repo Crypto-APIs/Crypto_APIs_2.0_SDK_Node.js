@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByBlockHashE400 from './ListXRPRippleTransaction
 /**
  * The ListXRPRippleTransactionsByBlockHash400Response model module.
  * @module model/ListXRPRippleTransactionsByBlockHash400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListXRPRippleTransactionsByBlockHash400Response {
     /**

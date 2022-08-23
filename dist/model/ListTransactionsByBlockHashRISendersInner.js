@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRISendersInner model module.
  * @module model/ListTransactionsByBlockHashRISendersInner
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListTransactionsByBlockHashRISendersInner = /*#__PURE__*/function () {
   /**

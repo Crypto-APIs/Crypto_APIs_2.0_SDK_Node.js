@@ -17,7 +17,7 @@ import NewConfirmedTokenTransactionsForSpecificAmountE403 from './NewConfirmedTo
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmount403Response model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmount403Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class NewConfirmedTokenTransactionsForSpecificAmount403Response {
     /**

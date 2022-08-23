@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The SyncHDWalletXPubYPubZPubE401 model module.
  * @module model/SyncHDWalletXPubYPubZPubE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class SyncHDWalletXPubYPubZPubE401 {
     /**

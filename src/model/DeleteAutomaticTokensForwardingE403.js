@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The DeleteAutomaticTokensForwardingE403 model module.
  * @module model/DeleteAutomaticTokensForwardingE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeleteAutomaticTokensForwardingE403 {
     /**

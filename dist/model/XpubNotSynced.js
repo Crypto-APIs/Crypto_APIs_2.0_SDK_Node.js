@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The XpubNotSynced model module.
  * @module model/XpubNotSynced
- * @version 1.7.2
+ * @version 1.7.3
  */
 var XpubNotSynced = /*#__PURE__*/function () {
   /**

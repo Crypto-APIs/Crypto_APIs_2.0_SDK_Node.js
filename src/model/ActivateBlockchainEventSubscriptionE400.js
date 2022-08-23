@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ActivateBlockchainEventSubscriptionE400 model module.
  * @module model/ActivateBlockchainEventSubscriptionE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ActivateBlockchainEventSubscriptionE400 {
     /**

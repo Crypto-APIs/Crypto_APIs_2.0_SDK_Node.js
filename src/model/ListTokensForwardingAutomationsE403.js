@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListTokensForwardingAutomationsE403 model module.
  * @module model/ListTokensForwardingAutomationsE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTokensForwardingAutomationsE403 {
     /**

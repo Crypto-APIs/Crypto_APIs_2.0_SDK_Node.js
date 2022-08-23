@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetZilliqaAddressDetailsE400 model module.
  * @module model/GetZilliqaAddressDetailsE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetZilliqaAddressDetailsE400 {
     /**

@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetEIP1559FeeRecommendationsE400 model module.
  * @module model/GetEIP1559FeeRecommendationsE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetEIP1559FeeRecommendationsE400 = /*#__PURE__*/function () {
   /**

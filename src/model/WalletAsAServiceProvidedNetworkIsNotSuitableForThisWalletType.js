@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType model module.
  * @module model/WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType
- * @version 1.7.2
+ * @version 1.7.3
  */
 class WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType {
     /**

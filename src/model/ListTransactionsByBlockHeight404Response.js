@@ -17,7 +17,7 @@ import BlockchainDataBlockNotFound from './BlockchainDataBlockNotFound';
 /**
  * The ListTransactionsByBlockHeight404Response model module.
  * @module model/ListTransactionsByBlockHeight404Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTransactionsByBlockHeight404Response {
     /**

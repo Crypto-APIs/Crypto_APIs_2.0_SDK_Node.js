@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRData model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRData
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetBlockDetailsByBlockHeightFromCallbackRData = /*#__PURE__*/function () {
   /**

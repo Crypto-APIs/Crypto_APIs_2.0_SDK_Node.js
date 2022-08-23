@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllUnconfirmedTransactions400Response model module.
  * @module model/ListAllUnconfirmedTransactions400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListAllUnconfirmedTransactions400Response = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetEIP1559FeeRecommendationsRIMaxFeePerGas model module.
  * @module model/GetEIP1559FeeRecommendationsRIMaxFeePerGas
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetEIP1559FeeRecommendationsRIMaxFeePerGas {
     /**

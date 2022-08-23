@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetZilliqaAddressDetailsE401 model module.
  * @module model/GetZilliqaAddressDetailsE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetZilliqaAddressDetailsE401 {
     /**

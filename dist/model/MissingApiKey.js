@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MissingApiKey model module.
  * @module model/MissingApiKey
- * @version 1.7.2
+ * @version 1.7.3
  */
 var MissingApiKey = /*#__PURE__*/function () {
   /**

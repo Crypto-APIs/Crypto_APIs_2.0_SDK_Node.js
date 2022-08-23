@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE403 model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE403 = /*#__PURE__*/function () {
   /**

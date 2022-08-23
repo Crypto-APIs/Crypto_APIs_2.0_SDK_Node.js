@@ -44,7 +44,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBS model module.
  * @module model/ListLatestMinedBlocksRIBS
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import GetXRPRippleAddressDetailsRI from './GetXRPRippleAddressDetailsRI';
 /**
  * The GetXRPRippleAddressDetailsRData model module.
  * @module model/GetXRPRippleAddressDetailsRData
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetXRPRippleAddressDetailsRData {
     /**

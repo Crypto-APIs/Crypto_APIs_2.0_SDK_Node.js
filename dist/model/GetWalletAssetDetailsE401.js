@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsE401 model module.
  * @module model/GetWalletAssetDetailsE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetWalletAssetDetailsE401 = /*#__PURE__*/function () {
   /**

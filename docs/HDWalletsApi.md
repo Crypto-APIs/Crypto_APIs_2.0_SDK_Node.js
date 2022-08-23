@@ -11,6 +11,8 @@ Method | HTTP request | Description
 [**listHDWalletXPubYPubZPubTransactions**](HDWalletsApi.md#listHDWalletXPubYPubZPubTransactions) | **GET** /blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/transactions | List HD Wallet (xPub, yPub, zPub) Transactions
 [**listHDWalletXPubYPubZPubUTXOs**](HDWalletsApi.md#listHDWalletXPubYPubZPubUTXOs) | **GET** /blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/utxos | List HD Wallet (xPub, yPub, zPub) UTXOs
 [**listSyncedAddresses**](HDWalletsApi.md#listSyncedAddresses) | **GET** /blockchain-data/{blockchain}/{network}/hd/{extendedPublicKey}/synced-addresses | List Synced Addresses
+[**prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub**](HDWalletsApi.md#prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub) | **POST** /blockchain-data/{blockchain}/{network}/transactions/prepare-utxo-transaction | Prepare A UTXO-Based Transaction From HD Wallet (xPub, yPub, zPub)
+[**prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub**](HDWalletsApi.md#prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub) | **POST** /blockchain-data/{blockchain}/{network}/transactions/prepare-account-based-transaction | Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
 [**syncHDWalletXPubYPubZPub**](HDWalletsApi.md#syncHDWalletXPubYPubZPub) | **POST** /blockchain-data/{blockchain}/{network}/hd/sync | Sync HD Wallet (xPub, yPub, zPub)
 [**syncNewHDWalletXPubYPubZPub**](HDWalletsApi.md#syncNewHDWalletXPubYPubZPub) | **POST** /blockchain-data/{blockchain}/{network}/hd/sync-new | Sync New HD Wallet (xPub, yPub, zPub)
 
@@ -443,6 +445,122 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub
+
+> PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts)
+
+Prepare A UTXO-Based Transaction From HD Wallet (xPub, yPub, zPub)
+
+Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the &#x60;selectionStrategy&#x60; and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.HDWalletsApi();
+let blockchain = bitcoin; // String | 
+let network = testnet; // String | 
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB': new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB() // PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB | 
+};
+apiInstance.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**|  | 
+ **network** | **String**|  | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB** | [**PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB.md)|  | [optional] 
+
+### Return type
+
+[**PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub
+
+> PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts)
+
+Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
+
+Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.HDWalletsApi();
+let blockchain = ethereum; // String | 
+let network = ropsten; // String | 
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB': new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB() // PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB | 
+};
+apiInstance.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**|  | 
+ **network** | **String**|  | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB** | [**PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB**](PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB.md)|  | [optional] 
+
+### Return type
+
+[**PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR**](PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 

@@ -22,7 +22,7 @@ import TokensForwardingAutomationsLimitReached from './TokensForwardingAutomatio
 /**
  * The AddTokensToExistingFromAddressE403 model module.
  * @module model/AddTokensToExistingFromAddressE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class AddTokensToExistingFromAddressE403 {
     /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetAssetDetailsByAssetIDE400 model module.
  * @module model/GetAssetDetailsByAssetIDE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetAssetDetailsByAssetIDE400 {
     /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListAllAssetsFromAllWalletsE403 model module.
  * @module model/ListAllAssetsFromAllWalletsE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListAllAssetsFromAllWalletsE403 {
     /**

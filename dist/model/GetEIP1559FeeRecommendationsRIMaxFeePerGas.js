@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetEIP1559FeeRecommendationsRIMaxFeePerGas model module.
  * @module model/GetEIP1559FeeRecommendationsRIMaxFeePerGas
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetEIP1559FeeRecommendationsRIMaxFeePerGas = /*#__PURE__*/function () {
   /**

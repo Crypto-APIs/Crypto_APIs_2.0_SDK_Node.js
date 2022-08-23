@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetTransactionDetailsByTransactionIDE403 model module.
  * @module model/GetTransactionDetailsByTransactionIDE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDE403 {
     /**

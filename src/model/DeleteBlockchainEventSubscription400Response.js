@@ -17,7 +17,7 @@ import DeleteBlockchainEventSubscriptionE400 from './DeleteBlockchainEventSubscr
 /**
  * The DeleteBlockchainEventSubscription400Response model module.
  * @module model/DeleteBlockchainEventSubscription400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeleteBlockchainEventSubscription400Response {
     /**

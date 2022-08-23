@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SyncNewHDWalletXPubYPubZPubRI model module.
  * @module model/SyncNewHDWalletXPubYPubZPubRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class SyncNewHDWalletXPubYPubZPubRI {
     /**

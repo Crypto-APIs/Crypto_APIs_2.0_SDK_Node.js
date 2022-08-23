@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionRData model module.
  * @module model/BroadcastLocallySignedTransactionRData
- * @version 1.7.2
+ * @version 1.7.3
  */
 var BroadcastLocallySignedTransactionRData = /*#__PURE__*/function () {
   /**

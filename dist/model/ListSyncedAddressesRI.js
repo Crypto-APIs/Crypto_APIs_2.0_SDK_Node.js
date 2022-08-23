@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesRI model module.
  * @module model/ListSyncedAddressesRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListSyncedAddressesRI = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDE401 from './GetXRPRippleTra
 /**
  * The GetXRPRippleTransactionDetailsByTransactionID401Response model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionID401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetXRPRippleTransactionDetailsByTransactionID401Response {
     /**

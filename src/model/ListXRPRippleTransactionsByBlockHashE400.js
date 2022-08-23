@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListXRPRippleTransactionsByBlockHashE400 model module.
  * @module model/ListXRPRippleTransactionsByBlockHashE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListXRPRippleTransactionsByBlockHashE400 {
     /**

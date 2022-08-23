@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetTokenDetailsByContractAddressE400 model module.
  * @module model/GetTokenDetailsByContractAddressE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTokenDetailsByContractAddressE400 {
     /**

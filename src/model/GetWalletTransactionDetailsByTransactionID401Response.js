@@ -17,7 +17,7 @@ import GetWalletTransactionDetailsByTransactionIDE401 from './GetWalletTransacti
 /**
  * The GetWalletTransactionDetailsByTransactionID401Response model module.
  * @module model/GetWalletTransactionDetailsByTransactionID401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetWalletTransactionDetailsByTransactionID401Response {
     /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetLatestMinedXRPRippleBlockE403 model module.
  * @module model/GetLatestMinedXRPRippleBlockE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetLatestMinedXRPRippleBlockE403 {
     /**

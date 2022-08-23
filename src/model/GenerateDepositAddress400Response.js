@@ -17,7 +17,7 @@ import GenerateDepositAddressE400 from './GenerateDepositAddressE400';
 /**
  * The GenerateDepositAddress400Response model module.
  * @module model/GenerateDepositAddress400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GenerateDepositAddress400Response {
     /**

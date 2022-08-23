@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetFeeAddressDetailsE401 model module.
  * @module model/GetFeeAddressDetailsE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetFeeAddressDetailsE401 {
     /**

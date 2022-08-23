@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationRData model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationRData
- * @version 1.7.2
+ * @version 1.7.3
  */
 var NewConfirmedInternalTransactionsAndEachConfirmationRData = /*#__PURE__*/function () {
   /**

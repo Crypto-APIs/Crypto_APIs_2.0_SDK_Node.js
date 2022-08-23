@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.7.2
+* @version 1.7.3
 */
 var ExchangeRatesApi = /*#__PURE__*/function () {
   /**

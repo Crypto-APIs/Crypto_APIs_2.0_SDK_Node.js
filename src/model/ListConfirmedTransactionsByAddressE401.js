@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListConfirmedTransactionsByAddressE401 model module.
  * @module model/ListConfirmedTransactionsByAddressE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListConfirmedTransactionsByAddressE401 {
     /**

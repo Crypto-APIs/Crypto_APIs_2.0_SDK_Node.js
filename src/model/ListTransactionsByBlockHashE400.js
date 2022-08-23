@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListTransactionsByBlockHashE400 model module.
  * @module model/ListTransactionsByBlockHashE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTransactionsByBlockHashE400 {
     /**

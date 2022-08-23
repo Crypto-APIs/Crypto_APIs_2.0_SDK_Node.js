@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlock401Response model module.
  * @module model/NewBlock401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 var NewBlock401Response = /*#__PURE__*/function () {
   /**

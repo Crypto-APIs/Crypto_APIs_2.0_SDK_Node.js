@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetWalletAssetDetailsE401 model module.
  * @module model/GetWalletAssetDetailsE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetWalletAssetDetailsE401 {
     /**

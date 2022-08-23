@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransactionRBDataItem model module.
  * @module model/MinedTransactionRBDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 var MinedTransactionRBDataItem = /*#__PURE__*/function () {
   /**

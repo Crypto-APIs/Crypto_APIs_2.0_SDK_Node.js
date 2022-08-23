@@ -17,7 +17,7 @@ import NewBlockE403 from './NewBlockE403';
 /**
  * The NewBlock403Response model module.
  * @module model/NewBlock403Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class NewBlock403Response {
     /**

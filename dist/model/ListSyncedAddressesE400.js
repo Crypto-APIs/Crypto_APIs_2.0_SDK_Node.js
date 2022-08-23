@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesE400 model module.
  * @module model/ListSyncedAddressesE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListSyncedAddressesE400 = /*#__PURE__*/function () {
   /**

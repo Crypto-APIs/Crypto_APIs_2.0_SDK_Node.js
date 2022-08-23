@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingAutomationsLimitReached model module.
  * @module model/TokensForwardingAutomationsLimitReached
- * @version 1.7.2
+ * @version 1.7.3
  */
 var TokensForwardingAutomationsLimitReached = /*#__PURE__*/function () {
   /**

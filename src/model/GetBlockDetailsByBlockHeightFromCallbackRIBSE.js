@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSE model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSE
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetBlockDetailsByBlockHeightFromCallbackRIBSE {
     /**

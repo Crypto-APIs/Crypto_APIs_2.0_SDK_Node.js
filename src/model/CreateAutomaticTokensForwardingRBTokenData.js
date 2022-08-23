@@ -18,7 +18,7 @@ import CreateAutomaticTokensForwardingRBTokenDataEthereumToken from './CreateAut
 /**
  * The CreateAutomaticTokensForwardingRBTokenData model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenData
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateAutomaticTokensForwardingRBTokenData {
     /**

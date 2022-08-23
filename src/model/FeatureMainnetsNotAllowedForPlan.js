@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The FeatureMainnetsNotAllowedForPlan model module.
  * @module model/FeatureMainnetsNotAllowedForPlan
- * @version 1.7.2
+ * @version 1.7.3
  */
 class FeatureMainnetsNotAllowedForPlan {
     /**

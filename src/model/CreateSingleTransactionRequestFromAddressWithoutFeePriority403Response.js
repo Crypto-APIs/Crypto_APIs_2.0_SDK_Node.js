@@ -17,7 +17,7 @@ import CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403 from './C
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response {
     /**

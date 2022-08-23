@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmount409Response model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmount409Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 var CreateCoinsTransactionFromAddressForWholeAmount409Response = /*#__PURE__*/function () {
   /**

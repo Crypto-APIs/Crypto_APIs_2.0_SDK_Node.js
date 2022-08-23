@@ -17,7 +17,7 @@ import AddTokensToExistingFromAddressE400 from './AddTokensToExistingFromAddress
 /**
  * The AddTokensToExistingFromAddress400Response model module.
  * @module model/AddTokensToExistingFromAddress400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class AddTokensToExistingFromAddress400Response {
     /**

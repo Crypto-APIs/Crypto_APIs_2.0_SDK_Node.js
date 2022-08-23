@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSZ model module.
  * @module model/ListTransactionsByBlockHashRIBSZ
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListTransactionsByBlockHashRIBSZ = /*#__PURE__*/function () {
   /**

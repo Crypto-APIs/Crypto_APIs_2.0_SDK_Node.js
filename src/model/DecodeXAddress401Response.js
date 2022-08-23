@@ -17,7 +17,7 @@ import DecodeXAddressE401 from './DecodeXAddressE401';
 /**
  * The DecodeXAddress401Response model module.
  * @module model/DecodeXAddress401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DecodeXAddress401Response {
     /**

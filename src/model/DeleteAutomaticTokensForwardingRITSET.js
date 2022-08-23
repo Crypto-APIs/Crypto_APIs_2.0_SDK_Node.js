@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeleteAutomaticTokensForwardingRITSET model module.
  * @module model/DeleteAutomaticTokensForwardingRITSET
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeleteAutomaticTokensForwardingRITSET {
     /**

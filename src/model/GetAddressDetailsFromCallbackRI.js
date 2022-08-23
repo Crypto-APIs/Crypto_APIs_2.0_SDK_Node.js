@@ -19,7 +19,7 @@ import GetAddressDetailsRIConfirmedBalance from './GetAddressDetailsRIConfirmedB
 /**
  * The GetAddressDetailsFromCallbackRI model module.
  * @module model/GetAddressDetailsFromCallbackRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetAddressDetailsFromCallbackRI {
     /**

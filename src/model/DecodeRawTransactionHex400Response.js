@@ -17,7 +17,7 @@ import DecodeRawTransactionHexE400 from './DecodeRawTransactionHexE400';
 /**
  * The DecodeRawTransactionHex400Response model module.
  * @module model/DecodeRawTransactionHex400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DecodeRawTransactionHex400Response {
     /**

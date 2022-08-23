@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListUnconfirmedTokensTransfersByAddressE403 model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListUnconfirmedTokensTransfersByAddressE403 {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed {
     /**

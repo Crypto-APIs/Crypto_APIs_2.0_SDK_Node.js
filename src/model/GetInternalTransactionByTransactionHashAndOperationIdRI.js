@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdRI model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetInternalTransactionByTransactionHashAndOperationIdRI {
     /**

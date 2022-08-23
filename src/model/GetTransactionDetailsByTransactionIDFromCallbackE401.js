@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackE401 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDFromCallbackE401 {
     /**

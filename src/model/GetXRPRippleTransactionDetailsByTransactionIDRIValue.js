@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRIValue model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRIValue
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetXRPRippleTransactionDetailsByTransactionIDRIValue {
     /**

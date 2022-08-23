@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee
- * @version 1.7.2
+ * @version 1.7.3
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee {
     /**

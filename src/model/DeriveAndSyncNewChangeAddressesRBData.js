@@ -17,7 +17,7 @@ import DeriveAndSyncNewChangeAddressesRBDataItem from './DeriveAndSyncNewChangeA
 /**
  * The DeriveAndSyncNewChangeAddressesRBData model module.
  * @module model/DeriveAndSyncNewChangeAddressesRBData
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeriveAndSyncNewChangeAddressesRBData {
     /**

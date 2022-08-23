@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetXRPRippleAddressDetailsE400 model module.
  * @module model/GetXRPRippleAddressDetailsE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetXRPRippleAddressDetailsE400 {
     /**

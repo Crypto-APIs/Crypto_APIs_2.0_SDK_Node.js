@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetAssetDetailsByAssetSymbolE400 model module.
  * @module model/GetAssetDetailsByAssetSymbolE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetAssetDetailsByAssetSymbolE400 {
     /**

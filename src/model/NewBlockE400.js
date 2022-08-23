@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The NewBlockE400 model module.
  * @module model/NewBlockE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class NewBlockE400 {
     /**

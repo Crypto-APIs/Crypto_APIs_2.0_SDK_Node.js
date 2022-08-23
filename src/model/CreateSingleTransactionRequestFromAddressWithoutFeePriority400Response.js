@@ -17,7 +17,7 @@ import CreateSingleTransactionRequestFromAddressWithoutFeePriorityE400 from './C
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriority400Response model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriority400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriority400Response {
     /**

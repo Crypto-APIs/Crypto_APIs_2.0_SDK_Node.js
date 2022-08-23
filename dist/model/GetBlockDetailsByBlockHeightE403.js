@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightE403 model module.
  * @module model/GetBlockDetailsByBlockHeightE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetBlockDetailsByBlockHeightE403 = /*#__PURE__*/function () {
   /**

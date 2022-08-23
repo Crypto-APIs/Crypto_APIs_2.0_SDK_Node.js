@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BroadcastTransactionSuccessDataItem model module.
  * @module model/BroadcastTransactionSuccessDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 class BroadcastTransactionSuccessDataItem {
     /**

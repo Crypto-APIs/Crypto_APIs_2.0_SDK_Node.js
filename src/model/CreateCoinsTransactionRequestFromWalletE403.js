@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The CreateCoinsTransactionRequestFromWalletE403 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateCoinsTransactionRequestFromWalletE403 {
     /**

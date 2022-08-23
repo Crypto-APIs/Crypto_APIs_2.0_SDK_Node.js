@@ -17,7 +17,7 @@ import CreateAutomaticCoinsForwardingE400 from './CreateAutomaticCoinsForwarding
 /**
  * The CreateAutomaticCoinsForwarding400Response model module.
  * @module model/CreateAutomaticCoinsForwarding400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateAutomaticCoinsForwarding400Response {
     /**

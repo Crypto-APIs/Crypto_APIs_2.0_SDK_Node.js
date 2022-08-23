@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 = /*#__PURE__*/function () {
   /**

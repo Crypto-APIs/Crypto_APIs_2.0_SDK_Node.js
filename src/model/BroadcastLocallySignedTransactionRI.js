@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BroadcastLocallySignedTransactionRI model module.
  * @module model/BroadcastLocallySignedTransactionRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class BroadcastLocallySignedTransactionRI {
     /**

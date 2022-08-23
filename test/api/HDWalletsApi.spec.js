@@ -118,6 +118,26 @@
         done();
       });
     });
+    describe('prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub', function() {
+      it('should call prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub successfully', function(done) {
+        //uncomment below and update the code to test prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub
+        //instance.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub', function() {
+      it('should call prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub successfully', function(done) {
+        //uncomment below and update the code to test prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub
+        //instance.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('syncHDWalletXPubYPubZPub', function() {
       it('should call syncHDWalletXPubYPubZPub successfully', function(done) {
         //uncomment below and update the code to test syncHDWalletXPubYPubZPub

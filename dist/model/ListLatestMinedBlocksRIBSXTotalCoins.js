@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSXTotalCoins model module.
  * @module model/ListLatestMinedBlocksRIBSXTotalCoins
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListLatestMinedBlocksRIBSXTotalCoins = /*#__PURE__*/function () {
   /**

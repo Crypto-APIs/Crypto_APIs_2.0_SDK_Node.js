@@ -19,7 +19,7 @@ import TokensForwardingSuccessOmni from './TokensForwardingSuccessOmni';
 /**
  * The TokensForwardingSuccessToken model module.
  * @module model/TokensForwardingSuccessToken
- * @version 1.7.2
+ * @version 1.7.3
  */
 class TokensForwardingSuccessToken {
     /**

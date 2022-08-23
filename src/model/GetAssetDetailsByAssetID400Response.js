@@ -17,7 +17,7 @@ import GetAssetDetailsByAssetIDE400 from './GetAssetDetailsByAssetIDE400';
 /**
  * The GetAssetDetailsByAssetID400Response model module.
  * @module model/GetAssetDetailsByAssetID400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetAssetDetailsByAssetID400Response {
     /**

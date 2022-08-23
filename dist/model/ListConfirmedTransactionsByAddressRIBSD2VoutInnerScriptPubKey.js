@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSD2VoutInnerScriptPubKey model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSD2VoutInnerScriptPubKey
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListConfirmedTransactionsByAddressRIBSD2VoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TransactionRequestFailDataItem model module.
  * @module model/TransactionRequestFailDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 class TransactionRequestFailDataItem {
     /**

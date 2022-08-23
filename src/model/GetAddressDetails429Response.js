@@ -17,7 +17,7 @@ import RequestLimitReached from './RequestLimitReached';
 /**
  * The GetAddressDetails429Response model module.
  * @module model/GetAddressDetails429Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetAddressDetails429Response {
     /**

@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   /**

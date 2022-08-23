@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListInternalTransactionDetailsByTransactionHashRI model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListInternalTransactionDetailsByTransactionHashRI {
     /**

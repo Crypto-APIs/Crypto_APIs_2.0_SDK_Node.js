@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateAutomaticCoinsForwardingRI model module.
  * @module model/CreateAutomaticCoinsForwardingRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateAutomaticCoinsForwardingRI {
     /**

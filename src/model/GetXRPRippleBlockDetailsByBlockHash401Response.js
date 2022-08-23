@@ -17,7 +17,7 @@ import GetXRPRippleBlockDetailsByBlockHashE401 from './GetXRPRippleBlockDetailsB
 /**
  * The GetXRPRippleBlockDetailsByBlockHash401Response model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHash401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetXRPRippleBlockDetailsByBlockHash401Response {
     /**

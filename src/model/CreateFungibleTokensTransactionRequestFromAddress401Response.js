@@ -17,7 +17,7 @@ import CreateFungibleTokensTransactionRequestFromAddressE401 from './CreateFungi
 /**
  * The CreateFungibleTokensTransactionRequestFromAddress401Response model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddress401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateFungibleTokensTransactionRequestFromAddress401Response {
     /**

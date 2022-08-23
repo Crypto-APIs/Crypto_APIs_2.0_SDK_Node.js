@@ -17,7 +17,7 @@ import ListSupportedAssetsE400 from './ListSupportedAssetsE400';
 /**
  * The ListSupportedAssets400Response model module.
  * @module model/ListSupportedAssets400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListSupportedAssets400Response {
     /**

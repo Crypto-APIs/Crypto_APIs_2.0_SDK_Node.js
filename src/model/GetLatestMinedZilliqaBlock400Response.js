@@ -17,7 +17,7 @@ import GetLatestMinedZilliqaBlockE400 from './GetLatestMinedZilliqaBlockE400';
 /**
  * The GetLatestMinedZilliqaBlock400Response model module.
  * @module model/GetLatestMinedZilliqaBlock400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetLatestMinedZilliqaBlock400Response {
     /**

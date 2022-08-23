@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTransactionSmartFeeRI model module.
  * @module model/EstimateTransactionSmartFeeRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 var EstimateTransactionSmartFeeRI = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackE400 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDFromCallbackE400 {
     /**

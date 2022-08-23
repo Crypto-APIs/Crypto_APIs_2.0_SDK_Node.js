@@ -21,7 +21,7 @@ import GetTransactionDetailsByTransactionIDRIBSZVinInner from './GetTransactionD
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZ model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSZ {
     /**

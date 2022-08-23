@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressE403 model module.
  * @module model/EncodeXAddressE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 var EncodeXAddressE403 = /*#__PURE__*/function () {
   /**

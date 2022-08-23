@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListTokensTransfersByTransactionHashE400 model module.
  * @module model/ListTokensTransfersByTransactionHashE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTokensTransfersByTransactionHashE400 {
     /**

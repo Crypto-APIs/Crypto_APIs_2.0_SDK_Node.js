@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListAllAssetsFromAllWalletsE400 model module.
  * @module model/ListAllAssetsFromAllWalletsE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListAllAssetsFromAllWalletsE400 {
     /**

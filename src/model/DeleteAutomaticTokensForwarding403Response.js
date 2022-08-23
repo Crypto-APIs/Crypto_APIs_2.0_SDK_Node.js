@@ -17,7 +17,7 @@ import DeleteAutomaticTokensForwardingE403 from './DeleteAutomaticTokensForwardi
 /**
  * The DeleteAutomaticTokensForwarding403Response model module.
  * @module model/DeleteAutomaticTokensForwarding403Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeleteAutomaticTokensForwarding403Response {
     /**

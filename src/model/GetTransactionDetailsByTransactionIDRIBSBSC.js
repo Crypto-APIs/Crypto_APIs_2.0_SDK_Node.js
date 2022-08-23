@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBSCGasPrice from './GetTransactio
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBSC model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBSC
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDRIBSBSC {
     /**

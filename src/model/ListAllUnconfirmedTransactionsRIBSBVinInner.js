@@ -17,7 +17,7 @@ import ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig from './ListAllUncon
 /**
  * The ListAllUnconfirmedTransactionsRIBSBVinInner model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSBVinInner
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListAllUnconfirmedTransactionsRIBSBVinInner {
     /**

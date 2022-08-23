@@ -17,7 +17,7 @@ import SyncNewHDWalletXPubYPubZPubRData from './SyncNewHDWalletXPubYPubZPubRData
 /**
  * The SyncNewHDWalletXPubYPubZPubR model module.
  * @module model/SyncNewHDWalletXPubYPubZPubR
- * @version 1.7.2
+ * @version 1.7.3
  */
 class SyncNewHDWalletXPubYPubZPubR {
     /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRBDataItem model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRBDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 var CreateCoinsTransactionFromAddressForWholeAmountRBDataItem = /*#__PURE__*/function () {
   /**

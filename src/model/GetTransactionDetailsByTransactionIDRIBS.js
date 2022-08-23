@@ -31,7 +31,7 @@ import GetTransactionDetailsByTransactionIDRIBSZVoutInner from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBS
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetTransactionDetailsByTransactionIDRIBS {
     /**

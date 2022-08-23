@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateAutomaticCoinsForwardingRBDataItem model module.
  * @module model/CreateAutomaticCoinsForwardingRBDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateAutomaticCoinsForwardingRBDataItem {
     /**

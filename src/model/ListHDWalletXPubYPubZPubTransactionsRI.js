@@ -19,7 +19,7 @@ import ListHDWalletXPubYPubZPubTransactionsRISendersInner from './ListHDWalletXP
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRI model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListHDWalletXPubYPubZPubTransactionsRI {
     /**

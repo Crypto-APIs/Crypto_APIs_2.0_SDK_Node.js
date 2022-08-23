@@ -17,7 +17,7 @@ import ValidateAddressRData from './ValidateAddressRData';
 /**
  * The ValidateAddressR model module.
  * @module model/ValidateAddressR
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ValidateAddressR {
     /**

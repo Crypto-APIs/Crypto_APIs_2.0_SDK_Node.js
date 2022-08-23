@@ -17,7 +17,7 @@ import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData from './DeriveH
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR {
     /**

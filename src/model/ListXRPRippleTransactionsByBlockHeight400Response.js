@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByBlockHeightE400 from './ListXRPRippleTransacti
 /**
  * The ListXRPRippleTransactionsByBlockHeight400Response model module.
  * @module model/ListXRPRippleTransactionsByBlockHeight400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListXRPRippleTransactionsByBlockHeight400Response {
     /**

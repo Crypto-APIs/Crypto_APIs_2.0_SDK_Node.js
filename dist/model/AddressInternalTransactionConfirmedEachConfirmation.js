@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressInternalTransactionConfirmedEachConfirmation model module.
  * @module model/AddressInternalTransactionConfirmedEachConfirmation
- * @version 1.7.2
+ * @version 1.7.3
  */
 var AddressInternalTransactionConfirmedEachConfirmation = /*#__PURE__*/function () {
   /**

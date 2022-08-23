@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The DeleteBlockchainEventSubscriptionE403 model module.
  * @module model/DeleteBlockchainEventSubscriptionE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeleteBlockchainEventSubscriptionE403 {
     /**

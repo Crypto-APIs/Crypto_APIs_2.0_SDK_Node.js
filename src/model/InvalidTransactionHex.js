@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The InvalidTransactionHex model module.
  * @module model/InvalidTransactionHex
- * @version 1.7.2
+ * @version 1.7.3
  */
 class InvalidTransactionHex {
     /**

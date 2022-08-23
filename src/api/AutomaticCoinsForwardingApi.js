@@ -38,7 +38,7 @@ import ListCoinsForwardingAutomationsR from '../model/ListCoinsForwardingAutomat
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.7.2
+* @version 1.7.3
 */
 export default class AutomaticCoinsForwardingApi {
 

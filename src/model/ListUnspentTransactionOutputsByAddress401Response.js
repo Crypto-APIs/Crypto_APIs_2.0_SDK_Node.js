@@ -17,7 +17,7 @@ import ListUnspentTransactionOutputsByAddressE401 from './ListUnspentTransaction
 /**
  * The ListUnspentTransactionOutputsByAddress401Response model module.
  * @module model/ListUnspentTransactionOutputsByAddress401Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListUnspentTransactionOutputsByAddress401Response {
     /**

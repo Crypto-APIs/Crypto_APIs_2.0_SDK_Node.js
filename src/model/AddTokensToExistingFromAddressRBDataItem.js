@@ -17,7 +17,7 @@ import AddTokensToExistingFromAddressRBTokenData from './AddTokensToExistingFrom
 /**
  * The AddTokensToExistingFromAddressRBDataItem model module.
  * @module model/AddTokensToExistingFromAddressRBDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 class AddTokensToExistingFromAddressRBDataItem {
     /**

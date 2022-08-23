@@ -17,7 +17,7 @@ import MinedTransactionRData from './MinedTransactionRData';
 /**
  * The MinedTransactionR model module.
  * @module model/MinedTransactionR
- * @version 1.7.2
+ * @version 1.7.3
  */
 class MinedTransactionR {
     /**

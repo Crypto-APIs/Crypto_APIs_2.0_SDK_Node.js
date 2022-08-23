@@ -19,7 +19,7 @@ import CreateFungibleTokensTransactionRequestFromAddressRISenders from './Create
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRI model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateFungibleTokensTransactionRequestFromAddressRI {
     /**

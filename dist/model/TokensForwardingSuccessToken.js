@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessToken model module.
  * @module model/TokensForwardingSuccessToken
- * @version 1.7.2
+ * @version 1.7.3
  */
 var TokensForwardingSuccessToken = /*#__PURE__*/function () {
   /**

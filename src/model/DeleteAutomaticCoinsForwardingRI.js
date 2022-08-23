@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeleteAutomaticCoinsForwardingRI model module.
  * @module model/DeleteAutomaticCoinsForwardingRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DeleteAutomaticCoinsForwardingRI {
     /**

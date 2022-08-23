@@ -19,7 +19,7 @@ import CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount 
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI {
     /**

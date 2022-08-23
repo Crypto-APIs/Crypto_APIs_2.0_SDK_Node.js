@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListWalletTransactionsRIValue model module.
  * @module model/ListWalletTransactionsRIValue
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListWalletTransactionsRIValue {
     /**

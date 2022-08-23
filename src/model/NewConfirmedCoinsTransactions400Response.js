@@ -17,7 +17,7 @@ import NewConfirmedCoinsTransactionsE400 from './NewConfirmedCoinsTransactionsE4
 /**
  * The NewConfirmedCoinsTransactions400Response model module.
  * @module model/NewConfirmedCoinsTransactions400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class NewConfirmedCoinsTransactions400Response {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EstimateGasLimitRI model module.
  * @module model/EstimateGasLimitRI
- * @version 1.7.2
+ * @version 1.7.3
  */
 class EstimateGasLimitRI {
     /**

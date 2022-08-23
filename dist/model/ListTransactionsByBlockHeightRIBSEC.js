@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSEC model module.
  * @module model/ListTransactionsByBlockHeightRIBSEC
- * @version 1.7.2
+ * @version 1.7.3
  */
 var ListTransactionsByBlockHeightRIBSEC = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The MinedTransactionE400 model module.
  * @module model/MinedTransactionE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class MinedTransactionE400 {
     /**

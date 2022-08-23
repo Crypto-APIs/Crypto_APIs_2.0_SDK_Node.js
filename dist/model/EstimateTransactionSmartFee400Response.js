@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTransactionSmartFee400Response model module.
  * @module model/EstimateTransactionSmartFee400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 var EstimateTransactionSmartFee400Response = /*#__PURE__*/function () {
   /**

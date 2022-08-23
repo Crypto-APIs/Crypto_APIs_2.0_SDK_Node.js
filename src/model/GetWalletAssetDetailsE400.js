@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetWalletAssetDetailsE400 model module.
  * @module model/GetWalletAssetDetailsE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetWalletAssetDetailsE400 {
     /**

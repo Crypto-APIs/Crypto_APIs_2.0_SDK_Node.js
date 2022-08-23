@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetExchangeRateByAssetSymbolsE401 model module.
  * @module model/GetExchangeRateByAssetSymbolsE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetExchangeRateByAssetSymbolsE401 {
     /**

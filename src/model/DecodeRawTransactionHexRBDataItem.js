@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DecodeRawTransactionHexRBDataItem model module.
  * @module model/DecodeRawTransactionHexRBDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 class DecodeRawTransactionHexRBDataItem {
     /**

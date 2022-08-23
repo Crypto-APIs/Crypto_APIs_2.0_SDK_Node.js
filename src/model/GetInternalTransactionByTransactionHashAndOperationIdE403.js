@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdE403 model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetInternalTransactionByTransactionHashAndOperationIdE403 {
     /**

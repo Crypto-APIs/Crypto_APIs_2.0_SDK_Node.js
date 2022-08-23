@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ValidateAddressE403 model module.
  * @module model/ValidateAddressE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ValidateAddressE403 {
     /**

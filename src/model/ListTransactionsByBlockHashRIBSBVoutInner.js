@@ -17,7 +17,7 @@ import ListTransactionsByBlockHashRIBSBVoutInnerScriptPubKey from './ListTransac
 /**
  * The ListTransactionsByBlockHashRIBSBVoutInner model module.
  * @module model/ListTransactionsByBlockHashRIBSBVoutInner
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTransactionsByBlockHashRIBSBVoutInner {
     /**

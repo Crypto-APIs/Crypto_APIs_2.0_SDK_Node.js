@@ -17,7 +17,7 @@ import UnsupportedMediaType from './UnsupportedMediaType';
 /**
  * The GetAddressDetails415Response model module.
  * @module model/GetAddressDetails415Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetAddressDetails415Response {
     /**

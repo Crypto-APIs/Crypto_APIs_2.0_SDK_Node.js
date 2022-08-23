@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTokensForwardingAutomationsRITSET model module.
  * @module model/ListTokensForwardingAutomationsRITSET
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTokensForwardingAutomationsRITSET {
     /**

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteBlockchainEventSubscription400Response model module.
  * @module model/DeleteBlockchainEventSubscription400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 var DeleteBlockchainEventSubscription400Response = /*#__PURE__*/function () {
   /**

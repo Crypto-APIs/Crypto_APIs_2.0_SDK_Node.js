@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSX model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSX
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetBlockDetailsByBlockHeightFromCallbackRIBSX = /*#__PURE__*/function () {
   /**

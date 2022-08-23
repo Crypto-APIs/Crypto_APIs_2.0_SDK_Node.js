@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice = /*#__PURE__*/function () {
   /**

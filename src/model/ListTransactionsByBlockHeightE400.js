@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListTransactionsByBlockHeightE400 model module.
  * @module model/ListTransactionsByBlockHeightE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListTransactionsByBlockHeightE400 {
     /**

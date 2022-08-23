@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDE401 model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetZilliqaTransactionDetailsByTransactionIDE401 {
     /**

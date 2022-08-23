@@ -32,7 +32,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddressE403 model module.
  * @module model/GenerateDepositAddressE403
- * @version 1.7.2
+ * @version 1.7.3
  */
 var GenerateDepositAddressE403 = /*#__PURE__*/function () {
   /**

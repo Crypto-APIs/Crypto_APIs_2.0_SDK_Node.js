@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BroadcastLocallySignedTransactionRBDataItem model module.
  * @module model/BroadcastLocallySignedTransactionRBDataItem
- * @version 1.7.2
+ * @version 1.7.3
  */
 class BroadcastLocallySignedTransactionRBDataItem {
     /**

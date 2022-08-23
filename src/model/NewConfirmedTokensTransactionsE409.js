@@ -19,7 +19,7 @@ import InvalidData from './InvalidData';
 /**
  * The NewConfirmedTokensTransactionsE409 model module.
  * @module model/NewConfirmedTokensTransactionsE409
- * @version 1.7.2
+ * @version 1.7.3
  */
 class NewConfirmedTokensTransactionsE409 {
     /**

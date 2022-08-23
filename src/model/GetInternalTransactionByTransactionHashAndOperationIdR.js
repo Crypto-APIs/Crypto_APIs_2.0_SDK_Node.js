@@ -17,7 +17,7 @@ import GetInternalTransactionByTransactionHashAndOperationIdRData from './GetInt
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdR model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdR
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetInternalTransactionByTransactionHashAndOperationIdR {
     /**

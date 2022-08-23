@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetHDWalletXPubYPubZPubAssetsE401 model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsE401
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetHDWalletXPubYPubZPubAssetsE401 {
     /**

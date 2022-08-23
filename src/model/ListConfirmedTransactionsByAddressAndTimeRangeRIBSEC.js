@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSECGasPrice from './ListConfirmedTra
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC {
     /**

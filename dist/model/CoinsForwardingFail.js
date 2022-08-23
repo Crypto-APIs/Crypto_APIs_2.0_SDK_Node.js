@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CoinsForwardingFail model module.
  * @module model/CoinsForwardingFail
- * @version 1.7.2
+ * @version 1.7.3
  */
 var CoinsForwardingFail = /*#__PURE__*/function () {
   /**

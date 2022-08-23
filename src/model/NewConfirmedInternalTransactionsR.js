@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsRData from './NewConfirmedInternalTransac
 /**
  * The NewConfirmedInternalTransactionsR model module.
  * @module model/NewConfirmedInternalTransactionsR
- * @version 1.7.2
+ * @version 1.7.3
  */
 class NewConfirmedInternalTransactionsR {
     /**

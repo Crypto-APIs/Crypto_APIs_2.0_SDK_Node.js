@@ -18,7 +18,7 @@ import ListLatestMinedBlocksRIBSXTotalFees from './ListLatestMinedBlocksRIBSXTot
 /**
  * The ListLatestMinedBlocksRIBSX model module.
  * @module model/ListLatestMinedBlocksRIBSX
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListLatestMinedBlocksRIBSX {
     /**

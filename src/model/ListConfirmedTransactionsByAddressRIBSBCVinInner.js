@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSBVinInnerScriptSig from './GetTra
 /**
  * The ListConfirmedTransactionsByAddressRIBSBCVinInner model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBCVinInner
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListConfirmedTransactionsByAddressRIBSBCVinInner {
     /**

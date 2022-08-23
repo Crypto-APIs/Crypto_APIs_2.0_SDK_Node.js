@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400
- * @version 1.7.2
+ * @version 1.7.3
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 {
     /**

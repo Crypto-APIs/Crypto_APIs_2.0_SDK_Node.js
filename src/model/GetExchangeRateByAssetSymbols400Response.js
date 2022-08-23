@@ -17,7 +17,7 @@ import GetExchangeRateByAssetSymbolsE400 from './GetExchangeRateByAssetSymbolsE4
 /**
  * The GetExchangeRateByAssetSymbols400Response model module.
  * @module model/GetExchangeRateByAssetSymbols400Response
- * @version 1.7.2
+ * @version 1.7.3
  */
 class GetExchangeRateByAssetSymbols400Response {
     /**

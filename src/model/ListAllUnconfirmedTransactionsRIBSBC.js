@@ -18,7 +18,7 @@ import ListAllUnconfirmedTransactionsRIBSBCVoutInner from './ListAllUnconfirmedT
 /**
  * The ListAllUnconfirmedTransactionsRIBSBC model module.
  * @module model/ListAllUnconfirmedTransactionsRIBSBC
- * @version 1.7.2
+ * @version 1.7.3
  */
 class ListAllUnconfirmedTransactionsRIBSBC {
     /**
