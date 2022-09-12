@@ -19,6 +19,17 @@ import BroadcastLocallySignedTransaction403Response from '../model/BroadcastLoca
 import BroadcastLocallySignedTransaction409Response from '../model/BroadcastLocallySignedTransaction409Response';
 import BroadcastLocallySignedTransactionR from '../model/BroadcastLocallySignedTransactionR';
 import BroadcastLocallySignedTransactionRB from '../model/BroadcastLocallySignedTransactionRB';
+import ConvertBitcoinCashAddress400Response from '../model/ConvertBitcoinCashAddress400Response';
+import ConvertBitcoinCashAddress401Response from '../model/ConvertBitcoinCashAddress401Response';
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress403Response from '../model/ConvertBitcoinCashAddress403Response';
+import ConvertBitcoinCashAddress409Response from '../model/ConvertBitcoinCashAddress409Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
+import ConvertBitcoinCashAddressR from '../model/ConvertBitcoinCashAddressR';
+import ConvertBitcoinCashAddressRB from '../model/ConvertBitcoinCashAddressRB';
 import DecodeRawTransactionHex400Response from '../model/DecodeRawTransactionHex400Response';
 import DecodeRawTransactionHex401Response from '../model/DecodeRawTransactionHex401Response';
 import DecodeRawTransactionHex403Response from '../model/DecodeRawTransactionHex403Response';
@@ -46,12 +57,6 @@ import EstimateTokenGasLimit401Response from '../model/EstimateTokenGasLimit401R
 import EstimateTokenGasLimit403Response from '../model/EstimateTokenGasLimit403Response';
 import EstimateTokenGasLimitR from '../model/EstimateTokenGasLimitR';
 import EstimateTokenGasLimitRB from '../model/EstimateTokenGasLimitRB';
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
 import GetEIP1559FeeRecommendations400Response from '../model/GetEIP1559FeeRecommendations400Response';
 import GetEIP1559FeeRecommendations401Response from '../model/GetEIP1559FeeRecommendations401Response';
 import GetEIP1559FeeRecommendations403Response from '../model/GetEIP1559FeeRecommendations403Response';
@@ -66,7 +71,7 @@ import ValidateAddressRB from '../model/ValidateAddressRB';
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class FeaturesApi {
 
@@ -140,6 +145,69 @@ export default class FeaturesApi {
      */
     broadcastLocallySignedTransaction(blockchain, network, opts) {
       return this.broadcastLocallySignedTransactionWithHttpInfo(blockchain, network, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Convert Bitcoin Cash Address
+     * Through this endpoint customers will be able to convert addresses for the BCH (Bitcoin Cash) protocol from BCH legacy to cash address and vice versa.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/ConvertBitcoinCashAddressRB} opts.convertBitcoinCashAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ConvertBitcoinCashAddressR} and HTTP response
+     */
+    convertBitcoinCashAddressWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      let postBody = opts['convertBitcoinCashAddressRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling convertBitcoinCashAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling convertBitcoinCashAddress");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = ConvertBitcoinCashAddressR;
+      return this.apiClient.callApi(
+        '/blockchain-tools/{blockchain}/{network}/address/convert', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Convert Bitcoin Cash Address
+     * Through this endpoint customers will be able to convert addresses for the BCH (Bitcoin Cash) protocol from BCH legacy to cash address and vice versa.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/ConvertBitcoinCashAddressRB} opts.convertBitcoinCashAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ConvertBitcoinCashAddressR}
+     */
+    convertBitcoinCashAddress(blockchain, network, opts) {
+      return this.convertBitcoinCashAddressWithHttpInfo(blockchain, network, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

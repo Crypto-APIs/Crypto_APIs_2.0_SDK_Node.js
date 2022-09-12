@@ -17,7 +17,7 @@ import CreateFungibleTokensTransactionRequestFromAddressRData from './CreateFung
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressR model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressR
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressR {
     /**

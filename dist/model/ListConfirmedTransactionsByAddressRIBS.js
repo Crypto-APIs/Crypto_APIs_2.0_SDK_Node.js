@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBS model module.
  * @module model/ListConfirmedTransactionsByAddressRIBS
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
   /**
@@ -74,7 +74,9 @@ var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
    * @param gasPrice {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} 
    * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
    * @param inputData {String} Represents additional information that is required for the transaction.
+   * @param internalTransactionsCount {Number} Represents the total internal transactions count.
    * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+   * @param tokenTransfersCount {Number} Represents the total token transfers count.
    * @param transactionStatus {String} String representation of the transaction status
    * @param bindingSig {String} It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
    * @param expiryHeight {Number} Represents a block height after which the transaction will expire.
@@ -87,7 +89,7 @@ var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
    * @param valueBalance {String} Defines the transaction value balance.
    * @param versionGroupId {String} Represents the transaction version group ID.
    */
-  function ListConfirmedTransactionsByAddressRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) {
+  function ListConfirmedTransactionsByAddressRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) {
     _classCallCheck(this, ListConfirmedTransactionsByAddressRIBS);
 
     _ListConfirmedTransactionsByAddressRIBSB["default"].initialize(this, locktime, size, vSize, version, vin, vout);
@@ -100,15 +102,15 @@ var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
 
     _ListConfirmedTransactionsByAddressRIBSD2["default"].initialize(this, locktime, size, version, vin, vout);
 
-    _ListConfirmedTransactionsByAddressRIBSEC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
+    _ListConfirmedTransactionsByAddressRIBSEC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);
 
-    _ListConfirmedTransactionsByAddressRIBSE["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
+    _ListConfirmedTransactionsByAddressRIBSE["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);
 
-    _ListConfirmedTransactionsByAddressRIBSBSC["default"].initialize(this, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
+    _ListConfirmedTransactionsByAddressRIBSBSC["default"].initialize(this, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);
 
     _ListConfirmedTransactionsByAddressRIBSZ["default"].initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);
 
-    ListConfirmedTransactionsByAddressRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId);
+    ListConfirmedTransactionsByAddressRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId);
   }
   /**
    * Initializes the fields of this object.
@@ -119,7 +121,7 @@ var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
 
   _createClass(ListConfirmedTransactionsByAddressRIBS, null, [{
     key: "initialize",
-    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) {
+    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) {
       obj['locktime'] = locktime;
       obj['size'] = size;
       obj['vSize'] = vSize;
@@ -131,7 +133,9 @@ var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
       obj['gasPrice'] = gasPrice;
       obj['gasUsed'] = gasUsed;
       obj['inputData'] = inputData;
+      obj['internalTransactionsCount'] = internalTransactionsCount;
       obj['nonce'] = nonce;
+      obj['tokenTransfersCount'] = tokenTransfersCount;
       obj['transactionStatus'] = transactionStatus;
       obj['bindingSig'] = bindingSig;
       obj['expiryHeight'] = expiryHeight;
@@ -220,8 +224,16 @@ var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
           obj['inputData'] = _ApiClient["default"].convertToType(data['inputData'], 'String');
         }
 
+        if (data.hasOwnProperty('internalTransactionsCount')) {
+          obj['internalTransactionsCount'] = _ApiClient["default"].convertToType(data['internalTransactionsCount'], 'Number');
+        }
+
         if (data.hasOwnProperty('nonce')) {
           obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'Number');
+        }
+
+        if (data.hasOwnProperty('tokenTransfersCount')) {
+          obj['tokenTransfersCount'] = _ApiClient["default"].convertToType(data['tokenTransfersCount'], 'Number');
         }
 
         if (data.hasOwnProperty('transactionStatus')) {
@@ -342,11 +354,23 @@ ListConfirmedTransactionsByAddressRIBS.prototype['gasUsed'] = undefined;
 
 ListConfirmedTransactionsByAddressRIBS.prototype['inputData'] = undefined;
 /**
+ * Represents the total internal transactions count.
+ * @member {Number} internalTransactionsCount
+ */
+
+ListConfirmedTransactionsByAddressRIBS.prototype['internalTransactionsCount'] = undefined;
+/**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
  * @member {Number} nonce
  */
 
 ListConfirmedTransactionsByAddressRIBS.prototype['nonce'] = undefined;
+/**
+ * Represents the total token transfers count.
+ * @member {Number} tokenTransfersCount
+ */
+
+ListConfirmedTransactionsByAddressRIBS.prototype['tokenTransfersCount'] = undefined;
 /**
  * String representation of the transaction status
  * @member {String} transactionStatus
@@ -611,11 +635,23 @@ _ListConfirmedTransactionsByAddressRIBSEC["default"].prototype['gasUsed'] = unde
 
 _ListConfirmedTransactionsByAddressRIBSEC["default"].prototype['inputData'] = undefined;
 /**
+ * Represents the total internal transactions count.
+ * @member {Number} internalTransactionsCount
+ */
+
+_ListConfirmedTransactionsByAddressRIBSEC["default"].prototype['internalTransactionsCount'] = undefined;
+/**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
  * @member {Number} nonce
  */
 
 _ListConfirmedTransactionsByAddressRIBSEC["default"].prototype['nonce'] = undefined;
+/**
+ * Represents the total token transfers count.
+ * @member {Number} tokenTransfersCount
+ */
+
+_ListConfirmedTransactionsByAddressRIBSEC["default"].prototype['tokenTransfersCount'] = undefined;
 /**
  * String representation of the transaction status
  * @member {String} transactionStatus
@@ -653,11 +689,23 @@ _ListConfirmedTransactionsByAddressRIBSE["default"].prototype['gasUsed'] = undef
 
 _ListConfirmedTransactionsByAddressRIBSE["default"].prototype['inputData'] = undefined;
 /**
+ * Represents the total internal transactions count.
+ * @member {Number} internalTransactionsCount
+ */
+
+_ListConfirmedTransactionsByAddressRIBSE["default"].prototype['internalTransactionsCount'] = undefined;
+/**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
  * @member {Number} nonce
  */
 
 _ListConfirmedTransactionsByAddressRIBSE["default"].prototype['nonce'] = undefined;
+/**
+ * Represents the total token transfers count.
+ * @member {Number} tokenTransfersCount
+ */
+
+_ListConfirmedTransactionsByAddressRIBSE["default"].prototype['tokenTransfersCount'] = undefined;
 /**
  * String representation of the transaction status
  * @member {String} transactionStatus
@@ -695,11 +743,23 @@ _ListConfirmedTransactionsByAddressRIBSBSC["default"].prototype['gasUsed'] = und
 
 _ListConfirmedTransactionsByAddressRIBSBSC["default"].prototype['inputData'] = undefined;
 /**
+ * Represents the total internal transactions count.
+ * @member {Number} internalTransactionsCount
+ */
+
+_ListConfirmedTransactionsByAddressRIBSBSC["default"].prototype['internalTransactionsCount'] = undefined;
+/**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
  * @member {Number} nonce
  */
 
 _ListConfirmedTransactionsByAddressRIBSBSC["default"].prototype['nonce'] = undefined;
+/**
+ * Represents the total token transfers count.
+ * @member {Number} tokenTransfersCount
+ */
+
+_ListConfirmedTransactionsByAddressRIBSBSC["default"].prototype['tokenTransfersCount'] = undefined;
 /**
  * String representation of the transaction status
  * @member {String} transactionStatus

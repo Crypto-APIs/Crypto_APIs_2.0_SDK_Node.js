@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRI model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetBlockDetailsByBlockHashFromCallbackRI = /*#__PURE__*/function () {
   /**
@@ -31,12 +31,22 @@ var GetBlockDetailsByBlockHashFromCallbackRI = /*#__PURE__*/function () {
    * @param previousBlockHash {String} Represents the hash of the previous block, also known as the parent block.
    * @param timestamp {Number} Defines the exact date/time when this block was mined in Unix Timestamp.
    * @param transactionsCount {Number} Represents the total number of all transactions as part of this block.
+   * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
+   * @param extraData {String} Represents any data that can be included by the miner in the block.
+   * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
+   * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
+   * @param minedInSeconds {Number} Specifies the amount of time required for the block to be mined in seconds.
+   * @param nonce {String} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+   * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
+   * @param size {Number} Represents the total size of the block in Bytes.
+   * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
+   * @param uncles {Array.<String>} 
    * @param blockchainSpecific {module:model/GetBlockDetailsByBlockHashFromCallbackRIBS} 
    */
-  function GetBlockDetailsByBlockHashFromCallbackRI(hash, height, previousBlockHash, timestamp, transactionsCount, blockchainSpecific) {
+  function GetBlockDetailsByBlockHashFromCallbackRI(hash, height, previousBlockHash, timestamp, transactionsCount, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles, blockchainSpecific) {
     _classCallCheck(this, GetBlockDetailsByBlockHashFromCallbackRI);
 
-    GetBlockDetailsByBlockHashFromCallbackRI.initialize(this, hash, height, previousBlockHash, timestamp, transactionsCount, blockchainSpecific);
+    GetBlockDetailsByBlockHashFromCallbackRI.initialize(this, hash, height, previousBlockHash, timestamp, transactionsCount, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles, blockchainSpecific);
   }
   /**
    * Initializes the fields of this object.
@@ -47,12 +57,22 @@ var GetBlockDetailsByBlockHashFromCallbackRI = /*#__PURE__*/function () {
 
   _createClass(GetBlockDetailsByBlockHashFromCallbackRI, null, [{
     key: "initialize",
-    value: function initialize(obj, hash, height, previousBlockHash, timestamp, transactionsCount, blockchainSpecific) {
+    value: function initialize(obj, hash, height, previousBlockHash, timestamp, transactionsCount, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles, blockchainSpecific) {
       obj['hash'] = hash;
       obj['height'] = height;
       obj['previousBlockHash'] = previousBlockHash;
       obj['timestamp'] = timestamp;
       obj['transactionsCount'] = transactionsCount;
+      obj['difficulty'] = difficulty;
+      obj['extraData'] = extraData;
+      obj['gasLimit'] = gasLimit;
+      obj['gasUsed'] = gasUsed;
+      obj['minedInSeconds'] = minedInSeconds;
+      obj['nonce'] = nonce;
+      obj['sha3Uncles'] = sha3Uncles;
+      obj['size'] = size;
+      obj['totalDifficulty'] = totalDifficulty;
+      obj['uncles'] = uncles;
       obj['blockchainSpecific'] = blockchainSpecific;
     }
     /**
@@ -87,6 +107,46 @@ var GetBlockDetailsByBlockHashFromCallbackRI = /*#__PURE__*/function () {
 
         if (data.hasOwnProperty('transactionsCount')) {
           obj['transactionsCount'] = _ApiClient["default"].convertToType(data['transactionsCount'], 'Number');
+        }
+
+        if (data.hasOwnProperty('difficulty')) {
+          obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
+        }
+
+        if (data.hasOwnProperty('extraData')) {
+          obj['extraData'] = _ApiClient["default"].convertToType(data['extraData'], 'String');
+        }
+
+        if (data.hasOwnProperty('gasLimit')) {
+          obj['gasLimit'] = _ApiClient["default"].convertToType(data['gasLimit'], 'String');
+        }
+
+        if (data.hasOwnProperty('gasUsed')) {
+          obj['gasUsed'] = _ApiClient["default"].convertToType(data['gasUsed'], 'String');
+        }
+
+        if (data.hasOwnProperty('minedInSeconds')) {
+          obj['minedInSeconds'] = _ApiClient["default"].convertToType(data['minedInSeconds'], 'Number');
+        }
+
+        if (data.hasOwnProperty('nonce')) {
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
+        }
+
+        if (data.hasOwnProperty('sha3Uncles')) {
+          obj['sha3Uncles'] = _ApiClient["default"].convertToType(data['sha3Uncles'], 'String');
+        }
+
+        if (data.hasOwnProperty('size')) {
+          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
+        }
+
+        if (data.hasOwnProperty('totalDifficulty')) {
+          obj['totalDifficulty'] = _ApiClient["default"].convertToType(data['totalDifficulty'], 'String');
+        }
+
+        if (data.hasOwnProperty('uncles')) {
+          obj['uncles'] = _ApiClient["default"].convertToType(data['uncles'], ['String']);
         }
 
         if (data.hasOwnProperty('blockchainSpecific')) {
@@ -131,6 +191,65 @@ GetBlockDetailsByBlockHashFromCallbackRI.prototype['timestamp'] = undefined;
  */
 
 GetBlockDetailsByBlockHashFromCallbackRI.prototype['transactionsCount'] = undefined;
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['difficulty'] = undefined;
+/**
+ * Represents any data that can be included by the miner in the block.
+ * @member {String} extraData
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['extraData'] = undefined;
+/**
+ * Represents the amount of gas used by this specific transaction alone.
+ * @member {String} gasLimit
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['gasLimit'] = undefined;
+/**
+ * Represents the exact unit of gas that was used for the transaction.
+ * @member {String} gasUsed
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['gasUsed'] = undefined;
+/**
+ * Specifies the amount of time required for the block to be mined in seconds.
+ * @member {Number} minedInSeconds
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['minedInSeconds'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {String} nonce
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['nonce'] = undefined;
+/**
+ * Defines the combined hash of all uncles for a given parent.
+ * @member {String} sha3Uncles
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['sha3Uncles'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['size'] = undefined;
+/**
+ * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
+ * @member {String} totalDifficulty
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['totalDifficulty'] = undefined;
+/**
+ * @member {Array.<String>} uncles
+ */
+
+GetBlockDetailsByBlockHashFromCallbackRI.prototype['uncles'] = undefined;
 /**
  * @member {module:model/GetBlockDetailsByBlockHashFromCallbackRIBS} blockchainSpecific
  */

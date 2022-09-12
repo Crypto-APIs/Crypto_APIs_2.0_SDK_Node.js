@@ -17,7 +17,7 @@ import BroadcastLocallySignedTransactionE401 from './BroadcastLocallySignedTrans
 /**
  * The BroadcastLocallySignedTransaction401Response model module.
  * @module model/BroadcastLocallySignedTransaction401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class BroadcastLocallySignedTransaction401Response {
     /**

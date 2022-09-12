@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI = /*#__PURE__*/function () {
   /**
@@ -183,19 +183,7 @@ PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI['TransactionTypeEnum'
    * value: "legacy-transaction"
    * @const
    */
-  "legacy-transaction": "legacy-transaction",
-
-  /**
-   * value: "access-list-transaction"
-   * @const
-   */
-  "access-list-transaction": "access-list-transaction",
-
-  /**
-   * value: "gas-fee-market-transaction"
-   * @const
-   */
-  "gas-fee-market-transaction": "gas-fee-market-transaction"
+  "legacy-transaction": "legacy-transaction"
 };
 var _default = PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI;
 exports["default"] = _default;

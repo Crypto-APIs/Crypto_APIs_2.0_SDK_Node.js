@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListWalletTransactionsRINonFungibleTokensInner model module.
  * @module model/ListWalletTransactionsRINonFungibleTokensInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListWalletTransactionsRINonFungibleTokensInner {
     /**

@@ -18,7 +18,7 @@ import GetXRPRippleBlockDetailsByBlockHeightRITotalFees from './GetXRPRippleBloc
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRI model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetXRPRippleBlockDetailsByBlockHashRI {
     /**

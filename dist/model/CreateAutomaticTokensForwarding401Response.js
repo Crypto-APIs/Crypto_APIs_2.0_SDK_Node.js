@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwarding401Response model module.
  * @module model/CreateAutomaticTokensForwarding401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 var CreateAutomaticTokensForwarding401Response = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRILatestRate model module.
  * @module model/GetAssetDetailsByAssetIDRILatestRate
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetAssetDetailsByAssetIDRILatestRate = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListConfirmedTokensTransfersByAddressAndTimeRangeRI {
     /**

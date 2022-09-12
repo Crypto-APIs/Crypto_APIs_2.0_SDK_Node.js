@@ -7,6 +7,16 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _ConvertBitcoinCashAddress402Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress402Response"));
+
+var _ConvertBitcoinCashAddress415Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress415Response"));
+
+var _ConvertBitcoinCashAddress422Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress422Response"));
+
+var _ConvertBitcoinCashAddress429Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress429Response"));
+
+var _ConvertBitcoinCashAddress500Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress500Response"));
+
 var _CreateCoinsTransactionFromAddressForWholeAmount400Response = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmount400Response"));
 
 var _CreateCoinsTransactionFromAddressForWholeAmount401Response = _interopRequireDefault(require("../model/CreateCoinsTransactionFromAddressForWholeAmount401Response"));
@@ -79,16 +89,6 @@ var _CreateSingleTransactionRequestFromAddressWithoutFeePriorityR = _interopRequ
 
 var _CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB"));
 
-var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
-
-var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
-
-var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
-
-var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
-
-var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -100,7 +100,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.7.3
+* @version 1.8.0
 */
 var TransactionsApi = /*#__PURE__*/function () {
   /**

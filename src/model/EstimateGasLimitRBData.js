@@ -17,7 +17,7 @@ import EstimateGasLimitRBDataItem from './EstimateGasLimitRBDataItem';
 /**
  * The EstimateGasLimitRBData model module.
  * @module model/EstimateGasLimitRBData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class EstimateGasLimitRBData {
     /**

@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionE400 model module.
  * @module model/BroadcastLocallySignedTransactionE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 var BroadcastLocallySignedTransactionE400 = /*#__PURE__*/function () {
   /**

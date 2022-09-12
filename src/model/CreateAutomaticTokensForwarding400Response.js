@@ -17,7 +17,7 @@ import CreateAutomaticTokensForwardingE400 from './CreateAutomaticTokensForwardi
 /**
  * The CreateAutomaticTokensForwarding400Response model module.
  * @module model/CreateAutomaticTokensForwarding400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateAutomaticTokensForwarding400Response {
     /**

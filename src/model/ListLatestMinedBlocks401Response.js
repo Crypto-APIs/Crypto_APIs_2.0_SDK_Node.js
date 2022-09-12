@@ -17,7 +17,7 @@ import ListLatestMinedBlocksE401 from './ListLatestMinedBlocksE401';
 /**
  * The ListLatestMinedBlocks401Response model module.
  * @module model/ListLatestMinedBlocks401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListLatestMinedBlocks401Response {
     /**

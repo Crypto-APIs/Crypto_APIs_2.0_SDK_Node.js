@@ -17,7 +17,7 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE400 from './PrepareA
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response {
     /**

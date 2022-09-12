@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromAddressE401 from './CreateCoinsTransacti
 /**
  * The CreateCoinsTransactionRequestFromAddress401Response model module.
  * @module model/CreateCoinsTransactionRequestFromAddress401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateCoinsTransactionRequestFromAddress401Response {
     /**

@@ -16,16 +16,18 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAddressDetailsFromCallbackRITotalSpent model module.
  * @module model/GetAddressDetailsFromCallbackRITotalSpent
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetAddressDetailsFromCallbackRITotalSpent {
     /**
      * Constructs a new <code>GetAddressDetailsFromCallbackRITotalSpent</code>.
      * @alias module:model/GetAddressDetailsFromCallbackRITotalSpent
+     * @param amount {String} Defines the total amount of all spent by this address coins, based on confirmed transactions.
+     * @param unit {String} Represents the unit of the total spent amount.
      */
-    constructor() { 
+    constructor(amount, unit) { 
         
-        GetAddressDetailsFromCallbackRITotalSpent.initialize(this);
+        GetAddressDetailsFromCallbackRITotalSpent.initialize(this, amount, unit);
     }
 
     /**
@@ -33,7 +35,9 @@ class GetAddressDetailsFromCallbackRITotalSpent {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj) { 
+    static initialize(obj, amount, unit) { 
+        obj['amount'] = amount;
+        obj['unit'] = unit;
     }
 
     /**

@@ -17,11 +17,12 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 import EndpointNotAllowedForApiKey from './EndpointNotAllowedForApiKey';
 import EndpointNotAllowedForPlan from './EndpointNotAllowedForPlan';
 import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan';
+import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType';
 
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE403 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountE403 {
     /**
@@ -31,11 +32,12 @@ class CreateCoinsTransactionFromAddressForWholeAmountE403 {
      * @implements module:model/EndpointNotAllowedForPlan
      * @implements module:model/EndpointNotAllowedForApiKey
      * @implements module:model/FeatureMainnetsNotAllowedForPlan
+     * @implements module:model/WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType
      * @param code {String} Specifies an error code, e.g. error 404.
      * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
      */
     constructor(code, message) { 
-        BannedIpAddress.initialize(this, code, message);EndpointNotAllowedForPlan.initialize(this, code, message);EndpointNotAllowedForApiKey.initialize(this, code, message);FeatureMainnetsNotAllowedForPlan.initialize(this, code, message);
+        BannedIpAddress.initialize(this, code, message);EndpointNotAllowedForPlan.initialize(this, code, message);EndpointNotAllowedForApiKey.initialize(this, code, message);FeatureMainnetsNotAllowedForPlan.initialize(this, code, message);WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType.initialize(this, code, message);
         CreateCoinsTransactionFromAddressForWholeAmountE403.initialize(this, code, message);
     }
 
@@ -63,6 +65,7 @@ class CreateCoinsTransactionFromAddressForWholeAmountE403 {
             EndpointNotAllowedForPlan.constructFromObject(data, obj);
             EndpointNotAllowedForApiKey.constructFromObject(data, obj);
             FeatureMainnetsNotAllowedForPlan.constructFromObject(data, obj);
+            WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('code')) {
                 obj['code'] = ApiClient.convertToType(data['code'], 'String');
@@ -158,6 +161,21 @@ FeatureMainnetsNotAllowedForPlan.prototype['message'] = undefined;
  * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 FeatureMainnetsNotAllowedForPlan.prototype['details'] = undefined;
+// Implement WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType.prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType.prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType.prototype['details'] = undefined;
 
 
 

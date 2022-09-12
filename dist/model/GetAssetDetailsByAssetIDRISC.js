@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRISC model module.
  * @module model/GetAssetDetailsByAssetIDRISC
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetAssetDetailsByAssetIDRISC = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import NewBlockRData from './NewBlockRData';
 /**
  * The NewBlockR model module.
  * @module model/NewBlockR
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewBlockR {
     /**

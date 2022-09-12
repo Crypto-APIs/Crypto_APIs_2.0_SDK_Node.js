@@ -17,7 +17,7 @@ import ListInternalTransactionsByAddressE400 from './ListInternalTransactionsByA
 /**
  * The ListInternalTransactionsByAddress400Response model module.
  * @module model/ListInternalTransactionsByAddress400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListInternalTransactionsByAddress400Response {
     /**

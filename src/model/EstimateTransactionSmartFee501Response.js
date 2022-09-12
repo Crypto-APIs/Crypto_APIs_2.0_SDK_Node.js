@@ -17,7 +17,7 @@ import Unimplemented from './Unimplemented';
 /**
  * The EstimateTransactionSmartFee501Response model module.
  * @module model/EstimateTransactionSmartFee501Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class EstimateTransactionSmartFee501Response {
     /**

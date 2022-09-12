@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSD2VoutInner model module.
  * @module model/ListTransactionsByBlockHashRIBSD2VoutInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListTransactionsByBlockHashRIBSD2VoutInner = /*#__PURE__*/function () {
   /**

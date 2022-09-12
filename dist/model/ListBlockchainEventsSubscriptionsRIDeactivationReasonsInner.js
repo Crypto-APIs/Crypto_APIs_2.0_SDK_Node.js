@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner model module.
  * @module model/ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner = /*#__PURE__*/function () {
   /**

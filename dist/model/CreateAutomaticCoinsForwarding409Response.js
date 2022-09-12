@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwarding409Response model module.
  * @module model/CreateAutomaticCoinsForwarding409Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 var CreateAutomaticCoinsForwarding409Response = /*#__PURE__*/function () {
   /**

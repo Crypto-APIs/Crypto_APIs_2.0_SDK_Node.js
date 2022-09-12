@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TokensForwardingFailDataItem model module.
  * @module model/TokensForwardingFailDataItem
- * @version 1.7.3
+ * @version 1.8.0
  */
 class TokensForwardingFailDataItem {
     /**

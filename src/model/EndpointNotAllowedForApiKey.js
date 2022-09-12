@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The EndpointNotAllowedForApiKey model module.
  * @module model/EndpointNotAllowedForApiKey
- * @version 1.7.3
+ * @version 1.8.0
  */
 class EndpointNotAllowedForApiKey {
     /**

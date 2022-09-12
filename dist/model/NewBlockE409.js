@@ -24,7 +24,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockE409 model module.
  * @module model/NewBlockE409
- * @version 1.7.3
+ * @version 1.8.0
  */
 var NewBlockE409 = /*#__PURE__*/function () {
   /**

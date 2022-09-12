@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetFeeAddressDetailsRIBalance model module.
  * @module model/GetFeeAddressDetailsRIBalance
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetFeeAddressDetailsRIBalance {
     /**

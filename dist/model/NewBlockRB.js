@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockRB model module.
  * @module model/NewBlockRB
- * @version 1.7.3
+ * @version 1.8.0
  */
 var NewBlockRB = /*#__PURE__*/function () {
   /**

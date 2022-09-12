@@ -20,6 +20,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 from './GetTransac
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSE from './GetTransactionDetailsByTransactionIDFromCallbackRIBSE';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSEC from './GetTransactionDetailsByTransactionIDFromCallbackRIBSEC';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSL from './GetTransactionDetailsByTransactionIDFromCallbackRIBSL';
+import GetTransactionDetailsByTransactionIDFromCallbackRIBSP from './GetTransactionDetailsByTransactionIDFromCallbackRIBSP';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBST from './GetTransactionDetailsByTransactionIDFromCallbackRIBST';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed from './GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed from './GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed';
@@ -27,7 +28,6 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSX from './GetTransact
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue from './GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSZ from './GetTransactionDetailsByTransactionIDFromCallbackRIBSZ';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 from './GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2';
-import GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice from './GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner from './GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner';
 import GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner from './GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner';
 import GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner from './GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner';
@@ -39,7 +39,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDRIReceive from './GetXRPRipp
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBS
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
     /**
@@ -57,6 +57,7 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
      * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2
      * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSX
      * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBST
+     * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSP
      * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Represents the virtual size of this transaction.
@@ -65,8 +66,8 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
      * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner>} Object Array representation of transaction outputs
      * @param contract {String} Represents the specific transaction contract.
      * @param gasLimit {Number} Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
-     * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice} 
-     * @param gasUsed {Number} Defines how much of the gas for the block has been used.
+     * @param gasPrice {String} Represents the price offered to the miner to purchase this amount of gas.
+     * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
      * @param inputData {String} Represents additional information that is required for the transaction.
      * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
      * @param transactionStatus {String} Represents the status of this transaction.
@@ -87,18 +88,20 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
      * @param status {String} Defines the status of the transaction.
      * @param type {String} Defines the type of the transaction.
      * @param value {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue} 
-     * @param amount {String} Defines the amount of the transaction.
+     * @param amount {String} Representation of the amount value.
      * @param bandwidthUsed {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed} 
      * @param energyUsed {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed} 
      * @param hasInternalTransactions {Boolean} Defines if the transaction includes internal transactions (true) or not (false).
      * @param hasTokenTransfers {String} Defines if the transaction includes token transfers (true) or not (false).
-     * @param input {String} Represents the transaction's input value.
-     * @param recipients {String} Represents the recipient address.
-     * @param senders {String} Represents the sender address.
+     * @param input {String} Represents additional information that is required for the transaction.
+     * @param recipients {String} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param senders {String} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+     * @param gas {String} Represents the price offered to the miner to purchase this amount of gas.
+     * @param txid {String} Represents the unique identifier of a transaction, i.e. it could be transactionId in UTXO-based protocols like Bitcoin, and transaction hash in Ethereum blockchain.
      */
-    constructor(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders) { 
-        GetTransactionDetailsByTransactionIDFromCallbackRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);GetTransactionDetailsByTransactionIDFromCallbackRIBSBC.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSD.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSD2.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSZ.initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2.initialize(this, gasLimit, gasPrice, gasUsed, nonce, transactionStatus);GetTransactionDetailsByTransactionIDFromCallbackRIBSX.initialize(this, additionalData, offer, receive, sequence, status, type, value);GetTransactionDetailsByTransactionIDFromCallbackRIBST.initialize(this, amount, bandwidthUsed, contract, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders, transactionStatus);
-        GetTransactionDetailsByTransactionIDFromCallbackRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders);
+    constructor(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders, gas, txid) { 
+        GetTransactionDetailsByTransactionIDFromCallbackRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);GetTransactionDetailsByTransactionIDFromCallbackRIBSBC.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSD.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSD2.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSZ.initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);GetTransactionDetailsByTransactionIDFromCallbackRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2.initialize(this, gasLimit, gasPrice, gasUsed, nonce, transactionStatus);GetTransactionDetailsByTransactionIDFromCallbackRIBSX.initialize(this, additionalData, offer, receive, sequence, status, type, value);GetTransactionDetailsByTransactionIDFromCallbackRIBST.initialize(this, amount, bandwidthUsed, contract, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders, transactionStatus);GetTransactionDetailsByTransactionIDFromCallbackRIBSP.initialize(this, amount, contract, gas, gasPrice, gasUsed, input, nonce, recipients, senders, transactionStatus, txid);
+        GetTransactionDetailsByTransactionIDFromCallbackRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders, gas, txid);
     }
 
     /**
@@ -106,7 +109,7 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders) { 
+    static initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders, gas, txid) { 
         obj['locktime'] = locktime;
         obj['size'] = size;
         obj['vSize'] = vSize;
@@ -145,6 +148,8 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
         obj['input'] = input;
         obj['recipients'] = recipients;
         obj['senders'] = senders;
+        obj['gas'] = gas;
+        obj['txid'] = txid;
     }
 
     /**
@@ -169,6 +174,7 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
             GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2.constructFromObject(data, obj);
             GetTransactionDetailsByTransactionIDFromCallbackRIBSX.constructFromObject(data, obj);
             GetTransactionDetailsByTransactionIDFromCallbackRIBST.constructFromObject(data, obj);
+            GetTransactionDetailsByTransactionIDFromCallbackRIBSP.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('locktime')) {
                 obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
@@ -195,10 +201,10 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
                 obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'Number');
             }
             if (data.hasOwnProperty('gasPrice')) {
-                obj['gasPrice'] = GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice.constructFromObject(data['gasPrice']);
+                obj['gasPrice'] = ApiClient.convertToType(data['gasPrice'], 'String');
             }
             if (data.hasOwnProperty('gasUsed')) {
-                obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'Number');
+                obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'String');
             }
             if (data.hasOwnProperty('inputData')) {
                 obj['inputData'] = ApiClient.convertToType(data['inputData'], 'String');
@@ -287,6 +293,12 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
             if (data.hasOwnProperty('senders')) {
                 obj['senders'] = ApiClient.convertToType(data['senders'], 'String');
             }
+            if (data.hasOwnProperty('gas')) {
+                obj['gas'] = ApiClient.convertToType(data['gas'], 'String');
+            }
+            if (data.hasOwnProperty('txid')) {
+                obj['txid'] = ApiClient.convertToType(data['txid'], 'String');
+            }
         }
         return obj;
     }
@@ -343,13 +355,14 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['contract'] = und
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['gasLimit'] = undefined;
 
 /**
- * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice} gasPrice
+ * Represents the price offered to the miner to purchase this amount of gas.
+ * @member {String} gasPrice
  */
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['gasPrice'] = undefined;
 
 /**
- * Defines how much of the gas for the block has been used.
- * @member {Number} gasUsed
+ * Represents the exact unit of gas that was used for the transaction.
+ * @member {String} gasUsed
  */
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['gasUsed'] = undefined;
 
@@ -477,7 +490,7 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['type'] = undefin
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['value'] = undefined;
 
 /**
- * Defines the amount of the transaction.
+ * Representation of the amount value.
  * @member {String} amount
  */
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['amount'] = undefined;
@@ -505,22 +518,34 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['hasInternalTrans
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['hasTokenTransfers'] = undefined;
 
 /**
- * Represents the transaction's input value.
+ * Represents additional information that is required for the transaction.
  * @member {String} input
  */
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['input'] = undefined;
 
 /**
- * Represents the recipient address.
+ * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
  * @member {String} recipients
  */
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['recipients'] = undefined;
 
 /**
- * Represents the sender address.
+ * Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
  * @member {String} senders
  */
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['senders'] = undefined;
+
+/**
+ * Represents the price offered to the miner to purchase this amount of gas.
+ * @member {String} gas
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['gas'] = undefined;
+
+/**
+ * Represents the unique identifier of a transaction, i.e. it could be transactionId in UTXO-based protocols like Bitcoin, and transaction hash in Ethereum blockchain.
+ * @member {String} txid
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['txid'] = undefined;
 
 
 // Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSB interface:
@@ -946,6 +971,62 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBST.prototype['senders'] = und
  * @member {String} transactionStatus
  */
 GetTransactionDetailsByTransactionIDFromCallbackRIBST.prototype['transactionStatus'] = undefined;
+// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSP interface:
+/**
+ * Representation of the amount value.
+ * @member {String} amount
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['amount'] = undefined;
+/**
+ * Represents the specific transaction contract.
+ * @member {String} contract
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['contract'] = undefined;
+/**
+ * Represents the price offered to the miner to purchase this amount of gas.
+ * @member {String} gas
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['gas'] = undefined;
+/**
+ * Represents the price offered to the miner to purchase this amount of gas.
+ * @member {String} gasPrice
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['gasPrice'] = undefined;
+/**
+ * Represents the exact unit of gas that was used for the transaction.
+ * @member {String} gasUsed
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['gasUsed'] = undefined;
+/**
+ * Represents additional information that is required for the transaction.
+ * @member {String} input
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['input'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {Number} nonce
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['nonce'] = undefined;
+/**
+ * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+ * @member {String} recipients
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['recipients'] = undefined;
+/**
+ * Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+ * @member {String} senders
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['senders'] = undefined;
+/**
+ * Represents the status of this transaction.
+ * @member {String} transactionStatus
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['transactionStatus'] = undefined;
+/**
+ * Represents the unique identifier of a transaction, i.e. it could be transactionId in UTXO-based protocols like Bitcoin, and transaction hash in Ethereum blockchain.
+ * @member {String} txid
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRIBSP.prototype['txid'] = undefined;
 
 
 

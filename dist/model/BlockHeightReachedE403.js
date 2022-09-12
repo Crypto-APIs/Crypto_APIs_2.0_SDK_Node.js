@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReachedE403 model module.
  * @module model/BlockHeightReachedE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 var BlockHeightReachedE403 = /*#__PURE__*/function () {
   /**

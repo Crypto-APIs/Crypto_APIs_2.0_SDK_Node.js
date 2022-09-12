@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetTransactionDetailsByTransactionIDE400 model module.
  * @module model/GetTransactionDetailsByTransactionIDE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetTransactionDetailsByTransactionIDE400 {
     /**

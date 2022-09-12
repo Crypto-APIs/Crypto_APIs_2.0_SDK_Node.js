@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensForwardingAutomationsRITSBOT model module.
  * @module model/ListTokensForwardingAutomationsRITSBOT
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListTokensForwardingAutomationsRITSBOT = /*#__PURE__*/function () {
   /**

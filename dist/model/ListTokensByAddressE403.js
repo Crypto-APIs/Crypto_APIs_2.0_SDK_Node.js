@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddressE403 model module.
  * @module model/ListTokensByAddressE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListTokensByAddressE403 = /*#__PURE__*/function () {
   /**

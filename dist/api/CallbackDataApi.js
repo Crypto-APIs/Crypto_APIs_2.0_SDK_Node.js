@@ -7,17 +7,17 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
+var _ConvertBitcoinCashAddress402Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress402Response"));
 
-var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
+var _ConvertBitcoinCashAddress409Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress409Response"));
 
-var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
+var _ConvertBitcoinCashAddress415Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress415Response"));
 
-var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
+var _ConvertBitcoinCashAddress422Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress422Response"));
 
-var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
+var _ConvertBitcoinCashAddress429Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress429Response"));
 
-var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
+var _ConvertBitcoinCashAddress500Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress500Response"));
 
 var _GetAddressDetailsFromCallback400Response = _interopRequireDefault(require("../model/GetAddressDetailsFromCallback400Response"));
 
@@ -68,7 +68,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.7.3
+* @version 1.8.0
 */
 var CallbackDataApi = /*#__PURE__*/function () {
   /**
@@ -219,7 +219,7 @@ var CallbackDataApi = /*#__PURE__*/function () {
      * This endpoint creates a shortcut to obtain information from Blockchain data by going through Blockchain Events and a specific Event Subscription. It provides data for the specific Block by providing the `blockHeight` attribute from the Event it takes part in. It applies only for Events related to that user.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {String} blockHeight Numeric representation of the block height
+     * @param {String} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBlockDetailsByBlockHeightFromCallbackR} and HTTP response
@@ -266,7 +266,7 @@ var CallbackDataApi = /*#__PURE__*/function () {
      * This endpoint creates a shortcut to obtain information from Blockchain data by going through Blockchain Events and a specific Event Subscription. It provides data for the specific Block by providing the `blockHeight` attribute from the Event it takes part in. It applies only for Events related to that user.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {String} blockHeight Numeric representation of the block height
+     * @param {String} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBlockDetailsByBlockHeightFromCallbackR}

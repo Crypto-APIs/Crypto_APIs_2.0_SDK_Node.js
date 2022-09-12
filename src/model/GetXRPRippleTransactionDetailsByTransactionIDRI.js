@@ -22,7 +22,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDRIValue from './GetXRPRipple
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRI model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetXRPRippleTransactionDetailsByTransactionIDRI {
     /**

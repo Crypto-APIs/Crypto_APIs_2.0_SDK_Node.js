@@ -17,7 +17,7 @@ import GetExchangeRateByAssetsIDsE400 from './GetExchangeRateByAssetsIDsE400';
 /**
  * The GetExchangeRateByAssetsIDs400Response model module.
  * @module model/GetExchangeRateByAssetsIDs400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetExchangeRateByAssetsIDs400Response {
     /**

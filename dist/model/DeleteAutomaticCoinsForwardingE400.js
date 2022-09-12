@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticCoinsForwardingE400 model module.
  * @module model/DeleteAutomaticCoinsForwardingE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 var DeleteAutomaticCoinsForwardingE400 = /*#__PURE__*/function () {
   /**

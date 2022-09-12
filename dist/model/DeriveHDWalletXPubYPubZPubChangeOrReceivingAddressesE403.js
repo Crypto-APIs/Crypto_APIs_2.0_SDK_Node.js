@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403 model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403 = /*#__PURE__*/function () {
   /**

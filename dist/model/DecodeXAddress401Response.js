@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeXAddress401Response model module.
  * @module model/DecodeXAddress401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 var DecodeXAddress401Response = /*#__PURE__*/function () {
   /**

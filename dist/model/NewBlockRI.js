@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockRI model module.
  * @module model/NewBlockRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var NewBlockRI = /*#__PURE__*/function () {
   /**

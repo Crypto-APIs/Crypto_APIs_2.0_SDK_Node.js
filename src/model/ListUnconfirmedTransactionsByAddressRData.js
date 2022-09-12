@@ -17,7 +17,7 @@ import ListUnconfirmedTransactionsByAddressRI from './ListUnconfirmedTransaction
 /**
  * The ListUnconfirmedTransactionsByAddressRData model module.
  * @module model/ListUnconfirmedTransactionsByAddressRData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListUnconfirmedTransactionsByAddressRData {
     /**

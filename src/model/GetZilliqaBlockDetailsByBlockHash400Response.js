@@ -17,7 +17,7 @@ import GetZilliqaBlockDetailsByBlockHashE400 from './GetZilliqaBlockDetailsByBlo
 /**
  * The GetZilliqaBlockDetailsByBlockHash400Response model module.
  * @module model/GetZilliqaBlockDetailsByBlockHash400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetZilliqaBlockDetailsByBlockHash400Response {
     /**

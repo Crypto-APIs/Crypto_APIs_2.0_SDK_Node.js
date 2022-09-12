@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GenerateDepositAddressE401 model module.
  * @module model/GenerateDepositAddressE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GenerateDepositAddressE401 {
     /**

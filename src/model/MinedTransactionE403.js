@@ -22,7 +22,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The MinedTransactionE403 model module.
  * @module model/MinedTransactionE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 class MinedTransactionE403 {
     /**

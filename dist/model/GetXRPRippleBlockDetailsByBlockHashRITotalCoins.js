@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRITotalCoins model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetXRPRippleBlockDetailsByBlockHashRITotalCoins = /*#__PURE__*/function () {
   /**

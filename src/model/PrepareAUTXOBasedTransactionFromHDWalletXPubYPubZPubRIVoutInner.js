@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner {
     /**

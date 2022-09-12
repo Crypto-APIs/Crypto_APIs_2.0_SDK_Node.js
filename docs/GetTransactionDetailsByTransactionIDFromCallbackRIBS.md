@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **vout** | [**[GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner]**](GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner.md) | Object Array representation of transaction outputs | 
 **contract** | **String** | Represents the specific transaction contract. | 
 **gasLimit** | **Number** | Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit. | 
-**gasPrice** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice**](GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice.md) |  | 
-**gasUsed** | **Number** | Defines how much of the gas for the block has been used. | 
+**gasPrice** | **String** | Represents the price offered to the miner to purchase this amount of gas. | 
+**gasUsed** | **String** | Represents the exact unit of gas that was used for the transaction. | 
 **inputData** | **String** | Represents additional information that is required for the transaction. | 
 **nonce** | **Number** | Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender&#39;s address. | 
 **transactionStatus** | **String** | Represents the status of this transaction. | 
@@ -35,13 +35,15 @@ Name | Type | Description | Notes
 **status** | **String** | Defines the status of the transaction. | 
 **type** | **String** | Defines the type of the transaction. | 
 **value** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue**](GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue.md) |  | 
-**amount** | **String** | Defines the amount of the transaction. | 
+**amount** | **String** | Representation of the amount value. | 
 **bandwidthUsed** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed**](GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed.md) |  | 
 **energyUsed** | [**GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed**](GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed.md) |  | 
 **hasInternalTransactions** | **Boolean** | Defines if the transaction includes internal transactions (true) or not (false). | 
 **hasTokenTransfers** | **String** | Defines if the transaction includes token transfers (true) or not (false). | 
-**input** | **String** | Represents the transaction&#39;s input value. | 
-**recipients** | **String** | Represents the recipient address. | 
-**senders** | **String** | Represents the sender address. | 
+**input** | **String** | Represents additional information that is required for the transaction. | 
+**recipients** | **String** | Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list. | 
+**senders** | **String** | Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list. | 
+**gas** | **String** | Represents the price offered to the miner to purchase this amount of gas. | 
+**txid** | **String** | Represents the unique identifier of a transaction, i.e. it could be transactionId in UTXO-based protocols like Bitcoin, and transaction hash in Ethereum blockchain. | 
 
 

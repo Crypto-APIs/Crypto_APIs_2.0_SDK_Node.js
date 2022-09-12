@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlockR model module.
  * @module model/GetLatestMinedZilliqaBlockR
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetLatestMinedZilliqaBlockR = /*#__PURE__*/function () {
   /**

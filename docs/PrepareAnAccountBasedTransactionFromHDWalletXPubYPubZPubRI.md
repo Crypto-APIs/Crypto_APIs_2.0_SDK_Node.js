@@ -21,10 +21,6 @@ Name | Type | Description | Notes
 
 * `legacy-transaction` (value: `"legacy-transaction"`)
 
-* `access-list-transaction` (value: `"access-list-transaction"`)
-
-* `gas-fee-market-transaction` (value: `"gas-fee-market-transaction"`)
-
 
 
 

@@ -17,7 +17,7 @@ import CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE403 fr
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority403Response model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority403Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority403Response {
     /**

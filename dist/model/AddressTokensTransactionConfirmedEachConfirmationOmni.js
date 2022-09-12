@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationOmni model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationOmni
- * @version 1.7.3
+ * @version 1.8.0
  */
 var AddressTokensTransactionConfirmedEachConfirmationOmni = /*#__PURE__*/function () {
   /**

@@ -48,7 +48,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBS model module.
  * @module model/ListTransactionsByBlockHeightRIBS
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListTransactionsByBlockHeightRIBS = /*#__PURE__*/function () {
   /**

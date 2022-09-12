@@ -17,7 +17,7 @@ import DeleteAutomaticCoinsForwardingE403 from './DeleteAutomaticCoinsForwarding
 /**
  * The DeleteAutomaticCoinsForwarding403Response model module.
  * @module model/DeleteAutomaticCoinsForwarding403Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class DeleteAutomaticCoinsForwarding403Response {
     /**

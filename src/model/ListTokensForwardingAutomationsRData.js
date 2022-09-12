@@ -17,7 +17,7 @@ import ListTokensForwardingAutomationsRI from './ListTokensForwardingAutomations
 /**
  * The ListTokensForwardingAutomationsRData model module.
  * @module model/ListTokensForwardingAutomationsRData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListTokensForwardingAutomationsRData {
     /**

@@ -7,6 +7,18 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _ConvertBitcoinCashAddress402Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress402Response"));
+
+var _ConvertBitcoinCashAddress409Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress409Response"));
+
+var _ConvertBitcoinCashAddress415Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress415Response"));
+
+var _ConvertBitcoinCashAddress422Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress422Response"));
+
+var _ConvertBitcoinCashAddress429Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress429Response"));
+
+var _ConvertBitcoinCashAddress500Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress500Response"));
+
 var _GenerateDepositAddress400Response = _interopRequireDefault(require("../model/GenerateDepositAddress400Response"));
 
 var _GenerateDepositAddress401Response = _interopRequireDefault(require("../model/GenerateDepositAddress401Response"));
@@ -16,18 +28,6 @@ var _GenerateDepositAddress403Response = _interopRequireDefault(require("../mode
 var _GenerateDepositAddressR = _interopRequireDefault(require("../model/GenerateDepositAddressR"));
 
 var _GenerateDepositAddressRB = _interopRequireDefault(require("../model/GenerateDepositAddressRB"));
-
-var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
-
-var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
-
-var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
-
-var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
-
-var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
-
-var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
 var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
 
@@ -42,7 +42,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.7.3
+* @version 1.8.0
 */
 var GeneratingApi = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListUnconfirmedTokensTransfersByAddressE400 model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListUnconfirmedTokensTransfersByAddressE400 {
     /**

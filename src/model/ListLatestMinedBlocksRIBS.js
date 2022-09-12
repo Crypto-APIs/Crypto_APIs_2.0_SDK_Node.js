@@ -17,7 +17,6 @@ import ListLatestMinedBlocksRIBSBC from './ListLatestMinedBlocksRIBSBC';
 import ListLatestMinedBlocksRIBSBSC from './ListLatestMinedBlocksRIBSBSC';
 import ListLatestMinedBlocksRIBSD from './ListLatestMinedBlocksRIBSD';
 import ListLatestMinedBlocksRIBSD2 from './ListLatestMinedBlocksRIBSD2';
-import ListLatestMinedBlocksRIBSE from './ListLatestMinedBlocksRIBSE';
 import ListLatestMinedBlocksRIBSEC from './ListLatestMinedBlocksRIBSEC';
 import ListLatestMinedBlocksRIBSL from './ListLatestMinedBlocksRIBSL';
 import ListLatestMinedBlocksRIBSX from './ListLatestMinedBlocksRIBSX';
@@ -29,7 +28,7 @@ import ListLatestMinedBlocksRIBSZ2 from './ListLatestMinedBlocksRIBSZ2';
 /**
  * The ListLatestMinedBlocksRIBS model module.
  * @module model/ListLatestMinedBlocksRIBS
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListLatestMinedBlocksRIBS {
     /**
@@ -38,7 +37,6 @@ class ListLatestMinedBlocksRIBS {
      * @implements module:model/ListLatestMinedBlocksRIBSB
      * @implements module:model/ListLatestMinedBlocksRIBSBC
      * @implements module:model/ListLatestMinedBlocksRIBSEC
-     * @implements module:model/ListLatestMinedBlocksRIBSE
      * @implements module:model/ListLatestMinedBlocksRIBSL
      * @implements module:model/ListLatestMinedBlocksRIBSD
      * @implements module:model/ListLatestMinedBlocksRIBSD2
@@ -70,7 +68,7 @@ class ListLatestMinedBlocksRIBS {
      * @param totalFees {module:model/ListLatestMinedBlocksRIBSXTotalFees} 
      */
     constructor(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks, totalFees) { 
-        ListLatestMinedBlocksRIBSB.initialize(this, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);ListLatestMinedBlocksRIBSBC.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);ListLatestMinedBlocksRIBSEC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);ListLatestMinedBlocksRIBSE.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);ListLatestMinedBlocksRIBSL.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);ListLatestMinedBlocksRIBSD.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);ListLatestMinedBlocksRIBSD2.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, weight);ListLatestMinedBlocksRIBSBSC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);ListLatestMinedBlocksRIBSZ.initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);ListLatestMinedBlocksRIBSZ2.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version);ListLatestMinedBlocksRIBSX.initialize(this, totalFees);
+        ListLatestMinedBlocksRIBSB.initialize(this, bits, chainwork, merkleRoot, strippedSize, version, versionHex, weight);ListLatestMinedBlocksRIBSBC.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);ListLatestMinedBlocksRIBSEC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);ListLatestMinedBlocksRIBSL.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);ListLatestMinedBlocksRIBSD.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);ListLatestMinedBlocksRIBSD2.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, weight);ListLatestMinedBlocksRIBSBSC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);ListLatestMinedBlocksRIBSZ.initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);ListLatestMinedBlocksRIBSZ2.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version);ListLatestMinedBlocksRIBSX.initialize(this, totalFees);
         ListLatestMinedBlocksRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks, totalFees);
     }
 
@@ -117,7 +115,6 @@ class ListLatestMinedBlocksRIBS {
             ListLatestMinedBlocksRIBSB.constructFromObject(data, obj);
             ListLatestMinedBlocksRIBSBC.constructFromObject(data, obj);
             ListLatestMinedBlocksRIBSEC.constructFromObject(data, obj);
-            ListLatestMinedBlocksRIBSE.constructFromObject(data, obj);
             ListLatestMinedBlocksRIBSL.constructFromObject(data, obj);
             ListLatestMinedBlocksRIBSD.constructFromObject(data, obj);
             ListLatestMinedBlocksRIBSD2.constructFromObject(data, obj);
@@ -479,56 +476,6 @@ ListLatestMinedBlocksRIBSEC.prototype['totalDifficulty'] = undefined;
  * @member {Array.<String>} uncles
  */
 ListLatestMinedBlocksRIBSEC.prototype['uncles'] = undefined;
-// Implement ListLatestMinedBlocksRIBSE interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-ListLatestMinedBlocksRIBSE.prototype['difficulty'] = undefined;
-/**
- * Represents any data that can be included by the miner in the block.
- * @member {String} extraData
- */
-ListLatestMinedBlocksRIBSE.prototype['extraData'] = undefined;
-/**
- * Defines the total gas limit of all transactions in the block.
- * @member {String} gasLimit
- */
-ListLatestMinedBlocksRIBSE.prototype['gasLimit'] = undefined;
-/**
- * Represents the total amount of gas used by all transactions in this block.
- * @member {String} gasUsed
- */
-ListLatestMinedBlocksRIBSE.prototype['gasUsed'] = undefined;
-/**
- * Specifies the amount of time required for the block to be mined in seconds.
- * @member {Number} minedInSeconds
- */
-ListLatestMinedBlocksRIBSE.prototype['minedInSeconds'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-ListLatestMinedBlocksRIBSE.prototype['nonce'] = undefined;
-/**
- * Defines the combined hash of all uncles for a given parent.
- * @member {String} sha3Uncles
- */
-ListLatestMinedBlocksRIBSE.prototype['sha3Uncles'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-ListLatestMinedBlocksRIBSE.prototype['size'] = undefined;
-/**
- * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
- * @member {String} totalDifficulty
- */
-ListLatestMinedBlocksRIBSE.prototype['totalDifficulty'] = undefined;
-/**
- * @member {Array.<String>} uncles
- */
-ListLatestMinedBlocksRIBSE.prototype['uncles'] = undefined;
 // Implement ListLatestMinedBlocksRIBSL interface:
 /**
  * Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.

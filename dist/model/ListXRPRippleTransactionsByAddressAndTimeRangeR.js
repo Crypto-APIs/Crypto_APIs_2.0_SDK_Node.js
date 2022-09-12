@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeR model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeR
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListXRPRippleTransactionsByAddressAndTimeRangeR = /*#__PURE__*/function () {
   /**

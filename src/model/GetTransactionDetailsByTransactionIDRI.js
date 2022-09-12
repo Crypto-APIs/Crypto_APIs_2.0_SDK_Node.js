@@ -20,7 +20,7 @@ import GetTransactionDetailsByTransactionIDRISendersInner from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRI model module.
  * @module model/GetTransactionDetailsByTransactionIDRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetTransactionDetailsByTransactionIDRI {
     /**

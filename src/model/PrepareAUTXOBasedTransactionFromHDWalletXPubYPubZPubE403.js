@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE403 model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE403 {
     /**

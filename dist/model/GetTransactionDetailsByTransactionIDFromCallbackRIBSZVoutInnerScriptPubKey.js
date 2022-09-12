@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInnerScriptPubKey model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInnerScriptPubKey
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**

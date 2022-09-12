@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The EstimateTokenGasLimitE400 model module.
  * @module model/EstimateTokenGasLimitE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 class EstimateTokenGasLimitE400 {
     /**

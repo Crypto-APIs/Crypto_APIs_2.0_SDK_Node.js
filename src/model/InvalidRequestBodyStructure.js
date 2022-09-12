@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The InvalidRequestBodyStructure model module.
  * @module model/InvalidRequestBodyStructure
- * @version 1.7.3
+ * @version 1.8.0
  */
 class InvalidRequestBodyStructure {
     /**

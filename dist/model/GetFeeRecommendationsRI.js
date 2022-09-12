@@ -18,13 +18,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetFeeRecommendationsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeRecommendationsRI</code>.
    * @alias module:model/GetFeeRecommendationsRI
-   * @param unit {String} Defines the unit of the fee, e.g. BTC.
+   * @param unit {String} Currency unit
    * @param fast {String} Fast fee per byte calculated from unconfirmed transactions
    * @param slow {String} Slow fee per byte calculated from unconfirmed transactions
    * @param standard {String} Standard fee per byte calculated from unconfirmed transactions
@@ -78,10 +78,6 @@ var GetFeeRecommendationsRI = /*#__PURE__*/function () {
         if (data.hasOwnProperty('standard')) {
           obj['standard'] = _ApiClient["default"].convertToType(data['standard'], 'String');
         }
-
-        if (data.hasOwnProperty('feeMultiplier')) {
-          obj['feeMultiplier'] = _ApiClient["default"].convertToType(data['feeMultiplier'], 'String');
-        }
       }
 
       return obj;
@@ -91,7 +87,7 @@ var GetFeeRecommendationsRI = /*#__PURE__*/function () {
   return GetFeeRecommendationsRI;
 }();
 /**
- * Defines the unit of the fee, e.g. BTC.
+ * Currency unit
  * @member {String} unit
  */
 
@@ -115,11 +111,5 @@ GetFeeRecommendationsRI.prototype['slow'] = undefined;
  */
 
 GetFeeRecommendationsRI.prototype['standard'] = undefined;
-/**
- * Represents the fee cushion multiplier used to multiply the base fee.
- * @member {String} feeMultiplier
- */
-
-GetFeeRecommendationsRI.prototype['feeMultiplier'] = undefined;
 var _default = GetFeeRecommendationsRI;
 exports["default"] = _default;

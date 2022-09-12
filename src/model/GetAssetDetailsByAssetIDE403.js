@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetAssetDetailsByAssetIDE403 model module.
  * @module model/GetAssetDetailsByAssetIDE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetAssetDetailsByAssetIDE403 {
     /**

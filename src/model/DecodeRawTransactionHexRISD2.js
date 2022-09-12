@@ -18,7 +18,7 @@ import DecodeRawTransactionHexRISD2VoutInner from './DecodeRawTransactionHexRISD
 /**
  * The DecodeRawTransactionHexRISD2 model module.
  * @module model/DecodeRawTransactionHexRISD2
- * @version 1.7.3
+ * @version 1.8.0
  */
 class DecodeRawTransactionHexRISD2 {
     /**

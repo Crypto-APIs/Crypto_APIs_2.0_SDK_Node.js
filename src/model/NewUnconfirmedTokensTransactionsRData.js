@@ -17,7 +17,7 @@ import NewUnconfirmedTokensTransactionsRI from './NewUnconfirmedTokensTransactio
 /**
  * The NewUnconfirmedTokensTransactionsRData model module.
  * @module model/NewUnconfirmedTokensTransactionsRData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewUnconfirmedTokensTransactionsRData {
     /**

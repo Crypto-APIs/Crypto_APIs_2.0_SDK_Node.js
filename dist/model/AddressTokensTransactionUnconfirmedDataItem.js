@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionUnconfirmedDataItem model module.
  * @module model/AddressTokensTransactionUnconfirmedDataItem
- * @version 1.7.3
+ * @version 1.8.0
  */
 var AddressTokensTransactionUnconfirmedDataItem = /*#__PURE__*/function () {
   /**

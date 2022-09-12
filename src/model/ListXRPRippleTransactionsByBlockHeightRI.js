@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByBlockHeightRIValue from './ListXRPRippleTransa
 /**
  * The ListXRPRippleTransactionsByBlockHeightRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListXRPRippleTransactionsByBlockHeightRI {
     /**

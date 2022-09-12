@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbolsRI model module.
  * @module model/GetExchangeRateByAssetSymbolsRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetExchangeRateByAssetSymbolsRI = /*#__PURE__*/function () {
   /**

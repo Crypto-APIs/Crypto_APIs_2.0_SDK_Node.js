@@ -19,7 +19,7 @@ import ListAllAssetsFromAllWalletsRINonFungibleTokensInner from './ListAllAssets
 /**
  * The ListAllAssetsFromAllWalletsRI model module.
  * @module model/ListAllAssetsFromAllWalletsRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListAllAssetsFromAllWalletsRI {
     /**

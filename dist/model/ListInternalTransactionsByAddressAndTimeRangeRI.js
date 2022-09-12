@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListInternalTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**

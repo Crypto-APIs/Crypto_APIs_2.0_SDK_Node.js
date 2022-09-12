@@ -13,11 +13,11 @@
 
 
 import ApiClient from "../ApiClient";
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress409Response from '../model/ConvertBitcoinCashAddress409Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
 import GetExchangeRateByAssetSymbols400Response from '../model/GetExchangeRateByAssetSymbols400Response';
 import GetExchangeRateByAssetSymbols401Response from '../model/GetExchangeRateByAssetSymbols401Response';
 import GetExchangeRateByAssetSymbols403Response from '../model/GetExchangeRateByAssetSymbols403Response';
@@ -32,7 +32,7 @@ import GetExchangeRateByAssetsIDsR from '../model/GetExchangeRateByAssetsIDsR';
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class ExchangeRatesApi {
 

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedErc20 model module.
  * @module model/AddressTokensTransactionConfirmedErc20
- * @version 1.7.3
+ * @version 1.8.0
  */
 var AddressTokensTransactionConfirmedErc20 = /*#__PURE__*/function () {
   /**

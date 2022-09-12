@@ -17,7 +17,7 @@ import NewConfirmedTokensTransactionsAndEachConfirmationRData from './NewConfirm
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationR model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationR
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewConfirmedTokensTransactionsAndEachConfirmationR {
     /**

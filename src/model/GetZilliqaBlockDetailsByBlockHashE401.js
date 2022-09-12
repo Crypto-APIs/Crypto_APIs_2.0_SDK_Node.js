@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetZilliqaBlockDetailsByBlockHashE401 model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetZilliqaBlockDetailsByBlockHashE401 {
     /**

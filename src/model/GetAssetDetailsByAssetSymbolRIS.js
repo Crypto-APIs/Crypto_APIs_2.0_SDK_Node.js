@@ -17,7 +17,7 @@ import GetAssetDetailsByAssetSymbolRISC from './GetAssetDetailsByAssetSymbolRISC
 /**
  * The GetAssetDetailsByAssetSymbolRIS model module.
  * @module model/GetAssetDetailsByAssetSymbolRIS
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetAssetDetailsByAssetSymbolRIS {
     /**

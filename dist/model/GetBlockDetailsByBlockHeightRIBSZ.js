@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightRIBSZ model module.
  * @module model/GetBlockDetailsByBlockHeightRIBSZ
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetBlockDetailsByBlockHeightRIBSZ = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import ValidateAddressE403 from './ValidateAddressE403';
 /**
  * The ValidateAddress403Response model module.
  * @module model/ValidateAddress403Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ValidateAddress403Response {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRISE model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRISE
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRISE {
     /**

@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdE401 model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetInternalTransactionByTransactionHashAndOperationIdE401 {
     /**

@@ -12,7 +12,6 @@
  */
 
 import ApiClient from '../ApiClient';
-import GetTransactionDetailsByTransactionIDRIBSBSCGasPrice from './GetTransactionDetailsByTransactionIDRIBSBSCGasPrice';
 import GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner from './GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner';
 import GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner from './GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner';
 import GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner from './GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner';
@@ -24,6 +23,8 @@ import GetWalletTransactionDetailsByTransactionIDRIBSD2 from './GetWalletTransac
 import GetWalletTransactionDetailsByTransactionIDRIBSE from './GetWalletTransactionDetailsByTransactionIDRIBSE';
 import GetWalletTransactionDetailsByTransactionIDRIBSEC from './GetWalletTransactionDetailsByTransactionIDRIBSEC';
 import GetWalletTransactionDetailsByTransactionIDRIBSL from './GetWalletTransactionDetailsByTransactionIDRIBSL';
+import GetWalletTransactionDetailsByTransactionIDRIBSP from './GetWalletTransactionDetailsByTransactionIDRIBSP';
+import GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice from './GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice';
 import GetWalletTransactionDetailsByTransactionIDRIBST from './GetWalletTransactionDetailsByTransactionIDRIBST';
 import GetWalletTransactionDetailsByTransactionIDRIBSZ from './GetWalletTransactionDetailsByTransactionIDRIBSZ';
 import GetWalletTransactionDetailsByTransactionIDRIBSZVinInner from './GetWalletTransactionDetailsByTransactionIDRIBSZVinInner';
@@ -32,7 +33,7 @@ import ListTransactionsByBlockHeightRIBSZVoutInner from './ListTransactionsByBlo
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBS
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBS {
     /**
@@ -48,15 +49,16 @@ class GetWalletTransactionDetailsByTransactionIDRIBS {
      * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSZ
      * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSBSC
      * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBST
+     * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSP
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
      * @param size {Number} Represents the total size of this transaction.
      * @param vSize {Number} Represents the virtual size of this transaction.
      * @param version {Number} Represents the transaction version number.
      * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
      * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} Object Array representation of transaction outputs
-     * @param contract {String} Numeric representation of the transaction contract
+     * @param contract {String} Represents the specific transaction contract
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-     * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
+     * @param gasPrice {module:model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice} 
      * @param gasUsed {String} Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
      * @param inputData {String} Represents additional information that is required for the transaction.
      * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
@@ -77,7 +79,7 @@ class GetWalletTransactionDetailsByTransactionIDRIBS {
      * @param status {String} String representation of the transaction status
      */
     constructor(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status) { 
-        GetWalletTransactionDetailsByTransactionIDRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);GetWalletTransactionDetailsByTransactionIDRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSBC.initialize(this, locktime, size, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetWalletTransactionDetailsByTransactionIDRIBSD.initialize(this, locktime, size, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSD2.initialize(this, locktime, size, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSZ.initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, valueBalance, version, versionGroupId, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSBSC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetWalletTransactionDetailsByTransactionIDRIBST.initialize(this, amount, bandwidthUsed, contract, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status);
+        GetWalletTransactionDetailsByTransactionIDRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);GetWalletTransactionDetailsByTransactionIDRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSBC.initialize(this, locktime, size, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetWalletTransactionDetailsByTransactionIDRIBSD.initialize(this, locktime, size, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSD2.initialize(this, locktime, size, version, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSZ.initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, valueBalance, version, versionGroupId, vin, vout);GetWalletTransactionDetailsByTransactionIDRIBSBSC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetWalletTransactionDetailsByTransactionIDRIBST.initialize(this, amount, bandwidthUsed, contract, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status);GetWalletTransactionDetailsByTransactionIDRIBSP.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
         GetWalletTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status);
     }
 
@@ -136,6 +138,7 @@ class GetWalletTransactionDetailsByTransactionIDRIBS {
             GetWalletTransactionDetailsByTransactionIDRIBSZ.constructFromObject(data, obj);
             GetWalletTransactionDetailsByTransactionIDRIBSBSC.constructFromObject(data, obj);
             GetWalletTransactionDetailsByTransactionIDRIBST.constructFromObject(data, obj);
+            GetWalletTransactionDetailsByTransactionIDRIBSP.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('locktime')) {
                 obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
@@ -162,7 +165,7 @@ class GetWalletTransactionDetailsByTransactionIDRIBS {
                 obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'String');
             }
             if (data.hasOwnProperty('gasPrice')) {
-                obj['gasPrice'] = GetTransactionDetailsByTransactionIDRIBSBSCGasPrice.constructFromObject(data['gasPrice']);
+                obj['gasPrice'] = GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice.constructFromObject(data['gasPrice']);
             }
             if (data.hasOwnProperty('gasUsed')) {
                 obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'String');
@@ -271,7 +274,7 @@ GetWalletTransactionDetailsByTransactionIDRIBS.prototype['vin'] = undefined;
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['vout'] = undefined;
 
 /**
- * Numeric representation of the transaction contract
+ * Represents the specific transaction contract
  * @member {String} contract
  */
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['contract'] = undefined;
@@ -283,7 +286,7 @@ GetWalletTransactionDetailsByTransactionIDRIBS.prototype['contract'] = undefined
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['gasLimit'] = undefined;
 
 /**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} gasPrice
+ * @member {module:model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice} gasPrice
  */
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['gasPrice'] = undefined;
 
@@ -762,6 +765,36 @@ GetWalletTransactionDetailsByTransactionIDRIBST.prototype['input'] = undefined;
  * @member {String} status
  */
 GetWalletTransactionDetailsByTransactionIDRIBST.prototype['status'] = undefined;
+// Implement GetWalletTransactionDetailsByTransactionIDRIBSP interface:
+/**
+ * Represents the specific transaction contract
+ * @member {String} contract
+ */
+GetWalletTransactionDetailsByTransactionIDRIBSP.prototype['contract'] = undefined;
+/**
+ * Represents the amount of gas used by this specific transaction alone.
+ * @member {String} gasLimit
+ */
+GetWalletTransactionDetailsByTransactionIDRIBSP.prototype['gasLimit'] = undefined;
+/**
+ * @member {module:model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice} gasPrice
+ */
+GetWalletTransactionDetailsByTransactionIDRIBSP.prototype['gasPrice'] = undefined;
+/**
+ * Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
+ * @member {String} gasUsed
+ */
+GetWalletTransactionDetailsByTransactionIDRIBSP.prototype['gasUsed'] = undefined;
+/**
+ * Represents additional information that is required for the transaction.
+ * @member {String} inputData
+ */
+GetWalletTransactionDetailsByTransactionIDRIBSP.prototype['inputData'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {Number} nonce
+ */
+GetWalletTransactionDetailsByTransactionIDRIBSP.prototype['nonce'] = undefined;
 
 
 

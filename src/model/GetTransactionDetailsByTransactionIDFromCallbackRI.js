@@ -20,7 +20,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRISendersInner from './Ge
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRI model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRI {
     /**

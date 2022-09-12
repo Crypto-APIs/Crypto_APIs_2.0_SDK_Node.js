@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByAddressE400 from './ListXRPRippleTransactionsB
 /**
  * The ListXRPRippleTransactionsByAddress400Response model module.
  * @module model/ListXRPRippleTransactionsByAddress400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListXRPRippleTransactionsByAddress400Response {
     /**

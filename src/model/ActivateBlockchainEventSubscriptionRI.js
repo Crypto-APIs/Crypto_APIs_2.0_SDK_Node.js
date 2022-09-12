@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ActivateBlockchainEventSubscriptionRI model module.
  * @module model/ActivateBlockchainEventSubscriptionRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ActivateBlockchainEventSubscriptionRI {
     /**

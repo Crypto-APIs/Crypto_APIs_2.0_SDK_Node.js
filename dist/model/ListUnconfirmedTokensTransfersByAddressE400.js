@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTokensTransfersByAddressE400 model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListUnconfirmedTokensTransfersByAddressE400 = /*#__PURE__*/function () {
   /**

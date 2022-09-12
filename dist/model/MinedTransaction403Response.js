@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransaction403Response model module.
  * @module model/MinedTransaction403Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 var MinedTransaction403Response = /*#__PURE__*/function () {
   /**

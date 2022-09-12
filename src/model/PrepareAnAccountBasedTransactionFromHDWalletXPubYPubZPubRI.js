@@ -17,7 +17,7 @@ import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee from './Pre
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI {
     /**
@@ -168,19 +168,7 @@ PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI['TransactionTypeEnum'
      * value: "legacy-transaction"
      * @const
      */
-    "legacy-transaction": "legacy-transaction",
-
-    /**
-     * value: "access-list-transaction"
-     * @const
-     */
-    "access-list-transaction": "access-list-transaction",
-
-    /**
-     * value: "gas-fee-market-transaction"
-     * @const
-     */
-    "gas-fee-market-transaction": "gas-fee-market-transaction"
+    "legacy-transaction": "legacy-transaction"
 };
 
 

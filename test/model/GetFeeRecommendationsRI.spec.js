@@ -78,12 +78,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property feeMultiplier (base name: "feeMultiplier")', function() {
-      // uncomment below and update the code to test the property feeMultiplier
-      //var instance = new Cryptoapis.GetFeeRecommendationsRI();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

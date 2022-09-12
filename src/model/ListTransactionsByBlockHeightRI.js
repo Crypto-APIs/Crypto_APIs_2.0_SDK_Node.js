@@ -20,7 +20,7 @@ import ListTransactionsByBlockHeightRIFee from './ListTransactionsByBlockHeightR
 /**
  * The ListTransactionsByBlockHeightRI model module.
  * @module model/ListTransactionsByBlockHeightRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListTransactionsByBlockHeightRI {
     /**

@@ -22,7 +22,7 @@ import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './Wal
 /**
  * The ListWalletTransactionsE403 model module.
  * @module model/ListWalletTransactionsE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListWalletTransactionsE403 {
     /**

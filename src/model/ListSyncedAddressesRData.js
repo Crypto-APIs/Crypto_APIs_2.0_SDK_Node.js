@@ -17,7 +17,7 @@ import ListSyncedAddressesRI from './ListSyncedAddressesRI';
 /**
  * The ListSyncedAddressesRData model module.
  * @module model/ListSyncedAddressesRData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListSyncedAddressesRData {
     /**

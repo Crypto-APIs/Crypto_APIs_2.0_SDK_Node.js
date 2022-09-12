@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSBSC model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBSC
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListConfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
   /**
@@ -31,13 +31,15 @@ var ListConfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
    * @param gasPrice {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} 
    * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
    * @param inputData {String} Represents additional information that is required for the transaction.
+   * @param internalTransactionsCount {Number} Represents the total internal transactions count.
    * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+   * @param tokenTransfersCount {Number} Represents the total token transfers count.
    * @param transactionStatus {String} String representation of the transaction status
    */
-  function ListConfirmedTransactionsByAddressRIBSBSC(gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) {
+  function ListConfirmedTransactionsByAddressRIBSBSC(gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus) {
     _classCallCheck(this, ListConfirmedTransactionsByAddressRIBSBSC);
 
-    ListConfirmedTransactionsByAddressRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
+    ListConfirmedTransactionsByAddressRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);
   }
   /**
    * Initializes the fields of this object.
@@ -48,12 +50,14 @@ var ListConfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
 
   _createClass(ListConfirmedTransactionsByAddressRIBSBSC, null, [{
     key: "initialize",
-    value: function initialize(obj, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus) {
+    value: function initialize(obj, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus) {
       obj['gasLimit'] = gasLimit;
       obj['gasPrice'] = gasPrice;
       obj['gasUsed'] = gasUsed;
       obj['inputData'] = inputData;
+      obj['internalTransactionsCount'] = internalTransactionsCount;
       obj['nonce'] = nonce;
+      obj['tokenTransfersCount'] = tokenTransfersCount;
       obj['transactionStatus'] = transactionStatus;
     }
     /**
@@ -90,8 +94,16 @@ var ListConfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
           obj['inputData'] = _ApiClient["default"].convertToType(data['inputData'], 'String');
         }
 
+        if (data.hasOwnProperty('internalTransactionsCount')) {
+          obj['internalTransactionsCount'] = _ApiClient["default"].convertToType(data['internalTransactionsCount'], 'Number');
+        }
+
         if (data.hasOwnProperty('nonce')) {
           obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'Number');
+        }
+
+        if (data.hasOwnProperty('tokenTransfersCount')) {
+          obj['tokenTransfersCount'] = _ApiClient["default"].convertToType(data['tokenTransfersCount'], 'Number');
         }
 
         if (data.hasOwnProperty('transactionStatus')) {
@@ -136,11 +148,23 @@ ListConfirmedTransactionsByAddressRIBSBSC.prototype['gasUsed'] = undefined;
 
 ListConfirmedTransactionsByAddressRIBSBSC.prototype['inputData'] = undefined;
 /**
+ * Represents the total internal transactions count.
+ * @member {Number} internalTransactionsCount
+ */
+
+ListConfirmedTransactionsByAddressRIBSBSC.prototype['internalTransactionsCount'] = undefined;
+/**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
  * @member {Number} nonce
  */
 
 ListConfirmedTransactionsByAddressRIBSBSC.prototype['nonce'] = undefined;
+/**
+ * Represents the total token transfers count.
+ * @member {Number} tokenTransfersCount
+ */
+
+ListConfirmedTransactionsByAddressRIBSBSC.prototype['tokenTransfersCount'] = undefined;
 /**
  * String representation of the transaction status
  * @member {String} transactionStatus

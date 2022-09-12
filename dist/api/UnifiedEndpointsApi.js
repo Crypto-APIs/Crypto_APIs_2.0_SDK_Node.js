@@ -7,6 +7,18 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _ConvertBitcoinCashAddress402Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress402Response"));
+
+var _ConvertBitcoinCashAddress409Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress409Response"));
+
+var _ConvertBitcoinCashAddress415Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress415Response"));
+
+var _ConvertBitcoinCashAddress422Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress422Response"));
+
+var _ConvertBitcoinCashAddress429Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress429Response"));
+
+var _ConvertBitcoinCashAddress500Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress500Response"));
+
 var _EstimateTransactionSmartFee400Response = _interopRequireDefault(require("../model/EstimateTransactionSmartFee400Response"));
 
 var _EstimateTransactionSmartFee401Response = _interopRequireDefault(require("../model/EstimateTransactionSmartFee401Response"));
@@ -17,23 +29,19 @@ var _EstimateTransactionSmartFee501Response = _interopRequireDefault(require("..
 
 var _EstimateTransactionSmartFeeR = _interopRequireDefault(require("../model/EstimateTransactionSmartFeeR"));
 
+var _GetAddressBalance400Response = _interopRequireDefault(require("../model/GetAddressBalance400Response"));
+
+var _GetAddressBalance401Response = _interopRequireDefault(require("../model/GetAddressBalance401Response"));
+
+var _GetAddressBalance403Response = _interopRequireDefault(require("../model/GetAddressBalance403Response"));
+
+var _GetAddressBalanceR = _interopRequireDefault(require("../model/GetAddressBalanceR"));
+
 var _GetAddressDetails400Response = _interopRequireDefault(require("../model/GetAddressDetails400Response"));
 
 var _GetAddressDetails401Response = _interopRequireDefault(require("../model/GetAddressDetails401Response"));
 
-var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
-
 var _GetAddressDetails403Response = _interopRequireDefault(require("../model/GetAddressDetails403Response"));
-
-var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
-
-var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
-
-var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
-
-var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
-
-var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
 var _GetAddressDetailsR = _interopRequireDefault(require("../model/GetAddressDetailsR"));
 
@@ -96,14 +104,6 @@ var _GetTransactionDetailsByTransactionID404Response = _interopRequireDefault(re
 var _GetTransactionDetailsByTransactionIDR = _interopRequireDefault(require("../model/GetTransactionDetailsByTransactionIDR"));
 
 var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
-
-var _ListAllUnconfirmedTransactions400Response = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactions400Response"));
-
-var _ListAllUnconfirmedTransactions401Response = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactions401Response"));
-
-var _ListAllUnconfirmedTransactions403Response = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactions403Response"));
-
-var _ListAllUnconfirmedTransactionsR = _interopRequireDefault(require("../model/ListAllUnconfirmedTransactionsR"));
 
 var _ListConfirmedTokensTransfersByAddressAndTimeRange400Response = _interopRequireDefault(require("../model/ListConfirmedTokensTransfersByAddressAndTimeRange400Response"));
 
@@ -190,7 +190,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.7.3
+* @version 1.8.0
 */
 var UnifiedEndpointsApi = /*#__PURE__*/function () {
   /**
@@ -266,6 +266,71 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
     key: "estimateTransactionSmartFee",
     value: function estimateTransactionSmartFee(blockchain, network, opts) {
       return this.estimateTransactionSmartFeeWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+    /**
+     * Get Address Balance
+     * Through this endpoint the customer can receive the balance of a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing unconfirmed transactions for the specific address, they will not be counted or calculated here. Applies only for coins.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetAddressBalanceR} and HTTP response
+     */
+
+  }, {
+    key: "getAddressBalanceWithHttpInfo",
+    value: function getAddressBalanceWithHttpInfo(blockchain, network, address, opts) {
+      opts = opts || {};
+      var postBody = null; // verify the required parameter 'blockchain' is set
+
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling getAddressBalance");
+      } // verify the required parameter 'network' is set
+
+
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling getAddressBalance");
+      } // verify the required parameter 'address' is set
+
+
+      if (address === undefined || address === null) {
+        throw new Error("Missing the required parameter 'address' when calling getAddressBalance");
+      }
+
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'address': address
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = _GetAddressBalanceR["default"];
+      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/addresses/{address}/balance', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+    /**
+     * Get Address Balance
+     * Through this endpoint the customer can receive the balance of a given address based on confirmed/synced blocks only. In the case where there are any incoming or outgoing unconfirmed transactions for the specific address, they will not be counted or calculated here. Applies only for coins.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} address Represents the public address, which is a compressed and shortened form of a public key.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetAddressBalanceR}
+     */
+
+  }, {
+    key: "getAddressBalance",
+    value: function getAddressBalance(blockchain, network, address, opts) {
+      return this.getAddressBalanceWithHttpInfo(blockchain, network, address, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }
@@ -774,69 +839,6 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
       });
     }
     /**
-     * List All Unconfirmed Transactions
-     * Through this endpoint customers can list all **unconfirmed**  transactions for a specified blockchain and network.
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
-     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListAllUnconfirmedTransactionsR} and HTTP response
-     */
-
-  }, {
-    key: "listAllUnconfirmedTransactionsWithHttpInfo",
-    value: function listAllUnconfirmedTransactionsWithHttpInfo(blockchain, network, opts) {
-      opts = opts || {};
-      var postBody = null; // verify the required parameter 'blockchain' is set
-
-      if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling listAllUnconfirmedTransactions");
-      } // verify the required parameter 'network' is set
-
-
-      if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling listAllUnconfirmedTransactions");
-      }
-
-      var pathParams = {
-        'blockchain': blockchain,
-        'network': network
-      };
-      var queryParams = {
-        'context': opts['context'],
-        'limit': opts['limit'],
-        'offset': opts['offset']
-      };
-      var headerParams = {};
-      var formParams = {};
-      var authNames = ['ApiKey'];
-      var contentTypes = [];
-      var accepts = ['application/json'];
-      var returnType = _ListAllUnconfirmedTransactionsR["default"];
-      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/address-transactions-unconfirmed', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
-    }
-    /**
-     * List All Unconfirmed Transactions
-     * Through this endpoint customers can list all **unconfirmed**  transactions for a specified blockchain and network.
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
-     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListAllUnconfirmedTransactionsR}
-     */
-
-  }, {
-    key: "listAllUnconfirmedTransactions",
-    value: function listAllUnconfirmedTransactions(blockchain, network, opts) {
-      return this.listAllUnconfirmedTransactionsWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
-        return response_and_data.data;
-      });
-    }
-    /**
      * List Confirmed Tokens Transfers By Address And Time Range
      * Through this endpoint customers can obtain a list with **confirmed** token transfers by the `address` attribute and the query parameters `fromTimestamp` and `toTimestamp` which gives customers the opportunity to filter the results by a specified time period.    {note}This refers only to transfers done for **confirmed tokens** not coins.{/note}
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
@@ -1046,9 +1048,9 @@ var UnifiedEndpointsApi = /*#__PURE__*/function () {
       };
       var queryParams = {
         'context': opts['context'],
+        'fromTimestamp': fromTimestamp,
         'limit': opts['limit'],
         'offset': opts['offset'],
-        'fromTimestamp': fromTimestamp,
         'toTimestamp': toTimestamp
       };
       var headerParams = {};

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWalletsRINonFungibleTokensInner model module.
  * @module model/ListAllAssetsFromAllWalletsRINonFungibleTokensInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListAllAssetsFromAllWalletsRINonFungibleTokensInner = /*#__PURE__*/function () {
   /**

@@ -26,7 +26,7 @@ import GetBlockDetailsByBlockHeightRIBSZ2 from './GetBlockDetailsByBlockHeightRI
 /**
  * The GetBlockDetailsByBlockHeightRIBS model module.
  * @module model/GetBlockDetailsByBlockHeightRIBS
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetBlockDetailsByBlockHeightRIBS {
     /**

@@ -17,6 +17,18 @@ var _AddTokensToExistingFromAddressR = _interopRequireDefault(require("../model/
 
 var _AddTokensToExistingFromAddressRB = _interopRequireDefault(require("../model/AddTokensToExistingFromAddressRB"));
 
+var _ConvertBitcoinCashAddress402Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress402Response"));
+
+var _ConvertBitcoinCashAddress409Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress409Response"));
+
+var _ConvertBitcoinCashAddress415Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress415Response"));
+
+var _ConvertBitcoinCashAddress422Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress422Response"));
+
+var _ConvertBitcoinCashAddress429Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress429Response"));
+
+var _ConvertBitcoinCashAddress500Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress500Response"));
+
 var _CreateAutomaticTokensForwarding400Response = _interopRequireDefault(require("../model/CreateAutomaticTokensForwarding400Response"));
 
 var _CreateAutomaticTokensForwarding401Response = _interopRequireDefault(require("../model/CreateAutomaticTokensForwarding401Response"));
@@ -34,18 +46,6 @@ var _DeleteAutomaticTokensForwarding401Response = _interopRequireDefault(require
 var _DeleteAutomaticTokensForwarding403Response = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwarding403Response"));
 
 var _DeleteAutomaticTokensForwardingR = _interopRequireDefault(require("../model/DeleteAutomaticTokensForwardingR"));
-
-var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
-
-var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
-
-var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
-
-var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
-
-var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
-
-var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
 var _GetFeeAddressDetails400Response = _interopRequireDefault(require("../model/GetFeeAddressDetails400Response"));
 
@@ -76,7 +76,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * AutomaticTokensForwarding service.
 * @module api/AutomaticTokensForwardingApi
-* @version 1.7.3
+* @version 1.8.0
 */
 var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
   /**

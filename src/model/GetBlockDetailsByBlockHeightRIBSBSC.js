@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHeightRIBSBSC model module.
  * @module model/GetBlockDetailsByBlockHeightRIBSBSC
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetBlockDetailsByBlockHeightRIBSBSC {
     /**

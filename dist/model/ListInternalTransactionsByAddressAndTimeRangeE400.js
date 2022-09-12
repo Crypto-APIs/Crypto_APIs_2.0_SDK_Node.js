@@ -26,7 +26,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeE400 model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListInternalTransactionsByAddressAndTimeRangeE400 = /*#__PURE__*/function () {
   /**

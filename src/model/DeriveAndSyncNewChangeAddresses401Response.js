@@ -17,7 +17,7 @@ import DeriveAndSyncNewChangeAddressesE401 from './DeriveAndSyncNewChangeAddress
 /**
  * The DeriveAndSyncNewChangeAddresses401Response model module.
  * @module model/DeriveAndSyncNewChangeAddresses401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class DeriveAndSyncNewChangeAddresses401Response {
     /**

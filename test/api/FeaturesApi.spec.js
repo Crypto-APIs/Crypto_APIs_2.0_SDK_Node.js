@@ -58,6 +58,16 @@
         done();
       });
     });
+    describe('convertBitcoinCashAddress', function() {
+      it('should call convertBitcoinCashAddress successfully', function(done) {
+        //uncomment below and update the code to test convertBitcoinCashAddress
+        //instance.convertBitcoinCashAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('decodeRawTransactionHex', function() {
       it('should call decodeRawTransactionHex successfully', function(done) {
         //uncomment below and update the code to test decodeRawTransactionHex

@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeE401 model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListInternalTransactionsByAddressAndTimeRangeE401 {
     /**

@@ -17,7 +17,7 @@ import AddressCoinsTransactionUnconfirmedData from './AddressCoinsTransactionUnc
 /**
  * The AddressCoinsTransactionUnconfirmed model module.
  * @module model/AddressCoinsTransactionUnconfirmed
- * @version 1.7.3
+ * @version 1.8.0
  */
 class AddressCoinsTransactionUnconfirmed {
     /**

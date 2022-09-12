@@ -18,17 +18,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackRITotalSpent model module.
  * @module model/GetAddressDetailsFromCallbackRITotalSpent
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetAddressDetailsFromCallbackRITotalSpent = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsFromCallbackRITotalSpent</code>.
    * @alias module:model/GetAddressDetailsFromCallbackRITotalSpent
+   * @param amount {String} Defines the total amount of all spent by this address coins, based on confirmed transactions.
+   * @param unit {String} Represents the unit of the total spent amount.
    */
-  function GetAddressDetailsFromCallbackRITotalSpent() {
+  function GetAddressDetailsFromCallbackRITotalSpent(amount, unit) {
     _classCallCheck(this, GetAddressDetailsFromCallbackRITotalSpent);
 
-    GetAddressDetailsFromCallbackRITotalSpent.initialize(this);
+    GetAddressDetailsFromCallbackRITotalSpent.initialize(this, amount, unit);
   }
   /**
    * Initializes the fields of this object.
@@ -39,7 +41,10 @@ var GetAddressDetailsFromCallbackRITotalSpent = /*#__PURE__*/function () {
 
   _createClass(GetAddressDetailsFromCallbackRITotalSpent, null, [{
     key: "initialize",
-    value: function initialize(obj) {}
+    value: function initialize(obj, amount, unit) {
+      obj['amount'] = amount;
+      obj['unit'] = unit;
+    }
     /**
      * Constructs a <code>GetAddressDetailsFromCallbackRITotalSpent</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.

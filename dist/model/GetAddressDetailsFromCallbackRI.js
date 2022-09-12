@@ -7,11 +7,11 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
+var _GetAddressDetailsFromCallbackRIConfirmedBalance = _interopRequireDefault(require("./GetAddressDetailsFromCallbackRIConfirmedBalance"));
+
 var _GetAddressDetailsFromCallbackRITotalReceived = _interopRequireDefault(require("./GetAddressDetailsFromCallbackRITotalReceived"));
 
 var _GetAddressDetailsFromCallbackRITotalSpent = _interopRequireDefault(require("./GetAddressDetailsFromCallbackRITotalSpent"));
-
-var _GetAddressDetailsRIConfirmedBalance = _interopRequireDefault(require("./GetAddressDetailsRIConfirmedBalance"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -24,21 +24,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackRI model module.
  * @module model/GetAddressDetailsFromCallbackRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetAddressDetailsFromCallbackRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsFromCallbackRI</code>.
    * @alias module:model/GetAddressDetailsFromCallbackRI
-   * @param incomingTransactionsCount {Number} Defines the count of the incoming transactions.
-   * @param outgoingTransactionsCount {Number} Defines the count of the outgoing transactions.
+   * @param incomingTransactionsCount {Number} Defines the received transaction count to the address.
+   * @param outgoingTransactionsCount {Number} Defines the sent transaction count from the address.
    * @param transactionsCount {Number} Represents the total number of confirmed coins transactions for this address, both incoming and outgoing. Applies for coins only and not tokens transfers e.g. for Ethereum. transactionsCount could result as less than incoming and outgoing transactions put together (e.g. in Bitcoin), due to the fact that one and the same address could be in senders and receivers addresses.
-   * @param confirmedBalance {module:model/GetAddressDetailsRIConfirmedBalance} 
+   * @param confirmedBalance {module:model/GetAddressDetailsFromCallbackRIConfirmedBalance} 
+   * @param totalReceived {module:model/GetAddressDetailsFromCallbackRITotalReceived} 
+   * @param totalSpent {module:model/GetAddressDetailsFromCallbackRITotalSpent} 
    */
-  function GetAddressDetailsFromCallbackRI(incomingTransactionsCount, outgoingTransactionsCount, transactionsCount, confirmedBalance) {
+  function GetAddressDetailsFromCallbackRI(incomingTransactionsCount, outgoingTransactionsCount, transactionsCount, confirmedBalance, totalReceived, totalSpent) {
     _classCallCheck(this, GetAddressDetailsFromCallbackRI);
 
-    GetAddressDetailsFromCallbackRI.initialize(this, incomingTransactionsCount, outgoingTransactionsCount, transactionsCount, confirmedBalance);
+    GetAddressDetailsFromCallbackRI.initialize(this, incomingTransactionsCount, outgoingTransactionsCount, transactionsCount, confirmedBalance, totalReceived, totalSpent);
   }
   /**
    * Initializes the fields of this object.
@@ -49,11 +51,13 @@ var GetAddressDetailsFromCallbackRI = /*#__PURE__*/function () {
 
   _createClass(GetAddressDetailsFromCallbackRI, null, [{
     key: "initialize",
-    value: function initialize(obj, incomingTransactionsCount, outgoingTransactionsCount, transactionsCount, confirmedBalance) {
+    value: function initialize(obj, incomingTransactionsCount, outgoingTransactionsCount, transactionsCount, confirmedBalance, totalReceived, totalSpent) {
       obj['incomingTransactionsCount'] = incomingTransactionsCount;
       obj['outgoingTransactionsCount'] = outgoingTransactionsCount;
       obj['transactionsCount'] = transactionsCount;
       obj['confirmedBalance'] = confirmedBalance;
+      obj['totalReceived'] = totalReceived;
+      obj['totalSpent'] = totalSpent;
     }
     /**
      * Constructs a <code>GetAddressDetailsFromCallbackRI</code> from a plain JavaScript object, optionally creating a new instance.
@@ -82,7 +86,7 @@ var GetAddressDetailsFromCallbackRI = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('confirmedBalance')) {
-          obj['confirmedBalance'] = _GetAddressDetailsRIConfirmedBalance["default"].constructFromObject(data['confirmedBalance']);
+          obj['confirmedBalance'] = _GetAddressDetailsFromCallbackRIConfirmedBalance["default"].constructFromObject(data['confirmedBalance']);
         }
 
         if (data.hasOwnProperty('totalReceived')) {
@@ -105,14 +109,14 @@ var GetAddressDetailsFromCallbackRI = /*#__PURE__*/function () {
   return GetAddressDetailsFromCallbackRI;
 }();
 /**
- * Defines the count of the incoming transactions.
+ * Defines the received transaction count to the address.
  * @member {Number} incomingTransactionsCount
  */
 
 
 GetAddressDetailsFromCallbackRI.prototype['incomingTransactionsCount'] = undefined;
 /**
- * Defines the count of the outgoing transactions.
+ * Defines the sent transaction count from the address.
  * @member {Number} outgoingTransactionsCount
  */
 
@@ -124,7 +128,7 @@ GetAddressDetailsFromCallbackRI.prototype['outgoingTransactionsCount'] = undefin
 
 GetAddressDetailsFromCallbackRI.prototype['transactionsCount'] = undefined;
 /**
- * @member {module:model/GetAddressDetailsRIConfirmedBalance} confirmedBalance
+ * @member {module:model/GetAddressDetailsFromCallbackRIConfirmedBalance} confirmedBalance
  */
 
 GetAddressDetailsFromCallbackRI.prototype['confirmedBalance'] = undefined;

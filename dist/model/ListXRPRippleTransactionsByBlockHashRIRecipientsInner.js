@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRIRecipientsInner model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRIRecipientsInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListXRPRippleTransactionsByBlockHashRIRecipientsInner = /*#__PURE__*/function () {
   /**

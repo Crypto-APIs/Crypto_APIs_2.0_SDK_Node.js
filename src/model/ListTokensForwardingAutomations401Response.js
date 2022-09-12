@@ -17,7 +17,7 @@ import ListTokensForwardingAutomationsE401 from './ListTokensForwardingAutomatio
 /**
  * The ListTokensForwardingAutomations401Response model module.
  * @module model/ListTokensForwardingAutomations401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListTokensForwardingAutomations401Response {
     /**

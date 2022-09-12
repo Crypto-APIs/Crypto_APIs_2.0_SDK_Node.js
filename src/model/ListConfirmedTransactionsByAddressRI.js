@@ -20,7 +20,7 @@ import ListConfirmedTransactionsByAddressRIFee from './ListConfirmedTransactions
 /**
  * The ListConfirmedTransactionsByAddressRI model module.
  * @module model/ListConfirmedTransactionsByAddressRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListConfirmedTransactionsByAddressRI {
     /**

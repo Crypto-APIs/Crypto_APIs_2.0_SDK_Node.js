@@ -20,7 +20,7 @@ import ListTransactionsByBlockHashRISendersInner from './ListTransactionsByBlock
 /**
  * The ListTransactionsByBlockHashRI model module.
  * @module model/ListTransactionsByBlockHashRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListTransactionsByBlockHashRI {
     /**

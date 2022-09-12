@@ -17,7 +17,7 @@ import ListConfirmedTokensTransfersByAddressAndTimeRangeE400 from './ListConfirm
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRange400Response model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRange400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListConfirmedTokensTransfersByAddressAndTimeRange400Response {
     /**

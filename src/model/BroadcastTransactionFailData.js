@@ -17,7 +17,7 @@ import BroadcastTransactionFailDataItem from './BroadcastTransactionFailDataItem
 /**
  * The BroadcastTransactionFailData model module.
  * @module model/BroadcastTransactionFailData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class BroadcastTransactionFailData {
     /**

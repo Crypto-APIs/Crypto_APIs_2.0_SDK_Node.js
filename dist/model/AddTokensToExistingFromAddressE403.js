@@ -30,7 +30,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressE403 model module.
  * @module model/AddTokensToExistingFromAddressE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 var AddTokensToExistingFromAddressE403 = /*#__PURE__*/function () {
   /**

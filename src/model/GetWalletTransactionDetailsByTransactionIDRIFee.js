@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIFee model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIFee
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIFee {
     /**
      * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIFee</code>.
      * @alias module:model/GetWalletTransactionDetailsByTransactionIDRIFee
      * @param amount {String} When isConfirmed is True - Defines the amount of the transaction fee  When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
-     * @param unit {String} 
+     * @param unit {String} Represents the unit of the fee.
      */
     constructor(amount, unit) { 
         
@@ -71,6 +71,7 @@ class GetWalletTransactionDetailsByTransactionIDRIFee {
 GetWalletTransactionDetailsByTransactionIDRIFee.prototype['amount'] = undefined;
 
 /**
+ * Represents the unit of the fee.
  * @member {String} unit
  */
 GetWalletTransactionDetailsByTransactionIDRIFee.prototype['unit'] = undefined;

@@ -19,11 +19,11 @@ import BlockHeightReached403Response from '../model/BlockHeightReached403Respons
 import BlockHeightReached409Response from '../model/BlockHeightReached409Response';
 import BlockHeightReachedR from '../model/BlockHeightReachedR';
 import BlockHeightReachedRB from '../model/BlockHeightReachedRB';
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
 import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
 import MinedTransaction400Response from '../model/MinedTransaction400Response';
 import MinedTransaction401Response from '../model/MinedTransaction401Response';
@@ -107,7 +107,7 @@ import NewUnconfirmedTokensTransactionsRB from '../model/NewUnconfirmedTokensTra
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class CreateSubscriptionsForApi {
 

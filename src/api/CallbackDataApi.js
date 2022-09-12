@@ -13,12 +13,12 @@
 
 
 import ApiClient from "../ApiClient";
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress409Response from '../model/ConvertBitcoinCashAddress409Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
 import GetAddressDetailsFromCallback400Response from '../model/GetAddressDetailsFromCallback400Response';
 import GetAddressDetailsFromCallback401Response from '../model/GetAddressDetailsFromCallback401Response';
 import GetAddressDetailsFromCallback403Response from '../model/GetAddressDetailsFromCallback403Response';
@@ -42,7 +42,7 @@ import ListTransactionsByBlockHeight404Response from '../model/ListTransactionsB
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class CallbackDataApi {
 
@@ -200,7 +200,7 @@ export default class CallbackDataApi {
      * This endpoint creates a shortcut to obtain information from Blockchain data by going through Blockchain Events and a specific Event Subscription. It provides data for the specific Block by providing the `blockHeight` attribute from the Event it takes part in. It applies only for Events related to that user.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {String} blockHeight Numeric representation of the block height
+     * @param {String} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/GetBlockDetailsByBlockHeightFromCallbackR} and HTTP response
@@ -250,7 +250,7 @@ export default class CallbackDataApi {
      * This endpoint creates a shortcut to obtain information from Blockchain data by going through Blockchain Events and a specific Event Subscription. It provides data for the specific Block by providing the `blockHeight` attribute from the Event it takes part in. It applies only for Events related to that user.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
      * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {String} blockHeight Numeric representation of the block height
+     * @param {String} blockHeight Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/GetBlockDetailsByBlockHeightFromCallbackR}

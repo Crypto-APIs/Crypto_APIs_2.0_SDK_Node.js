@@ -17,7 +17,7 @@ import GetFeeAddressDetailsE403 from './GetFeeAddressDetailsE403';
 /**
  * The GetFeeAddressDetails403Response model module.
  * @module model/GetFeeAddressDetails403Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetFeeAddressDetails403Response {
     /**

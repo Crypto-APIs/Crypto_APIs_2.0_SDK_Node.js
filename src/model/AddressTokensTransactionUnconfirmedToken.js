@@ -19,7 +19,7 @@ import AddressTokensTransactionUnconfirmedOmni from './AddressTokensTransactionU
 /**
  * The AddressTokensTransactionUnconfirmedToken model module.
  * @module model/AddressTokensTransactionUnconfirmedToken
- * @version 1.7.3
+ * @version 1.8.0
  */
 class AddressTokensTransactionUnconfirmedToken {
     /**

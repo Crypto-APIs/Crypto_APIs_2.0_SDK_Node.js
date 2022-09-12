@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner model module.
  * @module model/ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner {
     /**

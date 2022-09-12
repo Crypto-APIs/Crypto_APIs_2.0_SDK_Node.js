@@ -17,7 +17,7 @@ import GetTransactionRequestDetailsE400 from './GetTransactionRequestDetailsE400
 /**
  * The GetTransactionRequestDetails400Response model module.
  * @module model/GetTransactionRequestDetails400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetTransactionRequestDetails400Response {
     /**

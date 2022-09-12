@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensForwardingAutomationsE403 model module.
  * @module model/ListTokensForwardingAutomationsE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListTokensForwardingAutomationsE403 = /*#__PURE__*/function () {
   /**

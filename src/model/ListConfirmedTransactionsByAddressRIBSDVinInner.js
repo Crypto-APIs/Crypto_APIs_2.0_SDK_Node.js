@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSDVinInnerScriptSig from './ListConf
 /**
  * The ListConfirmedTransactionsByAddressRIBSDVinInner model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSDVinInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListConfirmedTransactionsByAddressRIBSDVinInner {
     /**

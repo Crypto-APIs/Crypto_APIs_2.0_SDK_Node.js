@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetRawTransactionDataRI model module.
  * @module model/GetRawTransactionDataRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetRawTransactionDataRI {
     /**

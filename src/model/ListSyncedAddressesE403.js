@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListSyncedAddressesE403 model module.
  * @module model/ListSyncedAddressesE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListSyncedAddressesE403 {
     /**

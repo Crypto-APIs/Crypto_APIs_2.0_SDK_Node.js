@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddresses400Response model module.
  * @module model/ListDepositAddresses400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListDepositAddresses400Response = /*#__PURE__*/function () {
   /**

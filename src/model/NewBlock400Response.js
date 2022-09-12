@@ -17,7 +17,7 @@ import NewBlockE400 from './NewBlockE400';
 /**
  * The NewBlock400Response model module.
  * @module model/NewBlock400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewBlock400Response {
     /**

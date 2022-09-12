@@ -13,6 +13,12 @@
 
 
 import ApiClient from "../ApiClient";
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress409Response from '../model/ConvertBitcoinCashAddress409Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
 import DeriveAndSyncNewChangeAddresses400Response from '../model/DeriveAndSyncNewChangeAddresses400Response';
 import DeriveAndSyncNewChangeAddresses401Response from '../model/DeriveAndSyncNewChangeAddresses401Response';
 import DeriveAndSyncNewChangeAddresses403Response from '../model/DeriveAndSyncNewChangeAddresses403Response';
@@ -23,12 +29,6 @@ import DeriveAndSyncNewReceivingAddresses401Response from '../model/DeriveAndSyn
 import DeriveAndSyncNewReceivingAddresses403Response from '../model/DeriveAndSyncNewReceivingAddresses403Response';
 import DeriveAndSyncNewReceivingAddressesR from '../model/DeriveAndSyncNewReceivingAddressesR';
 import DeriveAndSyncNewReceivingAddressesRB from '../model/DeriveAndSyncNewReceivingAddressesRB';
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
 import GetHDWalletXPubYPubZPubAssets400Response from '../model/GetHDWalletXPubYPubZPubAssets400Response';
 import GetHDWalletXPubYPubZPubAssets401Response from '../model/GetHDWalletXPubYPubZPubAssets401Response';
 import GetHDWalletXPubYPubZPubAssets403Response from '../model/GetHDWalletXPubYPubZPubAssets403Response';
@@ -81,7 +81,7 @@ import SyncNewHDWalletXPubYPubZPubRB from '../model/SyncNewHDWalletXPubYPubZPubR
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class HDWalletsApi {
 

@@ -22,7 +22,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The NewUnconfirmedCoinsTransactionsE403 model module.
  * @module model/NewUnconfirmedCoinsTransactionsE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewUnconfirmedCoinsTransactionsE403 {
     /**

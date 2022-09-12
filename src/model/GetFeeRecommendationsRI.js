@@ -16,13 +16,13 @@ import ApiClient from '../ApiClient';
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetFeeRecommendationsRI {
     /**
      * Constructs a new <code>GetFeeRecommendationsRI</code>.
      * @alias module:model/GetFeeRecommendationsRI
-     * @param unit {String} Defines the unit of the fee, e.g. BTC.
+     * @param unit {String} Currency unit
      * @param fast {String} Fast fee per byte calculated from unconfirmed transactions
      * @param slow {String} Slow fee per byte calculated from unconfirmed transactions
      * @param standard {String} Standard fee per byte calculated from unconfirmed transactions
@@ -67,9 +67,6 @@ class GetFeeRecommendationsRI {
             if (data.hasOwnProperty('standard')) {
                 obj['standard'] = ApiClient.convertToType(data['standard'], 'String');
             }
-            if (data.hasOwnProperty('feeMultiplier')) {
-                obj['feeMultiplier'] = ApiClient.convertToType(data['feeMultiplier'], 'String');
-            }
         }
         return obj;
     }
@@ -78,7 +75,7 @@ class GetFeeRecommendationsRI {
 }
 
 /**
- * Defines the unit of the fee, e.g. BTC.
+ * Currency unit
  * @member {String} unit
  */
 GetFeeRecommendationsRI.prototype['unit'] = undefined;
@@ -100,12 +97,6 @@ GetFeeRecommendationsRI.prototype['slow'] = undefined;
  * @member {String} standard
  */
 GetFeeRecommendationsRI.prototype['standard'] = undefined;
-
-/**
- * Represents the fee cushion multiplier used to multiply the base fee.
- * @member {String} feeMultiplier
- */
-GetFeeRecommendationsRI.prototype['feeMultiplier'] = undefined;
 
 
 

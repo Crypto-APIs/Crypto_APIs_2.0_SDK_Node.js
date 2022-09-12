@@ -17,7 +17,7 @@ import ListConfirmedTokensTransfersByAddressE400 from './ListConfirmedTokensTran
 /**
  * The ListConfirmedTokensTransfersByAddress400Response model module.
  * @module model/ListConfirmedTokensTransfersByAddress400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListConfirmedTokensTransfersByAddress400Response {
     /**

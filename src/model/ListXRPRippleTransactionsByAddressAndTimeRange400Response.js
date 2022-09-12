@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByAddressAndTimeRangeE400 from './ListXRPRippleT
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRange400Response model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRange400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListXRPRippleTransactionsByAddressAndTimeRange400Response {
     /**

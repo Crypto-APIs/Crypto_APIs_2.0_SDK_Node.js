@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddress403Response model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddress403Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 var CreateFungibleTokensTransactionRequestFromAddress403Response = /*#__PURE__*/function () {
   /**

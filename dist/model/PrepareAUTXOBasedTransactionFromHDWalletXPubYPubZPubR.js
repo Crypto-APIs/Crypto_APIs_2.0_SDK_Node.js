@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR
- * @version 1.7.3
+ * @version 1.8.0
  */
 var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR = /*#__PURE__*/function () {
   /**

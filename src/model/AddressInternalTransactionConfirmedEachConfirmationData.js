@@ -17,7 +17,7 @@ import AddressInternalTransactionConfirmedEachConfirmationDataItem from './Addre
 /**
  * The AddressInternalTransactionConfirmedEachConfirmationData model module.
  * @module model/AddressInternalTransactionConfirmedEachConfirmationData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class AddressInternalTransactionConfirmedEachConfirmationData {
     /**

@@ -17,7 +17,7 @@ import GetLastMinedBlockRIBS from './GetLastMinedBlockRIBS';
 /**
  * The GetLastMinedBlockRI model module.
  * @module model/GetLastMinedBlockRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetLastMinedBlockRI {
     /**

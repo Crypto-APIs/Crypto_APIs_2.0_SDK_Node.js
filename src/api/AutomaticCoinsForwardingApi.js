@@ -13,6 +13,12 @@
 
 
 import ApiClient from "../ApiClient";
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress409Response from '../model/ConvertBitcoinCashAddress409Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
 import CreateAutomaticCoinsForwarding400Response from '../model/CreateAutomaticCoinsForwarding400Response';
 import CreateAutomaticCoinsForwarding401Response from '../model/CreateAutomaticCoinsForwarding401Response';
 import CreateAutomaticCoinsForwarding403Response from '../model/CreateAutomaticCoinsForwarding403Response';
@@ -23,12 +29,6 @@ import DeleteAutomaticCoinsForwarding400Response from '../model/DeleteAutomaticC
 import DeleteAutomaticCoinsForwarding401Response from '../model/DeleteAutomaticCoinsForwarding401Response';
 import DeleteAutomaticCoinsForwarding403Response from '../model/DeleteAutomaticCoinsForwarding403Response';
 import DeleteAutomaticCoinsForwardingR from '../model/DeleteAutomaticCoinsForwardingR';
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
 import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
 import ListCoinsForwardingAutomations400Response from '../model/ListCoinsForwardingAutomations400Response';
 import ListCoinsForwardingAutomations401Response from '../model/ListCoinsForwardingAutomations401Response';
@@ -38,7 +38,7 @@ import ListCoinsForwardingAutomationsR from '../model/ListCoinsForwardingAutomat
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class AutomaticCoinsForwardingApi {
 

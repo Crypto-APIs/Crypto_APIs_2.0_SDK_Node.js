@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner = /*#__PURE__*/function () {
   /**

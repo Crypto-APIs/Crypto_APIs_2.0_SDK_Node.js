@@ -17,7 +17,7 @@ import MinedTransactionE400 from './MinedTransactionE400';
 /**
  * The MinedTransaction400Response model module.
  * @module model/MinedTransaction400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class MinedTransaction400Response {
     /**

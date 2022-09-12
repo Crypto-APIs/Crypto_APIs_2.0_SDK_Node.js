@@ -13,6 +13,11 @@
 
 
 import ApiClient from "../ApiClient";
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
 import CreateCoinsTransactionFromAddressForWholeAmount400Response from '../model/CreateCoinsTransactionFromAddressForWholeAmount400Response';
 import CreateCoinsTransactionFromAddressForWholeAmount401Response from '../model/CreateCoinsTransactionFromAddressForWholeAmount401Response';
 import CreateCoinsTransactionFromAddressForWholeAmount403Response from '../model/CreateCoinsTransactionFromAddressForWholeAmount403Response';
@@ -49,16 +54,11 @@ import CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response fr
 import CreateSingleTransactionRequestFromAddressWithoutFeePriority409Response from '../model/CreateSingleTransactionRequestFromAddressWithoutFeePriority409Response';
 import CreateSingleTransactionRequestFromAddressWithoutFeePriorityR from '../model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityR';
 import CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB from '../model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB';
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
 
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class TransactionsApi {
 

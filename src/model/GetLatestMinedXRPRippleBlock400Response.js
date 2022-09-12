@@ -17,7 +17,7 @@ import GetLatestMinedXRPRippleBlockE400 from './GetLatestMinedXRPRippleBlockE400
 /**
  * The GetLatestMinedXRPRippleBlock400Response model module.
  * @module model/GetLatestMinedXRPRippleBlock400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetLatestMinedXRPRippleBlock400Response {
     /**

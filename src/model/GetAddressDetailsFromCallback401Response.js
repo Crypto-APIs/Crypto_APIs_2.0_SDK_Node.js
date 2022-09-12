@@ -17,7 +17,7 @@ import GetAddressDetailsFromCallbackE401 from './GetAddressDetailsFromCallbackE4
 /**
  * The GetAddressDetailsFromCallback401Response model module.
  * @module model/GetAddressDetailsFromCallback401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetAddressDetailsFromCallback401Response {
     /**

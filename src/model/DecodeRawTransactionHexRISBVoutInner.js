@@ -17,7 +17,7 @@ import DecodeRawTransactionHexRISBVoutInnerScriptPubKey from './DecodeRawTransac
 /**
  * The DecodeRawTransactionHexRISBVoutInner model module.
  * @module model/DecodeRawTransactionHexRISBVoutInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 class DecodeRawTransactionHexRISBVoutInner {
     /**

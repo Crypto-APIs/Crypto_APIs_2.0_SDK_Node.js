@@ -17,7 +17,7 @@ import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee fro
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
- * @version 1.7.3
+ * @version 1.8.0
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
     /**

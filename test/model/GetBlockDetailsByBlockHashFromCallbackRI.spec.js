@@ -84,6 +84,66 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property difficulty (base name: "difficulty")', function() {
+      // uncomment below and update the code to test the property difficulty
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property extraData (base name: "extraData")', function() {
+      // uncomment below and update the code to test the property extraData
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property gasLimit (base name: "gasLimit")', function() {
+      // uncomment below and update the code to test the property gasLimit
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property gasUsed (base name: "gasUsed")', function() {
+      // uncomment below and update the code to test the property gasUsed
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property minedInSeconds (base name: "minedInSeconds")', function() {
+      // uncomment below and update the code to test the property minedInSeconds
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property nonce (base name: "nonce")', function() {
+      // uncomment below and update the code to test the property nonce
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property sha3Uncles (base name: "sha3Uncles")', function() {
+      // uncomment below and update the code to test the property sha3Uncles
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property size (base name: "size")', function() {
+      // uncomment below and update the code to test the property size
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property totalDifficulty (base name: "totalDifficulty")', function() {
+      // uncomment below and update the code to test the property totalDifficulty
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property uncles (base name: "uncles")', function() {
+      // uncomment below and update the code to test the property uncles
+      //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property blockchainSpecific (base name: "blockchainSpecific")', function() {
       // uncomment below and update the code to test the property blockchainSpecific
       //var instance = new Cryptoapis.GetBlockDetailsByBlockHashFromCallbackRI();

@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetRawTransactionData403Response model module.
  * @module model/GetRawTransactionData403Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetRawTransactionData403Response = /*#__PURE__*/function () {
   /**

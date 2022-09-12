@@ -18,13 +18,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsRIConfirmedBalance model module.
  * @module model/GetAddressDetailsRIConfirmedBalance
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetAddressDetailsRIConfirmedBalance = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsRIConfirmedBalance</code>.
    * @alias module:model/GetAddressDetailsRIConfirmedBalance
-   * @param amount {String} Defines the total balance of the address that is confirmed. It doesn't include unconfirmed transactions.
+   * @param amount {String} Object representation of the total balance of the address
    * @param unit {String} Represents the unit of the confirmed balance.
    */
   function GetAddressDetailsRIConfirmedBalance(amount, unit) {
@@ -75,7 +75,7 @@ var GetAddressDetailsRIConfirmedBalance = /*#__PURE__*/function () {
   return GetAddressDetailsRIConfirmedBalance;
 }();
 /**
- * Defines the total balance of the address that is confirmed. It doesn't include unconfirmed transactions.
+ * Object representation of the total balance of the address
  * @member {String} amount
  */
 

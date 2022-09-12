@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetLatestMinedZilliqaBlockE400 model module.
  * @module model/GetLatestMinedZilliqaBlockE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetLatestMinedZilliqaBlockE400 {
     /**

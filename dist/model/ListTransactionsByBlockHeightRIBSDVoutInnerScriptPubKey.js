@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**

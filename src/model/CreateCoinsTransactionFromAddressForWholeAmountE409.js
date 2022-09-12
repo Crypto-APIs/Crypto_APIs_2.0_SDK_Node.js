@@ -20,7 +20,7 @@ import WalletAsAServiceWalletBalanceNotEnough from './WalletAsAServiceWalletBala
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE409 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE409
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountE409 {
     /**

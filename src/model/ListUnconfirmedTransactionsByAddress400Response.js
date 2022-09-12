@@ -17,7 +17,7 @@ import ListUnconfirmedTransactionsByAddressE400 from './ListUnconfirmedTransacti
 /**
  * The ListUnconfirmedTransactionsByAddress400Response model module.
  * @module model/ListUnconfirmedTransactionsByAddress400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListUnconfirmedTransactionsByAddress400Response {
     /**

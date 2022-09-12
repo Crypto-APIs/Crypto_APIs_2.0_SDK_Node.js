@@ -17,7 +17,7 @@ import GetBlockDetailsByBlockHeightE400 from './GetBlockDetailsByBlockHeightE400
 /**
  * The GetBlockDetailsByBlockHeight400Response model module.
  * @module model/GetBlockDetailsByBlockHeight400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetBlockDetailsByBlockHeight400Response {
     /**

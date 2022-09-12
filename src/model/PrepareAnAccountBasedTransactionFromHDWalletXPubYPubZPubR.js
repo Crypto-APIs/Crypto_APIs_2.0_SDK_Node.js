@@ -17,7 +17,7 @@ import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData from './Pre
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR
- * @version 1.7.3
+ * @version 1.8.0
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR {
     /**

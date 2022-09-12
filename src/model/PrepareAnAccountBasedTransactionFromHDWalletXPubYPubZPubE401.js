@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401 model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401 {
     /**

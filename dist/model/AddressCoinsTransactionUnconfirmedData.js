@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressCoinsTransactionUnconfirmedData model module.
  * @module model/AddressCoinsTransactionUnconfirmedData
- * @version 1.7.3
+ * @version 1.8.0
  */
 var AddressCoinsTransactionUnconfirmedData = /*#__PURE__*/function () {
   /**

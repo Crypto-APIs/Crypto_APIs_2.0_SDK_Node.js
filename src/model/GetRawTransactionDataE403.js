@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetRawTransactionDataE403 model module.
  * @module model/GetRawTransactionDataE403
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetRawTransactionDataE403 {
     /**

@@ -17,7 +17,7 @@ import NewUnconfirmedTokensTransactionsE409 from './NewUnconfirmedTokensTransact
 /**
  * The NewUnconfirmedTokensTransactions409Response model module.
  * @module model/NewUnconfirmedTokensTransactions409Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewUnconfirmedTokensTransactions409Response {
     /**

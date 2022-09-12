@@ -120,8 +120,20 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property internalTransactionsCount (base name: "internalTransactionsCount")', function() {
+      // uncomment below and update the code to test the property internalTransactionsCount
+      //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRIBS();
+      //expect(instance).to.be();
+    });
+
     it('should have the property nonce (base name: "nonce")', function() {
       // uncomment below and update the code to test the property nonce
+      //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property tokenTransfersCount (base name: "tokenTransfersCount")', function() {
+      // uncomment below and update the code to test the property tokenTransfersCount
       //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRIBS();
       //expect(instance).to.be();
     });

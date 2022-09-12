@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncNewHDWalletXPubYPubZPubRI model module.
  * @module model/SyncNewHDWalletXPubYPubZPubRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var SyncNewHDWalletXPubYPubZPubRI = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISD2VinInnerScriptSig model module.
  * @module model/DecodeRawTransactionHexRISD2VinInnerScriptSig
- * @version 1.7.3
+ * @version 1.8.0
  */
 var DecodeRawTransactionHexRISD2VinInnerScriptSig = /*#__PURE__*/function () {
   /**

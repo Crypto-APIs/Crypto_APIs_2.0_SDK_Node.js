@@ -19,7 +19,7 @@ import ListZilliqaTransactionsByAddressRISendersInner from './ListZilliqaTransac
 /**
  * The ListZilliqaTransactionsByBlockHashRI model module.
  * @module model/ListZilliqaTransactionsByBlockHashRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListZilliqaTransactionsByBlockHashRI {
     /**

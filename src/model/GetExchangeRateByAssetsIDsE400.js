@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetExchangeRateByAssetsIDsE400 model module.
  * @module model/GetExchangeRateByAssetsIDsE400
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetExchangeRateByAssetsIDsE400 {
     /**

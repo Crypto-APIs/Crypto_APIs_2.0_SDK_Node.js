@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The DeleteBlockchainEventSubscriptionE401 model module.
  * @module model/DeleteBlockchainEventSubscriptionE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class DeleteBlockchainEventSubscriptionE401 {
     /**

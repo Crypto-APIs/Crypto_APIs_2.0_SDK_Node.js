@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddressRI model module.
  * @module model/ValidateAddressRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ValidateAddressRI = /*#__PURE__*/function () {
   /**

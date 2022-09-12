@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The UnsupportedMediaType model module.
  * @module model/UnsupportedMediaType
- * @version 1.7.3
+ * @version 1.8.0
  */
 class UnsupportedMediaType {
     /**

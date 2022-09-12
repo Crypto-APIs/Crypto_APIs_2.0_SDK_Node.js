@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptionsRI model module.
  * @module model/ListBlockchainEventsSubscriptionsRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListBlockchainEventsSubscriptionsRI = /*#__PURE__*/function () {
   /**

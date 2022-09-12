@@ -19,7 +19,7 @@ import InvalidData from './InvalidData';
 /**
  * The SyncHDWalletXPubYPubZPubE409 model module.
  * @module model/SyncHDWalletXPubYPubZPubE409
- * @version 1.7.3
+ * @version 1.8.0
  */
 class SyncHDWalletXPubYPubZPubE409 {
     /**

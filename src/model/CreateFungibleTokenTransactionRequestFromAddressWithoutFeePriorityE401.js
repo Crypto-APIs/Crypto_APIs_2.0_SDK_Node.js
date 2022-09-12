@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401 model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401 {
     /**

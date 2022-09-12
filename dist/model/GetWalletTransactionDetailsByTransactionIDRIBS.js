@@ -7,8 +7,6 @@ exports["default"] = void 0;
 
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 
-var _GetTransactionDetailsByTransactionIDRIBSBSCGasPrice = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSBSCGasPrice"));
-
 var _GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner"));
 
 var _GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner = _interopRequireDefault(require("./GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner"));
@@ -31,6 +29,10 @@ var _GetWalletTransactionDetailsByTransactionIDRIBSEC = _interopRequireDefault(r
 
 var _GetWalletTransactionDetailsByTransactionIDRIBSL = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSL"));
 
+var _GetWalletTransactionDetailsByTransactionIDRIBSP = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSP"));
+
+var _GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice"));
+
 var _GetWalletTransactionDetailsByTransactionIDRIBST = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBST"));
 
 var _GetWalletTransactionDetailsByTransactionIDRIBSZ = _interopRequireDefault(require("./GetWalletTransactionDetailsByTransactionIDRIBSZ"));
@@ -50,7 +52,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBS
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
   /**
@@ -66,15 +68,16 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
    * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSZ
    * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSBSC
    * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBST
+   * @implements module:model/GetWalletTransactionDetailsByTransactionIDRIBSP
    * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
    * @param size {Number} Represents the total size of this transaction.
    * @param vSize {Number} Represents the virtual size of this transaction.
    * @param version {Number} Represents the transaction version number.
    * @param vin {Array.<module:model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
    * @param vout {Array.<module:model/ListTransactionsByBlockHeightRIBSZVoutInner>} Object Array representation of transaction outputs
-   * @param contract {String} Numeric representation of the transaction contract
+   * @param contract {String} Represents the specific transaction contract
    * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-   * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
+   * @param gasPrice {module:model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice} 
    * @param gasUsed {String} Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
    * @param inputData {String} Represents additional information that is required for the transaction.
    * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
@@ -116,6 +119,8 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
     _GetWalletTransactionDetailsByTransactionIDRIBSBSC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
 
     _GetWalletTransactionDetailsByTransactionIDRIBST["default"].initialize(this, amount, bandwidthUsed, contract, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status);
+
+    _GetWalletTransactionDetailsByTransactionIDRIBSP["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
 
     GetWalletTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, valueBalance, versionGroupId, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, status);
   }
@@ -191,6 +196,8 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
 
         _GetWalletTransactionDetailsByTransactionIDRIBST["default"].constructFromObject(data, obj);
 
+        _GetWalletTransactionDetailsByTransactionIDRIBSP["default"].constructFromObject(data, obj);
+
         if (data.hasOwnProperty('locktime')) {
           obj['locktime'] = _ApiClient["default"].convertToType(data['locktime'], 'Number');
         }
@@ -224,7 +231,7 @@ var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
         }
 
         if (data.hasOwnProperty('gasPrice')) {
-          obj['gasPrice'] = _GetTransactionDetailsByTransactionIDRIBSBSCGasPrice["default"].constructFromObject(data['gasPrice']);
+          obj['gasPrice'] = _GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice["default"].constructFromObject(data['gasPrice']);
         }
 
         if (data.hasOwnProperty('gasUsed')) {
@@ -356,7 +363,7 @@ GetWalletTransactionDetailsByTransactionIDRIBS.prototype['vin'] = undefined;
 
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['vout'] = undefined;
 /**
- * Numeric representation of the transaction contract
+ * Represents the specific transaction contract
  * @member {String} contract
  */
 
@@ -368,7 +375,7 @@ GetWalletTransactionDetailsByTransactionIDRIBS.prototype['contract'] = undefined
 
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['gasLimit'] = undefined;
 /**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} gasPrice
+ * @member {module:model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice} gasPrice
  */
 
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['gasPrice'] = undefined;
@@ -914,6 +921,42 @@ _GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['input'] =
  * @member {String} status
  */
 
-_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['status'] = undefined;
+_GetWalletTransactionDetailsByTransactionIDRIBST["default"].prototype['status'] = undefined; // Implement GetWalletTransactionDetailsByTransactionIDRIBSP interface:
+
+/**
+ * Represents the specific transaction contract
+ * @member {String} contract
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBSP["default"].prototype['contract'] = undefined;
+/**
+ * Represents the amount of gas used by this specific transaction alone.
+ * @member {String} gasLimit
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBSP["default"].prototype['gasLimit'] = undefined;
+/**
+ * @member {module:model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice} gasPrice
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBSP["default"].prototype['gasPrice'] = undefined;
+/**
+ * Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
+ * @member {String} gasUsed
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBSP["default"].prototype['gasUsed'] = undefined;
+/**
+ * Represents additional information that is required for the transaction.
+ * @member {String} inputData
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBSP["default"].prototype['inputData'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {Number} nonce
+ */
+
+_GetWalletTransactionDetailsByTransactionIDRIBSP["default"].prototype['nonce'] = undefined;
 var _default = GetWalletTransactionDetailsByTransactionIDRIBS;
 exports["default"] = _default;

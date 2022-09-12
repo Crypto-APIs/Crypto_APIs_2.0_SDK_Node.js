@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsRBDataItem model module.
  * @module model/NewConfirmedTokensTransactionsRBDataItem
- * @version 1.7.3
+ * @version 1.8.0
  */
 var NewConfirmedTokensTransactionsRBDataItem = /*#__PURE__*/function () {
   /**

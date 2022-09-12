@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The DeleteAutomaticCoinsForwardingE401 model module.
  * @module model/DeleteAutomaticCoinsForwardingE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class DeleteAutomaticCoinsForwardingE401 {
     /**

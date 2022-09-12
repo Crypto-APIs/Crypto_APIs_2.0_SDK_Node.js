@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner {
     /**

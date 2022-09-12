@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByBlockHeightE400 from './ListZilliqaTransactionsB
 /**
  * The ListZilliqaTransactionsByBlockHeight400Response model module.
  * @module model/ListZilliqaTransactionsByBlockHeight400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListZilliqaTransactionsByBlockHeight400Response {
     /**

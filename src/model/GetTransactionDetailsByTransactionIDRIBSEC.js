@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSECGasPrice from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRIBSEC model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSEC
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetTransactionDetailsByTransactionIDRIBSEC {
     /**

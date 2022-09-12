@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewReceivingAddressesRI model module.
  * @module model/DeriveAndSyncNewReceivingAddressesRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var DeriveAndSyncNewReceivingAddressesRI = /*#__PURE__*/function () {
   /**

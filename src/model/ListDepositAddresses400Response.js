@@ -17,7 +17,7 @@ import ListDepositAddressesE400 from './ListDepositAddressesE400';
 /**
  * The ListDepositAddresses400Response model module.
  * @module model/ListDepositAddresses400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListDepositAddresses400Response {
     /**

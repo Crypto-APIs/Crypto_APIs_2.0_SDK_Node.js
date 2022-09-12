@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetailsRIBalance model module.
  * @module model/GetZilliqaAddressDetailsRIBalance
- * @version 1.7.3
+ * @version 1.8.0
  */
 var GetZilliqaAddressDetailsRIBalance = /*#__PURE__*/function () {
   /**

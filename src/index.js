@@ -153,6 +153,24 @@ import ConfirmedTokensTransactionForCertainAmountOrHigherDataItem from './model/
 import ConfirmedTokensTransactionForCertainAmountOrHigherErc20 from './model/ConfirmedTokensTransactionForCertainAmountOrHigherErc20';
 import ConfirmedTokensTransactionForCertainAmountOrHigherErc721 from './model/ConfirmedTokensTransactionForCertainAmountOrHigherErc721';
 import ConfirmedTokensTransactionForCertainAmountOrHigherToken from './model/ConfirmedTokensTransactionForCertainAmountOrHigherToken';
+import ConvertBitcoinCashAddress400Response from './model/ConvertBitcoinCashAddress400Response';
+import ConvertBitcoinCashAddress401Response from './model/ConvertBitcoinCashAddress401Response';
+import ConvertBitcoinCashAddress402Response from './model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress403Response from './model/ConvertBitcoinCashAddress403Response';
+import ConvertBitcoinCashAddress409Response from './model/ConvertBitcoinCashAddress409Response';
+import ConvertBitcoinCashAddress415Response from './model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from './model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from './model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from './model/ConvertBitcoinCashAddress500Response';
+import ConvertBitcoinCashAddressE400 from './model/ConvertBitcoinCashAddressE400';
+import ConvertBitcoinCashAddressE401 from './model/ConvertBitcoinCashAddressE401';
+import ConvertBitcoinCashAddressE403 from './model/ConvertBitcoinCashAddressE403';
+import ConvertBitcoinCashAddressR from './model/ConvertBitcoinCashAddressR';
+import ConvertBitcoinCashAddressRB from './model/ConvertBitcoinCashAddressRB';
+import ConvertBitcoinCashAddressRBData from './model/ConvertBitcoinCashAddressRBData';
+import ConvertBitcoinCashAddressRBDataItem from './model/ConvertBitcoinCashAddressRBDataItem';
+import ConvertBitcoinCashAddressRData from './model/ConvertBitcoinCashAddressRData';
+import ConvertBitcoinCashAddressRI from './model/ConvertBitcoinCashAddressRI';
 import CouldNotCalculateRateForPair from './model/CouldNotCalculateRateForPair';
 import CreateAutomaticCoinsForwarding400Response from './model/CreateAutomaticCoinsForwarding400Response';
 import CreateAutomaticCoinsForwarding401Response from './model/CreateAutomaticCoinsForwarding401Response';
@@ -462,15 +480,19 @@ import GenerateDepositAddressRBData from './model/GenerateDepositAddressRBData';
 import GenerateDepositAddressRBDataItem from './model/GenerateDepositAddressRBDataItem';
 import GenerateDepositAddressRData from './model/GenerateDepositAddressRData';
 import GenerateDepositAddressRI from './model/GenerateDepositAddressRI';
+import GetAddressBalance400Response from './model/GetAddressBalance400Response';
+import GetAddressBalance401Response from './model/GetAddressBalance401Response';
+import GetAddressBalance403Response from './model/GetAddressBalance403Response';
+import GetAddressBalanceE400 from './model/GetAddressBalanceE400';
+import GetAddressBalanceE401 from './model/GetAddressBalanceE401';
+import GetAddressBalanceE403 from './model/GetAddressBalanceE403';
+import GetAddressBalanceR from './model/GetAddressBalanceR';
+import GetAddressBalanceRData from './model/GetAddressBalanceRData';
+import GetAddressBalanceRI from './model/GetAddressBalanceRI';
+import GetAddressBalanceRIConfirmedBalance from './model/GetAddressBalanceRIConfirmedBalance';
 import GetAddressDetails400Response from './model/GetAddressDetails400Response';
 import GetAddressDetails401Response from './model/GetAddressDetails401Response';
-import GetAddressDetails402Response from './model/GetAddressDetails402Response';
 import GetAddressDetails403Response from './model/GetAddressDetails403Response';
-import GetAddressDetails409Response from './model/GetAddressDetails409Response';
-import GetAddressDetails415Response from './model/GetAddressDetails415Response';
-import GetAddressDetails422Response from './model/GetAddressDetails422Response';
-import GetAddressDetails429Response from './model/GetAddressDetails429Response';
-import GetAddressDetails500Response from './model/GetAddressDetails500Response';
 import GetAddressDetailsE400 from './model/GetAddressDetailsE400';
 import GetAddressDetailsE401 from './model/GetAddressDetailsE401';
 import GetAddressDetailsE403 from './model/GetAddressDetailsE403';
@@ -484,6 +506,7 @@ import GetAddressDetailsFromCallbackE403 from './model/GetAddressDetailsFromCall
 import GetAddressDetailsFromCallbackR from './model/GetAddressDetailsFromCallbackR';
 import GetAddressDetailsFromCallbackRData from './model/GetAddressDetailsFromCallbackRData';
 import GetAddressDetailsFromCallbackRI from './model/GetAddressDetailsFromCallbackRI';
+import GetAddressDetailsFromCallbackRIConfirmedBalance from './model/GetAddressDetailsFromCallbackRIConfirmedBalance';
 import GetAddressDetailsFromCallbackRITotalReceived from './model/GetAddressDetailsFromCallbackRITotalReceived';
 import GetAddressDetailsFromCallbackRITotalSpent from './model/GetAddressDetailsFromCallbackRITotalSpent';
 import GetAddressDetailsR from './model/GetAddressDetailsR';
@@ -582,6 +605,7 @@ import GetBlockDetailsByBlockHeightFromCallbackRIBSD2 from './model/GetBlockDeta
 import GetBlockDetailsByBlockHeightFromCallbackRIBSE from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSE';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSEC from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSEC';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSL from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSL';
+import GetBlockDetailsByBlockHeightFromCallbackRIBSP from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSP';
 import GetBlockDetailsByBlockHeightFromCallbackRIBST from './model/GetBlockDetailsByBlockHeightFromCallbackRIBST';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSX from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSX';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSZ from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ';
@@ -803,6 +827,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSEC from './model/GetT
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSL from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSL';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInner from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInner';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInnerScriptPubKey from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInnerScriptPubKey';
+import GetTransactionDetailsByTransactionIDFromCallbackRIBSP from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSP';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBST from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBST';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed';
@@ -917,6 +942,8 @@ import GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice from './model/Get
 import GetWalletTransactionDetailsByTransactionIDRIBSL from './model/GetWalletTransactionDetailsByTransactionIDRIBSL';
 import GetWalletTransactionDetailsByTransactionIDRIBSLVinInner from './model/GetWalletTransactionDetailsByTransactionIDRIBSLVinInner';
 import GetWalletTransactionDetailsByTransactionIDRIBSLVinInnerScriptSig from './model/GetWalletTransactionDetailsByTransactionIDRIBSLVinInnerScriptSig';
+import GetWalletTransactionDetailsByTransactionIDRIBSP from './model/GetWalletTransactionDetailsByTransactionIDRIBSP';
+import GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice from './model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice';
 import GetWalletTransactionDetailsByTransactionIDRIBST from './model/GetWalletTransactionDetailsByTransactionIDRIBST';
 import GetWalletTransactionDetailsByTransactionIDRIBSZ from './model/GetWalletTransactionDetailsByTransactionIDRIBSZ';
 import GetWalletTransactionDetailsByTransactionIDRIBSZVinInner from './model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner';
@@ -1039,36 +1066,6 @@ import ListAllAssetsFromAllWalletsRI from './model/ListAllAssetsFromAllWalletsRI
 import ListAllAssetsFromAllWalletsRICoinsInner from './model/ListAllAssetsFromAllWalletsRICoinsInner';
 import ListAllAssetsFromAllWalletsRIFungibleTokensInner from './model/ListAllAssetsFromAllWalletsRIFungibleTokensInner';
 import ListAllAssetsFromAllWalletsRINonFungibleTokensInner from './model/ListAllAssetsFromAllWalletsRINonFungibleTokensInner';
-import ListAllUnconfirmedTransactions400Response from './model/ListAllUnconfirmedTransactions400Response';
-import ListAllUnconfirmedTransactions401Response from './model/ListAllUnconfirmedTransactions401Response';
-import ListAllUnconfirmedTransactions403Response from './model/ListAllUnconfirmedTransactions403Response';
-import ListAllUnconfirmedTransactionsE400 from './model/ListAllUnconfirmedTransactionsE400';
-import ListAllUnconfirmedTransactionsE401 from './model/ListAllUnconfirmedTransactionsE401';
-import ListAllUnconfirmedTransactionsE403 from './model/ListAllUnconfirmedTransactionsE403';
-import ListAllUnconfirmedTransactionsR from './model/ListAllUnconfirmedTransactionsR';
-import ListAllUnconfirmedTransactionsRData from './model/ListAllUnconfirmedTransactionsRData';
-import ListAllUnconfirmedTransactionsRI from './model/ListAllUnconfirmedTransactionsRI';
-import ListAllUnconfirmedTransactionsRIBS from './model/ListAllUnconfirmedTransactionsRIBS';
-import ListAllUnconfirmedTransactionsRIBSB from './model/ListAllUnconfirmedTransactionsRIBSB';
-import ListAllUnconfirmedTransactionsRIBSBC from './model/ListAllUnconfirmedTransactionsRIBSBC';
-import ListAllUnconfirmedTransactionsRIBSBCVinInner from './model/ListAllUnconfirmedTransactionsRIBSBCVinInner';
-import ListAllUnconfirmedTransactionsRIBSBCVoutInner from './model/ListAllUnconfirmedTransactionsRIBSBCVoutInner';
-import ListAllUnconfirmedTransactionsRIBSBSC from './model/ListAllUnconfirmedTransactionsRIBSBSC';
-import ListAllUnconfirmedTransactionsRIBSBVinInner from './model/ListAllUnconfirmedTransactionsRIBSBVinInner';
-import ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig from './model/ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig';
-import ListAllUnconfirmedTransactionsRIBSD from './model/ListAllUnconfirmedTransactionsRIBSD';
-import ListAllUnconfirmedTransactionsRIBSD2 from './model/ListAllUnconfirmedTransactionsRIBSD2';
-import ListAllUnconfirmedTransactionsRIBSD2VinInner from './model/ListAllUnconfirmedTransactionsRIBSD2VinInner';
-import ListAllUnconfirmedTransactionsRIBSDVinInner from './model/ListAllUnconfirmedTransactionsRIBSDVinInner';
-import ListAllUnconfirmedTransactionsRIBSE from './model/ListAllUnconfirmedTransactionsRIBSE';
-import ListAllUnconfirmedTransactionsRIBSEC from './model/ListAllUnconfirmedTransactionsRIBSEC';
-import ListAllUnconfirmedTransactionsRIBSECFee from './model/ListAllUnconfirmedTransactionsRIBSECFee';
-import ListAllUnconfirmedTransactionsRIBSECGasPrice from './model/ListAllUnconfirmedTransactionsRIBSECGasPrice';
-import ListAllUnconfirmedTransactionsRIBSEFee from './model/ListAllUnconfirmedTransactionsRIBSEFee';
-import ListAllUnconfirmedTransactionsRIBSEGasPrice from './model/ListAllUnconfirmedTransactionsRIBSEGasPrice';
-import ListAllUnconfirmedTransactionsRIBSL from './model/ListAllUnconfirmedTransactionsRIBSL';
-import ListAllUnconfirmedTransactionsRIBSLVinInner from './model/ListAllUnconfirmedTransactionsRIBSLVinInner';
-import ListAllUnconfirmedTransactionsRIBSZ from './model/ListAllUnconfirmedTransactionsRIBSZ';
 import ListBlockchainEventsSubscriptions400Response from './model/ListBlockchainEventsSubscriptions400Response';
 import ListBlockchainEventsSubscriptions401Response from './model/ListBlockchainEventsSubscriptions401Response';
 import ListBlockchainEventsSubscriptions403Response from './model/ListBlockchainEventsSubscriptions403Response';
@@ -1241,7 +1238,6 @@ import ListLatestMinedBlocksRIBSBC from './model/ListLatestMinedBlocksRIBSBC';
 import ListLatestMinedBlocksRIBSBSC from './model/ListLatestMinedBlocksRIBSBSC';
 import ListLatestMinedBlocksRIBSD from './model/ListLatestMinedBlocksRIBSD';
 import ListLatestMinedBlocksRIBSD2 from './model/ListLatestMinedBlocksRIBSD2';
-import ListLatestMinedBlocksRIBSE from './model/ListLatestMinedBlocksRIBSE';
 import ListLatestMinedBlocksRIBSEC from './model/ListLatestMinedBlocksRIBSEC';
 import ListLatestMinedBlocksRIBSL from './model/ListLatestMinedBlocksRIBSL';
 import ListLatestMinedBlocksRIBSX from './model/ListLatestMinedBlocksRIBSX';
@@ -1890,7 +1886,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.7.3
+* @version 1.8.0
 */
 export {
     /**
@@ -2738,6 +2734,114 @@ export {
      * @property {module:model/ConfirmedTokensTransactionForCertainAmountOrHigherToken}
      */
     ConfirmedTokensTransactionForCertainAmountOrHigherToken,
+
+    /**
+     * The ConvertBitcoinCashAddress400Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress400Response}
+     */
+    ConvertBitcoinCashAddress400Response,
+
+    /**
+     * The ConvertBitcoinCashAddress401Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress401Response}
+     */
+    ConvertBitcoinCashAddress401Response,
+
+    /**
+     * The ConvertBitcoinCashAddress402Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress402Response}
+     */
+    ConvertBitcoinCashAddress402Response,
+
+    /**
+     * The ConvertBitcoinCashAddress403Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress403Response}
+     */
+    ConvertBitcoinCashAddress403Response,
+
+    /**
+     * The ConvertBitcoinCashAddress409Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress409Response}
+     */
+    ConvertBitcoinCashAddress409Response,
+
+    /**
+     * The ConvertBitcoinCashAddress415Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress415Response}
+     */
+    ConvertBitcoinCashAddress415Response,
+
+    /**
+     * The ConvertBitcoinCashAddress422Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress422Response}
+     */
+    ConvertBitcoinCashAddress422Response,
+
+    /**
+     * The ConvertBitcoinCashAddress429Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress429Response}
+     */
+    ConvertBitcoinCashAddress429Response,
+
+    /**
+     * The ConvertBitcoinCashAddress500Response model constructor.
+     * @property {module:model/ConvertBitcoinCashAddress500Response}
+     */
+    ConvertBitcoinCashAddress500Response,
+
+    /**
+     * The ConvertBitcoinCashAddressE400 model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressE400}
+     */
+    ConvertBitcoinCashAddressE400,
+
+    /**
+     * The ConvertBitcoinCashAddressE401 model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressE401}
+     */
+    ConvertBitcoinCashAddressE401,
+
+    /**
+     * The ConvertBitcoinCashAddressE403 model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressE403}
+     */
+    ConvertBitcoinCashAddressE403,
+
+    /**
+     * The ConvertBitcoinCashAddressR model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressR}
+     */
+    ConvertBitcoinCashAddressR,
+
+    /**
+     * The ConvertBitcoinCashAddressRB model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressRB}
+     */
+    ConvertBitcoinCashAddressRB,
+
+    /**
+     * The ConvertBitcoinCashAddressRBData model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressRBData}
+     */
+    ConvertBitcoinCashAddressRBData,
+
+    /**
+     * The ConvertBitcoinCashAddressRBDataItem model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressRBDataItem}
+     */
+    ConvertBitcoinCashAddressRBDataItem,
+
+    /**
+     * The ConvertBitcoinCashAddressRData model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressRData}
+     */
+    ConvertBitcoinCashAddressRData,
+
+    /**
+     * The ConvertBitcoinCashAddressRI model constructor.
+     * @property {module:model/ConvertBitcoinCashAddressRI}
+     */
+    ConvertBitcoinCashAddressRI,
 
     /**
      * The CouldNotCalculateRateForPair model constructor.
@@ -4594,6 +4698,66 @@ export {
     GenerateDepositAddressRI,
 
     /**
+     * The GetAddressBalance400Response model constructor.
+     * @property {module:model/GetAddressBalance400Response}
+     */
+    GetAddressBalance400Response,
+
+    /**
+     * The GetAddressBalance401Response model constructor.
+     * @property {module:model/GetAddressBalance401Response}
+     */
+    GetAddressBalance401Response,
+
+    /**
+     * The GetAddressBalance403Response model constructor.
+     * @property {module:model/GetAddressBalance403Response}
+     */
+    GetAddressBalance403Response,
+
+    /**
+     * The GetAddressBalanceE400 model constructor.
+     * @property {module:model/GetAddressBalanceE400}
+     */
+    GetAddressBalanceE400,
+
+    /**
+     * The GetAddressBalanceE401 model constructor.
+     * @property {module:model/GetAddressBalanceE401}
+     */
+    GetAddressBalanceE401,
+
+    /**
+     * The GetAddressBalanceE403 model constructor.
+     * @property {module:model/GetAddressBalanceE403}
+     */
+    GetAddressBalanceE403,
+
+    /**
+     * The GetAddressBalanceR model constructor.
+     * @property {module:model/GetAddressBalanceR}
+     */
+    GetAddressBalanceR,
+
+    /**
+     * The GetAddressBalanceRData model constructor.
+     * @property {module:model/GetAddressBalanceRData}
+     */
+    GetAddressBalanceRData,
+
+    /**
+     * The GetAddressBalanceRI model constructor.
+     * @property {module:model/GetAddressBalanceRI}
+     */
+    GetAddressBalanceRI,
+
+    /**
+     * The GetAddressBalanceRIConfirmedBalance model constructor.
+     * @property {module:model/GetAddressBalanceRIConfirmedBalance}
+     */
+    GetAddressBalanceRIConfirmedBalance,
+
+    /**
      * The GetAddressDetails400Response model constructor.
      * @property {module:model/GetAddressDetails400Response}
      */
@@ -4606,46 +4770,10 @@ export {
     GetAddressDetails401Response,
 
     /**
-     * The GetAddressDetails402Response model constructor.
-     * @property {module:model/GetAddressDetails402Response}
-     */
-    GetAddressDetails402Response,
-
-    /**
      * The GetAddressDetails403Response model constructor.
      * @property {module:model/GetAddressDetails403Response}
      */
     GetAddressDetails403Response,
-
-    /**
-     * The GetAddressDetails409Response model constructor.
-     * @property {module:model/GetAddressDetails409Response}
-     */
-    GetAddressDetails409Response,
-
-    /**
-     * The GetAddressDetails415Response model constructor.
-     * @property {module:model/GetAddressDetails415Response}
-     */
-    GetAddressDetails415Response,
-
-    /**
-     * The GetAddressDetails422Response model constructor.
-     * @property {module:model/GetAddressDetails422Response}
-     */
-    GetAddressDetails422Response,
-
-    /**
-     * The GetAddressDetails429Response model constructor.
-     * @property {module:model/GetAddressDetails429Response}
-     */
-    GetAddressDetails429Response,
-
-    /**
-     * The GetAddressDetails500Response model constructor.
-     * @property {module:model/GetAddressDetails500Response}
-     */
-    GetAddressDetails500Response,
 
     /**
      * The GetAddressDetailsE400 model constructor.
@@ -4724,6 +4852,12 @@ export {
      * @property {module:model/GetAddressDetailsFromCallbackRI}
      */
     GetAddressDetailsFromCallbackRI,
+
+    /**
+     * The GetAddressDetailsFromCallbackRIConfirmedBalance model constructor.
+     * @property {module:model/GetAddressDetailsFromCallbackRIConfirmedBalance}
+     */
+    GetAddressDetailsFromCallbackRIConfirmedBalance,
 
     /**
      * The GetAddressDetailsFromCallbackRITotalReceived model constructor.
@@ -5312,6 +5446,12 @@ export {
      * @property {module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSL}
      */
     GetBlockDetailsByBlockHeightFromCallbackRIBSL,
+
+    /**
+     * The GetBlockDetailsByBlockHeightFromCallbackRIBSP model constructor.
+     * @property {module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSP}
+     */
+    GetBlockDetailsByBlockHeightFromCallbackRIBSP,
 
     /**
      * The GetBlockDetailsByBlockHeightFromCallbackRIBST model constructor.
@@ -6640,6 +6780,12 @@ export {
     GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInnerScriptPubKey,
 
     /**
+     * The GetTransactionDetailsByTransactionIDFromCallbackRIBSP model constructor.
+     * @property {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSP}
+     */
+    GetTransactionDetailsByTransactionIDFromCallbackRIBSP,
+
+    /**
      * The GetTransactionDetailsByTransactionIDFromCallbackRIBST model constructor.
      * @property {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBST}
      */
@@ -7322,6 +7468,18 @@ export {
      * @property {module:model/GetWalletTransactionDetailsByTransactionIDRIBSLVinInnerScriptSig}
      */
     GetWalletTransactionDetailsByTransactionIDRIBSLVinInnerScriptSig,
+
+    /**
+     * The GetWalletTransactionDetailsByTransactionIDRIBSP model constructor.
+     * @property {module:model/GetWalletTransactionDetailsByTransactionIDRIBSP}
+     */
+    GetWalletTransactionDetailsByTransactionIDRIBSP,
+
+    /**
+     * The GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice model constructor.
+     * @property {module:model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice}
+     */
+    GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice,
 
     /**
      * The GetWalletTransactionDetailsByTransactionIDRIBST model constructor.
@@ -8054,186 +8212,6 @@ export {
      * @property {module:model/ListAllAssetsFromAllWalletsRINonFungibleTokensInner}
      */
     ListAllAssetsFromAllWalletsRINonFungibleTokensInner,
-
-    /**
-     * The ListAllUnconfirmedTransactions400Response model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactions400Response}
-     */
-    ListAllUnconfirmedTransactions400Response,
-
-    /**
-     * The ListAllUnconfirmedTransactions401Response model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactions401Response}
-     */
-    ListAllUnconfirmedTransactions401Response,
-
-    /**
-     * The ListAllUnconfirmedTransactions403Response model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactions403Response}
-     */
-    ListAllUnconfirmedTransactions403Response,
-
-    /**
-     * The ListAllUnconfirmedTransactionsE400 model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsE400}
-     */
-    ListAllUnconfirmedTransactionsE400,
-
-    /**
-     * The ListAllUnconfirmedTransactionsE401 model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsE401}
-     */
-    ListAllUnconfirmedTransactionsE401,
-
-    /**
-     * The ListAllUnconfirmedTransactionsE403 model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsE403}
-     */
-    ListAllUnconfirmedTransactionsE403,
-
-    /**
-     * The ListAllUnconfirmedTransactionsR model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsR}
-     */
-    ListAllUnconfirmedTransactionsR,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRData model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRData}
-     */
-    ListAllUnconfirmedTransactionsRData,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRI model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRI}
-     */
-    ListAllUnconfirmedTransactionsRI,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBS model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBS}
-     */
-    ListAllUnconfirmedTransactionsRIBS,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSB model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSB}
-     */
-    ListAllUnconfirmedTransactionsRIBSB,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSBC model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBC}
-     */
-    ListAllUnconfirmedTransactionsRIBSBC,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSBCVinInner model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBCVinInner}
-     */
-    ListAllUnconfirmedTransactionsRIBSBCVinInner,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSBCVoutInner model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBCVoutInner}
-     */
-    ListAllUnconfirmedTransactionsRIBSBCVoutInner,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSBSC model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBSC}
-     */
-    ListAllUnconfirmedTransactionsRIBSBSC,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSBVinInner model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBVinInner}
-     */
-    ListAllUnconfirmedTransactionsRIBSBVinInner,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig}
-     */
-    ListAllUnconfirmedTransactionsRIBSBVinInnerScriptSig,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSD model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSD}
-     */
-    ListAllUnconfirmedTransactionsRIBSD,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSD2 model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSD2}
-     */
-    ListAllUnconfirmedTransactionsRIBSD2,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSD2VinInner model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSD2VinInner}
-     */
-    ListAllUnconfirmedTransactionsRIBSD2VinInner,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSDVinInner model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSDVinInner}
-     */
-    ListAllUnconfirmedTransactionsRIBSDVinInner,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSE model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSE}
-     */
-    ListAllUnconfirmedTransactionsRIBSE,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSEC model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSEC}
-     */
-    ListAllUnconfirmedTransactionsRIBSEC,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSECFee model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSECFee}
-     */
-    ListAllUnconfirmedTransactionsRIBSECFee,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSECGasPrice model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSECGasPrice}
-     */
-    ListAllUnconfirmedTransactionsRIBSECGasPrice,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSEFee model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSEFee}
-     */
-    ListAllUnconfirmedTransactionsRIBSEFee,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSEGasPrice model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSEGasPrice}
-     */
-    ListAllUnconfirmedTransactionsRIBSEGasPrice,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSL model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSL}
-     */
-    ListAllUnconfirmedTransactionsRIBSL,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSLVinInner model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSLVinInner}
-     */
-    ListAllUnconfirmedTransactionsRIBSLVinInner,
-
-    /**
-     * The ListAllUnconfirmedTransactionsRIBSZ model constructor.
-     * @property {module:model/ListAllUnconfirmedTransactionsRIBSZ}
-     */
-    ListAllUnconfirmedTransactionsRIBSZ,
 
     /**
      * The ListBlockchainEventsSubscriptions400Response model constructor.
@@ -9266,12 +9244,6 @@ export {
      * @property {module:model/ListLatestMinedBlocksRIBSD2}
      */
     ListLatestMinedBlocksRIBSD2,
-
-    /**
-     * The ListLatestMinedBlocksRIBSE model constructor.
-     * @property {module:model/ListLatestMinedBlocksRIBSE}
-     */
-    ListLatestMinedBlocksRIBSE,
 
     /**
      * The ListLatestMinedBlocksRIBSEC model constructor.

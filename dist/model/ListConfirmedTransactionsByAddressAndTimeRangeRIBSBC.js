@@ -22,7 +22,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListConfirmedTransactionsByAddressAndTimeRangeRIBSBC = /*#__PURE__*/function () {
   /**

@@ -17,6 +17,18 @@ var _ActivateBlockchainEventSubscriptionR = _interopRequireDefault(require("../m
 
 var _ActivateBlockchainEventSubscriptionRB = _interopRequireDefault(require("../model/ActivateBlockchainEventSubscriptionRB"));
 
+var _ConvertBitcoinCashAddress402Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress402Response"));
+
+var _ConvertBitcoinCashAddress409Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress409Response"));
+
+var _ConvertBitcoinCashAddress415Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress415Response"));
+
+var _ConvertBitcoinCashAddress422Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress422Response"));
+
+var _ConvertBitcoinCashAddress429Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress429Response"));
+
+var _ConvertBitcoinCashAddress500Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress500Response"));
+
 var _DeleteBlockchainEventSubscription400Response = _interopRequireDefault(require("../model/DeleteBlockchainEventSubscription400Response"));
 
 var _DeleteBlockchainEventSubscription401Response = _interopRequireDefault(require("../model/DeleteBlockchainEventSubscription401Response"));
@@ -24,18 +36,6 @@ var _DeleteBlockchainEventSubscription401Response = _interopRequireDefault(requi
 var _DeleteBlockchainEventSubscription403Response = _interopRequireDefault(require("../model/DeleteBlockchainEventSubscription403Response"));
 
 var _DeleteBlockchainEventSubscriptionR = _interopRequireDefault(require("../model/DeleteBlockchainEventSubscriptionR"));
-
-var _GetAddressDetails402Response = _interopRequireDefault(require("../model/GetAddressDetails402Response"));
-
-var _GetAddressDetails409Response = _interopRequireDefault(require("../model/GetAddressDetails409Response"));
-
-var _GetAddressDetails415Response = _interopRequireDefault(require("../model/GetAddressDetails415Response"));
-
-var _GetAddressDetails422Response = _interopRequireDefault(require("../model/GetAddressDetails422Response"));
-
-var _GetAddressDetails429Response = _interopRequireDefault(require("../model/GetAddressDetails429Response"));
-
-var _GetAddressDetails500Response = _interopRequireDefault(require("../model/GetAddressDetails500Response"));
 
 var _GetBlockchainEventSubscriptionDetailsByReferenceID400Response = _interopRequireDefault(require("../model/GetBlockchainEventSubscriptionDetailsByReferenceID400Response"));
 
@@ -66,7 +66,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * ManageSubscriptions service.
 * @module api/ManageSubscriptionsApi
-* @version 1.7.3
+* @version 1.8.0
 */
 var ManageSubscriptionsApi = /*#__PURE__*/function () {
   /**

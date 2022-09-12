@@ -17,7 +17,7 @@ import GetWalletTransactionDetailsByTransactionIDRIBSBVinInnerScriptSig from './
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBVinInner model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBVinInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSBVinInner {
     /**

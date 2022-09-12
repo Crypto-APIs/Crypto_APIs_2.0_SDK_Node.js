@@ -21,7 +21,7 @@ import ListConfirmedTransactionsByAddressRIBSZVinInner from './ListConfirmedTran
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ {
     /**

@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIRecipientsInner model module.
  * @module model/ListTransactionsByBlockHashRIRecipientsInner
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListTransactionsByBlockHashRIRecipientsInner = /*#__PURE__*/function () {
   /**

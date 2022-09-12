@@ -17,7 +17,7 @@ import NewBlockE409 from './NewBlockE409';
 /**
  * The NewBlock409Response model module.
  * @module model/NewBlock409Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewBlock409Response {
     /**

@@ -28,7 +28,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE409 model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE409
- * @version 1.7.3
+ * @version 1.8.0
  */
 var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE409 = /*#__PURE__*/function () {
   /**

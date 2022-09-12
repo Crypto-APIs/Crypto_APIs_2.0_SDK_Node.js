@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The AddTokensToExistingFromAddressE401 model module.
  * @module model/AddTokensToExistingFromAddressE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class AddTokensToExistingFromAddressE401 {
     /**

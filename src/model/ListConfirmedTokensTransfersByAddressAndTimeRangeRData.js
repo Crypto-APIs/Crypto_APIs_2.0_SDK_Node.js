@@ -17,7 +17,7 @@ import ListConfirmedTokensTransfersByAddressAndTimeRangeRI from './ListConfirmed
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeRData model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeRData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListConfirmedTokensTransfersByAddressAndTimeRangeRData {
     /**

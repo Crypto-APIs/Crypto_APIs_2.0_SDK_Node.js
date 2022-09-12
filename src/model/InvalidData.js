@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The InvalidData model module.
  * @module model/InvalidData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class InvalidData {
     /**

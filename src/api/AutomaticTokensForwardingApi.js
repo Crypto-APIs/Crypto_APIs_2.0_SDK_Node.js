@@ -18,6 +18,12 @@ import AddTokensToExistingFromAddress401Response from '../model/AddTokensToExist
 import AddTokensToExistingFromAddress403Response from '../model/AddTokensToExistingFromAddress403Response';
 import AddTokensToExistingFromAddressR from '../model/AddTokensToExistingFromAddressR';
 import AddTokensToExistingFromAddressRB from '../model/AddTokensToExistingFromAddressRB';
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress409Response from '../model/ConvertBitcoinCashAddress409Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
 import CreateAutomaticTokensForwarding400Response from '../model/CreateAutomaticTokensForwarding400Response';
 import CreateAutomaticTokensForwarding401Response from '../model/CreateAutomaticTokensForwarding401Response';
 import CreateAutomaticTokensForwarding403Response from '../model/CreateAutomaticTokensForwarding403Response';
@@ -27,12 +33,6 @@ import DeleteAutomaticTokensForwarding400Response from '../model/DeleteAutomatic
 import DeleteAutomaticTokensForwarding401Response from '../model/DeleteAutomaticTokensForwarding401Response';
 import DeleteAutomaticTokensForwarding403Response from '../model/DeleteAutomaticTokensForwarding403Response';
 import DeleteAutomaticTokensForwardingR from '../model/DeleteAutomaticTokensForwardingR';
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
 import GetFeeAddressDetails400Response from '../model/GetFeeAddressDetails400Response';
 import GetFeeAddressDetails401Response from '../model/GetFeeAddressDetails401Response';
 import GetFeeAddressDetails403Response from '../model/GetFeeAddressDetails403Response';
@@ -46,7 +46,7 @@ import ListTokensForwardingAutomationsR from '../model/ListTokensForwardingAutom
 /**
 * AutomaticTokensForwarding service.
 * @module api/AutomaticTokensForwardingApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class AutomaticTokensForwardingApi {
 

@@ -17,7 +17,7 @@ import NewConfirmedCoinsTransactionsAndEachConfirmationRI from './NewConfirmedCo
 /**
  * The NewConfirmedCoinsTransactionsAndEachConfirmationRData model module.
  * @module model/NewConfirmedCoinsTransactionsAndEachConfirmationRData
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewConfirmedCoinsTransactionsAndEachConfirmationRData {
     /**

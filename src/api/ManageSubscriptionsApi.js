@@ -18,16 +18,16 @@ import ActivateBlockchainEventSubscription401Response from '../model/ActivateBlo
 import ActivateBlockchainEventSubscription403Response from '../model/ActivateBlockchainEventSubscription403Response';
 import ActivateBlockchainEventSubscriptionR from '../model/ActivateBlockchainEventSubscriptionR';
 import ActivateBlockchainEventSubscriptionRB from '../model/ActivateBlockchainEventSubscriptionRB';
+import ConvertBitcoinCashAddress402Response from '../model/ConvertBitcoinCashAddress402Response';
+import ConvertBitcoinCashAddress409Response from '../model/ConvertBitcoinCashAddress409Response';
+import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAddress415Response';
+import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
+import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
+import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
 import DeleteBlockchainEventSubscription400Response from '../model/DeleteBlockchainEventSubscription400Response';
 import DeleteBlockchainEventSubscription401Response from '../model/DeleteBlockchainEventSubscription401Response';
 import DeleteBlockchainEventSubscription403Response from '../model/DeleteBlockchainEventSubscription403Response';
 import DeleteBlockchainEventSubscriptionR from '../model/DeleteBlockchainEventSubscriptionR';
-import GetAddressDetails402Response from '../model/GetAddressDetails402Response';
-import GetAddressDetails409Response from '../model/GetAddressDetails409Response';
-import GetAddressDetails415Response from '../model/GetAddressDetails415Response';
-import GetAddressDetails422Response from '../model/GetAddressDetails422Response';
-import GetAddressDetails429Response from '../model/GetAddressDetails429Response';
-import GetAddressDetails500Response from '../model/GetAddressDetails500Response';
 import GetBlockchainEventSubscriptionDetailsByReferenceID400Response from '../model/GetBlockchainEventSubscriptionDetailsByReferenceID400Response';
 import GetBlockchainEventSubscriptionDetailsByReferenceID401Response from '../model/GetBlockchainEventSubscriptionDetailsByReferenceID401Response';
 import GetBlockchainEventSubscriptionDetailsByReferenceID403Response from '../model/GetBlockchainEventSubscriptionDetailsByReferenceID403Response';
@@ -41,7 +41,7 @@ import ListBlockchainEventsSubscriptionsR from '../model/ListBlockchainEventsSub
 /**
 * ManageSubscriptions service.
 * @module api/ManageSubscriptionsApi
-* @version 1.7.3
+* @version 1.8.0
 */
 export default class ManageSubscriptionsApi {
 

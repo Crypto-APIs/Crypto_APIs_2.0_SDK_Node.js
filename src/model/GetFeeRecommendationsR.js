@@ -17,7 +17,7 @@ import GetFeeRecommendationsRData from './GetFeeRecommendationsRData';
 /**
  * The GetFeeRecommendationsR model module.
  * @module model/GetFeeRecommendationsR
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetFeeRecommendationsR {
     /**

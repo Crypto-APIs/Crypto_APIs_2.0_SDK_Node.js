@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressRI
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListConfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
   /**

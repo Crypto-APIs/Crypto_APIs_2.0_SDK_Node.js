@@ -20,7 +20,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AlreadyExists model module.
  * @module model/AlreadyExists
- * @version 1.7.3
+ * @version 1.8.0
  */
 var AlreadyExists = /*#__PURE__*/function () {
   /**

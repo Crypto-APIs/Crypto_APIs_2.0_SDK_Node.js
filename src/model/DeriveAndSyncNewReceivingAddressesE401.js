@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The DeriveAndSyncNewReceivingAddressesE401 model module.
  * @module model/DeriveAndSyncNewReceivingAddressesE401
- * @version 1.7.3
+ * @version 1.8.0
  */
 class DeriveAndSyncNewReceivingAddressesE401 {
     /**

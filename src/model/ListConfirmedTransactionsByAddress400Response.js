@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressE400 from './ListConfirmedTransactionsB
 /**
  * The ListConfirmedTransactionsByAddress400Response model module.
  * @module model/ListConfirmedTransactionsByAddress400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class ListConfirmedTransactionsByAddress400Response {
     /**

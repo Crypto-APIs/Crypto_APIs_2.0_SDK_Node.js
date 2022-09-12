@@ -16,13 +16,13 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAddressDetailsRIConfirmedBalance model module.
  * @module model/GetAddressDetailsRIConfirmedBalance
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetAddressDetailsRIConfirmedBalance {
     /**
      * Constructs a new <code>GetAddressDetailsRIConfirmedBalance</code>.
      * @alias module:model/GetAddressDetailsRIConfirmedBalance
-     * @param amount {String} Defines the total balance of the address that is confirmed. It doesn't include unconfirmed transactions.
+     * @param amount {String} Object representation of the total balance of the address
      * @param unit {String} Represents the unit of the confirmed balance.
      */
     constructor(amount, unit) { 
@@ -65,7 +65,7 @@ class GetAddressDetailsRIConfirmedBalance {
 }
 
 /**
- * Defines the total balance of the address that is confirmed. It doesn't include unconfirmed transactions.
+ * Object representation of the total balance of the address
  * @member {String} amount
  */
 GetAddressDetailsRIConfirmedBalance.prototype['amount'] = undefined;

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CoinsForwardingSuccessDataItem model module.
  * @module model/CoinsForwardingSuccessDataItem
- * @version 1.7.3
+ * @version 1.8.0
  */
 class CoinsForwardingSuccessDataItem {
     /**

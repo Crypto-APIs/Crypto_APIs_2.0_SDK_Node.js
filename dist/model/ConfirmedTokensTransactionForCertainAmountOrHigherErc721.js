@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherErc721 model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherErc721
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ConfirmedTokensTransactionForCertainAmountOrHigherErc721 = /*#__PURE__*/function () {
   /**

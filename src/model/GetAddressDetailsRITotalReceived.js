@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAddressDetailsRITotalReceived model module.
  * @module model/GetAddressDetailsRITotalReceived
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetAddressDetailsRITotalReceived {
     /**

@@ -58,6 +58,16 @@
         done();
       });
     });
+    describe('getAddressBalance', function() {
+      it('should call getAddressBalance successfully', function(done) {
+        //uncomment below and update the code to test getAddressBalance
+        //instance.getAddressBalance(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('getAddressDetails', function() {
       it('should call getAddressDetails successfully', function(done) {
         //uncomment below and update the code to test getAddressDetails
@@ -132,16 +142,6 @@
       it('should call getTransactionDetailsByTransactionID successfully', function(done) {
         //uncomment below and update the code to test getTransactionDetailsByTransactionID
         //instance.getTransactionDetailsByTransactionID(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('listAllUnconfirmedTransactions', function() {
-      it('should call listAllUnconfirmedTransactions successfully', function(done) {
-        //uncomment below and update the code to test listAllUnconfirmedTransactions
-        //instance.listAllUnconfirmedTransactions(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

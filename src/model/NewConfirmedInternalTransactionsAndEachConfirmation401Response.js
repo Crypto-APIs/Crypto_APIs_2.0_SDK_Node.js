@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsAndEachConfirmationE401 from './NewConfir
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmation401Response model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmation401Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewConfirmedInternalTransactionsAndEachConfirmation401Response {
     /**

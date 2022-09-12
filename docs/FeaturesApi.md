@@ -5,6 +5,7 @@ All URIs are relative to *https://rest.cryptoapis.io*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**broadcastLocallySignedTransaction**](FeaturesApi.md#broadcastLocallySignedTransaction) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/broadcast | Broadcast Locally Signed Transaction
+[**convertBitcoinCashAddress**](FeaturesApi.md#convertBitcoinCashAddress) | **POST** /blockchain-tools/{blockchain}/{network}/address/convert | Convert Bitcoin Cash Address
 [**decodeRawTransactionHex**](FeaturesApi.md#decodeRawTransactionHex) | **POST** /blockchain-tools/{blockchain}/{network}/decode-raw-transaction | Decode Raw Transaction Hex
 [**decodeXAddress**](FeaturesApi.md#decodeXAddress) | **GET** /blockchain-tools/{blockchain}/{network}/decode-x-address/{xAddress} | Decode X-Address
 [**deriveHDWalletXPubYPubZPubChangeOrReceivingAddresses**](FeaturesApi.md#deriveHDWalletXPubYPubZPubChangeOrReceivingAddresses) | **GET** /blockchain-tools/{blockchain}/{network}/hd/{extendedPublicKey}/addresses/derive-address | Derive HD Wallet (xPub, yPub, zPub) Change Or Receiving Addresses
@@ -63,6 +64,64 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**BroadcastLocallySignedTransactionR**](BroadcastLocallySignedTransactionR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## convertBitcoinCashAddress
+
+> ConvertBitcoinCashAddressR convertBitcoinCashAddress(blockchain, network, opts)
+
+Convert Bitcoin Cash Address
+
+Through this endpoint customers will be able to convert addresses for the BCH (Bitcoin Cash) protocol from BCH legacy to cash address and vice versa.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.FeaturesApi();
+let blockchain = bitcoin-cash; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'convertBitcoinCashAddressRB': new Cryptoapis.ConvertBitcoinCashAddressRB() // ConvertBitcoinCashAddressRB | 
+};
+apiInstance.convertBitcoinCashAddress(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **convertBitcoinCashAddressRB** | [**ConvertBitcoinCashAddressRB**](ConvertBitcoinCashAddressRB.md)|  | [optional] 
+
+### Return type
+
+[**ConvertBitcoinCashAddressR**](ConvertBitcoinCashAddressR.md)
 
 ### Authorization
 

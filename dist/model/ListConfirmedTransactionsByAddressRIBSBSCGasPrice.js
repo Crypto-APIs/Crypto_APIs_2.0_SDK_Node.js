@@ -18,7 +18,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSBSCGasPrice model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice
- * @version 1.7.3
+ * @version 1.8.0
  */
 var ListConfirmedTransactionsByAddressRIBSBSCGasPrice = /*#__PURE__*/function () {
   /**

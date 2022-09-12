@@ -17,7 +17,7 @@ import GetFeeRecommendationsE400 from './GetFeeRecommendationsE400';
 /**
  * The GetFeeRecommendations400Response model module.
  * @module model/GetFeeRecommendations400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetFeeRecommendations400Response {
     /**

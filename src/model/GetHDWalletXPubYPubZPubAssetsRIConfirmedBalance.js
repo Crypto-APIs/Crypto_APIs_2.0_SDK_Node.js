@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance
- * @version 1.7.3
+ * @version 1.8.0
  */
 class GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance {
     /**

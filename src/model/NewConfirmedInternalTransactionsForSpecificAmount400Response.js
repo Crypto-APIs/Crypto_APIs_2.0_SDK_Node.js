@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsForSpecificAmountE400 from './NewConfirme
 /**
  * The NewConfirmedInternalTransactionsForSpecificAmount400Response model module.
  * @module model/NewConfirmedInternalTransactionsForSpecificAmount400Response
- * @version 1.7.3
+ * @version 1.8.0
  */
 class NewConfirmedInternalTransactionsForSpecificAmount400Response {
     /**

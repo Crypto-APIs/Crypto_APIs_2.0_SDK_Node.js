@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The BlockchainDataBlockNotFound model module.
  * @module model/BlockchainDataBlockNotFound
- * @version 1.7.3
+ * @version 1.8.0
  */
 class BlockchainDataBlockNotFound {
     /**
