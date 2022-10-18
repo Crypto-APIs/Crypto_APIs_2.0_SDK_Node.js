@@ -54,6 +54,12 @@
       //expect(instance).to.be.a(Cryptoapis.ListConfirmedTransactionsByAddressRI);
     });
 
+    it('should have the property transactionId (base name: "transactionId")', function() {
+      // uncomment below and update the code to test the property transactionId
+      //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property index (base name: "index")', function() {
       // uncomment below and update the code to test the property index
       //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRI();
@@ -92,12 +98,6 @@
 
     it('should have the property transactionHash (base name: "transactionHash")', function() {
       // uncomment below and update the code to test the property transactionHash
-      //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property transactionId (base name: "transactionId")', function() {
-      // uncomment below and update the code to test the property transactionId
       //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRI();
       //expect(instance).to.be();
     });

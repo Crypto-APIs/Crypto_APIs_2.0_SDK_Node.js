@@ -20,7 +20,6 @@ import GetBlockDetailsByBlockHeightFromCallbackRIBSD2 from './GetBlockDetailsByB
 import GetBlockDetailsByBlockHeightFromCallbackRIBSE from './GetBlockDetailsByBlockHeightFromCallbackRIBSE';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSEC from './GetBlockDetailsByBlockHeightFromCallbackRIBSEC';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSL from './GetBlockDetailsByBlockHeightFromCallbackRIBSL';
-import GetBlockDetailsByBlockHeightFromCallbackRIBSP from './GetBlockDetailsByBlockHeightFromCallbackRIBSP';
 import GetBlockDetailsByBlockHeightFromCallbackRIBST from './GetBlockDetailsByBlockHeightFromCallbackRIBST';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSX from './GetBlockDetailsByBlockHeightFromCallbackRIBSX';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSZ from './GetBlockDetailsByBlockHeightFromCallbackRIBSZ';
@@ -31,7 +30,7 @@ import GetLatestMinedXRPRippleBlockRITotalFees from './GetLatestMinedXRPRippleBl
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBS model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBS
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetBlockDetailsByBlockHeightFromCallbackRIBS {
     /**
@@ -49,12 +48,11 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBS {
      * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSX
      * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ2
      * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBST
-     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSP
      * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
-     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
+     * @param difficulty {String} Defines how difficult it is for a specific miner to mine the block.
      * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
-     * @param nonce {String} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+     * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
      * @param size {Number} Represents the total size of the block in Bytes.
      * @param strippedSize {Number} Defines the numeric representation of the block size excluding the witness data.
      * @param version {Number} Represents the transaction version number.
@@ -62,12 +60,11 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBS {
      * @param weight {Number} Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
      * @param strippedsize {Number} Defines the numeric representation of the block size excluding the witness data.
      * @param extraData {String} Represents any data that can be included by the miner in the block.
-     * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-     * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
+     * @param gasLimit {Number} Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
+     * @param gasUsed {Number} Defines how much of the gas for the block has been used.
      * @param minedInSeconds {Number} Specifies the amount of time required for the block to be mined in seconds.
      * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
      * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
-     * @param uncles {Array.<String>} 
      * @param dsBlock {Number} Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
      * @param dsDifficulty {String} Defines how difficult it is to mine the dsBlocks.
      * @param dsLeader {String} Represents a part of the DS Committee which leads the consensus protocol for the epoch.
@@ -78,9 +75,9 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBS {
      * @param burnedTrx {String} Represents the block burned TRX.
      * @param energyUsed {String} Representats the used energy for the transaction.
      */
-    constructor(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed) { 
-        GetBlockDetailsByBlockHeightFromCallbackRIBSB.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSBC.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);GetBlockDetailsByBlockHeightFromCallbackRIBSL.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedsize, version, versionHex, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSD.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);GetBlockDetailsByBlockHeightFromCallbackRIBSD2.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSE.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSEC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSZ.initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);GetBlockDetailsByBlockHeightFromCallbackRIBSX.initialize(this, totalCoins, totalFees);GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.initialize(this, bits, chainwork, merkleRoot, nonce, size, version);GetBlockDetailsByBlockHeightFromCallbackRIBST.initialize(this, bandwidthUsed, burnedTrx, energyUsed, size);GetBlockDetailsByBlockHeightFromCallbackRIBSP.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
-        GetBlockDetailsByBlockHeightFromCallbackRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed);
+    constructor(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed) { 
+        GetBlockDetailsByBlockHeightFromCallbackRIBSB.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSBC.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);GetBlockDetailsByBlockHeightFromCallbackRIBSL.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedsize, version, versionHex, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSD.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);GetBlockDetailsByBlockHeightFromCallbackRIBSD2.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSE.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSEC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSZ.initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);GetBlockDetailsByBlockHeightFromCallbackRIBSX.initialize(this, totalCoins, totalFees);GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.initialize(this, bits, chainwork, merkleRoot, nonce, size, version);GetBlockDetailsByBlockHeightFromCallbackRIBST.initialize(this, bandwidthUsed, burnedTrx, energyUsed, size);
+        GetBlockDetailsByBlockHeightFromCallbackRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed);
     }
 
     /**
@@ -88,7 +85,7 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBS {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed) { 
+    static initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed) { 
         obj['bits'] = bits;
         obj['chainwork'] = chainwork;
         obj['difficulty'] = difficulty;
@@ -106,7 +103,6 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBS {
         obj['minedInSeconds'] = minedInSeconds;
         obj['sha3Uncles'] = sha3Uncles;
         obj['totalDifficulty'] = totalDifficulty;
-        obj['uncles'] = uncles;
         obj['dsBlock'] = dsBlock;
         obj['dsDifficulty'] = dsDifficulty;
         obj['dsLeader'] = dsLeader;
@@ -140,7 +136,6 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBS {
             GetBlockDetailsByBlockHeightFromCallbackRIBSX.constructFromObject(data, obj);
             GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.constructFromObject(data, obj);
             GetBlockDetailsByBlockHeightFromCallbackRIBST.constructFromObject(data, obj);
-            GetBlockDetailsByBlockHeightFromCallbackRIBSP.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('bits')) {
                 obj['bits'] = ApiClient.convertToType(data['bits'], 'String');
@@ -179,10 +174,10 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBS {
                 obj['extraData'] = ApiClient.convertToType(data['extraData'], 'String');
             }
             if (data.hasOwnProperty('gasLimit')) {
-                obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'String');
+                obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'Number');
             }
             if (data.hasOwnProperty('gasUsed')) {
-                obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'String');
+                obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'Number');
             }
             if (data.hasOwnProperty('minedInSeconds')) {
                 obj['minedInSeconds'] = ApiClient.convertToType(data['minedInSeconds'], 'Number');
@@ -243,7 +238,7 @@ GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['bits'] = undefined;
 GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['chainwork'] = undefined;
 
 /**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * Defines how difficult it is for a specific miner to mine the block.
  * @member {String} difficulty
  */
 GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['difficulty'] = undefined;
@@ -255,7 +250,7 @@ GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['difficulty'] = undefined
 GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['merkleRoot'] = undefined;
 
 /**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * Represents a random value that can be adjusted to satisfy the proof of work
  * @member {String} nonce
  */
 GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['nonce'] = undefined;
@@ -303,14 +298,14 @@ GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['strippedsize'] = undefin
 GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['extraData'] = undefined;
 
 /**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
+ * Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
+ * @member {Number} gasLimit
  */
 GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['gasLimit'] = undefined;
 
 /**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
+ * Defines how much of the gas for the block has been used.
+ * @member {Number} gasUsed
  */
 GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['gasUsed'] = undefined;
 
@@ -865,56 +860,6 @@ GetBlockDetailsByBlockHeightFromCallbackRIBST.prototype['energyUsed'] = undefine
  * @member {Number} size
  */
 GetBlockDetailsByBlockHeightFromCallbackRIBST.prototype['size'] = undefined;
-// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSP interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['difficulty'] = undefined;
-/**
- * Represents any data that can be included by the miner in the block.
- * @member {String} extraData
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['extraData'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['gasLimit'] = undefined;
-/**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['gasUsed'] = undefined;
-/**
- * Specifies the amount of time required for the block to be mined in seconds.
- * @member {Number} minedInSeconds
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['minedInSeconds'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {String} nonce
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['nonce'] = undefined;
-/**
- * Defines the combined hash of all uncles for a given parent.
- * @member {String} sha3Uncles
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['sha3Uncles'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['size'] = undefined;
-/**
- * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
- * @member {String} totalDifficulty
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['totalDifficulty'] = undefined;
-/**
- * @member {Array.<String>} uncles
- */
-GetBlockDetailsByBlockHeightFromCallbackRIBSP.prototype['uncles'] = undefined;
 
 
 

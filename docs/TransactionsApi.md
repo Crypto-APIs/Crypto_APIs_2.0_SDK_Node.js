@@ -33,10 +33,10 @@ ApiKey.apiKey = 'YOUR API KEY';
 //ApiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new Cryptoapis.TransactionsApi();
-let address = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defines the source address.
+let address = 0x0902a667d6a3f287835e0a4593cae4167384abc6; // String | Defines the source address.
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let walletId = 609e221675d04500068718dc; // String | Represents the sender's specific and unique Wallet ID of the sender.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let walletId = 629df9dbae857c00073de9c8; // String | Represents the sender's specific and unique Wallet ID of the sender.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createCoinsTransactionFromAddressForWholeAmountRB': new Cryptoapis.CreateCoinsTransactionFromAddressForWholeAmountRB() // CreateCoinsTransactionFromAddressForWholeAmountRB | 
@@ -95,10 +95,10 @@ ApiKey.apiKey = 'YOUR API KEY';
 //ApiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new Cryptoapis.TransactionsApi();
-let address = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defines the specific source address for the transaction. For XRP we also support the X-address format.
+let address = 0x0902a667d6a3f287835e0a4593cae4167384abc6; // String | Defines the specific source address for the transaction. For XRP we also support the X-address format.
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let walletId = 609e221675d04500068718dc; // String | Represents the sender's specific and unique Wallet ID of the sender.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let walletId = 629df9dbae857c00073de9c8; // String | Represents the sender's specific and unique Wallet ID of the sender.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'createCoinsTransactionRequestFromAddressRB': new Cryptoapis.CreateCoinsTransactionRequestFromAddressRB() // CreateCoinsTransactionRequestFromAddressRB | 
@@ -280,8 +280,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.TransactionsApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let senderAddress = 0x6f61e3c2fbb8c8be698bd0907ba6c04b62800fe5; // String | Defines the specific source address for the transaction.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let senderAddress = 0x0902a667d6a3f287835e0a4593cae4167384abc6; // String | Defines the specific source address for the transaction.
 let walletId = 609e221675d04500068718dc; // String | Defines the unique ID of the Wallet.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
@@ -300,8 +300,8 @@ apiInstance.createFungibleTokensTransactionRequestFromAddress(blockchain, networ
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | [default to &#39;ethereum&#39;]
- **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | [default to &#39;mainnet&#39;]
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
  **senderAddress** | **String**| Defines the specific source address for the transaction. | 
  **walletId** | **String**| Defines the unique ID of the Wallet. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 

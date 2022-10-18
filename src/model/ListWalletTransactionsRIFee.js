@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListWalletTransactionsRIFee model module.
  * @module model/ListWalletTransactionsRIFee
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListWalletTransactionsRIFee {
     /**

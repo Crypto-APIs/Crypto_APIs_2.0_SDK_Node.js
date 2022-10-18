@@ -4,23 +4,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner
- * @version 1.8.0
- */
-var CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.9.0
+ */var CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner</code>.
    * @alias module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner
@@ -29,22 +22,21 @@ var CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner = /*#__PURE
    */
   function CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner(address, amount) {
     _classCallCheck(this, CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner);
-
     CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner.initialize(this, address, amount);
   }
+
   /**
    * Initializes the fields of this object.
    * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
    * Only for internal use.
    */
-
-
   _createClass(CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner, null, [{
     key: "initialize",
     value: function initialize(obj, address, amount) {
       obj['address'] = address;
       obj['amount'] = amount;
     }
+
     /**
      * Constructs a <code>CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
@@ -52,40 +44,32 @@ var CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner = /*#__PURE
      * @param {module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner} obj Optional instance to populate.
      * @return {module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner} The populated <code>CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner</code> instance.
      */
-
   }, {
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner();
-
         if (data.hasOwnProperty('address')) {
           obj['address'] = _ApiClient["default"].convertToType(data['address'], 'String');
         }
-
         if (data.hasOwnProperty('amount')) {
           obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
         }
       }
-
       return obj;
     }
   }]);
-
   return CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner;
-}();
-/**
- * Defines the destination address.
- * @member {String} address
- */
-
-
+}(); /**
+      * Defines the destination address.
+      * @member {String} address
+      */
 CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner.prototype['address'] = undefined;
+
 /**
  * Defines the amount sent to the destination address.
  * @member {String} amount
  */
-
 CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner.prototype['amount'] = undefined;
 var _default = CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner;
 exports["default"] = _default;

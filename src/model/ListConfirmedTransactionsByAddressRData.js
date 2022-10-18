@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRI from './ListConfirmedTransactionsByA
 /**
  * The ListConfirmedTransactionsByAddressRData model module.
  * @module model/ListConfirmedTransactionsByAddressRData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListConfirmedTransactionsByAddressRData {
     /**

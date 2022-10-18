@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The MinedTransactionE401 model module.
  * @module model/MinedTransactionE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class MinedTransactionE401 {
     /**

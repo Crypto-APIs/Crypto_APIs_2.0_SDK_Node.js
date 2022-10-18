@@ -18,19 +18,20 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsI
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
- * @version 1.8.0
+ * @version 1.9.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
     /**
      * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem</code>.
      * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
-     * @param fee {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} 
-     * @param recipients {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param xpub {String} Defines the account extended publicly known key which is used to derive all child public keys.
+     * @param fee {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} 
+     * @param recipients {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner>} Object Array representation of transaction receivers
+     * @param replaceable {Boolean} Representation whether the transaction is replaceable
      */
-    constructor(fee, recipients, xpub) { 
+    constructor(xpub, fee, recipients, replaceable) { 
         
-        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.initialize(this, fee, recipients, xpub);
+        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.initialize(this, xpub, fee, recipients, replaceable);
     }
 
     /**
@@ -38,10 +39,11 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, fee, recipients, xpub) { 
+    static initialize(obj, xpub, fee, recipients, replaceable) { 
+        obj['xpub'] = xpub;
         obj['fee'] = fee;
         obj['recipients'] = recipients;
-        obj['xpub'] = xpub;
+        obj['replaceable'] = replaceable;
     }
 
     /**
@@ -58,11 +60,14 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
             if (data.hasOwnProperty('additionalData')) {
                 obj['additionalData'] = ApiClient.convertToType(data['additionalData'], 'String');
             }
-            if (data.hasOwnProperty('fee')) {
-                obj['fee'] = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.constructFromObject(data['fee']);
-            }
             if (data.hasOwnProperty('locktime')) {
                 obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
+            }
+            if (data.hasOwnProperty('xpub')) {
+                obj['xpub'] = ApiClient.convertToType(data['xpub'], 'String');
+            }
+            if (data.hasOwnProperty('fee')) {
+                obj['fee'] = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.constructFromObject(data['fee']);
             }
             if (data.hasOwnProperty('prepareStrategy')) {
                 obj['prepareStrategy'] = ApiClient.convertToType(data['prepareStrategy'], 'String');
@@ -72,9 +77,6 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
             }
             if (data.hasOwnProperty('replaceable')) {
                 obj['replaceable'] = ApiClient.convertToType(data['replaceable'], 'Boolean');
-            }
-            if (data.hasOwnProperty('xpub')) {
-                obj['xpub'] = ApiClient.convertToType(data['xpub'], 'String');
             }
         }
         return obj;
@@ -90,15 +92,21 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['additionalData'] = undefined;
 
 /**
- * @member {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} fee
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['fee'] = undefined;
-
-/**
  * Represents the time at which a particular transaction can be added to the blockchain.
  * @member {Number} locktime
  */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['locktime'] = undefined;
+
+/**
+ * Defines the account extended publicly known key which is used to derive all child public keys.
+ * @member {String} xpub
+ */
+PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['xpub'] = undefined;
+
+/**
+ * @member {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} fee
+ */
+PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['fee'] = undefined;
 
 /**
  * Representation of the transaction's strategy type
@@ -107,22 +115,16 @@ PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['lockti
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['prepareStrategy'] = undefined;
 
 /**
- * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+ * Object Array representation of transaction receivers
  * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner>} recipients
  */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['recipients'] = undefined;
 
 /**
- * Representation of whether the transaction is replaceable
+ * Representation whether the transaction is replaceable
  * @member {Boolean} replaceable
  */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['replaceable'] = undefined;
-
-/**
- * Defines the account extended publicly known key which is used to derive all child public keys.
- * @member {String} xpub
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['xpub'] = undefined;
 
 
 

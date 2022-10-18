@@ -8,9 +8,7 @@ Name | Type | Description | Notes
 **fee** | **String** | When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value. | 
 **feePerByte** | **String** | Defines the fee per byte value | [optional] 
 **locktime** | **Number** | Represents the time at which a particular transaction can be added to the blockchain. | 
-**replaceable** | **Boolean** | Representation of whether the transaction is replaceable | 
 **size** | **Number** | Represents the total size of this transaction. | 
-**vin** | [**[PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner]**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner.md) | Represents the transaction inputs. | 
-**vout** | [**[PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner]**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner.md) | Represents the transaction outputs. | 
+**blockchainSpecific** | [**PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.md) |  | 
 
 

@@ -374,7 +374,7 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.InformativeApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
@@ -434,8 +434,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.InformativeApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let walletId = 60c9d9921c38030006675ff6; // String | Represents the unique ID of the specific Wallet.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let walletId = 629df9dbae857c00073de9c8; // String | Represents the unique ID of the specific Wallet.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.

@@ -17,7 +17,7 @@ import ListTokensByAddressE400 from './ListTokensByAddressE400';
 /**
  * The ListTokensByAddress400Response model module.
  * @module model/ListTokensByAddress400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListTokensByAddress400Response {
     /**

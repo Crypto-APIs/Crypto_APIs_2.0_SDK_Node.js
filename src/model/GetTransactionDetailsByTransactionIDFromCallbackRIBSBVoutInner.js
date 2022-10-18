@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSBVoutInnerScriptPubKe
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSBVoutInner model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBVoutInner
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSBVoutInner {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDRIRecipientsInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIRecipientsInner
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetTransactionDetailsByTransactionIDRIRecipientsInner {
     /**

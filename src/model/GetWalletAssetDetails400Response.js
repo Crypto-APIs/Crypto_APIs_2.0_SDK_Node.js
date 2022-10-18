@@ -17,7 +17,7 @@ import GetWalletAssetDetailsE400 from './GetWalletAssetDetailsE400';
 /**
  * The GetWalletAssetDetails400Response model module.
  * @module model/GetWalletAssetDetails400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetWalletAssetDetails400Response {
     /**

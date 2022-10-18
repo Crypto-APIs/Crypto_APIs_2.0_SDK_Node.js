@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSD2VoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHashRIBSD2VoutInnerScriptPubKey
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListTransactionsByBlockHashRIBSD2VoutInnerScriptPubKey {
     /**

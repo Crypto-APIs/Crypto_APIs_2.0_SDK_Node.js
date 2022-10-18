@@ -31,9 +31,9 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.InternalApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let operationId = call_4; // String | Represents the unique internal transaction ID in regards to the parent transaction (type trace address).
-let transactionHash = 0x92bb77e16444e0417c8b50dfab68e89c7ad27d4140a766c3bbd4d0ac195f12fc; // String | String identifier of the parent transaction of the internal transaction represented in CryptoAPIs.
+let transactionHash = 0xbc8245ba5cccb524d91256224689ac0f16678321a266bab8197ad7daab4c9e16; // String | String identifier of the parent transaction of the internal transaction represented in CryptoAPIs.
 let opts = {
   'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
@@ -91,8 +91,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.InternalApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = mainnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let transactionHash = 0x5d4ea0471b70de09fa3d6a4bc32f703ec44483bffa4d6169fa0a36c6a1dc108a; // String | String identifier of the parent transaction of the internal transaction represented in CryptoAPIs.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let transactionHash = 0xbc8245ba5cccb524d91256224689ac0f16678321a266bab8197ad7daab4c9e16; // String | String identifier of the parent transaction of the internal transaction represented in CryptoAPIs.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
@@ -153,8 +153,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.InternalApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let address = 0xc8fe2ceac93ad50e496b497357ae5385192dd28d; // String | String identifier of the address document represented in CryptoAPIs
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let address = 0x3d0b25fe09e2cd92f06ba776391a122519936e90; // String | String identifier of the address document represented in CryptoAPIs
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'limit': 50, // Number | Defines how many items should be returned in the response per page basis.

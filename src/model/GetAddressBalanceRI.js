@@ -17,7 +17,7 @@ import GetAddressBalanceRIConfirmedBalance from './GetAddressBalanceRIConfirmedB
 /**
  * The GetAddressBalanceRI model module.
  * @module model/GetAddressBalanceRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetAddressBalanceRI {
     /**

@@ -20,13 +20,14 @@ import GetTransactionDetailsByTransactionIDFromCallbackRISendersInner from './Ge
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRI model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRI {
     /**
      * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRI</code>.
      * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRI
      * @param index {Number} Represents the index position of the transaction in the specific block.
+     * @param isConfirmed {Boolean} Represents the state of the transaction whether it is confirmed or not confirmed.
      * @param minedInBlockHash {String} Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
      * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
      * @param recipients {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
@@ -34,12 +35,11 @@ class GetTransactionDetailsByTransactionIDFromCallbackRI {
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionHash {String} Represents the same as transactionId for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols hash is different from transactionId for SegWit transactions.
      * @param fee {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIFee} 
-     * @param isConfirmed {Boolean} Represents the state of the transaction whether it is confirmed or not confirmed.
      * @param blockchainSpecific {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBS} 
      */
-    constructor(index, minedInBlockHash, minedInBlockHeight, recipients, senders, timestamp, transactionHash, fee, isConfirmed, blockchainSpecific) { 
+    constructor(index, isConfirmed, minedInBlockHash, minedInBlockHeight, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific) { 
         
-        GetTransactionDetailsByTransactionIDFromCallbackRI.initialize(this, index, minedInBlockHash, minedInBlockHeight, recipients, senders, timestamp, transactionHash, fee, isConfirmed, blockchainSpecific);
+        GetTransactionDetailsByTransactionIDFromCallbackRI.initialize(this, index, isConfirmed, minedInBlockHash, minedInBlockHeight, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific);
     }
 
     /**
@@ -47,8 +47,9 @@ class GetTransactionDetailsByTransactionIDFromCallbackRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, index, minedInBlockHash, minedInBlockHeight, recipients, senders, timestamp, transactionHash, fee, isConfirmed, blockchainSpecific) { 
+    static initialize(obj, index, isConfirmed, minedInBlockHash, minedInBlockHeight, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific) { 
         obj['index'] = index;
+        obj['isConfirmed'] = isConfirmed;
         obj['minedInBlockHash'] = minedInBlockHash;
         obj['minedInBlockHeight'] = minedInBlockHeight;
         obj['recipients'] = recipients;
@@ -56,7 +57,6 @@ class GetTransactionDetailsByTransactionIDFromCallbackRI {
         obj['timestamp'] = timestamp;
         obj['transactionHash'] = transactionHash;
         obj['fee'] = fee;
-        obj['isConfirmed'] = isConfirmed;
         obj['blockchainSpecific'] = blockchainSpecific;
     }
 
@@ -73,6 +73,9 @@ class GetTransactionDetailsByTransactionIDFromCallbackRI {
 
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
+            }
+            if (data.hasOwnProperty('isConfirmed')) {
+                obj['isConfirmed'] = ApiClient.convertToType(data['isConfirmed'], 'Boolean');
             }
             if (data.hasOwnProperty('minedInBlockHash')) {
                 obj['minedInBlockHash'] = ApiClient.convertToType(data['minedInBlockHash'], 'String');
@@ -95,9 +98,6 @@ class GetTransactionDetailsByTransactionIDFromCallbackRI {
             if (data.hasOwnProperty('fee')) {
                 obj['fee'] = GetTransactionDetailsByTransactionIDFromCallbackRIFee.constructFromObject(data['fee']);
             }
-            if (data.hasOwnProperty('isConfirmed')) {
-                obj['isConfirmed'] = ApiClient.convertToType(data['isConfirmed'], 'Boolean');
-            }
             if (data.hasOwnProperty('blockchainSpecific')) {
                 obj['blockchainSpecific'] = GetTransactionDetailsByTransactionIDFromCallbackRIBS.constructFromObject(data['blockchainSpecific']);
             }
@@ -113,6 +113,12 @@ class GetTransactionDetailsByTransactionIDFromCallbackRI {
  * @member {Number} index
  */
 GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['index'] = undefined;
+
+/**
+ * Represents the state of the transaction whether it is confirmed or not confirmed.
+ * @member {Boolean} isConfirmed
+ */
+GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['isConfirmed'] = undefined;
 
 /**
  * Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -154,12 +160,6 @@ GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['transactionHash'] 
  * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIFee} fee
  */
 GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['fee'] = undefined;
-
-/**
- * Represents the state of the transaction whether it is confirmed or not confirmed.
- * @member {Boolean} isConfirmed
- */
-GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['isConfirmed'] = undefined;
 
 /**
  * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBS} blockchainSpecific

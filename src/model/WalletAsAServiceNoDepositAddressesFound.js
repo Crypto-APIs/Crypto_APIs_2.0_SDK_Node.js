@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The WalletAsAServiceNoDepositAddressesFound model module.
  * @module model/WalletAsAServiceNoDepositAddressesFound
- * @version 1.8.0
+ * @version 1.9.0
  */
 class WalletAsAServiceNoDepositAddressesFound {
     /**

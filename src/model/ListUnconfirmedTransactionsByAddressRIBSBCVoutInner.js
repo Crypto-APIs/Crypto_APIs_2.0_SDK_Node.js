@@ -17,7 +17,7 @@ import ListUnconfirmedTransactionsByAddressRIBSBCVoutInnerScriptPubKey from './L
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSBCVoutInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSBCVoutInner
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSBCVoutInner {
     /**

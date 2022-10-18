@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAddressDetailsRIConfirmedBalance model module.
  * @module model/GetAddressDetailsRIConfirmedBalance
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetAddressDetailsRIConfirmedBalance {
     /**

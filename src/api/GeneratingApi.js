@@ -19,6 +19,11 @@ import ConvertBitcoinCashAddress415Response from '../model/ConvertBitcoinCashAdd
 import ConvertBitcoinCashAddress422Response from '../model/ConvertBitcoinCashAddress422Response';
 import ConvertBitcoinCashAddress429Response from '../model/ConvertBitcoinCashAddress429Response';
 import ConvertBitcoinCashAddress500Response from '../model/ConvertBitcoinCashAddress500Response';
+import CreateNewMasterWallet400Response from '../model/CreateNewMasterWallet400Response';
+import CreateNewMasterWallet401Response from '../model/CreateNewMasterWallet401Response';
+import CreateNewMasterWallet403Response from '../model/CreateNewMasterWallet403Response';
+import CreateNewMasterWalletR from '../model/CreateNewMasterWalletR';
+import CreateNewMasterWalletRB from '../model/CreateNewMasterWalletRB';
 import GenerateDepositAddress400Response from '../model/GenerateDepositAddress400Response';
 import GenerateDepositAddress401Response from '../model/GenerateDepositAddress401Response';
 import GenerateDepositAddress403Response from '../model/GenerateDepositAddress403Response';
@@ -29,7 +34,7 @@ import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/G
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.8.0
+* @version 1.9.0
 */
 export default class GeneratingApi {
 
@@ -44,6 +49,55 @@ export default class GeneratingApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+
+    /**
+     * Create New Master Wallet
+     * Through this endpoint users can easily create a new Master Wallet through the API. The user provides the desired Wallet name and in return the response includes the `walletId`. That new Wallet can be additionally also backed up through the Crypto APIs Dashboard.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateNewMasterWalletRB} opts.createNewMasterWalletRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/CreateNewMasterWalletR} and HTTP response
+     */
+    createNewMasterWalletWithHttpInfo(opts) {
+      opts = opts || {};
+      let postBody = opts['createNewMasterWalletRB'];
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = CreateNewMasterWalletR;
+      return this.apiClient.callApi(
+        '/wallet-as-a-service/wallets/generate', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Create New Master Wallet
+     * Through this endpoint users can easily create a new Master Wallet through the API. The user provides the desired Wallet name and in return the response includes the `walletId`. That new Wallet can be additionally also backed up through the Crypto APIs Dashboard.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/CreateNewMasterWalletRB} opts.createNewMasterWalletRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/CreateNewMasterWalletR}
+     */
+    createNewMasterWallet(opts) {
+      return this.createNewMasterWalletWithHttpInfo(opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
 
 
     /**

@@ -17,7 +17,7 @@ import GetWalletAssetDetailsRI from './GetWalletAssetDetailsRI';
 /**
  * The GetWalletAssetDetailsRData model module.
  * @module model/GetWalletAssetDetailsRData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetWalletAssetDetailsRData {
     /**

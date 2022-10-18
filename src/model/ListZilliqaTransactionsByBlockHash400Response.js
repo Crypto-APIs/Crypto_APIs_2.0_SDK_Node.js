@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByBlockHashE400 from './ListZilliqaTransactionsByB
 /**
  * The ListZilliqaTransactionsByBlockHash400Response model module.
  * @module model/ListZilliqaTransactionsByBlockHash400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListZilliqaTransactionsByBlockHash400Response {
     /**

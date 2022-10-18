@@ -17,7 +17,7 @@ import GetEIP1559FeeRecommendationsE401 from './GetEIP1559FeeRecommendationsE401
 /**
  * The GetEIP1559FeeRecommendations401Response model module.
  * @module model/GetEIP1559FeeRecommendations401Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetEIP1559FeeRecommendations401Response {
     /**

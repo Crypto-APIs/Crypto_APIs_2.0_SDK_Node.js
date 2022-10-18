@@ -17,7 +17,7 @@ import ListUnconfirmedTokensTransfersByAddressRI from './ListUnconfirmedTokensTr
 /**
  * The ListUnconfirmedTokensTransfersByAddressRData model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressRData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListUnconfirmedTokensTransfersByAddressRData {
     /**

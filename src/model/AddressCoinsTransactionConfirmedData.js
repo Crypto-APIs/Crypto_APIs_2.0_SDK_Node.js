@@ -17,7 +17,7 @@ import AddressCoinsTransactionConfirmedDataItem from './AddressCoinsTransactionC
 /**
  * The AddressCoinsTransactionConfirmedData model module.
  * @module model/AddressCoinsTransactionConfirmedData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class AddressCoinsTransactionConfirmedData {
     /**

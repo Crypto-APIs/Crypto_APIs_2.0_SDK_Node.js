@@ -48,6 +48,16 @@
   }
 
   describe('GeneratingApi', function() {
+    describe('createNewMasterWallet', function() {
+      it('should call createNewMasterWallet successfully', function(done) {
+        //uncomment below and update the code to test createNewMasterWallet
+        //instance.createNewMasterWallet(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('generateDepositAddress', function() {
       it('should call generateDepositAddress successfully', function(done) {
         //uncomment below and update the code to test generateDepositAddress

@@ -17,7 +17,7 @@ import DeleteAutomaticTokensForwardingE400 from './DeleteAutomaticTokensForwardi
 /**
  * The DeleteAutomaticTokensForwarding400Response model module.
  * @module model/DeleteAutomaticTokensForwarding400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class DeleteAutomaticTokensForwarding400Response {
     /**

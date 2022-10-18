@@ -168,6 +168,16 @@
         done();
       });
     });
+    describe('newRevertedBlock', function() {
+      it('should call newRevertedBlock successfully', function(done) {
+        //uncomment below and update the code to test newRevertedBlock
+        //instance.newRevertedBlock(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('newUnconfirmedCoinsTransactions', function() {
       it('should call newUnconfirmedCoinsTransactions successfully', function(done) {
         //uncomment below and update the code to test newUnconfirmedCoinsTransactions

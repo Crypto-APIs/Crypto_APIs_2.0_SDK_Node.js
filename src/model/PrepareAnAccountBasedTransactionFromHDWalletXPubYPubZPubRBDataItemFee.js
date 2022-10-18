@@ -16,11 +16,12 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee
- * @version 1.8.0
+ * @version 1.9.0
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee {
     /**
      * Constructs a new <code>PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee</code>.
+     * When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
      * @alias module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee
      */
     constructor() { 
@@ -61,13 +62,13 @@ class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee {
 }
 
 /**
- * Representation of the exact amount value
+ * String representation of the exact amount
  * @member {String} exactAmount
  */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.prototype['exactAmount'] = undefined;
 
 /**
- * Represents the fee priority
+ * Enum representation of the fee priority
  * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.PriorityEnum} priority
  */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.prototype['priority'] = undefined;

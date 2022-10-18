@@ -17,7 +17,7 @@ import GetAddressDetailsFromCallbackRData from './GetAddressDetailsFromCallbackR
 /**
  * The GetAddressDetailsFromCallbackR model module.
  * @module model/GetAddressDetailsFromCallbackR
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetAddressDetailsFromCallbackR {
     /**

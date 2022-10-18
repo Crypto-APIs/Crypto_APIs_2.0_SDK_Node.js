@@ -17,7 +17,7 @@ import GetAddressBalanceE400 from './GetAddressBalanceE400';
 /**
  * The GetAddressBalance400Response model module.
  * @module model/GetAddressBalance400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetAddressBalance400Response {
     /**

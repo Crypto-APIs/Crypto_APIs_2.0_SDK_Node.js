@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetNextAvailableNonceE401 model module.
  * @module model/GetNextAvailableNonceE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetNextAvailableNonceE401 {
     /**

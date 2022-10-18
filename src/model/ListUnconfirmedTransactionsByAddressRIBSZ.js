@@ -21,7 +21,7 @@ import ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner from './ListConfir
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSZ model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSZ
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSZ {
     /**

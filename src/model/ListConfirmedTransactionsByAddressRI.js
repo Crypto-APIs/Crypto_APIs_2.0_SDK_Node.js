@@ -20,24 +20,24 @@ import ListConfirmedTransactionsByAddressRIFee from './ListConfirmedTransactions
 /**
  * The ListConfirmedTransactionsByAddressRI model module.
  * @module model/ListConfirmedTransactionsByAddressRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListConfirmedTransactionsByAddressRI {
     /**
      * Constructs a new <code>ListConfirmedTransactionsByAddressRI</code>.
      * @alias module:model/ListConfirmedTransactionsByAddressRI
+     * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param index {Number} Represents the index position of the transaction in the block.
      * @param recipients {Array.<module:model/GetTransactionDetailsByTransactionIDRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param senders {Array.<module:model/GetTransactionDetailsByTransactionIDRISendersInner>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
-     * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param fee {module:model/ListConfirmedTransactionsByAddressRIFee} 
      * @param blockchainSpecific {module:model/ListConfirmedTransactionsByAddressRIBS} 
      */
-    constructor(index, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific) { 
+    constructor(transactionId, index, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific) { 
         
-        ListConfirmedTransactionsByAddressRI.initialize(this, index, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific);
+        ListConfirmedTransactionsByAddressRI.initialize(this, transactionId, index, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific);
     }
 
     /**
@@ -45,13 +45,13 @@ class ListConfirmedTransactionsByAddressRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, index, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific) { 
+    static initialize(obj, transactionId, index, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific) { 
+        obj['transactionId'] = transactionId;
         obj['index'] = index;
         obj['recipients'] = recipients;
         obj['senders'] = senders;
         obj['timestamp'] = timestamp;
         obj['transactionHash'] = transactionHash;
-        obj['transactionId'] = transactionId;
         obj['fee'] = fee;
         obj['blockchainSpecific'] = blockchainSpecific;
     }
@@ -67,6 +67,9 @@ class ListConfirmedTransactionsByAddressRI {
         if (data) {
             obj = obj || new ListConfirmedTransactionsByAddressRI();
 
+            if (data.hasOwnProperty('transactionId')) {
+                obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
+            }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
@@ -88,9 +91,6 @@ class ListConfirmedTransactionsByAddressRI {
             if (data.hasOwnProperty('transactionHash')) {
                 obj['transactionHash'] = ApiClient.convertToType(data['transactionHash'], 'String');
             }
-            if (data.hasOwnProperty('transactionId')) {
-                obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
-            }
             if (data.hasOwnProperty('fee')) {
                 obj['fee'] = ListConfirmedTransactionsByAddressRIFee.constructFromObject(data['fee']);
             }
@@ -103,6 +103,12 @@ class ListConfirmedTransactionsByAddressRI {
 
 
 }
+
+/**
+ * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+ * @member {String} transactionId
+ */
+ListConfirmedTransactionsByAddressRI.prototype['transactionId'] = undefined;
 
 /**
  * Represents the index position of the transaction in the block.
@@ -145,12 +151,6 @@ ListConfirmedTransactionsByAddressRI.prototype['timestamp'] = undefined;
  * @member {String} transactionHash
  */
 ListConfirmedTransactionsByAddressRI.prototype['transactionHash'] = undefined;
-
-/**
- * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
- * @member {String} transactionId
- */
-ListConfirmedTransactionsByAddressRI.prototype['transactionId'] = undefined;
 
 /**
  * @member {module:model/ListConfirmedTransactionsByAddressRIFee} fee

@@ -17,7 +17,7 @@ import ListTokensByAddressRI from './ListTokensByAddressRI';
 /**
  * The ListTokensByAddressRData model module.
  * @module model/ListTokensByAddressRData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListTokensByAddressRData {
     /**

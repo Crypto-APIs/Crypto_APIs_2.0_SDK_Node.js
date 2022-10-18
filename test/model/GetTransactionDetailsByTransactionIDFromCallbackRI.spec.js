@@ -60,6 +60,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property isConfirmed (base name: "isConfirmed")', function() {
+      // uncomment below and update the code to test the property isConfirmed
+      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDFromCallbackRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property minedInBlockHash (base name: "minedInBlockHash")', function() {
       // uncomment below and update the code to test the property minedInBlockHash
       //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDFromCallbackRI();
@@ -98,12 +104,6 @@
 
     it('should have the property fee (base name: "fee")', function() {
       // uncomment below and update the code to test the property fee
-      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDFromCallbackRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property isConfirmed (base name: "isConfirmed")', function() {
-      // uncomment below and update the code to test the property isConfirmed
       //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDFromCallbackRI();
       //expect(instance).to.be();
     });

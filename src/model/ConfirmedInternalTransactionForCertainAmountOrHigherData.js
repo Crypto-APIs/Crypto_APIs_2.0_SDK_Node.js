@@ -17,7 +17,7 @@ import ConfirmedInternalTransactionForCertainAmountOrHigherDataItem from './Conf
 /**
  * The ConfirmedInternalTransactionForCertainAmountOrHigherData model module.
  * @module model/ConfirmedInternalTransactionForCertainAmountOrHigherData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ConfirmedInternalTransactionForCertainAmountOrHigherData {
     /**

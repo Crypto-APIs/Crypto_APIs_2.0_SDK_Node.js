@@ -91,6 +91,12 @@ import NewConfirmedTokensTransactionsAndEachConfirmationR from '../model/NewConf
 import NewConfirmedTokensTransactionsAndEachConfirmationRB from '../model/NewConfirmedTokensTransactionsAndEachConfirmationRB';
 import NewConfirmedTokensTransactionsR from '../model/NewConfirmedTokensTransactionsR';
 import NewConfirmedTokensTransactionsRB from '../model/NewConfirmedTokensTransactionsRB';
+import NewRevertedBlock400Response from '../model/NewRevertedBlock400Response';
+import NewRevertedBlock401Response from '../model/NewRevertedBlock401Response';
+import NewRevertedBlock403Response from '../model/NewRevertedBlock403Response';
+import NewRevertedBlock409Response from '../model/NewRevertedBlock409Response';
+import NewRevertedBlockR from '../model/NewRevertedBlockR';
+import NewRevertedBlockRB from '../model/NewRevertedBlockRB';
 import NewUnconfirmedCoinsTransactions400Response from '../model/NewUnconfirmedCoinsTransactions400Response';
 import NewUnconfirmedCoinsTransactions401Response from '../model/NewUnconfirmedCoinsTransactions401Response';
 import NewUnconfirmedCoinsTransactions403Response from '../model/NewUnconfirmedCoinsTransactions403Response';
@@ -107,7 +113,7 @@ import NewUnconfirmedTokensTransactionsRB from '../model/NewUnconfirmedTokensTra
 /**
 * CreateSubscriptionsFor service.
 * @module api/CreateSubscriptionsForApi
-* @version 1.8.0
+* @version 1.9.0
 */
 export default class CreateSubscriptionsForApi {
 
@@ -874,6 +880,69 @@ export default class CreateSubscriptionsForApi {
      */
     newConfirmedTokensTransactionsAndEachConfirmation(blockchain, network, opts) {
       return this.newConfirmedTokensTransactionsAndEachConfirmationWithHttpInfo(blockchain, network, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * New Reverted Block
+     * By subscribing to this event, customers will receive callbacks from Crypto APIs every time when a block is reverted on a specific blockchain. This can happen in cases when two blocks are mined at the same time and the nodes cannot agree on which one was first. This occurs as part of the chain reorganization process.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewRevertedBlockRB} opts.newRevertedBlockRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/NewRevertedBlockR} and HTTP response
+     */
+    newRevertedBlockWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      let postBody = opts['newRevertedBlockRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling newRevertedBlock");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling newRevertedBlock");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = NewRevertedBlockR;
+      return this.apiClient.callApi(
+        '/blockchain-events/{blockchain}/{network}/subscriptions/reverted-block', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * New Reverted Block
+     * By subscribing to this event, customers will receive callbacks from Crypto APIs every time when a block is reverted on a specific blockchain. This can happen in cases when two blocks are mined at the same time and the nodes cannot agree on which one was first. This occurs as part of the chain reorganization process.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/NewRevertedBlockRB} opts.newRevertedBlockRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/NewRevertedBlockR}
+     */
+    newRevertedBlock(blockchain, network, opts) {
+      return this.newRevertedBlockWithHttpInfo(blockchain, network, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

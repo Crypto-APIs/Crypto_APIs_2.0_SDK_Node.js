@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ConvertBitcoinCashAddressRI model module.
  * @module model/ConvertBitcoinCashAddressRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ConvertBitcoinCashAddressRI {
     /**

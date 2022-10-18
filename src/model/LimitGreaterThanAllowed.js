@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The LimitGreaterThanAllowed model module.
  * @module model/LimitGreaterThanAllowed
- * @version 1.8.0
+ * @version 1.9.0
  */
 class LimitGreaterThanAllowed {
     /**

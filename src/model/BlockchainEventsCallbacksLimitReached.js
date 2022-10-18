@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The BlockchainEventsCallbacksLimitReached model module.
  * @module model/BlockchainEventsCallbacksLimitReached
- * @version 1.8.0
+ * @version 1.9.0
  */
 class BlockchainEventsCallbacksLimitReached {
     /**

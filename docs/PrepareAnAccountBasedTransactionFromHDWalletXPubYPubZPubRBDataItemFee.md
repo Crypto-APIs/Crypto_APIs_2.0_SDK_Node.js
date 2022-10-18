@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**exactAmount** | **String** | Representation of the exact amount value | [optional] 
-**priority** | **String** | Represents the fee priority | [optional] 
+**exactAmount** | **String** | String representation of the exact amount | [optional] 
+**priority** | **String** | Enum representation of the fee priority | [optional] 
 
 
 

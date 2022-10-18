@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetXRPRippleAddressDetailsE403 model module.
  * @module model/GetXRPRippleAddressDetailsE403
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetXRPRippleAddressDetailsE403 {
     /**

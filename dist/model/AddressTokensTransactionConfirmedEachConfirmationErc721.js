@@ -4,23 +4,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationErc721 model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationErc721
- * @version 1.8.0
- */
-var AddressTokensTransactionConfirmedEachConfirmationErc721 = /*#__PURE__*/function () {
+ * @version 1.9.0
+ */var AddressTokensTransactionConfirmedEachConfirmationErc721 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionConfirmedEachConfirmationErc721</code>.
    * ERC-721
@@ -32,16 +25,14 @@ var AddressTokensTransactionConfirmedEachConfirmationErc721 = /*#__PURE__*/funct
    */
   function AddressTokensTransactionConfirmedEachConfirmationErc721(name, symbol, tokenId, contractAddress) {
     _classCallCheck(this, AddressTokensTransactionConfirmedEachConfirmationErc721);
-
     AddressTokensTransactionConfirmedEachConfirmationErc721.initialize(this, name, symbol, tokenId, contractAddress);
   }
+
   /**
    * Initializes the fields of this object.
    * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
    * Only for internal use.
    */
-
-
   _createClass(AddressTokensTransactionConfirmedEachConfirmationErc721, null, [{
     key: "initialize",
     value: function initialize(obj, name, symbol, tokenId, contractAddress) {
@@ -50,6 +41,7 @@ var AddressTokensTransactionConfirmedEachConfirmationErc721 = /*#__PURE__*/funct
       obj['tokenId'] = tokenId;
       obj['contractAddress'] = contractAddress;
     }
+
     /**
      * Constructs a <code>AddressTokensTransactionConfirmedEachConfirmationErc721</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
@@ -57,60 +49,50 @@ var AddressTokensTransactionConfirmedEachConfirmationErc721 = /*#__PURE__*/funct
      * @param {module:model/AddressTokensTransactionConfirmedEachConfirmationErc721} obj Optional instance to populate.
      * @return {module:model/AddressTokensTransactionConfirmedEachConfirmationErc721} The populated <code>AddressTokensTransactionConfirmedEachConfirmationErc721</code> instance.
      */
-
   }, {
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new AddressTokensTransactionConfirmedEachConfirmationErc721();
-
         if (data.hasOwnProperty('name')) {
           obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
         }
-
         if (data.hasOwnProperty('symbol')) {
           obj['symbol'] = _ApiClient["default"].convertToType(data['symbol'], 'String');
         }
-
         if (data.hasOwnProperty('tokenId')) {
           obj['tokenId'] = _ApiClient["default"].convertToType(data['tokenId'], 'String');
         }
-
         if (data.hasOwnProperty('contractAddress')) {
           obj['contractAddress'] = _ApiClient["default"].convertToType(data['contractAddress'], 'String');
         }
       }
-
       return obj;
     }
   }]);
-
   return AddressTokensTransactionConfirmedEachConfirmationErc721;
-}();
-/**
- * Specifies the name of the token.
- * @member {String} name
- */
-
-
+}(); /**
+      * Specifies the name of the token.
+      * @member {String} name
+      */
 AddressTokensTransactionConfirmedEachConfirmationErc721.prototype['name'] = undefined;
+
 /**
  * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
  * @member {String} symbol
  */
-
 AddressTokensTransactionConfirmedEachConfirmationErc721.prototype['symbol'] = undefined;
+
 /**
  * Specifies the ID of the token.
  * @member {String} tokenId
  */
-
 AddressTokensTransactionConfirmedEachConfirmationErc721.prototype['tokenId'] = undefined;
+
 /**
  * Specifies the address of the contract.
  * @member {String} contractAddress
  */
-
 AddressTokensTransactionConfirmedEachConfirmationErc721.prototype['contractAddress'] = undefined;
 var _default = AddressTokensTransactionConfirmedEachConfirmationErc721;
 exports["default"] = _default;

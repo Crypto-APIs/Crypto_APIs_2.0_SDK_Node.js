@@ -17,7 +17,7 @@ import NewConfirmedTokensTransactionsAndEachConfirmationE409 from './NewConfirme
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmation409Response model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmation409Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class NewConfirmedTokensTransactionsAndEachConfirmation409Response {
     /**

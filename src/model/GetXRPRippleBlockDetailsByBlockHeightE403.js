@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetXRPRippleBlockDetailsByBlockHeightE403 model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeightE403
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetXRPRippleBlockDetailsByBlockHeightE403 {
     /**

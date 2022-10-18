@@ -54,14 +54,20 @@
       //expect(instance).to.be.a(Cryptoapis.GetWalletTransactionDetailsByTransactionIDRI);
     });
 
-    it('should have the property index (base name: "index")', function() {
-      // uncomment below and update the code to test the property index
+    it('should have the property isConfirmed (base name: "isConfirmed")', function() {
+      // uncomment below and update the code to test the property isConfirmed
       //var instance = new Cryptoapis.GetWalletTransactionDetailsByTransactionIDRI();
       //expect(instance).to.be();
     });
 
-    it('should have the property isConfirmed (base name: "isConfirmed")', function() {
-      // uncomment below and update the code to test the property isConfirmed
+    it('should have the property transactionId (base name: "transactionId")', function() {
+      // uncomment below and update the code to test the property transactionId
+      //var instance = new Cryptoapis.GetWalletTransactionDetailsByTransactionIDRI();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property index (base name: "index")', function() {
+      // uncomment below and update the code to test the property index
       //var instance = new Cryptoapis.GetWalletTransactionDetailsByTransactionIDRI();
       //expect(instance).to.be();
     });
@@ -98,12 +104,6 @@
 
     it('should have the property transactionHash (base name: "transactionHash")', function() {
       // uncomment below and update the code to test the property transactionHash
-      //var instance = new Cryptoapis.GetWalletTransactionDetailsByTransactionIDRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property transactionId (base name: "transactionId")', function() {
-      // uncomment below and update the code to test the property transactionId
       //var instance = new Cryptoapis.GetWalletTransactionDetailsByTransactionIDRI();
       //expect(instance).to.be();
     });

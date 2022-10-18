@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetFeeRecommendationsE401 model module.
  * @module model/GetFeeRecommendationsE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetFeeRecommendationsE401 {
     /**

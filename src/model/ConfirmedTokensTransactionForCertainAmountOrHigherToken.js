@@ -19,7 +19,7 @@ import ConfirmedTokensTransactionForCertainAmountOrHigherErc721 from './Confirme
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherToken model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherToken
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ConfirmedTokensTransactionForCertainAmountOrHigherToken {
     /**

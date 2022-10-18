@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionUnconfirmedErc20 model module.
  * @module model/AddressTokensTransactionUnconfirmedErc20
- * @version 1.8.0
+ * @version 1.9.0
  */
 class AddressTokensTransactionUnconfirmedErc20 {
     /**

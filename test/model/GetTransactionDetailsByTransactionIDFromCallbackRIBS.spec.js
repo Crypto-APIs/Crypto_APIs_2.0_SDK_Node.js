@@ -288,18 +288,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property gas (base name: "gas")', function() {
-      // uncomment below and update the code to test the property gas
-      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDFromCallbackRIBS();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property txid (base name: "txid")', function() {
-      // uncomment below and update the code to test the property txid
-      //var instance = new Cryptoapis.GetTransactionDetailsByTransactionIDFromCallbackRIBS();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

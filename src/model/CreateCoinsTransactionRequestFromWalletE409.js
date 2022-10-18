@@ -21,7 +21,7 @@ import WalletAsAServiceWalletBalanceNotEnough from './WalletAsAServiceWalletBala
 /**
  * The CreateCoinsTransactionRequestFromWalletE409 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE409
- * @version 1.8.0
+ * @version 1.9.0
  */
 class CreateCoinsTransactionRequestFromWalletE409 {
     /**

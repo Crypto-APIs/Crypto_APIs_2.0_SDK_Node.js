@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListUnspentTransactionOutputsByAddressRI model module.
  * @module model/ListUnspentTransactionOutputsByAddressRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListUnspentTransactionOutputsByAddressRI {
     /**
@@ -25,13 +25,14 @@ class ListUnspentTransactionOutputsByAddressRI {
      * @param address {String} Represents the address that has unspend funds per which the result is returned.
      * @param amount {String} Represents the sent/received amount.
      * @param index {Number} Represents the index position of the transaction in the block.
+     * @param isAvailable {Boolean} Represents if the UTXO has been used from another unconfirmed transaction. If it is - the value will be \"false\".
      * @param isConfirmed {Boolean} Represents the state of the transaction whether it is confirmed or not confirmed.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      */
-    constructor(address, amount, index, isConfirmed, timestamp, transactionId) { 
+    constructor(address, amount, index, isAvailable, isConfirmed, timestamp, transactionId) { 
         
-        ListUnspentTransactionOutputsByAddressRI.initialize(this, address, amount, index, isConfirmed, timestamp, transactionId);
+        ListUnspentTransactionOutputsByAddressRI.initialize(this, address, amount, index, isAvailable, isConfirmed, timestamp, transactionId);
     }
 
     /**
@@ -39,10 +40,11 @@ class ListUnspentTransactionOutputsByAddressRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, address, amount, index, isConfirmed, timestamp, transactionId) { 
+    static initialize(obj, address, amount, index, isAvailable, isConfirmed, timestamp, transactionId) { 
         obj['address'] = address;
         obj['amount'] = amount;
         obj['index'] = index;
+        obj['isAvailable'] = isAvailable;
         obj['isConfirmed'] = isConfirmed;
         obj['timestamp'] = timestamp;
         obj['transactionId'] = transactionId;
@@ -67,6 +69,9 @@ class ListUnspentTransactionOutputsByAddressRI {
             }
             if (data.hasOwnProperty('index')) {
                 obj['index'] = ApiClient.convertToType(data['index'], 'Number');
+            }
+            if (data.hasOwnProperty('isAvailable')) {
+                obj['isAvailable'] = ApiClient.convertToType(data['isAvailable'], 'Boolean');
             }
             if (data.hasOwnProperty('isConfirmed')) {
                 obj['isConfirmed'] = ApiClient.convertToType(data['isConfirmed'], 'Boolean');
@@ -101,6 +106,12 @@ ListUnspentTransactionOutputsByAddressRI.prototype['amount'] = undefined;
  * @member {Number} index
  */
 ListUnspentTransactionOutputsByAddressRI.prototype['index'] = undefined;
+
+/**
+ * Represents if the UTXO has been used from another unconfirmed transaction. If it is - the value will be \"false\".
+ * @member {Boolean} isAvailable
+ */
+ListUnspentTransactionOutputsByAddressRI.prototype['isAvailable'] = undefined;
 
 /**
  * Represents the state of the transaction whether it is confirmed or not confirmed.

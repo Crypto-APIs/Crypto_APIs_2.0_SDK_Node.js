@@ -16,14 +16,14 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner
- * @version 1.8.0
+ * @version 1.9.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner {
     /**
      * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner</code>.
      * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner
-     * @param address {String} The address which receives this transaction. In UTXO-based protocols like Bitcoin there could be several senders while in account-based protocols like Ethereum there is always only one recipient.
-     * @param amount {String} Represents the amount value
+     * @param address {String} Representation of the receiver address
+     * @param amount {String} Representation of the amount
      */
     constructor(address, amount) { 
         
@@ -65,13 +65,13 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsIn
 }
 
 /**
- * The address which receives this transaction. In UTXO-based protocols like Bitcoin there could be several senders while in account-based protocols like Ethereum there is always only one recipient.
+ * Representation of the receiver address
  * @member {String} address
  */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner.prototype['address'] = undefined;
 
 /**
- * Represents the amount value
+ * Representation of the amount
  * @member {String} amount
  */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner.prototype['amount'] = undefined;

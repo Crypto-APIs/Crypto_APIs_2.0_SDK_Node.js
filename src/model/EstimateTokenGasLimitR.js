@@ -17,7 +17,7 @@ import EstimateTokenGasLimitRData from './EstimateTokenGasLimitRData';
 /**
  * The EstimateTokenGasLimitR model module.
  * @module model/EstimateTokenGasLimitR
- * @version 1.8.0
+ * @version 1.9.0
  */
 class EstimateTokenGasLimitR {
     /**

@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The EncodeXAddressE401 model module.
  * @module model/EncodeXAddressE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class EncodeXAddressE401 {
     /**

@@ -22,7 +22,7 @@ import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './Wal
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE403 model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE403
- * @version 1.8.0
+ * @version 1.9.0
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE403 {
     /**

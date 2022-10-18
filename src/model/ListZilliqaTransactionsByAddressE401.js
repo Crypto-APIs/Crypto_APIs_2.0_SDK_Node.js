@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListZilliqaTransactionsByAddressE401 model module.
  * @module model/ListZilliqaTransactionsByAddressE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListZilliqaTransactionsByAddressE401 {
     /**

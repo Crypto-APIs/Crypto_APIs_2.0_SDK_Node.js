@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListTokensByAddressE401 model module.
  * @module model/ListTokensByAddressE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListTokensByAddressE401 {
     /**

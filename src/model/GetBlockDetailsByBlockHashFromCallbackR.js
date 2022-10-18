@@ -17,7 +17,7 @@ import GetBlockDetailsByBlockHashFromCallbackRData from './GetBlockDetailsByBloc
 /**
  * The GetBlockDetailsByBlockHashFromCallbackR model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackR
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetBlockDetailsByBlockHashFromCallbackR {
     /**

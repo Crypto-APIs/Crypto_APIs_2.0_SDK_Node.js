@@ -17,7 +17,7 @@ import AddressInternalTransactionConfirmedDataItem from './AddressInternalTransa
 /**
  * The AddressInternalTransactionConfirmedData model module.
  * @module model/AddressInternalTransactionConfirmedData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class AddressInternalTransactionConfirmedData {
     /**

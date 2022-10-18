@@ -4,25 +4,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-
 var _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE = _interopRequireDefault(require("./PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response
- * @version 1.8.0
- */
-var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response = /*#__PURE__*/function () {
+ * @version 1.9.0
+ */var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response</code>.
    * @alias module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response
@@ -32,16 +24,14 @@ var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response = /*#__P
    */
   function PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response(apiVersion, requestId, error) {
     _classCallCheck(this, PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response);
-
     PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response.initialize(this, apiVersion, requestId, error);
   }
+
   /**
    * Initializes the fields of this object.
    * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
    * Only for internal use.
    */
-
-
   _createClass(PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response, null, [{
     key: "initialize",
     value: function initialize(obj, apiVersion, requestId, error) {
@@ -49,6 +39,7 @@ var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response = /*#__P
       obj['requestId'] = requestId;
       obj['error'] = error;
     }
+
     /**
      * Constructs a <code>PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
@@ -56,59 +47,49 @@ var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response = /*#__P
      * @param {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response} obj Optional instance to populate.
      * @return {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response} The populated <code>PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response</code> instance.
      */
-
   }, {
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response();
-
         if (data.hasOwnProperty('apiVersion')) {
           obj['apiVersion'] = _ApiClient["default"].convertToType(data['apiVersion'], 'String');
         }
-
         if (data.hasOwnProperty('requestId')) {
           obj['requestId'] = _ApiClient["default"].convertToType(data['requestId'], 'String');
         }
-
         if (data.hasOwnProperty('context')) {
           obj['context'] = _ApiClient["default"].convertToType(data['context'], 'String');
         }
-
         if (data.hasOwnProperty('error')) {
           obj['error'] = _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE["default"].constructFromObject(data['error']);
         }
       }
-
       return obj;
     }
   }]);
-
   return PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response;
-}();
-/**
- * Specifies the version of the API that incorporates this endpoint.
- * @member {String} apiVersion
- */
-
-
+}(); /**
+      * Specifies the version of the API that incorporates this endpoint.
+      * @member {String} apiVersion
+      */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response.prototype['apiVersion'] = undefined;
+
 /**
  * Defines the ID of the request. The `requestId` is generated by Crypto APIs and it's unique for every request.
  * @member {String} requestId
  */
-
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response.prototype['requestId'] = undefined;
+
 /**
  * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
  * @member {String} context
  */
-
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response.prototype['context'] = undefined;
+
 /**
  * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401} error
  */
-
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response.prototype['error'] = undefined;
 var _default = PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response;
 exports["default"] = _default;

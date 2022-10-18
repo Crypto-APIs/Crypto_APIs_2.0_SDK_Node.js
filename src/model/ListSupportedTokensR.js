@@ -17,7 +17,7 @@ import ListSupportedTokensRData from './ListSupportedTokensRData';
 /**
  * The ListSupportedTokensR model module.
  * @module model/ListSupportedTokensR
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListSupportedTokensR {
     /**

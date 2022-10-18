@@ -17,7 +17,7 @@ import ListAllAssetsByWalletIDE400 from './ListAllAssetsByWalletIDE400';
 /**
  * The ListAllAssetsByWalletID400Response model module.
  * @module model/ListAllAssetsByWalletID400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListAllAssetsByWalletID400Response {
     /**

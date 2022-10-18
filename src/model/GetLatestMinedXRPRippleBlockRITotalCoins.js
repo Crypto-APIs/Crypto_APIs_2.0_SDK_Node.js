@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetLatestMinedXRPRippleBlockRITotalCoins model module.
  * @module model/GetLatestMinedXRPRippleBlockRITotalCoins
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetLatestMinedXRPRippleBlockRITotalCoins {
     /**

@@ -17,7 +17,7 @@ import ListCoinsForwardingAutomationsRI from './ListCoinsForwardingAutomationsRI
 /**
  * The ListCoinsForwardingAutomationsRData model module.
  * @module model/ListCoinsForwardingAutomationsRData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListCoinsForwardingAutomationsRData {
     /**

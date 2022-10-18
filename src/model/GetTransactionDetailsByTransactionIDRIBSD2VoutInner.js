@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSD2VoutInnerScriptPubKey from './G
 /**
  * The GetTransactionDetailsByTransactionIDRIBSD2VoutInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetTransactionDetailsByTransactionIDRIBSD2VoutInner {
     /**

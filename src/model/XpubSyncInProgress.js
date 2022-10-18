@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The XpubSyncInProgress model module.
  * @module model/XpubSyncInProgress
- * @version 1.8.0
+ * @version 1.9.0
  */
 class XpubSyncInProgress {
     /**

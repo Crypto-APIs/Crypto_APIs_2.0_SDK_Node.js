@@ -17,7 +17,7 @@ import ConvertBitcoinCashAddressRBData from './ConvertBitcoinCashAddressRBData';
 /**
  * The ConvertBitcoinCashAddressRB model module.
  * @module model/ConvertBitcoinCashAddressRB
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ConvertBitcoinCashAddressRB {
     /**

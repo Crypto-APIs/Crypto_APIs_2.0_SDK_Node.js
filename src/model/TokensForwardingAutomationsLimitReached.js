@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The TokensForwardingAutomationsLimitReached model module.
  * @module model/TokensForwardingAutomationsLimitReached
- * @version 1.8.0
+ * @version 1.9.0
  */
 class TokensForwardingAutomationsLimitReached {
     /**

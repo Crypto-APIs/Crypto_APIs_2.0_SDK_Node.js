@@ -17,7 +17,7 @@ import NewConfirmedTokensTransactionsE403 from './NewConfirmedTokensTransactions
 /**
  * The NewConfirmedTokensTransactions403Response model module.
  * @module model/NewConfirmedTokensTransactions403Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class NewConfirmedTokensTransactions403Response {
     /**

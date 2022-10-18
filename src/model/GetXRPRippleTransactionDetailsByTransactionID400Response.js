@@ -17,7 +17,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDE400 from './GetXRPRippleTra
 /**
  * The GetXRPRippleTransactionDetailsByTransactionID400Response model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionID400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetXRPRippleTransactionDetailsByTransactionID400Response {
     /**

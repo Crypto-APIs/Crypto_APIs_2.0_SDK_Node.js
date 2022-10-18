@@ -17,7 +17,7 @@ import DecodeRawTransactionHexRBData from './DecodeRawTransactionHexRBData';
 /**
  * The DecodeRawTransactionHexRB model module.
  * @module model/DecodeRawTransactionHexRB
- * @version 1.8.0
+ * @version 1.9.0
  */
 class DecodeRawTransactionHexRB {
     /**

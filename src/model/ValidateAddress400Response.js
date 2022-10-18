@@ -17,7 +17,7 @@ import ValidateAddressE400 from './ValidateAddressE400';
 /**
  * The ValidateAddress400Response model module.
  * @module model/ValidateAddress400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ValidateAddress400Response {
     /**

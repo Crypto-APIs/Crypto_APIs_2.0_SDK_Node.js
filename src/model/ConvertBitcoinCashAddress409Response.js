@@ -17,7 +17,7 @@ import InvalidData from './InvalidData';
 /**
  * The ConvertBitcoinCashAddress409Response model module.
  * @module model/ConvertBitcoinCashAddress409Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ConvertBitcoinCashAddress409Response {
     /**

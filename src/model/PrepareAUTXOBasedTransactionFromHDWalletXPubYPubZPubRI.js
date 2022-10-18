@@ -12,13 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner from './PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner';
-import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner from './PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS from './PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS';
 
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI {
     /**
@@ -26,14 +25,12 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI {
      * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI
      * @param fee {String} When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
      * @param locktime {Number} Represents the time at which a particular transaction can be added to the blockchain.
-     * @param replaceable {Boolean} Representation of whether the transaction is replaceable
      * @param size {Number} Represents the total size of this transaction.
-     * @param vin {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner>} Represents the transaction outputs.
+     * @param blockchainSpecific {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS} 
      */
-    constructor(fee, locktime, replaceable, size, vin, vout) { 
+    constructor(fee, locktime, size, blockchainSpecific) { 
         
-        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.initialize(this, fee, locktime, replaceable, size, vin, vout);
+        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.initialize(this, fee, locktime, size, blockchainSpecific);
     }
 
     /**
@@ -41,13 +38,11 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, fee, locktime, replaceable, size, vin, vout) { 
+    static initialize(obj, fee, locktime, size, blockchainSpecific) { 
         obj['fee'] = fee;
         obj['locktime'] = locktime;
-        obj['replaceable'] = replaceable;
         obj['size'] = size;
-        obj['vin'] = vin;
-        obj['vout'] = vout;
+        obj['blockchainSpecific'] = blockchainSpecific;
     }
 
     /**
@@ -73,17 +68,11 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI {
             if (data.hasOwnProperty('locktime')) {
                 obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
             }
-            if (data.hasOwnProperty('replaceable')) {
-                obj['replaceable'] = ApiClient.convertToType(data['replaceable'], 'Boolean');
-            }
             if (data.hasOwnProperty('size')) {
                 obj['size'] = ApiClient.convertToType(data['size'], 'Number');
             }
-            if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner]);
-            }
-            if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner]);
+            if (data.hasOwnProperty('blockchainSpecific')) {
+                obj['blockchainSpecific'] = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.constructFromObject(data['blockchainSpecific']);
             }
         }
         return obj;
@@ -117,28 +106,15 @@ PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['feePerByte'] =
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['locktime'] = undefined;
 
 /**
- * Representation of whether the transaction is replaceable
- * @member {Boolean} replaceable
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['replaceable'] = undefined;
-
-/**
  * Represents the total size of this transaction.
  * @member {Number} size
  */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['size'] = undefined;
 
 /**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner>} vin
+ * @member {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS} blockchainSpecific
  */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['vin'] = undefined;
-
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner>} vout
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['vout'] = undefined;
+PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['blockchainSpecific'] = undefined;
 
 
 

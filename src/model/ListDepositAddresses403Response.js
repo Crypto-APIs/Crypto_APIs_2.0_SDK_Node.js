@@ -17,7 +17,7 @@ import ListDepositAddressesE403 from './ListDepositAddressesE403';
 /**
  * The ListDepositAddresses403Response model module.
  * @module model/ListDepositAddresses403Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListDepositAddresses403Response {
     /**

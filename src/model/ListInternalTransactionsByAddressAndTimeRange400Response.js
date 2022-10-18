@@ -17,7 +17,7 @@ import ListInternalTransactionsByAddressAndTimeRangeE400 from './ListInternalTra
 /**
  * The ListInternalTransactionsByAddressAndTimeRange400Response model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRange400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListInternalTransactionsByAddressAndTimeRange400Response {
     /**

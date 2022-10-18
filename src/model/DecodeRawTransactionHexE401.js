@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The DecodeRawTransactionHexE401 model module.
  * @module model/DecodeRawTransactionHexE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class DecodeRawTransactionHexE401 {
     /**

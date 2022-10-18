@@ -17,7 +17,7 @@ import GetAddressBalanceRData from './GetAddressBalanceRData';
 /**
  * The GetAddressBalanceR model module.
  * @module model/GetAddressBalanceR
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetAddressBalanceR {
     /**

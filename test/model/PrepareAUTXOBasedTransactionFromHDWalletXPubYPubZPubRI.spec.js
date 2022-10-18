@@ -78,26 +78,14 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property replaceable (base name: "replaceable")', function() {
-      // uncomment below and update the code to test the property replaceable
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI();
-      //expect(instance).to.be();
-    });
-
     it('should have the property size (base name: "size")', function() {
       // uncomment below and update the code to test the property size
       //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI();
       //expect(instance).to.be();
     });
 
-    it('should have the property vin (base name: "vin")', function() {
-      // uncomment below and update the code to test the property vin
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property vout (base name: "vout")', function() {
-      // uncomment below and update the code to test the property vout
+    it('should have the property blockchainSpecific (base name: "blockchainSpecific")', function() {
+      // uncomment below and update the code to test the property blockchainSpecific
       //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI();
       //expect(instance).to.be();
     });

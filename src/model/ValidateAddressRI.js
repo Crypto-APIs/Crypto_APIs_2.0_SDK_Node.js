@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ValidateAddressRI model module.
  * @module model/ValidateAddressRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ValidateAddressRI {
     /**

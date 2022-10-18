@@ -108,6 +108,9 @@ import BlockHeightReachedRI from './model/BlockHeightReachedRI';
 import BlockMined from './model/BlockMined';
 import BlockMinedData from './model/BlockMinedData';
 import BlockMinedDataItem from './model/BlockMinedDataItem';
+import BlockReverted from './model/BlockReverted';
+import BlockRevertedData from './model/BlockRevertedData';
+import BlockRevertedDataItem from './model/BlockRevertedDataItem';
 import BlockchainDataAddressEventSubscriptionNotFound from './model/BlockchainDataAddressEventSubscriptionNotFound';
 import BlockchainDataBlockNotFound from './model/BlockchainDataBlockNotFound';
 import BlockchainDataInternalTransactionNotFound from './model/BlockchainDataInternalTransactionNotFound';
@@ -286,7 +289,18 @@ import CreateFungibleTokensTransactionRequestFromAddressRI from './model/CreateF
 import CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner from './model/CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner';
 import CreateFungibleTokensTransactionRequestFromAddressRIS from './model/CreateFungibleTokensTransactionRequestFromAddressRIS';
 import CreateFungibleTokensTransactionRequestFromAddressRISE from './model/CreateFungibleTokensTransactionRequestFromAddressRISE';
-import CreateFungibleTokensTransactionRequestFromAddressRISenders from './model/CreateFungibleTokensTransactionRequestFromAddressRISenders';
+import CreateNewMasterWallet400Response from './model/CreateNewMasterWallet400Response';
+import CreateNewMasterWallet401Response from './model/CreateNewMasterWallet401Response';
+import CreateNewMasterWallet403Response from './model/CreateNewMasterWallet403Response';
+import CreateNewMasterWalletE400 from './model/CreateNewMasterWalletE400';
+import CreateNewMasterWalletE401 from './model/CreateNewMasterWalletE401';
+import CreateNewMasterWalletE403 from './model/CreateNewMasterWalletE403';
+import CreateNewMasterWalletR from './model/CreateNewMasterWalletR';
+import CreateNewMasterWalletRB from './model/CreateNewMasterWalletRB';
+import CreateNewMasterWalletRBData from './model/CreateNewMasterWalletRBData';
+import CreateNewMasterWalletRBDataItem from './model/CreateNewMasterWalletRBDataItem';
+import CreateNewMasterWalletRData from './model/CreateNewMasterWalletRData';
+import CreateNewMasterWalletRI from './model/CreateNewMasterWalletRI';
 import CreateSingleTransactionRequestFromAddressWithoutFeePriority400Response from './model/CreateSingleTransactionRequestFromAddressWithoutFeePriority400Response';
 import CreateSingleTransactionRequestFromAddressWithoutFeePriority401Response from './model/CreateSingleTransactionRequestFromAddressWithoutFeePriority401Response';
 import CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response from './model/CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response';
@@ -605,7 +619,6 @@ import GetBlockDetailsByBlockHeightFromCallbackRIBSD2 from './model/GetBlockDeta
 import GetBlockDetailsByBlockHeightFromCallbackRIBSE from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSE';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSEC from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSEC';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSL from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSL';
-import GetBlockDetailsByBlockHeightFromCallbackRIBSP from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSP';
 import GetBlockDetailsByBlockHeightFromCallbackRIBST from './model/GetBlockDetailsByBlockHeightFromCallbackRIBST';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSX from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSX';
 import GetBlockDetailsByBlockHeightFromCallbackRIBSZ from './model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ';
@@ -827,7 +840,6 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSEC from './model/GetT
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSL from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSL';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInner from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInner';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInnerScriptPubKey from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInnerScriptPubKey';
-import GetTransactionDetailsByTransactionIDFromCallbackRIBSP from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSP';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBST from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBST';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed';
 import GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed from './model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed';
@@ -942,12 +954,12 @@ import GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice from './model/Get
 import GetWalletTransactionDetailsByTransactionIDRIBSL from './model/GetWalletTransactionDetailsByTransactionIDRIBSL';
 import GetWalletTransactionDetailsByTransactionIDRIBSLVinInner from './model/GetWalletTransactionDetailsByTransactionIDRIBSLVinInner';
 import GetWalletTransactionDetailsByTransactionIDRIBSLVinInnerScriptSig from './model/GetWalletTransactionDetailsByTransactionIDRIBSLVinInnerScriptSig';
-import GetWalletTransactionDetailsByTransactionIDRIBSP from './model/GetWalletTransactionDetailsByTransactionIDRIBSP';
-import GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice from './model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice';
 import GetWalletTransactionDetailsByTransactionIDRIBST from './model/GetWalletTransactionDetailsByTransactionIDRIBST';
 import GetWalletTransactionDetailsByTransactionIDRIBSZ from './model/GetWalletTransactionDetailsByTransactionIDRIBSZ';
 import GetWalletTransactionDetailsByTransactionIDRIBSZVinInner from './model/GetWalletTransactionDetailsByTransactionIDRIBSZVinInner';
 import GetWalletTransactionDetailsByTransactionIDRIFee from './model/GetWalletTransactionDetailsByTransactionIDRIFee';
+import GetWalletTransactionDetailsByTransactionIDRIRecipientsInner from './model/GetWalletTransactionDetailsByTransactionIDRIRecipientsInner';
+import GetWalletTransactionDetailsByTransactionIDRISendersInner from './model/GetWalletTransactionDetailsByTransactionIDRISendersInner';
 import GetXRPRippleAddressDetails400Response from './model/GetXRPRippleAddressDetails400Response';
 import GetXRPRippleAddressDetails401Response from './model/GetXRPRippleAddressDetails401Response';
 import GetXRPRippleAddressDetails403Response from './model/GetXRPRippleAddressDetails403Response';
@@ -1694,6 +1706,20 @@ import NewConfirmedTokensTransactionsRBData from './model/NewConfirmedTokensTran
 import NewConfirmedTokensTransactionsRBDataItem from './model/NewConfirmedTokensTransactionsRBDataItem';
 import NewConfirmedTokensTransactionsRData from './model/NewConfirmedTokensTransactionsRData';
 import NewConfirmedTokensTransactionsRI from './model/NewConfirmedTokensTransactionsRI';
+import NewRevertedBlock400Response from './model/NewRevertedBlock400Response';
+import NewRevertedBlock401Response from './model/NewRevertedBlock401Response';
+import NewRevertedBlock403Response from './model/NewRevertedBlock403Response';
+import NewRevertedBlock409Response from './model/NewRevertedBlock409Response';
+import NewRevertedBlockE400 from './model/NewRevertedBlockE400';
+import NewRevertedBlockE401 from './model/NewRevertedBlockE401';
+import NewRevertedBlockE403 from './model/NewRevertedBlockE403';
+import NewRevertedBlockE409 from './model/NewRevertedBlockE409';
+import NewRevertedBlockR from './model/NewRevertedBlockR';
+import NewRevertedBlockRB from './model/NewRevertedBlockRB';
+import NewRevertedBlockRBData from './model/NewRevertedBlockRBData';
+import NewRevertedBlockRBDataItem from './model/NewRevertedBlockRBDataItem';
+import NewRevertedBlockRData from './model/NewRevertedBlockRData';
+import NewRevertedBlockRI from './model/NewRevertedBlockRI';
 import NewUnconfirmedCoinsTransactions400Response from './model/NewUnconfirmedCoinsTransactions400Response';
 import NewUnconfirmedCoinsTransactions401Response from './model/NewUnconfirmedCoinsTransactions401Response';
 import NewUnconfirmedCoinsTransactions403Response from './model/NewUnconfirmedCoinsTransactions403Response';
@@ -1736,8 +1762,25 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee from '.
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI';
-import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner';
-import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVinInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVoutInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2 from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VinInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VoutInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVinInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVoutInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVinInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner';
+import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner';
 import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response';
 import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response';
 import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response';
@@ -1751,7 +1794,13 @@ import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem from '
 import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee';
 import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData';
 import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSC from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSC';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSCFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSCFee';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSE from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSE';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEC from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEC';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSECFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSECFee';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEFee';
 import RequestLimitReached from './model/RequestLimitReached';
 import ResourceNotFound from './model/ResourceNotFound';
 import SyncHDWalletXPubYPubZPub400Response from './model/SyncHDWalletXPubYPubZPub400Response';
@@ -1835,6 +1884,7 @@ import WalletAsAServiceNoDepositAddressesFound from './model/WalletAsAServiceNoD
 import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './model/WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType';
 import WalletAsAServiceTokenNotSupported from './model/WalletAsAServiceTokenNotSupported';
 import WalletAsAServiceWalletBalanceNotEnough from './model/WalletAsAServiceWalletBalanceNotEnough';
+import WalletAsAServiceWalletsLimitReached from './model/WalletAsAServiceWalletsLimitReached';
 import XpubNotSynced from './model/XpubNotSynced';
 import XpubSyncInProgress from './model/XpubSyncInProgress';
 import AssetsApi from './api/AssetsApi';
@@ -1886,7 +1936,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.8.0
+* @version 1.9.0
 */
 export {
     /**
@@ -2464,6 +2514,24 @@ export {
      * @property {module:model/BlockMinedDataItem}
      */
     BlockMinedDataItem,
+
+    /**
+     * The BlockReverted model constructor.
+     * @property {module:model/BlockReverted}
+     */
+    BlockReverted,
+
+    /**
+     * The BlockRevertedData model constructor.
+     * @property {module:model/BlockRevertedData}
+     */
+    BlockRevertedData,
+
+    /**
+     * The BlockRevertedDataItem model constructor.
+     * @property {module:model/BlockRevertedDataItem}
+     */
+    BlockRevertedDataItem,
 
     /**
      * The BlockchainDataAddressEventSubscriptionNotFound model constructor.
@@ -3534,10 +3602,76 @@ export {
     CreateFungibleTokensTransactionRequestFromAddressRISE,
 
     /**
-     * The CreateFungibleTokensTransactionRequestFromAddressRISenders model constructor.
-     * @property {module:model/CreateFungibleTokensTransactionRequestFromAddressRISenders}
+     * The CreateNewMasterWallet400Response model constructor.
+     * @property {module:model/CreateNewMasterWallet400Response}
      */
-    CreateFungibleTokensTransactionRequestFromAddressRISenders,
+    CreateNewMasterWallet400Response,
+
+    /**
+     * The CreateNewMasterWallet401Response model constructor.
+     * @property {module:model/CreateNewMasterWallet401Response}
+     */
+    CreateNewMasterWallet401Response,
+
+    /**
+     * The CreateNewMasterWallet403Response model constructor.
+     * @property {module:model/CreateNewMasterWallet403Response}
+     */
+    CreateNewMasterWallet403Response,
+
+    /**
+     * The CreateNewMasterWalletE400 model constructor.
+     * @property {module:model/CreateNewMasterWalletE400}
+     */
+    CreateNewMasterWalletE400,
+
+    /**
+     * The CreateNewMasterWalletE401 model constructor.
+     * @property {module:model/CreateNewMasterWalletE401}
+     */
+    CreateNewMasterWalletE401,
+
+    /**
+     * The CreateNewMasterWalletE403 model constructor.
+     * @property {module:model/CreateNewMasterWalletE403}
+     */
+    CreateNewMasterWalletE403,
+
+    /**
+     * The CreateNewMasterWalletR model constructor.
+     * @property {module:model/CreateNewMasterWalletR}
+     */
+    CreateNewMasterWalletR,
+
+    /**
+     * The CreateNewMasterWalletRB model constructor.
+     * @property {module:model/CreateNewMasterWalletRB}
+     */
+    CreateNewMasterWalletRB,
+
+    /**
+     * The CreateNewMasterWalletRBData model constructor.
+     * @property {module:model/CreateNewMasterWalletRBData}
+     */
+    CreateNewMasterWalletRBData,
+
+    /**
+     * The CreateNewMasterWalletRBDataItem model constructor.
+     * @property {module:model/CreateNewMasterWalletRBDataItem}
+     */
+    CreateNewMasterWalletRBDataItem,
+
+    /**
+     * The CreateNewMasterWalletRData model constructor.
+     * @property {module:model/CreateNewMasterWalletRData}
+     */
+    CreateNewMasterWalletRData,
+
+    /**
+     * The CreateNewMasterWalletRI model constructor.
+     * @property {module:model/CreateNewMasterWalletRI}
+     */
+    CreateNewMasterWalletRI,
 
     /**
      * The CreateSingleTransactionRequestFromAddressWithoutFeePriority400Response model constructor.
@@ -5448,12 +5582,6 @@ export {
     GetBlockDetailsByBlockHeightFromCallbackRIBSL,
 
     /**
-     * The GetBlockDetailsByBlockHeightFromCallbackRIBSP model constructor.
-     * @property {module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSP}
-     */
-    GetBlockDetailsByBlockHeightFromCallbackRIBSP,
-
-    /**
      * The GetBlockDetailsByBlockHeightFromCallbackRIBST model constructor.
      * @property {module:model/GetBlockDetailsByBlockHeightFromCallbackRIBST}
      */
@@ -6780,12 +6908,6 @@ export {
     GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInnerScriptPubKey,
 
     /**
-     * The GetTransactionDetailsByTransactionIDFromCallbackRIBSP model constructor.
-     * @property {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSP}
-     */
-    GetTransactionDetailsByTransactionIDFromCallbackRIBSP,
-
-    /**
      * The GetTransactionDetailsByTransactionIDFromCallbackRIBST model constructor.
      * @property {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBST}
      */
@@ -7470,18 +7592,6 @@ export {
     GetWalletTransactionDetailsByTransactionIDRIBSLVinInnerScriptSig,
 
     /**
-     * The GetWalletTransactionDetailsByTransactionIDRIBSP model constructor.
-     * @property {module:model/GetWalletTransactionDetailsByTransactionIDRIBSP}
-     */
-    GetWalletTransactionDetailsByTransactionIDRIBSP,
-
-    /**
-     * The GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice model constructor.
-     * @property {module:model/GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice}
-     */
-    GetWalletTransactionDetailsByTransactionIDRIBSPGasPrice,
-
-    /**
      * The GetWalletTransactionDetailsByTransactionIDRIBST model constructor.
      * @property {module:model/GetWalletTransactionDetailsByTransactionIDRIBST}
      */
@@ -7504,6 +7614,18 @@ export {
      * @property {module:model/GetWalletTransactionDetailsByTransactionIDRIFee}
      */
     GetWalletTransactionDetailsByTransactionIDRIFee,
+
+    /**
+     * The GetWalletTransactionDetailsByTransactionIDRIRecipientsInner model constructor.
+     * @property {module:model/GetWalletTransactionDetailsByTransactionIDRIRecipientsInner}
+     */
+    GetWalletTransactionDetailsByTransactionIDRIRecipientsInner,
+
+    /**
+     * The GetWalletTransactionDetailsByTransactionIDRISendersInner model constructor.
+     * @property {module:model/GetWalletTransactionDetailsByTransactionIDRISendersInner}
+     */
+    GetWalletTransactionDetailsByTransactionIDRISendersInner,
 
     /**
      * The GetXRPRippleAddressDetails400Response model constructor.
@@ -11982,6 +12104,90 @@ export {
     NewConfirmedTokensTransactionsRI,
 
     /**
+     * The NewRevertedBlock400Response model constructor.
+     * @property {module:model/NewRevertedBlock400Response}
+     */
+    NewRevertedBlock400Response,
+
+    /**
+     * The NewRevertedBlock401Response model constructor.
+     * @property {module:model/NewRevertedBlock401Response}
+     */
+    NewRevertedBlock401Response,
+
+    /**
+     * The NewRevertedBlock403Response model constructor.
+     * @property {module:model/NewRevertedBlock403Response}
+     */
+    NewRevertedBlock403Response,
+
+    /**
+     * The NewRevertedBlock409Response model constructor.
+     * @property {module:model/NewRevertedBlock409Response}
+     */
+    NewRevertedBlock409Response,
+
+    /**
+     * The NewRevertedBlockE400 model constructor.
+     * @property {module:model/NewRevertedBlockE400}
+     */
+    NewRevertedBlockE400,
+
+    /**
+     * The NewRevertedBlockE401 model constructor.
+     * @property {module:model/NewRevertedBlockE401}
+     */
+    NewRevertedBlockE401,
+
+    /**
+     * The NewRevertedBlockE403 model constructor.
+     * @property {module:model/NewRevertedBlockE403}
+     */
+    NewRevertedBlockE403,
+
+    /**
+     * The NewRevertedBlockE409 model constructor.
+     * @property {module:model/NewRevertedBlockE409}
+     */
+    NewRevertedBlockE409,
+
+    /**
+     * The NewRevertedBlockR model constructor.
+     * @property {module:model/NewRevertedBlockR}
+     */
+    NewRevertedBlockR,
+
+    /**
+     * The NewRevertedBlockRB model constructor.
+     * @property {module:model/NewRevertedBlockRB}
+     */
+    NewRevertedBlockRB,
+
+    /**
+     * The NewRevertedBlockRBData model constructor.
+     * @property {module:model/NewRevertedBlockRBData}
+     */
+    NewRevertedBlockRBData,
+
+    /**
+     * The NewRevertedBlockRBDataItem model constructor.
+     * @property {module:model/NewRevertedBlockRBDataItem}
+     */
+    NewRevertedBlockRBDataItem,
+
+    /**
+     * The NewRevertedBlockRData model constructor.
+     * @property {module:model/NewRevertedBlockRData}
+     */
+    NewRevertedBlockRData,
+
+    /**
+     * The NewRevertedBlockRI model constructor.
+     * @property {module:model/NewRevertedBlockRI}
+     */
+    NewRevertedBlockRI,
+
+    /**
      * The NewUnconfirmedCoinsTransactions400Response model constructor.
      * @property {module:model/NewUnconfirmedCoinsTransactions400Response}
      */
@@ -12234,16 +12440,118 @@ export {
     PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS}
      */
-    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVinInner,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS,
 
     /**
-     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner model constructor.
-     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner}
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB}
      */
-    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIVoutInner,
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVinInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVinInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVinInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVoutInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVoutInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVoutInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2 model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VinInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VinInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VinInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VoutInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VoutInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VoutInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVinInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVinInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVinInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVoutInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVoutInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVoutInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVinInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVinInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVinInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner,
+
+    /**
+     * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner model constructor.
+     * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner}
+     */
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner,
 
     /**
      * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response model constructor.
@@ -12324,10 +12632,46 @@ export {
     PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee}
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIFee,
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS,
+
+    /**
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSC model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSC}
+     */
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSC,
+
+    /**
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSCFee model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSCFee}
+     */
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSBSCFee,
+
+    /**
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSE model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSE}
+     */
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSE,
+
+    /**
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEC model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEC}
+     */
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEC,
+
+    /**
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSECFee model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSECFee}
+     */
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSECFee,
+
+    /**
+     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEFee model constructor.
+     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEFee}
+     */
+    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBSEFee,
 
     /**
      * The RequestLimitReached model constructor.
@@ -12826,6 +13170,12 @@ export {
      * @property {module:model/WalletAsAServiceWalletBalanceNotEnough}
      */
     WalletAsAServiceWalletBalanceNotEnough,
+
+    /**
+     * The WalletAsAServiceWalletsLimitReached model constructor.
+     * @property {module:model/WalletAsAServiceWalletsLimitReached}
+     */
+    WalletAsAServiceWalletsLimitReached,
 
     /**
      * The XpubNotSynced model constructor.

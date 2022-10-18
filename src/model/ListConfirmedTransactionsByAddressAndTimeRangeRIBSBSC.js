@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSBSCGasPrice from './ListConfirmedTr
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSBSC model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSBSC
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeRIBSBSC {
     /**

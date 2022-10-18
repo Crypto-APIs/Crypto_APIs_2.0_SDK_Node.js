@@ -451,8 +451,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let address = 0x626b046b0ce356f248b215b01b459f8b8d59e1a4; // String | Represents the public address, which is a compressed and shortened form of a public key.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let address = 0x0902a667d6a3f287835e0a4593cae4167384abc6; // String | Represents the public address, which is a compressed and shortened form of a public key.
 let opts = {
   'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
 };
@@ -625,8 +625,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Ethereum Classic, etc.
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let address = 0x033ef6db9fbd0ee60e2931906b987fe0280471a0; // String | Represents the public address, which is a compressed and shortened form of a public key.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let address = 0x0902a667d6a3f287835e0a4593cae4167384abc6; // String | Represents the public address, which is a compressed and shortened form of a public key.
 let fromTimestamp = 1236238648; // Number | Defines the specific time/date from which the results will start being listed.
 let toTimestamp = 1644417868; // Number | Defines the specific time/date to which the results will be listed.
 let opts = {
@@ -819,8 +819,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 
 let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-let address = 0xc8fe2ceac93ad50e496b497357ae5385192dd28d; // String | String identifier of the address document represented in CryptoAPIs
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let address = 0x0902a667d6a3f287835e0a4593cae4167384abc6; // String | String identifier of the address document represented in CryptoAPIs
 let fromTimestamp = 1635979828; // Number | Defines the specific time/date from which the results will start being listed.
 let toTimestamp = 1643329896; // Number | Defines the specific time/date to which the results will be listed.
 let opts = {
@@ -884,7 +884,7 @@ ApiKey.apiKey = 'YOUR API KEY';
 //ApiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new Cryptoapis.UnifiedEndpointsApi();
-let network = ropsten; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks
 let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
 let count = 2; // Number | Specifies how many records were requested.
 let opts = {

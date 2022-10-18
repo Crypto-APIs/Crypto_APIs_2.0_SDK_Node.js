@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressAndTimeRangeRI from './ListConfirmedTra
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRData model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRData
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeRData {
     /**

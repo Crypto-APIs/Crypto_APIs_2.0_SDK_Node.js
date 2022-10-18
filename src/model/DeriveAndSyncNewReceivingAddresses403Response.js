@@ -17,7 +17,7 @@ import DeriveAndSyncNewReceivingAddressesE403 from './DeriveAndSyncNewReceivingA
 /**
  * The DeriveAndSyncNewReceivingAddresses403Response model module.
  * @module model/DeriveAndSyncNewReceivingAddresses403Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class DeriveAndSyncNewReceivingAddresses403Response {
     /**

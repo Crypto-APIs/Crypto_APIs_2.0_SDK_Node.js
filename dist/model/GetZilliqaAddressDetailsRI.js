@@ -4,25 +4,17 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-
 var _GetZilliqaAddressDetailsRIBalance = _interopRequireDefault(require("./GetZilliqaAddressDetailsRIBalance"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
 /**
  * The GetZilliqaAddressDetailsRI model module.
  * @module model/GetZilliqaAddressDetailsRI
- * @version 1.8.0
- */
-var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
+ * @version 1.9.0
+ */var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaAddressDetailsRI</code>.
    * @alias module:model/GetZilliqaAddressDetailsRI
@@ -33,16 +25,14 @@ var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
    */
   function GetZilliqaAddressDetailsRI(balance, incomingTransactionsCount, outgoingTransactionsCount, transactionsCount) {
     _classCallCheck(this, GetZilliqaAddressDetailsRI);
-
     GetZilliqaAddressDetailsRI.initialize(this, balance, incomingTransactionsCount, outgoingTransactionsCount, transactionsCount);
   }
+
   /**
    * Initializes the fields of this object.
    * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
    * Only for internal use.
    */
-
-
   _createClass(GetZilliqaAddressDetailsRI, null, [{
     key: "initialize",
     value: function initialize(obj, balance, incomingTransactionsCount, outgoingTransactionsCount, transactionsCount) {
@@ -51,6 +41,7 @@ var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
       obj['outgoingTransactionsCount'] = outgoingTransactionsCount;
       obj['transactionsCount'] = transactionsCount;
     }
+
     /**
      * Constructs a <code>GetZilliqaAddressDetailsRI</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
@@ -58,59 +49,49 @@ var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
      * @param {module:model/GetZilliqaAddressDetailsRI} obj Optional instance to populate.
      * @return {module:model/GetZilliqaAddressDetailsRI} The populated <code>GetZilliqaAddressDetailsRI</code> instance.
      */
-
   }, {
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new GetZilliqaAddressDetailsRI();
-
         if (data.hasOwnProperty('balance')) {
           obj['balance'] = _GetZilliqaAddressDetailsRIBalance["default"].constructFromObject(data['balance']);
         }
-
         if (data.hasOwnProperty('incomingTransactionsCount')) {
           obj['incomingTransactionsCount'] = _ApiClient["default"].convertToType(data['incomingTransactionsCount'], 'Number');
         }
-
         if (data.hasOwnProperty('outgoingTransactionsCount')) {
           obj['outgoingTransactionsCount'] = _ApiClient["default"].convertToType(data['outgoingTransactionsCount'], 'Number');
         }
-
         if (data.hasOwnProperty('transactionsCount')) {
           obj['transactionsCount'] = _ApiClient["default"].convertToType(data['transactionsCount'], 'Number');
         }
       }
-
       return obj;
     }
   }]);
-
   return GetZilliqaAddressDetailsRI;
-}();
-/**
- * @member {module:model/GetZilliqaAddressDetailsRIBalance} balance
- */
-
-
+}(); /**
+      * @member {module:model/GetZilliqaAddressDetailsRIBalance} balance
+      */
 GetZilliqaAddressDetailsRI.prototype['balance'] = undefined;
+
 /**
  * Defines the received transaction count to the address.
  * @member {Number} incomingTransactionsCount
  */
-
 GetZilliqaAddressDetailsRI.prototype['incomingTransactionsCount'] = undefined;
+
 /**
  * Defines the sent transaction count from the address.
  * @member {Number} outgoingTransactionsCount
  */
-
 GetZilliqaAddressDetailsRI.prototype['outgoingTransactionsCount'] = undefined;
+
 /**
  * Defines the entire count of the transactions.
  * @member {Number} transactionsCount
  */
-
 GetZilliqaAddressDetailsRI.prototype['transactionsCount'] = undefined;
 var _default = GetZilliqaAddressDetailsRI;
 exports["default"] = _default;

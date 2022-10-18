@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetAssetDetailsByAssetSymbolE401 model module.
  * @module model/GetAssetDetailsByAssetSymbolE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetAssetDetailsByAssetSymbolE401 {
     /**

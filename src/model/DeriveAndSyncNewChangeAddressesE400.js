@@ -23,7 +23,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The DeriveAndSyncNewChangeAddressesE400 model module.
  * @module model/DeriveAndSyncNewChangeAddressesE400
- * @version 1.8.0
+ * @version 1.9.0
  */
 class DeriveAndSyncNewChangeAddressesE400 {
     /**

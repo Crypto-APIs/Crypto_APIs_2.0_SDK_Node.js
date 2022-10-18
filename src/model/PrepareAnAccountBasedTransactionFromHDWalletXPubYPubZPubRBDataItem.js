@@ -17,21 +17,21 @@ import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee fro
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
- * @version 1.8.0
+ * @version 1.9.0
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
     /**
      * Constructs a new <code>PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem</code>.
      * @alias module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
      * @param amount {String} Representation of the amount of the transaction
-     * @param fee {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} 
      * @param recipient {String} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param sender {String} Represents a  sender address with the respective amount. In account-based protocols like Ethereum there is only one address in this list.
      * @param xpub {String} Defines the account extended publicly known key which is used to derive all child public keys.
+     * @param fee {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} 
      */
-    constructor(amount, fee, recipient, sender, xpub) { 
+    constructor(amount, recipient, sender, xpub, fee) { 
         
-        PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.initialize(this, amount, fee, recipient, sender, xpub);
+        PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.initialize(this, amount, recipient, sender, xpub, fee);
     }
 
     /**
@@ -39,12 +39,12 @@ class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, amount, fee, recipient, sender, xpub) { 
+    static initialize(obj, amount, recipient, sender, xpub, fee) { 
         obj['amount'] = amount;
-        obj['fee'] = fee;
         obj['recipient'] = recipient;
         obj['sender'] = sender;
         obj['xpub'] = xpub;
+        obj['fee'] = fee;
     }
 
     /**
@@ -64,23 +64,23 @@ class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
             if (data.hasOwnProperty('amount')) {
                 obj['amount'] = ApiClient.convertToType(data['amount'], 'String');
             }
-            if (data.hasOwnProperty('fee')) {
-                obj['fee'] = PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.constructFromObject(data['fee']);
-            }
-            if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
-            }
             if (data.hasOwnProperty('recipient')) {
                 obj['recipient'] = ApiClient.convertToType(data['recipient'], 'String');
             }
             if (data.hasOwnProperty('sender')) {
                 obj['sender'] = ApiClient.convertToType(data['sender'], 'String');
             }
-            if (data.hasOwnProperty('transactionType')) {
-                obj['transactionType'] = ApiClient.convertToType(data['transactionType'], 'String');
-            }
             if (data.hasOwnProperty('xpub')) {
                 obj['xpub'] = ApiClient.convertToType(data['xpub'], 'String');
+            }
+            if (data.hasOwnProperty('fee')) {
+                obj['fee'] = PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.constructFromObject(data['fee']);
+            }
+            if (data.hasOwnProperty('nonce')) {
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
+            }
+            if (data.hasOwnProperty('transactionType')) {
+                obj['transactionType'] = ApiClient.convertToType(data['transactionType'], 'String');
             }
         }
         return obj;
@@ -102,17 +102,6 @@ PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['ad
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['amount'] = undefined;
 
 /**
- * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} fee
- */
-PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['fee'] = undefined;
-
-/**
- * Representation of the nonce value
- * @member {String} nonce
- */
-PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['nonce'] = undefined;
-
-/**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
  * @member {String} recipient
  */
@@ -125,16 +114,27 @@ PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['re
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['sender'] = undefined;
 
 /**
- * Representation of the transaction type
- * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.TransactionTypeEnum} transactionType
- */
-PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['transactionType'] = undefined;
-
-/**
  * Defines the account extended publicly known key which is used to derive all child public keys.
  * @member {String} xpub
  */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['xpub'] = undefined;
+
+/**
+ * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} fee
+ */
+PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['fee'] = undefined;
+
+/**
+ * Representation of the nonce value
+ * @member {String} nonce
+ */
+PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['nonce'] = undefined;
+
+/**
+ * Representation of the transaction type
+ * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.TransactionTypeEnum} transactionType
+ */
+PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['transactionType'] = undefined;
 
 
 

@@ -17,7 +17,7 @@ import ListUnconfirmedTransactionsByAddressE403 from './ListUnconfirmedTransacti
 /**
  * The ListUnconfirmedTransactionsByAddress403Response model module.
  * @module model/ListUnconfirmedTransactionsByAddress403Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListUnconfirmedTransactionsByAddress403Response {
     /**

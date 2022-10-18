@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner {
     /**

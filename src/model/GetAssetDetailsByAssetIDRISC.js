@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAssetDetailsByAssetIDRISC model module.
  * @module model/GetAssetDetailsByAssetIDRISC
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetAssetDetailsByAssetIDRISC {
     /**

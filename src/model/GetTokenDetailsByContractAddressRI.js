@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTokenDetailsByContractAddressRI model module.
  * @module model/GetTokenDetailsByContractAddressRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetTokenDetailsByContractAddressRI {
     /**

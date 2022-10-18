@@ -4,43 +4,26 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-
 var _ConvertBitcoinCashAddress402Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress402Response"));
-
 var _ConvertBitcoinCashAddress409Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress409Response"));
-
 var _ConvertBitcoinCashAddress415Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress415Response"));
-
 var _ConvertBitcoinCashAddress422Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress422Response"));
-
 var _ConvertBitcoinCashAddress429Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress429Response"));
-
 var _ConvertBitcoinCashAddress500Response = _interopRequireDefault(require("../model/ConvertBitcoinCashAddress500Response"));
-
 var _ListSupportedAssets400Response = _interopRequireDefault(require("../model/ListSupportedAssets400Response"));
-
 var _ListSupportedAssets401Response = _interopRequireDefault(require("../model/ListSupportedAssets401Response"));
-
 var _ListSupportedAssets403Response = _interopRequireDefault(require("../model/ListSupportedAssets403Response"));
-
 var _ListSupportedAssetsR = _interopRequireDefault(require("../model/ListSupportedAssetsR"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.8.0
-*/
-var MetadataApi = /*#__PURE__*/function () {
+* @version 1.9.0
+*/var MetadataApi = /*#__PURE__*/function () {
   /**
   * Constructs a new MetadataApi. 
   * @alias module:api/MetadataApi
@@ -50,9 +33,9 @@ var MetadataApi = /*#__PURE__*/function () {
   */
   function MetadataApi(apiClient) {
     _classCallCheck(this, MetadataApi);
-
     this.apiClient = apiClient || _ApiClient["default"].instance;
   }
+
   /**
    * List Supported Assets
    * This endpoint will return a list of supported assets. The asset could be a cryptocurrency or FIAT assets that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".
@@ -63,8 +46,6 @@ var MetadataApi = /*#__PURE__*/function () {
    * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListSupportedAssetsR} and HTTP response
    */
-
-
   _createClass(MetadataApi, [{
     key: "listSupportedAssetsWithHttpInfo",
     value: function listSupportedAssetsWithHttpInfo(opts) {
@@ -85,6 +66,7 @@ var MetadataApi = /*#__PURE__*/function () {
       var returnType = _ListSupportedAssetsR["default"];
       return this.apiClient.callApi('/market-data/assets/supported', 'GET', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
     }
+
     /**
      * List Supported Assets
      * This endpoint will return a list of supported assets. The asset could be a cryptocurrency or FIAT assets that we support. Each asset has a unique identifier - `assetId` and a unique symbol in the form of a string, e.g. \"BTC\".
@@ -95,7 +77,6 @@ var MetadataApi = /*#__PURE__*/function () {
      * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListSupportedAssetsR}
      */
-
   }, {
     key: "listSupportedAssets",
     value: function listSupportedAssets(opts) {
@@ -104,8 +85,6 @@ var MetadataApi = /*#__PURE__*/function () {
       });
     }
   }]);
-
   return MetadataApi;
 }();
-
 exports["default"] = MetadataApi;

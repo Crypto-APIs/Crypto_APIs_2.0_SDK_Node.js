@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAssetDetailsByAssetSymbolRISC model module.
  * @module model/GetAssetDetailsByAssetSymbolRISC
- * @version 1.8.0
+ * @version 1.9.0
  */
 class GetAssetDetailsByAssetSymbolRISC {
     /**

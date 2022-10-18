@@ -72,6 +72,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property isAvailable (base name: "isAvailable")', function() {
+      // uncomment below and update the code to test the property isAvailable
+      //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property isConfirmed (base name: "isConfirmed")', function() {
       // uncomment below and update the code to test the property isConfirmed
       //var instance = new Cryptoapis.ListUnspentTransactionOutputsByAddressRI();

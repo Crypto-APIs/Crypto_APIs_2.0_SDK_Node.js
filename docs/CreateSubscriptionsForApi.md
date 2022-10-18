@@ -16,6 +16,7 @@ Method | HTTP request | Description
 [**newConfirmedTokenTransactionsForSpecificAmount**](CreateSubscriptionsForApi.md#newConfirmedTokenTransactionsForSpecificAmount) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/tokens-transfers-for-specific-amount | New Confirmed Token Transactions For Specific Amount
 [**newConfirmedTokensTransactions**](CreateSubscriptionsForApi.md#newConfirmedTokensTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-confirmed | New confirmed tokens transactions
 [**newConfirmedTokensTransactionsAndEachConfirmation**](CreateSubscriptionsForApi.md#newConfirmedTokensTransactionsAndEachConfirmation) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-confirmed-each-confirmation | New confirmed tokens transactions and each confirmation
+[**newRevertedBlock**](CreateSubscriptionsForApi.md#newRevertedBlock) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/reverted-block | New Reverted Block
 [**newUnconfirmedCoinsTransactions**](CreateSubscriptionsForApi.md#newUnconfirmedCoinsTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-coins-transactions-unconfirmed | New unconfirmed coins transactions
 [**newUnconfirmedTokensTransactions**](CreateSubscriptionsForApi.md#newUnconfirmedTokensTransactions) | **POST** /blockchain-events/{blockchain}/{network}/subscriptions/address-tokens-transactions-unconfirmed | New unconfirmed tokens transactions
 
@@ -706,6 +707,64 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**NewConfirmedTokensTransactionsAndEachConfirmationR**](NewConfirmedTokensTransactionsAndEachConfirmationR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## newRevertedBlock
+
+> NewRevertedBlockR newRevertedBlock(blockchain, network, opts)
+
+New Reverted Block
+
+By subscribing to this event, customers will receive callbacks from Crypto APIs every time when a block is reverted on a specific blockchain. This can happen in cases when two blocks are mined at the same time and the nodes cannot agree on which one was first. This occurs as part of the chain reorganization process.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.CreateSubscriptionsForApi();
+let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'newRevertedBlockRB': new Cryptoapis.NewRevertedBlockRB() // NewRevertedBlockRB | 
+};
+apiInstance.newRevertedBlock(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **newRevertedBlockRB** | [**NewRevertedBlockRB**](NewRevertedBlockRB.md)|  | [optional] 
+
+### Return type
+
+[**NewRevertedBlockR**](NewRevertedBlockR.md)
 
 ### Authorization
 

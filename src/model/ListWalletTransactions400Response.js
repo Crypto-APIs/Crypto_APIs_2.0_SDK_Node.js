@@ -17,7 +17,7 @@ import ListWalletTransactionsE400 from './ListWalletTransactionsE400';
 /**
  * The ListWalletTransactions400Response model module.
  * @module model/ListWalletTransactions400Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListWalletTransactions400Response {
     /**

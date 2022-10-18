@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListLatestMinedBlocksE401 model module.
  * @module model/ListLatestMinedBlocksE401
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListLatestMinedBlocksE401 {
     /**

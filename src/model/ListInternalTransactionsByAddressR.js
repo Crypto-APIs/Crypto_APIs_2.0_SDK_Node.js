@@ -17,7 +17,7 @@ import ListInternalTransactionsByAddressRData from './ListInternalTransactionsBy
 /**
  * The ListInternalTransactionsByAddressR model module.
  * @module model/ListInternalTransactionsByAddressR
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListInternalTransactionsByAddressR {
     /**

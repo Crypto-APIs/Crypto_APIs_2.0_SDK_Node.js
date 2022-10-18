@@ -60,14 +60,20 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property fee (base name: "fee")', function() {
-      // uncomment below and update the code to test the property fee
+    it('should have the property locktime (base name: "locktime")', function() {
+      // uncomment below and update the code to test the property locktime
       //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
       //expect(instance).to.be();
     });
 
-    it('should have the property locktime (base name: "locktime")', function() {
-      // uncomment below and update the code to test the property locktime
+    it('should have the property xpub (base name: "xpub")', function() {
+      // uncomment below and update the code to test the property xpub
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property fee (base name: "fee")', function() {
+      // uncomment below and update the code to test the property fee
       //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
       //expect(instance).to.be();
     });
@@ -86,12 +92,6 @@
 
     it('should have the property replaceable (base name: "replaceable")', function() {
       // uncomment below and update the code to test the property replaceable
-      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property xpub (base name: "xpub")', function() {
-      // uncomment below and update the code to test the property xpub
       //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
       //expect(instance).to.be();
     });

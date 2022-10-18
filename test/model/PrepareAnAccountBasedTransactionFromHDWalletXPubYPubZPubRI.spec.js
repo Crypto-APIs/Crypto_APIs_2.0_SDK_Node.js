@@ -60,30 +60,6 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property dataHex (base name: "dataHex")', function() {
-      // uncomment below and update the code to test the property dataHex
-      //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property derivationIndex (base name: "derivationIndex")', function() {
-      // uncomment below and update the code to test the property derivationIndex
-      //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property fee (base name: "fee")', function() {
-      // uncomment below and update the code to test the property fee
-      //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property nonce (base name: "nonce")', function() {
-      // uncomment below and update the code to test the property nonce
-      //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI();
-      //expect(instance).to.be();
-    });
-
     it('should have the property recipient (base name: "recipient")', function() {
       // uncomment below and update the code to test the property recipient
       //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI();
@@ -102,8 +78,8 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property transactionType (base name: "transactionType")', function() {
-      // uncomment below and update the code to test the property transactionType
+    it('should have the property blockchainSpecific (base name: "blockchainSpecific")', function() {
+      // uncomment below and update the code to test the property blockchainSpecific
       //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI();
       //expect(instance).to.be();
     });

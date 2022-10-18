@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | **String** | Represents the fee address | [optional] 
-**exactAmount** | **String** | Representation of the exact amount value | [optional] 
-**priority** | **String** | Represents the fee priority | [optional] 
+**address** | **String** | Representation of the address | [optional] 
+**exactAmount** | **String** | Representation of the exact amount | [optional] 
+**priority** | **String** | Representation of the fee priority | [optional] 
 
 
 

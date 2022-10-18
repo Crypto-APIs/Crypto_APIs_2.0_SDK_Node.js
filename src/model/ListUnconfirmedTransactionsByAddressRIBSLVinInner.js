@@ -17,7 +17,7 @@ import ListUnconfirmedTransactionsByAddressRIBSLVinInnerScriptSig from './ListUn
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSLVinInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSLVinInner
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSLVinInner {
     /**

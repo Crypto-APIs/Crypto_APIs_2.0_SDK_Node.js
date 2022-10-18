@@ -22,7 +22,7 @@ import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './Wal
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE403 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE403
- * @version 1.8.0
+ * @version 1.9.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountE403 {
     /**

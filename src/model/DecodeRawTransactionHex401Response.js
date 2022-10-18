@@ -17,7 +17,7 @@ import DecodeRawTransactionHexE401 from './DecodeRawTransactionHexE401';
 /**
  * The DecodeRawTransactionHex401Response model module.
  * @module model/DecodeRawTransactionHex401Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class DecodeRawTransactionHex401Response {
     /**

@@ -17,7 +17,7 @@ import TokensForwardingSuccessData from './TokensForwardingSuccessData';
 /**
  * The TokensForwardingSuccess model module.
  * @module model/TokensForwardingSuccess
- * @version 1.8.0
+ * @version 1.9.0
  */
 class TokensForwardingSuccess {
     /**

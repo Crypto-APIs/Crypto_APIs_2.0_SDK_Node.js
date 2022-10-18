@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BlockHeightReachedRI model module.
  * @module model/BlockHeightReachedRI
- * @version 1.8.0
+ * @version 1.9.0
  */
 class BlockHeightReachedRI {
     /**

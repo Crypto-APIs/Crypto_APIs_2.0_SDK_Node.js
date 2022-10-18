@@ -17,7 +17,7 @@ import UnexpectedServerError from './UnexpectedServerError';
 /**
  * The ConvertBitcoinCashAddress500Response model module.
  * @module model/ConvertBitcoinCashAddress500Response
- * @version 1.8.0
+ * @version 1.9.0
  */
 class ConvertBitcoinCashAddress500Response {
     /**
