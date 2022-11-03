@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHashRI model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashRI
- * @version 1.9.0
- */var GetZilliqaBlockDetailsByBlockHashRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaBlockDetailsByBlockHashRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaBlockDetailsByBlockHashRI</code>.
    * @alias module:model/GetZilliqaBlockDetailsByBlockHashRI
@@ -110,10 +111,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaBlockDetailsByBlockHashRI;
-}(); /**
-      * Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
-      * @member {Number} blockHeight
-      */
+}();
+/**
+ * Represents the number of blocks in the blockchain preceding this specific block. Block numbers have no gaps. A blockchain usually starts with block 0 called the \"Genesis block\".
+ * @member {Number} blockHeight
+ */
 GetZilliqaBlockDetailsByBlockHashRI.prototype['blockHeight'] = undefined;
 
 /**

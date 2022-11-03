@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockR model module.
  * @module model/NewBlockR
- * @version 1.9.0
- */var NewBlockR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewBlockR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewBlockR</code>.
    * @alias module:model/NewBlockR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewBlockR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewBlockR.prototype['apiVersion'] = undefined;
 
 /**

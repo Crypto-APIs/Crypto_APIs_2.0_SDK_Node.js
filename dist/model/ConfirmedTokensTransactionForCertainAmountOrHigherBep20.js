@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherBep20 model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherBep20
- * @version 1.9.0
- */var ConfirmedTokensTransactionForCertainAmountOrHigherBep20 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConfirmedTokensTransactionForCertainAmountOrHigherBep20 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConfirmedTokensTransactionForCertainAmountOrHigherBep20</code>.
    * BEP-20
@@ -74,10 +75,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConfirmedTokensTransactionForCertainAmountOrHigherBep20;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 ConfirmedTokensTransactionForCertainAmountOrHigherBep20.prototype['name'] = undefined;
 
 /**

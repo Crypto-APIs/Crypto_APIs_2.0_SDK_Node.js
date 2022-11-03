@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressRIOffer model module.
  * @module model/ListXRPRippleTransactionsByAddressRIOffer
- * @version 1.9.0
- */var ListXRPRippleTransactionsByAddressRIOffer = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByAddressRIOffer = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByAddressRIOffer</code>.
    * @alias module:model/ListXRPRippleTransactionsByAddressRIOffer
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByAddressRIOffer;
-}(); /**
-      * Defines the amount of the offer.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the offer.
+ * @member {String} amount
+ */
 ListXRPRippleTransactionsByAddressRIOffer.prototype['amount'] = undefined;
 
 /**

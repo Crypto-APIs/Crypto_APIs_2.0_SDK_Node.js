@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeight404Response model module.
  * @module model/ListTransactionsByBlockHeight404Response
- * @version 1.9.0
- */var ListTransactionsByBlockHeight404Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeight404Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeight404Response</code>.
    * @alias module:model/ListTransactionsByBlockHeight404Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeight404Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListTransactionsByBlockHeight404Response.prototype['apiVersion'] = undefined;
 
 /**

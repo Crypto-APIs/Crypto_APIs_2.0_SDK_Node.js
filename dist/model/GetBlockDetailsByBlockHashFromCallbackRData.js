@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRData model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRData
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashFromCallbackRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashFromCallbackRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashFromCallbackRData</code>.
    * @alias module:model/GetBlockDetailsByBlockHashFromCallbackRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashFromCallbackRData;
-}(); /**
-      * @member {module:model/GetBlockDetailsByBlockHashFromCallbackRI} item
-      */
+}();
+/**
+ * @member {module:model/GetBlockDetailsByBlockHashFromCallbackRI} item
+ */
 GetBlockDetailsByBlockHashFromCallbackRData.prototype['item'] = undefined;
 var _default = GetBlockDetailsByBlockHashFromCallbackRData;
 exports["default"] = _default;

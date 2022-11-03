@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSZVinInner model module.
  * @module model/ListTransactionsByBlockHashRIBSZVinInner
- * @version 1.9.0
- */var ListTransactionsByBlockHashRIBSZVinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashRIBSZVinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashRIBSZVinInner</code>.
    * @alias module:model/ListTransactionsByBlockHashRIBSZVinInner
@@ -91,9 +92,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashRIBSZVinInner;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 ListTransactionsByBlockHashRIBSZVinInner.prototype['addresses'] = undefined;
 
 /**

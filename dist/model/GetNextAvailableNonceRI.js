@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetNextAvailableNonceRI model module.
  * @module model/GetNextAvailableNonceRI
- * @version 1.9.0
- */var GetNextAvailableNonceRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetNextAvailableNonceRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetNextAvailableNonceRI</code>.
    * @alias module:model/GetNextAvailableNonceRI
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetNextAvailableNonceRI;
-}(); /**
-      * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
-      * @member {Number} nextAvailableNonce
-      */
+}();
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {Number} nextAvailableNonce
+ */
 GetNextAvailableNonceRI.prototype['nextAvailableNonce'] = undefined;
 var _default = GetNextAvailableNonceRI;
 exports["default"] = _default;

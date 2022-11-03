@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2 model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2
- * @version 1.9.0
- */var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2</code>.
    * Dash
@@ -63,10 +64,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2;
-}(); /**
-      * Represents the transaction inputs.
-      * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VinInner>} vin
-      */
+}();
+/**
+ * Represents the transaction inputs.
+ * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VinInner>} vin
+ */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2.prototype['vin'] = undefined;
 
 /**

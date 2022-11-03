@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRData model module.
  * @module model/DecodeRawTransactionHexRData
- * @version 1.9.0
- */var DecodeRawTransactionHexRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRData</code>.
    * @alias module:model/DecodeRawTransactionHexRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRData;
-}(); /**
-      * @member {module:model/DecodeRawTransactionHexRI} item
-      */
+}();
+/**
+ * @member {module:model/DecodeRawTransactionHexRI} item
+ */
 DecodeRawTransactionHexRData.prototype['item'] = undefined;
 var _default = DecodeRawTransactionHexRData;
 exports["default"] = _default;

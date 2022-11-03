@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackE401 model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackE401
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashFromCallbackE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashFromCallbackE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashFromCallbackE401</code>.
    * @alias module:model/GetBlockDetailsByBlockHashFromCallbackE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashFromCallbackE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetBlockDetailsByBlockHashFromCallbackE401.prototype['code'] = undefined;
 
 /**

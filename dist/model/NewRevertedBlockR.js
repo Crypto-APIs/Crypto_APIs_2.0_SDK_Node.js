@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewRevertedBlockR model module.
  * @module model/NewRevertedBlockR
- * @version 1.9.0
- */var NewRevertedBlockR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewRevertedBlockR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewRevertedBlockR</code>.
    * @alias module:model/NewRevertedBlockR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewRevertedBlockR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewRevertedBlockR.prototype['apiVersion'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetsIDsR model module.
  * @module model/GetExchangeRateByAssetsIDsR
- * @version 1.9.0
- */var GetExchangeRateByAssetsIDsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetExchangeRateByAssetsIDsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetsIDsR</code>.
    * @alias module:model/GetExchangeRateByAssetsIDsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetExchangeRateByAssetsIDsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetExchangeRateByAssetsIDsR.prototype['apiVersion'] = undefined;
 
 /**

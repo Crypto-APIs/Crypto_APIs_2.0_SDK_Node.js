@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubDetailsR model module.
  * @module model/GetHDWalletXPubYPubZPubDetailsR
- * @version 1.9.0
- */var GetHDWalletXPubYPubZPubDetailsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetHDWalletXPubYPubZPubDetailsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetHDWalletXPubYPubZPubDetailsR</code>.
    * @alias module:model/GetHDWalletXPubYPubZPubDetailsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetHDWalletXPubYPubZPubDetailsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetHDWalletXPubYPubZPubDetailsR.prototype['apiVersion'] = undefined;
 
 /**

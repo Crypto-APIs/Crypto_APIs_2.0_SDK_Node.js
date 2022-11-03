@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem</code>.
    * @alias module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem;
-}(); /**
-      * Represents the specific amount of the transaction's destination.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the specific amount of the transaction's destination.
+ * @member {String} amount
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem.prototype['amount'] = undefined;
 
 /**

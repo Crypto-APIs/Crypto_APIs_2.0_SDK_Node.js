@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400 model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400
- * @version 1.9.0
- */var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400</code>.
    * @alias module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400.prototype['code'] = undefined;
 
 /**

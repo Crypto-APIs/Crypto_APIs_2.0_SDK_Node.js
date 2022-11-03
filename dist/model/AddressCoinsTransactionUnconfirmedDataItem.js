@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressCoinsTransactionUnconfirmedDataItem model module.
  * @module model/AddressCoinsTransactionUnconfirmedDataItem
- * @version 1.9.0
- */var AddressCoinsTransactionUnconfirmedDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressCoinsTransactionUnconfirmedDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressCoinsTransactionUnconfirmedDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressCoinsTransactionUnconfirmedDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 AddressCoinsTransactionUnconfirmedDataItem.prototype['blockchain'] = undefined;
 
 /**

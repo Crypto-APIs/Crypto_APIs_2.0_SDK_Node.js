@@ -28,8 +28,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBS
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIBS</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDRIBS
@@ -240,10 +241,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIBS;
-}(); /**
-      * Represents the time at which a particular transaction can be added to the blockchain.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the time at which a particular transaction can be added to the blockchain.
+ * @member {Number} locktime
+ */
 GetWalletTransactionDetailsByTransactionIDRIBS.prototype['locktime'] = undefined;
 
 /**

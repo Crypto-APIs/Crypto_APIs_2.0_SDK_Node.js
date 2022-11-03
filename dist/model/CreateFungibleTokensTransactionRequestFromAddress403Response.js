@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddress403Response model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddress403Response
- * @version 1.9.0
- */var CreateFungibleTokensTransactionRequestFromAddress403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokensTransactionRequestFromAddress403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokensTransactionRequestFromAddress403Response</code>.
    * @alias module:model/CreateFungibleTokensTransactionRequestFromAddress403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokensTransactionRequestFromAddress403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateFungibleTokensTransactionRequestFromAddress403Response.prototype['apiVersion'] = undefined;
 
 /**

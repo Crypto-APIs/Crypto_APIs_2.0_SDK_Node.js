@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionDetailsByTransactionHashRI model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashRI
- * @version 1.9.0
- */var ListInternalTransactionDetailsByTransactionHashRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionDetailsByTransactionHashRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionDetailsByTransactionHashRI</code>.
    * @alias module:model/ListInternalTransactionDetailsByTransactionHashRI
@@ -95,10 +96,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionDetailsByTransactionHashRI;
-}(); /**
-      * Defines the specific amount of the transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the specific amount of the transaction.
+ * @member {String} amount
+ */
 ListInternalTransactionDetailsByTransactionHashRI.prototype['amount'] = undefined;
 
 /**

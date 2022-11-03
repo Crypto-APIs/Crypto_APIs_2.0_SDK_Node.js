@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey</code>.
    * Object representation of the script
@@ -74,9 +75,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 ListUnconfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey.prototype['addresses'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSLVoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHashRIBSLVoutInnerScriptPubKey
- * @version 1.9.0
- */var ListTransactionsByBlockHashRIBSLVoutInnerScriptPubKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashRIBSLVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashRIBSLVoutInnerScriptPubKey</code>.
    * Object representation of the script
@@ -74,9 +75,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashRIBSLVoutInnerScriptPubKey;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 ListTransactionsByBlockHashRIBSLVoutInnerScriptPubKey.prototype['addresses'] = undefined;
 
 /**

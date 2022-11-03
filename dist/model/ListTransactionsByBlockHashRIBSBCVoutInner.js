@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSBCVoutInner model module.
  * @module model/ListTransactionsByBlockHashRIBSBCVoutInner
- * @version 1.9.0
- */var ListTransactionsByBlockHashRIBSBCVoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashRIBSBCVoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashRIBSBCVoutInner</code>.
    * @alias module:model/ListTransactionsByBlockHashRIBSBCVoutInner
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashRIBSBCVoutInner;
-}(); /**
-      * Defines whether the output is spent or not.
-      * @member {Boolean} isSpent
-      */
+}();
+/**
+ * Defines whether the output is spent or not.
+ * @member {Boolean} isSpent
+ */
 ListTransactionsByBlockHashRIBSBCVoutInner.prototype['isSpent'] = undefined;
 
 /**

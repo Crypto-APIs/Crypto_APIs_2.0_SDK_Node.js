@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner</code>.
    * @alias module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner;
-}(); /**
-      * Defines the destination address.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the destination address.
+ * @member {String} address
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner.prototype['address'] = undefined;
 
 /**

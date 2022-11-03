@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401 model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401
- * @version 1.9.0
- */var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401</code>.
    * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401.prototype['code'] = undefined;
 
 /**

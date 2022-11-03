@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHeightRData model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeightRData
- * @version 1.9.0
- */var GetZilliqaBlockDetailsByBlockHeightRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaBlockDetailsByBlockHeightRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaBlockDetailsByBlockHeightRData</code>.
    * @alias module:model/GetZilliqaBlockDetailsByBlockHeightRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaBlockDetailsByBlockHeightRData;
-}(); /**
-      * @member {module:model/GetZilliqaBlockDetailsByBlockHeightRI} item
-      */
+}();
+/**
+ * @member {module:model/GetZilliqaBlockDetailsByBlockHeightRI} item
+ */
 GetZilliqaBlockDetailsByBlockHeightRData.prototype['item'] = undefined;
 var _default = GetZilliqaBlockDetailsByBlockHeightRData;
 exports["default"] = _default;

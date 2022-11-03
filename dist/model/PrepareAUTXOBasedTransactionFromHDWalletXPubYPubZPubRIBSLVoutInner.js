@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner
- * @version 1.9.0
- */var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner</code>.
    * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner;
-}(); /**
-      * Representation of the address
-      * @member {String} address
-      */
+}();
+/**
+ * Representation of the address
+ * @member {String} address
+ */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner.prototype['address'] = undefined;
 
 /**

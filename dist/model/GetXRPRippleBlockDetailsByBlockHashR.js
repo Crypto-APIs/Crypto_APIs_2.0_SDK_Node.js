@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHashR model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashR
- * @version 1.9.0
- */var GetXRPRippleBlockDetailsByBlockHashR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleBlockDetailsByBlockHashR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHashR</code>.
    * @alias module:model/GetXRPRippleBlockDetailsByBlockHashR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleBlockDetailsByBlockHashR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetXRPRippleBlockDetailsByBlockHashR.prototype['apiVersion'] = undefined;
 
 /**

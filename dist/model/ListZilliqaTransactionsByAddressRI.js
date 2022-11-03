@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByAddressRI model module.
  * @module model/ListZilliqaTransactionsByAddressRI
- * @version 1.9.0
- */var ListZilliqaTransactionsByAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByAddressRI</code>.
    * @alias module:model/ListZilliqaTransactionsByAddressRI
@@ -118,9 +119,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByAddressRI;
-}(); /**
-      * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRIFee} fee
-      */
+}();
+/**
+ * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRIFee} fee
+ */
 ListZilliqaTransactionsByAddressRI.prototype['fee'] = undefined;
 
 /**

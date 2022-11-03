@@ -17,7 +17,7 @@ import NewUnconfirmedCoinsTransactionsE401 from './NewUnconfirmedCoinsTransactio
 /**
  * The NewUnconfirmedCoinsTransactions401Response model module.
  * @module model/NewUnconfirmedCoinsTransactions401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class NewUnconfirmedCoinsTransactions401Response {
     /**

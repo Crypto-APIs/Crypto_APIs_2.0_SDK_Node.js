@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdE403 model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdE403
- * @version 1.9.0
- */var GetInternalTransactionByTransactionHashAndOperationIdE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetInternalTransactionByTransactionHashAndOperationIdE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetInternalTransactionByTransactionHashAndOperationIdE403</code>.
    * @alias module:model/GetInternalTransactionByTransactionHashAndOperationIdE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetInternalTransactionByTransactionHashAndOperationIdE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetInternalTransactionByTransactionHashAndOperationIdE403.prototype['code'] = undefined;
 
 /**

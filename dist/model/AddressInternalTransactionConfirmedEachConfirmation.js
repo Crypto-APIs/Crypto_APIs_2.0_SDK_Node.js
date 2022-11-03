@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressInternalTransactionConfirmedEachConfirmation model module.
  * @module model/AddressInternalTransactionConfirmedEachConfirmation
- * @version 1.9.0
- */var AddressInternalTransactionConfirmedEachConfirmation = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressInternalTransactionConfirmedEachConfirmation = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressInternalTransactionConfirmedEachConfirmation</code>.
    * @alias module:model/AddressInternalTransactionConfirmedEachConfirmation
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressInternalTransactionConfirmedEachConfirmation;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 AddressInternalTransactionConfirmedEachConfirmation.prototype['apiVersion'] = undefined;
 
 /**

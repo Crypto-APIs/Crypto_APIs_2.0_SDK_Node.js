@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightR model module.
  * @module model/GetBlockDetailsByBlockHeightR
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightR</code>.
    * @alias module:model/GetBlockDetailsByBlockHeightR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetBlockDetailsByBlockHeightR.prototype['apiVersion'] = undefined;
 
 /**

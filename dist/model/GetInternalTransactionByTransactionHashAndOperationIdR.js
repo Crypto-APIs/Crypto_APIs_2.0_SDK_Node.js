@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdR model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdR
- * @version 1.9.0
- */var GetInternalTransactionByTransactionHashAndOperationIdR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetInternalTransactionByTransactionHashAndOperationIdR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetInternalTransactionByTransactionHashAndOperationIdR</code>.
    * @alias module:model/GetInternalTransactionByTransactionHashAndOperationIdR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetInternalTransactionByTransactionHashAndOperationIdR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetInternalTransactionByTransactionHashAndOperationIdR.prototype['apiVersion'] = undefined;
 
 /**

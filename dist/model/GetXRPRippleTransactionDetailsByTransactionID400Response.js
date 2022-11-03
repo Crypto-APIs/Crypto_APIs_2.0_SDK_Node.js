@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionID400Response model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionID400Response
- * @version 1.9.0
- */var GetXRPRippleTransactionDetailsByTransactionID400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleTransactionDetailsByTransactionID400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleTransactionDetailsByTransactionID400Response</code>.
    * @alias module:model/GetXRPRippleTransactionDetailsByTransactionID400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleTransactionDetailsByTransactionID400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetXRPRippleTransactionDetailsByTransactionID400Response.prototype['apiVersion'] = undefined;
 
 /**

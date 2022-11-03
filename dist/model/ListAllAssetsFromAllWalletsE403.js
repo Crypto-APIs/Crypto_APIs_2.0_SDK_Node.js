@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWalletsE403 model module.
  * @module model/ListAllAssetsFromAllWalletsE403
- * @version 1.9.0
- */var ListAllAssetsFromAllWalletsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListAllAssetsFromAllWalletsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsFromAllWalletsE403</code>.
    * @alias module:model/ListAllAssetsFromAllWalletsE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListAllAssetsFromAllWalletsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListAllAssetsFromAllWalletsE403.prototype['code'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRData model module.
  * @module model/GetAssetDetailsByAssetIDRData
- * @version 1.9.0
- */var GetAssetDetailsByAssetIDRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetIDRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetIDRData</code>.
    * @alias module:model/GetAssetDetailsByAssetIDRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetIDRData;
-}(); /**
-      * @member {module:model/GetAssetDetailsByAssetIDRI} item
-      */
+}();
+/**
+ * @member {module:model/GetAssetDetailsByAssetIDRI} item
+ */
 GetAssetDetailsByAssetIDRData.prototype['item'] = undefined;
 var _default = GetAssetDetailsByAssetIDRData;
 exports["default"] = _default;

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticCoinsForwardingRData model module.
  * @module model/DeleteAutomaticCoinsForwardingRData
- * @version 1.9.0
- */var DeleteAutomaticCoinsForwardingRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeleteAutomaticCoinsForwardingRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeleteAutomaticCoinsForwardingRData</code>.
    * @alias module:model/DeleteAutomaticCoinsForwardingRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeleteAutomaticCoinsForwardingRData;
-}(); /**
-      * @member {module:model/DeleteAutomaticCoinsForwardingRI} item
-      */
+}();
+/**
+ * @member {module:model/DeleteAutomaticCoinsForwardingRI} item
+ */
 DeleteAutomaticCoinsForwardingRData.prototype['item'] = undefined;
 var _default = DeleteAutomaticCoinsForwardingRData;
 exports["default"] = _default;

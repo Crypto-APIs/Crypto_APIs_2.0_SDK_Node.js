@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSECGasPrice from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSEC model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSEC
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSEC {
     /**

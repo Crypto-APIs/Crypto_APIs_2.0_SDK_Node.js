@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightE403 model module.
  * @module model/GetBlockDetailsByBlockHeightE403
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightE403</code>.
    * @alias module:model/GetBlockDetailsByBlockHeightE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetBlockDetailsByBlockHeightE403.prototype['code'] = undefined;
 
 /**

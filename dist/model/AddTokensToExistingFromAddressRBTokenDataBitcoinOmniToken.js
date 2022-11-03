@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken model module.
  * @module model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken
- * @version 1.9.0
- */var AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken</code>.
    * Bitcoin Omni Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken;
-}(); /**
-      * Represents the specific `propertyId` of the token data that will be forwarded.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Represents the specific `propertyId` of the token data that will be forwarded.
+ * @member {Number} propertyId
+ */
 AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken.prototype['propertyId'] = undefined;
 var _default = AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken;
 exports["default"] = _default;

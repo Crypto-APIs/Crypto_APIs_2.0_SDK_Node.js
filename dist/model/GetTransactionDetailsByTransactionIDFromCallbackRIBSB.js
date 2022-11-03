@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSB model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSB
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSB = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSB = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSB</code>.
    * Bitcoin
@@ -83,10 +84,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSB;
-}(); /**
-      * Represents the time at which a particular transaction can be added to the blockchain.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the time at which a particular transaction can be added to the blockchain.
+ * @member {Number} locktime
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSB.prototype['locktime'] = undefined;
 
 /**

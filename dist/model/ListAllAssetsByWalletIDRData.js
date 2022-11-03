@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsByWalletIDRData model module.
  * @module model/ListAllAssetsByWalletIDRData
- * @version 1.9.0
- */var ListAllAssetsByWalletIDRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListAllAssetsByWalletIDRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsByWalletIDRData</code>.
    * @alias module:model/ListAllAssetsByWalletIDRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListAllAssetsByWalletIDRData;
-}(); /**
-      * @member {module:model/ListAllAssetsByWalletIDRI} item
-      */
+}();
+/**
+ * @member {module:model/ListAllAssetsByWalletIDRI} item
+ */
 ListAllAssetsByWalletIDRData.prototype['item'] = undefined;
 var _default = ListAllAssetsByWalletIDRData;
 exports["default"] = _default;

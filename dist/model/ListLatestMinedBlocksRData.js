@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRData model module.
  * @module model/ListLatestMinedBlocksRData
- * @version 1.9.0
- */var ListLatestMinedBlocksRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRData</code>.
    * @alias module:model/ListLatestMinedBlocksRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListLatestMinedBlocksRData.prototype['limit'] = undefined;
 
 /**

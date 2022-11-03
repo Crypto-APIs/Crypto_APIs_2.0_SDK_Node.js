@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingAutomationsLimitReached model module.
  * @module model/TokensForwardingAutomationsLimitReached
- * @version 1.9.0
- */var TokensForwardingAutomationsLimitReached = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TokensForwardingAutomationsLimitReached = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingAutomationsLimitReached</code>.
    * tokens_forwarding_automations_limit_reached
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TokensForwardingAutomationsLimitReached;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 TokensForwardingAutomationsLimitReached.prototype['code'] = undefined;
 
 /**

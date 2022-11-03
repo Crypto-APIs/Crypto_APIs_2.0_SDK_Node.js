@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestRejection model module.
  * @module model/TransactionRequestRejection
- * @version 1.9.0
- */var TransactionRequestRejection = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestRejection = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestRejection</code>.
    * @alias module:model/TransactionRequestRejection
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestRejection;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 TransactionRequestRejection.prototype['apiVersion'] = undefined;
 
 /**

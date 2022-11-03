@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTransactionSmartFeeRI model module.
  * @module model/EstimateTransactionSmartFeeRI
- * @version 1.9.0
- */var EstimateTransactionSmartFeeRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTransactionSmartFeeRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTransactionSmartFeeRI</code>.
    * @alias module:model/EstimateTransactionSmartFeeRI
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTransactionSmartFeeRI;
-}(); /**
-      * Represents the confirmation target in blocks
-      * @member {Number} confirmationTarget
-      */
+}();
+/**
+ * Represents the confirmation target in blocks
+ * @member {Number} confirmationTarget
+ */
 EstimateTransactionSmartFeeRI.prototype['confirmationTarget'] = undefined;
 
 /**

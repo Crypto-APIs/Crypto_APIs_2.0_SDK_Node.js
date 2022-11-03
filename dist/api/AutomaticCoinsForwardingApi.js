@@ -33,8 +33,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * AutomaticCoinsForwarding service.
 * @module api/AutomaticCoinsForwardingApi
-* @version 1.9.0
-*/var AutomaticCoinsForwardingApi = /*#__PURE__*/function () {
+* @version 1.10.0
+*/
+var AutomaticCoinsForwardingApi = /*#__PURE__*/function () {
   /**
   * Constructs a new AutomaticCoinsForwardingApi. 
   * @alias module:api/AutomaticCoinsForwardingApi

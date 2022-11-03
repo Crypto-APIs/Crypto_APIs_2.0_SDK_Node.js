@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSB model module.
  * @module model/ListLatestMinedBlocksRIBSB
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSB = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSB = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSB</code>.
    * Bitcoin
@@ -95,10 +96,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSB;
-}(); /**
-      * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
+ * @member {String} bits
+ */
 ListLatestMinedBlocksRIBSB.prototype['bits'] = undefined;
 
 /**

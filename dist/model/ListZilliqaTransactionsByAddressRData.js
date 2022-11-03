@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByAddressRData model module.
  * @module model/ListZilliqaTransactionsByAddressRData
- * @version 1.9.0
- */var ListZilliqaTransactionsByAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByAddressRData</code>.
    * @alias module:model/ListZilliqaTransactionsByAddressRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByAddressRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListZilliqaTransactionsByAddressRData.prototype['limit'] = undefined;
 
 /**

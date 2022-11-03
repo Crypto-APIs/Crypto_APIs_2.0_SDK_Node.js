@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewUnconfirmedCoinsTransactionsE401 model module.
  * @module model/NewUnconfirmedCoinsTransactionsE401
- * @version 1.9.0
- */var NewUnconfirmedCoinsTransactionsE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewUnconfirmedCoinsTransactionsE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewUnconfirmedCoinsTransactionsE401</code>.
    * @alias module:model/NewUnconfirmedCoinsTransactionsE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewUnconfirmedCoinsTransactionsE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 NewUnconfirmedCoinsTransactionsE401.prototype['code'] = undefined;
 
 /**

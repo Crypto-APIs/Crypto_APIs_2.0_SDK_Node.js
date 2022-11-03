@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesRData model module.
  * @module model/ListDepositAddressesRData
- * @version 1.9.0
- */var ListDepositAddressesRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListDepositAddressesRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesRData</code>.
    * @alias module:model/ListDepositAddressesRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListDepositAddressesRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListDepositAddressesRData.prototype['limit'] = undefined;
 
 /**

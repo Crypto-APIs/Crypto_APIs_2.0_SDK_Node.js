@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockchainDataInternalTransactionNotFound model module.
  * @module model/BlockchainDataInternalTransactionNotFound
- * @version 1.9.0
- */var BlockchainDataInternalTransactionNotFound = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockchainDataInternalTransactionNotFound = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockchainDataInternalTransactionNotFound</code>.
    * blockchain_data_internal_transaction_not_found
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockchainDataInternalTransactionNotFound;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BlockchainDataInternalTransactionNotFound.prototype['code'] = undefined;
 
 /**

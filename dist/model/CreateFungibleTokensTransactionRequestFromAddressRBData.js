@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRBData model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRBData
- * @version 1.9.0
- */var CreateFungibleTokensTransactionRequestFromAddressRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokensTransactionRequestFromAddressRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokensTransactionRequestFromAddressRBData</code>.
    * @alias module:model/CreateFungibleTokensTransactionRequestFromAddressRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokensTransactionRequestFromAddressRBData;
-}(); /**
-      * @member {module:model/CreateFungibleTokensTransactionRequestFromAddressRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/CreateFungibleTokensTransactionRequestFromAddressRBDataItem} item
+ */
 CreateFungibleTokensTransactionRequestFromAddressRBData.prototype['item'] = undefined;
 var _default = CreateFungibleTokensTransactionRequestFromAddressRBData;
 exports["default"] = _default;

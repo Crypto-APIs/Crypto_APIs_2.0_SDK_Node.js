@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response</code>.
    * @alias module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response.prototype['apiVersion'] = undefined;
 
 /**

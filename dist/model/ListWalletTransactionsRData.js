@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRData model module.
  * @module model/ListWalletTransactionsRData
- * @version 1.9.0
- */var ListWalletTransactionsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsRData</code>.
    * @alias module:model/ListWalletTransactionsRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListWalletTransactionsRData.prototype['limit'] = undefined;
 
 /**

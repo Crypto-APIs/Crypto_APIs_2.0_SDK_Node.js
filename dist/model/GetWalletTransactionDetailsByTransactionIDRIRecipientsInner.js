@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIRecipientsInner model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIRecipientsInner
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIRecipientsInner</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDRIRecipientsInner
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIRecipientsInner;
-}(); /**
-      * String representation of the receiver address
-      * @member {String} address
-      */
+}();
+/**
+ * String representation of the receiver address
+ * @member {String} address
+ */
 GetWalletTransactionDetailsByTransactionIDRIRecipientsInner.prototype['address'] = undefined;
 
 /**

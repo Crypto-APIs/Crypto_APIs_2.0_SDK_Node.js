@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRData model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRData
- * @version 1.9.0
- */var ListHDWalletXPubYPubZPubTransactionsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListHDWalletXPubYPubZPubTransactionsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListHDWalletXPubYPubZPubTransactionsRData</code>.
    * @alias module:model/ListHDWalletXPubYPubZPubTransactionsRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListHDWalletXPubYPubZPubTransactionsRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListHDWalletXPubYPubZPubTransactionsRData.prototype['limit'] = undefined;
 
 /**

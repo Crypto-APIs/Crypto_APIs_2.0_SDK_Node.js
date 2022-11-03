@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.9.0
- */var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromAddressRI</code>.
    * @alias module:model/CreateCoinsTransactionRequestFromAddressRI
@@ -92,10 +93,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionRequestFromAddressRI;
-}(); /**
-      * Defines a specific Tag that is an additional XRP address feature. It helps identify a transaction recipient beyond a wallet address. The tag that was encoded into the x-Address along with the Source Classic Address.
-      * @member {Number} addressTag
-      */
+}();
+/**
+ * Defines a specific Tag that is an additional XRP address feature. It helps identify a transaction recipient beyond a wallet address. The tag that was encoded into the x-Address along with the Source Classic Address.
+ * @member {Number} addressTag
+ */
 CreateCoinsTransactionRequestFromAddressRI.prototype['addressTag'] = undefined;
 
 /**

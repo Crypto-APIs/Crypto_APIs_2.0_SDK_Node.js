@@ -27,8 +27,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBS model module.
  * @module model/ListTransactionsByBlockHeightRIBS
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBS</code>.
    * @alias module:model/ListTransactionsByBlockHeightRIBS
@@ -207,10 +208,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBS;
-}(); /**
-      * Represents the time at which a particular transaction can be added to the blockchain.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the time at which a particular transaction can be added to the blockchain.
+ * @member {Number} locktime
+ */
 ListTransactionsByBlockHeightRIBS.prototype['locktime'] = undefined;
 
 /**

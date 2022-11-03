@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHex401Response model module.
  * @module model/DecodeRawTransactionHex401Response
- * @version 1.9.0
- */var DecodeRawTransactionHex401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHex401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHex401Response</code>.
    * @alias module:model/DecodeRawTransactionHex401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHex401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DecodeRawTransactionHex401Response.prototype['apiVersion'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReachedRBDataItem model module.
  * @module model/BlockHeightReachedRBDataItem
- * @version 1.9.0
- */var BlockHeightReachedRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockHeightReachedRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockHeightReachedRBDataItem</code>.
    * @alias module:model/BlockHeightReachedRBDataItem
@@ -66,11 +67,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockHeightReachedRBDataItem;
-}(); /**
-      * Specifies a flag that permits or denies the creation of duplicate addresses.
-      * @member {Boolean} allowDuplicates
-      * @default false
-      */
+}();
+/**
+ * Specifies a flag that permits or denies the creation of duplicate addresses.
+ * @member {Boolean} allowDuplicates
+ * @default false
+ */
 BlockHeightReachedRBDataItem.prototype['allowDuplicates'] = false;
 
 /**

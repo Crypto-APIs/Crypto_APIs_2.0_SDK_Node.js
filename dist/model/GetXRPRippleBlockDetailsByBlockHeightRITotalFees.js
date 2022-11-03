@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHeightRITotalFees model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeightRITotalFees
- * @version 1.9.0
- */var GetXRPRippleBlockDetailsByBlockHeightRITotalFees = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleBlockDetailsByBlockHeightRITotalFees = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHeightRITotalFees</code>.
    * Defines the total fees included in the specific block.
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleBlockDetailsByBlockHeightRITotalFees;
-}(); /**
-      * Defines the amount of all fees included in the specific block.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of all fees included in the specific block.
+ * @member {String} amount
+ */
 GetXRPRippleBlockDetailsByBlockHeightRITotalFees.prototype['amount'] = undefined;
 
 /**

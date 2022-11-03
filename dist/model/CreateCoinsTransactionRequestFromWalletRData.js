@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletRData model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRData
- * @version 1.9.0
- */var CreateCoinsTransactionRequestFromWalletRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionRequestFromWalletRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromWalletRData</code>.
    * @alias module:model/CreateCoinsTransactionRequestFromWalletRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionRequestFromWalletRData;
-}(); /**
-      * @member {module:model/CreateCoinsTransactionRequestFromWalletRI} item
-      */
+}();
+/**
+ * @member {module:model/CreateCoinsTransactionRequestFromWalletRI} item
+ */
 CreateCoinsTransactionRequestFromWalletRData.prototype['item'] = undefined;
 var _default = CreateCoinsTransactionRequestFromWalletRData;
 exports["default"] = _default;

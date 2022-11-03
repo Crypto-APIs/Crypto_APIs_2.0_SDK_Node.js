@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateNewMasterWalletRData model module.
  * @module model/CreateNewMasterWalletRData
- * @version 1.9.0
- */var CreateNewMasterWalletRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateNewMasterWalletRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateNewMasterWalletRData</code>.
    * @alias module:model/CreateNewMasterWalletRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateNewMasterWalletRData;
-}(); /**
-      * @member {module:model/CreateNewMasterWalletRI} item
-      */
+}();
+/**
+ * @member {module:model/CreateNewMasterWalletRI} item
+ */
 CreateNewMasterWalletRData.prototype['item'] = undefined;
 var _default = CreateNewMasterWalletRData;
 exports["default"] = _default;

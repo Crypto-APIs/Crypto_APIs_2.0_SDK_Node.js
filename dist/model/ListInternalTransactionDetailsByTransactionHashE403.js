@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionDetailsByTransactionHashE403 model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashE403
- * @version 1.9.0
- */var ListInternalTransactionDetailsByTransactionHashE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionDetailsByTransactionHashE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionDetailsByTransactionHashE403</code>.
    * @alias module:model/ListInternalTransactionDetailsByTransactionHashE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionDetailsByTransactionHashE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListInternalTransactionDetailsByTransactionHashE403.prototype['code'] = undefined;
 
 /**

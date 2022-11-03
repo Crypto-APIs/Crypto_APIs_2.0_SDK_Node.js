@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddressE403 model module.
  * @module model/ValidateAddressE403
- * @version 1.9.0
- */var ValidateAddressE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ValidateAddressE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ValidateAddressE403</code>.
    * @alias module:model/ValidateAddressE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ValidateAddressE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ValidateAddressE403.prototype['code'] = undefined;
 
 /**

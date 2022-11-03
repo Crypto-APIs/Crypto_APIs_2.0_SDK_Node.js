@@ -20,8 +20,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS
- * @version 1.9.0
- */var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS</code>.
    * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS;
-}(); /**
-      * Representation of whether the transaction is replaceable
-      * @member {Boolean} replaceable
-      */
+}();
+/**
+ * Representation of whether the transaction is replaceable
+ * @member {Boolean} replaceable
+ */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.prototype['replaceable'] = undefined;
 
 /**

@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressE400 model module.
  * @module model/EncodeXAddressE400
- * @version 1.9.0
- */var EncodeXAddressE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EncodeXAddressE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EncodeXAddressE400</code>.
    * @alias module:model/EncodeXAddressE400
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EncodeXAddressE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 EncodeXAddressE400.prototype['code'] = undefined;
 
 /**

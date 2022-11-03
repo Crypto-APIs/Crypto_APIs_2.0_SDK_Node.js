@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensTransfersByTransactionHashE400 model module.
  * @module model/ListTokensTransfersByTransactionHashE400
- * @version 1.9.0
- */var ListTokensTransfersByTransactionHashE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensTransfersByTransactionHashE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensTransfersByTransactionHashE400</code>.
    * @alias module:model/ListTokensTransfersByTransactionHashE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensTransfersByTransactionHashE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListTokensTransfersByTransactionHashE400.prototype['code'] = undefined;
 
 /**

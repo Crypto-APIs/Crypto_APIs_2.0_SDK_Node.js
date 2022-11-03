@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressE403 model module.
  * @module model/ListConfirmedTokensTransfersByAddressE403
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddressE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddressE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddressE403</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddressE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddressE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListConfirmedTokensTransfersByAddressE403.prototype['code'] = undefined;
 
 /**

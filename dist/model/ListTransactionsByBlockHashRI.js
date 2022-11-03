@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRI model module.
  * @module model/ListTransactionsByBlockHashRI
- * @version 1.9.0
- */var ListTransactionsByBlockHashRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashRI</code>.
    * @alias module:model/ListTransactionsByBlockHashRI
@@ -104,10 +105,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashRI;
-}(); /**
-      * Represents the index position of the transaction in the specific block.
-      * @member {Number} index
-      */
+}();
+/**
+ * Represents the index position of the transaction in the specific block.
+ * @member {Number} index
+ */
 ListTransactionsByBlockHashRI.prototype['index'] = undefined;
 
 /**

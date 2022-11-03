@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTokensTransfersByAddressRI model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressRI
- * @version 1.9.0
- */var ListUnconfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTokensTransfersByAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTokensTransfersByAddressRI</code>.
    * @alias module:model/ListUnconfirmedTokensTransfersByAddressRI
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTokensTransfersByAddressRI;
-}(); /**
-      * Represents the contract address of the token, which controls its logic. It is not the address that holds the tokens.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Represents the contract address of the token, which controls its logic. It is not the address that holds the tokens.
+ * @member {String} contractAddress
+ */
 ListUnconfirmedTokensTransfersByAddressRI.prototype['contractAddress'] = undefined;
 
 /**

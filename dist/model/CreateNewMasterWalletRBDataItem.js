@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateNewMasterWalletRBDataItem model module.
  * @module model/CreateNewMasterWalletRBDataItem
- * @version 1.9.0
- */var CreateNewMasterWalletRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateNewMasterWalletRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateNewMasterWalletRBDataItem</code>.
    * @alias module:model/CreateNewMasterWalletRBDataItem
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateNewMasterWalletRBDataItem;
-}(); /**
-      * Defines the name of the wallet that will be generated.
-      * @member {String} walletName
-      */
+}();
+/**
+ * Defines the name of the wallet that will be generated.
+ * @member {String} walletName
+ */
 CreateNewMasterWalletRBDataItem.prototype['walletName'] = undefined;
 
 /**

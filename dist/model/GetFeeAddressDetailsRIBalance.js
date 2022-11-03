@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeAddressDetailsRIBalance model module.
  * @module model/GetFeeAddressDetailsRIBalance
- * @version 1.9.0
- */var GetFeeAddressDetailsRIBalance = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeAddressDetailsRIBalance = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeAddressDetailsRIBalance</code>.
    * Specifies the balance of the fee address.
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetFeeAddressDetailsRIBalance;
-}(); /**
-      * Represents the amount of the units in fee address.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the amount of the units in fee address.
+ * @member {String} amount
+ */
 GetFeeAddressDetailsRIBalance.prototype['amount'] = undefined;
 
 /**

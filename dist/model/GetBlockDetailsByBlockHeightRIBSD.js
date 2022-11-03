@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightRIBSD model module.
  * @module model/GetBlockDetailsByBlockHeightRIBSD
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightRIBSD = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightRIBSD = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightRIBSD</code>.
    * Dogecoin
@@ -96,10 +97,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightRIBSD;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 GetBlockDetailsByBlockHeightRIBSD.prototype['difficulty'] = undefined;
 
 /**

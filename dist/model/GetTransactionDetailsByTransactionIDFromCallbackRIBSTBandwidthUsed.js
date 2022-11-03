@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed;
-}(); /**
-      * Represents the bandwidth used for the transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the bandwidth used for the transaction.
+ * @member {String} amount
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed.prototype['amount'] = undefined;
 
 /**

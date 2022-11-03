@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSBC model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSBC
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightFromCallbackRIBSBC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightFromCallbackRIBSBC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRIBSBC</code>.
    * Bitcoin Cash
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightFromCallbackRIBSBC;
-}(); /**
-      * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
+ * @member {String} bits
+ */
 GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['bits'] = undefined;
 
 /**

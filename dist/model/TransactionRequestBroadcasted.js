@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestBroadcasted model module.
  * @module model/TransactionRequestBroadcasted
- * @version 1.9.0
- */var TransactionRequestBroadcasted = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestBroadcasted = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestBroadcasted</code>.
    * @alias module:model/TransactionRequestBroadcasted
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestBroadcasted;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 TransactionRequestBroadcasted.prototype['apiVersion'] = undefined;
 
 /**

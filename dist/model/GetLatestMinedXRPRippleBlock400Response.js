@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedXRPRippleBlock400Response model module.
  * @module model/GetLatestMinedXRPRippleBlock400Response
- * @version 1.9.0
- */var GetLatestMinedXRPRippleBlock400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedXRPRippleBlock400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedXRPRippleBlock400Response</code>.
    * @alias module:model/GetLatestMinedXRPRippleBlock400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedXRPRippleBlock400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetLatestMinedXRPRippleBlock400Response.prototype['apiVersion'] = undefined;
 
 /**

@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRI
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressAndTimeRangeRI</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressAndTimeRangeRI
@@ -100,10 +101,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressAndTimeRangeRI;
-}(); /**
-      * Represents the index position of the transaction in the block.
-      * @member {Number} index
-      */
+}();
+/**
+ * Represents the index position of the transaction in the block.
+ * @member {Number} index
+ */
 ListConfirmedTransactionsByAddressAndTimeRangeRI.prototype['index'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksR model module.
  * @module model/ListLatestMinedBlocksR
- * @version 1.9.0
- */var ListLatestMinedBlocksR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksR</code>.
    * @alias module:model/ListLatestMinedBlocksR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListLatestMinedBlocksR.prototype['apiVersion'] = undefined;
 
 /**

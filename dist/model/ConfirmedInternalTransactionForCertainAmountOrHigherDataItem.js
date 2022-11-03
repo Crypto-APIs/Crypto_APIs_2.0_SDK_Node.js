@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConfirmedInternalTransactionForCertainAmountOrHigherDataItem model module.
  * @module model/ConfirmedInternalTransactionForCertainAmountOrHigherDataItem
- * @version 1.9.0
- */var ConfirmedInternalTransactionForCertainAmountOrHigherDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConfirmedInternalTransactionForCertainAmountOrHigherDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConfirmedInternalTransactionForCertainAmountOrHigherDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -92,10 +93,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConfirmedInternalTransactionForCertainAmountOrHigherDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 ConfirmedInternalTransactionForCertainAmountOrHigherDataItem.prototype['blockchain'] = undefined;
 
 /**

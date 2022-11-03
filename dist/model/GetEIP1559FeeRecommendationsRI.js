@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetEIP1559FeeRecommendationsRI model module.
  * @module model/GetEIP1559FeeRecommendationsRI
- * @version 1.9.0
- */var GetEIP1559FeeRecommendationsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetEIP1559FeeRecommendationsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetEIP1559FeeRecommendationsRI</code>.
    * @alias module:model/GetEIP1559FeeRecommendationsRI
@@ -68,9 +69,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetEIP1559FeeRecommendationsRI;
-}(); /**
-      * @member {module:model/GetEIP1559FeeRecommendationsRIBaseFeePerGas} baseFeePerGas
-      */
+}();
+/**
+ * @member {module:model/GetEIP1559FeeRecommendationsRIBaseFeePerGas} baseFeePerGas
+ */
 GetEIP1559FeeRecommendationsRI.prototype['baseFeePerGas'] = undefined;
 
 /**

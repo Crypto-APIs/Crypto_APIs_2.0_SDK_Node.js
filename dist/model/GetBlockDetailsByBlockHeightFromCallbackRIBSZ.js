@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSZ model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightFromCallbackRIBSZ = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightFromCallbackRIBSZ = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRIBSZ</code>.
    * Zilliqa
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightFromCallbackRIBSZ;
-}(); /**
-      * Defines how difficult it is for a specific miner to mine the block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Defines how difficult it is for a specific miner to mine the block.
+ * @member {String} difficulty
+ */
 GetBlockDetailsByBlockHeightFromCallbackRIBSZ.prototype['difficulty'] = undefined;
 
 /**

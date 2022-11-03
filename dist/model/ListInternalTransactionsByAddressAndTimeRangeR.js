@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeR model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeR
- * @version 1.9.0
- */var ListInternalTransactionsByAddressAndTimeRangeR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddressAndTimeRangeR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddressAndTimeRangeR</code>.
    * @alias module:model/ListInternalTransactionsByAddressAndTimeRangeR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddressAndTimeRangeR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListInternalTransactionsByAddressAndTimeRangeR.prototype['apiVersion'] = undefined;
 
 /**

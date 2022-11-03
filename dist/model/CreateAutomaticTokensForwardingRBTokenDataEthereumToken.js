@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwardingRBTokenDataEthereumToken model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenDataEthereumToken
- * @version 1.9.0
- */var CreateAutomaticTokensForwardingRBTokenDataEthereumToken = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticTokensForwardingRBTokenDataEthereumToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticTokensForwardingRBTokenDataEthereumToken</code>.
    * Ethereum Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticTokensForwardingRBTokenDataEthereumToken;
-}(); /**
-      * Represents the specific `contractAddress` of the Token that will be forwarded.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Represents the specific `contractAddress` of the Token that will be forwarded.
+ * @member {String} contractAddress
+ */
 CreateAutomaticTokensForwardingRBTokenDataEthereumToken.prototype['contractAddress'] = undefined;
 var _default = CreateAutomaticTokensForwardingRBTokenDataEthereumToken;
 exports["default"] = _default;

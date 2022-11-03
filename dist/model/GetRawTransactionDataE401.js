@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetRawTransactionDataE401 model module.
  * @module model/GetRawTransactionDataE401
- * @version 1.9.0
- */var GetRawTransactionDataE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetRawTransactionDataE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetRawTransactionDataE401</code>.
    * @alias module:model/GetRawTransactionDataE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetRawTransactionDataE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetRawTransactionDataE401.prototype['code'] = undefined;
 
 /**

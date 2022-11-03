@@ -18,7 +18,7 @@ import DecodeRawTransactionHexRISZVoutInner from './DecodeRawTransactionHexRISZV
 /**
  * The DecodeRawTransactionHexRISZ model module.
  * @module model/DecodeRawTransactionHexRISZ
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DecodeRawTransactionHexRISZ {
     /**

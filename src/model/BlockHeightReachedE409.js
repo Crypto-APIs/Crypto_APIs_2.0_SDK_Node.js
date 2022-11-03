@@ -19,7 +19,7 @@ import InvalidData from './InvalidData';
 /**
  * The BlockHeightReachedE409 model module.
  * @module model/BlockHeightReachedE409
- * @version 1.9.0
+ * @version 1.10.0
  */
 class BlockHeightReachedE409 {
     /**

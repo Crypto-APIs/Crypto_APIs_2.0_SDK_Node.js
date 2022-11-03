@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightRIBSZ2 model module.
  * @module model/GetBlockDetailsByBlockHeightRIBSZ2
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightRIBSZ2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightRIBSZ2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightRIBSZ2</code>.
    * Zilliqa
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightRIBSZ2;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 GetBlockDetailsByBlockHeightRIBSZ2.prototype['difficulty'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeRI
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddressAndTimeRangeRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddressAndTimeRangeRI</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeRI
@@ -106,10 +107,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddressAndTimeRangeRI;
-}(); /**
-      * Represents the contract address of the token, which controls its logic. It is not the address that holds the tokens.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Represents the contract address of the token, which controls its logic. It is not the address that holds the tokens.
+ * @member {String} contractAddress
+ */
 ListConfirmedTokensTransfersByAddressAndTimeRangeRI.prototype['contractAddress'] = undefined;
 
 /**

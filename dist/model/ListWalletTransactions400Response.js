@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactions400Response model module.
  * @module model/ListWalletTransactions400Response
- * @version 1.9.0
- */var ListWalletTransactions400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactions400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactions400Response</code>.
    * @alias module:model/ListWalletTransactions400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactions400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListWalletTransactions400Response.prototype['apiVersion'] = undefined;
 
 /**

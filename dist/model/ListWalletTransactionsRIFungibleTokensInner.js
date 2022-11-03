@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRIFungibleTokensInner model module.
  * @module model/ListWalletTransactionsRIFungibleTokensInner
- * @version 1.9.0
- */var ListWalletTransactionsRIFungibleTokensInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsRIFungibleTokensInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsRIFungibleTokensInner</code>.
    * @alias module:model/ListWalletTransactionsRIFungibleTokensInner
@@ -95,10 +96,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsRIFungibleTokensInner;
-}(); /**
-      * Defines the amount of the fungible tokens.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the fungible tokens.
+ * @member {String} amount
+ */
 ListWalletTransactionsRIFungibleTokensInner.prototype['amount'] = undefined;
 
 /**

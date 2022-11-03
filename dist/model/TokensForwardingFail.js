@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingFail model module.
  * @module model/TokensForwardingFail
- * @version 1.9.0
- */var TokensForwardingFail = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TokensForwardingFail = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingFail</code>.
    * @alias module:model/TokensForwardingFail
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TokensForwardingFail;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 TokensForwardingFail.prototype['apiVersion'] = undefined;
 
 /**

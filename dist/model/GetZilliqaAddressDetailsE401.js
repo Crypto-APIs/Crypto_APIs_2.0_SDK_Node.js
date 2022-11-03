@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetailsE401 model module.
  * @module model/GetZilliqaAddressDetailsE401
- * @version 1.9.0
- */var GetZilliqaAddressDetailsE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaAddressDetailsE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaAddressDetailsE401</code>.
    * @alias module:model/GetZilliqaAddressDetailsE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaAddressDetailsE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetZilliqaAddressDetailsE401.prototype['code'] = undefined;
 
 /**

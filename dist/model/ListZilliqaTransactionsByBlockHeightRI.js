@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHeightRI model module.
  * @module model/ListZilliqaTransactionsByBlockHeightRI
- * @version 1.9.0
- */var ListZilliqaTransactionsByBlockHeightRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByBlockHeightRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByBlockHeightRI</code>.
    * @alias module:model/ListZilliqaTransactionsByBlockHeightRI
@@ -113,9 +114,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByBlockHeightRI;
-}(); /**
-      * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRIFee} fee
-      */
+}();
+/**
+ * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRIFee} fee
+ */
 ListZilliqaTransactionsByBlockHeightRI.prototype['fee'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewUnconfirmedTokensTransactionsR model module.
  * @module model/NewUnconfirmedTokensTransactionsR
- * @version 1.9.0
- */var NewUnconfirmedTokensTransactionsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewUnconfirmedTokensTransactionsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewUnconfirmedTokensTransactionsR</code>.
    * @alias module:model/NewUnconfirmedTokensTransactionsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewUnconfirmedTokensTransactionsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewUnconfirmedTokensTransactionsR.prototype['apiVersion'] = undefined;
 
 /**

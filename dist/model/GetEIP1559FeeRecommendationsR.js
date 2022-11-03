@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetEIP1559FeeRecommendationsR model module.
  * @module model/GetEIP1559FeeRecommendationsR
- * @version 1.9.0
- */var GetEIP1559FeeRecommendationsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetEIP1559FeeRecommendationsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetEIP1559FeeRecommendationsR</code>.
    * @alias module:model/GetEIP1559FeeRecommendationsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetEIP1559FeeRecommendationsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetEIP1559FeeRecommendationsR.prototype['apiVersion'] = undefined;
 
 /**

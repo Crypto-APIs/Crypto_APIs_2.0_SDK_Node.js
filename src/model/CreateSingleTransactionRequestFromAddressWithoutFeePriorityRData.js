@@ -17,7 +17,7 @@ import CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI from './Cre
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRData model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRData
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityRData {
     /**

@@ -18,13 +18,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRI
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHashRI</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHashRI
    * @param index {Number} Represents the index position of the transaction in the specific block.
    * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
+   * @param offer {module:model/ListXRPRippleTransactionsByBlockHashRIOffer} 
    * @param recipients {Array.<module:model/ListXRPRippleTransactionsByBlockHashRIRecipientsInner>} Represents an object of addresses that receive the transactions.
    * @param senders {Array.<module:model/ListXRPRippleTransactionsByBlockHashRISendersInner>} Represents an object of addresses that provide the funds.
    * @param sequence {Number} Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
@@ -33,13 +35,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
    * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
    * @param type {String} Defines the type of the transaction.
    * @param fee {module:model/ListXRPRippleTransactionsByBlockHashRIFee} 
-   * @param offer {module:model/ListXRPRippleTransactionsByBlockHashRIOffer} 
    * @param receive {module:model/ListXRPRippleTransactionsByBlockHashRIReceive} 
    * @param value {module:model/ListXRPRippleTransactionsByBlockHashRIValue} 
    */
-  function ListXRPRippleTransactionsByBlockHashRI(index, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value) {
+  function ListXRPRippleTransactionsByBlockHashRI(index, minedInBlockHeight, offer, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, receive, value) {
     _classCallCheck(this, ListXRPRippleTransactionsByBlockHashRI);
-    ListXRPRippleTransactionsByBlockHashRI.initialize(this, index, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value);
+    ListXRPRippleTransactionsByBlockHashRI.initialize(this, index, minedInBlockHeight, offer, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, receive, value);
   }
 
   /**
@@ -49,9 +50,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
    */
   _createClass(ListXRPRippleTransactionsByBlockHashRI, null, [{
     key: "initialize",
-    value: function initialize(obj, index, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value) {
+    value: function initialize(obj, index, minedInBlockHeight, offer, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, receive, value) {
       obj['index'] = index;
       obj['minedInBlockHeight'] = minedInBlockHeight;
+      obj['offer'] = offer;
       obj['recipients'] = recipients;
       obj['senders'] = senders;
       obj['sequence'] = sequence;
@@ -60,7 +62,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       obj['transactionHash'] = transactionHash;
       obj['type'] = type;
       obj['fee'] = fee;
-      obj['offer'] = offer;
       obj['receive'] = receive;
       obj['value'] = value;
     }
@@ -89,6 +90,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         if (data.hasOwnProperty('minedInBlockHeight')) {
           obj['minedInBlockHeight'] = _ApiClient["default"].convertToType(data['minedInBlockHeight'], 'Number');
         }
+        if (data.hasOwnProperty('offer')) {
+          obj['offer'] = _ListXRPRippleTransactionsByBlockHashRIOffer["default"].constructFromObject(data['offer']);
+        }
         if (data.hasOwnProperty('recipients')) {
           obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], [_ListXRPRippleTransactionsByBlockHashRIRecipientsInner["default"]]);
         }
@@ -113,9 +117,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         if (data.hasOwnProperty('fee')) {
           obj['fee'] = _ListXRPRippleTransactionsByBlockHashRIFee["default"].constructFromObject(data['fee']);
         }
-        if (data.hasOwnProperty('offer')) {
-          obj['offer'] = _ListXRPRippleTransactionsByBlockHashRIOffer["default"].constructFromObject(data['offer']);
-        }
         if (data.hasOwnProperty('receive')) {
           obj['receive'] = _ListXRPRippleTransactionsByBlockHashRIReceive["default"].constructFromObject(data['receive']);
         }
@@ -127,10 +128,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHashRI;
-}(); /**
-      * Represents any additional data that may be needed.
-      * @member {String} additionalData
-      */
+}();
+/**
+ * Represents any additional data that may be needed.
+ * @member {String} additionalData
+ */
 ListXRPRippleTransactionsByBlockHashRI.prototype['additionalData'] = undefined;
 
 /**
@@ -149,6 +151,11 @@ ListXRPRippleTransactionsByBlockHashRI.prototype['index'] = undefined;
  * @member {Number} minedInBlockHeight
  */
 ListXRPRippleTransactionsByBlockHashRI.prototype['minedInBlockHeight'] = undefined;
+
+/**
+ * @member {module:model/ListXRPRippleTransactionsByBlockHashRIOffer} offer
+ */
+ListXRPRippleTransactionsByBlockHashRI.prototype['offer'] = undefined;
 
 /**
  * Represents an object of addresses that receive the transactions.
@@ -196,11 +203,6 @@ ListXRPRippleTransactionsByBlockHashRI.prototype['type'] = undefined;
  * @member {module:model/ListXRPRippleTransactionsByBlockHashRIFee} fee
  */
 ListXRPRippleTransactionsByBlockHashRI.prototype['fee'] = undefined;
-
-/**
- * @member {module:model/ListXRPRippleTransactionsByBlockHashRIOffer} offer
- */
-ListXRPRippleTransactionsByBlockHashRI.prototype['offer'] = undefined;
 
 /**
  * @member {module:model/ListXRPRippleTransactionsByBlockHashRIReceive} receive

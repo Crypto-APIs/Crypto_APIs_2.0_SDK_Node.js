@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmount401Response model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmount401Response
- * @version 1.9.0
- */var CreateCoinsTransactionFromAddressForWholeAmount401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionFromAddressForWholeAmount401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionFromAddressForWholeAmount401Response</code>.
    * @alias module:model/CreateCoinsTransactionFromAddressForWholeAmount401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionFromAddressForWholeAmount401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateCoinsTransactionFromAddressForWholeAmount401Response.prototype['apiVersion'] = undefined;
 
 /**

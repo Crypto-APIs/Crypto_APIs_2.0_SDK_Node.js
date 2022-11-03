@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressCoinsTransactionConfirmed model module.
  * @module model/AddressCoinsTransactionConfirmed
- * @version 1.9.0
- */var AddressCoinsTransactionConfirmed = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressCoinsTransactionConfirmed = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressCoinsTransactionConfirmed</code>.
    * @alias module:model/AddressCoinsTransactionConfirmed
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressCoinsTransactionConfirmed;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 AddressCoinsTransactionConfirmed.prototype['apiVersion'] = undefined;
 
 /**

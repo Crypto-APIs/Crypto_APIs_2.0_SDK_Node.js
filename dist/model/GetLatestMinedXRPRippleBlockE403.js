@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedXRPRippleBlockE403 model module.
  * @module model/GetLatestMinedXRPRippleBlockE403
- * @version 1.9.0
- */var GetLatestMinedXRPRippleBlockE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedXRPRippleBlockE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedXRPRippleBlockE403</code>.
    * @alias module:model/GetLatestMinedXRPRippleBlockE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedXRPRippleBlockE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetLatestMinedXRPRippleBlockE403.prototype['code'] = undefined;
 
 /**

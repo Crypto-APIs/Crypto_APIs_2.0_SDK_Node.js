@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddress403Response model module.
  * @module model/ValidateAddress403Response
- * @version 1.9.0
- */var ValidateAddress403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ValidateAddress403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ValidateAddress403Response</code>.
    * @alias module:model/ValidateAddress403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ValidateAddress403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ValidateAddress403Response.prototype['apiVersion'] = undefined;
 
 /**

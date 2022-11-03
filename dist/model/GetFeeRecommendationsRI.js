@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendationsRI model module.
  * @module model/GetFeeRecommendationsRI
- * @version 1.9.0
- */var GetFeeRecommendationsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeRecommendationsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeRecommendationsRI</code>.
    * @alias module:model/GetFeeRecommendationsRI
@@ -21,10 +22,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
    * @param fast {String} Fast fee per byte calculated from unconfirmed transactions
    * @param slow {String} Slow fee per byte calculated from unconfirmed transactions
    * @param standard {String} Standard fee per byte calculated from unconfirmed transactions
+   * @param feeCushionMultiplier {String} Fee cushion multiplier used to multiply the base fee
    */
-  function GetFeeRecommendationsRI(unit, fast, slow, standard) {
+  function GetFeeRecommendationsRI(unit, fast, slow, standard, feeCushionMultiplier) {
     _classCallCheck(this, GetFeeRecommendationsRI);
-    GetFeeRecommendationsRI.initialize(this, unit, fast, slow, standard);
+    GetFeeRecommendationsRI.initialize(this, unit, fast, slow, standard, feeCushionMultiplier);
   }
 
   /**
@@ -34,11 +36,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
    */
   _createClass(GetFeeRecommendationsRI, null, [{
     key: "initialize",
-    value: function initialize(obj, unit, fast, slow, standard) {
+    value: function initialize(obj, unit, fast, slow, standard, feeCushionMultiplier) {
       obj['unit'] = unit;
       obj['fast'] = fast;
       obj['slow'] = slow;
       obj['standard'] = standard;
+      obj['feeCushionMultiplier'] = feeCushionMultiplier;
     }
 
     /**
@@ -65,15 +68,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         if (data.hasOwnProperty('standard')) {
           obj['standard'] = _ApiClient["default"].convertToType(data['standard'], 'String');
         }
+        if (data.hasOwnProperty('feeCushionMultiplier')) {
+          obj['feeCushionMultiplier'] = _ApiClient["default"].convertToType(data['feeCushionMultiplier'], 'String');
+        }
       }
       return obj;
     }
   }]);
   return GetFeeRecommendationsRI;
-}(); /**
-      * Currency unit
-      * @member {String} unit
-      */
+}();
+/**
+ * Currency unit
+ * @member {String} unit
+ */
 GetFeeRecommendationsRI.prototype['unit'] = undefined;
 
 /**
@@ -93,5 +100,11 @@ GetFeeRecommendationsRI.prototype['slow'] = undefined;
  * @member {String} standard
  */
 GetFeeRecommendationsRI.prototype['standard'] = undefined;
+
+/**
+ * Fee cushion multiplier used to multiply the base fee
+ * @member {String} feeCushionMultiplier
+ */
+GetFeeRecommendationsRI.prototype['feeCushionMultiplier'] = undefined;
 var _default = GetFeeRecommendationsRI;
 exports["default"] = _default;

@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsE400 model module.
  * @module model/NewConfirmedInternalTransactionsE400
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsE400</code>.
    * @alias module:model/NewConfirmedInternalTransactionsE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 NewConfirmedInternalTransactionsE400.prototype['code'] = undefined;
 
 /**

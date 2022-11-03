@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbols403Response model module.
  * @module model/GetExchangeRateByAssetSymbols403Response
- * @version 1.9.0
- */var GetExchangeRateByAssetSymbols403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetExchangeRateByAssetSymbols403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetSymbols403Response</code>.
    * @alias module:model/GetExchangeRateByAssetSymbols403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetExchangeRateByAssetSymbols403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetExchangeRateByAssetSymbols403Response.prototype['apiVersion'] = undefined;
 
 /**

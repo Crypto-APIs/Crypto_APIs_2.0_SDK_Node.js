@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData
- * @version 1.9.0
- */var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData</code>.
    * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData;
-}(); /**
-      * @member {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI} item
-      */
+}();
+/**
+ * @member {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI} item
+ */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData.prototype['item'] = undefined;
 var _default = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRData;
 exports["default"] = _default;

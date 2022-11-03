@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedXRPRippleBlockRI model module.
  * @module model/GetLatestMinedXRPRippleBlockRI
- * @version 1.9.0
- */var GetLatestMinedXRPRippleBlockRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedXRPRippleBlockRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedXRPRippleBlockRI</code>.
    * @alias module:model/GetLatestMinedXRPRippleBlockRI
@@ -87,10 +88,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedXRPRippleBlockRI;
-}(); /**
-      * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
-      * @member {String} blockHash
-      */
+}();
+/**
+ * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
+ * @member {String} blockHash
+ */
 GetLatestMinedXRPRippleBlockRI.prototype['blockHash'] = undefined;
 
 /**

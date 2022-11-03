@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensTransfersByTransactionHashRITransactionFee model module.
  * @module model/ListTokensTransfersByTransactionHashRITransactionFee
- * @version 1.9.0
- */var ListTokensTransfersByTransactionHashRITransactionFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensTransfersByTransactionHashRITransactionFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensTransfersByTransactionHashRITransactionFee</code>.
    * @alias module:model/ListTokensTransfersByTransactionHashRITransactionFee
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensTransfersByTransactionHashRITransactionFee;
-}(); /**
-      * Represents the total fee of a transaction which includes token transfers.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the total fee of a transaction which includes token transfers.
+ * @member {String} amount
+ */
 ListTokensTransfersByTransactionHashRITransactionFee.prototype['amount'] = undefined;
 
 /**

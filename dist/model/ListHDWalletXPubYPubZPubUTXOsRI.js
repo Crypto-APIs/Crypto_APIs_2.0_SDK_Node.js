@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubUTXOsRI model module.
  * @module model/ListHDWalletXPubYPubZPubUTXOsRI
- * @version 1.9.0
- */var ListHDWalletXPubYPubZPubUTXOsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListHDWalletXPubYPubZPubUTXOsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListHDWalletXPubYPubZPubUTXOsRI</code>.
    * @alias module:model/ListHDWalletXPubYPubZPubUTXOsRI
@@ -95,10 +96,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListHDWalletXPubYPubZPubUTXOsRI;
-}(); /**
-      * Represents the public address, which is a compressed and shortened form of a public key.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the public address, which is a compressed and shortened form of a public key.
+ * @member {String} address
+ */
 ListHDWalletXPubYPubZPubUTXOsRI.prototype['address'] = undefined;
 
 /**

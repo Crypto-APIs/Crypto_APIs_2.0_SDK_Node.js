@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensForwardingAutomations400Response model module.
  * @module model/ListTokensForwardingAutomations400Response
- * @version 1.9.0
- */var ListTokensForwardingAutomations400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensForwardingAutomations400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensForwardingAutomations400Response</code>.
    * @alias module:model/ListTokensForwardingAutomations400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensForwardingAutomations400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListTokensForwardingAutomations400Response.prototype['apiVersion'] = undefined;
 
 /**

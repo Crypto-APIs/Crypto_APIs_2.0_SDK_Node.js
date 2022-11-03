@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestFailDataItem model module.
  * @module model/TransactionRequestFailDataItem
- * @version 1.9.0
- */var TransactionRequestFailDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestFailDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestFailDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestFailDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 TransactionRequestFailDataItem.prototype['blockchain'] = undefined;
 
 /**

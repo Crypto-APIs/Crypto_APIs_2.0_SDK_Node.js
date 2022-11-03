@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationRI model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationRI
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsAndEachConfirmationRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsAndEachConfirmationRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsAndEachConfirmationRI</code>.
    * @alias module:model/NewConfirmedInternalTransactionsAndEachConfirmationRI
@@ -90,10 +91,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsAndEachConfirmationRI;
-}(); /**
-      * Defines the specific address of the internal transaction.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the specific address of the internal transaction.
+ * @member {String} address
+ */
 NewConfirmedInternalTransactionsAndEachConfirmationRI.prototype['address'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddress401Response model module.
  * @module model/ListConfirmedTokensTransfersByAddress401Response
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddress401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddress401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddress401Response</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddress401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddress401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListConfirmedTokensTransfersByAddress401Response.prototype['apiVersion'] = undefined;
 
 /**

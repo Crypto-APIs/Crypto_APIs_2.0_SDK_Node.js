@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHash403Response model module.
  * @module model/ListXRPRippleTransactionsByBlockHash403Response
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHash403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHash403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHash403Response</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHash403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHash403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListXRPRippleTransactionsByBlockHash403Response.prototype['apiVersion'] = undefined;
 
 /**

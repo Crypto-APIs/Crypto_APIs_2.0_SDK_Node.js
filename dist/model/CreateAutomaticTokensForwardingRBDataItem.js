@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwardingRBDataItem model module.
  * @module model/CreateAutomaticTokensForwardingRBDataItem
- * @version 1.9.0
- */var CreateAutomaticTokensForwardingRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticTokensForwardingRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticTokensForwardingRBDataItem</code>.
    * @alias module:model/CreateAutomaticTokensForwardingRBDataItem
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticTokensForwardingRBDataItem;
-}(); /**
-      * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
-      * @member {String} callbackSecretKey
-      */
+}();
+/**
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
+ * @member {String} callbackSecretKey
+ */
 CreateAutomaticTokensForwardingRBDataItem.prototype['callbackSecretKey'] = undefined;
 
 /**

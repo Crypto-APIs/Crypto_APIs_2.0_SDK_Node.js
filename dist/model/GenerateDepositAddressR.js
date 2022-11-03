@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddressR model module.
  * @module model/GenerateDepositAddressR
- * @version 1.9.0
- */var GenerateDepositAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GenerateDepositAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GenerateDepositAddressR</code>.
    * @alias module:model/GenerateDepositAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GenerateDepositAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GenerateDepositAddressR.prototype['apiVersion'] = undefined;
 
 /**

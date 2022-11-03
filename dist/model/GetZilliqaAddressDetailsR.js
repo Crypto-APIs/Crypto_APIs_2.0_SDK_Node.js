@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetailsR model module.
  * @module model/GetZilliqaAddressDetailsR
- * @version 1.9.0
- */var GetZilliqaAddressDetailsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaAddressDetailsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaAddressDetailsR</code>.
    * @alias module:model/GetZilliqaAddressDetailsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaAddressDetailsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetZilliqaAddressDetailsR.prototype['apiVersion'] = undefined;
 
 /**

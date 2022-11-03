@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionDetailsByTransactionHash401Response model module.
  * @module model/ListInternalTransactionDetailsByTransactionHash401Response
- * @version 1.9.0
- */var ListInternalTransactionDetailsByTransactionHash401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionDetailsByTransactionHash401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionDetailsByTransactionHash401Response</code>.
    * @alias module:model/ListInternalTransactionDetailsByTransactionHash401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionDetailsByTransactionHash401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListInternalTransactionDetailsByTransactionHash401Response.prototype['apiVersion'] = undefined;
 
 /**

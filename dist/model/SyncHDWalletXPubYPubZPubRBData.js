@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncHDWalletXPubYPubZPubRBData model module.
  * @module model/SyncHDWalletXPubYPubZPubRBData
- * @version 1.9.0
- */var SyncHDWalletXPubYPubZPubRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var SyncHDWalletXPubYPubZPubRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>SyncHDWalletXPubYPubZPubRBData</code>.
    * @alias module:model/SyncHDWalletXPubYPubZPubRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return SyncHDWalletXPubYPubZPubRBData;
-}(); /**
-      * @member {module:model/SyncHDWalletXPubYPubZPubRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/SyncHDWalletXPubYPubZPubRBDataItem} item
+ */
 SyncHDWalletXPubYPubZPubRBData.prototype['item'] = undefined;
 var _default = SyncHDWalletXPubYPubZPubRBData;
 exports["default"] = _default;

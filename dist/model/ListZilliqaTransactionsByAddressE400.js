@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByAddressE400 model module.
  * @module model/ListZilliqaTransactionsByAddressE400
- * @version 1.9.0
- */var ListZilliqaTransactionsByAddressE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByAddressE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByAddressE400</code>.
    * @alias module:model/ListZilliqaTransactionsByAddressE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByAddressE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListZilliqaTransactionsByAddressE400.prototype['code'] = undefined;
 
 /**

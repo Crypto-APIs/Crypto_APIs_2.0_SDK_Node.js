@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestBroadcastedData model module.
  * @module model/TransactionRequestBroadcastedData
- * @version 1.9.0
- */var TransactionRequestBroadcastedData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestBroadcastedData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestBroadcastedData</code>.
    * Specifies all data, as attributes, included into the callback notification, which depends on the &#x60;event&#x60;.
@@ -67,10 +68,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestBroadcastedData;
-}(); /**
-      * Represents the Crypto APIs 2.0 product which sends the callback.
-      * @member {String} product
-      */
+}();
+/**
+ * Represents the Crypto APIs 2.0 product which sends the callback.
+ * @member {String} product
+ */
 TransactionRequestBroadcastedData.prototype['product'] = undefined;
 
 /**

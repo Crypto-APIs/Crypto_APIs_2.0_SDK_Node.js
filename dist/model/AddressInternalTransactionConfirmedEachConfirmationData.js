@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressInternalTransactionConfirmedEachConfirmationData model module.
  * @module model/AddressInternalTransactionConfirmedEachConfirmationData
- * @version 1.9.0
- */var AddressInternalTransactionConfirmedEachConfirmationData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressInternalTransactionConfirmedEachConfirmationData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressInternalTransactionConfirmedEachConfirmationData</code>.
    * Specifies all data, as attributes, included into the callback notification, which depends on the &#x60;event&#x60;.
@@ -67,10 +68,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressInternalTransactionConfirmedEachConfirmationData;
-}(); /**
-      * Represents the Crypto APIs 2.0 product which sends the callback.
-      * @member {String} product
-      */
+}();
+/**
+ * Represents the Crypto APIs 2.0 product which sends the callback.
+ * @member {String} product
+ */
 AddressInternalTransactionConfirmedEachConfirmationData.prototype['product'] = undefined;
 
 /**

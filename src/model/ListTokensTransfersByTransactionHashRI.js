@@ -17,7 +17,7 @@ import ListTokensTransfersByTransactionHashRITransactionFee from './ListTokensTr
 /**
  * The ListTokensTransfersByTransactionHashRI model module.
  * @module model/ListTokensTransfersByTransactionHashRI
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListTokensTransfersByTransactionHashRI {
     /**

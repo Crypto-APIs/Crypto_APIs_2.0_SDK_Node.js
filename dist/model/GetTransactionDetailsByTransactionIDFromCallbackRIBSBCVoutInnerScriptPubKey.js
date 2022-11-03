@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInnerScriptPubKey model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInnerScriptPubKey
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInnerScriptPubKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInnerScriptPubKey</code>.
    * Represents the script public key.
@@ -76,9 +77,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInnerScriptPubKey;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInnerScriptPubKey.prototype['addresses'] = undefined;
 
 /**

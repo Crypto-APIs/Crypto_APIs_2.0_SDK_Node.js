@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddress400Response model module.
  * @module model/CreateCoinsTransactionRequestFromAddress400Response
- * @version 1.9.0
- */var CreateCoinsTransactionRequestFromAddress400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionRequestFromAddress400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromAddress400Response</code>.
    * @alias module:model/CreateCoinsTransactionRequestFromAddress400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionRequestFromAddress400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateCoinsTransactionRequestFromAddress400Response.prototype['apiVersion'] = undefined;
 
 /**

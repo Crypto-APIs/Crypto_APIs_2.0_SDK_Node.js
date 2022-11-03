@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSBVinInner model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBVinInner
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRIBSBVinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRIBSBVinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRIBSBVinInner</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressRIBSBVinInner
@@ -81,9 +82,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRIBSBVinInner;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 ListConfirmedTransactionsByAddressRIBSBVinInner.prototype['addresses'] = undefined;
 
 /**

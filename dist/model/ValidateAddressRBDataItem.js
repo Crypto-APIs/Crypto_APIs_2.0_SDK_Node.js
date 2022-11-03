@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddressRBDataItem model module.
  * @module model/ValidateAddressRBDataItem
- * @version 1.9.0
- */var ValidateAddressRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ValidateAddressRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ValidateAddressRBDataItem</code>.
    * @alias module:model/ValidateAddressRBDataItem
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ValidateAddressRBDataItem;
-}(); /**
-      * Represents the specific address that will be checked if it's valid or not.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the specific address that will be checked if it's valid or not.
+ * @member {String} address
+ */
 ValidateAddressRBDataItem.prototype['address'] = undefined;
 var _default = ValidateAddressRBDataItem;
 exports["default"] = _default;

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BannedIpAddressDetailsInner model module.
  * @module model/BannedIpAddressDetailsInner
- * @version 1.9.0
- */var BannedIpAddressDetailsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BannedIpAddressDetailsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BannedIpAddressDetailsInner</code>.
    * @alias module:model/BannedIpAddressDetailsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BannedIpAddressDetailsInner;
-}(); /**
-      * Specifies an attribute of the error by name.
-      * @member {String} attribute
-      */
+}();
+/**
+ * Specifies an attribute of the error by name.
+ * @member {String} attribute
+ */
 BannedIpAddressDetailsInner.prototype['attribute'] = undefined;
 
 /**

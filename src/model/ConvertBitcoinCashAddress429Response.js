@@ -17,7 +17,7 @@ import RequestLimitReached from './RequestLimitReached';
 /**
  * The ConvertBitcoinCashAddress429Response model module.
  * @module model/ConvertBitcoinCashAddress429Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ConvertBitcoinCashAddress429Response {
     /**

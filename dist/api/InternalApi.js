@@ -31,8 +31,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.9.0
-*/var InternalApi = /*#__PURE__*/function () {
+* @version 1.10.0
+*/
+var InternalApi = /*#__PURE__*/function () {
   /**
   * Constructs a new InternalApi. 
   * @alias module:api/InternalApi

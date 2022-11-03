@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeAddressDetailsE403 model module.
  * @module model/GetFeeAddressDetailsE403
- * @version 1.9.0
- */var GetFeeAddressDetailsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeAddressDetailsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeAddressDetailsE403</code>.
    * @alias module:model/GetFeeAddressDetailsE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetFeeAddressDetailsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetFeeAddressDetailsE403.prototype['code'] = undefined;
 
 /**

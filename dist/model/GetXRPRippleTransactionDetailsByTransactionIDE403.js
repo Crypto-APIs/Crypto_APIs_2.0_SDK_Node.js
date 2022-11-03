@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDE403 model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDE403
- * @version 1.9.0
- */var GetXRPRippleTransactionDetailsByTransactionIDE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleTransactionDetailsByTransactionIDE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleTransactionDetailsByTransactionIDE403</code>.
    * @alias module:model/GetXRPRippleTransactionDetailsByTransactionIDE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleTransactionDetailsByTransactionIDE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetXRPRippleTransactionDetailsByTransactionIDE403.prototype['code'] = undefined;
 
 /**

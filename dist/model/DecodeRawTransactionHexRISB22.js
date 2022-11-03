@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISB22 model module.
  * @module model/DecodeRawTransactionHexRISB22
- * @version 1.9.0
- */var DecodeRawTransactionHexRISB22 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISB22 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISB22</code>.
    * Binance Smart Chain
@@ -103,10 +104,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISB22;
-}(); /**
-      * Defines the approximate fee value. When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
-      * @member {String} approximateFee
-      */
+}();
+/**
+ * Defines the approximate fee value. When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
+ * @member {String} approximateFee
+ */
 DecodeRawTransactionHexRISB22.prototype['approximateFee'] = undefined;
 
 /**

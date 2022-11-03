@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSEC model module.
  * @module model/ListTransactionsByBlockHashRIBSEC
- * @version 1.9.0
- */var ListTransactionsByBlockHashRIBSEC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashRIBSEC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashRIBSEC</code>.
    * Ethereum Classic
@@ -87,10 +88,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashRIBSEC;
-}(); /**
-      * Represents the specific transaction contract.
-      * @member {String} contract
-      */
+}();
+/**
+ * Represents the specific transaction contract.
+ * @member {String} contract
+ */
 ListTransactionsByBlockHashRIBSEC.prototype['contract'] = undefined;
 
 /**

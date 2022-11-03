@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken
- * @version 1.9.0
- */var CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken</code>.
    * Bitcoin Omni Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken;
-}(); /**
-      * Represents the specific `propertyId` of the token data that will be forwarded.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Represents the specific `propertyId` of the token data that will be forwarded.
+ * @member {Number} propertyId
+ */
 CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken.prototype['propertyId'] = undefined;
 var _default = CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken;
 exports["default"] = _default;

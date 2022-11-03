@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHeight403Response model module.
  * @module model/ListXRPRippleTransactionsByBlockHeight403Response
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHeight403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHeight403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHeight403Response</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHeight403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHeight403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListXRPRippleTransactionsByBlockHeight403Response.prototype['apiVersion'] = undefined;
 
 /**

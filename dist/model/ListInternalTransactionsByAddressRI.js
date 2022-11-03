@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressRI model module.
  * @module model/ListInternalTransactionsByAddressRI
- * @version 1.9.0
- */var ListInternalTransactionsByAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddressRI</code>.
    * @alias module:model/ListInternalTransactionsByAddressRI
@@ -95,10 +96,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddressRI;
-}(); /**
-      * Defines the specific amount of the transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the specific amount of the transaction.
+ * @member {String} amount
+ */
 ListInternalTransactionsByAddressRI.prototype['amount'] = undefined;
 
 /**

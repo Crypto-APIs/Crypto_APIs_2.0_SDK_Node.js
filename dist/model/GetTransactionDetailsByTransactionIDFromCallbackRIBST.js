@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBST model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBST
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBST = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBST = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBST</code>.
    * Tron
@@ -103,10 +104,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBST;
-}(); /**
-      * Defines the amount of the transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the transaction.
+ * @member {String} amount
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBST.prototype['amount'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidApiKey model module.
  * @module model/InvalidApiKey
- * @version 1.9.0
- */var InvalidApiKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var InvalidApiKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>InvalidApiKey</code>.
    * invalid_api_key
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return InvalidApiKey;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 InvalidApiKey.prototype['code'] = undefined;
 
 /**

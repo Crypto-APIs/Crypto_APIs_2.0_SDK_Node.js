@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewRevertedBlockE400 model module.
  * @module model/NewRevertedBlockE400
- * @version 1.9.0
- */var NewRevertedBlockE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewRevertedBlockE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewRevertedBlockE400</code>.
    * @alias module:model/NewRevertedBlockE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewRevertedBlockE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 NewRevertedBlockE400.prototype['code'] = undefined;
 
 /**

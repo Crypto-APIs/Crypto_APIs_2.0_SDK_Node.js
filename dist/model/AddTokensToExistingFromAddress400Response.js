@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddress400Response model module.
  * @module model/AddTokensToExistingFromAddress400Response
- * @version 1.9.0
- */var AddTokensToExistingFromAddress400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddress400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddress400Response</code>.
    * @alias module:model/AddTokensToExistingFromAddress400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddress400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 AddTokensToExistingFromAddress400Response.prototype['apiVersion'] = undefined;
 
 /**

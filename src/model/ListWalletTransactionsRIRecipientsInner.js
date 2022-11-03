@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListWalletTransactionsRIRecipientsInner model module.
  * @module model/ListWalletTransactionsRIRecipientsInner
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListWalletTransactionsRIRecipientsInner {
     /**

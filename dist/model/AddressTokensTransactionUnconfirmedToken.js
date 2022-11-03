@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionUnconfirmedToken model module.
  * @module model/AddressTokensTransactionUnconfirmedToken
- * @version 1.9.0
- */var AddressTokensTransactionUnconfirmedToken = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressTokensTransactionUnconfirmedToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionUnconfirmedToken</code>.
    * @alias module:model/AddressTokensTransactionUnconfirmedToken
@@ -105,10 +106,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressTokensTransactionUnconfirmedToken;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 AddressTokensTransactionUnconfirmedToken.prototype['name'] = undefined;
 
 /**

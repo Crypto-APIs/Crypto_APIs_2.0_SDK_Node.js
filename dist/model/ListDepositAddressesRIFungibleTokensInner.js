@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesRIFungibleTokensInner model module.
  * @module model/ListDepositAddressesRIFungibleTokensInner
- * @version 1.9.0
- */var ListDepositAddressesRIFungibleTokensInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListDepositAddressesRIFungibleTokensInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesRIFungibleTokensInner</code>.
    * @alias module:model/ListDepositAddressesRIFungibleTokensInner
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListDepositAddressesRIFungibleTokensInner;
-}(); /**
-      * Defines the amount of the fungible tokens.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the fungible tokens.
+ * @member {String} amount
+ */
 ListDepositAddressesRIFungibleTokensInner.prototype['amount'] = undefined;
 
 /**

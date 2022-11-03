@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHeightE403 model module.
  * @module model/ListZilliqaTransactionsByBlockHeightE403
- * @version 1.9.0
- */var ListZilliqaTransactionsByBlockHeightE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByBlockHeightE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByBlockHeightE403</code>.
    * @alias module:model/ListZilliqaTransactionsByBlockHeightE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByBlockHeightE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListZilliqaTransactionsByBlockHeightE403.prototype['code'] = undefined;
 
 /**

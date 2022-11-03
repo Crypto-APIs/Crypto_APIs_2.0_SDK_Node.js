@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetsIDsE401 model module.
  * @module model/GetExchangeRateByAssetsIDsE401
- * @version 1.9.0
- */var GetExchangeRateByAssetsIDsE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetExchangeRateByAssetsIDsE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetsIDsE401</code>.
    * @alias module:model/GetExchangeRateByAssetsIDsE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetExchangeRateByAssetsIDsE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetExchangeRateByAssetsIDsE401.prototype['code'] = undefined;
 
 /**

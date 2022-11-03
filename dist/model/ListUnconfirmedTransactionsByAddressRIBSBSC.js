@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSBSC model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSBSC
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBSBSC</code>.
    * Binance Smart Chain
@@ -77,10 +78,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBSBSC;
-}(); /**
-      * Represents the amount of gas used by this specific transaction alone.
-      * @member {String} gasLimit
-      */
+}();
+/**
+ * Represents the amount of gas used by this specific transaction alone.
+ * @member {String} gasLimit
+ */
 ListUnconfirmedTransactionsByAddressRIBSBSC.prototype['gasLimit'] = undefined;
 
 /**

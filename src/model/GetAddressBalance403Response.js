@@ -17,7 +17,7 @@ import GetAddressBalanceE403 from './GetAddressBalanceE403';
 /**
  * The GetAddressBalance403Response model module.
  * @module model/GetAddressBalance403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetAddressBalance403Response {
     /**

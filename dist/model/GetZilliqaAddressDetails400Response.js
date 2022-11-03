@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetails400Response model module.
  * @module model/GetZilliqaAddressDetails400Response
- * @version 1.9.0
- */var GetZilliqaAddressDetails400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaAddressDetails400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaAddressDetails400Response</code>.
    * @alias module:model/GetZilliqaAddressDetails400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaAddressDetails400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetZilliqaAddressDetails400Response.prototype['apiVersion'] = undefined;
 
 /**

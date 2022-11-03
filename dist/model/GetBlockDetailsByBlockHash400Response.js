@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHash400Response model module.
  * @module model/GetBlockDetailsByBlockHash400Response
- * @version 1.9.0
- */var GetBlockDetailsByBlockHash400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHash400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHash400Response</code>.
    * @alias module:model/GetBlockDetailsByBlockHash400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHash400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetBlockDetailsByBlockHash400Response.prototype['apiVersion'] = undefined;
 
 /**

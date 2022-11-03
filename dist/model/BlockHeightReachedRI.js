@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReachedRI model module.
  * @module model/BlockHeightReachedRI
- * @version 1.9.0
- */var BlockHeightReachedRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockHeightReachedRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockHeightReachedRI</code>.
    * @alias module:model/BlockHeightReachedRI
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockHeightReachedRI;
-}(); /**
-      * Represents the specified value of block height for which the callback will be received.
-      * @member {Number} blockHeightReached
-      */
+}();
+/**
+ * Represents the specified value of block height for which the callback will be received.
+ * @member {Number} blockHeightReached
+ */
 BlockHeightReachedRI.prototype['blockHeightReached'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTokenDetailsByContractAddressR model module.
  * @module model/GetTokenDetailsByContractAddressR
- * @version 1.9.0
- */var GetTokenDetailsByContractAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTokenDetailsByContractAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTokenDetailsByContractAddressR</code>.
    * @alias module:model/GetTokenDetailsByContractAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTokenDetailsByContractAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetTokenDetailsByContractAddressR.prototype['apiVersion'] = undefined;
 
 /**

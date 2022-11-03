@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlockRData model module.
  * @module model/GetLatestMinedZilliqaBlockRData
- * @version 1.9.0
- */var GetLatestMinedZilliqaBlockRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedZilliqaBlockRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedZilliqaBlockRData</code>.
    * @alias module:model/GetLatestMinedZilliqaBlockRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedZilliqaBlockRData;
-}(); /**
-      * @member {module:model/GetLatestMinedZilliqaBlockRI} item
-      */
+}();
+/**
+ * @member {module:model/GetLatestMinedZilliqaBlockRI} item
+ */
 GetLatestMinedZilliqaBlockRData.prototype['item'] = undefined;
 var _default = GetLatestMinedZilliqaBlockRData;
 exports["default"] = _default;

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTokenGasLimitRBDataItem model module.
  * @module model/EstimateTokenGasLimitRBDataItem
- * @version 1.9.0
- */var EstimateTokenGasLimitRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTokenGasLimitRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTokenGasLimitRBDataItem</code>.
    * @alias module:model/EstimateTokenGasLimitRBDataItem
@@ -75,10 +76,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTokenGasLimitRBDataItem;
-}(); /**
-      * Represents transactions' amount.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents transactions' amount.
+ * @member {String} amount
+ */
 EstimateTokenGasLimitRBDataItem.prototype['amount'] = undefined;
 
 /**

@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolE403 model module.
  * @module model/GetAssetDetailsByAssetSymbolE403
- * @version 1.9.0
- */var GetAssetDetailsByAssetSymbolE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetSymbolE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetSymbolE403</code>.
    * @alias module:model/GetAssetDetailsByAssetSymbolE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetSymbolE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetAssetDetailsByAssetSymbolE403.prototype['code'] = undefined;
 
 /**

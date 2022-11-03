@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteBlockchainEventSubscriptionRData model module.
  * @module model/DeleteBlockchainEventSubscriptionRData
- * @version 1.9.0
- */var DeleteBlockchainEventSubscriptionRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeleteBlockchainEventSubscriptionRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeleteBlockchainEventSubscriptionRData</code>.
    * @alias module:model/DeleteBlockchainEventSubscriptionRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeleteBlockchainEventSubscriptionRData;
-}(); /**
-      * @member {module:model/DeleteBlockchainEventSubscriptionRI} item
-      */
+}();
+/**
+ * @member {module:model/DeleteBlockchainEventSubscriptionRI} item
+ */
 DeleteBlockchainEventSubscriptionRData.prototype['item'] = undefined;
 var _default = DeleteBlockchainEventSubscriptionRData;
 exports["default"] = _default;

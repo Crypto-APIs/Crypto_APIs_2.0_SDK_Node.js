@@ -22,8 +22,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightRIBS model module.
  * @module model/GetBlockDetailsByBlockHeightRIBS
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightRIBS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightRIBS</code>.
    * @alias module:model/GetBlockDetailsByBlockHeightRIBS
@@ -190,10 +191,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightRIBS;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 GetBlockDetailsByBlockHeightRIBS.prototype['difficulty'] = undefined;
 
 /**

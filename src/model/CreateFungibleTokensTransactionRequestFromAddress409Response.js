@@ -17,7 +17,7 @@ import CreateFungibleTokensTransactionRequestFromAddressE409 from './CreateFungi
 /**
  * The CreateFungibleTokensTransactionRequestFromAddress409Response model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddress409Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateFungibleTokensTransactionRequestFromAddress409Response {
     /**

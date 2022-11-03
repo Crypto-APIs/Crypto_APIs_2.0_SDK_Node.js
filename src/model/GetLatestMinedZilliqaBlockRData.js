@@ -17,7 +17,7 @@ import GetLatestMinedZilliqaBlockRI from './GetLatestMinedZilliqaBlockRI';
 /**
  * The GetLatestMinedZilliqaBlockRData model module.
  * @module model/GetLatestMinedZilliqaBlockRData
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetLatestMinedZilliqaBlockRData {
     /**

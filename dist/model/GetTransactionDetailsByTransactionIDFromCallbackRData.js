@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRData model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRData
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRData</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRData;
-}(); /**
-      * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRI} item
-      */
+}();
+/**
+ * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRI} item
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRData.prototype['item'] = undefined;
 var _default = GetTransactionDetailsByTransactionIDFromCallbackRData;
 exports["default"] = _default;

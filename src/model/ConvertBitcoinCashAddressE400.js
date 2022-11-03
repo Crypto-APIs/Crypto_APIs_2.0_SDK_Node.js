@@ -21,7 +21,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ConvertBitcoinCashAddressE400 model module.
  * @module model/ConvertBitcoinCashAddressE400
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ConvertBitcoinCashAddressE400 {
     /**

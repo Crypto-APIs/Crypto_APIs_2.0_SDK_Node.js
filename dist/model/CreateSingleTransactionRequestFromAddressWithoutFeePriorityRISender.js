@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender</code>.
    * Defines details about the source, i.e. the sender.
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender;
-}(); /**
-      * Defines the sender's public address.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the sender's public address.
+ * @member {String} address
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender.prototype['address'] = undefined;
 var _default = CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender;
 exports["default"] = _default;

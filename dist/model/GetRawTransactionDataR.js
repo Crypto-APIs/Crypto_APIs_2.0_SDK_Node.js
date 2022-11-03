@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetRawTransactionDataR model module.
  * @module model/GetRawTransactionDataR
- * @version 1.9.0
- */var GetRawTransactionDataR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetRawTransactionDataR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetRawTransactionDataR</code>.
    * @alias module:model/GetRawTransactionDataR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetRawTransactionDataR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetRawTransactionDataR.prototype['apiVersion'] = undefined;
 
 /**

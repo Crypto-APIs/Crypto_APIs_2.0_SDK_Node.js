@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesRData model module.
  * @module model/ListSyncedAddressesRData
- * @version 1.9.0
- */var ListSyncedAddressesRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSyncedAddressesRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSyncedAddressesRData</code>.
    * @alias module:model/ListSyncedAddressesRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSyncedAddressesRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListSyncedAddressesRData.prototype['limit'] = undefined;
 
 /**

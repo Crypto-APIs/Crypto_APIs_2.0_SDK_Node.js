@@ -28,8 +28,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBS model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBS
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBS</code>.
    * @alias module:model/ListUnconfirmedTransactionsByAddressRIBS
@@ -203,10 +204,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBS;
-}(); /**
-      * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
+ * @member {Number} locktime
+ */
 ListUnconfirmedTransactionsByAddressRIBS.prototype['locktime'] = undefined;
 
 /**

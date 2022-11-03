@@ -36,8 +36,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * ManageSubscriptions service.
 * @module api/ManageSubscriptionsApi
-* @version 1.9.0
-*/var ManageSubscriptionsApi = /*#__PURE__*/function () {
+* @version 1.10.0
+*/
+var ManageSubscriptionsApi = /*#__PURE__*/function () {
   /**
   * Constructs a new ManageSubscriptionsApi. 
   * @alias module:api/ManageSubscriptionsApi

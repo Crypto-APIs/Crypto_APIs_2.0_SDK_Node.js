@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey</code>.
    * Represents the script public key.
@@ -74,9 +75,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 ListConfirmedTransactionsByAddressRIBSBVoutInnerScriptPubKey.prototype['addresses'] = undefined;
 
 /**

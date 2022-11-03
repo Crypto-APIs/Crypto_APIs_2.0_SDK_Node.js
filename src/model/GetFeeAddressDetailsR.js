@@ -17,7 +17,7 @@ import GetFeeAddressDetailsRData from './GetFeeAddressDetailsRData';
 /**
  * The GetFeeAddressDetailsR model module.
  * @module model/GetFeeAddressDetailsR
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetFeeAddressDetailsR {
     /**

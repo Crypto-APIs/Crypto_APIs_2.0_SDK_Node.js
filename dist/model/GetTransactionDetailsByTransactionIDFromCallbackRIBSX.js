@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSX model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSX
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSX = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSX = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSX</code>.
    * XRP
@@ -92,10 +93,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSX;
-}(); /**
-      * Represents additional data that may be needed.
-      * @member {String} additionalData
-      */
+}();
+/**
+ * Represents additional data that may be needed.
+ * @member {String} additionalData
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSX.prototype['additionalData'] = undefined;
 
 /**

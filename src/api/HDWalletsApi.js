@@ -81,7 +81,7 @@ import SyncNewHDWalletXPubYPubZPubRB from '../model/SyncNewHDWalletXPubYPubZPubR
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.9.0
+* @version 1.10.0
 */
 export default class HDWalletsApi {
 
@@ -603,8 +603,8 @@ export default class HDWalletsApi {
     /**
      * Prepare A UTXO-Based Transaction From HD Wallet (xPub, yPub, zPub)
      * Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the `selectionStrategy` and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
-     * @param {module:model/String} blockchain 
-     * @param {module:model/String} network 
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB} opts.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB 
@@ -648,8 +648,8 @@ export default class HDWalletsApi {
     /**
      * Prepare A UTXO-Based Transaction From HD Wallet (xPub, yPub, zPub)
      * Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the `selectionStrategy` and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
-     * @param {module:model/String} blockchain 
-     * @param {module:model/String} network 
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB} opts.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB 
@@ -666,8 +666,8 @@ export default class HDWalletsApi {
     /**
      * Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
      * Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
-     * @param {module:model/String} blockchain 
-     * @param {module:model/String} network 
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB} opts.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB 
@@ -711,8 +711,8 @@ export default class HDWalletsApi {
     /**
      * Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
      * Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
-     * @param {module:model/String} blockchain 
-     * @param {module:model/String} network 
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
      * @param {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB} opts.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB 

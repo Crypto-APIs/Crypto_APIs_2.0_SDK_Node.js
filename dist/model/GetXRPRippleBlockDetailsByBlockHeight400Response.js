@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHeight400Response model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeight400Response
- * @version 1.9.0
- */var GetXRPRippleBlockDetailsByBlockHeight400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleBlockDetailsByBlockHeight400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHeight400Response</code>.
    * @alias module:model/GetXRPRippleBlockDetailsByBlockHeight400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleBlockDetailsByBlockHeight400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetXRPRippleBlockDetailsByBlockHeight400Response.prototype['apiVersion'] = undefined;
 
 /**

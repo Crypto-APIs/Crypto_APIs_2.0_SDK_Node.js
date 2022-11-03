@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensForwardingAutomationsRITSBOT model module.
  * @module model/ListTokensForwardingAutomationsRITSBOT
- * @version 1.9.0
- */var ListTokensForwardingAutomationsRITSBOT = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensForwardingAutomationsRITSBOT = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensForwardingAutomationsRITSBOT</code>.
    * Bitcoin Omni Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensForwardingAutomationsRITSBOT;
-}(); /**
-      * Defines the Property ID of the Omni Layer token.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Defines the Property ID of the Omni Layer token.
+ * @member {Number} propertyId
+ */
 ListTokensForwardingAutomationsRITSBOT.prototype['propertyId'] = undefined;
 var _default = ListTokensForwardingAutomationsRITSBOT;
 exports["default"] = _default;

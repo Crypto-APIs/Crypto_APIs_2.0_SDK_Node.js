@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashRIBSBSC model module.
  * @module model/GetBlockDetailsByBlockHashRIBSBSC
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashRIBSBSC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashRIBSBSC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashRIBSBSC</code>.
    * Binance Smart Chain
@@ -96,10 +97,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashRIBSBSC;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 GetBlockDetailsByBlockHashRIBSBSC.prototype['difficulty'] = undefined;
 
 /**

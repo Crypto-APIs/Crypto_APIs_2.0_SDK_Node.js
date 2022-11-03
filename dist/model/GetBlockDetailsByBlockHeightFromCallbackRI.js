@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRI model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRI
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightFromCallbackRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightFromCallbackRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRI</code>.
    * @alias module:model/GetBlockDetailsByBlockHeightFromCallbackRI
@@ -81,10 +82,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightFromCallbackRI;
-}(); /**
-      * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
-      * @member {String} hash
-      */
+}();
+/**
+ * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
+ * @member {String} hash
+ */
 GetBlockDetailsByBlockHeightFromCallbackRI.prototype['hash'] = undefined;
 
 /**

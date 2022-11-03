@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressE403 model module.
  * @module model/ListXRPRippleTransactionsByAddressE403
- * @version 1.9.0
- */var ListXRPRippleTransactionsByAddressE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByAddressE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByAddressE403</code>.
    * @alias module:model/ListXRPRippleTransactionsByAddressE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByAddressE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListXRPRippleTransactionsByAddressE403.prototype['code'] = undefined;
 
 /**

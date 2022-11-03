@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRISendersInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRISendersInner
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRISendersInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRISendersInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRISendersInner</code>.
    * @alias module:model/ListUnconfirmedTransactionsByAddressRISendersInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRISendersInner;
-}(); /**
-      * Represents the address of the sender.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address of the sender.
+ * @member {String} address
+ */
 ListUnconfirmedTransactionsByAddressRISendersInner.prototype['address'] = undefined;
 
 /**

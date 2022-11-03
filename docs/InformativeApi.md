@@ -319,7 +319,9 @@ let blockchain = bitcoin; // String | Represents the specific blockchain protoco
 let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let walletId = 60c9d9921c38030006675ff6; // String | Represents the unique ID of the specific Wallet.
 let opts = {
-  'context': yourExampleString // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'limit': 50, // Number | Defines how many items should be returned in the response per page basis.
+  'offset': 0 // Number | The starting index of the response items, i.e. where the response should start listing the returned items.
 };
 apiInstance.listDepositAddresses(blockchain, network, walletId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -338,6 +340,8 @@ Name | Type | Description  | Notes
  **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
  **walletId** | **String**| Represents the unique ID of the specific Wallet. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **limit** | **Number**| Defines how many items should be returned in the response per page basis. | [optional] [default to 50]
+ **offset** | **Number**| The starting index of the response items, i.e. where the response should start listing the returned items. | [optional] [default to 0]
 
 ### Return type
 

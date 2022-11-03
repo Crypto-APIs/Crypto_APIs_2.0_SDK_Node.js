@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromAddressRI from './CreateCoinsTransaction
 /**
  * The CreateCoinsTransactionRequestFromAddressRData model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRData
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateCoinsTransactionRequestFromAddressRData {
     /**

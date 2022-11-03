@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI</code>.
    * @alias module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI
@@ -88,10 +89,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI;
-}(); /**
-      * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
-      * @member {String} callbackSecretKey
-      */
+}();
+/**
+ * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).
+ * @member {String} callbackSecretKey
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriorityRI.prototype['callbackSecretKey'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressRData model module.
  * @module model/ListXRPRippleTransactionsByAddressRData
- * @version 1.9.0
- */var ListXRPRippleTransactionsByAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByAddressRData</code>.
    * @alias module:model/ListXRPRippleTransactionsByAddressRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByAddressRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListXRPRippleTransactionsByAddressRData.prototype['limit'] = undefined;
 
 /**

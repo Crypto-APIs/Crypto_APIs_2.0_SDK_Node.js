@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHeightRI model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeightRI
- * @version 1.9.0
- */var GetZilliqaBlockDetailsByBlockHeightRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaBlockDetailsByBlockHeightRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaBlockDetailsByBlockHeightRI</code>.
    * @alias module:model/GetZilliqaBlockDetailsByBlockHeightRI
@@ -110,10 +111,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaBlockDetailsByBlockHeightRI;
-}(); /**
-      * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
-      * @member {String} blockHash
-      */
+}();
+/**
+ * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
+ * @member {String} blockHash
+ */
 GetZilliqaBlockDetailsByBlockHeightRI.prototype['blockHash'] = undefined;
 
 /**

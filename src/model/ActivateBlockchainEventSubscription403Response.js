@@ -17,7 +17,7 @@ import ActivateBlockchainEventSubscriptionE403 from './ActivateBlockchainEventSu
 /**
  * The ActivateBlockchainEventSubscription403Response model module.
  * @module model/ActivateBlockchainEventSubscription403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ActivateBlockchainEventSubscription403Response {
     /**

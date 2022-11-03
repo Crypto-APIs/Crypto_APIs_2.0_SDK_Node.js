@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwardingR model module.
  * @module model/CreateAutomaticCoinsForwardingR
- * @version 1.9.0
- */var CreateAutomaticCoinsForwardingR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticCoinsForwardingR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticCoinsForwardingR</code>.
    * @alias module:model/CreateAutomaticCoinsForwardingR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticCoinsForwardingR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateAutomaticCoinsForwardingR.prototype['apiVersion'] = undefined;
 
 /**

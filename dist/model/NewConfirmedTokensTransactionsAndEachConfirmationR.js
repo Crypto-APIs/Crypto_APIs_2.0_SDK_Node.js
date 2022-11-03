@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationR model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationR
- * @version 1.9.0
- */var NewConfirmedTokensTransactionsAndEachConfirmationR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedTokensTransactionsAndEachConfirmationR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokensTransactionsAndEachConfirmationR</code>.
    * @alias module:model/NewConfirmedTokensTransactionsAndEachConfirmationR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedTokensTransactionsAndEachConfirmationR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedTokensTransactionsAndEachConfirmationR.prototype['apiVersion'] = undefined;
 
 /**

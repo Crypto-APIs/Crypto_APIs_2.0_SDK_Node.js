@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRI model module.
  * @module model/DecodeRawTransactionHexRI
- * @version 1.9.0
- */var DecodeRawTransactionHexRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRI</code>.
    * @alias module:model/DecodeRawTransactionHexRI
@@ -66,9 +67,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRI;
-}(); /**
-      * @member {module:model/DecodeRawTransactionHexRIS} blockchainSpeficicData
-      */
+}();
+/**
+ * @member {module:model/DecodeRawTransactionHexRIS} blockchainSpeficicData
+ */
 DecodeRawTransactionHexRI.prototype['blockchainSpeficicData'] = undefined;
 
 /**

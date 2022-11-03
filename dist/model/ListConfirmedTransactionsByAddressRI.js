@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRI model module.
  * @module model/ListConfirmedTransactionsByAddressRI
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRI</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressRI
@@ -100,10 +101,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRI;
-}(); /**
-      * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
-      * @member {String} transactionId
-      */
+}();
+/**
+ * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+ * @member {String} transactionId
+ */
 ListConfirmedTransactionsByAddressRI.prototype['transactionId'] = undefined;
 
 /**

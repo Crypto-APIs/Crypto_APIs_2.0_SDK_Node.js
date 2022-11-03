@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddressRISenders model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRISenders
- * @version 1.9.0
- */var CreateCoinsTransactionRequestFromAddressRISenders = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionRequestFromAddressRISenders = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromAddressRISenders</code>.
    * Defines details about the source, i.e. the sender.
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionRequestFromAddressRISenders;
-}(); /**
-      * Defines the sender's public address.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the sender's public address.
+ * @member {String} address
+ */
 CreateCoinsTransactionRequestFromAddressRISenders.prototype['address'] = undefined;
 var _default = CreateCoinsTransactionRequestFromAddressRISenders;
 exports["default"] = _default;

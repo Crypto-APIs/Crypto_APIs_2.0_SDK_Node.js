@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSBC model module.
  * @module model/ListTransactionsByBlockHeightRIBSBC
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBSBC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBSBC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBSBC</code>.
    * Bitcoin Cash
@@ -78,10 +79,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBSBC;
-}(); /**
-      * Represents the time at which a particular transaction can be added to the blockchain.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the time at which a particular transaction can be added to the blockchain.
+ * @member {Number} locktime
+ */
 ListTransactionsByBlockHeightRIBSBC.prototype['locktime'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTokenGasLimit403Response model module.
  * @module model/EstimateTokenGasLimit403Response
- * @version 1.9.0
- */var EstimateTokenGasLimit403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTokenGasLimit403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTokenGasLimit403Response</code>.
    * @alias module:model/EstimateTokenGasLimit403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTokenGasLimit403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 EstimateTokenGasLimit403Response.prototype['apiVersion'] = undefined;
 
 /**

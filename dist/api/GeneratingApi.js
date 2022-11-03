@@ -29,8 +29,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Generating service.
 * @module api/GeneratingApi
-* @version 1.9.0
-*/var GeneratingApi = /*#__PURE__*/function () {
+* @version 1.10.0
+*/
+var GeneratingApi = /*#__PURE__*/function () {
   /**
   * Constructs a new GeneratingApi. 
   * @alias module:api/GeneratingApi

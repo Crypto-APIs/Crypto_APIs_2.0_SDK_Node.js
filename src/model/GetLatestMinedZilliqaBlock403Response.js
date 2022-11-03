@@ -17,7 +17,7 @@ import GetLatestMinedZilliqaBlockE403 from './GetLatestMinedZilliqaBlockE403';
 /**
  * The GetLatestMinedZilliqaBlock403Response model module.
  * @module model/GetLatestMinedZilliqaBlock403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetLatestMinedZilliqaBlock403Response {
     /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesRIConfirmedBalance model module.
  * @module model/ListDepositAddressesRIConfirmedBalance
- * @version 1.9.0
- */var ListDepositAddressesRIConfirmedBalance = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListDepositAddressesRIConfirmedBalance = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesRIConfirmedBalance</code>.
    * @alias module:model/ListDepositAddressesRIConfirmedBalance
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListDepositAddressesRIConfirmedBalance;
-}(); /**
-      * Defines the total balance of the address that is confirmed. It doesn't include unconfirmed transactions.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the total balance of the address that is confirmed. It doesn't include unconfirmed transactions.
+ * @member {String} amount
+ */
 ListDepositAddressesRIConfirmedBalance.prototype['amount'] = undefined;
 
 /**

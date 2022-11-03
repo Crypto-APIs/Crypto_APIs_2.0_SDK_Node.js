@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHashRIBSE model module.
  * @module model/GetBlockDetailsByBlockHashRIBSE
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetBlockDetailsByBlockHashRIBSE {
     /**

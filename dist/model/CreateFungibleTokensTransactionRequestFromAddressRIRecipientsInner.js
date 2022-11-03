@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner
- * @version 1.9.0
- */var CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner</code>.
    * @alias module:model/CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner;
-}(); /**
-      * Defines the destination address.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the destination address.
+ * @member {String} address
+ */
 CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner.prototype['address'] = undefined;
 
 /**

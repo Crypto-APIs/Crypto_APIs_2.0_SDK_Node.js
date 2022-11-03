@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetailsE403 model module.
  * @module model/GetTransactionRequestDetailsE403
- * @version 1.9.0
- */var GetTransactionRequestDetailsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionRequestDetailsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionRequestDetailsE403</code>.
    * @alias module:model/GetTransactionRequestDetailsE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionRequestDetailsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetTransactionRequestDetailsE403.prototype['code'] = undefined;
 
 /**

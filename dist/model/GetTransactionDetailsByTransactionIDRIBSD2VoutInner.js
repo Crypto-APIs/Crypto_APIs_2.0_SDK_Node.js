@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSD2VoutInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRIBSD2VoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRIBSD2VoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSD2VoutInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSD2VoutInner;
-}(); /**
-      * Defines whether the output is spent or not.
-      * @member {Boolean} isSpent
-      */
+}();
+/**
+ * Defines whether the output is spent or not.
+ * @member {Boolean} isSpent
+ */
 GetTransactionDetailsByTransactionIDRIBSD2VoutInner.prototype['isSpent'] = undefined;
 
 /**

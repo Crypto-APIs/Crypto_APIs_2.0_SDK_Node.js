@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedBep20 model module.
  * @module model/AddressTokensTransactionConfirmedBep20
- * @version 1.9.0
- */var AddressTokensTransactionConfirmedBep20 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressTokensTransactionConfirmedBep20 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionConfirmedBep20</code>.
    * BEP-20
@@ -74,10 +75,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressTokensTransactionConfirmedBep20;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 AddressTokensTransactionConfirmedBep20.prototype['name'] = undefined;
 
 /**

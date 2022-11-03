@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactions403Response model module.
  * @module model/NewConfirmedInternalTransactions403Response
- * @version 1.9.0
- */var NewConfirmedInternalTransactions403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactions403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactions403Response</code>.
    * @alias module:model/NewConfirmedInternalTransactions403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactions403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedInternalTransactions403Response.prototype['apiVersion'] = undefined;
 
 /**

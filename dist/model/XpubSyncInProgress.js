@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The XpubSyncInProgress model module.
  * @module model/XpubSyncInProgress
- * @version 1.9.0
- */var XpubSyncInProgress = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var XpubSyncInProgress = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>XpubSyncInProgress</code>.
    * xpub_sync_in_progress
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return XpubSyncInProgress;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 XpubSyncInProgress.prototype['code'] = undefined;
 
 /**

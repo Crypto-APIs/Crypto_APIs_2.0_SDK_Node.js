@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressE409 model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressE409
- * @version 1.9.0
- */var CreateFungibleTokensTransactionRequestFromAddressE409 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokensTransactionRequestFromAddressE409 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokensTransactionRequestFromAddressE409</code>.
    * @alias module:model/CreateFungibleTokensTransactionRequestFromAddressE409
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokensTransactionRequestFromAddressE409;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CreateFungibleTokensTransactionRequestFromAddressE409.prototype['code'] = undefined;
 
 /**

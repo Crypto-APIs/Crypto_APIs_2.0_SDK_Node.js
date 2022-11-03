@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock model module.
  * @module model/AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock
- * @version 1.9.0
- */var AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock</code>.
    * Refers to the specific block the transaction was mined in.
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock;
-}(); /**
-      * Defines the number of blocks in the blockchain preceding this specific block.
-      * @member {Number} height
-      */
+}();
+/**
+ * Defines the number of blocks in the blockchain preceding this specific block.
+ * @member {Number} height
+ */
 AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock.prototype['height'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRange400Response model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRange400Response
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddressAndTimeRange400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddressAndTimeRange400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddressAndTimeRange400Response</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddressAndTimeRange400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddressAndTimeRange400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListConfirmedTokensTransfersByAddressAndTimeRange400Response.prototype['apiVersion'] = undefined;
 
 /**

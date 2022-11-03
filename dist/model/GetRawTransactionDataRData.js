@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetRawTransactionDataRData model module.
  * @module model/GetRawTransactionDataRData
- * @version 1.9.0
- */var GetRawTransactionDataRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetRawTransactionDataRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetRawTransactionDataRData</code>.
    * @alias module:model/GetRawTransactionDataRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetRawTransactionDataRData;
-}(); /**
-      * @member {module:model/GetRawTransactionDataRI} item
-      */
+}();
+/**
+ * @member {module:model/GetRawTransactionDataRI} item
+ */
 GetRawTransactionDataRData.prototype['item'] = undefined;
 var _default = GetRawTransactionDataRData;
 exports["default"] = _default;

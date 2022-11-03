@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount</code>.
    * @alias module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount;
-}(); /**
-      * Defines the unit of the total amount transacted.
-      * @member {String} unit
-      */
+}();
+/**
+ * Defines the unit of the total amount transacted.
+ * @member {String} unit
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount.prototype['unit'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSBVoutInner model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBVoutInner
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRIBSBVoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRIBSBVoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRIBSBVoutInner</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressRIBSBVoutInner
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRIBSBVoutInner;
-}(); /**
-      * Defines whether the output is spent or not.
-      * @member {Boolean} isSpent
-      */
+}();
+/**
+ * Defines whether the output is spent or not.
+ * @member {Boolean} isSpent
+ */
 ListConfirmedTransactionsByAddressRIBSBVoutInner.prototype['isSpent'] = undefined;
 
 /**

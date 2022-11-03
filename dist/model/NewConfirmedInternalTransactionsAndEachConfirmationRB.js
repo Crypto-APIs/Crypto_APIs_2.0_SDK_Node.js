@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationRB model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationRB
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsAndEachConfirmationRB = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsAndEachConfirmationRB = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsAndEachConfirmationRB</code>.
    * @alias module:model/NewConfirmedInternalTransactionsAndEachConfirmationRB
@@ -59,10 +60,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsAndEachConfirmationRB;
-}(); /**
-      * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-      * @member {String} context
-      */
+}();
+/**
+ * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+ * @member {String} context
+ */
 NewConfirmedInternalTransactionsAndEachConfirmationRB.prototype['context'] = undefined;
 
 /**

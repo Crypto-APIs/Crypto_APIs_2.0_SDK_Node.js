@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSD model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSD
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightFromCallbackRIBSD = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightFromCallbackRIBSD = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRIBSD</code>.
    * Dash
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightFromCallbackRIBSD;
-}(); /**
-      * Represents a specific sub-unit of Dash. Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Dash. Bits have two-decimal precision.
+ * @member {String} bits
+ */
 GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['bits'] = undefined;
 
 /**

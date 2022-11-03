@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSBSC model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBSC
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRIBSBSC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRIBSBSC</code>.
    * Binance Smart Chain
@@ -95,10 +96,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRIBSBSC;
-}(); /**
-      * Represents the specific transaction contract.
-      * @member {String} contract
-      */
+}();
+/**
+ * Represents the specific transaction contract.
+ * @member {String} contract
+ */
 ListConfirmedTransactionsByAddressRIBSBSC.prototype['contract'] = undefined;
 
 /**

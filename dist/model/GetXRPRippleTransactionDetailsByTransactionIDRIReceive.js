@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRIReceive model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRIReceive
- * @version 1.9.0
- */var GetXRPRippleTransactionDetailsByTransactionIDRIReceive = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleTransactionDetailsByTransactionIDRIReceive = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleTransactionDetailsByTransactionIDRIReceive</code>.
    * Defines on object array of the funds for which an offer is made.
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleTransactionDetailsByTransactionIDRIReceive;
-}(); /**
-      * Defines the amount of the funds for which an offer is made.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the funds for which an offer is made.
+ * @member {String} amount
+ */
 GetXRPRippleTransactionDetailsByTransactionIDRIReceive.prototype['amount'] = undefined;
 
 /**

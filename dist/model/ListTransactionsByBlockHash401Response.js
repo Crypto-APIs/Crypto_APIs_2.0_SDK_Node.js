@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHash401Response model module.
  * @module model/ListTransactionsByBlockHash401Response
- * @version 1.9.0
- */var ListTransactionsByBlockHash401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHash401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHash401Response</code>.
    * @alias module:model/ListTransactionsByBlockHash401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHash401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListTransactionsByBlockHash401Response.prototype['apiVersion'] = undefined;
 
 /**

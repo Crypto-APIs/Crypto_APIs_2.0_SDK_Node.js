@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TransactionRequestBroadcastedDataItem model module.
  * @module model/TransactionRequestBroadcastedDataItem
- * @version 1.9.0
+ * @version 1.10.0
  */
 class TransactionRequestBroadcastedDataItem {
     /**

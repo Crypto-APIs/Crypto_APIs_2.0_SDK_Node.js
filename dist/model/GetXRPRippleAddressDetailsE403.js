@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetailsE403 model module.
  * @module model/GetXRPRippleAddressDetailsE403
- * @version 1.9.0
- */var GetXRPRippleAddressDetailsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleAddressDetailsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleAddressDetailsE403</code>.
    * @alias module:model/GetXRPRippleAddressDetailsE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleAddressDetailsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetXRPRippleAddressDetailsE403.prototype['code'] = undefined;
 
 /**

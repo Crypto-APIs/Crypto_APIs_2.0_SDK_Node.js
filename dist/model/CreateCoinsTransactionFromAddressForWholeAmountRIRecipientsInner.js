@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner
- * @version 1.9.0
- */var CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner</code>.
    * @alias module:model/CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner;
-}(); /**
-      * Defines the destination address.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the destination address.
+ * @member {String} address
+ */
 CreateCoinsTransactionFromAddressForWholeAmountRIRecipientsInner.prototype['address'] = undefined;
 
 /**

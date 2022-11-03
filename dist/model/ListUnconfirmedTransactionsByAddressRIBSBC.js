@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSBC model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSBC
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRIBSBC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRIBSBC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBSBC</code>.
    * Bitcoin Cash
@@ -78,10 +79,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBSBC;
-}(); /**
-      * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
+ * @member {Number} locktime
+ */
 ListUnconfirmedTransactionsByAddressRIBSBC.prototype['locktime'] = undefined;
 
 /**

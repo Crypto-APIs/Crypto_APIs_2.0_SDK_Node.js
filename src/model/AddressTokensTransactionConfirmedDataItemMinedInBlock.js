@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedDataItemMinedInBlock model module.
  * @module model/AddressTokensTransactionConfirmedDataItemMinedInBlock
- * @version 1.9.0
+ * @version 1.10.0
  */
 class AddressTokensTransactionConfirmedDataItemMinedInBlock {
     /**

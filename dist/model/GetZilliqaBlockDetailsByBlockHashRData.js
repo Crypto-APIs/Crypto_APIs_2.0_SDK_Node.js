@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHashRData model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashRData
- * @version 1.9.0
- */var GetZilliqaBlockDetailsByBlockHashRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaBlockDetailsByBlockHashRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaBlockDetailsByBlockHashRData</code>.
    * @alias module:model/GetZilliqaBlockDetailsByBlockHashRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaBlockDetailsByBlockHashRData;
-}(); /**
-      * @member {module:model/GetZilliqaBlockDetailsByBlockHashRI} item
-      */
+}();
+/**
+ * @member {module:model/GetZilliqaBlockDetailsByBlockHashRI} item
+ */
 GetZilliqaBlockDetailsByBlockHashRData.prototype['item'] = undefined;
 var _default = GetZilliqaBlockDetailsByBlockHashRData;
 exports["default"] = _default;

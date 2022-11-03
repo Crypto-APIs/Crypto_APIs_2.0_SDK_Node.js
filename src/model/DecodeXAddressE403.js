@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The DecodeXAddressE403 model module.
  * @module model/DecodeXAddressE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DecodeXAddressE403 {
     /**

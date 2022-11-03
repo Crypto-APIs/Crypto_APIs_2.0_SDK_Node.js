@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetTokenDetailsByContractAddressE403 model module.
  * @module model/GetTokenDetailsByContractAddressE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetTokenDetailsByContractAddressE403 {
     /**

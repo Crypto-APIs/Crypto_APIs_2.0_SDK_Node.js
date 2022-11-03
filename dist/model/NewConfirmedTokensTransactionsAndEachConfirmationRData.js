@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationRData model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationRData
- * @version 1.9.0
- */var NewConfirmedTokensTransactionsAndEachConfirmationRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedTokensTransactionsAndEachConfirmationRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokensTransactionsAndEachConfirmationRData</code>.
    * @alias module:model/NewConfirmedTokensTransactionsAndEachConfirmationRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedTokensTransactionsAndEachConfirmationRData;
-}(); /**
-      * @member {module:model/NewConfirmedTokensTransactionsAndEachConfirmationRI} item
-      */
+}();
+/**
+ * @member {module:model/NewConfirmedTokensTransactionsAndEachConfirmationRI} item
+ */
 NewConfirmedTokensTransactionsAndEachConfirmationRData.prototype['item'] = undefined;
 var _default = NewConfirmedTokensTransactionsAndEachConfirmationRData;
 exports["default"] = _default;

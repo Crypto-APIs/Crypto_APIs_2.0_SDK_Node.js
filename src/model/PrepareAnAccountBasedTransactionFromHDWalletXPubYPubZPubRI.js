@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS from './PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS';
+import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific from './PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific';
 
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI
- * @version 1.9.0
+ * @version 1.10.0
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI {
     /**
@@ -27,7 +27,7 @@ class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI {
      * @param recipient {String} Represents a recipient addresses. In account-based protocols like Ethereum there is only one address in this list.
      * @param sender {String} Represents a sender address with the respective amount. In account-based protocols like Ethereum there is only one address in this list.
      * @param sigHash {String} Representation of the hash that should be signed.
-     * @param blockchainSpecific {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS} 
+     * @param blockchainSpecific {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific} 
      */
     constructor(amount, recipient, sender, sigHash, blockchainSpecific) { 
         
@@ -71,7 +71,7 @@ class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI {
                 obj['sigHash'] = ApiClient.convertToType(data['sigHash'], 'String');
             }
             if (data.hasOwnProperty('blockchainSpecific')) {
-                obj['blockchainSpecific'] = PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS.constructFromObject(data['blockchainSpecific']);
+                obj['blockchainSpecific'] = PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific.constructFromObject(data['blockchainSpecific']);
             }
         }
         return obj;
@@ -105,7 +105,7 @@ PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['sender'] =
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['sigHash'] = undefined;
 
 /**
- * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS} blockchainSpecific
+ * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific} blockchainSpecific
  */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['blockchainSpecific'] = undefined;
 

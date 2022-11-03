@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastTransactionSuccess model module.
  * @module model/BroadcastTransactionSuccess
- * @version 1.9.0
- */var BroadcastTransactionSuccess = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BroadcastTransactionSuccess = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BroadcastTransactionSuccess</code>.
    * @alias module:model/BroadcastTransactionSuccess
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BroadcastTransactionSuccess;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 BroadcastTransactionSuccess.prototype['apiVersion'] = undefined;
 
 /**

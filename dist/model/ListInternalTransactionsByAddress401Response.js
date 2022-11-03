@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddress401Response model module.
  * @module model/ListInternalTransactionsByAddress401Response
- * @version 1.9.0
- */var ListInternalTransactionsByAddress401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddress401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddress401Response</code>.
    * @alias module:model/ListInternalTransactionsByAddress401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddress401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListInternalTransactionsByAddress401Response.prototype['apiVersion'] = undefined;
 
 /**

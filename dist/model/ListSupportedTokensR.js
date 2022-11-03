@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokensR model module.
  * @module model/ListSupportedTokensR
- * @version 1.9.0
- */var ListSupportedTokensR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedTokensR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedTokensR</code>.
    * @alias module:model/ListSupportedTokensR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedTokensR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListSupportedTokensR.prototype['apiVersion'] = undefined;
 
 /**

@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRData from './GetTransact
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackR model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackR
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackR {
     /**

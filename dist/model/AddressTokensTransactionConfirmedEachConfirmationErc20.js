@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationErc20 model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationErc20
- * @version 1.9.0
- */var AddressTokensTransactionConfirmedEachConfirmationErc20 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressTokensTransactionConfirmedEachConfirmationErc20 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionConfirmedEachConfirmationErc20</code>.
    * ERC-20
@@ -74,10 +75,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressTokensTransactionConfirmedEachConfirmationErc20;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 AddressTokensTransactionConfirmedEachConfirmationErc20.prototype['name'] = undefined;
 
 /**

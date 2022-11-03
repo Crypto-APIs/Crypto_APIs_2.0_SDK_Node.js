@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRIBSBSC model module.
  * @module model/GetLastMinedBlockRIBSBSC
- * @version 1.9.0
- */var GetLastMinedBlockRIBSBSC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlockRIBSBSC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockRIBSBSC</code>.
    * Binance Smart Chain
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlockRIBSBSC;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 GetLastMinedBlockRIBSBSC.prototype['difficulty'] = undefined;
 
 /**

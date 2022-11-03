@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountR model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountR
- * @version 1.9.0
- */var NewConfirmedCoinsTransactionsForSpecificAmountR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactionsForSpecificAmountR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsForSpecificAmountR</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsForSpecificAmountR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactionsForSpecificAmountR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedCoinsTransactionsForSpecificAmountR.prototype['apiVersion'] = undefined;
 
 /**

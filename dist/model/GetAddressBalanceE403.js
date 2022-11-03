@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressBalanceE403 model module.
  * @module model/GetAddressBalanceE403
- * @version 1.9.0
- */var GetAddressBalanceE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressBalanceE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressBalanceE403</code>.
    * @alias module:model/GetAddressBalanceE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressBalanceE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetAddressBalanceE403.prototype['code'] = undefined;
 
 /**

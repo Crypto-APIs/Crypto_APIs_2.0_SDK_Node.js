@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddresses400Response model module.
  * @module model/ListDepositAddresses400Response
- * @version 1.9.0
- */var ListDepositAddresses400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListDepositAddresses400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddresses400Response</code>.
    * @alias module:model/ListDepositAddresses400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListDepositAddresses400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListDepositAddresses400Response.prototype['apiVersion'] = undefined;
 
 /**

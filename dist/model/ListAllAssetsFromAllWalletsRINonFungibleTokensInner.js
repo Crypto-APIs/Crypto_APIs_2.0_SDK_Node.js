@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWalletsRINonFungibleTokensInner model module.
  * @module model/ListAllAssetsFromAllWalletsRINonFungibleTokensInner
- * @version 1.9.0
- */var ListAllAssetsFromAllWalletsRINonFungibleTokensInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListAllAssetsFromAllWalletsRINonFungibleTokensInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsFromAllWalletsRINonFungibleTokensInner</code>.
    * @alias module:model/ListAllAssetsFromAllWalletsRINonFungibleTokensInner
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListAllAssetsFromAllWalletsRINonFungibleTokensInner;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 ListAllAssetsFromAllWalletsRINonFungibleTokensInner.prototype['blockchain'] = undefined;
 
 /**

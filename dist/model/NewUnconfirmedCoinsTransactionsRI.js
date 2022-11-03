@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewUnconfirmedCoinsTransactionsRI model module.
  * @module model/NewUnconfirmedCoinsTransactionsRI
- * @version 1.9.0
- */var NewUnconfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewUnconfirmedCoinsTransactionsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewUnconfirmedCoinsTransactionsRI</code>.
    * @alias module:model/NewUnconfirmedCoinsTransactionsRI
@@ -85,10 +86,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewUnconfirmedCoinsTransactionsRI;
-}(); /**
-      * Represents the address of the transaction, per which the result is returned.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address of the transaction, per which the result is returned.
+ * @member {String} address
+ */
 NewUnconfirmedCoinsTransactionsRI.prototype['address'] = undefined;
 
 /**

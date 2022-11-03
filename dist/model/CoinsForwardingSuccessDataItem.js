@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CoinsForwardingSuccessDataItem model module.
  * @module model/CoinsForwardingSuccessDataItem
- * @version 1.9.0
- */var CoinsForwardingSuccessDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CoinsForwardingSuccessDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CoinsForwardingSuccessDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CoinsForwardingSuccessDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 CoinsForwardingSuccessDataItem.prototype['blockchain'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidRequestBodyStructure model module.
  * @module model/InvalidRequestBodyStructure
- * @version 1.9.0
- */var InvalidRequestBodyStructure = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var InvalidRequestBodyStructure = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>InvalidRequestBodyStructure</code>.
    * invalid_request_body_structure
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return InvalidRequestBodyStructure;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 InvalidRequestBodyStructure.prototype['code'] = undefined;
 
 /**

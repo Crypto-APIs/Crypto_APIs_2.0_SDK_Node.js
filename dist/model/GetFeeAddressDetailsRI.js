@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeAddressDetailsRI model module.
  * @module model/GetFeeAddressDetailsRI
- * @version 1.9.0
- */var GetFeeAddressDetailsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeAddressDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeAddressDetailsRI</code>.
    * @alias module:model/GetFeeAddressDetailsRI
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetFeeAddressDetailsRI;
-}(); /**
-      * Represents the specific fee address, which is always automatically generated. Users must fund it.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the specific fee address, which is always automatically generated. Users must fund it.
+ * @member {String} address
+ */
 GetFeeAddressDetailsRI.prototype['address'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdRI model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdRI
- * @version 1.9.0
- */var GetInternalTransactionByTransactionHashAndOperationIdRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetInternalTransactionByTransactionHashAndOperationIdRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetInternalTransactionByTransactionHashAndOperationIdRI</code>.
    * @alias module:model/GetInternalTransactionByTransactionHashAndOperationIdRI
@@ -90,10 +91,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetInternalTransactionByTransactionHashAndOperationIdRI;
-}(); /**
-      * Defines the specific amount of the transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the specific amount of the transaction.
+ * @member {String} amount
+ */
 GetInternalTransactionByTransactionHashAndOperationIdRI.prototype['amount'] = undefined;
 
 /**

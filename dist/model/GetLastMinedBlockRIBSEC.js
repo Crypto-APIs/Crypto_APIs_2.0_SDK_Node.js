@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRIBSEC model module.
  * @module model/GetLastMinedBlockRIBSEC
- * @version 1.9.0
- */var GetLastMinedBlockRIBSEC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlockRIBSEC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockRIBSEC</code>.
    * Ethereum Classic
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlockRIBSEC;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 GetLastMinedBlockRIBSEC.prototype['difficulty'] = undefined;
 
 /**

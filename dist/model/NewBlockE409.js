@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockE409 model module.
  * @module model/NewBlockE409
- * @version 1.9.0
- */var NewBlockE409 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewBlockE409 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewBlockE409</code>.
    * @alias module:model/NewBlockE409
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewBlockE409;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 NewBlockE409.prototype['code'] = undefined;
 
 /**

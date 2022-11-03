@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsE403 model module.
  * @module model/NewConfirmedTokensTransactionsE403
- * @version 1.9.0
- */var NewConfirmedTokensTransactionsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedTokensTransactionsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokensTransactionsE403</code>.
    * @alias module:model/NewConfirmedTokensTransactionsE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedTokensTransactionsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 NewConfirmedTokensTransactionsE403.prototype['code'] = undefined;
 
 /**

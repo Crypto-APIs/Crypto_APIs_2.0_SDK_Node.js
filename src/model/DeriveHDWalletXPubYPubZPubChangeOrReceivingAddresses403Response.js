@@ -17,7 +17,7 @@ import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE403 from './DeriveHD
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses403Response model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses403Response {
     /**

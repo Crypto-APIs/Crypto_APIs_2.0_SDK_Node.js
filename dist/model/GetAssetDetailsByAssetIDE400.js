@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDE400 model module.
  * @module model/GetAssetDetailsByAssetIDE400
- * @version 1.9.0
- */var GetAssetDetailsByAssetIDE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetIDE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetIDE400</code>.
    * @alias module:model/GetAssetDetailsByAssetIDE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetIDE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetAssetDetailsByAssetIDE400.prototype['code'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTokenDetailsByContractAddressE401 model module.
  * @module model/GetTokenDetailsByContractAddressE401
- * @version 1.9.0
- */var GetTokenDetailsByContractAddressE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTokenDetailsByContractAddressE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTokenDetailsByContractAddressE401</code>.
    * @alias module:model/GetTokenDetailsByContractAddressE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTokenDetailsByContractAddressE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetTokenDetailsByContractAddressE401.prototype['code'] = undefined;
 
 /**

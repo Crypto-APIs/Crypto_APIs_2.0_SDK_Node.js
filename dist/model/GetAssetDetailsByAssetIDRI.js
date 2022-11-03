@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRI model module.
  * @module model/GetAssetDetailsByAssetIDRI
- * @version 1.9.0
- */var GetAssetDetailsByAssetIDRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetIDRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetIDRI</code>.
    * @alias module:model/GetAssetDetailsByAssetIDRI
@@ -96,10 +97,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetIDRI;
-}(); /**
-      * Defines the unique ID of the specific asset.
-      * @member {String} assetId
-      */
+}();
+/**
+ * Defines the unique ID of the specific asset.
+ * @member {String} assetId
+ */
 GetAssetDetailsByAssetIDRI.prototype['assetId'] = undefined;
 
 /**

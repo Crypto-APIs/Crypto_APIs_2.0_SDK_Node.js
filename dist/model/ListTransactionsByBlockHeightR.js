@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightR model module.
  * @module model/ListTransactionsByBlockHeightR
- * @version 1.9.0
- */var ListTransactionsByBlockHeightR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightR</code>.
    * @alias module:model/ListTransactionsByBlockHeightR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListTransactionsByBlockHeightR.prototype['apiVersion'] = undefined;
 
 /**

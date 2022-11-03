@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesR model module.
  * @module model/ListDepositAddressesR
- * @version 1.9.0
- */var ListDepositAddressesR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListDepositAddressesR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesR</code>.
    * @alias module:model/ListDepositAddressesR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListDepositAddressesR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListDepositAddressesR.prototype['apiVersion'] = undefined;
 
 /**

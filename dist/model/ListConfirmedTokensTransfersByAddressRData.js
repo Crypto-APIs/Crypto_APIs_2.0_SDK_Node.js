@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressRData model module.
  * @module model/ListConfirmedTokensTransfersByAddressRData
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddressRData</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddressRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddressRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListConfirmedTokensTransfersByAddressRData.prototype['limit'] = undefined;
 
 /**

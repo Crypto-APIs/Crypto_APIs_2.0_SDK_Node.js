@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateGasLimitR model module.
  * @module model/EstimateGasLimitR
- * @version 1.9.0
- */var EstimateGasLimitR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateGasLimitR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateGasLimitR</code>.
    * @alias module:model/EstimateGasLimitR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateGasLimitR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 EstimateGasLimitR.prototype['apiVersion'] = undefined;
 
 /**

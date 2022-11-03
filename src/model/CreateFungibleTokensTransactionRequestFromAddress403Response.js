@@ -17,7 +17,7 @@ import CreateFungibleTokensTransactionRequestFromAddressE403 from './CreateFungi
 /**
  * The CreateFungibleTokensTransactionRequestFromAddress403Response model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddress403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateFungibleTokensTransactionRequestFromAddress403Response {
     /**

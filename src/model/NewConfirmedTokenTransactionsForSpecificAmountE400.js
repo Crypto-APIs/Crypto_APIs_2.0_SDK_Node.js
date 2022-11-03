@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmountE400 model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmountE400
- * @version 1.9.0
+ * @version 1.10.0
  */
 class NewConfirmedTokenTransactionsForSpecificAmountE400 {
     /**

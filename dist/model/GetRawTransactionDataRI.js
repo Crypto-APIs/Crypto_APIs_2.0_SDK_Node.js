@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetRawTransactionDataRI model module.
  * @module model/GetRawTransactionDataRI
- * @version 1.9.0
- */var GetRawTransactionDataRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetRawTransactionDataRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetRawTransactionDataRI</code>.
    * @alias module:model/GetRawTransactionDataRI
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetRawTransactionDataRI;
-}(); /**
-      * Represents the raw transaction data in hexadecimal format.
-      * @member {String} transactionHex
-      */
+}();
+/**
+ * Represents the raw transaction data in hexadecimal format.
+ * @member {String} transactionHex
+ */
 GetRawTransactionDataRI.prototype['transactionHex'] = undefined;
 var _default = GetRawTransactionDataRI;
 exports["default"] = _default;

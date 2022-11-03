@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRI model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRI
- * @version 1.9.0
- */var GetXRPRippleTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleTransactionDetailsByTransactionIDRI</code>.
    * @alias module:model/GetXRPRippleTransactionDetailsByTransactionIDRI
@@ -132,10 +133,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleTransactionDetailsByTransactionIDRI;
-}(); /**
-      * Represents additional data that may be needed.
-      * @member {String} additionalData
-      */
+}();
+/**
+ * Represents additional data that may be needed.
+ * @member {String} additionalData
+ */
 GetXRPRippleTransactionDetailsByTransactionIDRI.prototype['additionalData'] = undefined;
 
 /**

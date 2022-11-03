@@ -22,7 +22,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400 model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesE400 {
     /**

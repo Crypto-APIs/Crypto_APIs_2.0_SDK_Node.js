@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHashRI model module.
  * @module model/ListZilliqaTransactionsByBlockHashRI
- * @version 1.9.0
- */var ListZilliqaTransactionsByBlockHashRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByBlockHashRI</code>.
    * @alias module:model/ListZilliqaTransactionsByBlockHashRI
@@ -113,9 +114,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByBlockHashRI;
-}(); /**
-      * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRIFee} fee
-      */
+}();
+/**
+ * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRIFee} fee
+ */
 ListZilliqaTransactionsByBlockHashRI.prototype['fee'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsRBDataItem model module.
  * @module model/NewConfirmedCoinsTransactionsRBDataItem
- * @version 1.9.0
- */var NewConfirmedCoinsTransactionsRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactionsRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsRBDataItem</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsRBDataItem
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactionsRBDataItem;
-}(); /**
-      * Represents the address of the transaction, per which the result is returned.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address of the transaction, per which the result is returned.
+ * @member {String} address
+ */
 NewConfirmedCoinsTransactionsRBDataItem.prototype['address'] = undefined;
 
 /**

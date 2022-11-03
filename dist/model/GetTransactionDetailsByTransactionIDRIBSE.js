@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSE model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSE
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRIBSE = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRIBSE = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSE</code>.
    * Ethereum
@@ -87,10 +88,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSE;
-}(); /**
-      * Represents the specific transaction contract.
-      * @member {String} contract
-      */
+}();
+/**
+ * Represents the specific transaction contract.
+ * @member {String} contract
+ */
 GetTransactionDetailsByTransactionIDRIBSE.prototype['contract'] = undefined;
 
 /**

@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeRI
- * @version 1.9.0
- */var ListXRPRippleTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByAddressAndTimeRangeRI</code>.
    * @alias module:model/ListXRPRippleTransactionsByAddressAndTimeRangeRI
@@ -129,10 +130,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByAddressAndTimeRangeRI;
-}(); /**
-      * A destination tag is a value used to discern the holder of the Ripple (XRP) being deposited or withdrawn.
-      * @member {Number} destinationTag
-      */
+}();
+/**
+ * A destination tag is a value used to discern the holder of the Ripple (XRP) being deposited or withdrawn.
+ * @member {Number} destinationTag
+ */
 ListXRPRippleTransactionsByAddressAndTimeRangeRI.prototype['destinationTag'] = undefined;
 
 /**

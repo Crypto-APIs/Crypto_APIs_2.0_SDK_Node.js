@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBST model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBST
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashFromCallbackRIBST = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashFromCallbackRIBST = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashFromCallbackRIBST</code>.
    * Tron
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashFromCallbackRIBST;
-}(); /**
-      * Represents the bandwidth used for the transaction.
-      * @member {String} bandwidthUsed
-      */
+}();
+/**
+ * Represents the bandwidth used for the transaction.
+ * @member {String} bandwidthUsed
+ */
 GetBlockDetailsByBlockHashFromCallbackRIBST.prototype['bandwidthUsed'] = undefined;
 
 /**

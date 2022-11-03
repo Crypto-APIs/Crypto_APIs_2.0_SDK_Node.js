@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddressR model module.
  * @module model/ListTokensByAddressR
- * @version 1.9.0
- */var ListTokensByAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensByAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensByAddressR</code>.
    * @alias module:model/ListTokensByAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensByAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListTokensByAddressR.prototype['apiVersion'] = undefined;
 
 /**

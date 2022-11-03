@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRBData model module.
  * @module model/AddTokensToExistingFromAddressRBData
- * @version 1.9.0
- */var AddTokensToExistingFromAddressRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddressRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressRBData</code>.
    * @alias module:model/AddTokensToExistingFromAddressRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddressRBData;
-}(); /**
-      * @member {module:model/AddTokensToExistingFromAddressRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/AddTokensToExistingFromAddressRBDataItem} item
+ */
 AddTokensToExistingFromAddressRBData.prototype['item'] = undefined;
 var _default = AddTokensToExistingFromAddressRBData;
 exports["default"] = _default;

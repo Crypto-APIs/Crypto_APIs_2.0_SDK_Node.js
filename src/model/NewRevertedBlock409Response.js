@@ -17,7 +17,7 @@ import NewRevertedBlockE409 from './NewRevertedBlockE409';
 /**
  * The NewRevertedBlock409Response model module.
  * @module model/NewRevertedBlock409Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class NewRevertedBlock409Response {
     /**

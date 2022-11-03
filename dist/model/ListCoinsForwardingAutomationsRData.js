@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListCoinsForwardingAutomationsRData model module.
  * @module model/ListCoinsForwardingAutomationsRData
- * @version 1.9.0
- */var ListCoinsForwardingAutomationsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListCoinsForwardingAutomationsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListCoinsForwardingAutomationsRData</code>.
    * @alias module:model/ListCoinsForwardingAutomationsRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListCoinsForwardingAutomationsRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListCoinsForwardingAutomationsRData.prototype['limit'] = undefined;
 
 /**

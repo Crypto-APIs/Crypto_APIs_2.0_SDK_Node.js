@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRIInternalTransactionsInner model module.
  * @module model/ListWalletTransactionsRIInternalTransactionsInner
- * @version 1.9.0
- */var ListWalletTransactionsRIInternalTransactionsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsRIInternalTransactionsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsRIInternalTransactionsInner</code>.
    * @alias module:model/ListWalletTransactionsRIInternalTransactionsInner
@@ -85,10 +86,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsRIInternalTransactionsInner;
-}(); /**
-      * Defines the specific amount of the transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the specific amount of the transaction.
+ * @member {String} amount
+ */
 ListWalletTransactionsRIInternalTransactionsInner.prototype['amount'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401 model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401
- * @version 1.9.0
- */var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401</code>.
    * @alias module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityE401.prototype['code'] = undefined;
 
 /**

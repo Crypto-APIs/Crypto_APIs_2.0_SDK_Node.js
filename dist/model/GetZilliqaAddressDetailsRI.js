@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetailsRI model module.
  * @module model/GetZilliqaAddressDetailsRI
- * @version 1.9.0
- */var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaAddressDetailsRI</code>.
    * @alias module:model/GetZilliqaAddressDetailsRI
@@ -71,9 +72,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaAddressDetailsRI;
-}(); /**
-      * @member {module:model/GetZilliqaAddressDetailsRIBalance} balance
-      */
+}();
+/**
+ * @member {module:model/GetZilliqaAddressDetailsRIBalance} balance
+ */
 GetZilliqaAddressDetailsRI.prototype['balance'] = undefined;
 
 /**

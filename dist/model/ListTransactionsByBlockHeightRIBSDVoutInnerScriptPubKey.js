@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey</code>.
    * Represents the script public key.
@@ -74,9 +75,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey.prototype['addresses'] = undefined;
 
 /**

@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZ model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSZ = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSZ = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ</code>.
    * Zcash
@@ -131,10 +132,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSZ;
-}(); /**
-      * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
-      * @member {String} bindingSig
-      */
+}();
+/**
+ * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+ * @member {String} bindingSig
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSZ.prototype['bindingSig'] = undefined;
 
 /**

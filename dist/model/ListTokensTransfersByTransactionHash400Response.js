@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensTransfersByTransactionHash400Response model module.
  * @module model/ListTokensTransfersByTransactionHash400Response
- * @version 1.9.0
- */var ListTokensTransfersByTransactionHash400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensTransfersByTransactionHash400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensTransfersByTransactionHash400Response</code>.
    * @alias module:model/ListTokensTransfersByTransactionHash400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensTransfersByTransactionHash400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListTokensTransfersByTransactionHash400Response.prototype['apiVersion'] = undefined;
 
 /**

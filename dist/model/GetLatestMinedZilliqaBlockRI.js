@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlockRI model module.
  * @module model/GetLatestMinedZilliqaBlockRI
- * @version 1.9.0
- */var GetLatestMinedZilliqaBlockRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedZilliqaBlockRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedZilliqaBlockRI</code>.
    * @alias module:model/GetLatestMinedZilliqaBlockRI
@@ -110,10 +111,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedZilliqaBlockRI;
-}(); /**
-      * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
-      * @member {String} blockHash
-      */
+}();
+/**
+ * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
+ * @member {String} blockHash
+ */
 GetLatestMinedZilliqaBlockRI.prototype['blockHash'] = undefined;
 
 /**

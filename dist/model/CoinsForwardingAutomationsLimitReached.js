@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CoinsForwardingAutomationsLimitReached model module.
  * @module model/CoinsForwardingAutomationsLimitReached
- * @version 1.9.0
- */var CoinsForwardingAutomationsLimitReached = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CoinsForwardingAutomationsLimitReached = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CoinsForwardingAutomationsLimitReached</code>.
    * coins_forwarding_automations_limit_reached
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CoinsForwardingAutomationsLimitReached;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CoinsForwardingAutomationsLimitReached.prototype['code'] = undefined;
 
 /**

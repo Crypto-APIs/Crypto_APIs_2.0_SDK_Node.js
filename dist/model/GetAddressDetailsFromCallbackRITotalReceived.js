@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackRITotalReceived model module.
  * @module model/GetAddressDetailsFromCallbackRITotalReceived
- * @version 1.9.0
- */var GetAddressDetailsFromCallbackRITotalReceived = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsFromCallbackRITotalReceived = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsFromCallbackRITotalReceived</code>.
    * @alias module:model/GetAddressDetailsFromCallbackRITotalReceived
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsFromCallbackRITotalReceived;
-}(); /**
-      * Defines the total amount of all coins received to the address, based on confirmed transactions.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the total amount of all coins received to the address, based on confirmed transactions.
+ * @member {String} amount
+ */
 GetAddressDetailsFromCallbackRITotalReceived.prototype['amount'] = undefined;
 
 /**

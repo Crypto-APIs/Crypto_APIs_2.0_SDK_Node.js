@@ -13,7 +13,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 /**
 * @module ApiClient
-* @version 1.9.0
+* @version 1.10.0
 */
 /**
 * Manages low level client-server communications, parameter marshalling, etc. There should not be any need for an
@@ -56,7 +56,7 @@ var ApiClient = /*#__PURE__*/function () {
      * @default {}
      */
     this.defaultHeaders = {
-      'User-Agent': 'OpenAPI-Generator/1.9.0/Javascript'
+      'User-Agent': 'OpenAPI-Generator/1.10.0/Javascript'
     };
 
     /**
@@ -649,11 +649,12 @@ var ApiClient = /*#__PURE__*/function () {
     }
   }]);
   return ApiClient;
-}(); /**
-      * Enumeration of collection format separator strategies.
-      * @enum {String}
-      * @readonly
-      */
+}();
+/**
+ * Enumeration of collection format separator strategies.
+ * @enum {String}
+ * @readonly
+ */
 ApiClient.CollectionFormatEnum = {
   /**
    * Comma-separated values. Value: <code>csv</code>

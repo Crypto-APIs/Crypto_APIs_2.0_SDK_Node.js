@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWalletE403 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE403
- * @version 1.9.0
- */var CreateCoinsTransactionRequestFromWalletE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionRequestFromWalletE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromWalletE403</code>.
    * @alias module:model/CreateCoinsTransactionRequestFromWalletE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionRequestFromWalletE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CreateCoinsTransactionRequestFromWalletE403.prototype['code'] = undefined;
 
 /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetBlockDetailsByBlockHashE403 model module.
  * @module model/GetBlockDetailsByBlockHashE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetBlockDetailsByBlockHashE403 {
     /**

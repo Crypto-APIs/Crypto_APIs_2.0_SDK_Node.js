@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddressE403 model module.
  * @module model/ListTokensByAddressE403
- * @version 1.9.0
- */var ListTokensByAddressE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensByAddressE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensByAddressE403</code>.
    * @alias module:model/ListTokensByAddressE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensByAddressE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListTokensByAddressE403.prototype['code'] = undefined;
 
 /**

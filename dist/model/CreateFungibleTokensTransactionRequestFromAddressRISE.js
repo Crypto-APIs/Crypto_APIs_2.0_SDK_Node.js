@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRISE model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRISE
- * @version 1.9.0
- */var CreateFungibleTokensTransactionRequestFromAddressRISE = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokensTransactionRequestFromAddressRISE = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokensTransactionRequestFromAddressRISE</code>.
    * Ethereum Erc20 Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokensTransactionRequestFromAddressRISE;
-}(); /**
-      * Defines the contract address in the blockchain for an ERC20 token.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Defines the contract address in the blockchain for an ERC20 token.
+ * @member {String} contractAddress
+ */
 CreateFungibleTokensTransactionRequestFromAddressRISE.prototype['contractAddress'] = undefined;
 var _default = CreateFungibleTokensTransactionRequestFromAddressRISE;
 exports["default"] = _default;

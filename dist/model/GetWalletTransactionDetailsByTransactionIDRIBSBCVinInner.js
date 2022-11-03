@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBCVinInner model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBCVinInner
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIBSBCVinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIBSBCVinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIBSBCVinInner</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDRIBSBCVinInner
@@ -83,9 +84,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIBSBCVinInner;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 GetWalletTransactionDetailsByTransactionIDRIBSBCVinInner.prototype['addresses'] = undefined;
 
 /**

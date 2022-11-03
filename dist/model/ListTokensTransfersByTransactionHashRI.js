@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensTransfersByTransactionHashRI model module.
  * @module model/ListTokensTransfersByTransactionHashRI
- * @version 1.9.0
- */var ListTokensTransfersByTransactionHashRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensTransfersByTransactionHashRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensTransfersByTransactionHashRI</code>.
    * @alias module:model/ListTokensTransfersByTransactionHashRI
@@ -111,10 +112,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensTransfersByTransactionHashRI;
-}(); /**
-      * Represents the contract address of the token, which controls its logic. It is not the address that holds the tokens.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Represents the contract address of the token, which controls its logic. It is not the address that holds the tokens.
+ * @member {String} contractAddress
+ */
 ListTokensTransfersByTransactionHashRI.prototype['contractAddress'] = undefined;
 
 /**

@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSL model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSL
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRIBSL = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRIBSL = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRIBSL</code>.
    * Litecoin
@@ -83,10 +84,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRIBSL;
-}(); /**
-      * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
+ * @member {Number} locktime
+ */
 ListConfirmedTransactionsByAddressRIBSL.prototype['locktime'] = undefined;
 
 /**

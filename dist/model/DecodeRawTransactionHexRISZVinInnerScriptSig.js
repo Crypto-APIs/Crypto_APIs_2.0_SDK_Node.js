@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISZVinInnerScriptSig model module.
  * @module model/DecodeRawTransactionHexRISZVinInnerScriptSig
- * @version 1.9.0
- */var DecodeRawTransactionHexRISZVinInnerScriptSig = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISZVinInnerScriptSig = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISZVinInnerScriptSig</code>.
    * Specifies the required signatures.
@@ -59,10 +60,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISZVinInnerScriptSig;
-}(); /**
-      * The asm strands for assembly, which is the symbolic representation of the Bitcoin's Script language op-codes.
-      * @member {String} asm
-      */
+}();
+/**
+ * The asm strands for assembly, which is the symbolic representation of the Bitcoin's Script language op-codes.
+ * @member {String} asm
+ */
 DecodeRawTransactionHexRISZVinInnerScriptSig.prototype['asm'] = undefined;
 
 /**

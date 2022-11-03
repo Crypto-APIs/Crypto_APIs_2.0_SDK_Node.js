@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee
- * @version 1.9.0
+ * @version 1.10.0
  */
 class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee {
     /**
@@ -62,13 +62,13 @@ class PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee {
 }
 
 /**
- * String representation of the exact amount
+ * Representation of the exact amount value
  * @member {String} exactAmount
  */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.prototype['exactAmount'] = undefined;
 
 /**
- * Enum representation of the fee priority
+ * Represents the fee priority
  * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.PriorityEnum} priority
  */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.prototype['priority'] = undefined;

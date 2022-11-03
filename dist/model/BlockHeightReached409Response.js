@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReached409Response model module.
  * @module model/BlockHeightReached409Response
- * @version 1.9.0
- */var BlockHeightReached409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockHeightReached409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockHeightReached409Response</code>.
    * @alias module:model/BlockHeightReached409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockHeightReached409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 BlockHeightReached409Response.prototype['apiVersion'] = undefined;
 
 /**

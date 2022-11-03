@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHeightRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRI
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHeightRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHeightRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHeightRI</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHeightRI
@@ -127,9 +128,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHeightRI;
-}(); /**
-      * @member {String} additionalData
-      */
+}();
+/**
+ * @member {String} additionalData
+ */
 ListXRPRippleTransactionsByBlockHeightRI.prototype['additionalData'] = undefined;
 
 /**

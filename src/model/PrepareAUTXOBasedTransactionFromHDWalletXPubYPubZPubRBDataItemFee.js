@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee
- * @version 1.9.0
+ * @version 1.10.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee {
     /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressInternalTransactionConfirmedDataItem model module.
  * @module model/AddressInternalTransactionConfirmedDataItem
- * @version 1.9.0
- */var AddressInternalTransactionConfirmedDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressInternalTransactionConfirmedDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressInternalTransactionConfirmedDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -97,10 +98,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressInternalTransactionConfirmedDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 AddressInternalTransactionConfirmedDataItem.prototype['blockchain'] = undefined;
 
 /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHeightRIBSLVoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHeightRIBSLVoutInnerScriptPubKey
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListTransactionsByBlockHeightRIBSLVoutInnerScriptPubKey {
     /**

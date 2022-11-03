@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRITSET model module.
  * @module model/AddTokensToExistingFromAddressRITSET
- * @version 1.9.0
- */var AddTokensToExistingFromAddressRITSET = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddressRITSET = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressRITSET</code>.
    * Ethereum Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddressRITSET;
-}(); /**
-      * Token contract address to be transferred
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Token contract address to be transferred
+ * @member {String} contractAddress
+ */
 AddTokensToExistingFromAddressRITSET.prototype['contractAddress'] = undefined;
 var _default = AddTokensToExistingFromAddressRITSET;
 exports["default"] = _default;

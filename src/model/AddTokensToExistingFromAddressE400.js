@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The AddTokensToExistingFromAddressE400 model module.
  * @module model/AddTokensToExistingFromAddressE400
- * @version 1.9.0
+ * @version 1.10.0
  */
 class AddTokensToExistingFromAddressE400 {
     /**

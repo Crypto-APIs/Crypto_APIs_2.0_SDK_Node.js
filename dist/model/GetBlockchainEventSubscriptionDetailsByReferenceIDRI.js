@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDRI model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI
- * @version 1.9.0
- */var GetBlockchainEventSubscriptionDetailsByReferenceIDRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockchainEventSubscriptionDetailsByReferenceIDRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockchainEventSubscriptionDetailsByReferenceIDRI</code>.
    * @alias module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockchainEventSubscriptionDetailsByReferenceIDRI;
-}(); /**
-      * Represents the address of the transaction.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address of the transaction.
+ * @member {String} address
+ */
 GetBlockchainEventSubscriptionDetailsByReferenceIDRI.prototype['address'] = undefined;
 
 /**

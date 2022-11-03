@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISE2 model module.
  * @module model/DecodeRawTransactionHexRISE2
- * @version 1.9.0
- */var DecodeRawTransactionHexRISE2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISE2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISE2</code>.
    * Ethereum Classic
@@ -103,10 +104,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISE2;
-}(); /**
-      * Defines the approximate fee value. When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
-      * @member {String} approximateFee
-      */
+}();
+/**
+ * Defines the approximate fee value. When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
+ * @member {String} approximateFee
+ */
 DecodeRawTransactionHexRISE2.prototype['approximateFee'] = undefined;
 
 /**

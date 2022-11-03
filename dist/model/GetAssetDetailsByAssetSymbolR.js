@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolR model module.
  * @module model/GetAssetDetailsByAssetSymbolR
- * @version 1.9.0
- */var GetAssetDetailsByAssetSymbolR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetSymbolR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetSymbolR</code>.
    * @alias module:model/GetAssetDetailsByAssetSymbolR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetSymbolR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetAssetDetailsByAssetSymbolR.prototype['apiVersion'] = undefined;
 
 /**

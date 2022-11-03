@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewReceivingAddressesRData model module.
  * @module model/DeriveAndSyncNewReceivingAddressesRData
- * @version 1.9.0
- */var DeriveAndSyncNewReceivingAddressesRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewReceivingAddressesRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewReceivingAddressesRData</code>.
    * @alias module:model/DeriveAndSyncNewReceivingAddressesRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewReceivingAddressesRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 DeriveAndSyncNewReceivingAddressesRData.prototype['limit'] = undefined;
 
 /**

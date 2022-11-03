@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesE403 model module.
  * @module model/ListSyncedAddressesE403
- * @version 1.9.0
- */var ListSyncedAddressesE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSyncedAddressesE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSyncedAddressesE403</code>.
    * @alias module:model/ListSyncedAddressesE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSyncedAddressesE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListSyncedAddressesE403.prototype['code'] = undefined;
 
 /**

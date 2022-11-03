@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSD2VinInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSD2VinInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRIBSD2VinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRIBSD2VinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSD2VinInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRIBSD2VinInner
@@ -83,9 +84,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSD2VinInner;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 GetTransactionDetailsByTransactionIDRIBSD2VinInner.prototype['addresses'] = undefined;
 
 /**

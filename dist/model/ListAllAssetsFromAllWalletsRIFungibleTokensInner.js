@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWalletsRIFungibleTokensInner model module.
  * @module model/ListAllAssetsFromAllWalletsRIFungibleTokensInner
- * @version 1.9.0
- */var ListAllAssetsFromAllWalletsRIFungibleTokensInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListAllAssetsFromAllWalletsRIFungibleTokensInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsFromAllWalletsRIFungibleTokensInner</code>.
    * @alias module:model/ListAllAssetsFromAllWalletsRIFungibleTokensInner
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListAllAssetsFromAllWalletsRIFungibleTokensInner;
-}(); /**
-      * Defines the amount of the fungible tokens.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the fungible tokens.
+ * @member {String} amount
+ */
 ListAllAssetsFromAllWalletsRIFungibleTokensInner.prototype['amount'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The FeatureMainnetsNotAllowedForPlan model module.
  * @module model/FeatureMainnetsNotAllowedForPlan
- * @version 1.9.0
- */var FeatureMainnetsNotAllowedForPlan = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var FeatureMainnetsNotAllowedForPlan = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>FeatureMainnetsNotAllowedForPlan</code>.
    * feature_mainnets_not_allowed_for_plan
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return FeatureMainnetsNotAllowedForPlan;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 FeatureMainnetsNotAllowedForPlan.prototype['code'] = undefined;
 
 /**

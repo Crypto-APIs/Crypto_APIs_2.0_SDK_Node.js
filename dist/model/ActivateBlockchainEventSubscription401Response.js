@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ActivateBlockchainEventSubscription401Response model module.
  * @module model/ActivateBlockchainEventSubscription401Response
- * @version 1.9.0
- */var ActivateBlockchainEventSubscription401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ActivateBlockchainEventSubscription401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ActivateBlockchainEventSubscription401Response</code>.
    * @alias module:model/ActivateBlockchainEventSubscription401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ActivateBlockchainEventSubscription401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ActivateBlockchainEventSubscription401Response.prototype['apiVersion'] = undefined;
 
 /**

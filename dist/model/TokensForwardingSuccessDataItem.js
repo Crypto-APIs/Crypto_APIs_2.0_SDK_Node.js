@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessDataItem model module.
  * @module model/TokensForwardingSuccessDataItem
- * @version 1.9.0
- */var TokensForwardingSuccessDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TokensForwardingSuccessDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingSuccessDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -102,10 +103,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TokensForwardingSuccessDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 TokensForwardingSuccessDataItem.prototype['blockchain'] = undefined;
 
 /**

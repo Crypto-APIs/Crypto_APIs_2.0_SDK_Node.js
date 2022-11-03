@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSZVJoinSplitInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSZVJoinSplitInner
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBSZVJoinSplitInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBSZVJoinSplitInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBSZVJoinSplitInner</code>.
    * @alias module:model/ListTransactionsByBlockHeightRIBSZVJoinSplitInner
@@ -100,10 +101,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBSZVJoinSplitInner;
-}(); /**
-      * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.
-      * @member {String} anchor
-      */
+}();
+/**
+ * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.
+ * @member {String} anchor
+ */
 ListTransactionsByBlockHeightRIBSZVJoinSplitInner.prototype['anchor'] = undefined;
 
 /**

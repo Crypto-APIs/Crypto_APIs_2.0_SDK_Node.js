@@ -17,7 +17,7 @@ import AddTokensToExistingFromAddressE401 from './AddTokensToExistingFromAddress
 /**
  * The AddTokensToExistingFromAddress401Response model module.
  * @module model/AddTokensToExistingFromAddress401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class AddTokensToExistingFromAddress401Response {
     /**

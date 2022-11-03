@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner;
-}(); /**
-      * Defines whether the transaction output has been spent or not.
-      * @member {Boolean} isSpent
-      */
+}();
+/**
+ * Defines whether the transaction output has been spent or not.
+ * @member {Boolean} isSpent
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner.prototype['isSpent'] = undefined;
 
 /**

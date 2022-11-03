@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner {
     /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddress403Response model module.
  * @module model/AddTokensToExistingFromAddress403Response
- * @version 1.9.0
- */var AddTokensToExistingFromAddress403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddress403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddress403Response</code>.
    * @alias module:model/AddTokensToExistingFromAddress403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddress403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 AddTokensToExistingFromAddress403Response.prototype['apiVersion'] = undefined;
 
 /**

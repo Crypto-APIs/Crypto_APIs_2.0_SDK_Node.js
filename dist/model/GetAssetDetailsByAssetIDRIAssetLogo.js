@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRIAssetLogo model module.
  * @module model/GetAssetDetailsByAssetIDRIAssetLogo
- * @version 1.9.0
- */var GetAssetDetailsByAssetIDRIAssetLogo = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetIDRIAssetLogo = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetIDRIAssetLogo</code>.
    * @alias module:model/GetAssetDetailsByAssetIDRIAssetLogo
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetIDRIAssetLogo;
-}(); /**
-      * Defines the encoding of the image data which is usually base64.
-      * @member {String} encoding
-      */
+}();
+/**
+ * Defines the encoding of the image data which is usually base64.
+ * @member {String} encoding
+ */
 GetAssetDetailsByAssetIDRIAssetLogo.prototype['encoding'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssetsRI model module.
  * @module model/ListSupportedAssetsRI
- * @version 1.9.0
- */var ListSupportedAssetsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedAssetsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedAssetsRI</code>.
    * @alias module:model/ListSupportedAssetsRI
@@ -75,10 +76,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedAssetsRI;
-}(); /**
-      * Defines the unique ID of the specific asset.
-      * @member {String} assetId
-      */
+}();
+/**
+ * Defines the unique ID of the specific asset.
+ * @member {String} assetId
+ */
 ListSupportedAssetsRI.prototype['assetId'] = undefined;
 
 /**

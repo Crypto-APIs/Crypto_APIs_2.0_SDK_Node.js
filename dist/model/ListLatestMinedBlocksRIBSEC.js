@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSEC model module.
  * @module model/ListLatestMinedBlocksRIBSEC
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSEC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSEC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSEC</code>.
    * Ethereum Classic
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSEC;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 ListLatestMinedBlocksRIBSEC.prototype['difficulty'] = undefined;
 
 /**

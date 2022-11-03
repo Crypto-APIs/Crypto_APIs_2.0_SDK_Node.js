@@ -17,7 +17,7 @@ import GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice from './GetWallet
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSE model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSE
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSE {
     /**

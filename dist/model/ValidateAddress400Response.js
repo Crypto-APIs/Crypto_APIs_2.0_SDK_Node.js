@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddress400Response model module.
  * @module model/ValidateAddress400Response
- * @version 1.9.0
- */var ValidateAddress400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ValidateAddress400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ValidateAddress400Response</code>.
    * @alias module:model/ValidateAddress400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ValidateAddress400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ValidateAddress400Response.prototype['apiVersion'] = undefined;
 
 /**

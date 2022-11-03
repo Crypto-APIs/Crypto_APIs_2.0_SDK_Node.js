@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsE403 model module.
  * @module model/ListWalletTransactionsE403
- * @version 1.9.0
- */var ListWalletTransactionsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsE403</code>.
    * @alias module:model/ListWalletTransactionsE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListWalletTransactionsE403.prototype['code'] = undefined;
 
 /**

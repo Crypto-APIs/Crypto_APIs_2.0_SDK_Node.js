@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsRBDataItem model module.
  * @module model/NewConfirmedInternalTransactionsRBDataItem
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsRBDataItem</code>.
    * @alias module:model/NewConfirmedInternalTransactionsRBDataItem
@@ -73,10 +74,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsRBDataItem;
-}(); /**
-      * Defines the specific address of the internal transaction.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the specific address of the internal transaction.
+ * @member {String} address
+ */
 NewConfirmedInternalTransactionsRBDataItem.prototype['address'] = undefined;
 
 /**

@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddressE400 model module.
  * @module model/ListTokensByAddressE400
- * @version 1.9.0
- */var ListTokensByAddressE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensByAddressE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensByAddressE400</code>.
    * @alias module:model/ListTokensByAddressE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensByAddressE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListTokensByAddressE400.prototype['code'] = undefined;
 
 /**

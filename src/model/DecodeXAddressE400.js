@@ -22,7 +22,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The DecodeXAddressE400 model module.
  * @module model/DecodeXAddressE400
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DecodeXAddressE400 {
     /**

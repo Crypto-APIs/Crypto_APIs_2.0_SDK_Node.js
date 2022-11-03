@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackRI model module.
  * @module model/GetAddressDetailsFromCallbackRI
- * @version 1.9.0
- */var GetAddressDetailsFromCallbackRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsFromCallbackRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsFromCallbackRI</code>.
    * @alias module:model/GetAddressDetailsFromCallbackRI
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsFromCallbackRI;
-}(); /**
-      * Defines the received transaction count to the address.
-      * @member {Number} incomingTransactionsCount
-      */
+}();
+/**
+ * Defines the received transaction count to the address.
+ * @member {Number} incomingTransactionsCount
+ */
 GetAddressDetailsFromCallbackRI.prototype['incomingTransactionsCount'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressE401 model module.
  * @module model/ListInternalTransactionsByAddressE401
- * @version 1.9.0
- */var ListInternalTransactionsByAddressE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddressE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddressE401</code>.
    * @alias module:model/ListInternalTransactionsByAddressE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddressE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListInternalTransactionsByAddressE401.prototype['code'] = undefined;
 
 /**

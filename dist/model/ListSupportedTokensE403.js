@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokensE403 model module.
  * @module model/ListSupportedTokensE403
- * @version 1.9.0
- */var ListSupportedTokensE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedTokensE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedTokensE403</code>.
    * @alias module:model/ListSupportedTokensE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedTokensE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListSupportedTokensE403.prototype['code'] = undefined;
 
 /**

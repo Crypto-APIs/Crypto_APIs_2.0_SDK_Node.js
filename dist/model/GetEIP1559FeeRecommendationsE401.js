@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetEIP1559FeeRecommendationsE401 model module.
  * @module model/GetEIP1559FeeRecommendationsE401
- * @version 1.9.0
- */var GetEIP1559FeeRecommendationsE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetEIP1559FeeRecommendationsE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetEIP1559FeeRecommendationsE401</code>.
    * @alias module:model/GetEIP1559FeeRecommendationsE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetEIP1559FeeRecommendationsE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetEIP1559FeeRecommendationsE401.prototype['code'] = undefined;
 
 /**

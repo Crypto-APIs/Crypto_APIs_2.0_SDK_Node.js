@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationR model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationR
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsAndEachConfirmationR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsAndEachConfirmationR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsAndEachConfirmationR</code>.
    * @alias module:model/NewConfirmedInternalTransactionsAndEachConfirmationR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsAndEachConfirmationR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedInternalTransactionsAndEachConfirmationR.prototype['apiVersion'] = undefined;
 
 /**

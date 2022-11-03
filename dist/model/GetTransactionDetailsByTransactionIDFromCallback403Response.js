@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallback403Response model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallback403Response
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallback403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallback403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallback403Response</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallback403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallback403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetTransactionDetailsByTransactionIDFromCallback403Response.prototype['apiVersion'] = undefined;
 
 /**

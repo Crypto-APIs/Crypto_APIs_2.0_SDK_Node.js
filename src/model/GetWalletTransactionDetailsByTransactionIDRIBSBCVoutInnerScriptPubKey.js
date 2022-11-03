@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInnerScriptPubKey model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInnerScriptPubKey
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInnerScriptPubKey {
     /**

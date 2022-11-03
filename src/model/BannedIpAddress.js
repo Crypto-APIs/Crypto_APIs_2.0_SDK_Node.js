@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The BannedIpAddress model module.
  * @module model/BannedIpAddress
- * @version 1.9.0
+ * @version 1.10.0
  */
 class BannedIpAddress {
     /**

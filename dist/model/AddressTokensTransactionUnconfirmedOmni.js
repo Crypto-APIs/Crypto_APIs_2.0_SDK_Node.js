@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionUnconfirmedOmni model module.
  * @module model/AddressTokensTransactionUnconfirmedOmni
- * @version 1.9.0
- */var AddressTokensTransactionUnconfirmedOmni = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressTokensTransactionUnconfirmedOmni = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionUnconfirmedOmni</code>.
    * OMNI
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressTokensTransactionUnconfirmedOmni;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 AddressTokensTransactionUnconfirmedOmni.prototype['name'] = undefined;
 
 /**

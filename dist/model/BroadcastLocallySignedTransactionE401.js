@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionE401 model module.
  * @module model/BroadcastLocallySignedTransactionE401
- * @version 1.9.0
- */var BroadcastLocallySignedTransactionE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BroadcastLocallySignedTransactionE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BroadcastLocallySignedTransactionE401</code>.
    * @alias module:model/BroadcastLocallySignedTransactionE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BroadcastLocallySignedTransactionE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BroadcastLocallySignedTransactionE401.prototype['code'] = undefined;
 
 /**

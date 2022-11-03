@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaTransactionDetailsByTransactionID403Response model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionID403Response
- * @version 1.9.0
- */var GetZilliqaTransactionDetailsByTransactionID403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaTransactionDetailsByTransactionID403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaTransactionDetailsByTransactionID403Response</code>.
    * @alias module:model/GetZilliqaTransactionDetailsByTransactionID403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaTransactionDetailsByTransactionID403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetZilliqaTransactionDetailsByTransactionID403Response.prototype['apiVersion'] = undefined;
 
 /**

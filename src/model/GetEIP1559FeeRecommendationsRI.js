@@ -19,7 +19,7 @@ import GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas from './GetEIP1559FeeR
 /**
  * The GetEIP1559FeeRecommendationsRI model module.
  * @module model/GetEIP1559FeeRecommendationsRI
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetEIP1559FeeRecommendationsRI {
     /**

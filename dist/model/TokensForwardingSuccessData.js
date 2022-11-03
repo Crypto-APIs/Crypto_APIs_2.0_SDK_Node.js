@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessData model module.
  * @module model/TokensForwardingSuccessData
- * @version 1.9.0
- */var TokensForwardingSuccessData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TokensForwardingSuccessData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingSuccessData</code>.
    * Specifies all data, as attributes, included into the callback notification, which depends on the &#x60;event&#x60;.
@@ -67,10 +68,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TokensForwardingSuccessData;
-}(); /**
-      * Represents the Crypto APIs 2.0 product which sends the callback.
-      * @member {String} product
-      */
+}();
+/**
+ * Represents the Crypto APIs 2.0 product which sends the callback.
+ * @member {String} product
+ */
 TokensForwardingSuccessData.prototype['product'] = undefined;
 
 /**

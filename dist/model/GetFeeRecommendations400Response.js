@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendations400Response model module.
  * @module model/GetFeeRecommendations400Response
- * @version 1.9.0
- */var GetFeeRecommendations400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeRecommendations400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeRecommendations400Response</code>.
    * @alias module:model/GetFeeRecommendations400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetFeeRecommendations400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetFeeRecommendations400Response.prototype['apiVersion'] = undefined;
 
 /**

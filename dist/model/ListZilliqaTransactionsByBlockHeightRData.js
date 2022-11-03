@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHeightRData model module.
  * @module model/ListZilliqaTransactionsByBlockHeightRData
- * @version 1.9.0
- */var ListZilliqaTransactionsByBlockHeightRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByBlockHeightRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByBlockHeightRData</code>.
    * @alias module:model/ListZilliqaTransactionsByBlockHeightRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByBlockHeightRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListZilliqaTransactionsByBlockHeightRData.prototype['limit'] = undefined;
 
 /**

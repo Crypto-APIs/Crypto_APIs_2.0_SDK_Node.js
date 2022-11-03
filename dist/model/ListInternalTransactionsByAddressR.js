@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressR model module.
  * @module model/ListInternalTransactionsByAddressR
- * @version 1.9.0
- */var ListInternalTransactionsByAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddressR</code>.
    * @alias module:model/ListInternalTransactionsByAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListInternalTransactionsByAddressR.prototype['apiVersion'] = undefined;
 
 /**

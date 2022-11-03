@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackR model module.
  * @module model/GetAddressDetailsFromCallbackR
- * @version 1.9.0
- */var GetAddressDetailsFromCallbackR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsFromCallbackR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsFromCallbackR</code>.
    * @alias module:model/GetAddressDetailsFromCallbackR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsFromCallbackR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetAddressDetailsFromCallbackR.prototype['apiVersion'] = undefined;
 
 /**

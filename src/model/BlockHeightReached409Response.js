@@ -17,7 +17,7 @@ import BlockHeightReachedE409 from './BlockHeightReachedE409';
 /**
  * The BlockHeightReached409Response model module.
  * @module model/BlockHeightReached409Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class BlockHeightReached409Response {
     /**

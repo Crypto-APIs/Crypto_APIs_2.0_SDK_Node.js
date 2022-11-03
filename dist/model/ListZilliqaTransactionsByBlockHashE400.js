@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHashE400 model module.
  * @module model/ListZilliqaTransactionsByBlockHashE400
- * @version 1.9.0
- */var ListZilliqaTransactionsByBlockHashE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByBlockHashE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByBlockHashE400</code>.
    * @alias module:model/ListZilliqaTransactionsByBlockHashE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByBlockHashE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListZilliqaTransactionsByBlockHashE400.prototype['code'] = undefined;
 
 /**

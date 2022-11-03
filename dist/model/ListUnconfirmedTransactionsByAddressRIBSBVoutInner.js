@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSBVoutInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSBVoutInner
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRIBSBVoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRIBSBVoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBSBVoutInner</code>.
    * @alias module:model/ListUnconfirmedTransactionsByAddressRIBSBVoutInner
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBSBVoutInner;
-}(); /**
-      * Defines whether the output is spent or not.
-      * @member {Boolean} isSpent
-      */
+}();
+/**
+ * Defines whether the output is spent or not.
+ * @member {Boolean} isSpent
+ */
 ListUnconfirmedTransactionsByAddressRIBSBVoutInner.prototype['isSpent'] = undefined;
 
 /**

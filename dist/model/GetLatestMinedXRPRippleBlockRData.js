@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedXRPRippleBlockRData model module.
  * @module model/GetLatestMinedXRPRippleBlockRData
- * @version 1.9.0
- */var GetLatestMinedXRPRippleBlockRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedXRPRippleBlockRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedXRPRippleBlockRData</code>.
    * @alias module:model/GetLatestMinedXRPRippleBlockRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedXRPRippleBlockRData;
-}(); /**
-      * @member {module:model/GetLatestMinedXRPRippleBlockRI} item
-      */
+}();
+/**
+ * @member {module:model/GetLatestMinedXRPRippleBlockRI} item
+ */
 GetLatestMinedXRPRippleBlockRData.prototype['item'] = undefined;
 var _default = GetLatestMinedXRPRippleBlockRData;
 exports["default"] = _default;

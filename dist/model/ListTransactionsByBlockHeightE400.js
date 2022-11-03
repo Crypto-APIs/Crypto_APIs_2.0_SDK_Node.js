@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightE400 model module.
  * @module model/ListTransactionsByBlockHeightE400
- * @version 1.9.0
- */var ListTransactionsByBlockHeightE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightE400</code>.
    * @alias module:model/ListTransactionsByBlockHeightE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListTransactionsByBlockHeightE400.prototype['code'] = undefined;
 
 /**

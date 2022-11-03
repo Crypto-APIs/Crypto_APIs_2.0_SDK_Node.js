@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRINonFungibleTokensInner model module.
  * @module model/ListWalletTransactionsRINonFungibleTokensInner
- * @version 1.9.0
- */var ListWalletTransactionsRINonFungibleTokensInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsRINonFungibleTokensInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsRINonFungibleTokensInner</code>.
    * @alias module:model/ListWalletTransactionsRINonFungibleTokensInner
@@ -90,10 +91,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsRINonFungibleTokensInner;
-}(); /**
-      * Defines the tokens' converted amount value.
-      * @member {String} convertedAmount
-      */
+}();
+/**
+ * Defines the tokens' converted amount value.
+ * @member {String} convertedAmount
+ */
 ListWalletTransactionsRINonFungibleTokensInner.prototype['convertedAmount'] = undefined;
 
 /**

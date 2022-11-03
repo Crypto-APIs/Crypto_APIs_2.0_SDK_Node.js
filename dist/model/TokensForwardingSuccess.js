@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccess model module.
  * @module model/TokensForwardingSuccess
- * @version 1.9.0
- */var TokensForwardingSuccess = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TokensForwardingSuccess = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingSuccess</code>.
    * @alias module:model/TokensForwardingSuccess
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TokensForwardingSuccess;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 TokensForwardingSuccess.prototype['apiVersion'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddressRI model module.
  * @module model/GenerateDepositAddressRI
- * @version 1.9.0
- */var GenerateDepositAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GenerateDepositAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GenerateDepositAddressRI</code>.
    * @alias module:model/GenerateDepositAddressRI
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GenerateDepositAddressRI;
-}(); /**
-      * Specifies the specific address's unique string value.
-      * @member {String} address
-      */
+}();
+/**
+ * Specifies the specific address's unique string value.
+ * @member {String} address
+ */
 GenerateDepositAddressRI.prototype['address'] = undefined;
 
 /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackE403 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackE403 {
     /**

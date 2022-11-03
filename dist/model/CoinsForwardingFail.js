@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CoinsForwardingFail model module.
  * @module model/CoinsForwardingFail
- * @version 1.9.0
- */var CoinsForwardingFail = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CoinsForwardingFail = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CoinsForwardingFail</code>.
    * @alias module:model/CoinsForwardingFail
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CoinsForwardingFail;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CoinsForwardingFail.prototype['apiVersion'] = undefined;
 
 /**

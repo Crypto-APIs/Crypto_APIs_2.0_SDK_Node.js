@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticTokensForwarding401Response model module.
  * @module model/DeleteAutomaticTokensForwarding401Response
- * @version 1.9.0
- */var DeleteAutomaticTokensForwarding401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeleteAutomaticTokensForwarding401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeleteAutomaticTokensForwarding401Response</code>.
    * @alias module:model/DeleteAutomaticTokensForwarding401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeleteAutomaticTokensForwarding401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DeleteAutomaticTokensForwarding401Response.prototype['apiVersion'] = undefined;
 
 /**

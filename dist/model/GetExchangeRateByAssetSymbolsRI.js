@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbolsRI model module.
  * @module model/GetExchangeRateByAssetSymbolsRI
- * @version 1.9.0
- */var GetExchangeRateByAssetSymbolsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetExchangeRateByAssetSymbolsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetSymbolsRI</code>.
    * @alias module:model/GetExchangeRateByAssetSymbolsRI
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetExchangeRateByAssetSymbolsRI;
-}(); /**
-      * Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
-      * @member {Number} calculationTimestamp
-      */
+}();
+/**
+ * Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.
+ * @member {Number} calculationTimestamp
+ */
 GetExchangeRateByAssetSymbolsRI.prototype['calculationTimestamp'] = undefined;
 
 /**

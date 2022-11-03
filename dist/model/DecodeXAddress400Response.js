@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeXAddress400Response model module.
  * @module model/DecodeXAddress400Response
- * @version 1.9.0
- */var DecodeXAddress400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeXAddress400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeXAddress400Response</code>.
    * @alias module:model/DecodeXAddress400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeXAddress400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DecodeXAddress400Response.prototype['apiVersion'] = undefined;
 
 /**

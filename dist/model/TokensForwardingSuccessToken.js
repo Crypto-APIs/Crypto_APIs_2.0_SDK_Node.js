@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessToken model module.
  * @module model/TokensForwardingSuccessToken
- * @version 1.9.0
- */var TokensForwardingSuccessToken = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TokensForwardingSuccessToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingSuccessToken</code>.
    * @alias module:model/TokensForwardingSuccessToken
@@ -105,10 +106,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TokensForwardingSuccessToken;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 TokensForwardingSuccessToken.prototype['name'] = undefined;
 
 /**

@@ -17,7 +17,7 @@ import GetRawTransactionDataE401 from './GetRawTransactionDataE401';
 /**
  * The GetRawTransactionData401Response model module.
  * @module model/GetRawTransactionData401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetRawTransactionData401Response {
     /**

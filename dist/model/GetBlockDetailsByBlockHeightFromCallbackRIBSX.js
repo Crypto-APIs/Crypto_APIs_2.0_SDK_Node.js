@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSX model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSX
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightFromCallbackRIBSX = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightFromCallbackRIBSX = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRIBSX</code>.
    * XRP
@@ -63,9 +64,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightFromCallbackRIBSX;
-}(); /**
-      * @member {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} totalCoins
-      */
+}();
+/**
+ * @member {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} totalCoins
+ */
 GetBlockDetailsByBlockHeightFromCallbackRIBSX.prototype['totalCoins'] = undefined;
 
 /**

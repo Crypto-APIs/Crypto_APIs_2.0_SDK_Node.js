@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReachedE400 model module.
  * @module model/BlockHeightReachedE400
- * @version 1.9.0
- */var BlockHeightReachedE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockHeightReachedE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockHeightReachedE400</code>.
    * @alias module:model/BlockHeightReachedE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockHeightReachedE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BlockHeightReachedE400.prototype['code'] = undefined;
 
 /**

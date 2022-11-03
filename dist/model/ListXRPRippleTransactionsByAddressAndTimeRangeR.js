@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeR model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeR
- * @version 1.9.0
- */var ListXRPRippleTransactionsByAddressAndTimeRangeR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByAddressAndTimeRangeR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByAddressAndTimeRangeR</code>.
    * @alias module:model/ListXRPRippleTransactionsByAddressAndTimeRangeR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByAddressAndTimeRangeR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListXRPRippleTransactionsByAddressAndTimeRangeR.prototype['apiVersion'] = undefined;
 
 /**

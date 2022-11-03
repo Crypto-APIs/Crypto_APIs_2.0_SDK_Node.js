@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackE400 model module.
  * @module model/GetAddressDetailsFromCallbackE400
- * @version 1.9.0
- */var GetAddressDetailsFromCallbackE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsFromCallbackE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsFromCallbackE400</code>.
    * @alias module:model/GetAddressDetailsFromCallbackE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsFromCallbackE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetAddressDetailsFromCallbackE400.prototype['code'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactions409Response model module.
  * @module model/NewConfirmedCoinsTransactions409Response
- * @version 1.9.0
- */var NewConfirmedCoinsTransactions409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactions409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactions409Response</code>.
    * @alias module:model/NewConfirmedCoinsTransactions409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactions409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedCoinsTransactions409Response.prototype['apiVersion'] = undefined;
 
 /**

@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
-var _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS = _interopRequireDefault(require("./PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS"));
+var _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific = _interopRequireDefault(require("./PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI
- * @version 1.9.0
- */var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI</code>.
    * @alias module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI
@@ -22,7 +23,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
    * @param recipient {String} Represents a recipient addresses. In account-based protocols like Ethereum there is only one address in this list.
    * @param sender {String} Represents a sender address with the respective amount. In account-based protocols like Ethereum there is only one address in this list.
    * @param sigHash {String} Representation of the hash that should be signed.
-   * @param blockchainSpecific {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS} 
+   * @param blockchainSpecific {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific} 
    */
   function PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI(amount, recipient, sender, sigHash, blockchainSpecific) {
     _classCallCheck(this, PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI);
@@ -69,17 +70,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           obj['sigHash'] = _ApiClient["default"].convertToType(data['sigHash'], 'String');
         }
         if (data.hasOwnProperty('blockchainSpecific')) {
-          obj['blockchainSpecific'] = _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS["default"].constructFromObject(data['blockchainSpecific']);
+          obj['blockchainSpecific'] = _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific["default"].constructFromObject(data['blockchainSpecific']);
         }
       }
       return obj;
     }
   }]);
   return PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI;
-}(); /**
-      * Representation of the amount of the transaction
-      * @member {String} amount
-      */
+}();
+/**
+ * Representation of the amount of the transaction
+ * @member {String} amount
+ */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['amount'] = undefined;
 
 /**
@@ -101,7 +103,7 @@ PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['sender'] =
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['sigHash'] = undefined;
 
 /**
- * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBS} blockchainSpecific
+ * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific} blockchainSpecific
  */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['blockchainSpecific'] = undefined;
 var _default = PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI;

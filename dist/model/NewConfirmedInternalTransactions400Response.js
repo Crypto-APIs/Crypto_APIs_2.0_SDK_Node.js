@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactions400Response model module.
  * @module model/NewConfirmedInternalTransactions400Response
- * @version 1.9.0
- */var NewConfirmedInternalTransactions400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactions400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactions400Response</code>.
    * @alias module:model/NewConfirmedInternalTransactions400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactions400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedInternalTransactions400Response.prototype['apiVersion'] = undefined;
 
 /**

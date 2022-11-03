@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubAssetsRData model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRData
- * @version 1.9.0
- */var GetHDWalletXPubYPubZPubAssetsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetHDWalletXPubYPubZPubAssetsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetHDWalletXPubYPubZPubAssetsRData</code>.
    * @alias module:model/GetHDWalletXPubYPubZPubAssetsRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetHDWalletXPubYPubZPubAssetsRData;
-}(); /**
-      * @member {module:model/GetHDWalletXPubYPubZPubAssetsRI} item
-      */
+}();
+/**
+ * @member {module:model/GetHDWalletXPubYPubZPubAssetsRI} item
+ */
 GetHDWalletXPubYPubZPubAssetsRData.prototype['item'] = undefined;
 var _default = GetHDWalletXPubYPubZPubAssetsRData;
 exports["default"] = _default;

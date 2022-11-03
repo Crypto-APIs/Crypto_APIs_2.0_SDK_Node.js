@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeE403 model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeE403
- * @version 1.9.0
- */var ListInternalTransactionsByAddressAndTimeRangeE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddressAndTimeRangeE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddressAndTimeRangeE403</code>.
    * @alias module:model/ListInternalTransactionsByAddressAndTimeRangeE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddressAndTimeRangeE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListInternalTransactionsByAddressAndTimeRangeE403.prototype['code'] = undefined;
 
 /**

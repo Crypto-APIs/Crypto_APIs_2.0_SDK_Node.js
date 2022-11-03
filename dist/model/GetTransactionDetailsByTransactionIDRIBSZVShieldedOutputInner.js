@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner;
-}(); /**
-      * Represents the 𝑢-coordinate of the note commitment for the output note.
-      * @member {String} cmu
-      */
+}();
+/**
+ * Represents the 𝑢-coordinate of the note commitment for the output note.
+ * @member {String} cmu
+ */
 GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner.prototype['cmu'] = undefined;
 
 /**

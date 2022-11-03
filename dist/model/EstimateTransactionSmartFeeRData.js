@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTransactionSmartFeeRData model module.
  * @module model/EstimateTransactionSmartFeeRData
- * @version 1.9.0
- */var EstimateTransactionSmartFeeRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTransactionSmartFeeRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTransactionSmartFeeRData</code>.
    * @alias module:model/EstimateTransactionSmartFeeRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTransactionSmartFeeRData;
-}(); /**
-      * @member {module:model/EstimateTransactionSmartFeeRI} item
-      */
+}();
+/**
+ * @member {module:model/EstimateTransactionSmartFeeRI} item
+ */
 EstimateTransactionSmartFeeRData.prototype['item'] = undefined;
 var _default = EstimateTransactionSmartFeeRData;
 exports["default"] = _default;

@@ -14,19 +14,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
- * @version 1.9.0
- */var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem</code>.
    * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
    * @param xpub {String} Defines the account extended publicly known key which is used to derive all child public keys.
    * @param fee {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} 
    * @param recipients {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner>} Object Array representation of transaction receivers
-   * @param replaceable {Boolean} Representation whether the transaction is replaceable
    */
-  function PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem(xpub, fee, recipients, replaceable) {
+  function PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem(xpub, fee, recipients) {
     _classCallCheck(this, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem);
-    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.initialize(this, xpub, fee, recipients, replaceable);
+    PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.initialize(this, xpub, fee, recipients);
   }
 
   /**
@@ -36,11 +36,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
    */
   _createClass(PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem, null, [{
     key: "initialize",
-    value: function initialize(obj, xpub, fee, recipients, replaceable) {
+    value: function initialize(obj, xpub, fee, recipients) {
       obj['xpub'] = xpub;
       obj['fee'] = fee;
       obj['recipients'] = recipients;
-      obj['replaceable'] = replaceable;
     }
 
     /**
@@ -81,10 +80,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem;
-}(); /**
-      * Representation of the additional data.
-      * @member {String} additionalData
-      */
+}();
+/**
+ * Representation of the additional data.
+ * @member {String} additionalData
+ */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['additionalData'] = undefined;
 
 /**

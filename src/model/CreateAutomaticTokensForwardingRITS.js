@@ -18,7 +18,7 @@ import CreateAutomaticTokensForwardingRITSET from './CreateAutomaticTokensForwar
 /**
  * The CreateAutomaticTokensForwardingRITS model module.
  * @module model/CreateAutomaticTokensForwardingRITS
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateAutomaticTokensForwardingRITS {
     /**

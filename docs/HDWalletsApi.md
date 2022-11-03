@@ -468,8 +468,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 //ApiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new Cryptoapis.HDWalletsApi();
-let blockchain = bitcoin; // String | 
-let network = testnet; // String | 
+let blockchain = bitcoin; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = testnet; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB': new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB() // PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB | 
@@ -487,8 +487,8 @@ apiInstance.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(blockchain, net
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **blockchain** | **String**|  | 
- **network** | **String**|  | 
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
  **prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB** | [**PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB.md)|  | [optional] 
 
@@ -526,8 +526,8 @@ ApiKey.apiKey = 'YOUR API KEY';
 //ApiKey.apiKeyPrefix = 'Token';
 
 let apiInstance = new Cryptoapis.HDWalletsApi();
-let blockchain = ethereum; // String | 
-let network = ropsten; // String | 
+let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
   'prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB': new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB() // PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB | 
@@ -545,8 +545,8 @@ apiInstance.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(blockchain,
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **blockchain** | **String**|  | 
- **network** | **String**|  | 
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
  **prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB** | [**PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB**](PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB.md)|  | [optional] 
 

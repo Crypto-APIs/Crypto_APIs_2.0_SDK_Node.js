@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner
- * @version 1.9.0
- */var ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner</code>.
    * @alias module:model/ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner;
-}(); /**
-      * The address which receives this transaction. In UTXO-based protocols like Bitcoin there could be several senders while in account-based protocols like Ethereum there is always only one recipient.
-      * @member {String} address
-      */
+}();
+/**
+ * The address which receives this transaction. In UTXO-based protocols like Bitcoin there could be several senders while in account-based protocols like Ethereum there is always only one recipient.
+ * @member {String} address
+ */
 ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner.prototype['address'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestApprovalDataItem model module.
  * @module model/TransactionRequestApprovalDataItem
- * @version 1.9.0
- */var TransactionRequestApprovalDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestApprovalDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestApprovalDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -81,10 +82,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestApprovalDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 TransactionRequestApprovalDataItem.prototype['blockchain'] = undefined;
 
 /**

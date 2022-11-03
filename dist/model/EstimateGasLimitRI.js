@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateGasLimitRI model module.
  * @module model/EstimateGasLimitRI
- * @version 1.9.0
- */var EstimateGasLimitRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateGasLimitRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateGasLimitRI</code>.
    * @alias module:model/EstimateGasLimitRI
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateGasLimitRI;
-}(); /**
-      * Represents the amount of gas used by this specific transaction alone.
-      * @member {String} gasLimit
-      */
+}();
+/**
+ * Represents the amount of gas used by this specific transaction alone.
+ * @member {String} gasLimit
+ */
 EstimateGasLimitRI.prototype['gasLimit'] = undefined;
 var _default = EstimateGasLimitRI;
 exports["default"] = _default;

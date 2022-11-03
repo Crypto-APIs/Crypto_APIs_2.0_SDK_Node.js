@@ -17,7 +17,7 @@ import GetBlockDetailsByBlockHeightFromCallbackRI from './GetBlockDetailsByBlock
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRData model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRData
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetBlockDetailsByBlockHeightFromCallbackRData {
     /**

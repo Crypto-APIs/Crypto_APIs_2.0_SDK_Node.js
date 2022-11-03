@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The LimitGreaterThanAllowed model module.
  * @module model/LimitGreaterThanAllowed
- * @version 1.9.0
- */var LimitGreaterThanAllowed = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var LimitGreaterThanAllowed = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>LimitGreaterThanAllowed</code>.
    * limit_greater_than_allowed
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return LimitGreaterThanAllowed;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 LimitGreaterThanAllowed.prototype['code'] = undefined;
 
 /**

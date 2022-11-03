@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response
- * @version 1.9.0
- */var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response</code>.
    * @alias module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority400Response.prototype['apiVersion'] = undefined;
 
 /**

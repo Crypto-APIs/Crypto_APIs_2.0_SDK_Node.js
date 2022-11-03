@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The SyncNewHDWalletXPubYPubZPubE403 model module.
  * @module model/SyncNewHDWalletXPubYPubZPubE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class SyncNewHDWalletXPubYPubZPubE403 {
     /**

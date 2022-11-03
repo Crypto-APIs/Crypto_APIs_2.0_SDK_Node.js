@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsE401 model module.
  * @module model/GetWalletAssetDetailsE401
- * @version 1.9.0
- */var GetWalletAssetDetailsE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletAssetDetailsE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetailsE401</code>.
    * @alias module:model/GetWalletAssetDetailsE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletAssetDetailsE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetWalletAssetDetailsE401.prototype['code'] = undefined;
 
 /**

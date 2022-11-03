@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRI model module.
  * @module model/GetLastMinedBlockRI
- * @version 1.9.0
- */var GetLastMinedBlockRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlockRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockRI</code>.
    * @alias module:model/GetLastMinedBlockRI
@@ -81,10 +82,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlockRI;
-}(); /**
-      * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
-      * @member {String} hash
-      */
+}();
+/**
+ * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
+ * @member {String} hash
+ */
 GetLastMinedBlockRI.prototype['hash'] = undefined;
 
 /**

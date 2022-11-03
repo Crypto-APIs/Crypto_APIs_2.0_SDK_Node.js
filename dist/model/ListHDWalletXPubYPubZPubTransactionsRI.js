@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRI model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRI
- * @version 1.9.0
- */var ListHDWalletXPubYPubZPubTransactionsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListHDWalletXPubYPubZPubTransactionsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListHDWalletXPubYPubZPubTransactionsRI</code>.
    * @alias module:model/ListHDWalletXPubYPubZPubTransactionsRI
@@ -98,10 +99,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListHDWalletXPubYPubZPubTransactionsRI;
-}(); /**
-      * Represents the index position of the transaction in the block.
-      * @member {Number} index
-      */
+}();
+/**
+ * Represents the index position of the transaction in the block.
+ * @member {Number} index
+ */
 ListHDWalletXPubYPubZPubTransactionsRI.prototype['index'] = undefined;
 
 /**

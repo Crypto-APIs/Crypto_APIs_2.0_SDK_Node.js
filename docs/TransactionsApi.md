@@ -10,6 +10,8 @@ Method | HTTP request | Description
 [**createFungibleTokenTransactionRequestFromAddressWithoutFeePriority**](TransactionsApi.md#createFungibleTokenTransactionRequestFromAddressWithoutFeePriority) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/feeless-token-transaction-requests | Create Fungible Token Transaction Request From Address Without Fee Priority
 [**createFungibleTokensTransactionRequestFromAddress**](TransactionsApi.md#createFungibleTokensTransactionRequestFromAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/token-transaction-requests | Create Fungible Tokens Transaction Request from Address
 [**createSingleTransactionRequestFromAddressWithoutFeePriority**](TransactionsApi.md#createSingleTransactionRequestFromAddressWithoutFeePriority) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/feeless-transaction-requests | Create Single Transaction Request From Address Without Fee Priority
+[**freezeTronEnergyOrBandwidth**](TransactionsApi.md#freezeTronEnergyOrBandwidth) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{sender}/freeze | Freeze Tron Energy Or Bandwidth
+[**unfreezeTronEnergyOrBandwidth**](TransactionsApi.md#unfreezeTronEnergyOrBandwidth) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{sender}/unfreeze | Unfreeze Tron Energy Or Bandwidth
 
 
 
@@ -372,6 +374,130 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**CreateSingleTransactionRequestFromAddressWithoutFeePriorityR**](CreateSingleTransactionRequestFromAddressWithoutFeePriorityR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## freezeTronEnergyOrBandwidth
+
+> FreezeTronEnergyOrBandwidthR freezeTronEnergyOrBandwidth(blockchain, network, sender, walletId, opts)
+
+Freeze Tron Energy Or Bandwidth
+
+Through this endpoint, customers can stake (freeze) the balance of a specific TRX address to obtain bandwidth or energy.  When creating a request, the \&quot;fromAddress\&quot; is a required parameter. If a \&quot;toAddress\&quot; is not set, for such will be considered the address making the staking transaction. The account receiving the bandwidth or energy must have an available TRX balance.  The minimum amount for staking is 1 TRX.  Note: Staking duration by default is 3 days from the time of freezing, it can NOT be more or less than that. When staking the same address again the duration resets.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.TransactionsApi();
+let blockchain = tron; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = nile; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let sender = TTKi4zqgdWJcGSYyFU5DJcoXtJQSTZMWi4; // String | Defines the address that sends the amount
+let walletId = 62a84a2425a05500079dda56; // String | Represents the sender's specific and unique Wallet ID of the sender.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'freezeTronEnergyOrBandwidthRB': new Cryptoapis.FreezeTronEnergyOrBandwidthRB() // FreezeTronEnergyOrBandwidthRB | 
+};
+apiInstance.freezeTronEnergyOrBandwidth(blockchain, network, sender, walletId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
+ **sender** | **String**| Defines the address that sends the amount | 
+ **walletId** | **String**| Represents the sender&#39;s specific and unique Wallet ID of the sender. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **freezeTronEnergyOrBandwidthRB** | [**FreezeTronEnergyOrBandwidthRB**](FreezeTronEnergyOrBandwidthRB.md)|  | [optional] 
+
+### Return type
+
+[**FreezeTronEnergyOrBandwidthR**](FreezeTronEnergyOrBandwidthR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## unfreezeTronEnergyOrBandwidth
+
+> UnfreezeTronEnergyOrBandwidthR unfreezeTronEnergyOrBandwidth(blockchain, network, sender, walletId, opts)
+
+Unfreeze Tron Energy Or Bandwidth
+
+With this endpoint, customers can unfreeze already staked TRX to receive resources. When unstaking bandwidth or energy, the whole amount for that resource will be released to the specified \&quot;toAddress\&quot;. You can NOT specify how much to unfreeze.  The request for unstaking TRX can be done 3 days after the staking transaction.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.TransactionsApi();
+let blockchain = tron; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = nile; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+let sender = TTKi4zqgdWJcGSYyFU5DJcoXtJQSTZMWi4; // String | Defines the address that sends the amount
+let walletId = 62a84a2425a05500079dda5a; // String | Represents the sender's specific and unique Wallet ID of the sender.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'unfreezeTronEnergyOrBandwidthRB': new Cryptoapis.UnfreezeTronEnergyOrBandwidthRB() // UnfreezeTronEnergyOrBandwidthRB | 
+};
+apiInstance.unfreezeTronEnergyOrBandwidth(blockchain, network, sender, walletId, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;ropsten\&quot; are test networks. | 
+ **sender** | **String**| Defines the address that sends the amount | 
+ **walletId** | **String**| Represents the sender&#39;s specific and unique Wallet ID of the sender. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **unfreezeTronEnergyOrBandwidthRB** | [**UnfreezeTronEnergyOrBandwidthRB**](UnfreezeTronEnergyOrBandwidthRB.md)|  | [optional] 
+
+### Return type
+
+[**UnfreezeTronEnergyOrBandwidthR**](UnfreezeTronEnergyOrBandwidthR.md)
 
 ### Authorization
 

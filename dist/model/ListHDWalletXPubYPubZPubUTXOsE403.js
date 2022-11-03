@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubUTXOsE403 model module.
  * @module model/ListHDWalletXPubYPubZPubUTXOsE403
- * @version 1.9.0
- */var ListHDWalletXPubYPubZPubUTXOsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListHDWalletXPubYPubZPubUTXOsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListHDWalletXPubYPubZPubUTXOsE403</code>.
    * @alias module:model/ListHDWalletXPubYPubZPubUTXOsE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListHDWalletXPubYPubZPubUTXOsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListHDWalletXPubYPubZPubUTXOsE403.prototype['code'] = undefined;
 
 /**

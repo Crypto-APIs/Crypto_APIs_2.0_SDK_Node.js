@@ -19,8 +19,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRI model module.
  * @module model/ListWalletTransactionsRI
- * @version 1.9.0
- */var ListWalletTransactionsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsRI</code>.
    * @alias module:model/ListWalletTransactionsRI
@@ -106,10 +107,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsRI;
-}(); /**
-      * Defines the direction of the transaction, e.g. incoming.
-      * @member {String} direction
-      */
+}();
+/**
+ * Defines the direction of the transaction, e.g. incoming.
+ * @member {String} direction
+ */
 ListWalletTransactionsRI.prototype['direction'] = undefined;
 
 /**

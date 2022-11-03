@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsAndEachConfirmationE400 model module.
  * @module model/NewConfirmedCoinsTransactionsAndEachConfirmationE400
- * @version 1.9.0
- */var NewConfirmedCoinsTransactionsAndEachConfirmationE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactionsAndEachConfirmationE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsAndEachConfirmationE400</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsAndEachConfirmationE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactionsAndEachConfirmationE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 NewConfirmedCoinsTransactionsAndEachConfirmationE400.prototype['code'] = undefined;
 
 /**

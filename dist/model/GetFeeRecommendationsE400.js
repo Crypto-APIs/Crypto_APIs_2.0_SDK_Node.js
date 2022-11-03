@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendationsE400 model module.
  * @module model/GetFeeRecommendationsE400
- * @version 1.9.0
- */var GetFeeRecommendationsE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeRecommendationsE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeRecommendationsE400</code>.
    * @alias module:model/GetFeeRecommendationsE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetFeeRecommendationsE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetFeeRecommendationsE400.prototype['code'] = undefined;
 
 /**

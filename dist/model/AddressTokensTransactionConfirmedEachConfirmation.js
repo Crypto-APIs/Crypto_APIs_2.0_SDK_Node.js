@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionConfirmedEachConfirmation model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmation
- * @version 1.9.0
- */var AddressTokensTransactionConfirmedEachConfirmation = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressTokensTransactionConfirmedEachConfirmation = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionConfirmedEachConfirmation</code>.
    * @alias module:model/AddressTokensTransactionConfirmedEachConfirmation
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressTokensTransactionConfirmedEachConfirmation;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 AddressTokensTransactionConfirmedEachConfirmation.prototype['apiVersion'] = undefined;
 
 /**

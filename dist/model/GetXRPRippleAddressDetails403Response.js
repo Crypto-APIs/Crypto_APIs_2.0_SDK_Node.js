@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetails403Response model module.
  * @module model/GetXRPRippleAddressDetails403Response
- * @version 1.9.0
- */var GetXRPRippleAddressDetails403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleAddressDetails403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleAddressDetails403Response</code>.
    * @alias module:model/GetXRPRippleAddressDetails403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleAddressDetails403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetXRPRippleAddressDetails403Response.prototype['apiVersion'] = undefined;
 
 /**

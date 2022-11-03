@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSL model module.
  * @module model/ListLatestMinedBlocksRIBSL
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSL = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSL = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSL</code>.
    * Litecoin
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSL;
-}(); /**
-      * Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
+ * @member {String} bits
+ */
 ListLatestMinedBlocksRIBSL.prototype['bits'] = undefined;
 
 /**

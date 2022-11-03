@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountRB model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountRB
- * @version 1.9.0
- */var NewConfirmedCoinsTransactionsForSpecificAmountRB = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactionsForSpecificAmountRB = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsForSpecificAmountRB</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsForSpecificAmountRB
@@ -59,10 +60,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactionsForSpecificAmountRB;
-}(); /**
-      * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-      * @member {String} context
-      */
+}();
+/**
+ * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+ * @member {String} context
+ */
 NewConfirmedCoinsTransactionsForSpecificAmountRB.prototype['context'] = undefined;
 
 /**

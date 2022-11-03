@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncHDWalletXPubYPubZPub401Response model module.
  * @module model/SyncHDWalletXPubYPubZPub401Response
- * @version 1.9.0
- */var SyncHDWalletXPubYPubZPub401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var SyncHDWalletXPubYPubZPub401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>SyncHDWalletXPubYPubZPub401Response</code>.
    * @alias module:model/SyncHDWalletXPubYPubZPub401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return SyncHDWalletXPubYPubZPub401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 SyncHDWalletXPubYPubZPub401Response.prototype['apiVersion'] = undefined;
 
 /**

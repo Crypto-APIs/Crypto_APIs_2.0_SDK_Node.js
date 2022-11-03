@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig</code>.
    * Object representation of the script
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig;
-}(); /**
-      * The asm strands for assembly, which is the symbolic representation of the Bitcoin's Script language op-codes.
-      * @member {String} asm
-      */
+}();
+/**
+ * The asm strands for assembly, which is the symbolic representation of the Bitcoin's Script language op-codes.
+ * @member {String} asm
+ */
 GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig.prototype['asm'] = undefined;
 
 /**

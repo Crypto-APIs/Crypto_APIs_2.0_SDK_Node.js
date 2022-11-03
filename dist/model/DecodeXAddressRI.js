@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeXAddressRI model module.
  * @module model/DecodeXAddressRI
- * @version 1.9.0
- */var DecodeXAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeXAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeXAddressRI</code>.
    * @alias module:model/DecodeXAddressRI
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeXAddressRI;
-}(); /**
-      * Defines a specific Tag that is an additional XRP address feature. It helps identifying a transaction recipient beyond a wallet address.
-      * @member {Number} addressTag
-      */
+}();
+/**
+ * Defines a specific Tag that is an additional XRP address feature. It helps identifying a transaction recipient beyond a wallet address.
+ * @member {Number} addressTag
+ */
 DecodeXAddressRI.prototype['addressTag'] = undefined;
 
 /**

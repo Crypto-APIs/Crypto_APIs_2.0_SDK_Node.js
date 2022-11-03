@@ -17,7 +17,7 @@ import EstimateTransactionSmartFeeE403 from './EstimateTransactionSmartFeeE403';
 /**
  * The EstimateTransactionSmartFee403Response model module.
  * @module model/EstimateTransactionSmartFee403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class EstimateTransactionSmartFee403Response {
     /**

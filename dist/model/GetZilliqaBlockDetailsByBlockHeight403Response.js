@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHeight403Response model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeight403Response
- * @version 1.9.0
- */var GetZilliqaBlockDetailsByBlockHeight403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaBlockDetailsByBlockHeight403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaBlockDetailsByBlockHeight403Response</code>.
    * @alias module:model/GetZilliqaBlockDetailsByBlockHeight403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaBlockDetailsByBlockHeight403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetZilliqaBlockDetailsByBlockHeight403Response.prototype['apiVersion'] = undefined;
 
 /**

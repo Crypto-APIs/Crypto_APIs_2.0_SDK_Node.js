@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZ model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZ
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRIBSZ = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRIBSZ = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSZ</code>.
    * Zcash
@@ -131,10 +132,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSZ;
-}(); /**
-      * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
-      * @member {String} bindingSig
-      */
+}();
+/**
+ * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+ * @member {String} bindingSig
+ */
 GetTransactionDetailsByTransactionIDRIBSZ.prototype['bindingSig'] = undefined;
 
 /**

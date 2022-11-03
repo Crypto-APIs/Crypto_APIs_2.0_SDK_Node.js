@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetailsRData model module.
  * @module model/GetZilliqaAddressDetailsRData
- * @version 1.9.0
- */var GetZilliqaAddressDetailsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaAddressDetailsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaAddressDetailsRData</code>.
    * @alias module:model/GetZilliqaAddressDetailsRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaAddressDetailsRData;
-}(); /**
-      * @member {module:model/GetZilliqaAddressDetailsRI} item
-      */
+}();
+/**
+ * @member {module:model/GetZilliqaAddressDetailsRI} item
+ */
 GetZilliqaAddressDetailsRData.prototype['item'] = undefined;
 var _default = GetZilliqaAddressDetailsRData;
 exports["default"] = _default;

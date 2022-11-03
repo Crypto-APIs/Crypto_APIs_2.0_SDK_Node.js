@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRIS model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRIS
- * @version 1.9.0
- */var CreateFungibleTokensTransactionRequestFromAddressRIS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokensTransactionRequestFromAddressRIS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokensTransactionRequestFromAddressRIS</code>.
    * Represents the specific token data which depends on its type - if it is a Coin or Token.
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokensTransactionRequestFromAddressRIS;
-}(); /**
-      * Defines the contract address in the blockchain for an ERC20 token.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Defines the contract address in the blockchain for an ERC20 token.
+ * @member {String} contractAddress
+ */
 CreateFungibleTokensTransactionRequestFromAddressRIS.prototype['contractAddress'] = undefined;
 
 // Implement CreateFungibleTokensTransactionRequestFromAddressRISE interface:

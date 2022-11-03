@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByBlockHash401Response model module.
  * @module model/ListZilliqaTransactionsByBlockHash401Response
- * @version 1.9.0
- */var ListZilliqaTransactionsByBlockHash401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByBlockHash401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByBlockHash401Response</code>.
    * @alias module:model/ListZilliqaTransactionsByBlockHash401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByBlockHash401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListZilliqaTransactionsByBlockHash401Response.prototype['apiVersion'] = undefined;
 
 /**

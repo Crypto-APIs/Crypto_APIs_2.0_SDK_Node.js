@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed;
-}(); /**
-      * Representats the used energy for the  transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Representats the used energy for the  transaction.
+ * @member {String} amount
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed.prototype['amount'] = undefined;
 
 /**

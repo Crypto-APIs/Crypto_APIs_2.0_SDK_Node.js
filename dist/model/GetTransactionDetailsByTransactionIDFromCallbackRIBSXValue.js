@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue;
-}(); /**
-      * Defines the amount of the value.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the value.
+ * @member {String} amount
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue.prototype['amount'] = undefined;
 
 /**

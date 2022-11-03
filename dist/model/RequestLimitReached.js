@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The RequestLimitReached model module.
  * @module model/RequestLimitReached
- * @version 1.9.0
- */var RequestLimitReached = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var RequestLimitReached = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>RequestLimitReached</code>.
    * request_limit_reached
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return RequestLimitReached;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 RequestLimitReached.prototype['code'] = undefined;
 
 /**

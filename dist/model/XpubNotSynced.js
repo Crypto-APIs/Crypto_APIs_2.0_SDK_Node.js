@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The XpubNotSynced model module.
  * @module model/XpubNotSynced
- * @version 1.9.0
- */var XpubNotSynced = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var XpubNotSynced = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>XpubNotSynced</code>.
    * xpub_not_synced
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return XpubNotSynced;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 XpubNotSynced.prototype['code'] = undefined;
 
 /**

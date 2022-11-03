@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MissingApiKey model module.
  * @module model/MissingApiKey
- * @version 1.9.0
- */var MissingApiKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var MissingApiKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>MissingApiKey</code>.
    * missing_api_key
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return MissingApiKey;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 MissingApiKey.prototype['code'] = undefined;
 
 /**

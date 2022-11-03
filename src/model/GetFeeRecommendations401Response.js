@@ -17,7 +17,7 @@ import GetFeeRecommendationsE401 from './GetFeeRecommendationsE401';
 /**
  * The GetFeeRecommendations401Response model module.
  * @module model/GetFeeRecommendations401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetFeeRecommendations401Response {
     /**

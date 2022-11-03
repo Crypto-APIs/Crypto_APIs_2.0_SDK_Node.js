@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedXRPRippleBlockRITotalFees model module.
  * @module model/GetLatestMinedXRPRippleBlockRITotalFees
- * @version 1.9.0
- */var GetLatestMinedXRPRippleBlockRITotalFees = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedXRPRippleBlockRITotalFees = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedXRPRippleBlockRITotalFees</code>.
    * @alias module:model/GetLatestMinedXRPRippleBlockRITotalFees
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedXRPRippleBlockRITotalFees;
-}(); /**
-      * Defines the amount of all fees.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of all fees.
+ * @member {String} amount
+ */
 GetLatestMinedXRPRippleBlockRITotalFees.prototype['amount'] = undefined;
 
 /**

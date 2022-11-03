@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewUnconfirmedTokensTransactionsRI model module.
  * @module model/NewUnconfirmedTokensTransactionsRI
- * @version 1.9.0
- */var NewUnconfirmedTokensTransactionsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewUnconfirmedTokensTransactionsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewUnconfirmedTokensTransactionsRI</code>.
    * @alias module:model/NewUnconfirmedTokensTransactionsRI
@@ -85,10 +86,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewUnconfirmedTokensTransactionsRI;
-}(); /**
-      * Defines the type of the specific event available for the customer to subscribe to for callback notification.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the type of the specific event available for the customer to subscribe to for callback notification.
+ * @member {String} address
+ */
 NewUnconfirmedTokensTransactionsRI.prototype['address'] = undefined;
 
 /**

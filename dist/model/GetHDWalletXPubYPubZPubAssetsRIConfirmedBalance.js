@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance
- * @version 1.9.0
- */var GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance</code>.
    * @alias module:model/GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance;
-}(); /**
-      * Represents the confirmed balance for the specified blockchain protocol.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the confirmed balance for the specified blockchain protocol.
+ * @member {String} amount
+ */
 GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance.prototype['amount'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetID401Response model module.
  * @module model/GetAssetDetailsByAssetID401Response
- * @version 1.9.0
- */var GetAssetDetailsByAssetID401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetID401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetID401Response</code>.
    * @alias module:model/GetAssetDetailsByAssetID401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetID401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetAssetDetailsByAssetID401Response.prototype['apiVersion'] = undefined;
 
 /**

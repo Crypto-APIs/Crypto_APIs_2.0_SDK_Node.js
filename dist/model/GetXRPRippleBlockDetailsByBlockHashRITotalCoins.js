@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRITotalCoins model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins
- * @version 1.9.0
- */var GetXRPRippleBlockDetailsByBlockHashRITotalCoins = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleBlockDetailsByBlockHashRITotalCoins = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHashRITotalCoins</code>.
    * Defines the total coins.
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleBlockDetailsByBlockHashRITotalCoins;
-}(); /**
-      * Defines the amount of the total coins.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the total coins.
+ * @member {String} amount
+ */
 GetXRPRippleBlockDetailsByBlockHashRITotalCoins.prototype['amount'] = undefined;
 
 /**

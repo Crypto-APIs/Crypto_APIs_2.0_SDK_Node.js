@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIFee model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIFee
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIFee</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIFee
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIFee;
-}(); /**
-      * When isConfirmed is True - Defines the amount of the transaction fee  When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
-      * @member {String} amount
-      */
+}();
+/**
+ * When isConfirmed is True - Defines the amount of the transaction fee  When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
+ * @member {String} amount
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIFee.prototype['amount'] = undefined;
 
 /**

@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSX model module.
  * @module model/ListLatestMinedBlocksRIBSX
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSX = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSX = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSX</code>.
    * XRP
@@ -61,9 +62,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSX;
-}(); /**
-      * @member {module:model/ListLatestMinedBlocksRIBSXTotalCoins} totalCoins
-      */
+}();
+/**
+ * @member {module:model/ListLatestMinedBlocksRIBSXTotalCoins} totalCoins
+ */
 ListLatestMinedBlocksRIBSX.prototype['totalCoins'] = undefined;
 
 /**

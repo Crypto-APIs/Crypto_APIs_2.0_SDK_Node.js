@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetailsRIBalance model module.
  * @module model/GetZilliqaAddressDetailsRIBalance
- * @version 1.9.0
- */var GetZilliqaAddressDetailsRIBalance = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaAddressDetailsRIBalance = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaAddressDetailsRIBalance</code>.
    * Represents the total balance of the address as an object.
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaAddressDetailsRIBalance;
-}(); /**
-      * Represents the amount of the address's balance.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the amount of the address's balance.
+ * @member {String} amount
+ */
 GetZilliqaAddressDetailsRIBalance.prototype['amount'] = undefined;
 
 /**

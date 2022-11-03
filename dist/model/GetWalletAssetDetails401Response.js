@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetails401Response model module.
  * @module model/GetWalletAssetDetails401Response
- * @version 1.9.0
- */var GetWalletAssetDetails401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletAssetDetails401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetails401Response</code>.
    * @alias module:model/GetWalletAssetDetails401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletAssetDetails401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetWalletAssetDetails401Response.prototype['apiVersion'] = undefined;
 
 /**

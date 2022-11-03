@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE409 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE409
- * @version 1.9.0
- */var CreateCoinsTransactionFromAddressForWholeAmountE409 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionFromAddressForWholeAmountE409 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionFromAddressForWholeAmountE409</code>.
    * @alias module:model/CreateCoinsTransactionFromAddressForWholeAmountE409
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionFromAddressForWholeAmountE409;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CreateCoinsTransactionFromAddressForWholeAmountE409.prototype['code'] = undefined;
 
 /**

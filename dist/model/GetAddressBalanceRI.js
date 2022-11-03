@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressBalanceRI model module.
  * @module model/GetAddressBalanceRI
- * @version 1.9.0
- */var GetAddressBalanceRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressBalanceRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressBalanceRI</code>.
    * @alias module:model/GetAddressBalanceRI
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressBalanceRI;
-}(); /**
-      * @member {module:model/GetAddressBalanceRIConfirmedBalance} confirmedBalance
-      */
+}();
+/**
+ * @member {module:model/GetAddressBalanceRIConfirmedBalance} confirmedBalance
+ */
 GetAddressBalanceRI.prototype['confirmedBalance'] = undefined;
 var _default = GetAddressBalanceRI;
 exports["default"] = _default;

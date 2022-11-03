@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISZVoutInner model module.
  * @module model/DecodeRawTransactionHexRISZVoutInner
- * @version 1.9.0
- */var DecodeRawTransactionHexRISZVoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISZVoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISZVoutInner</code>.
    * @alias module:model/DecodeRawTransactionHexRISZVoutInner
@@ -59,9 +60,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISZVoutInner;
-}(); /**
-      * @member {module:model/DecodeRawTransactionHexRISZVoutInnerScriptPubKey} scriptPubKey
-      */
+}();
+/**
+ * @member {module:model/DecodeRawTransactionHexRISZVoutInnerScriptPubKey} scriptPubKey
+ */
 DecodeRawTransactionHexRISZVoutInner.prototype['scriptPubKey'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDR model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDR
- * @version 1.9.0
- */var GetBlockchainEventSubscriptionDetailsByReferenceIDR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockchainEventSubscriptionDetailsByReferenceIDR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockchainEventSubscriptionDetailsByReferenceIDR</code>.
    * @alias module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockchainEventSubscriptionDetailsByReferenceIDR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetBlockchainEventSubscriptionDetailsByReferenceIDR.prototype['apiVersion'] = undefined;
 
 /**

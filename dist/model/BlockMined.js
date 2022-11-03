@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockMined model module.
  * @module model/BlockMined
- * @version 1.9.0
- */var BlockMined = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockMined = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockMined</code>.
    * @alias module:model/BlockMined
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockMined;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 BlockMined.prototype['apiVersion'] = undefined;
 
 /**

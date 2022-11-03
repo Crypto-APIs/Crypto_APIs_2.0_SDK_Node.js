@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData
- * @version 1.9.0
- */var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData</code>.
    * @alias module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData;
-}(); /**
-      * @member {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI} item
-      */
+}();
+/**
+ * @member {module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI} item
+ */
 DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData.prototype['item'] = undefined;
 var _default = DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRData;
 exports["default"] = _default;

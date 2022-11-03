@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransactionE409 model module.
  * @module model/MinedTransactionE409
- * @version 1.9.0
- */var MinedTransactionE409 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var MinedTransactionE409 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>MinedTransactionE409</code>.
    * @alias module:model/MinedTransactionE409
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return MinedTransactionE409;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 MinedTransactionE409.prototype['code'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeRData model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeRData
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddressAndTimeRangeRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddressAndTimeRangeRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddressAndTimeRangeRData</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddressAndTimeRangeRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListConfirmedTokensTransfersByAddressAndTimeRangeRData.prototype['limit'] = undefined;
 
 /**

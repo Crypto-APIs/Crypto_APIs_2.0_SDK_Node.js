@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherDataItem model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherDataItem
- * @version 1.9.0
- */var ConfirmedTokensTransactionForCertainAmountOrHigherDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConfirmedTokensTransactionForCertainAmountOrHigherDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConfirmedTokensTransactionForCertainAmountOrHigherDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -83,10 +84,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConfirmedTokensTransactionForCertainAmountOrHigherDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 ConfirmedTokensTransactionForCertainAmountOrHigherDataItem.prototype['blockchain'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptionsR model module.
  * @module model/ListBlockchainEventsSubscriptionsR
- * @version 1.9.0
- */var ListBlockchainEventsSubscriptionsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListBlockchainEventsSubscriptionsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListBlockchainEventsSubscriptionsR</code>.
    * @alias module:model/ListBlockchainEventsSubscriptionsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListBlockchainEventsSubscriptionsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListBlockchainEventsSubscriptionsR.prototype['apiVersion'] = undefined;
 
 /**

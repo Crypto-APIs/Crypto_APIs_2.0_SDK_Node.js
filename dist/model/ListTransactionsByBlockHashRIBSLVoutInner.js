@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRIBSLVoutInner model module.
  * @module model/ListTransactionsByBlockHashRIBSLVoutInner
- * @version 1.9.0
- */var ListTransactionsByBlockHashRIBSLVoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashRIBSLVoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashRIBSLVoutInner</code>.
    * @alias module:model/ListTransactionsByBlockHashRIBSLVoutInner
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashRIBSLVoutInner;
-}(); /**
-      * Defines whether the output is spent or not.
-      * @member {Boolean} isSpent
-      */
+}();
+/**
+ * Defines whether the output is spent or not.
+ * @member {Boolean} isSpent
+ */
 ListTransactionsByBlockHashRIBSLVoutInner.prototype['isSpent'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSZVoutInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSZVoutInner
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBSZVoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBSZVoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBSZVoutInner</code>.
    * @alias module:model/ListTransactionsByBlockHeightRIBSZVoutInner
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBSZVoutInner;
-}(); /**
-      * Defines whether the transaction output has been spent or not.
-      * @member {Boolean} isSpent
-      */
+}();
+/**
+ * Defines whether the transaction output has been spent or not.
+ * @member {Boolean} isSpent
+ */
 ListTransactionsByBlockHeightRIBSZVoutInner.prototype['isSpent'] = undefined;
 
 /**

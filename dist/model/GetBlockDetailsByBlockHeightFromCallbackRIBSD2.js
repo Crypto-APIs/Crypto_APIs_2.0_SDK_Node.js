@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSD2 model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSD2
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightFromCallbackRIBSD2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightFromCallbackRIBSD2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRIBSD2</code>.
    * Dogecoin
@@ -96,10 +97,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightFromCallbackRIBSD2;
-}(); /**
-      * Represents a specific sub-unit of Doge. Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Doge. Bits have two-decimal precision.
+ * @member {String} bits
+ */
 GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['bits'] = undefined;
 
 /**

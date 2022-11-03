@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSZVShieldedOutputInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSZVShieldedOutputInner
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBSZVShieldedOutputInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBSZVShieldedOutputInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBSZVShieldedOutputInner</code>.
    * @alias module:model/ListTransactionsByBlockHeightRIBSZVShieldedOutputInner
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBSZVShieldedOutputInner;
-}(); /**
-      * Represents the 𝑢-coordinate of the note commitment for the output note.
-      * @member {String} cmu
-      */
+}();
+/**
+ * Represents the 𝑢-coordinate of the note commitment for the output note.
+ * @member {String} cmu
+ */
 ListTransactionsByBlockHeightRIBSZVShieldedOutputInner.prototype['cmu'] = undefined;
 
 /**

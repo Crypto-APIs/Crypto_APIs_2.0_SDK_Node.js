@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmation409Response model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmation409Response
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsAndEachConfirmation409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsAndEachConfirmation409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsAndEachConfirmation409Response</code>.
    * @alias module:model/NewConfirmedInternalTransactionsAndEachConfirmation409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsAndEachConfirmation409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedInternalTransactionsAndEachConfirmation409Response.prototype['apiVersion'] = undefined;
 
 /**

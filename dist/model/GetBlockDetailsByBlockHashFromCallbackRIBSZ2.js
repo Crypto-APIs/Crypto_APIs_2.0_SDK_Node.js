@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBSZ2 model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBSZ2
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashFromCallbackRIBSZ2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashFromCallbackRIBSZ2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashFromCallbackRIBSZ2</code>.
    * Zcash
@@ -81,10 +82,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashFromCallbackRIBSZ2;
-}(); /**
-      * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
+ * @member {String} bits
+ */
 GetBlockDetailsByBlockHashFromCallbackRIBSZ2.prototype['bits'] = undefined;
 
 /**

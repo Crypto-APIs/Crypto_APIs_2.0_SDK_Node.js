@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptionsRData model module.
  * @module model/ListBlockchainEventsSubscriptionsRData
- * @version 1.9.0
- */var ListBlockchainEventsSubscriptionsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListBlockchainEventsSubscriptionsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListBlockchainEventsSubscriptionsRData</code>.
    * @alias module:model/ListBlockchainEventsSubscriptionsRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListBlockchainEventsSubscriptionsRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListBlockchainEventsSubscriptionsRData.prototype['limit'] = undefined;
 
 /**

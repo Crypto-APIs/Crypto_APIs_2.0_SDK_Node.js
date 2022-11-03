@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewChangeAddressesRBDataItem model module.
  * @module model/DeriveAndSyncNewChangeAddressesRBDataItem
- * @version 1.9.0
- */var DeriveAndSyncNewChangeAddressesRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewChangeAddressesRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewChangeAddressesRBDataItem</code>.
    * @alias module:model/DeriveAndSyncNewChangeAddressesRBDataItem
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewChangeAddressesRBDataItem;
-}(); /**
-      * Defines the account extended publicly known key which is used to derive all child public keys.
-      * @member {String} extendedPublicKey
-      */
+}();
+/**
+ * Defines the account extended publicly known key which is used to derive all child public keys.
+ * @member {String} extendedPublicKey
+ */
 DeriveAndSyncNewChangeAddressesRBDataItem.prototype['extendedPublicKey'] = undefined;
 var _default = DeriveAndSyncNewChangeAddressesRBDataItem;
 exports["default"] = _default;

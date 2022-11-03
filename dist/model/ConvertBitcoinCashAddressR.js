@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConvertBitcoinCashAddressR model module.
  * @module model/ConvertBitcoinCashAddressR
- * @version 1.9.0
- */var ConvertBitcoinCashAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConvertBitcoinCashAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConvertBitcoinCashAddressR</code>.
    * @alias module:model/ConvertBitcoinCashAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConvertBitcoinCashAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ConvertBitcoinCashAddressR.prototype['apiVersion'] = undefined;
 
 /**

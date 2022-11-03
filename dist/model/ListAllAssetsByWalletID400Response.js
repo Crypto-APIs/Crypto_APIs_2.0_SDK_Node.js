@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsByWalletID400Response model module.
  * @module model/ListAllAssetsByWalletID400Response
- * @version 1.9.0
- */var ListAllAssetsByWalletID400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListAllAssetsByWalletID400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsByWalletID400Response</code>.
    * @alias module:model/ListAllAssetsByWalletID400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListAllAssetsByWalletID400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListAllAssetsByWalletID400Response.prototype['apiVersion'] = undefined;
 
 /**

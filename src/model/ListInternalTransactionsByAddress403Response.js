@@ -17,7 +17,7 @@ import ListInternalTransactionsByAddressE403 from './ListInternalTransactionsByA
 /**
  * The ListInternalTransactionsByAddress403Response model module.
  * @module model/ListInternalTransactionsByAddress403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListInternalTransactionsByAddress403Response {
     /**

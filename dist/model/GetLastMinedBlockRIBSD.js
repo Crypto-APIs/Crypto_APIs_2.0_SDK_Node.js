@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRIBSD model module.
  * @module model/GetLastMinedBlockRIBSD
- * @version 1.9.0
- */var GetLastMinedBlockRIBSD = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlockRIBSD = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockRIBSD</code>.
    * Dogecoin
@@ -96,10 +97,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlockRIBSD;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 GetLastMinedBlockRIBSD.prototype['difficulty'] = undefined;
 
 /**

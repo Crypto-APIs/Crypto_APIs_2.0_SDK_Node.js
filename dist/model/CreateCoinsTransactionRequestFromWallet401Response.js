@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromWallet401Response model module.
  * @module model/CreateCoinsTransactionRequestFromWallet401Response
- * @version 1.9.0
- */var CreateCoinsTransactionRequestFromWallet401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionRequestFromWallet401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromWallet401Response</code>.
    * @alias module:model/CreateCoinsTransactionRequestFromWallet401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionRequestFromWallet401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateCoinsTransactionRequestFromWallet401Response.prototype['apiVersion'] = undefined;
 
 /**

@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensForwardingAutomationsRITS model module.
  * @module model/ListTokensForwardingAutomationsRITS
- * @version 1.9.0
- */var ListTokensForwardingAutomationsRITS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensForwardingAutomationsRITS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensForwardingAutomationsRITS</code>.
    * @alias module:model/ListTokensForwardingAutomationsRITS
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensForwardingAutomationsRITS;
-}(); /**
-      * Defines the Property ID of the Omni Layer token.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Defines the Property ID of the Omni Layer token.
+ * @member {Number} propertyId
+ */
 ListTokensForwardingAutomationsRITS.prototype['propertyId'] = undefined;
 
 /**

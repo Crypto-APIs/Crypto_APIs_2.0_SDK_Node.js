@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewUnconfirmedTokensTransactions400Response model module.
  * @module model/NewUnconfirmedTokensTransactions400Response
- * @version 1.9.0
- */var NewUnconfirmedTokensTransactions400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewUnconfirmedTokensTransactions400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewUnconfirmedTokensTransactions400Response</code>.
    * @alias module:model/NewUnconfirmedTokensTransactions400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewUnconfirmedTokensTransactions400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewUnconfirmedTokensTransactions400Response.prototype['apiVersion'] = undefined;
 
 /**

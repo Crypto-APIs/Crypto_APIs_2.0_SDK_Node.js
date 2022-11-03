@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403 model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403</code>.
    * @alias module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403.prototype['code'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestApproval model module.
  * @module model/TransactionRequestApproval
- * @version 1.9.0
- */var TransactionRequestApproval = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestApproval = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestApproval</code>.
    * @alias module:model/TransactionRequestApproval
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestApproval;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 TransactionRequestApproval.prototype['apiVersion'] = undefined;
 
 /**

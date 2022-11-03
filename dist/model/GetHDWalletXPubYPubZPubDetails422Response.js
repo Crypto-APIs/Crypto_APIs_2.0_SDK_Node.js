@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubDetails422Response model module.
  * @module model/GetHDWalletXPubYPubZPubDetails422Response
- * @version 1.9.0
- */var GetHDWalletXPubYPubZPubDetails422Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetHDWalletXPubYPubZPubDetails422Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetHDWalletXPubYPubZPubDetails422Response</code>.
    * @alias module:model/GetHDWalletXPubYPubZPubDetails422Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetHDWalletXPubYPubZPubDetails422Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetHDWalletXPubYPubZPubDetails422Response.prototype['apiVersion'] = undefined;
 
 /**

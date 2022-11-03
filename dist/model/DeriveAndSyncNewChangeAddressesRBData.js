@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewChangeAddressesRBData model module.
  * @module model/DeriveAndSyncNewChangeAddressesRBData
- * @version 1.9.0
- */var DeriveAndSyncNewChangeAddressesRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewChangeAddressesRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewChangeAddressesRBData</code>.
    * @alias module:model/DeriveAndSyncNewChangeAddressesRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewChangeAddressesRBData;
-}(); /**
-      * @member {module:model/DeriveAndSyncNewChangeAddressesRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/DeriveAndSyncNewChangeAddressesRBDataItem} item
+ */
 DeriveAndSyncNewChangeAddressesRBData.prototype['item'] = undefined;
 var _default = DeriveAndSyncNewChangeAddressesRBData;
 exports["default"] = _default;

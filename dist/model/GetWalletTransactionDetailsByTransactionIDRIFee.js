@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIFee model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIFee
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIFee</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDRIFee
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIFee;
-}(); /**
-      * When isConfirmed is True - Defines the amount of the transaction fee  When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
-      * @member {String} amount
-      */
+}();
+/**
+ * When isConfirmed is True - Defines the amount of the transaction fee  When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.
+ * @member {String} amount
+ */
 GetWalletTransactionDetailsByTransactionIDRIFee.prototype['amount'] = undefined;
 
 /**

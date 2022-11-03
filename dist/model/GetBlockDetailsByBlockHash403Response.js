@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHash403Response model module.
  * @module model/GetBlockDetailsByBlockHash403Response
- * @version 1.9.0
- */var GetBlockDetailsByBlockHash403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHash403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHash403Response</code>.
    * @alias module:model/GetBlockDetailsByBlockHash403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHash403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetBlockDetailsByBlockHash403Response.prototype['apiVersion'] = undefined;
 
 /**

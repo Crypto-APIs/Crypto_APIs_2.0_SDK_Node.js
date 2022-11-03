@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSXTotalFees model module.
  * @module model/ListLatestMinedBlocksRIBSXTotalFees
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSXTotalFees = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSXTotalFees = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSXTotalFees</code>.
    * @alias module:model/ListLatestMinedBlocksRIBSXTotalFees
@@ -58,10 +59,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSXTotalFees;
-}(); /**
-      * Defines the amount of all fees.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of all fees.
+ * @member {String} amount
+ */
 ListLatestMinedBlocksRIBSXTotalFees.prototype['amount'] = undefined;
 
 /**

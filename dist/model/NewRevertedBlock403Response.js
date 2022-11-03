@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewRevertedBlock403Response model module.
  * @module model/NewRevertedBlock403Response
- * @version 1.9.0
- */var NewRevertedBlock403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewRevertedBlock403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewRevertedBlock403Response</code>.
    * @alias module:model/NewRevertedBlock403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewRevertedBlock403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewRevertedBlock403Response.prototype['apiVersion'] = undefined;
 
 /**

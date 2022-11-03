@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISBVinInner model module.
  * @module model/DecodeRawTransactionHexRISBVinInner
- * @version 1.9.0
- */var DecodeRawTransactionHexRISBVinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISBVinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISBVinInner</code>.
    * @alias module:model/DecodeRawTransactionHexRISBVinInner
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISBVinInner;
-}(); /**
-      * Represents the address which send/receive the amount.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address which send/receive the amount.
+ * @member {String} address
+ */
 DecodeRawTransactionHexRISBVinInner.prototype['address'] = undefined;
 
 /**

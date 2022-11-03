@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDE403 model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDE403
- * @version 1.9.0
- */var GetBlockchainEventSubscriptionDetailsByReferenceIDE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockchainEventSubscriptionDetailsByReferenceIDE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockchainEventSubscriptionDetailsByReferenceIDE403</code>.
    * @alias module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockchainEventSubscriptionDetailsByReferenceIDE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetBlockchainEventSubscriptionDetailsByReferenceIDE403.prototype['code'] = undefined;
 
 /**

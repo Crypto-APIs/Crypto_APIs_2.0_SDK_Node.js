@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestMined model module.
  * @module model/TransactionRequestMined
- * @version 1.9.0
- */var TransactionRequestMined = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestMined = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestMined</code>.
    * @alias module:model/TransactionRequestMined
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestMined;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 TransactionRequestMined.prototype['apiVersion'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AlreadyExists model module.
  * @module model/AlreadyExists
- * @version 1.9.0
- */var AlreadyExists = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AlreadyExists = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AlreadyExists</code>.
    * already_exists
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AlreadyExists;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 AlreadyExists.prototype['code'] = undefined;
 
 /**

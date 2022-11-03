@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsRData model module.
  * @module model/NewConfirmedCoinsTransactionsRData
- * @version 1.9.0
- */var NewConfirmedCoinsTransactionsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactionsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsRData</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactionsRData;
-}(); /**
-      * @member {module:model/NewConfirmedCoinsTransactionsRI} item
-      */
+}();
+/**
+ * @member {module:model/NewConfirmedCoinsTransactionsRI} item
+ */
 NewConfirmedCoinsTransactionsRData.prototype['item'] = undefined;
 var _default = NewConfirmedCoinsTransactionsRData;
 exports["default"] = _default;

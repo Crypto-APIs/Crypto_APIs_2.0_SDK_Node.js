@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConvertBitcoinCashAddressE403 model module.
  * @module model/ConvertBitcoinCashAddressE403
- * @version 1.9.0
- */var ConvertBitcoinCashAddressE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConvertBitcoinCashAddressE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConvertBitcoinCashAddressE403</code>.
    * @alias module:model/ConvertBitcoinCashAddressE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConvertBitcoinCashAddressE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ConvertBitcoinCashAddressE403.prototype['code'] = undefined;
 
 /**

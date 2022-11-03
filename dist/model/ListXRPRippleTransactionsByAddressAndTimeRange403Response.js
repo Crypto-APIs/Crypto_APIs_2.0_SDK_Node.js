@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRange403Response model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRange403Response
- * @version 1.9.0
- */var ListXRPRippleTransactionsByAddressAndTimeRange403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByAddressAndTimeRange403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByAddressAndTimeRange403Response</code>.
    * @alias module:model/ListXRPRippleTransactionsByAddressAndTimeRange403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByAddressAndTimeRange403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListXRPRippleTransactionsByAddressAndTimeRange403Response.prototype['apiVersion'] = undefined;
 
 /**

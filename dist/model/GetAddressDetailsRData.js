@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsRData model module.
  * @module model/GetAddressDetailsRData
- * @version 1.9.0
- */var GetAddressDetailsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsRData</code>.
    * @alias module:model/GetAddressDetailsRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsRData;
-}(); /**
-      * @member {module:model/GetAddressDetailsRI} item
-      */
+}();
+/**
+ * @member {module:model/GetAddressDetailsRI} item
+ */
 GetAddressDetailsRData.prototype['item'] = undefined;
 var _default = GetAddressDetailsRData;
 exports["default"] = _default;

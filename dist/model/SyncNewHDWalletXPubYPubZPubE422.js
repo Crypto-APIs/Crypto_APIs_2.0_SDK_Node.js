@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncNewHDWalletXPubYPubZPubE422 model module.
  * @module model/SyncNewHDWalletXPubYPubZPubE422
- * @version 1.9.0
- */var SyncNewHDWalletXPubYPubZPubE422 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var SyncNewHDWalletXPubYPubZPubE422 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>SyncNewHDWalletXPubYPubZPubE422</code>.
    * @alias module:model/SyncNewHDWalletXPubYPubZPubE422
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return SyncNewHDWalletXPubYPubZPubE422;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 SyncNewHDWalletXPubYPubZPubE422.prototype['code'] = undefined;
 
 /**

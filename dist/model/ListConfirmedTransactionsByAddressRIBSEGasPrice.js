@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBSEGasPrice model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSEGasPrice
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRIBSEGasPrice = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRIBSEGasPrice = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRIBSEGasPrice</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressRIBSEGasPrice
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRIBSEGasPrice;
-}(); /**
-      * Represents the price offered to the miner to purchase this amount of gas
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the price offered to the miner to purchase this amount of gas
+ * @member {String} amount
+ */
 ListConfirmedTransactionsByAddressRIBSEGasPrice.prototype['amount'] = undefined;
 
 /**

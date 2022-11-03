@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTokenDetailsByContractAddressRData model module.
  * @module model/GetTokenDetailsByContractAddressRData
- * @version 1.9.0
- */var GetTokenDetailsByContractAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTokenDetailsByContractAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTokenDetailsByContractAddressRData</code>.
    * @alias module:model/GetTokenDetailsByContractAddressRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTokenDetailsByContractAddressRData;
-}(); /**
-      * @member {module:model/GetTokenDetailsByContractAddressRI} item
-      */
+}();
+/**
+ * @member {module:model/GetTokenDetailsByContractAddressRI} item
+ */
 GetTokenDetailsByContractAddressRData.prototype['item'] = undefined;
 var _default = GetTokenDetailsByContractAddressRData;
 exports["default"] = _default;

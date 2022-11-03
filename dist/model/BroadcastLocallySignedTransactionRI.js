@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionRI model module.
  * @module model/BroadcastLocallySignedTransactionRI
- * @version 1.9.0
- */var BroadcastLocallySignedTransactionRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BroadcastLocallySignedTransactionRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BroadcastLocallySignedTransactionRI</code>.
    * @alias module:model/BroadcastLocallySignedTransactionRI
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BroadcastLocallySignedTransactionRI;
-}(); /**
-      * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
-      * @member {String} transactionId
-      */
+}();
+/**
+ * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+ * @member {String} transactionId
+ */
 BroadcastLocallySignedTransactionRI.prototype['transactionId'] = undefined;
 var _default = BroadcastLocallySignedTransactionRI;
 exports["default"] = _default;

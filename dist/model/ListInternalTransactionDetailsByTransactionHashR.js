@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionDetailsByTransactionHashR model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashR
- * @version 1.9.0
- */var ListInternalTransactionDetailsByTransactionHashR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionDetailsByTransactionHashR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionDetailsByTransactionHashR</code>.
    * @alias module:model/ListInternalTransactionDetailsByTransactionHashR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionDetailsByTransactionHashR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListInternalTransactionDetailsByTransactionHashR.prototype['apiVersion'] = undefined;
 
 /**

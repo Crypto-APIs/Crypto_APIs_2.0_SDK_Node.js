@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddressRData model module.
  * @module model/ListTokensByAddressRData
- * @version 1.9.0
- */var ListTokensByAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensByAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensByAddressRData</code>.
    * @alias module:model/ListTokensByAddressRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensByAddressRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListTokensByAddressRData.prototype['limit'] = undefined;
 
 /**

@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteBlockchainEventSubscriptionE403 model module.
  * @module model/DeleteBlockchainEventSubscriptionE403
- * @version 1.9.0
- */var DeleteBlockchainEventSubscriptionE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeleteBlockchainEventSubscriptionE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeleteBlockchainEventSubscriptionE403</code>.
    * @alias module:model/DeleteBlockchainEventSubscriptionE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeleteBlockchainEventSubscriptionE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 DeleteBlockchainEventSubscriptionE403.prototype['code'] = undefined;
 
 /**

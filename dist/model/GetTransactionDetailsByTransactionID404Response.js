@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionID404Response model module.
  * @module model/GetTransactionDetailsByTransactionID404Response
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionID404Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionID404Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionID404Response</code>.
    * @alias module:model/GetTransactionDetailsByTransactionID404Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionID404Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetTransactionDetailsByTransactionID404Response.prototype['apiVersion'] = undefined;
 
 /**

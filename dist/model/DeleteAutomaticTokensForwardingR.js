@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticTokensForwardingR model module.
  * @module model/DeleteAutomaticTokensForwardingR
- * @version 1.9.0
- */var DeleteAutomaticTokensForwardingR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeleteAutomaticTokensForwardingR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeleteAutomaticTokensForwardingR</code>.
    * @alias module:model/DeleteAutomaticTokensForwardingR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeleteAutomaticTokensForwardingR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DeleteAutomaticTokensForwardingR.prototype['apiVersion'] = undefined;
 
 /**

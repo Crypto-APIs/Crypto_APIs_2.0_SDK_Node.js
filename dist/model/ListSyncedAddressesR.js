@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesR model module.
  * @module model/ListSyncedAddressesR
- * @version 1.9.0
- */var ListSyncedAddressesR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSyncedAddressesR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSyncedAddressesR</code>.
    * @alias module:model/ListSyncedAddressesR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSyncedAddressesR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListSyncedAddressesR.prototype['apiVersion'] = undefined;
 
 /**

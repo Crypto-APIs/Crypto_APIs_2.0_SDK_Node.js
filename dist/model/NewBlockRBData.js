@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockRBData model module.
  * @module model/NewBlockRBData
- * @version 1.9.0
- */var NewBlockRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewBlockRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewBlockRBData</code>.
    * @alias module:model/NewBlockRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewBlockRBData;
-}(); /**
-      * @member {module:model/NewBlockRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/NewBlockRBDataItem} item
+ */
 NewBlockRBData.prototype['item'] = undefined;
 var _default = NewBlockRBData;
 exports["default"] = _default;

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRINonFungibleTokensInner model module.
  * @module model/GetWalletAssetDetailsRINonFungibleTokensInner
- * @version 1.9.0
- */var GetWalletAssetDetailsRINonFungibleTokensInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletAssetDetailsRINonFungibleTokensInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetailsRINonFungibleTokensInner</code>.
    * @alias module:model/GetWalletAssetDetailsRINonFungibleTokensInner
@@ -70,10 +71,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletAssetDetailsRINonFungibleTokensInner;
-}(); /**
-      * Defines the specific token identifier. For Bitcoin-based transactions it should be the propertyId and for Ethereum-based transactions - the contract.
-      * @member {String} identifier
-      */
+}();
+/**
+ * Defines the specific token identifier. For Bitcoin-based transactions it should be the propertyId and for Ethereum-based transactions - the contract.
+ * @member {String} identifier
+ */
 GetWalletAssetDetailsRINonFungibleTokensInner.prototype['identifier'] = undefined;
 
 /**

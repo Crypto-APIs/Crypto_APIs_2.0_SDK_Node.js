@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewReceivingAddressesRI model module.
  * @module model/DeriveAndSyncNewReceivingAddressesRI
- * @version 1.9.0
- */var DeriveAndSyncNewReceivingAddressesRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewReceivingAddressesRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewReceivingAddressesRI</code>.
    * @alias module:model/DeriveAndSyncNewReceivingAddressesRI
@@ -75,10 +76,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewReceivingAddressesRI;
-}(); /**
-      * Represents the public address, which is a compressed and shortened form of a public key.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the public address, which is a compressed and shortened form of a public key.
+ * @member {String} address
+ */
 DeriveAndSyncNewReceivingAddressesRI.prototype['address'] = undefined;
 
 /**

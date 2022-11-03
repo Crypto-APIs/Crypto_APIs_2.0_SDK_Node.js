@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL
- * @version 1.9.0
- */var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL</code>.
    * Litecoin
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL;
-}(); /**
-      * Representation of whether the transaction is replaceable
-      * @member {Boolean} replaceable
-      */
+}();
+/**
+ * Representation of whether the transaction is replaceable
+ * @member {Boolean} replaceable
+ */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL.prototype['replaceable'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwardingE401 model module.
  * @module model/CreateAutomaticCoinsForwardingE401
- * @version 1.9.0
- */var CreateAutomaticCoinsForwardingE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticCoinsForwardingE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticCoinsForwardingE401</code>.
    * @alias module:model/CreateAutomaticCoinsForwardingE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticCoinsForwardingE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CreateAutomaticCoinsForwardingE401.prototype['code'] = undefined;
 
 /**

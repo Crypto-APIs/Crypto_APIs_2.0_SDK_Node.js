@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner
- * @version 1.9.0
- */var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner</code>.
    * @alias module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner;
-}(); /**
-      * Defines the destination address.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the destination address.
+ * @member {String} address
+ */
 CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIRecipientInner.prototype['address'] = undefined;
 
 /**

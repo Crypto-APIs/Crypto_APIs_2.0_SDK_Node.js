@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTokenGasLimit400Response model module.
  * @module model/EstimateTokenGasLimit400Response
- * @version 1.9.0
- */var EstimateTokenGasLimit400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTokenGasLimit400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTokenGasLimit400Response</code>.
    * @alias module:model/EstimateTokenGasLimit400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTokenGasLimit400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 EstimateTokenGasLimit400Response.prototype['apiVersion'] = undefined;
 
 /**

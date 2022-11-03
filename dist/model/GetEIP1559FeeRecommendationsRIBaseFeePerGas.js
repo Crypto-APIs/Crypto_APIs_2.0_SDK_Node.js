@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetEIP1559FeeRecommendationsRIBaseFeePerGas model module.
  * @module model/GetEIP1559FeeRecommendationsRIBaseFeePerGas
- * @version 1.9.0
- */var GetEIP1559FeeRecommendationsRIBaseFeePerGas = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetEIP1559FeeRecommendationsRIBaseFeePerGas = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetEIP1559FeeRecommendationsRIBaseFeePerGas</code>.
    * @alias module:model/GetEIP1559FeeRecommendationsRIBaseFeePerGas
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetEIP1559FeeRecommendationsRIBaseFeePerGas;
-}(); /**
-      * Represents the unit of the base fee per gas.
-      * @member {String} unit
-      */
+}();
+/**
+ * Represents the unit of the base fee per gas.
+ * @member {String} unit
+ */
 GetEIP1559FeeRecommendationsRIBaseFeePerGas.prototype['unit'] = undefined;
 
 /**

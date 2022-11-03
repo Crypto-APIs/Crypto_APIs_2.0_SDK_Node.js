@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDE401 model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDE401
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDE401</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetWalletTransactionDetailsByTransactionIDE401.prototype['code'] = undefined;
 
 /**

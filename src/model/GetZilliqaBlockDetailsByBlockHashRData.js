@@ -17,7 +17,7 @@ import GetZilliqaBlockDetailsByBlockHashRI from './GetZilliqaBlockDetailsByBlock
 /**
  * The GetZilliqaBlockDetailsByBlockHashRData model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashRData
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetZilliqaBlockDetailsByBlockHashRData {
     /**

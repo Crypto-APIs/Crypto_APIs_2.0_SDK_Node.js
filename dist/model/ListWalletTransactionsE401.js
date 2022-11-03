@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsE401 model module.
  * @module model/ListWalletTransactionsE401
- * @version 1.9.0
- */var ListWalletTransactionsE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsE401</code>.
    * @alias module:model/ListWalletTransactionsE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListWalletTransactionsE401.prototype['code'] = undefined;
 
 /**

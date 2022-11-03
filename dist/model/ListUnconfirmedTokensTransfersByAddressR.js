@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTokensTransfersByAddressR model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressR
- * @version 1.9.0
- */var ListUnconfirmedTokensTransfersByAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTokensTransfersByAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTokensTransfersByAddressR</code>.
    * @alias module:model/ListUnconfirmedTokensTransfersByAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTokensTransfersByAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListUnconfirmedTokensTransfersByAddressR.prototype['apiVersion'] = undefined;
 
 /**

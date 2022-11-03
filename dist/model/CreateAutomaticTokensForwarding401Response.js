@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwarding401Response model module.
  * @module model/CreateAutomaticTokensForwarding401Response
- * @version 1.9.0
- */var CreateAutomaticTokensForwarding401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticTokensForwarding401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticTokensForwarding401Response</code>.
    * @alias module:model/CreateAutomaticTokensForwarding401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticTokensForwarding401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateAutomaticTokensForwarding401Response.prototype['apiVersion'] = undefined;
 
 /**

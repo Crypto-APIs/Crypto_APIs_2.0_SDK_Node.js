@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsByWalletIDR model module.
  * @module model/ListAllAssetsByWalletIDR
- * @version 1.9.0
- */var ListAllAssetsByWalletIDR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListAllAssetsByWalletIDR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsByWalletIDR</code>.
    * @alias module:model/ListAllAssetsByWalletIDR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListAllAssetsByWalletIDR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListAllAssetsByWalletIDR.prototype['apiVersion'] = undefined;
 
 /**

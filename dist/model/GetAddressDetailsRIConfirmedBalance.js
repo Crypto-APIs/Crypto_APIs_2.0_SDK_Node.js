@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsRIConfirmedBalance model module.
  * @module model/GetAddressDetailsRIConfirmedBalance
- * @version 1.9.0
- */var GetAddressDetailsRIConfirmedBalance = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsRIConfirmedBalance = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsRIConfirmedBalance</code>.
    * @alias module:model/GetAddressDetailsRIConfirmedBalance
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsRIConfirmedBalance;
-}(); /**
-      * Object representation of the total balance of the address
-      * @member {String} amount
-      */
+}();
+/**
+ * Object representation of the total balance of the address
+ * @member {String} amount
+ */
 GetAddressDetailsRIConfirmedBalance.prototype['amount'] = undefined;
 
 /**

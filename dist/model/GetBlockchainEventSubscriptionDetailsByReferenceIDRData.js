@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDRData model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDRData
- * @version 1.9.0
- */var GetBlockchainEventSubscriptionDetailsByReferenceIDRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockchainEventSubscriptionDetailsByReferenceIDRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockchainEventSubscriptionDetailsByReferenceIDRData</code>.
    * @alias module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockchainEventSubscriptionDetailsByReferenceIDRData;
-}(); /**
-      * @member {module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI} item
-      */
+}();
+/**
+ * @member {module:model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI} item
+ */
 GetBlockchainEventSubscriptionDetailsByReferenceIDRData.prototype['item'] = undefined;
 var _default = GetBlockchainEventSubscriptionDetailsByReferenceIDRData;
 exports["default"] = _default;

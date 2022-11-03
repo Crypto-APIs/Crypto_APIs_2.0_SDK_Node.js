@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeXAddress401Response model module.
  * @module model/DecodeXAddress401Response
- * @version 1.9.0
- */var DecodeXAddress401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeXAddress401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeXAddress401Response</code>.
    * @alias module:model/DecodeXAddress401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeXAddress401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DecodeXAddress401Response.prototype['apiVersion'] = undefined;
 
 /**

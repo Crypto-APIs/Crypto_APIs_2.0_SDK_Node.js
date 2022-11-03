@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice;
-}(); /**
-      * Defines the price of the gas.
-      * @member {Number} amount
-      */
+}();
+/**
+ * Defines the price of the gas.
+ * @member {Number} amount
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice.prototype['amount'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionRequestFromAddressRBData model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRBData
- * @version 1.9.0
- */var CreateCoinsTransactionRequestFromAddressRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionRequestFromAddressRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionRequestFromAddressRBData</code>.
    * @alias module:model/CreateCoinsTransactionRequestFromAddressRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionRequestFromAddressRBData;
-}(); /**
-      * @member {module:model/CreateCoinsTransactionRequestFromAddressRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/CreateCoinsTransactionRequestFromAddressRBDataItem} item
+ */
 CreateCoinsTransactionRequestFromAddressRBData.prototype['item'] = undefined;
 var _default = CreateCoinsTransactionRequestFromAddressRBData;
 exports["default"] = _default;

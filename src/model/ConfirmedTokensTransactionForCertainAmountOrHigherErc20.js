@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherErc20 model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherErc20
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ConfirmedTokensTransactionForCertainAmountOrHigherErc20 {
     /**

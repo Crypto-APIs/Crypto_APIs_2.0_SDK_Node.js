@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsRI model module.
  * @module model/GetAddressDetailsRI
- * @version 1.9.0
- */var GetAddressDetailsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsRI</code>.
    * @alias module:model/GetAddressDetailsRI
@@ -83,10 +84,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsRI;
-}(); /**
-      * Represents the total number of confirmed coins transactions for this address, both incoming and outgoing. Applies for coins only **and not** tokens transfers e.g. for Ethereum. `transactionsCount` could result as less than incoming and outgoing transactions put together (e.g. in Bitcoin), due to the fact that one and the same address could be in senders and receivers addresses.
-      * @member {Number} transactionsCount
-      */
+}();
+/**
+ * Represents the total number of confirmed coins transactions for this address, both incoming and outgoing. Applies for coins only **and not** tokens transfers e.g. for Ethereum. `transactionsCount` could result as less than incoming and outgoing transactions put together (e.g. in Bitcoin), due to the fact that one and the same address could be in senders and receivers addresses.
+ * @member {Number} transactionsCount
+ */
 GetAddressDetailsRI.prototype['transactionsCount'] = undefined;
 
 /**

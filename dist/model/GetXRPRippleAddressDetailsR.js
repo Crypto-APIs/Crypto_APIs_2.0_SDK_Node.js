@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetailsR model module.
  * @module model/GetXRPRippleAddressDetailsR
- * @version 1.9.0
- */var GetXRPRippleAddressDetailsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleAddressDetailsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleAddressDetailsR</code>.
    * @alias module:model/GetXRPRippleAddressDetailsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleAddressDetailsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetXRPRippleAddressDetailsR.prototype['apiVersion'] = undefined;
 
 /**

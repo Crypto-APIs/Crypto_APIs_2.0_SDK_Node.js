@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByAddress403Response model module.
  * @module model/ListZilliqaTransactionsByAddress403Response
- * @version 1.9.0
- */var ListZilliqaTransactionsByAddress403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByAddress403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByAddress403Response</code>.
    * @alias module:model/ListZilliqaTransactionsByAddress403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByAddress403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListZilliqaTransactionsByAddress403Response.prototype['apiVersion'] = undefined;
 
 /**

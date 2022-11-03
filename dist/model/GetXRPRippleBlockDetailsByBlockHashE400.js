@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHashE400 model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashE400
- * @version 1.9.0
- */var GetXRPRippleBlockDetailsByBlockHashE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleBlockDetailsByBlockHashE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHashE400</code>.
    * @alias module:model/GetXRPRippleBlockDetailsByBlockHashE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleBlockDetailsByBlockHashE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetXRPRippleBlockDetailsByBlockHashE400.prototype['code'] = undefined;
 
 /**

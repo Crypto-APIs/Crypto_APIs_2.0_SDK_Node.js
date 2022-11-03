@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReached model module.
  * @module model/BlockHeightReached
- * @version 1.9.0
- */var BlockHeightReached = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockHeightReached = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockHeightReached</code>.
    * @alias module:model/BlockHeightReached
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockHeightReached;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 BlockHeightReached.prototype['apiVersion'] = undefined;
 
 /**

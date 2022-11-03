@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockchainDataAddressEventSubscriptionNotFound model module.
  * @module model/BlockchainDataAddressEventSubscriptionNotFound
- * @version 1.9.0
- */var BlockchainDataAddressEventSubscriptionNotFound = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockchainDataAddressEventSubscriptionNotFound = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockchainDataAddressEventSubscriptionNotFound</code>.
    * blockchain_data_address_event_subscription_not_found
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockchainDataAddressEventSubscriptionNotFound;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BlockchainDataAddressEventSubscriptionNotFound.prototype['code'] = undefined;
 
 /**

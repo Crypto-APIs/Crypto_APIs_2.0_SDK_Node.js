@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmount409Response model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmount409Response
- * @version 1.9.0
- */var NewConfirmedTokenTransactionsForSpecificAmount409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedTokenTransactionsForSpecificAmount409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokenTransactionsForSpecificAmount409Response</code>.
    * @alias module:model/NewConfirmedTokenTransactionsForSpecificAmount409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedTokenTransactionsForSpecificAmount409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedTokenTransactionsForSpecificAmount409Response.prototype['apiVersion'] = undefined;
 
 /**

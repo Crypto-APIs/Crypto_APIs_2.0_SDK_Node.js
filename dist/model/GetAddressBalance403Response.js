@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressBalance403Response model module.
  * @module model/GetAddressBalance403Response
- * @version 1.9.0
- */var GetAddressBalance403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressBalance403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressBalance403Response</code>.
    * @alias module:model/GetAddressBalance403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressBalance403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetAddressBalance403Response.prototype['apiVersion'] = undefined;
 
 /**

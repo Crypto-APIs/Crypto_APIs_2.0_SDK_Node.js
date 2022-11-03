@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The SyncNewHDWalletXPubYPubZPubRI model module.
  * @module model/SyncNewHDWalletXPubYPubZPubRI
- * @version 1.9.0
- */var SyncNewHDWalletXPubYPubZPubRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var SyncNewHDWalletXPubYPubZPubRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>SyncNewHDWalletXPubYPubZPubRI</code>.
    * @alias module:model/SyncNewHDWalletXPubYPubZPubRI
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return SyncNewHDWalletXPubYPubZPubRI;
-}(); /**
-      * Defines the account extended publicly known key which is used to derive all child public keys.
-      * @member {String} extendedPublicKey
-      */
+}();
+/**
+ * Defines the account extended publicly known key which is used to derive all child public keys.
+ * @member {String} extendedPublicKey
+ */
 SyncNewHDWalletXPubYPubZPubRI.prototype['extendedPublicKey'] = undefined;
 var _default = SyncNewHDWalletXPubYPubZPubRI;
 exports["default"] = _default;

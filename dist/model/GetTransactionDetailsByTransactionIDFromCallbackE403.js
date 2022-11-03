@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackE403 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackE403
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackE403</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetTransactionDetailsByTransactionIDFromCallbackE403.prototype['code'] = undefined;
 
 /**

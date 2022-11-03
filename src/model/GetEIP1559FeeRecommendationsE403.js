@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetEIP1559FeeRecommendationsE403 model module.
  * @module model/GetEIP1559FeeRecommendationsE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetEIP1559FeeRecommendationsE403 {
     /**

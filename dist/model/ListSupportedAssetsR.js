@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssetsR model module.
  * @module model/ListSupportedAssetsR
- * @version 1.9.0
- */var ListSupportedAssetsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedAssetsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedAssetsR</code>.
    * @alias module:model/ListSupportedAssetsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedAssetsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListSupportedAssetsR.prototype['apiVersion'] = undefined;
 
 /**

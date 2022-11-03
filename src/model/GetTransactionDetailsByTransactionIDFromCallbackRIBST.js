@@ -18,7 +18,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed from './G
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBST model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBST
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBST {
     /**

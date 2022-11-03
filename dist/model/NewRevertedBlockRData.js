@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewRevertedBlockRData model module.
  * @module model/NewRevertedBlockRData
- * @version 1.9.0
- */var NewRevertedBlockRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewRevertedBlockRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewRevertedBlockRData</code>.
    * @alias module:model/NewRevertedBlockRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewRevertedBlockRData;
-}(); /**
-      * @member {module:model/NewRevertedBlockRI} item
-      */
+}();
+/**
+ * @member {module:model/NewRevertedBlockRI} item
+ */
 NewRevertedBlockRData.prototype['item'] = undefined;
 var _default = NewRevertedBlockRData;
 exports["default"] = _default;

@@ -23,8 +23,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRIS model module.
  * @module model/DecodeRawTransactionHexRIS
- * @version 1.9.0
- */var DecodeRawTransactionHexRIS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRIS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRIS</code>.
    * Represents the specific transaction data according to the blockchain
@@ -205,10 +206,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRIS;
-}(); /**
-      * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
+ * @member {Number} locktime
+ */
 DecodeRawTransactionHexRIS.prototype['locktime'] = undefined;
 
 /**

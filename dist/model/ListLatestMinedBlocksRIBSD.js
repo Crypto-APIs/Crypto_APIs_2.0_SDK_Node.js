@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSD model module.
  * @module model/ListLatestMinedBlocksRIBSD
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSD = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSD = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSD</code>.
    * Dash
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSD;
-}(); /**
-      * Represents a specific sub-unit of Dash. Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Dash. Bits have two-decimal precision.
+ * @member {String} bits
+ */
 ListLatestMinedBlocksRIBSD.prototype['bits'] = undefined;
 
 /**

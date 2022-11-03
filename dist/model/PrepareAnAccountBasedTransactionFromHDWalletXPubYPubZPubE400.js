@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400
- * @version 1.9.0
- */var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400</code>.
    * @alias module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400.prototype['code'] = undefined;
 
 /**

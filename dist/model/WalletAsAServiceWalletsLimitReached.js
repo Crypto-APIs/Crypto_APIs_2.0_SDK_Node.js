@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The WalletAsAServiceWalletsLimitReached model module.
  * @module model/WalletAsAServiceWalletsLimitReached
- * @version 1.9.0
- */var WalletAsAServiceWalletsLimitReached = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var WalletAsAServiceWalletsLimitReached = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>WalletAsAServiceWalletsLimitReached</code>.
    * wallet_as_a_service_wallets_limit_reached
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return WalletAsAServiceWalletsLimitReached;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 WalletAsAServiceWalletsLimitReached.prototype['code'] = undefined;
 
 /**

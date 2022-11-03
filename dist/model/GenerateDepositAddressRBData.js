@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddressRBData model module.
  * @module model/GenerateDepositAddressRBData
- * @version 1.9.0
- */var GenerateDepositAddressRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GenerateDepositAddressRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GenerateDepositAddressRBData</code>.
    * @alias module:model/GenerateDepositAddressRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GenerateDepositAddressRBData;
-}(); /**
-      * @member {module:model/GenerateDepositAddressRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/GenerateDepositAddressRBDataItem} item
+ */
 GenerateDepositAddressRBData.prototype['item'] = undefined;
 var _default = GenerateDepositAddressRBData;
 exports["default"] = _default;

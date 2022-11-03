@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRIFee model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRIFee
- * @version 1.9.0
- */var ListHDWalletXPubYPubZPubTransactionsRIFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListHDWalletXPubYPubZPubTransactionsRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListHDWalletXPubYPubZPubTransactionsRIFee</code>.
    * @alias module:model/ListHDWalletXPubYPubZPubTransactionsRIFee
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListHDWalletXPubYPubZPubTransactionsRIFee;
-}(); /**
-      * Defines the amount of the transaction fee.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the transaction fee.
+ * @member {String} amount
+ */
 ListHDWalletXPubYPubZPubTransactionsRIFee.prototype['amount'] = undefined;
 var _default = ListHDWalletXPubYPubZPubTransactionsRIFee;
 exports["default"] = _default;

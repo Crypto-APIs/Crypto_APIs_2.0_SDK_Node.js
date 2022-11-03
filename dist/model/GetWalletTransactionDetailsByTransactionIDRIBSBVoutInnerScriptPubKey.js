@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBVoutInnerScriptPubKey model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBVoutInnerScriptPubKey
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIBSBVoutInnerScriptPubKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIBSBVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIBSBVoutInnerScriptPubKey</code>.
    * Object representation of the script
@@ -74,9 +75,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIBSBVoutInnerScriptPubKey;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 GetWalletTransactionDetailsByTransactionIDRIBSBVoutInnerScriptPubKey.prototype['addresses'] = undefined;
 
 /**

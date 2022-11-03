@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionDetailsByTransactionHashRData model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashRData
- * @version 1.9.0
- */var ListInternalTransactionDetailsByTransactionHashRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionDetailsByTransactionHashRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionDetailsByTransactionHashRData</code>.
    * @alias module:model/ListInternalTransactionDetailsByTransactionHashRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionDetailsByTransactionHashRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListInternalTransactionDetailsByTransactionHashRData.prototype['limit'] = undefined;
 
 /**

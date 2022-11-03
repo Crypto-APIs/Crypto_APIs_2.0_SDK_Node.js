@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISD model module.
  * @module model/DecodeRawTransactionHexRISD
- * @version 1.9.0
- */var DecodeRawTransactionHexRISD = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISD = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISD</code>.
    * Dash
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISD;
-}(); /**
-      * Represents the time at which a particular transaction can be added to the blockchain.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the time at which a particular transaction can be added to the blockchain.
+ * @member {Number} locktime
+ */
 DecodeRawTransactionHexRISD.prototype['locktime'] = undefined;
 
 /**

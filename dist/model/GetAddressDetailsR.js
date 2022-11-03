@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsR model module.
  * @module model/GetAddressDetailsR
- * @version 1.9.0
- */var GetAddressDetailsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsR</code>.
    * @alias module:model/GetAddressDetailsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetAddressDetailsR.prototype['apiVersion'] = undefined;
 
 /**

@@ -56,7 +56,7 @@ import ListWalletTransactionsR from '../model/ListWalletTransactionsR';
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.9.0
+* @version 1.10.0
 */
 export default class InformativeApi {
 
@@ -378,6 +378,8 @@ export default class InformativeApi {
      * @param {String} walletId Represents the unique ID of the specific Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListDepositAddressesR} and HTTP response
      */
     listDepositAddressesWithHttpInfo(blockchain, network, walletId, opts) {
@@ -402,7 +404,9 @@ export default class InformativeApi {
         'walletId': walletId
       };
       let queryParams = {
-        'context': opts['context']
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
       };
       let headerParams = {
       };
@@ -428,6 +432,8 @@ export default class InformativeApi {
      * @param {String} walletId Represents the unique ID of the specific Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListDepositAddressesR}
      */
     listDepositAddresses(blockchain, network, walletId, opts) {

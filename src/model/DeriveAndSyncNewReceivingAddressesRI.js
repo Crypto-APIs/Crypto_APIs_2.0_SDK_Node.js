@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeriveAndSyncNewReceivingAddressesRI model module.
  * @module model/DeriveAndSyncNewReceivingAddressesRI
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DeriveAndSyncNewReceivingAddressesRI {
     /**

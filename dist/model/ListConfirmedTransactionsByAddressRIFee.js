@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIFee model module.
  * @module model/ListConfirmedTransactionsByAddressRIFee
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRIFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRIFee</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressRIFee
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRIFee;
-}(); /**
-      * Defines the amount of the transaction fee.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the transaction fee.
+ * @member {String} amount
+ */
 ListConfirmedTransactionsByAddressRIFee.prototype['amount'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBST model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBST
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightFromCallbackRIBST = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightFromCallbackRIBST = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRIBST</code>.
    * Tron
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightFromCallbackRIBST;
-}(); /**
-      * Represents the bandwidth used for the transaction.
-      * @member {String} bandwidthUsed
-      */
+}();
+/**
+ * Represents the bandwidth used for the transaction.
+ * @member {String} bandwidthUsed
+ */
 GetBlockDetailsByBlockHeightFromCallbackRIBST.prototype['bandwidthUsed'] = undefined;
 
 /**

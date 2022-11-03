@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRIReceive model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRIReceive
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHashRIReceive = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHashRIReceive = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHashRIReceive</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHashRIReceive
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHashRIReceive;
-}(); /**
-      * Defines the received amount.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the received amount.
+ * @member {String} amount
+ */
 ListXRPRippleTransactionsByBlockHashRIReceive.prototype['amount'] = undefined;
 
 /**

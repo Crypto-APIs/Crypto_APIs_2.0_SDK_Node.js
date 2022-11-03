@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromWalletE403 from './CreateCoinsTransactio
 /**
  * The CreateCoinsTransactionRequestFromWallet403Response model module.
  * @module model/CreateCoinsTransactionRequestFromWallet403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateCoinsTransactionRequestFromWallet403Response {
     /**

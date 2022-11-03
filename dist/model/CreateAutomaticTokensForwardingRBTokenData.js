@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwardingRBTokenData model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenData
- * @version 1.9.0
- */var CreateAutomaticTokensForwardingRBTokenData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticTokensForwardingRBTokenData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticTokensForwardingRBTokenData</code>.
    * @alias module:model/CreateAutomaticTokensForwardingRBTokenData
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticTokensForwardingRBTokenData;
-}(); /**
-      * Represents the specific `propertyId` of the token data that will be forwarded.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Represents the specific `propertyId` of the token data that will be forwarded.
+ * @member {Number} propertyId
+ */
 CreateAutomaticTokensForwardingRBTokenData.prototype['propertyId'] = undefined;
 
 /**

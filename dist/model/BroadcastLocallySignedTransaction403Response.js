@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransaction403Response model module.
  * @module model/BroadcastLocallySignedTransaction403Response
- * @version 1.9.0
- */var BroadcastLocallySignedTransaction403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BroadcastLocallySignedTransaction403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BroadcastLocallySignedTransaction403Response</code>.
    * @alias module:model/BroadcastLocallySignedTransaction403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BroadcastLocallySignedTransaction403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 BroadcastLocallySignedTransaction403Response.prototype['apiVersion'] = undefined;
 
 /**

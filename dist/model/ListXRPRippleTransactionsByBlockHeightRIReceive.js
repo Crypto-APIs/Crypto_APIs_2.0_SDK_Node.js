@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHeightRIReceive model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRIReceive
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHeightRIReceive = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHeightRIReceive = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHeightRIReceive</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHeightRIReceive
@@ -60,9 +61,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHeightRIReceive;
-}(); /**
-      * @member {String} amount
-      */
+}();
+/**
+ * @member {String} amount
+ */
 ListXRPRippleTransactionsByBlockHeightRIReceive.prototype['amount'] = undefined;
 
 /**

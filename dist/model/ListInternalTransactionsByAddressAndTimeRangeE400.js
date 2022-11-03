@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeE400 model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeE400
- * @version 1.9.0
- */var ListInternalTransactionsByAddressAndTimeRangeE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddressAndTimeRangeE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddressAndTimeRangeE400</code>.
    * @alias module:model/ListInternalTransactionsByAddressAndTimeRangeE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddressAndTimeRangeE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListInternalTransactionsByAddressAndTimeRangeE400.prototype['code'] = undefined;
 
 /**

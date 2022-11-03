@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidNetwork model module.
  * @module model/InvalidNetwork
- * @version 1.9.0
- */var InvalidNetwork = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var InvalidNetwork = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>InvalidNetwork</code>.
    * invalid_network
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return InvalidNetwork;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 InvalidNetwork.prototype['code'] = undefined;
 
 /**

@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetAddressBalanceE403 model module.
  * @module model/GetAddressBalanceE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetAddressBalanceE403 {
     /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EndpointNotAllowedForPlan model module.
  * @module model/EndpointNotAllowedForPlan
- * @version 1.9.0
- */var EndpointNotAllowedForPlan = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EndpointNotAllowedForPlan = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EndpointNotAllowedForPlan</code>.
    * endpoint_not_allowed_for_plan
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EndpointNotAllowedForPlan;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 EndpointNotAllowedForPlan.prototype['code'] = undefined;
 
 /**

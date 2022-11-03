@@ -17,7 +17,7 @@ import NewConfirmedTokenTransactionsForSpecificAmountE409 from './NewConfirmedTo
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmount409Response model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmount409Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class NewConfirmedTokenTransactionsForSpecificAmount409Response {
     /**

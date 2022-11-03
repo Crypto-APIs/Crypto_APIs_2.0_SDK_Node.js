@@ -17,7 +17,7 @@ import ListWalletTransactionsE401 from './ListWalletTransactionsE401';
 /**
  * The ListWalletTransactions401Response model module.
  * @module model/ListWalletTransactions401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListWalletTransactions401Response {
     /**

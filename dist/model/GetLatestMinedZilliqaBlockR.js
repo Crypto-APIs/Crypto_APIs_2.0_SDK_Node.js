@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlockR model module.
  * @module model/GetLatestMinedZilliqaBlockR
- * @version 1.9.0
- */var GetLatestMinedZilliqaBlockR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedZilliqaBlockR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedZilliqaBlockR</code>.
    * @alias module:model/GetLatestMinedZilliqaBlockR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedZilliqaBlockR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetLatestMinedZilliqaBlockR.prototype['apiVersion'] = undefined;
 
 /**

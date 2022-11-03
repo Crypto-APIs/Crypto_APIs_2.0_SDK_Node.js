@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConfirmedInternalTransactionForCertainAmountOrHigher model module.
  * @module model/ConfirmedInternalTransactionForCertainAmountOrHigher
- * @version 1.9.0
- */var ConfirmedInternalTransactionForCertainAmountOrHigher = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConfirmedInternalTransactionForCertainAmountOrHigher = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConfirmedInternalTransactionForCertainAmountOrHigher</code>.
    * @alias module:model/ConfirmedInternalTransactionForCertainAmountOrHigher
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConfirmedInternalTransactionForCertainAmountOrHigher;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ConfirmedInternalTransactionForCertainAmountOrHigher.prototype['apiVersion'] = undefined;
 
 /**

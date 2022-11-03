@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokensTransactionRequestFromAddress400Response model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddress400Response
- * @version 1.9.0
- */var CreateFungibleTokensTransactionRequestFromAddress400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokensTransactionRequestFromAddress400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokensTransactionRequestFromAddress400Response</code>.
    * @alias module:model/CreateFungibleTokensTransactionRequestFromAddress400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokensTransactionRequestFromAddress400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateFungibleTokensTransactionRequestFromAddress400Response.prototype['apiVersion'] = undefined;
 
 /**

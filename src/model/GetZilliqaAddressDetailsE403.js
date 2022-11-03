@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetZilliqaAddressDetailsE403 model module.
  * @module model/GetZilliqaAddressDetailsE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetZilliqaAddressDetailsE403 {
     /**

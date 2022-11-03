@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensByAddressRI model module.
  * @module model/ListTokensByAddressRI
- * @version 1.9.0
- */var ListTokensByAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensByAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensByAddressRI</code>.
    * @alias module:model/ListTokensByAddressRI
@@ -75,10 +76,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensByAddressRI;
-}(); /**
-      * Defines the token balance that has been confirmed.
-      * @member {String} confirmedBalance
-      */
+}();
+/**
+ * Defines the token balance that has been confirmed.
+ * @member {String} confirmedBalance
+ */
 ListTokensByAddressRI.prototype['confirmedBalance'] = undefined;
 
 /**

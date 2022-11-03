@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetails403Response model module.
  * @module model/GetTransactionRequestDetails403Response
- * @version 1.9.0
- */var GetTransactionRequestDetails403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionRequestDetails403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionRequestDetails403Response</code>.
    * @alias module:model/GetTransactionRequestDetails403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionRequestDetails403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetTransactionRequestDetails403Response.prototype['apiVersion'] = undefined;
 
 /**

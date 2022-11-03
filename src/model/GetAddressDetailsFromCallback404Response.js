@@ -17,7 +17,7 @@ import BlockchainDataAddressEventSubscriptionNotFound from './BlockchainDataAddr
 /**
  * The GetAddressDetailsFromCallback404Response model module.
  * @module model/GetAddressDetailsFromCallback404Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetAddressDetailsFromCallback404Response {
     /**

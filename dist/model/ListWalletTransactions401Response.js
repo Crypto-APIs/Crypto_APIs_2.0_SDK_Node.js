@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactions401Response model module.
  * @module model/ListWalletTransactions401Response
- * @version 1.9.0
- */var ListWalletTransactions401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactions401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactions401Response</code>.
    * @alias module:model/ListWalletTransactions401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactions401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListWalletTransactions401Response.prototype['apiVersion'] = undefined;
 
 /**

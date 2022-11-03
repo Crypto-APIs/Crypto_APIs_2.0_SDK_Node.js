@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateGasLimitRBDataItem model module.
  * @module model/EstimateGasLimitRBDataItem
- * @version 1.9.0
- */var EstimateGasLimitRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateGasLimitRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateGasLimitRBDataItem</code>.
    * @alias module:model/EstimateGasLimitRBDataItem
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateGasLimitRBDataItem;
-}(); /**
-      * Represents an optional field to add additonal data.
-      * @member {String} additionalData
-      */
+}();
+/**
+ * Represents an optional field to add additonal data.
+ * @member {String} additionalData
+ */
 EstimateGasLimitRBDataItem.prototype['additionalData'] = undefined;
 
 /**

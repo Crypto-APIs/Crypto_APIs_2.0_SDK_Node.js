@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBSL model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBSL
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashFromCallbackRIBSL = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashFromCallbackRIBSL = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashFromCallbackRIBSL</code>.
    * Litecoin
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashFromCallbackRIBSL;
-}(); /**
-      * Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
+ * @member {String} bits
+ */
 GetBlockDetailsByBlockHashFromCallbackRIBSL.prototype['bits'] = undefined;
 
 /**

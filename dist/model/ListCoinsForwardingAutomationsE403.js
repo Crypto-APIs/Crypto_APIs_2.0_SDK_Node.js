@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListCoinsForwardingAutomationsE403 model module.
  * @module model/ListCoinsForwardingAutomationsE403
- * @version 1.9.0
- */var ListCoinsForwardingAutomationsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListCoinsForwardingAutomationsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListCoinsForwardingAutomationsE403</code>.
    * @alias module:model/ListCoinsForwardingAutomationsE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListCoinsForwardingAutomationsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListCoinsForwardingAutomationsE403.prototype['code'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRBTokenDataEthereumToken model module.
  * @module model/AddTokensToExistingFromAddressRBTokenDataEthereumToken
- * @version 1.9.0
- */var AddTokensToExistingFromAddressRBTokenDataEthereumToken = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddressRBTokenDataEthereumToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressRBTokenDataEthereumToken</code>.
    * Ethereum Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddressRBTokenDataEthereumToken;
-}(); /**
-      * Represents the specific `contractAddress` of the Token that will be forwarded.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Represents the specific `contractAddress` of the Token that will be forwarded.
+ * @member {String} contractAddress
+ */
 AddTokensToExistingFromAddressRBTokenDataEthereumToken.prototype['contractAddress'] = undefined;
 var _default = AddTokensToExistingFromAddressRBTokenDataEthereumToken;
 exports["default"] = _default;

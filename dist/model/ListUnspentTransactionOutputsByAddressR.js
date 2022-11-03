@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnspentTransactionOutputsByAddressR model module.
  * @module model/ListUnspentTransactionOutputsByAddressR
- * @version 1.9.0
- */var ListUnspentTransactionOutputsByAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnspentTransactionOutputsByAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnspentTransactionOutputsByAddressR</code>.
    * @alias module:model/ListUnspentTransactionOutputsByAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnspentTransactionOutputsByAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListUnspentTransactionOutputsByAddressR.prototype['apiVersion'] = undefined;
 
 /**

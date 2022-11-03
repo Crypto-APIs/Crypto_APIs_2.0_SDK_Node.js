@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesRINonFungibleTokensInner model module.
  * @module model/ListDepositAddressesRINonFungibleTokensInner
- * @version 1.9.0
- */var ListDepositAddressesRINonFungibleTokensInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListDepositAddressesRINonFungibleTokensInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesRINonFungibleTokensInner</code>.
    * @alias module:model/ListDepositAddressesRINonFungibleTokensInner
@@ -75,10 +76,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListDepositAddressesRINonFungibleTokensInner;
-}(); /**
-      * Defines the specific token identifier. For Bitcoin-based transactions it should be the propertyId and for Ethereum-based transactions - the contract.
-      * @member {String} identifier
-      */
+}();
+/**
+ * Defines the specific token identifier. For Bitcoin-based transactions it should be the propertyId and for Ethereum-based transactions - the contract.
+ * @member {String} identifier
+ */
 ListDepositAddressesRINonFungibleTokensInner.prototype['identifier'] = undefined;
 
 /**

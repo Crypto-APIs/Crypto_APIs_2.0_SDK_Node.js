@@ -17,7 +17,7 @@ import GetBlockDetailsByBlockHashFromCallbackE400 from './GetBlockDetailsByBlock
 /**
  * The GetBlockDetailsByBlockHashFromCallback400Response model module.
  * @module model/GetBlockDetailsByBlockHashFromCallback400Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetBlockDetailsByBlockHashFromCallback400Response {
     /**

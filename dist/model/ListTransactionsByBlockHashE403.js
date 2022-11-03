@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashE403 model module.
  * @module model/ListTransactionsByBlockHashE403
- * @version 1.9.0
- */var ListTransactionsByBlockHashE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashE403</code>.
    * @alias module:model/ListTransactionsByBlockHashE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListTransactionsByBlockHashE403.prototype['code'] = undefined;
 
 /**

@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRI model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRI
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRI</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRI
@@ -104,10 +105,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRI;
-}(); /**
-      * Represents the index position of the transaction in the specific block.
-      * @member {Number} index
-      */
+}();
+/**
+ * Represents the index position of the transaction in the specific block.
+ * @member {Number} index
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRI.prototype['index'] = undefined;
 
 /**

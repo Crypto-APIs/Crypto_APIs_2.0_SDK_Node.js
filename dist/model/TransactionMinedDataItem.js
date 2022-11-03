@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionMinedDataItem model module.
  * @module model/TransactionMinedDataItem
- * @version 1.9.0
- */var TransactionMinedDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionMinedDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionMinedDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionMinedDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 TransactionMinedDataItem.prototype['blockchain'] = undefined;
 
 /**

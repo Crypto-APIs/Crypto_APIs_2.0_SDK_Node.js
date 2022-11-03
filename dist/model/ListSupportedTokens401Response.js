@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokens401Response model module.
  * @module model/ListSupportedTokens401Response
- * @version 1.9.0
- */var ListSupportedTokens401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedTokens401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedTokens401Response</code>.
    * @alias module:model/ListSupportedTokens401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedTokens401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListSupportedTokens401Response.prototype['apiVersion'] = undefined;
 
 /**

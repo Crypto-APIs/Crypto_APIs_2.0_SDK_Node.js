@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssetsE400 model module.
  * @module model/ListSupportedAssetsE400
- * @version 1.9.0
- */var ListSupportedAssetsE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedAssetsE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedAssetsE400</code>.
    * @alias module:model/ListSupportedAssetsE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedAssetsE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListSupportedAssetsE400.prototype['code'] = undefined;
 
 /**

@@ -17,7 +17,7 @@ import CreateFungibleTokensTransactionRequestFromAddressE400 from './CreateFungi
 /**
  * The CreateFungibleTokensTransactionRequestFromAddress400Response model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddress400Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateFungibleTokensTransactionRequestFromAddress400Response {
     /**

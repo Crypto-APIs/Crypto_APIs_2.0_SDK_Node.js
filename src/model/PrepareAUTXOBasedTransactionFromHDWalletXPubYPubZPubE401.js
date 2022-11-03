@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401 model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401
- * @version 1.9.0
+ * @version 1.10.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubE401 {
     /**

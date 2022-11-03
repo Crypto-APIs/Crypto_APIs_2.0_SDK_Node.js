@@ -26,8 +26,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBS model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBS
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashFromCallbackRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashFromCallbackRIBS</code>.
    * @alias module:model/GetBlockDetailsByBlockHashFromCallbackRIBS
@@ -233,10 +234,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashFromCallbackRIBS;
-}(); /**
-      * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
+ * @member {String} bits
+ */
 GetBlockDetailsByBlockHashFromCallbackRIBS.prototype['bits'] = undefined;
 
 /**

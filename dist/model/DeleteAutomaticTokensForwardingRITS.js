@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteAutomaticTokensForwardingRITS model module.
  * @module model/DeleteAutomaticTokensForwardingRITS
- * @version 1.9.0
- */var DeleteAutomaticTokensForwardingRITS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeleteAutomaticTokensForwardingRITS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeleteAutomaticTokensForwardingRITS</code>.
    * @alias module:model/DeleteAutomaticTokensForwardingRITS
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeleteAutomaticTokensForwardingRITS;
-}(); /**
-      * Defines the `propertyId` of the Omni Layer token.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Defines the `propertyId` of the Omni Layer token.
+ * @member {Number} propertyId
+ */
 DeleteAutomaticTokensForwardingRITS.prototype['propertyId'] = undefined;
 
 /**

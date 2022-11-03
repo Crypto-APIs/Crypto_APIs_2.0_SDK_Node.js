@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRData model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRData
- * @version 1.9.0
- */var CreateCoinsTransactionFromAddressForWholeAmountRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionFromAddressForWholeAmountRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionFromAddressForWholeAmountRData</code>.
    * @alias module:model/CreateCoinsTransactionFromAddressForWholeAmountRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionFromAddressForWholeAmountRData;
-}(); /**
-      * @member {module:model/CreateCoinsTransactionFromAddressForWholeAmountRI} item
-      */
+}();
+/**
+ * @member {module:model/CreateCoinsTransactionFromAddressForWholeAmountRI} item
+ */
 CreateCoinsTransactionFromAddressForWholeAmountRData.prototype['item'] = undefined;
 var _default = CreateCoinsTransactionFromAddressForWholeAmountRData;
 exports["default"] = _default;

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddressR model module.
  * @module model/ValidateAddressR
- * @version 1.9.0
- */var ValidateAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ValidateAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ValidateAddressR</code>.
    * @alias module:model/ValidateAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ValidateAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ValidateAddressR.prototype['apiVersion'] = undefined;
 
 /**

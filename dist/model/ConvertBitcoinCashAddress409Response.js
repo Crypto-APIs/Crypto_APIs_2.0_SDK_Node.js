@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConvertBitcoinCashAddress409Response model module.
  * @module model/ConvertBitcoinCashAddress409Response
- * @version 1.9.0
- */var ConvertBitcoinCashAddress409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConvertBitcoinCashAddress409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConvertBitcoinCashAddress409Response</code>.
    * @alias module:model/ConvertBitcoinCashAddress409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConvertBitcoinCashAddress409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ConvertBitcoinCashAddress409Response.prototype['apiVersion'] = undefined;
 
 /**

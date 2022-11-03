@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesE401 model module.
  * @module model/ListSyncedAddressesE401
- * @version 1.9.0
- */var ListSyncedAddressesE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSyncedAddressesE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSyncedAddressesE401</code>.
    * @alias module:model/ListSyncedAddressesE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSyncedAddressesE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListSyncedAddressesE401.prototype['code'] = undefined;
 
 /**

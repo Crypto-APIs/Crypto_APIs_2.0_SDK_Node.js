@@ -17,7 +17,7 @@ import ListAllAssetsByWalletIDRI from './ListAllAssetsByWalletIDRI';
 /**
  * The ListAllAssetsByWalletIDRData model module.
  * @module model/ListAllAssetsByWalletIDRData
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListAllAssetsByWalletIDRData {
     /**

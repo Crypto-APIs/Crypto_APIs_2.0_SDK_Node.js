@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRIS model module.
  * @module model/GetAssetDetailsByAssetIDRIS
- * @version 1.9.0
- */var GetAssetDetailsByAssetIDRIS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetIDRIS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetIDRIS</code>.
    * Represents a specific asset&#39;s data depending on its type (whether it is \&quot;crypto\&quot; or \&quot;fiat\&quot;).
@@ -95,10 +96,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetIDRIS;
-}(); /**
-      * Represents the percentage of the asset's current price against the its price from 1 hour ago.
-      * @member {String} 1HourPriceChangeInPercentage
-      */
+}();
+/**
+ * Represents the percentage of the asset's current price against the its price from 1 hour ago.
+ * @member {String} 1HourPriceChangeInPercentage
+ */
 GetAssetDetailsByAssetIDRIS.prototype['1HourPriceChangeInPercentage'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolRI model module.
  * @module model/GetAssetDetailsByAssetSymbolRI
- * @version 1.9.0
- */var GetAssetDetailsByAssetSymbolRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetSymbolRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetSymbolRI</code>.
    * @alias module:model/GetAssetDetailsByAssetSymbolRI
@@ -96,10 +97,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetSymbolRI;
-}(); /**
-      * Defines the unique ID of the specific asset.
-      * @member {String} assetId
-      */
+}();
+/**
+ * Defines the unique ID of the specific asset.
+ * @member {String} assetId
+ */
 GetAssetDetailsByAssetSymbolRI.prototype['assetId'] = undefined;
 
 /**

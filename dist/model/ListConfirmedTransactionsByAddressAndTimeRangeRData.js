@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRData model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRData
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressAndTimeRangeRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressAndTimeRangeRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressAndTimeRangeRData</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressAndTimeRangeRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressAndTimeRangeRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListConfirmedTransactionsByAddressAndTimeRangeRData.prototype['limit'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetailsE401 model module.
  * @module model/GetTransactionRequestDetailsE401
- * @version 1.9.0
- */var GetTransactionRequestDetailsE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionRequestDetailsE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionRequestDetailsE401</code>.
    * @alias module:model/GetTransactionRequestDetailsE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionRequestDetailsE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetTransactionRequestDetailsE401.prototype['code'] = undefined;
 
 /**

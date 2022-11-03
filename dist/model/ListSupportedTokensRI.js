@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokensRI model module.
  * @module model/ListSupportedTokensRI
- * @version 1.9.0
- */var ListSupportedTokensRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedTokensRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedTokensRI</code>.
    * @alias module:model/ListSupportedTokensRI
@@ -75,10 +76,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedTokensRI;
-}(); /**
-      * Defines the token's decimal number or all of its points after the zero.
-      * @member {Number} decimals
-      */
+}();
+/**
+ * Defines the token's decimal number or all of its points after the zero.
+ * @member {Number} decimals
+ */
 ListSupportedTokensRI.prototype['decimals'] = undefined;
 
 /**

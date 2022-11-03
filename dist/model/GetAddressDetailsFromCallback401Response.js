@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallback401Response model module.
  * @module model/GetAddressDetailsFromCallback401Response
- * @version 1.9.0
- */var GetAddressDetailsFromCallback401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsFromCallback401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsFromCallback401Response</code>.
    * @alias module:model/GetAddressDetailsFromCallback401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsFromCallback401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetAddressDetailsFromCallback401Response.prototype['apiVersion'] = undefined;
 
 /**

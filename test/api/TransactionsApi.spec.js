@@ -108,6 +108,26 @@
         done();
       });
     });
+    describe('freezeTronEnergyOrBandwidth', function() {
+      it('should call freezeTronEnergyOrBandwidth successfully', function(done) {
+        //uncomment below and update the code to test freezeTronEnergyOrBandwidth
+        //instance.freezeTronEnergyOrBandwidth(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('unfreezeTronEnergyOrBandwidth', function() {
+      it('should call unfreezeTronEnergyOrBandwidth successfully', function(done) {
+        //uncomment below and update the code to test unfreezeTronEnergyOrBandwidth
+        //instance.unfreezeTronEnergyOrBandwidth(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
   });
 
 }));

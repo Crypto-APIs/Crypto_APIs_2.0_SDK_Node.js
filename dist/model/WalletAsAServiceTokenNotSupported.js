@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The WalletAsAServiceTokenNotSupported model module.
  * @module model/WalletAsAServiceTokenNotSupported
- * @version 1.9.0
- */var WalletAsAServiceTokenNotSupported = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var WalletAsAServiceTokenNotSupported = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>WalletAsAServiceTokenNotSupported</code>.
    * wallet_as_a_service_token_not_supported
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return WalletAsAServiceTokenNotSupported;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 WalletAsAServiceTokenNotSupported.prototype['code'] = undefined;
 
 /**

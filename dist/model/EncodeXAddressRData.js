@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressRData model module.
  * @module model/EncodeXAddressRData
- * @version 1.9.0
- */var EncodeXAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EncodeXAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EncodeXAddressRData</code>.
    * @alias module:model/EncodeXAddressRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EncodeXAddressRData;
-}(); /**
-      * @member {module:model/EncodeXAddressRI} item
-      */
+}();
+/**
+ * @member {module:model/EncodeXAddressRI} item
+ */
 EncodeXAddressRData.prototype['item'] = undefined;
 var _default = EncodeXAddressRData;
 exports["default"] = _default;

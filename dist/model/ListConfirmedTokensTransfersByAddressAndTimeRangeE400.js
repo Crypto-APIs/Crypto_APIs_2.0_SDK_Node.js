@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeE400 model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeE400
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddressAndTimeRangeE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddressAndTimeRangeE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddressAndTimeRangeE400</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddressAndTimeRangeE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListConfirmedTokensTransfersByAddressAndTimeRangeE400.prototype['code'] = undefined;
 
 /**

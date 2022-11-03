@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackE400 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackE400
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackE400</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetTransactionDetailsByTransactionIDFromCallbackE400.prototype['code'] = undefined;
 
 /**

@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRI model module.
  * @module model/GetTransactionDetailsByTransactionIDRI
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRI</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRI
@@ -105,10 +106,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRI;
-}(); /**
-      * Represents the index position of the transaction in the specific block.
-      * @member {Number} index
-      */
+}();
+/**
+ * Represents the index position of the transaction in the specific block.
+ * @member {Number} index
+ */
 GetTransactionDetailsByTransactionIDRI.prototype['index'] = undefined;
 
 /**

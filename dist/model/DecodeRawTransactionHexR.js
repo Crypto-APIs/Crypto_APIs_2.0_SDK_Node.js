@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexR model module.
  * @module model/DecodeRawTransactionHexR
- * @version 1.9.0
- */var DecodeRawTransactionHexR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexR</code>.
    * @alias module:model/DecodeRawTransactionHexR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DecodeRawTransactionHexR.prototype['apiVersion'] = undefined;
 
 /**

@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRBTokenData model module.
  * @module model/AddTokensToExistingFromAddressRBTokenData
- * @version 1.9.0
- */var AddTokensToExistingFromAddressRBTokenData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddressRBTokenData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressRBTokenData</code>.
    * @alias module:model/AddTokensToExistingFromAddressRBTokenData
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddressRBTokenData;
-}(); /**
-      * Represents the specific `propertyId` of the token data that will be forwarded.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Represents the specific `propertyId` of the token data that will be forwarded.
+ * @member {Number} propertyId
+ */
 AddTokensToExistingFromAddressRBTokenData.prototype['propertyId'] = undefined;
 
 /**

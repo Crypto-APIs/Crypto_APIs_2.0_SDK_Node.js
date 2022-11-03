@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransactionRData model module.
  * @module model/MinedTransactionRData
- * @version 1.9.0
- */var MinedTransactionRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var MinedTransactionRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>MinedTransactionRData</code>.
    * @alias module:model/MinedTransactionRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return MinedTransactionRData;
-}(); /**
-      * @member {module:model/MinedTransactionRI} item
-      */
+}();
+/**
+ * @member {module:model/MinedTransactionRI} item
+ */
 MinedTransactionRData.prototype['item'] = undefined;
 var _default = MinedTransactionRData;
 exports["default"] = _default;

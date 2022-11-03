@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSLVoutInnerScriptPubKey from './Ge
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSLVoutInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSLVoutInner
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSLVoutInner {
     /**

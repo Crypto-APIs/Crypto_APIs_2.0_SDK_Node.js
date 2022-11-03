@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssetsRData model module.
  * @module model/ListSupportedAssetsRData
- * @version 1.9.0
- */var ListSupportedAssetsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedAssetsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedAssetsRData</code>.
    * @alias module:model/ListSupportedAssetsRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedAssetsRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListSupportedAssetsRData.prototype['limit'] = undefined;
 
 /**

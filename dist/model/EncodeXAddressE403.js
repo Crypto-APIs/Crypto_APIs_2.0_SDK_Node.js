@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressE403 model module.
  * @module model/EncodeXAddressE403
- * @version 1.9.0
- */var EncodeXAddressE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EncodeXAddressE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EncodeXAddressE403</code>.
    * @alias module:model/EncodeXAddressE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EncodeXAddressE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 EncodeXAddressE403.prototype['code'] = undefined;
 
 /**

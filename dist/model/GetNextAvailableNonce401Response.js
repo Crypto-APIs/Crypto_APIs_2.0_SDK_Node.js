@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetNextAvailableNonce401Response model module.
  * @module model/GetNextAvailableNonce401Response
- * @version 1.9.0
- */var GetNextAvailableNonce401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetNextAvailableNonce401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetNextAvailableNonce401Response</code>.
    * @alias module:model/GetNextAvailableNonce401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetNextAvailableNonce401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetNextAvailableNonce401Response.prototype['apiVersion'] = undefined;
 
 /**

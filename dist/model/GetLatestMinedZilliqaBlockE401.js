@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlockE401 model module.
  * @module model/GetLatestMinedZilliqaBlockE401
- * @version 1.9.0
- */var GetLatestMinedZilliqaBlockE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedZilliqaBlockE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedZilliqaBlockE401</code>.
    * @alias module:model/GetLatestMinedZilliqaBlockE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedZilliqaBlockE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetLatestMinedZilliqaBlockE401.prototype['code'] = undefined;
 
 /**

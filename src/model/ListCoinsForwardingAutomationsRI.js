@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListCoinsForwardingAutomationsRI model module.
  * @module model/ListCoinsForwardingAutomationsRI
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListCoinsForwardingAutomationsRI {
     /**

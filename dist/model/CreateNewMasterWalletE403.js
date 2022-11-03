@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateNewMasterWalletE403 model module.
  * @module model/CreateNewMasterWalletE403
- * @version 1.9.0
- */var CreateNewMasterWalletE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateNewMasterWalletE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateNewMasterWalletE403</code>.
    * @alias module:model/CreateNewMasterWalletE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateNewMasterWalletE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CreateNewMasterWalletE403.prototype['code'] = undefined;
 
 /**

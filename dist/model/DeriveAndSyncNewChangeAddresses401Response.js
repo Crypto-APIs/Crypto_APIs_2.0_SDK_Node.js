@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewChangeAddresses401Response model module.
  * @module model/DeriveAndSyncNewChangeAddresses401Response
- * @version 1.9.0
- */var DeriveAndSyncNewChangeAddresses401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewChangeAddresses401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewChangeAddresses401Response</code>.
    * @alias module:model/DeriveAndSyncNewChangeAddresses401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewChangeAddresses401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DeriveAndSyncNewChangeAddresses401Response.prototype['apiVersion'] = undefined;
 
 /**

@@ -66,6 +66,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property nonce (base name: "nonce")', function() {
+      // uncomment below and update the code to test the property nonce
+      //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
+      //expect(instance).to.be();
+    });
+
     it('should have the property recipient (base name: "recipient")', function() {
       // uncomment below and update the code to test the property recipient
       //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
@@ -86,12 +92,6 @@
 
     it('should have the property fee (base name: "fee")', function() {
       // uncomment below and update the code to test the property fee
-      //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property nonce (base name: "nonce")', function() {
-      // uncomment below and update the code to test the property nonce
       //var instance = new Cryptoapis.PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem();
       //expect(instance).to.be();
     });

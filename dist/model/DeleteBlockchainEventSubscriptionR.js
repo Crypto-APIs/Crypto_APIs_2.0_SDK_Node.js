@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeleteBlockchainEventSubscriptionR model module.
  * @module model/DeleteBlockchainEventSubscriptionR
- * @version 1.9.0
- */var DeleteBlockchainEventSubscriptionR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeleteBlockchainEventSubscriptionR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeleteBlockchainEventSubscriptionR</code>.
    * @alias module:model/DeleteBlockchainEventSubscriptionR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeleteBlockchainEventSubscriptionR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DeleteBlockchainEventSubscriptionR.prototype['apiVersion'] = undefined;
 
 /**

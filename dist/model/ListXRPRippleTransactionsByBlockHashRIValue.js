@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRIValue model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRIValue
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHashRIValue = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHashRIValue = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHashRIValue</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHashRIValue
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHashRIValue;
-}(); /**
-      * Defines the amount of the value.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the value.
+ * @member {String} amount
+ */
 ListXRPRippleTransactionsByBlockHashRIValue.prototype['amount'] = undefined;
 
 /**

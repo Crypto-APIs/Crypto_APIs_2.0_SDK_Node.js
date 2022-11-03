@@ -17,7 +17,7 @@ import GetTransactionRequestDetailsE401 from './GetTransactionRequestDetailsE401
 /**
  * The GetTransactionRequestDetails401Response model module.
  * @module model/GetTransactionRequestDetails401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetTransactionRequestDetails401Response {
     /**

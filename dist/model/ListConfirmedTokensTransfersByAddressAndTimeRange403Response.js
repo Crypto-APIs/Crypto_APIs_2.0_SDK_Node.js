@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRange403Response model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRange403Response
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddressAndTimeRange403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddressAndTimeRange403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddressAndTimeRange403Response</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddressAndTimeRange403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddressAndTimeRange403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListConfirmedTokensTransfersByAddressAndTimeRange403Response.prototype['apiVersion'] = undefined;
 
 /**

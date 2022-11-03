@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressCoinsTransactionConfirmedDataItemMinedInBlock model module.
  * @module model/AddressCoinsTransactionConfirmedDataItemMinedInBlock
- * @version 1.9.0
- */var AddressCoinsTransactionConfirmedDataItemMinedInBlock = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressCoinsTransactionConfirmedDataItemMinedInBlock = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressCoinsTransactionConfirmedDataItemMinedInBlock</code>.
    * Defines the block height in which this transaction was mined and confirmed in.
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressCoinsTransactionConfirmedDataItemMinedInBlock;
-}(); /**
-      * Defines the number of blocks in the blockchain preceding this specific block.
-      * @member {Number} height
-      */
+}();
+/**
+ * Defines the number of blocks in the blockchain preceding this specific block.
+ * @member {Number} height
+ */
 AddressCoinsTransactionConfirmedDataItemMinedInBlock.prototype['height'] = undefined;
 
 /**

@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockE403 model module.
  * @module model/GetLastMinedBlockE403
- * @version 1.9.0
- */var GetLastMinedBlockE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlockE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockE403</code>.
    * @alias module:model/GetLastMinedBlockE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlockE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetLastMinedBlockE403.prototype['code'] = undefined;
 
 /**

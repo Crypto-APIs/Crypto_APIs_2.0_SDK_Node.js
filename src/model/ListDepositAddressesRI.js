@@ -19,7 +19,7 @@ import ListDepositAddressesRINonFungibleTokensInner from './ListDepositAddresses
 /**
  * The ListDepositAddressesRI model module.
  * @module model/ListDepositAddressesRI
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListDepositAddressesRI {
     /**

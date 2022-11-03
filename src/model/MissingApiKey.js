@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The MissingApiKey model module.
  * @module model/MissingApiKey
- * @version 1.9.0
+ * @version 1.10.0
  */
 class MissingApiKey {
     /**

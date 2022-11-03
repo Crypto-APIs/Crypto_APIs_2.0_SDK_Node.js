@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddressRData model module.
  * @module model/ListInternalTransactionsByAddressRData
- * @version 1.9.0
- */var ListInternalTransactionsByAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddressRData</code>.
    * @alias module:model/ListInternalTransactionsByAddressRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddressRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListInternalTransactionsByAddressRData.prototype['limit'] = undefined;
 
 /**

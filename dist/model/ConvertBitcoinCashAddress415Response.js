@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConvertBitcoinCashAddress415Response model module.
  * @module model/ConvertBitcoinCashAddress415Response
- * @version 1.9.0
- */var ConvertBitcoinCashAddress415Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConvertBitcoinCashAddress415Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConvertBitcoinCashAddress415Response</code>.
    * @alias module:model/ConvertBitcoinCashAddress415Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConvertBitcoinCashAddress415Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ConvertBitcoinCashAddress415Response.prototype['apiVersion'] = undefined;
 
 /**

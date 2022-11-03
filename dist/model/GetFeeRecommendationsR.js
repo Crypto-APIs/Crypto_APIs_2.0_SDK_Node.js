@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeRecommendationsR model module.
  * @module model/GetFeeRecommendationsR
- * @version 1.9.0
- */var GetFeeRecommendationsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeRecommendationsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeRecommendationsR</code>.
    * @alias module:model/GetFeeRecommendationsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetFeeRecommendationsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetFeeRecommendationsR.prototype['apiVersion'] = undefined;
 
 /**

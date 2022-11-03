@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddressRBDataItem model module.
  * @module model/GenerateDepositAddressRBDataItem
- * @version 1.9.0
- */var GenerateDepositAddressRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GenerateDepositAddressRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GenerateDepositAddressRBDataItem</code>.
    * @alias module:model/GenerateDepositAddressRBDataItem
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GenerateDepositAddressRBDataItem;
-}(); /**
-      * Represents a custom tag that customers can set up for their Wallets and addresses. E.g. custom label named \"Special addresses\".
-      * @member {String} label
-      */
+}();
+/**
+ * Represents a custom tag that customers can set up for their Wallets and addresses. E.g. custom label named \"Special addresses\".
+ * @member {String} label
+ */
 GenerateDepositAddressRBDataItem.prototype['label'] = undefined;
 var _default = GenerateDepositAddressRBDataItem;
 exports["default"] = _default;

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSXTotalCoins model module.
  * @module model/ListLatestMinedBlocksRIBSXTotalCoins
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSXTotalCoins = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSXTotalCoins = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSXTotalCoins</code>.
    * @alias module:model/ListLatestMinedBlocksRIBSXTotalCoins
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSXTotalCoins;
-}(); /**
-      * Defines the amount of all coins.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of all coins.
+ * @member {String} amount
+ */
 ListLatestMinedBlocksRIBSXTotalCoins.prototype['amount'] = undefined;
 
 /**

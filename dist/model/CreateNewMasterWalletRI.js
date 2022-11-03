@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateNewMasterWalletRI model module.
  * @module model/CreateNewMasterWalletRI
- * @version 1.9.0
- */var CreateNewMasterWalletRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateNewMasterWalletRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateNewMasterWalletRI</code>.
    * @alias module:model/CreateNewMasterWalletRI
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateNewMasterWalletRI;
-}(); /**
-      * Represents the sender's specific and unique Wallet ID of the sender.
-      * @member {String} walletId
-      */
+}();
+/**
+ * Represents the sender's specific and unique Wallet ID of the sender.
+ * @member {String} walletId
+ */
 CreateNewMasterWalletRI.prototype['walletId'] = undefined;
 var _default = CreateNewMasterWalletRI;
 exports["default"] = _default;

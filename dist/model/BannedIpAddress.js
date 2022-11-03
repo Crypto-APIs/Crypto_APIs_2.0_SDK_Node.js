@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BannedIpAddress model module.
  * @module model/BannedIpAddress
- * @version 1.9.0
- */var BannedIpAddress = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BannedIpAddress = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BannedIpAddress</code>.
    * banned_ip_address
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BannedIpAddress;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BannedIpAddress.prototype['code'] = undefined;
 
 /**

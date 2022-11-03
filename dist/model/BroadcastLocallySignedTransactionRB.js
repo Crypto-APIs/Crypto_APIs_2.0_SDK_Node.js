@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionRB model module.
  * @module model/BroadcastLocallySignedTransactionRB
- * @version 1.9.0
- */var BroadcastLocallySignedTransactionRB = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BroadcastLocallySignedTransactionRB = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BroadcastLocallySignedTransactionRB</code>.
    * @alias module:model/BroadcastLocallySignedTransactionRB
@@ -59,10 +60,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BroadcastLocallySignedTransactionRB;
-}(); /**
-      * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-      * @member {String} context
-      */
+}();
+/**
+ * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+ * @member {String} context
+ */
 BroadcastLocallySignedTransactionRB.prototype['context'] = undefined;
 
 /**

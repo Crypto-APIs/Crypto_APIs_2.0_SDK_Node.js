@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetailsE400 model module.
  * @module model/GetTransactionRequestDetailsE400
- * @version 1.9.0
- */var GetTransactionRequestDetailsE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionRequestDetailsE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionRequestDetailsE400</code>.
    * @alias module:model/GetTransactionRequestDetailsE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionRequestDetailsE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetTransactionRequestDetailsE400.prototype['code'] = undefined;
 
 /**

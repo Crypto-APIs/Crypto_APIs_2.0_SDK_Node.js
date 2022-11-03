@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressR model module.
  * @module model/EncodeXAddressR
- * @version 1.9.0
- */var EncodeXAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EncodeXAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EncodeXAddressR</code>.
    * @alias module:model/EncodeXAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EncodeXAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 EncodeXAddressR.prototype['apiVersion'] = undefined;
 
 /**

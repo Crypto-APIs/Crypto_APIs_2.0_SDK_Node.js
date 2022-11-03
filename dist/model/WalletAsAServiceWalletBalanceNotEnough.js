@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The WalletAsAServiceWalletBalanceNotEnough model module.
  * @module model/WalletAsAServiceWalletBalanceNotEnough
- * @version 1.9.0
- */var WalletAsAServiceWalletBalanceNotEnough = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var WalletAsAServiceWalletBalanceNotEnough = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>WalletAsAServiceWalletBalanceNotEnough</code>.
    * wallet_as_a_service_wallet_balance_not_enough
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return WalletAsAServiceWalletBalanceNotEnough;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 WalletAsAServiceWalletBalanceNotEnough.prototype['code'] = undefined;
 
 /**

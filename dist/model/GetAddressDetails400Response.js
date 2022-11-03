@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetails400Response model module.
  * @module model/GetAddressDetails400Response
- * @version 1.9.0
- */var GetAddressDetails400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetails400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetails400Response</code>.
    * @alias module:model/GetAddressDetails400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetails400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetAddressDetails400Response.prototype['apiVersion'] = undefined;
 
 /**

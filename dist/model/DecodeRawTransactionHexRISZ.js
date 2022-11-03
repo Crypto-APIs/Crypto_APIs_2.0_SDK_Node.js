@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISZ model module.
  * @module model/DecodeRawTransactionHexRISZ
- * @version 1.9.0
- */var DecodeRawTransactionHexRISZ = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISZ = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISZ</code>.
    * Zcash
@@ -103,10 +104,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISZ;
-}(); /**
-      * Represents a block height after which the transaction will expire.
-      * @member {Number} expiryHeight
-      */
+}();
+/**
+ * Represents a block height after which the transaction will expire.
+ * @member {Number} expiryHeight
+ */
 DecodeRawTransactionHexRISZ.prototype['expiryHeight'] = undefined;
 
 /**

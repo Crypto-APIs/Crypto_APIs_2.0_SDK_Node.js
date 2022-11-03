@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISB2 model module.
  * @module model/DecodeRawTransactionHexRISB2
- * @version 1.9.0
- */var DecodeRawTransactionHexRISB2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISB2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISB2</code>.
    * Bitcoin Cash
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISB2;
-}(); /**
-      * Represents the time at which a particular transaction can be added to the blockchain.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the time at which a particular transaction can be added to the blockchain.
+ * @member {Number} locktime
+ */
 DecodeRawTransactionHexRISB2.prototype['locktime'] = undefined;
 
 /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TokensForwardingSuccessOmni model module.
  * @module model/TokensForwardingSuccessOmni
- * @version 1.9.0
+ * @version 1.10.0
  */
 class TokensForwardingSuccessOmni {
     /**

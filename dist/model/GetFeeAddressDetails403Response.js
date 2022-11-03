@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeAddressDetails403Response model module.
  * @module model/GetFeeAddressDetails403Response
- * @version 1.9.0
- */var GetFeeAddressDetails403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeAddressDetails403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeAddressDetails403Response</code>.
    * @alias module:model/GetFeeAddressDetails403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetFeeAddressDetails403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetFeeAddressDetails403Response.prototype['apiVersion'] = undefined;
 
 /**

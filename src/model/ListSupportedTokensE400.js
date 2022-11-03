@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListSupportedTokensE400 model module.
  * @module model/ListSupportedTokensE400
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListSupportedTokensE400 {
     /**

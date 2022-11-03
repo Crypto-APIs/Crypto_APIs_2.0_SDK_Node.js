@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHeightRData model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeightRData
- * @version 1.9.0
- */var GetXRPRippleBlockDetailsByBlockHeightRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleBlockDetailsByBlockHeightRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHeightRData</code>.
    * @alias module:model/GetXRPRippleBlockDetailsByBlockHeightRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleBlockDetailsByBlockHeightRData;
-}(); /**
-      * @member {module:model/GetXRPRippleBlockDetailsByBlockHeightRI} item
-      */
+}();
+/**
+ * @member {module:model/GetXRPRippleBlockDetailsByBlockHeightRI} item
+ */
 GetXRPRippleBlockDetailsByBlockHeightRData.prototype['item'] = undefined;
 var _default = GetXRPRippleBlockDetailsByBlockHeightRData;
 exports["default"] = _default;

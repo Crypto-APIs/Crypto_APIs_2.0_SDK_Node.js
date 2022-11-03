@@ -17,7 +17,7 @@ import ListInternalTransactionDetailsByTransactionHashE400 from './ListInternalT
 /**
  * The ListInternalTransactionDetailsByTransactionHash400Response model module.
  * @module model/ListInternalTransactionDetailsByTransactionHash400Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListInternalTransactionDetailsByTransactionHash400Response {
     /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressCoinsTransactionUnconfirmed model module.
  * @module model/AddressCoinsTransactionUnconfirmed
- * @version 1.9.0
- */var AddressCoinsTransactionUnconfirmed = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressCoinsTransactionUnconfirmed = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressCoinsTransactionUnconfirmed</code>.
    * @alias module:model/AddressCoinsTransactionUnconfirmed
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressCoinsTransactionUnconfirmed;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 AddressCoinsTransactionUnconfirmed.prototype['apiVersion'] = undefined;
 
 /**

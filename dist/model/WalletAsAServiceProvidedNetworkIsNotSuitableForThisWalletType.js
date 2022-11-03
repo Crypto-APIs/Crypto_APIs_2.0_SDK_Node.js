@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType model module.
  * @module model/WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType
- * @version 1.9.0
- */var WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType</code>.
    * wallet_as_a_service_provided_network_is_not_suitable_for_this_wallet_type
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType.prototype['code'] = undefined;
 
 /**

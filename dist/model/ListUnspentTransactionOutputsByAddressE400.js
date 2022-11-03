@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnspentTransactionOutputsByAddressE400 model module.
  * @module model/ListUnspentTransactionOutputsByAddressE400
- * @version 1.9.0
- */var ListUnspentTransactionOutputsByAddressE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnspentTransactionOutputsByAddressE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnspentTransactionOutputsByAddressE400</code>.
    * @alias module:model/ListUnspentTransactionOutputsByAddressE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnspentTransactionOutputsByAddressE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListUnspentTransactionOutputsByAddressE400.prototype['code'] = undefined;
 
 /**

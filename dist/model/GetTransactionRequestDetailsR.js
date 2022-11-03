@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetailsR model module.
  * @module model/GetTransactionRequestDetailsR
- * @version 1.9.0
- */var GetTransactionRequestDetailsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionRequestDetailsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionRequestDetailsR</code>.
    * @alias module:model/GetTransactionRequestDetailsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionRequestDetailsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetTransactionRequestDetailsR.prototype['apiVersion'] = undefined;
 
 /**

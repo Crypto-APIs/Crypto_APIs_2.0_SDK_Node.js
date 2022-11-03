@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightRData model module.
  * @module model/GetBlockDetailsByBlockHeightRData
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightRData</code>.
    * @alias module:model/GetBlockDetailsByBlockHeightRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightRData;
-}(); /**
-      * @member {module:model/GetBlockDetailsByBlockHeightRI} item
-      */
+}();
+/**
+ * @member {module:model/GetBlockDetailsByBlockHeightRI} item
+ */
 GetBlockDetailsByBlockHeightRData.prototype['item'] = undefined;
 var _default = GetBlockDetailsByBlockHeightRData;
 exports["default"] = _default;

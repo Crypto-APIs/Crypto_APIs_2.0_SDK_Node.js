@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListCoinsForwardingAutomationsR model module.
  * @module model/ListCoinsForwardingAutomationsR
- * @version 1.9.0
- */var ListCoinsForwardingAutomationsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListCoinsForwardingAutomationsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListCoinsForwardingAutomationsR</code>.
    * @alias module:model/ListCoinsForwardingAutomationsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListCoinsForwardingAutomationsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListCoinsForwardingAutomationsR.prototype['apiVersion'] = undefined;
 
 /**

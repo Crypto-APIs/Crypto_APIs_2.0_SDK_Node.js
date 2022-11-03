@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner;
-}(); /**
-      * The address which receives this transaction. In UTXO-based protocols like Bitcoin there could be several senders while in account-based protocols like Ethereum there is always only one recipient.
-      * @member {String} address
-      */
+}();
+/**
+ * The address which receives this transaction. In UTXO-based protocols like Bitcoin there could be several senders while in account-based protocols like Ethereum there is always only one recipient.
+ * @member {String} address
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIRecipientsInner.prototype['address'] = undefined;
 
 /**

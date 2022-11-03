@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddresses403Response model module.
  * @module model/ListSyncedAddresses403Response
- * @version 1.9.0
- */var ListSyncedAddresses403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSyncedAddresses403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSyncedAddresses403Response</code>.
    * @alias module:model/ListSyncedAddresses403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSyncedAddresses403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListSyncedAddresses403Response.prototype['apiVersion'] = undefined;
 
 /**

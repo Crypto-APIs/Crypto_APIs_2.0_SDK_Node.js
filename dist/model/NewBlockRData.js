@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockRData model module.
  * @module model/NewBlockRData
- * @version 1.9.0
- */var NewBlockRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewBlockRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewBlockRData</code>.
    * @alias module:model/NewBlockRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewBlockRData;
-}(); /**
-      * @member {module:model/NewBlockRI} item
-      */
+}();
+/**
+ * @member {module:model/NewBlockRI} item
+ */
 NewBlockRData.prototype['item'] = undefined;
 var _default = NewBlockRData;
 exports["default"] = _default;

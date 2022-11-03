@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ
- * @version 1.9.0
- */var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ</code>.
    * Zcash
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ;
-}(); /**
-      * Representation of whether the transaction is replaceable
-      * @member {Boolean} replaceable
-      */
+}();
+/**
+ * Representation of whether the transaction is replaceable
+ * @member {Boolean} replaceable
+ */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ.prototype['replaceable'] = undefined;
 
 /**

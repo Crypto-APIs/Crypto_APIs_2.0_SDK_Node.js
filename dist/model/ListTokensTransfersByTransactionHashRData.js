@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensTransfersByTransactionHashRData model module.
  * @module model/ListTokensTransfersByTransactionHashRData
- * @version 1.9.0
- */var ListTokensTransfersByTransactionHashRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensTransfersByTransactionHashRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensTransfersByTransactionHashRData</code>.
    * @alias module:model/ListTokensTransfersByTransactionHashRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensTransfersByTransactionHashRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListTokensTransfersByTransactionHashRData.prototype['limit'] = undefined;
 
 /**

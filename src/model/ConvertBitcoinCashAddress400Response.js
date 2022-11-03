@@ -17,7 +17,7 @@ import ConvertBitcoinCashAddressE400 from './ConvertBitcoinCashAddressE400';
 /**
  * The ConvertBitcoinCashAddress400Response model module.
  * @module model/ConvertBitcoinCashAddress400Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ConvertBitcoinCashAddress400Response {
     /**

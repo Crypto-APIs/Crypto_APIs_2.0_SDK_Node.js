@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateGasLimitRBData model module.
  * @module model/EstimateGasLimitRBData
- * @version 1.9.0
- */var EstimateGasLimitRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateGasLimitRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateGasLimitRBData</code>.
    * @alias module:model/EstimateGasLimitRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateGasLimitRBData;
-}(); /**
-      * @member {module:model/EstimateGasLimitRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/EstimateGasLimitRBDataItem} item
+ */
 EstimateGasLimitRBData.prototype['item'] = undefined;
 var _default = EstimateGasLimitRBData;
 exports["default"] = _default;

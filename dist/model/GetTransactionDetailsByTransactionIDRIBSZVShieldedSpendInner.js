@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner;
-}(); /**
-      * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.
-      * @member {String} anchor
-      */
+}();
+/**
+ * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.
+ * @member {String} anchor
+ */
 GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner.prototype['anchor'] = undefined;
 
 /**

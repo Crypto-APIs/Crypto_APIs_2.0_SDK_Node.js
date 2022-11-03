@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBST model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBST
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIBST = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIBST = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIBST</code>.
    * Tron
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIBST;
-}(); /**
-      * String representation of the amount value
-      * @member {String} amount
-      */
+}();
+/**
+ * String representation of the amount value
+ * @member {String} amount
+ */
 GetWalletTransactionDetailsByTransactionIDRIBST.prototype['amount'] = undefined;
 
 /**

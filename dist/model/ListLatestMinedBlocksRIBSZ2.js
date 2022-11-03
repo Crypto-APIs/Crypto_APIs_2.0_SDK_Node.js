@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSZ2 model module.
  * @module model/ListLatestMinedBlocksRIBSZ2
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSZ2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSZ2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSZ2</code>.
    * Zcash
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSZ2;
-}(); /**
-      * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
+ * @member {String} bits
+ */
 ListLatestMinedBlocksRIBSZ2.prototype['bits'] = undefined;
 
 /**

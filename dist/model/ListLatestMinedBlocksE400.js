@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksE400 model module.
  * @module model/ListLatestMinedBlocksE400
- * @version 1.9.0
- */var ListLatestMinedBlocksE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksE400</code>.
    * @alias module:model/ListLatestMinedBlocksE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListLatestMinedBlocksE400.prototype['code'] = undefined;
 
 /**

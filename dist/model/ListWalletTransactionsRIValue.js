@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRIValue model module.
  * @module model/ListWalletTransactionsRIValue
- * @version 1.9.0
- */var ListWalletTransactionsRIValue = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsRIValue = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsRIValue</code>.
    * @alias module:model/ListWalletTransactionsRIValue
@@ -70,10 +71,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsRIValue;
-}(); /**
-      * Defines the transaction amount.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the transaction amount.
+ * @member {String} amount
+ */
 ListWalletTransactionsRIValue.prototype['amount'] = undefined;
 
 /**

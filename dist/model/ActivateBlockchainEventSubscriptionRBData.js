@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ActivateBlockchainEventSubscriptionRBData model module.
  * @module model/ActivateBlockchainEventSubscriptionRBData
- * @version 1.9.0
- */var ActivateBlockchainEventSubscriptionRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ActivateBlockchainEventSubscriptionRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ActivateBlockchainEventSubscriptionRBData</code>.
    * @alias module:model/ActivateBlockchainEventSubscriptionRBData
@@ -55,9 +56,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ActivateBlockchainEventSubscriptionRBData;
-}(); /**
-      * @member {Object} item
-      */
+}();
+/**
+ * @member {Object} item
+ */
 ActivateBlockchainEventSubscriptionRBData.prototype['item'] = undefined;
 var _default = ActivateBlockchainEventSubscriptionRBData;
 exports["default"] = _default;

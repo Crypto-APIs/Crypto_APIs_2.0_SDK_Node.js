@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsForSpecificAmount401Response model module.
  * @module model/NewConfirmedInternalTransactionsForSpecificAmount401Response
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsForSpecificAmount401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsForSpecificAmount401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsForSpecificAmount401Response</code>.
    * @alias module:model/NewConfirmedInternalTransactionsForSpecificAmount401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsForSpecificAmount401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedInternalTransactionsForSpecificAmount401Response.prototype['apiVersion'] = undefined;
 
 /**

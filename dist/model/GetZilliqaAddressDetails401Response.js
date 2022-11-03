@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaAddressDetails401Response model module.
  * @module model/GetZilliqaAddressDetails401Response
- * @version 1.9.0
- */var GetZilliqaAddressDetails401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaAddressDetails401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaAddressDetails401Response</code>.
    * @alias module:model/GetZilliqaAddressDetails401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaAddressDetails401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetZilliqaAddressDetails401Response.prototype['apiVersion'] = undefined;
 
 /**

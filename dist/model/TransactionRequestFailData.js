@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestFailData model module.
  * @module model/TransactionRequestFailData
- * @version 1.9.0
- */var TransactionRequestFailData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestFailData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestFailData</code>.
    * Specifies all data, as attributes, included into the callback notification, which depends on the &#x60;event&#x60;.
@@ -67,10 +68,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestFailData;
-}(); /**
-      * Represents the Crypto APIs 2.0 product which sends the callback.
-      * @member {String} product
-      */
+}();
+/**
+ * Represents the Crypto APIs 2.0 product which sends the callback.
+ * @member {String} product
+ */
 TransactionRequestFailData.prototype['product'] = undefined;
 
 /**

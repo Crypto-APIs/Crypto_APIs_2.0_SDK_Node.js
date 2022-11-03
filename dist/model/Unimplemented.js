@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The Unimplemented model module.
  * @module model/Unimplemented
- * @version 1.9.0
- */var Unimplemented = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var Unimplemented = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>Unimplemented</code>.
    * unimplemented
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return Unimplemented;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 Unimplemented.prototype['code'] = undefined;
 
 /**

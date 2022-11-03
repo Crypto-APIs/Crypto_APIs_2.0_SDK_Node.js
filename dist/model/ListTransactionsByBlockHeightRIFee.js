@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIFee model module.
  * @module model/ListTransactionsByBlockHeightRIFee
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIFee</code>.
    * @alias module:model/ListTransactionsByBlockHeightRIFee
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIFee;
-}(); /**
-      * Defines the amount of the fee.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the fee.
+ * @member {String} amount
+ */
 ListTransactionsByBlockHeightRIFee.prototype['amount'] = undefined;
 
 /**

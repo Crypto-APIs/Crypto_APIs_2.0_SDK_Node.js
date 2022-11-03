@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetInternalTransactionByTransactionHashAndOperationId404Response model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationId404Response
- * @version 1.9.0
- */var GetInternalTransactionByTransactionHashAndOperationId404Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetInternalTransactionByTransactionHashAndOperationId404Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetInternalTransactionByTransactionHashAndOperationId404Response</code>.
    * @alias module:model/GetInternalTransactionByTransactionHashAndOperationId404Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetInternalTransactionByTransactionHashAndOperationId404Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetInternalTransactionByTransactionHashAndOperationId404Response.prototype['apiVersion'] = undefined;
 
 /**

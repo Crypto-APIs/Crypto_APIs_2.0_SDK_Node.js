@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISD2VoutInner model module.
  * @module model/DecodeRawTransactionHexRISD2VoutInner
- * @version 1.9.0
- */var DecodeRawTransactionHexRISD2VoutInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISD2VoutInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISD2VoutInner</code>.
    * @alias module:model/DecodeRawTransactionHexRISD2VoutInner
@@ -59,9 +60,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISD2VoutInner;
-}(); /**
-      * @member {module:model/DecodeRawTransactionHexRISD2VoutInnerScriptPubKey} scriptPubKey
-      */
+}();
+/**
+ * @member {module:model/DecodeRawTransactionHexRISD2VoutInnerScriptPubKey} scriptPubKey
+ */
 DecodeRawTransactionHexRISD2VoutInner.prototype['scriptPubKey'] = undefined;
 
 /**

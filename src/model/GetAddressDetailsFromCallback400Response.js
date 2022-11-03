@@ -17,7 +17,7 @@ import GetAddressDetailsFromCallbackE400 from './GetAddressDetailsFromCallbackE4
 /**
  * The GetAddressDetailsFromCallback400Response model module.
  * @module model/GetAddressDetailsFromCallback400Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetAddressDetailsFromCallback400Response {
     /**

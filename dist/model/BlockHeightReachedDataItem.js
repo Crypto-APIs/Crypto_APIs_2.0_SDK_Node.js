@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReachedDataItem model module.
  * @module model/BlockHeightReachedDataItem
- * @version 1.9.0
- */var BlockHeightReachedDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockHeightReachedDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockHeightReachedDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockHeightReachedDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 BlockHeightReachedDataItem.prototype['blockchain'] = undefined;
 
 /**

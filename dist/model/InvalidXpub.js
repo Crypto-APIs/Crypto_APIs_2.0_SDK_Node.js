@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidXpub model module.
  * @module model/InvalidXpub
- * @version 1.9.0
- */var InvalidXpub = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var InvalidXpub = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>InvalidXpub</code>.
    * invalid_xpub
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return InvalidXpub;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 InvalidXpub.prototype['code'] = undefined;
 
 /**

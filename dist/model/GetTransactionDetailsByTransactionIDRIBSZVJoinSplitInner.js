@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner
@@ -100,10 +101,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner;
-}(); /**
-      * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.
-      * @member {String} anchor
-      */
+}();
+/**
+ * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.
+ * @member {String} anchor
+ */
 GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner.prototype['anchor'] = undefined;
 
 /**

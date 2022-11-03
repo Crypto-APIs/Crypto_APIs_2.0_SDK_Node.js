@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
- * @version 1.9.0
- */var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem</code>.
    * @alias module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
@@ -62,6 +63,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         if (data.hasOwnProperty('amount')) {
           obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
         }
+        if (data.hasOwnProperty('nonce')) {
+          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
+        }
         if (data.hasOwnProperty('recipient')) {
           obj['recipient'] = _ApiClient["default"].convertToType(data['recipient'], 'String');
         }
@@ -74,9 +78,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         if (data.hasOwnProperty('fee')) {
           obj['fee'] = _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee["default"].constructFromObject(data['fee']);
         }
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
-        }
         if (data.hasOwnProperty('transactionType')) {
           obj['transactionType'] = _ApiClient["default"].convertToType(data['transactionType'], 'String');
         }
@@ -85,10 +86,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem;
-}(); /**
-      * Representation of the additional data.
-      * @member {String} additionalData
-      */
+}();
+/**
+ * Representation of the additional data.
+ * @member {String} additionalData
+ */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['additionalData'] = undefined;
 
 /**
@@ -96,6 +98,12 @@ PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['ad
  * @member {String} amount
  */
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['amount'] = undefined;
+
+/**
+ * Representation of the nonce value
+ * @member {String} nonce
+ */
+PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['nonce'] = undefined;
 
 /**
  * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
@@ -121,16 +129,11 @@ PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['xp
 PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['fee'] = undefined;
 
 /**
- * Representation of the nonce value
- * @member {String} nonce
- */
-PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['nonce'] = undefined;
-
-/**
  * Representation of the transaction type
  * @member {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.TransactionTypeEnum} transactionType
+ * @default 'gas-fee-market-transaction'
  */
-PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['transactionType'] = undefined;
+PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['transactionType'] = 'gas-fee-market-transaction';
 
 /**
  * Allowed values for the <code>transactionType</code> property.

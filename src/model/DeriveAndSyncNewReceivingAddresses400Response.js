@@ -17,7 +17,7 @@ import DeriveAndSyncNewReceivingAddressesE400 from './DeriveAndSyncNewReceivingA
 /**
  * The DeriveAndSyncNewReceivingAddresses400Response model module.
  * @module model/DeriveAndSyncNewReceivingAddresses400Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DeriveAndSyncNewReceivingAddresses400Response {
     /**

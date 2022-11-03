@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetNextAvailableNonceE400 model module.
  * @module model/GetNextAvailableNonceE400
- * @version 1.9.0
- */var GetNextAvailableNonceE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetNextAvailableNonceE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetNextAvailableNonceE400</code>.
    * @alias module:model/GetNextAvailableNonceE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetNextAvailableNonceE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetNextAvailableNonceE400.prototype['code'] = undefined;
 
 /**

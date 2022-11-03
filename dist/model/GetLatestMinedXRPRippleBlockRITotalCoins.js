@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedXRPRippleBlockRITotalCoins model module.
  * @module model/GetLatestMinedXRPRippleBlockRITotalCoins
- * @version 1.9.0
- */var GetLatestMinedXRPRippleBlockRITotalCoins = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedXRPRippleBlockRITotalCoins = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedXRPRippleBlockRITotalCoins</code>.
    * @alias module:model/GetLatestMinedXRPRippleBlockRITotalCoins
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedXRPRippleBlockRITotalCoins;
-}(); /**
-      * Defines the amount of all coins.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of all coins.
+ * @member {String} amount
+ */
 GetLatestMinedXRPRippleBlockRITotalCoins.prototype['amount'] = undefined;
 
 /**

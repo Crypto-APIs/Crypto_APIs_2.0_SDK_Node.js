@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransactionRBDataItem model module.
  * @module model/MinedTransactionRBDataItem
- * @version 1.9.0
- */var MinedTransactionRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var MinedTransactionRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>MinedTransactionRBDataItem</code>.
    * @alias module:model/MinedTransactionRBDataItem
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return MinedTransactionRBDataItem;
-}(); /**
-      * Specifies a flag that permits or denies the creation of duplicate addresses.
-      * @member {Boolean} allowDuplicates
-      */
+}();
+/**
+ * Specifies a flag that permits or denies the creation of duplicate addresses.
+ * @member {Boolean} allowDuplicates
+ */
 MinedTransactionRBDataItem.prototype['allowDuplicates'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationRData model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationRData
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsAndEachConfirmationRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsAndEachConfirmationRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsAndEachConfirmationRData</code>.
    * @alias module:model/NewConfirmedInternalTransactionsAndEachConfirmationRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsAndEachConfirmationRData;
-}(); /**
-      * @member {module:model/NewConfirmedInternalTransactionsAndEachConfirmationRI} item
-      */
+}();
+/**
+ * @member {module:model/NewConfirmedInternalTransactionsAndEachConfirmationRI} item
+ */
 NewConfirmedInternalTransactionsAndEachConfirmationRData.prototype['item'] = undefined;
 var _default = NewConfirmedInternalTransactionsAndEachConfirmationRData;
 exports["default"] = _default;

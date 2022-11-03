@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssets400Response model module.
  * @module model/ListSupportedAssets400Response
- * @version 1.9.0
- */var ListSupportedAssets400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedAssets400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedAssets400Response</code>.
    * @alias module:model/ListSupportedAssets400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedAssets400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListSupportedAssets400Response.prototype['apiVersion'] = undefined;
 
 /**

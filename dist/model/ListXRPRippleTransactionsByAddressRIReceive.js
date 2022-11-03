@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressRIReceive model module.
  * @module model/ListXRPRippleTransactionsByAddressRIReceive
- * @version 1.9.0
- */var ListXRPRippleTransactionsByAddressRIReceive = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByAddressRIReceive = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByAddressRIReceive</code>.
    * @alias module:model/ListXRPRippleTransactionsByAddressRIReceive
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByAddressRIReceive;
-}(); /**
-      * Defines the amount received.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount received.
+ * @member {String} amount
+ */
 ListXRPRippleTransactionsByAddressRIReceive.prototype['amount'] = undefined;
 
 /**

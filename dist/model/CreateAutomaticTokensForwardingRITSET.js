@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwardingRITSET model module.
  * @module model/CreateAutomaticTokensForwardingRITSET
- * @version 1.9.0
- */var CreateAutomaticTokensForwardingRITSET = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticTokensForwardingRITSET = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticTokensForwardingRITSET</code>.
    * Ethereum Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticTokensForwardingRITSET;
-}(); /**
-      * Represents the specific `contractAddress` of the Token that will be forwarded.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Represents the specific `contractAddress` of the Token that will be forwarded.
+ * @member {String} contractAddress
+ */
 CreateAutomaticTokensForwardingRITSET.prototype['contractAddress'] = undefined;
 var _default = CreateAutomaticTokensForwardingRITSET;
 exports["default"] = _default;

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS
- * @version 1.9.0
- */var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS</code>.
    * Represents the specific token data which depends on its type - if it is a Coin or Token.
@@ -70,10 +71,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS;
-}(); /**
-      * Defines the contract address in the blockchain for an ERC20 token.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Defines the contract address in the blockchain for an ERC20 token.
+ * @member {String} contractAddress
+ */
 CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.prototype['contractAddress'] = undefined;
 
 /**

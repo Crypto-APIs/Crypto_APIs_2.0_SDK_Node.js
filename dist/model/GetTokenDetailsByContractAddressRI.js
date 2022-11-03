@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTokenDetailsByContractAddressRI model module.
  * @module model/GetTokenDetailsByContractAddressRI
- * @version 1.9.0
- */var GetTokenDetailsByContractAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTokenDetailsByContractAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTokenDetailsByContractAddressRI</code>.
    * @alias module:model/GetTokenDetailsByContractAddressRI
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTokenDetailsByContractAddressRI;
-}(); /**
-      * Defines the number of decimals that the token possesses.
-      * @member {String} tokenDecimals
-      */
+}();
+/**
+ * Defines the number of decimals that the token possesses.
+ * @member {String} tokenDecimals
+ */
 GetTokenDetailsByContractAddressRI.prototype['tokenDecimals'] = undefined;
 
 /**

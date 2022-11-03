@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewRevertedBlockRI model module.
  * @module model/NewRevertedBlockRI
- * @version 1.9.0
- */var NewRevertedBlockRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewRevertedBlockRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewRevertedBlockRI</code>.
    * @alias module:model/NewRevertedBlockRI
@@ -83,10 +84,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewRevertedBlockRI;
-}(); /**
-      * Represents the address of the transaction, per which the result is returned.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address of the transaction, per which the result is returned.
+ * @member {String} address
+ */
 NewRevertedBlockRI.prototype['address'] = undefined;
 
 /**

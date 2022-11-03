@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockchainDataTransactionNotFound model module.
  * @module model/BlockchainDataTransactionNotFound
- * @version 1.9.0
- */var BlockchainDataTransactionNotFound = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockchainDataTransactionNotFound = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockchainDataTransactionNotFound</code>.
    * blockchain_data_transaction_not_found
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockchainDataTransactionNotFound;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BlockchainDataTransactionNotFound.prototype['code'] = undefined;
 
 /**

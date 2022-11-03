@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsR model module.
  * @module model/ListWalletTransactionsR
- * @version 1.9.0
- */var ListWalletTransactionsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsR</code>.
    * @alias module:model/ListWalletTransactionsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListWalletTransactionsR.prototype['apiVersion'] = undefined;
 
 /**

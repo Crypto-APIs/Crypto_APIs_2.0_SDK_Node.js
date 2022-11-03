@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptions401Response model module.
  * @module model/ListBlockchainEventsSubscriptions401Response
- * @version 1.9.0
- */var ListBlockchainEventsSubscriptions401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListBlockchainEventsSubscriptions401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListBlockchainEventsSubscriptions401Response</code>.
    * @alias module:model/ListBlockchainEventsSubscriptions401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListBlockchainEventsSubscriptions401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListBlockchainEventsSubscriptions401Response.prototype['apiVersion'] = undefined;
 
 /**

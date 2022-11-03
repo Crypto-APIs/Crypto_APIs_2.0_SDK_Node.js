@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSEC model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSEC
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRIBSEC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRIBSEC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBSEC</code>.
    * Ethereum Classic
@@ -78,9 +79,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBSEC;
-}(); /**
-      * @member {module:model/ListUnconfirmedTransactionsByAddressRIBSECFee} fee
-      */
+}();
+/**
+ * @member {module:model/ListUnconfirmedTransactionsByAddressRIBSECFee} fee
+ */
 ListUnconfirmedTransactionsByAddressRIBSEC.prototype['fee'] = undefined;
 
 /**

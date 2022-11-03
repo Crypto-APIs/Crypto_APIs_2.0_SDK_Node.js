@@ -17,7 +17,7 @@ import ListHDWalletXPubYPubZPubTransactionsE401 from './ListHDWalletXPubYPubZPub
 /**
  * The ListHDWalletXPubYPubZPubTransactions401Response model module.
  * @module model/ListHDWalletXPubYPubZPubTransactions401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListHDWalletXPubYPubZPubTransactions401Response {
     /**

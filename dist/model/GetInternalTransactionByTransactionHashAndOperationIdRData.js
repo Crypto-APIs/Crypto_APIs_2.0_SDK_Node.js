@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdRData model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdRData
- * @version 1.9.0
- */var GetInternalTransactionByTransactionHashAndOperationIdRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetInternalTransactionByTransactionHashAndOperationIdRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetInternalTransactionByTransactionHashAndOperationIdRData</code>.
    * @alias module:model/GetInternalTransactionByTransactionHashAndOperationIdRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetInternalTransactionByTransactionHashAndOperationIdRData;
-}(); /**
-      * @member {module:model/GetInternalTransactionByTransactionHashAndOperationIdRI} item
-      */
+}();
+/**
+ * @member {module:model/GetInternalTransactionByTransactionHashAndOperationIdRI} item
+ */
 GetInternalTransactionByTransactionHashAndOperationIdRData.prototype['item'] = undefined;
 var _default = GetInternalTransactionByTransactionHashAndOperationIdRData;
 exports["default"] = _default;

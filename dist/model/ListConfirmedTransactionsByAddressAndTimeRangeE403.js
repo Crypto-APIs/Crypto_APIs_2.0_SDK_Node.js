@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeE403 model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeE403
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressAndTimeRangeE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressAndTimeRangeE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressAndTimeRangeE403</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressAndTimeRangeE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressAndTimeRangeE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListConfirmedTransactionsByAddressAndTimeRangeE403.prototype['code'] = undefined;
 
 /**

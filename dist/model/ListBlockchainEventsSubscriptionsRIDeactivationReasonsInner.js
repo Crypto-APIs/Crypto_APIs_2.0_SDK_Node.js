@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner model module.
  * @module model/ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner
- * @version 1.9.0
- */var ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner</code>.
    * @alias module:model/ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner;
-}(); /**
-      * Defines the deactivation reason as a message.
-      * @member {String} reason
-      */
+}();
+/**
+ * Defines the deactivation reason as a message.
+ * @member {String} reason
+ */
 ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner.prototype['reason'] = undefined;
 
 /**

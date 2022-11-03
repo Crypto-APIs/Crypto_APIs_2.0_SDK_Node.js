@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbolsE403 model module.
  * @module model/GetExchangeRateByAssetSymbolsE403
- * @version 1.9.0
- */var GetExchangeRateByAssetSymbolsE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetExchangeRateByAssetSymbolsE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetSymbolsE403</code>.
    * @alias module:model/GetExchangeRateByAssetSymbolsE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetExchangeRateByAssetSymbolsE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetExchangeRateByAssetSymbolsE403.prototype['code'] = undefined;
 
 /**

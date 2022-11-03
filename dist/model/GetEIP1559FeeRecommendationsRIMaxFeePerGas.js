@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetEIP1559FeeRecommendationsRIMaxFeePerGas model module.
  * @module model/GetEIP1559FeeRecommendationsRIMaxFeePerGas
- * @version 1.9.0
- */var GetEIP1559FeeRecommendationsRIMaxFeePerGas = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetEIP1559FeeRecommendationsRIMaxFeePerGas = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetEIP1559FeeRecommendationsRIMaxFeePerGas</code>.
    * @alias module:model/GetEIP1559FeeRecommendationsRIMaxFeePerGas
@@ -70,10 +71,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetEIP1559FeeRecommendationsRIMaxFeePerGas;
-}(); /**
-      * Represents the fast maximum fee per gas, calculated from unconfirmed transactions.
-      * @member {String} fast
-      */
+}();
+/**
+ * Represents the fast maximum fee per gas, calculated from unconfirmed transactions.
+ * @member {String} fast
+ */
 GetEIP1559FeeRecommendationsRIMaxFeePerGas.prototype['fast'] = undefined;
 
 /**

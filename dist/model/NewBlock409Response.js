@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlock409Response model module.
  * @module model/NewBlock409Response
- * @version 1.9.0
- */var NewBlock409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewBlock409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewBlock409Response</code>.
    * @alias module:model/NewBlock409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewBlock409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewBlock409Response.prototype['apiVersion'] = undefined;
 
 /**

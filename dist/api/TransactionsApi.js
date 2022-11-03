@@ -46,6 +46,18 @@ var _CreateSingleTransactionRequestFromAddressWithoutFeePriority403Response = _i
 var _CreateSingleTransactionRequestFromAddressWithoutFeePriority409Response = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriority409Response"));
 var _CreateSingleTransactionRequestFromAddressWithoutFeePriorityR = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityR"));
 var _CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB = _interopRequireDefault(require("../model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRB"));
+var _FreezeTronEnergyOrBandwidth400Response = _interopRequireDefault(require("../model/FreezeTronEnergyOrBandwidth400Response"));
+var _FreezeTronEnergyOrBandwidth401Response = _interopRequireDefault(require("../model/FreezeTronEnergyOrBandwidth401Response"));
+var _FreezeTronEnergyOrBandwidth403Response = _interopRequireDefault(require("../model/FreezeTronEnergyOrBandwidth403Response"));
+var _FreezeTronEnergyOrBandwidth409Response = _interopRequireDefault(require("../model/FreezeTronEnergyOrBandwidth409Response"));
+var _FreezeTronEnergyOrBandwidthR = _interopRequireDefault(require("../model/FreezeTronEnergyOrBandwidthR"));
+var _FreezeTronEnergyOrBandwidthRB = _interopRequireDefault(require("../model/FreezeTronEnergyOrBandwidthRB"));
+var _UnfreezeTronEnergyOrBandwidth400Response = _interopRequireDefault(require("../model/UnfreezeTronEnergyOrBandwidth400Response"));
+var _UnfreezeTronEnergyOrBandwidth401Response = _interopRequireDefault(require("../model/UnfreezeTronEnergyOrBandwidth401Response"));
+var _UnfreezeTronEnergyOrBandwidth403Response = _interopRequireDefault(require("../model/UnfreezeTronEnergyOrBandwidth403Response"));
+var _UnfreezeTronEnergyOrBandwidth409Response = _interopRequireDefault(require("../model/UnfreezeTronEnergyOrBandwidth409Response"));
+var _UnfreezeTronEnergyOrBandwidthR = _interopRequireDefault(require("../model/UnfreezeTronEnergyOrBandwidthR"));
+var _UnfreezeTronEnergyOrBandwidthRB = _interopRequireDefault(require("../model/UnfreezeTronEnergyOrBandwidthRB"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -53,8 +65,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Transactions service.
 * @module api/TransactionsApi
-* @version 1.9.0
-*/var TransactionsApi = /*#__PURE__*/function () {
+* @version 1.10.0
+*/
+var TransactionsApi = /*#__PURE__*/function () {
   /**
   * Constructs a new TransactionsApi. 
   * @alias module:api/TransactionsApi
@@ -482,6 +495,148 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     key: "createSingleTransactionRequestFromAddressWithoutFeePriority",
     value: function createSingleTransactionRequestFromAddressWithoutFeePriority(address, blockchain, network, walletId, opts) {
       return this.createSingleTransactionRequestFromAddressWithoutFeePriorityWithHttpInfo(address, blockchain, network, walletId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+
+    /**
+     * Freeze Tron Energy Or Bandwidth
+     * Through this endpoint, customers can stake (freeze) the balance of a specific TRX address to obtain bandwidth or energy.  When creating a request, the \"fromAddress\" is a required parameter. If a \"toAddress\" is not set, for such will be considered the address making the staking transaction. The account receiving the bandwidth or energy must have an available TRX balance.  The minimum amount for staking is 1 TRX.  Note: Staking duration by default is 3 days from the time of freezing, it can NOT be more or less than that. When staking the same address again the duration resets.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} sender Defines the address that sends the amount
+     * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/FreezeTronEnergyOrBandwidthRB} opts.freezeTronEnergyOrBandwidthRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/FreezeTronEnergyOrBandwidthR} and HTTP response
+     */
+  }, {
+    key: "freezeTronEnergyOrBandwidthWithHttpInfo",
+    value: function freezeTronEnergyOrBandwidthWithHttpInfo(blockchain, network, sender, walletId, opts) {
+      opts = opts || {};
+      var postBody = opts['freezeTronEnergyOrBandwidthRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling freezeTronEnergyOrBandwidth");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling freezeTronEnergyOrBandwidth");
+      }
+      // verify the required parameter 'sender' is set
+      if (sender === undefined || sender === null) {
+        throw new Error("Missing the required parameter 'sender' when calling freezeTronEnergyOrBandwidth");
+      }
+      // verify the required parameter 'walletId' is set
+      if (walletId === undefined || walletId === null) {
+        throw new Error("Missing the required parameter 'walletId' when calling freezeTronEnergyOrBandwidth");
+      }
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'sender': sender,
+        'walletId': walletId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _FreezeTronEnergyOrBandwidthR["default"];
+      return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{sender}/freeze', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+
+    /**
+     * Freeze Tron Energy Or Bandwidth
+     * Through this endpoint, customers can stake (freeze) the balance of a specific TRX address to obtain bandwidth or energy.  When creating a request, the \"fromAddress\" is a required parameter. If a \"toAddress\" is not set, for such will be considered the address making the staking transaction. The account receiving the bandwidth or energy must have an available TRX balance.  The minimum amount for staking is 1 TRX.  Note: Staking duration by default is 3 days from the time of freezing, it can NOT be more or less than that. When staking the same address again the duration resets.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} sender Defines the address that sends the amount
+     * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/FreezeTronEnergyOrBandwidthRB} opts.freezeTronEnergyOrBandwidthRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/FreezeTronEnergyOrBandwidthR}
+     */
+  }, {
+    key: "freezeTronEnergyOrBandwidth",
+    value: function freezeTronEnergyOrBandwidth(blockchain, network, sender, walletId, opts) {
+      return this.freezeTronEnergyOrBandwidthWithHttpInfo(blockchain, network, sender, walletId, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+
+    /**
+     * Unfreeze Tron Energy Or Bandwidth
+     * With this endpoint, customers can unfreeze already staked TRX to receive resources. When unstaking bandwidth or energy, the whole amount for that resource will be released to the specified \"toAddress\". You can NOT specify how much to unfreeze.  The request for unstaking TRX can be done 3 days after the staking transaction.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} sender Defines the address that sends the amount
+     * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/UnfreezeTronEnergyOrBandwidthRB} opts.unfreezeTronEnergyOrBandwidthRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/UnfreezeTronEnergyOrBandwidthR} and HTTP response
+     */
+  }, {
+    key: "unfreezeTronEnergyOrBandwidthWithHttpInfo",
+    value: function unfreezeTronEnergyOrBandwidthWithHttpInfo(blockchain, network, sender, walletId, opts) {
+      opts = opts || {};
+      var postBody = opts['unfreezeTronEnergyOrBandwidthRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling unfreezeTronEnergyOrBandwidth");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling unfreezeTronEnergyOrBandwidth");
+      }
+      // verify the required parameter 'sender' is set
+      if (sender === undefined || sender === null) {
+        throw new Error("Missing the required parameter 'sender' when calling unfreezeTronEnergyOrBandwidth");
+      }
+      // verify the required parameter 'walletId' is set
+      if (walletId === undefined || walletId === null) {
+        throw new Error("Missing the required parameter 'walletId' when calling unfreezeTronEnergyOrBandwidth");
+      }
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network,
+        'sender': sender,
+        'walletId': walletId
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _UnfreezeTronEnergyOrBandwidthR["default"];
+      return this.apiClient.callApi('/wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{sender}/unfreeze', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+
+    /**
+     * Unfreeze Tron Energy Or Bandwidth
+     * With this endpoint, customers can unfreeze already staked TRX to receive resources. When unstaking bandwidth or energy, the whole amount for that resource will be released to the specified \"toAddress\". You can NOT specify how much to unfreeze.  The request for unstaking TRX can be done 3 days after the staking transaction.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
+     * @param {String} sender Defines the address that sends the amount
+     * @param {String} walletId Represents the sender's specific and unique Wallet ID of the sender.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/UnfreezeTronEnergyOrBandwidthRB} opts.unfreezeTronEnergyOrBandwidthRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/UnfreezeTronEnergyOrBandwidthR}
+     */
+  }, {
+    key: "unfreezeTronEnergyOrBandwidth",
+    value: function unfreezeTronEnergyOrBandwidth(blockchain, network, sender, walletId, opts) {
+      return this.unfreezeTronEnergyOrBandwidthWithHttpInfo(blockchain, network, sender, walletId, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

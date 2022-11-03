@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRIFungibleTokensInner model module.
  * @module model/GetWalletAssetDetailsRIFungibleTokensInner
- * @version 1.9.0
- */var GetWalletAssetDetailsRIFungibleTokensInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletAssetDetailsRIFungibleTokensInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetailsRIFungibleTokensInner</code>.
    * @alias module:model/GetWalletAssetDetailsRIFungibleTokensInner
@@ -70,10 +71,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletAssetDetailsRIFungibleTokensInner;
-}(); /**
-      * Defines the amount of the fungible tokens.
-      * @member {String} confirmedAmount
-      */
+}();
+/**
+ * Defines the amount of the fungible tokens.
+ * @member {String} confirmedAmount
+ */
 GetWalletAssetDetailsRIFungibleTokensInner.prototype['confirmedAmount'] = undefined;
 
 /**

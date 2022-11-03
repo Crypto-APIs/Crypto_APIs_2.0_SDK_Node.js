@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice;
-}(); /**
-      * Represents the price offered to the miner to purchase this amount of gas.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the price offered to the miner to purchase this amount of gas.
+ * @member {String} amount
+ */
 GetWalletTransactionDetailsByTransactionIDRIBSEGasPrice.prototype['amount'] = undefined;
 
 /**

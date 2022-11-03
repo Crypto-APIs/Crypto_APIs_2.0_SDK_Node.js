@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRI model module.
  * @module model/GetWalletAssetDetailsRI
- * @version 1.9.0
- */var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetailsRI</code>.
    * @alias module:model/GetWalletAssetDetailsRI
@@ -90,9 +91,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletAssetDetailsRI;
-}(); /**
-      * @member {module:model/GetWalletAssetDetailsRIConfirmedBalance} confirmedBalance
-      */
+}();
+/**
+ * @member {module:model/GetWalletAssetDetailsRIConfirmedBalance} confirmedBalance
+ */
 GetWalletAssetDetailsRI.prototype['confirmedBalance'] = undefined;
 
 /**

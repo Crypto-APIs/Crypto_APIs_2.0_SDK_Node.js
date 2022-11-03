@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner model module.
  * @module model/CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateCoinsTransactionRequestFromWalletRBDataItemRecipientsInner {
     /**

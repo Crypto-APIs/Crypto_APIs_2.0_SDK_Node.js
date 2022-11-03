@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountRI model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountRI
- * @version 1.9.0
- */var NewConfirmedCoinsTransactionsForSpecificAmountRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactionsForSpecificAmountRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsForSpecificAmountRI</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsForSpecificAmountRI
@@ -83,10 +84,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactionsForSpecificAmountRI;
-}(); /**
-      * Represents a specific amount of coins after which the system have to send a callback to customers' callbackUrl.
-      * @member {Number} amountHigherThan
-      */
+}();
+/**
+ * Represents a specific amount of coins after which the system have to send a callback to customers' callbackUrl.
+ * @member {Number} amountHigherThan
+ */
 NewConfirmedCoinsTransactionsForSpecificAmountRI.prototype['amountHigherThan'] = undefined;
 
 /**

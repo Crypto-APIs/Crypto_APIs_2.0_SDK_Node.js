@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateNewMasterWallet403Response model module.
  * @module model/CreateNewMasterWallet403Response
- * @version 1.9.0
- */var CreateNewMasterWallet403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateNewMasterWallet403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateNewMasterWallet403Response</code>.
    * @alias module:model/CreateNewMasterWallet403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateNewMasterWallet403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateNewMasterWallet403Response.prototype['apiVersion'] = undefined;
 
 /**

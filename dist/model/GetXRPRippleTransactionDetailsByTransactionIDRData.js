@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRData model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRData
- * @version 1.9.0
- */var GetXRPRippleTransactionDetailsByTransactionIDRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleTransactionDetailsByTransactionIDRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleTransactionDetailsByTransactionIDRData</code>.
    * @alias module:model/GetXRPRippleTransactionDetailsByTransactionIDRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleTransactionDetailsByTransactionIDRData;
-}(); /**
-      * @member {module:model/GetXRPRippleTransactionDetailsByTransactionIDRI} item
-      */
+}();
+/**
+ * @member {module:model/GetXRPRippleTransactionDetailsByTransactionIDRI} item
+ */
 GetXRPRippleTransactionDetailsByTransactionIDRData.prototype['item'] = undefined;
 var _default = GetXRPRippleTransactionDetailsByTransactionIDRData;
 exports["default"] = _default;

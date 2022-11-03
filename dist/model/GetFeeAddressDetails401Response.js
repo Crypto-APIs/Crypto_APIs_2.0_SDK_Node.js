@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetFeeAddressDetails401Response model module.
  * @module model/GetFeeAddressDetails401Response
- * @version 1.9.0
- */var GetFeeAddressDetails401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetFeeAddressDetails401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetFeeAddressDetails401Response</code>.
    * @alias module:model/GetFeeAddressDetails401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetFeeAddressDetails401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetFeeAddressDetails401Response.prototype['apiVersion'] = undefined;
 
 /**

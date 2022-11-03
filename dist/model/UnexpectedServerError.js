@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The UnexpectedServerError model module.
  * @module model/UnexpectedServerError
- * @version 1.9.0
- */var UnexpectedServerError = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var UnexpectedServerError = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>UnexpectedServerError</code>.
    * unexpected_server_error
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return UnexpectedServerError;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 UnexpectedServerError.prototype['code'] = undefined;
 
 /**

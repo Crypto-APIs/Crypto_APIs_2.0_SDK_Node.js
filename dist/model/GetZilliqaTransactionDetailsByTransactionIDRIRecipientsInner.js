@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner
- * @version 1.9.0
- */var GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner</code>.
    * @alias module:model/GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner;
-}(); /**
-      * Represents the hash of the address that receives the funds.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the hash of the address that receives the funds.
+ * @member {String} address
+ */
 GetZilliqaTransactionDetailsByTransactionIDRIRecipientsInner.prototype['address'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRI model module.
  * @module model/ListUnconfirmedTransactionsByAddressRI
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRI</code>.
    * @alias module:model/ListUnconfirmedTransactionsByAddressRI
@@ -83,10 +84,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRI;
-}(); /**
-      * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
-      * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipientsInner>} recipients
-      */
+}();
+/**
+ * Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
+ * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIRecipientsInner>} recipients
+ */
 ListUnconfirmedTransactionsByAddressRI.prototype['recipients'] = undefined;
 
 /**

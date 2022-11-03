@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedTokensRData model module.
  * @module model/ListSupportedTokensRData
- * @version 1.9.0
- */var ListSupportedTokensRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedTokensRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedTokensRData</code>.
    * @alias module:model/ListSupportedTokensRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedTokensRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListSupportedTokensRData.prototype['limit'] = undefined;
 
 /**

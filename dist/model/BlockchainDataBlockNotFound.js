@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockchainDataBlockNotFound model module.
  * @module model/BlockchainDataBlockNotFound
- * @version 1.9.0
- */var BlockchainDataBlockNotFound = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockchainDataBlockNotFound = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockchainDataBlockNotFound</code>.
    * blockchain_data_block_not_found
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockchainDataBlockNotFound;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BlockchainDataBlockNotFound.prototype['code'] = undefined;
 
 /**

@@ -17,7 +17,7 @@ import DecodeXAddressE400 from './DecodeXAddressE400';
 /**
  * The DecodeXAddress400Response model module.
  * @module model/DecodeXAddress400Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DecodeXAddress400Response {
     /**

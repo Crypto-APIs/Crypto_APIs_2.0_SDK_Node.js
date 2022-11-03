@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesRI model module.
  * @module model/ListDepositAddressesRI
- * @version 1.9.0
- */var ListDepositAddressesRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListDepositAddressesRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesRI</code>.
    * @alias module:model/ListDepositAddressesRI
@@ -88,10 +89,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListDepositAddressesRI;
-}(); /**
-      * Specifies the specific address's unique string value.
-      * @member {String} address
-      */
+}();
+/**
+ * Specifies the specific address's unique string value.
+ * @member {String} address
+ */
 ListDepositAddressesRI.prototype['address'] = undefined;
 
 /**

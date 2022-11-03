@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHeightRITotalCoins model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeightRITotalCoins
- * @version 1.9.0
- */var GetXRPRippleBlockDetailsByBlockHeightRITotalCoins = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleBlockDetailsByBlockHeightRITotalCoins = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHeightRITotalCoins</code>.
    * Represents the total Coins of the block as a string.
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleBlockDetailsByBlockHeightRITotalCoins;
-}(); /**
-      * Represents the total amount of all Coins of the block as a string.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the total amount of all Coins of the block as a string.
+ * @member {String} amount
+ */
 GetXRPRippleBlockDetailsByBlockHeightRITotalCoins.prototype['amount'] = undefined;
 
 /**

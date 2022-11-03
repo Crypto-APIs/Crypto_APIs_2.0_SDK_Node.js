@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST
- * @version 1.9.0
- */var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST</code>.
    * Tron Trc20 Token
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST;
-}(); /**
-      * Defines the contract address in the blockchain for an ERC20 token.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Defines the contract address in the blockchain for an ERC20 token.
+ * @member {String} contractAddress
+ */
 CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.prototype['contractAddress'] = undefined;
 
 /**

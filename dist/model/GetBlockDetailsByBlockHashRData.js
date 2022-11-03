@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashRData model module.
  * @module model/GetBlockDetailsByBlockHashRData
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashRData</code>.
    * @alias module:model/GetBlockDetailsByBlockHashRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashRData;
-}(); /**
-      * @member {module:model/GetBlockDetailsByBlockHashRI} item
-      */
+}();
+/**
+ * @member {module:model/GetBlockDetailsByBlockHashRI} item
+ */
 GetBlockDetailsByBlockHashRData.prototype['item'] = undefined;
 var _default = GetBlockDetailsByBlockHashRData;
 exports["default"] = _default;

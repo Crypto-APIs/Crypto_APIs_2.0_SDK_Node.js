@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewChangeAddressesR model module.
  * @module model/DeriveAndSyncNewChangeAddressesR
- * @version 1.9.0
- */var DeriveAndSyncNewChangeAddressesR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewChangeAddressesR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewChangeAddressesR</code>.
    * @alias module:model/DeriveAndSyncNewChangeAddressesR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewChangeAddressesR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DeriveAndSyncNewChangeAddressesR.prototype['apiVersion'] = undefined;
 
 /**

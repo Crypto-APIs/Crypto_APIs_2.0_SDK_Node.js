@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeR model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeR
- * @version 1.9.0
- */var ListConfirmedTokensTransfersByAddressAndTimeRangeR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTokensTransfersByAddressAndTimeRangeR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTokensTransfersByAddressAndTimeRangeR</code>.
    * @alias module:model/ListConfirmedTokensTransfersByAddressAndTimeRangeR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTokensTransfersByAddressAndTimeRangeR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListConfirmedTokensTransfersByAddressAndTimeRangeR.prototype['apiVersion'] = undefined;
 
 /**

@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationE403 model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationE403
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsAndEachConfirmationE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsAndEachConfirmationE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsAndEachConfirmationE403</code>.
    * @alias module:model/NewConfirmedInternalTransactionsAndEachConfirmationE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsAndEachConfirmationE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 NewConfirmedInternalTransactionsAndEachConfirmationE403.prototype['code'] = undefined;
 
 /**

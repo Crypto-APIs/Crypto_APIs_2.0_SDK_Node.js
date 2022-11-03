@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockchainEventsCallbacksLimitReached model module.
  * @module model/BlockchainEventsCallbacksLimitReached
- * @version 1.9.0
- */var BlockchainEventsCallbacksLimitReached = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockchainEventsCallbacksLimitReached = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockchainEventsCallbacksLimitReached</code>.
    * blockchain_events_callbacks_limit_reached
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockchainEventsCallbacksLimitReached;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BlockchainEventsCallbacksLimitReached.prototype['code'] = undefined;
 
 /**

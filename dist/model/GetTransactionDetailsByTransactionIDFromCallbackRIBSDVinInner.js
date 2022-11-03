@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner
@@ -83,9 +84,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner.prototype['addresses'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRISendersInner model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner
- * @version 1.9.0
- */var GetXRPRippleTransactionDetailsByTransactionIDRISendersInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleTransactionDetailsByTransactionIDRISendersInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleTransactionDetailsByTransactionIDRISendersInner</code>.
    * @alias module:model/GetXRPRippleTransactionDetailsByTransactionIDRISendersInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleTransactionDetailsByTransactionIDRISendersInner;
-}(); /**
-      * Represents the hash of the address that provides the funds.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the hash of the address that provides the funds.
+ * @member {String} address
+ */
 GetXRPRippleTransactionDetailsByTransactionIDRISendersInner.prototype['address'] = undefined;
 
 /**

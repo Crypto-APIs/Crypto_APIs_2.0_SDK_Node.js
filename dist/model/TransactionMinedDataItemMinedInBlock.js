@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionMinedDataItemMinedInBlock model module.
  * @module model/TransactionMinedDataItemMinedInBlock
- * @version 1.9.0
- */var TransactionMinedDataItemMinedInBlock = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionMinedDataItemMinedInBlock = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionMinedDataItemMinedInBlock</code>.
    * Refers to the specific block the transaction was mined in.
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionMinedDataItemMinedInBlock;
-}(); /**
-      * Defines the number of blocks in the blockchain preceding this specific block.
-      * @member {Number} height
-      */
+}();
+/**
+ * Defines the number of blocks in the blockchain preceding this specific block.
+ * @member {Number} height
+ */
 TransactionMinedDataItemMinedInBlock.prototype['height'] = undefined;
 
 /**

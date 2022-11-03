@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolRISC model module.
  * @module model/GetAssetDetailsByAssetSymbolRISC
- * @version 1.9.0
- */var GetAssetDetailsByAssetSymbolRISC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetSymbolRISC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetSymbolRISC</code>.
    * Crypto Type Data
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetSymbolRISC;
-}(); /**
-      * Represents the percentage of the asset's current price against the its price from 1 hour ago.
-      * @member {String} 1HourPriceChangeInPercentage
-      */
+}();
+/**
+ * Represents the percentage of the asset's current price against the its price from 1 hour ago.
+ * @member {String} 1HourPriceChangeInPercentage
+ */
 GetAssetDetailsByAssetSymbolRISC.prototype['1HourPriceChangeInPercentage'] = undefined;
 
 /**

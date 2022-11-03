@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TransactionRequestBroadcastedDataItem model module.
  * @module model/TransactionRequestBroadcastedDataItem
- * @version 1.9.0
- */var TransactionRequestBroadcastedDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TransactionRequestBroadcastedDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TransactionRequestBroadcastedDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TransactionRequestBroadcastedDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 TransactionRequestBroadcastedDataItem.prototype['blockchain'] = undefined;
 
 /**

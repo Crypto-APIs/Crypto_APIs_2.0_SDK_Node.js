@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSECGasPrice model module.
  * @module model/ListTransactionsByBlockHeightRIBSECGasPrice
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBSECGasPrice = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBSECGasPrice = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBSECGasPrice</code>.
    * @alias module:model/ListTransactionsByBlockHeightRIBSECGasPrice
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBSECGasPrice;
-}(); /**
-      * Represents the price offered to the miner to purchase this amount of gas.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the price offered to the miner to purchase this amount of gas.
+ * @member {String} amount
+ */
 ListTransactionsByBlockHeightRIBSECGasPrice.prototype['amount'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedInternalTransactionsRBData model module.
  * @module model/NewConfirmedInternalTransactionsRBData
- * @version 1.9.0
- */var NewConfirmedInternalTransactionsRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedInternalTransactionsRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedInternalTransactionsRBData</code>.
    * @alias module:model/NewConfirmedInternalTransactionsRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedInternalTransactionsRBData;
-}(); /**
-      * @member {module:model/NewConfirmedInternalTransactionsRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/NewConfirmedInternalTransactionsRBDataItem} item
+ */
 NewConfirmedInternalTransactionsRBData.prototype['item'] = undefined;
 var _default = NewConfirmedInternalTransactionsRBData;
 exports["default"] = _default;

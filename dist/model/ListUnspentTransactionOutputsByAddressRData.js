@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnspentTransactionOutputsByAddressRData model module.
  * @module model/ListUnspentTransactionOutputsByAddressRData
- * @version 1.9.0
- */var ListUnspentTransactionOutputsByAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnspentTransactionOutputsByAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnspentTransactionOutputsByAddressRData</code>.
    * @alias module:model/ListUnspentTransactionOutputsByAddressRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnspentTransactionOutputsByAddressRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListUnspentTransactionOutputsByAddressRData.prototype['limit'] = undefined;
 
 /**

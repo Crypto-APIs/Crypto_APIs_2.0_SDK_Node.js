@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticTokensForwardingRITS model module.
  * @module model/CreateAutomaticTokensForwardingRITS
- * @version 1.9.0
- */var CreateAutomaticTokensForwardingRITS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticTokensForwardingRITS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticTokensForwardingRITS</code>.
    * @alias module:model/CreateAutomaticTokensForwardingRITS
@@ -68,10 +69,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticTokensForwardingRITS;
-}(); /**
-      * Defines the `propertyId` of the Omni Layer token.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Defines the `propertyId` of the Omni Layer token.
+ * @member {Number} propertyId
+ */
 CreateAutomaticTokensForwardingRITS.prototype['propertyId'] = undefined;
 
 /**

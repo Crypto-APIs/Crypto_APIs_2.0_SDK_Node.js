@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubAssetsRI model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRI
- * @version 1.9.0
- */var GetHDWalletXPubYPubZPubAssetsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetHDWalletXPubYPubZPubAssetsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetHDWalletXPubYPubZPubAssetsRI</code>.
    * @alias module:model/GetHDWalletXPubYPubZPubAssetsRI
@@ -64,10 +65,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetHDWalletXPubYPubZPubAssetsRI;
-}(); /**
-      * Represents fungible tokens'es detailed information
-      * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner>} fungibleTokens
-      */
+}();
+/**
+ * Represents fungible tokens'es detailed information
+ * @member {Array.<module:model/GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner>} fungibleTokens
+ */
 GetHDWalletXPubYPubZPubAssetsRI.prototype['fungibleTokens'] = undefined;
 
 /**

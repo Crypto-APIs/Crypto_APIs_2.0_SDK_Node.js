@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVinInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVinInner
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDRIBSZVinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDRIBSZVinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSZVinInner</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner
@@ -86,9 +87,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSZVinInner;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 GetTransactionDetailsByTransactionIDRIBSZVinInner.prototype['addresses'] = undefined;
 
 /**

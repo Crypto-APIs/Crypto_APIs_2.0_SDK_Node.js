@@ -17,7 +17,7 @@ import NewUnconfirmedCoinsTransactionsRBDataItem from './NewUnconfirmedCoinsTran
 /**
  * The NewUnconfirmedCoinsTransactionsRBData model module.
  * @module model/NewUnconfirmedCoinsTransactionsRBData
- * @version 1.9.0
+ * @version 1.10.0
  */
 class NewUnconfirmedCoinsTransactionsRBData {
     /**

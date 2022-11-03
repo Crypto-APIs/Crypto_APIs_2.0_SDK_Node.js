@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbolsR model module.
  * @module model/GetExchangeRateByAssetSymbolsR
- * @version 1.9.0
- */var GetExchangeRateByAssetSymbolsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetExchangeRateByAssetSymbolsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetSymbolsR</code>.
    * @alias module:model/GetExchangeRateByAssetSymbolsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetExchangeRateByAssetSymbolsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetExchangeRateByAssetSymbolsR.prototype['apiVersion'] = undefined;
 
 /**

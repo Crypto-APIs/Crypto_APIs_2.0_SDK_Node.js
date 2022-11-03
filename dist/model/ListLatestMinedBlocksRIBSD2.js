@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocksRIBSD2 model module.
  * @module model/ListLatestMinedBlocksRIBSD2
- * @version 1.9.0
- */var ListLatestMinedBlocksRIBSD2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocksRIBSD2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocksRIBSD2</code>.
    * Dogecoin
@@ -96,10 +97,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocksRIBSD2;
-}(); /**
-      * Represents a specific sub-unit of Doge. Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Doge. Bits have two-decimal precision.
+ * @member {String} bits
+ */
 ListLatestMinedBlocksRIBSD2.prototype['bits'] = undefined;
 
 /**

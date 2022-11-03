@@ -32,7 +32,7 @@ import ListTransactionsByBlockHeightRIBSZVoutInner from './ListTransactionsByBlo
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBS
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBS {
     /**

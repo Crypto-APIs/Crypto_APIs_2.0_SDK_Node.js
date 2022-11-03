@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransaction409Response model module.
  * @module model/MinedTransaction409Response
- * @version 1.9.0
- */var MinedTransaction409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var MinedTransaction409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>MinedTransaction409Response</code>.
    * @alias module:model/MinedTransaction409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return MinedTransaction409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 MinedTransaction409Response.prototype['apiVersion'] = undefined;
 
 /**

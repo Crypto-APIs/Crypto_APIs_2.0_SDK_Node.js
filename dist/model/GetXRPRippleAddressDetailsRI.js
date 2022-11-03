@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetailsRI model module.
  * @module model/GetXRPRippleAddressDetailsRI
- * @version 1.9.0
- */var GetXRPRippleAddressDetailsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleAddressDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleAddressDetailsRI</code>.
    * @alias module:model/GetXRPRippleAddressDetailsRI
@@ -76,9 +77,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleAddressDetailsRI;
-}(); /**
-      * @member {module:model/GetXRPRippleAddressDetailsRIBalance} balance
-      */
+}();
+/**
+ * @member {module:model/GetXRPRippleAddressDetailsRIBalance} balance
+ */
 GetXRPRippleAddressDetailsRI.prototype['balance'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountRBData model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountRBData
- * @version 1.9.0
- */var NewConfirmedCoinsTransactionsForSpecificAmountRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactionsForSpecificAmountRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsForSpecificAmountRBData</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsForSpecificAmountRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactionsForSpecificAmountRBData;
-}(); /**
-      * @member {module:model/NewConfirmedCoinsTransactionsForSpecificAmountRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/NewConfirmedCoinsTransactionsForSpecificAmountRBDataItem} item
+ */
 NewConfirmedCoinsTransactionsForSpecificAmountRBData.prototype['item'] = undefined;
 var _default = NewConfirmedCoinsTransactionsForSpecificAmountRBData;
 exports["default"] = _default;

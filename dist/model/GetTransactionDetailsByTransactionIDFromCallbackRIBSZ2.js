@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2</code>.
    * Zilliqa
@@ -77,10 +78,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2;
-}(); /**
-      * Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
-      * @member {Number} gasLimit
-      */
+}();
+/**
+ * Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
+ * @member {Number} gasLimit
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2.prototype['gasLimit'] = undefined;
 
 /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetLatestMinedZilliqaBlockRI model module.
  * @module model/GetLatestMinedZilliqaBlockRI
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetLatestMinedZilliqaBlockRI {
     /**

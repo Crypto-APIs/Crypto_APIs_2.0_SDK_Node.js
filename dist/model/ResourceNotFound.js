@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ResourceNotFound model module.
  * @module model/ResourceNotFound
- * @version 1.9.0
- */var ResourceNotFound = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ResourceNotFound = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ResourceNotFound</code>.
    * resource_not_found
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ResourceNotFound;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ResourceNotFound.prototype['code'] = undefined;
 
 /**

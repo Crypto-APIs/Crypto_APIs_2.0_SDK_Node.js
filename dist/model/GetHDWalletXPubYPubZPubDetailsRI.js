@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetHDWalletXPubYPubZPubDetailsRI model module.
  * @module model/GetHDWalletXPubYPubZPubDetailsRI
- * @version 1.9.0
- */var GetHDWalletXPubYPubZPubDetailsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetHDWalletXPubYPubZPubDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetHDWalletXPubYPubZPubDetailsRI</code>.
    * @alias module:model/GetHDWalletXPubYPubZPubDetailsRI
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetHDWalletXPubYPubZPubDetailsRI;
-}(); /**
-      * Specifies the confirmed coins balance of the Wallet.
-      * @member {String} confirmedBalance
-      */
+}();
+/**
+ * Specifies the confirmed coins balance of the Wallet.
+ * @member {String} confirmedBalance
+ */
 GetHDWalletXPubYPubZPubDetailsRI.prototype['confirmedBalance'] = undefined;
 
 /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressRITSBOT model module.
  * @module model/AddTokensToExistingFromAddressRITSBOT
- * @version 1.9.0
- */var AddTokensToExistingFromAddressRITSBOT = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddressRITSBOT = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressRITSBOT</code>.
    * Bitcoin Omni Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddressRITSBOT;
-}(); /**
-      * Defines the `propertyId` of the Omni Layer token.
-      * @member {Number} propertyId
-      */
+}();
+/**
+ * Defines the `propertyId` of the Omni Layer token.
+ * @member {Number} propertyId
+ */
 AddTokensToExistingFromAddressRITSBOT.prototype['propertyId'] = undefined;
 var _default = AddTokensToExistingFromAddressRITSBOT;
 exports["default"] = _default;

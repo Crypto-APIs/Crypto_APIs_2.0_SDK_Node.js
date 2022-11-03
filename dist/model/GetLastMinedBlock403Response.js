@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlock403Response model module.
  * @module model/GetLastMinedBlock403Response
- * @version 1.9.0
- */var GetLastMinedBlock403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlock403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlock403Response</code>.
    * @alias module:model/GetLastMinedBlock403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlock403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetLastMinedBlock403Response.prototype['apiVersion'] = undefined;
 
 /**

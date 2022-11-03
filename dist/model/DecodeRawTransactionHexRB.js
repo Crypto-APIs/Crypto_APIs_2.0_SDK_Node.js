@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRB model module.
  * @module model/DecodeRawTransactionHexRB
- * @version 1.9.0
- */var DecodeRawTransactionHexRB = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRB = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRB</code>.
    * @alias module:model/DecodeRawTransactionHexRB
@@ -59,10 +60,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRB;
-}(); /**
-      * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-      * @member {String} context
-      */
+}();
+/**
+ * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+ * @member {String} context
+ */
 DecodeRawTransactionHexRB.prototype['context'] = undefined;
 
 /**

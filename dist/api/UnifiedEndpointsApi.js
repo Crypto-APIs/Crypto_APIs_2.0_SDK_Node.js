@@ -98,8 +98,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.9.0
-*/var UnifiedEndpointsApi = /*#__PURE__*/function () {
+* @version 1.10.0
+*/
+var UnifiedEndpointsApi = /*#__PURE__*/function () {
   /**
   * Constructs a new UnifiedEndpointsApi. 
   * @alias module:api/UnifiedEndpointsApi

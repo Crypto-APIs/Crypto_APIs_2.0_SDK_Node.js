@@ -22,7 +22,7 @@ import TokensForwardingAutomationsLimitReached from './TokensForwardingAutomatio
 /**
  * The CreateAutomaticTokensForwardingE403 model module.
  * @module model/CreateAutomaticTokensForwardingE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateAutomaticTokensForwardingE403 {
     /**

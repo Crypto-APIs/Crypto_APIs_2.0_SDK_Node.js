@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRISenders model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRISenders
- * @version 1.9.0
- */var CreateCoinsTransactionFromAddressForWholeAmountRISenders = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateCoinsTransactionFromAddressForWholeAmountRISenders = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateCoinsTransactionFromAddressForWholeAmountRISenders</code>.
    * Details about the sender
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateCoinsTransactionFromAddressForWholeAmountRISenders;
-}(); /**
-      * Defines the sender's public address.
-      * @member {String} address
-      */
+}();
+/**
+ * Defines the sender's public address.
+ * @member {String} address
+ */
 CreateCoinsTransactionFromAddressForWholeAmountRISenders.prototype['address'] = undefined;
 var _default = CreateCoinsTransactionFromAddressForWholeAmountRISenders;
 exports["default"] = _default;

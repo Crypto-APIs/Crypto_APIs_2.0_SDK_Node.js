@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashRData model module.
  * @module model/ListTransactionsByBlockHashRData
- * @version 1.9.0
- */var ListTransactionsByBlockHashRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashRData</code>.
    * @alias module:model/ListTransactionsByBlockHashRData
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashRData;
-}(); /**
-      * Defines how many items should be returned in the response per page basis.
-      * @member {Number} limit
-      */
+}();
+/**
+ * Defines how many items should be returned in the response per page basis.
+ * @member {Number} limit
+ */
 ListTransactionsByBlockHashRData.prototype['limit'] = undefined;
 
 /**

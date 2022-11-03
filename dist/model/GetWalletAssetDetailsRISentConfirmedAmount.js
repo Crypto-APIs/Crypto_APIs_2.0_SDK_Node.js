@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRISentConfirmedAmount model module.
  * @module model/GetWalletAssetDetailsRISentConfirmedAmount
- * @version 1.9.0
- */var GetWalletAssetDetailsRISentConfirmedAmount = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletAssetDetailsRISentConfirmedAmount = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetailsRISentConfirmedAmount</code>.
    * Specifies the confirmed amount that has been sent.
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletAssetDetailsRISentConfirmedAmount;
-}(); /**
-      * Specifies the confirmed amount that has been sent.
-      * @member {String} amount
-      */
+}();
+/**
+ * Specifies the confirmed amount that has been sent.
+ * @member {String} amount
+ */
 GetWalletAssetDetailsRISentConfirmedAmount.prototype['amount'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidBlockchain model module.
  * @module model/InvalidBlockchain
- * @version 1.9.0
- */var InvalidBlockchain = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var InvalidBlockchain = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>InvalidBlockchain</code>.
    * invalid_blockchain
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return InvalidBlockchain;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 InvalidBlockchain.prototype['code'] = undefined;
 
 /**

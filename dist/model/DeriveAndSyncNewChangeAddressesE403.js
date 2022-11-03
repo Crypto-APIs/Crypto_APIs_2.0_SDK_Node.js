@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewChangeAddressesE403 model module.
  * @module model/DeriveAndSyncNewChangeAddressesE403
- * @version 1.9.0
- */var DeriveAndSyncNewChangeAddressesE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewChangeAddressesE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewChangeAddressesE403</code>.
    * @alias module:model/DeriveAndSyncNewChangeAddressesE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewChangeAddressesE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 DeriveAndSyncNewChangeAddressesE403.prototype['code'] = undefined;
 
 /**

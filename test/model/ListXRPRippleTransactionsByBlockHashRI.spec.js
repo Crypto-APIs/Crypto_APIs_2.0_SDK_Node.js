@@ -78,6 +78,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property offer (base name: "offer")', function() {
+      // uncomment below and update the code to test the property offer
+      //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHashRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property recipients (base name: "recipients")', function() {
       // uncomment below and update the code to test the property recipients
       //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHashRI();
@@ -122,12 +128,6 @@
 
     it('should have the property fee (base name: "fee")', function() {
       // uncomment below and update the code to test the property fee
-      //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHashRI();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property offer (base name: "offer")', function() {
-      // uncomment below and update the code to test the property offer
       //var instance = new Cryptoapis.ListXRPRippleTransactionsByBlockHashRI();
       //expect(instance).to.be();
     });

@@ -52,8 +52,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.9.0
-*/var ZilliqaApi = /*#__PURE__*/function () {
+* @version 1.10.0
+*/
+var ZilliqaApi = /*#__PURE__*/function () {
   /**
   * Constructs a new ZilliqaApi. 
   * @alias module:api/ZilliqaApi

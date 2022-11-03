@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSD2VinInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSD2VinInner
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBSD2VinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBSD2VinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBSD2VinInner</code>.
    * @alias module:model/ListTransactionsByBlockHeightRIBSD2VinInner
@@ -87,9 +88,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBSD2VinInner;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 ListTransactionsByBlockHeightRIBSD2VinInner.prototype['addresses'] = undefined;
 
 /**

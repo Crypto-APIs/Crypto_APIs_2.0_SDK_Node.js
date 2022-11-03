@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwardingRBData model module.
  * @module model/CreateAutomaticCoinsForwardingRBData
- * @version 1.9.0
- */var CreateAutomaticCoinsForwardingRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticCoinsForwardingRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticCoinsForwardingRBData</code>.
    * @alias module:model/CreateAutomaticCoinsForwardingRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticCoinsForwardingRBData;
-}(); /**
-      * @member {module:model/CreateAutomaticCoinsForwardingRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/CreateAutomaticCoinsForwardingRBDataItem} item
+ */
 CreateAutomaticCoinsForwardingRBData.prototype['item'] = undefined;
 var _default = CreateAutomaticCoinsForwardingRBData;
 exports["default"] = _default;

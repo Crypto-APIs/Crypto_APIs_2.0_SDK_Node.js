@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationRI model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationRI
- * @version 1.9.0
- */var NewConfirmedTokensTransactionsAndEachConfirmationRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedTokensTransactionsAndEachConfirmationRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokensTransactionsAndEachConfirmationRI</code>.
    * @alias module:model/NewConfirmedTokensTransactionsAndEachConfirmationRI
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedTokensTransactionsAndEachConfirmationRI;
-}(); /**
-      * Represents the address of the transaction, per which the result is returned.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address of the transaction, per which the result is returned.
+ * @member {String} address
+ */
 NewConfirmedTokensTransactionsAndEachConfirmationRI.prototype['address'] = undefined;
 
 /**

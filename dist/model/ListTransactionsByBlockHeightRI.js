@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRI model module.
  * @module model/ListTransactionsByBlockHeightRI
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRI</code>.
    * @alias module:model/ListTransactionsByBlockHeightRI
@@ -104,10 +105,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRI;
-}(); /**
-      * Represents the index position of the transaction in the specific block.
-      * @member {Number} index
-      */
+}();
+/**
+ * Represents the index position of the transaction in the specific block.
+ * @member {Number} index
+ */
 ListTransactionsByBlockHeightRI.prototype['index'] = undefined;
 
 /**

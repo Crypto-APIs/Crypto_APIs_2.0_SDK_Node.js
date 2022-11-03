@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeXAddressE400 model module.
  * @module model/DecodeXAddressE400
- * @version 1.9.0
- */var DecodeXAddressE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeXAddressE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeXAddressE400</code>.
    * @alias module:model/DecodeXAddressE400
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeXAddressE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 DecodeXAddressE400.prototype['code'] = undefined;
 
 /**

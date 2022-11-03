@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem
- * @version 1.9.0
- */var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem</code>.
    * @alias module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem
@@ -79,10 +80,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem;
-}(); /**
-      * Represents the specific amount of the transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the specific amount of the transaction.
+ * @member {String} amount
+ */
 CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataItem.prototype['amount'] = undefined;
 
 /**

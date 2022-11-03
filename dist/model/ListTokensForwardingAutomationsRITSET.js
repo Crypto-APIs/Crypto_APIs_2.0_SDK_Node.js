@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensForwardingAutomationsRITSET model module.
  * @module model/ListTokensForwardingAutomationsRITSET
- * @version 1.9.0
- */var ListTokensForwardingAutomationsRITSET = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensForwardingAutomationsRITSET = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensForwardingAutomationsRITSET</code>.
    * Ethereum Token
@@ -56,10 +57,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensForwardingAutomationsRITSET;
-}(); /**
-      * Defines the token contract address.
-      * @member {String} contractAddress
-      */
+}();
+/**
+ * Defines the token contract address.
+ * @member {String} contractAddress
+ */
 ListTokensForwardingAutomationsRITSET.prototype['contractAddress'] = undefined;
 var _default = ListTokensForwardingAutomationsRITSET;
 exports["default"] = _default;

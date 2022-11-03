@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingFailDataItem model module.
  * @module model/TokensForwardingFailDataItem
- * @version 1.9.0
- */var TokensForwardingFailDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TokensForwardingFailDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingFailDataItem</code>.
    * Defines an &#x60;item&#x60; as one result.
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TokensForwardingFailDataItem;
-}(); /**
-      * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-      * @member {String} blockchain
-      */
+}();
+/**
+ * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+ * @member {String} blockchain
+ */
 TokensForwardingFailDataItem.prototype['blockchain'] = undefined;
 
 /**

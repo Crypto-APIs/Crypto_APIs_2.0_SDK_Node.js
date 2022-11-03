@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTokensForwardingAutomationsRI model module.
  * @module model/ListTokensForwardingAutomationsRI
- * @version 1.9.0
- */var ListTokensForwardingAutomationsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTokensForwardingAutomationsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTokensForwardingAutomationsRI</code>.
    * @alias module:model/ListTokensForwardingAutomationsRI
@@ -99,10 +100,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTokensForwardingAutomationsRI;
-}(); /**
-      * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
-      * @member {String} callbackUrl
-      */
+}();
+/**
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
+ * @member {String} callbackUrl
+ */
 ListTokensForwardingAutomationsRI.prototype['callbackUrl'] = undefined;
 
 /**

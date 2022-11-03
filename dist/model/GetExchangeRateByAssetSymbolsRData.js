@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetExchangeRateByAssetSymbolsRData model module.
  * @module model/GetExchangeRateByAssetSymbolsRData
- * @version 1.9.0
- */var GetExchangeRateByAssetSymbolsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetExchangeRateByAssetSymbolsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetSymbolsRData</code>.
    * @alias module:model/GetExchangeRateByAssetSymbolsRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetExchangeRateByAssetSymbolsRData;
-}(); /**
-      * @member {module:model/GetExchangeRateByAssetSymbolsRI} item
-      */
+}();
+/**
+ * @member {module:model/GetExchangeRateByAssetSymbolsRI} item
+ */
 GetExchangeRateByAssetSymbolsRData.prototype['item'] = undefined;
 var _default = GetExchangeRateByAssetSymbolsRData;
 exports["default"] = _default;

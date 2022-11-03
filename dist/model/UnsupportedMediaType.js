@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The UnsupportedMediaType model module.
  * @module model/UnsupportedMediaType
- * @version 1.9.0
- */var UnsupportedMediaType = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var UnsupportedMediaType = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>UnsupportedMediaType</code>.
    * unsupported_media_type
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return UnsupportedMediaType;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 UnsupportedMediaType.prototype['code'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnspentTransactionOutputsByAddress400Response model module.
  * @module model/ListUnspentTransactionOutputsByAddress400Response
- * @version 1.9.0
- */var ListUnspentTransactionOutputsByAddress400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnspentTransactionOutputsByAddress400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnspentTransactionOutputsByAddress400Response</code>.
    * @alias module:model/ListUnspentTransactionOutputsByAddress400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnspentTransactionOutputsByAddress400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListUnspentTransactionOutputsByAddress400Response.prototype['apiVersion'] = undefined;
 
 /**

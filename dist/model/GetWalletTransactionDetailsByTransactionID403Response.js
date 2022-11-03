@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionID403Response model module.
  * @module model/GetWalletTransactionDetailsByTransactionID403Response
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionID403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionID403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionID403Response</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionID403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionID403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetWalletTransactionDetailsByTransactionID403Response.prototype['apiVersion'] = undefined;
 
 /**

@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressE403 model module.
  * @module model/AddTokensToExistingFromAddressE403
- * @version 1.9.0
- */var AddTokensToExistingFromAddressE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddressE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressE403</code>.
    * @alias module:model/AddTokensToExistingFromAddressE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddressE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 AddTokensToExistingFromAddressE403.prototype['code'] = undefined;
 
 /**

@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByAddressRI model module.
  * @module model/ListXRPRippleTransactionsByAddressRI
- * @version 1.9.0
- */var ListXRPRippleTransactionsByAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByAddressRI</code>.
    * @alias module:model/ListXRPRippleTransactionsByAddressRI
@@ -129,9 +130,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByAddressRI;
-}(); /**
-      * @member {Number} destinationTag
-      */
+}();
+/**
+ * @member {Number} destinationTag
+ */
 ListXRPRippleTransactionsByAddressRI.prototype['destinationTag'] = undefined;
 
 /**

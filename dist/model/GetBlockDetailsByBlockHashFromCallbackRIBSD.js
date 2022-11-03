@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBSD model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBSD
- * @version 1.9.0
- */var GetBlockDetailsByBlockHashFromCallbackRIBSD = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHashFromCallbackRIBSD = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHashFromCallbackRIBSD</code>.
    * Dash
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHashFromCallbackRIBSD;
-}(); /**
-      * Represents a specific sub-unit of Dash. Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * Represents a specific sub-unit of Dash. Bits have two-decimal precision.
+ * @member {String} bits
+ */
 GetBlockDetailsByBlockHashFromCallbackRIBSD.prototype['bits'] = undefined;
 
 /**

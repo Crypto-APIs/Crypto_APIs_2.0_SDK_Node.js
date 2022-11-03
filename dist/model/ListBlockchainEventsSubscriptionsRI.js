@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListBlockchainEventsSubscriptionsRI model module.
  * @module model/ListBlockchainEventsSubscriptionsRI
- * @version 1.9.0
- */var ListBlockchainEventsSubscriptionsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListBlockchainEventsSubscriptionsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListBlockchainEventsSubscriptionsRI</code>.
    * @alias module:model/ListBlockchainEventsSubscriptionsRI
@@ -95,10 +96,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListBlockchainEventsSubscriptionsRI;
-}(); /**
-      * Represents the address of the transaction.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address of the transaction.
+ * @member {String} address
+ */
 ListBlockchainEventsSubscriptionsRI.prototype['address'] = undefined;
 
 /**

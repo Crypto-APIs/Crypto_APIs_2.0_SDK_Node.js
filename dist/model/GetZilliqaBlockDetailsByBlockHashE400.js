@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHashE400 model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashE400
- * @version 1.9.0
- */var GetZilliqaBlockDetailsByBlockHashE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaBlockDetailsByBlockHashE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaBlockDetailsByBlockHashE400</code>.
    * @alias module:model/GetZilliqaBlockDetailsByBlockHashE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaBlockDetailsByBlockHashE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetZilliqaBlockDetailsByBlockHashE400.prototype['code'] = undefined;
 
 /**

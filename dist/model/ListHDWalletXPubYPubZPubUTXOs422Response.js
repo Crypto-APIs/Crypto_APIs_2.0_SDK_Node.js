@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListHDWalletXPubYPubZPubUTXOs422Response model module.
  * @module model/ListHDWalletXPubYPubZPubUTXOs422Response
- * @version 1.9.0
- */var ListHDWalletXPubYPubZPubUTXOs422Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListHDWalletXPubYPubZPubUTXOs422Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListHDWalletXPubYPubZPubUTXOs422Response</code>.
    * @alias module:model/ListHDWalletXPubYPubZPubUTXOs422Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListHDWalletXPubYPubZPubUTXOs422Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListHDWalletXPubYPubZPubUTXOs422Response.prototype['apiVersion'] = undefined;
 
 /**

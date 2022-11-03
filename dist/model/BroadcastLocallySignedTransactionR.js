@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionR model module.
  * @module model/BroadcastLocallySignedTransactionR
- * @version 1.9.0
- */var BroadcastLocallySignedTransactionR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BroadcastLocallySignedTransactionR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BroadcastLocallySignedTransactionR</code>.
    * @alias module:model/BroadcastLocallySignedTransactionR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BroadcastLocallySignedTransactionR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 BroadcastLocallySignedTransactionR.prototype['apiVersion'] = undefined;
 
 /**

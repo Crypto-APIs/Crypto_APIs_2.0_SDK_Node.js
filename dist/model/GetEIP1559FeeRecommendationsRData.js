@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetEIP1559FeeRecommendationsRData model module.
  * @module model/GetEIP1559FeeRecommendationsRData
- * @version 1.9.0
- */var GetEIP1559FeeRecommendationsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetEIP1559FeeRecommendationsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetEIP1559FeeRecommendationsRData</code>.
    * @alias module:model/GetEIP1559FeeRecommendationsRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetEIP1559FeeRecommendationsRData;
-}(); /**
-      * @member {module:model/GetEIP1559FeeRecommendationsRI} item
-      */
+}();
+/**
+ * @member {module:model/GetEIP1559FeeRecommendationsRI} item
+ */
 GetEIP1559FeeRecommendationsRData.prototype['item'] = undefined;
 var _default = GetEIP1559FeeRecommendationsRData;
 exports["default"] = _default;

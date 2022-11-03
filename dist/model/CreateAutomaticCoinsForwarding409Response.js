@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwarding409Response model module.
  * @module model/CreateAutomaticCoinsForwarding409Response
- * @version 1.9.0
- */var CreateAutomaticCoinsForwarding409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticCoinsForwarding409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticCoinsForwarding409Response</code>.
    * @alias module:model/CreateAutomaticCoinsForwarding409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticCoinsForwarding409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateAutomaticCoinsForwarding409Response.prototype['apiVersion'] = undefined;
 
 /**

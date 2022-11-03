@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListDepositAddressesRIConfirmedBalance model module.
  * @module model/ListDepositAddressesRIConfirmedBalance
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListDepositAddressesRIConfirmedBalance {
     /**

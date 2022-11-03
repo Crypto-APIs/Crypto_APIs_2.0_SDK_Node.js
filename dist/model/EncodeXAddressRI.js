@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddressRI model module.
  * @module model/EncodeXAddressRI
- * @version 1.9.0
- */var EncodeXAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EncodeXAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EncodeXAddressRI</code>.
    * @alias module:model/EncodeXAddressRI
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EncodeXAddressRI;
-}(); /**
-      * Represents the encoded classic address with its destination tag.
-      * @member {String} xAddress
-      */
+}();
+/**
+ * Represents the encoded classic address with its destination tag.
+ * @member {String} xAddress
+ */
 EncodeXAddressRI.prototype['xAddress'] = undefined;
 var _default = EncodeXAddressRI;
 exports["default"] = _default;

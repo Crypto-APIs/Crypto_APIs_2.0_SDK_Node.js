@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReachedRData model module.
  * @module model/BlockHeightReachedRData
- * @version 1.9.0
- */var BlockHeightReachedRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockHeightReachedRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockHeightReachedRData</code>.
    * @alias module:model/BlockHeightReachedRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockHeightReachedRData;
-}(); /**
-      * @member {module:model/BlockHeightReachedRI} item
-      */
+}();
+/**
+ * @member {module:model/BlockHeightReachedRI} item
+ */
 BlockHeightReachedRData.prototype['item'] = undefined;
 var _default = BlockHeightReachedRData;
 exports["default"] = _default;

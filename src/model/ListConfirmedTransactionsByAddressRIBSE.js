@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSEGasPrice from './ListConfirmedTran
 /**
  * The ListConfirmedTransactionsByAddressRIBSE model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSE
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListConfirmedTransactionsByAddressRIBSE {
     /**

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHeightRIRecipientsInner model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRIRecipientsInner
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHeightRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHeightRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHeightRIRecipientsInner</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHeightRIRecipientsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHeightRIRecipientsInner;
-}(); /**
-      * String representation of the receiver address
-      * @member {String} address
-      */
+}();
+/**
+ * String representation of the receiver address
+ * @member {String} address
+ */
 ListXRPRippleTransactionsByBlockHeightRIRecipientsInner.prototype['address'] = undefined;
 
 /**

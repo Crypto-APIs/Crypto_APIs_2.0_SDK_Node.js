@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BlockRevertedDataItem model module.
  * @module model/BlockRevertedDataItem
- * @version 1.9.0
+ * @version 1.10.0
  */
 class BlockRevertedDataItem {
     /**

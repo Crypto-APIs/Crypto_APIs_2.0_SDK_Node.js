@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsR model module.
  * @module model/GetWalletAssetDetailsR
- * @version 1.9.0
- */var GetWalletAssetDetailsR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletAssetDetailsR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetailsR</code>.
    * @alias module:model/GetWalletAssetDetailsR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletAssetDetailsR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetWalletAssetDetailsR.prototype['apiVersion'] = undefined;
 
 /**

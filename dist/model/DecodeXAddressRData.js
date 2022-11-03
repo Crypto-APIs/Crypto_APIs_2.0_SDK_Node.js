@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeXAddressRData model module.
  * @module model/DecodeXAddressRData
- * @version 1.9.0
- */var DecodeXAddressRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeXAddressRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeXAddressRData</code>.
    * @alias module:model/DecodeXAddressRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeXAddressRData;
-}(); /**
-      * @member {module:model/DecodeXAddressRI} item
-      */
+}();
+/**
+ * @member {module:model/DecodeXAddressRI} item
+ */
 DecodeXAddressRData.prototype['item'] = undefined;
 var _default = DecodeXAddressRData;
 exports["default"] = _default;

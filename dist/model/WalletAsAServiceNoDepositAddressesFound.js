@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The WalletAsAServiceNoDepositAddressesFound model module.
  * @module model/WalletAsAServiceNoDepositAddressesFound
- * @version 1.9.0
- */var WalletAsAServiceNoDepositAddressesFound = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var WalletAsAServiceNoDepositAddressesFound = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>WalletAsAServiceNoDepositAddressesFound</code>.
    * wallet_as_a_service_no_deposit_addresses_found
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return WalletAsAServiceNoDepositAddressesFound;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 WalletAsAServiceNoDepositAddressesFound.prototype['code'] = undefined;
 
 /**

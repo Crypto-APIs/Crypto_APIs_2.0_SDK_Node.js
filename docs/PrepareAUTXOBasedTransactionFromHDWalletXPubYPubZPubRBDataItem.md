@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **fee** | [**PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.md) |  | 
 **prepareStrategy** | **String** | Representation of the transaction&#39;s strategy type | [optional] 
 **recipients** | [**[PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner]**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner.md) | Object Array representation of transaction receivers | 
-**replaceable** | **Boolean** | Representation whether the transaction is replaceable | 
+**replaceable** | **Boolean** | Representation whether the transaction is replaceable | [optional] 
 
 
 

@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountE403 model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountE403
- * @version 1.9.0
- */var NewConfirmedCoinsTransactionsForSpecificAmountE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedCoinsTransactionsForSpecificAmountE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedCoinsTransactionsForSpecificAmountE403</code>.
    * @alias module:model/NewConfirmedCoinsTransactionsForSpecificAmountE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedCoinsTransactionsForSpecificAmountE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 NewConfirmedCoinsTransactionsForSpecificAmountE403.prototype['code'] = undefined;
 
 /**

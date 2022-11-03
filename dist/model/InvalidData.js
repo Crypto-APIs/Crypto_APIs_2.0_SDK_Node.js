@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InvalidData model module.
  * @module model/InvalidData
- * @version 1.9.0
- */var InvalidData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var InvalidData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>InvalidData</code>.
    * invalid_data
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return InvalidData;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 InvalidData.prototype['code'] = undefined;
 
 /**

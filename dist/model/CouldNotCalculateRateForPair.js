@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CouldNotCalculateRateForPair model module.
  * @module model/CouldNotCalculateRateForPair
- * @version 1.9.0
- */var CouldNotCalculateRateForPair = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CouldNotCalculateRateForPair = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CouldNotCalculateRateForPair</code>.
    * could_not_calculate_rate_for_pair
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CouldNotCalculateRateForPair;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 CouldNotCalculateRateForPair.prototype['code'] = undefined;
 
 /**

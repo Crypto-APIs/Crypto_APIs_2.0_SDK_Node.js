@@ -39,7 +39,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDRIReceive from './GetXRPRipp
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBS
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBS {
     /**

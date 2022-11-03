@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDRData model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDRData
- * @version 1.9.0
- */var GetZilliqaTransactionDetailsByTransactionIDRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaTransactionDetailsByTransactionIDRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaTransactionDetailsByTransactionIDRData</code>.
    * @alias module:model/GetZilliqaTransactionDetailsByTransactionIDRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaTransactionDetailsByTransactionIDRData;
-}(); /**
-      * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRI} item
-      */
+}();
+/**
+ * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRI} item
+ */
 GetZilliqaTransactionDetailsByTransactionIDRData.prototype['item'] = undefined;
 var _default = GetZilliqaTransactionDetailsByTransactionIDRData;
 exports["default"] = _default;

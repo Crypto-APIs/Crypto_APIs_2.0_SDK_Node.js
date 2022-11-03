@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockHeightReachedE403 model module.
  * @module model/BlockHeightReachedE403
- * @version 1.9.0
- */var BlockHeightReachedE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockHeightReachedE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockHeightReachedE403</code>.
    * @alias module:model/BlockHeightReachedE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockHeightReachedE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 BlockHeightReachedE403.prototype['code'] = undefined;
 
 /**

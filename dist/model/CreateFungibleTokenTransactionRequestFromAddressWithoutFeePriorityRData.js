@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData
- * @version 1.9.0
- */var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData</code>.
    * @alias module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData;
-}(); /**
-      * @member {module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRI} item
-      */
+}();
+/**
+ * @member {module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRI} item
+ */
 CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData.prototype['item'] = undefined;
 var _default = CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRData;
 exports["default"] = _default;

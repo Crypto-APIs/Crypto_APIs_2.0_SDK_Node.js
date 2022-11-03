@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListZilliqaTransactionsByBlockHeightE401 model module.
  * @module model/ListZilliqaTransactionsByBlockHeightE401
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListZilliqaTransactionsByBlockHeightE401 {
     /**

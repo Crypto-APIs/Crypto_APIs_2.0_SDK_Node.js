@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListInternalTransactionsByAddress403Response model module.
  * @module model/ListInternalTransactionsByAddress403Response
- * @version 1.9.0
- */var ListInternalTransactionsByAddress403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListInternalTransactionsByAddress403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListInternalTransactionsByAddress403Response</code>.
    * @alias module:model/ListInternalTransactionsByAddress403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListInternalTransactionsByAddress403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListInternalTransactionsByAddress403Response.prototype['apiVersion'] = undefined;
 
 /**

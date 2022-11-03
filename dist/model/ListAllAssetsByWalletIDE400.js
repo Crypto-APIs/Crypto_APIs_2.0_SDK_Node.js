@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsByWalletIDE400 model module.
  * @module model/ListAllAssetsByWalletIDE400
- * @version 1.9.0
- */var ListAllAssetsByWalletIDE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListAllAssetsByWalletIDE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsByWalletIDE400</code>.
    * @alias module:model/ListAllAssetsByWalletIDE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListAllAssetsByWalletIDE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListAllAssetsByWalletIDE400.prototype['code'] = undefined;
 
 /**

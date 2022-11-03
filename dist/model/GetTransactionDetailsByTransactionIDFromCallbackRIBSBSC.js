@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC
- * @version 1.9.0
- */var GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC</code>.
    * Binance Smart Chain
@@ -82,10 +83,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC;
-}(); /**
-      * Represents the specific transaction contract
-      * @member {String} contract
-      */
+}();
+/**
+ * Represents the specific transaction contract
+ * @member {String} contract
+ */
 GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC.prototype['contract'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The MinedTransactionR model module.
  * @module model/MinedTransactionR
- * @version 1.9.0
- */var MinedTransactionR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var MinedTransactionR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>MinedTransactionR</code>.
    * @alias module:model/MinedTransactionR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return MinedTransactionR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 MinedTransactionR.prototype['apiVersion'] = undefined;
 
 /**

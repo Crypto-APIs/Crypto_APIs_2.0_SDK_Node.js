@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateGasLimitE403 model module.
  * @module model/EstimateGasLimitE403
- * @version 1.9.0
- */var EstimateGasLimitE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateGasLimitE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateGasLimitE403</code>.
    * @alias module:model/EstimateGasLimitE403
@@ -80,10 +81,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateGasLimitE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 EstimateGasLimitE403.prototype['code'] = undefined;
 
 /**

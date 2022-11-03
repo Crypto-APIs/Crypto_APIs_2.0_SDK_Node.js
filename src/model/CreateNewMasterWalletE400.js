@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The CreateNewMasterWalletE400 model module.
  * @module model/CreateNewMasterWalletE400
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateNewMasterWalletE400 {
     /**

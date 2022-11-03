@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRILatestRate model module.
  * @module model/GetAssetDetailsByAssetIDRILatestRate
- * @version 1.9.0
- */var GetAssetDetailsByAssetIDRILatestRate = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetIDRILatestRate = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetIDRILatestRate</code>.
    * Specifies the latest price of the asset.
@@ -64,10 +65,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetIDRILatestRate;
-}(); /**
-      * Represents the amount of the latest rate.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the amount of the latest rate.
+ * @member {String} amount
+ */
 GetAssetDetailsByAssetIDRILatestRate.prototype['amount'] = undefined;
 
 /**

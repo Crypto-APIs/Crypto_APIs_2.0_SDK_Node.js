@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexE401 model module.
  * @module model/DecodeRawTransactionHexE401
- * @version 1.9.0
- */var DecodeRawTransactionHexE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexE401</code>.
    * @alias module:model/DecodeRawTransactionHexE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 DecodeRawTransactionHexE401.prototype['code'] = undefined;
 
 /**

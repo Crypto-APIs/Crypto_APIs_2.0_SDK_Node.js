@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRI model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRI
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRI</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDRI
@@ -105,10 +106,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRI;
-}(); /**
-      * Represents the state of the transaction whether it is confirmed or not confirmed.
-      * @member {Boolean} isConfirmed
-      */
+}();
+/**
+ * Represents the state of the transaction whether it is confirmed or not confirmed.
+ * @member {Boolean} isConfirmed
+ */
 GetWalletTransactionDetailsByTransactionIDRI.prototype['isConfirmed'] = undefined;
 
 /**

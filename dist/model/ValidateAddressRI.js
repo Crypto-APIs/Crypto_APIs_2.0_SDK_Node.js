@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ValidateAddressRI model module.
  * @module model/ValidateAddressRI
- * @version 1.9.0
- */var ValidateAddressRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ValidateAddressRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ValidateAddressRI</code>.
    * @alias module:model/ValidateAddressRI
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ValidateAddressRI;
-}(); /**
-      * Represents the specific address that will be checked if it's valid or not.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the specific address that will be checked if it's valid or not.
+ * @member {String} address
+ */
 ValidateAddressRI.prototype['address'] = undefined;
 
 /**

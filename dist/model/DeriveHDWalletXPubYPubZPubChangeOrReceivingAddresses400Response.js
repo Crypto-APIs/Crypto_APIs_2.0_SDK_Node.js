@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response
- * @version 1.9.0
- */var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response</code>.
    * @alias module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 DeriveHDWalletXPubYPubZPubChangeOrReceivingAddresses400Response.prototype['apiVersion'] = undefined;
 
 /**

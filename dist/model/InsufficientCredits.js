@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The InsufficientCredits model module.
  * @module model/InsufficientCredits
- * @version 1.9.0
- */var InsufficientCredits = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var InsufficientCredits = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>InsufficientCredits</code>.
    * insufficient_credits
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return InsufficientCredits;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 InsufficientCredits.prototype['code'] = undefined;
 
 /**

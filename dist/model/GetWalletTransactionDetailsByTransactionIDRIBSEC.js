@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSEC model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSEC
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIBSEC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIBSEC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIBSEC</code>.
    * Ethereum Classic
@@ -82,10 +83,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIBSEC;
-}(); /**
-      * Represents the specific transaction contract.
-      * @member {String} contract
-      */
+}();
+/**
+ * Represents the specific transaction contract.
+ * @member {String} contract
+ */
 GetWalletTransactionDetailsByTransactionIDRIBSEC.prototype['contract'] = undefined;
 
 /**

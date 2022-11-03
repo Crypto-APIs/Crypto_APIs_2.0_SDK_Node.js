@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateNewMasterWalletR model module.
  * @module model/CreateNewMasterWalletR
- * @version 1.9.0
- */var CreateNewMasterWalletR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateNewMasterWalletR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateNewMasterWalletR</code>.
    * @alias module:model/CreateNewMasterWalletR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateNewMasterWalletR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateNewMasterWalletR.prototype['apiVersion'] = undefined;
 
 /**

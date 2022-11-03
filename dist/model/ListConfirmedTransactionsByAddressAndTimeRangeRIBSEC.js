@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC</code>.
    * Ethereum Classic
@@ -87,10 +88,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC;
-}(); /**
-      * Represents the specific transaction contract.
-      * @member {String} contract
-      */
+}();
+/**
+ * Represents the specific transaction contract.
+ * @member {String} contract
+ */
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSEC.prototype['contract'] = undefined;
 
 /**

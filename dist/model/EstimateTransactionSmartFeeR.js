@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTransactionSmartFeeR model module.
  * @module model/EstimateTransactionSmartFeeR
- * @version 1.9.0
- */var EstimateTransactionSmartFeeR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTransactionSmartFeeR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTransactionSmartFeeR</code>.
    * @alias module:model/EstimateTransactionSmartFeeR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTransactionSmartFeeR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 EstimateTransactionSmartFeeR.prototype['apiVersion'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddTokensToExistingFromAddressR model module.
  * @module model/AddTokensToExistingFromAddressR
- * @version 1.9.0
- */var AddTokensToExistingFromAddressR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddTokensToExistingFromAddressR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddTokensToExistingFromAddressR</code>.
    * @alias module:model/AddTokensToExistingFromAddressR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddTokensToExistingFromAddressR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 AddTokensToExistingFromAddressR.prototype['apiVersion'] = undefined;
 
 /**

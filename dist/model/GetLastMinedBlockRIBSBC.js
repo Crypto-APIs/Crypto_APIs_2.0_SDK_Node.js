@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRIBSBC model module.
  * @module model/GetLastMinedBlockRIBSBC
- * @version 1.9.0
- */var GetLastMinedBlockRIBSBC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlockRIBSBC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockRIBSBC</code>.
    * Bitcoin Cash
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlockRIBSBC;
-}(); /**
-      * Represents a mathematical value of how hard it is to find a valid hash for this block.
-      * @member {String} difficulty
-      */
+}();
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
 GetLastMinedBlockRIBSBC.prototype['difficulty'] = undefined;
 
 /**

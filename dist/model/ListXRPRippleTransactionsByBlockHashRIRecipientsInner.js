@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListXRPRippleTransactionsByBlockHashRIRecipientsInner model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRIRecipientsInner
- * @version 1.9.0
- */var ListXRPRippleTransactionsByBlockHashRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListXRPRippleTransactionsByBlockHashRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListXRPRippleTransactionsByBlockHashRIRecipientsInner</code>.
    * @alias module:model/ListXRPRippleTransactionsByBlockHashRIRecipientsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListXRPRippleTransactionsByBlockHashRIRecipientsInner;
-}(); /**
-      * Represents the hash of the address that receives the funds.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the hash of the address that receives the funds.
+ * @member {String} address
+ */
 ListXRPRippleTransactionsByBlockHashRIRecipientsInner.prototype['address'] = undefined;
 
 /**

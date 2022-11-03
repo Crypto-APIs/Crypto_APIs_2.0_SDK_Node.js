@@ -51,8 +51,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.9.0
-*/var InformativeApi = /*#__PURE__*/function () {
+* @version 1.10.0
+*/
+var InformativeApi = /*#__PURE__*/function () {
   /**
   * Constructs a new InformativeApi. 
   * @alias module:api/InformativeApi
@@ -339,6 +340,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
      * @param {String} walletId Represents the unique ID of the specific Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/ListDepositAddressesR} and HTTP response
      */
   }, {
@@ -364,7 +367,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         'walletId': walletId
       };
       var queryParams = {
-        'context': opts['context']
+        'context': opts['context'],
+        'limit': opts['limit'],
+        'offset': opts['offset']
       };
       var headerParams = {};
       var formParams = {};
@@ -383,6 +388,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
      * @param {String} walletId Represents the unique ID of the specific Wallet.
      * @param {Object} opts Optional parameters
      * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {Number} opts.limit Defines how many items should be returned in the response per page basis. (default to 50)
+     * @param {Number} opts.offset The starting index of the response items, i.e. where the response should start listing the returned items. (default to 0)
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/ListDepositAddressesR}
      */
   }, {

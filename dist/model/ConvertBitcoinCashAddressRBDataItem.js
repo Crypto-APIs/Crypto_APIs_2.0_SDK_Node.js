@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConvertBitcoinCashAddressRBDataItem model module.
  * @module model/ConvertBitcoinCashAddressRBDataItem
- * @version 1.9.0
- */var ConvertBitcoinCashAddressRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConvertBitcoinCashAddressRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConvertBitcoinCashAddressRBDataItem</code>.
    * @alias module:model/ConvertBitcoinCashAddressRBDataItem
@@ -55,10 +56,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConvertBitcoinCashAddressRBDataItem;
-}(); /**
-      * Represents the public address, which is a compressed and shortened form of a public key.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the public address, which is a compressed and shortened form of a public key.
+ * @member {String} address
+ */
 ConvertBitcoinCashAddressRBDataItem.prototype['address'] = undefined;
 var _default = ConvertBitcoinCashAddressRBDataItem;
 exports["default"] = _default;

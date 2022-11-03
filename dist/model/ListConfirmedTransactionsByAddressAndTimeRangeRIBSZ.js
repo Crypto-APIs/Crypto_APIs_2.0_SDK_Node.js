@@ -17,8 +17,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ</code>.
    * Zcash
@@ -131,10 +132,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ;
-}(); /**
-      * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
-      * @member {String} bindingSig
-      */
+}();
+/**
+ * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
+ * @member {String} bindingSig
+ */
 ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ.prototype['bindingSig'] = undefined;
 
 /**

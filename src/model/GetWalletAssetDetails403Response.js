@@ -17,7 +17,7 @@ import GetWalletAssetDetailsE403 from './GetWalletAssetDetailsE403';
 /**
  * The GetWalletAssetDetails403Response model module.
  * @module model/GetWalletAssetDetails403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetWalletAssetDetails403Response {
     /**

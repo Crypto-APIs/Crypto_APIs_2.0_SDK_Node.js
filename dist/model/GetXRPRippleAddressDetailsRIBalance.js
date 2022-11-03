@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleAddressDetailsRIBalance model module.
  * @module model/GetXRPRippleAddressDetailsRIBalance
- * @version 1.9.0
- */var GetXRPRippleAddressDetailsRIBalance = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleAddressDetailsRIBalance = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleAddressDetailsRIBalance</code>.
    * Defines the balance of the account.
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleAddressDetailsRIBalance;
-}(); /**
-      * Represents the total amount of the balance.
-      * @member {String} amount
-      */
+}();
+/**
+ * Represents the total amount of the balance.
+ * @member {String} amount
+ */
 GetXRPRippleAddressDetailsRIBalance.prototype['amount'] = undefined;
 
 /**

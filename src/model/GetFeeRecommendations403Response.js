@@ -17,7 +17,7 @@ import GetFeeRecommendationsE403 from './GetFeeRecommendationsE403';
 /**
  * The GetFeeRecommendations403Response model module.
  * @module model/GetFeeRecommendations403Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetFeeRecommendations403Response {
     /**

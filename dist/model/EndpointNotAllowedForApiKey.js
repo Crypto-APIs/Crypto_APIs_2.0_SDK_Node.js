@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EndpointNotAllowedForApiKey model module.
  * @module model/EndpointNotAllowedForApiKey
- * @version 1.9.0
- */var EndpointNotAllowedForApiKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EndpointNotAllowedForApiKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EndpointNotAllowedForApiKey</code>.
    * endpoint_not_allowed_for_api_key
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EndpointNotAllowedForApiKey;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 EndpointNotAllowedForApiKey.prototype['code'] = undefined;
 
 /**

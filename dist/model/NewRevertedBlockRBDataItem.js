@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewRevertedBlockRBDataItem model module.
  * @module model/NewRevertedBlockRBDataItem
- * @version 1.9.0
- */var NewRevertedBlockRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewRevertedBlockRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewRevertedBlockRBDataItem</code>.
    * @alias module:model/NewRevertedBlockRBDataItem
@@ -63,10 +64,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewRevertedBlockRBDataItem;
-}(); /**
-      * Specifies a flag that permits or denies the creation of duplicate addresses.
-      * @member {String} allowDuplicates
-      */
+}();
+/**
+ * Specifies a flag that permits or denies the creation of duplicate addresses.
+ * @member {String} allowDuplicates
+ */
 NewRevertedBlockRBDataItem.prototype['allowDuplicates'] = undefined;
 
 /**

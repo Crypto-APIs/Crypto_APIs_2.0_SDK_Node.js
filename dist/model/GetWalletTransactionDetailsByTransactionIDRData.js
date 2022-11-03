@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRData model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRData
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRData</code>.
    * @alias module:model/GetWalletTransactionDetailsByTransactionIDRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRData;
-}(); /**
-      * @member {module:model/GetWalletTransactionDetailsByTransactionIDRI} item
-      */
+}();
+/**
+ * @member {module:model/GetWalletTransactionDetailsByTransactionIDRI} item
+ */
 GetWalletTransactionDetailsByTransactionIDRData.prototype['item'] = undefined;
 var _default = GetWalletTransactionDetailsByTransactionIDRData;
 exports["default"] = _default;

@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSEFee model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSEFee
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRIBSEFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRIBSEFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBSEFee</code>.
    * Object representation of the transaction fee
@@ -61,10 +62,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBSEFee;
-}(); /**
-      * String representation of the fee value
-      * @member {String} amount
-      */
+}();
+/**
+ * String representation of the fee value
+ * @member {String} amount
+ */
 ListUnconfirmedTransactionsByAddressRIBSEFee.prototype['amount'] = undefined;
 
 /**

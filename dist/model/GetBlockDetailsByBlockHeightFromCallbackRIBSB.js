@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSB model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSB
- * @version 1.9.0
- */var GetBlockDetailsByBlockHeightFromCallbackRIBSB = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetBlockDetailsByBlockHeightFromCallbackRIBSB = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRIBSB</code>.
    * Bitcoin
@@ -101,10 +102,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetBlockDetailsByBlockHeightFromCallbackRIBSB;
-}(); /**
-      * A sub-unit of BTC equal to 0.000001 BTC, or 100 Satoshi, and is the same as microbitcoin (μBTC). Bits have two-decimal precision.
-      * @member {String} bits
-      */
+}();
+/**
+ * A sub-unit of BTC equal to 0.000001 BTC, or 100 Satoshi, and is the same as microbitcoin (μBTC). Bits have two-decimal precision.
+ * @member {String} bits
+ */
 GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['bits'] = undefined;
 
 /**

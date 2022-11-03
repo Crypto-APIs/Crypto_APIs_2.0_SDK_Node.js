@@ -14,8 +14,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISL model module.
  * @module model/DecodeRawTransactionHexRISL
- * @version 1.9.0
- */var DecodeRawTransactionHexRISL = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISL = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISL</code>.
    * Litecoin
@@ -86,10 +87,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISL;
-}(); /**
-      * Represents the time at which a particular transaction can be added to the blockchain
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the time at which a particular transaction can be added to the blockchain
+ * @member {Number} locktime
+ */
 DecodeRawTransactionHexRISL.prototype['locktime'] = undefined;
 
 /**

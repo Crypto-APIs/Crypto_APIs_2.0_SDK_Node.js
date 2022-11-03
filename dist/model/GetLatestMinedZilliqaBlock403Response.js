@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLatestMinedZilliqaBlock403Response model module.
  * @module model/GetLatestMinedZilliqaBlock403Response
- * @version 1.9.0
- */var GetLatestMinedZilliqaBlock403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLatestMinedZilliqaBlock403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLatestMinedZilliqaBlock403Response</code>.
    * @alias module:model/GetLatestMinedZilliqaBlock403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLatestMinedZilliqaBlock403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetLatestMinedZilliqaBlock403Response.prototype['apiVersion'] = undefined;
 
 /**

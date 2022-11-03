@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDE403 model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDE403
- * @version 1.9.0
+ * @version 1.10.0
  */
 class GetXRPRippleTransactionDetailsByTransactionIDE403 {
     /**

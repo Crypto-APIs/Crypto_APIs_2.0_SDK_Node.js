@@ -17,7 +17,7 @@ import ListCoinsForwardingAutomationsE401 from './ListCoinsForwardingAutomations
 /**
  * The ListCoinsForwardingAutomations401Response model module.
  * @module model/ListCoinsForwardingAutomations401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListCoinsForwardingAutomations401Response {
     /**

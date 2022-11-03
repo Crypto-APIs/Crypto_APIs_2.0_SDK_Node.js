@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewBlockRBDataItem model module.
  * @module model/NewBlockRBDataItem
- * @version 1.9.0
- */var NewBlockRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewBlockRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewBlockRBDataItem</code>.
    * @alias module:model/NewBlockRBDataItem
@@ -61,11 +62,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewBlockRBDataItem;
-}(); /**
-      * Specifies a flag that permits or denies the creation of duplicate addresses.
-      * @member {Boolean} allowDuplicates
-      * @default false
-      */
+}();
+/**
+ * Specifies a flag that permits or denies the creation of duplicate addresses.
+ * @member {Boolean} allowDuplicates
+ * @default false
+ */
 NewBlockRBDataItem.prototype['allowDuplicates'] = false;
 
 /**

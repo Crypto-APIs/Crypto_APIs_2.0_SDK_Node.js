@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetTransactionRequestDetailsRI model module.
  * @module model/GetTransactionRequestDetailsRI
- * @version 1.9.0
- */var GetTransactionRequestDetailsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetTransactionRequestDetailsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionRequestDetailsRI</code>.
    * @alias module:model/GetTransactionRequestDetailsRI
@@ -104,10 +105,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetTransactionRequestDetailsRI;
-}(); /**
-      * Defines an optional note for additional details.
-      * @member {String} additionalDetails
-      */
+}();
+/**
+ * Defines an optional note for additional details.
+ * @member {String} additionalDetails
+ */
 GetTransactionRequestDetailsRI.prototype['additionalDetails'] = undefined;
 
 /**

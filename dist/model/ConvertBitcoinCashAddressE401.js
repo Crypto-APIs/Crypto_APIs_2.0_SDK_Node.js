@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConvertBitcoinCashAddressE401 model module.
  * @module model/ConvertBitcoinCashAddressE401
- * @version 1.9.0
- */var ConvertBitcoinCashAddressE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConvertBitcoinCashAddressE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConvertBitcoinCashAddressE401</code>.
    * @alias module:model/ConvertBitcoinCashAddressE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConvertBitcoinCashAddressE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ConvertBitcoinCashAddressE401.prototype['code'] = undefined;
 
 /**

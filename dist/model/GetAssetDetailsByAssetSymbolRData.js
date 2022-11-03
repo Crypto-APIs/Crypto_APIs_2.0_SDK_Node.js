@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetSymbolRData model module.
  * @module model/GetAssetDetailsByAssetSymbolRData
- * @version 1.9.0
- */var GetAssetDetailsByAssetSymbolRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetSymbolRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetSymbolRData</code>.
    * @alias module:model/GetAssetDetailsByAssetSymbolRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetSymbolRData;
-}(); /**
-      * @member {module:model/GetAssetDetailsByAssetSymbolRI} item
-      */
+}();
+/**
+ * @member {module:model/GetAssetDetailsByAssetSymbolRI} item
+ */
 GetAssetDetailsByAssetSymbolRData.prototype['item'] = undefined;
 var _default = GetAssetDetailsByAssetSymbolRData;
 exports["default"] = _default;

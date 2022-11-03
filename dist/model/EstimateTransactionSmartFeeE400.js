@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTransactionSmartFeeE400 model module.
  * @module model/EstimateTransactionSmartFeeE400
- * @version 1.9.0
- */var EstimateTransactionSmartFeeE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTransactionSmartFeeE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTransactionSmartFeeE400</code>.
    * @alias module:model/EstimateTransactionSmartFeeE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTransactionSmartFeeE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 EstimateTransactionSmartFeeE400.prototype['code'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListAllAssetsFromAllWalletsRI model module.
  * @module model/ListAllAssetsFromAllWalletsRI
- * @version 1.9.0
- */var ListAllAssetsFromAllWalletsRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListAllAssetsFromAllWalletsRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListAllAssetsFromAllWalletsRI</code>.
    * @alias module:model/ListAllAssetsFromAllWalletsRI
@@ -78,9 +79,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListAllAssetsFromAllWalletsRI;
-}(); /**
-      * @member {Array.<module:model/ListAllAssetsFromAllWalletsRICoinsInner>} coins
-      */
+}();
+/**
+ * @member {Array.<module:model/ListAllAssetsFromAllWalletsRICoinsInner>} coins
+ */
 ListAllAssetsFromAllWalletsRI.prototype['coins'] = undefined;
 
 /**

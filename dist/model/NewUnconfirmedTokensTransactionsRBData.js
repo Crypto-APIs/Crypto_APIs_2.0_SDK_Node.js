@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewUnconfirmedTokensTransactionsRBData model module.
  * @module model/NewUnconfirmedTokensTransactionsRBData
- * @version 1.9.0
- */var NewUnconfirmedTokensTransactionsRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewUnconfirmedTokensTransactionsRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewUnconfirmedTokensTransactionsRBData</code>.
    * @alias module:model/NewUnconfirmedTokensTransactionsRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewUnconfirmedTokensTransactionsRBData;
-}(); /**
-      * @member {module:model/NewUnconfirmedTokensTransactionsRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/NewUnconfirmedTokensTransactionsRBDataItem} item
+ */
 NewUnconfirmedTokensTransactionsRBData.prototype['item'] = undefined;
 var _default = NewUnconfirmedTokensTransactionsRBData;
 exports["default"] = _default;

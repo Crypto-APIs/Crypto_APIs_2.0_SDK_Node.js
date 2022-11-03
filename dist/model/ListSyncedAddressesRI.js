@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSyncedAddressesRI model module.
  * @module model/ListSyncedAddressesRI
- * @version 1.9.0
- */var ListSyncedAddressesRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSyncedAddressesRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSyncedAddressesRI</code>.
    * @alias module:model/ListSyncedAddressesRI
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSyncedAddressesRI;
-}(); /**
-      * Represents the address.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address.
+ * @member {String} address
+ */
 ListSyncedAddressesRI.prototype['address'] = undefined;
 
 /**

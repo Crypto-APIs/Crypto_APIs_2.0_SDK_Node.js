@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The TokensForwardingSuccessOmni model module.
  * @module model/TokensForwardingSuccessOmni
- * @version 1.9.0
- */var TokensForwardingSuccessOmni = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var TokensForwardingSuccessOmni = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingSuccessOmni</code>.
    * OMNI
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return TokensForwardingSuccessOmni;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 TokensForwardingSuccessOmni.prototype['name'] = undefined;
 
 /**

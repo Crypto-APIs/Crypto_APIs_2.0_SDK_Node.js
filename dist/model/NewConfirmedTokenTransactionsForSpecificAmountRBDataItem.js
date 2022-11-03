@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmountRBDataItem model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmountRBDataItem
- * @version 1.9.0
- */var NewConfirmedTokenTransactionsForSpecificAmountRBDataItem = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedTokenTransactionsForSpecificAmountRBDataItem = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokenTransactionsForSpecificAmountRBDataItem</code>.
    * @alias module:model/NewConfirmedTokenTransactionsForSpecificAmountRBDataItem
@@ -71,11 +72,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedTokenTransactionsForSpecificAmountRBDataItem;
-}(); /**
-      * Specifies a flag that permits or denies the creation of duplicate addresses.
-      * @member {Boolean} allowDuplicates
-      * @default false
-      */
+}();
+/**
+ * Specifies a flag that permits or denies the creation of duplicate addresses.
+ * @member {Boolean} allowDuplicates
+ * @default false
+ */
 NewConfirmedTokenTransactionsForSpecificAmountRBDataItem.prototype['allowDuplicates'] = false;
 
 /**

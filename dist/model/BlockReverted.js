@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BlockReverted model module.
  * @module model/BlockReverted
- * @version 1.9.0
- */var BlockReverted = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BlockReverted = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BlockReverted</code>.
    * @alias module:model/BlockReverted
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BlockReverted;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 BlockReverted.prototype['apiVersion'] = undefined;
 
 /**

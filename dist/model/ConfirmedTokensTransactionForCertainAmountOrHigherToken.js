@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherToken model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherToken
- * @version 1.9.0
- */var ConfirmedTokensTransactionForCertainAmountOrHigherToken = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ConfirmedTokensTransactionForCertainAmountOrHigherToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ConfirmedTokensTransactionForCertainAmountOrHigherToken</code>.
    * @alias module:model/ConfirmedTokensTransactionForCertainAmountOrHigherToken
@@ -90,10 +91,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ConfirmedTokensTransactionForCertainAmountOrHigherToken;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 ConfirmedTokensTransactionForCertainAmountOrHigherToken.prototype['name'] = undefined;
 
 /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TokensForwardingSuccessErc20 model module.
  * @module model/TokensForwardingSuccessErc20
- * @version 1.9.0
+ * @version 1.10.0
  */
 class TokensForwardingSuccessErc20 {
     /**

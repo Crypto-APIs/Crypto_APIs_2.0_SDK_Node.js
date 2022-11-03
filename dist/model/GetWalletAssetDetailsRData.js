@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletAssetDetailsRData model module.
  * @module model/GetWalletAssetDetailsRData
- * @version 1.9.0
- */var GetWalletAssetDetailsRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletAssetDetailsRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletAssetDetailsRData</code>.
    * @alias module:model/GetWalletAssetDetailsRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletAssetDetailsRData;
-}(); /**
-      * @member {module:model/GetWalletAssetDetailsRI} item
-      */
+}();
+/**
+ * @member {module:model/GetWalletAssetDetailsRI} item
+ */
 GetWalletAssetDetailsRData.prototype['item'] = undefined;
 var _default = GetWalletAssetDetailsRData;
 exports["default"] = _default;

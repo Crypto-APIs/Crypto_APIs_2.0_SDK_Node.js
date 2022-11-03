@@ -17,7 +17,7 @@ import AddressCoinsTransactionConfirmedEachConfirmationData from './AddressCoins
 /**
  * The AddressCoinsTransactionConfirmedEachConfirmation model module.
  * @module model/AddressCoinsTransactionConfirmedEachConfirmation
- * @version 1.9.0
+ * @version 1.10.0
  */
 class AddressCoinsTransactionConfirmedEachConfirmation {
     /**

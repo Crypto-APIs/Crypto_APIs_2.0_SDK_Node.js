@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The BroadcastLocallySignedTransactionRBData model module.
  * @module model/BroadcastLocallySignedTransactionRBData
- * @version 1.9.0
- */var BroadcastLocallySignedTransactionRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var BroadcastLocallySignedTransactionRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>BroadcastLocallySignedTransactionRBData</code>.
    * @alias module:model/BroadcastLocallySignedTransactionRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return BroadcastLocallySignedTransactionRBData;
-}(); /**
-      * @member {module:model/BroadcastLocallySignedTransactionRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/BroadcastLocallySignedTransactionRBDataItem} item
+ */
 BroadcastLocallySignedTransactionRBData.prototype['item'] = undefined;
 var _default = BroadcastLocallySignedTransactionRBData;
 exports["default"] = _default;

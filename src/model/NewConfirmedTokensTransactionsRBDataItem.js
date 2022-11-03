@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedTokensTransactionsRBDataItem model module.
  * @module model/NewConfirmedTokensTransactionsRBDataItem
- * @version 1.9.0
+ * @version 1.10.0
  */
 class NewConfirmedTokensTransactionsRBDataItem {
     /**

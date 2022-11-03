@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockR model module.
  * @module model/GetLastMinedBlockR
- * @version 1.9.0
- */var GetLastMinedBlockR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlockR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockR</code>.
    * @alias module:model/GetLastMinedBlockR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlockR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GetLastMinedBlockR.prototype['apiVersion'] = undefined;
 
 /**

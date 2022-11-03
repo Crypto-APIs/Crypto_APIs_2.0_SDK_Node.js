@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListWalletTransactionsRIFee model module.
  * @module model/ListWalletTransactionsRIFee
- * @version 1.9.0
- */var ListWalletTransactionsRIFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListWalletTransactionsRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListWalletTransactionsRIFee</code>.
    * @alias module:model/ListWalletTransactionsRIFee
@@ -70,10 +71,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListWalletTransactionsRIFee;
-}(); /**
-      * Defines the fee for the transaction.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the fee for the transaction.
+ * @member {String} amount
+ */
 ListWalletTransactionsRIFee.prototype['amount'] = undefined;
 
 /**

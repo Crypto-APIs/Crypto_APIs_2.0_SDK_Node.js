@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ActivateBlockchainEventSubscriptionR model module.
  * @module model/ActivateBlockchainEventSubscriptionR
- * @version 1.9.0
- */var ActivateBlockchainEventSubscriptionR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ActivateBlockchainEventSubscriptionR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ActivateBlockchainEventSubscriptionR</code>.
    * @alias module:model/ActivateBlockchainEventSubscriptionR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ActivateBlockchainEventSubscriptionR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ActivateBlockchainEventSubscriptionR.prototype['apiVersion'] = undefined;
 
 /**

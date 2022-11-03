@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListLatestMinedBlocks400Response model module.
  * @module model/ListLatestMinedBlocks400Response
- * @version 1.9.0
- */var ListLatestMinedBlocks400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListLatestMinedBlocks400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListLatestMinedBlocks400Response</code>.
    * @alias module:model/ListLatestMinedBlocks400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListLatestMinedBlocks400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListLatestMinedBlocks400Response.prototype['apiVersion'] = undefined;
 
 /**

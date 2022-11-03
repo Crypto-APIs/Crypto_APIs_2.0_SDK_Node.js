@@ -27,8 +27,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListConfirmedTransactionsByAddressRIBS model module.
  * @module model/ListConfirmedTransactionsByAddressRIBS
- * @version 1.9.0
- */var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListConfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListConfirmedTransactionsByAddressRIBS</code>.
    * @alias module:model/ListConfirmedTransactionsByAddressRIBS
@@ -217,10 +218,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListConfirmedTransactionsByAddressRIBS;
-}(); /**
-      * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-      * @member {Number} locktime
-      */
+}();
+/**
+ * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
+ * @member {Number} locktime
+ */
 ListConfirmedTransactionsByAddressRIBS.prototype['locktime'] = undefined;
 
 /**

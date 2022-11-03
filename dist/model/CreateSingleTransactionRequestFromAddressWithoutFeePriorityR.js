@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityR model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityR
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriorityR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriorityR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityR</code>.
    * @alias module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriorityR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriorityR.prototype['apiVersion'] = undefined;
 
 /**

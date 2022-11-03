@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAssetDetailsByAssetIDRISC model module.
  * @module model/GetAssetDetailsByAssetIDRISC
- * @version 1.9.0
- */var GetAssetDetailsByAssetIDRISC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAssetDetailsByAssetIDRISC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAssetDetailsByAssetIDRISC</code>.
    * Crypto Type Data
@@ -91,10 +92,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAssetDetailsByAssetIDRISC;
-}(); /**
-      * Represents the percentage of the asset's current price against the its price from 1 hour ago.
-      * @member {String} 1HourPriceChangeInPercentage
-      */
+}();
+/**
+ * Represents the percentage of the asset's current price against the its price from 1 hour ago.
+ * @member {String} 1HourPriceChangeInPercentage
+ */
 GetAssetDetailsByAssetIDRISC.prototype['1HourPriceChangeInPercentage'] = undefined;
 
 /**

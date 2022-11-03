@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDRIFee model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDRIFee
- * @version 1.9.0
- */var GetXRPRippleTransactionDetailsByTransactionIDRIFee = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleTransactionDetailsByTransactionIDRIFee = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleTransactionDetailsByTransactionIDRIFee</code>.
    * @alias module:model/GetXRPRippleTransactionDetailsByTransactionIDRIFee
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleTransactionDetailsByTransactionIDRIFee;
-}(); /**
-      * Defines the amount of the fee.
-      * @member {String} amount
-      */
+}();
+/**
+ * Defines the amount of the fee.
+ * @member {String} amount
+ */
 GetXRPRippleTransactionDetailsByTransactionIDRIFee.prototype['amount'] = undefined;
 
 /**

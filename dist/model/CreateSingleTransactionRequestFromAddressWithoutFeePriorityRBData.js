@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData
- * @version 1.9.0
- */var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData</code>.
    * @alias module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData;
-}(); /**
-      * @member {module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem} item
+ */
 CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData.prototype['item'] = undefined;
 var _default = CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBData;
 exports["default"] = _default;

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTransactionSmartFee501Response model module.
  * @module model/EstimateTransactionSmartFee501Response
- * @version 1.9.0
- */var EstimateTransactionSmartFee501Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTransactionSmartFee501Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTransactionSmartFee501Response</code>.
    * @alias module:model/EstimateTransactionSmartFee501Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTransactionSmartFee501Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 EstimateTransactionSmartFee501Response.prototype['apiVersion'] = undefined;
 
 /**

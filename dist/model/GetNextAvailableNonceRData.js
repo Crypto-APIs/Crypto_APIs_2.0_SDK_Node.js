@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetNextAvailableNonceRData model module.
  * @module model/GetNextAvailableNonceRData
- * @version 1.9.0
- */var GetNextAvailableNonceRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetNextAvailableNonceRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetNextAvailableNonceRData</code>.
    * @alias module:model/GetNextAvailableNonceRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetNextAvailableNonceRData;
-}(); /**
-      * @member {module:model/GetNextAvailableNonceRI} item
-      */
+}();
+/**
+ * @member {module:model/GetNextAvailableNonceRI} item
+ */
 GetNextAvailableNonceRData.prototype['item'] = undefined;
 var _default = GetNextAvailableNonceRData;
 exports["default"] = _default;

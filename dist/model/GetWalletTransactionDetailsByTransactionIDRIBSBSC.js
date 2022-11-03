@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBSC model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBSC
- * @version 1.9.0
- */var GetWalletTransactionDetailsByTransactionIDRIBSBSC = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetWalletTransactionDetailsByTransactionIDRIBSBSC = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetWalletTransactionDetailsByTransactionIDRIBSBSC</code>.
    * Binance Smart Chain
@@ -82,10 +83,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetWalletTransactionDetailsByTransactionIDRIBSBSC;
-}(); /**
-      * Represents the specific transaction contract
-      * @member {String} contract
-      */
+}();
+/**
+ * Represents the specific transaction contract
+ * @member {String} contract
+ */
 GetWalletTransactionDetailsByTransactionIDRIBSBSC.prototype['contract'] = undefined;
 
 /**

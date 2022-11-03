@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EstimateTokenGasLimitRData model module.
  * @module model/EstimateTokenGasLimitRData
- * @version 1.9.0
- */var EstimateTokenGasLimitRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EstimateTokenGasLimitRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EstimateTokenGasLimitRData</code>.
    * @alias module:model/EstimateTokenGasLimitRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EstimateTokenGasLimitRData;
-}(); /**
-      * @member {module:model/EstimateTokenGasLimitRI} item
-      */
+}();
+/**
+ * @member {module:model/EstimateTokenGasLimitRI} item
+ */
 EstimateTokenGasLimitRData.prototype['item'] = undefined;
 var _default = EstimateTokenGasLimitRData;
 exports["default"] = _default;

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListSupportedAssets401Response model module.
  * @module model/ListSupportedAssets401Response
- * @version 1.9.0
- */var ListSupportedAssets401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListSupportedAssets401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedAssets401Response</code>.
    * @alias module:model/ListSupportedAssets401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListSupportedAssets401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListSupportedAssets401Response.prototype['apiVersion'] = undefined;
 
 /**

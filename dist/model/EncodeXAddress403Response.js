@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The EncodeXAddress403Response model module.
  * @module model/EncodeXAddress403Response
- * @version 1.9.0
- */var EncodeXAddress403Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var EncodeXAddress403Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>EncodeXAddress403Response</code>.
    * @alias module:model/EncodeXAddress403Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return EncodeXAddress403Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 EncodeXAddress403Response.prototype['apiVersion'] = undefined;
 
 /**

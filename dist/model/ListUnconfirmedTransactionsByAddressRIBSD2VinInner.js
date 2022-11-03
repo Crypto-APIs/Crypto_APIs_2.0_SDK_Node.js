@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSD2VinInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSD2VinInner
- * @version 1.9.0
- */var ListUnconfirmedTransactionsByAddressRIBSD2VinInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListUnconfirmedTransactionsByAddressRIBSD2VinInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBSD2VinInner</code>.
    * @alias module:model/ListUnconfirmedTransactionsByAddressRIBSD2VinInner
@@ -84,9 +85,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBSD2VinInner;
-}(); /**
-      * @member {Array.<String>} addresses
-      */
+}();
+/**
+ * @member {Array.<String>} addresses
+ */
 ListUnconfirmedTransactionsByAddressRIBSD2VinInner.prototype['addresses'] = undefined;
 
 /**

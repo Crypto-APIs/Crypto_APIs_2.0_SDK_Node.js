@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DecodeRawTransactionHexRISLVoutInnerScriptPubKey model module.
  * @module model/DecodeRawTransactionHexRISLVoutInnerScriptPubKey
- * @version 1.9.0
- */var DecodeRawTransactionHexRISLVoutInnerScriptPubKey = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DecodeRawTransactionHexRISLVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DecodeRawTransactionHexRISLVoutInnerScriptPubKey</code>.
    * Represents the script public key.
@@ -65,10 +66,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DecodeRawTransactionHexRISLVoutInnerScriptPubKey;
-}(); /**
-      * Represents the addresses which send the amount.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the addresses which send the amount.
+ * @member {String} address
+ */
 DecodeRawTransactionHexRISLVoutInnerScriptPubKey.prototype['address'] = undefined;
 
 /**

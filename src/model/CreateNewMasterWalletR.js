@@ -17,7 +17,7 @@ import CreateNewMasterWalletRData from './CreateNewMasterWalletRData';
 /**
  * The CreateNewMasterWalletR model module.
  * @module model/CreateNewMasterWalletR
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateNewMasterWalletR {
     /**

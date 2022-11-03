@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHeightRIBSDVinInnerScriptSig model module.
  * @module model/ListTransactionsByBlockHeightRIBSDVinInnerScriptSig
- * @version 1.9.0
- */var ListTransactionsByBlockHeightRIBSDVinInnerScriptSig = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHeightRIBSDVinInnerScriptSig = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHeightRIBSDVinInnerScriptSig</code>.
    * Specifies the required signatures.
@@ -66,10 +67,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHeightRIBSDVinInnerScriptSig;
-}(); /**
-      * The asm strands for assembly, which is the symbolic representation of the Bitcoin's Script language op-codes.
-      * @member {String} asm
-      */
+}();
+/**
+ * The asm strands for assembly, which is the symbolic representation of the Bitcoin's Script language op-codes.
+ * @member {String} asm
+ */
 ListTransactionsByBlockHeightRIBSDVinInnerScriptSig.prototype['asm'] = undefined;
 
 /**

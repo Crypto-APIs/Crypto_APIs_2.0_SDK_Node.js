@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactions409Response model module.
  * @module model/NewConfirmedTokensTransactions409Response
- * @version 1.9.0
- */var NewConfirmedTokensTransactions409Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedTokensTransactions409Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokensTransactions409Response</code>.
    * @alias module:model/NewConfirmedTokensTransactions409Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedTokensTransactions409Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedTokensTransactions409Response.prototype['apiVersion'] = undefined;
 
 /**

@@ -15,8 +15,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ActivateBlockchainEventSubscriptionE401 model module.
  * @module model/ActivateBlockchainEventSubscriptionE401
- * @version 1.9.0
- */var ActivateBlockchainEventSubscriptionE401 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ActivateBlockchainEventSubscriptionE401 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ActivateBlockchainEventSubscriptionE401</code>.
    * @alias module:model/ActivateBlockchainEventSubscriptionE401
@@ -72,10 +73,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ActivateBlockchainEventSubscriptionE401;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ActivateBlockchainEventSubscriptionE401.prototype['code'] = undefined;
 
 /**

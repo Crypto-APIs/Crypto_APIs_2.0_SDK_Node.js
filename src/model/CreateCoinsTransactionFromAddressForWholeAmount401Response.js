@@ -17,7 +17,7 @@ import CreateCoinsTransactionFromAddressForWholeAmountE401 from './CreateCoinsTr
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmount401Response model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmount401Response
- * @version 1.9.0
+ * @version 1.10.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmount401Response {
     /**

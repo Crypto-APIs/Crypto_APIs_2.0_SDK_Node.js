@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The AddressTokensTransactionUnconfirmedErc721 model module.
  * @module model/AddressTokensTransactionUnconfirmedErc721
- * @version 1.9.0
- */var AddressTokensTransactionUnconfirmedErc721 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var AddressTokensTransactionUnconfirmedErc721 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>AddressTokensTransactionUnconfirmedErc721</code>.
    * ERC-721
@@ -71,10 +72,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return AddressTokensTransactionUnconfirmedErc721;
-}(); /**
-      * Specifies the name of the token.
-      * @member {String} name
-      */
+}();
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
 AddressTokensTransactionUnconfirmedErc721.prototype['name'] = undefined;
 
 /**

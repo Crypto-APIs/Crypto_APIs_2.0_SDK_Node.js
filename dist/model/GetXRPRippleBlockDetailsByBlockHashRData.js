@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRData model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRData
- * @version 1.9.0
- */var GetXRPRippleBlockDetailsByBlockHashRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetXRPRippleBlockDetailsByBlockHashRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetXRPRippleBlockDetailsByBlockHashRData</code>.
    * @alias module:model/GetXRPRippleBlockDetailsByBlockHashRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetXRPRippleBlockDetailsByBlockHashRData;
-}(); /**
-      * @member {module:model/GetXRPRippleBlockDetailsByBlockHashRI} item
-      */
+}();
+/**
+ * @member {module:model/GetXRPRippleBlockDetailsByBlockHashRI} item
+ */
 GetXRPRippleBlockDetailsByBlockHashRData.prototype['item'] = undefined;
 var _default = GetXRPRippleBlockDetailsByBlockHashRData;
 exports["default"] = _default;

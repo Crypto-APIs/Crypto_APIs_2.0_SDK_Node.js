@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByBlockHashRIValue from './ListXRPRippleTransact
 /**
  * The ListXRPRippleTransactionsByBlockHashRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRI
- * @version 1.9.0
+ * @version 1.10.0
  */
 class ListXRPRippleTransactionsByBlockHashRI {
     /**
@@ -30,6 +30,7 @@ class ListXRPRippleTransactionsByBlockHashRI {
      * @alias module:model/ListXRPRippleTransactionsByBlockHashRI
      * @param index {Number} Represents the index position of the transaction in the specific block.
      * @param minedInBlockHeight {Number} Represents the hight of the block where this transaction was mined/confirmed for first time. The height is defined as the number of blocks in the blockchain preceding this specific block.
+     * @param offer {module:model/ListXRPRippleTransactionsByBlockHashRIOffer} 
      * @param recipients {Array.<module:model/ListXRPRippleTransactionsByBlockHashRIRecipientsInner>} Represents an object of addresses that receive the transactions.
      * @param senders {Array.<module:model/ListXRPRippleTransactionsByBlockHashRISendersInner>} Represents an object of addresses that provide the funds.
      * @param sequence {Number} Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
@@ -38,13 +39,12 @@ class ListXRPRippleTransactionsByBlockHashRI {
      * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
      * @param type {String} Defines the type of the transaction.
      * @param fee {module:model/ListXRPRippleTransactionsByBlockHashRIFee} 
-     * @param offer {module:model/ListXRPRippleTransactionsByBlockHashRIOffer} 
      * @param receive {module:model/ListXRPRippleTransactionsByBlockHashRIReceive} 
      * @param value {module:model/ListXRPRippleTransactionsByBlockHashRIValue} 
      */
-    constructor(index, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value) { 
+    constructor(index, minedInBlockHeight, offer, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, receive, value) { 
         
-        ListXRPRippleTransactionsByBlockHashRI.initialize(this, index, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value);
+        ListXRPRippleTransactionsByBlockHashRI.initialize(this, index, minedInBlockHeight, offer, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, receive, value);
     }
 
     /**
@@ -52,9 +52,10 @@ class ListXRPRippleTransactionsByBlockHashRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, index, minedInBlockHeight, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, offer, receive, value) { 
+    static initialize(obj, index, minedInBlockHeight, offer, recipients, senders, sequence, status, timestamp, transactionHash, type, fee, receive, value) { 
         obj['index'] = index;
         obj['minedInBlockHeight'] = minedInBlockHeight;
+        obj['offer'] = offer;
         obj['recipients'] = recipients;
         obj['senders'] = senders;
         obj['sequence'] = sequence;
@@ -63,7 +64,6 @@ class ListXRPRippleTransactionsByBlockHashRI {
         obj['transactionHash'] = transactionHash;
         obj['type'] = type;
         obj['fee'] = fee;
-        obj['offer'] = offer;
         obj['receive'] = receive;
         obj['value'] = value;
     }
@@ -91,6 +91,9 @@ class ListXRPRippleTransactionsByBlockHashRI {
             if (data.hasOwnProperty('minedInBlockHeight')) {
                 obj['minedInBlockHeight'] = ApiClient.convertToType(data['minedInBlockHeight'], 'Number');
             }
+            if (data.hasOwnProperty('offer')) {
+                obj['offer'] = ListXRPRippleTransactionsByBlockHashRIOffer.constructFromObject(data['offer']);
+            }
             if (data.hasOwnProperty('recipients')) {
                 obj['recipients'] = ApiClient.convertToType(data['recipients'], [ListXRPRippleTransactionsByBlockHashRIRecipientsInner]);
             }
@@ -114,9 +117,6 @@ class ListXRPRippleTransactionsByBlockHashRI {
             }
             if (data.hasOwnProperty('fee')) {
                 obj['fee'] = ListXRPRippleTransactionsByBlockHashRIFee.constructFromObject(data['fee']);
-            }
-            if (data.hasOwnProperty('offer')) {
-                obj['offer'] = ListXRPRippleTransactionsByBlockHashRIOffer.constructFromObject(data['offer']);
             }
             if (data.hasOwnProperty('receive')) {
                 obj['receive'] = ListXRPRippleTransactionsByBlockHashRIReceive.constructFromObject(data['receive']);
@@ -153,6 +153,11 @@ ListXRPRippleTransactionsByBlockHashRI.prototype['index'] = undefined;
  * @member {Number} minedInBlockHeight
  */
 ListXRPRippleTransactionsByBlockHashRI.prototype['minedInBlockHeight'] = undefined;
+
+/**
+ * @member {module:model/ListXRPRippleTransactionsByBlockHashRIOffer} offer
+ */
+ListXRPRippleTransactionsByBlockHashRI.prototype['offer'] = undefined;
 
 /**
  * Represents an object of addresses that receive the transactions.
@@ -200,11 +205,6 @@ ListXRPRippleTransactionsByBlockHashRI.prototype['type'] = undefined;
  * @member {module:model/ListXRPRippleTransactionsByBlockHashRIFee} fee
  */
 ListXRPRippleTransactionsByBlockHashRI.prototype['fee'] = undefined;
-
-/**
- * @member {module:model/ListXRPRippleTransactionsByBlockHashRIOffer} offer
- */
-ListXRPRippleTransactionsByBlockHashRI.prototype['offer'] = undefined;
 
 /**
  * @member {module:model/ListXRPRippleTransactionsByBlockHashRIReceive} receive

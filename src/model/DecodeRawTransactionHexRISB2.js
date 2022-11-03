@@ -18,7 +18,7 @@ import DecodeRawTransactionHexRISB2VoutInner from './DecodeRawTransactionHexRISB
 /**
  * The DecodeRawTransactionHexRISB2 model module.
  * @module model/DecodeRawTransactionHexRISB2
- * @version 1.9.0
+ * @version 1.10.0
  */
 class DecodeRawTransactionHexRISB2 {
     /**

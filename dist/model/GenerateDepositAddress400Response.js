@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GenerateDepositAddress400Response model module.
  * @module model/GenerateDepositAddress400Response
- * @version 1.9.0
- */var GenerateDepositAddress400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GenerateDepositAddress400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GenerateDepositAddress400Response</code>.
    * @alias module:model/GenerateDepositAddress400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GenerateDepositAddress400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 GenerateDepositAddress400Response.prototype['apiVersion'] = undefined;
 
 /**

@@ -18,8 +18,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListDepositAddressesE403 model module.
  * @module model/ListDepositAddressesE403
- * @version 1.9.0
- */var ListDepositAddressesE403 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListDepositAddressesE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListDepositAddressesE403</code>.
    * @alias module:model/ListDepositAddressesE403
@@ -84,10 +85,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListDepositAddressesE403;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 ListDepositAddressesE403.prototype['code'] = undefined;
 
 /**

@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetLastMinedBlockRData model module.
  * @module model/GetLastMinedBlockRData
- * @version 1.9.0
- */var GetLastMinedBlockRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetLastMinedBlockRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockRData</code>.
    * @alias module:model/GetLastMinedBlockRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetLastMinedBlockRData;
-}(); /**
-      * @member {module:model/GetLastMinedBlockRI} item
-      */
+}();
+/**
+ * @member {module:model/GetLastMinedBlockRI} item
+ */
 GetLastMinedBlockRData.prototype['item'] = undefined;
 var _default = GetLastMinedBlockRData;
 exports["default"] = _default;

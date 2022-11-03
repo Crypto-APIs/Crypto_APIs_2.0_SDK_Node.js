@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ActivateBlockchainEventSubscriptionRI model module.
  * @module model/ActivateBlockchainEventSubscriptionRI
- * @version 1.9.0
- */var ActivateBlockchainEventSubscriptionRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ActivateBlockchainEventSubscriptionRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ActivateBlockchainEventSubscriptionRI</code>.
    * @alias module:model/ActivateBlockchainEventSubscriptionRI
@@ -105,10 +106,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ActivateBlockchainEventSubscriptionRI;
-}(); /**
-      * Represents the address of the transaction, per which the result is returned.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the address of the transaction, per which the result is returned.
+ * @member {String} address
+ */
 ActivateBlockchainEventSubscriptionRI.prototype['address'] = undefined;
 
 /**

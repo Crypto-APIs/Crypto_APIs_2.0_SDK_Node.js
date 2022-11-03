@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The CreateAutomaticCoinsForwardingRI model module.
  * @module model/CreateAutomaticCoinsForwardingRI
- * @version 1.9.0
- */var CreateAutomaticCoinsForwardingRI = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var CreateAutomaticCoinsForwardingRI = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateAutomaticCoinsForwardingRI</code>.
    * @alias module:model/CreateAutomaticCoinsForwardingRI
@@ -90,10 +91,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return CreateAutomaticCoinsForwardingRI;
-}(); /**
-      * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
-      * @member {String} callbackUrl
-      */
+}();
+/**
+ * Represents the URL that is set by the customer where the callback will be received at. The callback notification will be received only if and when the event occurs. `We support ONLY httpS type of protocol`.
+ * @member {String} callbackUrl
+ */
 CreateAutomaticCoinsForwardingRI.prototype['callbackUrl'] = undefined;
 
 /**

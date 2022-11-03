@@ -19,8 +19,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewReceivingAddressesE400 model module.
  * @module model/DeriveAndSyncNewReceivingAddressesE400
- * @version 1.9.0
- */var DeriveAndSyncNewReceivingAddressesE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewReceivingAddressesE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewReceivingAddressesE400</code>.
    * @alias module:model/DeriveAndSyncNewReceivingAddressesE400
@@ -88,10 +89,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewReceivingAddressesE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 DeriveAndSyncNewReceivingAddressesE400.prototype['code'] = undefined;
 
 /**

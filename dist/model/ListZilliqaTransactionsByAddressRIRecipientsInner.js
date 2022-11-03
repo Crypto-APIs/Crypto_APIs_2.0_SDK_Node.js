@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListZilliqaTransactionsByAddressRIRecipientsInner model module.
  * @module model/ListZilliqaTransactionsByAddressRIRecipientsInner
- * @version 1.9.0
- */var ListZilliqaTransactionsByAddressRIRecipientsInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListZilliqaTransactionsByAddressRIRecipientsInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListZilliqaTransactionsByAddressRIRecipientsInner</code>.
    * @alias module:model/ListZilliqaTransactionsByAddressRIRecipientsInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListZilliqaTransactionsByAddressRIRecipientsInner;
-}(); /**
-      * Represents the recipient's address.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the recipient's address.
+ * @member {String} address
+ */
 ListZilliqaTransactionsByAddressRIRecipientsInner.prototype['address'] = undefined;
 
 /**

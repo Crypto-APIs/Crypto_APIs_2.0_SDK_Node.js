@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetAddressDetailsFromCallbackRData model module.
  * @module model/GetAddressDetailsFromCallbackRData
- * @version 1.9.0
- */var GetAddressDetailsFromCallbackRData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetAddressDetailsFromCallbackRData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetAddressDetailsFromCallbackRData</code>.
    * @alias module:model/GetAddressDetailsFromCallbackRData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetAddressDetailsFromCallbackRData;
-}(); /**
-      * @member {module:model/GetAddressDetailsFromCallbackRI} item
-      */
+}();
+/**
+ * @member {module:model/GetAddressDetailsFromCallbackRI} item
+ */
 GetAddressDetailsFromCallbackRData.prototype['item'] = undefined;
 var _default = GetAddressDetailsFromCallbackRData;
 exports["default"] = _default;

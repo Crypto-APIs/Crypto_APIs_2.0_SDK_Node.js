@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmation401Response model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmation401Response
- * @version 1.9.0
- */var NewConfirmedTokensTransactionsAndEachConfirmation401Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewConfirmedTokensTransactionsAndEachConfirmation401Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewConfirmedTokensTransactionsAndEachConfirmation401Response</code>.
    * @alias module:model/NewConfirmedTokensTransactionsAndEachConfirmation401Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewConfirmedTokensTransactionsAndEachConfirmation401Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewConfirmedTokensTransactionsAndEachConfirmation401Response.prototype['apiVersion'] = undefined;
 
 /**

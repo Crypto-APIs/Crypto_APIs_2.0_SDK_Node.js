@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The NewRevertedBlock400Response model module.
  * @module model/NewRevertedBlock400Response
- * @version 1.9.0
- */var NewRevertedBlock400Response = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var NewRevertedBlock400Response = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>NewRevertedBlock400Response</code>.
    * @alias module:model/NewRevertedBlock400Response
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return NewRevertedBlock400Response;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 NewRevertedBlock400Response.prototype['apiVersion'] = undefined;
 
 /**

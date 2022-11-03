@@ -12,8 +12,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner
- * @version 1.9.0
- */var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner</code>.
    * @alias module:model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner
@@ -60,10 +61,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner;
-}(); /**
-      * Represents the public address, which is a compressed and shortened form of a public key.
-      * @member {String} address
-      */
+}();
+/**
+ * Represents the public address, which is a compressed and shortened form of a public key.
+ * @member {String} address
+ */
 DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner.prototype['address'] = undefined;
 
 /**

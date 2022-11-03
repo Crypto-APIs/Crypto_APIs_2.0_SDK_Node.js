@@ -18,7 +18,7 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsI
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
- * @version 1.9.0
+ * @version 1.10.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
     /**
@@ -27,11 +27,10 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
      * @param xpub {String} Defines the account extended publicly known key which is used to derive all child public keys.
      * @param fee {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee} 
      * @param recipients {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner>} Object Array representation of transaction receivers
-     * @param replaceable {Boolean} Representation whether the transaction is replaceable
      */
-    constructor(xpub, fee, recipients, replaceable) { 
+    constructor(xpub, fee, recipients) { 
         
-        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.initialize(this, xpub, fee, recipients, replaceable);
+        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.initialize(this, xpub, fee, recipients);
     }
 
     /**
@@ -39,11 +38,10 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, xpub, fee, recipients, replaceable) { 
+    static initialize(obj, xpub, fee, recipients) { 
         obj['xpub'] = xpub;
         obj['fee'] = fee;
         obj['recipients'] = recipients;
-        obj['replaceable'] = replaceable;
     }
 
     /**

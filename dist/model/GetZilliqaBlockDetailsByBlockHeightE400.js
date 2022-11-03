@@ -16,8 +16,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The GetZilliqaBlockDetailsByBlockHeightE400 model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeightE400
- * @version 1.9.0
- */var GetZilliqaBlockDetailsByBlockHeightE400 = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var GetZilliqaBlockDetailsByBlockHeightE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetZilliqaBlockDetailsByBlockHeightE400</code>.
    * @alias module:model/GetZilliqaBlockDetailsByBlockHeightE400
@@ -76,10 +77,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return GetZilliqaBlockDetailsByBlockHeightE400;
-}(); /**
-      * Specifies an error code, e.g. error 404.
-      * @member {String} code
-      */
+}();
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
 GetZilliqaBlockDetailsByBlockHeightE400.prototype['code'] = undefined;
 
 /**

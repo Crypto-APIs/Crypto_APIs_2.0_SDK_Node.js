@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The ListTransactionsByBlockHashR model module.
  * @module model/ListTransactionsByBlockHashR
- * @version 1.9.0
- */var ListTransactionsByBlockHashR = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var ListTransactionsByBlockHashR = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListTransactionsByBlockHashR</code>.
    * @alias module:model/ListTransactionsByBlockHashR
@@ -69,10 +70,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return ListTransactionsByBlockHashR;
-}(); /**
-      * Specifies the version of the API that incorporates this endpoint.
-      * @member {String} apiVersion
-      */
+}();
+/**
+ * Specifies the version of the API that incorporates this endpoint.
+ * @member {String} apiVersion
+ */
 ListTransactionsByBlockHashR.prototype['apiVersion'] = undefined;
 
 /**

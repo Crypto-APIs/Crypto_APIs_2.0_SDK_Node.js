@@ -13,8 +13,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /**
  * The DeriveAndSyncNewReceivingAddressesRBData model module.
  * @module model/DeriveAndSyncNewReceivingAddressesRBData
- * @version 1.9.0
- */var DeriveAndSyncNewReceivingAddressesRBData = /*#__PURE__*/function () {
+ * @version 1.10.0
+ */
+var DeriveAndSyncNewReceivingAddressesRBData = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>DeriveAndSyncNewReceivingAddressesRBData</code>.
    * @alias module:model/DeriveAndSyncNewReceivingAddressesRBData
@@ -56,9 +57,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }
   }]);
   return DeriveAndSyncNewReceivingAddressesRBData;
-}(); /**
-      * @member {module:model/DeriveAndSyncNewReceivingAddressesRBDataItem} item
-      */
+}();
+/**
+ * @member {module:model/DeriveAndSyncNewReceivingAddressesRBDataItem} item
+ */
 DeriveAndSyncNewReceivingAddressesRBData.prototype['item'] = undefined;
 var _default = DeriveAndSyncNewReceivingAddressesRBData;
 exports["default"] = _default;
