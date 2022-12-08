@@ -118,20 +118,20 @@
         done();
       });
     });
-    describe('prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub', function() {
-      it('should call prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub successfully', function(done) {
-        //uncomment below and update the code to test prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub
-        //instance.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(function(error) {
+    describe('prepareATransactionFromAnAddressInHDWalletXPubYPubZPub', function() {
+      it('should call prepareATransactionFromAnAddressInHDWalletXPubYPubZPub successfully', function(done) {
+        //uncomment below and update the code to test prepareATransactionFromAnAddressInHDWalletXPubYPubZPub
+        //instance.prepareATransactionFromAnAddressInHDWalletXPubYPubZPub(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
         done();
       });
     });
-    describe('prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub', function() {
-      it('should call prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub successfully', function(done) {
-        //uncomment below and update the code to test prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub
-        //instance.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(function(error) {
+    describe('prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub', function() {
+      it('should call prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub successfully', function(done) {
+        //uncomment below and update the code to test prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub
+        //instance.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

@@ -31,79 +31,174 @@ import GetTransactionDetailsByTransactionIDRIBSZVoutInner from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBS
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetTransactionDetailsByTransactionIDRIBS {
     /**
      * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBS</code>.
      * @alias module:model/GetTransactionDetailsByTransactionIDRIBS
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSB
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSBC
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSL
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSD
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSD2
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSE
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSEC
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSBSC
-     * @implements module:model/GetTransactionDetailsByTransactionIDRIBSZ
-     * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-     * @param size {Number} Represents the total size of this transaction.
-     * @param vSize {Number} Represents the virtual size of this transaction.
-     * @param version {Number} Defines the version of the transaction.
-     * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
-     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} Object Array representation of transaction outputs
-     * @param contract {String} Represents the specific transaction contract
-     * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-     * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
-     * @param gasUsed {String} Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
-     * @param inputData {String} Represents additional information that is required for the transaction.
-     * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
-     * @param transactionStatus {String} Represents the status of this transaction.
-     * @param bindingSig {String} It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
-     * @param expiryHeight {Number} Represents a block height after which the transaction will expire.
-     * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
-     * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
-     * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
-     * @param vJoinSplit {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-     * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
-     * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
-     * @param valueBalance {String} String representation of the transaction value balance
-     * @param versionGroupId {String} Represents the transaction version group ID.
+     * @param {(module:model/GetTransactionDetailsByTransactionIDRIBSB|module:model/GetTransactionDetailsByTransactionIDRIBSBC|module:model/GetTransactionDetailsByTransactionIDRIBSBSC|module:model/GetTransactionDetailsByTransactionIDRIBSD|module:model/GetTransactionDetailsByTransactionIDRIBSD2|module:model/GetTransactionDetailsByTransactionIDRIBSE|module:model/GetTransactionDetailsByTransactionIDRIBSEC|module:model/GetTransactionDetailsByTransactionIDRIBSL|module:model/GetTransactionDetailsByTransactionIDRIBSZ)} instance The actual instance to initialize GetTransactionDetailsByTransactionIDRIBS.
      */
-    constructor(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) { 
-        GetTransactionDetailsByTransactionIDRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSBC.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSD.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSD2.initialize(this, locktime, size, version, vin, vout);GetTransactionDetailsByTransactionIDRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);GetTransactionDetailsByTransactionIDRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetTransactionDetailsByTransactionIDRIBSBSC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);GetTransactionDetailsByTransactionIDRIBSZ.initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);
-        GetTransactionDetailsByTransactionIDRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSB") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSB.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSB from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSB.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSB
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSB: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) { 
-        obj['locktime'] = locktime;
-        obj['size'] = size;
-        obj['vSize'] = vSize;
-        obj['version'] = version;
-        obj['vin'] = vin;
-        obj['vout'] = vout;
-        obj['contract'] = contract;
-        obj['gasLimit'] = gasLimit;
-        obj['gasPrice'] = gasPrice;
-        obj['gasUsed'] = gasUsed;
-        obj['inputData'] = inputData;
-        obj['nonce'] = nonce;
-        obj['transactionStatus'] = transactionStatus;
-        obj['bindingSig'] = bindingSig;
-        obj['expiryHeight'] = expiryHeight;
-        obj['joinSplitPubKey'] = joinSplitPubKey;
-        obj['joinSplitSig'] = joinSplitSig;
-        obj['overwintered'] = overwintered;
-        obj['vJoinSplit'] = vJoinSplit;
-        obj['vShieldedOutput'] = vShieldedOutput;
-        obj['vShieldedSpend'] = vShieldedSpend;
-        obj['valueBalance'] = valueBalance;
-        obj['versionGroupId'] = versionGroupId;
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSBC") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSBC.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSBC from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSBC.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSBC
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSBC: " + err)
+        }
+
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSL") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSL.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSL from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSL.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSL
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSL: " + err)
+        }
+
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSD") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSD.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSD from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSD.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSD
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSD: " + err)
+        }
+
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSD2") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSD2.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSD2 from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSD2.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSD2
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSD2: " + err)
+        }
+
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSE") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSE.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSE from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSE.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSE
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSE: " + err)
+        }
+
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSEC") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSEC.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSEC from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSEC.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSEC
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSEC: " + err)
+        }
+
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSBSC") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSBSC.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSBSC from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSBSC.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSBSC
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSBSC: " + err)
+        }
+
+        try {
+            if (typeof instance === "GetTransactionDetailsByTransactionIDRIBSZ") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                GetTransactionDetailsByTransactionIDRIBSZ.validateJSON(instance); // throw an exception if no match
+                // create GetTransactionDetailsByTransactionIDRIBSZ from JS object
+                this.actualInstance = GetTransactionDetailsByTransactionIDRIBSZ.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into GetTransactionDetailsByTransactionIDRIBSZ
+            errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDRIBSZ: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `GetTransactionDetailsByTransactionIDRIBS` with oneOf schemas GetTransactionDetailsByTransactionIDRIBSB, GetTransactionDetailsByTransactionIDRIBSBC, GetTransactionDetailsByTransactionIDRIBSBSC, GetTransactionDetailsByTransactionIDRIBSD, GetTransactionDetailsByTransactionIDRIBSD2, GetTransactionDetailsByTransactionIDRIBSE, GetTransactionDetailsByTransactionIDRIBSEC, GetTransactionDetailsByTransactionIDRIBSL, GetTransactionDetailsByTransactionIDRIBSZ. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `GetTransactionDetailsByTransactionIDRIBS` with oneOf schemas GetTransactionDetailsByTransactionIDRIBSB, GetTransactionDetailsByTransactionIDRIBSBC, GetTransactionDetailsByTransactionIDRIBSBSC, GetTransactionDetailsByTransactionIDRIBSD, GetTransactionDetailsByTransactionIDRIBSD2, GetTransactionDetailsByTransactionIDRIBSE, GetTransactionDetailsByTransactionIDRIBSEC, GetTransactionDetailsByTransactionIDRIBSL, GetTransactionDetailsByTransactionIDRIBSZ. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -114,92 +209,41 @@ class GetTransactionDetailsByTransactionIDRIBS {
      * @return {module:model/GetTransactionDetailsByTransactionIDRIBS} The populated <code>GetTransactionDetailsByTransactionIDRIBS</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new GetTransactionDetailsByTransactionIDRIBS();
-            GetTransactionDetailsByTransactionIDRIBSB.constructFromObject(data, obj);
-            GetTransactionDetailsByTransactionIDRIBSBC.constructFromObject(data, obj);
-            GetTransactionDetailsByTransactionIDRIBSL.constructFromObject(data, obj);
-            GetTransactionDetailsByTransactionIDRIBSD.constructFromObject(data, obj);
-            GetTransactionDetailsByTransactionIDRIBSD2.constructFromObject(data, obj);
-            GetTransactionDetailsByTransactionIDRIBSE.constructFromObject(data, obj);
-            GetTransactionDetailsByTransactionIDRIBSEC.constructFromObject(data, obj);
-            GetTransactionDetailsByTransactionIDRIBSBSC.constructFromObject(data, obj);
-            GetTransactionDetailsByTransactionIDRIBSZ.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('locktime')) {
-                obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
-            }
-            if (data.hasOwnProperty('size')) {
-                obj['size'] = ApiClient.convertToType(data['size'], 'Number');
-            }
-            if (data.hasOwnProperty('vSize')) {
-                obj['vSize'] = ApiClient.convertToType(data['vSize'], 'Number');
-            }
-            if (data.hasOwnProperty('version')) {
-                obj['version'] = ApiClient.convertToType(data['version'], 'Number');
-            }
-            if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [GetTransactionDetailsByTransactionIDRIBSZVinInner]);
-            }
-            if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSZVoutInner]);
-            }
-            if (data.hasOwnProperty('contract')) {
-                obj['contract'] = ApiClient.convertToType(data['contract'], 'String');
-            }
-            if (data.hasOwnProperty('gasLimit')) {
-                obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'String');
-            }
-            if (data.hasOwnProperty('gasPrice')) {
-                obj['gasPrice'] = GetTransactionDetailsByTransactionIDRIBSBSCGasPrice.constructFromObject(data['gasPrice']);
-            }
-            if (data.hasOwnProperty('gasUsed')) {
-                obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'String');
-            }
-            if (data.hasOwnProperty('inputData')) {
-                obj['inputData'] = ApiClient.convertToType(data['inputData'], 'String');
-            }
-            if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
-            }
-            if (data.hasOwnProperty('transactionStatus')) {
-                obj['transactionStatus'] = ApiClient.convertToType(data['transactionStatus'], 'String');
-            }
-            if (data.hasOwnProperty('bindingSig')) {
-                obj['bindingSig'] = ApiClient.convertToType(data['bindingSig'], 'String');
-            }
-            if (data.hasOwnProperty('expiryHeight')) {
-                obj['expiryHeight'] = ApiClient.convertToType(data['expiryHeight'], 'Number');
-            }
-            if (data.hasOwnProperty('joinSplitPubKey')) {
-                obj['joinSplitPubKey'] = ApiClient.convertToType(data['joinSplitPubKey'], 'String');
-            }
-            if (data.hasOwnProperty('joinSplitSig')) {
-                obj['joinSplitSig'] = ApiClient.convertToType(data['joinSplitSig'], 'String');
-            }
-            if (data.hasOwnProperty('overwintered')) {
-                obj['overwintered'] = ApiClient.convertToType(data['overwintered'], 'Boolean');
-            }
-            if (data.hasOwnProperty('vJoinSplit')) {
-                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner]);
-            }
-            if (data.hasOwnProperty('vShieldedOutput')) {
-                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner]);
-            }
-            if (data.hasOwnProperty('vShieldedSpend')) {
-                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner]);
-            }
-            if (data.hasOwnProperty('valueBalance')) {
-                obj['valueBalance'] = ApiClient.convertToType(data['valueBalance'], 'String');
-            }
-            if (data.hasOwnProperty('versionGroupId')) {
-                obj['versionGroupId'] = ApiClient.convertToType(data['versionGroupId'], 'String');
-            }
-        }
-        return obj;
+        return new GetTransactionDetailsByTransactionIDRIBS(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>GetTransactionDetailsByTransactionIDRIBSB</code>, <code>GetTransactionDetailsByTransactionIDRIBSBC</code>, <code>GetTransactionDetailsByTransactionIDRIBSBSC</code>, <code>GetTransactionDetailsByTransactionIDRIBSD</code>, <code>GetTransactionDetailsByTransactionIDRIBSD2</code>, <code>GetTransactionDetailsByTransactionIDRIBSE</code>, <code>GetTransactionDetailsByTransactionIDRIBSEC</code>, <code>GetTransactionDetailsByTransactionIDRIBSL</code>, <code>GetTransactionDetailsByTransactionIDRIBSZ</code>.
+     * @return {(module:model/GetTransactionDetailsByTransactionIDRIBSB|module:model/GetTransactionDetailsByTransactionIDRIBSBC|module:model/GetTransactionDetailsByTransactionIDRIBSBSC|module:model/GetTransactionDetailsByTransactionIDRIBSD|module:model/GetTransactionDetailsByTransactionIDRIBSD2|module:model/GetTransactionDetailsByTransactionIDRIBSE|module:model/GetTransactionDetailsByTransactionIDRIBSEC|module:model/GetTransactionDetailsByTransactionIDRIBSL|module:model/GetTransactionDetailsByTransactionIDRIBSZ)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>GetTransactionDetailsByTransactionIDRIBSB</code>, <code>GetTransactionDetailsByTransactionIDRIBSBC</code>, <code>GetTransactionDetailsByTransactionIDRIBSBSC</code>, <code>GetTransactionDetailsByTransactionIDRIBSD</code>, <code>GetTransactionDetailsByTransactionIDRIBSD2</code>, <code>GetTransactionDetailsByTransactionIDRIBSE</code>, <code>GetTransactionDetailsByTransactionIDRIBSEC</code>, <code>GetTransactionDetailsByTransactionIDRIBSL</code>, <code>GetTransactionDetailsByTransactionIDRIBSZ</code>.
+     * @param {(module:model/GetTransactionDetailsByTransactionIDRIBSB|module:model/GetTransactionDetailsByTransactionIDRIBSBC|module:model/GetTransactionDetailsByTransactionIDRIBSBSC|module:model/GetTransactionDetailsByTransactionIDRIBSD|module:model/GetTransactionDetailsByTransactionIDRIBSD2|module:model/GetTransactionDetailsByTransactionIDRIBSE|module:model/GetTransactionDetailsByTransactionIDRIBSEC|module:model/GetTransactionDetailsByTransactionIDRIBSL|module:model/GetTransactionDetailsByTransactionIDRIBSZ)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = GetTransactionDetailsByTransactionIDRIBS.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of GetTransactionDetailsByTransactionIDRIBS from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/GetTransactionDetailsByTransactionIDRIBS} An instance of GetTransactionDetailsByTransactionIDRIBS.
+     */
+    static fromJSON = function(json_string){
+        return GetTransactionDetailsByTransactionIDRIBS.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -340,320 +384,7 @@ GetTransactionDetailsByTransactionIDRIBS.prototype['valueBalance'] = undefined;
 GetTransactionDetailsByTransactionIDRIBS.prototype['versionGroupId'] = undefined;
 
 
-// Implement GetTransactionDetailsByTransactionIDRIBSB interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-GetTransactionDetailsByTransactionIDRIBSB.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-GetTransactionDetailsByTransactionIDRIBSB.prototype['size'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vSize
- */
-GetTransactionDetailsByTransactionIDRIBSB.prototype['vSize'] = undefined;
-/**
- * Represents the transaction version number.
- * @member {Number} version
- */
-GetTransactionDetailsByTransactionIDRIBSB.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVinInner>} vin
- */
-GetTransactionDetailsByTransactionIDRIBSB.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBVoutInner>} vout
- */
-GetTransactionDetailsByTransactionIDRIBSB.prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDRIBSBC interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-GetTransactionDetailsByTransactionIDRIBSBC.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-GetTransactionDetailsByTransactionIDRIBSBC.prototype['size'] = undefined;
-/**
- * Represents transaction version number.
- * @member {Number} version
- */
-GetTransactionDetailsByTransactionIDRIBSBC.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVinInner>} vin
- */
-GetTransactionDetailsByTransactionIDRIBSBC.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} vout
- */
-GetTransactionDetailsByTransactionIDRIBSBC.prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDRIBSL interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-GetTransactionDetailsByTransactionIDRIBSL.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-GetTransactionDetailsByTransactionIDRIBSL.prototype['size'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vSize
- */
-GetTransactionDetailsByTransactionIDRIBSL.prototype['vSize'] = undefined;
-/**
- * Represents transaction version number.
- * @member {Number} version
- */
-GetTransactionDetailsByTransactionIDRIBSL.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVinInner>} vin
- */
-GetTransactionDetailsByTransactionIDRIBSL.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} vout
- */
-GetTransactionDetailsByTransactionIDRIBSL.prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDRIBSD interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-GetTransactionDetailsByTransactionIDRIBSD.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-GetTransactionDetailsByTransactionIDRIBSD.prototype['size'] = undefined;
-/**
- * Represents transaction version number.
- * @member {Number} version
- */
-GetTransactionDetailsByTransactionIDRIBSD.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVinInner>} vin
- */
-GetTransactionDetailsByTransactionIDRIBSD.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVoutInner>} vout
- */
-GetTransactionDetailsByTransactionIDRIBSD.prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDRIBSD2 interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-GetTransactionDetailsByTransactionIDRIBSD2.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-GetTransactionDetailsByTransactionIDRIBSD2.prototype['size'] = undefined;
-/**
- * Represents transaction version number.
- * @member {Number} version
- */
-GetTransactionDetailsByTransactionIDRIBSD2.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2VinInner>} vin
- */
-GetTransactionDetailsByTransactionIDRIBSD2.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSD2VoutInner>} vout
- */
-GetTransactionDetailsByTransactionIDRIBSD2.prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDRIBSE interface:
-/**
- * Represents the specific transaction contract.
- * @member {String} contract
- */
-GetTransactionDetailsByTransactionIDRIBSE.prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-GetTransactionDetailsByTransactionIDRIBSE.prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSEGasPrice} gasPrice
- */
-GetTransactionDetailsByTransactionIDRIBSE.prototype['gasPrice'] = undefined;
-/**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
- */
-GetTransactionDetailsByTransactionIDRIBSE.prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-GetTransactionDetailsByTransactionIDRIBSE.prototype['inputData'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-GetTransactionDetailsByTransactionIDRIBSE.prototype['nonce'] = undefined;
-/**
- * Represents the status of this transaction.
- * @member {String} transactionStatus
- */
-GetTransactionDetailsByTransactionIDRIBSE.prototype['transactionStatus'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDRIBSEC interface:
-/**
- * Represents the specific transaction contract.
- * @member {String} contract
- */
-GetTransactionDetailsByTransactionIDRIBSEC.prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-GetTransactionDetailsByTransactionIDRIBSEC.prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSECGasPrice} gasPrice
- */
-GetTransactionDetailsByTransactionIDRIBSEC.prototype['gasPrice'] = undefined;
-/**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
- */
-GetTransactionDetailsByTransactionIDRIBSEC.prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-GetTransactionDetailsByTransactionIDRIBSEC.prototype['inputData'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-GetTransactionDetailsByTransactionIDRIBSEC.prototype['nonce'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDRIBSBSC interface:
-/**
- * Represents the specific transaction contract
- * @member {String} contract
- */
-GetTransactionDetailsByTransactionIDRIBSBSC.prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-GetTransactionDetailsByTransactionIDRIBSBSC.prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} gasPrice
- */
-GetTransactionDetailsByTransactionIDRIBSBSC.prototype['gasPrice'] = undefined;
-/**
- * Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
- * @member {String} gasUsed
- */
-GetTransactionDetailsByTransactionIDRIBSBSC.prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-GetTransactionDetailsByTransactionIDRIBSBSC.prototype['inputData'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-GetTransactionDetailsByTransactionIDRIBSBSC.prototype['nonce'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDRIBSZ interface:
-/**
- * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
- * @member {String} bindingSig
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['bindingSig'] = undefined;
-/**
- * Represents a block height after which the transaction will expire.
- * @member {Number} expiryHeight
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['expiryHeight'] = undefined;
-/**
- * Represents an encoding of a JoinSplitSig public validating key.
- * @member {String} joinSplitPubKey
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['joinSplitPubKey'] = undefined;
-/**
- * Is used to sign transactions that contain at least one JoinSplit description.
- * @member {String} joinSplitSig
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['joinSplitSig'] = undefined;
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['locktime'] = undefined;
-/**
- * \"Overwinter\" is the network upgrade for the Zcash blockchain.
- * @member {Boolean} overwintered
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['overwintered'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['size'] = undefined;
-/**
- * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} vJoinSplit
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['vJoinSplit'] = undefined;
-/**
- * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['vShieldedOutput'] = undefined;
-/**
- * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['vShieldedSpend'] = undefined;
-/**
- * String representation of the transaction value balance
- * @member {String} valueBalance
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['valueBalance'] = undefined;
-/**
- * Defines the version of the transaction.
- * @member {Number} version
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['version'] = undefined;
-/**
- * Represents the transaction version group ID.
- * @member {String} versionGroupId
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['versionGroupId'] = undefined;
-/**
- * Object Array representation of transaction inputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} vin
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['vin'] = undefined;
-/**
- * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
- */
-GetTransactionDetailsByTransactionIDRIBSZ.prototype['vout'] = undefined;
-
-
-
+GetTransactionDetailsByTransactionIDRIBS.OneOf = ["GetTransactionDetailsByTransactionIDRIBSB", "GetTransactionDetailsByTransactionIDRIBSBC", "GetTransactionDetailsByTransactionIDRIBSBSC", "GetTransactionDetailsByTransactionIDRIBSD", "GetTransactionDetailsByTransactionIDRIBSD2", "GetTransactionDetailsByTransactionIDRIBSE", "GetTransactionDetailsByTransactionIDRIBSEC", "GetTransactionDetailsByTransactionIDRIBSL", "GetTransactionDetailsByTransactionIDRIBSZ"];
 
 export default GetTransactionDetailsByTransactionIDRIBS;
 

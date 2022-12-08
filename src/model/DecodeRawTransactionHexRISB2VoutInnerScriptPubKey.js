@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DecodeRawTransactionHexRISB2VoutInnerScriptPubKey model module.
  * @module model/DecodeRawTransactionHexRISB2VoutInnerScriptPubKey
- * @version 1.10.0
+ * @version 1.11.0
  */
 class DecodeRawTransactionHexRISB2VoutInnerScriptPubKey {
     /**
@@ -66,8 +66,42 @@ class DecodeRawTransactionHexRISB2VoutInnerScriptPubKey {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>DecodeRawTransactionHexRISB2VoutInnerScriptPubKey</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DecodeRawTransactionHexRISB2VoutInnerScriptPubKey</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of DecodeRawTransactionHexRISB2VoutInnerScriptPubKey.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
+            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
+        }
+        // ensure the json data is a string
+        if (data['asm'] && !(typeof data['asm'] === 'string' || data['asm'] instanceof String)) {
+            throw new Error("Expected the field `asm` to be a primitive type in the JSON string but got " + data['asm']);
+        }
+        // ensure the json data is a string
+        if (data['hex'] && !(typeof data['hex'] === 'string' || data['hex'] instanceof String)) {
+            throw new Error("Expected the field `hex` to be a primitive type in the JSON string but got " + data['hex']);
+        }
+        // ensure the json data is a string
+        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
+            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
+        }
+
+        return true;
+    }
+
 
 }
+
+DecodeRawTransactionHexRISB2VoutInnerScriptPubKey.RequiredProperties = ["address"];
 
 /**
  * Represents the address which send the amount.

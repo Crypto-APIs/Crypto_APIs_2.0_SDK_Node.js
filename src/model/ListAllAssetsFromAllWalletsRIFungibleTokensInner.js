@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListAllAssetsFromAllWalletsRIFungibleTokensInner model module.
  * @module model/ListAllAssetsFromAllWalletsRIFungibleTokensInner
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListAllAssetsFromAllWalletsRIFungibleTokensInner {
     /**
@@ -81,8 +81,50 @@ class ListAllAssetsFromAllWalletsRIFungibleTokensInner {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListAllAssetsFromAllWalletsRIFungibleTokensInner</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListAllAssetsFromAllWalletsRIFungibleTokensInner</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListAllAssetsFromAllWalletsRIFungibleTokensInner.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
+            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
+        }
+        // ensure the json data is a string
+        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
+            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
+        }
+        // ensure the json data is a string
+        if (data['identifier'] && !(typeof data['identifier'] === 'string' || data['identifier'] instanceof String)) {
+            throw new Error("Expected the field `identifier` to be a primitive type in the JSON string but got " + data['identifier']);
+        }
+        // ensure the json data is a string
+        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
+            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
+        }
+        // ensure the json data is a string
+        if (data['symbol'] && !(typeof data['symbol'] === 'string' || data['symbol'] instanceof String)) {
+            throw new Error("Expected the field `symbol` to be a primitive type in the JSON string but got " + data['symbol']);
+        }
+        // ensure the json data is a string
+        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
+            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListAllAssetsFromAllWalletsRIFungibleTokensInner.RequiredProperties = ["amount", "blockchain", "identifier", "network", "symbol", "type"];
 
 /**
  * Defines the amount of the fungible tokens.

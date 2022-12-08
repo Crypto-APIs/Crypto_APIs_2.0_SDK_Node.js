@@ -54,19 +54,27 @@ var _GetEIP1559FeeRecommendations401Response = _interopRequireDefault(require(".
 var _GetEIP1559FeeRecommendations403Response = _interopRequireDefault(require("../model/GetEIP1559FeeRecommendations403Response"));
 var _GetEIP1559FeeRecommendationsR = _interopRequireDefault(require("../model/GetEIP1559FeeRecommendationsR"));
 var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
+var _PrepareTransactionFromAddress400Response = _interopRequireDefault(require("../model/PrepareTransactionFromAddress400Response"));
+var _PrepareTransactionFromAddress401Response = _interopRequireDefault(require("../model/PrepareTransactionFromAddress401Response"));
+var _PrepareTransactionFromAddress403Response = _interopRequireDefault(require("../model/PrepareTransactionFromAddress403Response"));
+var _PrepareTransactionFromAddressR = _interopRequireDefault(require("../model/PrepareTransactionFromAddressR"));
+var _PrepareTransactionFromAddressRB = _interopRequireDefault(require("../model/PrepareTransactionFromAddressRB"));
 var _ValidateAddress400Response = _interopRequireDefault(require("../model/ValidateAddress400Response"));
 var _ValidateAddress401Response = _interopRequireDefault(require("../model/ValidateAddress401Response"));
 var _ValidateAddress403Response = _interopRequireDefault(require("../model/ValidateAddress403Response"));
 var _ValidateAddressR = _interopRequireDefault(require("../model/ValidateAddressR"));
 var _ValidateAddressRB = _interopRequireDefault(require("../model/ValidateAddressRB"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.10.0
+* @version 1.11.0
 */
 var FeaturesApi = /*#__PURE__*/function () {
   /**
@@ -622,6 +630,63 @@ var FeaturesApi = /*#__PURE__*/function () {
     key: "getEIP1559FeeRecommendations",
     value: function getEIP1559FeeRecommendations(network, blockchain, opts) {
       return this.getEIP1559FeeRecommendationsWithHttpInfo(network, blockchain, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+
+    /**
+     * Prepare Transaction From Address
+     * Through this endpoint customers can prepare a transaction from an address with private and public keys. The address doesn’t have to belong to a wallet.  The response will include the transaction fee in Wei.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"goerli\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareTransactionFromAddressRB} opts.prepareTransactionFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareTransactionFromAddressR} and HTTP response
+     */
+  }, {
+    key: "prepareTransactionFromAddressWithHttpInfo",
+    value: function prepareTransactionFromAddressWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['prepareTransactionFromAddressRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling prepareTransactionFromAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling prepareTransactionFromAddress");
+      }
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _PrepareTransactionFromAddressR["default"];
+      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/transactions/prepare-from-address', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+
+    /**
+     * Prepare Transaction From Address
+     * Through this endpoint customers can prepare a transaction from an address with private and public keys. The address doesn’t have to belong to a wallet.  The response will include the transaction fee in Wei.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"goerli\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareTransactionFromAddressRB} opts.prepareTransactionFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareTransactionFromAddressR}
+     */
+  }, {
+    key: "prepareTransactionFromAddress",
+    value: function prepareTransactionFromAddress(blockchain, network, opts) {
+      return this.prepareTransactionFromAddressWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

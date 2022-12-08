@@ -12,76 +12,157 @@ var _EndpointNotAllowedForPlan = _interopRequireDefault(require("./EndpointNotAl
 var _FeatureMainnetsNotAllowedForPlan = _interopRequireDefault(require("./FeatureMainnetsNotAllowedForPlan"));
 var _WalletAsAServiceWalletsLimitReached = _interopRequireDefault(require("./WalletAsAServiceWalletsLimitReached"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
  * The CreateNewMasterWalletE403 model module.
  * @module model/CreateNewMasterWalletE403
- * @version 1.10.0
+ * @version 1.11.0
  */
 var CreateNewMasterWalletE403 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>CreateNewMasterWalletE403</code>.
    * @alias module:model/CreateNewMasterWalletE403
-   * @implements module:model/BannedIpAddress
-   * @implements module:model/EndpointNotAllowedForPlan
-   * @implements module:model/EndpointNotAllowedForApiKey
-   * @implements module:model/FeatureMainnetsNotAllowedForPlan
-   * @implements module:model/WalletAsAServiceWalletsLimitReached
-   * @param code {String} Specifies an error code, e.g. error 404.
-   * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+   * @param {(module:model/BannedIpAddress|module:model/EndpointNotAllowedForApiKey|module:model/EndpointNotAllowedForPlan|module:model/FeatureMainnetsNotAllowedForPlan|module:model/WalletAsAServiceWalletsLimitReached)} instance The actual instance to initialize CreateNewMasterWalletE403.
    */
-  function CreateNewMasterWalletE403(code, message) {
+  function CreateNewMasterWalletE403() {
+    var instance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     _classCallCheck(this, CreateNewMasterWalletE403);
-    _BannedIpAddress["default"].initialize(this, code, message);
-    _EndpointNotAllowedForPlan["default"].initialize(this, code, message);
-    _EndpointNotAllowedForApiKey["default"].initialize(this, code, message);
-    _FeatureMainnetsNotAllowedForPlan["default"].initialize(this, code, message);
-    _WalletAsAServiceWalletsLimitReached["default"].initialize(this, code, message);
-    CreateNewMasterWalletE403.initialize(this, code, message);
+    _defineProperty(this, "toJSON", function () {
+      return this.getActualInstance();
+    });
+    if (instance === null) {
+      this.actualInstance = null;
+      return;
+    }
+    var match = 0;
+    var errorMessages = [];
+    try {
+      if (typeof instance === "BannedIpAddress") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _BannedIpAddress["default"].validateJSON(instance); // throw an exception if no match
+        // create BannedIpAddress from JS object
+        this.actualInstance = _BannedIpAddress["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into BannedIpAddress
+      errorMessages.push("Failed to construct BannedIpAddress: " + err);
+    }
+    try {
+      if (typeof instance === "EndpointNotAllowedForPlan") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _EndpointNotAllowedForPlan["default"].validateJSON(instance); // throw an exception if no match
+        // create EndpointNotAllowedForPlan from JS object
+        this.actualInstance = _EndpointNotAllowedForPlan["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into EndpointNotAllowedForPlan
+      errorMessages.push("Failed to construct EndpointNotAllowedForPlan: " + err);
+    }
+    try {
+      if (typeof instance === "EndpointNotAllowedForApiKey") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _EndpointNotAllowedForApiKey["default"].validateJSON(instance); // throw an exception if no match
+        // create EndpointNotAllowedForApiKey from JS object
+        this.actualInstance = _EndpointNotAllowedForApiKey["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into EndpointNotAllowedForApiKey
+      errorMessages.push("Failed to construct EndpointNotAllowedForApiKey: " + err);
+    }
+    try {
+      if (typeof instance === "FeatureMainnetsNotAllowedForPlan") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _FeatureMainnetsNotAllowedForPlan["default"].validateJSON(instance); // throw an exception if no match
+        // create FeatureMainnetsNotAllowedForPlan from JS object
+        this.actualInstance = _FeatureMainnetsNotAllowedForPlan["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into FeatureMainnetsNotAllowedForPlan
+      errorMessages.push("Failed to construct FeatureMainnetsNotAllowedForPlan: " + err);
+    }
+    try {
+      if (typeof instance === "WalletAsAServiceWalletsLimitReached") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _WalletAsAServiceWalletsLimitReached["default"].validateJSON(instance); // throw an exception if no match
+        // create WalletAsAServiceWalletsLimitReached from JS object
+        this.actualInstance = _WalletAsAServiceWalletsLimitReached["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into WalletAsAServiceWalletsLimitReached
+      errorMessages.push("Failed to construct WalletAsAServiceWalletsLimitReached: " + err);
+    }
+    if (match > 1) {
+      throw new Error("Multiple matches found constructing `CreateNewMasterWalletE403` with oneOf schemas BannedIpAddress, EndpointNotAllowedForApiKey, EndpointNotAllowedForPlan, FeatureMainnetsNotAllowedForPlan, WalletAsAServiceWalletsLimitReached. Input: " + JSON.stringify(instance));
+    } else if (match === 0) {
+      this.actualInstance = null; // clear the actual instance in case there are multiple matches
+      throw new Error("No match found constructing `CreateNewMasterWalletE403` with oneOf schemas BannedIpAddress, EndpointNotAllowedForApiKey, EndpointNotAllowedForPlan, FeatureMainnetsNotAllowedForPlan, WalletAsAServiceWalletsLimitReached. Details: " + errorMessages.join(", "));
+    } else {// only 1 match
+      // the input is valid
+    }
   }
 
   /**
-   * Initializes the fields of this object.
-   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-   * Only for internal use.
+   * Constructs a <code>CreateNewMasterWalletE403</code> from a plain JavaScript object, optionally creating a new instance.
+   * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+   * @param {Object} data The plain JavaScript object bearing properties of interest.
+   * @param {module:model/CreateNewMasterWalletE403} obj Optional instance to populate.
+   * @return {module:model/CreateNewMasterWalletE403} The populated <code>CreateNewMasterWalletE403</code> instance.
    */
-  _createClass(CreateNewMasterWalletE403, null, [{
-    key: "initialize",
-    value: function initialize(obj, code, message) {
-      obj['code'] = code;
-      obj['message'] = message;
+  _createClass(CreateNewMasterWalletE403, [{
+    key: "getActualInstance",
+    value:
+    /**
+     * Gets the actual instance, which can be <code>BannedIpAddress</code>, <code>EndpointNotAllowedForApiKey</code>, <code>EndpointNotAllowedForPlan</code>, <code>FeatureMainnetsNotAllowedForPlan</code>, <code>WalletAsAServiceWalletsLimitReached</code>.
+     * @return {(module:model/BannedIpAddress|module:model/EndpointNotAllowedForApiKey|module:model/EndpointNotAllowedForPlan|module:model/FeatureMainnetsNotAllowedForPlan|module:model/WalletAsAServiceWalletsLimitReached)} The actual instance.
+     */
+    function getActualInstance() {
+      return this.actualInstance;
     }
 
     /**
-     * Constructs a <code>CreateNewMasterWalletE403</code> from a plain JavaScript object, optionally creating a new instance.
-     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/CreateNewMasterWalletE403} obj Optional instance to populate.
-     * @return {module:model/CreateNewMasterWalletE403} The populated <code>CreateNewMasterWalletE403</code> instance.
+     * Sets the actual instance, which can be <code>BannedIpAddress</code>, <code>EndpointNotAllowedForApiKey</code>, <code>EndpointNotAllowedForPlan</code>, <code>FeatureMainnetsNotAllowedForPlan</code>, <code>WalletAsAServiceWalletsLimitReached</code>.
+     * @param {(module:model/BannedIpAddress|module:model/EndpointNotAllowedForApiKey|module:model/EndpointNotAllowedForPlan|module:model/FeatureMainnetsNotAllowedForPlan|module:model/WalletAsAServiceWalletsLimitReached)} obj The actual instance.
      */
   }, {
+    key: "setActualInstance",
+    value: function setActualInstance(obj) {
+      this.actualInstance = CreateNewMasterWalletE403.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+  }], [{
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
-      if (data) {
-        obj = obj || new CreateNewMasterWalletE403();
-        _BannedIpAddress["default"].constructFromObject(data, obj);
-        _EndpointNotAllowedForPlan["default"].constructFromObject(data, obj);
-        _EndpointNotAllowedForApiKey["default"].constructFromObject(data, obj);
-        _FeatureMainnetsNotAllowedForPlan["default"].constructFromObject(data, obj);
-        _WalletAsAServiceWalletsLimitReached["default"].constructFromObject(data, obj);
-        if (data.hasOwnProperty('code')) {
-          obj['code'] = _ApiClient["default"].convertToType(data['code'], 'String');
-        }
-        if (data.hasOwnProperty('message')) {
-          obj['message'] = _ApiClient["default"].convertToType(data['message'], 'String');
-        }
-        if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
-        }
-      }
-      return obj;
+      return new CreateNewMasterWalletE403(data);
     }
   }]);
   return CreateNewMasterWalletE403;
@@ -90,6 +171,9 @@ var CreateNewMasterWalletE403 = /*#__PURE__*/function () {
  * Specifies an error code, e.g. error 404.
  * @member {String} code
  */
+_defineProperty(CreateNewMasterWalletE403, "fromJSON", function (json_string) {
+  return CreateNewMasterWalletE403.constructFromObject(JSON.parse(json_string));
+});
 CreateNewMasterWalletE403.prototype['code'] = undefined;
 
 /**
@@ -102,81 +186,6 @@ CreateNewMasterWalletE403.prototype['message'] = undefined;
  * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 CreateNewMasterWalletE403.prototype['details'] = undefined;
-
-// Implement BannedIpAddress interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-_BannedIpAddress["default"].prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-_BannedIpAddress["default"].prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-_BannedIpAddress["default"].prototype['details'] = undefined;
-// Implement EndpointNotAllowedForPlan interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-_EndpointNotAllowedForPlan["default"].prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-_EndpointNotAllowedForPlan["default"].prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-_EndpointNotAllowedForPlan["default"].prototype['details'] = undefined;
-// Implement EndpointNotAllowedForApiKey interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-_EndpointNotAllowedForApiKey["default"].prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-_EndpointNotAllowedForApiKey["default"].prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-_EndpointNotAllowedForApiKey["default"].prototype['details'] = undefined;
-// Implement FeatureMainnetsNotAllowedForPlan interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-_FeatureMainnetsNotAllowedForPlan["default"].prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-_FeatureMainnetsNotAllowedForPlan["default"].prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-_FeatureMainnetsNotAllowedForPlan["default"].prototype['details'] = undefined;
-// Implement WalletAsAServiceWalletsLimitReached interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-_WalletAsAServiceWalletsLimitReached["default"].prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-_WalletAsAServiceWalletsLimitReached["default"].prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-_WalletAsAServiceWalletsLimitReached["default"].prototype['details'] = undefined;
+CreateNewMasterWalletE403.OneOf = ["BannedIpAddress", "EndpointNotAllowedForApiKey", "EndpointNotAllowedForPlan", "FeatureMainnetsNotAllowedForPlan", "WalletAsAServiceWalletsLimitReached"];
 var _default = CreateNewMasterWalletE403;
 exports["default"] = _default;

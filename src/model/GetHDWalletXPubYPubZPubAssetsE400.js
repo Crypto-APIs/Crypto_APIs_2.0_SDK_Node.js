@@ -24,35 +24,142 @@ import XpubNotSynced from './XpubNotSynced';
 /**
  * The GetHDWalletXPubYPubZPubAssetsE400 model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsE400
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetHDWalletXPubYPubZPubAssetsE400 {
     /**
      * Constructs a new <code>GetHDWalletXPubYPubZPubAssetsE400</code>.
      * @alias module:model/GetHDWalletXPubYPubZPubAssetsE400
-     * @implements module:model/UriNotFound
-     * @implements module:model/LimitGreaterThanAllowed
-     * @implements module:model/InvalidPagination
-     * @implements module:model/InvalidXpub
-     * @implements module:model/InvalidBlockchain
-     * @implements module:model/InvalidNetwork
-     * @implements module:model/XpubNotSynced
-     * @param code {String} Specifies an error code, e.g. error 404.
-     * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+     * @param {(module:model/InvalidBlockchain|module:model/InvalidNetwork|module:model/InvalidPagination|module:model/InvalidXpub|module:model/LimitGreaterThanAllowed|module:model/UriNotFound|module:model/XpubNotSynced)} instance The actual instance to initialize GetHDWalletXPubYPubZPubAssetsE400.
      */
-    constructor(code, message) { 
-        UriNotFound.initialize(this, code, message);LimitGreaterThanAllowed.initialize(this, code, message);InvalidPagination.initialize(this, code, message);InvalidXpub.initialize(this, code, message);InvalidBlockchain.initialize(this, code, message);InvalidNetwork.initialize(this, code, message);XpubNotSynced.initialize(this, code, message);
-        GetHDWalletXPubYPubZPubAssetsE400.initialize(this, code, message);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "UriNotFound") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                UriNotFound.validateJSON(instance); // throw an exception if no match
+                // create UriNotFound from JS object
+                this.actualInstance = UriNotFound.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into UriNotFound
+            errorMessages.push("Failed to construct UriNotFound: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, code, message) { 
-        obj['code'] = code;
-        obj['message'] = message;
+        try {
+            if (typeof instance === "LimitGreaterThanAllowed") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                LimitGreaterThanAllowed.validateJSON(instance); // throw an exception if no match
+                // create LimitGreaterThanAllowed from JS object
+                this.actualInstance = LimitGreaterThanAllowed.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into LimitGreaterThanAllowed
+            errorMessages.push("Failed to construct LimitGreaterThanAllowed: " + err)
+        }
+
+        try {
+            if (typeof instance === "InvalidPagination") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                InvalidPagination.validateJSON(instance); // throw an exception if no match
+                // create InvalidPagination from JS object
+                this.actualInstance = InvalidPagination.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into InvalidPagination
+            errorMessages.push("Failed to construct InvalidPagination: " + err)
+        }
+
+        try {
+            if (typeof instance === "InvalidXpub") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                InvalidXpub.validateJSON(instance); // throw an exception if no match
+                // create InvalidXpub from JS object
+                this.actualInstance = InvalidXpub.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into InvalidXpub
+            errorMessages.push("Failed to construct InvalidXpub: " + err)
+        }
+
+        try {
+            if (typeof instance === "InvalidBlockchain") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                InvalidBlockchain.validateJSON(instance); // throw an exception if no match
+                // create InvalidBlockchain from JS object
+                this.actualInstance = InvalidBlockchain.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into InvalidBlockchain
+            errorMessages.push("Failed to construct InvalidBlockchain: " + err)
+        }
+
+        try {
+            if (typeof instance === "InvalidNetwork") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                InvalidNetwork.validateJSON(instance); // throw an exception if no match
+                // create InvalidNetwork from JS object
+                this.actualInstance = InvalidNetwork.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into InvalidNetwork
+            errorMessages.push("Failed to construct InvalidNetwork: " + err)
+        }
+
+        try {
+            if (typeof instance === "XpubNotSynced") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                XpubNotSynced.validateJSON(instance); // throw an exception if no match
+                // create XpubNotSynced from JS object
+                this.actualInstance = XpubNotSynced.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into XpubNotSynced
+            errorMessages.push("Failed to construct XpubNotSynced: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `GetHDWalletXPubYPubZPubAssetsE400` with oneOf schemas InvalidBlockchain, InvalidNetwork, InvalidPagination, InvalidXpub, LimitGreaterThanAllowed, UriNotFound, XpubNotSynced. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `GetHDWalletXPubYPubZPubAssetsE400` with oneOf schemas InvalidBlockchain, InvalidNetwork, InvalidPagination, InvalidXpub, LimitGreaterThanAllowed, UriNotFound, XpubNotSynced. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -63,30 +170,41 @@ class GetHDWalletXPubYPubZPubAssetsE400 {
      * @return {module:model/GetHDWalletXPubYPubZPubAssetsE400} The populated <code>GetHDWalletXPubYPubZPubAssetsE400</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new GetHDWalletXPubYPubZPubAssetsE400();
-            UriNotFound.constructFromObject(data, obj);
-            LimitGreaterThanAllowed.constructFromObject(data, obj);
-            InvalidPagination.constructFromObject(data, obj);
-            InvalidXpub.constructFromObject(data, obj);
-            InvalidBlockchain.constructFromObject(data, obj);
-            InvalidNetwork.constructFromObject(data, obj);
-            XpubNotSynced.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('code')) {
-                obj['code'] = ApiClient.convertToType(data['code'], 'String');
-            }
-            if (data.hasOwnProperty('message')) {
-                obj['message'] = ApiClient.convertToType(data['message'], 'String');
-            }
-            if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
-            }
-        }
-        return obj;
+        return new GetHDWalletXPubYPubZPubAssetsE400(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>InvalidBlockchain</code>, <code>InvalidNetwork</code>, <code>InvalidPagination</code>, <code>InvalidXpub</code>, <code>LimitGreaterThanAllowed</code>, <code>UriNotFound</code>, <code>XpubNotSynced</code>.
+     * @return {(module:model/InvalidBlockchain|module:model/InvalidNetwork|module:model/InvalidPagination|module:model/InvalidXpub|module:model/LimitGreaterThanAllowed|module:model/UriNotFound|module:model/XpubNotSynced)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>InvalidBlockchain</code>, <code>InvalidNetwork</code>, <code>InvalidPagination</code>, <code>InvalidXpub</code>, <code>LimitGreaterThanAllowed</code>, <code>UriNotFound</code>, <code>XpubNotSynced</code>.
+     * @param {(module:model/InvalidBlockchain|module:model/InvalidNetwork|module:model/InvalidPagination|module:model/InvalidXpub|module:model/LimitGreaterThanAllowed|module:model/UriNotFound|module:model/XpubNotSynced)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = GetHDWalletXPubYPubZPubAssetsE400.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of GetHDWalletXPubYPubZPubAssetsE400 from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/GetHDWalletXPubYPubZPubAssetsE400} An instance of GetHDWalletXPubYPubZPubAssetsE400.
+     */
+    static fromJSON = function(json_string){
+        return GetHDWalletXPubYPubZPubAssetsE400.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -107,114 +225,7 @@ GetHDWalletXPubYPubZPubAssetsE400.prototype['message'] = undefined;
 GetHDWalletXPubYPubZPubAssetsE400.prototype['details'] = undefined;
 
 
-// Implement UriNotFound interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-UriNotFound.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-UriNotFound.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-UriNotFound.prototype['details'] = undefined;
-// Implement LimitGreaterThanAllowed interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-LimitGreaterThanAllowed.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-LimitGreaterThanAllowed.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-LimitGreaterThanAllowed.prototype['details'] = undefined;
-// Implement InvalidPagination interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-InvalidPagination.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-InvalidPagination.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-InvalidPagination.prototype['details'] = undefined;
-// Implement InvalidXpub interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-InvalidXpub.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-InvalidXpub.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-InvalidXpub.prototype['details'] = undefined;
-// Implement InvalidBlockchain interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-InvalidBlockchain.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-InvalidBlockchain.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-InvalidBlockchain.prototype['details'] = undefined;
-// Implement InvalidNetwork interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-InvalidNetwork.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-InvalidNetwork.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-InvalidNetwork.prototype['details'] = undefined;
-// Implement XpubNotSynced interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-XpubNotSynced.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-XpubNotSynced.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-XpubNotSynced.prototype['details'] = undefined;
-
-
-
+GetHDWalletXPubYPubZPubAssetsE400.OneOf = ["InvalidBlockchain", "InvalidNetwork", "InvalidPagination", "InvalidXpub", "LimitGreaterThanAllowed", "UriNotFound", "XpubNotSynced"];
 
 export default GetHDWalletXPubYPubZPubAssetsE400;
 

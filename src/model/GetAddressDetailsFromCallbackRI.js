@@ -19,7 +19,7 @@ import GetAddressDetailsFromCallbackRITotalSpent from './GetAddressDetailsFromCa
 /**
  * The GetAddressDetailsFromCallbackRI model module.
  * @module model/GetAddressDetailsFromCallbackRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetAddressDetailsFromCallbackRI {
     /**
@@ -87,8 +87,38 @@ class GetAddressDetailsFromCallbackRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetAddressDetailsFromCallbackRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetAddressDetailsFromCallbackRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetAddressDetailsFromCallbackRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `confirmedBalance`
+        if (data['confirmedBalance']) { // data not null
+          GetAddressDetailsFromCallbackRIConfirmedBalance.validateJSON(data['confirmedBalance']);
+        }
+        // validate the optional field `totalReceived`
+        if (data['totalReceived']) { // data not null
+          GetAddressDetailsFromCallbackRITotalReceived.validateJSON(data['totalReceived']);
+        }
+        // validate the optional field `totalSpent`
+        if (data['totalSpent']) { // data not null
+          GetAddressDetailsFromCallbackRITotalSpent.validateJSON(data['totalSpent']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetAddressDetailsFromCallbackRI.RequiredProperties = ["incomingTransactionsCount", "outgoingTransactionsCount", "transactionsCount", "confirmedBalance", "totalReceived", "totalSpent"];
 
 /**
  * Defines the received transaction count to the address.

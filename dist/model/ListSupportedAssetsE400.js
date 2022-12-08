@@ -10,70 +10,127 @@ var _InvalidPagination = _interopRequireDefault(require("./InvalidPagination"));
 var _LimitGreaterThanAllowed = _interopRequireDefault(require("./LimitGreaterThanAllowed"));
 var _UriNotFound = _interopRequireDefault(require("./UriNotFound"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
  * The ListSupportedAssetsE400 model module.
  * @module model/ListSupportedAssetsE400
- * @version 1.10.0
+ * @version 1.11.0
  */
 var ListSupportedAssetsE400 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListSupportedAssetsE400</code>.
    * @alias module:model/ListSupportedAssetsE400
-   * @implements module:model/UriNotFound
-   * @implements module:model/LimitGreaterThanAllowed
-   * @implements module:model/InvalidPagination
-   * @param code {String} Specifies an error code, e.g. error 404.
-   * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+   * @param {(module:model/InvalidPagination|module:model/LimitGreaterThanAllowed|module:model/UriNotFound)} instance The actual instance to initialize ListSupportedAssetsE400.
    */
-  function ListSupportedAssetsE400(code, message) {
+  function ListSupportedAssetsE400() {
+    var instance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     _classCallCheck(this, ListSupportedAssetsE400);
-    _UriNotFound["default"].initialize(this, code, message);
-    _LimitGreaterThanAllowed["default"].initialize(this, code, message);
-    _InvalidPagination["default"].initialize(this, code, message);
-    ListSupportedAssetsE400.initialize(this, code, message);
+    _defineProperty(this, "toJSON", function () {
+      return this.getActualInstance();
+    });
+    if (instance === null) {
+      this.actualInstance = null;
+      return;
+    }
+    var match = 0;
+    var errorMessages = [];
+    try {
+      if (typeof instance === "UriNotFound") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _UriNotFound["default"].validateJSON(instance); // throw an exception if no match
+        // create UriNotFound from JS object
+        this.actualInstance = _UriNotFound["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into UriNotFound
+      errorMessages.push("Failed to construct UriNotFound: " + err);
+    }
+    try {
+      if (typeof instance === "LimitGreaterThanAllowed") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _LimitGreaterThanAllowed["default"].validateJSON(instance); // throw an exception if no match
+        // create LimitGreaterThanAllowed from JS object
+        this.actualInstance = _LimitGreaterThanAllowed["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into LimitGreaterThanAllowed
+      errorMessages.push("Failed to construct LimitGreaterThanAllowed: " + err);
+    }
+    try {
+      if (typeof instance === "InvalidPagination") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _InvalidPagination["default"].validateJSON(instance); // throw an exception if no match
+        // create InvalidPagination from JS object
+        this.actualInstance = _InvalidPagination["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into InvalidPagination
+      errorMessages.push("Failed to construct InvalidPagination: " + err);
+    }
+    if (match > 1) {
+      throw new Error("Multiple matches found constructing `ListSupportedAssetsE400` with oneOf schemas InvalidPagination, LimitGreaterThanAllowed, UriNotFound. Input: " + JSON.stringify(instance));
+    } else if (match === 0) {
+      this.actualInstance = null; // clear the actual instance in case there are multiple matches
+      throw new Error("No match found constructing `ListSupportedAssetsE400` with oneOf schemas InvalidPagination, LimitGreaterThanAllowed, UriNotFound. Details: " + errorMessages.join(", "));
+    } else {// only 1 match
+      // the input is valid
+    }
   }
 
   /**
-   * Initializes the fields of this object.
-   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-   * Only for internal use.
+   * Constructs a <code>ListSupportedAssetsE400</code> from a plain JavaScript object, optionally creating a new instance.
+   * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+   * @param {Object} data The plain JavaScript object bearing properties of interest.
+   * @param {module:model/ListSupportedAssetsE400} obj Optional instance to populate.
+   * @return {module:model/ListSupportedAssetsE400} The populated <code>ListSupportedAssetsE400</code> instance.
    */
-  _createClass(ListSupportedAssetsE400, null, [{
-    key: "initialize",
-    value: function initialize(obj, code, message) {
-      obj['code'] = code;
-      obj['message'] = message;
+  _createClass(ListSupportedAssetsE400, [{
+    key: "getActualInstance",
+    value:
+    /**
+     * Gets the actual instance, which can be <code>InvalidPagination</code>, <code>LimitGreaterThanAllowed</code>, <code>UriNotFound</code>.
+     * @return {(module:model/InvalidPagination|module:model/LimitGreaterThanAllowed|module:model/UriNotFound)} The actual instance.
+     */
+    function getActualInstance() {
+      return this.actualInstance;
     }
 
     /**
-     * Constructs a <code>ListSupportedAssetsE400</code> from a plain JavaScript object, optionally creating a new instance.
-     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/ListSupportedAssetsE400} obj Optional instance to populate.
-     * @return {module:model/ListSupportedAssetsE400} The populated <code>ListSupportedAssetsE400</code> instance.
+     * Sets the actual instance, which can be <code>InvalidPagination</code>, <code>LimitGreaterThanAllowed</code>, <code>UriNotFound</code>.
+     * @param {(module:model/InvalidPagination|module:model/LimitGreaterThanAllowed|module:model/UriNotFound)} obj The actual instance.
      */
   }, {
+    key: "setActualInstance",
+    value: function setActualInstance(obj) {
+      this.actualInstance = ListSupportedAssetsE400.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+  }], [{
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
-      if (data) {
-        obj = obj || new ListSupportedAssetsE400();
-        _UriNotFound["default"].constructFromObject(data, obj);
-        _LimitGreaterThanAllowed["default"].constructFromObject(data, obj);
-        _InvalidPagination["default"].constructFromObject(data, obj);
-        if (data.hasOwnProperty('code')) {
-          obj['code'] = _ApiClient["default"].convertToType(data['code'], 'String');
-        }
-        if (data.hasOwnProperty('message')) {
-          obj['message'] = _ApiClient["default"].convertToType(data['message'], 'String');
-        }
-        if (data.hasOwnProperty('details')) {
-          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
-        }
-      }
-      return obj;
+      return new ListSupportedAssetsE400(data);
     }
   }]);
   return ListSupportedAssetsE400;
@@ -82,6 +139,9 @@ var ListSupportedAssetsE400 = /*#__PURE__*/function () {
  * Specifies an error code, e.g. error 404.
  * @member {String} code
  */
+_defineProperty(ListSupportedAssetsE400, "fromJSON", function (json_string) {
+  return ListSupportedAssetsE400.constructFromObject(JSON.parse(json_string));
+});
 ListSupportedAssetsE400.prototype['code'] = undefined;
 
 /**
@@ -94,51 +154,6 @@ ListSupportedAssetsE400.prototype['message'] = undefined;
  * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 ListSupportedAssetsE400.prototype['details'] = undefined;
-
-// Implement UriNotFound interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-_UriNotFound["default"].prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-_UriNotFound["default"].prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-_UriNotFound["default"].prototype['details'] = undefined;
-// Implement LimitGreaterThanAllowed interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-_LimitGreaterThanAllowed["default"].prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-_LimitGreaterThanAllowed["default"].prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-_LimitGreaterThanAllowed["default"].prototype['details'] = undefined;
-// Implement InvalidPagination interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-_InvalidPagination["default"].prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-_InvalidPagination["default"].prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-_InvalidPagination["default"].prototype['details'] = undefined;
+ListSupportedAssetsE400.OneOf = ["InvalidPagination", "LimitGreaterThanAllowed", "UriNotFound"];
 var _default = ListSupportedAssetsE400;
 exports["default"] = _default;

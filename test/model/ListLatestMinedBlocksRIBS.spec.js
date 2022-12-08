@@ -192,6 +192,24 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property bandwidthUsed (base name: "bandwidthUsed")', function() {
+      // uncomment below and update the code to test the property bandwidthUsed
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property burnedTRX (base name: "burnedTRX")', function() {
+      // uncomment below and update the code to test the property burnedTRX
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property energyUsed (base name: "energyUsed")', function() {
+      // uncomment below and update the code to test the property energyUsed
+      //var instance = new Cryptoapis.ListLatestMinedBlocksRIBS();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

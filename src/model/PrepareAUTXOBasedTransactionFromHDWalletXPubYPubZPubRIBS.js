@@ -24,36 +24,126 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner from '
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS
- * @version 1.10.0
+ * @version 1.11.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS {
     /**
      * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS</code>.
      * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS
-     * @implements module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB
-     * @implements module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC
-     * @implements module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL
-     * @implements module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD
-     * @implements module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2
-     * @implements module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ
-     * @param replaceable {Boolean} Representation of whether the transaction is replaceable
-     * @param vin {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner>} Represents the transaction inputs.
-     * @param vout {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner>} Represents the transaction outputs.
+     * @param {(module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ)} instance The actual instance to initialize PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.
      */
-    constructor(replaceable, vin, vout) { 
-        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.initialize(this, replaceable, vin, vout);PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC.initialize(this, vin, vout);PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL.initialize(this, replaceable, vin, vout);PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD.initialize(this, vin, vout);PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2.initialize(this, vin, vout);PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ.initialize(this, replaceable, vin, vout);
-        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.initialize(this, replaceable, vin, vout);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.validateJSON(instance); // throw an exception if no match
+                // create PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB from JS object
+                this.actualInstance = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB
+            errorMessages.push("Failed to construct PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, replaceable, vin, vout) { 
-        obj['replaceable'] = replaceable;
-        obj['vin'] = vin;
-        obj['vout'] = vout;
+        try {
+            if (typeof instance === "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC.validateJSON(instance); // throw an exception if no match
+                // create PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC from JS object
+                this.actualInstance = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC
+            errorMessages.push("Failed to construct PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC: " + err)
+        }
+
+        try {
+            if (typeof instance === "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL.validateJSON(instance); // throw an exception if no match
+                // create PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL from JS object
+                this.actualInstance = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL
+            errorMessages.push("Failed to construct PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL: " + err)
+        }
+
+        try {
+            if (typeof instance === "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD.validateJSON(instance); // throw an exception if no match
+                // create PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD from JS object
+                this.actualInstance = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD
+            errorMessages.push("Failed to construct PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD: " + err)
+        }
+
+        try {
+            if (typeof instance === "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2.validateJSON(instance); // throw an exception if no match
+                // create PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2 from JS object
+                this.actualInstance = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2
+            errorMessages.push("Failed to construct PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2: " + err)
+        }
+
+        try {
+            if (typeof instance === "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ.validateJSON(instance); // throw an exception if no match
+                // create PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ from JS object
+                this.actualInstance = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ
+            errorMessages.push("Failed to construct PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS` with oneOf schemas PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS` with oneOf schemas PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL, PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -64,29 +154,41 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS {
      * @return {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS} The populated <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS();
-            PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.constructFromObject(data, obj);
-            PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC.constructFromObject(data, obj);
-            PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL.constructFromObject(data, obj);
-            PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD.constructFromObject(data, obj);
-            PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2.constructFromObject(data, obj);
-            PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('replaceable')) {
-                obj['replaceable'] = ApiClient.convertToType(data['replaceable'], 'Boolean');
-            }
-            if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner]);
-            }
-            if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner]);
-            }
-        }
-        return obj;
+        return new PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ</code>.
+     * @return {(module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL</code>, <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ</code>.
+     * @param {(module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL|module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS} An instance of PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.
+     */
+    static fromJSON = function(json_string){
+        return PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -108,90 +210,7 @@ PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.prototype['vin'] = unde
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.prototype['vout'] = undefined;
 
 
-// Implement PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB interface:
-/**
- * Representation of whether the transaction is replaceable
- * @member {Boolean} replaceable
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.prototype['replaceable'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner>} vin
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner>} vout
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.prototype['vout'] = undefined;
-// Implement PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC interface:
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVinInner>} vin
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBCVoutInner>} vout
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC.prototype['vout'] = undefined;
-// Implement PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL interface:
-/**
- * Representation of whether the transaction is replaceable
- * @member {Boolean} replaceable
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL.prototype['replaceable'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVinInner>} vin
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner>} vout
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL.prototype['vout'] = undefined;
-// Implement PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD interface:
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVinInner>} vin
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSDVoutInner>} vout
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD.prototype['vout'] = undefined;
-// Implement PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2 interface:
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VinInner>} vin
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2VoutInner>} vout
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2.prototype['vout'] = undefined;
-// Implement PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ interface:
-/**
- * Representation of whether the transaction is replaceable
- * @member {Boolean} replaceable
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ.prototype['replaceable'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner>} vin
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner>} vout
- */
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ.prototype['vout'] = undefined;
-
-
-
+PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.OneOf = ["PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB", "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBC", "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD", "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSD2", "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSL", "PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ"];
 
 export default PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS;
 

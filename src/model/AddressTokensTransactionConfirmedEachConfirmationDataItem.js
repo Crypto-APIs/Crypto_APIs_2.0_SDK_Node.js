@@ -18,7 +18,7 @@ import AddressTokensTransactionConfirmedEachConfirmationToken from './AddressTok
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationDataItem model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class AddressTokensTransactionConfirmedEachConfirmationDataItem {
     /**
@@ -104,8 +104,58 @@ class AddressTokensTransactionConfirmedEachConfirmationDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>AddressTokensTransactionConfirmedEachConfirmationDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AddressTokensTransactionConfirmedEachConfirmationDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of AddressTokensTransactionConfirmedEachConfirmationDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
+            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
+        }
+        // ensure the json data is a string
+        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
+            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
+        }
+        // ensure the json data is a string
+        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
+            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
+        }
+        // validate the optional field `minedInBlock`
+        if (data['minedInBlock']) { // data not null
+          AddressTokensTransactionConfirmedDataItemMinedInBlock.validateJSON(data['minedInBlock']);
+        }
+        // ensure the json data is a string
+        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
+            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
+        }
+        // ensure the json data is a string
+        if (data['tokenType'] && !(typeof data['tokenType'] === 'string' || data['tokenType'] instanceof String)) {
+            throw new Error("Expected the field `tokenType` to be a primitive type in the JSON string but got " + data['tokenType']);
+        }
+        // validate the optional field `token`
+        if (data['token']) { // data not null
+          AddressTokensTransactionConfirmedEachConfirmationToken.validateJSON(data['token']);
+        }
+        // ensure the json data is a string
+        if (data['direction'] && !(typeof data['direction'] === 'string' || data['direction'] instanceof String)) {
+            throw new Error("Expected the field `direction` to be a primitive type in the JSON string but got " + data['direction']);
+        }
+
+        return true;
+    }
+
 
 }
+
+AddressTokensTransactionConfirmedEachConfirmationDataItem.RequiredProperties = ["blockchain", "network", "address", "minedInBlock", "transactionId", "currentConfirmations", "targetConfirmations", "tokenType", "token", "direction"];
 
 /**
  * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.

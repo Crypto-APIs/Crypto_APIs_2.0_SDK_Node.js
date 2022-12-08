@@ -17,7 +17,7 @@ import CreateFungibleTokensTransactionRequestFromAddressRBDataItem from './Creat
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRBData model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRBData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRBData {
     /**
@@ -57,8 +57,30 @@ class CreateFungibleTokensTransactionRequestFromAddressRBData {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateFungibleTokensTransactionRequestFromAddressRBData</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateFungibleTokensTransactionRequestFromAddressRBData</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CreateFungibleTokensTransactionRequestFromAddressRBData.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `item`
+        if (data['item']) { // data not null
+          CreateFungibleTokensTransactionRequestFromAddressRBDataItem.validateJSON(data['item']);
+        }
+
+        return true;
+    }
+
 
 }
+
+CreateFungibleTokensTransactionRequestFromAddressRBData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/CreateFungibleTokensTransactionRequestFromAddressRBDataItem} item

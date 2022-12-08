@@ -18,12 +18,14 @@ import GetTransactionDetailsByTransactionIDRIBSZVoutInner from './GetTransaction
 import ListConfirmedTransactionsByAddressRIBSB from './ListConfirmedTransactionsByAddressRIBSB';
 import ListConfirmedTransactionsByAddressRIBSBC from './ListConfirmedTransactionsByAddressRIBSBC';
 import ListConfirmedTransactionsByAddressRIBSBSC from './ListConfirmedTransactionsByAddressRIBSBSC';
-import ListConfirmedTransactionsByAddressRIBSBSCGasPrice from './ListConfirmedTransactionsByAddressRIBSBSCGasPrice';
 import ListConfirmedTransactionsByAddressRIBSD from './ListConfirmedTransactionsByAddressRIBSD';
 import ListConfirmedTransactionsByAddressRIBSD2 from './ListConfirmedTransactionsByAddressRIBSD2';
 import ListConfirmedTransactionsByAddressRIBSE from './ListConfirmedTransactionsByAddressRIBSE';
 import ListConfirmedTransactionsByAddressRIBSEC from './ListConfirmedTransactionsByAddressRIBSEC';
 import ListConfirmedTransactionsByAddressRIBSL from './ListConfirmedTransactionsByAddressRIBSL';
+import ListConfirmedTransactionsByAddressRIBSP from './ListConfirmedTransactionsByAddressRIBSP';
+import ListConfirmedTransactionsByAddressRIBSPGasPrice from './ListConfirmedTransactionsByAddressRIBSPGasPrice';
+import ListConfirmedTransactionsByAddressRIBST from './ListConfirmedTransactionsByAddressRIBST';
 import ListConfirmedTransactionsByAddressRIBSZ from './ListConfirmedTransactionsByAddressRIBSZ';
 import ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner from './ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner';
 import ListConfirmedTransactionsByAddressRIBSZVinInner from './ListConfirmedTransactionsByAddressRIBSZVinInner';
@@ -31,83 +33,206 @@ import ListConfirmedTransactionsByAddressRIBSZVinInner from './ListConfirmedTran
 /**
  * The ListConfirmedTransactionsByAddressRIBS model module.
  * @module model/ListConfirmedTransactionsByAddressRIBS
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListConfirmedTransactionsByAddressRIBS {
     /**
      * Constructs a new <code>ListConfirmedTransactionsByAddressRIBS</code>.
      * @alias module:model/ListConfirmedTransactionsByAddressRIBS
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSB
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSBC
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSL
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSD
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSD2
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSEC
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSE
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSBSC
-     * @implements module:model/ListConfirmedTransactionsByAddressRIBSZ
-     * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-     * @param size {Number} Represents the total size of this transaction.
-     * @param vSize {Number} Represents the virtual size of this transaction.
-     * @param version {Number} Defines the version of the transaction.
-     * @param vin {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVinInner>} Object Array representation of transaction inputs
-     * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} Object Array representation of transaction outputs
-     * @param contract {String} Represents the specific transaction contract.
-     * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-     * @param gasPrice {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} 
-     * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
-     * @param inputData {String} Represents additional information that is required for the transaction.
-     * @param internalTransactionsCount {Number} Represents the total internal transactions count.
-     * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
-     * @param tokenTransfersCount {Number} Represents the total token transfers count.
-     * @param transactionStatus {String} String representation of the transaction status
-     * @param bindingSig {String} It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
-     * @param expiryHeight {Number} Represents a block height after which the transaction will expire.
-     * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
-     * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
-     * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
-     * @param vJoinSplit {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-     * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
-     * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
-     * @param valueBalance {String} Defines the transaction value balance.
-     * @param versionGroupId {String} Represents the transaction version group ID.
+     * @param {(module:model/ListConfirmedTransactionsByAddressRIBSB|module:model/ListConfirmedTransactionsByAddressRIBSBC|module:model/ListConfirmedTransactionsByAddressRIBSBSC|module:model/ListConfirmedTransactionsByAddressRIBSD|module:model/ListConfirmedTransactionsByAddressRIBSD2|module:model/ListConfirmedTransactionsByAddressRIBSE|module:model/ListConfirmedTransactionsByAddressRIBSEC|module:model/ListConfirmedTransactionsByAddressRIBSL|module:model/ListConfirmedTransactionsByAddressRIBSP|module:model/ListConfirmedTransactionsByAddressRIBST|module:model/ListConfirmedTransactionsByAddressRIBSZ)} instance The actual instance to initialize ListConfirmedTransactionsByAddressRIBS.
      */
-    constructor(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) { 
-        ListConfirmedTransactionsByAddressRIBSB.initialize(this, locktime, size, vSize, version, vin, vout);ListConfirmedTransactionsByAddressRIBSBC.initialize(this, locktime, size, version, vin);ListConfirmedTransactionsByAddressRIBSL.initialize(this, locktime, size, vSize, version, vin, vout);ListConfirmedTransactionsByAddressRIBSD.initialize(this, locktime, size, version, vin, vout);ListConfirmedTransactionsByAddressRIBSD2.initialize(this, locktime, size, version, vin, vout);ListConfirmedTransactionsByAddressRIBSEC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);ListConfirmedTransactionsByAddressRIBSE.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);ListConfirmedTransactionsByAddressRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);ListConfirmedTransactionsByAddressRIBSZ.initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);
-        ListConfirmedTransactionsByAddressRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSB") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSB.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSB from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSB.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSB
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSB: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) { 
-        obj['locktime'] = locktime;
-        obj['size'] = size;
-        obj['vSize'] = vSize;
-        obj['version'] = version;
-        obj['vin'] = vin;
-        obj['vout'] = vout;
-        obj['contract'] = contract;
-        obj['gasLimit'] = gasLimit;
-        obj['gasPrice'] = gasPrice;
-        obj['gasUsed'] = gasUsed;
-        obj['inputData'] = inputData;
-        obj['internalTransactionsCount'] = internalTransactionsCount;
-        obj['nonce'] = nonce;
-        obj['tokenTransfersCount'] = tokenTransfersCount;
-        obj['transactionStatus'] = transactionStatus;
-        obj['bindingSig'] = bindingSig;
-        obj['expiryHeight'] = expiryHeight;
-        obj['joinSplitPubKey'] = joinSplitPubKey;
-        obj['joinSplitSig'] = joinSplitSig;
-        obj['overwintered'] = overwintered;
-        obj['vJoinSplit'] = vJoinSplit;
-        obj['vShieldedOutput'] = vShieldedOutput;
-        obj['vShieldedSpend'] = vShieldedSpend;
-        obj['valueBalance'] = valueBalance;
-        obj['versionGroupId'] = versionGroupId;
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSBC") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSBC.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSBC from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSBC.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSBC
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSBC: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSL") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSL.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSL from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSL.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSL
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSL: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSD") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSD.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSD from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSD.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSD
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSD: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSD2") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSD2.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSD2 from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSD2.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSD2
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSD2: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSEC") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSEC.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSEC from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSEC.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSEC
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSEC: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSE") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSE.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSE from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSE.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSE
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSE: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSBSC") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSBSC.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSBSC from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSBSC.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSBSC
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSBSC: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSZ") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSZ.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSZ from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSZ.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSZ
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSZ: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBST") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBST.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBST from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBST.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBST
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBST: " + err)
+        }
+
+        try {
+            if (typeof instance === "ListConfirmedTransactionsByAddressRIBSP") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListConfirmedTransactionsByAddressRIBSP.validateJSON(instance); // throw an exception if no match
+                // create ListConfirmedTransactionsByAddressRIBSP from JS object
+                this.actualInstance = ListConfirmedTransactionsByAddressRIBSP.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListConfirmedTransactionsByAddressRIBSP
+            errorMessages.push("Failed to construct ListConfirmedTransactionsByAddressRIBSP: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `ListConfirmedTransactionsByAddressRIBS` with oneOf schemas ListConfirmedTransactionsByAddressRIBSB, ListConfirmedTransactionsByAddressRIBSBC, ListConfirmedTransactionsByAddressRIBSBSC, ListConfirmedTransactionsByAddressRIBSD, ListConfirmedTransactionsByAddressRIBSD2, ListConfirmedTransactionsByAddressRIBSE, ListConfirmedTransactionsByAddressRIBSEC, ListConfirmedTransactionsByAddressRIBSL, ListConfirmedTransactionsByAddressRIBSP, ListConfirmedTransactionsByAddressRIBST, ListConfirmedTransactionsByAddressRIBSZ. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `ListConfirmedTransactionsByAddressRIBS` with oneOf schemas ListConfirmedTransactionsByAddressRIBSB, ListConfirmedTransactionsByAddressRIBSBC, ListConfirmedTransactionsByAddressRIBSBSC, ListConfirmedTransactionsByAddressRIBSD, ListConfirmedTransactionsByAddressRIBSD2, ListConfirmedTransactionsByAddressRIBSE, ListConfirmedTransactionsByAddressRIBSEC, ListConfirmedTransactionsByAddressRIBSL, ListConfirmedTransactionsByAddressRIBSP, ListConfirmedTransactionsByAddressRIBST, ListConfirmedTransactionsByAddressRIBSZ. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -118,98 +243,41 @@ class ListConfirmedTransactionsByAddressRIBS {
      * @return {module:model/ListConfirmedTransactionsByAddressRIBS} The populated <code>ListConfirmedTransactionsByAddressRIBS</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new ListConfirmedTransactionsByAddressRIBS();
-            ListConfirmedTransactionsByAddressRIBSB.constructFromObject(data, obj);
-            ListConfirmedTransactionsByAddressRIBSBC.constructFromObject(data, obj);
-            ListConfirmedTransactionsByAddressRIBSL.constructFromObject(data, obj);
-            ListConfirmedTransactionsByAddressRIBSD.constructFromObject(data, obj);
-            ListConfirmedTransactionsByAddressRIBSD2.constructFromObject(data, obj);
-            ListConfirmedTransactionsByAddressRIBSEC.constructFromObject(data, obj);
-            ListConfirmedTransactionsByAddressRIBSE.constructFromObject(data, obj);
-            ListConfirmedTransactionsByAddressRIBSBSC.constructFromObject(data, obj);
-            ListConfirmedTransactionsByAddressRIBSZ.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('locktime')) {
-                obj['locktime'] = ApiClient.convertToType(data['locktime'], 'Number');
-            }
-            if (data.hasOwnProperty('size')) {
-                obj['size'] = ApiClient.convertToType(data['size'], 'Number');
-            }
-            if (data.hasOwnProperty('vSize')) {
-                obj['vSize'] = ApiClient.convertToType(data['vSize'], 'Number');
-            }
-            if (data.hasOwnProperty('version')) {
-                obj['version'] = ApiClient.convertToType(data['version'], 'Number');
-            }
-            if (data.hasOwnProperty('vin')) {
-                obj['vin'] = ApiClient.convertToType(data['vin'], [ListConfirmedTransactionsByAddressRIBSZVinInner]);
-            }
-            if (data.hasOwnProperty('vout')) {
-                obj['vout'] = ApiClient.convertToType(data['vout'], [GetTransactionDetailsByTransactionIDRIBSZVoutInner]);
-            }
-            if (data.hasOwnProperty('contract')) {
-                obj['contract'] = ApiClient.convertToType(data['contract'], 'String');
-            }
-            if (data.hasOwnProperty('gasLimit')) {
-                obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'String');
-            }
-            if (data.hasOwnProperty('gasPrice')) {
-                obj['gasPrice'] = ListConfirmedTransactionsByAddressRIBSBSCGasPrice.constructFromObject(data['gasPrice']);
-            }
-            if (data.hasOwnProperty('gasUsed')) {
-                obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'String');
-            }
-            if (data.hasOwnProperty('inputData')) {
-                obj['inputData'] = ApiClient.convertToType(data['inputData'], 'String');
-            }
-            if (data.hasOwnProperty('internalTransactionsCount')) {
-                obj['internalTransactionsCount'] = ApiClient.convertToType(data['internalTransactionsCount'], 'Number');
-            }
-            if (data.hasOwnProperty('nonce')) {
-                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'Number');
-            }
-            if (data.hasOwnProperty('tokenTransfersCount')) {
-                obj['tokenTransfersCount'] = ApiClient.convertToType(data['tokenTransfersCount'], 'Number');
-            }
-            if (data.hasOwnProperty('transactionStatus')) {
-                obj['transactionStatus'] = ApiClient.convertToType(data['transactionStatus'], 'String');
-            }
-            if (data.hasOwnProperty('bindingSig')) {
-                obj['bindingSig'] = ApiClient.convertToType(data['bindingSig'], 'String');
-            }
-            if (data.hasOwnProperty('expiryHeight')) {
-                obj['expiryHeight'] = ApiClient.convertToType(data['expiryHeight'], 'Number');
-            }
-            if (data.hasOwnProperty('joinSplitPubKey')) {
-                obj['joinSplitPubKey'] = ApiClient.convertToType(data['joinSplitPubKey'], 'String');
-            }
-            if (data.hasOwnProperty('joinSplitSig')) {
-                obj['joinSplitSig'] = ApiClient.convertToType(data['joinSplitSig'], 'String');
-            }
-            if (data.hasOwnProperty('overwintered')) {
-                obj['overwintered'] = ApiClient.convertToType(data['overwintered'], 'Boolean');
-            }
-            if (data.hasOwnProperty('vJoinSplit')) {
-                obj['vJoinSplit'] = ApiClient.convertToType(data['vJoinSplit'], [ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner]);
-            }
-            if (data.hasOwnProperty('vShieldedOutput')) {
-                obj['vShieldedOutput'] = ApiClient.convertToType(data['vShieldedOutput'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner]);
-            }
-            if (data.hasOwnProperty('vShieldedSpend')) {
-                obj['vShieldedSpend'] = ApiClient.convertToType(data['vShieldedSpend'], [GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner]);
-            }
-            if (data.hasOwnProperty('valueBalance')) {
-                obj['valueBalance'] = ApiClient.convertToType(data['valueBalance'], 'String');
-            }
-            if (data.hasOwnProperty('versionGroupId')) {
-                obj['versionGroupId'] = ApiClient.convertToType(data['versionGroupId'], 'String');
-            }
-        }
-        return obj;
+        return new ListConfirmedTransactionsByAddressRIBS(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>ListConfirmedTransactionsByAddressRIBSB</code>, <code>ListConfirmedTransactionsByAddressRIBSBC</code>, <code>ListConfirmedTransactionsByAddressRIBSBSC</code>, <code>ListConfirmedTransactionsByAddressRIBSD</code>, <code>ListConfirmedTransactionsByAddressRIBSD2</code>, <code>ListConfirmedTransactionsByAddressRIBSE</code>, <code>ListConfirmedTransactionsByAddressRIBSEC</code>, <code>ListConfirmedTransactionsByAddressRIBSL</code>, <code>ListConfirmedTransactionsByAddressRIBSP</code>, <code>ListConfirmedTransactionsByAddressRIBST</code>, <code>ListConfirmedTransactionsByAddressRIBSZ</code>.
+     * @return {(module:model/ListConfirmedTransactionsByAddressRIBSB|module:model/ListConfirmedTransactionsByAddressRIBSBC|module:model/ListConfirmedTransactionsByAddressRIBSBSC|module:model/ListConfirmedTransactionsByAddressRIBSD|module:model/ListConfirmedTransactionsByAddressRIBSD2|module:model/ListConfirmedTransactionsByAddressRIBSE|module:model/ListConfirmedTransactionsByAddressRIBSEC|module:model/ListConfirmedTransactionsByAddressRIBSL|module:model/ListConfirmedTransactionsByAddressRIBSP|module:model/ListConfirmedTransactionsByAddressRIBST|module:model/ListConfirmedTransactionsByAddressRIBSZ)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>ListConfirmedTransactionsByAddressRIBSB</code>, <code>ListConfirmedTransactionsByAddressRIBSBC</code>, <code>ListConfirmedTransactionsByAddressRIBSBSC</code>, <code>ListConfirmedTransactionsByAddressRIBSD</code>, <code>ListConfirmedTransactionsByAddressRIBSD2</code>, <code>ListConfirmedTransactionsByAddressRIBSE</code>, <code>ListConfirmedTransactionsByAddressRIBSEC</code>, <code>ListConfirmedTransactionsByAddressRIBSL</code>, <code>ListConfirmedTransactionsByAddressRIBSP</code>, <code>ListConfirmedTransactionsByAddressRIBST</code>, <code>ListConfirmedTransactionsByAddressRIBSZ</code>.
+     * @param {(module:model/ListConfirmedTransactionsByAddressRIBSB|module:model/ListConfirmedTransactionsByAddressRIBSBC|module:model/ListConfirmedTransactionsByAddressRIBSBSC|module:model/ListConfirmedTransactionsByAddressRIBSD|module:model/ListConfirmedTransactionsByAddressRIBSD2|module:model/ListConfirmedTransactionsByAddressRIBSE|module:model/ListConfirmedTransactionsByAddressRIBSEC|module:model/ListConfirmedTransactionsByAddressRIBSL|module:model/ListConfirmedTransactionsByAddressRIBSP|module:model/ListConfirmedTransactionsByAddressRIBST|module:model/ListConfirmedTransactionsByAddressRIBSZ)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = ListConfirmedTransactionsByAddressRIBS.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of ListConfirmedTransactionsByAddressRIBS from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/ListConfirmedTransactionsByAddressRIBS} An instance of ListConfirmedTransactionsByAddressRIBS.
+     */
+    static fromJSON = function(json_string){
+        return ListConfirmedTransactionsByAddressRIBS.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -261,7 +329,7 @@ ListConfirmedTransactionsByAddressRIBS.prototype['contract'] = undefined;
 ListConfirmedTransactionsByAddressRIBS.prototype['gasLimit'] = undefined;
 
 /**
- * @member {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} gasPrice
+ * @member {module:model/ListConfirmedTransactionsByAddressRIBSPGasPrice} gasPrice
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['gasPrice'] = undefined;
 
@@ -278,7 +346,7 @@ ListConfirmedTransactionsByAddressRIBS.prototype['gasUsed'] = undefined;
 ListConfirmedTransactionsByAddressRIBS.prototype['inputData'] = undefined;
 
 /**
- * Represents the total internal transactions count.
+ * Rrepresentation of the internal transactions count
  * @member {Number} internalTransactionsCount
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['internalTransactionsCount'] = undefined;
@@ -290,13 +358,13 @@ ListConfirmedTransactionsByAddressRIBS.prototype['internalTransactionsCount'] = 
 ListConfirmedTransactionsByAddressRIBS.prototype['nonce'] = undefined;
 
 /**
- * Represents the total token transfers count.
+ * Representation of the token transfers count
  * @member {Number} tokenTransfersCount
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['tokenTransfersCount'] = undefined;
 
 /**
- * String representation of the transaction status
+ * Representation of the transaction status
  * @member {String} transactionStatus
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['transactionStatus'] = undefined;
@@ -361,361 +429,32 @@ ListConfirmedTransactionsByAddressRIBS.prototype['valueBalance'] = undefined;
  */
 ListConfirmedTransactionsByAddressRIBS.prototype['versionGroupId'] = undefined;
 
+/**
+ * Numeric representation of the transaction used bandwidth
+ * @member {String} bandwidthUsed
+ */
+ListConfirmedTransactionsByAddressRIBS.prototype['bandwidthUsed'] = undefined;
 
-// Implement ListConfirmedTransactionsByAddressRIBSB interface:
 /**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
+ * String representation of the transaction used energy
+ * @member {String} energyUsed
  */
-ListConfirmedTransactionsByAddressRIBSB.prototype['locktime'] = undefined;
+ListConfirmedTransactionsByAddressRIBS.prototype['energyUsed'] = undefined;
+
 /**
- * Represents the total size of this transaction.
- * @member {Number} size
+ * Defines if there are internal transactions (true) or not (false)
+ * @member {Boolean} hasInternalTransactions
  */
-ListConfirmedTransactionsByAddressRIBSB.prototype['size'] = undefined;
+ListConfirmedTransactionsByAddressRIBS.prototype['hasInternalTransactions'] = undefined;
+
 /**
- * Defines the transaction's virtual size.
- * @member {Number} vSize
+ * Defines if there are token transfers (true) or not (false)
+ * @member {Boolean} hasTokenTransfers
  */
-ListConfirmedTransactionsByAddressRIBSB.prototype['vSize'] = undefined;
-/**
- * Defines the version of the transaction.
- * @member {Number} version
- */
-ListConfirmedTransactionsByAddressRIBSB.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBVinInner>} vin
- */
-ListConfirmedTransactionsByAddressRIBSB.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBVoutInner>} vout
- */
-ListConfirmedTransactionsByAddressRIBSB.prototype['vout'] = undefined;
-// Implement ListConfirmedTransactionsByAddressRIBSBC interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-ListConfirmedTransactionsByAddressRIBSBC.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-ListConfirmedTransactionsByAddressRIBSBC.prototype['size'] = undefined;
-/**
- * Represents the transaction's version number.
- * @member {Number} version
- */
-ListConfirmedTransactionsByAddressRIBSBC.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSBCVinInner>} vin
- */
-ListConfirmedTransactionsByAddressRIBSBC.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVoutInner>} vout
- */
-ListConfirmedTransactionsByAddressRIBSBC.prototype['vout'] = undefined;
-// Implement ListConfirmedTransactionsByAddressRIBSL interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-ListConfirmedTransactionsByAddressRIBSL.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-ListConfirmedTransactionsByAddressRIBSL.prototype['size'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vSize
- */
-ListConfirmedTransactionsByAddressRIBSL.prototype['vSize'] = undefined;
-/**
- * Represents the transaction's version number.
- * @member {Number} version
- */
-ListConfirmedTransactionsByAddressRIBSL.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSLVinInner>} vin
- */
-ListConfirmedTransactionsByAddressRIBSL.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVoutInner>} vout
- */
-ListConfirmedTransactionsByAddressRIBSL.prototype['vout'] = undefined;
-// Implement ListConfirmedTransactionsByAddressRIBSD interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-ListConfirmedTransactionsByAddressRIBSD.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-ListConfirmedTransactionsByAddressRIBSD.prototype['size'] = undefined;
-/**
- * Represents the transaction's version number.
- * @member {Number} version
- */
-ListConfirmedTransactionsByAddressRIBSD.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSDVinInner>} vin
- */
-ListConfirmedTransactionsByAddressRIBSD.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVoutInner>} vout
- */
-ListConfirmedTransactionsByAddressRIBSD.prototype['vout'] = undefined;
-// Implement ListConfirmedTransactionsByAddressRIBSD2 interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-ListConfirmedTransactionsByAddressRIBSD2.prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-ListConfirmedTransactionsByAddressRIBSD2.prototype['size'] = undefined;
-/**
- * Represents the transaction's version number.
- * @member {Number} version
- */
-ListConfirmedTransactionsByAddressRIBSD2.prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VinInner>} vin
- */
-ListConfirmedTransactionsByAddressRIBSD2.prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSD2VoutInner>} vout
- */
-ListConfirmedTransactionsByAddressRIBSD2.prototype['vout'] = undefined;
-// Implement ListConfirmedTransactionsByAddressRIBSEC interface:
-/**
- * Represents the specific transaction contract.
- * @member {String} contract
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/ListConfirmedTransactionsByAddressRIBSECGasPrice} gasPrice
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['gasPrice'] = undefined;
-/**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['inputData'] = undefined;
-/**
- * Represents the total internal transactions count.
- * @member {Number} internalTransactionsCount
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['internalTransactionsCount'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['nonce'] = undefined;
-/**
- * Represents the total token transfers count.
- * @member {Number} tokenTransfersCount
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['tokenTransfersCount'] = undefined;
-/**
- * String representation of the transaction status
- * @member {String} transactionStatus
- */
-ListConfirmedTransactionsByAddressRIBSEC.prototype['transactionStatus'] = undefined;
-// Implement ListConfirmedTransactionsByAddressRIBSE interface:
-/**
- * Represents the specific transaction contract.
- * @member {String} contract
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/ListConfirmedTransactionsByAddressRIBSEGasPrice} gasPrice
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['gasPrice'] = undefined;
-/**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['inputData'] = undefined;
-/**
- * Represents the total internal transactions count.
- * @member {Number} internalTransactionsCount
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['internalTransactionsCount'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['nonce'] = undefined;
-/**
- * Represents the total token transfers count.
- * @member {Number} tokenTransfersCount
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['tokenTransfersCount'] = undefined;
-/**
- * String representation of the transaction status
- * @member {String} transactionStatus
- */
-ListConfirmedTransactionsByAddressRIBSE.prototype['transactionStatus'] = undefined;
-// Implement ListConfirmedTransactionsByAddressRIBSBSC interface:
-/**
- * Represents the specific transaction contract.
- * @member {String} contract
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} gasPrice
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['gasPrice'] = undefined;
-/**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['inputData'] = undefined;
-/**
- * Represents the total internal transactions count.
- * @member {Number} internalTransactionsCount
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['internalTransactionsCount'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['nonce'] = undefined;
-/**
- * Represents the total token transfers count.
- * @member {Number} tokenTransfersCount
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['tokenTransfersCount'] = undefined;
-/**
- * String representation of the transaction status
- * @member {String} transactionStatus
- */
-ListConfirmedTransactionsByAddressRIBSBSC.prototype['transactionStatus'] = undefined;
-// Implement ListConfirmedTransactionsByAddressRIBSZ interface:
-/**
- * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
- * @member {String} bindingSig
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['bindingSig'] = undefined;
-/**
- * Represents a block height after which the transaction will expire.
- * @member {Number} expiryHeight
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['expiryHeight'] = undefined;
-/**
- * Represents an encoding of a JoinSplitSig public validating key.
- * @member {String} joinSplitPubKey
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['joinSplitPubKey'] = undefined;
-/**
- * Is used to sign transactions that contain at least one JoinSplit description.
- * @member {String} joinSplitSig
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['joinSplitSig'] = undefined;
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['locktime'] = undefined;
-/**
- * \"Overwinter\" is the network upgrade for the Zcash blockchain.
- * @member {Boolean} overwintered
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['overwintered'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['size'] = undefined;
-/**
- * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner>} vJoinSplit
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['vJoinSplit'] = undefined;
-/**
- * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['vShieldedOutput'] = undefined;
-/**
- * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['vShieldedSpend'] = undefined;
-/**
- * Defines the transaction value balance.
- * @member {String} valueBalance
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['valueBalance'] = undefined;
-/**
- * Defines the version of the transaction.
- * @member {Number} version
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['version'] = undefined;
-/**
- * Represents the transaction version group ID.
- * @member {String} versionGroupId
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['versionGroupId'] = undefined;
-/**
- * Object Array representation of transaction inputs
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVinInner>} vin
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['vin'] = undefined;
-/**
- * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
- */
-ListConfirmedTransactionsByAddressRIBSZ.prototype['vout'] = undefined;
+ListConfirmedTransactionsByAddressRIBS.prototype['hasTokenTransfers'] = undefined;
 
 
-
+ListConfirmedTransactionsByAddressRIBS.OneOf = ["ListConfirmedTransactionsByAddressRIBSB", "ListConfirmedTransactionsByAddressRIBSBC", "ListConfirmedTransactionsByAddressRIBSBSC", "ListConfirmedTransactionsByAddressRIBSD", "ListConfirmedTransactionsByAddressRIBSD2", "ListConfirmedTransactionsByAddressRIBSE", "ListConfirmedTransactionsByAddressRIBSEC", "ListConfirmedTransactionsByAddressRIBSL", "ListConfirmedTransactionsByAddressRIBSP", "ListConfirmedTransactionsByAddressRIBST", "ListConfirmedTransactionsByAddressRIBSZ"];
 
 export default ListConfirmedTransactionsByAddressRIBS;
 

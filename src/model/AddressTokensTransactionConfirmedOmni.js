@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedOmni model module.
  * @module model/AddressTokensTransactionConfirmedOmni
- * @version 1.10.0
+ * @version 1.11.0
  */
 class AddressTokensTransactionConfirmedOmni {
     /**
@@ -77,8 +77,46 @@ class AddressTokensTransactionConfirmedOmni {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>AddressTokensTransactionConfirmedOmni</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AddressTokensTransactionConfirmedOmni</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of AddressTokensTransactionConfirmedOmni.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
+            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
+        }
+        // ensure the json data is a string
+        if (data['propertyId'] && !(typeof data['propertyId'] === 'string' || data['propertyId'] instanceof String)) {
+            throw new Error("Expected the field `propertyId` to be a primitive type in the JSON string but got " + data['propertyId']);
+        }
+        // ensure the json data is a string
+        if (data['transactionType'] && !(typeof data['transactionType'] === 'string' || data['transactionType'] instanceof String)) {
+            throw new Error("Expected the field `transactionType` to be a primitive type in the JSON string but got " + data['transactionType']);
+        }
+        // ensure the json data is a string
+        if (data['createdByTransactionId'] && !(typeof data['createdByTransactionId'] === 'string' || data['createdByTransactionId'] instanceof String)) {
+            throw new Error("Expected the field `createdByTransactionId` to be a primitive type in the JSON string but got " + data['createdByTransactionId']);
+        }
+        // ensure the json data is a string
+        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
+            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
+        }
+
+        return true;
+    }
+
 
 }
+
+AddressTokensTransactionConfirmedOmni.RequiredProperties = ["name", "propertyId", "transactionType", "createdByTransactionId", "amount"];
 
 /**
  * Specifies the name of the token.

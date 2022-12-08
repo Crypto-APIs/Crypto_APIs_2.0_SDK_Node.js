@@ -62,6 +62,11 @@ import GetEIP1559FeeRecommendations401Response from '../model/GetEIP1559FeeRecom
 import GetEIP1559FeeRecommendations403Response from '../model/GetEIP1559FeeRecommendations403Response';
 import GetEIP1559FeeRecommendationsR from '../model/GetEIP1559FeeRecommendationsR';
 import GetXRPRippleTransactionDetailsByTransactionID404Response from '../model/GetXRPRippleTransactionDetailsByTransactionID404Response';
+import PrepareTransactionFromAddress400Response from '../model/PrepareTransactionFromAddress400Response';
+import PrepareTransactionFromAddress401Response from '../model/PrepareTransactionFromAddress401Response';
+import PrepareTransactionFromAddress403Response from '../model/PrepareTransactionFromAddress403Response';
+import PrepareTransactionFromAddressR from '../model/PrepareTransactionFromAddressR';
+import PrepareTransactionFromAddressRB from '../model/PrepareTransactionFromAddressRB';
 import ValidateAddress400Response from '../model/ValidateAddress400Response';
 import ValidateAddress401Response from '../model/ValidateAddress401Response';
 import ValidateAddress403Response from '../model/ValidateAddress403Response';
@@ -71,7 +76,7 @@ import ValidateAddressRB from '../model/ValidateAddressRB';
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.10.0
+* @version 1.11.0
 */
 export default class FeaturesApi {
 
@@ -681,6 +686,69 @@ export default class FeaturesApi {
      */
     getEIP1559FeeRecommendations(network, blockchain, opts) {
       return this.getEIP1559FeeRecommendationsWithHttpInfo(network, blockchain, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
+     * Prepare Transaction From Address
+     * Through this endpoint customers can prepare a transaction from an address with private and public keys. The address doesn’t have to belong to a wallet.  The response will include the transaction fee in Wei.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"goerli\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareTransactionFromAddressRB} opts.prepareTransactionFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareTransactionFromAddressR} and HTTP response
+     */
+    prepareTransactionFromAddressWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      let postBody = opts['prepareTransactionFromAddressRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling prepareTransactionFromAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling prepareTransactionFromAddress");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = PrepareTransactionFromAddressR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/transactions/prepare-from-address', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Prepare Transaction From Address
+     * Through this endpoint customers can prepare a transaction from an address with private and public keys. The address doesn’t have to belong to a wallet.  The response will include the transaction fee in Wei.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"goerli\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareTransactionFromAddressRB} opts.prepareTransactionFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareTransactionFromAddressR}
+     */
+    prepareTransactionFromAddress(blockchain, network, opts) {
+      return this.prepareTransactionFromAddressWithHttpInfo(blockchain, network, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

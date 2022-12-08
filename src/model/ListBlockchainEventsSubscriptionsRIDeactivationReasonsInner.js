@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner model module.
  * @module model/ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner {
     /**
@@ -61,8 +61,30 @@ class ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['reason'] && !(typeof data['reason'] === 'string' || data['reason'] instanceof String)) {
+            throw new Error("Expected the field `reason` to be a primitive type in the JSON string but got " + data['reason']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner.RequiredProperties = ["reason", "timestamp"];
 
 /**
  * Defines the deactivation reason as a message.

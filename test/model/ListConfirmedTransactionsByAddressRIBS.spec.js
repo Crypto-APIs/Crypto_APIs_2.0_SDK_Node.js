@@ -204,6 +204,30 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property bandwidthUsed (base name: "bandwidthUsed")', function() {
+      // uncomment below and update the code to test the property bandwidthUsed
+      //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property energyUsed (base name: "energyUsed")', function() {
+      // uncomment below and update the code to test the property energyUsed
+      //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property hasInternalTransactions (base name: "hasInternalTransactions")', function() {
+      // uncomment below and update the code to test the property hasInternalTransactions
+      //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property hasTokenTransfers (base name: "hasTokenTransfers")', function() {
+      // uncomment below and update the code to test the property hasTokenTransfers
+      //var instance = new Cryptoapis.ListConfirmedTransactionsByAddressRIBS();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

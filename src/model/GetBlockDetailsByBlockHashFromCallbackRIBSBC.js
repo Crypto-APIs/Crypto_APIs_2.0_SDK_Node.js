@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBSBC model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBSBC
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetBlockDetailsByBlockHashFromCallbackRIBSBC {
     /**
@@ -92,8 +92,46 @@ class GetBlockDetailsByBlockHashFromCallbackRIBSBC {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetBlockDetailsByBlockHashFromCallbackRIBSBC</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetBlockDetailsByBlockHashFromCallbackRIBSBC</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetBlockDetailsByBlockHashFromCallbackRIBSBC.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['bits'] && !(typeof data['bits'] === 'string' || data['bits'] instanceof String)) {
+            throw new Error("Expected the field `bits` to be a primitive type in the JSON string but got " + data['bits']);
+        }
+        // ensure the json data is a string
+        if (data['chainwork'] && !(typeof data['chainwork'] === 'string' || data['chainwork'] instanceof String)) {
+            throw new Error("Expected the field `chainwork` to be a primitive type in the JSON string but got " + data['chainwork']);
+        }
+        // ensure the json data is a string
+        if (data['difficulty'] && !(typeof data['difficulty'] === 'string' || data['difficulty'] instanceof String)) {
+            throw new Error("Expected the field `difficulty` to be a primitive type in the JSON string but got " + data['difficulty']);
+        }
+        // ensure the json data is a string
+        if (data['merkleRoot'] && !(typeof data['merkleRoot'] === 'string' || data['merkleRoot'] instanceof String)) {
+            throw new Error("Expected the field `merkleRoot` to be a primitive type in the JSON string but got " + data['merkleRoot']);
+        }
+        // ensure the json data is a string
+        if (data['versionHex'] && !(typeof data['versionHex'] === 'string' || data['versionHex'] instanceof String)) {
+            throw new Error("Expected the field `versionHex` to be a primitive type in the JSON string but got " + data['versionHex']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetBlockDetailsByBlockHashFromCallbackRIBSBC.RequiredProperties = ["bits", "chainwork", "difficulty", "merkleRoot", "nonce", "size", "version", "versionHex"];
 
 /**
  * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.

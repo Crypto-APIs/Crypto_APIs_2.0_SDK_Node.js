@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRBDataItem model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRBDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountRBDataItem {
     /**
@@ -70,8 +70,46 @@ class CreateCoinsTransactionFromAddressForWholeAmountRBDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateCoinsTransactionFromAddressForWholeAmountRBDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateCoinsTransactionFromAddressForWholeAmountRBDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CreateCoinsTransactionFromAddressForWholeAmountRBDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
+            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
+        }
+        // ensure the json data is a string
+        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
+            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
+        }
+        // ensure the json data is a string
+        if (data['feePriority'] && !(typeof data['feePriority'] === 'string' || data['feePriority'] instanceof String)) {
+            throw new Error("Expected the field `feePriority` to be a primitive type in the JSON string but got " + data['feePriority']);
+        }
+        // ensure the json data is a string
+        if (data['note'] && !(typeof data['note'] === 'string' || data['note'] instanceof String)) {
+            throw new Error("Expected the field `note` to be a primitive type in the JSON string but got " + data['note']);
+        }
+        // ensure the json data is a string
+        if (data['recipientAddress'] && !(typeof data['recipientAddress'] === 'string' || data['recipientAddress'] instanceof String)) {
+            throw new Error("Expected the field `recipientAddress` to be a primitive type in the JSON string but got " + data['recipientAddress']);
+        }
+
+        return true;
+    }
+
 
 }
+
+CreateCoinsTransactionFromAddressForWholeAmountRBDataItem.RequiredProperties = ["feePriority", "recipientAddress"];
 
 /**
  * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).

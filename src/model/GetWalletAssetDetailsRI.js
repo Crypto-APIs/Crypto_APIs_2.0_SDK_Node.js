@@ -21,7 +21,7 @@ import GetWalletAssetDetailsRISentConfirmedAmount from './GetWalletAssetDetailsR
 /**
  * The GetWalletAssetDetailsRI model module.
  * @module model/GetWalletAssetDetailsRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetWalletAssetDetailsRI {
     /**
@@ -91,8 +91,62 @@ class GetWalletAssetDetailsRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetWalletAssetDetailsRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetWalletAssetDetailsRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetWalletAssetDetailsRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `confirmedBalance`
+        if (data['confirmedBalance']) { // data not null
+          GetWalletAssetDetailsRIConfirmedBalance.validateJSON(data['confirmedBalance']);
+        }
+        if (data['fungibleTokens']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['fungibleTokens'])) {
+                throw new Error("Expected the field `fungibleTokens` to be an array in the JSON data but got " + data['fungibleTokens']);
+            }
+            // validate the optional field `fungibleTokens` (array)
+            for (const item of data['fungibleTokens']) {
+                GetWalletAssetDetailsRIFungibleTokensInner.validateJsonObject(item);
+            };
+        }
+        // ensure the json data is a string
+        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
+            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
+        }
+        if (data['nonFungibleTokens']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['nonFungibleTokens'])) {
+                throw new Error("Expected the field `nonFungibleTokens` to be an array in the JSON data but got " + data['nonFungibleTokens']);
+            }
+            // validate the optional field `nonFungibleTokens` (array)
+            for (const item of data['nonFungibleTokens']) {
+                GetWalletAssetDetailsRINonFungibleTokensInner.validateJsonObject(item);
+            };
+        }
+        // validate the optional field `recievedConfirmedAmount`
+        if (data['recievedConfirmedAmount']) { // data not null
+          GetWalletAssetDetailsRIRecievedConfirmedAmount.validateJSON(data['recievedConfirmedAmount']);
+        }
+        // validate the optional field `sentConfirmedAmount`
+        if (data['sentConfirmedAmount']) { // data not null
+          GetWalletAssetDetailsRISentConfirmedAmount.validateJSON(data['sentConfirmedAmount']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetWalletAssetDetailsRI.RequiredProperties = ["confirmedBalance", "depositAddressesCount", "fungibleTokens", "name", "nonFungibleTokens", "recievedConfirmedAmount", "sentConfirmedAmount"];
 
 /**
  * @member {module:model/GetWalletAssetDetailsRIConfirmedBalance} confirmedBalance

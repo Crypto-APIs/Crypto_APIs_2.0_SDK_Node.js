@@ -17,7 +17,7 @@ import GenerateDepositAddressRI from './GenerateDepositAddressRI';
 /**
  * The GenerateDepositAddressRData model module.
  * @module model/GenerateDepositAddressRData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GenerateDepositAddressRData {
     /**
@@ -57,8 +57,30 @@ class GenerateDepositAddressRData {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GenerateDepositAddressRData</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GenerateDepositAddressRData</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GenerateDepositAddressRData.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `item`
+        if (data['item']) { // data not null
+          GenerateDepositAddressRI.validateJSON(data['item']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GenerateDepositAddressRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GenerateDepositAddressRI} item

@@ -9,100 +9,127 @@ var _TokensForwardingSuccessErc = _interopRequireDefault(require("./TokensForwar
 var _TokensForwardingSuccessErc2 = _interopRequireDefault(require("./TokensForwardingSuccessErc721"));
 var _TokensForwardingSuccessOmni = _interopRequireDefault(require("./TokensForwardingSuccessOmni"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
  * The TokensForwardingSuccessToken model module.
  * @module model/TokensForwardingSuccessToken
- * @version 1.10.0
+ * @version 1.11.0
  */
 var TokensForwardingSuccessToken = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>TokensForwardingSuccessToken</code>.
    * @alias module:model/TokensForwardingSuccessToken
-   * @implements module:model/TokensForwardingSuccessErc20
-   * @implements module:model/TokensForwardingSuccessErc721
-   * @implements module:model/TokensForwardingSuccessOmni
-   * @param name {String} Specifies the name of the token.
-   * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
-   * @param amount {String} Defines the amount of tokens sent with the confirmed transaction.
-   * @param contractAddress {String} Specifies the address of the contract.
-   * @param tokenId {String} Specifies the ID of the token.
-   * @param propertyId {String} Defines the ID of the property for Omni Layer.
-   * @param transactionType {String} Defines the type of the transaction.
-   * @param createdByTransactionId {String} The transaction ID used to create the token.
+   * @param {(module:model/TokensForwardingSuccessErc20|module:model/TokensForwardingSuccessErc721|module:model/TokensForwardingSuccessOmni)} instance The actual instance to initialize TokensForwardingSuccessToken.
    */
-  function TokensForwardingSuccessToken(name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) {
+  function TokensForwardingSuccessToken() {
+    var instance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     _classCallCheck(this, TokensForwardingSuccessToken);
-    _TokensForwardingSuccessErc["default"].initialize(this, name, symbol, amount, contractAddress);
-    _TokensForwardingSuccessErc2["default"].initialize(this, name, symbol, tokenId, contractAddress);
-    _TokensForwardingSuccessOmni["default"].initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
-    TokensForwardingSuccessToken.initialize(this, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId);
+    _defineProperty(this, "toJSON", function () {
+      return this.getActualInstance();
+    });
+    if (instance === null) {
+      this.actualInstance = null;
+      return;
+    }
+    var match = 0;
+    var errorMessages = [];
+    try {
+      if (typeof instance === "TokensForwardingSuccessErc20") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _TokensForwardingSuccessErc["default"].validateJSON(instance); // throw an exception if no match
+        // create TokensForwardingSuccessErc20 from JS object
+        this.actualInstance = _TokensForwardingSuccessErc["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into TokensForwardingSuccessErc20
+      errorMessages.push("Failed to construct TokensForwardingSuccessErc20: " + err);
+    }
+    try {
+      if (typeof instance === "TokensForwardingSuccessErc721") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _TokensForwardingSuccessErc2["default"].validateJSON(instance); // throw an exception if no match
+        // create TokensForwardingSuccessErc721 from JS object
+        this.actualInstance = _TokensForwardingSuccessErc2["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into TokensForwardingSuccessErc721
+      errorMessages.push("Failed to construct TokensForwardingSuccessErc721: " + err);
+    }
+    try {
+      if (typeof instance === "TokensForwardingSuccessOmni") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _TokensForwardingSuccessOmni["default"].validateJSON(instance); // throw an exception if no match
+        // create TokensForwardingSuccessOmni from JS object
+        this.actualInstance = _TokensForwardingSuccessOmni["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into TokensForwardingSuccessOmni
+      errorMessages.push("Failed to construct TokensForwardingSuccessOmni: " + err);
+    }
+    if (match > 1) {
+      throw new Error("Multiple matches found constructing `TokensForwardingSuccessToken` with oneOf schemas TokensForwardingSuccessErc20, TokensForwardingSuccessErc721, TokensForwardingSuccessOmni. Input: " + JSON.stringify(instance));
+    } else if (match === 0) {
+      this.actualInstance = null; // clear the actual instance in case there are multiple matches
+      throw new Error("No match found constructing `TokensForwardingSuccessToken` with oneOf schemas TokensForwardingSuccessErc20, TokensForwardingSuccessErc721, TokensForwardingSuccessOmni. Details: " + errorMessages.join(", "));
+    } else {// only 1 match
+      // the input is valid
+    }
   }
 
   /**
-   * Initializes the fields of this object.
-   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-   * Only for internal use.
+   * Constructs a <code>TokensForwardingSuccessToken</code> from a plain JavaScript object, optionally creating a new instance.
+   * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+   * @param {Object} data The plain JavaScript object bearing properties of interest.
+   * @param {module:model/TokensForwardingSuccessToken} obj Optional instance to populate.
+   * @return {module:model/TokensForwardingSuccessToken} The populated <code>TokensForwardingSuccessToken</code> instance.
    */
-  _createClass(TokensForwardingSuccessToken, null, [{
-    key: "initialize",
-    value: function initialize(obj, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) {
-      obj['name'] = name;
-      obj['symbol'] = symbol;
-      obj['amount'] = amount;
-      obj['contractAddress'] = contractAddress;
-      obj['tokenId'] = tokenId;
-      obj['propertyId'] = propertyId;
-      obj['transactionType'] = transactionType;
-      obj['createdByTransactionId'] = createdByTransactionId;
+  _createClass(TokensForwardingSuccessToken, [{
+    key: "getActualInstance",
+    value:
+    /**
+     * Gets the actual instance, which can be <code>TokensForwardingSuccessErc20</code>, <code>TokensForwardingSuccessErc721</code>, <code>TokensForwardingSuccessOmni</code>.
+     * @return {(module:model/TokensForwardingSuccessErc20|module:model/TokensForwardingSuccessErc721|module:model/TokensForwardingSuccessOmni)} The actual instance.
+     */
+    function getActualInstance() {
+      return this.actualInstance;
     }
 
     /**
-     * Constructs a <code>TokensForwardingSuccessToken</code> from a plain JavaScript object, optionally creating a new instance.
-     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/TokensForwardingSuccessToken} obj Optional instance to populate.
-     * @return {module:model/TokensForwardingSuccessToken} The populated <code>TokensForwardingSuccessToken</code> instance.
+     * Sets the actual instance, which can be <code>TokensForwardingSuccessErc20</code>, <code>TokensForwardingSuccessErc721</code>, <code>TokensForwardingSuccessOmni</code>.
+     * @param {(module:model/TokensForwardingSuccessErc20|module:model/TokensForwardingSuccessErc721|module:model/TokensForwardingSuccessOmni)} obj The actual instance.
      */
   }, {
+    key: "setActualInstance",
+    value: function setActualInstance(obj) {
+      this.actualInstance = TokensForwardingSuccessToken.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+  }], [{
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
-      if (data) {
-        obj = obj || new TokensForwardingSuccessToken();
-        _TokensForwardingSuccessErc["default"].constructFromObject(data, obj);
-        _TokensForwardingSuccessErc2["default"].constructFromObject(data, obj);
-        _TokensForwardingSuccessOmni["default"].constructFromObject(data, obj);
-        if (data.hasOwnProperty('name')) {
-          obj['name'] = _ApiClient["default"].convertToType(data['name'], 'String');
-        }
-        if (data.hasOwnProperty('symbol')) {
-          obj['symbol'] = _ApiClient["default"].convertToType(data['symbol'], 'String');
-        }
-        if (data.hasOwnProperty('decimals')) {
-          obj['decimals'] = _ApiClient["default"].convertToType(data['decimals'], 'String');
-        }
-        if (data.hasOwnProperty('amount')) {
-          obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
-        }
-        if (data.hasOwnProperty('contractAddress')) {
-          obj['contractAddress'] = _ApiClient["default"].convertToType(data['contractAddress'], 'String');
-        }
-        if (data.hasOwnProperty('tokenId')) {
-          obj['tokenId'] = _ApiClient["default"].convertToType(data['tokenId'], 'String');
-        }
-        if (data.hasOwnProperty('propertyId')) {
-          obj['propertyId'] = _ApiClient["default"].convertToType(data['propertyId'], 'String');
-        }
-        if (data.hasOwnProperty('transactionType')) {
-          obj['transactionType'] = _ApiClient["default"].convertToType(data['transactionType'], 'String');
-        }
-        if (data.hasOwnProperty('createdByTransactionId')) {
-          obj['createdByTransactionId'] = _ApiClient["default"].convertToType(data['createdByTransactionId'], 'String');
-        }
-      }
-      return obj;
+      return new TokensForwardingSuccessToken(data);
     }
   }]);
   return TokensForwardingSuccessToken;
@@ -111,6 +138,9 @@ var TokensForwardingSuccessToken = /*#__PURE__*/function () {
  * Specifies the name of the token.
  * @member {String} name
  */
+_defineProperty(TokensForwardingSuccessToken, "fromJSON", function (json_string) {
+  return TokensForwardingSuccessToken.constructFromObject(JSON.parse(json_string));
+});
 TokensForwardingSuccessToken.prototype['name'] = undefined;
 
 /**
@@ -160,79 +190,6 @@ TokensForwardingSuccessToken.prototype['transactionType'] = undefined;
  * @member {String} createdByTransactionId
  */
 TokensForwardingSuccessToken.prototype['createdByTransactionId'] = undefined;
-
-// Implement TokensForwardingSuccessErc20 interface:
-/**
- * Specifies the name of the token.
- * @member {String} name
- */
-_TokensForwardingSuccessErc["default"].prototype['name'] = undefined;
-/**
- * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
- * @member {String} symbol
- */
-_TokensForwardingSuccessErc["default"].prototype['symbol'] = undefined;
-/**
- * Defines how many decimals can be used to break the token.
- * @member {String} decimals
- */
-_TokensForwardingSuccessErc["default"].prototype['decimals'] = undefined;
-/**
- * Defines the amount of tokens sent with the confirmed transaction.
- * @member {String} amount
- */
-_TokensForwardingSuccessErc["default"].prototype['amount'] = undefined;
-/**
- * Defines the address of the contract.
- * @member {String} contractAddress
- */
-_TokensForwardingSuccessErc["default"].prototype['contractAddress'] = undefined;
-// Implement TokensForwardingSuccessErc721 interface:
-/**
- * Specifies the name of the token.
- * @member {String} name
- */
-_TokensForwardingSuccessErc2["default"].prototype['name'] = undefined;
-/**
- * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
- * @member {String} symbol
- */
-_TokensForwardingSuccessErc2["default"].prototype['symbol'] = undefined;
-/**
- * Specifies the ID of the token.
- * @member {String} tokenId
- */
-_TokensForwardingSuccessErc2["default"].prototype['tokenId'] = undefined;
-/**
- * Specifies the address of the contract.
- * @member {String} contractAddress
- */
-_TokensForwardingSuccessErc2["default"].prototype['contractAddress'] = undefined;
-// Implement TokensForwardingSuccessOmni interface:
-/**
- * Specifies the name of the token.
- * @member {String} name
- */
-_TokensForwardingSuccessOmni["default"].prototype['name'] = undefined;
-/**
- * Defines the ID of the property for Omni Layer.
- * @member {String} propertyId
- */
-_TokensForwardingSuccessOmni["default"].prototype['propertyId'] = undefined;
-/**
- * Defines the type of the transaction.
- * @member {String} transactionType
- */
-_TokensForwardingSuccessOmni["default"].prototype['transactionType'] = undefined;
-/**
- * The transaction ID used to create the token.
- * @member {String} createdByTransactionId
- */
-_TokensForwardingSuccessOmni["default"].prototype['createdByTransactionId'] = undefined;
-/**
- * Defines the amount of tokens sent with the confirmed transaction.
- * @member {String} amount
- */
-_TokensForwardingSuccessOmni["default"].prototype['amount'] = undefined;
+TokensForwardingSuccessToken.OneOf = ["TokensForwardingSuccessErc20", "TokensForwardingSuccessErc721", "TokensForwardingSuccessOmni"];
 var _default = TokensForwardingSuccessToken;
 exports["default"] = _default;

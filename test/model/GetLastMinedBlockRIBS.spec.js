@@ -54,12 +54,6 @@
       //expect(instance).to.be.a(Cryptoapis.GetLastMinedBlockRIBS);
     });
 
-    it('should have the property difficulty (base name: "difficulty")', function() {
-      // uncomment below and update the code to test the property difficulty
-      //var instance = new Cryptoapis.GetLastMinedBlockRIBS();
-      //expect(instance).to.be();
-    });
-
     it('should have the property bits (base name: "bits")', function() {
       // uncomment below and update the code to test the property bits
       //var instance = new Cryptoapis.GetLastMinedBlockRIBS();
@@ -68,6 +62,12 @@
 
     it('should have the property chainwork (base name: "chainwork")', function() {
       // uncomment below and update the code to test the property chainwork
+      //var instance = new Cryptoapis.GetLastMinedBlockRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property difficulty (base name: "difficulty")', function() {
+      // uncomment below and update the code to test the property difficulty
       //var instance = new Cryptoapis.GetLastMinedBlockRIBS();
       //expect(instance).to.be();
     });
@@ -176,6 +176,24 @@
 
     it('should have the property microBlocks (base name: "microBlocks")', function() {
       // uncomment below and update the code to test the property microBlocks
+      //var instance = new Cryptoapis.GetLastMinedBlockRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property bandwidthUsed (base name: "bandwidthUsed")', function() {
+      // uncomment below and update the code to test the property bandwidthUsed
+      //var instance = new Cryptoapis.GetLastMinedBlockRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property burnedTRX (base name: "burnedTRX")', function() {
+      // uncomment below and update the code to test the property burnedTRX
+      //var instance = new Cryptoapis.GetLastMinedBlockRIBS();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property energyUsed (base name: "energyUsed")', function() {
+      // uncomment below and update the code to test the property energyUsed
       //var instance = new Cryptoapis.GetLastMinedBlockRIBS();
       //expect(instance).to.be();
     });

@@ -53,16 +53,16 @@ import ListSyncedAddresses400Response from '../model/ListSyncedAddresses400Respo
 import ListSyncedAddresses401Response from '../model/ListSyncedAddresses401Response';
 import ListSyncedAddresses403Response from '../model/ListSyncedAddresses403Response';
 import ListSyncedAddressesR from '../model/ListSyncedAddressesR';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response from '../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response from '../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response from '../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR from '../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB from '../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response from '../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response from '../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response from '../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR from '../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB from '../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response from '../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response from '../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response from '../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR from '../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB from '../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB';
 import SyncHDWalletXPubYPubZPub400Response from '../model/SyncHDWalletXPubYPubZPub400Response';
 import SyncHDWalletXPubYPubZPub401Response from '../model/SyncHDWalletXPubYPubZPub401Response';
 import SyncHDWalletXPubYPubZPub403Response from '../model/SyncHDWalletXPubYPubZPub403Response';
@@ -81,7 +81,7 @@ import SyncNewHDWalletXPubYPubZPubRB from '../model/SyncNewHDWalletXPubYPubZPubR
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.10.0
+* @version 1.11.0
 */
 export default class HDWalletsApi {
 
@@ -601,6 +601,69 @@ export default class HDWalletsApi {
 
 
     /**
+     * Prepare A Transaction From An Address In HD Wallet (xPub, yPub, zPub)
+     * Through this endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"goerli\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB} opts.prepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR} and HTTP response
+     */
+    prepareATransactionFromAnAddressInHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      let postBody = opts['prepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling prepareATransactionFromAnAddressInHDWalletXPubYPubZPub");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling prepareATransactionFromAnAddressInHDWalletXPubYPubZPub");
+      }
+
+      let pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      let queryParams = {
+        'context': opts['context']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['ApiKey'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR;
+      return this.apiClient.callApi(
+        '/blockchain-data/{blockchain}/{network}/transactions/prepare-account-based-transaction', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null
+      );
+    }
+
+    /**
+     * Prepare A Transaction From An Address In HD Wallet (xPub, yPub, zPub)
+     * Through this endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"goerli\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB} opts.prepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR}
+     */
+    prepareATransactionFromAnAddressInHDWalletXPubYPubZPub(blockchain, network, opts) {
+      return this.prepareATransactionFromAnAddressInHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts)
+        .then(function(response_and_data) {
+          return response_and_data.data;
+        });
+    }
+
+
+    /**
      * Prepare A UTXO-Based Transaction From HD Wallet (xPub, yPub, zPub)
      * Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the `selectionStrategy` and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
@@ -657,69 +720,6 @@ export default class HDWalletsApi {
      */
     prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts) {
       return this.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts)
-        .then(function(response_and_data) {
-          return response_and_data.data;
-        });
-    }
-
-
-    /**
-     * Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
-     * Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB} opts.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR} and HTTP response
-     */
-    prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts) {
-      opts = opts || {};
-      let postBody = opts['prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB'];
-      // verify the required parameter 'blockchain' is set
-      if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub");
-      }
-      // verify the required parameter 'network' is set
-      if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub");
-      }
-
-      let pathParams = {
-        'blockchain': blockchain,
-        'network': network
-      };
-      let queryParams = {
-        'context': opts['context']
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = ['ApiKey'];
-      let contentTypes = ['application/json'];
-      let accepts = ['application/json'];
-      let returnType = PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR;
-      return this.apiClient.callApi(
-        '/blockchain-data/{blockchain}/{network}/transactions/prepare-account-based-transaction', 'POST',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null
-      );
-    }
-
-    /**
-     * Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
-     * Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB} opts.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR}
-     */
-    prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts) {
-      return this.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts)
         .then(function(response_and_data) {
           return response_and_data.data;
         });

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeRI model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListConfirmedTokensTransfersByAddressAndTimeRangeRI {
     /**
@@ -107,8 +107,62 @@ class ListConfirmedTokensTransfersByAddressAndTimeRangeRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListConfirmedTokensTransfersByAddressAndTimeRangeRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListConfirmedTokensTransfersByAddressAndTimeRangeRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListConfirmedTokensTransfersByAddressAndTimeRangeRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['contractAddress'] && !(typeof data['contractAddress'] === 'string' || data['contractAddress'] instanceof String)) {
+            throw new Error("Expected the field `contractAddress` to be a primitive type in the JSON string but got " + data['contractAddress']);
+        }
+        // ensure the json data is a string
+        if (data['recipientAddress'] && !(typeof data['recipientAddress'] === 'string' || data['recipientAddress'] instanceof String)) {
+            throw new Error("Expected the field `recipientAddress` to be a primitive type in the JSON string but got " + data['recipientAddress']);
+        }
+        // ensure the json data is a string
+        if (data['senderAddress'] && !(typeof data['senderAddress'] === 'string' || data['senderAddress'] instanceof String)) {
+            throw new Error("Expected the field `senderAddress` to be a primitive type in the JSON string but got " + data['senderAddress']);
+        }
+        // ensure the json data is a string
+        if (data['tokenId'] && !(typeof data['tokenId'] === 'string' || data['tokenId'] instanceof String)) {
+            throw new Error("Expected the field `tokenId` to be a primitive type in the JSON string but got " + data['tokenId']);
+        }
+        // ensure the json data is a string
+        if (data['tokenName'] && !(typeof data['tokenName'] === 'string' || data['tokenName'] instanceof String)) {
+            throw new Error("Expected the field `tokenName` to be a primitive type in the JSON string but got " + data['tokenName']);
+        }
+        // ensure the json data is a string
+        if (data['tokenSymbol'] && !(typeof data['tokenSymbol'] === 'string' || data['tokenSymbol'] instanceof String)) {
+            throw new Error("Expected the field `tokenSymbol` to be a primitive type in the JSON string but got " + data['tokenSymbol']);
+        }
+        // ensure the json data is a string
+        if (data['tokenType'] && !(typeof data['tokenType'] === 'string' || data['tokenType'] instanceof String)) {
+            throw new Error("Expected the field `tokenType` to be a primitive type in the JSON string but got " + data['tokenType']);
+        }
+        // ensure the json data is a string
+        if (data['tokensAmount'] && !(typeof data['tokensAmount'] === 'string' || data['tokensAmount'] instanceof String)) {
+            throw new Error("Expected the field `tokensAmount` to be a primitive type in the JSON string but got " + data['tokensAmount']);
+        }
+        // ensure the json data is a string
+        if (data['transactionHash'] && !(typeof data['transactionHash'] === 'string' || data['transactionHash'] instanceof String)) {
+            throw new Error("Expected the field `transactionHash` to be a primitive type in the JSON string but got " + data['transactionHash']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListConfirmedTokensTransfersByAddressAndTimeRangeRI.RequiredProperties = ["contractAddress", "minedInBlockHeight", "recipientAddress", "senderAddress", "tokenDecimals", "tokenName", "tokenSymbol", "tokenType", "transactionHash", "transactionTimestamp"];
 
 /**
  * Represents the contract address of the token, which controls its logic. It is not the address that holds the tokens.

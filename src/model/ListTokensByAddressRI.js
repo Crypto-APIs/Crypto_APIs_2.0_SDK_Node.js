@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTokensByAddressRI model module.
  * @module model/ListTokensByAddressRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListTokensByAddressRI {
     /**
@@ -76,8 +76,46 @@ class ListTokensByAddressRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListTokensByAddressRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListTokensByAddressRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListTokensByAddressRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['confirmedBalance'] && !(typeof data['confirmedBalance'] === 'string' || data['confirmedBalance'] instanceof String)) {
+            throw new Error("Expected the field `confirmedBalance` to be a primitive type in the JSON string but got " + data['confirmedBalance']);
+        }
+        // ensure the json data is a string
+        if (data['contractAddress'] && !(typeof data['contractAddress'] === 'string' || data['contractAddress'] instanceof String)) {
+            throw new Error("Expected the field `contractAddress` to be a primitive type in the JSON string but got " + data['contractAddress']);
+        }
+        // ensure the json data is a string
+        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
+            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
+        }
+        // ensure the json data is a string
+        if (data['symbol'] && !(typeof data['symbol'] === 'string' || data['symbol'] instanceof String)) {
+            throw new Error("Expected the field `symbol` to be a primitive type in the JSON string but got " + data['symbol']);
+        }
+        // ensure the json data is a string
+        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
+            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListTokensByAddressRI.RequiredProperties = ["confirmedBalance", "contractAddress", "name", "symbol", "type"];
 
 /**
  * Defines the token balance that has been confirmed.

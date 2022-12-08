@@ -18,7 +18,7 @@ import GetXRPRippleBlockDetailsByBlockHeightRITotalFees from './GetXRPRippleBloc
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRI model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetXRPRippleBlockDetailsByBlockHashRI {
     /**
@@ -93,8 +93,46 @@ class GetXRPRippleBlockDetailsByBlockHashRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetXRPRippleBlockDetailsByBlockHashRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetXRPRippleBlockDetailsByBlockHashRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetXRPRippleBlockDetailsByBlockHashRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['blockHash'] && !(typeof data['blockHash'] === 'string' || data['blockHash'] instanceof String)) {
+            throw new Error("Expected the field `blockHash` to be a primitive type in the JSON string but got " + data['blockHash']);
+        }
+        // ensure the json data is a string
+        if (data['nextBlockHash'] && !(typeof data['nextBlockHash'] === 'string' || data['nextBlockHash'] instanceof String)) {
+            throw new Error("Expected the field `nextBlockHash` to be a primitive type in the JSON string but got " + data['nextBlockHash']);
+        }
+        // ensure the json data is a string
+        if (data['previousBlockHash'] && !(typeof data['previousBlockHash'] === 'string' || data['previousBlockHash'] instanceof String)) {
+            throw new Error("Expected the field `previousBlockHash` to be a primitive type in the JSON string but got " + data['previousBlockHash']);
+        }
+        // validate the optional field `totalCoins`
+        if (data['totalCoins']) { // data not null
+          GetXRPRippleBlockDetailsByBlockHashRITotalCoins.validateJSON(data['totalCoins']);
+        }
+        // validate the optional field `totalFees`
+        if (data['totalFees']) { // data not null
+          GetXRPRippleBlockDetailsByBlockHeightRITotalFees.validateJSON(data['totalFees']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetXRPRippleBlockDetailsByBlockHashRI.RequiredProperties = ["blockHash", "blockHeight", "nextBlockHash", "previousBlockHash", "timestamp", "totalCoins", "totalFees", "transactionsCount"];
 
 /**
  * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.

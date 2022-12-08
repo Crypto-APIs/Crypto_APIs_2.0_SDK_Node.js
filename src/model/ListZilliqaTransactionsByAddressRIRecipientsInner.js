@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListZilliqaTransactionsByAddressRIRecipientsInner model module.
  * @module model/ListZilliqaTransactionsByAddressRIRecipientsInner
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListZilliqaTransactionsByAddressRIRecipientsInner {
     /**
@@ -61,8 +61,34 @@ class ListZilliqaTransactionsByAddressRIRecipientsInner {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListZilliqaTransactionsByAddressRIRecipientsInner</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListZilliqaTransactionsByAddressRIRecipientsInner</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListZilliqaTransactionsByAddressRIRecipientsInner.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
+            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
+        }
+        // ensure the json data is a string
+        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
+            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListZilliqaTransactionsByAddressRIRecipientsInner.RequiredProperties = ["address", "amount"];
 
 /**
  * Represents the recipient's address.

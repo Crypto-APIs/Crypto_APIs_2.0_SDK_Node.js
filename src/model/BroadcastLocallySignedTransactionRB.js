@@ -17,7 +17,7 @@ import BroadcastLocallySignedTransactionRBData from './BroadcastLocallySignedTra
 /**
  * The BroadcastLocallySignedTransactionRB model module.
  * @module model/BroadcastLocallySignedTransactionRB
- * @version 1.10.0
+ * @version 1.11.0
  */
 class BroadcastLocallySignedTransactionRB {
     /**
@@ -60,8 +60,34 @@ class BroadcastLocallySignedTransactionRB {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>BroadcastLocallySignedTransactionRB</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>BroadcastLocallySignedTransactionRB</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of BroadcastLocallySignedTransactionRB.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['context'] && !(typeof data['context'] === 'string' || data['context'] instanceof String)) {
+            throw new Error("Expected the field `context` to be a primitive type in the JSON string but got " + data['context']);
+        }
+        // validate the optional field `data`
+        if (data['data']) { // data not null
+          BroadcastLocallySignedTransactionRBData.validateJSON(data['data']);
+        }
+
+        return true;
+    }
+
 
 }
+
+BroadcastLocallySignedTransactionRB.RequiredProperties = ["data"];
 
 /**
  * In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.

@@ -18,7 +18,7 @@ import ListUnconfirmedTransactionsByAddressRIBSEFee from './ListUnconfirmedTrans
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSE model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSE
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSE {
     /**
@@ -84,8 +84,46 @@ class ListUnconfirmedTransactionsByAddressRIBSE {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListUnconfirmedTransactionsByAddressRIBSE</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListUnconfirmedTransactionsByAddressRIBSE</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListUnconfirmedTransactionsByAddressRIBSE.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `fee`
+        if (data['fee']) { // data not null
+          ListUnconfirmedTransactionsByAddressRIBSEFee.validateJSON(data['fee']);
+        }
+        // ensure the json data is a string
+        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
+            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
+        }
+        // validate the optional field `gasPrice`
+        if (data['gasPrice']) { // data not null
+          ListConfirmedTransactionsByAddressRIBSEGasPrice.validateJSON(data['gasPrice']);
+        }
+        // ensure the json data is a string
+        if (data['inputData'] && !(typeof data['inputData'] === 'string' || data['inputData'] instanceof String)) {
+            throw new Error("Expected the field `inputData` to be a primitive type in the JSON string but got " + data['inputData']);
+        }
+        // ensure the json data is a string
+        if (data['transactionStatus'] && !(typeof data['transactionStatus'] === 'string' || data['transactionStatus'] instanceof String)) {
+            throw new Error("Expected the field `transactionStatus` to be a primitive type in the JSON string but got " + data['transactionStatus']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListUnconfirmedTransactionsByAddressRIBSE.RequiredProperties = ["fee", "gasLimit", "gasPrice", "inputData", "nonce", "transactionStatus"];
 
 /**
  * @member {module:model/ListUnconfirmedTransactionsByAddressRIBSEFee} fee

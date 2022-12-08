@@ -19,7 +19,7 @@ import ListDepositAddressesRINonFungibleTokensInner from './ListDepositAddresses
 /**
  * The ListDepositAddressesRI model module.
  * @module model/ListDepositAddressesRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListDepositAddressesRI {
     /**
@@ -89,8 +89,62 @@ class ListDepositAddressesRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListDepositAddressesRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListDepositAddressesRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListDepositAddressesRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
+            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
+        }
+        // validate the optional field `confirmedBalance`
+        if (data['confirmedBalance']) { // data not null
+          ListDepositAddressesRIConfirmedBalance.validateJSON(data['confirmedBalance']);
+        }
+        if (data['fungibleTokens']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['fungibleTokens'])) {
+                throw new Error("Expected the field `fungibleTokens` to be an array in the JSON data but got " + data['fungibleTokens']);
+            }
+            // validate the optional field `fungibleTokens` (array)
+            for (const item of data['fungibleTokens']) {
+                ListDepositAddressesRIFungibleTokensInner.validateJsonObject(item);
+            };
+        }
+        // ensure the json data is a string
+        if (data['index'] && !(typeof data['index'] === 'string' || data['index'] instanceof String)) {
+            throw new Error("Expected the field `index` to be a primitive type in the JSON string but got " + data['index']);
+        }
+        // ensure the json data is a string
+        if (data['label'] && !(typeof data['label'] === 'string' || data['label'] instanceof String)) {
+            throw new Error("Expected the field `label` to be a primitive type in the JSON string but got " + data['label']);
+        }
+        if (data['nonFungibleTokens']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['nonFungibleTokens'])) {
+                throw new Error("Expected the field `nonFungibleTokens` to be an array in the JSON data but got " + data['nonFungibleTokens']);
+            }
+            // validate the optional field `nonFungibleTokens` (array)
+            for (const item of data['nonFungibleTokens']) {
+                ListDepositAddressesRINonFungibleTokensInner.validateJsonObject(item);
+            };
+        }
+
+        return true;
+    }
+
 
 }
+
+ListDepositAddressesRI.RequiredProperties = ["address", "confirmedBalance", "createdTimestamp", "fungibleTokens", "index", "label", "nonFungibleTokens"];
 
 /**
  * Specifies the specific address's unique string value.

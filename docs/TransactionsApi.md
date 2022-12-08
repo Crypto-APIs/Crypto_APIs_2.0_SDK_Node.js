@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**createFungibleTokenTransactionRequestFromAddressWithoutFeePriority**](TransactionsApi.md#createFungibleTokenTransactionRequestFromAddressWithoutFeePriority) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/feeless-token-transaction-requests | Create Fungible Token Transaction Request From Address Without Fee Priority
 [**createFungibleTokensTransactionRequestFromAddress**](TransactionsApi.md#createFungibleTokensTransactionRequestFromAddress) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{senderAddress}/token-transaction-requests | Create Fungible Tokens Transaction Request from Address
 [**createSingleTransactionRequestFromAddressWithoutFeePriority**](TransactionsApi.md#createSingleTransactionRequestFromAddressWithoutFeePriority) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{address}/feeless-transaction-requests | Create Single Transaction Request From Address Without Fee Priority
-[**freezeTronEnergyOrBandwidth**](TransactionsApi.md#freezeTronEnergyOrBandwidth) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{sender}/freeze | Freeze Tron Energy Or Bandwidth
+[**freezeTronForEnergyOrBandwidth**](TransactionsApi.md#freezeTronForEnergyOrBandwidth) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{sender}/freeze | Freeze Tron For Energy Or Bandwidth
 [**unfreezeTronEnergyOrBandwidth**](TransactionsApi.md#unfreezeTronEnergyOrBandwidth) | **POST** /wallet-as-a-service/wallets/{walletId}/{blockchain}/{network}/addresses/{sender}/unfreeze | Unfreeze Tron Energy Or Bandwidth
 
 
@@ -385,13 +385,13 @@ Name | Type | Description  | Notes
 - **Accept**: application/json
 
 
-## freezeTronEnergyOrBandwidth
+## freezeTronForEnergyOrBandwidth
 
-> FreezeTronEnergyOrBandwidthR freezeTronEnergyOrBandwidth(blockchain, network, sender, walletId, opts)
+> FreezeTronForEnergyOrBandwidthR freezeTronForEnergyOrBandwidth(blockchain, network, sender, walletId, opts)
 
-Freeze Tron Energy Or Bandwidth
+Freeze Tron For Energy Or Bandwidth
 
-Through this endpoint, customers can stake (freeze) the balance of a specific TRX address to obtain bandwidth or energy.  When creating a request, the \&quot;fromAddress\&quot; is a required parameter. If a \&quot;toAddress\&quot; is not set, for such will be considered the address making the staking transaction. The account receiving the bandwidth or energy must have an available TRX balance.  The minimum amount for staking is 1 TRX.  Note: Staking duration by default is 3 days from the time of freezing, it can NOT be more or less than that. When staking the same address again the duration resets.
+Through this endpoint, customers can stake (freeze) the balance of a specific TRX address to obtain bandwidth or energy.  When creating a request, the \&quot;fromAddress\&quot; is a required parameter. If a \&quot;toAddress\&quot; is not set, for such will be considered the address making the staking transaction. The account receiving the bandwidth or energy must have or previously had a TRX balance in order to be eligible to obtain the resources..  The minimum amount for staking is 1 TRX.  Note: Staking duration by default is 3 days from the time of freezing, it can NOT be more or less than that. When staking the same address again the duration resets.
 
 ### Example
 
@@ -411,9 +411,9 @@ let sender = TTKi4zqgdWJcGSYyFU5DJcoXtJQSTZMWi4; // String | Defines the address
 let walletId = 62a84a2425a05500079dda56; // String | Represents the sender's specific and unique Wallet ID of the sender.
 let opts = {
   'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-  'freezeTronEnergyOrBandwidthRB': new Cryptoapis.FreezeTronEnergyOrBandwidthRB() // FreezeTronEnergyOrBandwidthRB | 
+  'freezeTronForEnergyOrBandwidthRB': new Cryptoapis.FreezeTronForEnergyOrBandwidthRB() // FreezeTronForEnergyOrBandwidthRB | 
 };
-apiInstance.freezeTronEnergyOrBandwidth(blockchain, network, sender, walletId, opts).then((data) => {
+apiInstance.freezeTronForEnergyOrBandwidth(blockchain, network, sender, walletId, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
   console.error(error);
@@ -431,11 +431,11 @@ Name | Type | Description  | Notes
  **sender** | **String**| Defines the address that sends the amount | 
  **walletId** | **String**| Represents the sender&#39;s specific and unique Wallet ID of the sender. | 
  **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
- **freezeTronEnergyOrBandwidthRB** | [**FreezeTronEnergyOrBandwidthRB**](FreezeTronEnergyOrBandwidthRB.md)|  | [optional] 
+ **freezeTronForEnergyOrBandwidthRB** | [**FreezeTronForEnergyOrBandwidthRB**](FreezeTronForEnergyOrBandwidthRB.md)|  | [optional] 
 
 ### Return type
 
-[**FreezeTronEnergyOrBandwidthR**](FreezeTronEnergyOrBandwidthR.md)
+[**FreezeTronForEnergyOrBandwidthR**](FreezeTronForEnergyOrBandwidthR.md)
 
 ### Authorization
 

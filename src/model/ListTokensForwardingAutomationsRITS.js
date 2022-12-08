@@ -18,30 +18,62 @@ import ListTokensForwardingAutomationsRITSET from './ListTokensForwardingAutomat
 /**
  * The ListTokensForwardingAutomationsRITS model module.
  * @module model/ListTokensForwardingAutomationsRITS
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListTokensForwardingAutomationsRITS {
     /**
      * Constructs a new <code>ListTokensForwardingAutomationsRITS</code>.
      * @alias module:model/ListTokensForwardingAutomationsRITS
-     * @implements module:model/ListTokensForwardingAutomationsRITSBOT
-     * @implements module:model/ListTokensForwardingAutomationsRITSET
-     * @param propertyId {Number} Defines the Property ID of the Omni Layer token.
-     * @param contractAddress {String} Defines the token contract address.
+     * @param {(module:model/ListTokensForwardingAutomationsRITSBOT|module:model/ListTokensForwardingAutomationsRITSET)} instance The actual instance to initialize ListTokensForwardingAutomationsRITS.
      */
-    constructor(propertyId, contractAddress) { 
-        ListTokensForwardingAutomationsRITSBOT.initialize(this, propertyId);ListTokensForwardingAutomationsRITSET.initialize(this, contractAddress);
-        ListTokensForwardingAutomationsRITS.initialize(this, propertyId, contractAddress);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "ListTokensForwardingAutomationsRITSBOT") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListTokensForwardingAutomationsRITSBOT.validateJSON(instance); // throw an exception if no match
+                // create ListTokensForwardingAutomationsRITSBOT from JS object
+                this.actualInstance = ListTokensForwardingAutomationsRITSBOT.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListTokensForwardingAutomationsRITSBOT
+            errorMessages.push("Failed to construct ListTokensForwardingAutomationsRITSBOT: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, propertyId, contractAddress) { 
-        obj['propertyId'] = propertyId;
-        obj['contractAddress'] = contractAddress;
+        try {
+            if (typeof instance === "ListTokensForwardingAutomationsRITSET") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ListTokensForwardingAutomationsRITSET.validateJSON(instance); // throw an exception if no match
+                // create ListTokensForwardingAutomationsRITSET from JS object
+                this.actualInstance = ListTokensForwardingAutomationsRITSET.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ListTokensForwardingAutomationsRITSET
+            errorMessages.push("Failed to construct ListTokensForwardingAutomationsRITSET: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `ListTokensForwardingAutomationsRITS` with oneOf schemas ListTokensForwardingAutomationsRITSBOT, ListTokensForwardingAutomationsRITSET. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `ListTokensForwardingAutomationsRITS` with oneOf schemas ListTokensForwardingAutomationsRITSBOT, ListTokensForwardingAutomationsRITSET. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -52,22 +84,41 @@ class ListTokensForwardingAutomationsRITS {
      * @return {module:model/ListTokensForwardingAutomationsRITS} The populated <code>ListTokensForwardingAutomationsRITS</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new ListTokensForwardingAutomationsRITS();
-            ListTokensForwardingAutomationsRITSBOT.constructFromObject(data, obj);
-            ListTokensForwardingAutomationsRITSET.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('propertyId')) {
-                obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
-            }
-            if (data.hasOwnProperty('contractAddress')) {
-                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
-            }
-        }
-        return obj;
+        return new ListTokensForwardingAutomationsRITS(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>ListTokensForwardingAutomationsRITSBOT</code>, <code>ListTokensForwardingAutomationsRITSET</code>.
+     * @return {(module:model/ListTokensForwardingAutomationsRITSBOT|module:model/ListTokensForwardingAutomationsRITSET)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>ListTokensForwardingAutomationsRITSBOT</code>, <code>ListTokensForwardingAutomationsRITSET</code>.
+     * @param {(module:model/ListTokensForwardingAutomationsRITSBOT|module:model/ListTokensForwardingAutomationsRITSET)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = ListTokensForwardingAutomationsRITS.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of ListTokensForwardingAutomationsRITS from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/ListTokensForwardingAutomationsRITS} An instance of ListTokensForwardingAutomationsRITS.
+     */
+    static fromJSON = function(json_string){
+        return ListTokensForwardingAutomationsRITS.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -83,21 +134,7 @@ ListTokensForwardingAutomationsRITS.prototype['propertyId'] = undefined;
 ListTokensForwardingAutomationsRITS.prototype['contractAddress'] = undefined;
 
 
-// Implement ListTokensForwardingAutomationsRITSBOT interface:
-/**
- * Defines the Property ID of the Omni Layer token.
- * @member {Number} propertyId
- */
-ListTokensForwardingAutomationsRITSBOT.prototype['propertyId'] = undefined;
-// Implement ListTokensForwardingAutomationsRITSET interface:
-/**
- * Defines the token contract address.
- * @member {String} contractAddress
- */
-ListTokensForwardingAutomationsRITSET.prototype['contractAddress'] = undefined;
-
-
-
+ListTokensForwardingAutomationsRITS.OneOf = ["ListTokensForwardingAutomationsRITSBOT", "ListTokensForwardingAutomationsRITSET"];
 
 export default ListTokensForwardingAutomationsRITS;
 

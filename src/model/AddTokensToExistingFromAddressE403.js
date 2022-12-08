@@ -22,33 +22,110 @@ import TokensForwardingAutomationsLimitReached from './TokensForwardingAutomatio
 /**
  * The AddTokensToExistingFromAddressE403 model module.
  * @module model/AddTokensToExistingFromAddressE403
- * @version 1.10.0
+ * @version 1.11.0
  */
 class AddTokensToExistingFromAddressE403 {
     /**
      * Constructs a new <code>AddTokensToExistingFromAddressE403</code>.
      * @alias module:model/AddTokensToExistingFromAddressE403
-     * @implements module:model/BannedIpAddress
-     * @implements module:model/EndpointNotAllowedForPlan
-     * @implements module:model/EndpointNotAllowedForApiKey
-     * @implements module:model/FeatureMainnetsNotAllowedForPlan
-     * @implements module:model/TokensForwardingAutomationsLimitReached
-     * @param code {String} Specifies an error code, e.g. error 404.
-     * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+     * @param {(module:model/BannedIpAddress|module:model/EndpointNotAllowedForApiKey|module:model/EndpointNotAllowedForPlan|module:model/FeatureMainnetsNotAllowedForPlan|module:model/TokensForwardingAutomationsLimitReached)} instance The actual instance to initialize AddTokensToExistingFromAddressE403.
      */
-    constructor(code, message) { 
-        BannedIpAddress.initialize(this, code, message);EndpointNotAllowedForPlan.initialize(this, code, message);EndpointNotAllowedForApiKey.initialize(this, code, message);FeatureMainnetsNotAllowedForPlan.initialize(this, code, message);TokensForwardingAutomationsLimitReached.initialize(this, code, message);
-        AddTokensToExistingFromAddressE403.initialize(this, code, message);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "BannedIpAddress") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                BannedIpAddress.validateJSON(instance); // throw an exception if no match
+                // create BannedIpAddress from JS object
+                this.actualInstance = BannedIpAddress.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into BannedIpAddress
+            errorMessages.push("Failed to construct BannedIpAddress: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, code, message) { 
-        obj['code'] = code;
-        obj['message'] = message;
+        try {
+            if (typeof instance === "EndpointNotAllowedForPlan") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                EndpointNotAllowedForPlan.validateJSON(instance); // throw an exception if no match
+                // create EndpointNotAllowedForPlan from JS object
+                this.actualInstance = EndpointNotAllowedForPlan.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into EndpointNotAllowedForPlan
+            errorMessages.push("Failed to construct EndpointNotAllowedForPlan: " + err)
+        }
+
+        try {
+            if (typeof instance === "EndpointNotAllowedForApiKey") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                EndpointNotAllowedForApiKey.validateJSON(instance); // throw an exception if no match
+                // create EndpointNotAllowedForApiKey from JS object
+                this.actualInstance = EndpointNotAllowedForApiKey.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into EndpointNotAllowedForApiKey
+            errorMessages.push("Failed to construct EndpointNotAllowedForApiKey: " + err)
+        }
+
+        try {
+            if (typeof instance === "FeatureMainnetsNotAllowedForPlan") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                FeatureMainnetsNotAllowedForPlan.validateJSON(instance); // throw an exception if no match
+                // create FeatureMainnetsNotAllowedForPlan from JS object
+                this.actualInstance = FeatureMainnetsNotAllowedForPlan.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into FeatureMainnetsNotAllowedForPlan
+            errorMessages.push("Failed to construct FeatureMainnetsNotAllowedForPlan: " + err)
+        }
+
+        try {
+            if (typeof instance === "TokensForwardingAutomationsLimitReached") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                TokensForwardingAutomationsLimitReached.validateJSON(instance); // throw an exception if no match
+                // create TokensForwardingAutomationsLimitReached from JS object
+                this.actualInstance = TokensForwardingAutomationsLimitReached.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into TokensForwardingAutomationsLimitReached
+            errorMessages.push("Failed to construct TokensForwardingAutomationsLimitReached: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `AddTokensToExistingFromAddressE403` with oneOf schemas BannedIpAddress, EndpointNotAllowedForApiKey, EndpointNotAllowedForPlan, FeatureMainnetsNotAllowedForPlan, TokensForwardingAutomationsLimitReached. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `AddTokensToExistingFromAddressE403` with oneOf schemas BannedIpAddress, EndpointNotAllowedForApiKey, EndpointNotAllowedForPlan, FeatureMainnetsNotAllowedForPlan, TokensForwardingAutomationsLimitReached. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -59,28 +136,41 @@ class AddTokensToExistingFromAddressE403 {
      * @return {module:model/AddTokensToExistingFromAddressE403} The populated <code>AddTokensToExistingFromAddressE403</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new AddTokensToExistingFromAddressE403();
-            BannedIpAddress.constructFromObject(data, obj);
-            EndpointNotAllowedForPlan.constructFromObject(data, obj);
-            EndpointNotAllowedForApiKey.constructFromObject(data, obj);
-            FeatureMainnetsNotAllowedForPlan.constructFromObject(data, obj);
-            TokensForwardingAutomationsLimitReached.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('code')) {
-                obj['code'] = ApiClient.convertToType(data['code'], 'String');
-            }
-            if (data.hasOwnProperty('message')) {
-                obj['message'] = ApiClient.convertToType(data['message'], 'String');
-            }
-            if (data.hasOwnProperty('details')) {
-                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
-            }
-        }
-        return obj;
+        return new AddTokensToExistingFromAddressE403(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>BannedIpAddress</code>, <code>EndpointNotAllowedForApiKey</code>, <code>EndpointNotAllowedForPlan</code>, <code>FeatureMainnetsNotAllowedForPlan</code>, <code>TokensForwardingAutomationsLimitReached</code>.
+     * @return {(module:model/BannedIpAddress|module:model/EndpointNotAllowedForApiKey|module:model/EndpointNotAllowedForPlan|module:model/FeatureMainnetsNotAllowedForPlan|module:model/TokensForwardingAutomationsLimitReached)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>BannedIpAddress</code>, <code>EndpointNotAllowedForApiKey</code>, <code>EndpointNotAllowedForPlan</code>, <code>FeatureMainnetsNotAllowedForPlan</code>, <code>TokensForwardingAutomationsLimitReached</code>.
+     * @param {(module:model/BannedIpAddress|module:model/EndpointNotAllowedForApiKey|module:model/EndpointNotAllowedForPlan|module:model/FeatureMainnetsNotAllowedForPlan|module:model/TokensForwardingAutomationsLimitReached)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = AddTokensToExistingFromAddressE403.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of AddTokensToExistingFromAddressE403 from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/AddTokensToExistingFromAddressE403} An instance of AddTokensToExistingFromAddressE403.
+     */
+    static fromJSON = function(json_string){
+        return AddTokensToExistingFromAddressE403.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -101,84 +191,7 @@ AddTokensToExistingFromAddressE403.prototype['message'] = undefined;
 AddTokensToExistingFromAddressE403.prototype['details'] = undefined;
 
 
-// Implement BannedIpAddress interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-BannedIpAddress.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-BannedIpAddress.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-BannedIpAddress.prototype['details'] = undefined;
-// Implement EndpointNotAllowedForPlan interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-EndpointNotAllowedForPlan.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-EndpointNotAllowedForPlan.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-EndpointNotAllowedForPlan.prototype['details'] = undefined;
-// Implement EndpointNotAllowedForApiKey interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-EndpointNotAllowedForApiKey.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-EndpointNotAllowedForApiKey.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-EndpointNotAllowedForApiKey.prototype['details'] = undefined;
-// Implement FeatureMainnetsNotAllowedForPlan interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-FeatureMainnetsNotAllowedForPlan.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-FeatureMainnetsNotAllowedForPlan.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-FeatureMainnetsNotAllowedForPlan.prototype['details'] = undefined;
-// Implement TokensForwardingAutomationsLimitReached interface:
-/**
- * Specifies an error code, e.g. error 404.
- * @member {String} code
- */
-TokensForwardingAutomationsLimitReached.prototype['code'] = undefined;
-/**
- * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
- * @member {String} message
- */
-TokensForwardingAutomationsLimitReached.prototype['message'] = undefined;
-/**
- * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
- */
-TokensForwardingAutomationsLimitReached.prototype['details'] = undefined;
-
-
-
+AddTokensToExistingFromAddressE403.OneOf = ["BannedIpAddress", "EndpointNotAllowedForApiKey", "EndpointNotAllowedForPlan", "FeatureMainnetsNotAllowedForPlan", "TokensForwardingAutomationsLimitReached"];
 
 export default AddTokensToExistingFromAddressE403;
 

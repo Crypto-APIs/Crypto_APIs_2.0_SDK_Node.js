@@ -19,37 +19,78 @@ import ConfirmedTokensTransactionForCertainAmountOrHigherErc721 from './Confirme
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherToken model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherToken
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ConfirmedTokensTransactionForCertainAmountOrHigherToken {
     /**
      * Constructs a new <code>ConfirmedTokensTransactionForCertainAmountOrHigherToken</code>.
      * @alias module:model/ConfirmedTokensTransactionForCertainAmountOrHigherToken
-     * @implements module:model/ConfirmedTokensTransactionForCertainAmountOrHigherErc20
-     * @implements module:model/ConfirmedTokensTransactionForCertainAmountOrHigherErc721
-     * @implements module:model/ConfirmedTokensTransactionForCertainAmountOrHigherBep20
-     * @param name {String} Specifies the name of the token.
-     * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
-     * @param amount {String} Defines the amount of tokens sent with the confirmed transaction.
-     * @param contractAddress {String} Defines the address of the contract.
-     * @param tokenId {String} Specifies the ID of the token.
+     * @param {(module:model/ConfirmedTokensTransactionForCertainAmountOrHigherBep20|module:model/ConfirmedTokensTransactionForCertainAmountOrHigherErc20|module:model/ConfirmedTokensTransactionForCertainAmountOrHigherErc721)} instance The actual instance to initialize ConfirmedTokensTransactionForCertainAmountOrHigherToken.
      */
-    constructor(name, symbol, amount, contractAddress, tokenId) { 
-        ConfirmedTokensTransactionForCertainAmountOrHigherErc20.initialize(this, name, symbol, amount, contractAddress);ConfirmedTokensTransactionForCertainAmountOrHigherErc721.initialize(this, name, symbol, tokenId, contractAddress);ConfirmedTokensTransactionForCertainAmountOrHigherBep20.initialize(this, name, symbol, amount, contractAddress);
-        ConfirmedTokensTransactionForCertainAmountOrHigherToken.initialize(this, name, symbol, amount, contractAddress, tokenId);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "ConfirmedTokensTransactionForCertainAmountOrHigherErc20") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ConfirmedTokensTransactionForCertainAmountOrHigherErc20.validateJSON(instance); // throw an exception if no match
+                // create ConfirmedTokensTransactionForCertainAmountOrHigherErc20 from JS object
+                this.actualInstance = ConfirmedTokensTransactionForCertainAmountOrHigherErc20.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ConfirmedTokensTransactionForCertainAmountOrHigherErc20
+            errorMessages.push("Failed to construct ConfirmedTokensTransactionForCertainAmountOrHigherErc20: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, name, symbol, amount, contractAddress, tokenId) { 
-        obj['name'] = name;
-        obj['symbol'] = symbol;
-        obj['amount'] = amount;
-        obj['contractAddress'] = contractAddress;
-        obj['tokenId'] = tokenId;
+        try {
+            if (typeof instance === "ConfirmedTokensTransactionForCertainAmountOrHigherErc721") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ConfirmedTokensTransactionForCertainAmountOrHigherErc721.validateJSON(instance); // throw an exception if no match
+                // create ConfirmedTokensTransactionForCertainAmountOrHigherErc721 from JS object
+                this.actualInstance = ConfirmedTokensTransactionForCertainAmountOrHigherErc721.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ConfirmedTokensTransactionForCertainAmountOrHigherErc721
+            errorMessages.push("Failed to construct ConfirmedTokensTransactionForCertainAmountOrHigherErc721: " + err)
+        }
+
+        try {
+            if (typeof instance === "ConfirmedTokensTransactionForCertainAmountOrHigherBep20") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                ConfirmedTokensTransactionForCertainAmountOrHigherBep20.validateJSON(instance); // throw an exception if no match
+                // create ConfirmedTokensTransactionForCertainAmountOrHigherBep20 from JS object
+                this.actualInstance = ConfirmedTokensTransactionForCertainAmountOrHigherBep20.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into ConfirmedTokensTransactionForCertainAmountOrHigherBep20
+            errorMessages.push("Failed to construct ConfirmedTokensTransactionForCertainAmountOrHigherBep20: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `ConfirmedTokensTransactionForCertainAmountOrHigherToken` with oneOf schemas ConfirmedTokensTransactionForCertainAmountOrHigherBep20, ConfirmedTokensTransactionForCertainAmountOrHigherErc20, ConfirmedTokensTransactionForCertainAmountOrHigherErc721. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `ConfirmedTokensTransactionForCertainAmountOrHigherToken` with oneOf schemas ConfirmedTokensTransactionForCertainAmountOrHigherBep20, ConfirmedTokensTransactionForCertainAmountOrHigherErc20, ConfirmedTokensTransactionForCertainAmountOrHigherErc721. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -60,35 +101,41 @@ class ConfirmedTokensTransactionForCertainAmountOrHigherToken {
      * @return {module:model/ConfirmedTokensTransactionForCertainAmountOrHigherToken} The populated <code>ConfirmedTokensTransactionForCertainAmountOrHigherToken</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new ConfirmedTokensTransactionForCertainAmountOrHigherToken();
-            ConfirmedTokensTransactionForCertainAmountOrHigherErc20.constructFromObject(data, obj);
-            ConfirmedTokensTransactionForCertainAmountOrHigherErc721.constructFromObject(data, obj);
-            ConfirmedTokensTransactionForCertainAmountOrHigherBep20.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = ApiClient.convertToType(data['name'], 'String');
-            }
-            if (data.hasOwnProperty('symbol')) {
-                obj['symbol'] = ApiClient.convertToType(data['symbol'], 'String');
-            }
-            if (data.hasOwnProperty('decimals')) {
-                obj['decimals'] = ApiClient.convertToType(data['decimals'], 'String');
-            }
-            if (data.hasOwnProperty('amount')) {
-                obj['amount'] = ApiClient.convertToType(data['amount'], 'String');
-            }
-            if (data.hasOwnProperty('contractAddress')) {
-                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
-            }
-            if (data.hasOwnProperty('tokenId')) {
-                obj['tokenId'] = ApiClient.convertToType(data['tokenId'], 'String');
-            }
-        }
-        return obj;
+        return new ConfirmedTokensTransactionForCertainAmountOrHigherToken(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>ConfirmedTokensTransactionForCertainAmountOrHigherBep20</code>, <code>ConfirmedTokensTransactionForCertainAmountOrHigherErc20</code>, <code>ConfirmedTokensTransactionForCertainAmountOrHigherErc721</code>.
+     * @return {(module:model/ConfirmedTokensTransactionForCertainAmountOrHigherBep20|module:model/ConfirmedTokensTransactionForCertainAmountOrHigherErc20|module:model/ConfirmedTokensTransactionForCertainAmountOrHigherErc721)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>ConfirmedTokensTransactionForCertainAmountOrHigherBep20</code>, <code>ConfirmedTokensTransactionForCertainAmountOrHigherErc20</code>, <code>ConfirmedTokensTransactionForCertainAmountOrHigherErc721</code>.
+     * @param {(module:model/ConfirmedTokensTransactionForCertainAmountOrHigherBep20|module:model/ConfirmedTokensTransactionForCertainAmountOrHigherErc20|module:model/ConfirmedTokensTransactionForCertainAmountOrHigherErc721)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = ConfirmedTokensTransactionForCertainAmountOrHigherToken.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of ConfirmedTokensTransactionForCertainAmountOrHigherToken from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/ConfirmedTokensTransactionForCertainAmountOrHigherToken} An instance of ConfirmedTokensTransactionForCertainAmountOrHigherToken.
+     */
+    static fromJSON = function(json_string){
+        return ConfirmedTokensTransactionForCertainAmountOrHigherToken.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -128,82 +175,7 @@ ConfirmedTokensTransactionForCertainAmountOrHigherToken.prototype['contractAddre
 ConfirmedTokensTransactionForCertainAmountOrHigherToken.prototype['tokenId'] = undefined;
 
 
-// Implement ConfirmedTokensTransactionForCertainAmountOrHigherErc20 interface:
-/**
- * Specifies the name of the token.
- * @member {String} name
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc20.prototype['name'] = undefined;
-/**
- * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
- * @member {String} symbol
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc20.prototype['symbol'] = undefined;
-/**
- * Defines how many decimals can be used to break the token.
- * @member {String} decimals
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc20.prototype['decimals'] = undefined;
-/**
- * Defines the amount of tokens sent with the confirmed transaction.
- * @member {String} amount
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc20.prototype['amount'] = undefined;
-/**
- * Defines the address of the contract.
- * @member {String} contractAddress
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc20.prototype['contractAddress'] = undefined;
-// Implement ConfirmedTokensTransactionForCertainAmountOrHigherErc721 interface:
-/**
- * Specifies the name of the token.
- * @member {String} name
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc721.prototype['name'] = undefined;
-/**
- * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
- * @member {String} symbol
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc721.prototype['symbol'] = undefined;
-/**
- * Specifies the ID of the token.
- * @member {String} tokenId
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc721.prototype['tokenId'] = undefined;
-/**
- * Specifies the address of the contract.
- * @member {String} contractAddress
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherErc721.prototype['contractAddress'] = undefined;
-// Implement ConfirmedTokensTransactionForCertainAmountOrHigherBep20 interface:
-/**
- * Specifies the name of the token.
- * @member {String} name
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherBep20.prototype['name'] = undefined;
-/**
- * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
- * @member {String} symbol
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherBep20.prototype['symbol'] = undefined;
-/**
- * Defines how many decimals can be used to break the token.
- * @member {String} decimals
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherBep20.prototype['decimals'] = undefined;
-/**
- * Defines the amount of tokens sent with the confirmed transaction.
- * @member {String} amount
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherBep20.prototype['amount'] = undefined;
-/**
- * Defines the address of the contract.
- * @member {String} contractAddress
- */
-ConfirmedTokensTransactionForCertainAmountOrHigherBep20.prototype['contractAddress'] = undefined;
-
-
-
+ConfirmedTokensTransactionForCertainAmountOrHigherToken.OneOf = ["ConfirmedTokensTransactionForCertainAmountOrHigherBep20", "ConfirmedTokensTransactionForCertainAmountOrHigherErc20", "ConfirmedTokensTransactionForCertainAmountOrHigherErc721"];
 
 export default ConfirmedTokensTransactionForCertainAmountOrHigherToken;
 

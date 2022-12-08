@@ -17,7 +17,7 @@ import UnfreezeTronEnergyOrBandwidthRI from './UnfreezeTronEnergyOrBandwidthRI';
 /**
  * The UnfreezeTronEnergyOrBandwidthRData model module.
  * @module model/UnfreezeTronEnergyOrBandwidthRData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class UnfreezeTronEnergyOrBandwidthRData {
     /**
@@ -57,8 +57,30 @@ class UnfreezeTronEnergyOrBandwidthRData {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>UnfreezeTronEnergyOrBandwidthRData</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>UnfreezeTronEnergyOrBandwidthRData</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of UnfreezeTronEnergyOrBandwidthRData.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `item`
+        if (data['item']) { // data not null
+          UnfreezeTronEnergyOrBandwidthRI.validateJSON(data['item']);
+        }
+
+        return true;
+    }
+
 
 }
+
+UnfreezeTronEnergyOrBandwidthRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/UnfreezeTronEnergyOrBandwidthRI} item

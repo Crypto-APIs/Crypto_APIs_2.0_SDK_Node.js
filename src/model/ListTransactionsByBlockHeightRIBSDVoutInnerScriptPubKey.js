@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey {
     /**
@@ -75,8 +75,42 @@ class ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is an array
+        if (!Array.isArray(data['addresses'])) {
+            throw new Error("Expected the field `addresses` to be an array in the JSON data but got " + data['addresses']);
+        }
+        // ensure the json data is a string
+        if (data['asm'] && !(typeof data['asm'] === 'string' || data['asm'] instanceof String)) {
+            throw new Error("Expected the field `asm` to be a primitive type in the JSON string but got " + data['asm']);
+        }
+        // ensure the json data is a string
+        if (data['hex'] && !(typeof data['hex'] === 'string' || data['hex'] instanceof String)) {
+            throw new Error("Expected the field `hex` to be a primitive type in the JSON string but got " + data['hex']);
+        }
+        // ensure the json data is a string
+        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
+            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListTransactionsByBlockHeightRIBSDVoutInnerScriptPubKey.RequiredProperties = ["addresses", "asm", "hex", "type"];
 
 /**
  * @member {Array.<String>} addresses

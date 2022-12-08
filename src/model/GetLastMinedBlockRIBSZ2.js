@@ -16,14 +16,13 @@ import ApiClient from '../ApiClient';
 /**
  * The GetLastMinedBlockRIBSZ2 model module.
  * @module model/GetLastMinedBlockRIBSZ2
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetLastMinedBlockRIBSZ2 {
     /**
      * Constructs a new <code>GetLastMinedBlockRIBSZ2</code>.
      * Zilliqa
      * @alias module:model/GetLastMinedBlockRIBSZ2
-     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
      * @param dsBlock {Number} Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
      * @param dsDifficulty {String} Defines how difficult it is to mine the dsBlocks.
      * @param dsLeader {String} Represents a part of the DS Committee which leads the consensus protocol for the epoch.
@@ -31,9 +30,9 @@ class GetLastMinedBlockRIBSZ2 {
      * @param gasUsed {Number} Defines how much of the gas for the block has been used.
      * @param microBlocks {Array.<String>} 
      */
-    constructor(difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) { 
+    constructor(dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) { 
         
-        GetLastMinedBlockRIBSZ2.initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
+        GetLastMinedBlockRIBSZ2.initialize(this, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
     }
 
     /**
@@ -41,8 +40,7 @@ class GetLastMinedBlockRIBSZ2 {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) { 
-        obj['difficulty'] = difficulty;
+    static initialize(obj, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks) { 
         obj['dsBlock'] = dsBlock;
         obj['dsDifficulty'] = dsDifficulty;
         obj['dsLeader'] = dsLeader;
@@ -87,11 +85,45 @@ class GetLastMinedBlockRIBSZ2 {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetLastMinedBlockRIBSZ2</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetLastMinedBlockRIBSZ2</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetLastMinedBlockRIBSZ2.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['difficulty'] && !(typeof data['difficulty'] === 'string' || data['difficulty'] instanceof String)) {
+            throw new Error("Expected the field `difficulty` to be a primitive type in the JSON string but got " + data['difficulty']);
+        }
+        // ensure the json data is a string
+        if (data['dsDifficulty'] && !(typeof data['dsDifficulty'] === 'string' || data['dsDifficulty'] instanceof String)) {
+            throw new Error("Expected the field `dsDifficulty` to be a primitive type in the JSON string but got " + data['dsDifficulty']);
+        }
+        // ensure the json data is a string
+        if (data['dsLeader'] && !(typeof data['dsLeader'] === 'string' || data['dsLeader'] instanceof String)) {
+            throw new Error("Expected the field `dsLeader` to be a primitive type in the JSON string but got " + data['dsLeader']);
+        }
+        // ensure the json data is an array
+        if (!Array.isArray(data['microBlocks'])) {
+            throw new Error("Expected the field `microBlocks` to be an array in the JSON data but got " + data['microBlocks']);
+        }
+
+        return true;
+    }
+
 
 }
 
+GetLastMinedBlockRIBSZ2.RequiredProperties = ["dsBlock", "dsDifficulty", "dsLeader", "gasLimit", "gasUsed", "microBlocks"];
+
 /**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * String representation of the difficulty
  * @member {String} difficulty
  */
 GetLastMinedBlockRIBSZ2.prototype['difficulty'] = undefined;

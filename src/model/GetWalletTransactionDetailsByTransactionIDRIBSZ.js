@@ -21,7 +21,7 @@ import ListTransactionsByBlockHeightRIBSZVoutInner from './ListTransactionsByBlo
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSZ model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSZ
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSZ {
     /**
@@ -126,8 +126,96 @@ class GetWalletTransactionDetailsByTransactionIDRIBSZ {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetWalletTransactionDetailsByTransactionIDRIBSZ</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetWalletTransactionDetailsByTransactionIDRIBSZ</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetWalletTransactionDetailsByTransactionIDRIBSZ.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['bindingSig'] && !(typeof data['bindingSig'] === 'string' || data['bindingSig'] instanceof String)) {
+            throw new Error("Expected the field `bindingSig` to be a primitive type in the JSON string but got " + data['bindingSig']);
+        }
+        // ensure the json data is a string
+        if (data['joinSplitPubKey'] && !(typeof data['joinSplitPubKey'] === 'string' || data['joinSplitPubKey'] instanceof String)) {
+            throw new Error("Expected the field `joinSplitPubKey` to be a primitive type in the JSON string but got " + data['joinSplitPubKey']);
+        }
+        // ensure the json data is a string
+        if (data['joinSplitSig'] && !(typeof data['joinSplitSig'] === 'string' || data['joinSplitSig'] instanceof String)) {
+            throw new Error("Expected the field `joinSplitSig` to be a primitive type in the JSON string but got " + data['joinSplitSig']);
+        }
+        if (data['vJoinSplit']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vJoinSplit'])) {
+                throw new Error("Expected the field `vJoinSplit` to be an array in the JSON data but got " + data['vJoinSplit']);
+            }
+            // validate the optional field `vJoinSplit` (array)
+            for (const item of data['vJoinSplit']) {
+                GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner.validateJsonObject(item);
+            };
+        }
+        if (data['vShieldedOutput']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vShieldedOutput'])) {
+                throw new Error("Expected the field `vShieldedOutput` to be an array in the JSON data but got " + data['vShieldedOutput']);
+            }
+            // validate the optional field `vShieldedOutput` (array)
+            for (const item of data['vShieldedOutput']) {
+                GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner.validateJsonObject(item);
+            };
+        }
+        if (data['vShieldedSpend']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vShieldedSpend'])) {
+                throw new Error("Expected the field `vShieldedSpend` to be an array in the JSON data but got " + data['vShieldedSpend']);
+            }
+            // validate the optional field `vShieldedSpend` (array)
+            for (const item of data['vShieldedSpend']) {
+                GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner.validateJsonObject(item);
+            };
+        }
+        // ensure the json data is a string
+        if (data['valueBalance'] && !(typeof data['valueBalance'] === 'string' || data['valueBalance'] instanceof String)) {
+            throw new Error("Expected the field `valueBalance` to be a primitive type in the JSON string but got " + data['valueBalance']);
+        }
+        // ensure the json data is a string
+        if (data['versionGroupId'] && !(typeof data['versionGroupId'] === 'string' || data['versionGroupId'] instanceof String)) {
+            throw new Error("Expected the field `versionGroupId` to be a primitive type in the JSON string but got " + data['versionGroupId']);
+        }
+        if (data['vin']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vin'])) {
+                throw new Error("Expected the field `vin` to be an array in the JSON data but got " + data['vin']);
+            }
+            // validate the optional field `vin` (array)
+            for (const item of data['vin']) {
+                GetWalletTransactionDetailsByTransactionIDRIBSZVinInner.validateJsonObject(item);
+            };
+        }
+        if (data['vout']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vout'])) {
+                throw new Error("Expected the field `vout` to be an array in the JSON data but got " + data['vout']);
+            }
+            // validate the optional field `vout` (array)
+            for (const item of data['vout']) {
+                ListTransactionsByBlockHeightRIBSZVoutInner.validateJsonObject(item);
+            };
+        }
+
+        return true;
+    }
+
 
 }
+
+GetWalletTransactionDetailsByTransactionIDRIBSZ.RequiredProperties = ["bindingSig", "expiryHeight", "joinSplitPubKey", "joinSplitSig", "locktime", "overwintered", "size", "valueBalance", "version", "versionGroupId", "vin", "vout"];
 
 /**
  * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.

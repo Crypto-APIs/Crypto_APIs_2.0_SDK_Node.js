@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner {
     /**
@@ -81,8 +81,50 @@ class GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['cmu'] && !(typeof data['cmu'] === 'string' || data['cmu'] instanceof String)) {
+            throw new Error("Expected the field `cmu` to be a primitive type in the JSON string but got " + data['cmu']);
+        }
+        // ensure the json data is a string
+        if (data['cv'] && !(typeof data['cv'] === 'string' || data['cv'] instanceof String)) {
+            throw new Error("Expected the field `cv` to be a primitive type in the JSON string but got " + data['cv']);
+        }
+        // ensure the json data is a string
+        if (data['encCipherText'] && !(typeof data['encCipherText'] === 'string' || data['encCipherText'] instanceof String)) {
+            throw new Error("Expected the field `encCipherText` to be a primitive type in the JSON string but got " + data['encCipherText']);
+        }
+        // ensure the json data is a string
+        if (data['ephemeralKey'] && !(typeof data['ephemeralKey'] === 'string' || data['ephemeralKey'] instanceof String)) {
+            throw new Error("Expected the field `ephemeralKey` to be a primitive type in the JSON string but got " + data['ephemeralKey']);
+        }
+        // ensure the json data is a string
+        if (data['outCipherText'] && !(typeof data['outCipherText'] === 'string' || data['outCipherText'] instanceof String)) {
+            throw new Error("Expected the field `outCipherText` to be a primitive type in the JSON string but got " + data['outCipherText']);
+        }
+        // ensure the json data is a string
+        if (data['proof'] && !(typeof data['proof'] === 'string' || data['proof'] instanceof String)) {
+            throw new Error("Expected the field `proof` to be a primitive type in the JSON string but got " + data['proof']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner.RequiredProperties = ["cmu", "cv", "encCipherText", "ephemeralKey", "outCipherText", "proof"];
 
 /**
  * Represents the 𝑢-coordinate of the note commitment for the output note.

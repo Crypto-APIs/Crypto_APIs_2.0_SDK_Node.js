@@ -18,30 +18,62 @@ import AddTokensToExistingFromAddressRBTokenDataEthereumToken from './AddTokensT
 /**
  * The AddTokensToExistingFromAddressRBTokenData model module.
  * @module model/AddTokensToExistingFromAddressRBTokenData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class AddTokensToExistingFromAddressRBTokenData {
     /**
      * Constructs a new <code>AddTokensToExistingFromAddressRBTokenData</code>.
      * @alias module:model/AddTokensToExistingFromAddressRBTokenData
-     * @implements module:model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken
-     * @implements module:model/AddTokensToExistingFromAddressRBTokenDataEthereumToken
-     * @param propertyId {Number} Represents the specific `propertyId` of the token data that will be forwarded.
-     * @param contractAddress {String} Represents the specific `contractAddress` of the Token that will be forwarded.
+     * @param {(module:model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken|module:model/AddTokensToExistingFromAddressRBTokenDataEthereumToken)} instance The actual instance to initialize AddTokensToExistingFromAddressRBTokenData.
      */
-    constructor(propertyId, contractAddress) { 
-        AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken.initialize(this, propertyId);AddTokensToExistingFromAddressRBTokenDataEthereumToken.initialize(this, contractAddress);
-        AddTokensToExistingFromAddressRBTokenData.initialize(this, propertyId, contractAddress);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken.validateJSON(instance); // throw an exception if no match
+                // create AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken from JS object
+                this.actualInstance = AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken
+            errorMessages.push("Failed to construct AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, propertyId, contractAddress) { 
-        obj['propertyId'] = propertyId;
-        obj['contractAddress'] = contractAddress;
+        try {
+            if (typeof instance === "AddTokensToExistingFromAddressRBTokenDataEthereumToken") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                AddTokensToExistingFromAddressRBTokenDataEthereumToken.validateJSON(instance); // throw an exception if no match
+                // create AddTokensToExistingFromAddressRBTokenDataEthereumToken from JS object
+                this.actualInstance = AddTokensToExistingFromAddressRBTokenDataEthereumToken.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into AddTokensToExistingFromAddressRBTokenDataEthereumToken
+            errorMessages.push("Failed to construct AddTokensToExistingFromAddressRBTokenDataEthereumToken: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `AddTokensToExistingFromAddressRBTokenData` with oneOf schemas AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken, AddTokensToExistingFromAddressRBTokenDataEthereumToken. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `AddTokensToExistingFromAddressRBTokenData` with oneOf schemas AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken, AddTokensToExistingFromAddressRBTokenDataEthereumToken. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -52,22 +84,41 @@ class AddTokensToExistingFromAddressRBTokenData {
      * @return {module:model/AddTokensToExistingFromAddressRBTokenData} The populated <code>AddTokensToExistingFromAddressRBTokenData</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new AddTokensToExistingFromAddressRBTokenData();
-            AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken.constructFromObject(data, obj);
-            AddTokensToExistingFromAddressRBTokenDataEthereumToken.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('propertyId')) {
-                obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
-            }
-            if (data.hasOwnProperty('contractAddress')) {
-                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
-            }
-        }
-        return obj;
+        return new AddTokensToExistingFromAddressRBTokenData(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken</code>, <code>AddTokensToExistingFromAddressRBTokenDataEthereumToken</code>.
+     * @return {(module:model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken|module:model/AddTokensToExistingFromAddressRBTokenDataEthereumToken)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken</code>, <code>AddTokensToExistingFromAddressRBTokenDataEthereumToken</code>.
+     * @param {(module:model/AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken|module:model/AddTokensToExistingFromAddressRBTokenDataEthereumToken)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = AddTokensToExistingFromAddressRBTokenData.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of AddTokensToExistingFromAddressRBTokenData from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/AddTokensToExistingFromAddressRBTokenData} An instance of AddTokensToExistingFromAddressRBTokenData.
+     */
+    static fromJSON = function(json_string){
+        return AddTokensToExistingFromAddressRBTokenData.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -83,21 +134,7 @@ AddTokensToExistingFromAddressRBTokenData.prototype['propertyId'] = undefined;
 AddTokensToExistingFromAddressRBTokenData.prototype['contractAddress'] = undefined;
 
 
-// Implement AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken interface:
-/**
- * Represents the specific `propertyId` of the token data that will be forwarded.
- * @member {Number} propertyId
- */
-AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken.prototype['propertyId'] = undefined;
-// Implement AddTokensToExistingFromAddressRBTokenDataEthereumToken interface:
-/**
- * Represents the specific `contractAddress` of the Token that will be forwarded.
- * @member {String} contractAddress
- */
-AddTokensToExistingFromAddressRBTokenDataEthereumToken.prototype['contractAddress'] = undefined;
-
-
-
+AddTokensToExistingFromAddressRBTokenData.OneOf = ["AddTokensToExistingFromAddressRBTokenDataBitcoinOmniToken", "AddTokensToExistingFromAddressRBTokenDataEthereumToken"];
 
 export default AddTokensToExistingFromAddressRBTokenData;
 

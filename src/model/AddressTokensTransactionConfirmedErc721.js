@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedErc721 model module.
  * @module model/AddressTokensTransactionConfirmedErc721
- * @version 1.10.0
+ * @version 1.11.0
  */
 class AddressTokensTransactionConfirmedErc721 {
     /**
@@ -72,8 +72,42 @@ class AddressTokensTransactionConfirmedErc721 {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>AddressTokensTransactionConfirmedErc721</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AddressTokensTransactionConfirmedErc721</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of AddressTokensTransactionConfirmedErc721.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
+            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
+        }
+        // ensure the json data is a string
+        if (data['symbol'] && !(typeof data['symbol'] === 'string' || data['symbol'] instanceof String)) {
+            throw new Error("Expected the field `symbol` to be a primitive type in the JSON string but got " + data['symbol']);
+        }
+        // ensure the json data is a string
+        if (data['tokenId'] && !(typeof data['tokenId'] === 'string' || data['tokenId'] instanceof String)) {
+            throw new Error("Expected the field `tokenId` to be a primitive type in the JSON string but got " + data['tokenId']);
+        }
+        // ensure the json data is a string
+        if (data['contractAddress'] && !(typeof data['contractAddress'] === 'string' || data['contractAddress'] instanceof String)) {
+            throw new Error("Expected the field `contractAddress` to be a primitive type in the JSON string but got " + data['contractAddress']);
+        }
+
+        return true;
+    }
+
 
 }
+
+AddressTokensTransactionConfirmedErc721.RequiredProperties = ["name", "symbol", "tokenId", "contractAddress"];
 
 /**
  * Specifies the name of the token.

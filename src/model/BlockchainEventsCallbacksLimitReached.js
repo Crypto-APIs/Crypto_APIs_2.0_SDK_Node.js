@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The BlockchainEventsCallbacksLimitReached model module.
  * @module model/BlockchainEventsCallbacksLimitReached
- * @version 1.10.0
+ * @version 1.11.0
  */
 class BlockchainEventsCallbacksLimitReached {
     /**
@@ -66,8 +66,44 @@ class BlockchainEventsCallbacksLimitReached {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>BlockchainEventsCallbacksLimitReached</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>BlockchainEventsCallbacksLimitReached</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of BlockchainEventsCallbacksLimitReached.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['code'] && !(typeof data['code'] === 'string' || data['code'] instanceof String)) {
+            throw new Error("Expected the field `code` to be a primitive type in the JSON string but got " + data['code']);
+        }
+        // ensure the json data is a string
+        if (data['message'] && !(typeof data['message'] === 'string' || data['message'] instanceof String)) {
+            throw new Error("Expected the field `message` to be a primitive type in the JSON string but got " + data['message']);
+        }
+        if (data['details']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['details'])) {
+                throw new Error("Expected the field `details` to be an array in the JSON data but got " + data['details']);
+            }
+            // validate the optional field `details` (array)
+            for (const item of data['details']) {
+                BannedIpAddressDetailsInner.validateJsonObject(item);
+            };
+        }
+
+        return true;
+    }
+
 
 }
+
+BlockchainEventsCallbacksLimitReached.RequiredProperties = ["code", "message"];
 
 /**
  * Specifies an error code, e.g. error 404.

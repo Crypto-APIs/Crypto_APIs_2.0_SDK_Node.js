@@ -20,7 +20,7 @@ import ListTransactionsByBlockHeightRIFee from './ListTransactionsByBlockHeightR
 /**
  * The ListTransactionsByBlockHeightRI model module.
  * @module model/ListTransactionsByBlockHeightRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListTransactionsByBlockHeightRI {
     /**
@@ -105,8 +105,66 @@ class ListTransactionsByBlockHeightRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListTransactionsByBlockHeightRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListTransactionsByBlockHeightRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListTransactionsByBlockHeightRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['minedInBlockHash'] && !(typeof data['minedInBlockHash'] === 'string' || data['minedInBlockHash'] instanceof String)) {
+            throw new Error("Expected the field `minedInBlockHash` to be a primitive type in the JSON string but got " + data['minedInBlockHash']);
+        }
+        if (data['recipients']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['recipients'])) {
+                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
+            }
+            // validate the optional field `recipients` (array)
+            for (const item of data['recipients']) {
+                GetTransactionDetailsByTransactionIDRIRecipientsInner.validateJsonObject(item);
+            };
+        }
+        if (data['senders']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['senders'])) {
+                throw new Error("Expected the field `senders` to be an array in the JSON data but got " + data['senders']);
+            }
+            // validate the optional field `senders` (array)
+            for (const item of data['senders']) {
+                GetTransactionDetailsByTransactionIDRISendersInner.validateJsonObject(item);
+            };
+        }
+        // ensure the json data is a string
+        if (data['transactionHash'] && !(typeof data['transactionHash'] === 'string' || data['transactionHash'] instanceof String)) {
+            throw new Error("Expected the field `transactionHash` to be a primitive type in the JSON string but got " + data['transactionHash']);
+        }
+        // ensure the json data is a string
+        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
+            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
+        }
+        // validate the optional field `fee`
+        if (data['fee']) { // data not null
+          ListTransactionsByBlockHeightRIFee.validateJSON(data['fee']);
+        }
+        // validate the optional field `blockchainSpecific`
+        if (data['blockchainSpecific']) { // data not null
+          ListTransactionsByBlockHeightRIBS.validateJSON(data['blockchainSpecific']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListTransactionsByBlockHeightRI.RequiredProperties = ["index", "minedInBlockHash", "minedInBlockHeight", "recipients", "senders", "timestamp", "transactionHash", "transactionId", "fee", "blockchainSpecific"];
 
 /**
  * Represents the index position of the transaction in the specific block.

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BannedIpAddressDetailsInner model module.
  * @module model/BannedIpAddressDetailsInner
- * @version 1.10.0
+ * @version 1.11.0
  */
 class BannedIpAddressDetailsInner {
     /**
@@ -61,8 +61,34 @@ class BannedIpAddressDetailsInner {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>BannedIpAddressDetailsInner</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>BannedIpAddressDetailsInner</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of BannedIpAddressDetailsInner.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['attribute'] && !(typeof data['attribute'] === 'string' || data['attribute'] instanceof String)) {
+            throw new Error("Expected the field `attribute` to be a primitive type in the JSON string but got " + data['attribute']);
+        }
+        // ensure the json data is a string
+        if (data['message'] && !(typeof data['message'] === 'string' || data['message'] instanceof String)) {
+            throw new Error("Expected the field `message` to be a primitive type in the JSON string but got " + data['message']);
+        }
+
+        return true;
+    }
+
 
 }
+
+BannedIpAddressDetailsInner.RequiredProperties = ["attribute", "message"];
 
 /**
  * Specifies an attribute of the error by name.

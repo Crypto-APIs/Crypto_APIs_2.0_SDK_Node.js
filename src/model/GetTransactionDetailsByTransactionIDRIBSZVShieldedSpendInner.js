@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner {
     /**
@@ -81,8 +81,50 @@ class GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['anchor'] && !(typeof data['anchor'] === 'string' || data['anchor'] instanceof String)) {
+            throw new Error("Expected the field `anchor` to be a primitive type in the JSON string but got " + data['anchor']);
+        }
+        // ensure the json data is a string
+        if (data['cv'] && !(typeof data['cv'] === 'string' || data['cv'] instanceof String)) {
+            throw new Error("Expected the field `cv` to be a primitive type in the JSON string but got " + data['cv']);
+        }
+        // ensure the json data is a string
+        if (data['nullifier'] && !(typeof data['nullifier'] === 'string' || data['nullifier'] instanceof String)) {
+            throw new Error("Expected the field `nullifier` to be a primitive type in the JSON string but got " + data['nullifier']);
+        }
+        // ensure the json data is a string
+        if (data['proof'] && !(typeof data['proof'] === 'string' || data['proof'] instanceof String)) {
+            throw new Error("Expected the field `proof` to be a primitive type in the JSON string but got " + data['proof']);
+        }
+        // ensure the json data is a string
+        if (data['rk'] && !(typeof data['rk'] === 'string' || data['rk'] instanceof String)) {
+            throw new Error("Expected the field `rk` to be a primitive type in the JSON string but got " + data['rk']);
+        }
+        // ensure the json data is a string
+        if (data['spendAuthSig'] && !(typeof data['spendAuthSig'] === 'string' || data['spendAuthSig'] instanceof String)) {
+            throw new Error("Expected the field `spendAuthSig` to be a primitive type in the JSON string but got " + data['spendAuthSig']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner.RequiredProperties = ["anchor", "cv", "nullifier", "proof", "rk", "spendAuthSig"];
 
 /**
  * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.

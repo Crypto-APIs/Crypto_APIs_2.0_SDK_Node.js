@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeriveAndSyncNewChangeAddressesRI model module.
  * @module model/DeriveAndSyncNewChangeAddressesRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class DeriveAndSyncNewChangeAddressesRI {
     /**
@@ -76,8 +76,46 @@ class DeriveAndSyncNewChangeAddressesRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>DeriveAndSyncNewChangeAddressesRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DeriveAndSyncNewChangeAddressesRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of DeriveAndSyncNewChangeAddressesRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
+            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
+        }
+        // ensure the json data is a string
+        if (data['addressFormat'] && !(typeof data['addressFormat'] === 'string' || data['addressFormat'] instanceof String)) {
+            throw new Error("Expected the field `addressFormat` to be a primitive type in the JSON string but got " + data['addressFormat']);
+        }
+        // ensure the json data is a string
+        if (data['addressType'] && !(typeof data['addressType'] === 'string' || data['addressType'] instanceof String)) {
+            throw new Error("Expected the field `addressType` to be a primitive type in the JSON string but got " + data['addressType']);
+        }
+        // ensure the json data is a string
+        if (data['derivationType'] && !(typeof data['derivationType'] === 'string' || data['derivationType'] instanceof String)) {
+            throw new Error("Expected the field `derivationType` to be a primitive type in the JSON string but got " + data['derivationType']);
+        }
+        // ensure the json data is a string
+        if (data['index'] && !(typeof data['index'] === 'string' || data['index'] instanceof String)) {
+            throw new Error("Expected the field `index` to be a primitive type in the JSON string but got " + data['index']);
+        }
+
+        return true;
+    }
+
 
 }
+
+DeriveAndSyncNewChangeAddressesRI.RequiredProperties = ["address", "addressFormat", "addressType", "derivationType", "index"];
 
 /**
  * Represents the public address, which is a compressed and shortened form of a public key.

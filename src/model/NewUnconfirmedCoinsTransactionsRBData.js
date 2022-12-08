@@ -17,7 +17,7 @@ import NewUnconfirmedCoinsTransactionsRBDataItem from './NewUnconfirmedCoinsTran
 /**
  * The NewUnconfirmedCoinsTransactionsRBData model module.
  * @module model/NewUnconfirmedCoinsTransactionsRBData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class NewUnconfirmedCoinsTransactionsRBData {
     /**
@@ -57,8 +57,30 @@ class NewUnconfirmedCoinsTransactionsRBData {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>NewUnconfirmedCoinsTransactionsRBData</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>NewUnconfirmedCoinsTransactionsRBData</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of NewUnconfirmedCoinsTransactionsRBData.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `item`
+        if (data['item']) { // data not null
+          NewUnconfirmedCoinsTransactionsRBDataItem.validateJSON(data['item']);
+        }
+
+        return true;
+    }
+
 
 }
+
+NewUnconfirmedCoinsTransactionsRBData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/NewUnconfirmedCoinsTransactionsRBDataItem} item

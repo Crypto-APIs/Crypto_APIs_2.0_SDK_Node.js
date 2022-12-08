@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTokenDetailsByContractAddressRI model module.
  * @module model/GetTokenDetailsByContractAddressRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetTokenDetailsByContractAddressRI {
     /**
@@ -72,8 +72,46 @@ class GetTokenDetailsByContractAddressRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetTokenDetailsByContractAddressRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTokenDetailsByContractAddressRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetTokenDetailsByContractAddressRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['tokenDecimals'] && !(typeof data['tokenDecimals'] === 'string' || data['tokenDecimals'] instanceof String)) {
+            throw new Error("Expected the field `tokenDecimals` to be a primitive type in the JSON string but got " + data['tokenDecimals']);
+        }
+        // ensure the json data is a string
+        if (data['tokenName'] && !(typeof data['tokenName'] === 'string' || data['tokenName'] instanceof String)) {
+            throw new Error("Expected the field `tokenName` to be a primitive type in the JSON string but got " + data['tokenName']);
+        }
+        // ensure the json data is a string
+        if (data['tokenSymbol'] && !(typeof data['tokenSymbol'] === 'string' || data['tokenSymbol'] instanceof String)) {
+            throw new Error("Expected the field `tokenSymbol` to be a primitive type in the JSON string but got " + data['tokenSymbol']);
+        }
+        // ensure the json data is a string
+        if (data['tokenType'] && !(typeof data['tokenType'] === 'string' || data['tokenType'] instanceof String)) {
+            throw new Error("Expected the field `tokenType` to be a primitive type in the JSON string but got " + data['tokenType']);
+        }
+        // ensure the json data is a string
+        if (data['totalSupply'] && !(typeof data['totalSupply'] === 'string' || data['totalSupply'] instanceof String)) {
+            throw new Error("Expected the field `totalSupply` to be a primitive type in the JSON string but got " + data['totalSupply']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetTokenDetailsByContractAddressRI.RequiredProperties = ["tokenDecimals", "tokenType", "totalSupply"];
 
 /**
  * Defines the number of decimals that the token possesses.

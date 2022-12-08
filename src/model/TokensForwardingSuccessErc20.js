@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TokensForwardingSuccessErc20 model module.
  * @module model/TokensForwardingSuccessErc20
- * @version 1.10.0
+ * @version 1.11.0
  */
 class TokensForwardingSuccessErc20 {
     /**
@@ -75,8 +75,46 @@ class TokensForwardingSuccessErc20 {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>TokensForwardingSuccessErc20</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>TokensForwardingSuccessErc20</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of TokensForwardingSuccessErc20.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
+            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
+        }
+        // ensure the json data is a string
+        if (data['symbol'] && !(typeof data['symbol'] === 'string' || data['symbol'] instanceof String)) {
+            throw new Error("Expected the field `symbol` to be a primitive type in the JSON string but got " + data['symbol']);
+        }
+        // ensure the json data is a string
+        if (data['decimals'] && !(typeof data['decimals'] === 'string' || data['decimals'] instanceof String)) {
+            throw new Error("Expected the field `decimals` to be a primitive type in the JSON string but got " + data['decimals']);
+        }
+        // ensure the json data is a string
+        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
+            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
+        }
+        // ensure the json data is a string
+        if (data['contractAddress'] && !(typeof data['contractAddress'] === 'string' || data['contractAddress'] instanceof String)) {
+            throw new Error("Expected the field `contractAddress` to be a primitive type in the JSON string but got " + data['contractAddress']);
+        }
+
+        return true;
+    }
+
 
 }
+
+TokensForwardingSuccessErc20.RequiredProperties = ["name", "symbol", "amount", "contractAddress"];
 
 /**
  * Specifies the name of the token.

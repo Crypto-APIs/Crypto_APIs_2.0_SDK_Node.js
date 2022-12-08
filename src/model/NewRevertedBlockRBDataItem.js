@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewRevertedBlockRBDataItem model module.
  * @module model/NewRevertedBlockRBDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class NewRevertedBlockRBDataItem {
     /**
@@ -64,8 +64,38 @@ class NewRevertedBlockRBDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>NewRevertedBlockRBDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>NewRevertedBlockRBDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of NewRevertedBlockRBDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['allowDuplicates'] && !(typeof data['allowDuplicates'] === 'string' || data['allowDuplicates'] instanceof String)) {
+            throw new Error("Expected the field `allowDuplicates` to be a primitive type in the JSON string but got " + data['allowDuplicates']);
+        }
+        // ensure the json data is a string
+        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
+            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
+        }
+        // ensure the json data is a string
+        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
+            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
+        }
+
+        return true;
+    }
+
 
 }
+
+NewRevertedBlockRBDataItem.RequiredProperties = ["callbackSecretKey", "callbackUrl"];
 
 /**
  * Specifies a flag that permits or denies the creation of duplicate addresses.

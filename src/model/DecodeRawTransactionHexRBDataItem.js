@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DecodeRawTransactionHexRBDataItem model module.
  * @module model/DecodeRawTransactionHexRBDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class DecodeRawTransactionHexRBDataItem {
     /**
@@ -56,8 +56,30 @@ class DecodeRawTransactionHexRBDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>DecodeRawTransactionHexRBDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DecodeRawTransactionHexRBDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of DecodeRawTransactionHexRBDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['rawTransactionHex'] && !(typeof data['rawTransactionHex'] === 'string' || data['rawTransactionHex'] instanceof String)) {
+            throw new Error("Expected the field `rawTransactionHex` to be a primitive type in the JSON string but got " + data['rawTransactionHex']);
+        }
+
+        return true;
+    }
+
 
 }
+
+DecodeRawTransactionHexRBDataItem.RequiredProperties = ["rawTransactionHex"];
 
 /**
  * Represents the raw transaction Hex that has to be decoded.

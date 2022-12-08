@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListLatestMinedBlocksRIBSZ model module.
  * @module model/ListLatestMinedBlocksRIBSZ
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListLatestMinedBlocksRIBSZ {
     /**
@@ -87,8 +87,42 @@ class ListLatestMinedBlocksRIBSZ {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListLatestMinedBlocksRIBSZ</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListLatestMinedBlocksRIBSZ</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListLatestMinedBlocksRIBSZ.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['difficulty'] && !(typeof data['difficulty'] === 'string' || data['difficulty'] instanceof String)) {
+            throw new Error("Expected the field `difficulty` to be a primitive type in the JSON string but got " + data['difficulty']);
+        }
+        // ensure the json data is a string
+        if (data['dsDifficulty'] && !(typeof data['dsDifficulty'] === 'string' || data['dsDifficulty'] instanceof String)) {
+            throw new Error("Expected the field `dsDifficulty` to be a primitive type in the JSON string but got " + data['dsDifficulty']);
+        }
+        // ensure the json data is a string
+        if (data['dsLeader'] && !(typeof data['dsLeader'] === 'string' || data['dsLeader'] instanceof String)) {
+            throw new Error("Expected the field `dsLeader` to be a primitive type in the JSON string but got " + data['dsLeader']);
+        }
+        // ensure the json data is an array
+        if (!Array.isArray(data['microBlocks'])) {
+            throw new Error("Expected the field `microBlocks` to be an array in the JSON data but got " + data['microBlocks']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListLatestMinedBlocksRIBSZ.RequiredProperties = ["difficulty", "dsBlock", "dsDifficulty", "dsLeader", "gasLimit", "gasUsed", "microBlocks"];
 
 /**
  * Represents a mathematical value of how hard it is to find a valid hash for this block.

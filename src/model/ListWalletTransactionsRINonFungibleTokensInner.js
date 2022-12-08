@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListWalletTransactionsRINonFungibleTokensInner model module.
  * @module model/ListWalletTransactionsRINonFungibleTokensInner
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListWalletTransactionsRINonFungibleTokensInner {
     /**
@@ -91,8 +91,58 @@ class ListWalletTransactionsRINonFungibleTokensInner {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListWalletTransactionsRINonFungibleTokensInner</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListWalletTransactionsRINonFungibleTokensInner</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListWalletTransactionsRINonFungibleTokensInner.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['convertedAmount'] && !(typeof data['convertedAmount'] === 'string' || data['convertedAmount'] instanceof String)) {
+            throw new Error("Expected the field `convertedAmount` to be a primitive type in the JSON string but got " + data['convertedAmount']);
+        }
+        // ensure the json data is a string
+        if (data['exchangeRateUnit'] && !(typeof data['exchangeRateUnit'] === 'string' || data['exchangeRateUnit'] instanceof String)) {
+            throw new Error("Expected the field `exchangeRateUnit` to be a primitive type in the JSON string but got " + data['exchangeRateUnit']);
+        }
+        // ensure the json data is a string
+        if (data['name'] && !(typeof data['name'] === 'string' || data['name'] instanceof String)) {
+            throw new Error("Expected the field `name` to be a primitive type in the JSON string but got " + data['name']);
+        }
+        // ensure the json data is a string
+        if (data['recipient'] && !(typeof data['recipient'] === 'string' || data['recipient'] instanceof String)) {
+            throw new Error("Expected the field `recipient` to be a primitive type in the JSON string but got " + data['recipient']);
+        }
+        // ensure the json data is a string
+        if (data['sender'] && !(typeof data['sender'] === 'string' || data['sender'] instanceof String)) {
+            throw new Error("Expected the field `sender` to be a primitive type in the JSON string but got " + data['sender']);
+        }
+        // ensure the json data is a string
+        if (data['symbol'] && !(typeof data['symbol'] === 'string' || data['symbol'] instanceof String)) {
+            throw new Error("Expected the field `symbol` to be a primitive type in the JSON string but got " + data['symbol']);
+        }
+        // ensure the json data is a string
+        if (data['tokenId'] && !(typeof data['tokenId'] === 'string' || data['tokenId'] instanceof String)) {
+            throw new Error("Expected the field `tokenId` to be a primitive type in the JSON string but got " + data['tokenId']);
+        }
+        // ensure the json data is a string
+        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
+            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListWalletTransactionsRINonFungibleTokensInner.RequiredProperties = ["convertedAmount", "exchangeRateUnit", "name", "recipient", "sender", "symbol", "tokenId", "type"];
 
 /**
  * Defines the tokens' converted amount value.

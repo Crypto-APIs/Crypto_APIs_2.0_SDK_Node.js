@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice from './Ge
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 {
     /**
@@ -78,8 +78,34 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `gasPrice`
+        if (data['gasPrice']) { // data not null
+          GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice.validateJSON(data['gasPrice']);
+        }
+        // ensure the json data is a string
+        if (data['transactionStatus'] && !(typeof data['transactionStatus'] === 'string' || data['transactionStatus'] instanceof String)) {
+            throw new Error("Expected the field `transactionStatus` to be a primitive type in the JSON string but got " + data['transactionStatus']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2.RequiredProperties = ["gasLimit", "gasPrice", "gasUsed", "nonce", "transactionStatus"];
 
 /**
  * Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.

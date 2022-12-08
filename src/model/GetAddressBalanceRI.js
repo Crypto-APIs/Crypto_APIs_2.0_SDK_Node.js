@@ -17,7 +17,7 @@ import GetAddressBalanceRIConfirmedBalance from './GetAddressBalanceRIConfirmedB
 /**
  * The GetAddressBalanceRI model module.
  * @module model/GetAddressBalanceRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetAddressBalanceRI {
     /**
@@ -57,8 +57,30 @@ class GetAddressBalanceRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetAddressBalanceRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetAddressBalanceRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetAddressBalanceRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `confirmedBalance`
+        if (data['confirmedBalance']) { // data not null
+          GetAddressBalanceRIConfirmedBalance.validateJSON(data['confirmedBalance']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetAddressBalanceRI.RequiredProperties = ["confirmedBalance"];
 
 /**
  * @member {module:model/GetAddressBalanceRIConfirmedBalance} confirmedBalance

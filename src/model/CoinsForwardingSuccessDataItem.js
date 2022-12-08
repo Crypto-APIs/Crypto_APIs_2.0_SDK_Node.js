@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CoinsForwardingSuccessDataItem model module.
  * @module model/CoinsForwardingSuccessDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CoinsForwardingSuccessDataItem {
     /**
@@ -102,8 +102,66 @@ class CoinsForwardingSuccessDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CoinsForwardingSuccessDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CoinsForwardingSuccessDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CoinsForwardingSuccessDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
+            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
+        }
+        // ensure the json data is a string
+        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
+            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
+        }
+        // ensure the json data is a string
+        if (data['fromAddress'] && !(typeof data['fromAddress'] === 'string' || data['fromAddress'] instanceof String)) {
+            throw new Error("Expected the field `fromAddress` to be a primitive type in the JSON string but got " + data['fromAddress']);
+        }
+        // ensure the json data is a string
+        if (data['toAddress'] && !(typeof data['toAddress'] === 'string' || data['toAddress'] instanceof String)) {
+            throw new Error("Expected the field `toAddress` to be a primitive type in the JSON string but got " + data['toAddress']);
+        }
+        // ensure the json data is a string
+        if (data['forwardedAmount'] && !(typeof data['forwardedAmount'] === 'string' || data['forwardedAmount'] instanceof String)) {
+            throw new Error("Expected the field `forwardedAmount` to be a primitive type in the JSON string but got " + data['forwardedAmount']);
+        }
+        // ensure the json data is a string
+        if (data['forwardedUnit'] && !(typeof data['forwardedUnit'] === 'string' || data['forwardedUnit'] instanceof String)) {
+            throw new Error("Expected the field `forwardedUnit` to be a primitive type in the JSON string but got " + data['forwardedUnit']);
+        }
+        // ensure the json data is a string
+        if (data['spentFeesAmount'] && !(typeof data['spentFeesAmount'] === 'string' || data['spentFeesAmount'] instanceof String)) {
+            throw new Error("Expected the field `spentFeesAmount` to be a primitive type in the JSON string but got " + data['spentFeesAmount']);
+        }
+        // ensure the json data is a string
+        if (data['spentFeesUnit'] && !(typeof data['spentFeesUnit'] === 'string' || data['spentFeesUnit'] instanceof String)) {
+            throw new Error("Expected the field `spentFeesUnit` to be a primitive type in the JSON string but got " + data['spentFeesUnit']);
+        }
+        // ensure the json data is a string
+        if (data['triggerTransactionId'] && !(typeof data['triggerTransactionId'] === 'string' || data['triggerTransactionId'] instanceof String)) {
+            throw new Error("Expected the field `triggerTransactionId` to be a primitive type in the JSON string but got " + data['triggerTransactionId']);
+        }
+        // ensure the json data is a string
+        if (data['forwardingTransactionId'] && !(typeof data['forwardingTransactionId'] === 'string' || data['forwardingTransactionId'] instanceof String)) {
+            throw new Error("Expected the field `forwardingTransactionId` to be a primitive type in the JSON string but got " + data['forwardingTransactionId']);
+        }
+
+        return true;
+    }
+
 
 }
+
+CoinsForwardingSuccessDataItem.RequiredProperties = ["blockchain", "network", "fromAddress", "toAddress", "forwardedAmount", "forwardedUnit", "spentFeesAmount", "spentFeesUnit", "triggerTransactionId", "forwardingTransactionId"];
 
 /**
  * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.

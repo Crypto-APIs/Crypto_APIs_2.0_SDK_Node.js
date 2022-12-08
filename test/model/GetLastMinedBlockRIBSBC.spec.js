@@ -54,12 +54,6 @@
       //expect(instance).to.be.a(Cryptoapis.GetLastMinedBlockRIBSBC);
     });
 
-    it('should have the property difficulty (base name: "difficulty")', function() {
-      // uncomment below and update the code to test the property difficulty
-      //var instance = new Cryptoapis.GetLastMinedBlockRIBSBC();
-      //expect(instance).to.be();
-    });
-
     it('should have the property bits (base name: "bits")', function() {
       // uncomment below and update the code to test the property bits
       //var instance = new Cryptoapis.GetLastMinedBlockRIBSBC();
@@ -68,6 +62,12 @@
 
     it('should have the property chainwork (base name: "chainwork")', function() {
       // uncomment below and update the code to test the property chainwork
+      //var instance = new Cryptoapis.GetLastMinedBlockRIBSBC();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property difficulty (base name: "difficulty")', function() {
+      // uncomment below and update the code to test the property difficulty
       //var instance = new Cryptoapis.GetLastMinedBlockRIBSBC();
       //expect(instance).to.be();
     });

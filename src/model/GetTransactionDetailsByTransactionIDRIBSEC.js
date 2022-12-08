@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSECGasPrice from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRIBSEC model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSEC
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetTransactionDetailsByTransactionIDRIBSEC {
     /**
@@ -83,8 +83,46 @@ class GetTransactionDetailsByTransactionIDRIBSEC {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDRIBSEC</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDRIBSEC</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetTransactionDetailsByTransactionIDRIBSEC.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['contract'] && !(typeof data['contract'] === 'string' || data['contract'] instanceof String)) {
+            throw new Error("Expected the field `contract` to be a primitive type in the JSON string but got " + data['contract']);
+        }
+        // ensure the json data is a string
+        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
+            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
+        }
+        // validate the optional field `gasPrice`
+        if (data['gasPrice']) { // data not null
+          GetTransactionDetailsByTransactionIDRIBSECGasPrice.validateJSON(data['gasPrice']);
+        }
+        // ensure the json data is a string
+        if (data['gasUsed'] && !(typeof data['gasUsed'] === 'string' || data['gasUsed'] instanceof String)) {
+            throw new Error("Expected the field `gasUsed` to be a primitive type in the JSON string but got " + data['gasUsed']);
+        }
+        // ensure the json data is a string
+        if (data['inputData'] && !(typeof data['inputData'] === 'string' || data['inputData'] instanceof String)) {
+            throw new Error("Expected the field `inputData` to be a primitive type in the JSON string but got " + data['inputData']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetTransactionDetailsByTransactionIDRIBSEC.RequiredProperties = ["contract", "gasLimit", "gasPrice", "gasUsed", "inputData", "nonce"];
 
 /**
  * Represents the specific transaction contract.

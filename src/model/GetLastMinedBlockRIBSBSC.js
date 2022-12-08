@@ -16,14 +16,13 @@ import ApiClient from '../ApiClient';
 /**
  * The GetLastMinedBlockRIBSBSC model module.
  * @module model/GetLastMinedBlockRIBSBSC
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetLastMinedBlockRIBSBSC {
     /**
      * Constructs a new <code>GetLastMinedBlockRIBSBSC</code>.
      * Binance Smart Chain
      * @alias module:model/GetLastMinedBlockRIBSBSC
-     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
      * @param extraData {String} Represents any data that can be included by the miner in the block.
      * @param gasLimit {String} Defines the total gas limit of all transactions in the block.
      * @param gasUsed {String} Represents the total amount of gas used by all transactions in this block.
@@ -34,9 +33,9 @@ class GetLastMinedBlockRIBSBSC {
      * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block
      * @param uncles {Array.<String>} 
      */
-    constructor(difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles) { 
+    constructor(extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles) { 
         
-        GetLastMinedBlockRIBSBSC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
+        GetLastMinedBlockRIBSBSC.initialize(this, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
     }
 
     /**
@@ -44,8 +43,7 @@ class GetLastMinedBlockRIBSBSC {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles) { 
-        obj['difficulty'] = difficulty;
+    static initialize(obj, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles) { 
         obj['extraData'] = extraData;
         obj['gasLimit'] = gasLimit;
         obj['gasUsed'] = gasUsed;
@@ -102,11 +100,61 @@ class GetLastMinedBlockRIBSBSC {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetLastMinedBlockRIBSBSC</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetLastMinedBlockRIBSBSC</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetLastMinedBlockRIBSBSC.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['difficulty'] && !(typeof data['difficulty'] === 'string' || data['difficulty'] instanceof String)) {
+            throw new Error("Expected the field `difficulty` to be a primitive type in the JSON string but got " + data['difficulty']);
+        }
+        // ensure the json data is a string
+        if (data['extraData'] && !(typeof data['extraData'] === 'string' || data['extraData'] instanceof String)) {
+            throw new Error("Expected the field `extraData` to be a primitive type in the JSON string but got " + data['extraData']);
+        }
+        // ensure the json data is a string
+        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
+            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
+        }
+        // ensure the json data is a string
+        if (data['gasUsed'] && !(typeof data['gasUsed'] === 'string' || data['gasUsed'] instanceof String)) {
+            throw new Error("Expected the field `gasUsed` to be a primitive type in the JSON string but got " + data['gasUsed']);
+        }
+        // ensure the json data is a string
+        if (data['nonce'] && !(typeof data['nonce'] === 'string' || data['nonce'] instanceof String)) {
+            throw new Error("Expected the field `nonce` to be a primitive type in the JSON string but got " + data['nonce']);
+        }
+        // ensure the json data is a string
+        if (data['sha3Uncles'] && !(typeof data['sha3Uncles'] === 'string' || data['sha3Uncles'] instanceof String)) {
+            throw new Error("Expected the field `sha3Uncles` to be a primitive type in the JSON string but got " + data['sha3Uncles']);
+        }
+        // ensure the json data is a string
+        if (data['totalDifficulty'] && !(typeof data['totalDifficulty'] === 'string' || data['totalDifficulty'] instanceof String)) {
+            throw new Error("Expected the field `totalDifficulty` to be a primitive type in the JSON string but got " + data['totalDifficulty']);
+        }
+        // ensure the json data is an array
+        if (!Array.isArray(data['uncles'])) {
+            throw new Error("Expected the field `uncles` to be an array in the JSON data but got " + data['uncles']);
+        }
+
+        return true;
+    }
+
 
 }
 
+GetLastMinedBlockRIBSBSC.RequiredProperties = ["extraData", "gasLimit", "gasUsed", "minedInSeconds", "nonce", "sha3Uncles", "size", "totalDifficulty", "uncles"];
+
 /**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * String representation of the block difficulty
  * @member {String} difficulty
  */
 GetLastMinedBlockRIBSBSC.prototype['difficulty'] = undefined;

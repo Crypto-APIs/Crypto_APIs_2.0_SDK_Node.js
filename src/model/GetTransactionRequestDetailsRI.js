@@ -17,7 +17,7 @@ import GetTransactionRequestDetailsRIRecipientsInner from './GetTransactionReque
 /**
  * The GetTransactionRequestDetailsRI model module.
  * @module model/GetTransactionRequestDetailsRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetTransactionRequestDetailsRI {
     /**
@@ -105,8 +105,76 @@ class GetTransactionRequestDetailsRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetTransactionRequestDetailsRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionRequestDetailsRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetTransactionRequestDetailsRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['additionalDetails'] && !(typeof data['additionalDetails'] === 'string' || data['additionalDetails'] instanceof String)) {
+            throw new Error("Expected the field `additionalDetails` to be a primitive type in the JSON string but got " + data['additionalDetails']);
+        }
+        // ensure the json data is a string
+        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
+            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
+        }
+        // ensure the json data is a string
+        if (data['feePriority'] && !(typeof data['feePriority'] === 'string' || data['feePriority'] instanceof String)) {
+            throw new Error("Expected the field `feePriority` to be a primitive type in the JSON string but got " + data['feePriority']);
+        }
+        // ensure the json data is a string
+        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
+            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
+        }
+        if (data['recipients']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['recipients'])) {
+                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
+            }
+            // validate the optional field `recipients` (array)
+            for (const item of data['recipients']) {
+                GetTransactionRequestDetailsRIRecipientsInner.validateJsonObject(item);
+            };
+        }
+        // ensure the json data is a string
+        if (data['totalTransactionAmount'] && !(typeof data['totalTransactionAmount'] === 'string' || data['totalTransactionAmount'] instanceof String)) {
+            throw new Error("Expected the field `totalTransactionAmount` to be a primitive type in the JSON string but got " + data['totalTransactionAmount']);
+        }
+        // ensure the json data is a string
+        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
+            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
+        }
+        // ensure the json data is a string
+        if (data['transactionRequestStatus'] && !(typeof data['transactionRequestStatus'] === 'string' || data['transactionRequestStatus'] instanceof String)) {
+            throw new Error("Expected the field `transactionRequestStatus` to be a primitive type in the JSON string but got " + data['transactionRequestStatus']);
+        }
+        // ensure the json data is a string
+        if (data['transactionType'] && !(typeof data['transactionType'] === 'string' || data['transactionType'] instanceof String)) {
+            throw new Error("Expected the field `transactionType` to be a primitive type in the JSON string but got " + data['transactionType']);
+        }
+        // ensure the json data is a string
+        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
+            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
+        }
+        // ensure the json data is a string
+        if (data['walletId'] && !(typeof data['walletId'] === 'string' || data['walletId'] instanceof String)) {
+            throw new Error("Expected the field `walletId` to be a primitive type in the JSON string but got " + data['walletId']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetTransactionRequestDetailsRI.RequiredProperties = ["additionalDetails", "blockchain", "feePriority", "network", "recipients", "totalTransactionAmount", "transactionRequestStatus", "transactionType", "unit", "walletId"];
 
 /**
  * Defines an optional note for additional details.

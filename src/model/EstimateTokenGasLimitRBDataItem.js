@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EstimateTokenGasLimitRBDataItem model module.
  * @module model/EstimateTokenGasLimitRBDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class EstimateTokenGasLimitRBDataItem {
     /**
@@ -76,8 +76,46 @@ class EstimateTokenGasLimitRBDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>EstimateTokenGasLimitRBDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>EstimateTokenGasLimitRBDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of EstimateTokenGasLimitRBDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
+            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
+        }
+        // ensure the json data is a string
+        if (data['contract'] && !(typeof data['contract'] === 'string' || data['contract'] instanceof String)) {
+            throw new Error("Expected the field `contract` to be a primitive type in the JSON string but got " + data['contract']);
+        }
+        // ensure the json data is a string
+        if (data['contractType'] && !(typeof data['contractType'] === 'string' || data['contractType'] instanceof String)) {
+            throw new Error("Expected the field `contractType` to be a primitive type in the JSON string but got " + data['contractType']);
+        }
+        // ensure the json data is a string
+        if (data['recipient'] && !(typeof data['recipient'] === 'string' || data['recipient'] instanceof String)) {
+            throw new Error("Expected the field `recipient` to be a primitive type in the JSON string but got " + data['recipient']);
+        }
+        // ensure the json data is a string
+        if (data['sender'] && !(typeof data['sender'] === 'string' || data['sender'] instanceof String)) {
+            throw new Error("Expected the field `sender` to be a primitive type in the JSON string but got " + data['sender']);
+        }
+
+        return true;
+    }
+
 
 }
+
+EstimateTokenGasLimitRBDataItem.RequiredProperties = ["amount", "contract", "contractType", "recipient", "sender"];
 
 /**
  * Represents transactions' amount.

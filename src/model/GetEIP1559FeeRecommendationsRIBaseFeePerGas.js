@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetEIP1559FeeRecommendationsRIBaseFeePerGas model module.
  * @module model/GetEIP1559FeeRecommendationsRIBaseFeePerGas
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetEIP1559FeeRecommendationsRIBaseFeePerGas {
     /**
@@ -61,8 +61,34 @@ class GetEIP1559FeeRecommendationsRIBaseFeePerGas {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetEIP1559FeeRecommendationsRIBaseFeePerGas</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetEIP1559FeeRecommendationsRIBaseFeePerGas</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetEIP1559FeeRecommendationsRIBaseFeePerGas.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
+            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
+        }
+        // ensure the json data is a string
+        if (data['value'] && !(typeof data['value'] === 'string' || data['value'] instanceof String)) {
+            throw new Error("Expected the field `value` to be a primitive type in the JSON string but got " + data['value']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetEIP1559FeeRecommendationsRIBaseFeePerGas.RequiredProperties = ["unit", "value"];
 
 /**
  * Represents the unit of the base fee per gas.

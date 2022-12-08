@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetNextAvailableNonceRI model module.
  * @module model/GetNextAvailableNonceRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetNextAvailableNonceRI {
     /**
@@ -56,8 +56,26 @@ class GetNextAvailableNonceRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetNextAvailableNonceRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetNextAvailableNonceRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetNextAvailableNonceRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+
+        return true;
+    }
+
 
 }
+
+GetNextAvailableNonceRI.RequiredProperties = ["nextAvailableNonce"];
 
 /**
  * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.

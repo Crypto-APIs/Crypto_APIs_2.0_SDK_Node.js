@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAssetDetailsByAssetSymbolRISC model module.
  * @module model/GetAssetDetailsByAssetSymbolRISC
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetAssetDetailsByAssetSymbolRISC {
     /**
@@ -92,8 +92,58 @@ class GetAssetDetailsByAssetSymbolRISC {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetAssetDetailsByAssetSymbolRISC</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetAssetDetailsByAssetSymbolRISC</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetAssetDetailsByAssetSymbolRISC.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['1HourPriceChangeInPercentage'] && !(typeof data['1HourPriceChangeInPercentage'] === 'string' || data['1HourPriceChangeInPercentage'] instanceof String)) {
+            throw new Error("Expected the field `1HourPriceChangeInPercentage` to be a primitive type in the JSON string but got " + data['1HourPriceChangeInPercentage']);
+        }
+        // ensure the json data is a string
+        if (data['1WeekPriceChangeInPercentage'] && !(typeof data['1WeekPriceChangeInPercentage'] === 'string' || data['1WeekPriceChangeInPercentage'] instanceof String)) {
+            throw new Error("Expected the field `1WeekPriceChangeInPercentage` to be a primitive type in the JSON string but got " + data['1WeekPriceChangeInPercentage']);
+        }
+        // ensure the json data is a string
+        if (data['24HoursPriceChangeInPercentage'] && !(typeof data['24HoursPriceChangeInPercentage'] === 'string' || data['24HoursPriceChangeInPercentage'] instanceof String)) {
+            throw new Error("Expected the field `24HoursPriceChangeInPercentage` to be a primitive type in the JSON string but got " + data['24HoursPriceChangeInPercentage']);
+        }
+        // ensure the json data is a string
+        if (data['24HoursTradingVolume'] && !(typeof data['24HoursTradingVolume'] === 'string' || data['24HoursTradingVolume'] instanceof String)) {
+            throw new Error("Expected the field `24HoursTradingVolume` to be a primitive type in the JSON string but got " + data['24HoursTradingVolume']);
+        }
+        // ensure the json data is a string
+        if (data['assetType'] && !(typeof data['assetType'] === 'string' || data['assetType'] instanceof String)) {
+            throw new Error("Expected the field `assetType` to be a primitive type in the JSON string but got " + data['assetType']);
+        }
+        // ensure the json data is a string
+        if (data['circulatingSupply'] && !(typeof data['circulatingSupply'] === 'string' || data['circulatingSupply'] instanceof String)) {
+            throw new Error("Expected the field `circulatingSupply` to be a primitive type in the JSON string but got " + data['circulatingSupply']);
+        }
+        // ensure the json data is a string
+        if (data['marketCapInUSD'] && !(typeof data['marketCapInUSD'] === 'string' || data['marketCapInUSD'] instanceof String)) {
+            throw new Error("Expected the field `marketCapInUSD` to be a primitive type in the JSON string but got " + data['marketCapInUSD']);
+        }
+        // ensure the json data is a string
+        if (data['maxSupply'] && !(typeof data['maxSupply'] === 'string' || data['maxSupply'] instanceof String)) {
+            throw new Error("Expected the field `maxSupply` to be a primitive type in the JSON string but got " + data['maxSupply']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetAssetDetailsByAssetSymbolRISC.RequiredProperties = ["1HourPriceChangeInPercentage", "1WeekPriceChangeInPercentage", "24HoursPriceChangeInPercentage", "24HoursTradingVolume", "assetType", "circulatingSupply", "marketCapInUSD", "maxSupply"];
 
 /**
  * Represents the percentage of the asset's current price against the its price from 1 hour ago.

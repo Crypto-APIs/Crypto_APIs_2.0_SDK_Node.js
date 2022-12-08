@@ -18,7 +18,7 @@ import DecodeRawTransactionHexRISBVoutInner from './DecodeRawTransactionHexRISBV
 /**
  * The DecodeRawTransactionHexRISB model module.
  * @module model/DecodeRawTransactionHexRISB
- * @version 1.10.0
+ * @version 1.11.0
  */
 class DecodeRawTransactionHexRISB {
     /**
@@ -87,8 +87,50 @@ class DecodeRawTransactionHexRISB {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>DecodeRawTransactionHexRISB</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DecodeRawTransactionHexRISB</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of DecodeRawTransactionHexRISB.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['transactionHash'] && !(typeof data['transactionHash'] === 'string' || data['transactionHash'] instanceof String)) {
+            throw new Error("Expected the field `transactionHash` to be a primitive type in the JSON string but got " + data['transactionHash']);
+        }
+        if (data['vin']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vin'])) {
+                throw new Error("Expected the field `vin` to be an array in the JSON data but got " + data['vin']);
+            }
+            // validate the optional field `vin` (array)
+            for (const item of data['vin']) {
+                DecodeRawTransactionHexRISBVinInner.validateJsonObject(item);
+            };
+        }
+        if (data['vout']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['vout'])) {
+                throw new Error("Expected the field `vout` to be an array in the JSON data but got " + data['vout']);
+            }
+            // validate the optional field `vout` (array)
+            for (const item of data['vout']) {
+                DecodeRawTransactionHexRISBVoutInner.validateJsonObject(item);
+            };
+        }
+
+        return true;
+    }
+
 
 }
+
+DecodeRawTransactionHexRISB.RequiredProperties = ["locktime", "transactionHash", "vSize", "version", "vin", "vout"];
 
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.

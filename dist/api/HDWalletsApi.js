@@ -45,16 +45,16 @@ var _ListSyncedAddresses400Response = _interopRequireDefault(require("../model/L
 var _ListSyncedAddresses401Response = _interopRequireDefault(require("../model/ListSyncedAddresses401Response"));
 var _ListSyncedAddresses403Response = _interopRequireDefault(require("../model/ListSyncedAddresses403Response"));
 var _ListSyncedAddressesR = _interopRequireDefault(require("../model/ListSyncedAddressesR"));
+var _PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response = _interopRequireDefault(require("../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response"));
+var _PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response = _interopRequireDefault(require("../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response"));
+var _PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response = _interopRequireDefault(require("../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response"));
+var _PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR"));
+var _PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB = _interopRequireDefault(require("../model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB"));
 var _PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response"));
 var _PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response"));
 var _PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response"));
 var _PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubR"));
 var _PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB = _interopRequireDefault(require("../model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRB"));
-var _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response"));
-var _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response"));
-var _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response"));
-var _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR"));
-var _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB = _interopRequireDefault(require("../model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB"));
 var _SyncHDWalletXPubYPubZPub400Response = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPub400Response"));
 var _SyncHDWalletXPubYPubZPub401Response = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPub401Response"));
 var _SyncHDWalletXPubYPubZPub403Response = _interopRequireDefault(require("../model/SyncHDWalletXPubYPubZPub403Response"));
@@ -70,13 +70,16 @@ var _SyncNewHDWalletXPubYPubZPub422Response = _interopRequireDefault(require("..
 var _SyncNewHDWalletXPubYPubZPubR = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPubR"));
 var _SyncNewHDWalletXPubYPubZPubRB = _interopRequireDefault(require("../model/SyncNewHDWalletXPubYPubZPubRB"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.10.0
+* @version 1.11.0
 */
 var HDWalletsApi = /*#__PURE__*/function () {
   /**
@@ -552,6 +555,63 @@ var HDWalletsApi = /*#__PURE__*/function () {
     }
 
     /**
+     * Prepare A Transaction From An Address In HD Wallet (xPub, yPub, zPub)
+     * Through this endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"goerli\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB} opts.prepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR} and HTTP response
+     */
+  }, {
+    key: "prepareATransactionFromAnAddressInHDWalletXPubYPubZPubWithHttpInfo",
+    value: function prepareATransactionFromAnAddressInHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['prepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling prepareATransactionFromAnAddressInHDWalletXPubYPubZPub");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling prepareATransactionFromAnAddressInHDWalletXPubYPubZPub");
+      }
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR["default"];
+      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/transactions/prepare-account-based-transaction', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+
+    /**
+     * Prepare A Transaction From An Address In HD Wallet (xPub, yPub, zPub)
+     * Through this endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"goerli\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB} opts.prepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR}
+     */
+  }, {
+    key: "prepareATransactionFromAnAddressInHDWalletXPubYPubZPub",
+    value: function prepareATransactionFromAnAddressInHDWalletXPubYPubZPub(blockchain, network, opts) {
+      return this.prepareATransactionFromAnAddressInHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+
+    /**
      * Prepare A UTXO-Based Transaction From HD Wallet (xPub, yPub, zPub)
      * Through the “Prepare a UTXO-based transaction from xPub” endpoint users can prepare a transaction for signing from all synced with Crypto APIs addresses for the specific xPub. This is based on the `selectionStrategy` and the addresses’ balances. In the case a user has an address not synced with Crypto APIs, it will not be included. This endpoint applies to all supported UTXO-based blockchain protocols, e.g. Bitcoin, Litecoin, etc.
      * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
@@ -604,63 +664,6 @@ var HDWalletsApi = /*#__PURE__*/function () {
     key: "prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub",
     value: function prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts) {
       return this.prepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
-        return response_and_data.data;
-      });
-    }
-
-    /**
-     * Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
-     * Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB} opts.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR} and HTTP response
-     */
-  }, {
-    key: "prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubWithHttpInfo",
-    value: function prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts) {
-      opts = opts || {};
-      var postBody = opts['prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB'];
-      // verify the required parameter 'blockchain' is set
-      if (blockchain === undefined || blockchain === null) {
-        throw new Error("Missing the required parameter 'blockchain' when calling prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub");
-      }
-      // verify the required parameter 'network' is set
-      if (network === undefined || network === null) {
-        throw new Error("Missing the required parameter 'network' when calling prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub");
-      }
-      var pathParams = {
-        'blockchain': blockchain,
-        'network': network
-      };
-      var queryParams = {
-        'context': opts['context']
-      };
-      var headerParams = {};
-      var formParams = {};
-      var authNames = ['ApiKey'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = _PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR["default"];
-      return this.apiClient.callApi('/blockchain-data/{blockchain}/{network}/transactions/prepare-account-based-transaction', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
-    }
-
-    /**
-     * Prepare An Account-Based Transaction From HD Wallet (xPub, yPub, zPub)
-     * Through the “Prepare an account-based transaction from xPub” endpoint users can prepare a transaction for signing from a synced with Crypto APIs address from the specific xPub. This endpoint applies to all supported account-based blockchain protocols, e.g. Ethereum, BSC, etc
-     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
-     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"ropsten\" are test networks.
-     * @param {Object} opts Optional parameters
-     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
-     * @param {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB} opts.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB 
-     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR}
-     */
-  }, {
-    key: "prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub",
-    value: function prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub(blockchain, network, opts) {
-      return this.prepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

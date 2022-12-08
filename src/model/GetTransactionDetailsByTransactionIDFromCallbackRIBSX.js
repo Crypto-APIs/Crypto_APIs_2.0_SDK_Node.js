@@ -19,7 +19,7 @@ import GetXRPRippleTransactionDetailsByTransactionIDRIReceive from './GetXRPRipp
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSX model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSX
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSX {
     /**
@@ -93,8 +93,50 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBSX {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSX</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSX</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetTransactionDetailsByTransactionIDFromCallbackRIBSX.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['additionalData'] && !(typeof data['additionalData'] === 'string' || data['additionalData'] instanceof String)) {
+            throw new Error("Expected the field `additionalData` to be a primitive type in the JSON string but got " + data['additionalData']);
+        }
+        // validate the optional field `offer`
+        if (data['offer']) { // data not null
+          GetXRPRippleTransactionDetailsByTransactionIDRIOffer.validateJSON(data['offer']);
+        }
+        // validate the optional field `receive`
+        if (data['receive']) { // data not null
+          GetXRPRippleTransactionDetailsByTransactionIDRIReceive.validateJSON(data['receive']);
+        }
+        // ensure the json data is a string
+        if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
+            throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
+        }
+        // ensure the json data is a string
+        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
+            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
+        }
+        // validate the optional field `value`
+        if (data['value']) { // data not null
+          GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue.validateJSON(data['value']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetTransactionDetailsByTransactionIDFromCallbackRIBSX.RequiredProperties = ["additionalData", "offer", "receive", "sequence", "status", "type", "value"];
 
 /**
  * Represents additional data that may be needed.

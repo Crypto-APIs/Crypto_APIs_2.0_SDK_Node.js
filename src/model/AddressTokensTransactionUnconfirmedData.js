@@ -17,7 +17,7 @@ import AddressTokensTransactionUnconfirmedDataItem from './AddressTokensTransact
 /**
  * The AddressTokensTransactionUnconfirmedData model module.
  * @module model/AddressTokensTransactionUnconfirmedData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class AddressTokensTransactionUnconfirmedData {
     /**
@@ -68,8 +68,38 @@ class AddressTokensTransactionUnconfirmedData {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>AddressTokensTransactionUnconfirmedData</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AddressTokensTransactionUnconfirmedData</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of AddressTokensTransactionUnconfirmedData.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['product'] && !(typeof data['product'] === 'string' || data['product'] instanceof String)) {
+            throw new Error("Expected the field `product` to be a primitive type in the JSON string but got " + data['product']);
+        }
+        // ensure the json data is a string
+        if (data['event'] && !(typeof data['event'] === 'string' || data['event'] instanceof String)) {
+            throw new Error("Expected the field `event` to be a primitive type in the JSON string but got " + data['event']);
+        }
+        // validate the optional field `item`
+        if (data['item']) { // data not null
+          AddressTokensTransactionUnconfirmedDataItem.validateJSON(data['item']);
+        }
+
+        return true;
+    }
+
 
 }
+
+AddressTokensTransactionUnconfirmedData.RequiredProperties = ["product", "event", "item"];
 
 /**
  * Represents the Crypto APIs 2.0 product which sends the callback.

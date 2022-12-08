@@ -17,7 +17,7 @@ import CreateAutomaticTokensForwardingRBTokenData from './CreateAutomaticTokensF
 /**
  * The CreateAutomaticTokensForwardingRBDataItem model module.
  * @module model/CreateAutomaticTokensForwardingRBDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateAutomaticTokensForwardingRBDataItem {
     /**
@@ -85,8 +85,54 @@ class CreateAutomaticTokensForwardingRBDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateAutomaticTokensForwardingRBDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateAutomaticTokensForwardingRBDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CreateAutomaticTokensForwardingRBDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
+            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
+        }
+        // ensure the json data is a string
+        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
+            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
+        }
+        // ensure the json data is a string
+        if (data['confirmationsCount'] && !(typeof data['confirmationsCount'] === 'string' || data['confirmationsCount'] instanceof String)) {
+            throw new Error("Expected the field `confirmationsCount` to be a primitive type in the JSON string but got " + data['confirmationsCount']);
+        }
+        // ensure the json data is a string
+        if (data['feePriority'] && !(typeof data['feePriority'] === 'string' || data['feePriority'] instanceof String)) {
+            throw new Error("Expected the field `feePriority` to be a primitive type in the JSON string but got " + data['feePriority']);
+        }
+        // ensure the json data is a string
+        if (data['minimumTransferAmount'] && !(typeof data['minimumTransferAmount'] === 'string' || data['minimumTransferAmount'] instanceof String)) {
+            throw new Error("Expected the field `minimumTransferAmount` to be a primitive type in the JSON string but got " + data['minimumTransferAmount']);
+        }
+        // ensure the json data is a string
+        if (data['toAddress'] && !(typeof data['toAddress'] === 'string' || data['toAddress'] instanceof String)) {
+            throw new Error("Expected the field `toAddress` to be a primitive type in the JSON string but got " + data['toAddress']);
+        }
+        // validate the optional field `tokenData`
+        if (data['tokenData']) { // data not null
+          CreateAutomaticTokensForwardingRBTokenData.validateJSON(data['tokenData']);
+        }
+
+        return true;
+    }
+
 
 }
+
+CreateAutomaticTokensForwardingRBDataItem.RequiredProperties = ["callbackUrl", "confirmationsCount", "feePriority", "minimumTransferAmount", "toAddress", "tokenData"];
 
 /**
  * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).

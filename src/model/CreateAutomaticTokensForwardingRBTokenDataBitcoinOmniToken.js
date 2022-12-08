@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken {
     /**
@@ -57,8 +57,26 @@ class CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+
+        return true;
+    }
+
 
 }
+
+CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken.RequiredProperties = ["propertyId"];
 
 /**
  * Represents the specific `propertyId` of the token data that will be forwarded.

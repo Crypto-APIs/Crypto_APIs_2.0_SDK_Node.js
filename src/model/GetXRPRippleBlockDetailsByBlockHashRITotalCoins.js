@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRITotalCoins model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRITotalCoins
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetXRPRippleBlockDetailsByBlockHashRITotalCoins {
     /**
@@ -62,8 +62,34 @@ class GetXRPRippleBlockDetailsByBlockHashRITotalCoins {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetXRPRippleBlockDetailsByBlockHashRITotalCoins</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetXRPRippleBlockDetailsByBlockHashRITotalCoins</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetXRPRippleBlockDetailsByBlockHashRITotalCoins.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
+            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
+        }
+        // ensure the json data is a string
+        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
+            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetXRPRippleBlockDetailsByBlockHashRITotalCoins.RequiredProperties = ["amount", "unit"];
 
 /**
  * Defines the amount of the total coins.

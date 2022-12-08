@@ -42,7 +42,7 @@ import ListTransactionsByBlockHeight404Response from '../model/ListTransactionsB
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.10.0
+* @version 1.11.0
 */
 export default class CallbackDataApi {
 

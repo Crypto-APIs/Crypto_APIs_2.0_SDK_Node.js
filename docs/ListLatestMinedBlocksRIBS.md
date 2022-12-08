@@ -27,5 +27,8 @@ Name | Type | Description | Notes
 **microBlocks** | **[String]** |  | 
 **totalCoins** | [**ListLatestMinedBlocksRIBSXTotalCoins**](ListLatestMinedBlocksRIBSXTotalCoins.md) |  | [optional] 
 **totalFees** | [**ListLatestMinedBlocksRIBSXTotalFees**](ListLatestMinedBlocksRIBSXTotalFees.md) |  | 
+**bandwidthUsed** | **String** | Representation of the blocks&#39; bandwidth limit. | [optional] 
+**burnedTRX** | **String** | Representation of the blocks&#39; burned TRX. | [optional] 
+**energyUsed** | **String** | Representation of the blocks&#39; energy used. | [optional] 
 
 

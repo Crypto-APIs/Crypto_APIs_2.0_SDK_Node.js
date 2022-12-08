@@ -18,7 +18,7 @@ import CreateCoinsTransactionRequestFromAddressRISenders from './CreateCoinsTran
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateCoinsTransactionRequestFromAddressRI {
     /**
@@ -93,8 +93,68 @@ class CreateCoinsTransactionRequestFromAddressRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateCoinsTransactionRequestFromAddressRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateCoinsTransactionRequestFromAddressRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CreateCoinsTransactionRequestFromAddressRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
+            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
+        }
+        // ensure the json data is a string
+        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
+            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
+        }
+        // ensure the json data is a string
+        if (data['classicAddress'] && !(typeof data['classicAddress'] === 'string' || data['classicAddress'] instanceof String)) {
+            throw new Error("Expected the field `classicAddress` to be a primitive type in the JSON string but got " + data['classicAddress']);
+        }
+        // ensure the json data is a string
+        if (data['feePriority'] && !(typeof data['feePriority'] === 'string' || data['feePriority'] instanceof String)) {
+            throw new Error("Expected the field `feePriority` to be a primitive type in the JSON string but got " + data['feePriority']);
+        }
+        // ensure the json data is a string
+        if (data['note'] && !(typeof data['note'] === 'string' || data['note'] instanceof String)) {
+            throw new Error("Expected the field `note` to be a primitive type in the JSON string but got " + data['note']);
+        }
+        if (data['recipients']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['recipients'])) {
+                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
+            }
+            // validate the optional field `recipients` (array)
+            for (const item of data['recipients']) {
+                CreateCoinsTransactionRequestFromAddressRIRecipientsInner.validateJsonObject(item);
+            };
+        }
+        // validate the optional field `senders`
+        if (data['senders']) { // data not null
+          CreateCoinsTransactionRequestFromAddressRISenders.validateJSON(data['senders']);
+        }
+        // ensure the json data is a string
+        if (data['transactionRequestId'] && !(typeof data['transactionRequestId'] === 'string' || data['transactionRequestId'] instanceof String)) {
+            throw new Error("Expected the field `transactionRequestId` to be a primitive type in the JSON string but got " + data['transactionRequestId']);
+        }
+        // ensure the json data is a string
+        if (data['transactionRequestStatus'] && !(typeof data['transactionRequestStatus'] === 'string' || data['transactionRequestStatus'] instanceof String)) {
+            throw new Error("Expected the field `transactionRequestStatus` to be a primitive type in the JSON string but got " + data['transactionRequestStatus']);
+        }
+
+        return true;
+    }
+
 
 }
+
+CreateCoinsTransactionRequestFromAddressRI.RequiredProperties = ["feePriority", "recipients", "senders", "transactionRequestId", "transactionRequestStatus"];
 
 /**
  * Defines a specific Tag that is an additional XRP address feature. It helps identify a transaction recipient beyond a wallet address. The tag that was encoded into the x-Address along with the Source Classic Address.

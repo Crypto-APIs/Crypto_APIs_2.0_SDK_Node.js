@@ -13,200 +13,262 @@ var _GetLastMinedBlockRIBSD2 = _interopRequireDefault(require("./GetLastMinedBlo
 var _GetLastMinedBlockRIBSE = _interopRequireDefault(require("./GetLastMinedBlockRIBSE"));
 var _GetLastMinedBlockRIBSEC = _interopRequireDefault(require("./GetLastMinedBlockRIBSEC"));
 var _GetLastMinedBlockRIBSL = _interopRequireDefault(require("./GetLastMinedBlockRIBSL"));
+var _GetLastMinedBlockRIBST = _interopRequireDefault(require("./GetLastMinedBlockRIBST"));
 var _GetLastMinedBlockRIBSZ = _interopRequireDefault(require("./GetLastMinedBlockRIBSZ"));
 var _GetLastMinedBlockRIBSZ2 = _interopRequireDefault(require("./GetLastMinedBlockRIBSZ2"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
  * The GetLastMinedBlockRIBS model module.
  * @module model/GetLastMinedBlockRIBS
- * @version 1.10.0
+ * @version 1.11.0
  */
 var GetLastMinedBlockRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetLastMinedBlockRIBS</code>.
    * @alias module:model/GetLastMinedBlockRIBS
-   * @implements module:model/GetLastMinedBlockRIBSB
-   * @implements module:model/GetLastMinedBlockRIBSE
-   * @implements module:model/GetLastMinedBlockRIBSEC
-   * @implements module:model/GetLastMinedBlockRIBSBC
-   * @implements module:model/GetLastMinedBlockRIBSL
-   * @implements module:model/GetLastMinedBlockRIBSD
-   * @implements module:model/GetLastMinedBlockRIBSD2
-   * @implements module:model/GetLastMinedBlockRIBSBSC
-   * @implements module:model/GetLastMinedBlockRIBSZ
-   * @implements module:model/GetLastMinedBlockRIBSZ2
-   * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
-   * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
-   * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
-   * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
-   * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work.
-   * @param size {Number} Represents the total size of the block in Bytes.
-   * @param strippedSize {Number} Defines the numeric representation of the block size excluding the witness data.
-   * @param version {Number} Represents the transaction version number.
-   * @param versionHex {String} Is the hexadecimal string representation of the block's version.
-   * @param weight {Number} Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
-   * @param extraData {String} Represents any data that can be included by the miner in the block.
-   * @param gasLimit {Number} Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
-   * @param gasUsed {Number} Defines how much of the gas for the block has been used.
-   * @param minedInSeconds {Number} Specifies the amount of time required for the block to be mined in second
-   * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
-   * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block
-   * @param uncles {Array.<String>} 
-   * @param dsBlock {Number} Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
-   * @param dsDifficulty {String} Defines how difficult it is to mine the dsBlocks.
-   * @param dsLeader {String} Represents a part of the DS Committee which leads the consensus protocol for the epoch.
-   * @param microBlocks {Array.<String>} 
+   * @param {(module:model/GetLastMinedBlockRIBSB|module:model/GetLastMinedBlockRIBSBC|module:model/GetLastMinedBlockRIBSBSC|module:model/GetLastMinedBlockRIBSD|module:model/GetLastMinedBlockRIBSD2|module:model/GetLastMinedBlockRIBSE|module:model/GetLastMinedBlockRIBSEC|module:model/GetLastMinedBlockRIBSL|module:model/GetLastMinedBlockRIBST|module:model/GetLastMinedBlockRIBSZ|module:model/GetLastMinedBlockRIBSZ2)} instance The actual instance to initialize GetLastMinedBlockRIBS.
    */
-  function GetLastMinedBlockRIBS(difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks) {
+  function GetLastMinedBlockRIBS() {
+    var instance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     _classCallCheck(this, GetLastMinedBlockRIBS);
-    _GetLastMinedBlockRIBSB["default"].initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);
-    _GetLastMinedBlockRIBSE["default"].initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
-    _GetLastMinedBlockRIBSEC["default"].initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
-    _GetLastMinedBlockRIBSBC["default"].initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, version, versionHex);
-    _GetLastMinedBlockRIBSL["default"].initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);
-    _GetLastMinedBlockRIBSD["default"].initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, weight);
-    _GetLastMinedBlockRIBSD2["default"].initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, version, versionHex);
-    _GetLastMinedBlockRIBSBSC["default"].initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty, uncles);
-    _GetLastMinedBlockRIBSZ["default"].initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, version);
-    _GetLastMinedBlockRIBSZ2["default"].initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);
-    GetLastMinedBlockRIBS.initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks);
+    _defineProperty(this, "toJSON", function () {
+      return this.getActualInstance();
+    });
+    if (instance === null) {
+      this.actualInstance = null;
+      return;
+    }
+    var match = 0;
+    var errorMessages = [];
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSB") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSB["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSB from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSB["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSB
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSB: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSE") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSE["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSE from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSE["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSE
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSE: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSEC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSEC["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSEC from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSEC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSEC
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSEC: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSBC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSBC["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSBC from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSBC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSBC
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSBC: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSL") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSL["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSL from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSL["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSL
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSL: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSD") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSD["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSD from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSD["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSD
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSD: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSD2") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSD2["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSD2 from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSD2["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSD2
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSD2: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSBSC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSBSC["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSBSC from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSBSC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSBSC
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSBSC: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSZ") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSZ["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSZ from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSZ["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSZ
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSZ: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBSZ2") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBSZ2["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBSZ2 from JS object
+        this.actualInstance = _GetLastMinedBlockRIBSZ2["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBSZ2
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBSZ2: " + err);
+    }
+    try {
+      if (typeof instance === "GetLastMinedBlockRIBST") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetLastMinedBlockRIBST["default"].validateJSON(instance); // throw an exception if no match
+        // create GetLastMinedBlockRIBST from JS object
+        this.actualInstance = _GetLastMinedBlockRIBST["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetLastMinedBlockRIBST
+      errorMessages.push("Failed to construct GetLastMinedBlockRIBST: " + err);
+    }
+    if (match > 1) {
+      throw new Error("Multiple matches found constructing `GetLastMinedBlockRIBS` with oneOf schemas GetLastMinedBlockRIBSB, GetLastMinedBlockRIBSBC, GetLastMinedBlockRIBSBSC, GetLastMinedBlockRIBSD, GetLastMinedBlockRIBSD2, GetLastMinedBlockRIBSE, GetLastMinedBlockRIBSEC, GetLastMinedBlockRIBSL, GetLastMinedBlockRIBST, GetLastMinedBlockRIBSZ, GetLastMinedBlockRIBSZ2. Input: " + JSON.stringify(instance));
+    } else if (match === 0) {
+      this.actualInstance = null; // clear the actual instance in case there are multiple matches
+      throw new Error("No match found constructing `GetLastMinedBlockRIBS` with oneOf schemas GetLastMinedBlockRIBSB, GetLastMinedBlockRIBSBC, GetLastMinedBlockRIBSBSC, GetLastMinedBlockRIBSD, GetLastMinedBlockRIBSD2, GetLastMinedBlockRIBSE, GetLastMinedBlockRIBSEC, GetLastMinedBlockRIBSL, GetLastMinedBlockRIBST, GetLastMinedBlockRIBSZ, GetLastMinedBlockRIBSZ2. Details: " + errorMessages.join(", "));
+    } else {// only 1 match
+      // the input is valid
+    }
   }
 
   /**
-   * Initializes the fields of this object.
-   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-   * Only for internal use.
+   * Constructs a <code>GetLastMinedBlockRIBS</code> from a plain JavaScript object, optionally creating a new instance.
+   * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+   * @param {Object} data The plain JavaScript object bearing properties of interest.
+   * @param {module:model/GetLastMinedBlockRIBS} obj Optional instance to populate.
+   * @return {module:model/GetLastMinedBlockRIBS} The populated <code>GetLastMinedBlockRIBS</code> instance.
    */
-  _createClass(GetLastMinedBlockRIBS, null, [{
-    key: "initialize",
-    value: function initialize(obj, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, uncles, dsBlock, dsDifficulty, dsLeader, microBlocks) {
-      obj['difficulty'] = difficulty;
-      obj['bits'] = bits;
-      obj['chainwork'] = chainwork;
-      obj['merkleRoot'] = merkleRoot;
-      obj['nonce'] = nonce;
-      obj['size'] = size;
-      obj['strippedSize'] = strippedSize;
-      obj['version'] = version;
-      obj['versionHex'] = versionHex;
-      obj['weight'] = weight;
-      obj['extraData'] = extraData;
-      obj['gasLimit'] = gasLimit;
-      obj['gasUsed'] = gasUsed;
-      obj['minedInSeconds'] = minedInSeconds;
-      obj['sha3Uncles'] = sha3Uncles;
-      obj['totalDifficulty'] = totalDifficulty;
-      obj['uncles'] = uncles;
-      obj['dsBlock'] = dsBlock;
-      obj['dsDifficulty'] = dsDifficulty;
-      obj['dsLeader'] = dsLeader;
-      obj['microBlocks'] = microBlocks;
+  _createClass(GetLastMinedBlockRIBS, [{
+    key: "getActualInstance",
+    value:
+    /**
+     * Gets the actual instance, which can be <code>GetLastMinedBlockRIBSB</code>, <code>GetLastMinedBlockRIBSBC</code>, <code>GetLastMinedBlockRIBSBSC</code>, <code>GetLastMinedBlockRIBSD</code>, <code>GetLastMinedBlockRIBSD2</code>, <code>GetLastMinedBlockRIBSE</code>, <code>GetLastMinedBlockRIBSEC</code>, <code>GetLastMinedBlockRIBSL</code>, <code>GetLastMinedBlockRIBST</code>, <code>GetLastMinedBlockRIBSZ</code>, <code>GetLastMinedBlockRIBSZ2</code>.
+     * @return {(module:model/GetLastMinedBlockRIBSB|module:model/GetLastMinedBlockRIBSBC|module:model/GetLastMinedBlockRIBSBSC|module:model/GetLastMinedBlockRIBSD|module:model/GetLastMinedBlockRIBSD2|module:model/GetLastMinedBlockRIBSE|module:model/GetLastMinedBlockRIBSEC|module:model/GetLastMinedBlockRIBSL|module:model/GetLastMinedBlockRIBST|module:model/GetLastMinedBlockRIBSZ|module:model/GetLastMinedBlockRIBSZ2)} The actual instance.
+     */
+    function getActualInstance() {
+      return this.actualInstance;
     }
 
     /**
-     * Constructs a <code>GetLastMinedBlockRIBS</code> from a plain JavaScript object, optionally creating a new instance.
-     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/GetLastMinedBlockRIBS} obj Optional instance to populate.
-     * @return {module:model/GetLastMinedBlockRIBS} The populated <code>GetLastMinedBlockRIBS</code> instance.
+     * Sets the actual instance, which can be <code>GetLastMinedBlockRIBSB</code>, <code>GetLastMinedBlockRIBSBC</code>, <code>GetLastMinedBlockRIBSBSC</code>, <code>GetLastMinedBlockRIBSD</code>, <code>GetLastMinedBlockRIBSD2</code>, <code>GetLastMinedBlockRIBSE</code>, <code>GetLastMinedBlockRIBSEC</code>, <code>GetLastMinedBlockRIBSL</code>, <code>GetLastMinedBlockRIBST</code>, <code>GetLastMinedBlockRIBSZ</code>, <code>GetLastMinedBlockRIBSZ2</code>.
+     * @param {(module:model/GetLastMinedBlockRIBSB|module:model/GetLastMinedBlockRIBSBC|module:model/GetLastMinedBlockRIBSBSC|module:model/GetLastMinedBlockRIBSD|module:model/GetLastMinedBlockRIBSD2|module:model/GetLastMinedBlockRIBSE|module:model/GetLastMinedBlockRIBSEC|module:model/GetLastMinedBlockRIBSL|module:model/GetLastMinedBlockRIBST|module:model/GetLastMinedBlockRIBSZ|module:model/GetLastMinedBlockRIBSZ2)} obj The actual instance.
      */
   }, {
+    key: "setActualInstance",
+    value: function setActualInstance(obj) {
+      this.actualInstance = GetLastMinedBlockRIBS.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+  }], [{
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
-      if (data) {
-        obj = obj || new GetLastMinedBlockRIBS();
-        _GetLastMinedBlockRIBSB["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSE["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSEC["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSBC["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSL["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSD["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSD2["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSBSC["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSZ["default"].constructFromObject(data, obj);
-        _GetLastMinedBlockRIBSZ2["default"].constructFromObject(data, obj);
-        if (data.hasOwnProperty('difficulty')) {
-          obj['difficulty'] = _ApiClient["default"].convertToType(data['difficulty'], 'String');
-        }
-        if (data.hasOwnProperty('bits')) {
-          obj['bits'] = _ApiClient["default"].convertToType(data['bits'], 'String');
-        }
-        if (data.hasOwnProperty('chainwork')) {
-          obj['chainwork'] = _ApiClient["default"].convertToType(data['chainwork'], 'String');
-        }
-        if (data.hasOwnProperty('merkleRoot')) {
-          obj['merkleRoot'] = _ApiClient["default"].convertToType(data['merkleRoot'], 'String');
-        }
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'String');
-        }
-        if (data.hasOwnProperty('size')) {
-          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
-        }
-        if (data.hasOwnProperty('strippedSize')) {
-          obj['strippedSize'] = _ApiClient["default"].convertToType(data['strippedSize'], 'Number');
-        }
-        if (data.hasOwnProperty('version')) {
-          obj['version'] = _ApiClient["default"].convertToType(data['version'], 'Number');
-        }
-        if (data.hasOwnProperty('versionHex')) {
-          obj['versionHex'] = _ApiClient["default"].convertToType(data['versionHex'], 'String');
-        }
-        if (data.hasOwnProperty('weight')) {
-          obj['weight'] = _ApiClient["default"].convertToType(data['weight'], 'Number');
-        }
-        if (data.hasOwnProperty('extraData')) {
-          obj['extraData'] = _ApiClient["default"].convertToType(data['extraData'], 'String');
-        }
-        if (data.hasOwnProperty('gasLimit')) {
-          obj['gasLimit'] = _ApiClient["default"].convertToType(data['gasLimit'], 'Number');
-        }
-        if (data.hasOwnProperty('gasUsed')) {
-          obj['gasUsed'] = _ApiClient["default"].convertToType(data['gasUsed'], 'Number');
-        }
-        if (data.hasOwnProperty('minedInSeconds')) {
-          obj['minedInSeconds'] = _ApiClient["default"].convertToType(data['minedInSeconds'], 'Number');
-        }
-        if (data.hasOwnProperty('sha3Uncles')) {
-          obj['sha3Uncles'] = _ApiClient["default"].convertToType(data['sha3Uncles'], 'String');
-        }
-        if (data.hasOwnProperty('totalDifficulty')) {
-          obj['totalDifficulty'] = _ApiClient["default"].convertToType(data['totalDifficulty'], 'String');
-        }
-        if (data.hasOwnProperty('uncles')) {
-          obj['uncles'] = _ApiClient["default"].convertToType(data['uncles'], ['String']);
-        }
-        if (data.hasOwnProperty('dsBlock')) {
-          obj['dsBlock'] = _ApiClient["default"].convertToType(data['dsBlock'], 'Number');
-        }
-        if (data.hasOwnProperty('dsDifficulty')) {
-          obj['dsDifficulty'] = _ApiClient["default"].convertToType(data['dsDifficulty'], 'String');
-        }
-        if (data.hasOwnProperty('dsLeader')) {
-          obj['dsLeader'] = _ApiClient["default"].convertToType(data['dsLeader'], 'String');
-        }
-        if (data.hasOwnProperty('microBlocks')) {
-          obj['microBlocks'] = _ApiClient["default"].convertToType(data['microBlocks'], ['String']);
-        }
-      }
-      return obj;
+      return new GetLastMinedBlockRIBS(data);
     }
   }]);
   return GetLastMinedBlockRIBS;
 }();
 /**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-GetLastMinedBlockRIBS.prototype['difficulty'] = undefined;
-
-/**
  * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
  * @member {String} bits
  */
+_defineProperty(GetLastMinedBlockRIBS, "fromJSON", function (json_string) {
+  return GetLastMinedBlockRIBS.constructFromObject(JSON.parse(json_string));
+});
 GetLastMinedBlockRIBS.prototype['bits'] = undefined;
 
 /**
@@ -214,6 +276,12 @@ GetLastMinedBlockRIBS.prototype['bits'] = undefined;
  * @member {String} chainwork
  */
 GetLastMinedBlockRIBS.prototype['chainwork'] = undefined;
+
+/**
+ * String representation of the difficulty
+ * @member {String} difficulty
+ */
+GetLastMinedBlockRIBS.prototype['difficulty'] = undefined;
 
 /**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
@@ -321,456 +389,23 @@ GetLastMinedBlockRIBS.prototype['dsLeader'] = undefined;
  */
 GetLastMinedBlockRIBS.prototype['microBlocks'] = undefined;
 
-// Implement GetLastMinedBlockRIBSB interface:
 /**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
+ * Representation of the blocks' bandwidth limit.
+ * @member {String} bandwidthUsed
  */
-_GetLastMinedBlockRIBSB["default"].prototype['difficulty'] = undefined;
+GetLastMinedBlockRIBS.prototype['bandwidthUsed'] = undefined;
+
 /**
- * A sub-unit of BTC equal to 0.000001 BTC, or 100 Satoshi, and is the same as microbitcoin (μBTC). Bits have two-decimal precision.
- * @member {String} bits
+ * Representation of the blocks' burned TRX.
+ * @member {String} burnedTRX
  */
-_GetLastMinedBlockRIBSB["default"].prototype['bits'] = undefined;
+GetLastMinedBlockRIBS.prototype['burnedTRX'] = undefined;
+
 /**
- * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
- * @member {String} chainwork
+ * Representation of the blocks' energy used.
+ * @member {String} energyUsed
  */
-_GetLastMinedBlockRIBSB["default"].prototype['chainwork'] = undefined;
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleRoot
- */
-_GetLastMinedBlockRIBSB["default"].prototype['merkleRoot'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-_GetLastMinedBlockRIBSB["default"].prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSB["default"].prototype['size'] = undefined;
-/**
- * Defines the numeric representation of the block size excluding the witness data.
- * @member {Number} strippedSize
- */
-_GetLastMinedBlockRIBSB["default"].prototype['strippedSize'] = undefined;
-/**
- * Represents the version of the specific block on the blockchain.
- * @member {Number} version
- */
-_GetLastMinedBlockRIBSB["default"].prototype['version'] = undefined;
-/**
- * Is the hexadecimal string representation of the block's version.
- * @member {String} versionHex
- */
-_GetLastMinedBlockRIBSB["default"].prototype['versionHex'] = undefined;
-/**
- * Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
- * @member {Number} weight
- */
-_GetLastMinedBlockRIBSB["default"].prototype['weight'] = undefined;
-// Implement GetLastMinedBlockRIBSE interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSE["default"].prototype['difficulty'] = undefined;
-/**
- * Represents any data that can be included by the miner in the block.
- * @member {String} extraData
- */
-_GetLastMinedBlockRIBSE["default"].prototype['extraData'] = undefined;
-/**
- * Defines the total gas limit of all transactions in the block.
- * @member {String} gasLimit
- */
-_GetLastMinedBlockRIBSE["default"].prototype['gasLimit'] = undefined;
-/**
- * Represents the total amount of gas used by all transactions in this block.
- * @member {String} gasUsed
- */
-_GetLastMinedBlockRIBSE["default"].prototype['gasUsed'] = undefined;
-/**
- * Specifies the amount of time required for the block to be mined in seconds.
- * @member {Number} minedInSeconds
- */
-_GetLastMinedBlockRIBSE["default"].prototype['minedInSeconds'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-_GetLastMinedBlockRIBSE["default"].prototype['nonce'] = undefined;
-/**
- * Defines the combined hash of all uncles for a given parent.
- * @member {String} sha3Uncles
- */
-_GetLastMinedBlockRIBSE["default"].prototype['sha3Uncles'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSE["default"].prototype['size'] = undefined;
-/**
- * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
- * @member {String} totalDifficulty
- */
-_GetLastMinedBlockRIBSE["default"].prototype['totalDifficulty'] = undefined;
-/**
- * @member {Array.<String>} uncles
- */
-_GetLastMinedBlockRIBSE["default"].prototype['uncles'] = undefined;
-// Implement GetLastMinedBlockRIBSEC interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['difficulty'] = undefined;
-/**
- * Represents any data that can be included by the miner in the block.
- * @member {String} extraData
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['extraData'] = undefined;
-/**
- * Defines the total gas limit of all transactions in the block.
- * @member {String} gasLimit
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['gasLimit'] = undefined;
-/**
- * Represents the total amount of gas used by all transactions in this block.
- * @member {String} gasUsed
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['gasUsed'] = undefined;
-/**
- * Specifies the amount of time required for the block to be mined in seconds.
- * @member {Number} minedInSeconds
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['minedInSeconds'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['nonce'] = undefined;
-/**
- * Defines the combined hash of all uncles for a given parent.
- * @member {String} sha3Uncles
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['sha3Uncles'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['size'] = undefined;
-/**
- * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
- * @member {String} totalDifficulty
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['totalDifficulty'] = undefined;
-/**
- * @member {Array.<String>} uncles
- */
-_GetLastMinedBlockRIBSEC["default"].prototype['uncles'] = undefined;
-// Implement GetLastMinedBlockRIBSBC interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSBC["default"].prototype['difficulty'] = undefined;
-/**
- * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
- * @member {String} bits
- */
-_GetLastMinedBlockRIBSBC["default"].prototype['bits'] = undefined;
-/**
- * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
- * @member {String} chainwork
- */
-_GetLastMinedBlockRIBSBC["default"].prototype['chainwork'] = undefined;
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleRoot
- */
-_GetLastMinedBlockRIBSBC["default"].prototype['merkleRoot'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-_GetLastMinedBlockRIBSBC["default"].prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSBC["default"].prototype['size'] = undefined;
-/**
- * Represents the version of the specific block on the blockchain.
- * @member {Number} version
- */
-_GetLastMinedBlockRIBSBC["default"].prototype['version'] = undefined;
-/**
- * Is the hexadecimal string representation of the block's version.
- * @member {String} versionHex
- */
-_GetLastMinedBlockRIBSBC["default"].prototype['versionHex'] = undefined;
-// Implement GetLastMinedBlockRIBSL interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSL["default"].prototype['difficulty'] = undefined;
-/**
- * Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
- * @member {String} bits
- */
-_GetLastMinedBlockRIBSL["default"].prototype['bits'] = undefined;
-/**
- * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
- * @member {String} chainwork
- */
-_GetLastMinedBlockRIBSL["default"].prototype['chainwork'] = undefined;
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleRoot
- */
-_GetLastMinedBlockRIBSL["default"].prototype['merkleRoot'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-_GetLastMinedBlockRIBSL["default"].prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSL["default"].prototype['size'] = undefined;
-/**
- * Defines the numeric representation of the block size excluding the witness data.
- * @member {Number} strippedSize
- */
-_GetLastMinedBlockRIBSL["default"].prototype['strippedSize'] = undefined;
-/**
- * Represents the version of the specific block on the blockchain.
- * @member {Number} version
- */
-_GetLastMinedBlockRIBSL["default"].prototype['version'] = undefined;
-/**
- * Is the hexadecimal string representation of the block's version.
- * @member {String} versionHex
- */
-_GetLastMinedBlockRIBSL["default"].prototype['versionHex'] = undefined;
-/**
- * Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
- * @member {Number} weight
- */
-_GetLastMinedBlockRIBSL["default"].prototype['weight'] = undefined;
-// Implement GetLastMinedBlockRIBSD interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSD["default"].prototype['difficulty'] = undefined;
-/**
- * Represents a specific sub-unit of Doge. Bits have two-decimal precision.
- * @member {String} bits
- */
-_GetLastMinedBlockRIBSD["default"].prototype['bits'] = undefined;
-/**
- * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
- * @member {String} chainwork
- */
-_GetLastMinedBlockRIBSD["default"].prototype['chainwork'] = undefined;
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleRoot
- */
-_GetLastMinedBlockRIBSD["default"].prototype['merkleRoot'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {Number} nonce
- */
-_GetLastMinedBlockRIBSD["default"].prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSD["default"].prototype['size'] = undefined;
-/**
- * Defines the numeric representation of the block size excluding the witness data.
- * @member {Number} strippedSize
- */
-_GetLastMinedBlockRIBSD["default"].prototype['strippedSize'] = undefined;
-/**
- * Represents the version of the specific block on the blockchain.
- * @member {Number} version
- */
-_GetLastMinedBlockRIBSD["default"].prototype['version'] = undefined;
-/**
- * Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
- * @member {Number} weight
- */
-_GetLastMinedBlockRIBSD["default"].prototype['weight'] = undefined;
-// Implement GetLastMinedBlockRIBSD2 interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSD2["default"].prototype['difficulty'] = undefined;
-/**
- * Represents a specific sub-unit of Dash. Bits have two-decimal precision.
- * @member {String} bits
- */
-_GetLastMinedBlockRIBSD2["default"].prototype['bits'] = undefined;
-/**
- * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
- * @member {String} chainwork
- */
-_GetLastMinedBlockRIBSD2["default"].prototype['chainwork'] = undefined;
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleRoot
- */
-_GetLastMinedBlockRIBSD2["default"].prototype['merkleRoot'] = undefined;
-/**
- * Numeric representation of the block nonce
- * @member {Number} nonce
- */
-_GetLastMinedBlockRIBSD2["default"].prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSD2["default"].prototype['size'] = undefined;
-/**
- * Represents the version of the specific block on the blockchain.
- * @member {Number} version
- */
-_GetLastMinedBlockRIBSD2["default"].prototype['version'] = undefined;
-/**
- * Is the hexadecimal string representation of the block's version.
- * @member {String} versionHex
- */
-_GetLastMinedBlockRIBSD2["default"].prototype['versionHex'] = undefined;
-// Implement GetLastMinedBlockRIBSBSC interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['difficulty'] = undefined;
-/**
- * Represents any data that can be included by the miner in the block.
- * @member {String} extraData
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['extraData'] = undefined;
-/**
- * Defines the total gas limit of all transactions in the block.
- * @member {String} gasLimit
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['gasLimit'] = undefined;
-/**
- * Represents the total amount of gas used by all transactions in this block.
- * @member {String} gasUsed
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['gasUsed'] = undefined;
-/**
- * Specifies the amount of time required for the block to be mined in second
- * @member {Number} minedInSeconds
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['minedInSeconds'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work
- * @member {String} nonce
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['nonce'] = undefined;
-/**
- * Defines the combined hash of all uncles for a given parent.
- * @member {String} sha3Uncles
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['sha3Uncles'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['size'] = undefined;
-/**
- * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block
- * @member {String} totalDifficulty
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['totalDifficulty'] = undefined;
-/**
- * @member {Array.<String>} uncles
- */
-_GetLastMinedBlockRIBSBSC["default"].prototype['uncles'] = undefined;
-// Implement GetLastMinedBlockRIBSZ interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSZ["default"].prototype['difficulty'] = undefined;
-/**
- * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
- * @member {String} bits
- */
-_GetLastMinedBlockRIBSZ["default"].prototype['bits'] = undefined;
-/**
- * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
- * @member {String} chainwork
- */
-_GetLastMinedBlockRIBSZ["default"].prototype['chainwork'] = undefined;
-/**
- * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
- * @member {String} merkleRoot
- */
-_GetLastMinedBlockRIBSZ["default"].prototype['merkleRoot'] = undefined;
-/**
- * Represents a random value that can be adjusted to satisfy the proof of work.
- * @member {String} nonce
- */
-_GetLastMinedBlockRIBSZ["default"].prototype['nonce'] = undefined;
-/**
- * Represents the total size of the block in Bytes.
- * @member {Number} size
- */
-_GetLastMinedBlockRIBSZ["default"].prototype['size'] = undefined;
-/**
- * Represents the transaction version number.
- * @member {Number} version
- */
-_GetLastMinedBlockRIBSZ["default"].prototype['version'] = undefined;
-// Implement GetLastMinedBlockRIBSZ2 interface:
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-_GetLastMinedBlockRIBSZ2["default"].prototype['difficulty'] = undefined;
-/**
- * Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
- * @member {Number} dsBlock
- */
-_GetLastMinedBlockRIBSZ2["default"].prototype['dsBlock'] = undefined;
-/**
- * Defines how difficult it is to mine the dsBlocks.
- * @member {String} dsDifficulty
- */
-_GetLastMinedBlockRIBSZ2["default"].prototype['dsDifficulty'] = undefined;
-/**
- * Represents a part of the DS Committee which leads the consensus protocol for the epoch.
- * @member {String} dsLeader
- */
-_GetLastMinedBlockRIBSZ2["default"].prototype['dsLeader'] = undefined;
-/**
- * Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
- * @member {Number} gasLimit
- */
-_GetLastMinedBlockRIBSZ2["default"].prototype['gasLimit'] = undefined;
-/**
- * Defines how much of the gas for the block has been used.
- * @member {Number} gasUsed
- */
-_GetLastMinedBlockRIBSZ2["default"].prototype['gasUsed'] = undefined;
-/**
- * @member {Array.<String>} microBlocks
- */
-_GetLastMinedBlockRIBSZ2["default"].prototype['microBlocks'] = undefined;
+GetLastMinedBlockRIBS.prototype['energyUsed'] = undefined;
+GetLastMinedBlockRIBS.OneOf = ["GetLastMinedBlockRIBSB", "GetLastMinedBlockRIBSBC", "GetLastMinedBlockRIBSBSC", "GetLastMinedBlockRIBSD", "GetLastMinedBlockRIBSD2", "GetLastMinedBlockRIBSE", "GetLastMinedBlockRIBSEC", "GetLastMinedBlockRIBSL", "GetLastMinedBlockRIBST", "GetLastMinedBlockRIBSZ", "GetLastMinedBlockRIBSZ2"];
 var _default = GetLastMinedBlockRIBS;
 exports["default"] = _default;

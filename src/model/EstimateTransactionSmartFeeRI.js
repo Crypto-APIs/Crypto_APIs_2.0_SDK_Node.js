@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EstimateTransactionSmartFeeRI model module.
  * @module model/EstimateTransactionSmartFeeRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class EstimateTransactionSmartFeeRI {
     /**
@@ -66,8 +66,34 @@ class EstimateTransactionSmartFeeRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>EstimateTransactionSmartFeeRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>EstimateTransactionSmartFeeRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of EstimateTransactionSmartFeeRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['feeRate'] && !(typeof data['feeRate'] === 'string' || data['feeRate'] instanceof String)) {
+            throw new Error("Expected the field `feeRate` to be a primitive type in the JSON string but got " + data['feeRate']);
+        }
+        // ensure the json data is a string
+        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
+            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
+        }
+
+        return true;
+    }
+
 
 }
+
+EstimateTransactionSmartFeeRI.RequiredProperties = ["confirmationTarget", "feeRate", "unit"];
 
 /**
  * Represents the confirmation target in blocks

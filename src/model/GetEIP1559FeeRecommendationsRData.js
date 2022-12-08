@@ -17,7 +17,7 @@ import GetEIP1559FeeRecommendationsRI from './GetEIP1559FeeRecommendationsRI';
 /**
  * The GetEIP1559FeeRecommendationsRData model module.
  * @module model/GetEIP1559FeeRecommendationsRData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetEIP1559FeeRecommendationsRData {
     /**
@@ -57,8 +57,30 @@ class GetEIP1559FeeRecommendationsRData {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetEIP1559FeeRecommendationsRData</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetEIP1559FeeRecommendationsRData</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetEIP1559FeeRecommendationsRData.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `item`
+        if (data['item']) { // data not null
+          GetEIP1559FeeRecommendationsRI.validateJSON(data['item']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetEIP1559FeeRecommendationsRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GetEIP1559FeeRecommendationsRI} item

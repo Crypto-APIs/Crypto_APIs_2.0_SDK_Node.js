@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateAutomaticTokensForwardingRITSBOT model module.
  * @module model/CreateAutomaticTokensForwardingRITSBOT
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateAutomaticTokensForwardingRITSBOT {
     /**
@@ -57,8 +57,26 @@ class CreateAutomaticTokensForwardingRITSBOT {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateAutomaticTokensForwardingRITSBOT</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateAutomaticTokensForwardingRITSBOT</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CreateAutomaticTokensForwardingRITSBOT.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+
+        return true;
+    }
+
 
 }
+
+CreateAutomaticTokensForwardingRITSBOT.RequiredProperties = ["propertyId"];
 
 /**
  * Defines the `propertyId` of the Omni Layer token.

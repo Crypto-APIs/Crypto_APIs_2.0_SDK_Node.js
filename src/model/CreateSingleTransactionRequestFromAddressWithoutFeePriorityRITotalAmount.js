@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount {
     /**
@@ -57,8 +57,28 @@ class CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateSingleTransactionRequestFromAddressWithoutFeePriorityRITotalAmount</code>.
+     */
+    static validateJSON(data) {
+        // ensure the json data is a string
+        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
+            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
+        }
+        // ensure the json data is a string
+        if (data['value'] && !(typeof data['value'] === 'string' || data['value'] instanceof String)) {
+            throw new Error("Expected the field `value` to be a primitive type in the JSON string but got " + data['value']);
+        }
+
+        return true;
+    }
+
 
 }
+
+
 
 /**
  * Defines the unit of the total amount transacted.

@@ -19,7 +19,7 @@ import GetAddressDetailsRITotalSpent from './GetAddressDetailsRITotalSpent';
 /**
  * The GetAddressDetailsRI model module.
  * @module model/GetAddressDetailsRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetAddressDetailsRI {
     /**
@@ -84,8 +84,38 @@ class GetAddressDetailsRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetAddressDetailsRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetAddressDetailsRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetAddressDetailsRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `confirmedBalance`
+        if (data['confirmedBalance']) { // data not null
+          GetAddressDetailsRIConfirmedBalance.validateJSON(data['confirmedBalance']);
+        }
+        // validate the optional field `totalReceived`
+        if (data['totalReceived']) { // data not null
+          GetAddressDetailsRITotalReceived.validateJSON(data['totalReceived']);
+        }
+        // validate the optional field `totalSpent`
+        if (data['totalSpent']) { // data not null
+          GetAddressDetailsRITotalSpent.validateJSON(data['totalSpent']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetAddressDetailsRI.RequiredProperties = ["transactionsCount", "confirmedBalance", "totalReceived", "totalSpent", "incomingTransactionsCount", "outgoingTransactionsCount"];
 
 /**
  * Represents the total number of confirmed coins transactions for this address, both incoming and outgoing. Applies for coins only **and not** tokens transfers e.g. for Ethereum. `transactionsCount` could result as less than incoming and outgoing transactions put together (e.g. in Bitcoin), due to the fact that one and the same address could be in senders and receivers addresses.

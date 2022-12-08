@@ -12,13 +12,13 @@
  */
 
 import ApiClient from '../ApiClient';
-import FreezeTronEnergyOrBandwidthRIDestinationsInner from './FreezeTronEnergyOrBandwidthRIDestinationsInner';
+import FreezeTronForEnergyOrBandwidthRIDestinationsInner from './FreezeTronForEnergyOrBandwidthRIDestinationsInner';
 import UnfreezeTronEnergyOrBandwidthRITransactionAmount from './UnfreezeTronEnergyOrBandwidthRITransactionAmount';
 
 /**
  * The UnfreezeTronEnergyOrBandwidthRI model module.
  * @module model/UnfreezeTronEnergyOrBandwidthRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class UnfreezeTronEnergyOrBandwidthRI {
     /**
@@ -26,7 +26,7 @@ class UnfreezeTronEnergyOrBandwidthRI {
      * @alias module:model/UnfreezeTronEnergyOrBandwidthRI
      * @param additionalData {String} Defines a transaction note with additional details
      * @param address {String} Defines the sender's public address.
-     * @param destinations {Array.<module:model/FreezeTronEnergyOrBandwidthRIDestinationsInner>} Defines the destination of the transaction
+     * @param destinations {Array.<module:model/FreezeTronForEnergyOrBandwidthRIDestinationsInner>} Defines the destination of the transaction
      * @param resource {String} Defines the resource staking for (eg. Bandwidth, Energy)
      * @param status {module:model/UnfreezeTronEnergyOrBandwidthRI.StatusEnum} Represents the status of the transaction.
      * @param transactionId {String} Defines the created transaction
@@ -80,7 +80,7 @@ class UnfreezeTronEnergyOrBandwidthRI {
                 obj['callbackUrl'] = ApiClient.convertToType(data['callbackUrl'], 'String');
             }
             if (data.hasOwnProperty('destinations')) {
-                obj['destinations'] = ApiClient.convertToType(data['destinations'], [FreezeTronEnergyOrBandwidthRIDestinationsInner]);
+                obj['destinations'] = ApiClient.convertToType(data['destinations'], [FreezeTronForEnergyOrBandwidthRIDestinationsInner]);
             }
             if (data.hasOwnProperty('resource')) {
                 obj['resource'] = ApiClient.convertToType(data['resource'], 'String');
@@ -104,8 +104,76 @@ class UnfreezeTronEnergyOrBandwidthRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>UnfreezeTronEnergyOrBandwidthRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>UnfreezeTronEnergyOrBandwidthRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of UnfreezeTronEnergyOrBandwidthRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['additionalData'] && !(typeof data['additionalData'] === 'string' || data['additionalData'] instanceof String)) {
+            throw new Error("Expected the field `additionalData` to be a primitive type in the JSON string but got " + data['additionalData']);
+        }
+        // ensure the json data is a string
+        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
+            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
+        }
+        // ensure the json data is a string
+        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
+            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
+        }
+        // ensure the json data is a string
+        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
+            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
+        }
+        if (data['destinations']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['destinations'])) {
+                throw new Error("Expected the field `destinations` to be an array in the JSON data but got " + data['destinations']);
+            }
+            // validate the optional field `destinations` (array)
+            for (const item of data['destinations']) {
+                FreezeTronForEnergyOrBandwidthRIDestinationsInner.validateJsonObject(item);
+            };
+        }
+        // ensure the json data is a string
+        if (data['resource'] && !(typeof data['resource'] === 'string' || data['resource'] instanceof String)) {
+            throw new Error("Expected the field `resource` to be a primitive type in the JSON string but got " + data['resource']);
+        }
+        // ensure the json data is a string
+        if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
+            throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
+        }
+        // ensure the json data is a string
+        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
+            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
+        }
+        // ensure the json data is a string
+        if (data['transactionType'] && !(typeof data['transactionType'] === 'string' || data['transactionType'] instanceof String)) {
+            throw new Error("Expected the field `transactionType` to be a primitive type in the JSON string but got " + data['transactionType']);
+        }
+        // ensure the json data is a string
+        if (data['walletId'] && !(typeof data['walletId'] === 'string' || data['walletId'] instanceof String)) {
+            throw new Error("Expected the field `walletId` to be a primitive type in the JSON string but got " + data['walletId']);
+        }
+        // validate the optional field `transactionAmount`
+        if (data['transactionAmount']) { // data not null
+          UnfreezeTronEnergyOrBandwidthRITransactionAmount.validateJSON(data['transactionAmount']);
+        }
+
+        return true;
+    }
+
 
 }
+
+UnfreezeTronEnergyOrBandwidthRI.RequiredProperties = ["additionalData", "address", "destinations", "resource", "status", "transactionId", "transactionType", "walletId", "transactionAmount"];
 
 /**
  * Defines a transaction note with additional details
@@ -133,7 +201,7 @@ UnfreezeTronEnergyOrBandwidthRI.prototype['callbackUrl'] = undefined;
 
 /**
  * Defines the destination of the transaction
- * @member {Array.<module:model/FreezeTronEnergyOrBandwidthRIDestinationsInner>} destinations
+ * @member {Array.<module:model/FreezeTronForEnergyOrBandwidthRIDestinationsInner>} destinations
  */
 UnfreezeTronEnergyOrBandwidthRI.prototype['destinations'] = undefined;
 

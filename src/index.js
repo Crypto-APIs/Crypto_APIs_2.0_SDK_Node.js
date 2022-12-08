@@ -482,22 +482,22 @@ import EstimateTransactionSmartFeeR from './model/EstimateTransactionSmartFeeR';
 import EstimateTransactionSmartFeeRData from './model/EstimateTransactionSmartFeeRData';
 import EstimateTransactionSmartFeeRI from './model/EstimateTransactionSmartFeeRI';
 import FeatureMainnetsNotAllowedForPlan from './model/FeatureMainnetsNotAllowedForPlan';
-import FreezeTronEnergyOrBandwidth400Response from './model/FreezeTronEnergyOrBandwidth400Response';
-import FreezeTronEnergyOrBandwidth401Response from './model/FreezeTronEnergyOrBandwidth401Response';
-import FreezeTronEnergyOrBandwidth403Response from './model/FreezeTronEnergyOrBandwidth403Response';
-import FreezeTronEnergyOrBandwidth409Response from './model/FreezeTronEnergyOrBandwidth409Response';
-import FreezeTronEnergyOrBandwidthE400 from './model/FreezeTronEnergyOrBandwidthE400';
-import FreezeTronEnergyOrBandwidthE401 from './model/FreezeTronEnergyOrBandwidthE401';
-import FreezeTronEnergyOrBandwidthE403 from './model/FreezeTronEnergyOrBandwidthE403';
-import FreezeTronEnergyOrBandwidthE409 from './model/FreezeTronEnergyOrBandwidthE409';
-import FreezeTronEnergyOrBandwidthR from './model/FreezeTronEnergyOrBandwidthR';
-import FreezeTronEnergyOrBandwidthRB from './model/FreezeTronEnergyOrBandwidthRB';
-import FreezeTronEnergyOrBandwidthRBData from './model/FreezeTronEnergyOrBandwidthRBData';
-import FreezeTronEnergyOrBandwidthRBDataItem from './model/FreezeTronEnergyOrBandwidthRBDataItem';
-import FreezeTronEnergyOrBandwidthRData from './model/FreezeTronEnergyOrBandwidthRData';
-import FreezeTronEnergyOrBandwidthRI from './model/FreezeTronEnergyOrBandwidthRI';
-import FreezeTronEnergyOrBandwidthRIDestinationsInner from './model/FreezeTronEnergyOrBandwidthRIDestinationsInner';
-import FreezeTronEnergyOrBandwidthRITransactionAmount from './model/FreezeTronEnergyOrBandwidthRITransactionAmount';
+import FreezeTronForEnergyOrBandwidth400Response from './model/FreezeTronForEnergyOrBandwidth400Response';
+import FreezeTronForEnergyOrBandwidth401Response from './model/FreezeTronForEnergyOrBandwidth401Response';
+import FreezeTronForEnergyOrBandwidth403Response from './model/FreezeTronForEnergyOrBandwidth403Response';
+import FreezeTronForEnergyOrBandwidth409Response from './model/FreezeTronForEnergyOrBandwidth409Response';
+import FreezeTronForEnergyOrBandwidthE400 from './model/FreezeTronForEnergyOrBandwidthE400';
+import FreezeTronForEnergyOrBandwidthE401 from './model/FreezeTronForEnergyOrBandwidthE401';
+import FreezeTronForEnergyOrBandwidthE403 from './model/FreezeTronForEnergyOrBandwidthE403';
+import FreezeTronForEnergyOrBandwidthE409 from './model/FreezeTronForEnergyOrBandwidthE409';
+import FreezeTronForEnergyOrBandwidthR from './model/FreezeTronForEnergyOrBandwidthR';
+import FreezeTronForEnergyOrBandwidthRB from './model/FreezeTronForEnergyOrBandwidthRB';
+import FreezeTronForEnergyOrBandwidthRBData from './model/FreezeTronForEnergyOrBandwidthRBData';
+import FreezeTronForEnergyOrBandwidthRBDataItem from './model/FreezeTronForEnergyOrBandwidthRBDataItem';
+import FreezeTronForEnergyOrBandwidthRData from './model/FreezeTronForEnergyOrBandwidthRData';
+import FreezeTronForEnergyOrBandwidthRI from './model/FreezeTronForEnergyOrBandwidthRI';
+import FreezeTronForEnergyOrBandwidthRIDestinationsInner from './model/FreezeTronForEnergyOrBandwidthRIDestinationsInner';
+import FreezeTronForEnergyOrBandwidthRITransactionAmount from './model/FreezeTronForEnergyOrBandwidthRITransactionAmount';
 import GenerateDepositAddress400Response from './model/GenerateDepositAddress400Response';
 import GenerateDepositAddress401Response from './model/GenerateDepositAddress401Response';
 import GenerateDepositAddress403Response from './model/GenerateDepositAddress403Response';
@@ -768,6 +768,7 @@ import GetLastMinedBlockRIBSD2 from './model/GetLastMinedBlockRIBSD2';
 import GetLastMinedBlockRIBSE from './model/GetLastMinedBlockRIBSE';
 import GetLastMinedBlockRIBSEC from './model/GetLastMinedBlockRIBSEC';
 import GetLastMinedBlockRIBSL from './model/GetLastMinedBlockRIBSL';
+import GetLastMinedBlockRIBST from './model/GetLastMinedBlockRIBST';
 import GetLastMinedBlockRIBSZ from './model/GetLastMinedBlockRIBSZ';
 import GetLastMinedBlockRIBSZ2 from './model/GetLastMinedBlockRIBSZ2';
 import GetLatestMinedXRPRippleBlock400Response from './model/GetLatestMinedXRPRippleBlock400Response';
@@ -1183,6 +1184,9 @@ import ListConfirmedTransactionsByAddressRIBSEGasPrice from './model/ListConfirm
 import ListConfirmedTransactionsByAddressRIBSL from './model/ListConfirmedTransactionsByAddressRIBSL';
 import ListConfirmedTransactionsByAddressRIBSLVinInner from './model/ListConfirmedTransactionsByAddressRIBSLVinInner';
 import ListConfirmedTransactionsByAddressRIBSLVinInnerScriptSig from './model/ListConfirmedTransactionsByAddressRIBSLVinInnerScriptSig';
+import ListConfirmedTransactionsByAddressRIBSP from './model/ListConfirmedTransactionsByAddressRIBSP';
+import ListConfirmedTransactionsByAddressRIBSPGasPrice from './model/ListConfirmedTransactionsByAddressRIBSPGasPrice';
+import ListConfirmedTransactionsByAddressRIBST from './model/ListConfirmedTransactionsByAddressRIBST';
 import ListConfirmedTransactionsByAddressRIBSZ from './model/ListConfirmedTransactionsByAddressRIBSZ';
 import ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner from './model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner';
 import ListConfirmedTransactionsByAddressRIBSZVinInner from './model/ListConfirmedTransactionsByAddressRIBSZVinInner';
@@ -1266,8 +1270,10 @@ import ListLatestMinedBlocksRIBSBC from './model/ListLatestMinedBlocksRIBSBC';
 import ListLatestMinedBlocksRIBSBSC from './model/ListLatestMinedBlocksRIBSBSC';
 import ListLatestMinedBlocksRIBSD from './model/ListLatestMinedBlocksRIBSD';
 import ListLatestMinedBlocksRIBSD2 from './model/ListLatestMinedBlocksRIBSD2';
+import ListLatestMinedBlocksRIBSE from './model/ListLatestMinedBlocksRIBSE';
 import ListLatestMinedBlocksRIBSEC from './model/ListLatestMinedBlocksRIBSEC';
 import ListLatestMinedBlocksRIBSL from './model/ListLatestMinedBlocksRIBSL';
+import ListLatestMinedBlocksRIBST from './model/ListLatestMinedBlocksRIBST';
 import ListLatestMinedBlocksRIBSX from './model/ListLatestMinedBlocksRIBSX';
 import ListLatestMinedBlocksRIBSXTotalCoins from './model/ListLatestMinedBlocksRIBSXTotalCoins';
 import ListLatestMinedBlocksRIBSXTotalFees from './model/ListLatestMinedBlocksRIBSXTotalFees';
@@ -1764,6 +1770,32 @@ import NewUnconfirmedTokensTransactionsRBData from './model/NewUnconfirmedTokens
 import NewUnconfirmedTokensTransactionsRBDataItem from './model/NewUnconfirmedTokensTransactionsRBDataItem';
 import NewUnconfirmedTokensTransactionsRData from './model/NewUnconfirmedTokensTransactionsRData';
 import NewUnconfirmedTokensTransactionsRI from './model/NewUnconfirmedTokensTransactionsRI';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE400 from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE400';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE401 from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE401';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE403 from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE403';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBData from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBData';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItemFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItemFee';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response';
@@ -1797,21 +1829,24 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner from '
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVinInner';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401 from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403 from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific';
-import PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecificFee from './model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecificFee';
+import PrepareTransactionFromAddress400Response from './model/PrepareTransactionFromAddress400Response';
+import PrepareTransactionFromAddress401Response from './model/PrepareTransactionFromAddress401Response';
+import PrepareTransactionFromAddress403Response from './model/PrepareTransactionFromAddress403Response';
+import PrepareTransactionFromAddressE400 from './model/PrepareTransactionFromAddressE400';
+import PrepareTransactionFromAddressE401 from './model/PrepareTransactionFromAddressE401';
+import PrepareTransactionFromAddressE403 from './model/PrepareTransactionFromAddressE403';
+import PrepareTransactionFromAddressR from './model/PrepareTransactionFromAddressR';
+import PrepareTransactionFromAddressRB from './model/PrepareTransactionFromAddressRB';
+import PrepareTransactionFromAddressRBData from './model/PrepareTransactionFromAddressRBData';
+import PrepareTransactionFromAddressRBDataItem from './model/PrepareTransactionFromAddressRBDataItem';
+import PrepareTransactionFromAddressRBDataItemFee from './model/PrepareTransactionFromAddressRBDataItemFee';
+import PrepareTransactionFromAddressRData from './model/PrepareTransactionFromAddressRData';
+import PrepareTransactionFromAddressRI from './model/PrepareTransactionFromAddressRI';
+import PrepareTransactionFromAddressRIBS from './model/PrepareTransactionFromAddressRIBS';
+import PrepareTransactionFromAddressRIBSBSC from './model/PrepareTransactionFromAddressRIBSBSC';
+import PrepareTransactionFromAddressRIBSBSCFee from './model/PrepareTransactionFromAddressRIBSBSCFee';
+import PrepareTransactionFromAddressRIBSE from './model/PrepareTransactionFromAddressRIBSE';
+import PrepareTransactionFromAddressRIBSEC from './model/PrepareTransactionFromAddressRIBSEC';
 import RequestLimitReached from './model/RequestLimitReached';
 import ResourceNotFound from './model/ResourceNotFound';
 import SyncHDWalletXPubYPubZPub400Response from './model/SyncHDWalletXPubYPubZPub400Response';
@@ -1962,7 +1997,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.10.0
+* @version 1.11.0
 */
 export {
     /**
@@ -4786,100 +4821,100 @@ export {
     FeatureMainnetsNotAllowedForPlan,
 
     /**
-     * The FreezeTronEnergyOrBandwidth400Response model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidth400Response}
+     * The FreezeTronForEnergyOrBandwidth400Response model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidth400Response}
      */
-    FreezeTronEnergyOrBandwidth400Response,
+    FreezeTronForEnergyOrBandwidth400Response,
 
     /**
-     * The FreezeTronEnergyOrBandwidth401Response model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidth401Response}
+     * The FreezeTronForEnergyOrBandwidth401Response model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidth401Response}
      */
-    FreezeTronEnergyOrBandwidth401Response,
+    FreezeTronForEnergyOrBandwidth401Response,
 
     /**
-     * The FreezeTronEnergyOrBandwidth403Response model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidth403Response}
+     * The FreezeTronForEnergyOrBandwidth403Response model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidth403Response}
      */
-    FreezeTronEnergyOrBandwidth403Response,
+    FreezeTronForEnergyOrBandwidth403Response,
 
     /**
-     * The FreezeTronEnergyOrBandwidth409Response model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidth409Response}
+     * The FreezeTronForEnergyOrBandwidth409Response model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidth409Response}
      */
-    FreezeTronEnergyOrBandwidth409Response,
+    FreezeTronForEnergyOrBandwidth409Response,
 
     /**
-     * The FreezeTronEnergyOrBandwidthE400 model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthE400}
+     * The FreezeTronForEnergyOrBandwidthE400 model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthE400}
      */
-    FreezeTronEnergyOrBandwidthE400,
+    FreezeTronForEnergyOrBandwidthE400,
 
     /**
-     * The FreezeTronEnergyOrBandwidthE401 model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthE401}
+     * The FreezeTronForEnergyOrBandwidthE401 model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthE401}
      */
-    FreezeTronEnergyOrBandwidthE401,
+    FreezeTronForEnergyOrBandwidthE401,
 
     /**
-     * The FreezeTronEnergyOrBandwidthE403 model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthE403}
+     * The FreezeTronForEnergyOrBandwidthE403 model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthE403}
      */
-    FreezeTronEnergyOrBandwidthE403,
+    FreezeTronForEnergyOrBandwidthE403,
 
     /**
-     * The FreezeTronEnergyOrBandwidthE409 model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthE409}
+     * The FreezeTronForEnergyOrBandwidthE409 model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthE409}
      */
-    FreezeTronEnergyOrBandwidthE409,
+    FreezeTronForEnergyOrBandwidthE409,
 
     /**
-     * The FreezeTronEnergyOrBandwidthR model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthR}
+     * The FreezeTronForEnergyOrBandwidthR model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthR}
      */
-    FreezeTronEnergyOrBandwidthR,
+    FreezeTronForEnergyOrBandwidthR,
 
     /**
-     * The FreezeTronEnergyOrBandwidthRB model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthRB}
+     * The FreezeTronForEnergyOrBandwidthRB model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthRB}
      */
-    FreezeTronEnergyOrBandwidthRB,
+    FreezeTronForEnergyOrBandwidthRB,
 
     /**
-     * The FreezeTronEnergyOrBandwidthRBData model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthRBData}
+     * The FreezeTronForEnergyOrBandwidthRBData model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthRBData}
      */
-    FreezeTronEnergyOrBandwidthRBData,
+    FreezeTronForEnergyOrBandwidthRBData,
 
     /**
-     * The FreezeTronEnergyOrBandwidthRBDataItem model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthRBDataItem}
+     * The FreezeTronForEnergyOrBandwidthRBDataItem model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthRBDataItem}
      */
-    FreezeTronEnergyOrBandwidthRBDataItem,
+    FreezeTronForEnergyOrBandwidthRBDataItem,
 
     /**
-     * The FreezeTronEnergyOrBandwidthRData model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthRData}
+     * The FreezeTronForEnergyOrBandwidthRData model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthRData}
      */
-    FreezeTronEnergyOrBandwidthRData,
+    FreezeTronForEnergyOrBandwidthRData,
 
     /**
-     * The FreezeTronEnergyOrBandwidthRI model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthRI}
+     * The FreezeTronForEnergyOrBandwidthRI model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthRI}
      */
-    FreezeTronEnergyOrBandwidthRI,
+    FreezeTronForEnergyOrBandwidthRI,
 
     /**
-     * The FreezeTronEnergyOrBandwidthRIDestinationsInner model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthRIDestinationsInner}
+     * The FreezeTronForEnergyOrBandwidthRIDestinationsInner model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthRIDestinationsInner}
      */
-    FreezeTronEnergyOrBandwidthRIDestinationsInner,
+    FreezeTronForEnergyOrBandwidthRIDestinationsInner,
 
     /**
-     * The FreezeTronEnergyOrBandwidthRITransactionAmount model constructor.
-     * @property {module:model/FreezeTronEnergyOrBandwidthRITransactionAmount}
+     * The FreezeTronForEnergyOrBandwidthRITransactionAmount model constructor.
+     * @property {module:model/FreezeTronForEnergyOrBandwidthRITransactionAmount}
      */
-    FreezeTronEnergyOrBandwidthRITransactionAmount,
+    FreezeTronForEnergyOrBandwidthRITransactionAmount,
 
     /**
      * The GenerateDepositAddress400Response model constructor.
@@ -6500,6 +6535,12 @@ export {
      * @property {module:model/GetLastMinedBlockRIBSL}
      */
     GetLastMinedBlockRIBSL,
+
+    /**
+     * The GetLastMinedBlockRIBST model constructor.
+     * @property {module:model/GetLastMinedBlockRIBST}
+     */
+    GetLastMinedBlockRIBST,
 
     /**
      * The GetLastMinedBlockRIBSZ model constructor.
@@ -8992,6 +9033,24 @@ export {
     ListConfirmedTransactionsByAddressRIBSLVinInnerScriptSig,
 
     /**
+     * The ListConfirmedTransactionsByAddressRIBSP model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSP}
+     */
+    ListConfirmedTransactionsByAddressRIBSP,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBSPGasPrice model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBSPGasPrice}
+     */
+    ListConfirmedTransactionsByAddressRIBSPGasPrice,
+
+    /**
+     * The ListConfirmedTransactionsByAddressRIBST model constructor.
+     * @property {module:model/ListConfirmedTransactionsByAddressRIBST}
+     */
+    ListConfirmedTransactionsByAddressRIBST,
+
+    /**
      * The ListConfirmedTransactionsByAddressRIBSZ model constructor.
      * @property {module:model/ListConfirmedTransactionsByAddressRIBSZ}
      */
@@ -9490,6 +9549,12 @@ export {
     ListLatestMinedBlocksRIBSD2,
 
     /**
+     * The ListLatestMinedBlocksRIBSE model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBSE}
+     */
+    ListLatestMinedBlocksRIBSE,
+
+    /**
      * The ListLatestMinedBlocksRIBSEC model constructor.
      * @property {module:model/ListLatestMinedBlocksRIBSEC}
      */
@@ -9500,6 +9565,12 @@ export {
      * @property {module:model/ListLatestMinedBlocksRIBSL}
      */
     ListLatestMinedBlocksRIBSL,
+
+    /**
+     * The ListLatestMinedBlocksRIBST model constructor.
+     * @property {module:model/ListLatestMinedBlocksRIBST}
+     */
+    ListLatestMinedBlocksRIBST,
 
     /**
      * The ListLatestMinedBlocksRIBSX model constructor.
@@ -12478,6 +12549,162 @@ export {
     NewUnconfirmedTokensTransactionsRI,
 
     /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE400 model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE400}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE400,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE401 model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE401}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE401,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE403 model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE403}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE403,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubR,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBData model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBData}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBData,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItemFee model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItemFee}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItemFee,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee,
+
+    /**
      * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response model constructor.
      * @property {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response}
      */
@@ -12676,94 +12903,112 @@ export {
     PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZVoutInner,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response}
+     * The PrepareTransactionFromAddress400Response model constructor.
+     * @property {module:model/PrepareTransactionFromAddress400Response}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub400Response,
+    PrepareTransactionFromAddress400Response,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response}
+     * The PrepareTransactionFromAddress401Response model constructor.
+     * @property {module:model/PrepareTransactionFromAddress401Response}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub401Response,
+    PrepareTransactionFromAddress401Response,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response}
+     * The PrepareTransactionFromAddress403Response model constructor.
+     * @property {module:model/PrepareTransactionFromAddress403Response}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPub403Response,
+    PrepareTransactionFromAddress403Response,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400 model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400}
+     * The PrepareTransactionFromAddressE400 model constructor.
+     * @property {module:model/PrepareTransactionFromAddressE400}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE400,
+    PrepareTransactionFromAddressE400,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401 model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401}
+     * The PrepareTransactionFromAddressE401 model constructor.
+     * @property {module:model/PrepareTransactionFromAddressE401}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE401,
+    PrepareTransactionFromAddressE401,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403 model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403}
+     * The PrepareTransactionFromAddressE403 model constructor.
+     * @property {module:model/PrepareTransactionFromAddressE403}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubE403,
+    PrepareTransactionFromAddressE403,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR}
+     * The PrepareTransactionFromAddressR model constructor.
+     * @property {module:model/PrepareTransactionFromAddressR}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubR,
+    PrepareTransactionFromAddressR,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB}
+     * The PrepareTransactionFromAddressRB model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRB}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRB,
+    PrepareTransactionFromAddressRB,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData}
+     * The PrepareTransactionFromAddressRBData model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRBData}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBData,
+    PrepareTransactionFromAddressRBData,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem}
+     * The PrepareTransactionFromAddressRBDataItem model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRBDataItem}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItem,
+    PrepareTransactionFromAddressRBDataItem,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee}
+     * The PrepareTransactionFromAddressRBDataItemFee model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRBDataItemFee}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee,
+    PrepareTransactionFromAddressRBDataItemFee,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData}
+     * The PrepareTransactionFromAddressRData model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRData}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRData,
+    PrepareTransactionFromAddressRData,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI}
+     * The PrepareTransactionFromAddressRI model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRI}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRI,
+    PrepareTransactionFromAddressRI,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific}
+     * The PrepareTransactionFromAddressRIBS model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRIBS}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecific,
+    PrepareTransactionFromAddressRIBS,
 
     /**
-     * The PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecificFee model constructor.
-     * @property {module:model/PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecificFee}
+     * The PrepareTransactionFromAddressRIBSBSC model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRIBSBSC}
      */
-    PrepareAnAccountBasedTransactionFromHDWalletXPubYPubZPubRIBlockchainSpecificFee,
+    PrepareTransactionFromAddressRIBSBSC,
+
+    /**
+     * The PrepareTransactionFromAddressRIBSBSCFee model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRIBSBSCFee}
+     */
+    PrepareTransactionFromAddressRIBSBSCFee,
+
+    /**
+     * The PrepareTransactionFromAddressRIBSE model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRIBSE}
+     */
+    PrepareTransactionFromAddressRIBSE,
+
+    /**
+     * The PrepareTransactionFromAddressRIBSEC model constructor.
+     * @property {module:model/PrepareTransactionFromAddressRIBSEC}
+     */
+    PrepareTransactionFromAddressRIBSEC,
 
     /**
      * The RequestLimitReached model constructor.

@@ -17,7 +17,7 @@ import DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner from
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI {
     /**
@@ -57,8 +57,36 @@ class DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        if (data['addresses']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['addresses'])) {
+                throw new Error("Expected the field `addresses` to be an array in the JSON data but got " + data['addresses']);
+            }
+            // validate the optional field `addresses` (array)
+            for (const item of data['addresses']) {
+                DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRIAddressesInner.validateJsonObject(item);
+            };
+        }
+
+        return true;
+    }
+
 
 }
+
+DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesRI.RequiredProperties = ["addresses"];
 
 /**
  * Represents the address details.

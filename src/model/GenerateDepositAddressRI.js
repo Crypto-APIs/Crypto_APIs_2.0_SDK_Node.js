@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GenerateDepositAddressRI model module.
  * @module model/GenerateDepositAddressRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GenerateDepositAddressRI {
     /**
@@ -66,8 +66,34 @@ class GenerateDepositAddressRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GenerateDepositAddressRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GenerateDepositAddressRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GenerateDepositAddressRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
+            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
+        }
+        // ensure the json data is a string
+        if (data['label'] && !(typeof data['label'] === 'string' || data['label'] instanceof String)) {
+            throw new Error("Expected the field `label` to be a primitive type in the JSON string but got " + data['label']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GenerateDepositAddressRI.RequiredProperties = ["address", "createdTimestamp", "label"];
 
 /**
  * Specifies the specific address's unique string value.

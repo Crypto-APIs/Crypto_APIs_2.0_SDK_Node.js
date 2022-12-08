@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The EstimateGasLimitRI model module.
  * @module model/EstimateGasLimitRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class EstimateGasLimitRI {
     /**
@@ -56,8 +56,30 @@ class EstimateGasLimitRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>EstimateGasLimitRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>EstimateGasLimitRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of EstimateGasLimitRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
+            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
+        }
+
+        return true;
+    }
+
 
 }
+
+EstimateGasLimitRI.RequiredProperties = ["gasLimit"];
 
 /**
  * Represents the amount of gas used by this specific transaction alone.

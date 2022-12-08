@@ -17,7 +17,7 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS from './PrepareA
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI {
     /**
@@ -78,8 +78,42 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['additionalData'] && !(typeof data['additionalData'] === 'string' || data['additionalData'] instanceof String)) {
+            throw new Error("Expected the field `additionalData` to be a primitive type in the JSON string but got " + data['additionalData']);
+        }
+        // ensure the json data is a string
+        if (data['fee'] && !(typeof data['fee'] === 'string' || data['fee'] instanceof String)) {
+            throw new Error("Expected the field `fee` to be a primitive type in the JSON string but got " + data['fee']);
+        }
+        // ensure the json data is a string
+        if (data['feePerByte'] && !(typeof data['feePerByte'] === 'string' || data['feePerByte'] instanceof String)) {
+            throw new Error("Expected the field `feePerByte` to be a primitive type in the JSON string but got " + data['feePerByte']);
+        }
+        // validate the optional field `blockchainSpecific`
+        if (data['blockchainSpecific']) { // data not null
+          PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS.validateJSON(data['blockchainSpecific']);
+        }
+
+        return true;
+    }
+
 
 }
+
+PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.RequiredProperties = ["fee", "locktime", "size", "blockchainSpecific"];
 
 /**
  * Representation of the additional data

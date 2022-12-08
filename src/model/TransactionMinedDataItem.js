@@ -17,7 +17,7 @@ import TransactionMinedDataItemMinedInBlock from './TransactionMinedDataItemMine
 /**
  * The TransactionMinedDataItem model module.
  * @module model/TransactionMinedDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class TransactionMinedDataItem {
     /**
@@ -73,8 +73,42 @@ class TransactionMinedDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>TransactionMinedDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>TransactionMinedDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of TransactionMinedDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
+            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
+        }
+        // ensure the json data is a string
+        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
+            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
+        }
+        // ensure the json data is a string
+        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
+            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
+        }
+        // validate the optional field `minedInBlock`
+        if (data['minedInBlock']) { // data not null
+          TransactionMinedDataItemMinedInBlock.validateJSON(data['minedInBlock']);
+        }
+
+        return true;
+    }
+
 
 }
+
+TransactionMinedDataItem.RequiredProperties = ["blockchain", "network", "transactionId", "minedInBlock"];
 
 /**
  * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.

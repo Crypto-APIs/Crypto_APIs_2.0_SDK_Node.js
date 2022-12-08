@@ -17,7 +17,7 @@ import DeriveAndSyncNewChangeAddressesRData from './DeriveAndSyncNewChangeAddres
 /**
  * The DeriveAndSyncNewChangeAddressesR model module.
  * @module model/DeriveAndSyncNewChangeAddressesR
- * @version 1.10.0
+ * @version 1.11.0
  */
 class DeriveAndSyncNewChangeAddressesR {
     /**
@@ -70,8 +70,42 @@ class DeriveAndSyncNewChangeAddressesR {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>DeriveAndSyncNewChangeAddressesR</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DeriveAndSyncNewChangeAddressesR</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of DeriveAndSyncNewChangeAddressesR.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['apiVersion'] && !(typeof data['apiVersion'] === 'string' || data['apiVersion'] instanceof String)) {
+            throw new Error("Expected the field `apiVersion` to be a primitive type in the JSON string but got " + data['apiVersion']);
+        }
+        // ensure the json data is a string
+        if (data['requestId'] && !(typeof data['requestId'] === 'string' || data['requestId'] instanceof String)) {
+            throw new Error("Expected the field `requestId` to be a primitive type in the JSON string but got " + data['requestId']);
+        }
+        // ensure the json data is a string
+        if (data['context'] && !(typeof data['context'] === 'string' || data['context'] instanceof String)) {
+            throw new Error("Expected the field `context` to be a primitive type in the JSON string but got " + data['context']);
+        }
+        // validate the optional field `data`
+        if (data['data']) { // data not null
+          DeriveAndSyncNewChangeAddressesRData.validateJSON(data['data']);
+        }
+
+        return true;
+    }
+
 
 }
+
+DeriveAndSyncNewChangeAddressesR.RequiredProperties = ["apiVersion", "requestId", "data"];
 
 /**
  * Specifies the version of the API that incorporates this endpoint.

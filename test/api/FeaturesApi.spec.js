@@ -138,6 +138,16 @@
         done();
       });
     });
+    describe('prepareTransactionFromAddress', function() {
+      it('should call prepareTransactionFromAddress successfully', function(done) {
+        //uncomment below and update the code to test prepareTransactionFromAddress
+        //instance.prepareTransactionFromAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('validateAddress', function() {
       it('should call validateAddress successfully', function(done) {
         //uncomment below and update the code to test validateAddress

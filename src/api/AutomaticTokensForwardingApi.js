@@ -46,7 +46,7 @@ import ListTokensForwardingAutomationsR from '../model/ListTokensForwardingAutom
 /**
 * AutomaticTokensForwarding service.
 * @module api/AutomaticTokensForwardingApi
-* @version 1.10.0
+* @version 1.11.0
 */
 export default class AutomaticTokensForwardingApi {
 

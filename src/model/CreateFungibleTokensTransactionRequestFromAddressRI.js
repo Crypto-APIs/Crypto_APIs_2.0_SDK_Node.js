@@ -19,7 +19,7 @@ import CreateFungibleTokensTransactionRequestFromAddressRIS from './CreateFungib
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRI model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRI {
     /**
@@ -92,8 +92,64 @@ class CreateFungibleTokensTransactionRequestFromAddressRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateFungibleTokensTransactionRequestFromAddressRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateFungibleTokensTransactionRequestFromAddressRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CreateFungibleTokensTransactionRequestFromAddressRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
+            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
+        }
+        // ensure the json data is a string
+        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
+            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
+        }
+        // ensure the json data is a string
+        if (data['feePriority'] && !(typeof data['feePriority'] === 'string' || data['feePriority'] instanceof String)) {
+            throw new Error("Expected the field `feePriority` to be a primitive type in the JSON string but got " + data['feePriority']);
+        }
+        // ensure the json data is a string
+        if (data['note'] && !(typeof data['note'] === 'string' || data['note'] instanceof String)) {
+            throw new Error("Expected the field `note` to be a primitive type in the JSON string but got " + data['note']);
+        }
+        if (data['recipients']) { // data not null
+            // ensure the json data is an array
+            if (!Array.isArray(data['recipients'])) {
+                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
+            }
+            // validate the optional field `recipients` (array)
+            for (const item of data['recipients']) {
+                CreateFungibleTokensTransactionRequestFromAddressRIRecipientsInner.validateJsonObject(item);
+            };
+        }
+        // validate the optional field `senders`
+        if (data['senders']) { // data not null
+          CreateCoinsTransactionRequestFromAddressRISenders.validateJSON(data['senders']);
+        }
+        // validate the optional field `tokenTypeSpecificData`
+        if (data['tokenTypeSpecificData']) { // data not null
+          CreateFungibleTokensTransactionRequestFromAddressRIS.validateJSON(data['tokenTypeSpecificData']);
+        }
+        // ensure the json data is a string
+        if (data['transactionRequestId'] && !(typeof data['transactionRequestId'] === 'string' || data['transactionRequestId'] instanceof String)) {
+            throw new Error("Expected the field `transactionRequestId` to be a primitive type in the JSON string but got " + data['transactionRequestId']);
+        }
+
+        return true;
+    }
+
 
 }
+
+CreateFungibleTokensTransactionRequestFromAddressRI.RequiredProperties = ["callbackSecretKey", "callbackUrl", "feePriority", "recipients", "senders", "tokenTypeSpecificData", "transactionRequestId"];
 
 /**
  * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).

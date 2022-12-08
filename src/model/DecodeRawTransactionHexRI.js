@@ -17,7 +17,7 @@ import DecodeRawTransactionHexRIS from './DecodeRawTransactionHexRIS';
 /**
  * The DecodeRawTransactionHexRI model module.
  * @module model/DecodeRawTransactionHexRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class DecodeRawTransactionHexRI {
     /**
@@ -67,8 +67,34 @@ class DecodeRawTransactionHexRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>DecodeRawTransactionHexRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DecodeRawTransactionHexRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of DecodeRawTransactionHexRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `blockchainSpeficicData`
+        if (data['blockchainSpeficicData']) { // data not null
+          DecodeRawTransactionHexRIS.validateJSON(data['blockchainSpeficicData']);
+        }
+        // ensure the json data is a string
+        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
+            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
+        }
+
+        return true;
+    }
+
 
 }
+
+DecodeRawTransactionHexRI.RequiredProperties = ["blockchainSpeficicData", "size", "transactionId"];
 
 /**
  * @member {module:model/DecodeRawTransactionHexRIS} blockchainSpeficicData

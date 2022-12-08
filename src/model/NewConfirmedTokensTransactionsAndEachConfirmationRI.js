@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedTokensTransactionsAndEachConfirmationRI model module.
  * @module model/NewConfirmedTokensTransactionsAndEachConfirmationRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class NewConfirmedTokensTransactionsAndEachConfirmationRI {
     /**
@@ -87,8 +87,46 @@ class NewConfirmedTokensTransactionsAndEachConfirmationRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>NewConfirmedTokensTransactionsAndEachConfirmationRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>NewConfirmedTokensTransactionsAndEachConfirmationRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of NewConfirmedTokensTransactionsAndEachConfirmationRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
+            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
+        }
+        // ensure the json data is a string
+        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
+            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
+        }
+        // ensure the json data is a string
+        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
+            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
+        }
+        // ensure the json data is a string
+        if (data['eventType'] && !(typeof data['eventType'] === 'string' || data['eventType'] instanceof String)) {
+            throw new Error("Expected the field `eventType` to be a primitive type in the JSON string but got " + data['eventType']);
+        }
+        // ensure the json data is a string
+        if (data['referenceId'] && !(typeof data['referenceId'] === 'string' || data['referenceId'] instanceof String)) {
+            throw new Error("Expected the field `referenceId` to be a primitive type in the JSON string but got " + data['referenceId']);
+        }
+
+        return true;
+    }
+
 
 }
+
+NewConfirmedTokensTransactionsAndEachConfirmationRI.RequiredProperties = ["address", "callbackUrl", "createdTimestamp", "eventType", "isActive", "referenceId"];
 
 /**
  * Represents the address of the transaction, per which the result is returned.

@@ -108,10 +108,10 @@
         done();
       });
     });
-    describe('freezeTronEnergyOrBandwidth', function() {
-      it('should call freezeTronEnergyOrBandwidth successfully', function(done) {
-        //uncomment below and update the code to test freezeTronEnergyOrBandwidth
-        //instance.freezeTronEnergyOrBandwidth(function(error) {
+    describe('freezeTronForEnergyOrBandwidth', function() {
+      it('should call freezeTronForEnergyOrBandwidth successfully', function(done) {
+        //uncomment below and update the code to test freezeTronForEnergyOrBandwidth
+        //instance.freezeTronForEnergyOrBandwidth(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});

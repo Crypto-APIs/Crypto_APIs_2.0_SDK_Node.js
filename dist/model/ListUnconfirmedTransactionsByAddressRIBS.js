@@ -22,185 +22,217 @@ var _ListUnconfirmedTransactionsByAddressRIBSECFee = _interopRequireDefault(requ
 var _ListUnconfirmedTransactionsByAddressRIBSL = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIBSL"));
 var _ListUnconfirmedTransactionsByAddressRIBSZ = _interopRequireDefault(require("./ListUnconfirmedTransactionsByAddressRIBSZ"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
  * The ListUnconfirmedTransactionsByAddressRIBS model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBS
- * @version 1.10.0
+ * @version 1.11.0
  */
 var ListUnconfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>ListUnconfirmedTransactionsByAddressRIBS</code>.
    * @alias module:model/ListUnconfirmedTransactionsByAddressRIBS
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSB
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSBC
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSL
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSD
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSD2
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSE
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSEC
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSZ
-   * @implements module:model/ListUnconfirmedTransactionsByAddressRIBSBSC
-   * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-   * @param size {Number} Represents the total size of this transaction.
-   * @param vSize {Number} Represents the virtual size of this transaction.
-   * @param version {Number} Defines the version of the transaction.
-   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} Object Array representation of transaction outputs
-   * @param fee {module:model/ListUnconfirmedTransactionsByAddressRIBSECFee} 
-   * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
-   * @param gasPrice {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} 
-   * @param inputData {String} Represents additional information that is required for the transaction.
-   * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
-   * @param transactionStatus {String} String representation of the transaction status
-   * @param bindingSig {String} It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
-   * @param expiryHeight {Number} Represents a block height after which the transaction will expire.
-   * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
-   * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
-   * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
-   * @param vJoinSplit {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-   * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
-   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
-   * @param valueBalance {String} Defines the transaction value balance.
-   * @param versionGroupId {String} Represents the transaction version group ID.
+   * @param {(module:model/ListUnconfirmedTransactionsByAddressRIBSB|module:model/ListUnconfirmedTransactionsByAddressRIBSBC|module:model/ListUnconfirmedTransactionsByAddressRIBSBSC|module:model/ListUnconfirmedTransactionsByAddressRIBSD|module:model/ListUnconfirmedTransactionsByAddressRIBSD2|module:model/ListUnconfirmedTransactionsByAddressRIBSE|module:model/ListUnconfirmedTransactionsByAddressRIBSEC|module:model/ListUnconfirmedTransactionsByAddressRIBSL|module:model/ListUnconfirmedTransactionsByAddressRIBSZ)} instance The actual instance to initialize ListUnconfirmedTransactionsByAddressRIBS.
    */
-  function ListUnconfirmedTransactionsByAddressRIBS(locktime, size, vSize, version, vin, vout, fee, gasLimit, gasPrice, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) {
+  function ListUnconfirmedTransactionsByAddressRIBS() {
+    var instance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     _classCallCheck(this, ListUnconfirmedTransactionsByAddressRIBS);
-    _ListUnconfirmedTransactionsByAddressRIBSB["default"].initialize(this, locktime, size, vSize, version, vin, vout);
-    _ListUnconfirmedTransactionsByAddressRIBSBC["default"].initialize(this, locktime, size, version, vin, vout);
-    _ListUnconfirmedTransactionsByAddressRIBSL["default"].initialize(this, locktime, size, vSize, version, vin, vout);
-    _ListUnconfirmedTransactionsByAddressRIBSD["default"].initialize(this, locktime, size, version, vin, vout);
-    _ListUnconfirmedTransactionsByAddressRIBSD2["default"].initialize(this, locktime, size, version, vin, vout);
-    _ListUnconfirmedTransactionsByAddressRIBSE["default"].initialize(this, fee, gasLimit, gasPrice, inputData, nonce, transactionStatus);
-    _ListUnconfirmedTransactionsByAddressRIBSEC["default"].initialize(this, fee, gasLimit, gasPrice, nonce, transactionStatus);
-    _ListUnconfirmedTransactionsByAddressRIBSZ["default"].initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);
-    _ListUnconfirmedTransactionsByAddressRIBSBSC["default"].initialize(this, gasLimit, gasPrice, inputData, nonce, transactionStatus);
-    ListUnconfirmedTransactionsByAddressRIBS.initialize(this, locktime, size, vSize, version, vin, vout, fee, gasLimit, gasPrice, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId);
+    _defineProperty(this, "toJSON", function () {
+      return this.getActualInstance();
+    });
+    if (instance === null) {
+      this.actualInstance = null;
+      return;
+    }
+    var match = 0;
+    var errorMessages = [];
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSB") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSB["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSB from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSB["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSB
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSB: " + err);
+    }
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSBC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSBC["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSBC from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSBC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSBC
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSBC: " + err);
+    }
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSL") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSL["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSL from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSL["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSL
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSL: " + err);
+    }
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSD") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSD["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSD from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSD["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSD
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSD: " + err);
+    }
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSD2") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSD2["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSD2 from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSD2["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSD2
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSD2: " + err);
+    }
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSE") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSE["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSE from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSE["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSE
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSE: " + err);
+    }
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSEC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSEC["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSEC from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSEC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSEC
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSEC: " + err);
+    }
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSZ") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSZ["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSZ from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSZ["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSZ
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSZ: " + err);
+    }
+    try {
+      if (typeof instance === "ListUnconfirmedTransactionsByAddressRIBSBSC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _ListUnconfirmedTransactionsByAddressRIBSBSC["default"].validateJSON(instance); // throw an exception if no match
+        // create ListUnconfirmedTransactionsByAddressRIBSBSC from JS object
+        this.actualInstance = _ListUnconfirmedTransactionsByAddressRIBSBSC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into ListUnconfirmedTransactionsByAddressRIBSBSC
+      errorMessages.push("Failed to construct ListUnconfirmedTransactionsByAddressRIBSBSC: " + err);
+    }
+    if (match > 1) {
+      throw new Error("Multiple matches found constructing `ListUnconfirmedTransactionsByAddressRIBS` with oneOf schemas ListUnconfirmedTransactionsByAddressRIBSB, ListUnconfirmedTransactionsByAddressRIBSBC, ListUnconfirmedTransactionsByAddressRIBSBSC, ListUnconfirmedTransactionsByAddressRIBSD, ListUnconfirmedTransactionsByAddressRIBSD2, ListUnconfirmedTransactionsByAddressRIBSE, ListUnconfirmedTransactionsByAddressRIBSEC, ListUnconfirmedTransactionsByAddressRIBSL, ListUnconfirmedTransactionsByAddressRIBSZ. Input: " + JSON.stringify(instance));
+    } else if (match === 0) {
+      this.actualInstance = null; // clear the actual instance in case there are multiple matches
+      throw new Error("No match found constructing `ListUnconfirmedTransactionsByAddressRIBS` with oneOf schemas ListUnconfirmedTransactionsByAddressRIBSB, ListUnconfirmedTransactionsByAddressRIBSBC, ListUnconfirmedTransactionsByAddressRIBSBSC, ListUnconfirmedTransactionsByAddressRIBSD, ListUnconfirmedTransactionsByAddressRIBSD2, ListUnconfirmedTransactionsByAddressRIBSE, ListUnconfirmedTransactionsByAddressRIBSEC, ListUnconfirmedTransactionsByAddressRIBSL, ListUnconfirmedTransactionsByAddressRIBSZ. Details: " + errorMessages.join(", "));
+    } else {// only 1 match
+      // the input is valid
+    }
   }
 
   /**
-   * Initializes the fields of this object.
-   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-   * Only for internal use.
+   * Constructs a <code>ListUnconfirmedTransactionsByAddressRIBS</code> from a plain JavaScript object, optionally creating a new instance.
+   * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+   * @param {Object} data The plain JavaScript object bearing properties of interest.
+   * @param {module:model/ListUnconfirmedTransactionsByAddressRIBS} obj Optional instance to populate.
+   * @return {module:model/ListUnconfirmedTransactionsByAddressRIBS} The populated <code>ListUnconfirmedTransactionsByAddressRIBS</code> instance.
    */
-  _createClass(ListUnconfirmedTransactionsByAddressRIBS, null, [{
-    key: "initialize",
-    value: function initialize(obj, locktime, size, vSize, version, vin, vout, fee, gasLimit, gasPrice, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId) {
-      obj['locktime'] = locktime;
-      obj['size'] = size;
-      obj['vSize'] = vSize;
-      obj['version'] = version;
-      obj['vin'] = vin;
-      obj['vout'] = vout;
-      obj['fee'] = fee;
-      obj['gasLimit'] = gasLimit;
-      obj['gasPrice'] = gasPrice;
-      obj['inputData'] = inputData;
-      obj['nonce'] = nonce;
-      obj['transactionStatus'] = transactionStatus;
-      obj['bindingSig'] = bindingSig;
-      obj['expiryHeight'] = expiryHeight;
-      obj['joinSplitPubKey'] = joinSplitPubKey;
-      obj['joinSplitSig'] = joinSplitSig;
-      obj['overwintered'] = overwintered;
-      obj['vJoinSplit'] = vJoinSplit;
-      obj['vShieldedOutput'] = vShieldedOutput;
-      obj['vShieldedSpend'] = vShieldedSpend;
-      obj['valueBalance'] = valueBalance;
-      obj['versionGroupId'] = versionGroupId;
+  _createClass(ListUnconfirmedTransactionsByAddressRIBS, [{
+    key: "getActualInstance",
+    value:
+    /**
+     * Gets the actual instance, which can be <code>ListUnconfirmedTransactionsByAddressRIBSB</code>, <code>ListUnconfirmedTransactionsByAddressRIBSBC</code>, <code>ListUnconfirmedTransactionsByAddressRIBSBSC</code>, <code>ListUnconfirmedTransactionsByAddressRIBSD</code>, <code>ListUnconfirmedTransactionsByAddressRIBSD2</code>, <code>ListUnconfirmedTransactionsByAddressRIBSE</code>, <code>ListUnconfirmedTransactionsByAddressRIBSEC</code>, <code>ListUnconfirmedTransactionsByAddressRIBSL</code>, <code>ListUnconfirmedTransactionsByAddressRIBSZ</code>.
+     * @return {(module:model/ListUnconfirmedTransactionsByAddressRIBSB|module:model/ListUnconfirmedTransactionsByAddressRIBSBC|module:model/ListUnconfirmedTransactionsByAddressRIBSBSC|module:model/ListUnconfirmedTransactionsByAddressRIBSD|module:model/ListUnconfirmedTransactionsByAddressRIBSD2|module:model/ListUnconfirmedTransactionsByAddressRIBSE|module:model/ListUnconfirmedTransactionsByAddressRIBSEC|module:model/ListUnconfirmedTransactionsByAddressRIBSL|module:model/ListUnconfirmedTransactionsByAddressRIBSZ)} The actual instance.
+     */
+    function getActualInstance() {
+      return this.actualInstance;
     }
 
     /**
-     * Constructs a <code>ListUnconfirmedTransactionsByAddressRIBS</code> from a plain JavaScript object, optionally creating a new instance.
-     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/ListUnconfirmedTransactionsByAddressRIBS} obj Optional instance to populate.
-     * @return {module:model/ListUnconfirmedTransactionsByAddressRIBS} The populated <code>ListUnconfirmedTransactionsByAddressRIBS</code> instance.
+     * Sets the actual instance, which can be <code>ListUnconfirmedTransactionsByAddressRIBSB</code>, <code>ListUnconfirmedTransactionsByAddressRIBSBC</code>, <code>ListUnconfirmedTransactionsByAddressRIBSBSC</code>, <code>ListUnconfirmedTransactionsByAddressRIBSD</code>, <code>ListUnconfirmedTransactionsByAddressRIBSD2</code>, <code>ListUnconfirmedTransactionsByAddressRIBSE</code>, <code>ListUnconfirmedTransactionsByAddressRIBSEC</code>, <code>ListUnconfirmedTransactionsByAddressRIBSL</code>, <code>ListUnconfirmedTransactionsByAddressRIBSZ</code>.
+     * @param {(module:model/ListUnconfirmedTransactionsByAddressRIBSB|module:model/ListUnconfirmedTransactionsByAddressRIBSBC|module:model/ListUnconfirmedTransactionsByAddressRIBSBSC|module:model/ListUnconfirmedTransactionsByAddressRIBSD|module:model/ListUnconfirmedTransactionsByAddressRIBSD2|module:model/ListUnconfirmedTransactionsByAddressRIBSE|module:model/ListUnconfirmedTransactionsByAddressRIBSEC|module:model/ListUnconfirmedTransactionsByAddressRIBSL|module:model/ListUnconfirmedTransactionsByAddressRIBSZ)} obj The actual instance.
      */
   }, {
+    key: "setActualInstance",
+    value: function setActualInstance(obj) {
+      this.actualInstance = ListUnconfirmedTransactionsByAddressRIBS.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+  }], [{
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
-      if (data) {
-        obj = obj || new ListUnconfirmedTransactionsByAddressRIBS();
-        _ListUnconfirmedTransactionsByAddressRIBSB["default"].constructFromObject(data, obj);
-        _ListUnconfirmedTransactionsByAddressRIBSBC["default"].constructFromObject(data, obj);
-        _ListUnconfirmedTransactionsByAddressRIBSL["default"].constructFromObject(data, obj);
-        _ListUnconfirmedTransactionsByAddressRIBSD["default"].constructFromObject(data, obj);
-        _ListUnconfirmedTransactionsByAddressRIBSD2["default"].constructFromObject(data, obj);
-        _ListUnconfirmedTransactionsByAddressRIBSE["default"].constructFromObject(data, obj);
-        _ListUnconfirmedTransactionsByAddressRIBSEC["default"].constructFromObject(data, obj);
-        _ListUnconfirmedTransactionsByAddressRIBSZ["default"].constructFromObject(data, obj);
-        _ListUnconfirmedTransactionsByAddressRIBSBSC["default"].constructFromObject(data, obj);
-        if (data.hasOwnProperty('locktime')) {
-          obj['locktime'] = _ApiClient["default"].convertToType(data['locktime'], 'Number');
-        }
-        if (data.hasOwnProperty('size')) {
-          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
-        }
-        if (data.hasOwnProperty('vSize')) {
-          obj['vSize'] = _ApiClient["default"].convertToType(data['vSize'], 'Number');
-        }
-        if (data.hasOwnProperty('version')) {
-          obj['version'] = _ApiClient["default"].convertToType(data['version'], 'Number');
-        }
-        if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSZVinInner["default"]]);
-        }
-        if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDRIBSZVoutInner["default"]]);
-        }
-        if (data.hasOwnProperty('fee')) {
-          obj['fee'] = _ListUnconfirmedTransactionsByAddressRIBSECFee["default"].constructFromObject(data['fee']);
-        }
-        if (data.hasOwnProperty('gasLimit')) {
-          obj['gasLimit'] = _ApiClient["default"].convertToType(data['gasLimit'], 'String');
-        }
-        if (data.hasOwnProperty('gasPrice')) {
-          obj['gasPrice'] = _ListConfirmedTransactionsByAddressRIBSBSCGasPrice["default"].constructFromObject(data['gasPrice']);
-        }
-        if (data.hasOwnProperty('inputData')) {
-          obj['inputData'] = _ApiClient["default"].convertToType(data['inputData'], 'String');
-        }
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'Number');
-        }
-        if (data.hasOwnProperty('transactionStatus')) {
-          obj['transactionStatus'] = _ApiClient["default"].convertToType(data['transactionStatus'], 'String');
-        }
-        if (data.hasOwnProperty('bindingSig')) {
-          obj['bindingSig'] = _ApiClient["default"].convertToType(data['bindingSig'], 'String');
-        }
-        if (data.hasOwnProperty('expiryHeight')) {
-          obj['expiryHeight'] = _ApiClient["default"].convertToType(data['expiryHeight'], 'Number');
-        }
-        if (data.hasOwnProperty('joinSplitPubKey')) {
-          obj['joinSplitPubKey'] = _ApiClient["default"].convertToType(data['joinSplitPubKey'], 'String');
-        }
-        if (data.hasOwnProperty('joinSplitSig')) {
-          obj['joinSplitSig'] = _ApiClient["default"].convertToType(data['joinSplitSig'], 'String');
-        }
-        if (data.hasOwnProperty('overwintered')) {
-          obj['overwintered'] = _ApiClient["default"].convertToType(data['overwintered'], 'Boolean');
-        }
-        if (data.hasOwnProperty('vJoinSplit')) {
-          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner["default"]]);
-        }
-        if (data.hasOwnProperty('vShieldedOutput')) {
-          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner["default"]]);
-        }
-        if (data.hasOwnProperty('vShieldedSpend')) {
-          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner["default"]]);
-        }
-        if (data.hasOwnProperty('valueBalance')) {
-          obj['valueBalance'] = _ApiClient["default"].convertToType(data['valueBalance'], 'String');
-        }
-        if (data.hasOwnProperty('versionGroupId')) {
-          obj['versionGroupId'] = _ApiClient["default"].convertToType(data['versionGroupId'], 'String');
-        }
-      }
-      return obj;
+      return new ListUnconfirmedTransactionsByAddressRIBS(data);
     }
   }]);
   return ListUnconfirmedTransactionsByAddressRIBS;
@@ -209,6 +241,9 @@ var ListUnconfirmedTransactionsByAddressRIBS = /*#__PURE__*/function () {
  * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
  * @member {Number} locktime
  */
+_defineProperty(ListUnconfirmedTransactionsByAddressRIBS, "fromJSON", function (json_string) {
+  return ListUnconfirmedTransactionsByAddressRIBS.constructFromObject(JSON.parse(json_string));
+});
 ListUnconfirmedTransactionsByAddressRIBS.prototype['locktime'] = undefined;
 
 /**
@@ -334,300 +369,6 @@ ListUnconfirmedTransactionsByAddressRIBS.prototype['valueBalance'] = undefined;
  * @member {String} versionGroupId
  */
 ListUnconfirmedTransactionsByAddressRIBS.prototype['versionGroupId'] = undefined;
-
-// Implement ListUnconfirmedTransactionsByAddressRIBSB interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-_ListUnconfirmedTransactionsByAddressRIBSB["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_ListUnconfirmedTransactionsByAddressRIBSB["default"].prototype['size'] = undefined;
-/**
- * Defines the transaction's virtual size.
- * @member {Number} vSize
- */
-_ListUnconfirmedTransactionsByAddressRIBSB["default"].prototype['vSize'] = undefined;
-/**
- * Defines the version of the transaction.
- * @member {Number} version
- */
-_ListUnconfirmedTransactionsByAddressRIBSB["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBVinInner>} vin
- */
-_ListUnconfirmedTransactionsByAddressRIBSB["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBVoutInner>} vout
- */
-_ListUnconfirmedTransactionsByAddressRIBSB["default"].prototype['vout'] = undefined;
-// Implement ListUnconfirmedTransactionsByAddressRIBSBC interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-_ListUnconfirmedTransactionsByAddressRIBSBC["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_ListUnconfirmedTransactionsByAddressRIBSBC["default"].prototype['size'] = undefined;
-/**
- * Represents the transaction's version number.
- * @member {Number} version
- */
-_ListUnconfirmedTransactionsByAddressRIBSBC["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVinInner>} vin
- */
-_ListUnconfirmedTransactionsByAddressRIBSBC["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSBCVoutInner>} vout
- */
-_ListUnconfirmedTransactionsByAddressRIBSBC["default"].prototype['vout'] = undefined;
-// Implement ListUnconfirmedTransactionsByAddressRIBSL interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-_ListUnconfirmedTransactionsByAddressRIBSL["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_ListUnconfirmedTransactionsByAddressRIBSL["default"].prototype['size'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vSize
- */
-_ListUnconfirmedTransactionsByAddressRIBSL["default"].prototype['vSize'] = undefined;
-/**
- * Represents the transaction's version number.
- * @member {Number} version
- */
-_ListUnconfirmedTransactionsByAddressRIBSL["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSLVinInner>} vin
- */
-_ListUnconfirmedTransactionsByAddressRIBSL["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSLVoutInner>} vout
- */
-_ListUnconfirmedTransactionsByAddressRIBSL["default"].prototype['vout'] = undefined;
-// Implement ListUnconfirmedTransactionsByAddressRIBSD interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-_ListUnconfirmedTransactionsByAddressRIBSD["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_ListUnconfirmedTransactionsByAddressRIBSD["default"].prototype['size'] = undefined;
-/**
- * Numeric representation of the transaction version
- * @member {Number} version
- */
-_ListUnconfirmedTransactionsByAddressRIBSD["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSDVinInner>} vin
- */
-_ListUnconfirmedTransactionsByAddressRIBSD["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSDVoutInner>} vout
- */
-_ListUnconfirmedTransactionsByAddressRIBSD["default"].prototype['vout'] = undefined;
-// Implement ListUnconfirmedTransactionsByAddressRIBSD2 interface:
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-_ListUnconfirmedTransactionsByAddressRIBSD2["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_ListUnconfirmedTransactionsByAddressRIBSD2["default"].prototype['size'] = undefined;
-/**
- * Represents the transaction's version number.
- * @member {Number} version
- */
-_ListUnconfirmedTransactionsByAddressRIBSD2["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSD2VinInner>} vin
- */
-_ListUnconfirmedTransactionsByAddressRIBSD2["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/ListUnconfirmedTransactionsByAddressRIBSD2VoutInner>} vout
- */
-_ListUnconfirmedTransactionsByAddressRIBSD2["default"].prototype['vout'] = undefined;
-// Implement ListUnconfirmedTransactionsByAddressRIBSE interface:
-/**
- * @member {module:model/ListUnconfirmedTransactionsByAddressRIBSEFee} fee
- */
-_ListUnconfirmedTransactionsByAddressRIBSE["default"].prototype['fee'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-_ListUnconfirmedTransactionsByAddressRIBSE["default"].prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/ListConfirmedTransactionsByAddressRIBSEGasPrice} gasPrice
- */
-_ListUnconfirmedTransactionsByAddressRIBSE["default"].prototype['gasPrice'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-_ListUnconfirmedTransactionsByAddressRIBSE["default"].prototype['inputData'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-_ListUnconfirmedTransactionsByAddressRIBSE["default"].prototype['nonce'] = undefined;
-/**
- * String representation of the transaction status
- * @member {String} transactionStatus
- */
-_ListUnconfirmedTransactionsByAddressRIBSE["default"].prototype['transactionStatus'] = undefined;
-// Implement ListUnconfirmedTransactionsByAddressRIBSEC interface:
-/**
- * @member {module:model/ListUnconfirmedTransactionsByAddressRIBSECFee} fee
- */
-_ListUnconfirmedTransactionsByAddressRIBSEC["default"].prototype['fee'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-_ListUnconfirmedTransactionsByAddressRIBSEC["default"].prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/ListUnconfirmedTransactionsByAddressRIBSECGasPrice} gasPrice
- */
-_ListUnconfirmedTransactionsByAddressRIBSEC["default"].prototype['gasPrice'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-_ListUnconfirmedTransactionsByAddressRIBSEC["default"].prototype['nonce'] = undefined;
-/**
- * String representation of the transaction status
- * @member {String} transactionStatus
- */
-_ListUnconfirmedTransactionsByAddressRIBSEC["default"].prototype['transactionStatus'] = undefined;
-// Implement ListUnconfirmedTransactionsByAddressRIBSZ interface:
-/**
- * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
- * @member {String} bindingSig
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['bindingSig'] = undefined;
-/**
- * Represents a block height after which the transaction will expire.
- * @member {Number} expiryHeight
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['expiryHeight'] = undefined;
-/**
- * Represents an encoding of a JoinSplitSig public validating key.
- * @member {String} joinSplitPubKey
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['joinSplitPubKey'] = undefined;
-/**
- * Is used to sign transactions that contain at least one JoinSplit description.
- * @member {String} joinSplitSig
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['joinSplitSig'] = undefined;
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['locktime'] = undefined;
-/**
- * \"Overwinter\" is the network upgrade for the Zcash blockchain.
- * @member {Boolean} overwintered
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['overwintered'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['size'] = undefined;
-/**
- * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner>} vJoinSplit
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['vJoinSplit'] = undefined;
-/**
- * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['vShieldedOutput'] = undefined;
-/**
- * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['vShieldedSpend'] = undefined;
-/**
- * Defines the transaction value balance.
- * @member {String} valueBalance
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['valueBalance'] = undefined;
-/**
- * Defines the version of the transaction.
- * @member {Number} version
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction version group ID.
- * @member {String} versionGroupId
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['versionGroupId'] = undefined;
-/**
- * Object Array representation of transaction inputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} vin
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['vin'] = undefined;
-/**
- * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVoutInner>} vout
- */
-_ListUnconfirmedTransactionsByAddressRIBSZ["default"].prototype['vout'] = undefined;
-// Implement ListUnconfirmedTransactionsByAddressRIBSBSC interface:
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-_ListUnconfirmedTransactionsByAddressRIBSBSC["default"].prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} gasPrice
- */
-_ListUnconfirmedTransactionsByAddressRIBSBSC["default"].prototype['gasPrice'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-_ListUnconfirmedTransactionsByAddressRIBSBSC["default"].prototype['inputData'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-_ListUnconfirmedTransactionsByAddressRIBSBSC["default"].prototype['nonce'] = undefined;
-/**
- * String representation of the transaction status
- * @member {String} transactionStatus
- */
-_ListUnconfirmedTransactionsByAddressRIBSBSC["default"].prototype['transactionStatus'] = undefined;
+ListUnconfirmedTransactionsByAddressRIBS.OneOf = ["ListUnconfirmedTransactionsByAddressRIBSB", "ListUnconfirmedTransactionsByAddressRIBSBC", "ListUnconfirmedTransactionsByAddressRIBSBSC", "ListUnconfirmedTransactionsByAddressRIBSD", "ListUnconfirmedTransactionsByAddressRIBSD2", "ListUnconfirmedTransactionsByAddressRIBSE", "ListUnconfirmedTransactionsByAddressRIBSEC", "ListUnconfirmedTransactionsByAddressRIBSL", "ListUnconfirmedTransactionsByAddressRIBSZ"];
 var _default = ListUnconfirmedTransactionsByAddressRIBS;
 exports["default"] = _default;

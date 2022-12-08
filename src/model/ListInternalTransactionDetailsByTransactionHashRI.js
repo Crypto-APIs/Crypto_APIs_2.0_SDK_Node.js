@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListInternalTransactionDetailsByTransactionHashRI model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class ListInternalTransactionDetailsByTransactionHashRI {
     /**
@@ -96,8 +96,54 @@ class ListInternalTransactionDetailsByTransactionHashRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>ListInternalTransactionDetailsByTransactionHashRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListInternalTransactionDetailsByTransactionHashRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of ListInternalTransactionDetailsByTransactionHashRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
+            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
+        }
+        // ensure the json data is a string
+        if (data['blockHash'] && !(typeof data['blockHash'] === 'string' || data['blockHash'] instanceof String)) {
+            throw new Error("Expected the field `blockHash` to be a primitive type in the JSON string but got " + data['blockHash']);
+        }
+        // ensure the json data is a string
+        if (data['operationID'] && !(typeof data['operationID'] === 'string' || data['operationID'] instanceof String)) {
+            throw new Error("Expected the field `operationID` to be a primitive type in the JSON string but got " + data['operationID']);
+        }
+        // ensure the json data is a string
+        if (data['operationType'] && !(typeof data['operationType'] === 'string' || data['operationType'] instanceof String)) {
+            throw new Error("Expected the field `operationType` to be a primitive type in the JSON string but got " + data['operationType']);
+        }
+        // ensure the json data is a string
+        if (data['parentHash'] && !(typeof data['parentHash'] === 'string' || data['parentHash'] instanceof String)) {
+            throw new Error("Expected the field `parentHash` to be a primitive type in the JSON string but got " + data['parentHash']);
+        }
+        // ensure the json data is a string
+        if (data['recipient'] && !(typeof data['recipient'] === 'string' || data['recipient'] instanceof String)) {
+            throw new Error("Expected the field `recipient` to be a primitive type in the JSON string but got " + data['recipient']);
+        }
+        // ensure the json data is a string
+        if (data['sender'] && !(typeof data['sender'] === 'string' || data['sender'] instanceof String)) {
+            throw new Error("Expected the field `sender` to be a primitive type in the JSON string but got " + data['sender']);
+        }
+
+        return true;
+    }
+
 
 }
+
+ListInternalTransactionDetailsByTransactionHashRI.RequiredProperties = ["amount", "blockHash", "blockHeight", "operationID", "operationType", "parentHash", "recipient", "sender", "timestamp"];
 
 /**
  * Defines the specific amount of the transaction.

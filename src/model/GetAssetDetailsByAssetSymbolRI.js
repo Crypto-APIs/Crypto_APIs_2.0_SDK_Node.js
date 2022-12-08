@@ -19,7 +19,7 @@ import GetAssetDetailsByAssetSymbolRIS from './GetAssetDetailsByAssetSymbolRIS';
 /**
  * The GetAssetDetailsByAssetSymbolRI model module.
  * @module model/GetAssetDetailsByAssetSymbolRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetAssetDetailsByAssetSymbolRI {
     /**
@@ -97,8 +97,62 @@ class GetAssetDetailsByAssetSymbolRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetAssetDetailsByAssetSymbolRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetAssetDetailsByAssetSymbolRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetAssetDetailsByAssetSymbolRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['assetId'] && !(typeof data['assetId'] === 'string' || data['assetId'] instanceof String)) {
+            throw new Error("Expected the field `assetId` to be a primitive type in the JSON string but got " + data['assetId']);
+        }
+        // validate the optional field `assetLogo`
+        if (data['assetLogo']) { // data not null
+          GetAssetDetailsByAssetIDRIAssetLogo.validateJSON(data['assetLogo']);
+        }
+        // ensure the json data is a string
+        if (data['assetName'] && !(typeof data['assetName'] === 'string' || data['assetName'] instanceof String)) {
+            throw new Error("Expected the field `assetName` to be a primitive type in the JSON string but got " + data['assetName']);
+        }
+        // ensure the json data is a string
+        if (data['assetOriginalSymbol'] && !(typeof data['assetOriginalSymbol'] === 'string' || data['assetOriginalSymbol'] instanceof String)) {
+            throw new Error("Expected the field `assetOriginalSymbol` to be a primitive type in the JSON string but got " + data['assetOriginalSymbol']);
+        }
+        // ensure the json data is a string
+        if (data['assetSymbol'] && !(typeof data['assetSymbol'] === 'string' || data['assetSymbol'] instanceof String)) {
+            throw new Error("Expected the field `assetSymbol` to be a primitive type in the JSON string but got " + data['assetSymbol']);
+        }
+        // ensure the json data is a string
+        if (data['assetType'] && !(typeof data['assetType'] === 'string' || data['assetType'] instanceof String)) {
+            throw new Error("Expected the field `assetType` to be a primitive type in the JSON string but got " + data['assetType']);
+        }
+        // validate the optional field `latestRate`
+        if (data['latestRate']) { // data not null
+          GetAssetDetailsByAssetIDRILatestRate.validateJSON(data['latestRate']);
+        }
+        // ensure the json data is a string
+        if (data['slug'] && !(typeof data['slug'] === 'string' || data['slug'] instanceof String)) {
+            throw new Error("Expected the field `slug` to be a primitive type in the JSON string but got " + data['slug']);
+        }
+        // validate the optional field `specificData`
+        if (data['specificData']) { // data not null
+          GetAssetDetailsByAssetSymbolRIS.validateJSON(data['specificData']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetAssetDetailsByAssetSymbolRI.RequiredProperties = ["assetId", "assetLogo", "assetName", "assetOriginalSymbol", "assetSymbol", "assetType", "latestRate", "specificData"];
 
 /**
  * Defines the unique ID of the specific asset.

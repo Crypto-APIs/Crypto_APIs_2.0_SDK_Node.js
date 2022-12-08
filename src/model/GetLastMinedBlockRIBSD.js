@@ -16,14 +16,13 @@ import ApiClient from '../ApiClient';
 /**
  * The GetLastMinedBlockRIBSD model module.
  * @module model/GetLastMinedBlockRIBSD
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetLastMinedBlockRIBSD {
     /**
      * Constructs a new <code>GetLastMinedBlockRIBSD</code>.
      * Dogecoin
      * @alias module:model/GetLastMinedBlockRIBSD
-     * @param difficulty {String} Represents a mathematical value of how hard it is to find a valid hash for this block.
      * @param bits {String} Represents a specific sub-unit of Doge. Bits have two-decimal precision.
      * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
      * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
@@ -33,9 +32,9 @@ class GetLastMinedBlockRIBSD {
      * @param version {Number} Represents the version of the specific block on the blockchain.
      * @param weight {Number} Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
      */
-    constructor(difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, weight) { 
+    constructor(bits, chainwork, merkleRoot, nonce, size, strippedSize, version, weight) { 
         
-        GetLastMinedBlockRIBSD.initialize(this, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, weight);
+        GetLastMinedBlockRIBSD.initialize(this, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, weight);
     }
 
     /**
@@ -43,8 +42,7 @@ class GetLastMinedBlockRIBSD {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, difficulty, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, weight) { 
-        obj['difficulty'] = difficulty;
+    static initialize(obj, bits, chainwork, merkleRoot, nonce, size, strippedSize, version, weight) { 
         obj['bits'] = bits;
         obj['chainwork'] = chainwork;
         obj['merkleRoot'] = merkleRoot;
@@ -66,14 +64,14 @@ class GetLastMinedBlockRIBSD {
         if (data) {
             obj = obj || new GetLastMinedBlockRIBSD();
 
-            if (data.hasOwnProperty('difficulty')) {
-                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
-            }
             if (data.hasOwnProperty('bits')) {
                 obj['bits'] = ApiClient.convertToType(data['bits'], 'String');
             }
             if (data.hasOwnProperty('chainwork')) {
                 obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
+            }
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
             }
             if (data.hasOwnProperty('merkleRoot')) {
                 obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
@@ -97,14 +95,42 @@ class GetLastMinedBlockRIBSD {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetLastMinedBlockRIBSD</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetLastMinedBlockRIBSD</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetLastMinedBlockRIBSD.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['bits'] && !(typeof data['bits'] === 'string' || data['bits'] instanceof String)) {
+            throw new Error("Expected the field `bits` to be a primitive type in the JSON string but got " + data['bits']);
+        }
+        // ensure the json data is a string
+        if (data['chainwork'] && !(typeof data['chainwork'] === 'string' || data['chainwork'] instanceof String)) {
+            throw new Error("Expected the field `chainwork` to be a primitive type in the JSON string but got " + data['chainwork']);
+        }
+        // ensure the json data is a string
+        if (data['difficulty'] && !(typeof data['difficulty'] === 'string' || data['difficulty'] instanceof String)) {
+            throw new Error("Expected the field `difficulty` to be a primitive type in the JSON string but got " + data['difficulty']);
+        }
+        // ensure the json data is a string
+        if (data['merkleRoot'] && !(typeof data['merkleRoot'] === 'string' || data['merkleRoot'] instanceof String)) {
+            throw new Error("Expected the field `merkleRoot` to be a primitive type in the JSON string but got " + data['merkleRoot']);
+        }
+
+        return true;
+    }
+
 
 }
 
-/**
- * Represents a mathematical value of how hard it is to find a valid hash for this block.
- * @member {String} difficulty
- */
-GetLastMinedBlockRIBSD.prototype['difficulty'] = undefined;
+GetLastMinedBlockRIBSD.RequiredProperties = ["bits", "chainwork", "merkleRoot", "nonce", "size", "strippedSize", "version", "weight"];
 
 /**
  * Represents a specific sub-unit of Doge. Bits have two-decimal precision.
@@ -117,6 +143,12 @@ GetLastMinedBlockRIBSD.prototype['bits'] = undefined;
  * @member {String} chainwork
  */
 GetLastMinedBlockRIBSD.prototype['chainwork'] = undefined;
+
+/**
+ * Numeric representation of the block difficulty
+ * @member {String} difficulty
+ */
+GetLastMinedBlockRIBSD.prototype['difficulty'] = undefined;
 
 /**
  * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateNewMasterWalletRI model module.
  * @module model/CreateNewMasterWalletRI
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateNewMasterWalletRI {
     /**
@@ -56,8 +56,30 @@ class CreateNewMasterWalletRI {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>CreateNewMasterWalletRI</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateNewMasterWalletRI</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of CreateNewMasterWalletRI.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['walletId'] && !(typeof data['walletId'] === 'string' || data['walletId'] instanceof String)) {
+            throw new Error("Expected the field `walletId` to be a primitive type in the JSON string but got " + data['walletId']);
+        }
+
+        return true;
+    }
+
 
 }
+
+CreateNewMasterWalletRI.RequiredProperties = ["walletId"];
 
 /**
  * Represents the sender's specific and unique Wallet ID of the sender.

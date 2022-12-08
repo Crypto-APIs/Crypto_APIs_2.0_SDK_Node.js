@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DeriveAndSyncNewChangeAddressesRBDataItem model module.
  * @module model/DeriveAndSyncNewChangeAddressesRBDataItem
- * @version 1.10.0
+ * @version 1.11.0
  */
 class DeriveAndSyncNewChangeAddressesRBDataItem {
     /**
@@ -56,8 +56,30 @@ class DeriveAndSyncNewChangeAddressesRBDataItem {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>DeriveAndSyncNewChangeAddressesRBDataItem</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DeriveAndSyncNewChangeAddressesRBDataItem</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of DeriveAndSyncNewChangeAddressesRBDataItem.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['extendedPublicKey'] && !(typeof data['extendedPublicKey'] === 'string' || data['extendedPublicKey'] instanceof String)) {
+            throw new Error("Expected the field `extendedPublicKey` to be a primitive type in the JSON string but got " + data['extendedPublicKey']);
+        }
+
+        return true;
+    }
+
 
 }
+
+DeriveAndSyncNewChangeAddressesRBDataItem.RequiredProperties = ["extendedPublicKey"];
 
 /**
  * Defines the account extended publicly known key which is used to derive all child public keys.

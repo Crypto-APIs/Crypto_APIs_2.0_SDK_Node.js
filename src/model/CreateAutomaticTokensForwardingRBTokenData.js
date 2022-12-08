@@ -18,30 +18,62 @@ import CreateAutomaticTokensForwardingRBTokenDataEthereumToken from './CreateAut
 /**
  * The CreateAutomaticTokensForwardingRBTokenData model module.
  * @module model/CreateAutomaticTokensForwardingRBTokenData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class CreateAutomaticTokensForwardingRBTokenData {
     /**
      * Constructs a new <code>CreateAutomaticTokensForwardingRBTokenData</code>.
      * @alias module:model/CreateAutomaticTokensForwardingRBTokenData
-     * @implements module:model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken
-     * @implements module:model/CreateAutomaticTokensForwardingRBTokenDataEthereumToken
-     * @param propertyId {Number} Represents the specific `propertyId` of the token data that will be forwarded.
-     * @param contractAddress {String} Represents the specific `contractAddress` of the Token that will be forwarded.
+     * @param {(module:model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken|module:model/CreateAutomaticTokensForwardingRBTokenDataEthereumToken)} instance The actual instance to initialize CreateAutomaticTokensForwardingRBTokenData.
      */
-    constructor(propertyId, contractAddress) { 
-        CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken.initialize(this, propertyId);CreateAutomaticTokensForwardingRBTokenDataEthereumToken.initialize(this, contractAddress);
-        CreateAutomaticTokensForwardingRBTokenData.initialize(this, propertyId, contractAddress);
-    }
+    constructor(instance = null) {
+        if (instance === null) {
+            this.actualInstance = null;
+            return;
+        }
+        var match = 0;
+        var errorMessages = [];
+        try {
+            if (typeof instance === "CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken.validateJSON(instance); // throw an exception if no match
+                // create CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken from JS object
+                this.actualInstance = CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken
+            errorMessages.push("Failed to construct CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken: " + err)
+        }
 
-    /**
-     * Initializes the fields of this object.
-     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-     * Only for internal use.
-     */
-    static initialize(obj, propertyId, contractAddress) { 
-        obj['propertyId'] = propertyId;
-        obj['contractAddress'] = contractAddress;
+        try {
+            if (typeof instance === "CreateAutomaticTokensForwardingRBTokenDataEthereumToken") {
+                this.actualInstance = instance;
+            } else {
+                // plain JS object
+                // validate the object
+                CreateAutomaticTokensForwardingRBTokenDataEthereumToken.validateJSON(instance); // throw an exception if no match
+                // create CreateAutomaticTokensForwardingRBTokenDataEthereumToken from JS object
+                this.actualInstance = CreateAutomaticTokensForwardingRBTokenDataEthereumToken.constructFromObject(instance);
+            }
+            match++;
+        } catch(err) {
+            // json data failed to deserialize into CreateAutomaticTokensForwardingRBTokenDataEthereumToken
+            errorMessages.push("Failed to construct CreateAutomaticTokensForwardingRBTokenDataEthereumToken: " + err)
+        }
+
+        if (match > 1) {
+            throw new Error("Multiple matches found constructing `CreateAutomaticTokensForwardingRBTokenData` with oneOf schemas CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken, CreateAutomaticTokensForwardingRBTokenDataEthereumToken. Input: " + JSON.stringify(instance));
+        } else if (match === 0) {
+            this.actualInstance = null; // clear the actual instance in case there are multiple matches
+            throw new Error("No match found constructing `CreateAutomaticTokensForwardingRBTokenData` with oneOf schemas CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken, CreateAutomaticTokensForwardingRBTokenDataEthereumToken. Details: " +
+                            errorMessages.join(", "));
+        } else { // only 1 match
+            // the input is valid
+        }
     }
 
     /**
@@ -52,22 +84,41 @@ class CreateAutomaticTokensForwardingRBTokenData {
      * @return {module:model/CreateAutomaticTokensForwardingRBTokenData} The populated <code>CreateAutomaticTokensForwardingRBTokenData</code> instance.
      */
     static constructFromObject(data, obj) {
-        if (data) {
-            obj = obj || new CreateAutomaticTokensForwardingRBTokenData();
-            CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken.constructFromObject(data, obj);
-            CreateAutomaticTokensForwardingRBTokenDataEthereumToken.constructFromObject(data, obj);
-
-            if (data.hasOwnProperty('propertyId')) {
-                obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
-            }
-            if (data.hasOwnProperty('contractAddress')) {
-                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
-            }
-        }
-        return obj;
+        return new CreateAutomaticTokensForwardingRBTokenData(data);
     }
 
+    /**
+     * Gets the actual instance, which can be <code>CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken</code>, <code>CreateAutomaticTokensForwardingRBTokenDataEthereumToken</code>.
+     * @return {(module:model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken|module:model/CreateAutomaticTokensForwardingRBTokenDataEthereumToken)} The actual instance.
+     */
+    getActualInstance() {
+        return this.actualInstance;
+    }
 
+    /**
+     * Sets the actual instance, which can be <code>CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken</code>, <code>CreateAutomaticTokensForwardingRBTokenDataEthereumToken</code>.
+     * @param {(module:model/CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken|module:model/CreateAutomaticTokensForwardingRBTokenDataEthereumToken)} obj The actual instance.
+     */
+    setActualInstance(obj) {
+       this.actualInstance = CreateAutomaticTokensForwardingRBTokenData.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+    toJSON = function(){
+        return this.getActualInstance();
+    }
+
+    /**
+     * Create an instance of CreateAutomaticTokensForwardingRBTokenData from a JSON string.
+     * @param {string} json_string JSON string.
+     * @return {module:model/CreateAutomaticTokensForwardingRBTokenData} An instance of CreateAutomaticTokensForwardingRBTokenData.
+     */
+    static fromJSON = function(json_string){
+        return CreateAutomaticTokensForwardingRBTokenData.constructFromObject(JSON.parse(json_string));
+    }
 }
 
 /**
@@ -83,21 +134,7 @@ CreateAutomaticTokensForwardingRBTokenData.prototype['propertyId'] = undefined;
 CreateAutomaticTokensForwardingRBTokenData.prototype['contractAddress'] = undefined;
 
 
-// Implement CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken interface:
-/**
- * Represents the specific `propertyId` of the token data that will be forwarded.
- * @member {Number} propertyId
- */
-CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken.prototype['propertyId'] = undefined;
-// Implement CreateAutomaticTokensForwardingRBTokenDataEthereumToken interface:
-/**
- * Represents the specific `contractAddress` of the Token that will be forwarded.
- * @member {String} contractAddress
- */
-CreateAutomaticTokensForwardingRBTokenDataEthereumToken.prototype['contractAddress'] = undefined;
-
-
-
+CreateAutomaticTokensForwardingRBTokenData.OneOf = ["CreateAutomaticTokensForwardingRBTokenDataBitcoinOmniToken", "CreateAutomaticTokensForwardingRBTokenDataEthereumToken"];
 
 export default CreateAutomaticTokensForwardingRBTokenData;
 

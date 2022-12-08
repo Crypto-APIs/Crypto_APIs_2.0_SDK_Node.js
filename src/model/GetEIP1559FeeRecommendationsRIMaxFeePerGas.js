@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetEIP1559FeeRecommendationsRIMaxFeePerGas model module.
  * @module model/GetEIP1559FeeRecommendationsRIMaxFeePerGas
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetEIP1559FeeRecommendationsRIMaxFeePerGas {
     /**
@@ -71,8 +71,42 @@ class GetEIP1559FeeRecommendationsRIMaxFeePerGas {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetEIP1559FeeRecommendationsRIMaxFeePerGas</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetEIP1559FeeRecommendationsRIMaxFeePerGas</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetEIP1559FeeRecommendationsRIMaxFeePerGas.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // ensure the json data is a string
+        if (data['fast'] && !(typeof data['fast'] === 'string' || data['fast'] instanceof String)) {
+            throw new Error("Expected the field `fast` to be a primitive type in the JSON string but got " + data['fast']);
+        }
+        // ensure the json data is a string
+        if (data['slow'] && !(typeof data['slow'] === 'string' || data['slow'] instanceof String)) {
+            throw new Error("Expected the field `slow` to be a primitive type in the JSON string but got " + data['slow']);
+        }
+        // ensure the json data is a string
+        if (data['standard'] && !(typeof data['standard'] === 'string' || data['standard'] instanceof String)) {
+            throw new Error("Expected the field `standard` to be a primitive type in the JSON string but got " + data['standard']);
+        }
+        // ensure the json data is a string
+        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
+            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetEIP1559FeeRecommendationsRIMaxFeePerGas.RequiredProperties = ["fast", "slow", "standard", "unit"];
 
 /**
  * Represents the fast maximum fee per gas, calculated from unconfirmed transactions.

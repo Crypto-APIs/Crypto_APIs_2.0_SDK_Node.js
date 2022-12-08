@@ -17,7 +17,7 @@ import GetZilliqaBlockDetailsByBlockHashRI from './GetZilliqaBlockDetailsByBlock
 /**
  * The GetZilliqaBlockDetailsByBlockHashRData model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashRData
- * @version 1.10.0
+ * @version 1.11.0
  */
 class GetZilliqaBlockDetailsByBlockHashRData {
     /**
@@ -57,8 +57,30 @@ class GetZilliqaBlockDetailsByBlockHashRData {
         return obj;
     }
 
+    /**
+     * Validates the JSON data with respect to <code>GetZilliqaBlockDetailsByBlockHashRData</code>.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetZilliqaBlockDetailsByBlockHashRData</code>.
+     */
+    static validateJSON(data) {
+        // check to make sure all required properties are present in the JSON string
+        for (const property of GetZilliqaBlockDetailsByBlockHashRData.RequiredProperties) {
+            if (!data[property]) {
+                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
+            }
+        }
+        // validate the optional field `item`
+        if (data['item']) { // data not null
+          GetZilliqaBlockDetailsByBlockHashRI.validateJSON(data['item']);
+        }
+
+        return true;
+    }
+
 
 }
+
+GetZilliqaBlockDetailsByBlockHashRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GetZilliqaBlockDetailsByBlockHashRI} item

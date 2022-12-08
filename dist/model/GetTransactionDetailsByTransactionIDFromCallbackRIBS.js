@@ -29,277 +29,262 @@ var _GetTransactionDetailsByTransactionIDRIBSZVinInner = _interopRequireDefault(
 var _GetXRPRippleTransactionDetailsByTransactionIDRIOffer = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIOffer"));
 var _GetXRPRippleTransactionDetailsByTransactionIDRIReceive = _interopRequireDefault(require("./GetXRPRippleTransactionDetailsByTransactionIDRIReceive"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBS model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBS
- * @version 1.10.0
+ * @version 1.11.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackRIBS</code>.
    * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBS
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSB
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSE
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBC
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSL
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSEC
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSX
-   * @implements module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBST
-   * @param locktime {Number} Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
-   * @param size {Number} Represents the total size of this transaction.
-   * @param vSize {Number} Represents the virtual size of this transaction.
-   * @param version {Number} Defines the version of the transaction.
-   * @param vin {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} Object Array representation of transaction inputs
-   * @param vout {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner>} Object Array representation of transaction outputs
-   * @param contract {String} Represents the specific transaction contract.
-   * @param gasLimit {Number} Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
-   * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice} 
-   * @param gasUsed {Number} Defines how much of the gas for the block has been used.
-   * @param inputData {String} Represents additional information that is required for the transaction.
-   * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
-   * @param transactionStatus {String} Represents the status of this transaction.
-   * @param bindingSig {String} It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
-   * @param expiryHeight {Number} Represents a block height after which the transaction will expire.
-   * @param joinSplitPubKey {String} Represents an encoding of a JoinSplitSig public validating key.
-   * @param joinSplitSig {String} Is used to sign transactions that contain at least one JoinSplit description.
-   * @param overwintered {Boolean} \"Overwinter\" is the network upgrade for the Zcash blockchain.
-   * @param vJoinSplit {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
-   * @param vShieldedOutput {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} Object Array representation of transaction output descriptions
-   * @param vShieldedSpend {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} Object Array representation of transaction spend descriptions
-   * @param valueBalance {String} String representation of the transaction value balance
-   * @param versionGroupId {String} Represents the transaction version group ID
-   * @param additionalData {String} Represents additional data that may be needed.
-   * @param offer {module:model/GetXRPRippleTransactionDetailsByTransactionIDRIOffer} 
-   * @param receive {module:model/GetXRPRippleTransactionDetailsByTransactionIDRIReceive} 
-   * @param sequence {Number} Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
-   * @param status {String} Defines the status of the transaction.
-   * @param type {String} Defines the type of the transaction.
-   * @param value {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue} 
-   * @param amount {String} Defines the amount of the transaction.
-   * @param bandwidthUsed {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed} 
-   * @param energyUsed {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed} 
-   * @param hasInternalTransactions {Boolean} Defines if the transaction includes internal transactions (true) or not (false).
-   * @param hasTokenTransfers {String} Defines if the transaction includes token transfers (true) or not (false).
-   * @param input {String} Represents the transaction's input value.
-   * @param recipients {String} Represents the recipient address.
-   * @param senders {String} Represents the sender address.
+   * @param {(module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSB|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSE|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSEC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSL|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBST|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSX|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2)} instance The actual instance to initialize GetTransactionDetailsByTransactionIDFromCallbackRIBS.
    */
-  function GetTransactionDetailsByTransactionIDFromCallbackRIBS(locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders) {
+  function GetTransactionDetailsByTransactionIDFromCallbackRIBS() {
+    var instance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
     _classCallCheck(this, GetTransactionDetailsByTransactionIDFromCallbackRIBS);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].initialize(this, locktime, size, vSize, version, vin, vout);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].initialize(this, locktime, size, version, vin, vout);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].initialize(this, locktime, size, vSize, version, vin, vout);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].initialize(this, locktime, size, version, vin, vout);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].initialize(this, locktime, size, version, vin, vout);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].initialize(this, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, locktime, overwintered, size, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, version, versionGroupId, vin, vout);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].initialize(this, gasLimit, gasPrice, gasUsed, nonce, transactionStatus);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].initialize(this, additionalData, offer, receive, sequence, status, type, value);
-    _GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].initialize(this, amount, bandwidthUsed, contract, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders, transactionStatus);
-    GetTransactionDetailsByTransactionIDFromCallbackRIBS.initialize(this, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders);
+    _defineProperty(this, "toJSON", function () {
+      return this.getActualInstance();
+    });
+    if (instance === null) {
+      this.actualInstance = null;
+      return;
+    }
+    var match = 0;
+    var errorMessages = [];
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSB") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSB from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSB
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSB: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSE") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSE from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSE
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSE: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSBC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSBC from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSBC
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSBC: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSL") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSL from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSL
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSL: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSD") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSD from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSD
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSD: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSD2") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSD2
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSD2: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSZ") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSZ from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSZ
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSZ: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSEC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSEC from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSEC
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSEC: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBSX") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBSX from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBSX
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBSX: " + err);
+    }
+    try {
+      if (typeof instance === "GetTransactionDetailsByTransactionIDFromCallbackRIBST") {
+        this.actualInstance = instance;
+      } else {
+        // plain JS object
+        // validate the object
+        _GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].validateJSON(instance); // throw an exception if no match
+        // create GetTransactionDetailsByTransactionIDFromCallbackRIBST from JS object
+        this.actualInstance = _GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].constructFromObject(instance);
+      }
+      match++;
+    } catch (err) {
+      // json data failed to deserialize into GetTransactionDetailsByTransactionIDFromCallbackRIBST
+      errorMessages.push("Failed to construct GetTransactionDetailsByTransactionIDFromCallbackRIBST: " + err);
+    }
+    if (match > 1) {
+      throw new Error("Multiple matches found constructing `GetTransactionDetailsByTransactionIDFromCallbackRIBS` with oneOf schemas GetTransactionDetailsByTransactionIDFromCallbackRIBSB, GetTransactionDetailsByTransactionIDFromCallbackRIBSBC, GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC, GetTransactionDetailsByTransactionIDFromCallbackRIBSD, GetTransactionDetailsByTransactionIDFromCallbackRIBSD2, GetTransactionDetailsByTransactionIDFromCallbackRIBSE, GetTransactionDetailsByTransactionIDFromCallbackRIBSEC, GetTransactionDetailsByTransactionIDFromCallbackRIBSL, GetTransactionDetailsByTransactionIDFromCallbackRIBST, GetTransactionDetailsByTransactionIDFromCallbackRIBSX, GetTransactionDetailsByTransactionIDFromCallbackRIBSZ, GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2. Input: " + JSON.stringify(instance));
+    } else if (match === 0) {
+      this.actualInstance = null; // clear the actual instance in case there are multiple matches
+      throw new Error("No match found constructing `GetTransactionDetailsByTransactionIDFromCallbackRIBS` with oneOf schemas GetTransactionDetailsByTransactionIDFromCallbackRIBSB, GetTransactionDetailsByTransactionIDFromCallbackRIBSBC, GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC, GetTransactionDetailsByTransactionIDFromCallbackRIBSD, GetTransactionDetailsByTransactionIDFromCallbackRIBSD2, GetTransactionDetailsByTransactionIDFromCallbackRIBSE, GetTransactionDetailsByTransactionIDFromCallbackRIBSEC, GetTransactionDetailsByTransactionIDFromCallbackRIBSL, GetTransactionDetailsByTransactionIDFromCallbackRIBST, GetTransactionDetailsByTransactionIDFromCallbackRIBSX, GetTransactionDetailsByTransactionIDFromCallbackRIBSZ, GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2. Details: " + errorMessages.join(", "));
+    } else {// only 1 match
+      // the input is valid
+    }
   }
 
   /**
-   * Initializes the fields of this object.
-   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
-   * Only for internal use.
+   * Constructs a <code>GetTransactionDetailsByTransactionIDFromCallbackRIBS</code> from a plain JavaScript object, optionally creating a new instance.
+   * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+   * @param {Object} data The plain JavaScript object bearing properties of interest.
+   * @param {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBS} obj Optional instance to populate.
+   * @return {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBS} The populated <code>GetTransactionDetailsByTransactionIDFromCallbackRIBS</code> instance.
    */
-  _createClass(GetTransactionDetailsByTransactionIDFromCallbackRIBS, null, [{
-    key: "initialize",
-    value: function initialize(obj, locktime, size, vSize, version, vin, vout, contract, gasLimit, gasPrice, gasUsed, inputData, nonce, transactionStatus, bindingSig, expiryHeight, joinSplitPubKey, joinSplitSig, overwintered, vJoinSplit, vShieldedOutput, vShieldedSpend, valueBalance, versionGroupId, additionalData, offer, receive, sequence, status, type, value, amount, bandwidthUsed, energyUsed, hasInternalTransactions, hasTokenTransfers, input, recipients, senders) {
-      obj['locktime'] = locktime;
-      obj['size'] = size;
-      obj['vSize'] = vSize;
-      obj['version'] = version;
-      obj['vin'] = vin;
-      obj['vout'] = vout;
-      obj['contract'] = contract;
-      obj['gasLimit'] = gasLimit;
-      obj['gasPrice'] = gasPrice;
-      obj['gasUsed'] = gasUsed;
-      obj['inputData'] = inputData;
-      obj['nonce'] = nonce;
-      obj['transactionStatus'] = transactionStatus;
-      obj['bindingSig'] = bindingSig;
-      obj['expiryHeight'] = expiryHeight;
-      obj['joinSplitPubKey'] = joinSplitPubKey;
-      obj['joinSplitSig'] = joinSplitSig;
-      obj['overwintered'] = overwintered;
-      obj['vJoinSplit'] = vJoinSplit;
-      obj['vShieldedOutput'] = vShieldedOutput;
-      obj['vShieldedSpend'] = vShieldedSpend;
-      obj['valueBalance'] = valueBalance;
-      obj['versionGroupId'] = versionGroupId;
-      obj['additionalData'] = additionalData;
-      obj['offer'] = offer;
-      obj['receive'] = receive;
-      obj['sequence'] = sequence;
-      obj['status'] = status;
-      obj['type'] = type;
-      obj['value'] = value;
-      obj['amount'] = amount;
-      obj['bandwidthUsed'] = bandwidthUsed;
-      obj['energyUsed'] = energyUsed;
-      obj['hasInternalTransactions'] = hasInternalTransactions;
-      obj['hasTokenTransfers'] = hasTokenTransfers;
-      obj['input'] = input;
-      obj['recipients'] = recipients;
-      obj['senders'] = senders;
+  _createClass(GetTransactionDetailsByTransactionIDFromCallbackRIBS, [{
+    key: "getActualInstance",
+    value:
+    /**
+     * Gets the actual instance, which can be <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSB</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSBC</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSD</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSD2</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSE</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSEC</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSL</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBST</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSX</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2</code>.
+     * @return {(module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSB|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSE|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSEC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSL|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBST|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSX|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2)} The actual instance.
+     */
+    function getActualInstance() {
+      return this.actualInstance;
     }
 
     /**
-     * Constructs a <code>GetTransactionDetailsByTransactionIDFromCallbackRIBS</code> from a plain JavaScript object, optionally creating a new instance.
-     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBS} obj Optional instance to populate.
-     * @return {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBS} The populated <code>GetTransactionDetailsByTransactionIDFromCallbackRIBS</code> instance.
+     * Sets the actual instance, which can be <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSB</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSBC</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSD</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSD2</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSE</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSEC</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSL</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBST</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSX</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ</code>, <code>GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2</code>.
+     * @param {(module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSB|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSE|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSEC|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSL|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBST|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSX|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ|module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2)} obj The actual instance.
      */
   }, {
+    key: "setActualInstance",
+    value: function setActualInstance(obj) {
+      this.actualInstance = GetTransactionDetailsByTransactionIDFromCallbackRIBS.constructFromObject(obj).getActualInstance();
+    }
+
+    /**
+     * Returns the JSON representation of the actual instance.
+     * @return {string}
+     */
+  }], [{
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
-      if (data) {
-        obj = obj || new GetTransactionDetailsByTransactionIDFromCallbackRIBS();
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].constructFromObject(data, obj);
-        _GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].constructFromObject(data, obj);
-        if (data.hasOwnProperty('locktime')) {
-          obj['locktime'] = _ApiClient["default"].convertToType(data['locktime'], 'Number');
-        }
-        if (data.hasOwnProperty('size')) {
-          obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
-        }
-        if (data.hasOwnProperty('vSize')) {
-          obj['vSize'] = _ApiClient["default"].convertToType(data['vSize'], 'Number');
-        }
-        if (data.hasOwnProperty('version')) {
-          obj['version'] = _ApiClient["default"].convertToType(data['version'], 'Number');
-        }
-        if (data.hasOwnProperty('vin')) {
-          obj['vin'] = _ApiClient["default"].convertToType(data['vin'], [_GetTransactionDetailsByTransactionIDRIBSZVinInner["default"]]);
-        }
-        if (data.hasOwnProperty('vout')) {
-          obj['vout'] = _ApiClient["default"].convertToType(data['vout'], [_GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner["default"]]);
-        }
-        if (data.hasOwnProperty('contract')) {
-          obj['contract'] = _ApiClient["default"].convertToType(data['contract'], 'String');
-        }
-        if (data.hasOwnProperty('gasLimit')) {
-          obj['gasLimit'] = _ApiClient["default"].convertToType(data['gasLimit'], 'Number');
-        }
-        if (data.hasOwnProperty('gasPrice')) {
-          obj['gasPrice'] = _GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice["default"].constructFromObject(data['gasPrice']);
-        }
-        if (data.hasOwnProperty('gasUsed')) {
-          obj['gasUsed'] = _ApiClient["default"].convertToType(data['gasUsed'], 'Number');
-        }
-        if (data.hasOwnProperty('inputData')) {
-          obj['inputData'] = _ApiClient["default"].convertToType(data['inputData'], 'String');
-        }
-        if (data.hasOwnProperty('nonce')) {
-          obj['nonce'] = _ApiClient["default"].convertToType(data['nonce'], 'Number');
-        }
-        if (data.hasOwnProperty('transactionStatus')) {
-          obj['transactionStatus'] = _ApiClient["default"].convertToType(data['transactionStatus'], 'String');
-        }
-        if (data.hasOwnProperty('bindingSig')) {
-          obj['bindingSig'] = _ApiClient["default"].convertToType(data['bindingSig'], 'String');
-        }
-        if (data.hasOwnProperty('expiryHeight')) {
-          obj['expiryHeight'] = _ApiClient["default"].convertToType(data['expiryHeight'], 'Number');
-        }
-        if (data.hasOwnProperty('joinSplitPubKey')) {
-          obj['joinSplitPubKey'] = _ApiClient["default"].convertToType(data['joinSplitPubKey'], 'String');
-        }
-        if (data.hasOwnProperty('joinSplitSig')) {
-          obj['joinSplitSig'] = _ApiClient["default"].convertToType(data['joinSplitSig'], 'String');
-        }
-        if (data.hasOwnProperty('overwintered')) {
-          obj['overwintered'] = _ApiClient["default"].convertToType(data['overwintered'], 'Boolean');
-        }
-        if (data.hasOwnProperty('vJoinSplit')) {
-          obj['vJoinSplit'] = _ApiClient["default"].convertToType(data['vJoinSplit'], [_GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner["default"]]);
-        }
-        if (data.hasOwnProperty('vShieldedOutput')) {
-          obj['vShieldedOutput'] = _ApiClient["default"].convertToType(data['vShieldedOutput'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner["default"]]);
-        }
-        if (data.hasOwnProperty('vShieldedSpend')) {
-          obj['vShieldedSpend'] = _ApiClient["default"].convertToType(data['vShieldedSpend'], [_GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner["default"]]);
-        }
-        if (data.hasOwnProperty('valueBalance')) {
-          obj['valueBalance'] = _ApiClient["default"].convertToType(data['valueBalance'], 'String');
-        }
-        if (data.hasOwnProperty('versionGroupId')) {
-          obj['versionGroupId'] = _ApiClient["default"].convertToType(data['versionGroupId'], 'String');
-        }
-        if (data.hasOwnProperty('additionalData')) {
-          obj['additionalData'] = _ApiClient["default"].convertToType(data['additionalData'], 'String');
-        }
-        if (data.hasOwnProperty('destinationTag')) {
-          obj['destinationTag'] = _ApiClient["default"].convertToType(data['destinationTag'], 'Number');
-        }
-        if (data.hasOwnProperty('offer')) {
-          obj['offer'] = _GetXRPRippleTransactionDetailsByTransactionIDRIOffer["default"].constructFromObject(data['offer']);
-        }
-        if (data.hasOwnProperty('receive')) {
-          obj['receive'] = _GetXRPRippleTransactionDetailsByTransactionIDRIReceive["default"].constructFromObject(data['receive']);
-        }
-        if (data.hasOwnProperty('sequence')) {
-          obj['sequence'] = _ApiClient["default"].convertToType(data['sequence'], 'Number');
-        }
-        if (data.hasOwnProperty('status')) {
-          obj['status'] = _ApiClient["default"].convertToType(data['status'], 'String');
-        }
-        if (data.hasOwnProperty('type')) {
-          obj['type'] = _ApiClient["default"].convertToType(data['type'], 'String');
-        }
-        if (data.hasOwnProperty('value')) {
-          obj['value'] = _GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue["default"].constructFromObject(data['value']);
-        }
-        if (data.hasOwnProperty('amount')) {
-          obj['amount'] = _ApiClient["default"].convertToType(data['amount'], 'String');
-        }
-        if (data.hasOwnProperty('bandwidthUsed')) {
-          obj['bandwidthUsed'] = _GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed["default"].constructFromObject(data['bandwidthUsed']);
-        }
-        if (data.hasOwnProperty('energyUsed')) {
-          obj['energyUsed'] = _GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed["default"].constructFromObject(data['energyUsed']);
-        }
-        if (data.hasOwnProperty('hasInternalTransactions')) {
-          obj['hasInternalTransactions'] = _ApiClient["default"].convertToType(data['hasInternalTransactions'], 'Boolean');
-        }
-        if (data.hasOwnProperty('hasTokenTransfers')) {
-          obj['hasTokenTransfers'] = _ApiClient["default"].convertToType(data['hasTokenTransfers'], 'String');
-        }
-        if (data.hasOwnProperty('input')) {
-          obj['input'] = _ApiClient["default"].convertToType(data['input'], 'String');
-        }
-        if (data.hasOwnProperty('recipients')) {
-          obj['recipients'] = _ApiClient["default"].convertToType(data['recipients'], 'String');
-        }
-        if (data.hasOwnProperty('senders')) {
-          obj['senders'] = _ApiClient["default"].convertToType(data['senders'], 'String');
-        }
-      }
-      return obj;
+      return new GetTransactionDetailsByTransactionIDFromCallbackRIBS(data);
     }
   }]);
   return GetTransactionDetailsByTransactionIDFromCallbackRIBS;
@@ -308,6 +293,9 @@ var GetTransactionDetailsByTransactionIDFromCallbackRIBS = /*#__PURE__*/function
  * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
  * @member {Number} locktime
  */
+_defineProperty(GetTransactionDetailsByTransactionIDFromCallbackRIBS, "fromJSON", function (json_string) {
+  return GetTransactionDetailsByTransactionIDFromCallbackRIBS.constructFromObject(JSON.parse(json_string));
+});
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['locktime'] = undefined;
 
 /**
@@ -531,429 +519,6 @@ GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['recipients'] = u
  * @member {String} senders
  */
 GetTransactionDetailsByTransactionIDFromCallbackRIBS.prototype['senders'] = undefined;
-
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSB interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['size'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vSize
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['vSize'] = undefined;
-/**
- * Represents the transaction version number.
- * @member {Number} version
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBVinInner>} vin
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBVoutInner>} vout
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSB["default"].prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSE interface:
-/**
- * Represents the specific transaction contract.
- * @member {String} contract
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSEGasPrice} gasPrice
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].prototype['gasPrice'] = undefined;
-/**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].prototype['inputData'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].prototype['nonce'] = undefined;
-/**
- * Represents the status of this transaction.
- * @member {String} transactionStatus
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSE["default"].prototype['transactionStatus'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSBC interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['size'] = undefined;
-/**
- * Represents transaction version number.
- * @member {Number} version
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSBCVinInner>} vin
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBCVoutInner>} vout
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBC["default"].prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSL interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['size'] = undefined;
-/**
- * Represents the virtual size of this transaction.
- * @member {Number} vSize
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['vSize'] = undefined;
-/**
- * Represents transaction version number.
- * @member {Number} version
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSLVinInner>} vin
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSLVoutInner>} vout
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSL["default"].prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSD interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['size'] = undefined;
-/**
- * Represents transaction version number.
- * @member {Number} version
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVinInner>} vin
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSDVoutInner>} vout
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD["default"].prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSD2 interface:
-/**
- * Represents the time at which a particular transaction can be added to the blockchain.
- * @member {Number} locktime
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['locktime'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['size'] = undefined;
-/**
- * Represents transaction version number.
- * @member {Number} version
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction inputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VinInner>} vin
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['vin'] = undefined;
-/**
- * Represents the transaction outputs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSD2VoutInner>} vout
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSD2["default"].prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSZ interface:
-/**
- * It is used to enforce balance of Spend and Output transfers, in order to prevent their replay across transactions.
- * @member {String} bindingSig
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['bindingSig'] = undefined;
-/**
- * Represents a block height after which the transaction will expire.
- * @member {Number} expiryHeight
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['expiryHeight'] = undefined;
-/**
- * Represents an encoding of a JoinSplitSig public validating key.
- * @member {String} joinSplitPubKey
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['joinSplitPubKey'] = undefined;
-/**
- * Is used to sign transactions that contain at least one JoinSplit description.
- * @member {String} joinSplitSig
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['joinSplitSig'] = undefined;
-/**
- * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.
- * @member {Number} locktime
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['locktime'] = undefined;
-/**
- * \"Overwinter\" is the network upgrade for the Zcash blockchain.
- * @member {Boolean} overwintered
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['overwintered'] = undefined;
-/**
- * Represents the total size of this transaction.
- * @member {Number} size
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['size'] = undefined;
-/**
- * Represents a sequence of JoinSplit descriptions using BCTV14 proofs.
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner>} vJoinSplit
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vJoinSplit'] = undefined;
-/**
- * Object Array representation of transaction output descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedOutputInner>} vShieldedOutput
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vShieldedOutput'] = undefined;
-/**
- * Object Array representation of transaction spend descriptions
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner>} vShieldedSpend
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vShieldedSpend'] = undefined;
-/**
- * String representation of the transaction value balance
- * @member {String} valueBalance
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['valueBalance'] = undefined;
-/**
- * Defines the version of the transaction.
- * @member {Number} version
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['version'] = undefined;
-/**
- * Represents the transaction version group ID
- * @member {String} versionGroupId
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['versionGroupId'] = undefined;
-/**
- * Object Array representation of transaction inputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDRIBSZVinInner>} vin
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vin'] = undefined;
-/**
- * Object Array representation of transaction outputs
- * @member {Array.<module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZVoutInner>} vout
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ["default"].prototype['vout'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSEC interface:
-/**
- * Represents the specific transaction contract.
- * @member {String} contract
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSECGasPrice} gasPrice
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].prototype['gasPrice'] = undefined;
-/**
- * Represents the exact unit of gas that was used for the transaction.
- * @member {String} gasUsed
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].prototype['inputData'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSEC["default"].prototype['nonce'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC interface:
-/**
- * Represents the specific transaction contract
- * @member {String} contract
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].prototype['contract'] = undefined;
-/**
- * Represents the amount of gas used by this specific transaction alone.
- * @member {String} gasLimit
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} gasPrice
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].prototype['gasPrice'] = undefined;
-/**
- * Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
- * @member {String} gasUsed
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].prototype['gasUsed'] = undefined;
-/**
- * Represents additional information that is required for the transaction.
- * @member {String} inputData
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].prototype['inputData'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC["default"].prototype['nonce'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2 interface:
-/**
- * Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
- * @member {Number} gasLimit
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].prototype['gasLimit'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2GasPrice} gasPrice
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].prototype['gasPrice'] = undefined;
-/**
- * Defines how much of the gas for the block has been used.
- * @member {Number} gasUsed
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].prototype['gasUsed'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {Number} nonce
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].prototype['nonce'] = undefined;
-/**
- * Represents the status of this transaction.
- * @member {String} transactionStatus
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2["default"].prototype['transactionStatus'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBSX interface:
-/**
- * Represents additional data that may be needed.
- * @member {String} additionalData
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['additionalData'] = undefined;
-/**
- * Defines the destination tag value.
- * @member {Number} destinationTag
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['destinationTag'] = undefined;
-/**
- * @member {module:model/GetXRPRippleTransactionDetailsByTransactionIDRIOffer} offer
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['offer'] = undefined;
-/**
- * @member {module:model/GetXRPRippleTransactionDetailsByTransactionIDRIReceive} receive
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['receive'] = undefined;
-/**
- * Defines the transaction input's sequence as an integer, which is is used when transactions are replaced with newer versions before LockTime.
- * @member {Number} sequence
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['sequence'] = undefined;
-/**
- * Defines the status of the transaction.
- * @member {String} status
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['status'] = undefined;
-/**
- * Defines the type of the transaction.
- * @member {String} type
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['type'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSXValue} value
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBSX["default"].prototype['value'] = undefined;
-// Implement GetTransactionDetailsByTransactionIDFromCallbackRIBST interface:
-/**
- * Defines the amount of the transaction.
- * @member {String} amount
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['amount'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed} bandwidthUsed
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['bandwidthUsed'] = undefined;
-/**
- * Represents the specific transaction contract.
- * @member {String} contract
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['contract'] = undefined;
-/**
- * @member {module:model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed} energyUsed
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['energyUsed'] = undefined;
-/**
- * Defines if the transaction includes internal transactions (true) or not (false).
- * @member {Boolean} hasInternalTransactions
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['hasInternalTransactions'] = undefined;
-/**
- * Defines if the transaction includes token transfers (true) or not (false).
- * @member {String} hasTokenTransfers
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['hasTokenTransfers'] = undefined;
-/**
- * Represents the transaction's input value.
- * @member {String} input
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['input'] = undefined;
-/**
- * Represents the recipient address.
- * @member {String} recipients
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['recipients'] = undefined;
-/**
- * Represents the sender address.
- * @member {String} senders
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['senders'] = undefined;
-/**
- * Represents the status of this transaction.
- * @member {String} transactionStatus
- */
-_GetTransactionDetailsByTransactionIDFromCallbackRIBST["default"].prototype['transactionStatus'] = undefined;
+GetTransactionDetailsByTransactionIDFromCallbackRIBS.OneOf = ["GetTransactionDetailsByTransactionIDFromCallbackRIBSB", "GetTransactionDetailsByTransactionIDFromCallbackRIBSBC", "GetTransactionDetailsByTransactionIDFromCallbackRIBSBSC", "GetTransactionDetailsByTransactionIDFromCallbackRIBSD", "GetTransactionDetailsByTransactionIDFromCallbackRIBSD2", "GetTransactionDetailsByTransactionIDFromCallbackRIBSE", "GetTransactionDetailsByTransactionIDFromCallbackRIBSEC", "GetTransactionDetailsByTransactionIDFromCallbackRIBSL", "GetTransactionDetailsByTransactionIDFromCallbackRIBST", "GetTransactionDetailsByTransactionIDFromCallbackRIBSX", "GetTransactionDetailsByTransactionIDFromCallbackRIBSZ", "GetTransactionDetailsByTransactionIDFromCallbackRIBSZ2"];
 var _default = GetTransactionDetailsByTransactionIDFromCallbackRIBS;
 exports["default"] = _default;
