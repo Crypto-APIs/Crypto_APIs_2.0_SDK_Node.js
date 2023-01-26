@@ -17,7 +17,7 @@ import ListSupportedAssetsRI from './ListSupportedAssetsRI';
 /**
  * The ListSupportedAssetsRData model module.
  * @module model/ListSupportedAssetsRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListSupportedAssetsRData {
     /**
@@ -72,36 +72,8 @@ class ListSupportedAssetsRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListSupportedAssetsRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListSupportedAssetsRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListSupportedAssetsRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        if (data['items']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['items'])) {
-                throw new Error("Expected the field `items` to be an array in the JSON data but got " + data['items']);
-            }
-            // validate the optional field `items` (array)
-            for (const item of data['items']) {
-                ListSupportedAssetsRI.validateJsonObject(item);
-            };
-        }
-
-        return true;
-    }
-
 
 }
-
-ListSupportedAssetsRData.RequiredProperties = ["limit", "offset", "total", "items"];
 
 /**
  * Defines how many items should be returned in the response per page basis.

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DecodeRawTransactionHexRISB22 model module.
  * @module model/DecodeRawTransactionHexRISB22
- * @version 1.11.0
+ * @version 1.12.0
  */
 class DecodeRawTransactionHexRISB22 {
     /**
@@ -104,74 +104,8 @@ class DecodeRawTransactionHexRISB22 {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>DecodeRawTransactionHexRISB22</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DecodeRawTransactionHexRISB22</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of DecodeRawTransactionHexRISB22.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['approximateFee'] && !(typeof data['approximateFee'] === 'string' || data['approximateFee'] instanceof String)) {
-            throw new Error("Expected the field `approximateFee` to be a primitive type in the JSON string but got " + data['approximateFee']);
-        }
-        // ensure the json data is a string
-        if (data['approximateMinimumRequiredFee'] && !(typeof data['approximateMinimumRequiredFee'] === 'string' || data['approximateMinimumRequiredFee'] instanceof String)) {
-            throw new Error("Expected the field `approximateMinimumRequiredFee` to be a primitive type in the JSON string but got " + data['approximateMinimumRequiredFee']);
-        }
-        // ensure the json data is a string
-        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
-            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
-        }
-        // ensure the json data is a string
-        if (data['gasPaidForData'] && !(typeof data['gasPaidForData'] === 'string' || data['gasPaidForData'] instanceof String)) {
-            throw new Error("Expected the field `gasPaidForData` to be a primitive type in the JSON string but got " + data['gasPaidForData']);
-        }
-        // ensure the json data is a string
-        if (data['gasPrice'] && !(typeof data['gasPrice'] === 'string' || data['gasPrice'] instanceof String)) {
-            throw new Error("Expected the field `gasPrice` to be a primitive type in the JSON string but got " + data['gasPrice']);
-        }
-        // ensure the json data is a string
-        if (data['inputData'] && !(typeof data['inputData'] === 'string' || data['inputData'] instanceof String)) {
-            throw new Error("Expected the field `inputData` to be a primitive type in the JSON string but got " + data['inputData']);
-        }
-        // ensure the json data is a string
-        if (data['r'] && !(typeof data['r'] === 'string' || data['r'] instanceof String)) {
-            throw new Error("Expected the field `r` to be a primitive type in the JSON string but got " + data['r']);
-        }
-        // ensure the json data is a string
-        if (data['recipient'] && !(typeof data['recipient'] === 'string' || data['recipient'] instanceof String)) {
-            throw new Error("Expected the field `recipient` to be a primitive type in the JSON string but got " + data['recipient']);
-        }
-        // ensure the json data is a string
-        if (data['s'] && !(typeof data['s'] === 'string' || data['s'] instanceof String)) {
-            throw new Error("Expected the field `s` to be a primitive type in the JSON string but got " + data['s']);
-        }
-        // ensure the json data is a string
-        if (data['sender'] && !(typeof data['sender'] === 'string' || data['sender'] instanceof String)) {
-            throw new Error("Expected the field `sender` to be a primitive type in the JSON string but got " + data['sender']);
-        }
-        // ensure the json data is a string
-        if (data['v'] && !(typeof data['v'] === 'string' || data['v'] instanceof String)) {
-            throw new Error("Expected the field `v` to be a primitive type in the JSON string but got " + data['v']);
-        }
-        // ensure the json data is a string
-        if (data['value'] && !(typeof data['value'] === 'string' || data['value'] instanceof String)) {
-            throw new Error("Expected the field `value` to be a primitive type in the JSON string but got " + data['value']);
-        }
-
-        return true;
-    }
-
 
 }
-
-DecodeRawTransactionHexRISB22.RequiredProperties = ["gasLimit", "nonce", "recipient", "sender", "type"];
 
 /**
  * Defines the approximate fee value. When isConfirmed is True - Defines the amount of the transaction fee When isConfirmed is False - For ETH-based blockchains this attribute represents the max fee value.

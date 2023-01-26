@@ -17,7 +17,7 @@ import AddressCoinsTransactionConfirmedDataItemMinedInBlock from './AddressCoins
 /**
  * The ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem model module.
  * @module model/ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem {
     /**
@@ -83,50 +83,8 @@ class ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
-            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
-        }
-        // ensure the json data is a string
-        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
-            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
-        }
-        // ensure the json data is a string
-        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
-            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
-        }
-        // validate the optional field `minedInBlock`
-        if (data['minedInBlock']) { // data not null
-          AddressCoinsTransactionConfirmedDataItemMinedInBlock.validateJSON(data['minedInBlock']);
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
-            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ConfirmedCoinsTransactionForCertainAmountOrHigherDataItem.RequiredProperties = ["blockchain", "network", "transactionId", "minedInBlock", "amount", "unit"];
 
 /**
  * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.

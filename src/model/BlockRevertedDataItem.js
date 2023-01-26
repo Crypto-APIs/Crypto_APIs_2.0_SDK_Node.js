@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BlockRevertedDataItem model module.
  * @module model/BlockRevertedDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class BlockRevertedDataItem {
     /**
@@ -77,38 +77,8 @@ class BlockRevertedDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>BlockRevertedDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>BlockRevertedDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of BlockRevertedDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
-            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
-        }
-        // ensure the json data is a string
-        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
-            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
-        }
-        // ensure the json data is a string
-        if (data['hash'] && !(typeof data['hash'] === 'string' || data['hash'] instanceof String)) {
-            throw new Error("Expected the field `hash` to be a primitive type in the JSON string but got " + data['hash']);
-        }
-
-        return true;
-    }
-
 
 }
-
-BlockRevertedDataItem.RequiredProperties = ["blockchain", "network", "height", "hash", "timestamp"];
 
 /**
  * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.

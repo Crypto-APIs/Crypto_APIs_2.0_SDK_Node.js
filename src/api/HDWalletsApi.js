@@ -81,7 +81,7 @@ import SyncNewHDWalletXPubYPubZPubRB from '../model/SyncNewHDWalletXPubYPubZPubR
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.11.0
+* @version 1.12.0
 */
 export default class HDWalletsApi {
 

@@ -30,7 +30,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * ExchangeRates service.
 * @module api/ExchangeRatesApi
-* @version 1.11.0
+* @version 1.12.0
 */
 var ExchangeRatesApi = /*#__PURE__*/function () {
   /**

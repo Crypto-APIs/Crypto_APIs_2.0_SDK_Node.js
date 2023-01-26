@@ -17,7 +17,7 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI from './PrepareA
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData {
     /**
@@ -57,30 +57,8 @@ class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI} item

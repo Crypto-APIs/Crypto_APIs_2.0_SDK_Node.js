@@ -13,6 +13,8 @@ Method | HTTP request | Description
 [**estimateGasLimit**](FeaturesApi.md#estimateGasLimit) | **POST** /blockchain-tools/{blockchain}/{network}/gas-limit | Estimate Gas Limit
 [**estimateTokenGasLimit**](FeaturesApi.md#estimateTokenGasLimit) | **POST** /blockchain-tools/{blockchain}/{network}/gas-limit/contract | Estimate Token Gas Limit
 [**getEIP1559FeeRecommendations**](FeaturesApi.md#getEIP1559FeeRecommendations) | **GET** /blockchain-tools/{blockchain}/{network}/fees/eip1559 | Get EIP 1559 Fee Recommendations
+[**prepareAFungibleTokenTransferFromAddress**](FeaturesApi.md#prepareAFungibleTokenTransferFromAddress) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/prepare-token-from-address | Prepare A Fungible Token Transfer From Address
+[**prepareANonFungibleTokenTransferFromAddress**](FeaturesApi.md#prepareANonFungibleTokenTransferFromAddress) | **POST** /blockchain-tools/{blockchain}/{network}/transactions/prepare-nft-from-address | Prepare A Non Fungible Token Transfer From Address
 [**prepareTransactionFromAddress**](FeaturesApi.md#prepareTransactionFromAddress) | **POST** /blockchain-data/{blockchain}/{network}/transactions/prepare-from-address | Prepare Transaction From Address
 [**validateAddress**](FeaturesApi.md#validateAddress) | **POST** /blockchain-tools/{blockchain}/{network}/addresses/validate | Validate Address
 
@@ -545,6 +547,122 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## prepareAFungibleTokenTransferFromAddress
+
+> PrepareAFungibleTokenTransferFromAddressR prepareAFungibleTokenTransferFromAddress(blockchain, network, opts)
+
+Prepare A Fungible Token Transfer From Address
+
+Using this endpoint customers can prepare a fungible token transfer from an address with private and public keys. The address doesn’t have to belong to a wallet. The response will include the transaction fee in Wei.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.FeaturesApi();
+let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"mordor\" are test networks.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'prepareAFungibleTokenTransferFromAddressRB': new Cryptoapis.PrepareAFungibleTokenTransferFromAddressRB() // PrepareAFungibleTokenTransferFromAddressRB | 
+};
+apiInstance.prepareAFungibleTokenTransferFromAddress(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;mordor\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **prepareAFungibleTokenTransferFromAddressRB** | [**PrepareAFungibleTokenTransferFromAddressRB**](PrepareAFungibleTokenTransferFromAddressRB.md)|  | [optional] 
+
+### Return type
+
+[**PrepareAFungibleTokenTransferFromAddressR**](PrepareAFungibleTokenTransferFromAddressR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
+- **Accept**: application/json
+
+
+## prepareANonFungibleTokenTransferFromAddress
+
+> PrepareANonFungibleTokenTransferFromAddressR prepareANonFungibleTokenTransferFromAddress(blockchain, network, opts)
+
+Prepare A Non Fungible Token Transfer From Address
+
+Using this endpoint customers can prepare a non-fungible token transfer from an address with private and public keys. The address doesn’t have to belong to a wallet. The response will include the transaction fee in Wei.
+
+### Example
+
+```javascript
+import Cryptoapis from 'cryptoapis';
+let defaultClient = Cryptoapis.ApiClient.instance;
+// Configure API key authorization: ApiKey
+let ApiKey = defaultClient.authentications['ApiKey'];
+ApiKey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//ApiKey.apiKeyPrefix = 'Token';
+
+let apiInstance = new Cryptoapis.FeaturesApi();
+let blockchain = ethereum; // String | Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+let network = goerli; // String | Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"mordor\" are test networks.
+let opts = {
+  'context': yourExampleString, // String | In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+  'prepareANonFungibleTokenTransferFromAddressRB': new Cryptoapis.PrepareANonFungibleTokenTransferFromAddressRB() // PrepareANonFungibleTokenTransferFromAddressRB | 
+};
+apiInstance.prepareANonFungibleTokenTransferFromAddress(blockchain, network, opts).then((data) => {
+  console.log('API called successfully. Returned data: ' + data);
+}, (error) => {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **blockchain** | **String**| Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc. | 
+ **network** | **String**| Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \&quot;mainnet\&quot; is the live network with actual data while networks like \&quot;testnet\&quot;, \&quot;mordor\&quot; are test networks. | 
+ **context** | **String**| In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. &#x60;context&#x60; is specified by the user. | [optional] 
+ **prepareANonFungibleTokenTransferFromAddressRB** | [**PrepareANonFungibleTokenTransferFromAddressRB**](PrepareANonFungibleTokenTransferFromAddressRB.md)|  | [optional] 
+
+### Return type
+
+[**PrepareANonFungibleTokenTransferFromAddressR**](PrepareANonFungibleTokenTransferFromAddressR.md)
+
+### Authorization
+
+[ApiKey](../README.md#ApiKey)
+
+### HTTP request headers
+
+- **Content-Type**: application/json
 - **Accept**: application/json
 
 

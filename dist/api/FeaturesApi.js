@@ -54,6 +54,16 @@ var _GetEIP1559FeeRecommendations401Response = _interopRequireDefault(require(".
 var _GetEIP1559FeeRecommendations403Response = _interopRequireDefault(require("../model/GetEIP1559FeeRecommendations403Response"));
 var _GetEIP1559FeeRecommendationsR = _interopRequireDefault(require("../model/GetEIP1559FeeRecommendationsR"));
 var _GetXRPRippleTransactionDetailsByTransactionID404Response = _interopRequireDefault(require("../model/GetXRPRippleTransactionDetailsByTransactionID404Response"));
+var _PrepareAFungibleTokenTransferFromAddress400Response = _interopRequireDefault(require("../model/PrepareAFungibleTokenTransferFromAddress400Response"));
+var _PrepareAFungibleTokenTransferFromAddress401Response = _interopRequireDefault(require("../model/PrepareAFungibleTokenTransferFromAddress401Response"));
+var _PrepareAFungibleTokenTransferFromAddress403Response = _interopRequireDefault(require("../model/PrepareAFungibleTokenTransferFromAddress403Response"));
+var _PrepareAFungibleTokenTransferFromAddressR = _interopRequireDefault(require("../model/PrepareAFungibleTokenTransferFromAddressR"));
+var _PrepareAFungibleTokenTransferFromAddressRB = _interopRequireDefault(require("../model/PrepareAFungibleTokenTransferFromAddressRB"));
+var _PrepareANonFungibleTokenTransferFromAddress400Response = _interopRequireDefault(require("../model/PrepareANonFungibleTokenTransferFromAddress400Response"));
+var _PrepareANonFungibleTokenTransferFromAddress401Response = _interopRequireDefault(require("../model/PrepareANonFungibleTokenTransferFromAddress401Response"));
+var _PrepareANonFungibleTokenTransferFromAddress403Response = _interopRequireDefault(require("../model/PrepareANonFungibleTokenTransferFromAddress403Response"));
+var _PrepareANonFungibleTokenTransferFromAddressR = _interopRequireDefault(require("../model/PrepareANonFungibleTokenTransferFromAddressR"));
+var _PrepareANonFungibleTokenTransferFromAddressRB = _interopRequireDefault(require("../model/PrepareANonFungibleTokenTransferFromAddressRB"));
 var _PrepareTransactionFromAddress400Response = _interopRequireDefault(require("../model/PrepareTransactionFromAddress400Response"));
 var _PrepareTransactionFromAddress401Response = _interopRequireDefault(require("../model/PrepareTransactionFromAddress401Response"));
 var _PrepareTransactionFromAddress403Response = _interopRequireDefault(require("../model/PrepareTransactionFromAddress403Response"));
@@ -74,7 +84,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * Features service.
 * @module api/FeaturesApi
-* @version 1.11.0
+* @version 1.12.0
 */
 var FeaturesApi = /*#__PURE__*/function () {
   /**
@@ -630,6 +640,120 @@ var FeaturesApi = /*#__PURE__*/function () {
     key: "getEIP1559FeeRecommendations",
     value: function getEIP1559FeeRecommendations(network, blockchain, opts) {
       return this.getEIP1559FeeRecommendationsWithHttpInfo(network, blockchain, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+
+    /**
+     * Prepare A Fungible Token Transfer From Address
+     * Using this endpoint customers can prepare a fungible token transfer from an address with private and public keys. The address doesn’t have to belong to a wallet. The response will include the transaction fee in Wei.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"mordor\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareAFungibleTokenTransferFromAddressRB} opts.prepareAFungibleTokenTransferFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareAFungibleTokenTransferFromAddressR} and HTTP response
+     */
+  }, {
+    key: "prepareAFungibleTokenTransferFromAddressWithHttpInfo",
+    value: function prepareAFungibleTokenTransferFromAddressWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['prepareAFungibleTokenTransferFromAddressRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling prepareAFungibleTokenTransferFromAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling prepareAFungibleTokenTransferFromAddress");
+      }
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _PrepareAFungibleTokenTransferFromAddressR["default"];
+      return this.apiClient.callApi('/blockchain-tools/{blockchain}/{network}/transactions/prepare-token-from-address', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+
+    /**
+     * Prepare A Fungible Token Transfer From Address
+     * Using this endpoint customers can prepare a fungible token transfer from an address with private and public keys. The address doesn’t have to belong to a wallet. The response will include the transaction fee in Wei.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"mordor\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareAFungibleTokenTransferFromAddressRB} opts.prepareAFungibleTokenTransferFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareAFungibleTokenTransferFromAddressR}
+     */
+  }, {
+    key: "prepareAFungibleTokenTransferFromAddress",
+    value: function prepareAFungibleTokenTransferFromAddress(blockchain, network, opts) {
+      return this.prepareAFungibleTokenTransferFromAddressWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
+        return response_and_data.data;
+      });
+    }
+
+    /**
+     * Prepare A Non Fungible Token Transfer From Address
+     * Using this endpoint customers can prepare a non-fungible token transfer from an address with private and public keys. The address doesn’t have to belong to a wallet. The response will include the transaction fee in Wei.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"mordor\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareANonFungibleTokenTransferFromAddressRB} opts.prepareANonFungibleTokenTransferFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/PrepareANonFungibleTokenTransferFromAddressR} and HTTP response
+     */
+  }, {
+    key: "prepareANonFungibleTokenTransferFromAddressWithHttpInfo",
+    value: function prepareANonFungibleTokenTransferFromAddressWithHttpInfo(blockchain, network, opts) {
+      opts = opts || {};
+      var postBody = opts['prepareANonFungibleTokenTransferFromAddressRB'];
+      // verify the required parameter 'blockchain' is set
+      if (blockchain === undefined || blockchain === null) {
+        throw new Error("Missing the required parameter 'blockchain' when calling prepareANonFungibleTokenTransferFromAddress");
+      }
+      // verify the required parameter 'network' is set
+      if (network === undefined || network === null) {
+        throw new Error("Missing the required parameter 'network' when calling prepareANonFungibleTokenTransferFromAddress");
+      }
+      var pathParams = {
+        'blockchain': blockchain,
+        'network': network
+      };
+      var queryParams = {
+        'context': opts['context']
+      };
+      var headerParams = {};
+      var formParams = {};
+      var authNames = ['ApiKey'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = _PrepareANonFungibleTokenTransferFromAddressR["default"];
+      return this.apiClient.callApi('/blockchain-tools/{blockchain}/{network}/transactions/prepare-nft-from-address', 'POST', pathParams, queryParams, headerParams, formParams, postBody, authNames, contentTypes, accepts, returnType, null);
+    }
+
+    /**
+     * Prepare A Non Fungible Token Transfer From Address
+     * Using this endpoint customers can prepare a non-fungible token transfer from an address with private and public keys. The address doesn’t have to belong to a wallet. The response will include the transaction fee in Wei.
+     * @param {module:model/String} blockchain Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.
+     * @param {module:model/String} network Represents the name of the blockchain network used; blockchain networks are usually identical as technology and software, but they differ in data, e.g. - \"mainnet\" is the live network with actual data while networks like \"testnet\", \"mordor\" are test networks.
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.context In batch situations the user can use the context to correlate responses with requests. This property is present regardless of whether the response was successful or returned as an error. `context` is specified by the user.
+     * @param {module:model/PrepareANonFungibleTokenTransferFromAddressRB} opts.prepareANonFungibleTokenTransferFromAddressRB 
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/PrepareANonFungibleTokenTransferFromAddressR}
+     */
+  }, {
+    key: "prepareANonFungibleTokenTransferFromAddress",
+    value: function prepareANonFungibleTokenTransferFromAddress(blockchain, network, opts) {
+      return this.prepareANonFungibleTokenTransferFromAddressWithHttpInfo(blockchain, network, opts).then(function (response_and_data) {
         return response_and_data.data;
       });
     }

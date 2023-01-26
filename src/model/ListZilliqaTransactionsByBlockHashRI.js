@@ -19,7 +19,7 @@ import ListZilliqaTransactionsByAddressRISendersInner from './ListZilliqaTransac
 /**
  * The ListZilliqaTransactionsByBlockHashRI model module.
  * @module model/ListZilliqaTransactionsByBlockHashRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListZilliqaTransactionsByBlockHashRI {
     /**
@@ -114,58 +114,8 @@ class ListZilliqaTransactionsByBlockHashRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListZilliqaTransactionsByBlockHashRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListZilliqaTransactionsByBlockHashRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListZilliqaTransactionsByBlockHashRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `fee`
-        if (data['fee']) { // data not null
-          GetZilliqaTransactionDetailsByTransactionIDRIFee.validateJSON(data['fee']);
-        }
-        if (data['recipients']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['recipients'])) {
-                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
-            }
-            // validate the optional field `recipients` (array)
-            for (const item of data['recipients']) {
-                ListZilliqaTransactionsByAddressRIRecipientsInner.validateJsonObject(item);
-            };
-        }
-        if (data['senders']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['senders'])) {
-                throw new Error("Expected the field `senders` to be an array in the JSON data but got " + data['senders']);
-            }
-            // validate the optional field `senders` (array)
-            for (const item of data['senders']) {
-                ListZilliqaTransactionsByAddressRISendersInner.validateJsonObject(item);
-            };
-        }
-        // ensure the json data is a string
-        if (data['transactionHash'] && !(typeof data['transactionHash'] === 'string' || data['transactionHash'] instanceof String)) {
-            throw new Error("Expected the field `transactionHash` to be a primitive type in the JSON string but got " + data['transactionHash']);
-        }
-        // ensure the json data is a string
-        if (data['transactionStatus'] && !(typeof data['transactionStatus'] === 'string' || data['transactionStatus'] instanceof String)) {
-            throw new Error("Expected the field `transactionStatus` to be a primitive type in the JSON string but got " + data['transactionStatus']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListZilliqaTransactionsByBlockHashRI.RequiredProperties = ["fee", "gasLimit", "gasPrice", "gasUsed", "minedInBlockHeight", "nonce", "recipients", "senders", "timestamp", "transactionHash", "transactionIndex", "transactionStatus"];
 
 /**
  * @member {module:model/GetZilliqaTransactionDetailsByTransactionIDRIFee} fee

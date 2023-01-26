@@ -19,7 +19,7 @@ import GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas from './GetEIP1559FeeR
 /**
  * The GetEIP1559FeeRecommendationsRI model module.
  * @module model/GetEIP1559FeeRecommendationsRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetEIP1559FeeRecommendationsRI {
     /**
@@ -69,38 +69,8 @@ class GetEIP1559FeeRecommendationsRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetEIP1559FeeRecommendationsRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetEIP1559FeeRecommendationsRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetEIP1559FeeRecommendationsRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `baseFeePerGas`
-        if (data['baseFeePerGas']) { // data not null
-          GetEIP1559FeeRecommendationsRIBaseFeePerGas.validateJSON(data['baseFeePerGas']);
-        }
-        // validate the optional field `maxFeePerGas`
-        if (data['maxFeePerGas']) { // data not null
-          GetEIP1559FeeRecommendationsRIMaxFeePerGas.validateJSON(data['maxFeePerGas']);
-        }
-        // validate the optional field `maxPriorityFeePerGas`
-        if (data['maxPriorityFeePerGas']) { // data not null
-          GetEIP1559FeeRecommendationsRIMaxPriorityFeePerGas.validateJSON(data['maxPriorityFeePerGas']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetEIP1559FeeRecommendationsRI.RequiredProperties = ["baseFeePerGas", "maxFeePerGas", "maxPriorityFeePerGas"];
 
 /**
  * @member {module:model/GetEIP1559FeeRecommendationsRIBaseFeePerGas} baseFeePerGas

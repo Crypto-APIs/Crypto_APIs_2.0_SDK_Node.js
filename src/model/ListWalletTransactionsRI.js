@@ -23,7 +23,7 @@ import ListWalletTransactionsRIValue from './ListWalletTransactionsRIValue';
 /**
  * The ListWalletTransactionsRI model module.
  * @module model/ListWalletTransactionsRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListWalletTransactionsRI {
     /**
@@ -107,96 +107,8 @@ class ListWalletTransactionsRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListWalletTransactionsRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListWalletTransactionsRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListWalletTransactionsRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['direction'] && !(typeof data['direction'] === 'string' || data['direction'] instanceof String)) {
-            throw new Error("Expected the field `direction` to be a primitive type in the JSON string but got " + data['direction']);
-        }
-        // validate the optional field `fee`
-        if (data['fee']) { // data not null
-          ListWalletTransactionsRIFee.validateJSON(data['fee']);
-        }
-        if (data['fungibleTokens']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['fungibleTokens'])) {
-                throw new Error("Expected the field `fungibleTokens` to be an array in the JSON data but got " + data['fungibleTokens']);
-            }
-            // validate the optional field `fungibleTokens` (array)
-            for (const item of data['fungibleTokens']) {
-                ListWalletTransactionsRIFungibleTokensInner.validateJsonObject(item);
-            };
-        }
-        if (data['internalTransactions']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['internalTransactions'])) {
-                throw new Error("Expected the field `internalTransactions` to be an array in the JSON data but got " + data['internalTransactions']);
-            }
-            // validate the optional field `internalTransactions` (array)
-            for (const item of data['internalTransactions']) {
-                ListWalletTransactionsRIInternalTransactionsInner.validateJsonObject(item);
-            };
-        }
-        if (data['nonFungibleTokens']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['nonFungibleTokens'])) {
-                throw new Error("Expected the field `nonFungibleTokens` to be an array in the JSON data but got " + data['nonFungibleTokens']);
-            }
-            // validate the optional field `nonFungibleTokens` (array)
-            for (const item of data['nonFungibleTokens']) {
-                ListWalletTransactionsRINonFungibleTokensInner.validateJsonObject(item);
-            };
-        }
-        if (data['recipients']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['recipients'])) {
-                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
-            }
-            // validate the optional field `recipients` (array)
-            for (const item of data['recipients']) {
-                ListWalletTransactionsRIRecipientsInner.validateJsonObject(item);
-            };
-        }
-        if (data['senders']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['senders'])) {
-                throw new Error("Expected the field `senders` to be an array in the JSON data but got " + data['senders']);
-            }
-            // validate the optional field `senders` (array)
-            for (const item of data['senders']) {
-                ListWalletTransactionsRISendersInner.validateJsonObject(item);
-            };
-        }
-        // ensure the json data is a string
-        if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
-            throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
-        }
-        // ensure the json data is a string
-        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
-            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
-        }
-        // validate the optional field `value`
-        if (data['value']) { // data not null
-          ListWalletTransactionsRIValue.validateJSON(data['value']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListWalletTransactionsRI.RequiredProperties = ["direction", "fee", "recipients", "senders", "status", "timestamp", "transactionId", "value"];
 
 /**
  * Defines the direction of the transaction, e.g. incoming.

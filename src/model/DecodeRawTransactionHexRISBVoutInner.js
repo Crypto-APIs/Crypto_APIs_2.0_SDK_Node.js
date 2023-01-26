@@ -17,7 +17,7 @@ import DecodeRawTransactionHexRISBVoutInnerScriptPubKey from './DecodeRawTransac
 /**
  * The DecodeRawTransactionHexRISBVoutInner model module.
  * @module model/DecodeRawTransactionHexRISBVoutInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class DecodeRawTransactionHexRISBVoutInner {
     /**
@@ -60,34 +60,8 @@ class DecodeRawTransactionHexRISBVoutInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>DecodeRawTransactionHexRISBVoutInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DecodeRawTransactionHexRISBVoutInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of DecodeRawTransactionHexRISBVoutInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `scriptPubKey`
-        if (data['scriptPubKey']) { // data not null
-          DecodeRawTransactionHexRISBVoutInnerScriptPubKey.validateJSON(data['scriptPubKey']);
-        }
-        // ensure the json data is a string
-        if (data['value'] && !(typeof data['value'] === 'string' || data['value'] instanceof String)) {
-            throw new Error("Expected the field `value` to be a primitive type in the JSON string but got " + data['value']);
-        }
-
-        return true;
-    }
-
 
 }
-
-DecodeRawTransactionHexRISBVoutInner.RequiredProperties = ["scriptPubKey"];
 
 /**
  * @member {module:model/DecodeRawTransactionHexRISBVoutInnerScriptPubKey} scriptPubKey

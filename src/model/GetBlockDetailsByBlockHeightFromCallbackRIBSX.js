@@ -18,7 +18,7 @@ import GetLatestMinedXRPRippleBlockRITotalFees from './GetLatestMinedXRPRippleBl
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSX model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSX
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetBlockDetailsByBlockHeightFromCallbackRIBSX {
     /**
@@ -64,34 +64,8 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBSX {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetBlockDetailsByBlockHeightFromCallbackRIBSX</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetBlockDetailsByBlockHeightFromCallbackRIBSX</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetBlockDetailsByBlockHeightFromCallbackRIBSX.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `totalCoins`
-        if (data['totalCoins']) { // data not null
-          GetLatestMinedXRPRippleBlockRITotalCoins.validateJSON(data['totalCoins']);
-        }
-        // validate the optional field `totalFees`
-        if (data['totalFees']) { // data not null
-          GetLatestMinedXRPRippleBlockRITotalFees.validateJSON(data['totalFees']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetBlockDetailsByBlockHeightFromCallbackRIBSX.RequiredProperties = ["totalCoins", "totalFees"];
 
 /**
  * @member {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} totalCoins

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTransactionsByAddressRIBST model module.
  * @module model/ListConfirmedTransactionsByAddressRIBST
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListConfirmedTransactionsByAddressRIBST {
     /**
@@ -97,46 +97,8 @@ class ListConfirmedTransactionsByAddressRIBST {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListConfirmedTransactionsByAddressRIBST</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListConfirmedTransactionsByAddressRIBST</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListConfirmedTransactionsByAddressRIBST.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['bandwidthUsed'] && !(typeof data['bandwidthUsed'] === 'string' || data['bandwidthUsed'] instanceof String)) {
-            throw new Error("Expected the field `bandwidthUsed` to be a primitive type in the JSON string but got " + data['bandwidthUsed']);
-        }
-        // ensure the json data is a string
-        if (data['contract'] && !(typeof data['contract'] === 'string' || data['contract'] instanceof String)) {
-            throw new Error("Expected the field `contract` to be a primitive type in the JSON string but got " + data['contract']);
-        }
-        // ensure the json data is a string
-        if (data['energyUsed'] && !(typeof data['energyUsed'] === 'string' || data['energyUsed'] instanceof String)) {
-            throw new Error("Expected the field `energyUsed` to be a primitive type in the JSON string but got " + data['energyUsed']);
-        }
-        // ensure the json data is a string
-        if (data['inputData'] && !(typeof data['inputData'] === 'string' || data['inputData'] instanceof String)) {
-            throw new Error("Expected the field `inputData` to be a primitive type in the JSON string but got " + data['inputData']);
-        }
-        // ensure the json data is a string
-        if (data['transactionStatus'] && !(typeof data['transactionStatus'] === 'string' || data['transactionStatus'] instanceof String)) {
-            throw new Error("Expected the field `transactionStatus` to be a primitive type in the JSON string but got " + data['transactionStatus']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListConfirmedTransactionsByAddressRIBST.RequiredProperties = ["bandwidthUsed", "contract", "energyUsed", "hasInternalTransactions", "hasTokenTransfers", "inputData", "internalTransactionsCount", "tokenTransfersCount", "transactionStatus"];
 
 /**
  * Numeric representation of the transaction used bandwidth

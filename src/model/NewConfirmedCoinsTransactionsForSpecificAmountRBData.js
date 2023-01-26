@@ -17,7 +17,7 @@ import NewConfirmedCoinsTransactionsForSpecificAmountRBDataItem from './NewConfi
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountRBData model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountRBData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class NewConfirmedCoinsTransactionsForSpecificAmountRBData {
     /**
@@ -57,30 +57,8 @@ class NewConfirmedCoinsTransactionsForSpecificAmountRBData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>NewConfirmedCoinsTransactionsForSpecificAmountRBData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>NewConfirmedCoinsTransactionsForSpecificAmountRBData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of NewConfirmedCoinsTransactionsForSpecificAmountRBData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          NewConfirmedCoinsTransactionsForSpecificAmountRBDataItem.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-NewConfirmedCoinsTransactionsForSpecificAmountRBData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/NewConfirmedCoinsTransactionsForSpecificAmountRBDataItem} item

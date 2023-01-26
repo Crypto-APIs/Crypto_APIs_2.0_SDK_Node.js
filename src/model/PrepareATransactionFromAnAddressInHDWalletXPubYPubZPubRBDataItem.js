@@ -17,7 +17,7 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItemFee from 
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem {
     /**
@@ -91,62 +91,8 @@ class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['additionalData'] && !(typeof data['additionalData'] === 'string' || data['additionalData'] instanceof String)) {
-            throw new Error("Expected the field `additionalData` to be a primitive type in the JSON string but got " + data['additionalData']);
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['recipient'] && !(typeof data['recipient'] === 'string' || data['recipient'] instanceof String)) {
-            throw new Error("Expected the field `recipient` to be a primitive type in the JSON string but got " + data['recipient']);
-        }
-        // ensure the json data is a string
-        if (data['sender'] && !(typeof data['sender'] === 'string' || data['sender'] instanceof String)) {
-            throw new Error("Expected the field `sender` to be a primitive type in the JSON string but got " + data['sender']);
-        }
-        // ensure the json data is a string
-        if (data['xpub'] && !(typeof data['xpub'] === 'string' || data['xpub'] instanceof String)) {
-            throw new Error("Expected the field `xpub` to be a primitive type in the JSON string but got " + data['xpub']);
-        }
-        // validate the optional field `fee`
-        if (data['fee']) { // data not null
-          PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItemFee.validateJSON(data['fee']);
-        }
-        // ensure the json data is a string
-        if (data['nonce'] && !(typeof data['nonce'] === 'string' || data['nonce'] instanceof String)) {
-            throw new Error("Expected the field `nonce` to be a primitive type in the JSON string but got " + data['nonce']);
-        }
-        // ensure the json data is a string
-        if (data['transactionType'] && !(typeof data['transactionType'] === 'string' || data['transactionType'] instanceof String)) {
-            throw new Error("Expected the field `transactionType` to be a primitive type in the JSON string but got " + data['transactionType']);
-        }
-        // ensure the json data is a string
-        if (data['sequence'] && !(typeof data['sequence'] === 'string' || data['sequence'] instanceof String)) {
-            throw new Error("Expected the field `sequence` to be a primitive type in the JSON string but got " + data['sequence']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem.RequiredProperties = ["amount", "recipient", "sender", "xpub", "fee", "sequence"];
 
 /**
  * Representation of the additional data.

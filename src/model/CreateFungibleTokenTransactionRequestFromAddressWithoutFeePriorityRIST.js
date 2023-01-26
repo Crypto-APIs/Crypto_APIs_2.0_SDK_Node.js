@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST {
     /**
@@ -67,38 +67,8 @@ class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['contractAddress'] && !(typeof data['contractAddress'] === 'string' || data['contractAddress'] instanceof String)) {
-            throw new Error("Expected the field `contractAddress` to be a primitive type in the JSON string but got " + data['contractAddress']);
-        }
-        // ensure the json data is a string
-        if (data['feeLimit'] && !(typeof data['feeLimit'] === 'string' || data['feeLimit'] instanceof String)) {
-            throw new Error("Expected the field `feeLimit` to be a primitive type in the JSON string but got " + data['feeLimit']);
-        }
-        // ensure the json data is a string
-        if (data['symbol'] && !(typeof data['symbol'] === 'string' || data['symbol'] instanceof String)) {
-            throw new Error("Expected the field `symbol` to be a primitive type in the JSON string but got " + data['symbol']);
-        }
-
-        return true;
-    }
-
 
 }
-
-CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.RequiredProperties = ["contractAddress", "feeLimit", "symbol"];
 
 /**
  * Defines the contract address in the blockchain for an ERC20 token.

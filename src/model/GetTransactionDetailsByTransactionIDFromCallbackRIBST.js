@@ -18,7 +18,7 @@ import GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed from './G
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBST model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBST
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBST {
     /**
@@ -104,62 +104,8 @@ class GetTransactionDetailsByTransactionIDFromCallbackRIBST {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDFromCallbackRIBST</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDFromCallbackRIBST</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetTransactionDetailsByTransactionIDFromCallbackRIBST.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // validate the optional field `bandwidthUsed`
-        if (data['bandwidthUsed']) { // data not null
-          GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed.validateJSON(data['bandwidthUsed']);
-        }
-        // ensure the json data is a string
-        if (data['contract'] && !(typeof data['contract'] === 'string' || data['contract'] instanceof String)) {
-            throw new Error("Expected the field `contract` to be a primitive type in the JSON string but got " + data['contract']);
-        }
-        // validate the optional field `energyUsed`
-        if (data['energyUsed']) { // data not null
-          GetTransactionDetailsByTransactionIDFromCallbackRIBSTEnergyUsed.validateJSON(data['energyUsed']);
-        }
-        // ensure the json data is a string
-        if (data['hasTokenTransfers'] && !(typeof data['hasTokenTransfers'] === 'string' || data['hasTokenTransfers'] instanceof String)) {
-            throw new Error("Expected the field `hasTokenTransfers` to be a primitive type in the JSON string but got " + data['hasTokenTransfers']);
-        }
-        // ensure the json data is a string
-        if (data['input'] && !(typeof data['input'] === 'string' || data['input'] instanceof String)) {
-            throw new Error("Expected the field `input` to be a primitive type in the JSON string but got " + data['input']);
-        }
-        // ensure the json data is a string
-        if (data['recipients'] && !(typeof data['recipients'] === 'string' || data['recipients'] instanceof String)) {
-            throw new Error("Expected the field `recipients` to be a primitive type in the JSON string but got " + data['recipients']);
-        }
-        // ensure the json data is a string
-        if (data['senders'] && !(typeof data['senders'] === 'string' || data['senders'] instanceof String)) {
-            throw new Error("Expected the field `senders` to be a primitive type in the JSON string but got " + data['senders']);
-        }
-        // ensure the json data is a string
-        if (data['transactionStatus'] && !(typeof data['transactionStatus'] === 'string' || data['transactionStatus'] instanceof String)) {
-            throw new Error("Expected the field `transactionStatus` to be a primitive type in the JSON string but got " + data['transactionStatus']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetTransactionDetailsByTransactionIDFromCallbackRIBST.RequiredProperties = ["amount", "bandwidthUsed", "contract", "energyUsed", "hasInternalTransactions", "hasTokenTransfers", "input", "recipients", "senders", "transactionStatus"];
 
 /**
  * Defines the amount of the transaction.

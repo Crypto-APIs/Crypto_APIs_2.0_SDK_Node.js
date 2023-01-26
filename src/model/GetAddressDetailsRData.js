@@ -17,7 +17,7 @@ import GetAddressDetailsRI from './GetAddressDetailsRI';
 /**
  * The GetAddressDetailsRData model module.
  * @module model/GetAddressDetailsRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetAddressDetailsRData {
     /**
@@ -57,30 +57,8 @@ class GetAddressDetailsRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetAddressDetailsRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetAddressDetailsRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetAddressDetailsRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          GetAddressDetailsRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetAddressDetailsRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GetAddressDetailsRI} item

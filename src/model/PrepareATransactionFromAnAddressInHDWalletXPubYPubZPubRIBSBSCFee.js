@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee {
     /**
@@ -60,34 +60,8 @@ class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
-            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
-        }
-        // ensure the json data is a string
-        if (data['gasPrice'] && !(typeof data['gasPrice'] === 'string' || data['gasPrice'] instanceof String)) {
-            throw new Error("Expected the field `gasPrice` to be a primitive type in the JSON string but got " + data['gasPrice']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee.RequiredProperties = ["gasLimit"];
 
 /**
  * Represents the amount of gas used by this specific transaction alone.

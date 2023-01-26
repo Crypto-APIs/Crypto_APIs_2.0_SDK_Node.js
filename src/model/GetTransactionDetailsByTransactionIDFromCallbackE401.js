@@ -19,62 +19,30 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackE401 model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackE401
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackE401 {
     /**
      * Constructs a new <code>GetTransactionDetailsByTransactionIDFromCallbackE401</code>.
      * @alias module:model/GetTransactionDetailsByTransactionIDFromCallbackE401
-     * @param {(module:model/InvalidApiKey|module:model/MissingApiKey)} instance The actual instance to initialize GetTransactionDetailsByTransactionIDFromCallbackE401.
+     * @implements module:model/MissingApiKey
+     * @implements module:model/InvalidApiKey
+     * @param code {String} Specifies an error code, e.g. error 404.
+     * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "MissingApiKey") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                MissingApiKey.validateJSON(instance); // throw an exception if no match
-                // create MissingApiKey from JS object
-                this.actualInstance = MissingApiKey.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into MissingApiKey
-            errorMessages.push("Failed to construct MissingApiKey: " + err)
-        }
+    constructor(code, message) { 
+        MissingApiKey.initialize(this, code, message);InvalidApiKey.initialize(this, code, message);
+        GetTransactionDetailsByTransactionIDFromCallbackE401.initialize(this, code, message);
+    }
 
-        try {
-            if (typeof instance === "InvalidApiKey") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                InvalidApiKey.validateJSON(instance); // throw an exception if no match
-                // create InvalidApiKey from JS object
-                this.actualInstance = InvalidApiKey.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into InvalidApiKey
-            errorMessages.push("Failed to construct InvalidApiKey: " + err)
-        }
-
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `GetTransactionDetailsByTransactionIDFromCallbackE401` with oneOf schemas InvalidApiKey, MissingApiKey. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `GetTransactionDetailsByTransactionIDFromCallbackE401` with oneOf schemas InvalidApiKey, MissingApiKey. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, code, message) { 
+        obj['code'] = code;
+        obj['message'] = message;
     }
 
     /**
@@ -85,41 +53,25 @@ class GetTransactionDetailsByTransactionIDFromCallbackE401 {
      * @return {module:model/GetTransactionDetailsByTransactionIDFromCallbackE401} The populated <code>GetTransactionDetailsByTransactionIDFromCallbackE401</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new GetTransactionDetailsByTransactionIDFromCallbackE401(data);
+        if (data) {
+            obj = obj || new GetTransactionDetailsByTransactionIDFromCallbackE401();
+            MissingApiKey.constructFromObject(data, obj);
+            InvalidApiKey.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('code')) {
+                obj['code'] = ApiClient.convertToType(data['code'], 'String');
+            }
+            if (data.hasOwnProperty('message')) {
+                obj['message'] = ApiClient.convertToType(data['message'], 'String');
+            }
+            if (data.hasOwnProperty('details')) {
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>InvalidApiKey</code>, <code>MissingApiKey</code>.
-     * @return {(module:model/InvalidApiKey|module:model/MissingApiKey)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>InvalidApiKey</code>, <code>MissingApiKey</code>.
-     * @param {(module:model/InvalidApiKey|module:model/MissingApiKey)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = GetTransactionDetailsByTransactionIDFromCallbackE401.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of GetTransactionDetailsByTransactionIDFromCallbackE401 from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/GetTransactionDetailsByTransactionIDFromCallbackE401} An instance of GetTransactionDetailsByTransactionIDFromCallbackE401.
-     */
-    static fromJSON = function(json_string){
-        return GetTransactionDetailsByTransactionIDFromCallbackE401.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -140,7 +92,39 @@ GetTransactionDetailsByTransactionIDFromCallbackE401.prototype['message'] = unde
 GetTransactionDetailsByTransactionIDFromCallbackE401.prototype['details'] = undefined;
 
 
-GetTransactionDetailsByTransactionIDFromCallbackE401.OneOf = ["InvalidApiKey", "MissingApiKey"];
+// Implement MissingApiKey interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+MissingApiKey.prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+MissingApiKey.prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+MissingApiKey.prototype['details'] = undefined;
+// Implement InvalidApiKey interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+InvalidApiKey.prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+InvalidApiKey.prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+InvalidApiKey.prototype['details'] = undefined;
+
+
+
 
 export default GetTransactionDetailsByTransactionIDFromCallbackE401;
 

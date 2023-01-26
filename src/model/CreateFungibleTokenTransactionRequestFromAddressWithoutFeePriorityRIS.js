@@ -17,47 +17,32 @@ import CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST fr
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS {
     /**
      * Constructs a new <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS</code>.
      * Represents the specific token data which depends on its type - if it is a Coin or Token.
      * @alias module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS
-     * @param {(module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST)} instance The actual instance to initialize CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.
+     * @implements module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST
+     * @param contractAddress {String} Defines the contract address in the blockchain for an ERC20 token.
+     * @param feeLimit {String} Defines the fee limit value.
+     * @param symbol {String} Defines the Token symbol.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.validateJSON(instance); // throw an exception if no match
-                // create CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST from JS object
-                this.actualInstance = CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST
-            errorMessages.push("Failed to construct CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST: " + err)
-        }
+    constructor(contractAddress, feeLimit, symbol) { 
+        CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.initialize(this, contractAddress, feeLimit, symbol);
+        CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.initialize(this, contractAddress, feeLimit, symbol);
+    }
 
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS` with oneOf schemas CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS` with oneOf schemas CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, contractAddress, feeLimit, symbol) { 
+        obj['contractAddress'] = contractAddress;
+        obj['feeLimit'] = feeLimit;
+        obj['symbol'] = symbol;
     }
 
     /**
@@ -68,41 +53,24 @@ class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS {
      * @return {module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS} The populated <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS(data);
+        if (data) {
+            obj = obj || new CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS();
+            CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('contractAddress')) {
+                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
+            }
+            if (data.hasOwnProperty('feeLimit')) {
+                obj['feeLimit'] = ApiClient.convertToType(data['feeLimit'], 'String');
+            }
+            if (data.hasOwnProperty('symbol')) {
+                obj['symbol'] = ApiClient.convertToType(data['symbol'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST</code>.
-     * @return {(module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST</code>.
-     * @param {(module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS} An instance of CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.
-     */
-    static fromJSON = function(json_string){
-        return CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -124,7 +92,25 @@ CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.prototype[
 CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.prototype['symbol'] = undefined;
 
 
-CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS.OneOf = ["CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST"];
+// Implement CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST interface:
+/**
+ * Defines the contract address in the blockchain for an ERC20 token.
+ * @member {String} contractAddress
+ */
+CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.prototype['contractAddress'] = undefined;
+/**
+ * Defines the fee limit value.
+ * @member {String} feeLimit
+ */
+CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.prototype['feeLimit'] = undefined;
+/**
+ * Defines the Token symbol.
+ * @member {String} symbol
+ */
+CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIST.prototype['symbol'] = undefined;
+
+
+
 
 export default CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRIS;
 

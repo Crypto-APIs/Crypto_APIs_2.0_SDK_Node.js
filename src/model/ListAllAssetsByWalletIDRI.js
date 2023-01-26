@@ -19,7 +19,7 @@ import ListAllAssetsFromAllWalletsRINonFungibleTokensInner from './ListAllAssets
 /**
  * The ListAllAssetsByWalletIDRI model module.
  * @module model/ListAllAssetsByWalletIDRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListAllAssetsByWalletIDRI {
     /**
@@ -79,64 +79,8 @@ class ListAllAssetsByWalletIDRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListAllAssetsByWalletIDRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListAllAssetsByWalletIDRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListAllAssetsByWalletIDRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        if (data['coins']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['coins'])) {
-                throw new Error("Expected the field `coins` to be an array in the JSON data but got " + data['coins']);
-            }
-            // validate the optional field `coins` (array)
-            for (const item of data['coins']) {
-                ListAllAssetsFromAllWalletsRICoinsInner.validateJsonObject(item);
-            };
-        }
-        if (data['fungibleTokens']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['fungibleTokens'])) {
-                throw new Error("Expected the field `fungibleTokens` to be an array in the JSON data but got " + data['fungibleTokens']);
-            }
-            // validate the optional field `fungibleTokens` (array)
-            for (const item of data['fungibleTokens']) {
-                ListAllAssetsFromAllWalletsRIFungibleTokensInner.validateJsonObject(item);
-            };
-        }
-        if (data['nonFungibleTokens']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['nonFungibleTokens'])) {
-                throw new Error("Expected the field `nonFungibleTokens` to be an array in the JSON data but got " + data['nonFungibleTokens']);
-            }
-            // validate the optional field `nonFungibleTokens` (array)
-            for (const item of data['nonFungibleTokens']) {
-                ListAllAssetsFromAllWalletsRINonFungibleTokensInner.validateJsonObject(item);
-            };
-        }
-        // ensure the json data is a string
-        if (data['walletId'] && !(typeof data['walletId'] === 'string' || data['walletId'] instanceof String)) {
-            throw new Error("Expected the field `walletId` to be a primitive type in the JSON string but got " + data['walletId']);
-        }
-        // ensure the json data is a string
-        if (data['walletName'] && !(typeof data['walletName'] === 'string' || data['walletName'] instanceof String)) {
-            throw new Error("Expected the field `walletName` to be a primitive type in the JSON string but got " + data['walletName']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListAllAssetsByWalletIDRI.RequiredProperties = ["coins", "fungibleTokens", "nonFungibleTokens", "walletId", "walletName"];
 
 /**
  * @member {Array.<module:model/ListAllAssetsFromAllWalletsRICoinsInner>} coins

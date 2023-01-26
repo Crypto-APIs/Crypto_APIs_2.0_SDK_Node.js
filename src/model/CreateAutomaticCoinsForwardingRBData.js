@@ -17,7 +17,7 @@ import CreateAutomaticCoinsForwardingRBDataItem from './CreateAutomaticCoinsForw
 /**
  * The CreateAutomaticCoinsForwardingRBData model module.
  * @module model/CreateAutomaticCoinsForwardingRBData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateAutomaticCoinsForwardingRBData {
     /**
@@ -57,30 +57,8 @@ class CreateAutomaticCoinsForwardingRBData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>CreateAutomaticCoinsForwardingRBData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateAutomaticCoinsForwardingRBData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of CreateAutomaticCoinsForwardingRBData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          CreateAutomaticCoinsForwardingRBDataItem.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-CreateAutomaticCoinsForwardingRBData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/CreateAutomaticCoinsForwardingRBDataItem} item

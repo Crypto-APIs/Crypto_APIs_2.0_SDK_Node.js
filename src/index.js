@@ -78,6 +78,8 @@ import AddressTokensTransactionConfirmedErc20 from './model/AddressTokensTransac
 import AddressTokensTransactionConfirmedErc721 from './model/AddressTokensTransactionConfirmedErc721';
 import AddressTokensTransactionConfirmedOmni from './model/AddressTokensTransactionConfirmedOmni';
 import AddressTokensTransactionConfirmedToken from './model/AddressTokensTransactionConfirmedToken';
+import AddressTokensTransactionConfirmedTrc20 from './model/AddressTokensTransactionConfirmedTrc20';
+import AddressTokensTransactionConfirmedTrc721 from './model/AddressTokensTransactionConfirmedTrc721';
 import AddressTokensTransactionUnconfirmed from './model/AddressTokensTransactionUnconfirmed';
 import AddressTokensTransactionUnconfirmedData from './model/AddressTokensTransactionUnconfirmedData';
 import AddressTokensTransactionUnconfirmedDataItem from './model/AddressTokensTransactionUnconfirmedDataItem';
@@ -482,22 +484,6 @@ import EstimateTransactionSmartFeeR from './model/EstimateTransactionSmartFeeR';
 import EstimateTransactionSmartFeeRData from './model/EstimateTransactionSmartFeeRData';
 import EstimateTransactionSmartFeeRI from './model/EstimateTransactionSmartFeeRI';
 import FeatureMainnetsNotAllowedForPlan from './model/FeatureMainnetsNotAllowedForPlan';
-import FreezeTronForEnergyOrBandwidth400Response from './model/FreezeTronForEnergyOrBandwidth400Response';
-import FreezeTronForEnergyOrBandwidth401Response from './model/FreezeTronForEnergyOrBandwidth401Response';
-import FreezeTronForEnergyOrBandwidth403Response from './model/FreezeTronForEnergyOrBandwidth403Response';
-import FreezeTronForEnergyOrBandwidth409Response from './model/FreezeTronForEnergyOrBandwidth409Response';
-import FreezeTronForEnergyOrBandwidthE400 from './model/FreezeTronForEnergyOrBandwidthE400';
-import FreezeTronForEnergyOrBandwidthE401 from './model/FreezeTronForEnergyOrBandwidthE401';
-import FreezeTronForEnergyOrBandwidthE403 from './model/FreezeTronForEnergyOrBandwidthE403';
-import FreezeTronForEnergyOrBandwidthE409 from './model/FreezeTronForEnergyOrBandwidthE409';
-import FreezeTronForEnergyOrBandwidthR from './model/FreezeTronForEnergyOrBandwidthR';
-import FreezeTronForEnergyOrBandwidthRB from './model/FreezeTronForEnergyOrBandwidthRB';
-import FreezeTronForEnergyOrBandwidthRBData from './model/FreezeTronForEnergyOrBandwidthRBData';
-import FreezeTronForEnergyOrBandwidthRBDataItem from './model/FreezeTronForEnergyOrBandwidthRBDataItem';
-import FreezeTronForEnergyOrBandwidthRData from './model/FreezeTronForEnergyOrBandwidthRData';
-import FreezeTronForEnergyOrBandwidthRI from './model/FreezeTronForEnergyOrBandwidthRI';
-import FreezeTronForEnergyOrBandwidthRIDestinationsInner from './model/FreezeTronForEnergyOrBandwidthRIDestinationsInner';
-import FreezeTronForEnergyOrBandwidthRITransactionAmount from './model/FreezeTronForEnergyOrBandwidthRITransactionAmount';
 import GenerateDepositAddress400Response from './model/GenerateDepositAddress400Response';
 import GenerateDepositAddress401Response from './model/GenerateDepositAddress401Response';
 import GenerateDepositAddress403Response from './model/GenerateDepositAddress403Response';
@@ -1184,8 +1170,6 @@ import ListConfirmedTransactionsByAddressRIBSEGasPrice from './model/ListConfirm
 import ListConfirmedTransactionsByAddressRIBSL from './model/ListConfirmedTransactionsByAddressRIBSL';
 import ListConfirmedTransactionsByAddressRIBSLVinInner from './model/ListConfirmedTransactionsByAddressRIBSLVinInner';
 import ListConfirmedTransactionsByAddressRIBSLVinInnerScriptSig from './model/ListConfirmedTransactionsByAddressRIBSLVinInnerScriptSig';
-import ListConfirmedTransactionsByAddressRIBSP from './model/ListConfirmedTransactionsByAddressRIBSP';
-import ListConfirmedTransactionsByAddressRIBSPGasPrice from './model/ListConfirmedTransactionsByAddressRIBSPGasPrice';
 import ListConfirmedTransactionsByAddressRIBST from './model/ListConfirmedTransactionsByAddressRIBST';
 import ListConfirmedTransactionsByAddressRIBSZ from './model/ListConfirmedTransactionsByAddressRIBSZ';
 import ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner from './model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner';
@@ -1770,6 +1754,42 @@ import NewUnconfirmedTokensTransactionsRBData from './model/NewUnconfirmedTokens
 import NewUnconfirmedTokensTransactionsRBDataItem from './model/NewUnconfirmedTokensTransactionsRBDataItem';
 import NewUnconfirmedTokensTransactionsRData from './model/NewUnconfirmedTokensTransactionsRData';
 import NewUnconfirmedTokensTransactionsRI from './model/NewUnconfirmedTokensTransactionsRI';
+import PrepareAFungibleTokenTransferFromAddress400Response from './model/PrepareAFungibleTokenTransferFromAddress400Response';
+import PrepareAFungibleTokenTransferFromAddress401Response from './model/PrepareAFungibleTokenTransferFromAddress401Response';
+import PrepareAFungibleTokenTransferFromAddress403Response from './model/PrepareAFungibleTokenTransferFromAddress403Response';
+import PrepareAFungibleTokenTransferFromAddressE400 from './model/PrepareAFungibleTokenTransferFromAddressE400';
+import PrepareAFungibleTokenTransferFromAddressE401 from './model/PrepareAFungibleTokenTransferFromAddressE401';
+import PrepareAFungibleTokenTransferFromAddressE403 from './model/PrepareAFungibleTokenTransferFromAddressE403';
+import PrepareAFungibleTokenTransferFromAddressR from './model/PrepareAFungibleTokenTransferFromAddressR';
+import PrepareAFungibleTokenTransferFromAddressRB from './model/PrepareAFungibleTokenTransferFromAddressRB';
+import PrepareAFungibleTokenTransferFromAddressRBData from './model/PrepareAFungibleTokenTransferFromAddressRBData';
+import PrepareAFungibleTokenTransferFromAddressRBDataItem from './model/PrepareAFungibleTokenTransferFromAddressRBDataItem';
+import PrepareAFungibleTokenTransferFromAddressRBDataItemFee from './model/PrepareAFungibleTokenTransferFromAddressRBDataItemFee';
+import PrepareAFungibleTokenTransferFromAddressRData from './model/PrepareAFungibleTokenTransferFromAddressRData';
+import PrepareAFungibleTokenTransferFromAddressRI from './model/PrepareAFungibleTokenTransferFromAddressRI';
+import PrepareAFungibleTokenTransferFromAddressRIBS from './model/PrepareAFungibleTokenTransferFromAddressRIBS';
+import PrepareAFungibleTokenTransferFromAddressRIBSBSC from './model/PrepareAFungibleTokenTransferFromAddressRIBSBSC';
+import PrepareAFungibleTokenTransferFromAddressRIBSE from './model/PrepareAFungibleTokenTransferFromAddressRIBSE';
+import PrepareAFungibleTokenTransferFromAddressRIBSEC from './model/PrepareAFungibleTokenTransferFromAddressRIBSEC';
+import PrepareAFungibleTokenTransferFromAddressRIBSEFee from './model/PrepareAFungibleTokenTransferFromAddressRIBSEFee';
+import PrepareANonFungibleTokenTransferFromAddress400Response from './model/PrepareANonFungibleTokenTransferFromAddress400Response';
+import PrepareANonFungibleTokenTransferFromAddress401Response from './model/PrepareANonFungibleTokenTransferFromAddress401Response';
+import PrepareANonFungibleTokenTransferFromAddress403Response from './model/PrepareANonFungibleTokenTransferFromAddress403Response';
+import PrepareANonFungibleTokenTransferFromAddressE400 from './model/PrepareANonFungibleTokenTransferFromAddressE400';
+import PrepareANonFungibleTokenTransferFromAddressE401 from './model/PrepareANonFungibleTokenTransferFromAddressE401';
+import PrepareANonFungibleTokenTransferFromAddressE403 from './model/PrepareANonFungibleTokenTransferFromAddressE403';
+import PrepareANonFungibleTokenTransferFromAddressR from './model/PrepareANonFungibleTokenTransferFromAddressR';
+import PrepareANonFungibleTokenTransferFromAddressRB from './model/PrepareANonFungibleTokenTransferFromAddressRB';
+import PrepareANonFungibleTokenTransferFromAddressRBData from './model/PrepareANonFungibleTokenTransferFromAddressRBData';
+import PrepareANonFungibleTokenTransferFromAddressRBDataItem from './model/PrepareANonFungibleTokenTransferFromAddressRBDataItem';
+import PrepareANonFungibleTokenTransferFromAddressRBDataItemFee from './model/PrepareANonFungibleTokenTransferFromAddressRBDataItemFee';
+import PrepareANonFungibleTokenTransferFromAddressRData from './model/PrepareANonFungibleTokenTransferFromAddressRData';
+import PrepareANonFungibleTokenTransferFromAddressRI from './model/PrepareANonFungibleTokenTransferFromAddressRI';
+import PrepareANonFungibleTokenTransferFromAddressRIBS from './model/PrepareANonFungibleTokenTransferFromAddressRIBS';
+import PrepareANonFungibleTokenTransferFromAddressRIBSBSC from './model/PrepareANonFungibleTokenTransferFromAddressRIBSBSC';
+import PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee from './model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee';
+import PrepareANonFungibleTokenTransferFromAddressRIBSE from './model/PrepareANonFungibleTokenTransferFromAddressRIBSE';
+import PrepareANonFungibleTokenTransferFromAddressRIBSEFee from './model/PrepareANonFungibleTokenTransferFromAddressRIBSEFee';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub401Response';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response';
@@ -1790,12 +1810,6 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE from './model
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response';
@@ -1909,21 +1923,6 @@ import TransactionRequestRejection from './model/TransactionRequestRejection';
 import TransactionRequestRejectionData from './model/TransactionRequestRejectionData';
 import TransactionRequestRejectionDataItem from './model/TransactionRequestRejectionDataItem';
 import UnexpectedServerError from './model/UnexpectedServerError';
-import UnfreezeTronEnergyOrBandwidth400Response from './model/UnfreezeTronEnergyOrBandwidth400Response';
-import UnfreezeTronEnergyOrBandwidth401Response from './model/UnfreezeTronEnergyOrBandwidth401Response';
-import UnfreezeTronEnergyOrBandwidth403Response from './model/UnfreezeTronEnergyOrBandwidth403Response';
-import UnfreezeTronEnergyOrBandwidth409Response from './model/UnfreezeTronEnergyOrBandwidth409Response';
-import UnfreezeTronEnergyOrBandwidthE400 from './model/UnfreezeTronEnergyOrBandwidthE400';
-import UnfreezeTronEnergyOrBandwidthE401 from './model/UnfreezeTronEnergyOrBandwidthE401';
-import UnfreezeTronEnergyOrBandwidthE403 from './model/UnfreezeTronEnergyOrBandwidthE403';
-import UnfreezeTronEnergyOrBandwidthE409 from './model/UnfreezeTronEnergyOrBandwidthE409';
-import UnfreezeTronEnergyOrBandwidthR from './model/UnfreezeTronEnergyOrBandwidthR';
-import UnfreezeTronEnergyOrBandwidthRB from './model/UnfreezeTronEnergyOrBandwidthRB';
-import UnfreezeTronEnergyOrBandwidthRBData from './model/UnfreezeTronEnergyOrBandwidthRBData';
-import UnfreezeTronEnergyOrBandwidthRBDataItem from './model/UnfreezeTronEnergyOrBandwidthRBDataItem';
-import UnfreezeTronEnergyOrBandwidthRData from './model/UnfreezeTronEnergyOrBandwidthRData';
-import UnfreezeTronEnergyOrBandwidthRI from './model/UnfreezeTronEnergyOrBandwidthRI';
-import UnfreezeTronEnergyOrBandwidthRITransactionAmount from './model/UnfreezeTronEnergyOrBandwidthRITransactionAmount';
 import Unimplemented from './model/Unimplemented';
 import UnsupportedMediaType from './model/UnsupportedMediaType';
 import UriNotFound from './model/UriNotFound';
@@ -1997,7 +1996,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.11.0
+* @version 1.12.0
 */
 export {
     /**
@@ -2395,6 +2394,18 @@ export {
      * @property {module:model/AddressTokensTransactionConfirmedToken}
      */
     AddressTokensTransactionConfirmedToken,
+
+    /**
+     * The AddressTokensTransactionConfirmedTrc20 model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedTrc20}
+     */
+    AddressTokensTransactionConfirmedTrc20,
+
+    /**
+     * The AddressTokensTransactionConfirmedTrc721 model constructor.
+     * @property {module:model/AddressTokensTransactionConfirmedTrc721}
+     */
+    AddressTokensTransactionConfirmedTrc721,
 
     /**
      * The AddressTokensTransactionUnconfirmed model constructor.
@@ -4819,102 +4830,6 @@ export {
      * @property {module:model/FeatureMainnetsNotAllowedForPlan}
      */
     FeatureMainnetsNotAllowedForPlan,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidth400Response model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidth400Response}
-     */
-    FreezeTronForEnergyOrBandwidth400Response,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidth401Response model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidth401Response}
-     */
-    FreezeTronForEnergyOrBandwidth401Response,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidth403Response model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidth403Response}
-     */
-    FreezeTronForEnergyOrBandwidth403Response,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidth409Response model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidth409Response}
-     */
-    FreezeTronForEnergyOrBandwidth409Response,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthE400 model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthE400}
-     */
-    FreezeTronForEnergyOrBandwidthE400,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthE401 model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthE401}
-     */
-    FreezeTronForEnergyOrBandwidthE401,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthE403 model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthE403}
-     */
-    FreezeTronForEnergyOrBandwidthE403,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthE409 model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthE409}
-     */
-    FreezeTronForEnergyOrBandwidthE409,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthR model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthR}
-     */
-    FreezeTronForEnergyOrBandwidthR,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthRB model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthRB}
-     */
-    FreezeTronForEnergyOrBandwidthRB,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthRBData model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthRBData}
-     */
-    FreezeTronForEnergyOrBandwidthRBData,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthRBDataItem model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthRBDataItem}
-     */
-    FreezeTronForEnergyOrBandwidthRBDataItem,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthRData model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthRData}
-     */
-    FreezeTronForEnergyOrBandwidthRData,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthRI model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthRI}
-     */
-    FreezeTronForEnergyOrBandwidthRI,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthRIDestinationsInner model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthRIDestinationsInner}
-     */
-    FreezeTronForEnergyOrBandwidthRIDestinationsInner,
-
-    /**
-     * The FreezeTronForEnergyOrBandwidthRITransactionAmount model constructor.
-     * @property {module:model/FreezeTronForEnergyOrBandwidthRITransactionAmount}
-     */
-    FreezeTronForEnergyOrBandwidthRITransactionAmount,
 
     /**
      * The GenerateDepositAddress400Response model constructor.
@@ -9033,18 +8948,6 @@ export {
     ListConfirmedTransactionsByAddressRIBSLVinInnerScriptSig,
 
     /**
-     * The ListConfirmedTransactionsByAddressRIBSP model constructor.
-     * @property {module:model/ListConfirmedTransactionsByAddressRIBSP}
-     */
-    ListConfirmedTransactionsByAddressRIBSP,
-
-    /**
-     * The ListConfirmedTransactionsByAddressRIBSPGasPrice model constructor.
-     * @property {module:model/ListConfirmedTransactionsByAddressRIBSPGasPrice}
-     */
-    ListConfirmedTransactionsByAddressRIBSPGasPrice,
-
-    /**
      * The ListConfirmedTransactionsByAddressRIBST model constructor.
      * @property {module:model/ListConfirmedTransactionsByAddressRIBST}
      */
@@ -12549,6 +12452,222 @@ export {
     NewUnconfirmedTokensTransactionsRI,
 
     /**
+     * The PrepareAFungibleTokenTransferFromAddress400Response model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddress400Response}
+     */
+    PrepareAFungibleTokenTransferFromAddress400Response,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddress401Response model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddress401Response}
+     */
+    PrepareAFungibleTokenTransferFromAddress401Response,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddress403Response model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddress403Response}
+     */
+    PrepareAFungibleTokenTransferFromAddress403Response,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressE400 model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressE400}
+     */
+    PrepareAFungibleTokenTransferFromAddressE400,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressE401 model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressE401}
+     */
+    PrepareAFungibleTokenTransferFromAddressE401,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressE403 model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressE403}
+     */
+    PrepareAFungibleTokenTransferFromAddressE403,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressR model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressR}
+     */
+    PrepareAFungibleTokenTransferFromAddressR,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRB model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRB}
+     */
+    PrepareAFungibleTokenTransferFromAddressRB,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRBData model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRBData}
+     */
+    PrepareAFungibleTokenTransferFromAddressRBData,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRBDataItem model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRBDataItem}
+     */
+    PrepareAFungibleTokenTransferFromAddressRBDataItem,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRBDataItemFee model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRBDataItemFee}
+     */
+    PrepareAFungibleTokenTransferFromAddressRBDataItemFee,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRData model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRData}
+     */
+    PrepareAFungibleTokenTransferFromAddressRData,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRI model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRI}
+     */
+    PrepareAFungibleTokenTransferFromAddressRI,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRIBS model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRIBS}
+     */
+    PrepareAFungibleTokenTransferFromAddressRIBS,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRIBSBSC model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRIBSBSC}
+     */
+    PrepareAFungibleTokenTransferFromAddressRIBSBSC,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRIBSE model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRIBSE}
+     */
+    PrepareAFungibleTokenTransferFromAddressRIBSE,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRIBSEC model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEC}
+     */
+    PrepareAFungibleTokenTransferFromAddressRIBSEC,
+
+    /**
+     * The PrepareAFungibleTokenTransferFromAddressRIBSEFee model constructor.
+     * @property {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee}
+     */
+    PrepareAFungibleTokenTransferFromAddressRIBSEFee,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddress400Response model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddress400Response}
+     */
+    PrepareANonFungibleTokenTransferFromAddress400Response,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddress401Response model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddress401Response}
+     */
+    PrepareANonFungibleTokenTransferFromAddress401Response,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddress403Response model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddress403Response}
+     */
+    PrepareANonFungibleTokenTransferFromAddress403Response,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressE400 model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressE400}
+     */
+    PrepareANonFungibleTokenTransferFromAddressE400,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressE401 model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressE401}
+     */
+    PrepareANonFungibleTokenTransferFromAddressE401,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressE403 model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressE403}
+     */
+    PrepareANonFungibleTokenTransferFromAddressE403,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressR model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressR}
+     */
+    PrepareANonFungibleTokenTransferFromAddressR,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRB model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRB}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRB,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRBData model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRBData}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRBData,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRBDataItem model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRBDataItem}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRBDataItem,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRBDataItemFee model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRBDataItemFee}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRBDataItemFee,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRData model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRData}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRData,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRI model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRI}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRI,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRIBS model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRIBS}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRIBS,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRIBSBSC model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSC}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRIBSBSC,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRIBSE model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSE}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRIBSE,
+
+    /**
+     * The PrepareANonFungibleTokenTransferFromAddressRIBSEFee model constructor.
+     * @property {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSEFee}
+     */
+    PrepareANonFungibleTokenTransferFromAddressRIBSEFee,
+
+    /**
      * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response model constructor.
      * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub400Response}
      */
@@ -12667,42 +12786,6 @@ export {
      * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee}
      */
     PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee,
-
-    /**
-     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST model constructor.
-     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST}
-     */
-    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST,
-
-    /**
-     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData model constructor.
-     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData}
-     */
-    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData,
-
-    /**
-     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract model constructor.
-     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract}
-     */
-    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract,
-
-    /**
-     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter model constructor.
-     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter}
-     */
-    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter,
-
-    /**
-     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX model constructor.
-     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX}
-     */
-    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX,
-
-    /**
-     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee model constructor.
-     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee}
-     */
-    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee,
 
     /**
      * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response model constructor.
@@ -13381,96 +13464,6 @@ export {
      * @property {module:model/UnexpectedServerError}
      */
     UnexpectedServerError,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidth400Response model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidth400Response}
-     */
-    UnfreezeTronEnergyOrBandwidth400Response,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidth401Response model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidth401Response}
-     */
-    UnfreezeTronEnergyOrBandwidth401Response,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidth403Response model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidth403Response}
-     */
-    UnfreezeTronEnergyOrBandwidth403Response,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidth409Response model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidth409Response}
-     */
-    UnfreezeTronEnergyOrBandwidth409Response,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthE400 model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthE400}
-     */
-    UnfreezeTronEnergyOrBandwidthE400,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthE401 model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthE401}
-     */
-    UnfreezeTronEnergyOrBandwidthE401,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthE403 model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthE403}
-     */
-    UnfreezeTronEnergyOrBandwidthE403,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthE409 model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthE409}
-     */
-    UnfreezeTronEnergyOrBandwidthE409,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthR model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthR}
-     */
-    UnfreezeTronEnergyOrBandwidthR,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthRB model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthRB}
-     */
-    UnfreezeTronEnergyOrBandwidthRB,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthRBData model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthRBData}
-     */
-    UnfreezeTronEnergyOrBandwidthRBData,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthRBDataItem model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthRBDataItem}
-     */
-    UnfreezeTronEnergyOrBandwidthRBDataItem,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthRData model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthRData}
-     */
-    UnfreezeTronEnergyOrBandwidthRData,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthRI model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthRI}
-     */
-    UnfreezeTronEnergyOrBandwidthRI,
-
-    /**
-     * The UnfreezeTronEnergyOrBandwidthRITransactionAmount model constructor.
-     * @property {module:model/UnfreezeTronEnergyOrBandwidthRITransactionAmount}
-     */
-    UnfreezeTronEnergyOrBandwidthRITransactionAmount,
 
     /**
      * The Unimplemented model constructor.

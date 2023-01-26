@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**replaceable** | **Boolean** | Representation of whether the transaction is replaceable | 
+**replaceable** | **Boolean** | Representation of whether the transaction is replaceable | [optional] 
 **vin** | [**[PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner]**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner.md) | Represents the transaction inputs. | 
 **vout** | [**[PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner]**](PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner.md) | Represents the transaction outputs. | 
 

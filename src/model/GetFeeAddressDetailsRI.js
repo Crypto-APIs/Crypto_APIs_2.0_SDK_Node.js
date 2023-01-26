@@ -17,7 +17,7 @@ import GetFeeAddressDetailsRIBalance from './GetFeeAddressDetailsRIBalance';
 /**
  * The GetFeeAddressDetailsRI model module.
  * @module model/GetFeeAddressDetailsRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetFeeAddressDetailsRI {
     /**
@@ -67,38 +67,8 @@ class GetFeeAddressDetailsRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetFeeAddressDetailsRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetFeeAddressDetailsRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetFeeAddressDetailsRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
-            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
-        }
-        // validate the optional field `balance`
-        if (data['balance']) { // data not null
-          GetFeeAddressDetailsRIBalance.validateJSON(data['balance']);
-        }
-        // ensure the json data is a string
-        if (data['minimumTransferAmount'] && !(typeof data['minimumTransferAmount'] === 'string' || data['minimumTransferAmount'] instanceof String)) {
-            throw new Error("Expected the field `minimumTransferAmount` to be a primitive type in the JSON string but got " + data['minimumTransferAmount']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetFeeAddressDetailsRI.RequiredProperties = ["address", "balance", "minimumTransferAmount"];
 
 /**
  * Represents the specific fee address, which is always automatically generated. Users must fund it.

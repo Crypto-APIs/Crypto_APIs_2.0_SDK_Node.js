@@ -17,7 +17,7 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS from './Prepar
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI {
     /**
@@ -77,46 +77,8 @@ class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['recipient'] && !(typeof data['recipient'] === 'string' || data['recipient'] instanceof String)) {
-            throw new Error("Expected the field `recipient` to be a primitive type in the JSON string but got " + data['recipient']);
-        }
-        // ensure the json data is a string
-        if (data['sender'] && !(typeof data['sender'] === 'string' || data['sender'] instanceof String)) {
-            throw new Error("Expected the field `sender` to be a primitive type in the JSON string but got " + data['sender']);
-        }
-        // ensure the json data is a string
-        if (data['sigHash'] && !(typeof data['sigHash'] === 'string' || data['sigHash'] instanceof String)) {
-            throw new Error("Expected the field `sigHash` to be a primitive type in the JSON string but got " + data['sigHash']);
-        }
-        // validate the optional field `blockchainSpecific`
-        if (data['blockchainSpecific']) { // data not null
-          PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.validateJSON(data['blockchainSpecific']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRI.RequiredProperties = ["amount", "recipient", "sender", "sigHash", "blockchainSpecific"];
 
 /**
  * Representation of the amount of the transaction

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSZVJoinSplitInner model module.
  * @module model/ListTransactionsByBlockHashRIBSZVJoinSplitInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListTransactionsByBlockHashRIBSZVJoinSplitInner {
     /**
@@ -101,66 +101,8 @@ class ListTransactionsByBlockHashRIBSZVJoinSplitInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListTransactionsByBlockHashRIBSZVJoinSplitInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListTransactionsByBlockHashRIBSZVJoinSplitInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListTransactionsByBlockHashRIBSZVJoinSplitInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['anchor'] && !(typeof data['anchor'] === 'string' || data['anchor'] instanceof String)) {
-            throw new Error("Expected the field `anchor` to be a primitive type in the JSON string but got " + data['anchor']);
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['cipherTexts'])) {
-            throw new Error("Expected the field `cipherTexts` to be an array in the JSON data but got " + data['cipherTexts']);
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['commitments'])) {
-            throw new Error("Expected the field `commitments` to be an array in the JSON data but got " + data['commitments']);
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['macs'])) {
-            throw new Error("Expected the field `macs` to be an array in the JSON data but got " + data['macs']);
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['nullifiers'])) {
-            throw new Error("Expected the field `nullifiers` to be an array in the JSON data but got " + data['nullifiers']);
-        }
-        // ensure the json data is a string
-        if (data['oneTimePubKey'] && !(typeof data['oneTimePubKey'] === 'string' || data['oneTimePubKey'] instanceof String)) {
-            throw new Error("Expected the field `oneTimePubKey` to be a primitive type in the JSON string but got " + data['oneTimePubKey']);
-        }
-        // ensure the json data is a string
-        if (data['proof'] && !(typeof data['proof'] === 'string' || data['proof'] instanceof String)) {
-            throw new Error("Expected the field `proof` to be a primitive type in the JSON string but got " + data['proof']);
-        }
-        // ensure the json data is a string
-        if (data['randomSeed'] && !(typeof data['randomSeed'] === 'string' || data['randomSeed'] instanceof String)) {
-            throw new Error("Expected the field `randomSeed` to be a primitive type in the JSON string but got " + data['randomSeed']);
-        }
-        // ensure the json data is a string
-        if (data['vPubNew'] && !(typeof data['vPubNew'] === 'string' || data['vPubNew'] instanceof String)) {
-            throw new Error("Expected the field `vPubNew` to be a primitive type in the JSON string but got " + data['vPubNew']);
-        }
-        // ensure the json data is a string
-        if (data['vPubOld'] && !(typeof data['vPubOld'] === 'string' || data['vPubOld'] instanceof String)) {
-            throw new Error("Expected the field `vPubOld` to be a primitive type in the JSON string but got " + data['vPubOld']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListTransactionsByBlockHashRIBSZVJoinSplitInner.RequiredProperties = ["anchor", "cipherTexts", "commitments", "macs", "nullifiers", "oneTimePubKey", "proof", "randomSeed", "vPubNew", "vPubOld"];
 
 /**
  * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.

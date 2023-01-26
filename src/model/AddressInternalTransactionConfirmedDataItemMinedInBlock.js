@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressInternalTransactionConfirmedDataItemMinedInBlock model module.
  * @module model/AddressInternalTransactionConfirmedDataItemMinedInBlock
- * @version 1.11.0
+ * @version 1.12.0
  */
 class AddressInternalTransactionConfirmedDataItemMinedInBlock {
     /**
@@ -67,30 +67,8 @@ class AddressInternalTransactionConfirmedDataItemMinedInBlock {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>AddressInternalTransactionConfirmedDataItemMinedInBlock</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AddressInternalTransactionConfirmedDataItemMinedInBlock</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of AddressInternalTransactionConfirmedDataItemMinedInBlock.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['hash'] && !(typeof data['hash'] === 'string' || data['hash'] instanceof String)) {
-            throw new Error("Expected the field `hash` to be a primitive type in the JSON string but got " + data['hash']);
-        }
-
-        return true;
-    }
-
 
 }
-
-AddressInternalTransactionConfirmedDataItemMinedInBlock.RequiredProperties = ["height", "hash", "timestamp"];
 
 /**
  * Defines the number of blocks in the blockchain preceding this specific block.

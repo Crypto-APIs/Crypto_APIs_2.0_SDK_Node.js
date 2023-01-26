@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetLastMinedBlockRIBSD model module.
  * @module model/GetLastMinedBlockRIBSD
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetLastMinedBlockRIBSD {
     /**
@@ -95,42 +95,8 @@ class GetLastMinedBlockRIBSD {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetLastMinedBlockRIBSD</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetLastMinedBlockRIBSD</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetLastMinedBlockRIBSD.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['bits'] && !(typeof data['bits'] === 'string' || data['bits'] instanceof String)) {
-            throw new Error("Expected the field `bits` to be a primitive type in the JSON string but got " + data['bits']);
-        }
-        // ensure the json data is a string
-        if (data['chainwork'] && !(typeof data['chainwork'] === 'string' || data['chainwork'] instanceof String)) {
-            throw new Error("Expected the field `chainwork` to be a primitive type in the JSON string but got " + data['chainwork']);
-        }
-        // ensure the json data is a string
-        if (data['difficulty'] && !(typeof data['difficulty'] === 'string' || data['difficulty'] instanceof String)) {
-            throw new Error("Expected the field `difficulty` to be a primitive type in the JSON string but got " + data['difficulty']);
-        }
-        // ensure the json data is a string
-        if (data['merkleRoot'] && !(typeof data['merkleRoot'] === 'string' || data['merkleRoot'] instanceof String)) {
-            throw new Error("Expected the field `merkleRoot` to be a primitive type in the JSON string but got " + data['merkleRoot']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetLastMinedBlockRIBSD.RequiredProperties = ["bits", "chainwork", "merkleRoot", "nonce", "size", "strippedSize", "version", "weight"];
 
 /**
  * Represents a specific sub-unit of Doge. Bits have two-decimal precision.

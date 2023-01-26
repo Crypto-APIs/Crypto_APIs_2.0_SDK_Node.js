@@ -17,23 +17,21 @@ import GetTransactionDetailsByTransactionIDRIBSBSCGasPrice from './GetTransactio
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBSC model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBSC
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetTransactionDetailsByTransactionIDRIBSBSC {
     /**
      * Constructs a new <code>GetTransactionDetailsByTransactionIDRIBSBSC</code>.
      * Binance Smart Chain
      * @alias module:model/GetTransactionDetailsByTransactionIDRIBSBSC
-     * @param contract {String} Represents the specific transaction contract
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
      * @param gasPrice {module:model/GetTransactionDetailsByTransactionIDRIBSBSCGasPrice} 
      * @param gasUsed {String} Defines the unit of the gas price amount, e.g. BTC, ETH, XRP.
-     * @param inputData {String} Represents additional information that is required for the transaction.
      * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
      */
-    constructor(contract, gasLimit, gasPrice, gasUsed, inputData, nonce) { 
+    constructor(gasLimit, gasPrice, gasUsed, nonce) { 
         
-        GetTransactionDetailsByTransactionIDRIBSBSC.initialize(this, contract, gasLimit, gasPrice, gasUsed, inputData, nonce);
+        GetTransactionDetailsByTransactionIDRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, nonce);
     }
 
     /**
@@ -41,12 +39,10 @@ class GetTransactionDetailsByTransactionIDRIBSBSC {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, contract, gasLimit, gasPrice, gasUsed, inputData, nonce) { 
-        obj['contract'] = contract;
+    static initialize(obj, gasLimit, gasPrice, gasUsed, nonce) { 
         obj['gasLimit'] = gasLimit;
         obj['gasPrice'] = gasPrice;
         obj['gasUsed'] = gasUsed;
-        obj['inputData'] = inputData;
         obj['nonce'] = nonce;
     }
 
@@ -83,46 +79,8 @@ class GetTransactionDetailsByTransactionIDRIBSBSC {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDRIBSBSC</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDRIBSBSC</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetTransactionDetailsByTransactionIDRIBSBSC.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['contract'] && !(typeof data['contract'] === 'string' || data['contract'] instanceof String)) {
-            throw new Error("Expected the field `contract` to be a primitive type in the JSON string but got " + data['contract']);
-        }
-        // ensure the json data is a string
-        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
-            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
-        }
-        // validate the optional field `gasPrice`
-        if (data['gasPrice']) { // data not null
-          GetTransactionDetailsByTransactionIDRIBSBSCGasPrice.validateJSON(data['gasPrice']);
-        }
-        // ensure the json data is a string
-        if (data['gasUsed'] && !(typeof data['gasUsed'] === 'string' || data['gasUsed'] instanceof String)) {
-            throw new Error("Expected the field `gasUsed` to be a primitive type in the JSON string but got " + data['gasUsed']);
-        }
-        // ensure the json data is a string
-        if (data['inputData'] && !(typeof data['inputData'] === 'string' || data['inputData'] instanceof String)) {
-            throw new Error("Expected the field `inputData` to be a primitive type in the JSON string but got " + data['inputData']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetTransactionDetailsByTransactionIDRIBSBSC.RequiredProperties = ["contract", "gasLimit", "gasPrice", "gasUsed", "inputData", "nonce"];
 
 /**
  * Represents the specific transaction contract

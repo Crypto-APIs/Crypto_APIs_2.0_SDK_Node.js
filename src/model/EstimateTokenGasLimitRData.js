@@ -17,7 +17,7 @@ import EstimateTokenGasLimitRI from './EstimateTokenGasLimitRI';
 /**
  * The EstimateTokenGasLimitRData model module.
  * @module model/EstimateTokenGasLimitRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class EstimateTokenGasLimitRData {
     /**
@@ -57,30 +57,8 @@ class EstimateTokenGasLimitRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>EstimateTokenGasLimitRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>EstimateTokenGasLimitRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of EstimateTokenGasLimitRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          EstimateTokenGasLimitRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-EstimateTokenGasLimitRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/EstimateTokenGasLimitRI} item

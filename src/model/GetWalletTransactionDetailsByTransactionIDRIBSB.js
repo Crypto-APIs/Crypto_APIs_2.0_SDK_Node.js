@@ -18,7 +18,7 @@ import GetWalletTransactionDetailsByTransactionIDRIBSBVoutInner from './GetWalle
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSB model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSB
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSB {
     /**
@@ -84,46 +84,8 @@ class GetWalletTransactionDetailsByTransactionIDRIBSB {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetWalletTransactionDetailsByTransactionIDRIBSB</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetWalletTransactionDetailsByTransactionIDRIBSB</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetWalletTransactionDetailsByTransactionIDRIBSB.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        if (data['vin']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vin'])) {
-                throw new Error("Expected the field `vin` to be an array in the JSON data but got " + data['vin']);
-            }
-            // validate the optional field `vin` (array)
-            for (const item of data['vin']) {
-                GetWalletTransactionDetailsByTransactionIDRIBSBVinInner.validateJsonObject(item);
-            };
-        }
-        if (data['vout']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vout'])) {
-                throw new Error("Expected the field `vout` to be an array in the JSON data but got " + data['vout']);
-            }
-            // validate the optional field `vout` (array)
-            for (const item of data['vout']) {
-                GetWalletTransactionDetailsByTransactionIDRIBSBVoutInner.validateJsonObject(item);
-            };
-        }
-
-        return true;
-    }
-
 
 }
-
-GetWalletTransactionDetailsByTransactionIDRIBSB.RequiredProperties = ["locktime", "size", "vSize", "version", "vin", "vout"];
 
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetAssetDetailsByAssetIDRIAssetLogo model module.
  * @module model/GetAssetDetailsByAssetIDRIAssetLogo
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetAssetDetailsByAssetIDRIAssetLogo {
     /**
@@ -66,38 +66,8 @@ class GetAssetDetailsByAssetIDRIAssetLogo {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetAssetDetailsByAssetIDRIAssetLogo</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetAssetDetailsByAssetIDRIAssetLogo</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetAssetDetailsByAssetIDRIAssetLogo.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['encoding'] && !(typeof data['encoding'] === 'string' || data['encoding'] instanceof String)) {
-            throw new Error("Expected the field `encoding` to be a primitive type in the JSON string but got " + data['encoding']);
-        }
-        // ensure the json data is a string
-        if (data['imageData'] && !(typeof data['imageData'] === 'string' || data['imageData'] instanceof String)) {
-            throw new Error("Expected the field `imageData` to be a primitive type in the JSON string but got " + data['imageData']);
-        }
-        // ensure the json data is a string
-        if (data['mimeType'] && !(typeof data['mimeType'] === 'string' || data['mimeType'] instanceof String)) {
-            throw new Error("Expected the field `mimeType` to be a primitive type in the JSON string but got " + data['mimeType']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetAssetDetailsByAssetIDRIAssetLogo.RequiredProperties = ["encoding", "imageData", "mimeType"];
 
 /**
  * Defines the encoding of the image data which is usually base64.

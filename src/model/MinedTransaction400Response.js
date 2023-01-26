@@ -17,7 +17,7 @@ import MinedTransactionE400 from './MinedTransactionE400';
 /**
  * The MinedTransaction400Response model module.
  * @module model/MinedTransaction400Response
- * @version 1.11.0
+ * @version 1.12.0
  */
 class MinedTransaction400Response {
     /**
@@ -70,42 +70,8 @@ class MinedTransaction400Response {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>MinedTransaction400Response</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>MinedTransaction400Response</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of MinedTransaction400Response.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['apiVersion'] && !(typeof data['apiVersion'] === 'string' || data['apiVersion'] instanceof String)) {
-            throw new Error("Expected the field `apiVersion` to be a primitive type in the JSON string but got " + data['apiVersion']);
-        }
-        // ensure the json data is a string
-        if (data['requestId'] && !(typeof data['requestId'] === 'string' || data['requestId'] instanceof String)) {
-            throw new Error("Expected the field `requestId` to be a primitive type in the JSON string but got " + data['requestId']);
-        }
-        // ensure the json data is a string
-        if (data['context'] && !(typeof data['context'] === 'string' || data['context'] instanceof String)) {
-            throw new Error("Expected the field `context` to be a primitive type in the JSON string but got " + data['context']);
-        }
-        // validate the optional field `error`
-        if (data['error']) { // data not null
-          MinedTransactionE400.validateJSON(data['error']);
-        }
-
-        return true;
-    }
-
 
 }
-
-MinedTransaction400Response.RequiredProperties = ["apiVersion", "requestId", "error"];
 
 /**
  * Specifies the version of the API that incorporates this endpoint.

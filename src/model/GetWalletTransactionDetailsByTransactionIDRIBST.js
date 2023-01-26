@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBST model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBST
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBST {
     /**
@@ -92,50 +92,8 @@ class GetWalletTransactionDetailsByTransactionIDRIBST {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetWalletTransactionDetailsByTransactionIDRIBST</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetWalletTransactionDetailsByTransactionIDRIBST</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetWalletTransactionDetailsByTransactionIDRIBST.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['bandwidthUsed'] && !(typeof data['bandwidthUsed'] === 'string' || data['bandwidthUsed'] instanceof String)) {
-            throw new Error("Expected the field `bandwidthUsed` to be a primitive type in the JSON string but got " + data['bandwidthUsed']);
-        }
-        // ensure the json data is a string
-        if (data['contract'] && !(typeof data['contract'] === 'string' || data['contract'] instanceof String)) {
-            throw new Error("Expected the field `contract` to be a primitive type in the JSON string but got " + data['contract']);
-        }
-        // ensure the json data is a string
-        if (data['energyUsed'] && !(typeof data['energyUsed'] === 'string' || data['energyUsed'] instanceof String)) {
-            throw new Error("Expected the field `energyUsed` to be a primitive type in the JSON string but got " + data['energyUsed']);
-        }
-        // ensure the json data is a string
-        if (data['input'] && !(typeof data['input'] === 'string' || data['input'] instanceof String)) {
-            throw new Error("Expected the field `input` to be a primitive type in the JSON string but got " + data['input']);
-        }
-        // ensure the json data is a string
-        if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
-            throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetWalletTransactionDetailsByTransactionIDRIBST.RequiredProperties = ["amount", "bandwidthUsed", "contract", "energyUsed", "hasInternalTransactions", "hasTokenTransfers", "input", "status"];
 
 /**
  * String representation of the amount value

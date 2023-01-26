@@ -17,47 +17,42 @@ import GetAssetDetailsByAssetSymbolRISC from './GetAssetDetailsByAssetSymbolRISC
 /**
  * The GetAssetDetailsByAssetSymbolRIS model module.
  * @module model/GetAssetDetailsByAssetSymbolRIS
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetAssetDetailsByAssetSymbolRIS {
     /**
      * Constructs a new <code>GetAssetDetailsByAssetSymbolRIS</code>.
      * Represents a specific asset&#39;s data depending on its type (whether it is \&quot;crypto\&quot; or \&quot;fiat\&quot;).
      * @alias module:model/GetAssetDetailsByAssetSymbolRIS
-     * @param {(module:model/GetAssetDetailsByAssetSymbolRISC)} instance The actual instance to initialize GetAssetDetailsByAssetSymbolRIS.
+     * @implements module:model/GetAssetDetailsByAssetSymbolRISC
+     * @param _1hourPriceChangeInPercentage {String} Represents the percentage of the asset's current price against the its price from 1 hour ago.
+     * @param _1weekPriceChangeInPercentage {String} Represents the percentage of the asset's current price against the its price from 1 week ago.
+     * @param _24hoursPriceChangeInPercentage {String} Represents the percentage of the asset's current price against the its price from 24 hours ago.
+     * @param _24hoursTradingVolume {String} Represents the trading volume of the asset for the time frame of 24 hours.
+     * @param assetType {module:model/GetAssetDetailsByAssetSymbolRIS.AssetTypeEnum} Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
+     * @param circulatingSupply {String} Represents the amount of the asset that is circulating on the market and in public hands.
+     * @param marketCapInUSD {String} Defines the total market value of the asset's circulating supply in USD.
+     * @param maxSupply {String} Represents the maximum amount of all coins of a specific asset that will ever exist in its lifetime.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "GetAssetDetailsByAssetSymbolRISC") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetAssetDetailsByAssetSymbolRISC.validateJSON(instance); // throw an exception if no match
-                // create GetAssetDetailsByAssetSymbolRISC from JS object
-                this.actualInstance = GetAssetDetailsByAssetSymbolRISC.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetAssetDetailsByAssetSymbolRISC
-            errorMessages.push("Failed to construct GetAssetDetailsByAssetSymbolRISC: " + err)
-        }
+    constructor(_1hourPriceChangeInPercentage, _1weekPriceChangeInPercentage, _24hoursPriceChangeInPercentage, _24hoursTradingVolume, assetType, circulatingSupply, marketCapInUSD, maxSupply) { 
+        GetAssetDetailsByAssetSymbolRISC.initialize(this, _1hourPriceChangeInPercentage, _1weekPriceChangeInPercentage, _24hoursPriceChangeInPercentage, _24hoursTradingVolume, assetType, circulatingSupply, marketCapInUSD, maxSupply);
+        GetAssetDetailsByAssetSymbolRIS.initialize(this, _1hourPriceChangeInPercentage, _1weekPriceChangeInPercentage, _24hoursPriceChangeInPercentage, _24hoursTradingVolume, assetType, circulatingSupply, marketCapInUSD, maxSupply);
+    }
 
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `GetAssetDetailsByAssetSymbolRIS` with oneOf schemas GetAssetDetailsByAssetSymbolRISC. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `GetAssetDetailsByAssetSymbolRIS` with oneOf schemas GetAssetDetailsByAssetSymbolRISC. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, _1hourPriceChangeInPercentage, _1weekPriceChangeInPercentage, _24hoursPriceChangeInPercentage, _24hoursTradingVolume, assetType, circulatingSupply, marketCapInUSD, maxSupply) { 
+        obj['1HourPriceChangeInPercentage'] = _1hourPriceChangeInPercentage;
+        obj['1WeekPriceChangeInPercentage'] = _1weekPriceChangeInPercentage;
+        obj['24HoursPriceChangeInPercentage'] = _24hoursPriceChangeInPercentage;
+        obj['24HoursTradingVolume'] = _24hoursTradingVolume;
+        obj['assetType'] = assetType;
+        obj['circulatingSupply'] = circulatingSupply;
+        obj['marketCapInUSD'] = marketCapInUSD;
+        obj['maxSupply'] = maxSupply;
     }
 
     /**
@@ -68,41 +63,39 @@ class GetAssetDetailsByAssetSymbolRIS {
      * @return {module:model/GetAssetDetailsByAssetSymbolRIS} The populated <code>GetAssetDetailsByAssetSymbolRIS</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new GetAssetDetailsByAssetSymbolRIS(data);
+        if (data) {
+            obj = obj || new GetAssetDetailsByAssetSymbolRIS();
+            GetAssetDetailsByAssetSymbolRISC.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('1HourPriceChangeInPercentage')) {
+                obj['1HourPriceChangeInPercentage'] = ApiClient.convertToType(data['1HourPriceChangeInPercentage'], 'String');
+            }
+            if (data.hasOwnProperty('1WeekPriceChangeInPercentage')) {
+                obj['1WeekPriceChangeInPercentage'] = ApiClient.convertToType(data['1WeekPriceChangeInPercentage'], 'String');
+            }
+            if (data.hasOwnProperty('24HoursPriceChangeInPercentage')) {
+                obj['24HoursPriceChangeInPercentage'] = ApiClient.convertToType(data['24HoursPriceChangeInPercentage'], 'String');
+            }
+            if (data.hasOwnProperty('24HoursTradingVolume')) {
+                obj['24HoursTradingVolume'] = ApiClient.convertToType(data['24HoursTradingVolume'], 'String');
+            }
+            if (data.hasOwnProperty('assetType')) {
+                obj['assetType'] = ApiClient.convertToType(data['assetType'], 'String');
+            }
+            if (data.hasOwnProperty('circulatingSupply')) {
+                obj['circulatingSupply'] = ApiClient.convertToType(data['circulatingSupply'], 'String');
+            }
+            if (data.hasOwnProperty('marketCapInUSD')) {
+                obj['marketCapInUSD'] = ApiClient.convertToType(data['marketCapInUSD'], 'String');
+            }
+            if (data.hasOwnProperty('maxSupply')) {
+                obj['maxSupply'] = ApiClient.convertToType(data['maxSupply'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>GetAssetDetailsByAssetSymbolRISC</code>.
-     * @return {(module:model/GetAssetDetailsByAssetSymbolRISC)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>GetAssetDetailsByAssetSymbolRISC</code>.
-     * @param {(module:model/GetAssetDetailsByAssetSymbolRISC)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = GetAssetDetailsByAssetSymbolRIS.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of GetAssetDetailsByAssetSymbolRIS from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/GetAssetDetailsByAssetSymbolRIS} An instance of GetAssetDetailsByAssetSymbolRIS.
-     */
-    static fromJSON = function(json_string){
-        return GetAssetDetailsByAssetSymbolRIS.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -154,7 +147,71 @@ GetAssetDetailsByAssetSymbolRIS.prototype['marketCapInUSD'] = undefined;
 GetAssetDetailsByAssetSymbolRIS.prototype['maxSupply'] = undefined;
 
 
-GetAssetDetailsByAssetSymbolRIS.OneOf = ["GetAssetDetailsByAssetSymbolRISC"];
+// Implement GetAssetDetailsByAssetSymbolRISC interface:
+/**
+ * Represents the percentage of the asset's current price against the its price from 1 hour ago.
+ * @member {String} 1HourPriceChangeInPercentage
+ */
+GetAssetDetailsByAssetSymbolRISC.prototype['1HourPriceChangeInPercentage'] = undefined;
+/**
+ * Represents the percentage of the asset's current price against the its price from 1 week ago.
+ * @member {String} 1WeekPriceChangeInPercentage
+ */
+GetAssetDetailsByAssetSymbolRISC.prototype['1WeekPriceChangeInPercentage'] = undefined;
+/**
+ * Represents the percentage of the asset's current price against the its price from 24 hours ago.
+ * @member {String} 24HoursPriceChangeInPercentage
+ */
+GetAssetDetailsByAssetSymbolRISC.prototype['24HoursPriceChangeInPercentage'] = undefined;
+/**
+ * Represents the trading volume of the asset for the time frame of 24 hours.
+ * @member {String} 24HoursTradingVolume
+ */
+GetAssetDetailsByAssetSymbolRISC.prototype['24HoursTradingVolume'] = undefined;
+/**
+ * Defines the type of the supported asset. This could be either \"crypto\" or \"fiat\".
+ * @member {module:model/GetAssetDetailsByAssetSymbolRISC.AssetTypeEnum} assetType
+ */
+GetAssetDetailsByAssetSymbolRISC.prototype['assetType'] = undefined;
+/**
+ * Represents the amount of the asset that is circulating on the market and in public hands.
+ * @member {String} circulatingSupply
+ */
+GetAssetDetailsByAssetSymbolRISC.prototype['circulatingSupply'] = undefined;
+/**
+ * Defines the total market value of the asset's circulating supply in USD.
+ * @member {String} marketCapInUSD
+ */
+GetAssetDetailsByAssetSymbolRISC.prototype['marketCapInUSD'] = undefined;
+/**
+ * Represents the maximum amount of all coins of a specific asset that will ever exist in its lifetime.
+ * @member {String} maxSupply
+ */
+GetAssetDetailsByAssetSymbolRISC.prototype['maxSupply'] = undefined;
+
+
+
+/**
+ * Allowed values for the <code>assetType</code> property.
+ * @enum {String}
+ * @readonly
+ */
+GetAssetDetailsByAssetSymbolRIS['AssetTypeEnum'] = {
+
+    /**
+     * value: "coin"
+     * @const
+     */
+    "coin": "coin",
+
+    /**
+     * value: "token"
+     * @const
+     */
+    "token": "token"
+};
+
+
 
 export default GetAssetDetailsByAssetSymbolRIS;
 

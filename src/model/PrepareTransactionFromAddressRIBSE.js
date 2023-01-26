@@ -17,7 +17,7 @@ import PrepareTransactionFromAddressRIBSBSCFee from './PrepareTransactionFromAdd
 /**
  * The PrepareTransactionFromAddressRIBSE model module.
  * @module model/PrepareTransactionFromAddressRIBSE
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareTransactionFromAddressRIBSE {
     /**
@@ -68,38 +68,8 @@ class PrepareTransactionFromAddressRIBSE {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareTransactionFromAddressRIBSE</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareTransactionFromAddressRIBSE</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareTransactionFromAddressRIBSE.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `fee`
-        if (data['fee']) { // data not null
-          PrepareTransactionFromAddressRIBSBSCFee.validateJSON(data['fee']);
-        }
-        // ensure the json data is a string
-        if (data['transactionType'] && !(typeof data['transactionType'] === 'string' || data['transactionType'] instanceof String)) {
-            throw new Error("Expected the field `transactionType` to be a primitive type in the JSON string but got " + data['transactionType']);
-        }
-        // ensure the json data is a string
-        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
-            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareTransactionFromAddressRIBSE.RequiredProperties = ["fee", "transactionType", "unit"];
 
 /**
  * @member {module:model/PrepareTransactionFromAddressRIBSBSCFee} fee

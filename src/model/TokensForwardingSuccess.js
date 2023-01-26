@@ -17,7 +17,7 @@ import TokensForwardingSuccessData from './TokensForwardingSuccessData';
 /**
  * The TokensForwardingSuccess model module.
  * @module model/TokensForwardingSuccess
- * @version 1.11.0
+ * @version 1.12.0
  */
 class TokensForwardingSuccess {
     /**
@@ -72,42 +72,8 @@ class TokensForwardingSuccess {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>TokensForwardingSuccess</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>TokensForwardingSuccess</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of TokensForwardingSuccess.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['apiVersion'] && !(typeof data['apiVersion'] === 'string' || data['apiVersion'] instanceof String)) {
-            throw new Error("Expected the field `apiVersion` to be a primitive type in the JSON string but got " + data['apiVersion']);
-        }
-        // ensure the json data is a string
-        if (data['referenceId'] && !(typeof data['referenceId'] === 'string' || data['referenceId'] instanceof String)) {
-            throw new Error("Expected the field `referenceId` to be a primitive type in the JSON string but got " + data['referenceId']);
-        }
-        // ensure the json data is a string
-        if (data['idempotencyKey'] && !(typeof data['idempotencyKey'] === 'string' || data['idempotencyKey'] instanceof String)) {
-            throw new Error("Expected the field `idempotencyKey` to be a primitive type in the JSON string but got " + data['idempotencyKey']);
-        }
-        // validate the optional field `data`
-        if (data['data']) { // data not null
-          TokensForwardingSuccessData.validateJSON(data['data']);
-        }
-
-        return true;
-    }
-
 
 }
-
-TokensForwardingSuccess.RequiredProperties = ["apiVersion", "referenceId", "idempotencyKey", "data"];
 
 /**
  * Specifies the version of the API that incorporates this endpoint.

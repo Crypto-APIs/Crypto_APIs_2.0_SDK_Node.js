@@ -22,7 +22,7 @@ import ListXRPRippleTransactionsByBlockHeightRIValue from './ListXRPRippleTransa
 /**
  * The ListXRPRippleTransactionsByBlockHeightRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListXRPRippleTransactionsByBlockHeightRI {
     /**
@@ -128,82 +128,8 @@ class ListXRPRippleTransactionsByBlockHeightRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListXRPRippleTransactionsByBlockHeightRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListXRPRippleTransactionsByBlockHeightRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListXRPRippleTransactionsByBlockHeightRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['additionalData'] && !(typeof data['additionalData'] === 'string' || data['additionalData'] instanceof String)) {
-            throw new Error("Expected the field `additionalData` to be a primitive type in the JSON string but got " + data['additionalData']);
-        }
-        // ensure the json data is a string
-        if (data['minedInBlockHash'] && !(typeof data['minedInBlockHash'] === 'string' || data['minedInBlockHash'] instanceof String)) {
-            throw new Error("Expected the field `minedInBlockHash` to be a primitive type in the JSON string but got " + data['minedInBlockHash']);
-        }
-        if (data['recipients']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['recipients'])) {
-                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
-            }
-            // validate the optional field `recipients` (array)
-            for (const item of data['recipients']) {
-                ListXRPRippleTransactionsByBlockHeightRIRecipientsInner.validateJsonObject(item);
-            };
-        }
-        if (data['senders']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['senders'])) {
-                throw new Error("Expected the field `senders` to be an array in the JSON data but got " + data['senders']);
-            }
-            // validate the optional field `senders` (array)
-            for (const item of data['senders']) {
-                ListXRPRippleTransactionsByBlockHeightRISendersInner.validateJsonObject(item);
-            };
-        }
-        // ensure the json data is a string
-        if (data['status'] && !(typeof data['status'] === 'string' || data['status'] instanceof String)) {
-            throw new Error("Expected the field `status` to be a primitive type in the JSON string but got " + data['status']);
-        }
-        // ensure the json data is a string
-        if (data['transactionHash'] && !(typeof data['transactionHash'] === 'string' || data['transactionHash'] instanceof String)) {
-            throw new Error("Expected the field `transactionHash` to be a primitive type in the JSON string but got " + data['transactionHash']);
-        }
-        // ensure the json data is a string
-        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
-            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
-        }
-        // validate the optional field `fee`
-        if (data['fee']) { // data not null
-          ListXRPRippleTransactionsByBlockHeightRIFee.validateJSON(data['fee']);
-        }
-        // validate the optional field `offer`
-        if (data['offer']) { // data not null
-          ListXRPRippleTransactionsByBlockHeightRIOffer.validateJSON(data['offer']);
-        }
-        // validate the optional field `receive`
-        if (data['receive']) { // data not null
-          ListXRPRippleTransactionsByBlockHeightRIReceive.validateJSON(data['receive']);
-        }
-        // validate the optional field `value`
-        if (data['value']) { // data not null
-          ListXRPRippleTransactionsByBlockHeightRIValue.validateJSON(data['value']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListXRPRippleTransactionsByBlockHeightRI.RequiredProperties = ["index", "minedInBlockHash", "recipients", "senders", "sequence", "status", "timestamp", "transactionHash", "type", "fee", "offer", "receive", "value"];
 
 /**
  * @member {String} additionalData

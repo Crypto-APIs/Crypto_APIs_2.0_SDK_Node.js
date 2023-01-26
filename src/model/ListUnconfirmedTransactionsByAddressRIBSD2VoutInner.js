@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSD2VoutInnerScriptPubKey from './Lis
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSD2VoutInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSD2VoutInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSD2VoutInner {
     /**
@@ -67,34 +67,8 @@ class ListUnconfirmedTransactionsByAddressRIBSD2VoutInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListUnconfirmedTransactionsByAddressRIBSD2VoutInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListUnconfirmedTransactionsByAddressRIBSD2VoutInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListUnconfirmedTransactionsByAddressRIBSD2VoutInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `scriptPubKey`
-        if (data['scriptPubKey']) { // data not null
-          ListConfirmedTransactionsByAddressRIBSD2VoutInnerScriptPubKey.validateJSON(data['scriptPubKey']);
-        }
-        // ensure the json data is a string
-        if (data['value'] && !(typeof data['value'] === 'string' || data['value'] instanceof String)) {
-            throw new Error("Expected the field `value` to be a primitive type in the JSON string but got " + data['value']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListUnconfirmedTransactionsByAddressRIBSD2VoutInner.RequiredProperties = ["isSpent", "scriptPubKey", "value"];
 
 /**
  * Defines whether the output is spent or not.

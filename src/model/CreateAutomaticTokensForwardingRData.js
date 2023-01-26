@@ -17,7 +17,7 @@ import CreateAutomaticTokensForwardingRI from './CreateAutomaticTokensForwarding
 /**
  * The CreateAutomaticTokensForwardingRData model module.
  * @module model/CreateAutomaticTokensForwardingRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateAutomaticTokensForwardingRData {
     /**
@@ -57,30 +57,8 @@ class CreateAutomaticTokensForwardingRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>CreateAutomaticTokensForwardingRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateAutomaticTokensForwardingRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of CreateAutomaticTokensForwardingRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          CreateAutomaticTokensForwardingRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-CreateAutomaticTokensForwardingRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/CreateAutomaticTokensForwardingRI} item

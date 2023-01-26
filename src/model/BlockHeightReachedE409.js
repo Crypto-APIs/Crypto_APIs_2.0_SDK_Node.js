@@ -19,62 +19,30 @@ import InvalidData from './InvalidData';
 /**
  * The BlockHeightReachedE409 model module.
  * @module model/BlockHeightReachedE409
- * @version 1.11.0
+ * @version 1.12.0
  */
 class BlockHeightReachedE409 {
     /**
      * Constructs a new <code>BlockHeightReachedE409</code>.
      * @alias module:model/BlockHeightReachedE409
-     * @param {(module:model/AlreadyExists|module:model/InvalidData)} instance The actual instance to initialize BlockHeightReachedE409.
+     * @implements module:model/InvalidData
+     * @implements module:model/AlreadyExists
+     * @param code {String} Specifies an error code, e.g. error 404.
+     * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "InvalidData") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                InvalidData.validateJSON(instance); // throw an exception if no match
-                // create InvalidData from JS object
-                this.actualInstance = InvalidData.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into InvalidData
-            errorMessages.push("Failed to construct InvalidData: " + err)
-        }
+    constructor(code, message) { 
+        InvalidData.initialize(this, code, message);AlreadyExists.initialize(this, code, message);
+        BlockHeightReachedE409.initialize(this, code, message);
+    }
 
-        try {
-            if (typeof instance === "AlreadyExists") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AlreadyExists.validateJSON(instance); // throw an exception if no match
-                // create AlreadyExists from JS object
-                this.actualInstance = AlreadyExists.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AlreadyExists
-            errorMessages.push("Failed to construct AlreadyExists: " + err)
-        }
-
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `BlockHeightReachedE409` with oneOf schemas AlreadyExists, InvalidData. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `BlockHeightReachedE409` with oneOf schemas AlreadyExists, InvalidData. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, code, message) { 
+        obj['code'] = code;
+        obj['message'] = message;
     }
 
     /**
@@ -85,41 +53,25 @@ class BlockHeightReachedE409 {
      * @return {module:model/BlockHeightReachedE409} The populated <code>BlockHeightReachedE409</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new BlockHeightReachedE409(data);
+        if (data) {
+            obj = obj || new BlockHeightReachedE409();
+            InvalidData.constructFromObject(data, obj);
+            AlreadyExists.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('code')) {
+                obj['code'] = ApiClient.convertToType(data['code'], 'String');
+            }
+            if (data.hasOwnProperty('message')) {
+                obj['message'] = ApiClient.convertToType(data['message'], 'String');
+            }
+            if (data.hasOwnProperty('details')) {
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>AlreadyExists</code>, <code>InvalidData</code>.
-     * @return {(module:model/AlreadyExists|module:model/InvalidData)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>AlreadyExists</code>, <code>InvalidData</code>.
-     * @param {(module:model/AlreadyExists|module:model/InvalidData)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = BlockHeightReachedE409.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of BlockHeightReachedE409 from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/BlockHeightReachedE409} An instance of BlockHeightReachedE409.
-     */
-    static fromJSON = function(json_string){
-        return BlockHeightReachedE409.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -140,7 +92,39 @@ BlockHeightReachedE409.prototype['message'] = undefined;
 BlockHeightReachedE409.prototype['details'] = undefined;
 
 
-BlockHeightReachedE409.OneOf = ["AlreadyExists", "InvalidData"];
+// Implement InvalidData interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+InvalidData.prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+InvalidData.prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+InvalidData.prototype['details'] = undefined;
+// Implement AlreadyExists interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+AlreadyExists.prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+AlreadyExists.prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+AlreadyExists.prototype['details'] = undefined;
+
+
+
 
 export default BlockHeightReachedE409;
 

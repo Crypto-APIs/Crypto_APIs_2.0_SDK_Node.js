@@ -17,7 +17,7 @@ import GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInnerScriptPubKey fro
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner {
     /**
@@ -67,34 +67,8 @@ class GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `scriptPubKey`
-        if (data['scriptPubKey']) { // data not null
-          GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInnerScriptPubKey.validateJSON(data['scriptPubKey']);
-        }
-        // ensure the json data is a string
-        if (data['value'] && !(typeof data['value'] === 'string' || data['value'] instanceof String)) {
-            throw new Error("Expected the field `value` to be a primitive type in the JSON string but got " + data['value']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetWalletTransactionDetailsByTransactionIDRIBSBCVoutInner.RequiredProperties = ["isSpent", "scriptPubKey", "value"];
 
 /**
  * Defines whether the output is spent or not.

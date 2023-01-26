@@ -17,7 +17,7 @@ import GetZilliqaAddressDetailsRIBalance from './GetZilliqaAddressDetailsRIBalan
 /**
  * The GetZilliqaAddressDetailsRI model module.
  * @module model/GetZilliqaAddressDetailsRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetZilliqaAddressDetailsRI {
     /**
@@ -72,30 +72,8 @@ class GetZilliqaAddressDetailsRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetZilliqaAddressDetailsRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetZilliqaAddressDetailsRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetZilliqaAddressDetailsRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `balance`
-        if (data['balance']) { // data not null
-          GetZilliqaAddressDetailsRIBalance.validateJSON(data['balance']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetZilliqaAddressDetailsRI.RequiredProperties = ["balance", "incomingTransactionsCount", "outgoingTransactionsCount", "transactionsCount"];
 
 /**
  * @member {module:model/GetZilliqaAddressDetailsRIBalance} balance

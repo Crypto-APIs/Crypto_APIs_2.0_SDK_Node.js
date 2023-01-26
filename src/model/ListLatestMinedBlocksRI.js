@@ -17,7 +17,7 @@ import ListLatestMinedBlocksRIBS from './ListLatestMinedBlocksRIBS';
 /**
  * The ListLatestMinedBlocksRI model module.
  * @module model/ListLatestMinedBlocksRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListLatestMinedBlocksRI {
     /**
@@ -82,38 +82,8 @@ class ListLatestMinedBlocksRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListLatestMinedBlocksRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListLatestMinedBlocksRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListLatestMinedBlocksRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['hash'] && !(typeof data['hash'] === 'string' || data['hash'] instanceof String)) {
-            throw new Error("Expected the field `hash` to be a primitive type in the JSON string but got " + data['hash']);
-        }
-        // ensure the json data is a string
-        if (data['previousBlockHash'] && !(typeof data['previousBlockHash'] === 'string' || data['previousBlockHash'] instanceof String)) {
-            throw new Error("Expected the field `previousBlockHash` to be a primitive type in the JSON string but got " + data['previousBlockHash']);
-        }
-        // validate the optional field `blockchainSpecific`
-        if (data['blockchainSpecific']) { // data not null
-          ListLatestMinedBlocksRIBS.validateJSON(data['blockchainSpecific']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListLatestMinedBlocksRI.RequiredProperties = ["hash", "height", "previousBlockHash", "timestamp", "transactionsCount", "blockchainSpecific"];
 
 /**
  * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.

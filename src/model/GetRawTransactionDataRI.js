@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetRawTransactionDataRI model module.
  * @module model/GetRawTransactionDataRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetRawTransactionDataRI {
     /**
@@ -56,30 +56,8 @@ class GetRawTransactionDataRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetRawTransactionDataRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetRawTransactionDataRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetRawTransactionDataRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['transactionHex'] && !(typeof data['transactionHex'] === 'string' || data['transactionHex'] instanceof String)) {
-            throw new Error("Expected the field `transactionHex` to be a primitive type in the JSON string but got " + data['transactionHex']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetRawTransactionDataRI.RequiredProperties = ["transactionHex"];
 
 /**
  * Represents the raw transaction data in hexadecimal format.

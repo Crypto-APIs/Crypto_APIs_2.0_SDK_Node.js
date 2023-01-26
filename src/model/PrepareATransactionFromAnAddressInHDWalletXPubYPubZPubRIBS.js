@@ -15,118 +15,44 @@ import ApiClient from '../ApiClient';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC from './PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE from './PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC from './PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST from './PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData from './PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX from './PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX';
-import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee from './PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee from './PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee';
 
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS {
     /**
      * Constructs a new <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS</code>.
      * @alias module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS
-     * @param {(module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX)} instance The actual instance to initialize PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.
+     * @implements module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC
+     * @implements module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC
+     * @implements module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE
+     * @param dataHex {String} Representation of the data in hex value
+     * @param derivationIndex {Number} Representation of the derivation index of the xpub address
+     * @param fee {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee} 
+     * @param nonce {String} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+     * @param transactionType {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.TransactionTypeEnum} Representation of the transaction type
+     * @param unit {String} Represents the unit of the amount to be sent.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.validateJSON(instance); // throw an exception if no match
-                // create PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE from JS object
-                this.actualInstance = PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE
-            errorMessages.push("Failed to construct PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE: " + err)
-        }
+    constructor(dataHex, derivationIndex, fee, nonce, transactionType, unit) { 
+        PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.initialize(this, dataHex, derivationIndex, fee, nonce, transactionType, unit);PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.initialize(this, dataHex, derivationIndex, fee, nonce, transactionType, unit);PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.initialize(this, dataHex, derivationIndex, fee, nonce, transactionType, unit);
+        PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.initialize(this, dataHex, derivationIndex, fee, nonce, transactionType, unit);
+    }
 
-        try {
-            if (typeof instance === "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.validateJSON(instance); // throw an exception if no match
-                // create PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC from JS object
-                this.actualInstance = PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC
-            errorMessages.push("Failed to construct PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC: " + err)
-        }
-
-        try {
-            if (typeof instance === "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.validateJSON(instance); // throw an exception if no match
-                // create PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC from JS object
-                this.actualInstance = PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC
-            errorMessages.push("Failed to construct PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC: " + err)
-        }
-
-        try {
-            if (typeof instance === "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST.validateJSON(instance); // throw an exception if no match
-                // create PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST from JS object
-                this.actualInstance = PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST
-            errorMessages.push("Failed to construct PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST: " + err)
-        }
-
-        try {
-            if (typeof instance === "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX.validateJSON(instance); // throw an exception if no match
-                // create PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX from JS object
-                this.actualInstance = PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX
-            errorMessages.push("Failed to construct PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX: " + err)
-        }
-
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS` with oneOf schemas PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC, PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE, PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC, PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST, PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS` with oneOf schemas PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC, PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE, PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC, PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST, PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, dataHex, derivationIndex, fee, nonce, transactionType, unit) { 
+        obj['dataHex'] = dataHex;
+        obj['derivationIndex'] = derivationIndex;
+        obj['fee'] = fee;
+        obj['nonce'] = nonce;
+        obj['transactionType'] = transactionType;
+        obj['unit'] = unit;
     }
 
     /**
@@ -137,41 +63,35 @@ class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS {
      * @return {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS} The populated <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS(data);
+        if (data) {
+            obj = obj || new PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS();
+            PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.constructFromObject(data, obj);
+            PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.constructFromObject(data, obj);
+            PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('dataHex')) {
+                obj['dataHex'] = ApiClient.convertToType(data['dataHex'], 'String');
+            }
+            if (data.hasOwnProperty('derivationIndex')) {
+                obj['derivationIndex'] = ApiClient.convertToType(data['derivationIndex'], 'Number');
+            }
+            if (data.hasOwnProperty('fee')) {
+                obj['fee'] = PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee.constructFromObject(data['fee']);
+            }
+            if (data.hasOwnProperty('nonce')) {
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
+            }
+            if (data.hasOwnProperty('transactionType')) {
+                obj['transactionType'] = ApiClient.convertToType(data['transactionType'], 'String');
+            }
+            if (data.hasOwnProperty('unit')) {
+                obj['unit'] = ApiClient.convertToType(data['unit'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC</code>, <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE</code>, <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC</code>, <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST</code>, <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX</code>.
-     * @return {(module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC</code>, <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE</code>, <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC</code>, <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST</code>, <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX</code>.
-     * @param {(module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST|module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS} An instance of PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.
-     */
-    static fromJSON = function(json_string){
-        return PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -187,7 +107,7 @@ PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['dataHex'] 
 PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['derivationIndex'] = undefined;
 
 /**
- * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee} fee
+ * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee} fee
  */
 PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['fee'] = undefined;
 
@@ -209,97 +129,121 @@ PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['transactio
  */
 PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['unit'] = undefined;
 
+
+// Implement PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC interface:
 /**
- * String representation of the data
- * @member {String} data
+ * Representation of the data in hex value
+ * @member {String} dataHex
  */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['data'] = undefined;
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.prototype['dataHex'] = undefined;
+/**
+ * Representation of the derivation index of the xpub address
+ * @member {Number} derivationIndex
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.prototype['derivationIndex'] = undefined;
+/**
+ * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee} fee
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.prototype['fee'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {String} nonce
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.prototype['nonce'] = undefined;
+/**
+ * Representation of the transaction type
+ * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.TransactionTypeEnum} transactionType
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.prototype['transactionType'] = undefined;
+/**
+ * Represents the unit of the amount to be sent.
+ * @member {String} unit
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC.prototype['unit'] = undefined;
+// Implement PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC interface:
+/**
+ * Representation of the data in hex value
+ * @member {String} dataHex
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.prototype['dataHex'] = undefined;
+/**
+ * Representation of the derivation index of the xpub address
+ * @member {Number} derivationIndex
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.prototype['derivationIndex'] = undefined;
+/**
+ * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee} fee
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.prototype['fee'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {String} nonce
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.prototype['nonce'] = undefined;
+/**
+ * Representation of the transaction type
+ * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.TransactionTypeEnum} transactionType
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.prototype['transactionType'] = undefined;
+/**
+ * Represents the unit of the amount to be sent.
+ * @member {String} unit
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.prototype['unit'] = undefined;
+// Implement PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE interface:
+/**
+ * Representation of the data in hex value
+ * @member {String} dataHex
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.prototype['dataHex'] = undefined;
+/**
+ * Representation of the derivation index of the xpub address
+ * @member {Number} derivationIndex
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.prototype['derivationIndex'] = undefined;
+/**
+ * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee} fee
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.prototype['fee'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {String} nonce
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.prototype['nonce'] = undefined;
+/**
+ * Representation of the transaction type
+ * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.TransactionTypeEnum} transactionType
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.prototype['transactionType'] = undefined;
+/**
+ * Represents the unit of the amount to be sent.
+ * @member {String} unit
+ */
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE.prototype['unit'] = undefined;
+
+
 
 /**
- * Rrepresentation of the expiration value
- * @member {Number} expiration
+ * Allowed values for the <code>transactionType</code> property.
+ * @enum {String}
+ * @readonly
  */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['expiration'] = undefined;
+PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS['TransactionTypeEnum'] = {
 
-/**
- * @member {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData} rawData
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['rawData'] = undefined;
+    /**
+     * value: "legacy-transaction"
+     * @const
+     */
+    "legacy-transaction": "legacy-transaction",
 
-/**
- * Representation of the raw data in hex format
- * @member {String} rawDataHex
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['rawDataHex'] = undefined;
-
-/**
- * Rrepresentation of the recipients' address
- * @member {String} recipient
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['recipient'] = undefined;
-
-/**
- * Representation of the block bytes
- * @member {String} refBlockBytes
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['refBlockBytes'] = undefined;
-
-/**
- * Representation of the block hash refference
- * @member {String} refBlockHash
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['refBlockHash'] = undefined;
-
-/**
- * Representation of the sender
- * @member {String} sender
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['sender'] = undefined;
-
-/**
- * Representation of the timestamp
- * @member {Number} timestamp
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['timestamp'] = undefined;
-
-/**
- * Represents the reference transaction identifier.
- * @member {String} transactionId
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['transactionId'] = undefined;
-
-/**
- * Representation of the transfer type.
- * @member {String} type
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['type'] = undefined;
-
-/**
- * Representation of the URL
- * @member {String} typeUrl
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['typeUrl'] = undefined;
-
-/**
- * Representation of the address visibility
- * @member {Boolean} visible
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['visible'] = undefined;
-
-/**
- * Representation of the public key.
- * @member {String} publicKey
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['publicKey'] = undefined;
-
-/**
- * Representation of the sequence
- * @member {String} sequence
- */
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.prototype['sequence'] = undefined;
+    /**
+     * value: "access-list-transaction"
+     * @const
+     */
+    "access-list-transaction": "access-list-transaction"
+};
 
 
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS.OneOf = ["PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSC", "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE", "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC", "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST", "PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX"];
 
 export default PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBS;
 

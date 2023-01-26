@@ -17,7 +17,7 @@ import EncodeXAddressRI from './EncodeXAddressRI';
 /**
  * The EncodeXAddressRData model module.
  * @module model/EncodeXAddressRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class EncodeXAddressRData {
     /**
@@ -57,30 +57,8 @@ class EncodeXAddressRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>EncodeXAddressRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>EncodeXAddressRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of EncodeXAddressRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          EncodeXAddressRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-EncodeXAddressRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/EncodeXAddressRI} item

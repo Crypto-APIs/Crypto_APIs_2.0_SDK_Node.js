@@ -17,7 +17,7 @@ import DecodeRawTransactionHexRISBVinInnerScriptSig from './DecodeRawTransaction
 /**
  * The DecodeRawTransactionHexRISBVinInner model module.
  * @module model/DecodeRawTransactionHexRISBVinInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class DecodeRawTransactionHexRISBVinInner {
     /**
@@ -72,46 +72,8 @@ class DecodeRawTransactionHexRISBVinInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>DecodeRawTransactionHexRISBVinInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DecodeRawTransactionHexRISBVinInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of DecodeRawTransactionHexRISBVinInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
-            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
-        }
-        // ensure the json data is a string
-        if (data['inputHash'] && !(typeof data['inputHash'] === 'string' || data['inputHash'] instanceof String)) {
-            throw new Error("Expected the field `inputHash` to be a primitive type in the JSON string but got " + data['inputHash']);
-        }
-        // validate the optional field `scriptSig`
-        if (data['scriptSig']) { // data not null
-          DecodeRawTransactionHexRISBVinInnerScriptSig.validateJSON(data['scriptSig']);
-        }
-        // ensure the json data is a string
-        if (data['sequence'] && !(typeof data['sequence'] === 'string' || data['sequence'] instanceof String)) {
-            throw new Error("Expected the field `sequence` to be a primitive type in the JSON string but got " + data['sequence']);
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['txinwitness'])) {
-            throw new Error("Expected the field `txinwitness` to be an array in the JSON data but got " + data['txinwitness']);
-        }
-
-        return true;
-    }
-
 
 }
-
-DecodeRawTransactionHexRISBVinInner.RequiredProperties = ["scriptSig"];
 
 /**
  * Represents the address which send/receive the amount.

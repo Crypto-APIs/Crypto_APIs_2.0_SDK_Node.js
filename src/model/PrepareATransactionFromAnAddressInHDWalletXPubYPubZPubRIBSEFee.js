@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee {
     /**
@@ -72,42 +72,8 @@ class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
-            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
-        }
-        // ensure the json data is a string
-        if (data['gasPrice'] && !(typeof data['gasPrice'] === 'string' || data['gasPrice'] instanceof String)) {
-            throw new Error("Expected the field `gasPrice` to be a primitive type in the JSON string but got " + data['gasPrice']);
-        }
-        // ensure the json data is a string
-        if (data['maxFeePerGas'] && !(typeof data['maxFeePerGas'] === 'string' || data['maxFeePerGas'] instanceof String)) {
-            throw new Error("Expected the field `maxFeePerGas` to be a primitive type in the JSON string but got " + data['maxFeePerGas']);
-        }
-        // ensure the json data is a string
-        if (data['maxPriorityFeePerGas'] && !(typeof data['maxPriorityFeePerGas'] === 'string' || data['maxPriorityFeePerGas'] instanceof String)) {
-            throw new Error("Expected the field `maxPriorityFeePerGas` to be a primitive type in the JSON string but got " + data['maxPriorityFeePerGas']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee.RequiredProperties = ["gasLimit", "gasPrice", "maxFeePerGas", "maxPriorityFeePerGas"];
 
 /**
  * Represents the amount of gas used by this specific transaction alone.

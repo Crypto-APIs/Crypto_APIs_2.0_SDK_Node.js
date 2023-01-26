@@ -55,7 +55,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * Zilliqa service.
 * @module api/ZilliqaApi
-* @version 1.11.0
+* @version 1.12.0
 */
 var ZilliqaApi = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetHDWalletXPubYPubZPubDetailsRI model module.
  * @module model/GetHDWalletXPubYPubZPubDetailsRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetHDWalletXPubYPubZPubDetailsRI {
     /**
@@ -62,38 +62,8 @@ class GetHDWalletXPubYPubZPubDetailsRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetHDWalletXPubYPubZPubDetailsRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetHDWalletXPubYPubZPubDetailsRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetHDWalletXPubYPubZPubDetailsRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['confirmedBalance'] && !(typeof data['confirmedBalance'] === 'string' || data['confirmedBalance'] instanceof String)) {
-            throw new Error("Expected the field `confirmedBalance` to be a primitive type in the JSON string but got " + data['confirmedBalance']);
-        }
-        // ensure the json data is a string
-        if (data['totalReceived'] && !(typeof data['totalReceived'] === 'string' || data['totalReceived'] instanceof String)) {
-            throw new Error("Expected the field `totalReceived` to be a primitive type in the JSON string but got " + data['totalReceived']);
-        }
-        // ensure the json data is a string
-        if (data['totalSpent'] && !(typeof data['totalSpent'] === 'string' || data['totalSpent'] instanceof String)) {
-            throw new Error("Expected the field `totalSpent` to be a primitive type in the JSON string but got " + data['totalSpent']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetHDWalletXPubYPubZPubDetailsRI.RequiredProperties = ["confirmedBalance"];
 
 /**
  * Specifies the confirmed coins balance of the Wallet.

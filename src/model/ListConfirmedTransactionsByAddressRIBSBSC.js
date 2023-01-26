@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressRIBSBSCGasPrice from './ListConfirmedTr
 /**
  * The ListConfirmedTransactionsByAddressRIBSBSC model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSBSC
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListConfirmedTransactionsByAddressRIBSBSC {
     /**
@@ -27,15 +27,14 @@ class ListConfirmedTransactionsByAddressRIBSBSC {
      * @param gasLimit {String} Represents the amount of gas used by this specific transaction alone.
      * @param gasPrice {module:model/ListConfirmedTransactionsByAddressRIBSBSCGasPrice} 
      * @param gasUsed {String} Represents the exact unit of gas that was used for the transaction.
-     * @param inputData {String} Represents additional information that is required for the transaction.
      * @param internalTransactionsCount {Number} Represents the total internal transactions count.
      * @param nonce {Number} Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
      * @param tokenTransfersCount {Number} Represents the total token transfers count.
      * @param transactionStatus {String} String representation of the transaction status
      */
-    constructor(gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus) { 
+    constructor(gasLimit, gasPrice, gasUsed, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus) { 
         
-        ListConfirmedTransactionsByAddressRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);
+        ListConfirmedTransactionsByAddressRIBSBSC.initialize(this, gasLimit, gasPrice, gasUsed, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus);
     }
 
     /**
@@ -43,11 +42,10 @@ class ListConfirmedTransactionsByAddressRIBSBSC {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, gasLimit, gasPrice, gasUsed, inputData, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus) { 
+    static initialize(obj, gasLimit, gasPrice, gasUsed, internalTransactionsCount, nonce, tokenTransfersCount, transactionStatus) { 
         obj['gasLimit'] = gasLimit;
         obj['gasPrice'] = gasPrice;
         obj['gasUsed'] = gasUsed;
-        obj['inputData'] = inputData;
         obj['internalTransactionsCount'] = internalTransactionsCount;
         obj['nonce'] = nonce;
         obj['tokenTransfersCount'] = tokenTransfersCount;
@@ -96,50 +94,8 @@ class ListConfirmedTransactionsByAddressRIBSBSC {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListConfirmedTransactionsByAddressRIBSBSC</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListConfirmedTransactionsByAddressRIBSBSC</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListConfirmedTransactionsByAddressRIBSBSC.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['contract'] && !(typeof data['contract'] === 'string' || data['contract'] instanceof String)) {
-            throw new Error("Expected the field `contract` to be a primitive type in the JSON string but got " + data['contract']);
-        }
-        // ensure the json data is a string
-        if (data['gasLimit'] && !(typeof data['gasLimit'] === 'string' || data['gasLimit'] instanceof String)) {
-            throw new Error("Expected the field `gasLimit` to be a primitive type in the JSON string but got " + data['gasLimit']);
-        }
-        // validate the optional field `gasPrice`
-        if (data['gasPrice']) { // data not null
-          ListConfirmedTransactionsByAddressRIBSBSCGasPrice.validateJSON(data['gasPrice']);
-        }
-        // ensure the json data is a string
-        if (data['gasUsed'] && !(typeof data['gasUsed'] === 'string' || data['gasUsed'] instanceof String)) {
-            throw new Error("Expected the field `gasUsed` to be a primitive type in the JSON string but got " + data['gasUsed']);
-        }
-        // ensure the json data is a string
-        if (data['inputData'] && !(typeof data['inputData'] === 'string' || data['inputData'] instanceof String)) {
-            throw new Error("Expected the field `inputData` to be a primitive type in the JSON string but got " + data['inputData']);
-        }
-        // ensure the json data is a string
-        if (data['transactionStatus'] && !(typeof data['transactionStatus'] === 'string' || data['transactionStatus'] instanceof String)) {
-            throw new Error("Expected the field `transactionStatus` to be a primitive type in the JSON string but got " + data['transactionStatus']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListConfirmedTransactionsByAddressRIBSBSC.RequiredProperties = ["gasLimit", "gasPrice", "gasUsed", "inputData", "internalTransactionsCount", "nonce", "tokenTransfersCount", "transactionStatus"];
 
 /**
  * Represents the specific transaction contract.

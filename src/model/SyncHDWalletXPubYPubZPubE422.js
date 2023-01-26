@@ -19,62 +19,30 @@ import XpubSyncInProgress from './XpubSyncInProgress';
 /**
  * The SyncHDWalletXPubYPubZPubE422 model module.
  * @module model/SyncHDWalletXPubYPubZPubE422
- * @version 1.11.0
+ * @version 1.12.0
  */
 class SyncHDWalletXPubYPubZPubE422 {
     /**
      * Constructs a new <code>SyncHDWalletXPubYPubZPubE422</code>.
      * @alias module:model/SyncHDWalletXPubYPubZPubE422
-     * @param {(module:model/InvalidRequestBodyStructure|module:model/XpubSyncInProgress)} instance The actual instance to initialize SyncHDWalletXPubYPubZPubE422.
+     * @implements module:model/InvalidRequestBodyStructure
+     * @implements module:model/XpubSyncInProgress
+     * @param code {String} Specifies an error code, e.g. error 404.
+     * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "InvalidRequestBodyStructure") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                InvalidRequestBodyStructure.validateJSON(instance); // throw an exception if no match
-                // create InvalidRequestBodyStructure from JS object
-                this.actualInstance = InvalidRequestBodyStructure.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into InvalidRequestBodyStructure
-            errorMessages.push("Failed to construct InvalidRequestBodyStructure: " + err)
-        }
+    constructor(code, message) { 
+        InvalidRequestBodyStructure.initialize(this, code, message);XpubSyncInProgress.initialize(this, code, message);
+        SyncHDWalletXPubYPubZPubE422.initialize(this, code, message);
+    }
 
-        try {
-            if (typeof instance === "XpubSyncInProgress") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                XpubSyncInProgress.validateJSON(instance); // throw an exception if no match
-                // create XpubSyncInProgress from JS object
-                this.actualInstance = XpubSyncInProgress.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into XpubSyncInProgress
-            errorMessages.push("Failed to construct XpubSyncInProgress: " + err)
-        }
-
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `SyncHDWalletXPubYPubZPubE422` with oneOf schemas InvalidRequestBodyStructure, XpubSyncInProgress. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `SyncHDWalletXPubYPubZPubE422` with oneOf schemas InvalidRequestBodyStructure, XpubSyncInProgress. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, code, message) { 
+        obj['code'] = code;
+        obj['message'] = message;
     }
 
     /**
@@ -85,41 +53,25 @@ class SyncHDWalletXPubYPubZPubE422 {
      * @return {module:model/SyncHDWalletXPubYPubZPubE422} The populated <code>SyncHDWalletXPubYPubZPubE422</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new SyncHDWalletXPubYPubZPubE422(data);
+        if (data) {
+            obj = obj || new SyncHDWalletXPubYPubZPubE422();
+            InvalidRequestBodyStructure.constructFromObject(data, obj);
+            XpubSyncInProgress.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('code')) {
+                obj['code'] = ApiClient.convertToType(data['code'], 'String');
+            }
+            if (data.hasOwnProperty('message')) {
+                obj['message'] = ApiClient.convertToType(data['message'], 'String');
+            }
+            if (data.hasOwnProperty('details')) {
+                obj['details'] = ApiClient.convertToType(data['details'], [BannedIpAddressDetailsInner]);
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>InvalidRequestBodyStructure</code>, <code>XpubSyncInProgress</code>.
-     * @return {(module:model/InvalidRequestBodyStructure|module:model/XpubSyncInProgress)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>InvalidRequestBodyStructure</code>, <code>XpubSyncInProgress</code>.
-     * @param {(module:model/InvalidRequestBodyStructure|module:model/XpubSyncInProgress)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = SyncHDWalletXPubYPubZPubE422.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of SyncHDWalletXPubYPubZPubE422 from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/SyncHDWalletXPubYPubZPubE422} An instance of SyncHDWalletXPubYPubZPubE422.
-     */
-    static fromJSON = function(json_string){
-        return SyncHDWalletXPubYPubZPubE422.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -140,7 +92,39 @@ SyncHDWalletXPubYPubZPubE422.prototype['message'] = undefined;
 SyncHDWalletXPubYPubZPubE422.prototype['details'] = undefined;
 
 
-SyncHDWalletXPubYPubZPubE422.OneOf = ["InvalidRequestBodyStructure", "XpubSyncInProgress"];
+// Implement InvalidRequestBodyStructure interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+InvalidRequestBodyStructure.prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+InvalidRequestBodyStructure.prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+InvalidRequestBodyStructure.prototype['details'] = undefined;
+// Implement XpubSyncInProgress interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+XpubSyncInProgress.prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+XpubSyncInProgress.prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+XpubSyncInProgress.prototype['details'] = undefined;
+
+
+
 
 export default SyncHDWalletXPubYPubZPubE422;
 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The MinedTransactionRBDataItem model module.
  * @module model/MinedTransactionRBDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class MinedTransactionRBDataItem {
     /**
@@ -67,38 +67,8 @@ class MinedTransactionRBDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>MinedTransactionRBDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>MinedTransactionRBDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of MinedTransactionRBDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
-            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
-        }
-        // ensure the json data is a string
-        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
-            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
-        }
-        // ensure the json data is a string
-        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
-            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
-        }
-
-        return true;
-    }
-
 
 }
-
-MinedTransactionRBDataItem.RequiredProperties = ["callbackUrl", "transactionId"];
 
 /**
  * Specifies a flag that permits or denies the creation of duplicate addresses.

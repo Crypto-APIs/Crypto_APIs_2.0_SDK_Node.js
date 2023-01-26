@@ -79,7 +79,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * HDWallets service.
 * @module api/HDWalletsApi
-* @version 1.11.0
+* @version 1.12.0
 */
 var HDWalletsApi = /*#__PURE__*/function () {
   /**

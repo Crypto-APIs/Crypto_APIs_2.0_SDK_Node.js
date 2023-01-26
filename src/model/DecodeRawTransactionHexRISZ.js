@@ -18,7 +18,7 @@ import DecodeRawTransactionHexRISZVoutInner from './DecodeRawTransactionHexRISZV
 /**
  * The DecodeRawTransactionHexRISZ model module.
  * @module model/DecodeRawTransactionHexRISZ
- * @version 1.11.0
+ * @version 1.12.0
  */
 class DecodeRawTransactionHexRISZ {
     /**
@@ -104,58 +104,8 @@ class DecodeRawTransactionHexRISZ {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>DecodeRawTransactionHexRISZ</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>DecodeRawTransactionHexRISZ</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of DecodeRawTransactionHexRISZ.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['transactionHash'] && !(typeof data['transactionHash'] === 'string' || data['transactionHash'] instanceof String)) {
-            throw new Error("Expected the field `transactionHash` to be a primitive type in the JSON string but got " + data['transactionHash']);
-        }
-        // ensure the json data is a string
-        if (data['valueBalance'] && !(typeof data['valueBalance'] === 'string' || data['valueBalance'] instanceof String)) {
-            throw new Error("Expected the field `valueBalance` to be a primitive type in the JSON string but got " + data['valueBalance']);
-        }
-        // ensure the json data is a string
-        if (data['versionGroupId'] && !(typeof data['versionGroupId'] === 'string' || data['versionGroupId'] instanceof String)) {
-            throw new Error("Expected the field `versionGroupId` to be a primitive type in the JSON string but got " + data['versionGroupId']);
-        }
-        if (data['vin']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vin'])) {
-                throw new Error("Expected the field `vin` to be an array in the JSON data but got " + data['vin']);
-            }
-            // validate the optional field `vin` (array)
-            for (const item of data['vin']) {
-                DecodeRawTransactionHexRISZVinInner.validateJsonObject(item);
-            };
-        }
-        if (data['vout']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vout'])) {
-                throw new Error("Expected the field `vout` to be an array in the JSON data but got " + data['vout']);
-            }
-            // validate the optional field `vout` (array)
-            for (const item of data['vout']) {
-                DecodeRawTransactionHexRISZVoutInner.validateJsonObject(item);
-            };
-        }
-
-        return true;
-    }
-
 
 }
-
-DecodeRawTransactionHexRISZ.RequiredProperties = ["expiryHeight", "locktime", "overwintered", "saplinged", "transactionHash", "valueBalance", "version", "versionGroupId", "vin", "vout"];
 
 /**
  * Represents a block height after which the transaction will expire.

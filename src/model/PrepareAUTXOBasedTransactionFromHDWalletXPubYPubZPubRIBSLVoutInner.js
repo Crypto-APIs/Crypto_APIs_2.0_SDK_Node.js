@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner {
     /**
@@ -66,34 +66,8 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
-            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
-        }
-        // ensure the json data is a string
-        if (data['script'] && !(typeof data['script'] === 'string' || data['script'] instanceof String)) {
-            throw new Error("Expected the field `script` to be a primitive type in the JSON string but got " + data['script']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSLVoutInner.RequiredProperties = ["address", "satoshis", "script"];
 
 /**
  * Representation of the address

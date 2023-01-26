@@ -30,222 +30,88 @@ import GetLatestMinedXRPRippleBlockRITotalFees from './GetLatestMinedXRPRippleBl
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBS model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBS
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetBlockDetailsByBlockHeightFromCallbackRIBS {
     /**
      * Constructs a new <code>GetBlockDetailsByBlockHeightFromCallbackRIBS</code>.
      * @alias module:model/GetBlockDetailsByBlockHeightFromCallbackRIBS
-     * @param {(module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSB|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSBC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSBSC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSD|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSD2|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSE|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSEC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSL|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBST|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSX|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ2)} instance The actual instance to initialize GetBlockDetailsByBlockHeightFromCallbackRIBS.
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSB
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSBC
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSL
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSD
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSD2
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSE
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSBSC
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSEC
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSX
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ2
+     * @implements module:model/GetBlockDetailsByBlockHeightFromCallbackRIBST
+     * @param bits {String} Represents a specific sub-unit of Zcash. Bits have two-decimal precision
+     * @param chainwork {String} Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+     * @param difficulty {String} Defines how difficult it is for a specific miner to mine the block.
+     * @param merkleRoot {String} Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+     * @param nonce {String} Represents a random value that can be adjusted to satisfy the proof of work
+     * @param size {Number} Represents the total size of the block in Bytes.
+     * @param strippedSize {Number} Defines the numeric representation of the block size excluding the witness data.
+     * @param version {Number} Represents the transaction version number.
+     * @param versionHex {String} Is the hexadecimal string representation of the block's version.
+     * @param weight {Number} Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
+     * @param strippedsize {Number} Defines the numeric representation of the block size excluding the witness data.
+     * @param extraData {String} Represents any data that can be included by the miner in the block.
+     * @param gasLimit {Number} Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
+     * @param gasUsed {Number} Defines how much of the gas for the block has been used.
+     * @param minedInSeconds {Number} Specifies the amount of time required for the block to be mined in seconds.
+     * @param sha3Uncles {String} Defines the combined hash of all uncles for a given parent.
+     * @param totalDifficulty {String} Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
+     * @param dsBlock {Number} Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
+     * @param dsDifficulty {String} Defines how difficult it is to mine the dsBlocks.
+     * @param dsLeader {String} Represents a part of the DS Committee which leads the consensus protocol for the epoch.
+     * @param microBlocks {Array.<String>} 
+     * @param totalCoins {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} 
+     * @param totalFees {module:model/GetLatestMinedXRPRippleBlockRITotalFees} 
+     * @param bandwidthUsed {String} Represents the bandwidth used for the transaction.
+     * @param burnedTrx {String} Represents the block burned TRX.
+     * @param energyUsed {String} Representats the used energy for the transaction.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSB") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSB.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSB from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSB.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSB
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSB: " + err)
-        }
+    constructor(bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed) { 
+        GetBlockDetailsByBlockHeightFromCallbackRIBSB.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSBC.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);GetBlockDetailsByBlockHeightFromCallbackRIBSL.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedsize, version, versionHex, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSD.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, version, versionHex);GetBlockDetailsByBlockHeightFromCallbackRIBSD2.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, weight);GetBlockDetailsByBlockHeightFromCallbackRIBSE.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSEC.initialize(this, difficulty, extraData, gasLimit, gasUsed, minedInSeconds, nonce, sha3Uncles, size, totalDifficulty);GetBlockDetailsByBlockHeightFromCallbackRIBSZ.initialize(this, difficulty, dsBlock, dsDifficulty, dsLeader, gasLimit, gasUsed, microBlocks);GetBlockDetailsByBlockHeightFromCallbackRIBSX.initialize(this, totalCoins, totalFees);GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.initialize(this, bits, chainwork, merkleRoot, nonce, size, version);GetBlockDetailsByBlockHeightFromCallbackRIBST.initialize(this, bandwidthUsed, burnedTrx, energyUsed, size);
+        GetBlockDetailsByBlockHeightFromCallbackRIBS.initialize(this, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed);
+    }
 
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSBC") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSBC.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSBC from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSBC.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSBC
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSBC: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSL") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSL.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSL from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSL.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSL
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSL: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSD") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSD.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSD from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSD.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSD
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSD: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSD2") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSD2.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSD2 from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSD2.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSD2
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSD2: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSE") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSE.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSE from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSE.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSE
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSE: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSBSC") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSBSC from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSBSC
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSBSC: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSEC") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSEC.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSEC from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSEC.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSEC
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSEC: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSZ") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSZ.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSZ from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSZ.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSZ
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSZ: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSX") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSX.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSX from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSX.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSX
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSX: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBSZ2") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBSZ2 from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBSZ2
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBSZ2: " + err)
-        }
-
-        try {
-            if (typeof instance === "GetBlockDetailsByBlockHeightFromCallbackRIBST") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetBlockDetailsByBlockHeightFromCallbackRIBST.validateJSON(instance); // throw an exception if no match
-                // create GetBlockDetailsByBlockHeightFromCallbackRIBST from JS object
-                this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBST.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetBlockDetailsByBlockHeightFromCallbackRIBST
-            errorMessages.push("Failed to construct GetBlockDetailsByBlockHeightFromCallbackRIBST: " + err)
-        }
-
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `GetBlockDetailsByBlockHeightFromCallbackRIBS` with oneOf schemas GetBlockDetailsByBlockHeightFromCallbackRIBSB, GetBlockDetailsByBlockHeightFromCallbackRIBSBC, GetBlockDetailsByBlockHeightFromCallbackRIBSBSC, GetBlockDetailsByBlockHeightFromCallbackRIBSD, GetBlockDetailsByBlockHeightFromCallbackRIBSD2, GetBlockDetailsByBlockHeightFromCallbackRIBSE, GetBlockDetailsByBlockHeightFromCallbackRIBSEC, GetBlockDetailsByBlockHeightFromCallbackRIBSL, GetBlockDetailsByBlockHeightFromCallbackRIBST, GetBlockDetailsByBlockHeightFromCallbackRIBSX, GetBlockDetailsByBlockHeightFromCallbackRIBSZ, GetBlockDetailsByBlockHeightFromCallbackRIBSZ2. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `GetBlockDetailsByBlockHeightFromCallbackRIBS` with oneOf schemas GetBlockDetailsByBlockHeightFromCallbackRIBSB, GetBlockDetailsByBlockHeightFromCallbackRIBSBC, GetBlockDetailsByBlockHeightFromCallbackRIBSBSC, GetBlockDetailsByBlockHeightFromCallbackRIBSD, GetBlockDetailsByBlockHeightFromCallbackRIBSD2, GetBlockDetailsByBlockHeightFromCallbackRIBSE, GetBlockDetailsByBlockHeightFromCallbackRIBSEC, GetBlockDetailsByBlockHeightFromCallbackRIBSL, GetBlockDetailsByBlockHeightFromCallbackRIBST, GetBlockDetailsByBlockHeightFromCallbackRIBSX, GetBlockDetailsByBlockHeightFromCallbackRIBSZ, GetBlockDetailsByBlockHeightFromCallbackRIBSZ2. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, bits, chainwork, difficulty, merkleRoot, nonce, size, strippedSize, version, versionHex, weight, strippedsize, extraData, gasLimit, gasUsed, minedInSeconds, sha3Uncles, totalDifficulty, dsBlock, dsDifficulty, dsLeader, microBlocks, totalCoins, totalFees, bandwidthUsed, burnedTrx, energyUsed) { 
+        obj['bits'] = bits;
+        obj['chainwork'] = chainwork;
+        obj['difficulty'] = difficulty;
+        obj['merkleRoot'] = merkleRoot;
+        obj['nonce'] = nonce;
+        obj['size'] = size;
+        obj['strippedSize'] = strippedSize;
+        obj['version'] = version;
+        obj['versionHex'] = versionHex;
+        obj['weight'] = weight;
+        obj['strippedsize'] = strippedsize;
+        obj['extraData'] = extraData;
+        obj['gasLimit'] = gasLimit;
+        obj['gasUsed'] = gasUsed;
+        obj['minedInSeconds'] = minedInSeconds;
+        obj['sha3Uncles'] = sha3Uncles;
+        obj['totalDifficulty'] = totalDifficulty;
+        obj['dsBlock'] = dsBlock;
+        obj['dsDifficulty'] = dsDifficulty;
+        obj['dsLeader'] = dsLeader;
+        obj['microBlocks'] = microBlocks;
+        obj['totalCoins'] = totalCoins;
+        obj['totalFees'] = totalFees;
+        obj['bandwidthUsed'] = bandwidthUsed;
+        obj['burnedTrx'] = burnedTrx;
+        obj['energyUsed'] = energyUsed;
     }
 
     /**
@@ -256,41 +122,107 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBS {
      * @return {module:model/GetBlockDetailsByBlockHeightFromCallbackRIBS} The populated <code>GetBlockDetailsByBlockHeightFromCallbackRIBS</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new GetBlockDetailsByBlockHeightFromCallbackRIBS(data);
+        if (data) {
+            obj = obj || new GetBlockDetailsByBlockHeightFromCallbackRIBS();
+            GetBlockDetailsByBlockHeightFromCallbackRIBSB.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSBC.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSL.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSD.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSD2.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSE.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSEC.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSZ.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSX.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.constructFromObject(data, obj);
+            GetBlockDetailsByBlockHeightFromCallbackRIBST.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('bits')) {
+                obj['bits'] = ApiClient.convertToType(data['bits'], 'String');
+            }
+            if (data.hasOwnProperty('chainwork')) {
+                obj['chainwork'] = ApiClient.convertToType(data['chainwork'], 'String');
+            }
+            if (data.hasOwnProperty('difficulty')) {
+                obj['difficulty'] = ApiClient.convertToType(data['difficulty'], 'String');
+            }
+            if (data.hasOwnProperty('merkleRoot')) {
+                obj['merkleRoot'] = ApiClient.convertToType(data['merkleRoot'], 'String');
+            }
+            if (data.hasOwnProperty('nonce')) {
+                obj['nonce'] = ApiClient.convertToType(data['nonce'], 'String');
+            }
+            if (data.hasOwnProperty('size')) {
+                obj['size'] = ApiClient.convertToType(data['size'], 'Number');
+            }
+            if (data.hasOwnProperty('strippedSize')) {
+                obj['strippedSize'] = ApiClient.convertToType(data['strippedSize'], 'Number');
+            }
+            if (data.hasOwnProperty('version')) {
+                obj['version'] = ApiClient.convertToType(data['version'], 'Number');
+            }
+            if (data.hasOwnProperty('versionHex')) {
+                obj['versionHex'] = ApiClient.convertToType(data['versionHex'], 'String');
+            }
+            if (data.hasOwnProperty('weight')) {
+                obj['weight'] = ApiClient.convertToType(data['weight'], 'Number');
+            }
+            if (data.hasOwnProperty('strippedsize')) {
+                obj['strippedsize'] = ApiClient.convertToType(data['strippedsize'], 'Number');
+            }
+            if (data.hasOwnProperty('extraData')) {
+                obj['extraData'] = ApiClient.convertToType(data['extraData'], 'String');
+            }
+            if (data.hasOwnProperty('gasLimit')) {
+                obj['gasLimit'] = ApiClient.convertToType(data['gasLimit'], 'Number');
+            }
+            if (data.hasOwnProperty('gasUsed')) {
+                obj['gasUsed'] = ApiClient.convertToType(data['gasUsed'], 'Number');
+            }
+            if (data.hasOwnProperty('minedInSeconds')) {
+                obj['minedInSeconds'] = ApiClient.convertToType(data['minedInSeconds'], 'Number');
+            }
+            if (data.hasOwnProperty('sha3Uncles')) {
+                obj['sha3Uncles'] = ApiClient.convertToType(data['sha3Uncles'], 'String');
+            }
+            if (data.hasOwnProperty('totalDifficulty')) {
+                obj['totalDifficulty'] = ApiClient.convertToType(data['totalDifficulty'], 'String');
+            }
+            if (data.hasOwnProperty('uncles')) {
+                obj['uncles'] = ApiClient.convertToType(data['uncles'], ['String']);
+            }
+            if (data.hasOwnProperty('dsBlock')) {
+                obj['dsBlock'] = ApiClient.convertToType(data['dsBlock'], 'Number');
+            }
+            if (data.hasOwnProperty('dsDifficulty')) {
+                obj['dsDifficulty'] = ApiClient.convertToType(data['dsDifficulty'], 'String');
+            }
+            if (data.hasOwnProperty('dsLeader')) {
+                obj['dsLeader'] = ApiClient.convertToType(data['dsLeader'], 'String');
+            }
+            if (data.hasOwnProperty('microBlocks')) {
+                obj['microBlocks'] = ApiClient.convertToType(data['microBlocks'], ['String']);
+            }
+            if (data.hasOwnProperty('totalCoins')) {
+                obj['totalCoins'] = GetLatestMinedXRPRippleBlockRITotalCoins.constructFromObject(data['totalCoins']);
+            }
+            if (data.hasOwnProperty('totalFees')) {
+                obj['totalFees'] = GetLatestMinedXRPRippleBlockRITotalFees.constructFromObject(data['totalFees']);
+            }
+            if (data.hasOwnProperty('bandwidthUsed')) {
+                obj['bandwidthUsed'] = ApiClient.convertToType(data['bandwidthUsed'], 'String');
+            }
+            if (data.hasOwnProperty('burnedTrx')) {
+                obj['burnedTrx'] = ApiClient.convertToType(data['burnedTrx'], 'String');
+            }
+            if (data.hasOwnProperty('energyUsed')) {
+                obj['energyUsed'] = ApiClient.convertToType(data['energyUsed'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>GetBlockDetailsByBlockHeightFromCallbackRIBSB</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSBC</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSBSC</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSD</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSD2</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSE</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSEC</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSL</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBST</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSX</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSZ</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSZ2</code>.
-     * @return {(module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSB|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSBC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSBSC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSD|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSD2|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSE|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSEC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSL|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBST|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSX|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ2)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>GetBlockDetailsByBlockHeightFromCallbackRIBSB</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSBC</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSBSC</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSD</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSD2</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSE</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSEC</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSL</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBST</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSX</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSZ</code>, <code>GetBlockDetailsByBlockHeightFromCallbackRIBSZ2</code>.
-     * @param {(module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSB|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSBC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSBSC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSD|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSD2|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSE|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSEC|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSL|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBST|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSX|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ|module:model/GetBlockDetailsByBlockHeightFromCallbackRIBSZ2)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = GetBlockDetailsByBlockHeightFromCallbackRIBS.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of GetBlockDetailsByBlockHeightFromCallbackRIBS from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/GetBlockDetailsByBlockHeightFromCallbackRIBS} An instance of GetBlockDetailsByBlockHeightFromCallbackRIBS.
-     */
-    static fromJSON = function(json_string){
-        return GetBlockDetailsByBlockHeightFromCallbackRIBS.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -452,7 +384,485 @@ GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['burnedTrx'] = undefined;
 GetBlockDetailsByBlockHeightFromCallbackRIBS.prototype['energyUsed'] = undefined;
 
 
-GetBlockDetailsByBlockHeightFromCallbackRIBS.OneOf = ["GetBlockDetailsByBlockHeightFromCallbackRIBSB", "GetBlockDetailsByBlockHeightFromCallbackRIBSBC", "GetBlockDetailsByBlockHeightFromCallbackRIBSBSC", "GetBlockDetailsByBlockHeightFromCallbackRIBSD", "GetBlockDetailsByBlockHeightFromCallbackRIBSD2", "GetBlockDetailsByBlockHeightFromCallbackRIBSE", "GetBlockDetailsByBlockHeightFromCallbackRIBSEC", "GetBlockDetailsByBlockHeightFromCallbackRIBSL", "GetBlockDetailsByBlockHeightFromCallbackRIBST", "GetBlockDetailsByBlockHeightFromCallbackRIBSX", "GetBlockDetailsByBlockHeightFromCallbackRIBSZ", "GetBlockDetailsByBlockHeightFromCallbackRIBSZ2"];
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSB interface:
+/**
+ * A sub-unit of BTC equal to 0.000001 BTC, or 100 Satoshi, and is the same as microbitcoin (μBTC). Bits have two-decimal precision.
+ * @member {String} bits
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['bits'] = undefined;
+/**
+ * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+ * @member {String} chainwork
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['chainwork'] = undefined;
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['difficulty'] = undefined;
+/**
+ * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+ * @member {String} merkleRoot
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['size'] = undefined;
+/**
+ * Defines the numeric representation of the block size excluding the witness data.
+ * @member {Number} strippedSize
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['strippedSize'] = undefined;
+/**
+ * Represents the version of the specific block on the blockchain.
+ * @member {Number} version
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['version'] = undefined;
+/**
+ * Is the hexadecimal string representation of the block's version.
+ * @member {String} versionHex
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['versionHex'] = undefined;
+/**
+ * Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
+ * @member {Number} weight
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSB.prototype['weight'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSBC interface:
+/**
+ * A sub-unit of BCH equal to 0.000001 BCH, or 100 Satoshi, and is the same as microbitcoincash (μBCH). Bits have two-decimal precision.
+ * @member {String} bits
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['bits'] = undefined;
+/**
+ * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+ * @member {String} chainwork
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['chainwork'] = undefined;
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['difficulty'] = undefined;
+/**
+ * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+ * @member {String} merkleRoot
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['size'] = undefined;
+/**
+ * Represents the version of the specific block on the blockchain.
+ * @member {Number} version
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['version'] = undefined;
+/**
+ * Is the hexadecimal string representation of the block's version.
+ * @member {String} versionHex
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBC.prototype['versionHex'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSL interface:
+/**
+ * Represents a specific sub-unit of Litecoin. Bits have two-decimal precision.
+ * @member {String} bits
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['bits'] = undefined;
+/**
+ * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+ * @member {String} chainwork
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['chainwork'] = undefined;
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['difficulty'] = undefined;
+/**
+ * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+ * @member {String} merkleRoot
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['size'] = undefined;
+/**
+ * Defines the numeric representation of the block size excluding the witness data.
+ * @member {Number} strippedsize
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['strippedsize'] = undefined;
+/**
+ * Represents the version of the specific block on the blockchain.
+ * @member {Number} version
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['version'] = undefined;
+/**
+ * Is the hexadecimal string representation of the block's version.
+ * @member {String} versionHex
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['versionHex'] = undefined;
+/**
+ * Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
+ * @member {Number} weight
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSL.prototype['weight'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSD interface:
+/**
+ * Represents a specific sub-unit of Dash. Bits have two-decimal precision.
+ * @member {String} bits
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['bits'] = undefined;
+/**
+ * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+ * @member {String} chainwork
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['chainwork'] = undefined;
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['difficulty'] = undefined;
+/**
+ * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+ * @member {String} merkleRoot
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['size'] = undefined;
+/**
+ * Represents the version of the specific block on the blockchain.
+ * @member {Number} version
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['version'] = undefined;
+/**
+ * Is the hexadecimal string representation of the block's version.
+ * @member {String} versionHex
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD.prototype['versionHex'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSD2 interface:
+/**
+ * Represents a specific sub-unit of Doge. Bits have two-decimal precision.
+ * @member {String} bits
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['bits'] = undefined;
+/**
+ * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+ * @member {String} chainwork
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['chainwork'] = undefined;
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['difficulty'] = undefined;
+/**
+ * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+ * @member {String} merkleRoot
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {Number} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['size'] = undefined;
+/**
+ * Defines the numeric representation of the block size excluding the witness data.
+ * @member {Number} strippedSize
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['strippedSize'] = undefined;
+/**
+ * Represents the version of the specific block on the blockchain.
+ * @member {Number} version
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['version'] = undefined;
+/**
+ * Represents a measurement to compare the size of different transactions to each other in proportion to the block size limit.
+ * @member {Number} weight
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSD2.prototype['weight'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSE interface:
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['difficulty'] = undefined;
+/**
+ * Represents any data that can be included by the miner in the block.
+ * @member {String} extraData
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['extraData'] = undefined;
+/**
+ * Defines the total gas limit of all transactions in the block.
+ * @member {String} gasLimit
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['gasLimit'] = undefined;
+/**
+ * Represents the total amount of gas used by all transactions in this block.
+ * @member {String} gasUsed
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['gasUsed'] = undefined;
+/**
+ * Specifies the amount of time required for the block to be mined in seconds.
+ * @member {Number} minedInSeconds
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['minedInSeconds'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {String} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['nonce'] = undefined;
+/**
+ * Defines the combined hash of all uncles for a given parent.
+ * @member {String} sha3Uncles
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['sha3Uncles'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['size'] = undefined;
+/**
+ * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
+ * @member {String} totalDifficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['totalDifficulty'] = undefined;
+/**
+ * @member {Array.<String>} uncles
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSE.prototype['uncles'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSBSC interface:
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['difficulty'] = undefined;
+/**
+ * Represents any data that can be included by the miner in the block.
+ * @member {String} extraData
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['extraData'] = undefined;
+/**
+ * Defines the total gas limit of all transactions in the block.
+ * @member {String} gasLimit
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['gasLimit'] = undefined;
+/**
+ * Represents the total amount of gas used by all transactions in this block.
+ * @member {String} gasUsed
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['gasUsed'] = undefined;
+/**
+ * Specifies the amount of time required for the block to be mined in second
+ * @member {Number} minedInSeconds
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['minedInSeconds'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['nonce'] = undefined;
+/**
+ * Defines the combined hash of all uncles for a given parent.
+ * @member {String} sha3Uncles
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['sha3Uncles'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['size'] = undefined;
+/**
+ * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block
+ * @member {String} totalDifficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['totalDifficulty'] = undefined;
+/**
+ * @member {Array.<String>} uncles
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSBSC.prototype['uncles'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSEC interface:
+/**
+ * Represents a mathematical value of how hard it is to find a valid hash for this block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['difficulty'] = undefined;
+/**
+ * Represents any data that can be included by the miner in the block.
+ * @member {String} extraData
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['extraData'] = undefined;
+/**
+ * Defines the total gas limit of all transactions in the block.
+ * @member {String} gasLimit
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['gasLimit'] = undefined;
+/**
+ * Represents the total amount of gas used by all transactions in this block.
+ * @member {String} gasUsed
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['gasUsed'] = undefined;
+/**
+ * Specifies the amount of time required for the block to be mined in seconds.
+ * @member {Number} minedInSeconds
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['minedInSeconds'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['nonce'] = undefined;
+/**
+ * Defines the combined hash of all uncles for a given parent.
+ * @member {String} sha3Uncles
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['sha3Uncles'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['size'] = undefined;
+/**
+ * Defines the total difficulty of the chain until this block, i.e. how difficult it is for a specific miner to mine a new block.
+ * @member {String} totalDifficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['totalDifficulty'] = undefined;
+/**
+ * @member {Array.<String>} uncles
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSEC.prototype['uncles'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSZ interface:
+/**
+ * Defines how difficult it is for a specific miner to mine the block.
+ * @member {String} difficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ.prototype['difficulty'] = undefined;
+/**
+ * Represents the Directory Service block which contains metadata about the miners who participate in the consensus protocol.
+ * @member {Number} dsBlock
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ.prototype['dsBlock'] = undefined;
+/**
+ * Defines how difficult it is to mine the dsBlocks.
+ * @member {String} dsDifficulty
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ.prototype['dsDifficulty'] = undefined;
+/**
+ * Represents a part of the DS Committee which leads the consensus protocol for the epoch.
+ * @member {String} dsLeader
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ.prototype['dsLeader'] = undefined;
+/**
+ * Represents the maximum amount of gas allowed in the block in order to determine how many transactions it can fit.
+ * @member {Number} gasLimit
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ.prototype['gasLimit'] = undefined;
+/**
+ * Defines how much of the gas for the block has been used.
+ * @member {Number} gasUsed
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ.prototype['gasUsed'] = undefined;
+/**
+ * @member {Array.<String>} microBlocks
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ.prototype['microBlocks'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSX interface:
+/**
+ * @member {module:model/GetLatestMinedXRPRippleBlockRITotalCoins} totalCoins
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSX.prototype['totalCoins'] = undefined;
+/**
+ * @member {module:model/GetLatestMinedXRPRippleBlockRITotalFees} totalFees
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSX.prototype['totalFees'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBSZ2 interface:
+/**
+ * Represents a specific sub-unit of Zcash. Bits have two-decimal precision
+ * @member {String} bits
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.prototype['bits'] = undefined;
+/**
+ * Represents a hexadecimal number of all the hashes necessary to produce the current chain. E.g., when converting 0000000000000000000000000000000000000000000086859f7a841475b236fd to a decimal you get 635262017308958427068157 hashes, or 635262 exahashes.
+ * @member {String} chainwork
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.prototype['chainwork'] = undefined;
+/**
+ * Defines the single and final (root) node of a Merkle tree. It is the combined hash of all transactions' hashes that are part of a blockchain block.
+ * @member {String} merkleRoot
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.prototype['merkleRoot'] = undefined;
+/**
+ * Represents a random value that can be adjusted to satisfy the proof of work
+ * @member {String} nonce
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.prototype['nonce'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.prototype['size'] = undefined;
+/**
+ * Represents the transaction version number.
+ * @member {Number} version
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBSZ2.prototype['version'] = undefined;
+// Implement GetBlockDetailsByBlockHeightFromCallbackRIBST interface:
+/**
+ * Represents the bandwidth used for the transaction.
+ * @member {String} bandwidthUsed
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBST.prototype['bandwidthUsed'] = undefined;
+/**
+ * Represents the block burned TRX.
+ * @member {String} burnedTrx
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBST.prototype['burnedTrx'] = undefined;
+/**
+ * Representats the used energy for the transaction.
+ * @member {String} energyUsed
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBST.prototype['energyUsed'] = undefined;
+/**
+ * Represents the total size of the block in Bytes.
+ * @member {Number} size
+ */
+GetBlockDetailsByBlockHeightFromCallbackRIBST.prototype['size'] = undefined;
+
+
+
 
 export default GetBlockDetailsByBlockHeightFromCallbackRIBS;
 

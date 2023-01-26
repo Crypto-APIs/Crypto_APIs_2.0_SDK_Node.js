@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListWalletTransactionsRIValue model module.
  * @module model/ListWalletTransactionsRIValue
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListWalletTransactionsRIValue {
     /**
@@ -71,42 +71,8 @@ class ListWalletTransactionsRIValue {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListWalletTransactionsRIValue</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListWalletTransactionsRIValue</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListWalletTransactionsRIValue.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['convertedAmount'] && !(typeof data['convertedAmount'] === 'string' || data['convertedAmount'] instanceof String)) {
-            throw new Error("Expected the field `convertedAmount` to be a primitive type in the JSON string but got " + data['convertedAmount']);
-        }
-        // ensure the json data is a string
-        if (data['exchangeRateUnit'] && !(typeof data['exchangeRateUnit'] === 'string' || data['exchangeRateUnit'] instanceof String)) {
-            throw new Error("Expected the field `exchangeRateUnit` to be a primitive type in the JSON string but got " + data['exchangeRateUnit']);
-        }
-        // ensure the json data is a string
-        if (data['symbol'] && !(typeof data['symbol'] === 'string' || data['symbol'] instanceof String)) {
-            throw new Error("Expected the field `symbol` to be a primitive type in the JSON string but got " + data['symbol']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListWalletTransactionsRIValue.RequiredProperties = ["amount", "convertedAmount", "exchangeRateUnit", "symbol"];
 
 /**
  * Defines the transaction amount.

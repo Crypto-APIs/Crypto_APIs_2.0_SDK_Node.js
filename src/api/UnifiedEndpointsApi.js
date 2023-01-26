@@ -103,7 +103,7 @@ import ListUnspentTransactionOutputsByAddressR from '../model/ListUnspentTransac
 /**
 * UnifiedEndpoints service.
 * @module api/UnifiedEndpointsApi
-* @version 1.11.0
+* @version 1.12.0
 */
 export default class UnifiedEndpointsApi {
 

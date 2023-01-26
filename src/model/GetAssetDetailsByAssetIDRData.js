@@ -17,7 +17,7 @@ import GetAssetDetailsByAssetIDRI from './GetAssetDetailsByAssetIDRI';
 /**
  * The GetAssetDetailsByAssetIDRData model module.
  * @module model/GetAssetDetailsByAssetIDRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetAssetDetailsByAssetIDRData {
     /**
@@ -57,30 +57,8 @@ class GetAssetDetailsByAssetIDRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetAssetDetailsByAssetIDRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetAssetDetailsByAssetIDRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetAssetDetailsByAssetIDRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          GetAssetDetailsByAssetIDRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetAssetDetailsByAssetIDRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GetAssetDetailsByAssetIDRI} item

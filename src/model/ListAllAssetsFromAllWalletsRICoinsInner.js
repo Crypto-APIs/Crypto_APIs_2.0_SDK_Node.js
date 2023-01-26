@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListAllAssetsFromAllWalletsRICoinsInner model module.
  * @module model/ListAllAssetsFromAllWalletsRICoinsInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListAllAssetsFromAllWalletsRICoinsInner {
     /**
@@ -81,50 +81,8 @@ class ListAllAssetsFromAllWalletsRICoinsInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListAllAssetsFromAllWalletsRICoinsInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListAllAssetsFromAllWalletsRICoinsInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListAllAssetsFromAllWalletsRICoinsInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
-            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
-        }
-        // ensure the json data is a string
-        if (data['confirmedBalance'] && !(typeof data['confirmedBalance'] === 'string' || data['confirmedBalance'] instanceof String)) {
-            throw new Error("Expected the field `confirmedBalance` to be a primitive type in the JSON string but got " + data['confirmedBalance']);
-        }
-        // ensure the json data is a string
-        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
-            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
-        }
-        // ensure the json data is a string
-        if (data['totalReceived'] && !(typeof data['totalReceived'] === 'string' || data['totalReceived'] instanceof String)) {
-            throw new Error("Expected the field `totalReceived` to be a primitive type in the JSON string but got " + data['totalReceived']);
-        }
-        // ensure the json data is a string
-        if (data['totalSpent'] && !(typeof data['totalSpent'] === 'string' || data['totalSpent'] instanceof String)) {
-            throw new Error("Expected the field `totalSpent` to be a primitive type in the JSON string but got " + data['totalSpent']);
-        }
-        // ensure the json data is a string
-        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
-            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListAllAssetsFromAllWalletsRICoinsInner.RequiredProperties = ["blockchain", "confirmedBalance", "network", "totalReceived", "totalSpent", "unit"];
 
 /**
  * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.

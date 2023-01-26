@@ -17,47 +17,42 @@ import GetAssetDetailsByAssetIDRISC from './GetAssetDetailsByAssetIDRISC';
 /**
  * The GetAssetDetailsByAssetIDRIS model module.
  * @module model/GetAssetDetailsByAssetIDRIS
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetAssetDetailsByAssetIDRIS {
     /**
      * Constructs a new <code>GetAssetDetailsByAssetIDRIS</code>.
      * Represents a specific asset&#39;s data depending on its type (whether it is \&quot;crypto\&quot; or \&quot;fiat\&quot;).
      * @alias module:model/GetAssetDetailsByAssetIDRIS
-     * @param {(module:model/GetAssetDetailsByAssetIDRISC)} instance The actual instance to initialize GetAssetDetailsByAssetIDRIS.
+     * @implements module:model/GetAssetDetailsByAssetIDRISC
+     * @param _1hourPriceChangeInPercentage {String} Represents the percentage of the asset's current price against the its price from 1 hour ago.
+     * @param _1weekPriceChangeInPercentage {String} Represents the percentage of the asset's current price against the its price from 1 week ago.
+     * @param _24hoursPriceChangeInPercentage {String} Represents the percentage of the asset's current price against the its price from 24 hours ago.
+     * @param _24hoursTradingVolume {String} Represents the trading volume of the asset for the time frame of 24 hours.
+     * @param assetType {module:model/GetAssetDetailsByAssetIDRIS.AssetTypeEnum} Represent a subtype of the crypto assets. Could be COIN or TOKEN.
+     * @param circulatingSupply {String} Represents the amount of the asset that is circulating on the market and in public hands.
+     * @param marketCapInUSD {String} Defines the total market value of the asset's circulating supply in USD.
+     * @param maxSupply {String} Represents the maximum amount of all coins of a specific asset that will ever exist in its lifetime.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "GetAssetDetailsByAssetIDRISC") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                GetAssetDetailsByAssetIDRISC.validateJSON(instance); // throw an exception if no match
-                // create GetAssetDetailsByAssetIDRISC from JS object
-                this.actualInstance = GetAssetDetailsByAssetIDRISC.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into GetAssetDetailsByAssetIDRISC
-            errorMessages.push("Failed to construct GetAssetDetailsByAssetIDRISC: " + err)
-        }
+    constructor(_1hourPriceChangeInPercentage, _1weekPriceChangeInPercentage, _24hoursPriceChangeInPercentage, _24hoursTradingVolume, assetType, circulatingSupply, marketCapInUSD, maxSupply) { 
+        GetAssetDetailsByAssetIDRISC.initialize(this, _1hourPriceChangeInPercentage, _1weekPriceChangeInPercentage, _24hoursPriceChangeInPercentage, _24hoursTradingVolume, assetType, circulatingSupply, marketCapInUSD, maxSupply);
+        GetAssetDetailsByAssetIDRIS.initialize(this, _1hourPriceChangeInPercentage, _1weekPriceChangeInPercentage, _24hoursPriceChangeInPercentage, _24hoursTradingVolume, assetType, circulatingSupply, marketCapInUSD, maxSupply);
+    }
 
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `GetAssetDetailsByAssetIDRIS` with oneOf schemas GetAssetDetailsByAssetIDRISC. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `GetAssetDetailsByAssetIDRIS` with oneOf schemas GetAssetDetailsByAssetIDRISC. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, _1hourPriceChangeInPercentage, _1weekPriceChangeInPercentage, _24hoursPriceChangeInPercentage, _24hoursTradingVolume, assetType, circulatingSupply, marketCapInUSD, maxSupply) { 
+        obj['1HourPriceChangeInPercentage'] = _1hourPriceChangeInPercentage;
+        obj['1WeekPriceChangeInPercentage'] = _1weekPriceChangeInPercentage;
+        obj['24HoursPriceChangeInPercentage'] = _24hoursPriceChangeInPercentage;
+        obj['24HoursTradingVolume'] = _24hoursTradingVolume;
+        obj['assetType'] = assetType;
+        obj['circulatingSupply'] = circulatingSupply;
+        obj['marketCapInUSD'] = marketCapInUSD;
+        obj['maxSupply'] = maxSupply;
     }
 
     /**
@@ -68,41 +63,39 @@ class GetAssetDetailsByAssetIDRIS {
      * @return {module:model/GetAssetDetailsByAssetIDRIS} The populated <code>GetAssetDetailsByAssetIDRIS</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new GetAssetDetailsByAssetIDRIS(data);
+        if (data) {
+            obj = obj || new GetAssetDetailsByAssetIDRIS();
+            GetAssetDetailsByAssetIDRISC.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('1HourPriceChangeInPercentage')) {
+                obj['1HourPriceChangeInPercentage'] = ApiClient.convertToType(data['1HourPriceChangeInPercentage'], 'String');
+            }
+            if (data.hasOwnProperty('1WeekPriceChangeInPercentage')) {
+                obj['1WeekPriceChangeInPercentage'] = ApiClient.convertToType(data['1WeekPriceChangeInPercentage'], 'String');
+            }
+            if (data.hasOwnProperty('24HoursPriceChangeInPercentage')) {
+                obj['24HoursPriceChangeInPercentage'] = ApiClient.convertToType(data['24HoursPriceChangeInPercentage'], 'String');
+            }
+            if (data.hasOwnProperty('24HoursTradingVolume')) {
+                obj['24HoursTradingVolume'] = ApiClient.convertToType(data['24HoursTradingVolume'], 'String');
+            }
+            if (data.hasOwnProperty('assetType')) {
+                obj['assetType'] = ApiClient.convertToType(data['assetType'], 'String');
+            }
+            if (data.hasOwnProperty('circulatingSupply')) {
+                obj['circulatingSupply'] = ApiClient.convertToType(data['circulatingSupply'], 'String');
+            }
+            if (data.hasOwnProperty('marketCapInUSD')) {
+                obj['marketCapInUSD'] = ApiClient.convertToType(data['marketCapInUSD'], 'String');
+            }
+            if (data.hasOwnProperty('maxSupply')) {
+                obj['maxSupply'] = ApiClient.convertToType(data['maxSupply'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>GetAssetDetailsByAssetIDRISC</code>.
-     * @return {(module:model/GetAssetDetailsByAssetIDRISC)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>GetAssetDetailsByAssetIDRISC</code>.
-     * @param {(module:model/GetAssetDetailsByAssetIDRISC)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = GetAssetDetailsByAssetIDRIS.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of GetAssetDetailsByAssetIDRIS from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/GetAssetDetailsByAssetIDRIS} An instance of GetAssetDetailsByAssetIDRIS.
-     */
-    static fromJSON = function(json_string){
-        return GetAssetDetailsByAssetIDRIS.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -154,7 +147,71 @@ GetAssetDetailsByAssetIDRIS.prototype['marketCapInUSD'] = undefined;
 GetAssetDetailsByAssetIDRIS.prototype['maxSupply'] = undefined;
 
 
-GetAssetDetailsByAssetIDRIS.OneOf = ["GetAssetDetailsByAssetIDRISC"];
+// Implement GetAssetDetailsByAssetIDRISC interface:
+/**
+ * Represents the percentage of the asset's current price against the its price from 1 hour ago.
+ * @member {String} 1HourPriceChangeInPercentage
+ */
+GetAssetDetailsByAssetIDRISC.prototype['1HourPriceChangeInPercentage'] = undefined;
+/**
+ * Represents the percentage of the asset's current price against the its price from 1 week ago.
+ * @member {String} 1WeekPriceChangeInPercentage
+ */
+GetAssetDetailsByAssetIDRISC.prototype['1WeekPriceChangeInPercentage'] = undefined;
+/**
+ * Represents the percentage of the asset's current price against the its price from 24 hours ago.
+ * @member {String} 24HoursPriceChangeInPercentage
+ */
+GetAssetDetailsByAssetIDRISC.prototype['24HoursPriceChangeInPercentage'] = undefined;
+/**
+ * Represents the trading volume of the asset for the time frame of 24 hours.
+ * @member {String} 24HoursTradingVolume
+ */
+GetAssetDetailsByAssetIDRISC.prototype['24HoursTradingVolume'] = undefined;
+/**
+ * Represent a subtype of the crypto assets. Could be COIN or TOKEN.
+ * @member {module:model/GetAssetDetailsByAssetIDRISC.AssetTypeEnum} assetType
+ */
+GetAssetDetailsByAssetIDRISC.prototype['assetType'] = undefined;
+/**
+ * Represents the amount of the asset that is circulating on the market and in public hands.
+ * @member {String} circulatingSupply
+ */
+GetAssetDetailsByAssetIDRISC.prototype['circulatingSupply'] = undefined;
+/**
+ * Defines the total market value of the asset's circulating supply in USD.
+ * @member {String} marketCapInUSD
+ */
+GetAssetDetailsByAssetIDRISC.prototype['marketCapInUSD'] = undefined;
+/**
+ * Represents the maximum amount of all coins of a specific asset that will ever exist in its lifetime.
+ * @member {String} maxSupply
+ */
+GetAssetDetailsByAssetIDRISC.prototype['maxSupply'] = undefined;
+
+
+
+/**
+ * Allowed values for the <code>assetType</code> property.
+ * @enum {String}
+ * @readonly
+ */
+GetAssetDetailsByAssetIDRIS['AssetTypeEnum'] = {
+
+    /**
+     * value: "coin"
+     * @const
+     */
+    "coin": "coin",
+
+    /**
+     * value: "token"
+     * @const
+     */
+    "token": "token"
+};
+
+
 
 export default GetAssetDetailsByAssetIDRIS;
 

@@ -18,7 +18,7 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsI
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
     /**
@@ -80,52 +80,8 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['additionalData'] && !(typeof data['additionalData'] === 'string' || data['additionalData'] instanceof String)) {
-            throw new Error("Expected the field `additionalData` to be a primitive type in the JSON string but got " + data['additionalData']);
-        }
-        // ensure the json data is a string
-        if (data['xpub'] && !(typeof data['xpub'] === 'string' || data['xpub'] instanceof String)) {
-            throw new Error("Expected the field `xpub` to be a primitive type in the JSON string but got " + data['xpub']);
-        }
-        // validate the optional field `fee`
-        if (data['fee']) { // data not null
-          PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemFee.validateJSON(data['fee']);
-        }
-        // ensure the json data is a string
-        if (data['prepareStrategy'] && !(typeof data['prepareStrategy'] === 'string' || data['prepareStrategy'] instanceof String)) {
-            throw new Error("Expected the field `prepareStrategy` to be a primitive type in the JSON string but got " + data['prepareStrategy']);
-        }
-        if (data['recipients']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['recipients'])) {
-                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
-            }
-            // validate the optional field `recipients` (array)
-            for (const item of data['recipients']) {
-                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItemRecipientsInner.validateJsonObject(item);
-            };
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.RequiredProperties = ["xpub", "fee", "recipients"];
 
 /**
  * Representation of the additional data.
@@ -163,7 +119,7 @@ PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['prepar
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['recipients'] = undefined;
 
 /**
- * Representation whether the transaction is replaceable
+ * Representation of whether the transaction is replaceable. This is an Optional attribute that is not supported for Dogecoin, Dash and Bitcoin-Cash.
  * @member {Boolean} replaceable
  */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRBDataItem.prototype['replaceable'] = undefined;

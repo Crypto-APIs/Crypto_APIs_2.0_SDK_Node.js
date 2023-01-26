@@ -17,47 +17,28 @@ import CreateFungibleTokensTransactionRequestFromAddressRISE from './CreateFungi
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRIS model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRIS
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRIS {
     /**
      * Constructs a new <code>CreateFungibleTokensTransactionRequestFromAddressRIS</code>.
      * Represents the specific token data which depends on its type - if it is a Coin or Token.
      * @alias module:model/CreateFungibleTokensTransactionRequestFromAddressRIS
-     * @param {(module:model/CreateFungibleTokensTransactionRequestFromAddressRISE)} instance The actual instance to initialize CreateFungibleTokensTransactionRequestFromAddressRIS.
+     * @implements module:model/CreateFungibleTokensTransactionRequestFromAddressRISE
+     * @param contractAddress {String} Defines the contract address in the blockchain for an ERC20 token.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "CreateFungibleTokensTransactionRequestFromAddressRISE") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                CreateFungibleTokensTransactionRequestFromAddressRISE.validateJSON(instance); // throw an exception if no match
-                // create CreateFungibleTokensTransactionRequestFromAddressRISE from JS object
-                this.actualInstance = CreateFungibleTokensTransactionRequestFromAddressRISE.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into CreateFungibleTokensTransactionRequestFromAddressRISE
-            errorMessages.push("Failed to construct CreateFungibleTokensTransactionRequestFromAddressRISE: " + err)
-        }
+    constructor(contractAddress) { 
+        CreateFungibleTokensTransactionRequestFromAddressRISE.initialize(this, contractAddress);
+        CreateFungibleTokensTransactionRequestFromAddressRIS.initialize(this, contractAddress);
+    }
 
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `CreateFungibleTokensTransactionRequestFromAddressRIS` with oneOf schemas CreateFungibleTokensTransactionRequestFromAddressRISE. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `CreateFungibleTokensTransactionRequestFromAddressRIS` with oneOf schemas CreateFungibleTokensTransactionRequestFromAddressRISE. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, contractAddress) { 
+        obj['contractAddress'] = contractAddress;
     }
 
     /**
@@ -68,41 +49,18 @@ class CreateFungibleTokensTransactionRequestFromAddressRIS {
      * @return {module:model/CreateFungibleTokensTransactionRequestFromAddressRIS} The populated <code>CreateFungibleTokensTransactionRequestFromAddressRIS</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new CreateFungibleTokensTransactionRequestFromAddressRIS(data);
+        if (data) {
+            obj = obj || new CreateFungibleTokensTransactionRequestFromAddressRIS();
+            CreateFungibleTokensTransactionRequestFromAddressRISE.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('contractAddress')) {
+                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>CreateFungibleTokensTransactionRequestFromAddressRISE</code>.
-     * @return {(module:model/CreateFungibleTokensTransactionRequestFromAddressRISE)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>CreateFungibleTokensTransactionRequestFromAddressRISE</code>.
-     * @param {(module:model/CreateFungibleTokensTransactionRequestFromAddressRISE)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = CreateFungibleTokensTransactionRequestFromAddressRIS.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of CreateFungibleTokensTransactionRequestFromAddressRIS from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/CreateFungibleTokensTransactionRequestFromAddressRIS} An instance of CreateFungibleTokensTransactionRequestFromAddressRIS.
-     */
-    static fromJSON = function(json_string){
-        return CreateFungibleTokensTransactionRequestFromAddressRIS.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -112,7 +70,15 @@ class CreateFungibleTokensTransactionRequestFromAddressRIS {
 CreateFungibleTokensTransactionRequestFromAddressRIS.prototype['contractAddress'] = undefined;
 
 
-CreateFungibleTokensTransactionRequestFromAddressRIS.OneOf = ["CreateFungibleTokensTransactionRequestFromAddressRISE"];
+// Implement CreateFungibleTokensTransactionRequestFromAddressRISE interface:
+/**
+ * Defines the contract address in the blockchain for an ERC20 token.
+ * @member {String} contractAddress
+ */
+CreateFungibleTokensTransactionRequestFromAddressRISE.prototype['contractAddress'] = undefined;
+
+
+
 
 export default CreateFungibleTokensTransactionRequestFromAddressRIS;
 

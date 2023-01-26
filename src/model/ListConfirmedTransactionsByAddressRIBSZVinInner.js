@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRIBSZVinInnerScriptSig from './GetTra
 /**
  * The ListConfirmedTransactionsByAddressRIBSZVinInner model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSZVinInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListConfirmedTransactionsByAddressRIBSZVinInner {
     /**
@@ -92,50 +92,8 @@ class ListConfirmedTransactionsByAddressRIBSZVinInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListConfirmedTransactionsByAddressRIBSZVinInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListConfirmedTransactionsByAddressRIBSZVinInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListConfirmedTransactionsByAddressRIBSZVinInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['addresses'])) {
-            throw new Error("Expected the field `addresses` to be an array in the JSON data but got " + data['addresses']);
-        }
-        // ensure the json data is a string
-        if (data['coinbase'] && !(typeof data['coinbase'] === 'string' || data['coinbase'] instanceof String)) {
-            throw new Error("Expected the field `coinbase` to be a primitive type in the JSON string but got " + data['coinbase']);
-        }
-        // validate the optional field `scriptSig`
-        if (data['scriptSig']) { // data not null
-          GetTransactionDetailsByTransactionIDRIBSZVinInnerScriptSig.validateJSON(data['scriptSig']);
-        }
-        // ensure the json data is a string
-        if (data['txid'] && !(typeof data['txid'] === 'string' || data['txid'] instanceof String)) {
-            throw new Error("Expected the field `txid` to be a primitive type in the JSON string but got " + data['txid']);
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['txinwitness'])) {
-            throw new Error("Expected the field `txinwitness` to be an array in the JSON data but got " + data['txinwitness']);
-        }
-        // ensure the json data is a string
-        if (data['value'] && !(typeof data['value'] === 'string' || data['value'] instanceof String)) {
-            throw new Error("Expected the field `value` to be a primitive type in the JSON string but got " + data['value']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListConfirmedTransactionsByAddressRIBSZVinInner.RequiredProperties = ["addresses", "coinbase", "scriptSig", "sequence", "txid", "txinwitness", "value", "vout"];
 
 /**
  * @member {Array.<String>} addresses

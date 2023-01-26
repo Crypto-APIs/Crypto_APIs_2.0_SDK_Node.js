@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListHDWalletXPubYPubZPubUTXOsRI model module.
  * @module model/ListHDWalletXPubYPubZPubUTXOsRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListHDWalletXPubYPubZPubUTXOsRI {
     /**
@@ -96,50 +96,8 @@ class ListHDWalletXPubYPubZPubUTXOsRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListHDWalletXPubYPubZPubUTXOsRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListHDWalletXPubYPubZPubUTXOsRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListHDWalletXPubYPubZPubUTXOsRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
-            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
-        }
-        // ensure the json data is a string
-        if (data['addressPath'] && !(typeof data['addressPath'] === 'string' || data['addressPath'] instanceof String)) {
-            throw new Error("Expected the field `addressPath` to be a primitive type in the JSON string but got " + data['addressPath']);
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['derivation'] && !(typeof data['derivation'] === 'string' || data['derivation'] instanceof String)) {
-            throw new Error("Expected the field `derivation` to be a primitive type in the JSON string but got " + data['derivation']);
-        }
-        // ensure the json data is a string
-        if (data['referenceId'] && !(typeof data['referenceId'] === 'string' || data['referenceId'] instanceof String)) {
-            throw new Error("Expected the field `referenceId` to be a primitive type in the JSON string but got " + data['referenceId']);
-        }
-        // ensure the json data is a string
-        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
-            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListHDWalletXPubYPubZPubUTXOsRI.RequiredProperties = ["address", "addressPath", "amount", "derivation", "index", "isAvailable", "isConfirmed", "referenceId", "transactionId"];
 
 /**
  * Represents the public address, which is a compressed and shortened form of a public key.

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewBlockRI model module.
  * @module model/NewBlockRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class NewBlockRI {
     /**
@@ -76,38 +76,8 @@ class NewBlockRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>NewBlockRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>NewBlockRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of NewBlockRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
-            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
-        }
-        // ensure the json data is a string
-        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
-            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
-        }
-        // ensure the json data is a string
-        if (data['referenceId'] && !(typeof data['referenceId'] === 'string' || data['referenceId'] instanceof String)) {
-            throw new Error("Expected the field `referenceId` to be a primitive type in the JSON string but got " + data['referenceId']);
-        }
-
-        return true;
-    }
-
 
 }
-
-NewBlockRI.RequiredProperties = ["callbackSecretKey", "callbackUrl", "createdTimestamp", "isActive", "referenceId"];
 
 /**
  * Represents the Secret Key value provided by the customer. This field is used for security purposes during the callback notification, in order to prove the sender of the callback as Crypto APIs. For more information please see our [Documentation](https://developers.cryptoapis.io/technical-documentation/general-information/callbacks#callback-security).

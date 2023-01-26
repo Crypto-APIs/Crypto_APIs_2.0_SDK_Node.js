@@ -17,7 +17,7 @@ import GetXRPRippleAddressDetailsRI from './GetXRPRippleAddressDetailsRI';
 /**
  * The GetXRPRippleAddressDetailsRData model module.
  * @module model/GetXRPRippleAddressDetailsRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetXRPRippleAddressDetailsRData {
     /**
@@ -57,30 +57,8 @@ class GetXRPRippleAddressDetailsRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetXRPRippleAddressDetailsRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetXRPRippleAddressDetailsRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetXRPRippleAddressDetailsRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          GetXRPRippleAddressDetailsRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetXRPRippleAddressDetailsRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GetXRPRippleAddressDetailsRI} item

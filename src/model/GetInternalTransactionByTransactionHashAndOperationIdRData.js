@@ -17,7 +17,7 @@ import GetInternalTransactionByTransactionHashAndOperationIdRI from './GetIntern
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdRData model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetInternalTransactionByTransactionHashAndOperationIdRData {
     /**
@@ -57,30 +57,8 @@ class GetInternalTransactionByTransactionHashAndOperationIdRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetInternalTransactionByTransactionHashAndOperationIdRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetInternalTransactionByTransactionHashAndOperationIdRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetInternalTransactionByTransactionHashAndOperationIdRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          GetInternalTransactionByTransactionHashAndOperationIdRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetInternalTransactionByTransactionHashAndOperationIdRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GetInternalTransactionByTransactionHashAndOperationIdRI} item

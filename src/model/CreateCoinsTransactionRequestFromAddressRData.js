@@ -17,7 +17,7 @@ import CreateCoinsTransactionRequestFromAddressRI from './CreateCoinsTransaction
 /**
  * The CreateCoinsTransactionRequestFromAddressRData model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateCoinsTransactionRequestFromAddressRData {
     /**
@@ -57,30 +57,8 @@ class CreateCoinsTransactionRequestFromAddressRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>CreateCoinsTransactionRequestFromAddressRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateCoinsTransactionRequestFromAddressRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of CreateCoinsTransactionRequestFromAddressRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          CreateCoinsTransactionRequestFromAddressRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-CreateCoinsTransactionRequestFromAddressRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/CreateCoinsTransactionRequestFromAddressRI} item

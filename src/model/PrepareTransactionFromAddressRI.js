@@ -17,7 +17,7 @@ import PrepareTransactionFromAddressRIBS from './PrepareTransactionFromAddressRI
 /**
  * The PrepareTransactionFromAddressRI model module.
  * @module model/PrepareTransactionFromAddressRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareTransactionFromAddressRI {
     /**
@@ -83,54 +83,8 @@ class PrepareTransactionFromAddressRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareTransactionFromAddressRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareTransactionFromAddressRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareTransactionFromAddressRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['dataHex'] && !(typeof data['dataHex'] === 'string' || data['dataHex'] instanceof String)) {
-            throw new Error("Expected the field `dataHex` to be a primitive type in the JSON string but got " + data['dataHex']);
-        }
-        // ensure the json data is a string
-        if (data['nonce'] && !(typeof data['nonce'] === 'string' || data['nonce'] instanceof String)) {
-            throw new Error("Expected the field `nonce` to be a primitive type in the JSON string but got " + data['nonce']);
-        }
-        // ensure the json data is a string
-        if (data['recipient'] && !(typeof data['recipient'] === 'string' || data['recipient'] instanceof String)) {
-            throw new Error("Expected the field `recipient` to be a primitive type in the JSON string but got " + data['recipient']);
-        }
-        // ensure the json data is a string
-        if (data['sender'] && !(typeof data['sender'] === 'string' || data['sender'] instanceof String)) {
-            throw new Error("Expected the field `sender` to be a primitive type in the JSON string but got " + data['sender']);
-        }
-        // ensure the json data is a string
-        if (data['sighash'] && !(typeof data['sighash'] === 'string' || data['sighash'] instanceof String)) {
-            throw new Error("Expected the field `sighash` to be a primitive type in the JSON string but got " + data['sighash']);
-        }
-        // validate the optional field `blockchainSpecific`
-        if (data['blockchainSpecific']) { // data not null
-          PrepareTransactionFromAddressRIBS.validateJSON(data['blockchainSpecific']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareTransactionFromAddressRI.RequiredProperties = ["amount", "recipient", "sender", "sighash", "blockchainSpecific"];
 
 /**
  * Representation of the transacted amount

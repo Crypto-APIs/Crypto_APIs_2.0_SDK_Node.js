@@ -17,7 +17,7 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee from './P
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC {
     /**
@@ -83,46 +83,8 @@ class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['dataHex'] && !(typeof data['dataHex'] === 'string' || data['dataHex'] instanceof String)) {
-            throw new Error("Expected the field `dataHex` to be a primitive type in the JSON string but got " + data['dataHex']);
-        }
-        // validate the optional field `fee`
-        if (data['fee']) { // data not null
-          PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee.validateJSON(data['fee']);
-        }
-        // ensure the json data is a string
-        if (data['nonce'] && !(typeof data['nonce'] === 'string' || data['nonce'] instanceof String)) {
-            throw new Error("Expected the field `nonce` to be a primitive type in the JSON string but got " + data['nonce']);
-        }
-        // ensure the json data is a string
-        if (data['transactionType'] && !(typeof data['transactionType'] === 'string' || data['transactionType'] instanceof String)) {
-            throw new Error("Expected the field `transactionType` to be a primitive type in the JSON string but got " + data['transactionType']);
-        }
-        // ensure the json data is a string
-        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
-            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC.RequiredProperties = ["dataHex", "derivationIndex", "fee", "nonce", "transactionType", "unit"];
 
 /**
  * Representation of the data in hex value

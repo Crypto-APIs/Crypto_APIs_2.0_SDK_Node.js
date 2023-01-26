@@ -17,7 +17,7 @@ import GetWalletAssetDetailsRI from './GetWalletAssetDetailsRI';
 /**
  * The GetWalletAssetDetailsRData model module.
  * @module model/GetWalletAssetDetailsRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetWalletAssetDetailsRData {
     /**
@@ -57,30 +57,8 @@ class GetWalletAssetDetailsRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetWalletAssetDetailsRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetWalletAssetDetailsRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetWalletAssetDetailsRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          GetWalletAssetDetailsRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetWalletAssetDetailsRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GetWalletAssetDetailsRI} item

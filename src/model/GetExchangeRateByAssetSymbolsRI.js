@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetExchangeRateByAssetSymbolsRI model module.
  * @module model/GetExchangeRateByAssetSymbolsRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetExchangeRateByAssetSymbolsRI {
     /**
@@ -81,46 +81,8 @@ class GetExchangeRateByAssetSymbolsRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetExchangeRateByAssetSymbolsRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetExchangeRateByAssetSymbolsRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetExchangeRateByAssetSymbolsRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['fromAssetId'] && !(typeof data['fromAssetId'] === 'string' || data['fromAssetId'] instanceof String)) {
-            throw new Error("Expected the field `fromAssetId` to be a primitive type in the JSON string but got " + data['fromAssetId']);
-        }
-        // ensure the json data is a string
-        if (data['fromAssetSymbol'] && !(typeof data['fromAssetSymbol'] === 'string' || data['fromAssetSymbol'] instanceof String)) {
-            throw new Error("Expected the field `fromAssetSymbol` to be a primitive type in the JSON string but got " + data['fromAssetSymbol']);
-        }
-        // ensure the json data is a string
-        if (data['rate'] && !(typeof data['rate'] === 'string' || data['rate'] instanceof String)) {
-            throw new Error("Expected the field `rate` to be a primitive type in the JSON string but got " + data['rate']);
-        }
-        // ensure the json data is a string
-        if (data['toAssetId'] && !(typeof data['toAssetId'] === 'string' || data['toAssetId'] instanceof String)) {
-            throw new Error("Expected the field `toAssetId` to be a primitive type in the JSON string but got " + data['toAssetId']);
-        }
-        // ensure the json data is a string
-        if (data['toAssetSymbol'] && !(typeof data['toAssetSymbol'] === 'string' || data['toAssetSymbol'] instanceof String)) {
-            throw new Error("Expected the field `toAssetSymbol` to be a primitive type in the JSON string but got " + data['toAssetSymbol']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetExchangeRateByAssetSymbolsRI.RequiredProperties = ["calculationTimestamp", "fromAssetId", "fromAssetSymbol", "rate", "toAssetId", "toAssetSymbol"];
 
 /**
  * Defines the time of the market data used to calculate the exchange rate in UNIX Timestamp. Oldest possible timestamp is 30 days.

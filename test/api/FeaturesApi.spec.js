@@ -138,6 +138,26 @@
         done();
       });
     });
+    describe('prepareAFungibleTokenTransferFromAddress', function() {
+      it('should call prepareAFungibleTokenTransferFromAddress successfully', function(done) {
+        //uncomment below and update the code to test prepareAFungibleTokenTransferFromAddress
+        //instance.prepareAFungibleTokenTransferFromAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('prepareANonFungibleTokenTransferFromAddress', function() {
+      it('should call prepareANonFungibleTokenTransferFromAddress successfully', function(done) {
+        //uncomment below and update the code to test prepareANonFungibleTokenTransferFromAddress
+        //instance.prepareANonFungibleTokenTransferFromAddress(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('prepareTransactionFromAddress', function() {
       it('should call prepareTransactionFromAddress successfully', function(done) {
         //uncomment below and update the code to test prepareTransactionFromAddress

@@ -54,7 +54,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * Informative service.
 * @module api/InformativeApi
-* @version 1.11.0
+* @version 1.12.0
 */
 var InformativeApi = /*#__PURE__*/function () {
   /**

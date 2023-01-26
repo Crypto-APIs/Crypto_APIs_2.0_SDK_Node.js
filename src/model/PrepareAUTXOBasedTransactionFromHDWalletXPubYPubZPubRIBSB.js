@@ -18,20 +18,19 @@ import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner from '
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB
- * @version 1.11.0
+ * @version 1.12.0
  */
 class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB {
     /**
      * Constructs a new <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB</code>.
      * Bitcoin
      * @alias module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB
-     * @param replaceable {Boolean} Representation of whether the transaction is replaceable
      * @param vin {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner>} Represents the transaction inputs.
      * @param vout {Array.<module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner>} Represents the transaction outputs.
      */
-    constructor(replaceable, vin, vout) { 
+    constructor(vin, vout) { 
         
-        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.initialize(this, replaceable, vin, vout);
+        PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.initialize(this, vin, vout);
     }
 
     /**
@@ -39,8 +38,7 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, replaceable, vin, vout) { 
-        obj['replaceable'] = replaceable;
+    static initialize(obj, vin, vout) { 
         obj['vin'] = vin;
         obj['vout'] = vout;
     }
@@ -69,46 +67,8 @@ class PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        if (data['vin']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vin'])) {
-                throw new Error("Expected the field `vin` to be an array in the JSON data but got " + data['vin']);
-            }
-            // validate the optional field `vin` (array)
-            for (const item of data['vin']) {
-                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVinInner.validateJsonObject(item);
-            };
-        }
-        if (data['vout']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vout'])) {
-                throw new Error("Expected the field `vout` to be an array in the JSON data but got " + data['vout']);
-            }
-            // validate the optional field `vout` (array)
-            for (const item of data['vout']) {
-                PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSBVoutInner.validateJsonObject(item);
-            };
-        }
-
-        return true;
-    }
-
 
 }
-
-PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSB.RequiredProperties = ["replaceable", "vin", "vout"];
 
 /**
  * Representation of whether the transaction is replaceable

@@ -19,78 +19,43 @@ import AddressTokensTransactionUnconfirmedOmni from './AddressTokensTransactionU
 /**
  * The AddressTokensTransactionUnconfirmedToken model module.
  * @module model/AddressTokensTransactionUnconfirmedToken
- * @version 1.11.0
+ * @version 1.12.0
  */
 class AddressTokensTransactionUnconfirmedToken {
     /**
      * Constructs a new <code>AddressTokensTransactionUnconfirmedToken</code>.
      * @alias module:model/AddressTokensTransactionUnconfirmedToken
-     * @param {(module:model/AddressTokensTransactionUnconfirmedErc20|module:model/AddressTokensTransactionUnconfirmedErc721|module:model/AddressTokensTransactionUnconfirmedOmni)} instance The actual instance to initialize AddressTokensTransactionUnconfirmedToken.
+     * @implements module:model/AddressTokensTransactionUnconfirmedErc20
+     * @implements module:model/AddressTokensTransactionUnconfirmedErc721
+     * @implements module:model/AddressTokensTransactionUnconfirmedOmni
+     * @param name {String} Specifies the name of the token.
+     * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+     * @param amount {String} Defines the amount of tokens sent with the transaction that is pending confirmation.
+     * @param contractAddress {String} Specifies the address of the contract.
+     * @param tokenId {String} Specifies the unique ID of the token.
+     * @param propertyId {String} Defines the ID of the property for Omni Layer.
+     * @param transactionType {String} Defines the type of the transaction made.
+     * @param createdByTransactionId {String} The transaction ID used to create the token.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "AddressTokensTransactionUnconfirmedErc20") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddressTokensTransactionUnconfirmedErc20.validateJSON(instance); // throw an exception if no match
-                // create AddressTokensTransactionUnconfirmedErc20 from JS object
-                this.actualInstance = AddressTokensTransactionUnconfirmedErc20.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddressTokensTransactionUnconfirmedErc20
-            errorMessages.push("Failed to construct AddressTokensTransactionUnconfirmedErc20: " + err)
-        }
+    constructor(name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) { 
+        AddressTokensTransactionUnconfirmedErc20.initialize(this, name, symbol, amount, contractAddress);AddressTokensTransactionUnconfirmedErc721.initialize(this, name, symbol, tokenId, contractAddress);AddressTokensTransactionUnconfirmedOmni.initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);
+        AddressTokensTransactionUnconfirmedToken.initialize(this, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId);
+    }
 
-        try {
-            if (typeof instance === "AddressTokensTransactionUnconfirmedErc721") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddressTokensTransactionUnconfirmedErc721.validateJSON(instance); // throw an exception if no match
-                // create AddressTokensTransactionUnconfirmedErc721 from JS object
-                this.actualInstance = AddressTokensTransactionUnconfirmedErc721.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddressTokensTransactionUnconfirmedErc721
-            errorMessages.push("Failed to construct AddressTokensTransactionUnconfirmedErc721: " + err)
-        }
-
-        try {
-            if (typeof instance === "AddressTokensTransactionUnconfirmedOmni") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddressTokensTransactionUnconfirmedOmni.validateJSON(instance); // throw an exception if no match
-                // create AddressTokensTransactionUnconfirmedOmni from JS object
-                this.actualInstance = AddressTokensTransactionUnconfirmedOmni.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddressTokensTransactionUnconfirmedOmni
-            errorMessages.push("Failed to construct AddressTokensTransactionUnconfirmedOmni: " + err)
-        }
-
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `AddressTokensTransactionUnconfirmedToken` with oneOf schemas AddressTokensTransactionUnconfirmedErc20, AddressTokensTransactionUnconfirmedErc721, AddressTokensTransactionUnconfirmedOmni. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `AddressTokensTransactionUnconfirmedToken` with oneOf schemas AddressTokensTransactionUnconfirmedErc20, AddressTokensTransactionUnconfirmedErc721, AddressTokensTransactionUnconfirmedOmni. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) { 
+        obj['name'] = name;
+        obj['symbol'] = symbol;
+        obj['amount'] = amount;
+        obj['contractAddress'] = contractAddress;
+        obj['tokenId'] = tokenId;
+        obj['propertyId'] = propertyId;
+        obj['transactionType'] = transactionType;
+        obj['createdByTransactionId'] = createdByTransactionId;
     }
 
     /**
@@ -101,41 +66,44 @@ class AddressTokensTransactionUnconfirmedToken {
      * @return {module:model/AddressTokensTransactionUnconfirmedToken} The populated <code>AddressTokensTransactionUnconfirmedToken</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new AddressTokensTransactionUnconfirmedToken(data);
+        if (data) {
+            obj = obj || new AddressTokensTransactionUnconfirmedToken();
+            AddressTokensTransactionUnconfirmedErc20.constructFromObject(data, obj);
+            AddressTokensTransactionUnconfirmedErc721.constructFromObject(data, obj);
+            AddressTokensTransactionUnconfirmedOmni.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            }
+            if (data.hasOwnProperty('symbol')) {
+                obj['symbol'] = ApiClient.convertToType(data['symbol'], 'String');
+            }
+            if (data.hasOwnProperty('decimals')) {
+                obj['decimals'] = ApiClient.convertToType(data['decimals'], 'String');
+            }
+            if (data.hasOwnProperty('amount')) {
+                obj['amount'] = ApiClient.convertToType(data['amount'], 'String');
+            }
+            if (data.hasOwnProperty('contractAddress')) {
+                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
+            }
+            if (data.hasOwnProperty('tokenId')) {
+                obj['tokenId'] = ApiClient.convertToType(data['tokenId'], 'String');
+            }
+            if (data.hasOwnProperty('propertyId')) {
+                obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'String');
+            }
+            if (data.hasOwnProperty('transactionType')) {
+                obj['transactionType'] = ApiClient.convertToType(data['transactionType'], 'String');
+            }
+            if (data.hasOwnProperty('createdByTransactionId')) {
+                obj['createdByTransactionId'] = ApiClient.convertToType(data['createdByTransactionId'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>AddressTokensTransactionUnconfirmedErc20</code>, <code>AddressTokensTransactionUnconfirmedErc721</code>, <code>AddressTokensTransactionUnconfirmedOmni</code>.
-     * @return {(module:model/AddressTokensTransactionUnconfirmedErc20|module:model/AddressTokensTransactionUnconfirmedErc721|module:model/AddressTokensTransactionUnconfirmedOmni)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>AddressTokensTransactionUnconfirmedErc20</code>, <code>AddressTokensTransactionUnconfirmedErc721</code>, <code>AddressTokensTransactionUnconfirmedOmni</code>.
-     * @param {(module:model/AddressTokensTransactionUnconfirmedErc20|module:model/AddressTokensTransactionUnconfirmedErc721|module:model/AddressTokensTransactionUnconfirmedOmni)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = AddressTokensTransactionUnconfirmedToken.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of AddressTokensTransactionUnconfirmedToken from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/AddressTokensTransactionUnconfirmedToken} An instance of AddressTokensTransactionUnconfirmedToken.
-     */
-    static fromJSON = function(json_string){
-        return AddressTokensTransactionUnconfirmedToken.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -193,7 +161,82 @@ AddressTokensTransactionUnconfirmedToken.prototype['transactionType'] = undefine
 AddressTokensTransactionUnconfirmedToken.prototype['createdByTransactionId'] = undefined;
 
 
-AddressTokensTransactionUnconfirmedToken.OneOf = ["AddressTokensTransactionUnconfirmedErc20", "AddressTokensTransactionUnconfirmedErc721", "AddressTokensTransactionUnconfirmedOmni"];
+// Implement AddressTokensTransactionUnconfirmedErc20 interface:
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+AddressTokensTransactionUnconfirmedErc20.prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+AddressTokensTransactionUnconfirmedErc20.prototype['symbol'] = undefined;
+/**
+ * Defines how many decimals can be used to break the token.
+ * @member {String} decimals
+ */
+AddressTokensTransactionUnconfirmedErc20.prototype['decimals'] = undefined;
+/**
+ * Defines the amount of tokens sent with the transaction that is pending confirmation.
+ * @member {String} amount
+ */
+AddressTokensTransactionUnconfirmedErc20.prototype['amount'] = undefined;
+/**
+ * Defines the address of the contract.
+ * @member {String} contractAddress
+ */
+AddressTokensTransactionUnconfirmedErc20.prototype['contractAddress'] = undefined;
+// Implement AddressTokensTransactionUnconfirmedErc721 interface:
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+AddressTokensTransactionUnconfirmedErc721.prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+AddressTokensTransactionUnconfirmedErc721.prototype['symbol'] = undefined;
+/**
+ * Specifies the unique ID of the token.
+ * @member {String} tokenId
+ */
+AddressTokensTransactionUnconfirmedErc721.prototype['tokenId'] = undefined;
+/**
+ * Specifies the address of the contract.
+ * @member {String} contractAddress
+ */
+AddressTokensTransactionUnconfirmedErc721.prototype['contractAddress'] = undefined;
+// Implement AddressTokensTransactionUnconfirmedOmni interface:
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+AddressTokensTransactionUnconfirmedOmni.prototype['name'] = undefined;
+/**
+ * Defines the ID of the property for Omni Layer.
+ * @member {String} propertyId
+ */
+AddressTokensTransactionUnconfirmedOmni.prototype['propertyId'] = undefined;
+/**
+ * Defines the type of the transaction made.
+ * @member {String} transactionType
+ */
+AddressTokensTransactionUnconfirmedOmni.prototype['transactionType'] = undefined;
+/**
+ * The transaction ID used to create the token.
+ * @member {String} createdByTransactionId
+ */
+AddressTokensTransactionUnconfirmedOmni.prototype['createdByTransactionId'] = undefined;
+/**
+ * Defines the amount of tokens sent with the transaction that is pending confirmation.
+ * @member {String} amount
+ */
+AddressTokensTransactionUnconfirmedOmni.prototype['amount'] = undefined;
+
+
+
 
 export default AddressTokensTransactionUnconfirmedToken;
 

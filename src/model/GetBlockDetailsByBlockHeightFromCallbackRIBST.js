@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBST model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBST
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetBlockDetailsByBlockHeightFromCallbackRIBST {
     /**
@@ -72,38 +72,8 @@ class GetBlockDetailsByBlockHeightFromCallbackRIBST {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetBlockDetailsByBlockHeightFromCallbackRIBST</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetBlockDetailsByBlockHeightFromCallbackRIBST</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetBlockDetailsByBlockHeightFromCallbackRIBST.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['bandwidthUsed'] && !(typeof data['bandwidthUsed'] === 'string' || data['bandwidthUsed'] instanceof String)) {
-            throw new Error("Expected the field `bandwidthUsed` to be a primitive type in the JSON string but got " + data['bandwidthUsed']);
-        }
-        // ensure the json data is a string
-        if (data['burnedTrx'] && !(typeof data['burnedTrx'] === 'string' || data['burnedTrx'] instanceof String)) {
-            throw new Error("Expected the field `burnedTrx` to be a primitive type in the JSON string but got " + data['burnedTrx']);
-        }
-        // ensure the json data is a string
-        if (data['energyUsed'] && !(typeof data['energyUsed'] === 'string' || data['energyUsed'] instanceof String)) {
-            throw new Error("Expected the field `energyUsed` to be a primitive type in the JSON string but got " + data['energyUsed']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetBlockDetailsByBlockHeightFromCallbackRIBST.RequiredProperties = ["bandwidthUsed", "burnedTrx", "energyUsed", "size"];
 
 /**
  * Represents the bandwidth used for the transaction.

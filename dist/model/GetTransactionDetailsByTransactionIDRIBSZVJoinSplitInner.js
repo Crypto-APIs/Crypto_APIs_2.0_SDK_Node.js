@@ -7,9 +7,6 @@ exports["default"] = void 0;
 var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
@@ -18,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 var GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = /*#__PURE__*/function () {
   /**
@@ -105,77 +102,9 @@ var GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = /*#__PURE__*/func
       }
       return obj;
     }
-
-    /**
-     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner</code>.
-     */
-  }, {
-    key: "validateJSON",
-    value: function validateJSON(data) {
-      // check to make sure all required properties are present in the JSON string
-      var _iterator = _createForOfIteratorHelper(GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner.RequiredProperties),
-        _step;
-      try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var property = _step.value;
-          if (!data[property]) {
-            throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-          }
-        }
-        // ensure the json data is a string
-      } catch (err) {
-        _iterator.e(err);
-      } finally {
-        _iterator.f();
-      }
-      if (data['anchor'] && !(typeof data['anchor'] === 'string' || data['anchor'] instanceof String)) {
-        throw new Error("Expected the field `anchor` to be a primitive type in the JSON string but got " + data['anchor']);
-      }
-      // ensure the json data is an array
-      if (!Array.isArray(data['cipherTexts'])) {
-        throw new Error("Expected the field `cipherTexts` to be an array in the JSON data but got " + data['cipherTexts']);
-      }
-      // ensure the json data is an array
-      if (!Array.isArray(data['commitments'])) {
-        throw new Error("Expected the field `commitments` to be an array in the JSON data but got " + data['commitments']);
-      }
-      // ensure the json data is an array
-      if (!Array.isArray(data['macs'])) {
-        throw new Error("Expected the field `macs` to be an array in the JSON data but got " + data['macs']);
-      }
-      // ensure the json data is an array
-      if (!Array.isArray(data['nullifiers'])) {
-        throw new Error("Expected the field `nullifiers` to be an array in the JSON data but got " + data['nullifiers']);
-      }
-      // ensure the json data is a string
-      if (data['oneTimePubKey'] && !(typeof data['oneTimePubKey'] === 'string' || data['oneTimePubKey'] instanceof String)) {
-        throw new Error("Expected the field `oneTimePubKey` to be a primitive type in the JSON string but got " + data['oneTimePubKey']);
-      }
-      // ensure the json data is a string
-      if (data['proof'] && !(typeof data['proof'] === 'string' || data['proof'] instanceof String)) {
-        throw new Error("Expected the field `proof` to be a primitive type in the JSON string but got " + data['proof']);
-      }
-      // ensure the json data is a string
-      if (data['randomSeed'] && !(typeof data['randomSeed'] === 'string' || data['randomSeed'] instanceof String)) {
-        throw new Error("Expected the field `randomSeed` to be a primitive type in the JSON string but got " + data['randomSeed']);
-      }
-      // ensure the json data is a string
-      if (data['vPubNew'] && !(typeof data['vPubNew'] === 'string' || data['vPubNew'] instanceof String)) {
-        throw new Error("Expected the field `vPubNew` to be a primitive type in the JSON string but got " + data['vPubNew']);
-      }
-      // ensure the json data is a string
-      if (data['vPubOld'] && !(typeof data['vPubOld'] === 'string' || data['vPubOld'] instanceof String)) {
-        throw new Error("Expected the field `vPubOld` to be a primitive type in the JSON string but got " + data['vPubOld']);
-      }
-      return true;
-    }
   }]);
   return GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner;
 }();
-GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner.RequiredProperties = ["anchor", "cipherTexts", "commitments", "macs", "nullifiers", "oneTimePubKey", "proof", "randomSeed", "vPubNew", "vPubOld"];
-
 /**
  * Defines a Merkle tree root of a note commitment tree which uniquely identifies a note commitment tree state given the assumed security properties of the Merkle tree’s  hash function.
  * @member {String} anchor

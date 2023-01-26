@@ -17,7 +17,7 @@ import GetTransactionDetailsByTransactionIDRI from './GetTransactionDetailsByTra
 /**
  * The GetTransactionDetailsByTransactionIDRData model module.
  * @module model/GetTransactionDetailsByTransactionIDRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetTransactionDetailsByTransactionIDRData {
     /**
@@ -57,30 +57,8 @@ class GetTransactionDetailsByTransactionIDRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetTransactionDetailsByTransactionIDRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          GetTransactionDetailsByTransactionIDRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetTransactionDetailsByTransactionIDRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/GetTransactionDetailsByTransactionIDRI} item

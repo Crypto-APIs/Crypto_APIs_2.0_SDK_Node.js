@@ -18,7 +18,7 @@ import ListLatestMinedBlocksRIBSXTotalFees from './ListLatestMinedBlocksRIBSXTot
 /**
  * The ListLatestMinedBlocksRIBSX model module.
  * @module model/ListLatestMinedBlocksRIBSX
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListLatestMinedBlocksRIBSX {
     /**
@@ -62,34 +62,8 @@ class ListLatestMinedBlocksRIBSX {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListLatestMinedBlocksRIBSX</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListLatestMinedBlocksRIBSX</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListLatestMinedBlocksRIBSX.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `totalCoins`
-        if (data['totalCoins']) { // data not null
-          ListLatestMinedBlocksRIBSXTotalCoins.validateJSON(data['totalCoins']);
-        }
-        // validate the optional field `totalFees`
-        if (data['totalFees']) { // data not null
-          ListLatestMinedBlocksRIBSXTotalFees.validateJSON(data['totalFees']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListLatestMinedBlocksRIBSX.RequiredProperties = ["totalFees"];
 
 /**
  * @member {module:model/ListLatestMinedBlocksRIBSXTotalCoins} totalCoins

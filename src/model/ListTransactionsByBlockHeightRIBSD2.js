@@ -18,7 +18,7 @@ import ListTransactionsByBlockHeightRIBSD2VinInner from './ListTransactionsByBlo
 /**
  * The ListTransactionsByBlockHeightRIBSD2 model module.
  * @module model/ListTransactionsByBlockHeightRIBSD2
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListTransactionsByBlockHeightRIBSD2 {
     /**
@@ -79,46 +79,8 @@ class ListTransactionsByBlockHeightRIBSD2 {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListTransactionsByBlockHeightRIBSD2</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListTransactionsByBlockHeightRIBSD2</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListTransactionsByBlockHeightRIBSD2.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        if (data['vin']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vin'])) {
-                throw new Error("Expected the field `vin` to be an array in the JSON data but got " + data['vin']);
-            }
-            // validate the optional field `vin` (array)
-            for (const item of data['vin']) {
-                ListTransactionsByBlockHeightRIBSD2VinInner.validateJsonObject(item);
-            };
-        }
-        if (data['vout']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vout'])) {
-                throw new Error("Expected the field `vout` to be an array in the JSON data but got " + data['vout']);
-            }
-            // validate the optional field `vout` (array)
-            for (const item of data['vout']) {
-                ListTransactionsByBlockHashRIBSDVoutInner.validateJsonObject(item);
-            };
-        }
-
-        return true;
-    }
-
 
 }
-
-ListTransactionsByBlockHeightRIBSD2.RequiredProperties = ["locktime", "size", "version", "vin", "vout"];
 
 /**
  * Represents the time at which a particular transaction can be added to the blockchain.

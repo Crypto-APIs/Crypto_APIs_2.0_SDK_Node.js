@@ -19,7 +19,7 @@ import GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner from './GetHDWallet
 /**
  * The GetHDWalletXPubYPubZPubAssetsRI model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetHDWalletXPubYPubZPubAssetsRI {
     /**
@@ -65,50 +65,8 @@ class GetHDWalletXPubYPubZPubAssetsRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetHDWalletXPubYPubZPubAssetsRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetHDWalletXPubYPubZPubAssetsRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetHDWalletXPubYPubZPubAssetsRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        if (data['fungibleTokens']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['fungibleTokens'])) {
-                throw new Error("Expected the field `fungibleTokens` to be an array in the JSON data but got " + data['fungibleTokens']);
-            }
-            // validate the optional field `fungibleTokens` (array)
-            for (const item of data['fungibleTokens']) {
-                GetHDWalletXPubYPubZPubAssetsRIFungibleTokensInner.validateJsonObject(item);
-            };
-        }
-        if (data['nonFungibleTokens']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['nonFungibleTokens'])) {
-                throw new Error("Expected the field `nonFungibleTokens` to be an array in the JSON data but got " + data['nonFungibleTokens']);
-            }
-            // validate the optional field `nonFungibleTokens` (array)
-            for (const item of data['nonFungibleTokens']) {
-                GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner.validateJsonObject(item);
-            };
-        }
-        // validate the optional field `confirmedBalance`
-        if (data['confirmedBalance']) { // data not null
-          GetHDWalletXPubYPubZPubAssetsRIConfirmedBalance.validateJSON(data['confirmedBalance']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetHDWalletXPubYPubZPubAssetsRI.RequiredProperties = ["confirmedBalance"];
 
 /**
  * Represents fungible tokens'es detailed information

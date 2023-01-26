@@ -25,7 +25,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.11.0
+* @version 1.12.0
 */
 var MetadataApi = /*#__PURE__*/function () {
   /**

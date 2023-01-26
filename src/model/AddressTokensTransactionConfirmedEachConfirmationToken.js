@@ -20,94 +20,44 @@ import AddressTokensTransactionConfirmedEachConfirmationOmni from './AddressToke
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationToken model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationToken
- * @version 1.11.0
+ * @version 1.12.0
  */
 class AddressTokensTransactionConfirmedEachConfirmationToken {
     /**
      * Constructs a new <code>AddressTokensTransactionConfirmedEachConfirmationToken</code>.
      * @alias module:model/AddressTokensTransactionConfirmedEachConfirmationToken
-     * @param {(module:model/AddressTokensTransactionConfirmedEachConfirmationBep20|module:model/AddressTokensTransactionConfirmedEachConfirmationErc20|module:model/AddressTokensTransactionConfirmedEachConfirmationErc721|module:model/AddressTokensTransactionConfirmedEachConfirmationOmni)} instance The actual instance to initialize AddressTokensTransactionConfirmedEachConfirmationToken.
+     * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationErc20
+     * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationErc721
+     * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationOmni
+     * @implements module:model/AddressTokensTransactionConfirmedEachConfirmationBep20
+     * @param name {String} Specifies the name of the token.
+     * @param symbol {String} Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+     * @param amount {String} Defines the amount of tokens sent with the confirmed transaction.
+     * @param contractAddress {String} Defines the address of the contract.
+     * @param tokenId {String} Specifies the ID of the token.
+     * @param propertyId {String} Defines the ID of the property for Omni Layer.
+     * @param transactionType {String} Defines the type of the transaction.
+     * @param createdByTransactionId {String} The transaction ID used to create the token.
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "AddressTokensTransactionConfirmedEachConfirmationErc20") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddressTokensTransactionConfirmedEachConfirmationErc20.validateJSON(instance); // throw an exception if no match
-                // create AddressTokensTransactionConfirmedEachConfirmationErc20 from JS object
-                this.actualInstance = AddressTokensTransactionConfirmedEachConfirmationErc20.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddressTokensTransactionConfirmedEachConfirmationErc20
-            errorMessages.push("Failed to construct AddressTokensTransactionConfirmedEachConfirmationErc20: " + err)
-        }
+    constructor(name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) { 
+        AddressTokensTransactionConfirmedEachConfirmationErc20.initialize(this, name, symbol, amount, contractAddress);AddressTokensTransactionConfirmedEachConfirmationErc721.initialize(this, name, symbol, tokenId, contractAddress);AddressTokensTransactionConfirmedEachConfirmationOmni.initialize(this, name, propertyId, transactionType, createdByTransactionId, amount);AddressTokensTransactionConfirmedEachConfirmationBep20.initialize(this, name, symbol, amount, contractAddress);
+        AddressTokensTransactionConfirmedEachConfirmationToken.initialize(this, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId);
+    }
 
-        try {
-            if (typeof instance === "AddressTokensTransactionConfirmedEachConfirmationErc721") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddressTokensTransactionConfirmedEachConfirmationErc721.validateJSON(instance); // throw an exception if no match
-                // create AddressTokensTransactionConfirmedEachConfirmationErc721 from JS object
-                this.actualInstance = AddressTokensTransactionConfirmedEachConfirmationErc721.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddressTokensTransactionConfirmedEachConfirmationErc721
-            errorMessages.push("Failed to construct AddressTokensTransactionConfirmedEachConfirmationErc721: " + err)
-        }
-
-        try {
-            if (typeof instance === "AddressTokensTransactionConfirmedEachConfirmationOmni") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddressTokensTransactionConfirmedEachConfirmationOmni.validateJSON(instance); // throw an exception if no match
-                // create AddressTokensTransactionConfirmedEachConfirmationOmni from JS object
-                this.actualInstance = AddressTokensTransactionConfirmedEachConfirmationOmni.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddressTokensTransactionConfirmedEachConfirmationOmni
-            errorMessages.push("Failed to construct AddressTokensTransactionConfirmedEachConfirmationOmni: " + err)
-        }
-
-        try {
-            if (typeof instance === "AddressTokensTransactionConfirmedEachConfirmationBep20") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddressTokensTransactionConfirmedEachConfirmationBep20.validateJSON(instance); // throw an exception if no match
-                // create AddressTokensTransactionConfirmedEachConfirmationBep20 from JS object
-                this.actualInstance = AddressTokensTransactionConfirmedEachConfirmationBep20.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddressTokensTransactionConfirmedEachConfirmationBep20
-            errorMessages.push("Failed to construct AddressTokensTransactionConfirmedEachConfirmationBep20: " + err)
-        }
-
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `AddressTokensTransactionConfirmedEachConfirmationToken` with oneOf schemas AddressTokensTransactionConfirmedEachConfirmationBep20, AddressTokensTransactionConfirmedEachConfirmationErc20, AddressTokensTransactionConfirmedEachConfirmationErc721, AddressTokensTransactionConfirmedEachConfirmationOmni. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `AddressTokensTransactionConfirmedEachConfirmationToken` with oneOf schemas AddressTokensTransactionConfirmedEachConfirmationBep20, AddressTokensTransactionConfirmedEachConfirmationErc20, AddressTokensTransactionConfirmedEachConfirmationErc721, AddressTokensTransactionConfirmedEachConfirmationOmni. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, name, symbol, amount, contractAddress, tokenId, propertyId, transactionType, createdByTransactionId) { 
+        obj['name'] = name;
+        obj['symbol'] = symbol;
+        obj['amount'] = amount;
+        obj['contractAddress'] = contractAddress;
+        obj['tokenId'] = tokenId;
+        obj['propertyId'] = propertyId;
+        obj['transactionType'] = transactionType;
+        obj['createdByTransactionId'] = createdByTransactionId;
     }
 
     /**
@@ -118,41 +68,45 @@ class AddressTokensTransactionConfirmedEachConfirmationToken {
      * @return {module:model/AddressTokensTransactionConfirmedEachConfirmationToken} The populated <code>AddressTokensTransactionConfirmedEachConfirmationToken</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new AddressTokensTransactionConfirmedEachConfirmationToken(data);
+        if (data) {
+            obj = obj || new AddressTokensTransactionConfirmedEachConfirmationToken();
+            AddressTokensTransactionConfirmedEachConfirmationErc20.constructFromObject(data, obj);
+            AddressTokensTransactionConfirmedEachConfirmationErc721.constructFromObject(data, obj);
+            AddressTokensTransactionConfirmedEachConfirmationOmni.constructFromObject(data, obj);
+            AddressTokensTransactionConfirmedEachConfirmationBep20.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('name')) {
+                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            }
+            if (data.hasOwnProperty('symbol')) {
+                obj['symbol'] = ApiClient.convertToType(data['symbol'], 'String');
+            }
+            if (data.hasOwnProperty('decimals')) {
+                obj['decimals'] = ApiClient.convertToType(data['decimals'], 'String');
+            }
+            if (data.hasOwnProperty('amount')) {
+                obj['amount'] = ApiClient.convertToType(data['amount'], 'String');
+            }
+            if (data.hasOwnProperty('contractAddress')) {
+                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
+            }
+            if (data.hasOwnProperty('tokenId')) {
+                obj['tokenId'] = ApiClient.convertToType(data['tokenId'], 'String');
+            }
+            if (data.hasOwnProperty('propertyId')) {
+                obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'String');
+            }
+            if (data.hasOwnProperty('transactionType')) {
+                obj['transactionType'] = ApiClient.convertToType(data['transactionType'], 'String');
+            }
+            if (data.hasOwnProperty('createdByTransactionId')) {
+                obj['createdByTransactionId'] = ApiClient.convertToType(data['createdByTransactionId'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>AddressTokensTransactionConfirmedEachConfirmationBep20</code>, <code>AddressTokensTransactionConfirmedEachConfirmationErc20</code>, <code>AddressTokensTransactionConfirmedEachConfirmationErc721</code>, <code>AddressTokensTransactionConfirmedEachConfirmationOmni</code>.
-     * @return {(module:model/AddressTokensTransactionConfirmedEachConfirmationBep20|module:model/AddressTokensTransactionConfirmedEachConfirmationErc20|module:model/AddressTokensTransactionConfirmedEachConfirmationErc721|module:model/AddressTokensTransactionConfirmedEachConfirmationOmni)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>AddressTokensTransactionConfirmedEachConfirmationBep20</code>, <code>AddressTokensTransactionConfirmedEachConfirmationErc20</code>, <code>AddressTokensTransactionConfirmedEachConfirmationErc721</code>, <code>AddressTokensTransactionConfirmedEachConfirmationOmni</code>.
-     * @param {(module:model/AddressTokensTransactionConfirmedEachConfirmationBep20|module:model/AddressTokensTransactionConfirmedEachConfirmationErc20|module:model/AddressTokensTransactionConfirmedEachConfirmationErc721|module:model/AddressTokensTransactionConfirmedEachConfirmationOmni)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = AddressTokensTransactionConfirmedEachConfirmationToken.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of AddressTokensTransactionConfirmedEachConfirmationToken from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/AddressTokensTransactionConfirmedEachConfirmationToken} An instance of AddressTokensTransactionConfirmedEachConfirmationToken.
-     */
-    static fromJSON = function(json_string){
-        return AddressTokensTransactionConfirmedEachConfirmationToken.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -210,7 +164,108 @@ AddressTokensTransactionConfirmedEachConfirmationToken.prototype['transactionTyp
 AddressTokensTransactionConfirmedEachConfirmationToken.prototype['createdByTransactionId'] = undefined;
 
 
-AddressTokensTransactionConfirmedEachConfirmationToken.OneOf = ["AddressTokensTransactionConfirmedEachConfirmationBep20", "AddressTokensTransactionConfirmedEachConfirmationErc20", "AddressTokensTransactionConfirmedEachConfirmationErc721", "AddressTokensTransactionConfirmedEachConfirmationOmni"];
+// Implement AddressTokensTransactionConfirmedEachConfirmationErc20 interface:
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc20.prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc20.prototype['symbol'] = undefined;
+/**
+ * Defines how many decimals can be used to break the token.
+ * @member {String} decimals
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc20.prototype['decimals'] = undefined;
+/**
+ * Defines the amount of tokens sent with the confirmed transaction.
+ * @member {String} amount
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc20.prototype['amount'] = undefined;
+/**
+ * Defines the address of the contract.
+ * @member {String} contractAddress
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc20.prototype['contractAddress'] = undefined;
+// Implement AddressTokensTransactionConfirmedEachConfirmationErc721 interface:
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc721.prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc721.prototype['symbol'] = undefined;
+/**
+ * Specifies the ID of the token.
+ * @member {String} tokenId
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc721.prototype['tokenId'] = undefined;
+/**
+ * Specifies the address of the contract.
+ * @member {String} contractAddress
+ */
+AddressTokensTransactionConfirmedEachConfirmationErc721.prototype['contractAddress'] = undefined;
+// Implement AddressTokensTransactionConfirmedEachConfirmationOmni interface:
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+AddressTokensTransactionConfirmedEachConfirmationOmni.prototype['name'] = undefined;
+/**
+ * Defines the ID of the property for Omni Layer.
+ * @member {String} propertyId
+ */
+AddressTokensTransactionConfirmedEachConfirmationOmni.prototype['propertyId'] = undefined;
+/**
+ * Defines the type of the transaction.
+ * @member {String} transactionType
+ */
+AddressTokensTransactionConfirmedEachConfirmationOmni.prototype['transactionType'] = undefined;
+/**
+ * The transaction ID used to create the token.
+ * @member {String} createdByTransactionId
+ */
+AddressTokensTransactionConfirmedEachConfirmationOmni.prototype['createdByTransactionId'] = undefined;
+/**
+ * Defines the amount of tokens sent with the confirmed transaction.
+ * @member {String} amount
+ */
+AddressTokensTransactionConfirmedEachConfirmationOmni.prototype['amount'] = undefined;
+// Implement AddressTokensTransactionConfirmedEachConfirmationBep20 interface:
+/**
+ * Specifies the name of the token.
+ * @member {String} name
+ */
+AddressTokensTransactionConfirmedEachConfirmationBep20.prototype['name'] = undefined;
+/**
+ * Specifies an identifier of the token, where up to five alphanumeric characters can be used for it.
+ * @member {String} symbol
+ */
+AddressTokensTransactionConfirmedEachConfirmationBep20.prototype['symbol'] = undefined;
+/**
+ * Defines how many decimals can be used to break the token.
+ * @member {String} decimals
+ */
+AddressTokensTransactionConfirmedEachConfirmationBep20.prototype['decimals'] = undefined;
+/**
+ * Defines the amount of tokens sent with the confirmed transaction.
+ * @member {String} amount
+ */
+AddressTokensTransactionConfirmedEachConfirmationBep20.prototype['amount'] = undefined;
+/**
+ * Defines the address of the contract.
+ * @member {String} contractAddress
+ */
+AddressTokensTransactionConfirmedEachConfirmationBep20.prototype['contractAddress'] = undefined;
+
+
+
 
 export default AddressTokensTransactionConfirmedEachConfirmationToken;
 

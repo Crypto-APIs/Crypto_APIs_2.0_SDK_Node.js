@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRBDataItem model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRBDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRBDataItem {
     /**
@@ -80,54 +80,8 @@ class CreateFungibleTokensTransactionRequestFromAddressRBDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>CreateFungibleTokensTransactionRequestFromAddressRBDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateFungibleTokensTransactionRequestFromAddressRBDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of CreateFungibleTokensTransactionRequestFromAddressRBDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
-            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
-        }
-        // ensure the json data is a string
-        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
-            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
-        }
-        // ensure the json data is a string
-        if (data['feePriority'] && !(typeof data['feePriority'] === 'string' || data['feePriority'] instanceof String)) {
-            throw new Error("Expected the field `feePriority` to be a primitive type in the JSON string but got " + data['feePriority']);
-        }
-        // ensure the json data is a string
-        if (data['note'] && !(typeof data['note'] === 'string' || data['note'] instanceof String)) {
-            throw new Error("Expected the field `note` to be a primitive type in the JSON string but got " + data['note']);
-        }
-        // ensure the json data is a string
-        if (data['recipientAddress'] && !(typeof data['recipientAddress'] === 'string' || data['recipientAddress'] instanceof String)) {
-            throw new Error("Expected the field `recipientAddress` to be a primitive type in the JSON string but got " + data['recipientAddress']);
-        }
-        // ensure the json data is a string
-        if (data['tokenIdentifier'] && !(typeof data['tokenIdentifier'] === 'string' || data['tokenIdentifier'] instanceof String)) {
-            throw new Error("Expected the field `tokenIdentifier` to be a primitive type in the JSON string but got " + data['tokenIdentifier']);
-        }
-
-        return true;
-    }
-
 
 }
-
-CreateFungibleTokensTransactionRequestFromAddressRBDataItem.RequiredProperties = ["amount", "feePriority", "recipientAddress", "tokenIdentifier"];
 
 /**
  * Represents the specific amount of the transaction.

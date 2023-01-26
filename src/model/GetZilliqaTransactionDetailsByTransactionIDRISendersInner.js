@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDRISendersInner model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDRISendersInner
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetZilliqaTransactionDetailsByTransactionIDRISendersInner {
     /**
@@ -61,34 +61,8 @@ class GetZilliqaTransactionDetailsByTransactionIDRISendersInner {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetZilliqaTransactionDetailsByTransactionIDRISendersInner</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetZilliqaTransactionDetailsByTransactionIDRISendersInner</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetZilliqaTransactionDetailsByTransactionIDRISendersInner.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
-            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetZilliqaTransactionDetailsByTransactionIDRISendersInner.RequiredProperties = ["address", "amount"];
 
 /**
  * Represents the hash of the address that provides the funds.

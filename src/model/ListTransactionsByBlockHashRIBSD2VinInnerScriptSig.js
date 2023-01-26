@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSD2VinInnerScriptSig model module.
  * @module model/ListTransactionsByBlockHashRIBSD2VinInnerScriptSig
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListTransactionsByBlockHashRIBSD2VinInnerScriptSig {
     /**
@@ -67,38 +67,8 @@ class ListTransactionsByBlockHashRIBSD2VinInnerScriptSig {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListTransactionsByBlockHashRIBSD2VinInnerScriptSig</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListTransactionsByBlockHashRIBSD2VinInnerScriptSig</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListTransactionsByBlockHashRIBSD2VinInnerScriptSig.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['asm'] && !(typeof data['asm'] === 'string' || data['asm'] instanceof String)) {
-            throw new Error("Expected the field `asm` to be a primitive type in the JSON string but got " + data['asm']);
-        }
-        // ensure the json data is a string
-        if (data['hex'] && !(typeof data['hex'] === 'string' || data['hex'] instanceof String)) {
-            throw new Error("Expected the field `hex` to be a primitive type in the JSON string but got " + data['hex']);
-        }
-        // ensure the json data is a string
-        if (data['type'] && !(typeof data['type'] === 'string' || data['type'] instanceof String)) {
-            throw new Error("Expected the field `type` to be a primitive type in the JSON string but got " + data['type']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ListTransactionsByBlockHashRIBSD2VinInnerScriptSig.RequiredProperties = ["asm", "hex", "type"];
 
 /**
  * The asm strands for assembly, which is the symbolic representation of the Bitcoin's Script language op-codes.

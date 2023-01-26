@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressCoinsTransactionUnconfirmedDataItem model module.
  * @module model/AddressCoinsTransactionUnconfirmedDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class AddressCoinsTransactionUnconfirmedDataItem {
     /**
@@ -92,54 +92,8 @@ class AddressCoinsTransactionUnconfirmedDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>AddressCoinsTransactionUnconfirmedDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>AddressCoinsTransactionUnconfirmedDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of AddressCoinsTransactionUnconfirmedDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
-            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
-        }
-        // ensure the json data is a string
-        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
-            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
-        }
-        // ensure the json data is a string
-        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
-            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
-        }
-        // ensure the json data is a string
-        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
-            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
-            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
-        }
-        // ensure the json data is a string
-        if (data['direction'] && !(typeof data['direction'] === 'string' || data['direction'] instanceof String)) {
-            throw new Error("Expected the field `direction` to be a primitive type in the JSON string but got " + data['direction']);
-        }
-
-        return true;
-    }
-
 
 }
-
-AddressCoinsTransactionUnconfirmedDataItem.RequiredProperties = ["blockchain", "network", "address", "transactionId", "amount", "unit", "direction", "firstSeenInMempoolTimestamp"];
 
 /**
  * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.

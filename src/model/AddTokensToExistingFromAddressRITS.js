@@ -18,62 +18,30 @@ import AddTokensToExistingFromAddressRITSET from './AddTokensToExistingFromAddre
 /**
  * The AddTokensToExistingFromAddressRITS model module.
  * @module model/AddTokensToExistingFromAddressRITS
- * @version 1.11.0
+ * @version 1.12.0
  */
 class AddTokensToExistingFromAddressRITS {
     /**
      * Constructs a new <code>AddTokensToExistingFromAddressRITS</code>.
      * @alias module:model/AddTokensToExistingFromAddressRITS
-     * @param {(module:model/AddTokensToExistingFromAddressRITSBOT|module:model/AddTokensToExistingFromAddressRITSET)} instance The actual instance to initialize AddTokensToExistingFromAddressRITS.
+     * @implements module:model/AddTokensToExistingFromAddressRITSBOT
+     * @implements module:model/AddTokensToExistingFromAddressRITSET
+     * @param propertyId {Number} Defines the `propertyId` of the Omni Layer token.
+     * @param contractAddress {String} Token contract address to be transferred
      */
-    constructor(instance = null) {
-        if (instance === null) {
-            this.actualInstance = null;
-            return;
-        }
-        var match = 0;
-        var errorMessages = [];
-        try {
-            if (typeof instance === "AddTokensToExistingFromAddressRITSBOT") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddTokensToExistingFromAddressRITSBOT.validateJSON(instance); // throw an exception if no match
-                // create AddTokensToExistingFromAddressRITSBOT from JS object
-                this.actualInstance = AddTokensToExistingFromAddressRITSBOT.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddTokensToExistingFromAddressRITSBOT
-            errorMessages.push("Failed to construct AddTokensToExistingFromAddressRITSBOT: " + err)
-        }
+    constructor(propertyId, contractAddress) { 
+        AddTokensToExistingFromAddressRITSBOT.initialize(this, propertyId);AddTokensToExistingFromAddressRITSET.initialize(this, contractAddress);
+        AddTokensToExistingFromAddressRITS.initialize(this, propertyId, contractAddress);
+    }
 
-        try {
-            if (typeof instance === "AddTokensToExistingFromAddressRITSET") {
-                this.actualInstance = instance;
-            } else {
-                // plain JS object
-                // validate the object
-                AddTokensToExistingFromAddressRITSET.validateJSON(instance); // throw an exception if no match
-                // create AddTokensToExistingFromAddressRITSET from JS object
-                this.actualInstance = AddTokensToExistingFromAddressRITSET.constructFromObject(instance);
-            }
-            match++;
-        } catch(err) {
-            // json data failed to deserialize into AddTokensToExistingFromAddressRITSET
-            errorMessages.push("Failed to construct AddTokensToExistingFromAddressRITSET: " + err)
-        }
-
-        if (match > 1) {
-            throw new Error("Multiple matches found constructing `AddTokensToExistingFromAddressRITS` with oneOf schemas AddTokensToExistingFromAddressRITSBOT, AddTokensToExistingFromAddressRITSET. Input: " + JSON.stringify(instance));
-        } else if (match === 0) {
-            this.actualInstance = null; // clear the actual instance in case there are multiple matches
-            throw new Error("No match found constructing `AddTokensToExistingFromAddressRITS` with oneOf schemas AddTokensToExistingFromAddressRITSBOT, AddTokensToExistingFromAddressRITSET. Details: " +
-                            errorMessages.join(", "));
-        } else { // only 1 match
-            // the input is valid
-        }
+    /**
+     * Initializes the fields of this object.
+     * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+     * Only for internal use.
+     */
+    static initialize(obj, propertyId, contractAddress) { 
+        obj['propertyId'] = propertyId;
+        obj['contractAddress'] = contractAddress;
     }
 
     /**
@@ -84,41 +52,22 @@ class AddTokensToExistingFromAddressRITS {
      * @return {module:model/AddTokensToExistingFromAddressRITS} The populated <code>AddTokensToExistingFromAddressRITS</code> instance.
      */
     static constructFromObject(data, obj) {
-        return new AddTokensToExistingFromAddressRITS(data);
+        if (data) {
+            obj = obj || new AddTokensToExistingFromAddressRITS();
+            AddTokensToExistingFromAddressRITSBOT.constructFromObject(data, obj);
+            AddTokensToExistingFromAddressRITSET.constructFromObject(data, obj);
+
+            if (data.hasOwnProperty('propertyId')) {
+                obj['propertyId'] = ApiClient.convertToType(data['propertyId'], 'Number');
+            }
+            if (data.hasOwnProperty('contractAddress')) {
+                obj['contractAddress'] = ApiClient.convertToType(data['contractAddress'], 'String');
+            }
+        }
+        return obj;
     }
 
-    /**
-     * Gets the actual instance, which can be <code>AddTokensToExistingFromAddressRITSBOT</code>, <code>AddTokensToExistingFromAddressRITSET</code>.
-     * @return {(module:model/AddTokensToExistingFromAddressRITSBOT|module:model/AddTokensToExistingFromAddressRITSET)} The actual instance.
-     */
-    getActualInstance() {
-        return this.actualInstance;
-    }
 
-    /**
-     * Sets the actual instance, which can be <code>AddTokensToExistingFromAddressRITSBOT</code>, <code>AddTokensToExistingFromAddressRITSET</code>.
-     * @param {(module:model/AddTokensToExistingFromAddressRITSBOT|module:model/AddTokensToExistingFromAddressRITSET)} obj The actual instance.
-     */
-    setActualInstance(obj) {
-       this.actualInstance = AddTokensToExistingFromAddressRITS.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-    toJSON = function(){
-        return this.getActualInstance();
-    }
-
-    /**
-     * Create an instance of AddTokensToExistingFromAddressRITS from a JSON string.
-     * @param {string} json_string JSON string.
-     * @return {module:model/AddTokensToExistingFromAddressRITS} An instance of AddTokensToExistingFromAddressRITS.
-     */
-    static fromJSON = function(json_string){
-        return AddTokensToExistingFromAddressRITS.constructFromObject(JSON.parse(json_string));
-    }
 }
 
 /**
@@ -134,7 +83,21 @@ AddTokensToExistingFromAddressRITS.prototype['propertyId'] = undefined;
 AddTokensToExistingFromAddressRITS.prototype['contractAddress'] = undefined;
 
 
-AddTokensToExistingFromAddressRITS.OneOf = ["AddTokensToExistingFromAddressRITSBOT", "AddTokensToExistingFromAddressRITSET"];
+// Implement AddTokensToExistingFromAddressRITSBOT interface:
+/**
+ * Defines the `propertyId` of the Omni Layer token.
+ * @member {Number} propertyId
+ */
+AddTokensToExistingFromAddressRITSBOT.prototype['propertyId'] = undefined;
+// Implement AddTokensToExistingFromAddressRITSET interface:
+/**
+ * Token contract address to be transferred
+ * @member {String} contractAddress
+ */
+AddTokensToExistingFromAddressRITSET.prototype['contractAddress'] = undefined;
+
+
+
 
 export default AddTokensToExistingFromAddressRITS;
 

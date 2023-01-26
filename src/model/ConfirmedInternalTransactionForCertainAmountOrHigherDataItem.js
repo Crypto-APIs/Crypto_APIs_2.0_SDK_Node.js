@@ -17,7 +17,7 @@ import AddressInternalTransactionConfirmedDataItemMinedInBlock from './AddressIn
 /**
  * The ConfirmedInternalTransactionForCertainAmountOrHigherDataItem model module.
  * @module model/ConfirmedInternalTransactionForCertainAmountOrHigherDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ConfirmedInternalTransactionForCertainAmountOrHigherDataItem {
     /**
@@ -93,58 +93,8 @@ class ConfirmedInternalTransactionForCertainAmountOrHigherDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ConfirmedInternalTransactionForCertainAmountOrHigherDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ConfirmedInternalTransactionForCertainAmountOrHigherDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ConfirmedInternalTransactionForCertainAmountOrHigherDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['blockchain'] && !(typeof data['blockchain'] === 'string' || data['blockchain'] instanceof String)) {
-            throw new Error("Expected the field `blockchain` to be a primitive type in the JSON string but got " + data['blockchain']);
-        }
-        // ensure the json data is a string
-        if (data['network'] && !(typeof data['network'] === 'string' || data['network'] instanceof String)) {
-            throw new Error("Expected the field `network` to be a primitive type in the JSON string but got " + data['network']);
-        }
-        // ensure the json data is a string
-        if (data['address'] && !(typeof data['address'] === 'string' || data['address'] instanceof String)) {
-            throw new Error("Expected the field `address` to be a primitive type in the JSON string but got " + data['address']);
-        }
-        // validate the optional field `minedInBlock`
-        if (data['minedInBlock']) { // data not null
-          AddressInternalTransactionConfirmedDataItemMinedInBlock.validateJSON(data['minedInBlock']);
-        }
-        // ensure the json data is a string
-        if (data['parentTransactionId'] && !(typeof data['parentTransactionId'] === 'string' || data['parentTransactionId'] instanceof String)) {
-            throw new Error("Expected the field `parentTransactionId` to be a primitive type in the JSON string but got " + data['parentTransactionId']);
-        }
-        // ensure the json data is a string
-        if (data['operationId'] && !(typeof data['operationId'] === 'string' || data['operationId'] instanceof String)) {
-            throw new Error("Expected the field `operationId` to be a primitive type in the JSON string but got " + data['operationId']);
-        }
-        // ensure the json data is a string
-        if (data['amount'] && !(typeof data['amount'] === 'string' || data['amount'] instanceof String)) {
-            throw new Error("Expected the field `amount` to be a primitive type in the JSON string but got " + data['amount']);
-        }
-        // ensure the json data is a string
-        if (data['unit'] && !(typeof data['unit'] === 'string' || data['unit'] instanceof String)) {
-            throw new Error("Expected the field `unit` to be a primitive type in the JSON string but got " + data['unit']);
-        }
-
-        return true;
-    }
-
 
 }
-
-ConfirmedInternalTransactionForCertainAmountOrHigherDataItem.RequiredProperties = ["blockchain", "network", "address", "minedInBlock", "parentTransactionId", "operationId", "amount", "unit"];
 
 /**
  * Represents the specific blockchain protocol name, e.g. Ethereum, Bitcoin, etc.

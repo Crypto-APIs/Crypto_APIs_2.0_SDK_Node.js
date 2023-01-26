@@ -26,6 +26,10 @@ Name | Type | Description | Notes
 
 * `BEP-20` (value: `"BEP-20"`)
 
+* `TRC-20` (value: `"TRC-20"`)
+
+* `TRC-721` (value: `"TRC-721"`)
+
 
 
 

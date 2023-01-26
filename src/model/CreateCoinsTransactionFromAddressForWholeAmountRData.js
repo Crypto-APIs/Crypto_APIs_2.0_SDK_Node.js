@@ -17,7 +17,7 @@ import CreateCoinsTransactionFromAddressForWholeAmountRI from './CreateCoinsTran
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountRData model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountRData
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountRData {
     /**
@@ -57,30 +57,8 @@ class CreateCoinsTransactionFromAddressForWholeAmountRData {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>CreateCoinsTransactionFromAddressForWholeAmountRData</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateCoinsTransactionFromAddressForWholeAmountRData</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of CreateCoinsTransactionFromAddressForWholeAmountRData.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // validate the optional field `item`
-        if (data['item']) { // data not null
-          CreateCoinsTransactionFromAddressForWholeAmountRI.validateJSON(data['item']);
-        }
-
-        return true;
-    }
-
 
 }
-
-CreateCoinsTransactionFromAddressForWholeAmountRData.RequiredProperties = ["item"];
 
 /**
  * @member {module:model/CreateCoinsTransactionFromAddressForWholeAmountRI} item

@@ -18,7 +18,7 @@ import ListConfirmedTransactionsByAddressRIBSBVoutInner from './ListConfirmedTra
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSB model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSB
- * @version 1.11.0
+ * @version 1.12.0
  */
 class ListConfirmedTransactionsByAddressAndTimeRangeRIBSB {
     /**
@@ -84,46 +84,8 @@ class ListConfirmedTransactionsByAddressAndTimeRangeRIBSB {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>ListConfirmedTransactionsByAddressAndTimeRangeRIBSB</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>ListConfirmedTransactionsByAddressAndTimeRangeRIBSB</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of ListConfirmedTransactionsByAddressAndTimeRangeRIBSB.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        if (data['vin']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vin'])) {
-                throw new Error("Expected the field `vin` to be an array in the JSON data but got " + data['vin']);
-            }
-            // validate the optional field `vin` (array)
-            for (const item of data['vin']) {
-                ListConfirmedTransactionsByAddressRIBSBVinInner.validateJsonObject(item);
-            };
-        }
-        if (data['vout']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['vout'])) {
-                throw new Error("Expected the field `vout` to be an array in the JSON data but got " + data['vout']);
-            }
-            // validate the optional field `vout` (array)
-            for (const item of data['vout']) {
-                ListConfirmedTransactionsByAddressRIBSBVoutInner.validateJsonObject(item);
-            };
-        }
-
-        return true;
-    }
-
 
 }
-
-ListConfirmedTransactionsByAddressAndTimeRangeRIBSB.RequiredProperties = ["locktime", "size", "vSize", "version", "vin", "vout"];
 
 /**
  * Represents the locktime on the transaction on the specific blockchain, i.e. the blockheight at which the transaction is valid.

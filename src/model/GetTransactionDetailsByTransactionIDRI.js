@@ -20,25 +20,25 @@ import GetTransactionDetailsByTransactionIDRISendersInner from './GetTransaction
 /**
  * The GetTransactionDetailsByTransactionIDRI model module.
  * @module model/GetTransactionDetailsByTransactionIDRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetTransactionDetailsByTransactionIDRI {
     /**
      * Constructs a new <code>GetTransactionDetailsByTransactionIDRI</code>.
      * @alias module:model/GetTransactionDetailsByTransactionIDRI
-     * @param index {Number} Represents the index position of the transaction in the specific block.
      * @param isConfirmed {Boolean} Represents the state of the transaction whether it is confirmed or not confirmed.
+     * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+     * @param index {Number} Represents the index position of the transaction in the specific block.
      * @param recipients {Array.<module:model/GetTransactionDetailsByTransactionIDRIRecipientsInner>} Represents a list of recipient addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param senders {Array.<module:model/GetTransactionDetailsByTransactionIDRISendersInner>} Represents a list of sender addresses with the respective amounts. In account-based protocols like Ethereum there is only one address in this list.
      * @param timestamp {Number} Defines the exact date/time in Unix Timestamp when this transaction was mined, confirmed or first seen in Mempool, if it is unconfirmed.
      * @param transactionHash {String} Represents the same as `transactionId` for account-based protocols like Ethereum, while it could be different in UTXO-based protocols like Bitcoin. E.g., in UTXO-based protocols `hash` is different from `transactionId` for SegWit transactions.
-     * @param transactionId {String} Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
      * @param fee {module:model/GetTransactionDetailsByTransactionIDRIFee} 
      * @param blockchainSpecific {module:model/GetTransactionDetailsByTransactionIDRIBS} 
      */
-    constructor(index, isConfirmed, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific) { 
+    constructor(isConfirmed, transactionId, index, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific) { 
         
-        GetTransactionDetailsByTransactionIDRI.initialize(this, index, isConfirmed, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific);
+        GetTransactionDetailsByTransactionIDRI.initialize(this, isConfirmed, transactionId, index, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific);
     }
 
     /**
@@ -46,14 +46,14 @@ class GetTransactionDetailsByTransactionIDRI {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, index, isConfirmed, recipients, senders, timestamp, transactionHash, transactionId, fee, blockchainSpecific) { 
-        obj['index'] = index;
+    static initialize(obj, isConfirmed, transactionId, index, recipients, senders, timestamp, transactionHash, fee, blockchainSpecific) { 
         obj['isConfirmed'] = isConfirmed;
+        obj['transactionId'] = transactionId;
+        obj['index'] = index;
         obj['recipients'] = recipients;
         obj['senders'] = senders;
         obj['timestamp'] = timestamp;
         obj['transactionHash'] = transactionHash;
-        obj['transactionId'] = transactionId;
         obj['fee'] = fee;
         obj['blockchainSpecific'] = blockchainSpecific;
     }
@@ -69,11 +69,14 @@ class GetTransactionDetailsByTransactionIDRI {
         if (data) {
             obj = obj || new GetTransactionDetailsByTransactionIDRI();
 
-            if (data.hasOwnProperty('index')) {
-                obj['index'] = ApiClient.convertToType(data['index'], 'Number');
-            }
             if (data.hasOwnProperty('isConfirmed')) {
                 obj['isConfirmed'] = ApiClient.convertToType(data['isConfirmed'], 'Boolean');
+            }
+            if (data.hasOwnProperty('transactionId')) {
+                obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
+            }
+            if (data.hasOwnProperty('index')) {
+                obj['index'] = ApiClient.convertToType(data['index'], 'Number');
             }
             if (data.hasOwnProperty('minedInBlockHash')) {
                 obj['minedInBlockHash'] = ApiClient.convertToType(data['minedInBlockHash'], 'String');
@@ -93,9 +96,6 @@ class GetTransactionDetailsByTransactionIDRI {
             if (data.hasOwnProperty('transactionHash')) {
                 obj['transactionHash'] = ApiClient.convertToType(data['transactionHash'], 'String');
             }
-            if (data.hasOwnProperty('transactionId')) {
-                obj['transactionId'] = ApiClient.convertToType(data['transactionId'], 'String');
-            }
             if (data.hasOwnProperty('fee')) {
                 obj['fee'] = GetTransactionDetailsByTransactionIDRIFee.constructFromObject(data['fee']);
             }
@@ -106,78 +106,26 @@ class GetTransactionDetailsByTransactionIDRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetTransactionDetailsByTransactionIDRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetTransactionDetailsByTransactionIDRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetTransactionDetailsByTransactionIDRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['minedInBlockHash'] && !(typeof data['minedInBlockHash'] === 'string' || data['minedInBlockHash'] instanceof String)) {
-            throw new Error("Expected the field `minedInBlockHash` to be a primitive type in the JSON string but got " + data['minedInBlockHash']);
-        }
-        if (data['recipients']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['recipients'])) {
-                throw new Error("Expected the field `recipients` to be an array in the JSON data but got " + data['recipients']);
-            }
-            // validate the optional field `recipients` (array)
-            for (const item of data['recipients']) {
-                GetTransactionDetailsByTransactionIDRIRecipientsInner.validateJsonObject(item);
-            };
-        }
-        if (data['senders']) { // data not null
-            // ensure the json data is an array
-            if (!Array.isArray(data['senders'])) {
-                throw new Error("Expected the field `senders` to be an array in the JSON data but got " + data['senders']);
-            }
-            // validate the optional field `senders` (array)
-            for (const item of data['senders']) {
-                GetTransactionDetailsByTransactionIDRISendersInner.validateJsonObject(item);
-            };
-        }
-        // ensure the json data is a string
-        if (data['transactionHash'] && !(typeof data['transactionHash'] === 'string' || data['transactionHash'] instanceof String)) {
-            throw new Error("Expected the field `transactionHash` to be a primitive type in the JSON string but got " + data['transactionHash']);
-        }
-        // ensure the json data is a string
-        if (data['transactionId'] && !(typeof data['transactionId'] === 'string' || data['transactionId'] instanceof String)) {
-            throw new Error("Expected the field `transactionId` to be a primitive type in the JSON string but got " + data['transactionId']);
-        }
-        // validate the optional field `fee`
-        if (data['fee']) { // data not null
-          GetTransactionDetailsByTransactionIDRIFee.validateJSON(data['fee']);
-        }
-        // validate the optional field `blockchainSpecific`
-        if (data['blockchainSpecific']) { // data not null
-          GetTransactionDetailsByTransactionIDRIBS.validateJSON(data['blockchainSpecific']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetTransactionDetailsByTransactionIDRI.RequiredProperties = ["index", "isConfirmed", "recipients", "senders", "timestamp", "transactionHash", "transactionId", "fee", "blockchainSpecific"];
-
-/**
- * Represents the index position of the transaction in the specific block.
- * @member {Number} index
- */
-GetTransactionDetailsByTransactionIDRI.prototype['index'] = undefined;
 
 /**
  * Represents the state of the transaction whether it is confirmed or not confirmed.
  * @member {Boolean} isConfirmed
  */
 GetTransactionDetailsByTransactionIDRI.prototype['isConfirmed'] = undefined;
+
+/**
+ * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
+ * @member {String} transactionId
+ */
+GetTransactionDetailsByTransactionIDRI.prototype['transactionId'] = undefined;
+
+/**
+ * Represents the index position of the transaction in the specific block.
+ * @member {Number} index
+ */
+GetTransactionDetailsByTransactionIDRI.prototype['index'] = undefined;
 
 /**
  * Represents the hash of the block where this transaction was mined/confirmed for first time. The hash is defined as a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.
@@ -214,12 +162,6 @@ GetTransactionDetailsByTransactionIDRI.prototype['timestamp'] = undefined;
  * @member {String} transactionHash
  */
 GetTransactionDetailsByTransactionIDRI.prototype['transactionHash'] = undefined;
-
-/**
- * Represents the unique identifier of a transaction, i.e. it could be `transactionId` in UTXO-based protocols like Bitcoin, and transaction `hash` in Ethereum blockchain.
- * @member {String} transactionId
- */
-GetTransactionDetailsByTransactionIDRI.prototype['transactionId'] = undefined;
 
 /**
  * @member {module:model/GetTransactionDetailsByTransactionIDRIFee} fee

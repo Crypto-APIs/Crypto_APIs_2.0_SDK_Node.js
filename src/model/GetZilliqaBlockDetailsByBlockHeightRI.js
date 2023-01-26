@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetZilliqaBlockDetailsByBlockHeightRI model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeightRI
- * @version 1.11.0
+ * @version 1.12.0
  */
 class GetZilliqaBlockDetailsByBlockHeightRI {
     /**
@@ -111,54 +111,8 @@ class GetZilliqaBlockDetailsByBlockHeightRI {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>GetZilliqaBlockDetailsByBlockHeightRI</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>GetZilliqaBlockDetailsByBlockHeightRI</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of GetZilliqaBlockDetailsByBlockHeightRI.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['blockHash'] && !(typeof data['blockHash'] === 'string' || data['blockHash'] instanceof String)) {
-            throw new Error("Expected the field `blockHash` to be a primitive type in the JSON string but got " + data['blockHash']);
-        }
-        // ensure the json data is a string
-        if (data['difficulty'] && !(typeof data['difficulty'] === 'string' || data['difficulty'] instanceof String)) {
-            throw new Error("Expected the field `difficulty` to be a primitive type in the JSON string but got " + data['difficulty']);
-        }
-        // ensure the json data is a string
-        if (data['dsDifficulty'] && !(typeof data['dsDifficulty'] === 'string' || data['dsDifficulty'] instanceof String)) {
-            throw new Error("Expected the field `dsDifficulty` to be a primitive type in the JSON string but got " + data['dsDifficulty']);
-        }
-        // ensure the json data is a string
-        if (data['dsLeader'] && !(typeof data['dsLeader'] === 'string' || data['dsLeader'] instanceof String)) {
-            throw new Error("Expected the field `dsLeader` to be a primitive type in the JSON string but got " + data['dsLeader']);
-        }
-        // ensure the json data is an array
-        if (!Array.isArray(data['microBlocks'])) {
-            throw new Error("Expected the field `microBlocks` to be an array in the JSON data but got " + data['microBlocks']);
-        }
-        // ensure the json data is a string
-        if (data['nextBlockHash'] && !(typeof data['nextBlockHash'] === 'string' || data['nextBlockHash'] instanceof String)) {
-            throw new Error("Expected the field `nextBlockHash` to be a primitive type in the JSON string but got " + data['nextBlockHash']);
-        }
-        // ensure the json data is a string
-        if (data['previousBlockHash'] && !(typeof data['previousBlockHash'] === 'string' || data['previousBlockHash'] instanceof String)) {
-            throw new Error("Expected the field `previousBlockHash` to be a primitive type in the JSON string but got " + data['previousBlockHash']);
-        }
-
-        return true;
-    }
-
 
 }
-
-GetZilliqaBlockDetailsByBlockHeightRI.RequiredProperties = ["blockHash", "difficulty", "dsBlock", "dsDifficulty", "dsLeader", "gasLimit", "gasUsed", "microBlocks", "nextBlockHash", "previousBlockHash", "timestamp", "transactionsCount"];
 
 /**
  * Represents the hash of the block, which is its unique identifier. It represents a cryptographic digital fingerprint made by hashing the block header twice through the SHA256 algorithm.

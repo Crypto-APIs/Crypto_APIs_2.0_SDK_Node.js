@@ -58,7 +58,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * XRPRipple service.
 * @module api/XRPRippleApi
-* @version 1.11.0
+* @version 1.12.0
 */
 var XRPRippleApi = /*#__PURE__*/function () {
   /**

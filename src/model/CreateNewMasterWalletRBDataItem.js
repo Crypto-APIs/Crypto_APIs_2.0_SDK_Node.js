@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateNewMasterWalletRBDataItem model module.
  * @module model/CreateNewMasterWalletRBDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class CreateNewMasterWalletRBDataItem {
     /**
@@ -61,34 +61,8 @@ class CreateNewMasterWalletRBDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>CreateNewMasterWalletRBDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>CreateNewMasterWalletRBDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of CreateNewMasterWalletRBDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['walletName'] && !(typeof data['walletName'] === 'string' || data['walletName'] instanceof String)) {
-            throw new Error("Expected the field `walletName` to be a primitive type in the JSON string but got " + data['walletName']);
-        }
-        // ensure the json data is a string
-        if (data['walletType'] && !(typeof data['walletType'] === 'string' || data['walletType'] instanceof String)) {
-            throw new Error("Expected the field `walletType` to be a primitive type in the JSON string but got " + data['walletType']);
-        }
-
-        return true;
-    }
-
 
 }
-
-CreateNewMasterWalletRBDataItem.RequiredProperties = ["walletName", "walletType"];
 
 /**
  * Defines the name of the wallet that will be generated.

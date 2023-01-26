@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmountRBDataItem model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmountRBDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class NewConfirmedTokenTransactionsForSpecificAmountRBDataItem {
     /**
@@ -72,38 +72,8 @@ class NewConfirmedTokenTransactionsForSpecificAmountRBDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>NewConfirmedTokenTransactionsForSpecificAmountRBDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>NewConfirmedTokenTransactionsForSpecificAmountRBDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of NewConfirmedTokenTransactionsForSpecificAmountRBDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
-            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
-        }
-        // ensure the json data is a string
-        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
-            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
-        }
-        // ensure the json data is a string
-        if (data['contractAddress'] && !(typeof data['contractAddress'] === 'string' || data['contractAddress'] instanceof String)) {
-            throw new Error("Expected the field `contractAddress` to be a primitive type in the JSON string but got " + data['contractAddress']);
-        }
-
-        return true;
-    }
-
 
 }
-
-NewConfirmedTokenTransactionsForSpecificAmountRBDataItem.RequiredProperties = ["amountHigherThan", "callbackUrl", "contractAddress"];
 
 /**
  * Specifies a flag that permits or denies the creation of duplicate addresses.

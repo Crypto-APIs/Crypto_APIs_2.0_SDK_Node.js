@@ -13,108 +13,66 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 /**
  * The GetExchangeRateByAssetSymbolsE422 model module.
  * @module model/GetExchangeRateByAssetSymbolsE422
- * @version 1.11.0
+ * @version 1.12.0
  */
 var GetExchangeRateByAssetSymbolsE422 = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>GetExchangeRateByAssetSymbolsE422</code>.
    * @alias module:model/GetExchangeRateByAssetSymbolsE422
-   * @param {(module:model/CouldNotCalculateRateForPair|module:model/InvalidRequestBodyStructure)} instance The actual instance to initialize GetExchangeRateByAssetSymbolsE422.
+   * @implements module:model/InvalidRequestBodyStructure
+   * @implements module:model/CouldNotCalculateRateForPair
+   * @param code {String} Specifies an error code, e.g. error 404.
+   * @param message {String} Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
    */
-  function GetExchangeRateByAssetSymbolsE422() {
-    var instance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+  function GetExchangeRateByAssetSymbolsE422(code, message) {
     _classCallCheck(this, GetExchangeRateByAssetSymbolsE422);
-    _defineProperty(this, "toJSON", function () {
-      return this.getActualInstance();
-    });
-    if (instance === null) {
-      this.actualInstance = null;
-      return;
-    }
-    var match = 0;
-    var errorMessages = [];
-    try {
-      if (typeof instance === "InvalidRequestBodyStructure") {
-        this.actualInstance = instance;
-      } else {
-        // plain JS object
-        // validate the object
-        _InvalidRequestBodyStructure["default"].validateJSON(instance); // throw an exception if no match
-        // create InvalidRequestBodyStructure from JS object
-        this.actualInstance = _InvalidRequestBodyStructure["default"].constructFromObject(instance);
-      }
-      match++;
-    } catch (err) {
-      // json data failed to deserialize into InvalidRequestBodyStructure
-      errorMessages.push("Failed to construct InvalidRequestBodyStructure: " + err);
-    }
-    try {
-      if (typeof instance === "CouldNotCalculateRateForPair") {
-        this.actualInstance = instance;
-      } else {
-        // plain JS object
-        // validate the object
-        _CouldNotCalculateRateForPair["default"].validateJSON(instance); // throw an exception if no match
-        // create CouldNotCalculateRateForPair from JS object
-        this.actualInstance = _CouldNotCalculateRateForPair["default"].constructFromObject(instance);
-      }
-      match++;
-    } catch (err) {
-      // json data failed to deserialize into CouldNotCalculateRateForPair
-      errorMessages.push("Failed to construct CouldNotCalculateRateForPair: " + err);
-    }
-    if (match > 1) {
-      throw new Error("Multiple matches found constructing `GetExchangeRateByAssetSymbolsE422` with oneOf schemas CouldNotCalculateRateForPair, InvalidRequestBodyStructure. Input: " + JSON.stringify(instance));
-    } else if (match === 0) {
-      this.actualInstance = null; // clear the actual instance in case there are multiple matches
-      throw new Error("No match found constructing `GetExchangeRateByAssetSymbolsE422` with oneOf schemas CouldNotCalculateRateForPair, InvalidRequestBodyStructure. Details: " + errorMessages.join(", "));
-    } else {// only 1 match
-      // the input is valid
-    }
+    _InvalidRequestBodyStructure["default"].initialize(this, code, message);
+    _CouldNotCalculateRateForPair["default"].initialize(this, code, message);
+    GetExchangeRateByAssetSymbolsE422.initialize(this, code, message);
   }
 
   /**
-   * Constructs a <code>GetExchangeRateByAssetSymbolsE422</code> from a plain JavaScript object, optionally creating a new instance.
-   * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
-   * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/GetExchangeRateByAssetSymbolsE422} obj Optional instance to populate.
-   * @return {module:model/GetExchangeRateByAssetSymbolsE422} The populated <code>GetExchangeRateByAssetSymbolsE422</code> instance.
+   * Initializes the fields of this object.
+   * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
+   * Only for internal use.
    */
-  _createClass(GetExchangeRateByAssetSymbolsE422, [{
-    key: "getActualInstance",
-    value:
-    /**
-     * Gets the actual instance, which can be <code>CouldNotCalculateRateForPair</code>, <code>InvalidRequestBodyStructure</code>.
-     * @return {(module:model/CouldNotCalculateRateForPair|module:model/InvalidRequestBodyStructure)} The actual instance.
-     */
-    function getActualInstance() {
-      return this.actualInstance;
+  _createClass(GetExchangeRateByAssetSymbolsE422, null, [{
+    key: "initialize",
+    value: function initialize(obj, code, message) {
+      obj['code'] = code;
+      obj['message'] = message;
     }
 
     /**
-     * Sets the actual instance, which can be <code>CouldNotCalculateRateForPair</code>, <code>InvalidRequestBodyStructure</code>.
-     * @param {(module:model/CouldNotCalculateRateForPair|module:model/InvalidRequestBodyStructure)} obj The actual instance.
+     * Constructs a <code>GetExchangeRateByAssetSymbolsE422</code> from a plain JavaScript object, optionally creating a new instance.
+     * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
+     * @param {Object} data The plain JavaScript object bearing properties of interest.
+     * @param {module:model/GetExchangeRateByAssetSymbolsE422} obj Optional instance to populate.
+     * @return {module:model/GetExchangeRateByAssetSymbolsE422} The populated <code>GetExchangeRateByAssetSymbolsE422</code> instance.
      */
   }, {
-    key: "setActualInstance",
-    value: function setActualInstance(obj) {
-      this.actualInstance = GetExchangeRateByAssetSymbolsE422.constructFromObject(obj).getActualInstance();
-    }
-
-    /**
-     * Returns the JSON representation of the actual instance.
-     * @return {string}
-     */
-  }], [{
     key: "constructFromObject",
     value: function constructFromObject(data, obj) {
-      return new GetExchangeRateByAssetSymbolsE422(data);
+      if (data) {
+        obj = obj || new GetExchangeRateByAssetSymbolsE422();
+        _InvalidRequestBodyStructure["default"].constructFromObject(data, obj);
+        _CouldNotCalculateRateForPair["default"].constructFromObject(data, obj);
+        if (data.hasOwnProperty('code')) {
+          obj['code'] = _ApiClient["default"].convertToType(data['code'], 'String');
+        }
+        if (data.hasOwnProperty('message')) {
+          obj['message'] = _ApiClient["default"].convertToType(data['message'], 'String');
+        }
+        if (data.hasOwnProperty('details')) {
+          obj['details'] = _ApiClient["default"].convertToType(data['details'], [_BannedIpAddressDetailsInner["default"]]);
+        }
+      }
+      return obj;
     }
   }]);
   return GetExchangeRateByAssetSymbolsE422;
@@ -123,9 +81,6 @@ var GetExchangeRateByAssetSymbolsE422 = /*#__PURE__*/function () {
  * Specifies an error code, e.g. error 404.
  * @member {String} code
  */
-_defineProperty(GetExchangeRateByAssetSymbolsE422, "fromJSON", function (json_string) {
-  return GetExchangeRateByAssetSymbolsE422.constructFromObject(JSON.parse(json_string));
-});
 GetExchangeRateByAssetSymbolsE422.prototype['code'] = undefined;
 
 /**
@@ -138,6 +93,36 @@ GetExchangeRateByAssetSymbolsE422.prototype['message'] = undefined;
  * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
  */
 GetExchangeRateByAssetSymbolsE422.prototype['details'] = undefined;
-GetExchangeRateByAssetSymbolsE422.OneOf = ["CouldNotCalculateRateForPair", "InvalidRequestBodyStructure"];
+
+// Implement InvalidRequestBodyStructure interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+_InvalidRequestBodyStructure["default"].prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+_InvalidRequestBodyStructure["default"].prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+_InvalidRequestBodyStructure["default"].prototype['details'] = undefined;
+// Implement CouldNotCalculateRateForPair interface:
+/**
+ * Specifies an error code, e.g. error 404.
+ * @member {String} code
+ */
+_CouldNotCalculateRateForPair["default"].prototype['code'] = undefined;
+/**
+ * Specifies the message of the error, i.e. why the error was returned, e.g. error 404 stands for “not found”.
+ * @member {String} message
+ */
+_CouldNotCalculateRateForPair["default"].prototype['message'] = undefined;
+/**
+ * @member {Array.<module:model/BannedIpAddressDetailsInner>} details
+ */
+_CouldNotCalculateRateForPair["default"].prototype['details'] = undefined;
 var _default = GetExchangeRateByAssetSymbolsE422;
 exports["default"] = _default;

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewConfirmedInternalTransactionsForSpecificAmountRBDataItem model module.
  * @module model/NewConfirmedInternalTransactionsForSpecificAmountRBDataItem
- * @version 1.11.0
+ * @version 1.12.0
  */
 class NewConfirmedInternalTransactionsForSpecificAmountRBDataItem {
     /**
@@ -67,34 +67,8 @@ class NewConfirmedInternalTransactionsForSpecificAmountRBDataItem {
         return obj;
     }
 
-    /**
-     * Validates the JSON data with respect to <code>NewConfirmedInternalTransactionsForSpecificAmountRBDataItem</code>.
-     * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @return {boolean} to indicate whether the JSON data is valid with respect to <code>NewConfirmedInternalTransactionsForSpecificAmountRBDataItem</code>.
-     */
-    static validateJSON(data) {
-        // check to make sure all required properties are present in the JSON string
-        for (const property of NewConfirmedInternalTransactionsForSpecificAmountRBDataItem.RequiredProperties) {
-            if (!data[property]) {
-                throw new Error("The required field `" + property + "` is not found in the JSON data: " + JSON.stringify(data));
-            }
-        }
-        // ensure the json data is a string
-        if (data['callbackSecretKey'] && !(typeof data['callbackSecretKey'] === 'string' || data['callbackSecretKey'] instanceof String)) {
-            throw new Error("Expected the field `callbackSecretKey` to be a primitive type in the JSON string but got " + data['callbackSecretKey']);
-        }
-        // ensure the json data is a string
-        if (data['callbackUrl'] && !(typeof data['callbackUrl'] === 'string' || data['callbackUrl'] instanceof String)) {
-            throw new Error("Expected the field `callbackUrl` to be a primitive type in the JSON string but got " + data['callbackUrl']);
-        }
-
-        return true;
-    }
-
 
 }
-
-NewConfirmedInternalTransactionsForSpecificAmountRBDataItem.RequiredProperties = ["amountHigherThan", "callbackUrl"];
 
 /**
  * Specifies a flag that permits or denies the creation of duplicate addresses.
