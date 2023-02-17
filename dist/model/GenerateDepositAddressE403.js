@@ -22,7 +22,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GenerateDepositAddressE403 model module.
  * @module model/GenerateDepositAddressE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GenerateDepositAddressE403 = /*#__PURE__*/function () {
   /**

@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListZilliqaTransactionsByAddressE403 model module.
  * @module model/ListZilliqaTransactionsByAddressE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListZilliqaTransactionsByAddressE403 = /*#__PURE__*/function () {
   /**

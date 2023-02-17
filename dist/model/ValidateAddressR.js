@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ValidateAddressR model module.
  * @module model/ValidateAddressR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ValidateAddressR = /*#__PURE__*/function () {
   /**

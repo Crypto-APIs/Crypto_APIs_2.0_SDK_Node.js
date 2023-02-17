@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetXRPRippleBlockDetailsByBlockHeightRData model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHeightRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetXRPRippleBlockDetailsByBlockHeightRData = /*#__PURE__*/function () {
   /**

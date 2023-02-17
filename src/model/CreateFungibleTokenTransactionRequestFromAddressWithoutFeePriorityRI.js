@@ -19,7 +19,7 @@ import CreateSingleTransactionRequestFromAddressWithoutFeePriorityRISender from 
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRI model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRI {
     /**

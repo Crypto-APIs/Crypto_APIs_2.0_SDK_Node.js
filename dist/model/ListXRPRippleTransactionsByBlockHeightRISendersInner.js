@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListXRPRippleTransactionsByBlockHeightRISendersInner model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRISendersInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListXRPRippleTransactionsByBlockHeightRISendersInner = /*#__PURE__*/function () {
   /**

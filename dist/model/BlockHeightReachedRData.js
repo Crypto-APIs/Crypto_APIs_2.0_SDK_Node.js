@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BlockHeightReachedRData model module.
  * @module model/BlockHeightReachedRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BlockHeightReachedRData = /*#__PURE__*/function () {
   /**

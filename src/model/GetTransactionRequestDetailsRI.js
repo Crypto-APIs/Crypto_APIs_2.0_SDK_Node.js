@@ -17,7 +17,7 @@ import GetTransactionRequestDetailsRIRecipientsInner from './GetTransactionReque
 /**
  * The GetTransactionRequestDetailsRI model module.
  * @module model/GetTransactionRequestDetailsRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetTransactionRequestDetailsRI {
     /**

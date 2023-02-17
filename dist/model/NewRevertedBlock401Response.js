@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewRevertedBlock401Response model module.
  * @module model/NewRevertedBlock401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewRevertedBlock401Response = /*#__PURE__*/function () {
   /**

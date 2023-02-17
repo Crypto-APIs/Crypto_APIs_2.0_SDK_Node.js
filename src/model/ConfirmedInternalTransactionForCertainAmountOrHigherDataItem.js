@@ -17,7 +17,7 @@ import AddressInternalTransactionConfirmedDataItemMinedInBlock from './AddressIn
 /**
  * The ConfirmedInternalTransactionForCertainAmountOrHigherDataItem model module.
  * @module model/ConfirmedInternalTransactionForCertainAmountOrHigherDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ConfirmedInternalTransactionForCertainAmountOrHigherDataItem {
     /**

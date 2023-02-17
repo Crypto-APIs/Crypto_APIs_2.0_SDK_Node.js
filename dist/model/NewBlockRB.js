@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewBlockRB model module.
  * @module model/NewBlockRB
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewBlockRB = /*#__PURE__*/function () {
   /**

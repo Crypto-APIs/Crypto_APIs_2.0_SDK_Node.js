@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTransactionsByBlockHeightRIBSE model module.
  * @module model/ListTransactionsByBlockHeightRIBSE
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTransactionsByBlockHeightRIBSE = /*#__PURE__*/function () {
   /**

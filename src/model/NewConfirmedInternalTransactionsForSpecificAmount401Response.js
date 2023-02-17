@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsForSpecificAmountE401 from './NewConfirme
 /**
  * The NewConfirmedInternalTransactionsForSpecificAmount401Response model module.
  * @module model/NewConfirmedInternalTransactionsForSpecificAmount401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class NewConfirmedInternalTransactionsForSpecificAmount401Response {
     /**

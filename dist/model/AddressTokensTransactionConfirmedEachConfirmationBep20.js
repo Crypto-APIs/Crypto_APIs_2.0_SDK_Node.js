@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddressTokensTransactionConfirmedEachConfirmationBep20 model module.
  * @module model/AddressTokensTransactionConfirmedEachConfirmationBep20
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddressTokensTransactionConfirmedEachConfirmationBep20 = /*#__PURE__*/function () {
   /**

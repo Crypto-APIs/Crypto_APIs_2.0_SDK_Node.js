@@ -17,7 +17,7 @@ import InsufficientCredits from './InsufficientCredits';
 /**
  * The ConvertBitcoinCashAddress402Response model module.
  * @module model/ConvertBitcoinCashAddress402Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ConvertBitcoinCashAddress402Response {
     /**

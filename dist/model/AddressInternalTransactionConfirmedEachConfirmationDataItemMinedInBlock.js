@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock model module.
  * @module model/AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddressInternalTransactionConfirmedEachConfirmationDataItemMinedInBlock = /*#__PURE__*/function () {
   /**

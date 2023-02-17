@@ -21,7 +21,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The ListSyncedAddressesE400 model module.
  * @module model/ListSyncedAddressesE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListSyncedAddressesE400 {
     /**

@@ -17,7 +17,7 @@ import PrepareAFungibleTokenTransferFromAddressRIBSEFee from './PrepareAFungible
 /**
  * The PrepareAFungibleTokenTransferFromAddressRIBSE model module.
  * @module model/PrepareAFungibleTokenTransferFromAddressRIBSE
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareAFungibleTokenTransferFromAddressRIBSE {
     /**

@@ -17,7 +17,7 @@ import GetZilliqaAddressDetailsE400 from './GetZilliqaAddressDetailsE400';
 /**
  * The GetZilliqaAddressDetails400Response model module.
  * @module model/GetZilliqaAddressDetails400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetZilliqaAddressDetails400Response {
     /**

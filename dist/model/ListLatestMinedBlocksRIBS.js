@@ -29,7 +29,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListLatestMinedBlocksRIBS model module.
  * @module model/ListLatestMinedBlocksRIBS
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListLatestMinedBlocksRIBS = /*#__PURE__*/function () {
   /**

@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetLatestMinedXRPRippleBlockRITotalCoins model module.
  * @module model/GetLatestMinedXRPRippleBlockRITotalCoins
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetLatestMinedXRPRippleBlockRITotalCoins = /*#__PURE__*/function () {
   /**

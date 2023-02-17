@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRData model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListHDWalletXPubYPubZPubTransactionsRData = /*#__PURE__*/function () {
   /**

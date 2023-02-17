@@ -17,7 +17,7 @@ import DecodeRawTransactionHexE403 from './DecodeRawTransactionHexE403';
 /**
  * The DecodeRawTransactionHex403Response model module.
  * @module model/DecodeRawTransactionHex403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class DecodeRawTransactionHex403Response {
     /**

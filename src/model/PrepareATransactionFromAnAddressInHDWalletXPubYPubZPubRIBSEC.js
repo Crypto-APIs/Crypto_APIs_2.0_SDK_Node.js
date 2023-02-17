@@ -17,7 +17,7 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee from './P
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC {
     /**

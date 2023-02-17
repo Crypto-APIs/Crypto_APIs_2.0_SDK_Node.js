@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSBVinInnerScriptSig model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSBVinInnerScriptSig
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetTransactionDetailsByTransactionIDFromCallbackRIBSBVinInnerScriptSig = /*#__PURE__*/function () {
   /**

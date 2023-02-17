@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddressTokensTransactionUnconfirmedErc20 model module.
  * @module model/AddressTokensTransactionUnconfirmedErc20
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddressTokensTransactionUnconfirmedErc20 = /*#__PURE__*/function () {
   /**

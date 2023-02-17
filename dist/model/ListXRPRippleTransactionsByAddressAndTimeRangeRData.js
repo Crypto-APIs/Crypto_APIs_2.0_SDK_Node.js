@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListXRPRippleTransactionsByAddressAndTimeRangeRData model module.
  * @module model/ListXRPRippleTransactionsByAddressAndTimeRangeRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListXRPRippleTransactionsByAddressAndTimeRangeRData = /*#__PURE__*/function () {
   /**

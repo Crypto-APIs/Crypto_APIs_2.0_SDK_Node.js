@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateSingleTransactionRequestFromAddressWithoutFeePriorityRBDataItem = /*#__PURE__*/function () {
   /**

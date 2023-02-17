@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetZilliqaAddressDetailsRI model module.
  * @module model/GetZilliqaAddressDetailsRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetZilliqaAddressDetailsRI = /*#__PURE__*/function () {
   /**

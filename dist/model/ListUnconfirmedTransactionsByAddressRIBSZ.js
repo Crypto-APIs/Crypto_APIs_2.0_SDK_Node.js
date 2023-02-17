@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSZ model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSZ
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListUnconfirmedTransactionsByAddressRIBSZ = /*#__PURE__*/function () {
   /**

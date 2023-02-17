@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetWalletTransactionDetailsByTransactionID401Response model module.
  * @module model/GetWalletTransactionDetailsByTransactionID401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetWalletTransactionDetailsByTransactionID401Response = /*#__PURE__*/function () {
   /**

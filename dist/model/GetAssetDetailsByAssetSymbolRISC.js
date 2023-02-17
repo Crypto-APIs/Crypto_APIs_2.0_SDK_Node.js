@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAssetDetailsByAssetSymbolRISC model module.
  * @module model/GetAssetDetailsByAssetSymbolRISC
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAssetDetailsByAssetSymbolRISC = /*#__PURE__*/function () {
   /**

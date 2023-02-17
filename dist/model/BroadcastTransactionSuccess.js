@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BroadcastTransactionSuccess model module.
  * @module model/BroadcastTransactionSuccess
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BroadcastTransactionSuccess = /*#__PURE__*/function () {
   /**

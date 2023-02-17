@@ -17,7 +17,7 @@ import ListTransactionsByBlockHeightRIBSZVinInnerScriptSig from './ListTransacti
 /**
  * The ListTransactionsByBlockHeightRIBSZVinInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSZVinInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListTransactionsByBlockHeightRIBSZVinInner {
     /**

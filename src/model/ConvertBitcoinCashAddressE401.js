@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ConvertBitcoinCashAddressE401 model module.
  * @module model/ConvertBitcoinCashAddressE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ConvertBitcoinCashAddressE401 {
     /**

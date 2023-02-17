@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListConfirmedTransactionsByAddressRIBSE model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSE
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListConfirmedTransactionsByAddressRIBSE = /*#__PURE__*/function () {
   /**

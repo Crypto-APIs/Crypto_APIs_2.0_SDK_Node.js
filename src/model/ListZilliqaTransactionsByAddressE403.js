@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The ListZilliqaTransactionsByAddressE403 model module.
  * @module model/ListZilliqaTransactionsByAddressE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListZilliqaTransactionsByAddressE403 {
     /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateCoinsTransactionRequestFromAddressRBData model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRBData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateCoinsTransactionRequestFromAddressRBData = /*#__PURE__*/function () {
   /**

@@ -18,7 +18,7 @@ import ListUnconfirmedTransactionsByAddressRIBSEFee from './ListUnconfirmedTrans
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSE model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSE
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListUnconfirmedTransactionsByAddressRIBSE {
     /**

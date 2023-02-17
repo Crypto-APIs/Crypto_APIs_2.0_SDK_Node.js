@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListUnconfirmedTokensTransfersByAddressRI model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListUnconfirmedTokensTransfersByAddressRI {
     /**

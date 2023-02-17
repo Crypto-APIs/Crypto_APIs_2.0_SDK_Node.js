@@ -26,7 +26,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetLastMinedBlockRIBS model module.
  * @module model/GetLastMinedBlockRIBS
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetLastMinedBlockRIBS = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import PrepareANonFungibleTokenTransferFromAddressRBDataItem from './PrepareANon
 /**
  * The PrepareANonFungibleTokenTransferFromAddressRBData model module.
  * @module model/PrepareANonFungibleTokenTransferFromAddressRBData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareANonFungibleTokenTransferFromAddressRBData {
     /**

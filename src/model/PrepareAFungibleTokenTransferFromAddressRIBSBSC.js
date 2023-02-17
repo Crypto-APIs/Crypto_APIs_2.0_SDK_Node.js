@@ -17,7 +17,7 @@ import PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee from './PrepareANon
 /**
  * The PrepareAFungibleTokenTransferFromAddressRIBSBSC model module.
  * @module model/PrepareAFungibleTokenTransferFromAddressRIBSBSC
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareAFungibleTokenTransferFromAddressRIBSBSC {
     /**

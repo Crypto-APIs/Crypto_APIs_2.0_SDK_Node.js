@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetTransactionDetailsByTransactionIDRIBSZVJoinSplitInner = /*#__PURE__*/function () {
   /**

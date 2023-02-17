@@ -17,7 +17,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateCoinsTransactionRequestFromAddressRI model module.
  * @module model/CreateCoinsTransactionRequestFromAddressRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateCoinsTransactionRequestFromAddressRI = /*#__PURE__*/function () {
   /**

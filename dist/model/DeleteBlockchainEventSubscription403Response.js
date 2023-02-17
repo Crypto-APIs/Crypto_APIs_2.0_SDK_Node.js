@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DeleteBlockchainEventSubscription403Response model module.
  * @module model/DeleteBlockchainEventSubscription403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DeleteBlockchainEventSubscription403Response = /*#__PURE__*/function () {
   /**

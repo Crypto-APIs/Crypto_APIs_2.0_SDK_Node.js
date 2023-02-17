@@ -17,7 +17,7 @@ import GetXRPRippleAddressDetailsE400 from './GetXRPRippleAddressDetailsE400';
 /**
  * The GetXRPRippleAddressDetails400Response model module.
  * @module model/GetXRPRippleAddressDetails400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetXRPRippleAddressDetails400Response {
     /**

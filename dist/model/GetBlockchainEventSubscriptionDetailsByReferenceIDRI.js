@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDRI model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetBlockchainEventSubscriptionDetailsByReferenceIDRI = /*#__PURE__*/function () {
   /**

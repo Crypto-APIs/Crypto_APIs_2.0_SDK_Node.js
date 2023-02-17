@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The CreateNewMasterWalletE401 model module.
  * @module model/CreateNewMasterWalletE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateNewMasterWalletE401 {
     /**

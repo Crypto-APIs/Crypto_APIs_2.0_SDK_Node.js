@@ -31,7 +31,7 @@ import GetAssetDetailsByAssetSymbolR from '../model/GetAssetDetailsByAssetSymbol
 /**
 * Assets service.
 * @module api/AssetsApi
-* @version 1.12.0
+* @version 1.13.0
 */
 export default class AssetsApi {
 

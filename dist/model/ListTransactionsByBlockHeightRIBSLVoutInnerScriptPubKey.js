@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTransactionsByBlockHeightRIBSLVoutInnerScriptPubKey model module.
  * @module model/ListTransactionsByBlockHeightRIBSLVoutInnerScriptPubKey
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTransactionsByBlockHeightRIBSLVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**

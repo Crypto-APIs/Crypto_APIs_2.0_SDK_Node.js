@@ -17,7 +17,7 @@ import PrepareAFungibleTokenTransferFromAddressRIBS from './PrepareAFungibleToke
 /**
  * The PrepareAFungibleTokenTransferFromAddressRI model module.
  * @module model/PrepareAFungibleTokenTransferFromAddressRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareAFungibleTokenTransferFromAddressRI {
     /**

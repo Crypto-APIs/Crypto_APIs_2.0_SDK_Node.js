@@ -27,7 +27,7 @@ import GetLastMinedBlockRIBSZ2 from './GetLastMinedBlockRIBSZ2';
 /**
  * The GetLastMinedBlockRIBS model module.
  * @module model/GetLastMinedBlockRIBS
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetLastMinedBlockRIBS {
     /**

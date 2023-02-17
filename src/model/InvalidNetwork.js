@@ -17,7 +17,7 @@ import BannedIpAddressDetailsInner from './BannedIpAddressDetailsInner';
 /**
  * The InvalidNetwork model module.
  * @module model/InvalidNetwork
- * @version 1.12.0
+ * @version 1.13.0
  */
 class InvalidNetwork {
     /**

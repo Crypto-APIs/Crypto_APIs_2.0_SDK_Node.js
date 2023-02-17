@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddTokensToExistingFromAddressRBData model module.
  * @module model/AddTokensToExistingFromAddressRBData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddTokensToExistingFromAddressRBData = /*#__PURE__*/function () {
   /**

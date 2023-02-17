@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListBlockchainEventsSubscriptionsE403 model module.
  * @module model/ListBlockchainEventsSubscriptionsE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListBlockchainEventsSubscriptionsE403 = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddressTokensTransactionConfirmedTrc721 model module.
  * @module model/AddressTokensTransactionConfirmedTrc721
- * @version 1.12.0
+ * @version 1.13.0
  */
 class AddressTokensTransactionConfirmedTrc721 {
     /**

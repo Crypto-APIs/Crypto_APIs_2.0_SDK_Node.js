@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListDepositAddressesE401 model module.
  * @module model/ListDepositAddressesE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListDepositAddressesE401 {
     /**

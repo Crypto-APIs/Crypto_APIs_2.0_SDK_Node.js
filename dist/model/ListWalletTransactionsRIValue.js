@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListWalletTransactionsRIValue model module.
  * @module model/ListWalletTransactionsRIValue
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListWalletTransactionsRIValue = /*#__PURE__*/function () {
   /**

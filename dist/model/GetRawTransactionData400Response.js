@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetRawTransactionData400Response model module.
  * @module model/GetRawTransactionData400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetRawTransactionData400Response = /*#__PURE__*/function () {
   /**

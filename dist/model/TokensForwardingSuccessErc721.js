@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The TokensForwardingSuccessErc721 model module.
  * @module model/TokensForwardingSuccessErc721
- * @version 1.12.0
+ * @version 1.13.0
  */
 var TokensForwardingSuccessErc721 = /*#__PURE__*/function () {
   /**

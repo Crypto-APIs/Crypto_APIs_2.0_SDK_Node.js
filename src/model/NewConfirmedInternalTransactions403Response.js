@@ -17,7 +17,7 @@ import NewConfirmedInternalTransactionsE403 from './NewConfirmedInternalTransact
 /**
  * The NewConfirmedInternalTransactions403Response model module.
  * @module model/NewConfirmedInternalTransactions403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class NewConfirmedInternalTransactions403Response {
     /**

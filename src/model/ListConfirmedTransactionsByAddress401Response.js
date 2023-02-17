@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressE401 from './ListConfirmedTransactionsB
 /**
  * The ListConfirmedTransactionsByAddress401Response model module.
  * @module model/ListConfirmedTransactionsByAddress401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListConfirmedTransactionsByAddress401Response {
     /**

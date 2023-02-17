@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The NewRevertedBlockE401 model module.
  * @module model/NewRevertedBlockE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class NewRevertedBlockE401 {
     /**

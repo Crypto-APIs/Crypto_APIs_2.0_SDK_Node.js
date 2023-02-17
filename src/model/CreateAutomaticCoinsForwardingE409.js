@@ -19,7 +19,7 @@ import InvalidData from './InvalidData';
 /**
  * The CreateAutomaticCoinsForwardingE409 model module.
  * @module model/CreateAutomaticCoinsForwardingE409
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateAutomaticCoinsForwardingE409 {
     /**

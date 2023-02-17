@@ -17,7 +17,7 @@ import GetNextAvailableNonceE400 from './GetNextAvailableNonceE400';
 /**
  * The GetNextAvailableNonce400Response model module.
  * @module model/GetNextAvailableNonce400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetNextAvailableNonce400Response {
     /**

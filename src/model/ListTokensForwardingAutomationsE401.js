@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListTokensForwardingAutomationsE401 model module.
  * @module model/ListTokensForwardingAutomationsE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListTokensForwardingAutomationsE401 {
     /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The EstimateTokenGasLimitR model module.
  * @module model/EstimateTokenGasLimitR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var EstimateTokenGasLimitR = /*#__PURE__*/function () {
   /**

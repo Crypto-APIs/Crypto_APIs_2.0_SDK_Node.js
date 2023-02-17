@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The TokensForwardingSuccessOmni model module.
  * @module model/TokensForwardingSuccessOmni
- * @version 1.12.0
+ * @version 1.13.0
  */
 var TokensForwardingSuccessOmni = /*#__PURE__*/function () {
   /**

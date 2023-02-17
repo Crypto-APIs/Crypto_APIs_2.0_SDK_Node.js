@@ -17,7 +17,7 @@ import ListDepositAddressesRData from './ListDepositAddressesRData';
 /**
  * The ListDepositAddressesR model module.
  * @module model/ListDepositAddressesR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListDepositAddressesR {
     /**

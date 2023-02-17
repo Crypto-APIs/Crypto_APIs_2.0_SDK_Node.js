@@ -18,7 +18,7 @@ import DeleteAutomaticTokensForwardingRITSET from './DeleteAutomaticTokensForwar
 /**
  * The DeleteAutomaticTokensForwardingRITS model module.
  * @module model/DeleteAutomaticTokensForwardingRITS
- * @version 1.12.0
+ * @version 1.13.0
  */
 class DeleteAutomaticTokensForwardingRITS {
     /**

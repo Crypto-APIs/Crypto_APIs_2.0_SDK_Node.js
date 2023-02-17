@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GenerateDepositAddressRBDataItem model module.
  * @module model/GenerateDepositAddressRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GenerateDepositAddressRBDataItem = /*#__PURE__*/function () {
   /**

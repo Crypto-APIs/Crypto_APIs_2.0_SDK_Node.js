@@ -22,7 +22,7 @@ import WalletAsAServiceWalletsLimitReached from './WalletAsAServiceWalletsLimitR
 /**
  * The CreateNewMasterWalletE403 model module.
  * @module model/CreateNewMasterWalletE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateNewMasterWalletE403 {
     /**

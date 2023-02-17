@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressR model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateFungibleTokensTransactionRequestFromAddressR = /*#__PURE__*/function () {
   /**

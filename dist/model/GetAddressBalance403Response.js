@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAddressBalance403Response model module.
  * @module model/GetAddressBalance403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAddressBalance403Response = /*#__PURE__*/function () {
   /**

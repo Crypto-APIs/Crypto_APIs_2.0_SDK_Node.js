@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetTransactionDetailsByTransactionIDRIBSBSC model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSBSC
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetTransactionDetailsByTransactionIDRIBSBSC = /*#__PURE__*/function () {
   /**

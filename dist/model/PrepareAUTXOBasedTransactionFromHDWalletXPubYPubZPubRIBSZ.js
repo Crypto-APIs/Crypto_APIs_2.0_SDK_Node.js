@@ -17,7 +17,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ
- * @version 1.12.0
+ * @version 1.13.0
  */
 var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBSZ = /*#__PURE__*/function () {
   /**

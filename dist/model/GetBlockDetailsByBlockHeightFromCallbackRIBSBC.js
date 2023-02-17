@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetBlockDetailsByBlockHeightFromCallbackRIBSBC model module.
  * @module model/GetBlockDetailsByBlockHeightFromCallbackRIBSBC
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetBlockDetailsByBlockHeightFromCallbackRIBSBC = /*#__PURE__*/function () {
   /**

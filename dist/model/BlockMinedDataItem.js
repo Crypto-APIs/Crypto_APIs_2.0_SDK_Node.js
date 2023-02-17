@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BlockMinedDataItem model module.
  * @module model/BlockMinedDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BlockMinedDataItem = /*#__PURE__*/function () {
   /**

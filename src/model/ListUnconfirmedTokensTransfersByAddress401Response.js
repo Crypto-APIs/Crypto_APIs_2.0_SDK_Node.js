@@ -17,7 +17,7 @@ import ListUnconfirmedTokensTransfersByAddressE401 from './ListUnconfirmedTokens
 /**
  * The ListUnconfirmedTokensTransfersByAddress401Response model module.
  * @module model/ListUnconfirmedTokensTransfersByAddress401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListUnconfirmedTokensTransfersByAddress401Response {
     /**

@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListSyncedAddressesRI model module.
  * @module model/ListSyncedAddressesRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListSyncedAddressesRI = /*#__PURE__*/function () {
   /**

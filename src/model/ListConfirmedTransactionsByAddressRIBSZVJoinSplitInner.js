@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListConfirmedTransactionsByAddressRIBSZVJoinSplitInner {
     /**

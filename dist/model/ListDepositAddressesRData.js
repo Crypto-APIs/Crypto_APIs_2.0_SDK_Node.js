@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListDepositAddressesRData model module.
  * @module model/ListDepositAddressesRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListDepositAddressesRData = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BlockchainEventsCallbacksLimitReached model module.
  * @module model/BlockchainEventsCallbacksLimitReached
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BlockchainEventsCallbacksLimitReached = /*#__PURE__*/function () {
   /**

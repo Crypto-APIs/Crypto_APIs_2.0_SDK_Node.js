@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListXRPRippleTransactionsByBlockHeightRIOffer model module.
  * @module model/ListXRPRippleTransactionsByBlockHeightRIOffer
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListXRPRippleTransactionsByBlockHeightRIOffer = /*#__PURE__*/function () {
   /**

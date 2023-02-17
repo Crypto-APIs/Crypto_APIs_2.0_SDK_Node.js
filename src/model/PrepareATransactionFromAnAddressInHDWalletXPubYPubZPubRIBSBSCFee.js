@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSBSCFee {
     /**

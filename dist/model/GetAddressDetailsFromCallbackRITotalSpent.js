@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAddressDetailsFromCallbackRITotalSpent model module.
  * @module model/GetAddressDetailsFromCallbackRITotalSpent
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAddressDetailsFromCallbackRITotalSpent = /*#__PURE__*/function () {
   /**

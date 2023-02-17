@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CreateNewMasterWalletRBDataItem model module.
  * @module model/CreateNewMasterWalletRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateNewMasterWalletRBDataItem {
     /**

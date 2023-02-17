@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The BlockHeightReachedE400 model module.
  * @module model/BlockHeightReachedE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 class BlockHeightReachedE400 {
     /**

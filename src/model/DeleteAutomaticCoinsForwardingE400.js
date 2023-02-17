@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The DeleteAutomaticCoinsForwardingE400 model module.
  * @module model/DeleteAutomaticCoinsForwardingE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 class DeleteAutomaticCoinsForwardingE400 {
     /**

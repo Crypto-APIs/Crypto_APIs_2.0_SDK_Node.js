@@ -19,7 +19,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetFeeAddressDetailsE400 model module.
  * @module model/GetFeeAddressDetailsE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetFeeAddressDetailsE400 = /*#__PURE__*/function () {
   /**

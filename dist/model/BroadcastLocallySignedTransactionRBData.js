@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BroadcastLocallySignedTransactionRBData model module.
  * @module model/BroadcastLocallySignedTransactionRBData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BroadcastLocallySignedTransactionRBData = /*#__PURE__*/function () {
   /**

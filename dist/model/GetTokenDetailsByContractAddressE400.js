@@ -19,7 +19,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetTokenDetailsByContractAddressE400 model module.
  * @module model/GetTokenDetailsByContractAddressE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetTokenDetailsByContractAddressE400 = /*#__PURE__*/function () {
   /**

@@ -8,7 +8,7 @@ var _ApiClient = _interopRequireDefault(require("../ApiClient"));
 var _PrepareAFungibleTokenTransferFromAddressRIBSBSC = _interopRequireDefault(require("./PrepareAFungibleTokenTransferFromAddressRIBSBSC"));
 var _PrepareAFungibleTokenTransferFromAddressRIBSE = _interopRequireDefault(require("./PrepareAFungibleTokenTransferFromAddressRIBSE"));
 var _PrepareAFungibleTokenTransferFromAddressRIBSEC = _interopRequireDefault(require("./PrepareAFungibleTokenTransferFromAddressRIBSEC"));
-var _PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee = _interopRequireDefault(require("./PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee"));
+var _PrepareAFungibleTokenTransferFromAddressRIBSEFee = _interopRequireDefault(require("./PrepareAFungibleTokenTransferFromAddressRIBSEFee"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -19,24 +19,24 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The PrepareAFungibleTokenTransferFromAddressRIBS model module.
  * @module model/PrepareAFungibleTokenTransferFromAddressRIBS
- * @version 1.12.0
+ * @version 1.13.0
  */
 var PrepareAFungibleTokenTransferFromAddressRIBS = /*#__PURE__*/function () {
   /**
    * Constructs a new <code>PrepareAFungibleTokenTransferFromAddressRIBS</code>.
    * @alias module:model/PrepareAFungibleTokenTransferFromAddressRIBS
-   * @implements module:model/PrepareAFungibleTokenTransferFromAddressRIBSE
    * @implements module:model/PrepareAFungibleTokenTransferFromAddressRIBSEC
    * @implements module:model/PrepareAFungibleTokenTransferFromAddressRIBSBSC
+   * @implements module:model/PrepareAFungibleTokenTransferFromAddressRIBSE
    * @param sigHash {String} Representation of the hash that should be signed
-   * @param fee {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee} 
+   * @param fee {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee} 
    * @param transactionType {module:model/PrepareAFungibleTokenTransferFromAddressRIBS.TransactionTypeEnum} Representation of the transaction type
    */
   function PrepareAFungibleTokenTransferFromAddressRIBS(sigHash, fee, transactionType) {
     _classCallCheck(this, PrepareAFungibleTokenTransferFromAddressRIBS);
-    _PrepareAFungibleTokenTransferFromAddressRIBSE["default"].initialize(this, sigHash, fee, transactionType);
     _PrepareAFungibleTokenTransferFromAddressRIBSEC["default"].initialize(this, sigHash, fee, transactionType);
     _PrepareAFungibleTokenTransferFromAddressRIBSBSC["default"].initialize(this, sigHash, fee, transactionType);
+    _PrepareAFungibleTokenTransferFromAddressRIBSE["default"].initialize(this, sigHash, fee, transactionType);
     PrepareAFungibleTokenTransferFromAddressRIBS.initialize(this, sigHash, fee, transactionType);
   }
 
@@ -65,9 +65,9 @@ var PrepareAFungibleTokenTransferFromAddressRIBS = /*#__PURE__*/function () {
     value: function constructFromObject(data, obj) {
       if (data) {
         obj = obj || new PrepareAFungibleTokenTransferFromAddressRIBS();
-        _PrepareAFungibleTokenTransferFromAddressRIBSE["default"].constructFromObject(data, obj);
         _PrepareAFungibleTokenTransferFromAddressRIBSEC["default"].constructFromObject(data, obj);
         _PrepareAFungibleTokenTransferFromAddressRIBSBSC["default"].constructFromObject(data, obj);
+        _PrepareAFungibleTokenTransferFromAddressRIBSE["default"].constructFromObject(data, obj);
         if (data.hasOwnProperty('dataHex')) {
           obj['dataHex'] = _ApiClient["default"].convertToType(data['dataHex'], 'String');
         }
@@ -75,7 +75,7 @@ var PrepareAFungibleTokenTransferFromAddressRIBS = /*#__PURE__*/function () {
           obj['sigHash'] = _ApiClient["default"].convertToType(data['sigHash'], 'String');
         }
         if (data.hasOwnProperty('fee')) {
-          obj['fee'] = _PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee["default"].constructFromObject(data['fee']);
+          obj['fee'] = _PrepareAFungibleTokenTransferFromAddressRIBSEFee["default"].constructFromObject(data['fee']);
         }
         if (data.hasOwnProperty('transactionType')) {
           obj['transactionType'] = _ApiClient["default"].convertToType(data['transactionType'], 'String');
@@ -99,7 +99,7 @@ PrepareAFungibleTokenTransferFromAddressRIBS.prototype['dataHex'] = undefined;
 PrepareAFungibleTokenTransferFromAddressRIBS.prototype['sigHash'] = undefined;
 
 /**
- * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee} fee
+ * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee} fee
  */
 PrepareAFungibleTokenTransferFromAddressRIBS.prototype['fee'] = undefined;
 
@@ -109,26 +109,6 @@ PrepareAFungibleTokenTransferFromAddressRIBS.prototype['fee'] = undefined;
  */
 PrepareAFungibleTokenTransferFromAddressRIBS.prototype['transactionType'] = undefined;
 
-// Implement PrepareAFungibleTokenTransferFromAddressRIBSE interface:
-/**
- * Representation of the data in hex value
- * @member {String} dataHex
- */
-_PrepareAFungibleTokenTransferFromAddressRIBSE["default"].prototype['dataHex'] = undefined;
-/**
- * Representation of the hash that should be signed
- * @member {String} sigHash
- */
-_PrepareAFungibleTokenTransferFromAddressRIBSE["default"].prototype['sigHash'] = undefined;
-/**
- * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee} fee
- */
-_PrepareAFungibleTokenTransferFromAddressRIBSE["default"].prototype['fee'] = undefined;
-/**
- * Representation of the transaction type
- * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSE.TransactionTypeEnum} transactionType
- */
-_PrepareAFungibleTokenTransferFromAddressRIBSE["default"].prototype['transactionType'] = undefined;
 // Implement PrepareAFungibleTokenTransferFromAddressRIBSEC interface:
 /**
  * Representation of the data in hex value
@@ -169,6 +149,26 @@ _PrepareAFungibleTokenTransferFromAddressRIBSBSC["default"].prototype['fee'] = u
  * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSBSC.TransactionTypeEnum} transactionType
  */
 _PrepareAFungibleTokenTransferFromAddressRIBSBSC["default"].prototype['transactionType'] = undefined;
+// Implement PrepareAFungibleTokenTransferFromAddressRIBSE interface:
+/**
+ * Representation of the data in hex value
+ * @member {String} dataHex
+ */
+_PrepareAFungibleTokenTransferFromAddressRIBSE["default"].prototype['dataHex'] = undefined;
+/**
+ * Representation of the hash that should be signed
+ * @member {String} sigHash
+ */
+_PrepareAFungibleTokenTransferFromAddressRIBSE["default"].prototype['sigHash'] = undefined;
+/**
+ * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee} fee
+ */
+_PrepareAFungibleTokenTransferFromAddressRIBSE["default"].prototype['fee'] = undefined;
+/**
+ * Representation of the transaction type
+ * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSE.TransactionTypeEnum} transactionType
+ */
+_PrepareAFungibleTokenTransferFromAddressRIBSE["default"].prototype['transactionType'] = undefined;
 
 /**
  * Allowed values for the <code>transactionType</code> property.
@@ -180,7 +180,17 @@ PrepareAFungibleTokenTransferFromAddressRIBS['TransactionTypeEnum'] = {
    * value: "legacy-transaction"
    * @const
    */
-  "legacy-transaction": "legacy-transaction"
+  "legacy-transaction": "legacy-transaction",
+  /**
+   * value: "access-list-transaction"
+   * @const
+   */
+  "access-list-transaction": "access-list-transaction",
+  /**
+   * value: "gas-fee-market-transaction"
+   * @const
+   */
+  "gas-fee-market-transaction": "gas-fee-market-transaction"
 };
 var _default = PrepareAFungibleTokenTransferFromAddressRIBS;
 exports["default"] = _default;

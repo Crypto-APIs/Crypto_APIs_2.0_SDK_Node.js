@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The WalletAsAServiceNoDepositAddressesFound model module.
  * @module model/WalletAsAServiceNoDepositAddressesFound
- * @version 1.12.0
+ * @version 1.13.0
  */
 var WalletAsAServiceNoDepositAddressesFound = /*#__PURE__*/function () {
   /**

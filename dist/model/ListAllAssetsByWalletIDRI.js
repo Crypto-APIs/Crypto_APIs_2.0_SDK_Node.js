@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListAllAssetsByWalletIDRI model module.
  * @module model/ListAllAssetsByWalletIDRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListAllAssetsByWalletIDRI = /*#__PURE__*/function () {
   /**

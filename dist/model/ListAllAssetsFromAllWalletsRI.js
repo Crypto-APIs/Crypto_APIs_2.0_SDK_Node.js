@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListAllAssetsFromAllWalletsRI model module.
  * @module model/ListAllAssetsFromAllWalletsRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListAllAssetsFromAllWalletsRI = /*#__PURE__*/function () {
   /**

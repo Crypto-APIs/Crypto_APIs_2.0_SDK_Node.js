@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetNextAvailableNonce401Response model module.
  * @module model/GetNextAvailableNonce401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetNextAvailableNonce401Response = /*#__PURE__*/function () {
   /**

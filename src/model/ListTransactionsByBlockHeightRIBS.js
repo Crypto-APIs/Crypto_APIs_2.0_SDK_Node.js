@@ -31,7 +31,7 @@ import ListTransactionsByBlockHeightRIBSZVoutInner from './ListTransactionsByBlo
 /**
  * The ListTransactionsByBlockHeightRIBS model module.
  * @module model/ListTransactionsByBlockHeightRIBS
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListTransactionsByBlockHeightRIBS {
     /**

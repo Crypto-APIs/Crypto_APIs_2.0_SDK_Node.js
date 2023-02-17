@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE401 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateCoinsTransactionFromAddressForWholeAmountE401 {
     /**

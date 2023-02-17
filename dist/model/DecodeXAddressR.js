@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DecodeXAddressR model module.
  * @module model/DecodeXAddressR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DecodeXAddressR = /*#__PURE__*/function () {
   /**

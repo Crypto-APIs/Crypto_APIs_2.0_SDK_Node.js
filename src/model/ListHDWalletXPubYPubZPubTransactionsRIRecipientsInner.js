@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListHDWalletXPubYPubZPubTransactionsRIRecipientsInner {
     /**

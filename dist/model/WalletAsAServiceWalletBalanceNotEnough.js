@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The WalletAsAServiceWalletBalanceNotEnough model module.
  * @module model/WalletAsAServiceWalletBalanceNotEnough
- * @version 1.12.0
+ * @version 1.13.0
  */
 var WalletAsAServiceWalletBalanceNotEnough = /*#__PURE__*/function () {
   /**

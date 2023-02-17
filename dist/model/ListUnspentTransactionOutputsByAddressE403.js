@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListUnspentTransactionOutputsByAddressE403 model module.
  * @module model/ListUnspentTransactionOutputsByAddressE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListUnspentTransactionOutputsByAddressE403 = /*#__PURE__*/function () {
   /**

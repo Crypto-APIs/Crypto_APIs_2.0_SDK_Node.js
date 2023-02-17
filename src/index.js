@@ -1810,6 +1810,12 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSE from './model
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEC';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSECFee';
 import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX';
+import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee from './model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub401Response';
 import PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response from './model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub403Response';
@@ -1996,7 +2002,7 @@ import ZilliqaApi from './api/ZilliqaApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.12.0
+* @version 1.13.0
 */
 export {
     /**
@@ -12786,6 +12792,42 @@ export {
      * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee}
      */
     PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSEFee,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBST,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawData,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContract,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSTRawDataContractParameter,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSX,
+
+    /**
+     * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee model constructor.
+     * @property {module:model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee}
+     */
+    PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRIBSXFee,
 
     /**
      * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPub400Response model constructor.

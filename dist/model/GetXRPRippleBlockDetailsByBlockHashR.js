@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetXRPRippleBlockDetailsByBlockHashR model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetXRPRippleBlockDetailsByBlockHashR = /*#__PURE__*/function () {
   /**

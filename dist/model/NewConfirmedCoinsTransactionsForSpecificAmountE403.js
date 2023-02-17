@@ -21,7 +21,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountE403 model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewConfirmedCoinsTransactionsForSpecificAmountE403 = /*#__PURE__*/function () {
   /**

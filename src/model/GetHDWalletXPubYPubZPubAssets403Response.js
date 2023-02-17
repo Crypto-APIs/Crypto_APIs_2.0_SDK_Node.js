@@ -17,7 +17,7 @@ import GetHDWalletXPubYPubZPubAssetsE403 from './GetHDWalletXPubYPubZPubAssetsE4
 /**
  * The GetHDWalletXPubYPubZPubAssets403Response model module.
  * @module model/GetHDWalletXPubYPubZPubAssets403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetHDWalletXPubYPubZPubAssets403Response {
     /**

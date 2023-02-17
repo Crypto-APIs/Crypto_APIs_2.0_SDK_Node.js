@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR model module.
  * @module model/DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DeriveHDWalletXPubYPubZPubChangeOrReceivingAddressesR = /*#__PURE__*/function () {
   /**

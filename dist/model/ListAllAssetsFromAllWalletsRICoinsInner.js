@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListAllAssetsFromAllWalletsRICoinsInner model module.
  * @module model/ListAllAssetsFromAllWalletsRICoinsInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListAllAssetsFromAllWalletsRICoinsInner = /*#__PURE__*/function () {
   /**

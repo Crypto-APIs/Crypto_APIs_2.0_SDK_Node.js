@@ -17,7 +17,7 @@ import GetTransactionRequestDetailsRData from './GetTransactionRequestDetailsRDa
 /**
  * The GetTransactionRequestDetailsR model module.
  * @module model/GetTransactionRequestDetailsR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetTransactionRequestDetailsR {
     /**

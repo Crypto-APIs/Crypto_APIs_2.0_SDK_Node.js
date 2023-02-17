@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListLatestMinedBlocksRIBSD2 model module.
  * @module model/ListLatestMinedBlocksRIBSD2
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListLatestMinedBlocksRIBSD2 = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetExchangeRateByAssetSymbolsRData model module.
  * @module model/GetExchangeRateByAssetSymbolsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetExchangeRateByAssetSymbolsRData = /*#__PURE__*/function () {
   /**

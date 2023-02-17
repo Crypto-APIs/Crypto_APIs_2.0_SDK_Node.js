@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListSupportedTokensR model module.
  * @module model/ListSupportedTokensR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListSupportedTokensR = /*#__PURE__*/function () {
   /**

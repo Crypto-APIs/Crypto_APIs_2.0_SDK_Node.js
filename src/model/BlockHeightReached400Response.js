@@ -17,7 +17,7 @@ import BlockHeightReachedE400 from './BlockHeightReachedE400';
 /**
  * The BlockHeightReached400Response model module.
  * @module model/BlockHeightReached400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class BlockHeightReached400Response {
     /**

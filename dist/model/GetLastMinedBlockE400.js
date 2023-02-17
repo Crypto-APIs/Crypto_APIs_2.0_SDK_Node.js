@@ -19,7 +19,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetLastMinedBlockE400 model module.
  * @module model/GetLastMinedBlockE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetLastMinedBlockE400 = /*#__PURE__*/function () {
   /**

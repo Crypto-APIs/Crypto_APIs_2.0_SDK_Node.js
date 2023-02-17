@@ -17,7 +17,7 @@ import PrepareTransactionFromAddressRBDataItemFee from './PrepareTransactionFrom
 /**
  * The PrepareTransactionFromAddressRBDataItem model module.
  * @module model/PrepareTransactionFromAddressRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareTransactionFromAddressRBDataItem {
     /**

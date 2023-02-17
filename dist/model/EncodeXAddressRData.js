@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The EncodeXAddressRData model module.
  * @module model/EncodeXAddressRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var EncodeXAddressRData = /*#__PURE__*/function () {
   /**

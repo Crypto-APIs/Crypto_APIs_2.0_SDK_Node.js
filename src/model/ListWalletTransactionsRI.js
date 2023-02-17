@@ -23,7 +23,7 @@ import ListWalletTransactionsRIValue from './ListWalletTransactionsRIValue';
 /**
  * The ListWalletTransactionsRI model module.
  * @module model/ListWalletTransactionsRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListWalletTransactionsRI {
     /**

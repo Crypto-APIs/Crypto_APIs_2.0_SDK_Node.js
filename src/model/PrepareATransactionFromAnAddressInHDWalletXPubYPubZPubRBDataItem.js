@@ -17,7 +17,7 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItemFee from 
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBDataItem {
     /**

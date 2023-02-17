@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListAllAssetsFromAllWalletsRICoinsInner model module.
  * @module model/ListAllAssetsFromAllWalletsRICoinsInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListAllAssetsFromAllWalletsRICoinsInner {
     /**

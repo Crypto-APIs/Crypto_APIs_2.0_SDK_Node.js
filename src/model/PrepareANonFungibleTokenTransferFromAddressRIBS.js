@@ -13,26 +13,26 @@
 
 import ApiClient from '../ApiClient';
 import PrepareANonFungibleTokenTransferFromAddressRIBSBSC from './PrepareANonFungibleTokenTransferFromAddressRIBSBSC';
-import PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee from './PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee';
 import PrepareANonFungibleTokenTransferFromAddressRIBSE from './PrepareANonFungibleTokenTransferFromAddressRIBSE';
+import PrepareANonFungibleTokenTransferFromAddressRIBSEFee from './PrepareANonFungibleTokenTransferFromAddressRIBSEFee';
 
 /**
  * The PrepareANonFungibleTokenTransferFromAddressRIBS model module.
  * @module model/PrepareANonFungibleTokenTransferFromAddressRIBS
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareANonFungibleTokenTransferFromAddressRIBS {
     /**
      * Constructs a new <code>PrepareANonFungibleTokenTransferFromAddressRIBS</code>.
      * @alias module:model/PrepareANonFungibleTokenTransferFromAddressRIBS
-     * @implements module:model/PrepareANonFungibleTokenTransferFromAddressRIBSE
      * @implements module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSC
+     * @implements module:model/PrepareANonFungibleTokenTransferFromAddressRIBSE
      * @param sigHash {String} Representation of the hash that should be signed
-     * @param fee {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee} 
+     * @param fee {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSEFee} 
      * @param transactionType {module:model/PrepareANonFungibleTokenTransferFromAddressRIBS.TransactionTypeEnum} Representation of the transaction type
      */
     constructor(sigHash, fee, transactionType) { 
-        PrepareANonFungibleTokenTransferFromAddressRIBSE.initialize(this, sigHash, fee, transactionType);PrepareANonFungibleTokenTransferFromAddressRIBSBSC.initialize(this, sigHash, fee, transactionType);
+        PrepareANonFungibleTokenTransferFromAddressRIBSBSC.initialize(this, sigHash, fee, transactionType);PrepareANonFungibleTokenTransferFromAddressRIBSE.initialize(this, sigHash, fee, transactionType);
         PrepareANonFungibleTokenTransferFromAddressRIBS.initialize(this, sigHash, fee, transactionType);
     }
 
@@ -57,8 +57,8 @@ class PrepareANonFungibleTokenTransferFromAddressRIBS {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new PrepareANonFungibleTokenTransferFromAddressRIBS();
-            PrepareANonFungibleTokenTransferFromAddressRIBSE.constructFromObject(data, obj);
             PrepareANonFungibleTokenTransferFromAddressRIBSBSC.constructFromObject(data, obj);
+            PrepareANonFungibleTokenTransferFromAddressRIBSE.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('dataHex')) {
                 obj['dataHex'] = ApiClient.convertToType(data['dataHex'], 'String');
@@ -70,7 +70,7 @@ class PrepareANonFungibleTokenTransferFromAddressRIBS {
                 obj['sigHash'] = ApiClient.convertToType(data['sigHash'], 'String');
             }
             if (data.hasOwnProperty('fee')) {
-                obj['fee'] = PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee.constructFromObject(data['fee']);
+                obj['fee'] = PrepareANonFungibleTokenTransferFromAddressRIBSEFee.constructFromObject(data['fee']);
             }
             if (data.hasOwnProperty('transactionType')) {
                 obj['transactionType'] = ApiClient.convertToType(data['transactionType'], 'String');
@@ -101,7 +101,7 @@ PrepareANonFungibleTokenTransferFromAddressRIBS.prototype['nonce'] = undefined;
 PrepareANonFungibleTokenTransferFromAddressRIBS.prototype['sigHash'] = undefined;
 
 /**
- * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee} fee
+ * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSEFee} fee
  */
 PrepareANonFungibleTokenTransferFromAddressRIBS.prototype['fee'] = undefined;
 
@@ -112,31 +112,6 @@ PrepareANonFungibleTokenTransferFromAddressRIBS.prototype['fee'] = undefined;
 PrepareANonFungibleTokenTransferFromAddressRIBS.prototype['transactionType'] = undefined;
 
 
-// Implement PrepareANonFungibleTokenTransferFromAddressRIBSE interface:
-/**
- * 0x0079006f00750072004100640064006900740069006f006e0061006c00440061007400610048006500720065
- * @member {String} dataHex
- */
-PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['dataHex'] = undefined;
-/**
- * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
- * @member {String} nonce
- */
-PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['nonce'] = undefined;
-/**
- * Representation of the hash that should be signed
- * @member {String} sigHash
- */
-PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['sigHash'] = undefined;
-/**
- * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSEFee} fee
- */
-PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['fee'] = undefined;
-/**
- * Representation of the transaction type
- * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSE.TransactionTypeEnum} transactionType
- */
-PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['transactionType'] = undefined;
 // Implement PrepareANonFungibleTokenTransferFromAddressRIBSBSC interface:
 /**
  * 0x0079006f00750072004100640064006900740069006f006e0061006c00440061007400610048006500720065
@@ -162,6 +137,31 @@ PrepareANonFungibleTokenTransferFromAddressRIBSBSC.prototype['fee'] = undefined;
  * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSC.TransactionTypeEnum} transactionType
  */
 PrepareANonFungibleTokenTransferFromAddressRIBSBSC.prototype['transactionType'] = undefined;
+// Implement PrepareANonFungibleTokenTransferFromAddressRIBSE interface:
+/**
+ * 0x0079006f00750072004100640064006900740069006f006e0061006c00440061007400610048006500720065
+ * @member {String} dataHex
+ */
+PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['dataHex'] = undefined;
+/**
+ * Represents the sequential running number for an address, starting from 0 for the first transaction. E.g., if the nonce of a transaction is 10, it would be the 11th transaction sent from the sender's address.
+ * @member {String} nonce
+ */
+PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['nonce'] = undefined;
+/**
+ * Representation of the hash that should be signed
+ * @member {String} sigHash
+ */
+PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['sigHash'] = undefined;
+/**
+ * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSEFee} fee
+ */
+PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['fee'] = undefined;
+/**
+ * Representation of the transaction type
+ * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSE.TransactionTypeEnum} transactionType
+ */
+PrepareANonFungibleTokenTransferFromAddressRIBSE.prototype['transactionType'] = undefined;
 
 
 
@@ -176,7 +176,19 @@ PrepareANonFungibleTokenTransferFromAddressRIBS['TransactionTypeEnum'] = {
      * value: "legacy-transaction"
      * @const
      */
-    "legacy-transaction": "legacy-transaction"
+    "legacy-transaction": "legacy-transaction",
+
+    /**
+     * value: "access-list-transaction"
+     * @const
+     */
+    "access-list-transaction": "access-list-transaction",
+
+    /**
+     * value: "gas-fee-market-transaction"
+     * @const
+     */
+    "gas-fee-market-transaction": "gas-fee-market-transaction"
 };
 
 

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListUnconfirmedTokensTransfersByAddressR model module.
  * @module model/ListUnconfirmedTokensTransfersByAddressR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListUnconfirmedTokensTransfersByAddressR = /*#__PURE__*/function () {
   /**

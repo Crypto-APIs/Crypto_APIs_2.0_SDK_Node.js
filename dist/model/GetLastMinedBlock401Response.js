@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetLastMinedBlock401Response model module.
  * @module model/GetLastMinedBlock401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetLastMinedBlock401Response = /*#__PURE__*/function () {
   /**

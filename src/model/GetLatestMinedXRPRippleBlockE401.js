@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetLatestMinedXRPRippleBlockE401 model module.
  * @module model/GetLatestMinedXRPRippleBlockE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetLatestMinedXRPRippleBlockE401 {
     /**

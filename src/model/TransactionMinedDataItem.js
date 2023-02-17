@@ -17,7 +17,7 @@ import TransactionMinedDataItemMinedInBlock from './TransactionMinedDataItemMine
 /**
  * The TransactionMinedDataItem model module.
  * @module model/TransactionMinedDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 class TransactionMinedDataItem {
     /**

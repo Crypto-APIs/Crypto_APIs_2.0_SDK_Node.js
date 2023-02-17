@@ -20,7 +20,7 @@ import PrepareTransactionFromAddressRIBSEC from './PrepareTransactionFromAddress
 /**
  * The PrepareTransactionFromAddressRIBS model module.
  * @module model/PrepareTransactionFromAddressRIBS
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareTransactionFromAddressRIBS {
     /**

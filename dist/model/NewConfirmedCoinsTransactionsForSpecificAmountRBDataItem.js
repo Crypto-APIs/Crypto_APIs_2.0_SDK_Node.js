@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewConfirmedCoinsTransactionsForSpecificAmountRBDataItem model module.
  * @module model/NewConfirmedCoinsTransactionsForSpecificAmountRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewConfirmedCoinsTransactionsForSpecificAmountRBDataItem = /*#__PURE__*/function () {
   /**

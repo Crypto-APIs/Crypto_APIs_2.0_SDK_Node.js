@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetWalletAssetDetailsRData model module.
  * @module model/GetWalletAssetDetailsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetWalletAssetDetailsRData = /*#__PURE__*/function () {
   /**

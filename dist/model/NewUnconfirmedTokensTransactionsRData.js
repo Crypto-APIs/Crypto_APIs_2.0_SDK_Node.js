@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewUnconfirmedTokensTransactionsRData model module.
  * @module model/NewUnconfirmedTokensTransactionsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewUnconfirmedTokensTransactionsRData = /*#__PURE__*/function () {
   /**

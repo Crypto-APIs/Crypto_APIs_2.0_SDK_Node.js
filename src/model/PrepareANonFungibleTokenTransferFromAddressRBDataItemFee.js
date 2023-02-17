@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareANonFungibleTokenTransferFromAddressRBDataItemFee model module.
  * @module model/PrepareANonFungibleTokenTransferFromAddressRBDataItemFee
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareANonFungibleTokenTransferFromAddressRBDataItemFee {
     /**

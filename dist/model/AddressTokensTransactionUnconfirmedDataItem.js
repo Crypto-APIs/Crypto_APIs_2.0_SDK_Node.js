@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddressTokensTransactionUnconfirmedDataItem model module.
  * @module model/AddressTokensTransactionUnconfirmedDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddressTokensTransactionUnconfirmedDataItem = /*#__PURE__*/function () {
   /**

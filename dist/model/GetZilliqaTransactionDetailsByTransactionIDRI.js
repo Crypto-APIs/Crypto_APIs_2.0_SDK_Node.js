@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDRI model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetZilliqaTransactionDetailsByTransactionIDRI = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CoinsForwardingFail model module.
  * @module model/CoinsForwardingFail
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CoinsForwardingFail = /*#__PURE__*/function () {
   /**

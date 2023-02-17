@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTokensTransfersByTransactionHash401Response model module.
  * @module model/ListTokensTransfersByTransactionHash401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTokensTransfersByTransactionHash401Response = /*#__PURE__*/function () {
   /**

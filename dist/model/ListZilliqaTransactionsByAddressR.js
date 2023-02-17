@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListZilliqaTransactionsByAddressR model module.
  * @module model/ListZilliqaTransactionsByAddressR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListZilliqaTransactionsByAddressR = /*#__PURE__*/function () {
   /**

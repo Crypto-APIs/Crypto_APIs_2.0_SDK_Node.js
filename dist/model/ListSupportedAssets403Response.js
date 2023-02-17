@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListSupportedAssets403Response model module.
  * @module model/ListSupportedAssets403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListSupportedAssets403Response = /*#__PURE__*/function () {
   /**

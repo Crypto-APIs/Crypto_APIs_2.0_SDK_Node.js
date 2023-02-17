@@ -17,7 +17,7 @@ import CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBDataI
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBData model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriorityRBData {
     /**

@@ -17,7 +17,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetXRPRippleBlockDetailsByBlockHashRI model module.
  * @module model/GetXRPRippleBlockDetailsByBlockHashRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetXRPRippleBlockDetailsByBlockHashRI = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The InvalidPagination model module.
  * @module model/InvalidPagination
- * @version 1.12.0
+ * @version 1.13.0
  */
 var InvalidPagination = /*#__PURE__*/function () {
   /**

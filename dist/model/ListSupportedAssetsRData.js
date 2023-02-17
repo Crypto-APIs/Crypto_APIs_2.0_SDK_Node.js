@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListSupportedAssetsRData model module.
  * @module model/ListSupportedAssetsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListSupportedAssetsRData = /*#__PURE__*/function () {
   /**

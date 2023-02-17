@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListLatestMinedBlocksRIBSXTotalFees model module.
  * @module model/ListLatestMinedBlocksRIBSXTotalFees
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListLatestMinedBlocksRIBSXTotalFees = /*#__PURE__*/function () {
   /**

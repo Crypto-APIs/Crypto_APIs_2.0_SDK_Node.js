@@ -17,7 +17,7 @@ import ListAllAssetsFromAllWalletsRI from './ListAllAssetsFromAllWalletsRI';
 /**
  * The ListAllAssetsFromAllWalletsRData model module.
  * @module model/ListAllAssetsFromAllWalletsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListAllAssetsFromAllWalletsRData {
     /**

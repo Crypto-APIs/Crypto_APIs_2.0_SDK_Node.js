@@ -17,7 +17,7 @@ import BlockRevertedData from './BlockRevertedData';
 /**
  * The BlockReverted model module.
  * @module model/BlockReverted
- * @version 1.12.0
+ * @version 1.13.0
  */
 class BlockReverted {
     /**

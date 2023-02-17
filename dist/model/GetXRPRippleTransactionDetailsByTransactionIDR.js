@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetXRPRippleTransactionDetailsByTransactionIDR model module.
  * @module model/GetXRPRippleTransactionDetailsByTransactionIDR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetXRPRippleTransactionDetailsByTransactionIDR = /*#__PURE__*/function () {
   /**

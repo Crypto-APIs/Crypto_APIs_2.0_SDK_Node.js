@@ -17,7 +17,7 @@ import InvalidRequestBodyStructure from './InvalidRequestBodyStructure';
 /**
  * The ConvertBitcoinCashAddress422Response model module.
  * @module model/ConvertBitcoinCashAddress422Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ConvertBitcoinCashAddress422Response {
     /**

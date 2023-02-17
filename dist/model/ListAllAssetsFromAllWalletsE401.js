@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListAllAssetsFromAllWalletsE401 model module.
  * @module model/ListAllAssetsFromAllWalletsE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListAllAssetsFromAllWalletsE401 = /*#__PURE__*/function () {
   /**

@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTransactionsByBlockHashRIBSBSCGasPrice model module.
  * @module model/ListTransactionsByBlockHashRIBSBSCGasPrice
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTransactionsByBlockHashRIBSBSCGasPrice = /*#__PURE__*/function () {
   /**

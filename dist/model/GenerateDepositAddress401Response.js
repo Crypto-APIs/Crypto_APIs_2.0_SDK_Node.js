@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GenerateDepositAddress401Response model module.
  * @module model/GenerateDepositAddress401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GenerateDepositAddress401Response = /*#__PURE__*/function () {
   /**

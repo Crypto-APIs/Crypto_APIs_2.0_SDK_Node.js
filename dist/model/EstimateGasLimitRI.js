@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The EstimateGasLimitRI model module.
  * @module model/EstimateGasLimitRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var EstimateGasLimitRI = /*#__PURE__*/function () {
   /**

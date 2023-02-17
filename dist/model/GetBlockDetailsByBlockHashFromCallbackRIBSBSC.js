@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetBlockDetailsByBlockHashFromCallbackRIBSBSC model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackRIBSBSC
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetBlockDetailsByBlockHashFromCallbackRIBSBSC = /*#__PURE__*/function () {
   /**

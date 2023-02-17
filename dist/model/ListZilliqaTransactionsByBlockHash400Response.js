@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListZilliqaTransactionsByBlockHash400Response model module.
  * @module model/ListZilliqaTransactionsByBlockHash400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListZilliqaTransactionsByBlockHash400Response = /*#__PURE__*/function () {
   /**

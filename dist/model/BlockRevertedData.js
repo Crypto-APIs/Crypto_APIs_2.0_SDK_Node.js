@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BlockRevertedData model module.
  * @module model/BlockRevertedData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BlockRevertedData = /*#__PURE__*/function () {
   /**

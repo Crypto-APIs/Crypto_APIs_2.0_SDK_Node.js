@@ -19,7 +19,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListUnconfirmedTransactionsByAddressE400 model module.
  * @module model/ListUnconfirmedTransactionsByAddressE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListUnconfirmedTransactionsByAddressE400 = /*#__PURE__*/function () {
   /**

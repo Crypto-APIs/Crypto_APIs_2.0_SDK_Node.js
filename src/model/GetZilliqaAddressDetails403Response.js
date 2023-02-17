@@ -17,7 +17,7 @@ import GetZilliqaAddressDetailsE403 from './GetZilliqaAddressDetailsE403';
 /**
  * The GetZilliqaAddressDetails403Response model module.
  * @module model/GetZilliqaAddressDetails403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetZilliqaAddressDetails403Response {
     /**

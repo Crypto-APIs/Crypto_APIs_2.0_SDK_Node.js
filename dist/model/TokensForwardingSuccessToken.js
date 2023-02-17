@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The TokensForwardingSuccessToken model module.
  * @module model/TokensForwardingSuccessToken
- * @version 1.12.0
+ * @version 1.13.0
  */
 var TokensForwardingSuccessToken = /*#__PURE__*/function () {
   /**

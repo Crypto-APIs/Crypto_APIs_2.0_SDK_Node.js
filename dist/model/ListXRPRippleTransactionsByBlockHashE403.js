@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListXRPRippleTransactionsByBlockHashE403 model module.
  * @module model/ListXRPRippleTransactionsByBlockHashE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListXRPRippleTransactionsByBlockHashE403 = /*#__PURE__*/function () {
   /**

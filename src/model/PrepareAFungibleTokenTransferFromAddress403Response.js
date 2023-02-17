@@ -17,7 +17,7 @@ import PrepareAFungibleTokenTransferFromAddressE403 from './PrepareAFungibleToke
 /**
  * The PrepareAFungibleTokenTransferFromAddress403Response model module.
  * @module model/PrepareAFungibleTokenTransferFromAddress403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareAFungibleTokenTransferFromAddress403Response {
     /**

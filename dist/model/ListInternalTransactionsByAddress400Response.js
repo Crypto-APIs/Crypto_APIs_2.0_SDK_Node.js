@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListInternalTransactionsByAddress400Response model module.
  * @module model/ListInternalTransactionsByAddress400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListInternalTransactionsByAddress400Response = /*#__PURE__*/function () {
   /**

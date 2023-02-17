@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DecodeRawTransactionHexRISBVoutInnerScriptPubKey model module.
  * @module model/DecodeRawTransactionHexRISBVoutInnerScriptPubKey
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DecodeRawTransactionHexRISBVoutInnerScriptPubKey = /*#__PURE__*/function () {
   /**

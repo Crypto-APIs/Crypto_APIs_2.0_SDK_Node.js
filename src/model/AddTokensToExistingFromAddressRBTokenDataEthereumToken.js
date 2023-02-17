@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The AddTokensToExistingFromAddressRBTokenDataEthereumToken model module.
  * @module model/AddTokensToExistingFromAddressRBTokenDataEthereumToken
- * @version 1.12.0
+ * @version 1.13.0
  */
 class AddTokensToExistingFromAddressRBTokenDataEthereumToken {
     /**

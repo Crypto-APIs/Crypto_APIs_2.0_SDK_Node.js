@@ -19,7 +19,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetZilliqaBlockDetailsByBlockHeightE400 model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeightE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetZilliqaBlockDetailsByBlockHeightE400 = /*#__PURE__*/function () {
   /**

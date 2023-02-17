@@ -17,7 +17,7 @@ import CreateAutomaticCoinsForwardingRBData from './CreateAutomaticCoinsForwardi
 /**
  * The CreateAutomaticCoinsForwardingRB model module.
  * @module model/CreateAutomaticCoinsForwardingRB
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateAutomaticCoinsForwardingRB {
     /**

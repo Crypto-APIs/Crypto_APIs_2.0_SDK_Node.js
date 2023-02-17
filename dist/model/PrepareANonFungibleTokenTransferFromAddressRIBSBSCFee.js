@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee model module.
  * @module model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee
- * @version 1.12.0
+ * @version 1.13.0
  */
 var PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee = /*#__PURE__*/function () {
   /**

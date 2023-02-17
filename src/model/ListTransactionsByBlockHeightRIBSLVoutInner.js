@@ -17,7 +17,7 @@ import ListTransactionsByBlockHeightRIBSLVoutInnerScriptPubKey from './ListTrans
 /**
  * The ListTransactionsByBlockHeightRIBSLVoutInner model module.
  * @module model/ListTransactionsByBlockHeightRIBSLVoutInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListTransactionsByBlockHeightRIBSLVoutInner {
     /**

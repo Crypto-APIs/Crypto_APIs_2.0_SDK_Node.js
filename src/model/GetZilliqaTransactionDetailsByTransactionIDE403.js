@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The GetZilliqaTransactionDetailsByTransactionIDE403 model module.
  * @module model/GetZilliqaTransactionDetailsByTransactionIDE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetZilliqaTransactionDetailsByTransactionIDE403 {
     /**

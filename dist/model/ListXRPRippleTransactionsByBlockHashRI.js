@@ -21,7 +21,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListXRPRippleTransactionsByBlockHashRI model module.
  * @module model/ListXRPRippleTransactionsByBlockHashRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListXRPRippleTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**

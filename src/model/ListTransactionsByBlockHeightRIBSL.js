@@ -18,7 +18,7 @@ import ListTransactionsByBlockHeightRIBSLVoutInner from './ListTransactionsByBlo
 /**
  * The ListTransactionsByBlockHeightRIBSL model module.
  * @module model/ListTransactionsByBlockHeightRIBSL
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListTransactionsByBlockHeightRIBSL {
     /**

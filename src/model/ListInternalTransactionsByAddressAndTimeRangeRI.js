@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListInternalTransactionsByAddressAndTimeRangeRI {
     /**

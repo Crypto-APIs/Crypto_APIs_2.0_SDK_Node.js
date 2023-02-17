@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The EstimateGasLimitRBDataItem model module.
  * @module model/EstimateGasLimitRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var EstimateGasLimitRBDataItem = /*#__PURE__*/function () {
   /**

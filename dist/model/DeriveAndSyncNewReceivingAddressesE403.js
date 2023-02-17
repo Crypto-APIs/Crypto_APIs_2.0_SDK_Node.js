@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DeriveAndSyncNewReceivingAddressesE403 model module.
  * @module model/DeriveAndSyncNewReceivingAddressesE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DeriveAndSyncNewReceivingAddressesE403 = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import NewRevertedBlockE400 from './NewRevertedBlockE400';
 /**
  * The NewRevertedBlock400Response model module.
  * @module model/NewRevertedBlock400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class NewRevertedBlock400Response {
     /**

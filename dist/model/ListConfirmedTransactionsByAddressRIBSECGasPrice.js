@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListConfirmedTransactionsByAddressRIBSECGasPrice model module.
  * @module model/ListConfirmedTransactionsByAddressRIBSECGasPrice
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListConfirmedTransactionsByAddressRIBSECGasPrice = /*#__PURE__*/function () {
   /**

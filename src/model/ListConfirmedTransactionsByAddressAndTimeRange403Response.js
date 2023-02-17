@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressAndTimeRangeE403 from './ListConfirmedT
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRange403Response model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRange403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListConfirmedTransactionsByAddressAndTimeRange403Response {
     /**

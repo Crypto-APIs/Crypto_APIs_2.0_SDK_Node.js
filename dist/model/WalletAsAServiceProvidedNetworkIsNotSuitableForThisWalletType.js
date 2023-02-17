@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType model module.
  * @module model/WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType
- * @version 1.12.0
+ * @version 1.13.0
  */
 var WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType = /*#__PURE__*/function () {
   /**

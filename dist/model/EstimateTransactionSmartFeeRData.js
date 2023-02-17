@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The EstimateTransactionSmartFeeRData model module.
  * @module model/EstimateTransactionSmartFeeRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var EstimateTransactionSmartFeeRData = /*#__PURE__*/function () {
   /**

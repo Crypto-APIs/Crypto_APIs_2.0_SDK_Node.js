@@ -17,7 +17,7 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubE403 from './Prepar
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPub403Response {
     /**

@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAssetDetailsByAssetIDE403 model module.
  * @module model/GetAssetDetailsByAssetIDE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAssetDetailsByAssetIDE403 = /*#__PURE__*/function () {
   /**

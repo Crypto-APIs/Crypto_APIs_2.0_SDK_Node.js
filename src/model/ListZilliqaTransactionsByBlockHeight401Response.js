@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByBlockHeightE401 from './ListZilliqaTransactionsB
 /**
  * The ListZilliqaTransactionsByBlockHeight401Response model module.
  * @module model/ListZilliqaTransactionsByBlockHeight401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListZilliqaTransactionsByBlockHeight401Response {
     /**

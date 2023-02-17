@@ -17,7 +17,7 @@ import PrepareANonFungibleTokenTransferFromAddressE400 from './PrepareANonFungib
 /**
  * The PrepareANonFungibleTokenTransferFromAddress400Response model module.
  * @module model/PrepareANonFungibleTokenTransferFromAddress400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareANonFungibleTokenTransferFromAddress400Response {
     /**

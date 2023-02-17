@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAddressDetails403Response model module.
  * @module model/GetAddressDetails403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAddressDetails403Response = /*#__PURE__*/function () {
   /**

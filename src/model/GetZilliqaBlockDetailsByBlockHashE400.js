@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The GetZilliqaBlockDetailsByBlockHashE400 model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetZilliqaBlockDetailsByBlockHashE400 {
     /**

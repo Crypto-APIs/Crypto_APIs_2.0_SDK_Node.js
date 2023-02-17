@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetFeeRecommendationsR model module.
  * @module model/GetFeeRecommendationsR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetFeeRecommendationsR = /*#__PURE__*/function () {
   /**

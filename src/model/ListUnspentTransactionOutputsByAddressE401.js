@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListUnspentTransactionOutputsByAddressE401 model module.
  * @module model/ListUnspentTransactionOutputsByAddressE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListUnspentTransactionOutputsByAddressE401 {
     /**

@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListInternalTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListInternalTransactionsByAddressAndTimeRangeRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListInternalTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import PrepareTransactionFromAddressE400 from './PrepareTransactionFromAddressE4
 /**
  * The PrepareTransactionFromAddress400Response model module.
  * @module model/PrepareTransactionFromAddress400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareTransactionFromAddress400Response {
     /**

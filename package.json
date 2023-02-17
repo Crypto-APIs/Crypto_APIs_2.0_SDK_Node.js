@@ -1,6 +1,6 @@
 {
   "name": "cryptoapis",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "Node.js library/SDK for Crypto APIs 2.0",
   "license": "MIT",
   "main": "dist/index.js",

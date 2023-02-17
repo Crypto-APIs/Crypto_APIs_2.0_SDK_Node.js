@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListDepositAddresses403Response model module.
  * @module model/ListDepositAddresses403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListDepositAddresses403Response = /*#__PURE__*/function () {
   /**

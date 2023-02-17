@@ -17,7 +17,7 @@ import ListHDWalletXPubYPubZPubUTXOsRI from './ListHDWalletXPubYPubZPubUTXOsRI';
 /**
  * The ListHDWalletXPubYPubZPubUTXOsRData model module.
  * @module model/ListHDWalletXPubYPubZPubUTXOsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListHDWalletXPubYPubZPubUTXOsRData {
     /**

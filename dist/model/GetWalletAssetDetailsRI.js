@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetWalletAssetDetailsRI model module.
  * @module model/GetWalletAssetDetailsRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetWalletAssetDetailsRI = /*#__PURE__*/function () {
   /**

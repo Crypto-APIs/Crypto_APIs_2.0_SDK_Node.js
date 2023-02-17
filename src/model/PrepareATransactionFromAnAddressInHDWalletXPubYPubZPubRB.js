@@ -17,7 +17,7 @@ import PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRBData from './Prep
 /**
  * The PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB model module.
  * @module model/PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareATransactionFromAnAddressInHDWalletXPubYPubZPubRB {
     /**

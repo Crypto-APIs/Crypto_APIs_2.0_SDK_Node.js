@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetEIP1559FeeRecommendationsRI model module.
  * @module model/GetEIP1559FeeRecommendationsRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetEIP1559FeeRecommendationsRI = /*#__PURE__*/function () {
   /**

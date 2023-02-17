@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListSupportedTokensE401 model module.
  * @module model/ListSupportedTokensE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListSupportedTokensE401 {
     /**

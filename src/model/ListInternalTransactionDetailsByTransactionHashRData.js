@@ -17,7 +17,7 @@ import ListInternalTransactionDetailsByTransactionHashRI from './ListInternalTra
 /**
  * The ListInternalTransactionDetailsByTransactionHashRData model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListInternalTransactionDetailsByTransactionHashRData {
     /**

@@ -17,7 +17,7 @@ import GetWalletTransactionDetailsByTransactionIDRData from './GetWalletTransact
 /**
  * The GetWalletTransactionDetailsByTransactionIDR model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetWalletTransactionDetailsByTransactionIDR {
     /**

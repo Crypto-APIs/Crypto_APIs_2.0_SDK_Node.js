@@ -17,7 +17,7 @@ import TransactionRequestApprovalData from './TransactionRequestApprovalData';
 /**
  * The TransactionRequestApproval model module.
  * @module model/TransactionRequestApproval
- * @version 1.12.0
+ * @version 1.13.0
  */
 class TransactionRequestApproval {
     /**

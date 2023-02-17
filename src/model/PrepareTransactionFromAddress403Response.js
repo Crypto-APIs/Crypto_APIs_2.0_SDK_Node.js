@@ -17,7 +17,7 @@ import PrepareTransactionFromAddressE403 from './PrepareTransactionFromAddressE4
 /**
  * The PrepareTransactionFromAddress403Response model module.
  * @module model/PrepareTransactionFromAddress403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareTransactionFromAddress403Response {
     /**

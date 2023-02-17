@@ -23,7 +23,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListHDWalletXPubYPubZPubTransactionsE400 model module.
  * @module model/ListHDWalletXPubYPubZPubTransactionsE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListHDWalletXPubYPubZPubTransactionsE400 = /*#__PURE__*/function () {
   /**

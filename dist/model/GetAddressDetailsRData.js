@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAddressDetailsRData model module.
  * @module model/GetAddressDetailsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAddressDetailsRData = /*#__PURE__*/function () {
   /**

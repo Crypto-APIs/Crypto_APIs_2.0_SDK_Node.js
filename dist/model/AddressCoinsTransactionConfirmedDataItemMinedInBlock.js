@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddressCoinsTransactionConfirmedDataItemMinedInBlock model module.
  * @module model/AddressCoinsTransactionConfirmedDataItemMinedInBlock
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddressCoinsTransactionConfirmedDataItemMinedInBlock = /*#__PURE__*/function () {
   /**

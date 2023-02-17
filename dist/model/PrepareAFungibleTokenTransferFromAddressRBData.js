@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The PrepareAFungibleTokenTransferFromAddressRBData model module.
  * @module model/PrepareAFungibleTokenTransferFromAddressRBData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var PrepareAFungibleTokenTransferFromAddressRBData = /*#__PURE__*/function () {
   /**

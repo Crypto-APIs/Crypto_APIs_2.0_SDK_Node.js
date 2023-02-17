@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddressCoinsTransactionUnconfirmed model module.
  * @module model/AddressCoinsTransactionUnconfirmed
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddressCoinsTransactionUnconfirmed = /*#__PURE__*/function () {
   /**

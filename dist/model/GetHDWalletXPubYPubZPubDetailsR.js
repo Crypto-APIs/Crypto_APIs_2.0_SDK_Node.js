@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetHDWalletXPubYPubZPubDetailsR model module.
  * @module model/GetHDWalletXPubYPubZPubDetailsR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetHDWalletXPubYPubZPubDetailsR = /*#__PURE__*/function () {
   /**

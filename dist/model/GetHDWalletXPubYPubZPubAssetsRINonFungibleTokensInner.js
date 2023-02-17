@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetHDWalletXPubYPubZPubAssetsRINonFungibleTokensInner = /*#__PURE__*/function () {
   /**

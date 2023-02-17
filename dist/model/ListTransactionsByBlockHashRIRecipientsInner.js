@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTransactionsByBlockHashRIRecipientsInner model module.
  * @module model/ListTransactionsByBlockHashRIRecipientsInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTransactionsByBlockHashRIRecipientsInner = /*#__PURE__*/function () {
   /**

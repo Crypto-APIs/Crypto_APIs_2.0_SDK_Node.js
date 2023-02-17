@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTokensTransfersByTransactionHashRData model module.
  * @module model/ListTokensTransfersByTransactionHashRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTokensTransfersByTransactionHashRData = /*#__PURE__*/function () {
   /**

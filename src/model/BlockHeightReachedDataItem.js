@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BlockHeightReachedDataItem model module.
  * @module model/BlockHeightReachedDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 class BlockHeightReachedDataItem {
     /**

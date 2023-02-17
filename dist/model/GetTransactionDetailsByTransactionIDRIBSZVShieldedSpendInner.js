@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner model module.
  * @module model/GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetTransactionDetailsByTransactionIDRIBSZVShieldedSpendInner = /*#__PURE__*/function () {
   /**

@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The GetBlockDetailsByBlockHeightE401 model module.
  * @module model/GetBlockDetailsByBlockHeightE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetBlockDetailsByBlockHeightE401 {
     /**

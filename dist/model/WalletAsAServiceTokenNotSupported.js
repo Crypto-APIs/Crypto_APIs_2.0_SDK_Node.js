@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The WalletAsAServiceTokenNotSupported model module.
  * @module model/WalletAsAServiceTokenNotSupported
- * @version 1.12.0
+ * @version 1.13.0
  */
 var WalletAsAServiceTokenNotSupported = /*#__PURE__*/function () {
   /**

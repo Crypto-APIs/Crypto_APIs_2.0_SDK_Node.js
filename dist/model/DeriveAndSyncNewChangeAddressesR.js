@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DeriveAndSyncNewChangeAddressesR model module.
  * @module model/DeriveAndSyncNewChangeAddressesR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DeriveAndSyncNewChangeAddressesR = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The SyncHDWalletXPubYPubZPub400Response model module.
  * @module model/SyncHDWalletXPubYPubZPub400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var SyncHDWalletXPubYPubZPub400Response = /*#__PURE__*/function () {
   /**

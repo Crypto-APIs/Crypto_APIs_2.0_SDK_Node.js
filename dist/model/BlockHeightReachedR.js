@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BlockHeightReachedR model module.
  * @module model/BlockHeightReachedR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BlockHeightReachedR = /*#__PURE__*/function () {
   /**

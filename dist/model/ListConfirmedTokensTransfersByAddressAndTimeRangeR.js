@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRangeR model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRangeR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListConfirmedTokensTransfersByAddressAndTimeRangeR = /*#__PURE__*/function () {
   /**

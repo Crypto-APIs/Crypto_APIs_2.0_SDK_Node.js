@@ -17,7 +17,7 @@ import GetZilliqaBlockDetailsByBlockHeightE401 from './GetZilliqaBlockDetailsByB
 /**
  * The GetZilliqaBlockDetailsByBlockHeight401Response model module.
  * @module model/GetZilliqaBlockDetailsByBlockHeight401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetZilliqaBlockDetailsByBlockHeight401Response {
     /**

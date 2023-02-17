@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewConfirmedInternalTransactionsForSpecificAmount403Response model module.
  * @module model/NewConfirmedInternalTransactionsForSpecificAmount403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewConfirmedInternalTransactionsForSpecificAmount403Response = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import GetNextAvailableNonceE403 from './GetNextAvailableNonceE403';
 /**
  * The GetNextAvailableNonce403Response model module.
  * @module model/GetNextAvailableNonce403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetNextAvailableNonce403Response {
     /**

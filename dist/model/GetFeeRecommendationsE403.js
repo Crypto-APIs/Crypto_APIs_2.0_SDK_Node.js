@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetFeeRecommendationsE403 model module.
  * @module model/GetFeeRecommendationsE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetFeeRecommendationsE403 = /*#__PURE__*/function () {
   /**

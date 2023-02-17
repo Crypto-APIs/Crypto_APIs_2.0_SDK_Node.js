@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListZilliqaTransactionsByBlockHashRI model module.
  * @module model/ListZilliqaTransactionsByBlockHashRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListZilliqaTransactionsByBlockHashRI = /*#__PURE__*/function () {
   /**

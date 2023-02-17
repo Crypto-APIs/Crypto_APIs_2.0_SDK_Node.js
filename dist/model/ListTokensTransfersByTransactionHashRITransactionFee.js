@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTokensTransfersByTransactionHashRITransactionFee model module.
  * @module model/ListTokensTransfersByTransactionHashRITransactionFee
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTokensTransfersByTransactionHashRITransactionFee = /*#__PURE__*/function () {
   /**

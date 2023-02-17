@@ -17,7 +17,7 @@ import ListUnspentTransactionOutputsByAddressRI from './ListUnspentTransactionOu
 /**
  * The ListUnspentTransactionOutputsByAddressRData model module.
  * @module model/ListUnspentTransactionOutputsByAddressRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListUnspentTransactionOutputsByAddressRData {
     /**

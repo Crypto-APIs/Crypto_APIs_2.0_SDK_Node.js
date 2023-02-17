@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DeleteBlockchainEventSubscriptionR model module.
  * @module model/DeleteBlockchainEventSubscriptionR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DeleteBlockchainEventSubscriptionR = /*#__PURE__*/function () {
   /**

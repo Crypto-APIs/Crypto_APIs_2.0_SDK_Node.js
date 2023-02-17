@@ -17,7 +17,7 @@ import PrepareTransactionFromAddressRBData from './PrepareTransactionFromAddress
 /**
  * The PrepareTransactionFromAddressRB model module.
  * @module model/PrepareTransactionFromAddressRB
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareTransactionFromAddressRB {
     /**

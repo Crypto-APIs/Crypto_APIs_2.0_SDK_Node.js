@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ActivateBlockchainEventSubscriptionRB model module.
  * @module model/ActivateBlockchainEventSubscriptionRB
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ActivateBlockchainEventSubscriptionRB = /*#__PURE__*/function () {
   /**

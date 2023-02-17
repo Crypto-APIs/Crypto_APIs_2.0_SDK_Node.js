@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The PrepareTransactionFromAddressRIBSEC model module.
  * @module model/PrepareTransactionFromAddressRIBSEC
- * @version 1.12.0
+ * @version 1.13.0
  */
 var PrepareTransactionFromAddressRIBSEC = /*#__PURE__*/function () {
   /**

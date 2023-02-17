@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The EstimateTransactionSmartFee403Response model module.
  * @module model/EstimateTransactionSmartFee403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var EstimateTransactionSmartFee403Response = /*#__PURE__*/function () {
   /**

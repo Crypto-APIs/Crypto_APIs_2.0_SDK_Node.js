@@ -17,7 +17,7 @@ import ListZilliqaTransactionsByAddressE403 from './ListZilliqaTransactionsByAdd
 /**
  * The ListZilliqaTransactionsByAddress403Response model module.
  * @module model/ListZilliqaTransactionsByAddress403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListZilliqaTransactionsByAddress403Response {
     /**

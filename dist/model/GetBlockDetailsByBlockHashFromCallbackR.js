@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetBlockDetailsByBlockHashFromCallbackR model module.
  * @module model/GetBlockDetailsByBlockHashFromCallbackR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetBlockDetailsByBlockHashFromCallbackR = /*#__PURE__*/function () {
   /**

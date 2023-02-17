@@ -17,7 +17,7 @@ import PrepareAFungibleTokenTransferFromAddressRBDataItem from './PrepareAFungib
 /**
  * The PrepareAFungibleTokenTransferFromAddressRBData model module.
  * @module model/PrepareAFungibleTokenTransferFromAddressRBData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareAFungibleTokenTransferFromAddressRBData {
     /**

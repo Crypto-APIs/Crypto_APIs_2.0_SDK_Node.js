@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateNewMasterWalletRData model module.
  * @module model/CreateNewMasterWalletRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateNewMasterWalletRData = /*#__PURE__*/function () {
   /**

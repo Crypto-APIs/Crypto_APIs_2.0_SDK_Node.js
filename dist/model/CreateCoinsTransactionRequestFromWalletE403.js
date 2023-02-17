@@ -21,7 +21,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateCoinsTransactionRequestFromWalletE403 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateCoinsTransactionRequestFromWalletE403 = /*#__PURE__*/function () {
   /**

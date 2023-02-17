@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateCoinsTransactionRequestFromAddress401Response model module.
  * @module model/CreateCoinsTransactionRequestFromAddress401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateCoinsTransactionRequestFromAddress401Response = /*#__PURE__*/function () {
   /**

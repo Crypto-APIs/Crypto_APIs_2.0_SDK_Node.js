@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAssetDetailsByAssetIDRISC model module.
  * @module model/GetAssetDetailsByAssetIDRISC
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAssetDetailsByAssetIDRISC = /*#__PURE__*/function () {
   /**

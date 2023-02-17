@@ -17,7 +17,7 @@ import TransactionRequestBroadcastedData from './TransactionRequestBroadcastedDa
 /**
  * The TransactionRequestBroadcasted model module.
  * @module model/TransactionRequestBroadcasted
- * @version 1.12.0
+ * @version 1.13.0
  */
 class TransactionRequestBroadcasted {
     /**

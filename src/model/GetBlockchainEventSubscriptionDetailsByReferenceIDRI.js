@@ -17,7 +17,7 @@ import ListBlockchainEventsSubscriptionsRIDeactivationReasonsInner from './ListB
 /**
  * The GetBlockchainEventSubscriptionDetailsByReferenceIDRI model module.
  * @module model/GetBlockchainEventSubscriptionDetailsByReferenceIDRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetBlockchainEventSubscriptionDetailsByReferenceIDRI {
     /**

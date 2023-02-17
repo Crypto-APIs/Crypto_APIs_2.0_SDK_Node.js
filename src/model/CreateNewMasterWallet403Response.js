@@ -17,7 +17,7 @@ import CreateNewMasterWalletE403 from './CreateNewMasterWalletE403';
 /**
  * The CreateNewMasterWallet403Response model module.
  * @module model/CreateNewMasterWallet403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateNewMasterWallet403Response {
     /**

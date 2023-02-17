@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed model module.
  * @module model/GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetTransactionDetailsByTransactionIDFromCallbackRIBSTBandwidthUsed {
     /**

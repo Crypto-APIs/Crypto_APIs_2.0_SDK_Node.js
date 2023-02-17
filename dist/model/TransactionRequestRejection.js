@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The TransactionRequestRejection model module.
  * @module model/TransactionRequestRejection
- * @version 1.12.0
+ * @version 1.13.0
  */
 var TransactionRequestRejection = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig model module.
  * @module model/GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetWalletTransactionDetailsByTransactionIDRIBSDVinInnerScriptSig {
     /**

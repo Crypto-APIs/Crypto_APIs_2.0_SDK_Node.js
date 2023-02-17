@@ -19,7 +19,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateCoinsTransactionFromAddressForWholeAmountE409 model module.
  * @module model/CreateCoinsTransactionFromAddressForWholeAmountE409
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateCoinsTransactionFromAddressForWholeAmountE409 = /*#__PURE__*/function () {
   /**

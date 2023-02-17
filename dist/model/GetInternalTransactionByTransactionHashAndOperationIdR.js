@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetInternalTransactionByTransactionHashAndOperationIdR model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationIdR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetInternalTransactionByTransactionHashAndOperationIdR = /*#__PURE__*/function () {
   /**

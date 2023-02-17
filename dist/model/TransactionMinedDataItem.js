@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The TransactionMinedDataItem model module.
  * @module model/TransactionMinedDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var TransactionMinedDataItem = /*#__PURE__*/function () {
   /**

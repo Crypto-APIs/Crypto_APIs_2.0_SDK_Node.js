@@ -19,7 +19,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRI model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListConfirmedTransactionsByAddressAndTimeRangeRI = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import ListTransactionsByBlockHeightE401 from './ListTransactionsByBlockHeightE4
 /**
  * The ListTransactionsByBlockHeight401Response model module.
  * @module model/ListTransactionsByBlockHeight401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListTransactionsByBlockHeight401Response {
     /**

@@ -17,7 +17,7 @@ import ListWalletTransactionsRI from './ListWalletTransactionsRI';
 /**
  * The ListWalletTransactionsRData model module.
  * @module model/ListWalletTransactionsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListWalletTransactionsRData {
     /**

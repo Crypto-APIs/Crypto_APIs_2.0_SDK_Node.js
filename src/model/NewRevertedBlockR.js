@@ -17,7 +17,7 @@ import NewRevertedBlockRData from './NewRevertedBlockRData';
 /**
  * The NewRevertedBlockR model module.
  * @module model/NewRevertedBlockR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class NewRevertedBlockR {
     /**

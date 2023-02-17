@@ -17,7 +17,7 @@ import ListXRPRippleTransactionsByBlockHashRData from './ListXRPRippleTransactio
 /**
  * The ListXRPRippleTransactionsByBlockHashR model module.
  * @module model/ListXRPRippleTransactionsByBlockHashR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListXRPRippleTransactionsByBlockHashR {
     /**

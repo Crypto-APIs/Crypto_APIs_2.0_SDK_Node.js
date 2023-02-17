@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The BroadcastLocallySignedTransactionE403 model module.
  * @module model/BroadcastLocallySignedTransactionE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 class BroadcastLocallySignedTransactionE403 {
     /**

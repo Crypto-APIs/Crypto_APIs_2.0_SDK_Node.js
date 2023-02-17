@@ -17,7 +17,7 @@ import GetHDWalletXPubYPubZPubAssetsRI from './GetHDWalletXPubYPubZPubAssetsRI';
 /**
  * The GetHDWalletXPubYPubZPubAssetsRData model module.
  * @module model/GetHDWalletXPubYPubZPubAssetsRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetHDWalletXPubYPubZPubAssetsRData {
     /**

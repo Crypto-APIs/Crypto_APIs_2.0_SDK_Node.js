@@ -17,7 +17,7 @@ import ListConfirmedTransactionsByAddressAndTimeRangeE401 from './ListConfirmedT
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRange401Response model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRange401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListConfirmedTransactionsByAddressAndTimeRange401Response {
     /**

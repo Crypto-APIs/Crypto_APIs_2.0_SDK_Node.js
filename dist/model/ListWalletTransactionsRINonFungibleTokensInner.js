@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListWalletTransactionsRINonFungibleTokensInner model module.
  * @module model/ListWalletTransactionsRINonFungibleTokensInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListWalletTransactionsRINonFungibleTokensInner = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareTransactionFromAddressRBDataItemFee model module.
  * @module model/PrepareTransactionFromAddressRBDataItemFee
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareTransactionFromAddressRBDataItemFee {
     /**

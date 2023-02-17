@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewBlock400Response model module.
  * @module model/NewBlock400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewBlock400Response = /*#__PURE__*/function () {
   /**

@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The TransactionRequestFailDataItem model module.
  * @module model/TransactionRequestFailDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var TransactionRequestFailDataItem = /*#__PURE__*/function () {
   /**

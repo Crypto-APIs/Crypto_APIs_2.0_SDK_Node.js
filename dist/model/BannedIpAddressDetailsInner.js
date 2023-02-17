@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BannedIpAddressDetailsInner model module.
  * @module model/BannedIpAddressDetailsInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BannedIpAddressDetailsInner = /*#__PURE__*/function () {
   /**

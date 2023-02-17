@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority409Response model module.
  * @module model/CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority409Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateFungibleTokenTransactionRequestFromAddressWithoutFeePriority409Response = /*#__PURE__*/function () {
   /**

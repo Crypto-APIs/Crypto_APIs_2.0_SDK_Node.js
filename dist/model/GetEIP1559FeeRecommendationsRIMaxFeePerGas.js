@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetEIP1559FeeRecommendationsRIMaxFeePerGas model module.
  * @module model/GetEIP1559FeeRecommendationsRIMaxFeePerGas
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetEIP1559FeeRecommendationsRIMaxFeePerGas = /*#__PURE__*/function () {
   /**

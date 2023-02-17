@@ -17,7 +17,7 @@ import PrepareANonFungibleTokenTransferFromAddressE403 from './PrepareANonFungib
 /**
  * The PrepareANonFungibleTokenTransferFromAddress403Response model module.
  * @module model/PrepareANonFungibleTokenTransferFromAddress403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareANonFungibleTokenTransferFromAddress403Response {
     /**

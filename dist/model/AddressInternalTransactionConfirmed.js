@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddressInternalTransactionConfirmed model module.
  * @module model/AddressInternalTransactionConfirmed
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddressInternalTransactionConfirmed = /*#__PURE__*/function () {
   /**

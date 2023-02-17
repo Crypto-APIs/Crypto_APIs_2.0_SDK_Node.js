@@ -34,7 +34,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * Internal service.
 * @module api/InternalApi
-* @version 1.12.0
+* @version 1.13.0
 */
 var InternalApi = /*#__PURE__*/function () {
   /**

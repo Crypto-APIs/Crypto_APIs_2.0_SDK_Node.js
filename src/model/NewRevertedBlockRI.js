@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NewRevertedBlockRI model module.
  * @module model/NewRevertedBlockRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class NewRevertedBlockRI {
     /**

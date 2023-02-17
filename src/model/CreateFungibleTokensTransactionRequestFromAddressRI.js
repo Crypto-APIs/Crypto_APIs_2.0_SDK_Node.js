@@ -19,7 +19,7 @@ import CreateFungibleTokensTransactionRequestFromAddressRIS from './CreateFungib
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRI model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRI {
     /**

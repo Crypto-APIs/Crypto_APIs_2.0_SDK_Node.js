@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTokensForwardingAutomationsRITSBOT model module.
  * @module model/ListTokensForwardingAutomationsRITSBOT
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTokensForwardingAutomationsRITSBOT = /*#__PURE__*/function () {
   /**

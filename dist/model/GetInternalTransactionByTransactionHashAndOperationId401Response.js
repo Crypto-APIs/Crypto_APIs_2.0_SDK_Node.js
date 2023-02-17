@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetInternalTransactionByTransactionHashAndOperationId401Response model module.
  * @module model/GetInternalTransactionByTransactionHashAndOperationId401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetInternalTransactionByTransactionHashAndOperationId401Response = /*#__PURE__*/function () {
   /**

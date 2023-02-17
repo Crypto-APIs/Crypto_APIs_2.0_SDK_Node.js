@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListXRPRippleTransactionsByAddressRIValue model module.
  * @module model/ListXRPRippleTransactionsByAddressRIValue
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListXRPRippleTransactionsByAddressRIValue = /*#__PURE__*/function () {
   /**

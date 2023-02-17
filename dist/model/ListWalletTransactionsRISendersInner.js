@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListWalletTransactionsRISendersInner model module.
  * @module model/ListWalletTransactionsRISendersInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListWalletTransactionsRISendersInner = /*#__PURE__*/function () {
   /**

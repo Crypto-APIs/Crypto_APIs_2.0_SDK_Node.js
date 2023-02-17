@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The PrepareANonFungibleTokenTransferFromAddressE401 model module.
  * @module model/PrepareANonFungibleTokenTransferFromAddressE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareANonFungibleTokenTransferFromAddressE401 {
     /**

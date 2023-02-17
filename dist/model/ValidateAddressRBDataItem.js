@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ValidateAddressRBDataItem model module.
  * @module model/ValidateAddressRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ValidateAddressRBDataItem = /*#__PURE__*/function () {
   /**

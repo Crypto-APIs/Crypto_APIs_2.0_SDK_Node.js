@@ -21,7 +21,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403 model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateSingleTransactionRequestFromAddressWithoutFeePriorityE403 = /*#__PURE__*/function () {
   /**

@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ConfirmedTokensTransactionForCertainAmountOrHigherErc721 model module.
  * @module model/ConfirmedTokensTransactionForCertainAmountOrHigherErc721
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ConfirmedTokensTransactionForCertainAmountOrHigherErc721 = /*#__PURE__*/function () {
   /**

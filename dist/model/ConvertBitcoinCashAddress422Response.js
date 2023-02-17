@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ConvertBitcoinCashAddress422Response model module.
  * @module model/ConvertBitcoinCashAddress422Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ConvertBitcoinCashAddress422Response = /*#__PURE__*/function () {
   /**

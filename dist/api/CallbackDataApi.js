@@ -40,7 +40,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * CallbackData service.
 * @module api/CallbackDataApi
-* @version 1.12.0
+* @version 1.13.0
 */
 var CallbackDataApi = /*#__PURE__*/function () {
   /**

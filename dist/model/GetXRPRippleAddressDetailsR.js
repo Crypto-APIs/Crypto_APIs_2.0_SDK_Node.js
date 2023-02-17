@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetXRPRippleAddressDetailsR model module.
  * @module model/GetXRPRippleAddressDetailsR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetXRPRippleAddressDetailsR = /*#__PURE__*/function () {
   /**

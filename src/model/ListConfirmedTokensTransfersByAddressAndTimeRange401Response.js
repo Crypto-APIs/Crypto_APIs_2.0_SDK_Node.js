@@ -17,7 +17,7 @@ import ListConfirmedTokensTransfersByAddressAndTimeRangeE401 from './ListConfirm
 /**
  * The ListConfirmedTokensTransfersByAddressAndTimeRange401Response model module.
  * @module model/ListConfirmedTokensTransfersByAddressAndTimeRange401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListConfirmedTokensTransfersByAddressAndTimeRange401Response {
     /**

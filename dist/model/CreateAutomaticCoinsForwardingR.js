@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The CreateAutomaticCoinsForwardingR model module.
  * @module model/CreateAutomaticCoinsForwardingR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var CreateAutomaticCoinsForwardingR = /*#__PURE__*/function () {
   /**

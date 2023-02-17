@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListInternalTransactionDetailsByTransactionHashE401 model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListInternalTransactionDetailsByTransactionHashE401 = /*#__PURE__*/function () {
   /**

@@ -17,7 +17,7 @@ import GetBlockDetailsByBlockHashE401 from './GetBlockDetailsByBlockHashE401';
 /**
  * The GetBlockDetailsByBlockHash401Response model module.
  * @module model/GetBlockDetailsByBlockHash401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetBlockDetailsByBlockHash401Response {
     /**

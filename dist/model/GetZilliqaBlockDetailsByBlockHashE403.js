@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetZilliqaBlockDetailsByBlockHashE403 model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetZilliqaBlockDetailsByBlockHashE403 = /*#__PURE__*/function () {
   /**

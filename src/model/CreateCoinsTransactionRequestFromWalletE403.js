@@ -22,7 +22,7 @@ import WalletAsAServiceProvidedNetworkIsNotSuitableForThisWalletType from './Wal
 /**
  * The CreateCoinsTransactionRequestFromWalletE403 model module.
  * @module model/CreateCoinsTransactionRequestFromWalletE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateCoinsTransactionRequestFromWalletE403 {
     /**

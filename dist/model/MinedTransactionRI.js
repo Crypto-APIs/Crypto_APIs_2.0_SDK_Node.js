@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The MinedTransactionRI model module.
  * @module model/MinedTransactionRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var MinedTransactionRI = /*#__PURE__*/function () {
   /**

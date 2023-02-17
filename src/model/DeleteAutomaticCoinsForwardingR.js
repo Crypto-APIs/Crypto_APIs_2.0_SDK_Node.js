@@ -17,7 +17,7 @@ import DeleteAutomaticCoinsForwardingRData from './DeleteAutomaticCoinsForwardin
 /**
  * The DeleteAutomaticCoinsForwardingR model module.
  * @module model/DeleteAutomaticCoinsForwardingR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class DeleteAutomaticCoinsForwardingR {
     /**

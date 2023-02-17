@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The AddressTokensTransactionUnconfirmedOmni model module.
  * @module model/AddressTokensTransactionUnconfirmedOmni
- * @version 1.12.0
+ * @version 1.13.0
  */
 var AddressTokensTransactionUnconfirmedOmni = /*#__PURE__*/function () {
   /**

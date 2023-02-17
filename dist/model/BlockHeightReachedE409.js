@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BlockHeightReachedE409 model module.
  * @module model/BlockHeightReachedE409
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BlockHeightReachedE409 = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareANonFungibleTokenTransferFromAddressRIBSEFee model module.
  * @module model/PrepareANonFungibleTokenTransferFromAddressRIBSEFee
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareANonFungibleTokenTransferFromAddressRIBSEFee {
     /**

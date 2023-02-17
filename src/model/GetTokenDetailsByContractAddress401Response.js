@@ -17,7 +17,7 @@ import GetTokenDetailsByContractAddressE401 from './GetTokenDetailsByContractAdd
 /**
  * The GetTokenDetailsByContractAddress401Response model module.
  * @module model/GetTokenDetailsByContractAddress401Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetTokenDetailsByContractAddress401Response {
     /**

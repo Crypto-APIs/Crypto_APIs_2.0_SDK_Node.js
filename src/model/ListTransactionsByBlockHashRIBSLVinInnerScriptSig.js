@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ListTransactionsByBlockHashRIBSLVinInnerScriptSig model module.
  * @module model/ListTransactionsByBlockHashRIBSLVinInnerScriptSig
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListTransactionsByBlockHashRIBSLVinInnerScriptSig {
     /**

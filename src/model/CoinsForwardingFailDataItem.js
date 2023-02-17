@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CoinsForwardingFailDataItem model module.
  * @module model/CoinsForwardingFailDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CoinsForwardingFailDataItem {
     /**

@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DeriveAndSyncNewChangeAddressesE401 model module.
  * @module model/DeriveAndSyncNewChangeAddressesE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DeriveAndSyncNewChangeAddressesE401 = /*#__PURE__*/function () {
   /**

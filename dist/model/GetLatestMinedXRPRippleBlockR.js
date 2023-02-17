@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetLatestMinedXRPRippleBlockR model module.
  * @module model/GetLatestMinedXRPRippleBlockR
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetLatestMinedXRPRippleBlockR = /*#__PURE__*/function () {
   /**

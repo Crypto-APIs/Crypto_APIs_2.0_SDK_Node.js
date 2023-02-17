@@ -17,7 +17,7 @@ import CreateFungibleTokensTransactionRequestFromAddressRBData from './CreateFun
 /**
  * The CreateFungibleTokensTransactionRequestFromAddressRB model module.
  * @module model/CreateFungibleTokensTransactionRequestFromAddressRB
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateFungibleTokensTransactionRequestFromAddressRB {
     /**

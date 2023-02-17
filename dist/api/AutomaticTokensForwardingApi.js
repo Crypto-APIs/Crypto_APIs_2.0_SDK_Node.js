@@ -44,7 +44,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
 * AutomaticTokensForwarding service.
 * @module api/AutomaticTokensForwardingApi
-* @version 1.12.0
+* @version 1.13.0
 */
 var AutomaticTokensForwardingApi = /*#__PURE__*/function () {
   /**

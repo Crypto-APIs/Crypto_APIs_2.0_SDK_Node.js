@@ -19,7 +19,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewConfirmedInternalTransactionsE400 model module.
  * @module model/NewConfirmedInternalTransactionsE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewConfirmedInternalTransactionsE400 = /*#__PURE__*/function () {
   /**

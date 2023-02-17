@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAddressBalance400Response model module.
  * @module model/GetAddressBalance400Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAddressBalance400Response = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BroadcastLocallySignedTransaction403Response model module.
  * @module model/BroadcastLocallySignedTransaction403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BroadcastLocallySignedTransaction403Response = /*#__PURE__*/function () {
   /**

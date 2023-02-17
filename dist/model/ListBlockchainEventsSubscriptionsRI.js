@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListBlockchainEventsSubscriptionsRI model module.
  * @module model/ListBlockchainEventsSubscriptionsRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListBlockchainEventsSubscriptionsRI = /*#__PURE__*/function () {
   /**

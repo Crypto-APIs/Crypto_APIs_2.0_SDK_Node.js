@@ -19,7 +19,7 @@ import MissingApiKey from './MissingApiKey';
 /**
  * The ListBlockchainEventsSubscriptionsE401 model module.
  * @module model/ListBlockchainEventsSubscriptionsE401
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListBlockchainEventsSubscriptionsE401 {
     /**

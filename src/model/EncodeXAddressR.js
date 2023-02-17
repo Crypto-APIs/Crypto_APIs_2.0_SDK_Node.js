@@ -17,7 +17,7 @@ import EncodeXAddressRData from './EncodeXAddressRData';
 /**
  * The EncodeXAddressR model module.
  * @module model/EncodeXAddressR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class EncodeXAddressR {
     /**

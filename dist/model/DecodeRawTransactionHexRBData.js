@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DecodeRawTransactionHexRBData model module.
  * @module model/DecodeRawTransactionHexRBData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DecodeRawTransactionHexRBData = /*#__PURE__*/function () {
   /**

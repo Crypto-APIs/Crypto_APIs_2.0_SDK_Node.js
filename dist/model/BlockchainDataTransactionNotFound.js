@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BlockchainDataTransactionNotFound model module.
  * @module model/BlockchainDataTransactionNotFound
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BlockchainDataTransactionNotFound = /*#__PURE__*/function () {
   /**

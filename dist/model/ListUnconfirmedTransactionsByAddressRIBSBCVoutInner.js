@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListUnconfirmedTransactionsByAddressRIBSBCVoutInner model module.
  * @module model/ListUnconfirmedTransactionsByAddressRIBSBCVoutInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListUnconfirmedTransactionsByAddressRIBSBCVoutInner = /*#__PURE__*/function () {
   /**

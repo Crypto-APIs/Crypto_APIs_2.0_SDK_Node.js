@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListTransactionsByBlockHashRIBSLVoutInner model module.
  * @module model/ListTransactionsByBlockHashRIBSLVoutInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListTransactionsByBlockHashRIBSLVoutInner = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The MinedTransaction409Response model module.
  * @module model/MinedTransaction409Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 var MinedTransaction409Response = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrepareTransactionFromAddressRIBSBSCFee model module.
  * @module model/PrepareTransactionFromAddressRIBSBSCFee
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareTransactionFromAddressRIBSBSCFee {
     /**

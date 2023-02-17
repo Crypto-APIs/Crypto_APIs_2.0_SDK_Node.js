@@ -23,7 +23,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The DecodeRawTransactionHexE400 model module.
  * @module model/DecodeRawTransactionHexE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 class DecodeRawTransactionHexE400 {
     /**

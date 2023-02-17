@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The DecodeRawTransactionHexRISLVoutInner model module.
  * @module model/DecodeRawTransactionHexRISLVoutInner
- * @version 1.12.0
+ * @version 1.13.0
  */
 var DecodeRawTransactionHexRISLVoutInner = /*#__PURE__*/function () {
   /**

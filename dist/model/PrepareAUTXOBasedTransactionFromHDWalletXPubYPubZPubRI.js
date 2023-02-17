@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI model module.
  * @module model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI
- * @version 1.12.0
+ * @version 1.13.0
  */
 var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI = /*#__PURE__*/function () {
   /**
@@ -73,6 +73,9 @@ var PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI = /*#__PURE__*/functi
         if (data.hasOwnProperty('size')) {
           obj['size'] = _ApiClient["default"].convertToType(data['size'], 'Number');
         }
+        if (data.hasOwnProperty('version')) {
+          obj['version'] = _ApiClient["default"].convertToType(data['version'], 'Number');
+        }
         if (data.hasOwnProperty('blockchainSpecific')) {
           obj['blockchainSpecific'] = _PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS["default"].constructFromObject(data['blockchainSpecific']);
         }
@@ -111,6 +114,12 @@ PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['locktime'] = u
  * @member {Number} size
  */
 PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['size'] = undefined;
+
+/**
+ * Representation of the transaction's version
+ * @member {Number} version
+ */
+PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI.prototype['version'] = undefined;
 
 /**
  * @member {module:model/PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRIBS} blockchainSpecific

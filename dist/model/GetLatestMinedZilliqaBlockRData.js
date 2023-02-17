@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetLatestMinedZilliqaBlockRData model module.
  * @module model/GetLatestMinedZilliqaBlockRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetLatestMinedZilliqaBlockRData = /*#__PURE__*/function () {
   /**

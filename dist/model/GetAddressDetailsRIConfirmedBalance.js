@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAddressDetailsRIConfirmedBalance model module.
  * @module model/GetAddressDetailsRIConfirmedBalance
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAddressDetailsRIConfirmedBalance = /*#__PURE__*/function () {
   /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListInternalTransactionDetailsByTransactionHashRData model module.
  * @module model/ListInternalTransactionDetailsByTransactionHashRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListInternalTransactionDetailsByTransactionHashRData = /*#__PURE__*/function () {
   /**

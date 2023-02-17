@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The UnsupportedMediaType model module.
  * @module model/UnsupportedMediaType
- * @version 1.12.0
+ * @version 1.13.0
  */
 var UnsupportedMediaType = /*#__PURE__*/function () {
   /**

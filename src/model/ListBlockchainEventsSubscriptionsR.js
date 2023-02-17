@@ -17,7 +17,7 @@ import ListBlockchainEventsSubscriptionsRData from './ListBlockchainEventsSubscr
 /**
  * The ListBlockchainEventsSubscriptionsR model module.
  * @module model/ListBlockchainEventsSubscriptionsR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListBlockchainEventsSubscriptionsR {
     /**

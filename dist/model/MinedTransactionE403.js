@@ -21,7 +21,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The MinedTransactionE403 model module.
  * @module model/MinedTransactionE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 var MinedTransactionE403 = /*#__PURE__*/function () {
   /**

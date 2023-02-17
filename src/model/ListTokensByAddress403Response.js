@@ -17,7 +17,7 @@ import ListTokensByAddressE403 from './ListTokensByAddressE403';
 /**
  * The ListTokensByAddress403Response model module.
  * @module model/ListTokensByAddress403Response
- * @version 1.12.0
+ * @version 1.13.0
  */
 class ListTokensByAddress403Response {
     /**

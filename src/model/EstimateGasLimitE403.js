@@ -21,7 +21,7 @@ import FeatureMainnetsNotAllowedForPlan from './FeatureMainnetsNotAllowedForPlan
 /**
  * The EstimateGasLimitE403 model module.
  * @module model/EstimateGasLimitE403
- * @version 1.12.0
+ * @version 1.13.0
  */
 class EstimateGasLimitE403 {
     /**

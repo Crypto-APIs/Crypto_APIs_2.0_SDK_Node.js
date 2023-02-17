@@ -17,7 +17,7 @@ import CreateNewMasterWalletRBData from './CreateNewMasterWalletRBData';
 /**
  * The CreateNewMasterWalletRB model module.
  * @module model/CreateNewMasterWalletRB
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateNewMasterWalletRB {
     /**

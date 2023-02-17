@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The BroadcastTransactionFailDataItem model module.
  * @module model/BroadcastTransactionFailDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 var BroadcastTransactionFailDataItem = /*#__PURE__*/function () {
   /**

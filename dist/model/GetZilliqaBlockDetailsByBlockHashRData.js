@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetZilliqaBlockDetailsByBlockHashRData model module.
  * @module model/GetZilliqaBlockDetailsByBlockHashRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetZilliqaBlockDetailsByBlockHashRData = /*#__PURE__*/function () {
   /**

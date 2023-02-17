@@ -20,7 +20,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ model module.
  * @module model/ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ
- * @version 1.12.0
+ * @version 1.13.0
  */
 var ListConfirmedTransactionsByAddressAndTimeRangeRIBSZ = /*#__PURE__*/function () {
   /**

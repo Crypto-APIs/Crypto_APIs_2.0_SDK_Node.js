@@ -17,7 +17,7 @@ import PrepareAFungibleTokenTransferFromAddressRBDataItemFee from './PrepareAFun
 /**
  * The PrepareAFungibleTokenTransferFromAddressRBDataItem model module.
  * @module model/PrepareAFungibleTokenTransferFromAddressRBDataItem
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareAFungibleTokenTransferFromAddressRBDataItem {
     /**

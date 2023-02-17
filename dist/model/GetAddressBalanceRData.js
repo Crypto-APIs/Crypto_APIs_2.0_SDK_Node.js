@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetAddressBalanceRData model module.
  * @module model/GetAddressBalanceRData
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetAddressBalanceRData = /*#__PURE__*/function () {
   /**

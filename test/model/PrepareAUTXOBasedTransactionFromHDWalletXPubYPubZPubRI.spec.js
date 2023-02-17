@@ -84,6 +84,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property version (base name: "version")', function() {
+      // uncomment below and update the code to test the property version
+      //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI();
+      //expect(instance).to.be();
+    });
+
     it('should have the property blockchainSpecific (base name: "blockchainSpecific")', function() {
       // uncomment below and update the code to test the property blockchainSpecific
       //var instance = new Cryptoapis.PrepareAUTXOBasedTransactionFromHDWalletXPubYPubZPubRI();

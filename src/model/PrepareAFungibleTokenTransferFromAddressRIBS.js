@@ -15,26 +15,26 @@ import ApiClient from '../ApiClient';
 import PrepareAFungibleTokenTransferFromAddressRIBSBSC from './PrepareAFungibleTokenTransferFromAddressRIBSBSC';
 import PrepareAFungibleTokenTransferFromAddressRIBSE from './PrepareAFungibleTokenTransferFromAddressRIBSE';
 import PrepareAFungibleTokenTransferFromAddressRIBSEC from './PrepareAFungibleTokenTransferFromAddressRIBSEC';
-import PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee from './PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee';
+import PrepareAFungibleTokenTransferFromAddressRIBSEFee from './PrepareAFungibleTokenTransferFromAddressRIBSEFee';
 
 /**
  * The PrepareAFungibleTokenTransferFromAddressRIBS model module.
  * @module model/PrepareAFungibleTokenTransferFromAddressRIBS
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareAFungibleTokenTransferFromAddressRIBS {
     /**
      * Constructs a new <code>PrepareAFungibleTokenTransferFromAddressRIBS</code>.
      * @alias module:model/PrepareAFungibleTokenTransferFromAddressRIBS
-     * @implements module:model/PrepareAFungibleTokenTransferFromAddressRIBSE
      * @implements module:model/PrepareAFungibleTokenTransferFromAddressRIBSEC
      * @implements module:model/PrepareAFungibleTokenTransferFromAddressRIBSBSC
+     * @implements module:model/PrepareAFungibleTokenTransferFromAddressRIBSE
      * @param sigHash {String} Representation of the hash that should be signed
-     * @param fee {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee} 
+     * @param fee {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee} 
      * @param transactionType {module:model/PrepareAFungibleTokenTransferFromAddressRIBS.TransactionTypeEnum} Representation of the transaction type
      */
     constructor(sigHash, fee, transactionType) { 
-        PrepareAFungibleTokenTransferFromAddressRIBSE.initialize(this, sigHash, fee, transactionType);PrepareAFungibleTokenTransferFromAddressRIBSEC.initialize(this, sigHash, fee, transactionType);PrepareAFungibleTokenTransferFromAddressRIBSBSC.initialize(this, sigHash, fee, transactionType);
+        PrepareAFungibleTokenTransferFromAddressRIBSEC.initialize(this, sigHash, fee, transactionType);PrepareAFungibleTokenTransferFromAddressRIBSBSC.initialize(this, sigHash, fee, transactionType);PrepareAFungibleTokenTransferFromAddressRIBSE.initialize(this, sigHash, fee, transactionType);
         PrepareAFungibleTokenTransferFromAddressRIBS.initialize(this, sigHash, fee, transactionType);
     }
 
@@ -59,9 +59,9 @@ class PrepareAFungibleTokenTransferFromAddressRIBS {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new PrepareAFungibleTokenTransferFromAddressRIBS();
-            PrepareAFungibleTokenTransferFromAddressRIBSE.constructFromObject(data, obj);
             PrepareAFungibleTokenTransferFromAddressRIBSEC.constructFromObject(data, obj);
             PrepareAFungibleTokenTransferFromAddressRIBSBSC.constructFromObject(data, obj);
+            PrepareAFungibleTokenTransferFromAddressRIBSE.constructFromObject(data, obj);
 
             if (data.hasOwnProperty('dataHex')) {
                 obj['dataHex'] = ApiClient.convertToType(data['dataHex'], 'String');
@@ -70,7 +70,7 @@ class PrepareAFungibleTokenTransferFromAddressRIBS {
                 obj['sigHash'] = ApiClient.convertToType(data['sigHash'], 'String');
             }
             if (data.hasOwnProperty('fee')) {
-                obj['fee'] = PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee.constructFromObject(data['fee']);
+                obj['fee'] = PrepareAFungibleTokenTransferFromAddressRIBSEFee.constructFromObject(data['fee']);
             }
             if (data.hasOwnProperty('transactionType')) {
                 obj['transactionType'] = ApiClient.convertToType(data['transactionType'], 'String');
@@ -95,7 +95,7 @@ PrepareAFungibleTokenTransferFromAddressRIBS.prototype['dataHex'] = undefined;
 PrepareAFungibleTokenTransferFromAddressRIBS.prototype['sigHash'] = undefined;
 
 /**
- * @member {module:model/PrepareANonFungibleTokenTransferFromAddressRIBSBSCFee} fee
+ * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee} fee
  */
 PrepareAFungibleTokenTransferFromAddressRIBS.prototype['fee'] = undefined;
 
@@ -106,26 +106,6 @@ PrepareAFungibleTokenTransferFromAddressRIBS.prototype['fee'] = undefined;
 PrepareAFungibleTokenTransferFromAddressRIBS.prototype['transactionType'] = undefined;
 
 
-// Implement PrepareAFungibleTokenTransferFromAddressRIBSE interface:
-/**
- * Representation of the data in hex value
- * @member {String} dataHex
- */
-PrepareAFungibleTokenTransferFromAddressRIBSE.prototype['dataHex'] = undefined;
-/**
- * Representation of the hash that should be signed
- * @member {String} sigHash
- */
-PrepareAFungibleTokenTransferFromAddressRIBSE.prototype['sigHash'] = undefined;
-/**
- * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee} fee
- */
-PrepareAFungibleTokenTransferFromAddressRIBSE.prototype['fee'] = undefined;
-/**
- * Representation of the transaction type
- * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSE.TransactionTypeEnum} transactionType
- */
-PrepareAFungibleTokenTransferFromAddressRIBSE.prototype['transactionType'] = undefined;
 // Implement PrepareAFungibleTokenTransferFromAddressRIBSEC interface:
 /**
  * Representation of the data in hex value
@@ -166,6 +146,26 @@ PrepareAFungibleTokenTransferFromAddressRIBSBSC.prototype['fee'] = undefined;
  * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSBSC.TransactionTypeEnum} transactionType
  */
 PrepareAFungibleTokenTransferFromAddressRIBSBSC.prototype['transactionType'] = undefined;
+// Implement PrepareAFungibleTokenTransferFromAddressRIBSE interface:
+/**
+ * Representation of the data in hex value
+ * @member {String} dataHex
+ */
+PrepareAFungibleTokenTransferFromAddressRIBSE.prototype['dataHex'] = undefined;
+/**
+ * Representation of the hash that should be signed
+ * @member {String} sigHash
+ */
+PrepareAFungibleTokenTransferFromAddressRIBSE.prototype['sigHash'] = undefined;
+/**
+ * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSEFee} fee
+ */
+PrepareAFungibleTokenTransferFromAddressRIBSE.prototype['fee'] = undefined;
+/**
+ * Representation of the transaction type
+ * @member {module:model/PrepareAFungibleTokenTransferFromAddressRIBSE.TransactionTypeEnum} transactionType
+ */
+PrepareAFungibleTokenTransferFromAddressRIBSE.prototype['transactionType'] = undefined;
 
 
 
@@ -180,7 +180,19 @@ PrepareAFungibleTokenTransferFromAddressRIBS['TransactionTypeEnum'] = {
      * value: "legacy-transaction"
      * @const
      */
-    "legacy-transaction": "legacy-transaction"
+    "legacy-transaction": "legacy-transaction",
+
+    /**
+     * value: "access-list-transaction"
+     * @const
+     */
+    "access-list-transaction": "access-list-transaction",
+
+    /**
+     * value: "gas-fee-market-transaction"
+     * @const
+     */
+    "gas-fee-market-transaction": "gas-fee-market-transaction"
 };
 
 

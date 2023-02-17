@@ -15,7 +15,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The GetBlockDetailsByBlockHashRIBSL model module.
  * @module model/GetBlockDetailsByBlockHashRIBSL
- * @version 1.12.0
+ * @version 1.13.0
  */
 var GetBlockDetailsByBlockHashRIBSL = /*#__PURE__*/function () {
   /**

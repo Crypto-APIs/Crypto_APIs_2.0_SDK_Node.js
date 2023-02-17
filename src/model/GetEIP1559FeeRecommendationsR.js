@@ -17,7 +17,7 @@ import GetEIP1559FeeRecommendationsRData from './GetEIP1559FeeRecommendationsRDa
 /**
  * The GetEIP1559FeeRecommendationsR model module.
  * @module model/GetEIP1559FeeRecommendationsR
- * @version 1.12.0
+ * @version 1.13.0
  */
 class GetEIP1559FeeRecommendationsR {
     /**

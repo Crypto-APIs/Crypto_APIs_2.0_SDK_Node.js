@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The MissingApiKey model module.
  * @module model/MissingApiKey
- * @version 1.12.0
+ * @version 1.13.0
  */
 var MissingApiKey = /*#__PURE__*/function () {
   /**

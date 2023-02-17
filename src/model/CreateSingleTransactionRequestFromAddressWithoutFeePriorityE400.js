@@ -20,7 +20,7 @@ import UriNotFound from './UriNotFound';
 /**
  * The CreateSingleTransactionRequestFromAddressWithoutFeePriorityE400 model module.
  * @module model/CreateSingleTransactionRequestFromAddressWithoutFeePriorityE400
- * @version 1.12.0
+ * @version 1.13.0
  */
 class CreateSingleTransactionRequestFromAddressWithoutFeePriorityE400 {
     /**

@@ -16,7 +16,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The TransactionRequestBroadcasted model module.
  * @module model/TransactionRequestBroadcasted
- * @version 1.12.0
+ * @version 1.13.0
  */
 var TransactionRequestBroadcasted = /*#__PURE__*/function () {
   /**

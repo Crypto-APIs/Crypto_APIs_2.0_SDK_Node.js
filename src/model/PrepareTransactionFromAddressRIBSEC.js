@@ -17,7 +17,7 @@ import PrepareTransactionFromAddressRIBSBSCFee from './PrepareTransactionFromAdd
 /**
  * The PrepareTransactionFromAddressRIBSEC model module.
  * @module model/PrepareTransactionFromAddressRIBSEC
- * @version 1.12.0
+ * @version 1.13.0
  */
 class PrepareTransactionFromAddressRIBSEC {
     /**

@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewConfirmedInternalTransactionsAndEachConfirmationE409 model module.
  * @module model/NewConfirmedInternalTransactionsAndEachConfirmationE409
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewConfirmedInternalTransactionsAndEachConfirmationE409 = /*#__PURE__*/function () {
   /**

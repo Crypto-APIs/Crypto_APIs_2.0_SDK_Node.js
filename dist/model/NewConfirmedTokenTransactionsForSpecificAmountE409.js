@@ -18,7 +18,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 /**
  * The NewConfirmedTokenTransactionsForSpecificAmountE409 model module.
  * @module model/NewConfirmedTokenTransactionsForSpecificAmountE409
- * @version 1.12.0
+ * @version 1.13.0
  */
 var NewConfirmedTokenTransactionsForSpecificAmountE409 = /*#__PURE__*/function () {
   /**
